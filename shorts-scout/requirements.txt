@@ -4,3 +4,6 @@ yt-dlp>=2025.1.1
 anthropic>=2.0
 google-api-python-client>=2.100
 google-auth-oauthlib>=1.2
+# переработка видео: субтитры по речи (модель ~150 МБ скачивается при первом запуске)
+faster-whisper>=1.0
+numpy>=1.24

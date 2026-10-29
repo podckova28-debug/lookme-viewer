@@ -599,7 +599,7 @@ def make_vertical(src: Path, caption: str | None = None, font: str | None = None
                        ":box=1:boxcolor=black@0.55:boxborderw=18"
                        f":x=(w-text_w)/2:y={170 + i * 100}")
         else:
-            log("[vertical] шрифт не найден, подпись пропущена (укажите font_file в config.json)")
+            log("[vertical] шрифт не найден, подпись пропущена")
     cmd = ["ffmpeg", "-y", "-loglevel", "error", "-i", str(src.resolve()), "-filter_complex", vf,
            "-t", "60", "-shortest", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
            "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", str(dst.resolve())]

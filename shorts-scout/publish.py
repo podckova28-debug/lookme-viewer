@@ -8,9 +8,10 @@ publish.py: превращает выбранные из отчёта ролик
 
 Для каждого номера из отчёта:
   1. скачивает ролик (yt-dlp);
-  2. генерирует английские заголовок, описание, теги и короткую подпись-хук
-     (Claude API, если есть ключ Anthropic, иначе шаблон);
-  3. делает вертикальное видео 1080x1920 с подписью сверху (ffmpeg);
+  2. генерирует английские заголовок, описание, теги, хук и панчлайн: Claude смотрит
+     кадры ролика (нужен ключ Anthropic), иначе шаблон; можно задать вручную (--captions);
+  3. перерабатывает видео (edit.py): вертикаль 1080x1920, хук сверху, субтитры по речи,
+     панчлайн в финале, подпись канала, полоса прогресса, выровненная громкость;
   4. загружает на YouTube с отложенной публикацией в ближайший свободный слот
      из config.json (YouTube Data API, OAuth).
 
@@ -20,6 +21,7 @@ publish.py: превращает выбранные из отчёта ролик
 from __future__ import annotations
 
 import argparse
+import base64
 import datetime as dt
 import json
 import os
@@ -29,6 +31,7 @@ from pathlib import Path
 from typing import Any
 from zoneinfo import ZoneInfo
 
+import edit
 import scout
 
 HERE = Path(__file__).resolve().parent
@@ -46,8 +49,10 @@ DEFAULT_PUBLISH_CFG: dict[str, Any] = {
     "privacy": "public",
     "category_id": "23",
     "default_tags": ["funny", "fails", "shorts", "comedy", "lol"],
-    "font_file": "",
     "claude_model": "claude-opus-5-5",
+    "channel_handle": "",
+    "subtitles": True,
+    "whisper_model": "base",
 }
 
 
@@ -58,16 +63,19 @@ META_SCHEMA: dict[str, Any] = {
     "type": "object",
     "properties": {
         "title": {"type": "string", "description": "YouTube Shorts title, English, max 70 characters, no hashtags"},
-        "caption": {"type": "string", "description": "On-screen hook text, English, 2-6 words"},
+        "hook": {"type": "string", "description": "On-screen hook shown on top for the whole clip, English, 3-7 words"},
+        "punchline": {"type": "string", "description": "Big reaction text for the last seconds, English, 2-5 words"},
         "description": {"type": "string", "description": "One or two short English sentences about the clip"},
         "tags": {"type": "array", "items": {"type": "string"}, "description": "5-10 English search tags"},
     },
-    "required": ["title", "caption", "description", "tags"],
+    "required": ["title", "hook", "punchline", "description", "tags"],
     "additionalProperties": False,
 }
 
 META_PROMPT = """You write metadata for a YouTube Shorts channel that reposts funny clips found online.
 Write in natural, casual English for a US audience, even if the source title is in another language.
+
+The attached images are frames from the clip in order, from start to end.
 
 Source platform: {community}
 Source title or caption: {title}
@@ -75,12 +83,13 @@ Clip length: {duration}
 
 Return:
 - title: a curiosity-driven title, max 70 characters, no hashtags, no clickbait lies about what happens
-- caption: an on-screen hook of 2-6 words shown over the first seconds of the video
+- hook: on-screen text shown on top for the whole clip, 3-7 words, makes people keep watching without spoiling the ending
+- punchline: a big reaction shown over the last seconds, 2-5 words, the channel's own joke about what happened
 - description: one or two short sentences, no hashtags, no links
 - tags: 5-10 lowercase search tags
 
-If the source title is empty, a username, an ad for a channel, or just emoji, describe the clip generically
-(for example "Wait for the ending"), because you cannot see the video itself."""
+Hook and punchline are burned into the video in a font without emoji, so do not use emoji in them.
+If the frames are unclear, keep the hook generic (for example "Wait for the ending")."""
 
 
 def clean_title(raw: str) -> str:
@@ -98,15 +107,16 @@ def template_metadata(it: Item, cfg: dict[str, Any]) -> dict[str, Any]:
         title = "Wait for the ending 😂"
     return {
         "title": title[:70],
-        "caption": "Wait for it...",   # название часто уже вшито в сам ролик, не дублируем
+        "hook": "Wait for the ending...",   # название часто уже вшито в сам ролик, не дублируем
+        "punchline": "",
         "description": "Funny moment found online.",
         "tags": list(cfg["default_tags"]),
         "generator": "template",
     }
 
 
-def claude_metadata(it: Item, cfg: dict[str, Any]) -> dict[str, Any] | None:
-    """Генерирует метаданные через Claude. None, если SDK или ключ недоступны."""
+def claude_metadata(it: Item, cfg: dict[str, Any], frames: list[Path] | None = None) -> dict[str, Any] | None:
+    """Генерирует метаданные через Claude по кадрам ролика. None, если SDK или ключ недоступны."""
     try:
         import anthropic
     except ImportError:
@@ -120,11 +130,16 @@ def claude_metadata(it: Item, cfg: dict[str, Any]) -> dict[str, Any] | None:
             betas=["server-side-fallback-2026-07-01"],
             fallbacks="default",
             output_config={"effort": "low", "format": {"type": "json_schema", "schema": META_SCHEMA}},
-            messages=[{"role": "user", "content": META_PROMPT.format(
-                community=it.get("community", "internet"),
-                title=it.get("title", "") or "(empty)",
-                duration=f"{int(it['duration_s'])} seconds" if it.get("duration_s") else "unknown",
-            )}],
+            messages=[{"role": "user", "content": [
+                *[{"type": "image", "source": {"type": "base64", "media_type": "image/jpeg",
+                                              "data": base64.b64encode(f.read_bytes()).decode()}}
+                  for f in (frames or [])],
+                {"type": "text", "text": META_PROMPT.format(
+                    community=it.get("community", "internet"),
+                    title=it.get("title", "") or "(empty)",
+                    duration=f"{int(it['duration_s'])} seconds" if it.get("duration_s") else "unknown",
+                )},
+            ]}],
         )
     except anthropic.AuthenticationError:
         log("[meta] нет ключа Anthropic (ANTHROPIC_API_KEY), использую шаблон")
@@ -159,12 +174,19 @@ def claude_metadata(it: Item, cfg: dict[str, Any]) -> dict[str, Any] | None:
     return data
 
 
-def build_metadata(it: Item, cfg: dict[str, Any], use_claude: bool) -> dict[str, Any]:
-    meta = (claude_metadata(it, cfg) if use_claude else None) or template_metadata(it, cfg)
+def build_metadata(it: Item, cfg: dict[str, Any], use_claude: bool, frames: list[Path] | None = None,
+                   override: dict[str, Any] | None = None) -> dict[str, Any]:
+    override = override or {}
+    manual = {"title", "hook", "punchline"} <= override.keys()
+    meta = None if manual else (claude_metadata(it, cfg, frames) if use_claude else None)
+    meta = meta or template_metadata(it, cfg)
+    if manual:
+        meta["generator"] = "manual"
+    meta.update({k: v for k, v in override.items() if k in ("title", "hook", "punchline", "description", "tags")})
     title = meta["title"]
     if "#shorts" not in title.lower() and len(title) <= 90:
         title = f"{title} #shorts"
-    credit = f"Original by {it.get('author') or 'unknown'}"
+    credit = f"Original by {it['author']}" if it.get("author") else "Original"
     if it.get("community"):
         credit += f" ({it['community']})"
     description = "\n".join([
@@ -179,8 +201,8 @@ def build_metadata(it: Item, cfg: dict[str, Any], use_claude: bool) -> dict[str,
     tags = list(dict.fromkeys(meta["tags"] + cfg["default_tags"]))
     while len(",".join(tags)) > 450:          # у YouTube лимит 500 символов на все теги
         tags.pop()
-    return {"title": title[:100], "caption": meta["caption"].strip(), "description": description,
-            "tags": tags, "generator": meta["generator"]}
+    return {"title": title[:100], "hook": meta["hook"].strip(), "punchline": meta.get("punchline", "").strip(),
+            "description": description, "tags": tags, "generator": meta["generator"]}
 
 
 # --------------------------------------------------------------------------- #
@@ -269,11 +291,14 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--no-upload", action="store_true", help="только подготовить видео и метаданные")
     ap.add_argument("--now", action="store_true", help="публиковать сразу, без расписания")
     ap.add_argument("--no-claude", action="store_true", help="не звать Claude, только шаблон")
-    ap.add_argument("--no-caption", action="store_true", help="без подписи поверх видео")
+    ap.add_argument("--no-subtitles", action="store_true", help="не распознавать речь для субтитров")
+    ap.add_argument("--captions", type=Path,
+                    help="JSON с ручными текстами: {\"номер\": {\"title\", \"hook\", \"punchline\", \"subtitles\"}}")
     args = ap.parse_args(argv)
 
     cfg = {**DEFAULT_PUBLISH_CFG, **scout.load_json(scout.CONFIG_PATH, {}).get("publish", {})}
     report: list[Item] = json.loads(args.report.read_text(encoding="utf-8"))
+    overrides: dict[str, Any] = json.loads(args.captions.read_text(encoding="utf-8")) if args.captions else {}
     published: dict[str, Any] = scout.load_json(PUBLISHED_PATH, {})
 
     picks: list[tuple[int, Item]] = []
@@ -305,11 +330,19 @@ def main(argv: list[str] | None = None) -> int:
         raw = out_dir / f"{stem}_src.mp4"
         if not scout.download_one(it, raw):
             continue
-        meta = build_metadata(it, cfg, use_claude=not args.no_claude)
-        short = scout.make_vertical(raw, caption=None if args.no_caption else meta["caption"],
-                                    font=cfg["font_file"] or None, dst=out_dir / f"{stem}_short.mp4")
-        if not short:
+        override = overrides.get(str(n), {})
+        frames = edit.extract_frames(raw, out_dir / ".frames") if not args.no_claude else []
+        meta = build_metadata(it, cfg, use_claude=not args.no_claude, frames=frames, override=override)
+        want_subs = cfg["subtitles"] and not args.no_subtitles and override.get("subtitles", True)
+        try:
+            result = edit.render_short(raw, out_dir / f"{stem}_short.mp4", hook=meta["hook"],
+                                       punchline=meta["punchline"], subtitles=want_subs,
+                                       handle=cfg["channel_handle"], whisper_model=cfg["whisper_model"])
+        except (RuntimeError, ValueError) as exc:
+            log(f"[edit] №{n}: {exc}")
             continue
+        short = Path(result["file"])
+        meta["subtitle_chunks"] = result["subtitle_chunks"]
         record = {"source_url": it["url"], "author": it.get("author"), "file": str(short),
                   "title": meta["title"], "publish_at": slot.astimezone(dt.timezone.utc).isoformat() if slot else None}
         (out_dir / f"{stem}_meta.json").write_text(
