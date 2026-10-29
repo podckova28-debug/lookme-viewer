@@ -1,33 +1,96 @@
 {
-  "top_n": 15,
+  "top_n": 20,
+  "max_per_source": 6,
   "max_duration_s": 60,
-  "reddit": {
-    "period": "day",
-    "limit_per_sub": 50,
-    "reference_score": 20000,
-    "subreddits": [
-      "funny",
-      "Unexpected",
-      "ContagiousLaughter",
-      "WatchPeopleDieInside",
-      "instant_regret",
-      "AnimalsBeingDerps",
-      "holdmybeer",
-      "therewasanattempt",
-      "PerfectTiming",
-      "KidsAreFuckingStupid"
-    ]
-  },
-  "youtube": {
-    "days_back": 2,
-    "limit_per_query": 25,
-    "reference_vph": 20000,
-    "queries": [
-      "funny fails #shorts",
-      "try not to laugh #shorts",
-      "unexpected moment caught on camera",
-      "funny animals #shorts",
-      "instant regret"
-    ]
+  "sources": {
+    "reddit": {
+      "enabled": true,
+      "reference": 20000,
+      "period": "day",
+      "limit_per_sub": 50,
+      "subreddits": [
+        "funny",
+        "Unexpected",
+        "ContagiousLaughter",
+        "WatchPeopleDieInside",
+        "instant_regret",
+        "AnimalsBeingDerps",
+        "holdmybeer",
+        "therewasanattempt",
+        "PerfectTiming",
+        "KidsAreFuckingStupid"
+      ]
+    },
+    "youtube": {
+      "enabled": true,
+      "reference": 20000,
+      "days_back": 2,
+      "limit_per_query": 25,
+      "queries": [
+        "funny fails #shorts",
+        "try not to laugh #shorts",
+        "unexpected moment caught on camera",
+        "funny animals #shorts",
+        "instant regret"
+      ]
+    },
+    "telegram": {
+      "enabled": true,
+      "reference": 1000,
+      "days_back": 7,
+      "channels": [
+        "funnyvideos",
+        "funny_videos",
+        "fails"
+      ]
+    },
+    "dailymotion": {
+      "enabled": true,
+      "reference": 300,
+      "days_back": 3,
+      "limit_per_query": 30,
+      "queries": [
+        "funny fails",
+        "try not to laugh",
+        "funny animals"
+      ]
+    },
+    "coub": {
+      "enabled": true,
+      "reference": 3000,
+      "days_back": 7,
+      "pages": 2,
+      "tags": [
+        "funny",
+        "fail",
+        "animals"
+      ]
+    },
+    "imgur": {
+      "enabled": true,
+      "reference": 3000,
+      "pages": 2
+    },
+    "twitch": {
+      "enabled": true,
+      "reference": 20000,
+      "days_back": 1,
+      "language": "en",
+      "game_ids": [
+        "509658",
+        "26936"
+      ]
+    },
+    "bluesky": {
+      "enabled": true,
+      "reference": 2000,
+      "days_back": 2,
+      "limit_per_query": 50,
+      "queries": [
+        "funny video",
+        "lol fail",
+        "caught on camera"
+      ]
+    }
   }
 }
