@@ -1,4 +1,6 @@
 downloads/
+ready/
 state/
 __pycache__/
 .env
+client_secret*.json

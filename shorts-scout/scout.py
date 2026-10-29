@@ -514,49 +514,100 @@ def write_report(top: list[Item], day: str) -> Path:
 # --------------------------------------------------------------------------- #
 # download / convert
 # --------------------------------------------------------------------------- #
-def download(top: list[Item], day: str, vertical: bool) -> None:
+def download_one(it: Item, target: Path) -> bool:
+    """Скачивает один ролик в target (.mp4). True, если файл на месте."""
+    if target.exists():
+        return True
     if not shutil.which("yt-dlp"):
         log("[download] yt-dlp не найден: pip install yt-dlp")
-        return
+        return False
+    target.parent.mkdir(parents=True, exist_ok=True)
+    cmd = ["yt-dlp", "--quiet", "--no-warnings", "--max-filesize", "200M",
+           "--retries", "5", "--extractor-retries", "5",
+           "-f", "bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4]/bv*+ba/b",
+           "--merge-output-format", "mp4", "-o", str(target)]
+    cookies = os.environ.get("YTDLP_COOKIES")  # файл cookies.txt, если площадка просит войти
+    if cookies:
+        cmd += ["--cookies", cookies]
+    cmd.append(it["video_url"])
+    log(f"[download] {target.name}")
+    res = subprocess.run(cmd, capture_output=True, text=True)
+    if res.returncode != 0 or not target.exists():
+        log(f"[download] не удалось: {res.stderr.strip()[-300:]}")
+        return False
+    return True
+
+
+def download(top: list[Item], day: str, vertical: bool) -> None:
     out_dir = DOWNLOADS_DIR / day
-    out_dir.mkdir(parents=True, exist_ok=True)
     for n, it in enumerate(top, 1):
-        stem = f"{n:02d}_{re.sub(r'[^A-Za-z0-9_-]', '_', it['id'])}"
-        target = out_dir / f"{stem}.mp4"
-        if target.exists():
-            continue
-        cmd = ["yt-dlp", "--quiet", "--no-warnings", "--max-filesize", "200M",
-               "-f", "bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4]/b",
-               "--merge-output-format", "mp4", "-o", str(target)]
-        cookies = os.environ.get("YTDLP_COOKIES")  # файл cookies.txt, если площадка просит войти
-        if cookies:
-            cmd += ["--cookies", cookies]
-        cmd.append(it["video_url"])
-        log(f"[download] {stem}")
-        res = subprocess.run(cmd, capture_output=True, text=True)
-        if res.returncode != 0 or not target.exists():
-            log(f"[download] не удалось: {res.stderr.strip()[-300:]}")
-            continue
-        it["file"] = str(target)
-        if vertical:
-            make_vertical(target)
+        target = out_dir / f"{n:02d}_{re.sub(r'[^A-Za-z0-9_-]', '_', it['id'])}.mp4"
+        if download_one(it, target):
+            it["file"] = str(target)
+            if vertical:
+                make_vertical(target)
 
 
-def make_vertical(src: Path) -> None:
-    """1080x1920: оригинал по центру, сзади размытая копия. Файл *_v.mp4."""
+FONT_CANDIDATES = [
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+    "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
+    "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+    "/Library/Fonts/Arial Bold.ttf",
+    "C:/Windows/Fonts/arialbd.ttf",
+]
+
+
+def find_font(preferred: str | None = None) -> str | None:
+    for path in ([preferred] if preferred else []) + FONT_CANDIDATES:
+        if path and Path(path).exists():
+            return path
+    if shutil.which("fc-match"):
+        res = subprocess.run(["fc-match", "-f", "%{file}", "sans:bold"], capture_output=True, text=True)
+        if res.returncode == 0 and Path(res.stdout.strip()).exists():
+            return res.stdout.strip()
+    return None
+
+
+def make_vertical(src: Path, caption: str | None = None, font: str | None = None,
+                  dst: Path | None = None) -> Path | None:
+    """1080x1920: оригинал по центру, сзади размытая копия, сверху подпись.
+
+    Возвращает путь к готовому файлу (по умолчанию *_v.mp4) или None при ошибке.
+    """
     if not shutil.which("ffmpeg"):
         log("[vertical] ffmpeg не найден")
-        return
-    dst = src.with_name(src.stem + "_v.mp4")
+        return None
+    dst = dst or src.with_name(src.stem + "_v.mp4")
     vf = ("[0:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,"
           "boxblur=20:5[bg];[0:v]scale=1080:1920:force_original_aspect_ratio=decrease[fg];"
           "[bg][fg]overlay=(W-w)/2:(H-h)/2,setsar=1")
-    cmd = ["ffmpeg", "-y", "-loglevel", "error", "-i", str(src), "-filter_complex", vf,
-           "-t", "60", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
-           "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", str(dst)]
-    res = subprocess.run(cmd, capture_output=True, text=True)
+    if caption:
+        fontfile = find_font(font)
+        if fontfile:
+            # ffmpeg запускается из папки результата, поэтому шрифт и текст передаются
+            # короткими относительными именами: так не нужно экранировать пути (Windows, пробелы)
+            import textwrap
+            local_font = dst.parent / "caption_font.ttf"
+            if not local_font.exists():
+                shutil.copyfile(fontfile, local_font)
+            # каждая строка рисуется отдельным drawtext: так она центрируется в любой версии ffmpeg
+            for i, line in enumerate(textwrap.wrap(caption, 20)[:3]):
+                text_file = dst.parent / f"{dst.stem}.caption{i}.txt"
+                text_file.write_text(line, encoding="utf-8")
+                vf += (f",drawtext=fontfile={local_font.name}:textfile={text_file.name}"
+                       ":fontsize=68:fontcolor=white:borderw=4:bordercolor=black"
+                       ":box=1:boxcolor=black@0.55:boxborderw=18"
+                       f":x=(w-text_w)/2:y={170 + i * 100}")
+        else:
+            log("[vertical] шрифт не найден, подпись пропущена (укажите font_file в config.json)")
+    cmd = ["ffmpeg", "-y", "-loglevel", "error", "-i", str(src.resolve()), "-filter_complex", vf,
+           "-t", "60", "-shortest", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
+           "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", str(dst.resolve())]
+    res = subprocess.run(cmd, capture_output=True, text=True, cwd=dst.parent)
     if res.returncode != 0:
         log(f"[vertical] {src.name}: {res.stderr.strip()[-300:]}")
+        return None
+    return dst
 
 
 # --------------------------------------------------------------------------- #

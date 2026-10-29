@@ -92,5 +92,24 @@
         "caught on camera"
       ]
     }
+  },
+  "publish": {
+    "timezone": "America/New_York",
+    "slots": [
+      "12:00",
+      "17:00",
+      "21:00"
+    ],
+    "privacy": "public",
+    "category_id": "23",
+    "default_tags": [
+      "funny",
+      "fails",
+      "shorts",
+      "comedy",
+      "lol"
+    ],
+    "font_file": "",
+    "claude_model": "claude-opus-5-5"
   }
 }
