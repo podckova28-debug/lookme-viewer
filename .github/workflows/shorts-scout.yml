@@ -1,0 +1,44 @@
+name: shorts-scout daily report
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r shorts-scout/requirements.txt
+
+      - name: Restore seen-state cache
+        uses: actions/cache@v4
+        with:
+          path: shorts-scout/state
+          key: shorts-scout-state-${{ github.run_id }}
+          restore-keys: shorts-scout-state-
+
+      - name: Collect candidates
+        env:
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: python3 shorts-scout/scout.py
+
+      - name: Commit report
+        run: |
+          git config user.name "shorts-scout"
+          git config user.email "actions@users.noreply.github.com"
+          git add shorts-scout/reports
+          git diff --cached --quiet || git commit -m "shorts-scout: report $(date -u +%F)"
+          git push

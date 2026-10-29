@@ -1,0 +1,4 @@
+downloads/
+state/
+__pycache__/
+.env

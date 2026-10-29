@@ -1,0 +1,33 @@
+{
+  "top_n": 15,
+  "max_duration_s": 60,
+  "reddit": {
+    "period": "day",
+    "limit_per_sub": 50,
+    "reference_score": 20000,
+    "subreddits": [
+      "funny",
+      "Unexpected",
+      "ContagiousLaughter",
+      "WatchPeopleDieInside",
+      "instant_regret",
+      "AnimalsBeingDerps",
+      "holdmybeer",
+      "therewasanattempt",
+      "PerfectTiming",
+      "KidsAreFuckingStupid"
+    ]
+  },
+  "youtube": {
+    "days_back": 2,
+    "limit_per_query": 25,
+    "reference_vph": 20000,
+    "queries": [
+      "funny fails #shorts",
+      "try not to laugh #shorts",
+      "unexpected moment caught on camera",
+      "funny animals #shorts",
+      "instant regret"
+    ]
+  }
+}
