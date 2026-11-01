@@ -486,9 +486,17 @@ def freshness(published: Any) -> float:
     return 0.25
 
 
+def is_agency(item: Item, cfg: dict[str, Any]) -> bool:
+    """Ролик агентства, которое владеет правами на видео (WooGlobe, ViralHog и т. п.)."""
+    import re
+    norm = lambda t: re.sub(r"[^a-z0-9]", "", str(t).lower())
+    hay = norm(item.get("author", "")) + " " + norm(item.get("title", ""))
+    return any(norm(a) and norm(a) in hay for a in cfg.get("blocked_authors", []))
+
+
 def rank(items: list[Item], cfg: dict[str, Any], seen: dict[str, str]) -> list[Item]:
     unique = {it["id"]: it for it in items}          # один ролик мог прийти из двух запросов
-    fresh = [it for it in unique.values() if it["id"] not in seen]
+    fresh = [it for it in unique.values() if it["id"] not in seen and not is_agency(it, cfg)]
     for it in fresh:
         it["heat"] = heat(it, cfg)
     fresh.sort(key=lambda it: it["heat"], reverse=True)
@@ -508,6 +516,28 @@ def rank(items: list[Item], cfg: dict[str, Any], seen: dict[str, str]) -> list[I
 # --------------------------------------------------------------------------- #
 # report
 # --------------------------------------------------------------------------- #
+def screen(candidates: list[Item], day: str, want: int) -> list[Item]:
+    """Скачивает кандидатов по порядку и оставляет только ролики без водяных знаков в углах."""
+    import edit
+    clean: list[Item] = []
+    out_dir = DOWNLOADS_DIR / day / "screen"
+    for it in candidates:
+        if len(clean) >= want:
+            break
+        target = out_dir / f"{re.sub(r'[^A-Za-z0-9_-]', '_', it['id'])}.mp4"
+        if not download_one(it, target):
+            continue
+        logo = edit.find_logo(target)
+        if logo:
+            log(f"[screen] {it['id']}: знак в углу ({logo['corner']}: «{logo['text']}»), пропускаю")
+            continue
+        it["file"] = str(target)
+        it["logo_checked"] = True
+        clean.append(it)
+    log(f"[screen] без знаков: {len(clean)} из {len(candidates)} проверенных")
+    return clean
+
+
 def write_report(top: list[Item], day: str) -> Path:
     REPORTS_DIR.mkdir(parents=True, exist_ok=True)
     save_json(REPORTS_DIR / f"{day}.json", top)
@@ -633,6 +663,8 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--vertical", action="store_true", help="вместе с --download: привести к 9:16")
     ap.add_argument("--no-mark-seen", action="store_true", help="не запоминать показанные ролики")
     ap.add_argument("--only", help="запустить только перечисленные источники, через запятую")
+    ap.add_argument("--screen", action="store_true",
+                    help="скачать кандидатов и оставить только ролики без водяных знаков (нужен rapidocr)")
     ap.add_argument("--input-json", type=Path, help="вместо API взять список из JSON (для отладки)")
     args = ap.parse_args(argv)
 
@@ -652,7 +684,11 @@ def main(argv: list[str] | None = None) -> int:
     else:
         items = collect(cfg)
 
-    top = rank(items, cfg, seen)
+    if args.screen:
+        pool_cfg = {**cfg, "top_n": cfg.get("top_n", 15) * 3, "max_per_source": cfg.get("max_per_source", 6) * 3}
+        top = screen(rank(items, pool_cfg, seen), day, cfg.get("top_n", 15))
+    else:
+        top = rank(items, cfg, seen)
     if not top:
         log("Кандидатов нет: проверьте ключи API и config.json")
         return 1

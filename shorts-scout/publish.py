@@ -292,6 +292,7 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--now", action="store_true", help="публиковать сразу, без расписания")
     ap.add_argument("--no-claude", action="store_true", help="не звать Claude, только шаблон")
     ap.add_argument("--no-subtitles", action="store_true", help="не распознавать речь для субтитров")
+    ap.add_argument("--allow-logo", action="store_true", help="не проверять ролик на водяные знаки")
     ap.add_argument("--captions", type=Path,
                     help="JSON с ручными текстами: {\"номер\": {\"title\", \"hook\", \"punchline\", \"subtitles\"}}")
     args = ap.parse_args(argv)
@@ -330,6 +331,14 @@ def main(argv: list[str] | None = None) -> int:
         raw = out_dir / f"{stem}_src.mp4"
         if not scout.download_one(it, raw):
             continue
+        if scout.is_agency(it, scout.load_json(scout.CONFIG_PATH, {})):
+            log(f"[skip] №{n}: ролик агентства ({it.get('author')}), не публикуем")
+            continue
+        if not args.allow_logo:
+            logo = edit.find_logo(raw)
+            if logo:
+                log(f"[skip] №{n}: в углу водяной знак «{logo['text']}» ({logo['corner']}), берите другой ролик")
+                continue
         override = overrides.get(str(n), {})
         frames = edit.extract_frames(raw, out_dir / ".frames") if not args.no_claude else []
         meta = build_metadata(it, cfg, use_claude=not args.no_claude, frames=frames, override=override)

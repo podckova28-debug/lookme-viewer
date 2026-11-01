@@ -2,6 +2,30 @@
   "top_n": 20,
   "max_per_source": 6,
   "max_duration_s": 60,
+  "blocked_authors": [
+    "WooGlobe",
+    "ViralHog",
+    "Jukin",
+    "JukinVideo",
+    "FailArmy",
+    "Storyful",
+    "Newsflare",
+    "Caters",
+    "SWNS",
+    "Kennedy News",
+    "Heartsome",
+    "HeartBomb",
+    "Rumble",
+    "Collab Clips",
+    "ViralVideoUK",
+    "LADbible",
+    "UNILAD",
+    "Reuters",
+    "AFV",
+    "America's Funniest Home Videos",
+    "People Are Awesome",
+    "The Pet Collective"
+  ],
   "sources": {
     "reddit": {
       "enabled": true,
@@ -42,7 +66,7 @@
         "funnyvideos",
         "funny_videos",
         "fails",
-        "failarmy"
+        "funnyanimals"
       ]
     },
     "dailymotion": {
@@ -60,7 +84,7 @@
       ]
     },
     "coub": {
-      "enabled": true,
+      "enabled": false,
       "reference": 3000,
       "days_back": 2,
       "pages": 2,

@@ -258,3 +258,103 @@ def render_short(src: Path, dst: Path, *, hook: str = "", punchline: str = "", s
         raise RuntimeError(f"ffmpeg: {res.stderr.strip()[-500:]}")
     return {"file": str(dst), "duration": round(dur, 2), "subtitle_chunks": len(chunks),
             "size_mb": round(dst.stat().st_size / 1024 / 1024, 2)}
+
+
+# --------------------------------------------------------------------------- #
+# watermark / logo detection
+# --------------------------------------------------------------------------- #
+def _frames(src: Path, start: float, length: float, count: int, width: int) -> "Any":
+    """Кадры отрезка ролика как массив (n, h, w, 3) uint8."""
+    import numpy as np
+    info = probe(src)
+    h = int(round(info["height"] * width / info["width"] / 2) * 2)
+    fps = max(count / max(length, 0.5), 0.2)
+    res = subprocess.run(["ffmpeg", "-v", "error", "-ss", f"{start:.2f}", "-t", f"{length:.2f}", "-i", str(src),
+                          "-vf", f"fps={fps:.4f},scale={width}:{h},format=rgb24", "-f", "rawvideo", "-"],
+                         capture_output=True)
+    data = np.frombuffer(res.stdout, np.uint8)
+    n = data.size // (width * h * 3)
+    return data[: n * width * h * 3].reshape(n, h, width, 3)
+
+
+WATERMARK_WORDS = (
+    "tiktok", "instagram", "youtube", "coub", "wooglobe", "woo globe", "viralhog", "viral hog", "jukin", "failarmy",
+    "fail army", "storyful", "newsflare", "caters", "swns", "heartsome", "heartbomb", "rumble", "collab", "ladbible",
+    "unilad", "9gag", "memes", "subscribe", "follow", ".com", ".tv", "reels", "kennedy",
+)
+
+_ocr_engine = None
+
+
+def looks_branded(text: str) -> bool:
+    """Похожа ли надпись на знак площадки, агентства или ник. Терпима к ошибкам распознавания."""
+    import difflib
+    import re
+    raw = text.strip().lower()
+    if raw.startswith("@") or any(w in raw for w in WATERMARK_WORDS):
+        return True
+    brands = [re.sub(r"[^a-z0-9]", "", w) for w in WATERMARK_WORDS]
+    brands = [b for b in brands if len(b) >= 4]
+    for token in re.findall(r"[a-z0-9]+", raw) + [re.sub(r"[^a-z0-9]", "", raw)]:
+        if len(token) < 4:
+            continue
+        for b in brands:
+            if difflib.SequenceMatcher(None, token, b).ratio() >= 0.78:
+                return True
+            if len(token) >= 5 and token in b:      # кусок названия: GLOBE, HEART
+                return True
+    return False
+
+
+def find_logo(src: Path, frames_per_half: int = 9, width: int = 720) -> dict[str, Any] | None:
+    """Ищет водяной знак или ник в углах кадра. None, если углы чистые.
+
+    Для каждой половины ролика строится медианный кадр: движущаяся картинка на нём
+    размывается, а наложенная поверх надпись остаётся резкой. Каждый угол медианы
+    вырезается, увеличивается вдвое и распознаётся (RapidOCR). Знаком считается
+    надпись, похожая на бренд или @ник, или надпись, которая не двигается, пока
+    движется всё вокруг. Подписи по центру и мемные заголовки не считаются знаком.
+    """
+    import numpy as np
+    global _ocr_engine
+    try:
+        from rapidocr_onnxruntime import RapidOCR
+    except ImportError:
+        log("[logo] rapidocr_onnxruntime не установлен, проверка логотипов пропущена")
+        return None
+    if _ocr_engine is None:
+        _ocr_engine = RapidOCR()
+    dur = probe(src)["duration"]
+    for half in range(2):
+        f = _frames(src, dur * half / 2, dur / 2, frames_per_half, width)
+        if f.shape[0] < 3:
+            continue
+        median = np.median(f, axis=0).astype(np.uint8)
+        std = f.astype(np.float32).mean(axis=3).std(axis=0)
+        h, w = median.shape[:2]
+        ch, cw = int(h * 0.36), int(w * 0.42)
+        for vert in ("верх", "низ"):
+            for horiz in ("лево", "право"):
+                y_off = 0 if vert == "верх" else h - ch
+                x_off = 0 if horiz == "лево" else w - cw
+                crop = median[y_off:y_off + ch, x_off:x_off + cw]
+                crop = np.repeat(np.repeat(crop, 2, axis=0), 2, axis=1)   # мелкие знаки читаются лучше
+                result, _ = _ocr_engine(crop)
+                for box, text, score in result or []:
+                    clean = text.strip()
+                    if float(score) < 0.5 or len(clean) < 2:
+                        continue
+                    xs = [pt[0] / 2 + x_off for pt in box]
+                    ys = [pt[1] / 2 + y_off for pt in box]
+                    x0, x1, y0, y1 = max(min(xs), 0), min(max(xs), w), max(min(ys), 0), min(max(ys), h)
+                    if (x1 - x0) / w > 0.6:          # широкая строка: заголовок или субтитр, а не знак
+                        continue
+                    branded = looks_branded(clean)
+                    inner = std[int(y0):int(y1) + 1, int(x0):int(x1) + 1]
+                    pad = 12
+                    ring = std[max(int(y0) - pad, 0):int(y1) + pad, max(int(x0) - pad, 0):int(x1) + pad]
+                    static_over_motion = inner.size > 0 and float(ring.mean()) > 9 and \
+                        float(inner.mean()) < 0.6 * float(ring.mean())
+                    if branded or (static_over_motion and len(clean) >= 3):
+                        return {"corner": f"{vert}-{horiz}", "text": clean, "branded": bool(branded), "half": half}
+    return None
