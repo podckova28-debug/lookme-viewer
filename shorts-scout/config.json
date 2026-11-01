@@ -37,28 +37,32 @@
     "telegram": {
       "enabled": true,
       "reference": 1000,
-      "days_back": 7,
+      "days_back": 2,
       "channels": [
         "funnyvideos",
         "funny_videos",
-        "fails"
+        "fails",
+        "failarmy"
       ]
     },
     "dailymotion": {
       "enabled": true,
       "reference": 300,
-      "days_back": 3,
+      "days_back": 2,
       "limit_per_query": 30,
       "queries": [
         "funny fails",
         "try not to laugh",
-        "funny animals"
+        "funny animals",
+        "funny kids",
+        "funny dog",
+        "funny cat"
       ]
     },
     "coub": {
       "enabled": true,
       "reference": 3000,
-      "days_back": 7,
+      "days_back": 2,
       "pages": 2,
       "tags": [
         "funny",

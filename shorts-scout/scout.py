@@ -470,7 +470,20 @@ def heat(item: Item, cfg: dict[str, Any]) -> float:
         value *= 0.85         # коротко для удержания
     if item.get("width") and item.get("height") and item["height"] >= item["width"]:
         value = min(value * 1.15, 100.0)  # уже вертикальный
+    value *= freshness(item.get("published"))
     return round(value, 1)
+
+
+def freshness(published: Any) -> float:
+    """Чем свежее ролик, тем выше: до суток x1, до двух x0.75, до трёх x0.5, старше x0.25."""
+    age = hours_since(published)
+    if age <= 24:
+        return 1.0
+    if age <= 48:
+        return 0.75
+    if age <= 72:
+        return 0.5
+    return 0.25
 
 
 def rank(items: list[Item], cfg: dict[str, Any], seen: dict[str, str]) -> list[Item]:
@@ -500,12 +513,13 @@ def write_report(top: list[Item], day: str) -> Path:
     save_json(REPORTS_DIR / f"{day}.json", top)
     md_path = REPORTS_DIR / f"{day}.md"
     lines = [f"# Кандидаты на Shorts, {day}", "",
-             "| # | heat | источник | длит. | метрика | название | ссылка |",
-             "|---|------|----------|-------|---------|----------|--------|"]
+             "| # | heat | источник | возраст | длит. | метрика | название | ссылка |",
+             "|---|------|----------|---------|-------|---------|----------|--------|"]
     for n, it in enumerate(top, 1):
         dur = f"{int(it['duration_s'])}s" if it.get("duration_s") else "?"
         title = it["title"].replace("|", "¦").replace("\n", " ")[:80]
-        lines.append(f"| {n} | {it['heat']} | {it['community']} | {dur} | {it['metric']} | {title} | [открыть]({it['url']}) |")
+        age = f"{int(hours_since(it.get('published')))} ч"
+        lines.append(f"| {n} | {it['heat']} | {it['community']} | {age} | {dur} | {it['metric']} | {title} | [открыть]({it['url']}) |")
     lines += ["", "Автор каждого ролика указан в JSON (поле `author`) для подписи в описании Shorts.", ""]
     md_path.write_text("\n".join(lines), encoding="utf-8")
     return md_path

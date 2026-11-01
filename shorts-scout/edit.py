@@ -5,6 +5,7 @@ edit.py: превращает исходный ролик в переработ�
   * вертикаль 1080x1920 с размытым фоном из того же кадра;
   * заголовок-хук сверху на всё время ролика;
   * субтитры по речи (faster-whisper), только если речь распознана уверенно;
+    чужой язык переводится на английский, мат закрывается звёздочками;
   * реакция-панчлайн крупно по центру в последние секунды;
   * подпись канала внизу и полоса прогресса;
   * громкость выровнена под стандарт площадок (-14 LUFS).
@@ -66,9 +67,45 @@ def extract_frames(src: Path, out_dir: Path, count: int = 4, width: int = 512) -
 # --------------------------------------------------------------------------- #
 # speech -> subtitle chunks
 # --------------------------------------------------------------------------- #
+PROFANITY = {
+    "fuck", "fucking", "fucked", "fucker", "motherfucker", "shit", "shitty", "bullshit", "bitch",
+    "bitches", "asshole", "dick", "pussy", "cunt", "bastard", "damn", "goddamn", "nigga", "slut", "whore",
+}
+
+
+def censor(text: str) -> str:
+    """Мат в субтитрах режет монетизацию: оставляем первую букву, остальное звёздочками."""
+    import re
+
+    def repl(m: "re.Match[str]") -> str:
+        w = m.group(0)
+        return w[0] + "*" * (len(w) - 1) if w.lower() in PROFANITY else w
+    return re.sub(r"[A-Za-z]+", repl, text)
+
+
+def _split_even(start: float, end: float, text: str, max_words: int = 3) -> list[dict[str, Any]]:
+    """Делит фразу на куски по 1-3 слова и раздаёт им время фразы пропорционально длине."""
+    words = text.split()
+    if not words:
+        return []
+    groups = [words[i:i + max_words] for i in range(0, len(words), max_words)]
+    total = sum(len(" ".join(g)) for g in groups)
+    out, t = [], start
+    for g in groups:
+        seg_text = " ".join(g)
+        dur = (end - start) * len(seg_text) / total
+        out.append({"start": t, "end": t + dur, "text": seg_text})
+        t += dur
+    return out
+
+
 def transcribe(src: Path, duration: float, model_size: str = "base",
                min_logprob: float = -1.0, max_no_speech: float = 0.6) -> list[dict[str, Any]]:
-    """Короткие фрагменты по 1-3 слова с таймингом. Пусто, если речи нет или она неразборчива."""
+    """Короткие фрагменты по 1-3 слова с таймингом, всегда на английском.
+
+    Английская речь идёт пословно, речь на другом языке переводится на английский
+    (перевод Whisper). Пусто, если речи нет или она неразборчива.
+    """
     try:
         import numpy as np
         from faster_whisper import WhisperModel
@@ -83,10 +120,19 @@ def transcribe(src: Path, duration: float, model_size: str = "base",
     global _whisper_model
     if _whisper_model is None:
         _whisper_model = WhisperModel(model_size, device="cpu", compute_type="int8")
-    segments, _ = _whisper_model.transcribe(audio, word_timestamps=True, vad_filter=True)
+    segments, info = _whisper_model.transcribe(audio, word_timestamps=True, vad_filter=True)
+    segments = list(segments)
+    foreign = info.language != "en" and info.language_probability >= 0.5
+    if foreign:
+        log(f"[subs] речь на языке {info.language}, делаю английский перевод")
+        segments, _ = _whisper_model.transcribe(audio, task="translate", vad_filter=True)
+        segments = list(segments)
     chunks: list[dict[str, Any]] = []
     for seg in segments:
         if seg.avg_logprob < min_logprob or seg.no_speech_prob > max_no_speech:
+            continue
+        if foreign:      # у перевода нет точных таймингов слов: делим фразу равномерно
+            chunks += _split_even(seg.start, seg.end, seg.text.strip())
             continue
         words = [w for w in (seg.words or []) if w.word.strip()]
         group: list[Any] = []
@@ -99,6 +145,8 @@ def transcribe(src: Path, duration: float, model_size: str = "base",
         if group:
             chunks.append({"start": group[0].start, "end": group[-1].end,
                            "text": " ".join(x.word.strip() for x in group)})
+    for c in chunks:
+        c["text"] = censor(c["text"])
     return chunks
 
 
@@ -145,13 +193,15 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         punch_start = max(duration - 2.5, duration * 0.55)
         pop = r"{\fad(80,0)\fscx70\fscy70\t(0,160,\fscx112\fscy112)\t(160,300,\fscx100\fscy100)}"
         events.append(f"Dialogue: 2,{_ts(punch_start)},{end},Punch,,0,0,0,,{pop}{_esc(punchline.upper())}")
-    for c in chunks or []:
+    chunks = chunks or []
+    for i, c in enumerate(chunks):
         if c["start"] >= punch_start:      # в финале говорит панчлайн, субтитры не спорят с ним
             break
-        stop = min(c["end"] + 0.15, punch_start, duration)
+        next_start = chunks[i + 1]["start"] if i + 1 < len(chunks) else duration
+        stop = min(c["end"] + 0.15, next_start, punch_start, duration)   # на экране всегда один фрагмент
         if stop - c["start"] < 0.2:
             continue
-        text = c["text"].strip().rstrip(",;:").upper()   # запятая в конце фрагмента выглядит как ошибка
+        text = censor(c["text"]).strip().rstrip(",;:").upper()   # запятая в конце фрагмента выглядит как ошибка
         events.append(f"Dialogue: 1,{_ts(c['start'])},{_ts(stop)},Sub,,0,0,0,,"
                       f"{{\\fad(40,0)}}{_esc(text)}")
     if handle:
@@ -164,13 +214,20 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 # --------------------------------------------------------------------------- #
 def render_short(src: Path, dst: Path, *, hook: str = "", punchline: str = "", subtitles: bool = True,
                  handle: str = "", bar_color: str = "0xFFD700", whisper_model: str = "base",
-                 max_bitrate_k: int = 2200) -> dict[str, Any]:
-    """Собирает переработанный Shorts. Возвращает сведения о результате (длительность, субтитры)."""
+                 max_bitrate_k: int = 2200, manual_subs: list[dict[str, Any]] | None = None) -> dict[str, Any]:
+    """Собирает переработанный Shorts. Возвращает сведения о результате (длительность, субтитры).
+
+    manual_subs: свои субтитры [{"start", "end", "text"}] вместо распознавания речи;
+    каждая фраза делится на куски по 1-3 слова.
+    """
     if not shutil.which("ffmpeg"):
         raise RuntimeError("ffmpeg не найден")
     info = probe(src)
     dur = info["duration"]
-    chunks = transcribe(src, dur, whisper_model) if (subtitles and info["has_audio"]) else []
+    if manual_subs:
+        chunks = [c for ph in manual_subs for c in _split_even(float(ph["start"]), float(ph["end"]), censor(ph["text"]))]
+    else:
+        chunks = transcribe(src, dur, whisper_model) if (subtitles and info["has_audio"]) else []
 
     work = dst.parent
     work.mkdir(parents=True, exist_ok=True)
