@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__fd2c6c8e-0fce-4000-b20c-7d4e2da4b01c",
+      "mcp__fd2c6c8e-0fce-4000-b20c-7d4e2da4b01c__*",
+      "Bash",
+      "Artifact",
+      "SendUserFile",
+      "WebFetch",
+      "WebSearch",
+      "Read",
+      "Edit",
+      "Write"
+    ]
+  }
+}
