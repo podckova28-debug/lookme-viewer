@@ -62,13 +62,15 @@ DEFAULT_PUBLISH_CFG: dict[str, Any] = {
 META_SCHEMA: dict[str, Any] = {
     "type": "object",
     "properties": {
+        "what_happens": {"type": "string", "description": "What visibly happens in the frames, start to end, one or two sentences"},
+        "has_payoff": {"type": "boolean", "description": "True only if the frames show a funny moment: a fail, a surprise, a reaction. False if nothing happens or the joke needs context the frames do not show"},
         "title": {"type": "string", "description": "YouTube Shorts title, English, max 70 characters, no hashtags"},
         "hook": {"type": "string", "description": "On-screen hook shown on top for the whole clip, English, 3-7 words"},
         "punchline": {"type": "string", "description": "Big reaction text for the last seconds, English, 2-5 words"},
         "description": {"type": "string", "description": "One or two short English sentences about the clip"},
         "tags": {"type": "array", "items": {"type": "string"}, "description": "5-10 English search tags"},
     },
-    "required": ["title", "hook", "punchline", "description", "tags"],
+    "required": ["what_happens", "has_payoff", "title", "hook", "punchline", "description", "tags"],
     "additionalProperties": False,
 }
 
@@ -82,7 +84,10 @@ Source title or caption: {title}
 Clip length: {duration}
 
 Return:
-- title: a curiosity-driven title, max 70 characters, no hashtags, no clickbait lies about what happens
+- what_happens: describe only what you can see in the frames, start to end
+- has_payoff: true only if the frames show the funny moment itself; false if nothing happens, if it is merely cute,
+  or if the joke depends on something the frames do not show
+- title: a curiosity-driven title, max 70 characters, no hashtags, never claim anything the frames do not show
 - hook: on-screen text shown on top for the whole clip, 3-7 words, makes people keep watching without spoiling the ending
 - punchline: a big reaction shown over the last seconds, 2-5 words, the channel's own joke about what happened
 - description: one or two short sentences, no hashtags, no links
@@ -202,7 +207,8 @@ def build_metadata(it: Item, cfg: dict[str, Any], use_claude: bool, frames: list
     while len(",".join(tags)) > 450:          # у YouTube лимит 500 символов на все теги
         tags.pop()
     return {"title": title[:100], "hook": meta["hook"].strip(), "punchline": meta.get("punchline", "").strip(),
-            "description": description, "tags": tags, "generator": meta["generator"]}
+            "description": description, "tags": tags, "generator": meta["generator"],
+            "what_happens": meta.get("what_happens", ""), "has_payoff": meta.get("has_payoff", True)}
 
 
 # --------------------------------------------------------------------------- #
@@ -340,8 +346,11 @@ def main(argv: list[str] | None = None) -> int:
                 log(f"[skip] №{n}: в углу водяной знак «{logo['text']}» ({logo['corner']}), берите другой ролик")
                 continue
         override = overrides.get(str(n), {})
-        frames = edit.extract_frames(raw, out_dir / ".frames") if not args.no_claude else []
+        frames = edit.extract_frames(raw, out_dir / ".frames", count=8) if not args.no_claude else []
         meta = build_metadata(it, cfg, use_claude=not args.no_claude, frames=frames, override=override)
+        if not meta["has_payoff"]:
+            log(f"[skip] №{n}: в кадре нет смешного момента ({meta['what_happens']}), берите другой ролик")
+            continue
         want_subs = cfg["subtitles"] and not args.no_subtitles and override.get("subtitles", True)
         try:
             result = edit.render_short(raw, out_dir / f"{stem}_short.mp4", hook=meta["hook"],
