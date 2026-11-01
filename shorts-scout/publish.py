@@ -356,7 +356,7 @@ def main(argv: list[str] | None = None) -> int:
             result = edit.render_short(raw, out_dir / f"{stem}_short.mp4", hook=meta["hook"],
                                        punchline=meta["punchline"], subtitles=want_subs,
                                        handle=cfg["channel_handle"], whisper_model=cfg["whisper_model"],
-                                       manual_subs=override.get("subs"))
+                                       manual_subs=override.get("subs"), crop=override.get("crop"))
         except (RuntimeError, ValueError) as exc:
             log(f"[edit] №{n}: {exc}")
             continue

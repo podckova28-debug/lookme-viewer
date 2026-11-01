@@ -214,11 +214,14 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 # --------------------------------------------------------------------------- #
 def render_short(src: Path, dst: Path, *, hook: str = "", punchline: str = "", subtitles: bool = True,
                  handle: str = "", bar_color: str = "0xFFD700", whisper_model: str = "base",
-                 max_bitrate_k: int = 2200, manual_subs: list[dict[str, Any]] | None = None) -> dict[str, Any]:
+                 max_bitrate_k: int = 2200, manual_subs: list[dict[str, Any]] | None = None,
+                 crop: list[float] | None = None) -> dict[str, Any]:
     """Собирает переработанный Shorts. Возвращает сведения о результате (длительность, субтитры).
 
     manual_subs: свои субтитры [{"start", "end", "text"}] вместо распознавания речи;
     каждая фраза делится на куски по 1-3 слова.
+    crop: [x, y, w, h] в долях кадра: увеличить область с действием, например у широкого
+    горизонтального видео, где главное происходит в одной его части.
     """
     if not shutil.which("ffmpeg"):
         raise RuntimeError("ffmpeg не найден")
@@ -239,9 +242,14 @@ def render_short(src: Path, dst: Path, *, hook: str = "", punchline: str = "", s
     ass_path.write_text(build_ass(dur, hook, punchline, chunks, handle), encoding="utf-8")
 
     # ffmpeg запускается из папки результата: пути в фильтрах короткие и без экранирования
-    vf = ("[0:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,boxblur=24:6,"
+    pre = ""
+    if crop:
+        x, y, w, h = crop
+        pre = f"crop=trunc(iw*{w}/2)*2:trunc(ih*{h}/2)*2:trunc(iw*{x}):trunc(ih*{y}),"
+    vf = (f"[0:v]{pre}split[c1][c2];"
+          "[c1]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,boxblur=24:6,"
           "eq=brightness=-0.08[bg];"
-          "[0:v]scale=1080:1920:force_original_aspect_ratio=decrease[fg];"
+          "[c2]scale=1080:1920:force_original_aspect_ratio=decrease[fg];"
           "[bg][fg]overlay=(W-w)/2:(H-h)/2,setsar=1[base];"
           f"color=c={bar_color}:s=1080x12:d={dur:.3f}[bar];"
           f"[base][bar]overlay=x='-w+w*t/{dur:.3f}':y=H-h:shortest=1[barred];"
