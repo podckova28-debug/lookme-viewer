@@ -87,7 +87,9 @@ Return:
 - what_happens: describe only what you can see in the frames, start to end
 - has_payoff: true only if the frames show the funny moment itself; false if nothing happens, if it is merely cute,
   or if the joke depends on something the frames do not show
-- title: a curiosity-driven title, max 70 characters, no hashtags, never claim anything the frames do not show
+- title: a curiosity-driven title, ideally under 50 characters with the subject in the first 40 (the mobile
+  feed cuts there), no hashtags, never claim anything the frames do not show, and do not reuse the hook's words:
+  the title sits under the video and the hook sits on it, so together they should say two different things
 - hook: on-screen text shown on top for the whole clip, 3-7 words, makes people keep watching without spoiling the ending
 - punchline: a big reaction shown over the last seconds, 2-5 words, the channel's own joke about what happened
 - description: one or two short sentences, no hashtags, no links
@@ -177,6 +179,21 @@ def claude_metadata(it: Item, cfg: dict[str, Any], frames: list[Path] | None = N
     data["tags"] = [t.strip().lower() for t in data.get("tags", []) if t.strip()][:10]
     data["generator"] = response.model
     return data
+
+
+def lint_title(title: str, hook: str) -> list[str]:
+    """Замечания линтера yt-package/title.py из .claude/skills: обрезка в ленте и повтор слов хука."""
+    import importlib.util
+    path = HERE.parent / ".claude" / "skills" / "yt-package" / "title.py"
+    if not path.exists():
+        return []
+    spec = importlib.util.spec_from_file_location("yt_title", path)
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    clean = re.sub(r"\s*#\w+", "", title).strip()
+    res = mod.check(clean, hook or None)
+    # «нет цифры» и «слов на превью» рассчитаны на обучающие видео и обложки, для приколов не применяем
+    return [msg for kind, msg in res["issues"] if kind in ("length", "mobile", "duplicate", "shouting", "vague")]
 
 
 def build_metadata(it: Item, cfg: dict[str, Any], use_claude: bool, frames: list[Path] | None = None,
@@ -351,6 +368,8 @@ def main(argv: list[str] | None = None) -> int:
         if not meta["has_payoff"]:
             log(f"[skip] №{n}: в кадре нет смешного момента ({meta['what_happens']}), берите другой ролик")
             continue
+        for issue in lint_title(meta["title"], meta["hook"]):
+            log(f"[title] №{n}: {issue}")
         want_subs = cfg["subtitles"] and not args.no_subtitles and override.get("subtitles", True)
         try:
             result = edit.render_short(raw, out_dir / f"{stem}_short.mp4", hook=meta["hook"],
