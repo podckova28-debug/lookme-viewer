@@ -43,7 +43,8 @@ ad revenue; subtitles mask them with asterisks).
 
 Vertical 1080x1920, 6 to 40 seconds, original footage centred over a blurred copy of itself.
 Hook on top for the whole clip, English subtitles when someone speaks (translated if needed),
-punchline over the ending, often after a slow-motion replay of the key moment, yellow progress bar.
+punchline right after the key moment, yellow progress bar. No slow-motion replays: the owner
+finds them dull.
 No intro, no outro, no subscribe pitch inside the video. No agency clips (WooGlobe, ViralHog,
 Jukin, AFV itself and similar) and nothing with someone else's watermark.
 Posting slots: 12:00, 17:00 and 21:00 New York time.

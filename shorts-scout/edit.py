@@ -165,7 +165,8 @@ def _esc(text: str) -> str:
 
 
 def build_ass(duration: float, hook: str = "", punchline: str = "",
-              chunks: list[dict[str, Any]] | None = None, handle: str = "") -> str:
+              chunks: list[dict[str, Any]] | None = None, handle: str = "",
+              punch_at: float | None = None) -> str:
     # цвета ASS: &HAABBGGRR
     header = f"""[Script Info]
 ScriptType: v4.00+
@@ -190,7 +191,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         events.append(f"Dialogue: 0,{_ts(0)},{end},Hook,,0,0,0,,{{\\fad(150,0)}}{_esc(hook)}")
     punch_start = duration
     if punchline and duration >= 3:
-        punch_start = max(duration - 2.5, duration * 0.55)
+        punch_start = punch_at if punch_at is not None else max(duration - 2.5, duration * 0.55)
         pop = r"{\fad(80,0)\fscx70\fscy70\t(0,160,\fscx112\fscy112)\t(160,300,\fscx100\fscy100)}"
         events.append(f"Dialogue: 2,{_ts(punch_start)},{end},Punch,,0,0,0,,{pop}{_esc(punchline.upper())}")
     chunks = chunks or []
@@ -242,7 +243,8 @@ def add_replay(src: Path, out: Path, start: float, end: float, slow: float = 2.0
 def render_short(src: Path, dst: Path, *, hook: str = "", punchline: str = "", subtitles: bool = True,
                  handle: str = "", bar_color: str = "0xFFD700", whisper_model: str = "base",
                  max_bitrate_k: int = 2200, manual_subs: list[dict[str, Any]] | None = None,
-                 crop: list[float] | None = None, replay: list[float] | None = None) -> dict[str, Any]:
+                 crop: list[float] | None = None, replay: list[float] | None = None,
+                 punch_at: float | None = None) -> dict[str, Any]:
     """Собирает переработанный Shorts. Возвращает сведения о результате (длительность, субтитры).
 
     manual_subs: свои субтитры [{"start", "end", "text"}] вместо распознавания речи;
@@ -270,7 +272,7 @@ def render_short(src: Path, dst: Path, *, hook: str = "", punchline: str = "", s
     if not (fonts_dir / FONT_FILE.name).exists():
         shutil.copyfile(FONT_FILE, fonts_dir / FONT_FILE.name)
     ass_path = work / f"{dst.stem}.ass"
-    ass_path.write_text(build_ass(dur, hook, punchline, chunks, handle), encoding="utf-8")
+    ass_path.write_text(build_ass(dur, hook, punchline, chunks, handle, punch_at), encoding="utf-8")
 
     # ffmpeg запускается из папки результата: пути в фильтрах короткие и без экранирования
     pre = ""
