@@ -212,19 +212,50 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 # --------------------------------------------------------------------------- #
 # render
 # --------------------------------------------------------------------------- #
+def add_replay(src: Path, out: Path, start: float, end: float, slow: float = 2.0) -> Path:
+    """Склеивает ролик с замедленным повтором отрезка start-end. Возвращает путь к новому файлу."""
+    has_audio = probe(src)["has_audio"]
+    v = (f"[0:v]split[v1][v2];[v1]setpts=PTS-STARTPTS,fps=30[v0];"
+         f"[v2]trim={start}:{end},setpts=(PTS-STARTPTS)*{slow},fps=30[vr];")
+    if has_audio:
+        tempo = []
+        left = slow
+        while left > 2.0:          # atempo принимает 0.5..2, большее замедление делается цепочкой
+            tempo.append("atempo=0.5")
+            left /= 2.0
+        tempo.append(f"atempo={1 / left:.4f}")
+        a = (f"[0:a]asplit[a1][a2];[a1]asetpts=PTS-STARTPTS[a0];"
+             f"[a2]atrim={start}:{end},asetpts=PTS-STARTPTS,{','.join(tempo)}[ar];")
+        graph = v + a + "[v0][a0][vr][ar]concat=n=2:v=1:a=1[v][a]"
+        maps = ["-map", "[v]", "-map", "[a]", "-c:a", "aac", "-b:a", "160k"]
+    else:
+        graph = v + "[v0][vr]concat=n=2:v=1:a=0[v]"
+        maps = ["-map", "[v]"]
+    res = subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(src), "-filter_complex", graph, *maps,
+                          "-c:v", "libx264", "-preset", "veryfast", "-crf", "16", str(out)],
+                         capture_output=True, text=True)
+    if res.returncode != 0:
+        raise RuntimeError(f"replay: {res.stderr.strip()[-300:]}")
+    return out
+
+
 def render_short(src: Path, dst: Path, *, hook: str = "", punchline: str = "", subtitles: bool = True,
                  handle: str = "", bar_color: str = "0xFFD700", whisper_model: str = "base",
                  max_bitrate_k: int = 2200, manual_subs: list[dict[str, Any]] | None = None,
-                 crop: list[float] | None = None) -> dict[str, Any]:
+                 crop: list[float] | None = None, replay: list[float] | None = None) -> dict[str, Any]:
     """Собирает переработанный Shorts. Возвращает сведения о результате (длительность, субтитры).
 
     manual_subs: свои субтитры [{"start", "end", "text"}] вместо распознавания речи;
     каждая фраза делится на куски по 1-3 слова.
     crop: [x, y, w, h] в долях кадра: увеличить область с действием, например у широкого
     горизонтального видео, где главное происходит в одной его части.
+    replay: [начало, конец, замедление]: после ролика повторить этот отрезок замедленно
+    (например [1.6, 3.2, 2] повторит 1,6-3,2 с вдвое медленнее). Панчлайн попадает на повтор.
     """
     if not shutil.which("ffmpeg"):
         raise RuntimeError("ffmpeg не найден")
+    if replay:
+        src = add_replay(src, dst.parent / f"{dst.stem}.replay.mp4", *replay)
     info = probe(src)
     dur = info["duration"]
     if manual_subs:
