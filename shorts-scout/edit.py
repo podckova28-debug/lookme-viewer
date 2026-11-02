@@ -240,22 +240,72 @@ def add_replay(src: Path, out: Path, start: float, end: float, slow: float = 2.0
     return out
 
 
+PIPER_VOICE = Path.home() / ".local" / "share" / "piper" / "en_US-ryan-high.onnx"
+
+
+def add_voiceover(src: Path, out: Path, text: str, start: float = 0.3, duck: float = 0.3,
+                  voice: Path | None = None) -> Path:
+    """Озвучка в начале ролика (Piper, офлайн). Пока она звучит, оригинальный звук приглушается."""
+    import shutil as _sh
+    voice = Path(voice or PIPER_VOICE)
+    if not _sh.which("piper") or not voice.exists():
+        raise RuntimeError("для озвучки нужен Piper: pip install piper-tts и голос в " + str(voice))
+    wav = out.with_suffix(".vo.wav")
+    res = subprocess.run(["piper", "--model", str(voice), "--output_file", str(wav)],
+                         input=text, capture_output=True, text=True)
+    if res.returncode != 0 or not wav.exists():
+        raise RuntimeError(f"piper: {res.stderr.strip()[-300:]}")
+    vo_len = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0",
+                                   str(wav)], capture_output=True, text=True).stdout or 0)
+    end = start + vo_len
+    ms = int(start * 1000)
+    if probe(src)["has_audio"]:
+        graph = (f"[0:a]volume=enable='between(t,{start - 0.2:.2f},{end + 0.2:.2f})':volume={duck}[bg];"
+                 f"[1:a]aresample=48000,adelay={ms}|{ms},volume=1.8[vo];"
+                 "[bg][vo]amix=inputs=2:duration=first:normalize=0[a]")
+    else:
+        graph = f"[1:a]aresample=48000,adelay={ms}|{ms},apad[a]"
+    res = subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(src), "-i", str(wav), "-filter_complex", graph,
+                          "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest",
+                          str(out)], capture_output=True, text=True)
+    if res.returncode != 0:
+        raise RuntimeError(f"voiceover: {res.stderr.strip()[-300:]}")
+    return out
+
+
+def trim(src: Path, out: Path, end: float) -> Path:
+    """Обрезать ролик по времени end (например, убрать заставку платформы в самом конце)."""
+    res = subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(src), "-t", f"{end:.2f}", "-c:v", "libx264",
+                          "-preset", "veryfast", "-crf", "16", "-c:a", "aac", "-b:a", "192k", str(out)],
+                         capture_output=True, text=True)
+    if res.returncode != 0:
+        raise RuntimeError(f"trim: {res.stderr.strip()[-300:]}")
+    return out
+
+
 def render_short(src: Path, dst: Path, *, hook: str = "", punchline: str = "", subtitles: bool = True,
                  handle: str = "", bar_color: str = "0xFFD700", whisper_model: str = "base",
                  max_bitrate_k: int = 2200, manual_subs: list[dict[str, Any]] | None = None,
                  crop: list[float] | None = None, replay: list[float] | None = None,
-                 punch_at: float | None = None) -> dict[str, Any]:
+                 punch_at: float | None = None, voiceover: str | None = None,
+                 trim_end: float | None = None) -> dict[str, Any]:
     """Собирает переработанный Shorts. Возвращает сведения о результате (длительность, субтитры).
 
     manual_subs: свои субтитры [{"start", "end", "text"}] вместо распознавания речи;
     каждая фраза делится на куски по 1-3 слова.
     crop: [x, y, w, h] в долях кадра: увеличить область с действием, например у широкого
     горизонтального видео, где главное происходит в одной его части.
+    voiceover: английский текст, который озвучивается в начале (Piper), оригинал под ним тише.
+    trim_end: обрезать ролик на этой секунде (заставку платформы в конце, не знак автора).
     replay: [начало, конец, замедление]: после ролика повторить этот отрезок замедленно
     (например [1.6, 3.2, 2] повторит 1,6-3,2 с вдвое медленнее). Панчлайн попадает на повтор.
     """
     if not shutil.which("ffmpeg"):
         raise RuntimeError("ffmpeg не найден")
+    if trim_end:
+        src = trim(src, dst.parent / f"{dst.stem}.trim.mp4", trim_end)
+    if voiceover:
+        src = add_voiceover(src, dst.parent / f"{dst.stem}.vo.mp4", voiceover)
     if replay:
         src = add_replay(src, dst.parent / f"{dst.stem}.replay.mp4", *replay)
     info = probe(src)

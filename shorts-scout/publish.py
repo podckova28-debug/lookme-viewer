@@ -376,7 +376,8 @@ def main(argv: list[str] | None = None) -> int:
                                        punchline=meta["punchline"], subtitles=want_subs,
                                        handle=cfg["channel_handle"], whisper_model=cfg["whisper_model"],
                                        manual_subs=override.get("subs"), crop=override.get("crop"),
-                                       replay=override.get("replay"), punch_at=override.get("punch_at"))
+                                       replay=override.get("replay"), punch_at=override.get("punch_at"),
+                                       voiceover=override.get("voiceover"), trim_end=override.get("trim_end"))
         except (RuntimeError, ValueError) as exc:
             log(f"[edit] №{n}: {exc}")
             continue
