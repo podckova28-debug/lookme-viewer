@@ -68,6 +68,12 @@ a.open{display:block;text-align:center;text-decoration:none;border-radius:10px;b
 a.open:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 .btns2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 img.banner{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;display:block;border:1px solid var(--line)}
+.ep.long{grid-template-columns:minmax(0,360px) minmax(0,1fr)}
+@media (max-width:720px){.ep.long{grid-template-columns:minmax(0,1fr)}}
+img.wide{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;display:block}
+a.open{display:block;text-align:center;text-decoration:none;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;font-size:15px;padding:10px 14px}
+a.open:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.btns2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 
@@ -104,6 +110,8 @@ img.banner{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;disp
   </section>
 
   <div id="list"></div>
+
+  <div id="long"></div>
 </div>
 
 <script>
@@ -307,4 +315,30 @@ for (const ep of [...EPISODES].reverse()) {
   list.append(el('article', { class: 'ep', id: 'ep' + ep.n }, media, info));
 }
 
+
+
+const LONG = [
+  { title: "Maniac in Uniform: Mikhail Popkov", dur: "7:13", hq: "https://d2ol7oe51mr4n9.cloudfront.net/user_35NOdNk1NKtyC7RbzyCbNu39KlI/19f6381d-70dd-40de-a081-43643f6c9cbd.mp4",
+    covers: [["htgc_popkov_cover_A.jpg","Обложка A"],["htgc_popkov_cover_B.jpg","Обложка B"]], save: "htgc_long_popkov",
+    plats: [ { name: "YouTube", parts: [ ["Название", "Maniac in Uniform: How They Caught Russia's Worst Serial Killer"], ["Описание", "91 victims. More than Chikatilo. Russia's worst serial killer spent his days as a police officer in Angarsk, and investigators hunted him for 14 years. He wasn't caught by a witness or a stakeout, but by a single DNA test tube. The full story of Mikhail Popkov, the Angarsk Maniac: a Siberian factory town in the 1990s, a survivor nobody listened to, an investigation that stalled, and the genetic testing that finally broke the case in 2012.\n\nChapters:\n0:00 Cold Open\n0:35 The Town\n1:05 Who He Was\n1:32 The Method\n2:01 Fear\n2:30 The Survivor\n2:58 One of Their Own\n3:21 The Exit\n3:42 The Stalled Hunt\n4:11 Silence\n4:36 The Test Tube\n5:04 The Arrest\n5:24 Confession\n5:46 The Trials\n6:22 The Toll\n6:45 Finale\n\nSources: court records and Russian Investigative Committee statements as reported in open sources (Wikipedia, Mediazona, Meduza, BFM, TASS). Illustrations are artistic reconstructions, not documentary photos.\n\nThis video is educational and historical and does not glorify violence.\n\n#truecrime #serialkiller #howtheygotcaught #popkov #crimedocumentary"], ["Теги", "true crime, mikhail popkov, angarsk maniac, maniac in uniform, russian serial killer, serial killer documentary, police officer serial killer, how they got caught, dna evidence, cold case, crime documentary, soviet serial killers, case files"] ],
+      hint: "Субтитры не нужны: YouTube сам делает точные автоматические английские субтитры по чистой озвучке. Таймкоды в описании превращаются в главы на шкале ролика." } ] }
+];
+const long = document.getElementById('long');
+long.style.display = 'grid'; long.style.gap = '22px';
+long.append(el('div', { class: 'eyebrow' }, 'Длинные ролики · 16:9'));
+for (const lv of LONG) {
+  const note = el('p', { class: 'note', role: 'status', 'aria-live': 'polite' });
+  const open = el('a', { href: lv.hq, target: '_blank', rel: 'noopener', class: 'open' }, 'Открыть ролик (1080p)');
+  const cbtns = lv.covers.map(([f, l]) => { const b = el('button', { type: 'button' }, l); b.addEventListener('click', () => offer(f, lv.save + '_' + f, b, note, 'Файл обложки')); return b; });
+  const media = el('div', { class: 'media' },
+    el('img', { src: lv.covers[0][0], alt: 'Обложка ролика: ' + lv.title, class: 'wide' }),
+    el('img', { src: lv.covers[1][0], alt: 'Вторая обложка ролика: ' + lv.title, class: 'wide' }),
+    open, el('div', { class: 'btns2' }, ...cbtns), note);
+  const info = el('div', { class: 'info' },
+    el('div', { class: 'meta' }, 'Длинный ролик · ' + lv.dur + ' · 1920×1080'),
+    el('h3', {}, lv.title),
+    el('p', { class: 'hint' }, 'Длинный ролик слишком большой для страницы: «Открыть ролик» открывает файл в браузере, оттуда его можно сохранить.'));
+  for (const p of lv.plats) renderPlat(p, info);
+  long.append(el('article', { class: 'ep long' }, media, info));
+}
 </script>
