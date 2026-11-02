@@ -1,0 +1,310 @@
+<title>How They Got Caught</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Golos+Text:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: одна колонка карточек, как у Михалыча; в карточке ролик слева, тексты площадок справа, на телефоне друг под другом */
+:root{
+  --bg:#ece6dc; --card:#f8f4ec; --ink:#1d1a19; --ink2:#4a4340; --muted:#7a716b;
+  --line:#d8cfc2; --accent:#7a081b; --accent-ink:#fbf3ea; --field:#efe8dd; --ok:#2f6b3a; --err:#a3172f;
+  --disp:'Oswald','Arial Narrow',system-ui,sans-serif;
+  --body:'Golos Text',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#141112; --card:#1d191a; --ink:#ede6dd; --ink2:#c9bfb5; --muted:#958a81;
+  --line:#352d2c; --accent:#d43a52; --accent-ink:#1a0c0e; --field:#262021; --ok:#86c58f; --err:#ff8a9a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#141112; --card:#1d191a; --ink:#ede6dd; --ink2:#c9bfb5; --muted:#958a81;
+  --line:#352d2c; --accent:#d43a52; --accent-ink:#1a0c0e; --field:#262021; --ok:#86c58f; --err:#ff8a9a; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5}
+.wrap{max-width:980px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 56px;display:grid;gap:26px}
+header{display:grid;gap:8px}
+.eyebrow{font-family:var(--disp);font-weight:500;text-transform:uppercase;letter-spacing:.1em;font-size:13px;color:var(--accent)}
+h1{font-family:var(--disp);font-weight:700;font-size:clamp(30px,6vw,44px);line-height:1.05;margin:0;text-transform:uppercase;letter-spacing:.01em;text-wrap:balance}
+.lead{margin:0;color:var(--ink2);max-width:62ch}
+.box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;display:grid;gap:10px}
+.box h2{font-family:var(--disp);font-weight:600;text-transform:uppercase;letter-spacing:.08em;font-size:15px;margin:0;color:var(--ink2)}
+.box ol{margin:0;padding-left:20px;display:grid;gap:6px;color:var(--ink2)}
+.box b{color:var(--ink)}
+.hint{font-size:13px;color:var(--muted);margin:0}
+.sched{display:grid;gap:8px}
+.slot{display:grid;grid-template-columns:4.4em minmax(0,1fr);gap:12px;align-items:baseline;background:var(--field);border-radius:10px;padding:8px 12px}
+.slot .t{font-family:var(--disp);font-weight:600;font-size:19px;font-variant-numeric:tabular-nums;color:var(--accent)}
+.slot .p{font-weight:600}
+.slot .w{display:block;font-weight:400;font-size:13px;color:var(--muted)}
+.ep{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:22px}
+.ep.profile{grid-template-columns:minmax(0,1fr)}
+@media (max-width:720px){.ep{grid-template-columns:minmax(0,1fr)}.media{max-width:340px;margin:0 auto;width:100%}}
+.media{display:grid;gap:10px;align-content:start}
+video{width:100%;max-width:100%;aspect-ratio:9/16;border-radius:12px;background:#000;display:block}
+.btns{display:grid;grid-template-columns:1fr auto;gap:8px}
+button{font:inherit;cursor:pointer;border-radius:10px;border:1px solid var(--line);background:var(--field);color:var(--ink);font-weight:600;font-size:15px;padding:10px 14px}
+button:hover{border-color:var(--accent)}
+button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+button.main{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+button:disabled{opacity:.6;cursor:default}
+.note{font-size:13px;color:var(--muted);min-height:1.2em;margin:0}
+.note.ok{color:var(--ok)} .note.err{color:var(--err)}
+.info{display:grid;gap:14px;min-width:0;align-content:start}
+.info h3{margin:0;font-family:var(--disp);font-weight:600;font-size:26px;line-height:1.15;text-wrap:balance}
+.meta{font-family:var(--disp);font-weight:500;text-transform:uppercase;letter-spacing:.08em;font-size:13px;color:var(--muted)}
+.chip{display:inline-block;font-family:var(--disp);font-weight:500;text-transform:uppercase;letter-spacing:.06em;font-size:12px;padding:3px 9px;border-radius:999px;background:var(--accent);color:var(--accent-ink)}
+.plat{border-top:1px solid var(--line);padding-top:12px;display:grid;gap:8px}
+.plat-h{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.plat-h > span{font-family:var(--disp);font-weight:600;text-transform:uppercase;letter-spacing:.08em;font-size:15px;color:var(--ink)}
+.plat-h button{padding:6px 12px;font-size:13px}
+.ptime{font-family:var(--disp);font-weight:500;font-size:13px;color:var(--accent);font-variant-numeric:tabular-nums;margin-left:8px;letter-spacing:.02em}
+.lbl{font-size:12px;color:var(--muted);font-weight:600;margin:0;text-transform:uppercase;letter-spacing:.06em}
+.txt{background:var(--field);border-radius:10px;padding:10px 12px;white-space:pre-wrap;overflow-wrap:anywhere;font-family:var(--body);font-weight:500;font-size:14px;color:var(--ink);margin:0}
+.count{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.avatar{display:grid;grid-template-columns:120px minmax(0,1fr);gap:16px;align-items:center}
+.avatar img{width:120px;height:120px;max-width:100%;border-radius:50%;border:3px solid var(--line);display:block}
+.avatar-t{display:grid;gap:8px;justify-items:start;min-width:0}
+@media (max-width:420px){.avatar{grid-template-columns:minmax(0,1fr)}}
+.ep.long{grid-template-columns:minmax(0,360px) minmax(0,1fr)}
+@media (max-width:720px){.ep.long{grid-template-columns:minmax(0,1fr)}}
+img.wide{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;display:block}
+a.open{display:block;text-align:center;text-decoration:none;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;font-size:15px;padding:10px 14px}
+a.open:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.btns2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+img.banner{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;display:block;border:1px solid var(--line)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">How They Got Caught · англоязычный канал</div>
+    <h1>Ролики к выкладке</h1>
+    <p class="lead">Английская версия «Дела закрыто»: тот же стиль и голос, тексты на английском для YouTube Shorts, Instagram Reels и TikTok. Нажми «Копировать» и вставь в нужное поле.</p>
+  </header>
+
+  <section class="box" aria-label="Как выложить">
+    <h2>Как выложить</h2>
+    <ol>
+      <li>Нажми <b>«Скачать ролик»</b> и подтверди. На iPhone откроется меню «Поделиться», выбери <b>«Сохранить видео»</b>. На Android файл попадёт в «Загрузки».</li>
+      <li>Загрузи ролик и поставь <b>отложенную публикацию</b> на время из расписания: в YouTube Studio и Instagram это «Schedule».</li>
+      <li>В YouTube копируй по отдельности название, описание и теги. Теги вставляются в поле «Теги» в разделе «Показать больше». Закреплённый комментарий оставь сразу после выхода ролика.</li>
+      <li>В YouTube отметь <b>«No, it’s not made for kids»</b> и в блоке «Altered or synthetic content» выбери <b>«Да»</b>: ролик сделан ИИ и изображает реальных людей.</li>
+      <li>Нажми <b>«Обложка»</b> и поставь её обложкой. Надпись стоит так, что сетка профиля Instagram (3:4) её не обрезает. В Instagram при загрузке: «Обложка» → «Добавить из фотоплёнки».</li>
+    </ol>
+  </section>
+
+  <section class="box" aria-label="Расписание">
+    <h2>Расписание выкладки</h2>
+    <p class="hint">Основная аудитория — США и Великобритания. Тру-крайм там смотрят вечером по восточному времени США, это глубокая ночь по Москве, поэтому ставь <b>отложенную публикацию</b>. Время ниже московское.</p>
+    <div class="sched">
+      <div class="slot"><span class="t">02:00</span><span class="p">YouTube Shorts<span class="w">18:00 в Нью-Йорке, 23:00 в Лондоне: ролик успевает набрать показы к вечернему пику в США</span></span></div>
+      <div class="slot"><span class="t">03:00</span><span class="p">Instagram Reels и TikTok<span class="w">19:00 в Нью-Йорке, самый активный час Reels и TikTok</span></span></div>
+    </div>
+    <p class="hint">В субботу и воскресенье ставь на 20:00 и 21:00 по Москве: это полдень в Нью-Йорке, в выходные там смотрят днём.</p>
+  </section>
+
+  <section class="ep profile" aria-label="Описание канала">
+    <div class="info" id="profile"></div>
+  </section>
+
+  <div id="list"></div>
+</div>
+
+<script>
+const PROFILE = [
+ {
+  "name": "YouTube",
+  "parts": [
+   [
+    "Название канала",
+    "How They Got Caught"
+   ],
+   [
+    "Псевдоним (@)",
+    "@howtheygotcaught"
+   ],
+   [
+    "Описание канала",
+    "The killers police hunted for years, and the one clue, mistake or coincidence that finally caught them.\n\nShort animated case files on real serial killer investigations from the Soviet Union, Russia and around the world. No gore and no victim photos: just the facts, the detective work and the moment the case turned.\n\nA new case every day. Tell us in the comments which case we should cover next.\n\nThis channel is educational and historical. It does not glorify violence."
+   ],
+   [
+    "Ключевые слова канала",
+    "true crime, serial killers, how they got caught, soviet serial killers, true crime shorts, criminal investigation, forensic science, cold case, crime documentary, case files"
+   ]
+  ],
+  "hint": "Если @howtheygotcaught занят, подойдут @howtheygotcaught.files или @htgcfiles. Ключевые слова: «Settings» → «Channel» → «Basic info». Шапку канала ставь в «Customization» → «Branding» → «Banner image»."
+ },
+ {
+  "name": "Instagram и TikTok",
+  "parts": [
+   [
+    "Имя",
+    "How They Got Caught | True Crime"
+   ],
+   [
+    "Описание профиля",
+    "The one clue that caught them 🔎\nReal cases. No gore.\nWhich case next? 👇"
+   ]
+  ],
+  "hint": "Лимит описания: 150 знаков в Instagram, 80 в TikTok, этот текст влезает в оба. Слова «True Crime» в имени помогают найти профиль в поиске."
+ }
+];
+
+const EPISODES = [
+ {
+  "n": 1,
+  "title": "Spesivtsev: his mother brought him victims, a heating check caught him",
+  "dur": "90 с",
+  "date": "как только заведёшь канал",
+  "file": "htgc_spesivtsev.mp4",
+  "cover": "htgc_spesivtsev_cover.jpg",
+  "poster": "htgc_spesivtsev_poster.jpg",
+  "save": "htgc_1_spesivtsev",
+  "plats": [
+   {
+    "name": "YouTube Shorts",
+    "parts": [
+     [
+      "Название",
+      "His Mother Brought Him Victims. A Heating Check Caught Him #shorts"
+     ],
+     [
+      "Описание",
+      "Alexander Spesivtsev, the “Novokuznetsk Beast.” Russian courts proved 20 murders of young women and children, almost all inside the apartment he shared with his mother. Some media reports suggest the real number may be much higher.\n\nIn 1995 he was quietly discharged from a psychiatric hospital, but his records still said he was in treatment, so nobody was looking for him. For months, neighbors complained about the smell and loud music coming from the apartment. The police never came.\n\nOn September 24, 1996, his mother, Lyudmila Spesivtseva, asked three schoolgirls to help her open a door, and led them to her son. He killed two 13-year-old friends. Fifteen-year-old Olya survived and spent a month locked inside.\n\nIn October, workers came to check the heating before winter. Nobody opened, so a local officer broke down the door. Olya gave her testimony and died in hospital three days later. Spesivtsev was arrested outside his building and sent back to compulsory psychiatric treatment. His mother got 13 years and walked free in 2008.\n\nDo you think his mother knew what she was doing? 👇\n\nThis video is educational and historical and does not glorify violence. The mother’s line is a reconstruction based on case records.\n\n#shorts #truecrime #serialkiller #spesivtsev #howtheygotcaught"
+     ],
+     [
+      "Теги",
+      "spesivtsev, alexander spesivtsev, novokuznetsk beast, russian serial killer, serial killer, true crime, how they got caught, true crime shorts, criminal investigation, soviet serial killers, crime story, case files, shorts"
+     ],
+     [
+      "Закреплённый комментарий",
+      "Did his mother know what she was doing? 👇\nWhich case should we cover next?"
+     ]
+    ]
+   },
+   {
+    "name": "Instagram Reels",
+    "parts": [
+     [
+      "Подпись",
+      "“Girls, could you help me open the door?” That’s how a mother lured victims to her son 🚪\n\nAnd he was caught because of a routine heating check.\n\nDid she know what she was doing? Comment 👇\n\n#truecrime #serialkiller #howtheygotcaught #crimestory #truecrimecommunity"
+     ]
+    ]
+   },
+   {
+    "name": "TikTok",
+    "parts": [
+     [
+      "Подпись",
+      "His mother brought him victims. A heating check caught him 🚪 Did she know? 👇 #truecrime #serialkiller #crimetok #howtheygotcaught"
+     ]
+    ]
+   }
+  ]
+ }
+];
+
+const el = (tag, attrs = {}, ...kids) => {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === 'class') e.className = v; else e.setAttribute(k, v);
+  }
+  for (const k of kids) e.append(k);
+  return e;
+};
+
+let downloads = null;
+const downloadsReady = (window.claude && window.claude.use ? window.claude.use('downloads') : Promise.resolve(null))
+  .then(d => { downloads = d; return d; }).catch(() => null);
+
+async function offer(url, filename, btn, note, label) {
+  note.className = 'note'; note.textContent = '';
+  const d = downloads || await downloadsReady;
+  if (!d) {
+    note.className = 'note err';
+    note.textContent = 'Здесь скачивание недоступно. Открой эту страницу по ссылке в приложении Claude или на claude.ai в браузере.';
+    return;
+  }
+  btn.disabled = true; const old = btn.textContent; btn.textContent = 'Готовлю файл…';
+  try {
+    const r = await fetch(url);
+    if (!r.ok) throw { code: 'fetch' };
+    const blob = await r.blob();
+    btn.textContent = 'Подтверди сохранение…';
+    await d.save({ filename, data: blob });
+    note.className = 'note ok'; note.textContent = label + ' сохранён.';
+  } catch (e) {
+    const code = e && e.code;
+    note.className = 'note' + (code === 'declined' ? '' : ' err');
+    note.textContent = code === 'declined' ? 'Сохранение отменено.'
+      : code === 'rate_limited' ? 'Уже открыт другой запрос на сохранение. Подтверди или закрой его и нажми ещё раз.'
+      : code === 'fetch' ? 'Не удалось загрузить файл. Проверь интернет и нажми ещё раз.'
+      : 'Не получилось сохранить файл. Открой страницу на claude.ai в браузере и попробуй там.';
+  } finally { btn.disabled = false; btn.textContent = old; }
+}
+
+function copyText(text, btn, pre) {
+  const old = btn.textContent;
+  const done = () => { btn.textContent = 'Скопировано'; setTimeout(() => btn.textContent = old, 1600); };
+  const fallback = () => {
+    const range = document.createRange(); range.selectNodeContents(pre);
+    const sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(range);
+    btn.textContent = 'Выделено, скопируй';
+    setTimeout(() => btn.textContent = old, 2400);
+  };
+  try { navigator.clipboard.writeText(text).then(done, fallback); } catch { fallback(); }
+}
+
+const LIMITS = { 'Название': 100, 'Описание': 5000, 'Теги': 500, 'Подпись': 2200, 'Описание профиля': 150, 'Описание канала': 1000 };
+
+function renderPlat(p, into, time) {
+  const box = el('div', { class: 'plat' });
+  const nameEl = el('span', {}, p.name);
+  if (time) nameEl.append(el('span', { class: 'ptime' }, time));
+  const head = el('div', { class: 'plat-h' }, nameEl);
+  box.append(head);
+  const single = p.parts.length === 1;
+  for (const [lbl, t] of p.parts) {
+    const pre = el('pre', { class: 'txt' }, t);
+    const b = el('button', { type: 'button' }, 'Копировать');
+    b.addEventListener('click', () => copyText(t, b, pre));
+    const lim = LIMITS[lbl];
+    const lblEl = el('p', { class: 'lbl' }, lbl);
+    if (lim) lblEl.append(el('span', { class: 'count' }, ` · ${t.length} из ${lim}`));
+    if (single) { head.append(b); box.append(lblEl, pre); }
+    else { box.append(el('div', { class: 'plat-h' }, lblEl, b), pre); }
+  }
+  if (p.hint) box.append(el('p', { class: 'hint' }, p.hint));
+  into.append(box);
+}
+
+const profile = document.getElementById('profile');
+profile.append(el('div', { class: 'meta' }, 'Один раз при создании каналов'), el('h3', {}, 'Профиль канала How They Got Caught'));
+{ const bnote = el('p', { class: 'note', role: 'status', 'aria-live': 'polite' }); const bbtn = el('button', { type: 'button' }, 'Скачать шапку канала'); bbtn.addEventListener('click', () => offer('banner.jpg', 'htgc_banner.jpg', bbtn, bnote, 'Файл шапки')); profile.append(el('img', { src: 'banner.jpg', alt: 'Шапка канала: How They Got Caught на кремовом коллаже с папкой дела и лупой', class: 'banner' }), el('p', { class: 'hint' }, 'Шапка 2560×1440: весь текст стоит в безопасной зоне, на телефоне ничего не обрежется.'), bbtn, bnote); }
+{
+  const anote = el('p', { class: 'note', role: 'status', 'aria-live': 'polite' });
+  const abtn = el('button', { type: 'button', id: 'dl-avatar' }, 'Скачать аватар');
+  abtn.addEventListener('click', () => offer('avatar.jpg', 'htgc_avatar.jpg', abtn, anote, 'Аватар'));
+  profile.append(el('div', { class: 'avatar' },
+    el('img', { src: 'avatar.jpg', alt: 'Аватар канала: красная папка дела с печатью и лупа на тёмно-красном круге', width: '120', height: '120' }),
+    el('div', { class: 'avatar-t' }, el('p', { class: 'hint' }, 'Аватар тот же, что у «Дела закрыто»: на нём нет текста, поэтому подходит и для английского канала. Квадрат 800×800.'), abtn, anote)));
+}
+for (const p of PROFILE) renderPlat(p, profile);
+
+const PLAT_TIME = { 'YouTube Shorts': '02:00', 'Instagram Reels': '03:00', 'TikTok': '03:00' };
+const list = document.getElementById('list');
+list.style.display = 'grid'; list.style.gap = '22px';
+for (const ep of [...EPISODES].reverse()) {
+  const note = el('p', { class: 'note', role: 'status', 'aria-live': 'polite' });
+  const vbtn = el('button', { class: 'main', type: 'button', id: 'dl-' + ep.n }, 'Скачать ролик');
+  const cbtn = el('button', { type: 'button', id: 'cv-' + ep.n }, 'Обложка');
+  vbtn.addEventListener('click', () => offer(ep.file, ep.save + '.mp4', vbtn, note, 'Ролик'));
+  cbtn.addEventListener('click', () => offer(ep.cover, ep.save + '_oblozhka.jpg', cbtn, note, 'Файл обложки'));
+  const media = el('div', { class: 'media' },
+    el('video', { src: ep.file, poster: ep.poster, controls: '', playsinline: '', preload: 'none' }),
+    el('div', { class: 'btns' }, vbtn, cbtn), note);
+  const info = el('div', { class: 'info' },
+    el('div', { class: 'meta' }, `Case ${ep.n} · ${ep.dur} · 1080×1920`),
+    el('h3', {}, ep.title),
+    el('div', {}, el('span', { class: 'chip' }, 'Выход: ' + ep.date)));
+  for (const p of ep.plats) renderPlat(p, info, PLAT_TIME[p.name]);
+  list.append(el('article', { class: 'ep', id: 'ep' + ep.n }, media, info));
+}
+
+</script>
