@@ -167,4 +167,84 @@ AUDIO: soft snore, phone buzz from above, a faint high tingle sound, distant sir
 SHOT 1 MEDIUM: Dave in the bedroom doorway in his bathrobe, mug in hand, looks in. HARD CUT. SHOT 2 WIDE: the bed is empty, the hook by the door is empty, the window is wide open, curtains moving. HARD CUT. SHOT 3 CU: a strand of white web stretches from the window frame out into the night. HARD CUT. SHOT 4 CU: Dave takes a long sip. HARD CUT. SHOT 5 MEDIUM: he closes the window, the web strand snaps, he walks away; the cat watches from the bed.
 AUDIO: floor creak, wind, sip, window click, distant siren.
 
-Клипы 36 - 48 это вставки, которые не требуют генерации на сайте: титр, календарь, переписка с Дэйвом, «фильм против реальности», плашки, карточка следующей серии про второй день героя-паука. Их делаю я кодом. Если после проверки первых 35 клипов хронометраж не дотянет до 8 минут, добавлю до 13 дополнительных блоков с реакциями и монтажными перебивками, промпты пришлю отдельным списком.
+## Дополнительные клипы, b36 - b54
+
+Добавлены 3 ноября, чтобы серия честно набирала 8 минут без растягивания. Место каждого в монтаже указано в файле порядка.
+
+**b36** · `01_bedroom` · `hero_home`, `props`
+SHOT 1 MEDIUM: the hero pulls a sock onto one foot, the sock sticks to his hand instead. HARD CUT. SHOT 2 CU: he shakes the hand, the sock flies up and sticks to the ceiling. HARD CUT. SHOT 3 MEDIUM: he reaches for a second sock on the floor, it sticks to his other hand. HARD CUT. SHOT 4 CU: the black and white cat bats at the sock dangling from his hand. HARD CUT. SHOT 5 WIDE: he gives up and stands barefoot, one sock on each hand like puppets, staring at them.
+AUDIO: fabric, sticky pops, cat paw swipe, sigh.
+
+**b37** · `02_kitchen` · `hero_home`, `dave`
+SHOT 1 CU: two slices of toast pop out of the toaster. HARD CUT. SHOT 2 CU: the hero's hand reaches, a web strand zips and both slices fly up and stick to the ceiling. HARD CUT. SHOT 3 MEDIUM: the hero and Dave both look up at the toast on the ceiling. HARD CUT. SHOT 4 CU: one slice peels off and falls; Dave catches it on his plate without looking. HARD CUT. SHOT 5 MEDIUM: Dave butters it and eats it, the hero stares at him.
+AUDIO: toaster pop, web zip, soft splat, crunch.
+
+**b38** · `02_kitchen` · `dave`
+SHOT 1 MEDIUM: Dave alone at the fridge, peels a long strand of white web off the door. HARD CUT. SHOT 2 CU: the web stretches like gum and will not come off his fingers. HARD CUT. SHOT 3 CU: he wipes his fingers on a pizza coupon, the coupon sticks. HARD CUT. SHOT 4 MEDIUM: he sticks the coupon back on the fridge with the web like a magnet. HARD CUT. SHOT 5 CU: he looks straight into the camera for one second, sips from his white mug.
+AUDIO: sticky stretch, paper, sip.
+
+**b39** · `04_hallway` · `hero_costume`
+SHOT 1 MEDIUM: the hero sits on the hallway floor in his costume tying his sneaker laces. HARD CUT. SHOT 2 CU: the laces stick to his fingers and to each other in a knot. HARD CUT. SHOT 3 CU: he pulls, the knot pulls both sneakers together. HARD CUT. SHOT 4 WIDE: he stands up and hops toward the door with both feet glued together. HARD CUT. SHOT 5 MEDIUM: he stops, breathes, rips the laces apart with a pop, nods to himself.
+AUDIO: laces, sticky pull, hopping thuds, pop.
+
+**b40** · `06_suburb_street` · `hero_costume`
+SHOT 1 MEDIUM: the hero stops under a big tree by the sidewalk, looks up at a branch, flexes his wrist like in the movies. HARD CUT. SHOT 2 CU: a web strand shoots up and sticks to the branch. HARD CUT. SHOT 3 WIDE: he jumps and swings forward on the strand, legs out, heroic for one second. HARD CUT. SHOT 4 CU: the branch bends and snaps. HARD CUT. SHOT 5 WIDE: he lands face first in a hedge, legs sticking out, the branch on top of him.
+AUDIO: web zip, whoosh, wood snap, crash into leaves.
+
+**b41** · `06_suburb_street` · `hero_costume`
+SHOT 1 MEDIUM: the hero climbs out of the hedge with leaves stuck all over his hoodie. HARD CUT. SHOT 2 CU: he tries to brush the leaves off, they stick to his hands instead. HARD CUT. SHOT 3 WIDE: a mail carrier in a blue uniform with a mail bag walks past on the sidewalk, glances, keeps walking. HARD CUT. SHOT 4 CU: the mail carrier's face, polite nod. HARD CUT. SHOT 5 MEDIUM: the hero nods back, covered in leaves, and walks on.
+AUDIO: rustling leaves, footsteps, polite hum.
+
+**b42** · `07_coffee_int` · `hero_costume`
+SHOT 1 MEDIUM: the hero waits in line at the coffee shop behind a man with a backpack. HARD CUT. SHOT 2 CU: the hero reaches past to grab a napkin, his hand sticks to the man's backpack. HARD CUT. SHOT 3 MEDIUM: the line moves, the man steps forward and drags the hero along by the hand. HARD CUT. SHOT 4 CU: the man looks over his shoulder, confused. HARD CUT. SHOT 5 MEDIUM: the hero peels his hand off with a pop and pretends to read the menu.
+AUDIO: cafe chatter, sticky drag, pop.
+
+**b43** · `07_coffee_int` · `hero_costume`, `props`
+SHOT 1 MEDIUM: the hero sits down at a small round table holding the glued cup lump. HARD CUT. SHOT 2 CU: he stands up and the chair comes with him, stuck to his pants. HARD CUT. SHOT 3 WIDE: he walks to the door with the chair attached. HARD CUT. SHOT 4 CU: the barista watches, no expression. HARD CUT. SHOT 5 WIDE: he walks out the door with the chair, the door bell rings.
+AUDIO: chair scrape, footsteps, door bell.
+
+**b44** · `08_downtown_lamppost` · `hero_costume`
+SHOT 1 WIDE: a gust of wind blows a newspaper down the sidewalk. HARD CUT. SHOT 2 CU: the newspaper slaps onto the hero's goggles and sticks. HARD CUT. SHOT 3 MEDIUM: he walks blindly forward, arms out. HARD CUT. SHOT 4 CU: he walks straight into the green lamppost with a clang. HARD CUT. SHOT 5 MEDIUM: he peels the newspaper off, looks at the lamppost, rubs his forehead.
+AUDIO: wind, paper slap, footsteps, metal clang.
+
+**b45** · `08_downtown_lamppost` · `hero_costume`, `props`
+SHOT 1 CU: the black phone buzzes in the hero's hoodie pocket. HARD CUT. SHOT 2 MEDIUM: he answers and holds it to his ear. HARD CUT. SHOT 3 CU: he tries to lower the phone, it is stuck to his ear. HARD CUT. SHOT 4 MEDIUM: he walks on with the phone glued to the side of his head, nodding to whoever is talking. HARD CUT. SHOT 5 CU: he says nothing, closes his eyes in defeat.
+AUDIO: buzz, muffled voice from the phone, footsteps, sigh.
+
+**b46** · `09_office_entrance` · `hero_costume`
+SHOT 1 MEDIUM: a security guard in a gray uniform inside the glass lobby looks up from a desk. HARD CUT. SHOT 2 CU: the guard's face, eyebrows slowly rise. HARD CUT. SHOT 3 MEDIUM: through the glass, the hero holds up the detached glass door and gives a small wave. HARD CUT. SHOT 4 CU: the guard picks up a desk phone. HARD CUT. SHOT 5 WIDE: the hero slowly leans the door against the wall and backs away from the entrance.
+AUDIO: muffled lobby hum, phone pickup, glass creak.
+
+**b47** · `10_bus_street` · `cast_secondary`
+SHOT 1 WIDE side view: a parked yellow school bus at the curb; the chubby bus driver gets out holding a sandwich, leaves the door open. HARD CUT. SHOT 2 CU: inside the cab, the handbrake lever slowly clicks down by itself. HARD CUT. SHOT 3 CU: the driver takes a big bite of the sandwich, eyes closed, happy. HARD CUT. SHOT 4 WIDE side view: behind him, the empty bus slowly starts to roll from left to right down the slope. HARD CUT. SHOT 5 CU: the driver opens his eyes, sees, mouth full, freezes.
+AUDIO: engine idle, ratchet click, bite, tires rolling, gulp.
+
+**b48** · `08_downtown_lamppost` · `cast_secondary`
+SHOT 1 WIDE: a crowd of pedestrians crosses at the crosswalk downhill. HARD CUT. SHOT 2 CU: the pedestrian signal shows the white walking figure. HARD CUT. SHOT 3 MEDIUM: pedestrians turn their heads to the left, toward a rumbling sound. HARD CUT. SHOT 4 CU: a woman with shopping bags freezes, mouth open. HARD CUT. SHOT 5 WIDE: the crowd scatters off the crosswalk in both directions.
+AUDIO: street ambience, rising bus rumble, gasps, running steps.
+
+**b49** · `10_bus_street`
+SHOT 1 CU side view through the driver window of the rolling yellow school bus: the empty driver seat. HARD CUT. SHOT 2 CU: the steering wheel turns slowly by itself. HARD CUT. SHOT 3 CU: a cup holder with a lone soda can rattles. HARD CUT. SHOT 4 CU: the speedometer needle creeps up. HARD CUT. SHOT 5 WIDE side view: the empty bus picks up speed from left to right down the street.
+AUDIO: rattling, creaking wheel, rising engine hum.
+
+**b50** · `10_bus_street` · `hero_costume`
+SHOT 1 MEDIUM side view, camera tracks right: the hero crouches on the roof of the bus moving right, aims his wrist up-left. HARD CUT. SHOT 2 CU: the web strand misses the building and sticks to a hot dog cart umbrella on the sidewalk. HARD CUT. SHOT 3 WIDE: the umbrella is yanked off the cart and flies after the bus like a kite. HARD CUT. SHOT 4 CU: the hot dog vendor holds a hot dog in tongs, staring. HARD CUT. SHOT 5 MEDIUM: the hero cuts the strand, the umbrella floats away, he aims again with a serious face.
+AUDIO: web zip, umbrella whoosh, flapping, focused breath.
+
+**b51** · `10_bus_street` · `cast_secondary`
+SHOT 1 WIDE: a small crowd gathers on the sidewalk around the bus stopped in the web net. HARD CUT. SHOT 2 MEDIUM: the bus driver with the sandwich steps forward, the crowd starts clapping for him. HARD CUT. SHOT 3 CU: the driver, surprised, takes a small bow. HARD CUT. SHOT 4 CU: the hero, glued to the side of the bus behind the crowd, blinks. HARD CUT. SHOT 5 MEDIUM: the driver shakes hands with people, the hero in the background slowly gives a thumbs up to nobody.
+AUDIO: crowd murmur, applause, cheers.
+
+**b52** · `10_bus_street` · `hero_costume`
+SHOT 1 MEDIUM: the street is empty now, the hero still glued to the side of the bus. HARD CUT. SHOT 2 CU: he peels one arm off with a long sticky stretch. HARD CUT. SHOT 3 CU: he peels his hood off, it stays stuck to the bus, his messy hair pops out. HARD CUT. SHOT 4 MEDIUM: he drops to the sidewalk, the hood stretches and snaps back onto his head. HARD CUT. SHOT 5 WIDE: he walks away down the street alone, the web net still sagging behind him.
+AUDIO: long sticky peels, snap, footsteps, evening wind.
+
+**b53** · `11_living_night` · `hero_costume`, `dave`
+SHOT 1 MEDIUM: the hero lies face down on the green couch, hoodie on, groaning. HARD CUT. SHOT 2 CU: Dave puts a bag of frozen peas on the hero's back. HARD CUT. SHOT 3 CU: the bag sticks to the hoodie. HARD CUT. SHOT 4 MEDIUM: Dave sits down in the armchair, sips from his mug, watches TV. HARD CUT. SHOT 5 CU: the hero gives a muffled thumbs up from the cushion.
+AUDIO: groan, crinkle of the frozen bag, sticky pat, TV murmur, sip.
+
+**b54** · `02_kitchen` · `dave`
+SHOT 1 MEDIUM: Dave alone in the kitchen at night writes on a notepad. HARD CUT. SHOT 2 CU: the notepad, a long list, he adds one more line. HARD CUT. SHOT 3 CU: he tears off the page. HARD CUT. SHOT 4 MEDIUM: he sticks the page on the fridge next to the web, it sticks instantly. HARD CUT. SHOT 5 CU: he looks at the camera for one second, turns off the light.
+AUDIO: pen scratch, paper tear, light switch click.
+
+Вставки, которые делаю я кодом, это титр, календарь, переписка с Дэйвом, «фильм против реальности», плашки и карточка следующей серии про второй день героя-паука.
