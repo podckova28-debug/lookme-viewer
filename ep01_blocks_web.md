@@ -153,12 +153,12 @@ AUDIO: phone buzz, couch creak.
 SHOT 1 WIDE: the hero in his t-shirt and pajama pants climbs into bed; the red hoodie hangs on the hook by the door. HARD CUT. SHOT 2 CU: he looks up at the ceiling where the black phone with the yellow bell still hangs by a web. HARD CUT. SHOT 3 MEDIUM: he pulls the blanket up, it sticks to his hands, he gives up and lies under a tented blanket. HARD CUT. SHOT 4 CU: the cat settles on the nightstand, watches him. HARD CUT. SHOT 5 WIDE: lights off, moonlight through the blinds, he closes his eyes.
 AUDIO: bed creak, blanket rustle, cat settling, quiet night.
 
-**b34** · `12_bedroom_night` · `hero_home`
-SHOT 1 CU: the hero asleep, mouth open. HARD CUT. SHOT 2 CU: one arm hangs off the bed; the hand begins to grow and turn bright green. HARD CUT. SHOT 3 MEDIUM: the bed frame creaks and cracks under the weight, the mattress tilts. HARD CUT. SHOT 4 CU: the cat on the nightstand opens its eyes wide. HARD CUT. SHOT 5 WIDE: the cat quietly walks out of frame; a huge green shadow of a hand spreads across the wall next to the hanging red hoodie.
-AUDIO: snore, wood crack, soft paw steps, low rumble.
+**b34** · `12_bedroom_night` · `hero_home`, `props`
+SHOT 1 CU: the hero asleep, mouth open, the black and white cat curled on his chest. HARD CUT. SHOT 2 CU: the black phone still hanging from the ceiling by a web lights up with a news notification glow. HARD CUT. SHOT 3 CU: the hero's eyes snap open, every hair on his head slowly stands up. HARD CUT. SHOT 4 MEDIUM: far outside the window, red and blue police lights flicker on the buildings. HARD CUT. SHOT 5 MEDIUM: he sits up and looks at the red hoodie hanging on the hook by the door.
+AUDIO: soft snore, phone buzz from above, a faint high tingle sound, distant siren.
 
 **b35** · `12_bedroom_night` · `dave`
-SHOT 1 MEDIUM: Dave in the hallway doorway in his bathrobe, mug in hand, looks into the dark bedroom. HARD CUT. SHOT 2 CU: his face lit green from inside the room, eyebrows up. HARD CUT. SHOT 3 CU: he looks at his mug. HARD CUT. SHOT 4 CU: he takes a long sip. HARD CUT. SHOT 5 MEDIUM: he closes the door slowly and walks away.
-AUDIO: floor creak, sip, door click.
+SHOT 1 MEDIUM: Dave in the bedroom doorway in his bathrobe, mug in hand, looks in. HARD CUT. SHOT 2 WIDE: the bed is empty, the hook by the door is empty, the window is wide open, curtains moving. HARD CUT. SHOT 3 CU: a strand of white web stretches from the window frame out into the night. HARD CUT. SHOT 4 CU: Dave takes a long sip. HARD CUT. SHOT 5 MEDIUM: he closes the window, the web strand snaps, he walks away; the cat watches from the bed.
+AUDIO: floor creak, wind, sip, window click, distant siren.
 
-Клипы 36 - 48 это вставки, которые не требуют генерации на сайте: титр, календарь, переписка с Дэйвом, «фильм против реальности», плашки, карточка следующей серии. Их делаю я кодом. Если после проверки первых 35 клипов хронометраж не дотянет до 8 минут, добавлю до 13 дополнительных блоков с реакциями и монтажными перебивками, промпты пришлю отдельным списком.
+Клипы 36 - 48 это вставки, которые не требуют генерации на сайте: титр, календарь, переписка с Дэйвом, «фильм против реальности», плашки, карточка следующей серии про второй день героя-паука. Их делаю я кодом. Если после проверки первых 35 клипов хронометраж не дотянет до 8 минут, добавлю до 13 дополнительных блоков с реакциями и монтажными перебивками, промпты пришлю отдельным списком.
