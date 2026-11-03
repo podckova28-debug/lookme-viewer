@@ -10,10 +10,16 @@
 Style: hand-drawn 2D 1990s feature animation, clean confident ink lines, soft painted cel shading, warm painted backgrounds with depth, caricatured expressive faces with tired eye bags, satirical adult webcomic edge; simple limited animation on twos. The visual style, characters, room and palette are EXACTLY as in the reference images.
 PALETTE LOCK: use only the colors and background treatment of the references. Do not introduce new colors. Characters look exactly like their sheets in every shot: same face, hair, clothes.
 A single 10-second scene of FIVE hard-cut shots at 2.0s, 4.0s, 6.0s and 8.0s, no dissolves. Do not open on a reference image. Characters only emote and gesture, they do NOT talk. Motion starts on frame 1. ONE action per shot. Static camera unless a shot says otherwise.
-NEGATIVE: opening on a reference sheet, leading freeze, dissolves, new colors, recolored clothes, full superhero suit, face mask, extra people, duplicated characters, morphing faces, talking, lip-sync, on-screen text, captions, photorealism, 3D render, watermark.
+NEGATIVE: opening on a reference sheet, leading freeze, dissolves, new colors, recolored clothes, full superhero suit, face mask, extra people, duplicated characters, morphing faces, extra fingers, twisted limbs, a second phone, a landline phone, any object that is not in the references, talking, lip-sync, on-screen text, captions, photorealism, 3D render, watermark.
 ```
 
-После шапки идут строки планов и строка AUDIO. Ниже для каждого клипа только они.
+После шапки идут строки планов и строка AUDIO.
+
+**Принят 3 ноября.** Блок b01 сделан по этому шаблону, принятая версия: генерация `325ac9b5` с сайта. Пять планов по 2 секунды, персонаж совпадает с листом, кот чёрно-белый, телефон один и чёрный с жёлтым колокольчиком.
+
+**Две поправки после проверки b01**, уже внесены в шапку выше: запрет на лишние предметы и второй телефон, запрет на лишние пальцы и вывернутые конечности. В блоках в спальне дописывать в начало строк планов: `The nightstand holds only a lamp, a white mug and the one black phone.`
+
+**Как запускать на сайте, чтобы не списывались кредиты.** Новая генерация со страницы Seedance 2.5, файлы референсов загружать с компьютера, переключатель Unlimited включён, перед запуском на кнопке должно быть 0 кредитов. Повтор или ремикс старой генерации из галереи списал 70 кредитов. Ниже для каждого клипа только они.
 
 ## Акт 1. Дом. Клипы 1 - 14
 
