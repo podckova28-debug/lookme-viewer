@@ -57,8 +57,8 @@ blk('03','Чутьё срабатывает на муху','01_bedroom',['hero_h
 blk('04','Ванная, всё липнет к зеркалу','03_bathroom',['hero_home','props'],'home',
  "SHOT 1 MEDIUM over his shoulder: the hero stands at the sink, his back and shoulder big in the foreground, his sleepy face in the mirror; he pulls the red toothbrush out of the cup and it stays glued to his palm by a white web blob. HARD CUT. SHOT 2 CU side view of his hand: he flicks the hand hard, the red toothbrush flies off and splats onto the mirror glass with a white web blob. HARD CUT. SHOT 3 CU: his palm with the white soap bar glued to it by a white web blob; he shakes the hand, the soap stays on. HARD CUT. SHOT 4 CU on the mirror glass, no person in it: the red toothbrush, the yellow rubber duck and a blue shampoo bottle all stuck to the glass by white web blobs. HARD CUT. SHOT 5 MEDIUM over his shoulder: his real back in the foreground, his tired face in the mirror; he slowly raises both palms, the white soap bar still glued to one of them, white web strands dangling from both.",
  'sticky pop, wet splat on glass, sticky pop, soft thud, water drip.',
- 'Everything you touch is yours now. Forever.',
- 'Всё, к чему ты прикасаешься, теперь твоё. Навсегда.')
+ 'Everything you touch is yours now. Peeling it off does not count. You have to throw it.',
+ 'Всё, к чему ты прикасаешься, теперь твоё. Отлепить не считается. Надо выбросить.')
 blk('05','Идёт по стене коридора','04_hallway',['hero_home'],'home',
  "SHOT 1 WIDE: he walks along the hallway wall sideways, body horizontal, bare feet on the wallpaper, carrying a towel, not noticing. HARD CUT. SHOT 2 CU: framed photos tilt under his bare feet. HARD CUT. SHOT 3 MEDIUM: he glances down, sees the floor below him, freezes. HARD CUT. SHOT 4 WIDE: he peels off the wall and drops to the floor on his back. HARD CUT. SHOT 5 CU: he lies on the floor looking up at the tilted photos, blinks.",
  'soft footsteps on wall, frames creak, thump.',
