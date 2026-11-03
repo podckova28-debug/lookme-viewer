@@ -4,7 +4,8 @@ Each segment's audio is padded or trimmed to exactly its video duration before t
 Loudness: every segment with real sound is normalised to -23 LUFS (two-pass measured gain, no pumping);
 silent segments (title cards) stay silent.
 
-usage: python3 tools/assemble.py OUT.mp4 SEG1.mp4 SEG2.mp4 ...
+usage: python3 tools/assemble.py OUT.mp4 [ID=]SEG1.mp4 [ID=]SEG2.mp4 ...
+Writes OUT.timeline.json with each segment id, start and duration (for narration mixing).
 """
 import sys, subprocess, json, re
 
@@ -23,11 +24,15 @@ def loudness(path):
     m = re.findall(r'^\s+I:\s+(-?[\d.]+) LUFS', err, re.M)
     return float(m[-1]) if m else -70.0
 
-out, segs = sys.argv[1], sys.argv[2:]
+out, raw = sys.argv[1], sys.argv[2:]
+ids = [a.split('=', 1)[0] if '=' in a else None for a in raw]
+segs = [a.split('=', 1)[1] if '=' in a else a for a in raw]
+timeline = []
 args, fc, cat = [], '', ''
 total = 0.0
 for i, s in enumerate(segs):
-    n = frames(s); d = n / 24.0; total += d
+    n = frames(s); d = n / 24.0
+    timeline.append({'id': ids[i], 'start': round(total, 3), 'dur': round(d, 3)}); total += d
     lu = loudness(s)
     gain = 0.0 if lu < -60 else max(-12.0, min(15.0, -23.0 - lu))
     args += ['-i', s]
@@ -42,3 +47,4 @@ subprocess.run(['ffmpeg', '-v', 'error', '-y', *args, '-filter_complex', fc, '-m
                 '-movflags', '+faststart', out], check=True)
 v = float(probe(out, 'v', 'duration')); a = float(probe(out, 'a', 'duration'))
 print(f'OUT video={v:.3f}s audio={a:.3f}s expected={total:.3f}s')
+json.dump(timeline, open(out.rsplit('.', 1)[0] + '.timeline.json', 'w'), indent=1)
