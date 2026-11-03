@@ -18,7 +18,7 @@
 | 14 | Сосед с воздуходувкой | `plates/05_yard.png`, `sheets/hero_interview.png`, `sheets/cast_secondary.png` |
 | 15 | Кроссовок прилип к тротуару | `plates/06_suburb_street.png`, `sheets/hero_interview.png` |
 | 16 | Возвращает кроссовок | `plates/06_suburb_street.png`, `sheets/hero_interview.png` |
-| 19 | Кофейня: стакан, маффин и банка с чаевыми | `plates/07_coffee_int.png`, `sheets/hero_interview.png`, `sheets/props.png`, `sheets/cast_secondary.png` |
+| 19 | Кофейня: ловит падающую полку с чашками | `plates/07_coffee_int.png`, `sheets/hero_interview.png`, `sheets/props.png`, `sheets/cast_secondary.png` |
 | 30 | Тем временем: водитель и ручник | `plates/10_bus_street.png`, `sheets/cast_secondary.png` |
 | 31 | Пустой автобус разгоняется | `plates/10_bus_street.png` |
 | 23 | Шляпа старушки, приклеил её к фонарю | `plates/10_bus_street.png`, `sheets/hero_interview.png`, `sheets/cast_secondary.png`, `sheets/props.png` |

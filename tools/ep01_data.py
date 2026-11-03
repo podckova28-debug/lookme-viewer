@@ -131,11 +131,11 @@ blk('18','Вылезает из кустов, почтальон','06_suburb_str
  'rustling leaves, shake, footsteps, polite hum.',
  'Nobody notices. Nobody ever notices.',
  'Никто не замечает. Никто никогда не замечает.')
-blk('19','Кофейня: стакан, маффин и банка с чаевыми','07_coffee_int',['hero_interview','props','cast_secondary'],'interview',
- "SHOT 1 MEDIUM: the hero at the counter, the barista in a green apron with a hair bun slides a white paper coffee cup toward him. HARD CUT. SHOT 2 CU: his hand reaches, a web strand zips and the cup, a muffin and the glass tip jar glue into one lump. HARD CUT. SHOT 3 CU: the barista's face, one eyebrow raised, mouth a flat line. HARD CUT. SHOT 4 MEDIUM: the hero lifts the whole lump, coins rattle inside the jar. HARD CUT. SHOT 5 WIDE: the line behind him, everyone on their phones, nobody looks up.",
- 'cup slide, web zip, coins rattle, espresso machine.',
+blk('19','Кофейня: ловит падающую полку с чашками','07_coffee_int',['hero_interview','props','cast_secondary'],'interview',
+ "SHOT 1 MEDIUM: the hero at the counter, the barista in a green apron with a hair bun slides a white paper coffee cup with a brown sleeve toward him. HARD CUT. SHOT 2 WIDE: behind her a loaded wall shelf of white mugs breaks loose and starts to fall. HARD CUT. SHOT 3 MEDIUM fast: the hero vaults over the counter and fires web strands left and right, catching mug after mug in mid-air. HARD CUT. SHOT 4 WIDE: all the mugs hang in a neat row on white web strands under the shelf, swinging gently, not one broken. HARD CUT. SHOT 5 CU: the barista, one eyebrow raised, pushes the coffee cup toward him; he takes it, nods, and walks out.",
+ 'cup slide, wood crack, rapid web zips, porcelain clinks, gentle swinging.',
  'Coffee. You will carry this cup for the rest of the day. Remember it.',
- 'Кофе. Ты будешь нести этот стакан до конца дня. Запомни его.')
+ 'Кофе. Ты будешь носить этот стакан весь день. Запомни его.')
 blk('20','Чутьё на капучинатор: прыжок на потолок','07_coffee_int',['hero_interview','props','cast_secondary'],'interview',
  "SHOT 1 CU: the espresso machine's steam wand hisses loudly into a milk pitcher. HARD CUT. SHOT 2 ECU: the hero's face, hair slowly standing up. HARD CUT. SHOT 3 WIDE: he leaps straight up and sticks to the coffee shop ceiling on all fours, still holding the cup lump. HARD CUT. SHOT 4 CU: the barista looks up at him, no expression. HARD CUT. SHOT 5 MEDIUM: he drops down onto the floor and straightens his tie.",
  'loud steam hiss, high tingle, whoosh, ceiling thump, landing.',
