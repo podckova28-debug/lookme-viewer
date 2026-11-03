@@ -25,7 +25,7 @@ RULES = ("A single 10-second scene of FIVE hard-cut shots at 2.0s, 4.0s, 6.0s an
          "frame 1. ONE action per shot. Static camera unless a shot says otherwise. Anything stuck to the hero "
          "is always joined to him by a clearly visible white sticky web blob.")
 NEG = ("NEGATIVE: opening on a reference sheet, leading freeze, dissolves, new colors, recolored clothes, "
-       "{extra}full superhero suit, face mask, extra people, duplicated characters, morphing faces, extra "
+       "{extra}full superhero suit, face mask, extra people, duplicated characters, {dave}morphing faces, extra "
        "fingers, twisted limbs, rude hand gestures, a raised middle finger, a second phone, a landline phone, any phone on the kitchen counter, "
        "talking, lip-sync, on-screen text, captions, photorealism, 3D render, watermark{tail}.")
 NIGHTSTAND = 'The nightstand holds only a lamp and a white mug, no phone of any kind on it. '
@@ -60,7 +60,7 @@ def build_prompt(b):
         STYLE, LOCK, 'REFERENCES: ' + ' '.join(refs), RULES, *extra_rules,
         pre + b['shots'],
         'AUDIO: ' + b['audio'] + ' No voice, no narration, no music.',
-        NEG.format(extra=(extra + ', ') if extra else '', tail=', a reflection with nobody standing in front of the mirror' if re.search(r'mirror|reflection|glass door', b['shots']) else ''),
+        NEG.format(dave='Dave with hair, Dave looking like the hero, ' if 'dave' in b['sheets'] else '', extra=(extra + ', ') if extra else '', tail=', a reflection with nobody standing in front of the mirror' if re.search(r'mirror|reflection|glass door', b['shots']) else ''),
     ]) + '\n'
 
 def files_for(b):
@@ -171,7 +171,7 @@ def build_long(g):
         STYLE, LOCK, 'REFERENCES: ' + ' '.join(refs), rules, *extra_rules,
         pre + ' HARD CUT. '.join(shots),
         'AUDIO: ' + ' '.join(b['audio'] for b in g) + ' No voice, no narration, no music.',
-        NEG.format(extra=(extra + ', ') if extra else '', tail=', a reflection with nobody standing in front of the mirror' if mirror else ''),
+        NEG.format(dave='Dave with hair, Dave looking like the hero, ' if 'dave' in b['sheets'] else '', extra=(extra + ', ') if extra else '', tail=', a reflection with nobody standing in front of the mirror' if mirror else ''),
     ]) + '\n', ['plates/' + g[0]['plate'] + '.png'] + ['sheets/' + s + '.png' for s in sheets]
 
 os.makedirs('ep01_ready_long', exist_ok=True)
