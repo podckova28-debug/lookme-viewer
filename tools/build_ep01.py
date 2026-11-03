@@ -23,7 +23,8 @@ LOCK = ("PALETTE LOCK: use only the colors and background treatment of the refer
 RULES = ("A single 10-second scene of FIVE hard-cut shots at 2.0s, 4.0s, 6.0s and 8.0s, no dissolves. Do not "
          "open on a reference image. Characters only emote and gesture, they do NOT talk. Motion starts on "
          "frame 1. ONE action per shot. Static camera unless a shot says otherwise. Anything stuck to the hero "
-         "is always joined to him by a clearly visible white sticky web blob.")
+         "is always joined to him by a clearly visible white sticky web blob. White web blobs appear ONLY where a "
+         "shot says something is stuck; never on his shirt, chest, backpack, clothes, walls or props otherwise.")
 NEG = ("NEGATIVE: opening on a reference sheet, leading freeze, dissolves, new colors, recolored clothes, "
        "{extra}full superhero suit, face mask, extra people, duplicated characters, {dave}morphing faces, extra "
        "fingers, twisted limbs, rude hand gestures, a raised middle finger, a second phone, a landline phone, any phone on the kitchen counter, "
@@ -153,7 +154,7 @@ def build_long(g):
     rules = (f"A single {len(g)*10}-second scene of {NUM[len(g)]} hard-cut shots, a hard cut every 2 seconds at {cuts}, no dissolves. "
              "Do not open on a reference image. Characters only emote and gesture, they do NOT talk. Motion starts on frame 1. "
              "ONE action per shot. Static camera unless a shot says otherwise. Anything stuck to the hero is always joined to him "
-             "by a clearly visible white sticky web blob. Every character and every object keeps the same look in all shots.")
+             "by a clearly visible white sticky web blob. White web blobs appear ONLY where a shot says something is stuck; never on his shirt, chest, backpack, clothes, walls or props otherwise. Every character and every object keeps the same look in all shots.")
     shots, k = [], 0
     for b in g:
         for part in re.split(r'\s*HARD CUT\.\s*', b['shots'].strip()):

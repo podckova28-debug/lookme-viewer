@@ -37,7 +37,7 @@ SHOT 1 CU: the hero picks up the blue milk carton, it glues to his palm by a whi
 AUDIO: sticky pops, milk pouring, two thuds, cereal crunch.
 
 **b09** · Цель дня: собеседование в десять · `02_kitchen` · `hero_home`, `dave`
-SHOT 1 CU: a paper calendar on the fridge, one day circled in red with a small drawing of a necktie. HARD CUT. SHOT 2 ECU: the hero's face, cereal spoon frozen halfway, eyes going wide. HARD CUT. SHOT 3 CU: a round kitchen wall clock, the hands at five past nine. HARD CUT. SHOT 4 MEDIUM: the hero puts a finger to his lips and points at himself, then at the ceiling, miming nobody can know. HARD CUT. SHOT 5 CU: Dave nods once, deadpan, and raises his mug.
+SHOT 1 CU: a paper calendar on the fridge, one day circled in red with a small drawing of a necktie. HARD CUT. SHOT 2 ECU: the hero's face, cereal spoon frozen halfway, eyes going wide. HARD CUT. SHOT 3 CU: a round kitchen wall clock reading 9:05, the short hour hand pointing at 9 and the long minute hand pointing at 1. HARD CUT. SHOT 4 MEDIUM: the hero puts a finger to his lips and points at himself, then at the ceiling, miming nobody can know. HARD CUT. SHOT 5 CU: Dave nods once, deadpan, and raises his mug.
 AUDIO: clock ticking, spoon clink, tense silence, sip.
 
 **b10** · Галстук прилип, завязывает Дэйв · `04_hallway` · `hero_interview`, `dave`
@@ -53,7 +53,7 @@ SHOT 1 MEDIUM: the hero sits on the hallway floor in his shirt and tie tying his
 AUDIO: laces, sticky pull, hopping thuds, pop.
 
 **b13** · Сила: ручка двери остаётся в руке · `04_hallway` · `hero_interview`, `dave`, `props`
-SHOT 1 WIDE: Dave in the kitchen doorway with his mug watches the hero walk to the front door. HARD CUT. SHOT 2 CU: the hero grips the brass door knob and turns it gently. HARD CUT. SHOT 3 CU: the knob crumples in his fist and snaps off the door. HARD CUT. SHOT 4 CU: he looks at the crushed knob, sets it carefully on the side table. HARD CUT. SHOT 5 WIDE: he pushes the door open with one finger and walks out into the sunlight; the black and white cat sits by the knob.
+SHOT 1 WIDE: Dave in the kitchen doorway with his mug watches the hero walk to the front door. HARD CUT. SHOT 2 CU: the hero grips the brass door knob and turns it gently. HARD CUT. SHOT 3 CU: the knob crumples in his fist and snaps off the door. HARD CUT. SHOT 4 CU: he looks at the crushed knob, sets it carefully on the side table. HARD CUT. SHOT 5 WIDE: he pushes the door open with one finger; the door swings on its hinges on the side opposite the broken knob hole, and he walks out into the sunlight; the black and white cat sits by the side table.
 AUDIO: metal crunch, snap, door creak, birds.
 
 **b14** · Сосед с воздуходувкой · `05_yard` · `hero_interview`, `cast_secondary`
