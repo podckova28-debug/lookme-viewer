@@ -60,6 +60,8 @@ header.top{position:sticky;top:env(safe-area-inset-top, 0px);z-index:5;backgroun
 .ref code{font:12px var(--mono);color:var(--muted);word-break:break-all}
 .missing{width:178px;aspect-ratio:16/9;border:1px dashed var(--accent);border-radius:6px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:13px;color:var(--accent);padding:8px}
 .row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chain{font-size:14px;background:var(--chip);border-radius:6px;padding:8px 12px}
+.missing.start{border-color:var(--ink);color:var(--ink)}
 .copy{font:600 14px var(--body);background:var(--accent);color:var(--accent-ink);border:0;border-radius:6px;padding:8px 14px;cursor:pointer}
 .copy.ok{background:var(--ok)}
 details summary{cursor:pointer;color:var(--muted);font-size:14px}
@@ -170,7 +172,10 @@ function render(filter){
       const t=document.createElement('div');t.className='title';t.textContent=b.title;main.append(t);
       if(b.vo_en){const v=document.createElement('div');v.className='vo';v.innerHTML='<b></b><br><span></span>';v.querySelector('b').textContent=b.vo_en;v.querySelector('span').textContent=b.vo_ru;main.append(v)}
       else{const v=document.createElement('div');v.className='vo';v.textContent='Без текста рассказчика, только звук.';main.append(v)}
-      const refs=document.createElement('div');refs.className='refs';b.files.forEach((p,i)=>refs.append(refFig(p,i)));main.append(refs);
+      if(b.chain_from){const c=document.createElement('div');c.className='chain';c.innerHTML='<b>Цепочка.</b> Запускать только после блока '+b.chain_from+' и по одному. Стартовым кадром идёт последний кадр блока '+b.chain_from+', его я вырежу и пришлю.';main.append(c)}
+      const refs=document.createElement('div');refs.className='refs';
+      if(b.chain_from){const w=document.createElement('div');w.className='ref';const m=document.createElement('div');m.className='missing start';m.textContent='Старт: последний кадр блока '+b.chain_from;const c=document.createElement('code');c.textContent='слот «стартовый кадр»';w.append(m,c);refs.append(w)}
+      b.files.forEach((p,i)=>refs.append(refFig(p,i)));main.append(refs);
       const row=document.createElement('div');row.className='row';
       if(b.accepted){row.innerHTML='<span class="pill">Принят, генерация 325ac9b5</span>'}
       const det=document.createElement('details');det.innerHTML='<summary>Показать промпт</summary>';

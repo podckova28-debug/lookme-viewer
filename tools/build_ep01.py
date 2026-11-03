@@ -28,6 +28,10 @@ NEG = ("NEGATIVE: opening on a reference sheet, leading freeze, dissolves, new c
        "fingers, twisted limbs, a second phone, a landline phone, any object that is not in the references, "
        "talking, lip-sync, on-screen text, captions, photorealism, 3D render, watermark.")
 NIGHTSTAND = 'The nightstand holds only a lamp, a white mug and the one black phone. '
+DIRECTION = ('SCREEN DIRECTION LOCK: the yellow school bus always faces and moves from screen LEFT to screen RIGHT, '
+             'seen from the side; it never drives toward the camera, away from the camera or backwards.')
+START = ('START FRAME: SHOT 1 begins exactly on the provided start frame and continues its action with the same '
+         'framing, position and light.')
 
 def sheet_desc(key, look):
     if key.startswith('hero_'):
@@ -41,8 +45,13 @@ def build_prompt(b):
         refs.append(f"@Image{i+2} = {sheet_desc(k, b['look'])}.")
     extra = LOOK_NEG[b['look']]
     pre = NIGHTSTAND if b['plate'] in ('01_bedroom', '12_bedroom_night') else ''
+    extra_rules = []
+    if b['plate'] == '10_bus_street' and 'bus' in b['shots']:
+        extra_rules.append(DIRECTION)
+    if b.get('chain_from'):
+        extra_rules.append(START)
     return '\n'.join([
-        STYLE, LOCK, 'REFERENCES: ' + ' '.join(refs), RULES,
+        STYLE, LOCK, 'REFERENCES: ' + ' '.join(refs), RULES, *extra_rules,
         pre + b['shots'],
         'AUDIO: ' + b['audio'] + ' No voice, no narration, no music.',
         NEG.format(extra=(extra + ', ') if extra else ''),
@@ -63,9 +72,11 @@ for b in B:
     p = build_prompt(b)
     if b['id'] != '01':
         open(f"ep01_ready/e01_b{b['id']}.txt", 'w', encoding='utf-8').write(p)
-    idx.append(f"| {b['id']} | {b['title']} | " + ', '.join(f'`{x}`' for x in files_for(b)) + ' |')
+    start = f"стартовый кадр: последний кадр блока {b['chain_from']}, " if b.get('chain_from') else ''
+    idx.append(f"| {b['id']} | {b['title']} | " + start + ', '.join(f'`{x}`' for x in files_for(b)) + ' |')
     board.append({'id': b['id'], 'title': b['title'], 'files': files_for(b), 'prompt': p,
-                  'vo_en': b['vo_en'], 'vo_ru': b['vo_ru'], 'accepted': b['id'] == '01'})
+                  'vo_en': b['vo_en'], 'vo_ru': b['vo_ru'], 'accepted': b['id'] == '01',
+                  'chain_from': b.get('chain_from')})
 open('ep01_ready/README.md', 'w', encoding='utf-8').write('\n'.join(idx) + '\n')
 os.makedirs('board', exist_ok=True)
 json.dump({'blocks': board, 'inserts': INSERTS}, open('board/blocks.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
@@ -90,6 +101,9 @@ S = ['# Серия 1. «What If You Woke Up as SPIDER-MAN?» · версия 2',
      '- Рассказчик говорит с героем на «ты». Персонажи не говорят.',
      '- Дэйв ничему не удивляется и всегда помогает молча.',
      '- Каждый прилипший предмет отлипает в том же блоке. Исключения: телефон на потолке до конца серии, кофе в руке героя с 19 по 46 блок.',
+     '- Монтажный стык между блоками всегда меняет крупность плана, если это та же комната и тот же персонаж.',
+     '- С блока 21 в руке героя только белый стакан с коричневой манжетой, маффин и банка остаются на стойке.',
+     '- Погоня 34 → 36 → 37 → 38 генерируется цепочкой: последний кадр предыдущего блока идёт стартовым кадром следующего. Эти блоки запускаются по одному.',
      '- Силы показаны все: липкость, стены, чутьё (блоки 03, 20, 32, 53), реакция (07, 26), сила (13, 22, 36).', '',
      '## Вставки, которые делаю я', '']
 S += [f'- {a}: {t}' for a, t in INSERTS]

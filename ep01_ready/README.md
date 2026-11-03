@@ -39,9 +39,9 @@
 | 33 | Переодевание за две секунды | `plates/09_office_entrance.png`, `sheets/hero_interview.png`, `sheets/hero_costume.png`, `sheets/props.png` |
 | 34 | Догоняет автобус, паутина в бампер | `plates/10_bus_street.png`, `sheets/hero_costume.png`, `sheets/cast_secondary.png`, `sheets/props.png` |
 | 35 | Старушка на фонаре видит автобус | `plates/10_bus_street.png`, `sheets/cast_secondary.png` |
-| 36 | Едет за автобусом на «водных лыжах» | `plates/10_bus_street.png`, `sheets/hero_costume.png`, `sheets/props.png` |
-| 37 | Запрыгивает на крышу автобуса | `plates/10_bus_street.png`, `sheets/hero_costume.png`, `sheets/props.png` |
-| 38 | Промах: паутина утащила зонт хот-догов | `plates/10_bus_street.png`, `sheets/hero_costume.png`, `sheets/props.png` |
+| 36 | Едет за автобусом на «водных лыжах» | стартовый кадр: последний кадр блока 34, `plates/10_bus_street.png`, `sheets/hero_costume.png`, `sheets/props.png` |
+| 37 | Запрыгивает на крышу автобуса | стартовый кадр: последний кадр блока 36, `plates/10_bus_street.png`, `sheets/hero_costume.png`, `sheets/props.png` |
+| 38 | Промах: паутина утащила зонт хот-догов | стартовый кадр: последний кадр блока 37, `plates/10_bus_street.png`, `sheets/hero_costume.png`, `sheets/props.png` |
 | 39 | Автобус всё ближе к старушке | `plates/10_bus_street.png`, `sheets/hero_costume.png`, `sheets/cast_secondary.png` |
 | 40 | Сеть между домами, автобус останавливается | `plates/10_bus_street.png`, `sheets/hero_costume.png`, `sheets/cast_secondary.png`, `sheets/props.png` |
 | 41 | Старушка нос к носу с автобусом, кивает | `plates/10_bus_street.png`, `sheets/hero_costume.png`, `sheets/cast_secondary.png` |
