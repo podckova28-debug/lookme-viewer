@@ -171,7 +171,7 @@ def build_long(g):
         STYLE, LOCK, 'REFERENCES: ' + ' '.join(refs), rules, *extra_rules,
         pre + ' HARD CUT. '.join(shots),
         'AUDIO: ' + ' '.join(b['audio'] for b in g) + ' No voice, no narration, no music.',
-        NEG.format(dave='Dave with hair, Dave looking like the hero, ' if 'dave' in b['sheets'] else '', extra=(extra + ', ') if extra else '', tail=', a reflection with nobody standing in front of the mirror' if mirror else ''),
+        NEG.format(dave='Dave with hair, Dave looking like the hero, ' if 'dave' in sheets else '', extra=(extra + ', ') if extra else '', tail=', a reflection with nobody standing in front of the mirror' if mirror else ''),
     ]) + '\n', ['plates/' + g[0]['plate'] + '.png'] + ['sheets/' + s + '.png' for s in sheets]
 
 os.makedirs('ep01_ready_long', exist_ok=True)
