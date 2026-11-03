@@ -17,8 +17,8 @@ SHOT 1 CU: a small fly lands on the windowsill. HARD CUT. SHOT 2 ECU: the hero's
 AUDIO: faint buzz, a high tingle sound, whoosh, wall thump, buzz fading.
 
 **b04** · Ванная, всё липнет к зеркалу · `03_bathroom` · `hero_home`, `props`
-SHOT 1 MEDIUM at the mirror: he lifts a toothbrush, it sticks to his palm. HARD CUT. SHOT 2 CU: he flicks the hand, the toothbrush flies and sticks to the mirror. HARD CUT. SHOT 3 MEDIUM: he reaches for the comb, it sticks; flicks it, it lands on the mirror next to the toothbrush. HARD CUT. SHOT 4 CU on the mirror: toothbrush, comb, razor and rubber duck all stuck to the glass. HARD CUT. SHOT 5 MEDIUM: he stares at the mirror, slowly raises both palms, web dangling from each.
-AUDIO: sticky pops, light clatter on glass, water drip.
+SHOT 1 MEDIUM over his shoulder: the hero stands at the sink, his back and shoulder big in the foreground, his sleepy face in the mirror; he pulls the red toothbrush out of the cup and it stays glued to his palm by a white web blob. HARD CUT. SHOT 2 CU side view of his hand: he flicks the hand hard, the red toothbrush flies off and splats onto the mirror glass with a white web blob. HARD CUT. SHOT 3 CU: his palm with the white soap bar glued to it by a white web blob; he shakes the hand, the soap stays on. HARD CUT. SHOT 4 CU on the mirror glass, no person in it: the red toothbrush, the yellow rubber duck and a blue shampoo bottle all stuck to the glass by white web blobs. HARD CUT. SHOT 5 MEDIUM over his shoulder: his real back in the foreground, his tired face in the mirror; he slowly raises both palms, the white soap bar still glued to one of them, white web strands dangling from both.
+AUDIO: sticky pop, wet splat on glass, sticky pop, soft thud, water drip.
 
 **b05** · Идёт по стене коридора · `04_hallway` · `hero_home`
 SHOT 1 WIDE: he walks along the hallway wall sideways, body horizontal, bare feet on the wallpaper, carrying a towel, not noticing. HARD CUT. SHOT 2 CU: framed photos tilt under his bare feet. HARD CUT. SHOT 3 MEDIUM: he glances down, sees the floor below him, freezes. HARD CUT. SHOT 4 WIDE: he peels off the wall and drops to the floor on his back. HARD CUT. SHOT 5 CU: he lies on the floor looking up at the tilted photos, blinks.
@@ -41,7 +41,7 @@ SHOT 1 CU: a paper calendar on the fridge, one day circled in red with a small d
 AUDIO: clock ticking, spoon clink, tense silence, sip.
 
 **b10** · Галстук прилип, завязывает Дэйв · `04_hallway` · `hero_interview`, `dave`
-SHOT 1 MEDIUM: the hero in a white shirt stands at the hallway mirror trying to tie a thin dark tie. HARD CUT. SHOT 2 CU: the tie sticks to his fingers and twists into a knot around his hand. HARD CUT. SHOT 3 MEDIUM: he shakes the hand, the tie stays wrapped around it like a bandage. HARD CUT. SHOT 4 MEDIUM: Dave steps in with his mug in one hand, unwraps the tie with the other and ties it properly on the hero's neck. HARD CUT. SHOT 5 CU: Dave pats the knot once, sips.
+SHOT 1 MEDIUM side view: the hero in a white shirt stands in front of the hallway mirror trying to tie a thin dark tie, his real body and his reflection both visible. HARD CUT. SHOT 2 CU: the tie sticks to his fingers and twists into a knot around his hand. HARD CUT. SHOT 3 MEDIUM: he shakes the hand, the tie stays wrapped around it like a bandage. HARD CUT. SHOT 4 MEDIUM: Dave steps in with his mug in one hand, unwraps the tie with the other and ties it properly on the hero's neck. HARD CUT. SHOT 5 CU: Dave pats the knot once, sips.
 AUDIO: fabric, sticky pull, quiet hallway, sip.
 
 **b11** · Дэйв даёт рюкзак с костюмом · `04_hallway` · `hero_interview`, `dave`, `props`
@@ -113,7 +113,7 @@ SHOT 1 MEDIUM: Dave alone at the fridge peels a long strand of white web off the
 AUDIO: sticky stretch, paper, sip.
 
 **b28** · Офис, 9:58: поправляет галстук · `09_office_entrance` · `hero_interview`, `props`
-SHOT 1 WIDE: the hero arrives at the glass doors of the office building, slightly out of breath, white paper coffee cup in hand. HARD CUT. SHOT 2 CU: his reflection in the glass; he straightens his tie and flattens his hair. HARD CUT. SHOT 3 CU: a round clock on the lobby wall inside, the hands at two minutes to ten. HARD CUT. SHOT 4 MEDIUM: he takes a deep breath, eyes closed. HARD CUT. SHOT 5 CU: he smiles a tiny hopeful smile.
+SHOT 1 WIDE: the hero arrives at the glass doors of the office building, slightly out of breath, white paper coffee cup in hand. HARD CUT. SHOT 2 CU over his shoulder: he and his reflection in the glass door; he straightens his tie. HARD CUT. SHOT 3 CU: a round clock on the lobby wall inside, the hands at two minutes to ten. HARD CUT. SHOT 4 MEDIUM: he takes a deep breath, eyes closed. HARD CUT. SHOT 5 CU: he smiles a tiny hopeful smile.
 AUDIO: city ambience, breathing, clock tick.
 
 **b29** · Охранник открывает дверь · `09_office_entrance` · `hero_interview`

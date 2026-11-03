@@ -55,8 +55,8 @@ blk('03','Чутьё срабатывает на муху','01_bedroom',['hero_h
  'Spider-sense. In the movies it warns you about danger. Yours warns you about a fly.',
  'Паучье чутьё. В кино оно предупреждает об опасности. Твоё предупреждает о мухе.')
 blk('04','Ванная, всё липнет к зеркалу','03_bathroom',['hero_home','props'],'home',
- "SHOT 1 MEDIUM at the mirror: he lifts a toothbrush, it sticks to his palm. HARD CUT. SHOT 2 CU: he flicks the hand, the toothbrush flies and sticks to the mirror. HARD CUT. SHOT 3 MEDIUM: he reaches for the comb, it sticks; flicks it, it lands on the mirror next to the toothbrush. HARD CUT. SHOT 4 CU on the mirror: toothbrush, comb, razor and rubber duck all stuck to the glass. HARD CUT. SHOT 5 MEDIUM: he stares at the mirror, slowly raises both palms, web dangling from each.",
- 'sticky pops, light clatter on glass, water drip.',
+ "SHOT 1 MEDIUM over his shoulder: the hero stands at the sink, his back and shoulder big in the foreground, his sleepy face in the mirror; he pulls the red toothbrush out of the cup and it stays glued to his palm by a white web blob. HARD CUT. SHOT 2 CU side view of his hand: he flicks the hand hard, the red toothbrush flies off and splats onto the mirror glass with a white web blob. HARD CUT. SHOT 3 CU: his palm with the white soap bar glued to it by a white web blob; he shakes the hand, the soap stays on. HARD CUT. SHOT 4 CU on the mirror glass, no person in it: the red toothbrush, the yellow rubber duck and a blue shampoo bottle all stuck to the glass by white web blobs. HARD CUT. SHOT 5 MEDIUM over his shoulder: his real back in the foreground, his tired face in the mirror; he slowly raises both palms, the white soap bar still glued to one of them, white web strands dangling from both.",
+ 'sticky pop, wet splat on glass, sticky pop, soft thud, water drip.',
  'Everything you touch is yours now. Forever.',
  'Всё, к чему ты прикасаешься, теперь твоё. Навсегда.')
 blk('05','Идёт по стене коридора','04_hallway',['hero_home'],'home',
@@ -85,7 +85,7 @@ blk('09','Цель дня: собеседование в десять','02_kitch
  "Oh. Right. At ten you have a job interview. Your first real one in a year. Rule one: nobody can know.",
  'Ах да. В десять у тебя собеседование. Первое за год. Правило первое: никто не должен знать.')
 blk('10','Галстук прилип, завязывает Дэйв','04_hallway',['hero_interview','dave'],'interview',
- "SHOT 1 MEDIUM: the hero in a white shirt stands at the hallway mirror trying to tie a thin dark tie. HARD CUT. SHOT 2 CU: the tie sticks to his fingers and twists into a knot around his hand. HARD CUT. SHOT 3 MEDIUM: he shakes the hand, the tie stays wrapped around it like a bandage. HARD CUT. SHOT 4 MEDIUM: Dave steps in with his mug in one hand, unwraps the tie with the other and ties it properly on the hero's neck. HARD CUT. SHOT 5 CU: Dave pats the knot once, sips.",
+ "SHOT 1 MEDIUM side view: the hero in a white shirt stands in front of the hallway mirror trying to tie a thin dark tie, his real body and his reflection both visible. HARD CUT. SHOT 2 CU: the tie sticks to his fingers and twists into a knot around his hand. HARD CUT. SHOT 3 MEDIUM: he shakes the hand, the tie stays wrapped around it like a bandage. HARD CUT. SHOT 4 MEDIUM: Dave steps in with his mug in one hand, unwraps the tie with the other and ties it properly on the hero's neck. HARD CUT. SHOT 5 CU: Dave pats the knot once, sips.",
  'fabric, sticky pull, quiet hallway, sip.',
  'Rule two: wear a tie. Rule three: let Dave tie it.',
  'Правило второе: галстук. Правило третье: завязывает Дэйв.')
@@ -177,7 +177,7 @@ blk('27','Тем временем дома: Дэйв и холодильник',
  'Meanwhile, at home.',
  'Тем временем дома.')
 blk('28','Офис, 9:58: поправляет галстук','09_office_entrance',['hero_interview','props'],'interview',
- "SHOT 1 WIDE: the hero arrives at the glass doors of the office building, slightly out of breath, white paper coffee cup in hand. HARD CUT. SHOT 2 CU: his reflection in the glass; he straightens his tie and flattens his hair. HARD CUT. SHOT 3 CU: a round clock on the lobby wall inside, the hands at two minutes to ten. HARD CUT. SHOT 4 MEDIUM: he takes a deep breath, eyes closed. HARD CUT. SHOT 5 CU: he smiles a tiny hopeful smile.",
+ "SHOT 1 WIDE: the hero arrives at the glass doors of the office building, slightly out of breath, white paper coffee cup in hand. HARD CUT. SHOT 2 CU over his shoulder: he and his reflection in the glass door; he straightens his tie. HARD CUT. SHOT 3 CU: a round clock on the lobby wall inside, the hands at two minutes to ten. HARD CUT. SHOT 4 MEDIUM: he takes a deep breath, eyes closed. HARD CUT. SHOT 5 CU: he smiles a tiny hopeful smile.",
  'city ambience, breathing, clock tick.',
  'Nine fifty-eight. You made it. Shirt, tie, coffee. You look almost normal.',
  'Девять пятьдесят восемь. Ты успел. Рубашка, галстук, кофе. Почти нормальный человек.')

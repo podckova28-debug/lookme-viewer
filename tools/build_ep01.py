@@ -7,7 +7,7 @@ Outputs (paths relative to the repo root):
   script_ep01_spider.md    script v2: logline, looks, narration per block
   board/blocks.json        data for the production board page
 """
-import json, os, sys
+import json, os, re, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from ep01_data import B, LOOKS, LOOK_NEG, PLATES, SHEETS, INSERTS
 
@@ -27,10 +27,13 @@ RULES = ("A single 10-second scene of FIVE hard-cut shots at 2.0s, 4.0s, 6.0s an
 NEG = ("NEGATIVE: opening on a reference sheet, leading freeze, dissolves, new colors, recolored clothes, "
        "{extra}full superhero suit, face mask, extra people, duplicated characters, morphing faces, extra "
        "fingers, twisted limbs, a second phone, a landline phone, any object that is not in the references, "
-       "talking, lip-sync, on-screen text, captions, photorealism, 3D render, watermark.")
+       "talking, lip-sync, on-screen text, captions, photorealism, 3D render, watermark{tail}.")
 NIGHTSTAND = 'The nightstand holds only a lamp and a white mug, no phone of any kind on it. '
 DIRECTION = ('SCREEN DIRECTION LOCK: the yellow school bus always faces and moves from screen LEFT to screen RIGHT, '
              'seen from the side; it never drives toward the camera, away from the camera or backwards.')
+MIRROR = ('MIRROR RULE: a mirror or glass only reflects what stands in front of it. The hero is a real person standing in the '
+          'room: whenever his reflection is seen, his real body (back, shoulder or side) is also in the frame in front of the glass. '
+          'The camera is never inside or behind the mirror.')
 START = ('START FRAME: SHOT 1 begins exactly on the provided start frame and continues its action with the same '
          'framing, position and light.')
 
@@ -49,13 +52,15 @@ def build_prompt(b):
     extra_rules = []
     if b['plate'] == '10_bus_street' and 'bus' in b['shots']:
         extra_rules.append(DIRECTION)
+    if re.search(r'mirror|reflection|glass door', b['shots']):
+        extra_rules.append(MIRROR)
     if b.get('chain_from'):
         extra_rules.append(START)
     return '\n'.join([
         STYLE, LOCK, 'REFERENCES: ' + ' '.join(refs), RULES, *extra_rules,
         pre + b['shots'],
         'AUDIO: ' + b['audio'] + ' No voice, no narration, no music.',
-        NEG.format(extra=(extra + ', ') if extra else ''),
+        NEG.format(extra=(extra + ', ') if extra else '', tail=', a reflection with nobody standing in front of the mirror' if re.search(r'mirror|reflection|glass door', b['shots']) else ''),
     ]) + '\n'
 
 def files_for(b):
