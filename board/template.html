@@ -58,6 +58,9 @@ header.top{position:sticky;top:env(safe-area-inset-top, 0px);z-index:5;backgroun
 .ref img{width:178px;aspect-ratio:16/9;object-fit:cover;border-radius:6px;border:1px solid var(--line);display:block;background:var(--chip);max-width:100%}
 .ref .ord{position:absolute;top:6px;left:6px;background:var(--ink);color:var(--bg);font:700 13px var(--display);padding:1px 7px;border-radius:4px}
 .ref code{font:12px var(--mono);color:var(--muted);word-break:break-all}
+.ref a.dl{font:600 13px var(--sans,system-ui);color:var(--accent,#2b6cb0);text-decoration:none;padding:4px 0}
+.ref a.dl:hover{text-decoration:underline}
+a.dl-all{display:inline-block;font-weight:600;padding:10px 14px;border-radius:8px;background:var(--accent,#2b6cb0);color:#fff;text-decoration:none}
 .missing{width:178px;aspect-ratio:16/9;border:1px dashed var(--accent);border-radius:6px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:13px;color:var(--accent);padding:8px}
 .row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 .chain{font-size:14px;background:var(--chip);border-radius:6px;padding:8px 12px}
@@ -78,12 +81,13 @@ textarea{width:100%;min-height:150px;font:12.5px/1.45 var(--mono);color:var(--in
     <div>
       <h1>Spider-Man · день первый</h1>
     </div>
-    <div class="progress"><span id="prog-text">0 из 54</span><span class="bar"><i id="prog-bar"></i></span></div>
+    <div class="progress"><span id="prog-text">0 из 49</span><span class="bar"><i id="prog-bar"></i></span></div>
     <div class="filters" id="filters" role="group" aria-label="Фильтр по актам"></div>
   </header>
 
   <section class="how">
     <div>
+      <p class="note">Все картинки серии одним архивом я присылаю файлом в чат. Здесь любую картинку можно открыть в полном размере и сохранить.</p>
       <h2>Как запускать блок</h2>
       <ol>
         <li>Higgsfield → Seedance 2.5 → новая генерация.</li>
@@ -155,6 +159,7 @@ function refFig(path, i){
     const m=document.createElement('div');m.className='missing';m.textContent=(i+1)+'. сначала сгенерировать (шаг 0)';wrap.append(m);
   }
   const c=document.createElement('code');c.textContent=path.split('/').pop();wrap.append(c);
+  if(HAVE.includes(path)){const a=document.createElement('a');a.className='dl';a.href=path;a.target='_blank';a.rel='noopener';a.textContent='Открыть в полном размере';wrap.append(a)}
   return wrap;
 }
 
@@ -162,7 +167,7 @@ function render(filter){
   const root=document.getElementById('acts');root.innerHTML='';
   ACTS.filter(a=>a.key!=='all'&&(filter==='all'||filter===a.key)).forEach(a=>{
     const sec=document.createElement('section');sec.className='act';
-    const blocks=DATA.blocks.filter(b=>+b.id>=a.from&&+b.id<=a.to);
+    const blocks=DATA.blocks.filter(b=>parseInt(b.id,10)>=a.from&&parseInt(b.id,10)<=a.to);
     const h=document.createElement('h2');h.innerHTML=`${a.name} <small>блоки ${String(a.from).padStart(2,'0')}–${a.to}</small>`;
     sec.append(h);
     blocks.forEach(b=>{
