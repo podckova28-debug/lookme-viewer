@@ -92,8 +92,8 @@ blk('10','Галстук прилип, завязывает Дэйв','04_hallwa
 blk('11','Дэйв даёт рюкзак с костюмом','04_hallway',['hero_interview','dave','props'],'interview',
  "SHOT 1 MEDIUM: Dave silently holds out a black backpack to the hero. HARD CUT. SHOT 2 CU top-down into the open backpack: a plain red hoodie with a fresh black marker spider drawn on the chest, and round swim goggles. HARD CUT. SHOT 3 CU: the hero looks up at Dave. HARD CUT. SHOT 4 CU: Dave holds up a black marker and caps it with a click. HARD CUT. SHOT 5 WIDE: the hero zips the backpack and puts it on his back; Dave walks back into the kitchen.",
  'zipper, marker cap click, zipper.',
- "Dave made you something. Just in case. You didn't ask how he knew.",
- 'Дэйв кое-что тебе собрал. На всякий случай. Ты не спросил, откуда он знает.')
+ 'Dave made you a mask. Because rule one is going to break. Today.',
+ 'Дэйв сделал тебе маску. Потому что правило первое сегодня точно нарушится.')
 blk('12','Шнурки склеились','04_hallway',['hero_interview'],'interview',
  "SHOT 1 MEDIUM: the hero sits on the hallway floor in his shirt and tie tying his sneaker laces. HARD CUT. SHOT 2 CU: the laces stick to his fingers and to each other in a knot. HARD CUT. SHOT 3 CU: he pulls, the knot pulls both sneakers together. HARD CUT. SHOT 4 WIDE: he stands up and hops toward the door with both feet glued together. HARD CUT. SHOT 5 MEDIUM: he stops, breathes, rips the laces apart with a pop, nods to himself.",
  'laces, sticky pull, hopping thuds, pop.',
@@ -132,10 +132,10 @@ blk('18','Вылезает из кустов, почтальон','06_suburb_str
  'Nobody notices. Nobody ever notices.',
  'Никто не замечает. Никто никогда не замечает.')
 blk('19','Кофейня: ловит падающую полку с чашками','07_coffee_int',['hero_interview','props','cast_secondary'],'interview',
- "SHOT 1 MEDIUM: the hero at the counter, the barista in a green apron with a hair bun slides a white paper coffee cup with a brown sleeve toward him. HARD CUT. SHOT 2 WIDE: behind her a loaded wall shelf of white mugs breaks loose and starts to fall. HARD CUT. SHOT 3 MEDIUM fast: the hero vaults over the counter and fires web strands left and right, catching mug after mug in mid-air. HARD CUT. SHOT 4 WIDE: all the mugs hang in a neat row on white web strands under the shelf, swinging gently, not one broken. HARD CUT. SHOT 5 CU: the barista, one eyebrow raised, pushes the coffee cup toward him; he takes it, nods, and walks out.",
+ "SHOT 1 MEDIUM: the hero at the counter, the barista in a green apron with a hair bun slides a white paper coffee cup with a brown sleeve toward him. HARD CUT. SHOT 2 WIDE: behind her a loaded wall shelf of white mugs breaks loose and starts to fall. HARD CUT. SHOT 3 MEDIUM fast: the hero vaults over the counter and fires web strands left and right, catching mug after mug in mid-air. HARD CUT. SHOT 4 WIDE: all the mugs hang in a neat row on white web strands under the shelf, swinging gently, not one broken. HARD CUT. SHOT 5 CU: the barista, one eyebrow raised, pushes the coffee cup toward him; he takes it, nods, and walks out; behind him every customer is still staring at their phone.",
  'cup slide, wood crack, rapid web zips, porcelain clinks, gentle swinging.',
- 'Coffee. You will carry this cup for the rest of the day. Remember it.',
- 'Кофе. Ты будешь носить этот стакан весь день. Запомни его.')
+ 'Rule one: nobody can know. Good news: nobody in this city looks up from their phone. Also, coffee. Remember this cup.',
+ 'Правило первое: никто не должен знать. Хорошая новость: в этом городе никто не отрывается от телефона. И да, кофе. Запомни этот стакан.')
 blk('20','Чутьё на капучинатор: прыжок на потолок','07_coffee_int',['hero_interview','props','cast_secondary'],'interview',
  "SHOT 1 CU: the espresso machine's steam wand hisses loudly into a milk pitcher. HARD CUT. SHOT 2 ECU: the hero's face, hair slowly standing up. HARD CUT. SHOT 3 WIDE: he leaps straight up and sticks to the coffee shop ceiling on all fours, still holding the cup lump. HARD CUT. SHOT 4 CU: the barista looks up at him, no expression. HARD CUT. SHOT 5 MEDIUM: he drops down onto the floor and straightens his tie.",
  'loud steam hiss, high tingle, whoosh, ceiling thump, landing.',
@@ -333,10 +333,10 @@ blk('38d','Замедление: старушка и прыжок','10_bus_stree
  'Четыре часа назад ты не мог удержать телефон.')
 
 blk('24a','Вор с сумкой: паутина не глядя','10_bus_street',['hero_interview','props'],'interview',
- "SHOT 1 WIDE side view: on the busy sidewalk a man in a black hoodie snatches a woman's red handbag and sprints left to right past the hero. HARD CUT. SHOT 2 CU: the hero, still in shirt and tie, glances at his wrist watch, does not look up. HARD CUT. SHOT 3 CU: without looking he flicks his wrist sideways, a web strand zips out. HARD CUT. SHOT 4 WIDE side view: the thief is yanked off his feet and glued flat to a bus stop bench by a big white web blob, the red handbag dangling from the web. HARD CUT. SHOT 5 MEDIUM: the hero keeps walking right, adjusting his tie, as if nothing happened; behind him people stare at the glued thief.",
+ "SHOT 1 WIDE side view: on the busy sidewalk a man in a black hoodie snatches a woman's red handbag and sprints left to right past the hero. HARD CUT. SHOT 2 CU: the hero, still in shirt and tie, glances at his wrist watch, does not look up. HARD CUT. SHOT 3 CU: without looking he flicks his wrist sideways, a web strand zips out. HARD CUT. SHOT 4 WIDE side view: the thief is yanked off his feet and glued flat to a bus stop bench by a big white web blob, the red handbag dangling from the web. HARD CUT. SHOT 5 MEDIUM: the hero keeps walking right, adjusting his tie, as if nothing happened; behind him a teenager at the bus stop holds up his phone and films the glued thief, then slowly turns the phone toward the hero.",
  'running steps, a shout, web zip, thump on the bench, street ambience.',
- 'Rule one: nobody can know. Rule one is already in trouble.',
- 'Правило первое: никто не должен знать. У правила первого уже проблемы.')
+ 'And this time somebody looked up.',
+ 'А вот в этот раз кто-то оторвался от телефона.')
 blk('38e','Велосипедист на пути автобуса','10_bus_street',['hero_costume','props'],'costume',
  "SHOT 1 WIDE side view: a delivery cyclist with a big pizza box pedals across the street right in front of the bus moving left to right. HARD CUT. SHOT 2 CU: the cyclist's face, earbuds in, sees nothing. HARD CUT. SHOT 3 MEDIUM: the hero on the bus roof fires a web line and lifts the cyclist, bike and all, into the air. HARD CUT. SHOT 4 WIDE: the bus passes under the dangling cyclist. HARD CUT. SHOT 5 MEDIUM: the hero lowers him gently onto the sidewalk behind the bus; the cyclist keeps pedaling in the air for a second, then rides off.",
  'bus roar, bicycle bell, web zip, whoosh, soft landing, tires.',

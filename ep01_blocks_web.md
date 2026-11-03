@@ -61,7 +61,7 @@ SHOT 1 MEDIUM: he hops back on one foot to the stuck sneaker. HARD CUT. SHOT 2 C
 AUDIO: hopping, sticky pop, dog whine, footsteps.
 
 **b19** · Кофейня: ловит падающую полку с чашками · `07_coffee_int` · `hero_interview`, `props`, `cast_secondary`
-SHOT 1 MEDIUM: the hero at the counter, the barista in a green apron with a hair bun slides a white paper coffee cup with a brown sleeve toward him. HARD CUT. SHOT 2 WIDE: behind her a loaded wall shelf of white mugs breaks loose and starts to fall. HARD CUT. SHOT 3 MEDIUM fast: the hero vaults over the counter and fires web strands left and right, catching mug after mug in mid-air. HARD CUT. SHOT 4 WIDE: all the mugs hang in a neat row on white web strands under the shelf, swinging gently, not one broken. HARD CUT. SHOT 5 CU: the barista, one eyebrow raised, pushes the coffee cup toward him; he takes it, nods, and walks out.
+SHOT 1 MEDIUM: the hero at the counter, the barista in a green apron with a hair bun slides a white paper coffee cup with a brown sleeve toward him. HARD CUT. SHOT 2 WIDE: behind her a loaded wall shelf of white mugs breaks loose and starts to fall. HARD CUT. SHOT 3 MEDIUM fast: the hero vaults over the counter and fires web strands left and right, catching mug after mug in mid-air. HARD CUT. SHOT 4 WIDE: all the mugs hang in a neat row on white web strands under the shelf, swinging gently, not one broken. HARD CUT. SHOT 5 CU: the barista, one eyebrow raised, pushes the coffee cup toward him; he takes it, nods, and walks out; behind him every customer is still staring at their phone.
 AUDIO: cup slide, wood crack, rapid web zips, porcelain clinks, gentle swinging.
 
 **b30** · Тем временем: водитель и ручник · `10_bus_street` · `cast_secondary`
@@ -81,7 +81,7 @@ SHOT 1 CU: the hero's hands tug at the web on the woman, it stretches and snaps 
 AUDIO: elastic twang, soft bonk, clock tick, footsteps.
 
 **b24a** · Вор с сумкой: паутина не глядя · `10_bus_street` · `hero_interview`, `props`
-SHOT 1 WIDE side view: on the busy sidewalk a man in a black hoodie snatches a woman's red handbag and sprints left to right past the hero. HARD CUT. SHOT 2 CU: the hero, still in shirt and tie, glances at his wrist watch, does not look up. HARD CUT. SHOT 3 CU: without looking he flicks his wrist sideways, a web strand zips out. HARD CUT. SHOT 4 WIDE side view: the thief is yanked off his feet and glued flat to a bus stop bench by a big white web blob, the red handbag dangling from the web. HARD CUT. SHOT 5 MEDIUM: the hero keeps walking right, adjusting his tie, as if nothing happened; behind him people stare at the glued thief.
+SHOT 1 WIDE side view: on the busy sidewalk a man in a black hoodie snatches a woman's red handbag and sprints left to right past the hero. HARD CUT. SHOT 2 CU: the hero, still in shirt and tie, glances at his wrist watch, does not look up. HARD CUT. SHOT 3 CU: without looking he flicks his wrist sideways, a web strand zips out. HARD CUT. SHOT 4 WIDE side view: the thief is yanked off his feet and glued flat to a bus stop bench by a big white web blob, the red handbag dangling from the web. HARD CUT. SHOT 5 MEDIUM: the hero keeps walking right, adjusting his tie, as if nothing happened; behind him a teenager at the bus stop holds up his phone and films the glued thief, then slowly turns the phone toward the hero.
 AUDIO: running steps, a shout, web zip, thump on the bench, street ambience.
 
 **b28** · Офис, 9:58: поправляет галстук · `09_office_entrance` · `hero_interview`, `props`
