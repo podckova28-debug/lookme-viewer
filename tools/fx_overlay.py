@@ -4,6 +4,8 @@ usage: python3 tools/fx_overlay.py IN.mp4 OUT.mp4 FX.json
 FX.json: list of effects, each with "type" and frame range "f0"/"f1" (inclusive, 24 fps):
   {"type": "sense", "f0": 55, "f1": 87, "cx": 1040, "cy": 430, "rx": 560, "ry": 470}
   {"type": "burst", "f0": 58, "f1": 87, "x": 1600, "y": 170, "text": "TINGLE!", "size": 96, "rot": 8}
+  {"type": "caption", "f0": 0, "f1": 60, "x": 60, "y": 50, "lines": ["7:02 AM"], "size": 64}
+  {"type": "label", "f0": 30, "f1": 90, "x": 1200, "y": 700, "title": "DAVE", "sub": "Roommate. Nothing surprises him.", "size": 70}
 """
 import sys, os, json, math, subprocess
 import numpy as np
@@ -12,6 +14,7 @@ from PIL import Image, ImageDraw, ImageFont
 W, H = 1920, 1080
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BANG = os.path.join(ROOT, 'assets/fonts/Bangers-Regular.ttf')
+NEUE = os.path.join(ROOT, 'assets/fonts/ComicNeue-Bold.ttf')
 INK, RED, YEL = (24, 20, 22, 255), (214, 52, 40, 255), (250, 206, 64, 255)
 
 def ease_back(t):
@@ -63,6 +66,39 @@ def burst(canvas, e, f):
     b = b.resize((max(1, int(b.width * s)), max(1, int(b.height * s))), Image.LANCZOS)
     canvas.alpha_composite(b, (int(e['x'] - b.width / 2), int(e['y'] - b.height / 2)))
 
+def slide_alpha(e, f, dur=5):
+    k = f - e['f0']; out = e['f1'] - f
+    return max(0.0, min(1.0, k / dur, out / 4 + 0.0001))
+
+def caption(canvas, e, f):
+    """Yellow comic narration box, black border, Bangers lettering. Pops in, fades out."""
+    fnt = ImageFont.truetype(BANG, e.get('size', 64))
+    pad = int(e.get('size', 64) * 0.35)
+    tw = max(int(fnt.getlength(t)) for t in e['lines']); lh = int(e.get('size', 64) * 1.05)
+    box = Image.new('RGBA', (tw + 2 * pad + 10, lh * len(e['lines']) + 2 * pad + 10), (0, 0, 0, 0)); d = ImageDraw.Draw(box)
+    d.rectangle((8, 8, box.width - 1, box.height - 1), fill=(20, 16, 18, 200))
+    d.rectangle((0, 0, box.width - 9, box.height - 9), fill=(255, 226, 92, 255), outline=INK, width=6)
+    for i, t in enumerate(e['lines']):
+        d.text((pad, pad - 4 + i * lh), t, font=fnt, fill=INK)
+    a = slide_alpha(e, f); s = 0.85 + 0.15 * ease_back(min(1, (f - e['f0']) / 5))
+    b = box.resize((max(1, int(box.width * s)), max(1, int(box.height * s))), Image.LANCZOS)
+    b.putalpha(b.split()[3].point(lambda v: int(v * a)))
+    canvas.alpha_composite(b, (e['x'], e['y']))
+
+def label(canvas, e, f):
+    """Character intro: big name in white Bangers with ink outline, one line under it in a white box."""
+    sz = e.get('size', 70)
+    ft = ImageFont.truetype(BANG, sz); fs = ImageFont.truetype(NEUE, int(sz * 0.56))
+    tw = max(int(ft.getlength(e['title'])), int(fs.getlength(e['sub'])) + 40) + 40
+    box = Image.new('RGBA', (tw, int(sz * 2.3)), (0, 0, 0, 0)); d = ImageDraw.Draw(box)
+    d.text((10, 0), e['title'], font=ft, fill=(255, 255, 255, 255), stroke_width=8, stroke_fill=INK)
+    sy = int(sz * 1.15); sw = int(fs.getlength(e['sub'])) + 40
+    d.rectangle((10, sy, 10 + sw, sy + int(sz * 0.8)), fill=(255, 255, 255, 255), outline=INK, width=5)
+    d.text((30, sy + int(sz * 0.12)), e['sub'], font=fs, fill=INK)
+    a = slide_alpha(e, f); dx = int((1 - ease_back(min(1, (f - e['f0']) / 6))) * -120)
+    box.putalpha(box.split()[3].point(lambda v: int(v * a)))
+    canvas.alpha_composite(box, (e['x'] + dx, e['y']))
+
 def main():
     src, out, fxp = sys.argv[1:4]
     fx = json.load(open(fxp))
@@ -82,6 +118,8 @@ def main():
                 if e['type'] == 'sense': sense(d, e, f)
             for e in act:
                 if e['type'] == 'burst': burst(layer, e, f)
+                elif e['type'] == 'caption': caption(layer, e, f)
+                elif e['type'] == 'label': label(layer, e, f)
             buf = Image.alpha_composite(fr, layer).convert('RGB').tobytes()
         wr.stdin.write(buf); f += 1
     wr.stdin.close(); wr.wait(); rd.wait()
