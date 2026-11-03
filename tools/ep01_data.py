@@ -70,12 +70,12 @@ blk('06','Дэйв варит кофе, герой ползёт по потол�
  'This is Dave. Dave has lived with you for three years. Nothing surprises Dave.',
  'Это Дэйв. Дэйв живёт с тобой три года. Дэйва ничем не удивить.')
 blk('07','Реакция: ловит тосты в воздухе','02_kitchen',['hero_home','dave'],'home',
- "SHOT 1 CU: two slices of toast pop high out of the toaster. HARD CUT. SHOT 2 MEDIUM in slow motion: without looking, the hero catches both slices in mid-air, one in each hand. HARD CUT. SHOT 3 CU: his face, very proud of himself. HARD CUT. SHOT 4 CU: Dave silently holds out his plate. HARD CUT. SHOT 5 MEDIUM: the hero puts the toast on Dave's plate; Dave eats it.",
+ "SHOT 1 CU: two slices of toast pop high out of a chrome toaster next to the coffee maker. HARD CUT. SHOT 2 MEDIUM in slow motion: without looking, the hero catches both slices in mid-air, one in each hand. HARD CUT. SHOT 3 CU: his face, very proud of himself. HARD CUT. SHOT 4 CU: Dave silently holds out his plate. HARD CUT. SHOT 5 MEDIUM: the hero puts the toast on Dave's plate; Dave eats it.",
  'toaster pop, slow-motion whoosh, soft catch, crunch.',
  'Spider reflexes. Finally, a power that is actually useful.',
  'Реакция паука. Наконец-то сила, от которой есть польза.')
 blk('08','Пакет молока прилип','02_kitchen',['hero_home','dave','props'],'home',
- "SHOT 1 CU: the hero picks up the blue milk carton, it glues to his palm. HARD CUT. SHOT 2 CU: he grabs the cereal box with the other hand, it glues too. HARD CUT. SHOT 3 MEDIUM: he sits with a carton in one hand and a box in the other, staring at the empty bowl. HARD CUT. SHOT 4 MEDIUM: Dave leans in with a second carton and pours milk into the bowl, blank face. HARD CUT. SHOT 5 MEDIUM: the hero shakes both hands, the carton and the box drop off onto the counter; he eats a spoonful.",
+ "SHOT 1 CU: the hero picks up the blue milk carton, it glues to his palm by a white web blob. HARD CUT. SHOT 2 CU: he grabs the yellow chips bag with the other hand, it glues too by a white web blob. HARD CUT. SHOT 3 MEDIUM: he sits at the island with the carton in one hand and the chips bag in the other, staring at the empty bowl. HARD CUT. SHOT 4 MEDIUM: Dave calmly takes the hero's wrist and tilts it, pouring milk from the glued carton into the bowl, blank face. HARD CUT. SHOT 5 MEDIUM: the hero shakes both hands, the carton and the chips bag drop off onto the counter; he eats a spoonful.",
  'sticky pops, milk pouring, two thuds, cereal crunch.',
  'It lasted four seconds.',
  'Это продлилось четыре секунды.')

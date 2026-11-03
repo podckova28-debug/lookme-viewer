@@ -26,7 +26,7 @@ RULES = ("A single 10-second scene of FIVE hard-cut shots at 2.0s, 4.0s, 6.0s an
          "is always joined to him by a clearly visible white sticky web blob.")
 NEG = ("NEGATIVE: opening on a reference sheet, leading freeze, dissolves, new colors, recolored clothes, "
        "{extra}full superhero suit, face mask, extra people, duplicated characters, morphing faces, extra "
-       "fingers, twisted limbs, a second phone, a landline phone, any object that is not in the references, "
+       "fingers, twisted limbs, a second phone, a landline phone, any phone on the kitchen counter, "
        "talking, lip-sync, on-screen text, captions, photorealism, 3D render, watermark{tail}.")
 NIGHTSTAND = 'The nightstand holds only a lamp and a white mug, no phone of any kind on it. '
 DIRECTION = ('SCREEN DIRECTION LOCK: the yellow school bus always faces and moves from screen LEFT to screen RIGHT, '
@@ -125,3 +125,66 @@ for b in B:
     S += ['']
 open('script_ep01_spider.md', 'w', encoding='utf-8').write('\n'.join(S))
 print('blocks', len(B), 'ready', len(os.listdir('ep01_ready')) - 1)
+
+# ---- long takes: consecutive blocks in one location merged into one 20 - 30 s generation ----
+NUM = {2: 'TEN', 3: 'FIFTEEN'}
+
+def groups_of(blocks, size=3):
+    out, cur = [], []
+    for b in blocks:
+        if cur and (b['plate'] != cur[-1]['plate'] or b['look'] != cur[-1]['look'] or len(cur) == size
+                    or b.get('chain_from') or cur[-1].get('chain_from')):
+            out.append(cur); cur = []
+        cur.append(b)
+    if cur: out.append(cur)
+    return out
+
+def build_long(g):
+    if len(g) == 1:
+        return None
+    sheets = []
+    for b in g:
+        for k in b['sheets']:
+            if k not in sheets: sheets.append(k)
+    look = g[0]['look']
+    refs = [f"@Image1 = LOCATION ({PLATES[g[0]['plate']]})."] + [f"@Image{i+2} = {sheet_desc(k, look)}." for i, k in enumerate(sheets)]
+    n = len(g) * 5
+    cuts = ', '.join(f'{t}.0s' for t in range(2, len(g) * 10, 2))
+    rules = (f"A single {len(g)*10}-second scene of {NUM[len(g)]} hard-cut shots, a hard cut every 2 seconds at {cuts}, no dissolves. "
+             "Do not open on a reference image. Characters only emote and gesture, they do NOT talk. Motion starts on frame 1. "
+             "ONE action per shot. Static camera unless a shot says otherwise. Anything stuck to the hero is always joined to him "
+             "by a clearly visible white sticky web blob. Every character and every object keeps the same look in all shots.")
+    shots, k = [], 0
+    for b in g:
+        for part in re.split(r'\s*HARD CUT\.\s*', b['shots'].strip()):
+            part = re.sub(r'^SHOT \d+', '', part).strip()
+            if part:
+                k += 1; shots.append(f'SHOT {k} {part}')
+    assert k == n, (g[0]['id'], k)
+    extra_rules = []
+    if any(b['plate'] == '10_bus_street' and 'bus' in b['shots'] for b in g): extra_rules.append(DIRECTION)
+    mirror = any(re.search(r'mirror|reflection|glass door', b['shots']) for b in g)
+    if mirror: extra_rules.append(MIRROR)
+    pre = NIGHTSTAND if g[0]['plate'] in ('01_bedroom', '12_bedroom_night') else ''
+    extra = LOOK_NEG[look]
+    return '\n'.join([
+        STYLE, LOCK, 'REFERENCES: ' + ' '.join(refs), rules, *extra_rules,
+        pre + ' HARD CUT. '.join(shots),
+        'AUDIO: ' + ' '.join(b['audio'] for b in g) + ' No voice, no narration, no music.',
+        NEG.format(extra=(extra + ', ') if extra else '', tail=', a reflection with nobody standing in front of the mirror' if mirror else ''),
+    ]) + '\n', ['plates/' + g[0]['plate'] + '.png'] + ['sheets/' + s + '.png' for s in sheets]
+
+os.makedirs('ep01_ready_long', exist_ok=True)
+for f in os.listdir('ep01_ready_long'):
+    os.remove(os.path.join('ep01_ready_long', f))
+long_idx = []
+for g in groups_of([b for b in B if b['id'] not in ('01', '02', '03', '04', '05')]):
+    r = build_long(g)
+    ids = f"{g[0]['id']}-{g[-1]['id']}" if len(g) > 1 else g[0]['id']
+    if r:
+        open(f'ep01_ready_long/e01_b{ids}.txt', 'w', encoding='utf-8').write(r[0])
+        long_idx.append({'ids': ids, 'secs': len(g) * 10, 'files': r[1], 'prompt': r[0], 'blocks': [b['id'] for b in g]})
+    else:
+        long_idx.append({'ids': ids, 'secs': 10, 'files': files_for(g[0]), 'prompt': None, 'blocks': [g[0]['id']]})
+json.dump(long_idx, open('board/long.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+print('long generations', len(long_idx), 'of which merged', sum(1 for x in long_idx if x['prompt']))
