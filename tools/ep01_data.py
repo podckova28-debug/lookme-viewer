@@ -311,11 +311,39 @@ blk('54','Дэйв: пустая кровать, окно открыто','12_be
  'Day two starts tonight.',
  'Второй день начинается сегодня ночью.')
 
+# ---------------- v3 restructure (3 Nov): less sticking, threat earlier, longer chase ----------------
+blk('38a','Пролетает сквозь кофейню и обратно','10_bus_street',['hero_costume','cast_secondary','props'],'costume',
+ "SHOT 1 WIDE side view: the yellow bus with the hero crouched on its roof roars left to right past the coffee shop. HARD CUT. SHOT 2 MEDIUM: the hero swings off the roof on a web line through the open doorway of the coffee shop. HARD CUT. SHOT 3 CU inside: the barista with the hair bun looks up from her phone as he whooshes past the counter. HARD CUT. SHOT 4 MEDIUM: he swings back out through the doorway, a fresh muffin now in his mouth, white paper coffee cup still upright. HARD CUT. SHOT 5 WIDE side view: he lands back on the roof of the bus moving right.",
+ 'bus roar, whoosh in, bell jingle, whoosh out, roof thump.',
+ 'Breakfast. Technically.',
+ 'Завтрак. Формально.')
+blk('38b','Перекрёсток: машины уворачиваются','10_bus_street',['hero_costume','props'],'costume',
+ "SHOT 1 WIDE high angle: the driverless yellow bus moving left to right runs a red light at an intersection; cars brake and swerve. HARD CUT. SHOT 2 CU: a taxi driver covers his eyes. HARD CUT. SHOT 3 MEDIUM: the hero on the roof fires a web line at the traffic light pole and pulls, the bus tilts and squeezes between two cars. HARD CUT. SHOT 4 CU: the side mirror of a car folds in with a click as the bus passes. HARD CUT. SHOT 5 WIDE side view: the bus continues left to right down the hill, the hero still on the roof, coffee cup upright.",
+ 'horns, screeching brakes, web zip, mirror click, bus roar.',
+ 'Red light. Nobody is driving. Nobody is stopping.',
+ 'Красный свет. За рулём никого. Никто не тормозит.')
+blk('38c','Мусорный бак и голуби','10_bus_street',['hero_costume','props'],'costume',
+ "SHOT 1 MEDIUM tracking right: the hero on the roof of the bus moving right sees a green dumpster in the path. HARD CUT. SHOT 2 CU: he fires two web lines at the dumpster. HARD CUT. SHOT 3 WIDE side view: he yanks the dumpster out of the way just before the bus hits it, it rolls onto the sidewalk. HARD CUT. SHOT 4 CU: a flock of gray pigeons explodes off the dumpster lid. HARD CUT. SHOT 5 MEDIUM: the hero on the roof spits out a feather, still holding the coffee cup upright.",
+ 'bus roar, web zips, heavy metal roll, wings flapping, a small pfft.',
+ '', '')
+blk('38d','Замедление: старушка и прыжок','10_bus_street',['hero_costume','cast_secondary'],'costume',
+ "SHOT 1 WIDE side view in slow motion: the bus moving left to right is only a few car lengths from the lamppost at the bottom of the hill. HARD CUT. SHOT 2 CU slow motion: the elderly woman glued to the lamppost, her purple hat lifting in the wind. HARD CUT. SHOT 3 MEDIUM slow motion: the hero leaps off the front of the bus roof into the air, arms wide. HARD CUT. SHOT 4 CU slow motion: his goggles reflect the lamppost and the woman. HARD CUT. SHOT 5 WIDE slow motion: he hangs in the air over the street between the bus and the woman, wrists aimed at the buildings on both sides.",
+ 'everything slows: deep heartbeat, stretched wind, a single high tone.',
+ "Four hours ago you couldn't hold a phone.",
+ 'Четыре часа назад ты не мог удержать телефон.')
+
+DROP = {'18', '20', '21', '25', '26', '27'}
+ORDER = ['01','02','03','04','05','06','07','08','09','10','11','12','13','14','15','16','17','19','22',
+         '30','31','23','24','28','29','32','33','34','35','36','37','38','38a','38b','38c','38d','39','40','41',
+         '42','43','44','45','46','47','48','49','50','51','52','53','54']
+_by = {b['id']: b for b in B}
+B[:] = [_by[i] for i in ORDER]
+
 INSERTS = [
     ('после 00', 'Крючок 0:00 - 0:04: три кадра из блока 40, автобус в сети, герой с целым кофе. Рассказчик: «In four hours you will stop a bus and not spill a drop. But first, you need to get off the ceiling.»'),
     ('после 02', 'Титр серии «What If You Woke Up as SPIDER-MAN?», 3 секунды.'),
     ('после 09', 'Календарь: «DAY 1 · 9:05 AM · Interview at 10:00».'),
-    ('после 21', '«Фильм против реальности»: в кино он ловит падающий поднос, ты платишь мелочью из банки с чаевыми.'),
+    ('после 17', '«Фильм против реальности»: в кино он летит на паутине между небоскрёбами, ты лежишь лицом в кустах.'),
     ('после 46', 'Календарь: «10:41 AM · Interview: missed».'),
     ('после 54', 'Карточка следующей серии «DAY 2 as SPIDER-MAN» и призыв подписаться.'),
 ]

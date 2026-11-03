@@ -21,20 +21,14 @@
 | 15 | Кроссовок прилип к тротуару | `plates/06_suburb_street.png`, `sheets/hero_interview.png` |
 | 16 | Возвращает кроссовок | `plates/06_suburb_street.png`, `sheets/hero_interview.png` |
 | 17 | Пробует полететь на паутине, падает в кусты | `plates/06_suburb_street.png`, `sheets/hero_interview.png` |
-| 18 | Вылезает из кустов, почтальон | `plates/06_suburb_street.png`, `sheets/hero_interview.png` |
 | 19 | Кофейня: стакан, маффин и банка с чаевыми | `plates/07_coffee_int.png`, `sheets/hero_interview.png`, `sheets/props.png`, `sheets/cast_secondary.png` |
-| 20 | Чутьё на капучинатор: прыжок на потолок | `plates/07_coffee_int.png`, `sheets/hero_interview.png`, `sheets/props.png`, `sheets/cast_secondary.png` |
-| 21 | Платит монетами из банки с чаевыми | `plates/07_coffee_int.png`, `sheets/hero_interview.png`, `sheets/props.png`, `sheets/cast_secondary.png` |
 | 22 | Сила: дверь кофейни снимается с петель | `plates/07_coffee_int.png`, `sheets/hero_interview.png`, `sheets/props.png`, `sheets/cast_secondary.png` |
-| 23 | Шляпа старушки, приклеил её к фонарю | `plates/10_bus_street.png`, `sheets/hero_interview.png`, `sheets/cast_secondary.png`, `sheets/props.png` |
-| 24 | Сумочкой по очкам, уходит: опаздывает | `plates/10_bus_street.png`, `sheets/hero_interview.png`, `sheets/cast_secondary.png`, `sheets/props.png` |
-| 25 | Прилип к светофору, голубь, коляска | `plates/08_downtown_lamppost.png`, `sheets/hero_interview.png`, `sheets/props.png` |
-| 26 | Реакция: ловит горшок, врезается в столб | `plates/08_downtown_lamppost.png`, `sheets/hero_interview.png`, `sheets/props.png` |
-| 27 | Тем временем дома: Дэйв и холодильник | `plates/02_kitchen.png`, `sheets/dave.png` |
-| 28 | Офис, 9:58: поправляет галстук | `plates/09_office_entrance.png`, `sheets/hero_interview.png`, `sheets/props.png` |
-| 29 | Охранник открывает дверь | `plates/09_office_entrance.png`, `sheets/hero_interview.png` |
 | 30 | Тем временем: водитель и ручник | `plates/10_bus_street.png`, `sheets/cast_secondary.png` |
 | 31 | Пустой автобус разгоняется | `plates/10_bus_street.png` |
+| 23 | Шляпа старушки, приклеил её к фонарю | `plates/10_bus_street.png`, `sheets/hero_interview.png`, `sheets/cast_secondary.png`, `sheets/props.png` |
+| 24 | Сумочкой по очкам, уходит: опаздывает | `plates/10_bus_street.png`, `sheets/hero_interview.png`, `sheets/cast_secondary.png`, `sheets/props.png` |
+| 28 | Офис, 9:58: поправляет галстук | `plates/09_office_entrance.png`, `sheets/hero_interview.png`, `sheets/props.png` |
+| 29 | Охранник открывает дверь | `plates/09_office_entrance.png`, `sheets/hero_interview.png` |
 | 32 | Выбор: дверь или автобус | `plates/09_office_entrance.png`, `sheets/hero_interview.png` |
 | 33 | Переодевание за две секунды | `plates/09_office_entrance.png`, `sheets/hero_interview.png`, `sheets/hero_costume.png`, `sheets/props.png` |
 | 34 | Догоняет автобус, паутина в бампер | `plates/10_bus_street.png`, `sheets/hero_costume.png`, `sheets/cast_secondary.png`, `sheets/props.png` |
@@ -42,6 +36,10 @@
 | 36 | Едет за автобусом на «водных лыжах» | стартовый кадр: последний кадр блока 34, `plates/10_bus_street.png`, `sheets/hero_costume.png`, `sheets/props.png` |
 | 37 | Запрыгивает на крышу автобуса | стартовый кадр: последний кадр блока 36, `plates/10_bus_street.png`, `sheets/hero_costume.png`, `sheets/props.png` |
 | 38 | Промах: паутина утащила зонт хот-догов | стартовый кадр: последний кадр блока 37, `plates/10_bus_street.png`, `sheets/hero_costume.png`, `sheets/props.png` |
+| 38a | Пролетает сквозь кофейню и обратно | `plates/10_bus_street.png`, `sheets/hero_costume.png`, `sheets/cast_secondary.png`, `sheets/props.png` |
+| 38b | Перекрёсток: машины уворачиваются | `plates/10_bus_street.png`, `sheets/hero_costume.png`, `sheets/props.png` |
+| 38c | Мусорный бак и голуби | `plates/10_bus_street.png`, `sheets/hero_costume.png`, `sheets/props.png` |
+| 38d | Замедление: старушка и прыжок | `plates/10_bus_street.png`, `sheets/hero_costume.png`, `sheets/cast_secondary.png` |
 | 39 | Автобус всё ближе к старушке | `plates/10_bus_street.png`, `sheets/hero_costume.png`, `sheets/cast_secondary.png` |
 | 40 | Сеть между домами, автобус останавливается | `plates/10_bus_street.png`, `sheets/hero_costume.png`, `sheets/cast_secondary.png`, `sheets/props.png` |
 | 41 | Старушка нос к носу с автобусом, кивает | `plates/10_bus_street.png`, `sheets/hero_costume.png`, `sheets/cast_secondary.png` |

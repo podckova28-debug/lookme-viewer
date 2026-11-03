@@ -72,25 +72,21 @@ AUDIO: hopping, sticky pop, dog whine, footsteps.
 SHOT 1 MEDIUM: the hero stops under a big tree by the sidewalk, looks up at a branch, flexes his wrist like in the movies. HARD CUT. SHOT 2 CU: a web strand shoots up and sticks to the branch. HARD CUT. SHOT 3 WIDE: he jumps and swings forward on the strand, legs out, tie flying, heroic for one second. HARD CUT. SHOT 4 CU: the branch bends and snaps. HARD CUT. SHOT 5 WIDE: he lands face first in a hedge, legs sticking out, the branch on top of him.
 AUDIO: web zip, whoosh, wood snap, crash into leaves.
 
-**b18** · Вылезает из кустов, почтальон · `06_suburb_street` · `hero_interview`
-SHOT 1 MEDIUM: the hero climbs out of the hedge with leaves stuck all over his shirt and tie. HARD CUT. SHOT 2 CU: he shakes himself like a wet dog, the leaves fly off in a cloud. HARD CUT. SHOT 3 WIDE: a mail carrier in a blue uniform with a mail bag walks past on the sidewalk, glances, keeps walking. HARD CUT. SHOT 4 CU: the mail carrier's face, polite nod. HARD CUT. SHOT 5 MEDIUM: the hero nods back, straightens his tie, walks on.
-AUDIO: rustling leaves, shake, footsteps, polite hum.
-
 **b19** · Кофейня: стакан, маффин и банка с чаевыми · `07_coffee_int` · `hero_interview`, `props`, `cast_secondary`
 SHOT 1 MEDIUM: the hero at the counter, the barista in a green apron with a hair bun slides a white paper coffee cup toward him. HARD CUT. SHOT 2 CU: his hand reaches, a web strand zips and the cup, a muffin and the glass tip jar glue into one lump. HARD CUT. SHOT 3 CU: the barista's face, one eyebrow raised, mouth a flat line. HARD CUT. SHOT 4 MEDIUM: the hero lifts the whole lump, coins rattle inside the jar. HARD CUT. SHOT 5 WIDE: the line behind him, everyone on their phones, nobody looks up.
 AUDIO: cup slide, web zip, coins rattle, espresso machine.
 
-**b20** · Чутьё на капучинатор: прыжок на потолок · `07_coffee_int` · `hero_interview`, `props`, `cast_secondary`
-SHOT 1 CU: the espresso machine's steam wand hisses loudly into a milk pitcher. HARD CUT. SHOT 2 ECU: the hero's face, hair slowly standing up. HARD CUT. SHOT 3 WIDE: he leaps straight up and sticks to the coffee shop ceiling on all fours, still holding the cup lump. HARD CUT. SHOT 4 CU: the barista looks up at him, no expression. HARD CUT. SHOT 5 MEDIUM: he drops down onto the floor and straightens his tie.
-AUDIO: loud steam hiss, high tingle, whoosh, ceiling thump, landing.
-
-**b21** · Платит монетами из банки с чаевыми · `07_coffee_int` · `hero_interview`, `props`, `cast_secondary`
-SHOT 1 CU: the barista slides a card reader toward him, deadpan. HARD CUT. SHOT 2 MEDIUM: he pats his empty pockets with the lump in one hand. HARD CUT. SHOT 3 CU: he looks up at the ceiling, remembering. HARD CUT. SHOT 4 CU: the barista takes two coins out of the glued tip jar and drops them in the register. HARD CUT. SHOT 5 CU: the hero peels the muffin and the tip jar off his cup and leaves them on the counter, keeping only the white paper coffee cup with the brown sleeve; he nods thank you.
-AUDIO: card reader beep, pockets patting, coins clink.
-
 **b22** · Сила: дверь кофейни снимается с петель · `07_coffee_int` · `hero_interview`, `props`, `cast_secondary`
 SHOT 1 MEDIUM: the hero pulls the coffee shop door gently to leave. HARD CUT. SHOT 2 CU: the door comes off its hinges in his hand. HARD CUT. SHOT 3 MEDIUM: he holds the whole door, the bell on top jingles. HARD CUT. SHOT 4 CU: the barista watches, no expression. HARD CUT. SHOT 5 WIDE: he leans the door neatly against the wall and walks out through the empty doorway with the white paper coffee cup.
 AUDIO: hinges cracking, bell jingle, door leaning.
+
+**b30** · Тем временем: водитель и ручник · `10_bus_street` · `cast_secondary`
+SHOT 1 WIDE side view: a yellow school bus parked at the top of the street; the chubby bus driver gets out holding a sandwich and leaves the door open. HARD CUT. SHOT 2 CU: inside the empty cab, the handbrake lever slowly clicks down by itself. HARD CUT. SHOT 3 CU: the driver takes a big bite of the sandwich, eyes closed, happy. HARD CUT. SHOT 4 WIDE side view: behind him the empty bus slowly starts to roll from left to right down the hill. HARD CUT. SHOT 5 MEDIUM: the driver opens his eyes, sees it, mouth full, freezes with the sandwich in his hand.
+AUDIO: engine idle, ratchet click, bite, tires rolling, gulp.
+
+**b31** · Пустой автобус разгоняется · `10_bus_street` · 
+SHOT 1 CU side view through the window of the rolling yellow school bus: the empty driver seat. HARD CUT. SHOT 2 CU: the steering wheel turns slowly by itself. HARD CUT. SHOT 3 CU: a soda can rattles in the cup holder. HARD CUT. SHOT 4 CU: the speedometer needle creeps up. HARD CUT. SHOT 5 WIDE side view: the empty bus picks up speed from left to right down the hill.
+AUDIO: rattling, creaking wheel, rising engine hum.
 
 **b23** · Шляпа старушки, приклеил её к фонарю · `10_bus_street` · `hero_interview`, `cast_secondary`, `props`
 SHOT 1 WIDE: outside the coffee shop, a gust of wind lifts the elderly woman's purple flowered hat off her head. HARD CUT. SHOT 2 CU: the hero's eyes widen, he lunges and fires a web strand from his wrist. HARD CUT. SHOT 3 WIDE: the web catches the hat AND the woman and yanks them both against the lamppost at the bottom of the street, where they stick. HARD CUT. SHOT 4 CU low angle: the woman, hat back on, looks down at him with a slow stern stare. HARD CUT. SHOT 5 MEDIUM: the hero below spreads his arms in a helpless shrug.
@@ -100,18 +96,6 @@ AUDIO: wind gust, web zip, thump on metal, street ambience.
 SHOT 1 CU: the hero's hands tug at the web on the woman, it stretches and snaps back. HARD CUT. SHOT 2 MEDIUM: her handbag swings and bonks him on the head. HARD CUT. SHOT 3 CU: he glances at a clock on the coffee shop wall, the hands at twenty to ten. HARD CUT. SHOT 4 MEDIUM: he holds up one finger to her, I will be back, and backs away. HARD CUT. SHOT 5 CU low angle: the woman on the lamppost, arms crossed, watches him go.
 AUDIO: elastic twang, soft bonk, clock tick, footsteps.
 
-**b25** · Прилип к светофору, голубь, коляска · `08_downtown_lamppost` · `hero_interview`, `props`
-SHOT 1 MEDIUM: the hero steps up to the traffic light pole to wait, leans on it; his cheek and free hand stick flat to the metal. HARD CUT. SHOT 2 CU: a pigeon lands on his head, settles in, blinks. HARD CUT. SHOT 3 WIDE: a woman pushing a stroller walks around him as if he were street furniture. HARD CUT. SHOT 4 CU: the pedestrian signal flips from the red hand to the white walking figure. HARD CUT. SHOT 5 MEDIUM: he rips himself off the pole with a stretchy pop, the pigeon flaps off, white paper coffee cup still in hand.
-AUDIO: sticky squelch, pigeon coo, stroller wheels, signal click, pop.
-
-**b26** · Реакция: ловит горшок, врезается в столб · `08_downtown_lamppost` · `hero_interview`, `props`
-SHOT 1 CU: a flowerpot slips off a balcony high above the sidewalk. HARD CUT. SHOT 2 MEDIUM in slow motion: without looking up, the hero catches the falling flowerpot in his free hand. HARD CUT. SHOT 3 CU: his face, extremely proud. HARD CUT. SHOT 4 MEDIUM: still looking at the flowerpot, he walks straight into a traffic light pole with a clang. HARD CUT. SHOT 5 CU: he rubs his forehead, sets the flowerpot down on a bench, walks on.
-AUDIO: scrape, slow-motion whoosh, soft catch, metal clang.
-
-**b27** · Тем временем дома: Дэйв и холодильник · `02_kitchen` · `dave`
-SHOT 1 MEDIUM: Dave alone at the fridge peels a long strand of white web off the door. HARD CUT. SHOT 2 CU: the web stretches like gum and will not come off his fingers. HARD CUT. SHOT 3 CU: he wipes his fingers on a pizza coupon, the coupon sticks. HARD CUT. SHOT 4 MEDIUM: he sticks the coupon back on the fridge with the web like a magnet. HARD CUT. SHOT 5 CU: he looks straight into the camera for one second and sips from his white mug.
-AUDIO: sticky stretch, paper, sip.
-
 **b28** · Офис, 9:58: поправляет галстук · `09_office_entrance` · `hero_interview`, `props`
 SHOT 1 WIDE: the hero arrives at the glass doors of the office building, slightly out of breath, white paper coffee cup in hand. HARD CUT. SHOT 2 CU over his shoulder: he and his reflection in the glass door; he straightens his tie. HARD CUT. SHOT 3 CU: a round clock on the lobby wall inside, the hands at two minutes to ten. HARD CUT. SHOT 4 MEDIUM: he takes a deep breath, eyes closed. HARD CUT. SHOT 5 CU: he smiles a tiny hopeful smile.
 AUDIO: city ambience, breathing, clock tick.
@@ -119,14 +103,6 @@ AUDIO: city ambience, breathing, clock tick.
 **b29** · Охранник открывает дверь · `09_office_entrance` · `hero_interview`
 SHOT 1 MEDIUM: inside the glass lobby a security guard in a gray uniform looks up from his desk at the hero. HARD CUT. SHOT 2 CU: the guard nods and presses a button. HARD CUT. SHOT 3 CU: the glass door lock clicks open, a small green light turns on. HARD CUT. SHOT 4 CU: the hero reaches for the door handle, very carefully, with two fingers. HARD CUT. SHOT 5 MEDIUM: his fingers touch the handle.
 AUDIO: muffled lobby hum, buzz, lock click.
-
-**b30** · Тем временем: водитель и ручник · `10_bus_street` · `cast_secondary`
-SHOT 1 WIDE side view: a yellow school bus parked at the top of the street; the chubby bus driver gets out holding a sandwich and leaves the door open. HARD CUT. SHOT 2 CU: inside the empty cab, the handbrake lever slowly clicks down by itself. HARD CUT. SHOT 3 CU: the driver takes a big bite of the sandwich, eyes closed, happy. HARD CUT. SHOT 4 WIDE side view: behind him the empty bus slowly starts to roll from left to right down the hill. HARD CUT. SHOT 5 MEDIUM: the driver opens his eyes, sees it, mouth full, freezes with the sandwich in his hand.
-AUDIO: engine idle, ratchet click, bite, tires rolling, gulp.
-
-**b31** · Пустой автобус разгоняется · `10_bus_street` · 
-SHOT 1 CU side view through the window of the rolling yellow school bus: the empty driver seat. HARD CUT. SHOT 2 CU: the steering wheel turns slowly by itself. HARD CUT. SHOT 3 CU: a soda can rattles in the cup holder. HARD CUT. SHOT 4 CU: the speedometer needle creeps up. HARD CUT. SHOT 5 WIDE side view: the empty bus picks up speed from left to right down the hill.
-AUDIO: rattling, creaking wheel, rising engine hum.
 
 **b32** · Выбор: дверь или автобус · `09_office_entrance` · `hero_interview`
 SHOT 1 ECU: the hero's face at the office door, his hair slowly stands up, eyes go wide. HARD CUT. SHOT 2 CU: in the glass of the door, the reflection of a yellow bus rolling past down the street behind him. HARD CUT. SHOT 3 CU: his fingers on the door handle, the lobby clock behind the glass at ten o'clock. HARD CUT. SHOT 4 CU: his face, looking at the door, then over his shoulder. HARD CUT. SHOT 5 MEDIUM: he lets go of the handle and turns away from the door.
@@ -155,6 +131,22 @@ AUDIO: landing thump, running on metal, wind, heartbeat.
 **b38** · Промах: паутина утащила зонт хот-догов · `10_bus_street` · `hero_costume`, `props`
 SHOT 1 MEDIUM side view, camera tracks right, continuing from the start frame: crouched on the roof of the bus moving right, he fires a web strand up-left. HARD CUT. SHOT 2 CU: the web strand misses the building and sticks to a hot dog cart umbrella on the sidewalk. HARD CUT. SHOT 3 WIDE: the umbrella is yanked off the cart and flies after the bus like a kite. HARD CUT. SHOT 4 CU: the hot dog vendor holds a hot dog in tongs, staring. HARD CUT. SHOT 5 MEDIUM: the hero cuts the strand, the umbrella floats away, he aims again.
 AUDIO: web zip, umbrella whoosh, flapping, focused breath.
+
+**b38a** · Пролетает сквозь кофейню и обратно · `10_bus_street` · `hero_costume`, `cast_secondary`, `props`
+SHOT 1 WIDE side view: the yellow bus with the hero crouched on its roof roars left to right past the coffee shop. HARD CUT. SHOT 2 MEDIUM: the hero swings off the roof on a web line through the open doorway of the coffee shop. HARD CUT. SHOT 3 CU inside: the barista with the hair bun looks up from her phone as he whooshes past the counter. HARD CUT. SHOT 4 MEDIUM: he swings back out through the doorway, a fresh muffin now in his mouth, white paper coffee cup still upright. HARD CUT. SHOT 5 WIDE side view: he lands back on the roof of the bus moving right.
+AUDIO: bus roar, whoosh in, bell jingle, whoosh out, roof thump.
+
+**b38b** · Перекрёсток: машины уворачиваются · `10_bus_street` · `hero_costume`, `props`
+SHOT 1 WIDE high angle: the driverless yellow bus moving left to right runs a red light at an intersection; cars brake and swerve. HARD CUT. SHOT 2 CU: a taxi driver covers his eyes. HARD CUT. SHOT 3 MEDIUM: the hero on the roof fires a web line at the traffic light pole and pulls, the bus tilts and squeezes between two cars. HARD CUT. SHOT 4 CU: the side mirror of a car folds in with a click as the bus passes. HARD CUT. SHOT 5 WIDE side view: the bus continues left to right down the hill, the hero still on the roof, coffee cup upright.
+AUDIO: horns, screeching brakes, web zip, mirror click, bus roar.
+
+**b38c** · Мусорный бак и голуби · `10_bus_street` · `hero_costume`, `props`
+SHOT 1 MEDIUM tracking right: the hero on the roof of the bus moving right sees a green dumpster in the path. HARD CUT. SHOT 2 CU: he fires two web lines at the dumpster. HARD CUT. SHOT 3 WIDE side view: he yanks the dumpster out of the way just before the bus hits it, it rolls onto the sidewalk. HARD CUT. SHOT 4 CU: a flock of gray pigeons explodes off the dumpster lid. HARD CUT. SHOT 5 MEDIUM: the hero on the roof spits out a feather, still holding the coffee cup upright.
+AUDIO: bus roar, web zips, heavy metal roll, wings flapping, a small pfft.
+
+**b38d** · Замедление: старушка и прыжок · `10_bus_street` · `hero_costume`, `cast_secondary`
+SHOT 1 WIDE side view in slow motion: the bus moving left to right is only a few car lengths from the lamppost at the bottom of the hill. HARD CUT. SHOT 2 CU slow motion: the elderly woman glued to the lamppost, her purple hat lifting in the wind. HARD CUT. SHOT 3 MEDIUM slow motion: the hero leaps off the front of the bus roof into the air, arms wide. HARD CUT. SHOT 4 CU slow motion: his goggles reflect the lamppost and the woman. HARD CUT. SHOT 5 WIDE slow motion: he hangs in the air over the street between the bus and the woman, wrists aimed at the buildings on both sides.
+AUDIO: everything slows: deep heartbeat, stretched wind, a single high tone.
 
 **b39** · Автобус всё ближе к старушке · `10_bus_street` · `hero_costume`, `cast_secondary`
 SHOT 1 WIDE side view: the bus with the hero on its roof speeds down the hill from left to right toward the lamppost. HARD CUT. SHOT 2 CU: the elderly woman on the lamppost, eyes wide. HARD CUT. SHOT 3 CU: the hero on the roof sees her ahead. HARD CUT. SHOT 4 CU: the woman closes her eyes. HARD CUT. SHOT 5 CU: the hero sets his jaw and raises both wrists.
