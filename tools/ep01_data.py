@@ -332,9 +332,19 @@ blk('38d','Замедление: старушка и прыжок','10_bus_stree
  "Four hours ago you couldn't hold a phone.",
  'Четыре часа назад ты не мог удержать телефон.')
 
-DROP = {'18', '20', '21', '25', '26', '27'}
-ORDER = ['01','02','03','04','05','06','07','08','09','10','11','12','13','14','15','16','17','19','22',
-         '30','31','23','24','28','29','32','33','34','35','36','37','38','38a','38b','38c','38d','39','40','41',
+blk('24a','Вор с сумкой: паутина не глядя','10_bus_street',['hero_interview','props'],'interview',
+ "SHOT 1 WIDE side view: on the busy sidewalk a man in a black hoodie snatches a woman's red handbag and sprints left to right past the hero. HARD CUT. SHOT 2 CU: the hero, still in shirt and tie, glances at his wrist watch, does not look up. HARD CUT. SHOT 3 CU: without looking he flicks his wrist sideways, a web strand zips out. HARD CUT. SHOT 4 WIDE side view: the thief is yanked off his feet and glued flat to a bus stop bench by a big white web blob, the red handbag dangling from the web. HARD CUT. SHOT 5 MEDIUM: the hero keeps walking right, adjusting his tie, as if nothing happened; behind him people stare at the glued thief.",
+ 'running steps, a shout, web zip, thump on the bench, street ambience.',
+ 'Rule one: nobody can know. Rule one is already in trouble.',
+ 'Правило первое: никто не должен знать. У правила первого уже проблемы.')
+blk('38e','Велосипедист на пути автобуса','10_bus_street',['hero_costume','props'],'costume',
+ "SHOT 1 WIDE side view: a delivery cyclist with a big pizza box pedals across the street right in front of the bus moving left to right. HARD CUT. SHOT 2 CU: the cyclist's face, earbuds in, sees nothing. HARD CUT. SHOT 3 MEDIUM: the hero on the bus roof fires a web line and lifts the cyclist, bike and all, into the air. HARD CUT. SHOT 4 WIDE: the bus passes under the dangling cyclist. HARD CUT. SHOT 5 MEDIUM: the hero lowers him gently onto the sidewalk behind the bus; the cyclist keeps pedaling in the air for a second, then rides off.",
+ 'bus roar, bicycle bell, web zip, whoosh, soft landing, tires.',
+ '', '')
+
+DROP = {'08', '12', '17', '18', '20', '21', '22', '25', '26', '27', '29'}
+ORDER = ['01','02','03','04','05','06','07','09','10','11','13','14','15','16','19',
+         '30','31','23','24','24a','28','32','33','34','35','36','37','38','38a','38b','38e','38c','38d','39','40','41',
          '42','43','44','45','46','47','48','49','50','51','52','53','54']
 _by = {b['id']: b for b in B}
 B[:] = [_by[i] for i in ORDER]
