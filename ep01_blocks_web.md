@@ -9,7 +9,7 @@ SHOT 1 ECU: the hero's face upside down against the white ceiling, hair hanging,
 AUDIO: sticky peel, bed thump, web zip, phone alarm, room tone.
 
 **b02** · Телефон улетает на потолок до вечера · `01_bedroom` · `hero_home`, `props`
-SHOT 1 CU: the hero shakes his hand hard, the black phone stays glued to his palm, alarm ringing. HARD CUT. SHOT 2 MEDIUM: he flings his arm up, the phone tears loose and sticks to the white ceiling, still ringing. HARD CUT. SHOT 3 WIDE: he jumps under it with his arm stretched up and misses by a hand. HARD CUT. SHOT 4 CU: the black and white cat on the bed, slow blink. HARD CUT. SHOT 5 MEDIUM: he sits on the floor under the ringing phone on the ceiling and gives up.
+SHOT 1 CU: the hero shakes his hand hard; the black phone is glued to his palm by a big white sticky web blob, alarm ringing. HARD CUT. SHOT 2 MEDIUM: he flings his arm up, the phone tears loose with a stretching web strand and sticks to the white ceiling by a white web blob, still ringing. HARD CUT. SHOT 3 WIDE: he jumps under it with his arm stretched up and misses by a hand. HARD CUT. SHOT 4 CU: the black and white cat on the bed, slow blink. HARD CUT. SHOT 5 MEDIUM: he sits on the floor under the ringing phone on the ceiling and gives up.
 AUDIO: phone alarm, sticky tear, jump thud, sigh.
 
 **b03** · Чутьё срабатывает на муху · `01_bedroom` · `hero_home`, `props`

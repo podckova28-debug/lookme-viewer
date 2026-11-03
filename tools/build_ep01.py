@@ -22,12 +22,13 @@ LOCK = ("PALETTE LOCK: use only the colors and background treatment of the refer
         "colors. Characters look exactly like their sheets in every shot: same face, hair, clothes.")
 RULES = ("A single 10-second scene of FIVE hard-cut shots at 2.0s, 4.0s, 6.0s and 8.0s, no dissolves. Do not "
          "open on a reference image. Characters only emote and gesture, they do NOT talk. Motion starts on "
-         "frame 1. ONE action per shot. Static camera unless a shot says otherwise.")
+         "frame 1. ONE action per shot. Static camera unless a shot says otherwise. Anything stuck to the hero "
+         "is always joined to him by a clearly visible white sticky web blob.")
 NEG = ("NEGATIVE: opening on a reference sheet, leading freeze, dissolves, new colors, recolored clothes, "
        "{extra}full superhero suit, face mask, extra people, duplicated characters, morphing faces, extra "
        "fingers, twisted limbs, a second phone, a landline phone, any object that is not in the references, "
        "talking, lip-sync, on-screen text, captions, photorealism, 3D render, watermark.")
-NIGHTSTAND = 'The nightstand holds only a lamp, a white mug and the one black phone. '
+NIGHTSTAND = 'The nightstand holds only a lamp and a white mug, no phone of any kind on it. '
 DIRECTION = ('SCREEN DIRECTION LOCK: the yellow school bus always faces and moves from screen LEFT to screen RIGHT, '
              'seen from the side; it never drives toward the camera, away from the camera or backwards.')
 START = ('START FRAME: SHOT 1 begins exactly on the provided start frame and continues its action with the same '

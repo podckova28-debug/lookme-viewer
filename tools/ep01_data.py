@@ -45,7 +45,7 @@ blk('01','Просыпается на потолке, телефон прили�
  "Today you woke up as Spider-Man. You know this because you're on the ceiling.",
  'Сегодня ты проснулся Человеком-пауком. Ты понял это, потому что висишь на потолке.')
 blk('02','Телефон улетает на потолок до вечера','01_bedroom',['hero_home','props'],'home',
- "SHOT 1 CU: the hero shakes his hand hard, the black phone stays glued to his palm, alarm ringing. HARD CUT. SHOT 2 MEDIUM: he flings his arm up, the phone tears loose and sticks to the white ceiling, still ringing. HARD CUT. SHOT 3 WIDE: he jumps under it with his arm stretched up and misses by a hand. HARD CUT. SHOT 4 CU: the black and white cat on the bed, slow blink. HARD CUT. SHOT 5 MEDIUM: he sits on the floor under the ringing phone on the ceiling and gives up.",
+ "SHOT 1 CU: the hero shakes his hand hard; the black phone is glued to his palm by a big white sticky web blob, alarm ringing. HARD CUT. SHOT 2 MEDIUM: he flings his arm up, the phone tears loose with a stretching web strand and sticks to the white ceiling by a white web blob, still ringing. HARD CUT. SHOT 3 WIDE: he jumps under it with his arm stretched up and misses by a hand. HARD CUT. SHOT 4 CU: the black and white cat on the bed, slow blink. HARD CUT. SHOT 5 MEDIUM: he sits on the floor under the ringing phone on the ceiling and gives up.",
  'phone alarm, sticky tear, jump thud, sigh.',
  'Your phone is now also on the ceiling. It will stay there for the rest of the day.',
  'Твой телефон теперь тоже на потолке. И останется там до вечера.')
