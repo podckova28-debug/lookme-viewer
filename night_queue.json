@@ -1,0 +1,451 @@
+{
+ "episode": 1,
+ "budget_per_night": 300,
+ "price_per_block": 30,
+ "topaz_price": 3,
+ "max_retries": 1,
+ "parallel": 6,
+ "blocks": [
+  {
+   "id": "01",
+   "title": "Просыпается на потолке, телефон прилип",
+   "status": "done",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "02",
+   "title": "Телефон улетает на потолок до вечера",
+   "status": "done",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "03",
+   "title": "Чутьё срабатывает на муху",
+   "status": "done",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "04",
+   "title": "Ванная, всё липнет к зеркалу",
+   "status": "done",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "05",
+   "title": "Идёт по стене коридора",
+   "status": "done",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "06",
+   "title": "Дэйв варит кофе, герой ползёт по потолку",
+   "status": "done",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": true
+  },
+  {
+   "id": "07",
+   "title": "Реакция: ловит тосты в воздухе",
+   "status": "done",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": true
+  },
+  {
+   "id": "09",
+   "title": "Цель дня: собеседование в десять",
+   "status": "done",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": true
+  },
+  {
+   "id": "10",
+   "title": "Галстук прилип, завязывает Дэйв",
+   "status": "done",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": true
+  },
+  {
+   "id": "11",
+   "title": "Дэйв даёт рюкзак с костюмом",
+   "status": "done",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": true
+  },
+  {
+   "id": "13",
+   "title": "Сила: ручка двери остаётся в руке",
+   "status": "done",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": true
+  },
+  {
+   "id": "14",
+   "title": "Сосед с воздуходувкой",
+   "status": "done",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": true
+  },
+  {
+   "id": "15",
+   "title": "Кроссовок прилип к тротуару",
+   "status": "done",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": true
+  },
+  {
+   "id": "16",
+   "title": "Возвращает кроссовок",
+   "status": "done",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": true
+  },
+  {
+   "id": "19",
+   "title": "Кофейня: ловит падающую полку с чашками",
+   "status": "done",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "30",
+   "title": "Тем временем: водитель и ручник",
+   "status": "done",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "31",
+   "title": "Пустой автобус разгоняется",
+   "status": "done",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "23",
+   "title": "Шляпа старушки, приклеил её к фонарю",
+   "status": "done",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "24",
+   "title": "Сумочкой по очкам, уходит: опаздывает",
+   "status": "done",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "24a",
+   "title": "Вор с сумкой: паутина не глядя",
+   "status": "done",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "28",
+   "title": "Офис, 9:58: поправляет галстук",
+   "status": "done",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "32",
+   "title": "Выбор: дверь или автобус",
+   "status": "done",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "33",
+   "title": "Переодевание за две секунды",
+   "status": "running",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "34",
+   "title": "Догоняет автобус, паутина в бампер",
+   "status": "todo",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "35",
+   "title": "Старушка на фонаре видит автобус",
+   "status": "static",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "36",
+   "title": "Едет за автобусом на «водных лыжах»",
+   "status": "todo",
+   "chain_from": "34",
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "37",
+   "title": "Запрыгивает на крышу автобуса",
+   "status": "todo",
+   "chain_from": "36",
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "38",
+   "title": "Промах: паутина утащила зонт хот-догов",
+   "status": "todo",
+   "chain_from": "37",
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "38a",
+   "title": "Пролетает сквозь кофейню и обратно",
+   "status": "todo",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "38b",
+   "title": "Перекрёсток: машины уворачиваются",
+   "status": "todo",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "38e",
+   "title": "Велосипедист на пути автобуса",
+   "status": "todo",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "38c",
+   "title": "Мусорный бак и голуби",
+   "status": "todo",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "38d",
+   "title": "Замедление: старушка и прыжок",
+   "status": "todo",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "39",
+   "title": "Автобус всё ближе к старушке",
+   "status": "static",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "40",
+   "title": "Сеть между домами, автобус останавливается",
+   "status": "todo",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "41",
+   "title": "Старушка нос к носу с автобусом, кивает",
+   "status": "todo",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "42",
+   "title": "В кофейне никто не поднял глаз",
+   "status": "static",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "43",
+   "title": "Водитель и полицейский",
+   "status": "static",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "44",
+   "title": "Репортёр берёт интервью у водителя",
+   "status": "static",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "45",
+   "title": "Толпа аплодирует водителю",
+   "status": "static",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "46",
+   "title": "Отлипает от автобуса, 10:41",
+   "status": "static",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "47",
+   "title": "Отклеивает старушку, уходят вместе",
+   "status": "todo",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "48",
+   "title": "Диван, горошек на спину",
+   "status": "todo",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "49",
+   "title": "Новости: он на заднем плане",
+   "status": "static",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "50",
+   "title": "Письмо: выбрали другого",
+   "status": "static",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "51",
+   "title": "Дэйв ведёт список",
+   "status": "static",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "52",
+   "title": "Ложится спать, телефон всё ещё на потолке",
+   "status": "todo",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "53",
+   "title": "Чутьё: настоящий сигнал",
+   "status": "todo",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  },
+  {
+   "id": "54",
+   "title": "Дэйв: пустая кровать, окно открыто",
+   "status": "todo",
+   "chain_from": null,
+   "job_id": null,
+   "retries": 0,
+   "topaz": false
+  }
+ ]
+}
