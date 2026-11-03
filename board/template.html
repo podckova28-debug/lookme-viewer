@@ -1,0 +1,199 @@
+<title>Spider-Man Day One Board</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@400&display=swap">
+<style>
+/* Layout: a production slate. Sticky progress bar, then one row per block: slate number, scene, reference strip, prompt. */
+:root{
+  --bg:#f3f1ee; --panel:#ffffff; --ink:#1d2026; --muted:#5d6370; --line:#dcd8d2;
+  --accent:#c2352d; --accent-ink:#ffffff; --ok:#2f7d4f; --bad:#b23a2e; --todo:#8a8f99; --chip:#ebe7e2;
+  --display:"Barlow Condensed", "Arial Narrow", system-ui, sans-serif;
+  --body:"Source Sans 3", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#15171b; --panel:#1e2127; --ink:#e9e7e3; --muted:#a2a7b1; --line:#30343c;
+  --accent:#e0574d; --accent-ink:#15171b; --ok:#5fbf86; --bad:#ec7a6f; --todo:#7c818b; --chip:#272b32; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#15171b; --panel:#1e2127; --ink:#e9e7e3; --muted:#a2a7b1; --line:#30343c;
+  --accent:#e0574d; --accent-ink:#15171b; --ok:#5fbf86; --bad:#ec7a6f; --todo:#7c818b; --chip:#272b32; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));padding-block:0 48px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top, 0px);z-index:10;background:var(--bg)}
+.wrap{max-width:1180px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:.01em;text-wrap:balance;margin:0}
+h1{font-size:clamp(30px,5vw,44px);line-height:1.05;text-transform:uppercase}
+h2{font-size:24px;text-transform:uppercase}
+.lede{color:var(--muted);max-width:68ch;margin:6px 0 0}
+header.top{position:sticky;top:env(safe-area-inset-top, 0px);z-index:5;background:var(--bg);padding-block:14px 12px;border-bottom:1px solid var(--line);
+  display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;justify-content:space-between}
+.progress{display:flex;align-items:center;gap:10px;font-variant-numeric:tabular-nums;font-weight:600}
+.bar{width:180px;max-width:40vw;height:8px;background:var(--chip);border-radius:4px;overflow:hidden}
+.bar>i{display:block;height:100%;background:var(--ok);width:0}
+.filters{display:flex;flex-wrap:wrap;gap:6px}
+.chipbtn{font:600 14px var(--body);border:1px solid var(--line);background:var(--panel);color:var(--ink);padding:5px 12px;border-radius:999px;cursor:pointer}
+.chipbtn[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chipbtn:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.how{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 20px;display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.how ol{margin:6px 0 0;padding-left:20px;display:grid;gap:4px}
+.how .note{color:var(--muted);font-size:14px}
+.warn{border-left:4px solid var(--accent);padding:12px 16px;background:var(--panel);border-radius:0 10px 10px 0}
+.warn h3{font-size:20px;text-transform:uppercase}
+.act{display:flex;flex-direction:column;gap:10px}
+.act>h2{border-bottom:2px solid var(--ink);padding-bottom:4px;display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+.act>h2 small{font-family:var(--body);font-size:14px;font-weight:600;color:var(--muted);text-transform:none}
+.blk{background:var(--panel);border:1px solid var(--line);border-radius:10px;display:grid;grid-template-columns:96px minmax(0,1fr);overflow:hidden}
+.slate{border-right:1px solid var(--line);padding:12px 10px;display:flex;flex-direction:column;align-items:center;gap:8px;background:var(--chip)}
+.num{font-family:var(--display);font-weight:700;font-size:40px;line-height:1;font-variant-numeric:tabular-nums}
+.status{font:600 12px var(--body);text-transform:uppercase;letter-spacing:.06em;border:0;border-radius:999px;padding:4px 10px;cursor:pointer;color:var(--accent-ink);background:var(--todo)}
+.status[data-s="done"]{background:var(--ok)} .status[data-s="bad"]{background:var(--bad)} .status[data-s="accepted"]{background:var(--ok);cursor:default}
+.main{padding:12px 16px 14px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.title{font-weight:600;font-size:18px}
+.vo{font-size:15px;color:var(--muted);border-left:3px solid var(--line);padding-left:10px}
+.vo b{color:var(--ink);font-weight:600}
+.refs{display:flex;gap:10px;overflow-x:auto;padding-bottom:4px}
+.ref{flex:0 0 auto;width:178px;display:flex;flex-direction:column;gap:4px}
+.ref figure{margin:0;position:relative}
+.ref img{width:178px;aspect-ratio:16/9;object-fit:cover;border-radius:6px;border:1px solid var(--line);display:block;background:var(--chip);max-width:100%}
+.ref .ord{position:absolute;top:6px;left:6px;background:var(--ink);color:var(--bg);font:700 13px var(--display);padding:1px 7px;border-radius:4px}
+.ref code{font:12px var(--mono);color:var(--muted);word-break:break-all}
+.missing{width:178px;aspect-ratio:16/9;border:1px dashed var(--accent);border-radius:6px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:13px;color:var(--accent);padding:8px}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.copy{font:600 14px var(--body);background:var(--accent);color:var(--accent-ink);border:0;border-radius:6px;padding:8px 14px;cursor:pointer}
+.copy.ok{background:var(--ok)}
+details summary{cursor:pointer;color:var(--muted);font-size:14px}
+textarea{width:100%;min-height:150px;font:12.5px/1.45 var(--mono);color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:10px;resize:vertical}
+.inserts{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 20px}
+.inserts ul{margin:8px 0 0;padding-left:20px;display:grid;gap:4px}
+.pill{display:inline-block;font:600 12px var(--body);text-transform:uppercase;letter-spacing:.06em;padding:2px 8px;border-radius:999px;background:var(--chip);color:var(--muted)}
+@media (max-width:560px){.blk{grid-template-columns:1fr}.slate{flex-direction:row;border-right:0;border-bottom:1px solid var(--line);justify-content:space-between}.ref,.ref img,.missing{width:150px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>Spider-Man · день первый</h1>
+    </div>
+    <div class="progress"><span id="prog-text">0 из 54</span><span class="bar"><i id="prog-bar"></i></span></div>
+    <div class="filters" id="filters" role="group" aria-label="Фильтр по актам"></div>
+  </header>
+
+  <section class="how">
+    <div>
+      <h2>Как запускать блок</h2>
+      <ol>
+        <li>Higgsfield → Seedance 2.5 → новая генерация.</li>
+        <li>Загрузите картинки блока с компьютера <b>в том же порядке</b>, что на карточке: 1, 2, 3.</li>
+        <li>Нажмите «Скопировать промпт» и вставьте в поле промпта целиком.</li>
+        <li>720p · 16:9 · 10 секунд · звук включён · Unlimited включён.</li>
+        <li>Перед запуском на кнопке должно быть <b>0</b> кредитов. Если предлагают пресет, отказывайтесь.</li>
+      </ol>
+    </div>
+    <div>
+      <h2>Где взять картинки</h2>
+      <p class="note">Все файлы я присылал в чат, имена совпадают с подписями под картинками. Ещё можно перетащить картинку прямо с этой страницы в окно загрузки Higgsfield или сохранить её правой кнопкой.</p>
+      <p class="note">Отметка под номером блока переключается кликом: «Не начат» → «Готов» → «Брак». Она хранится только в вашем браузере. Когда партия готова, напишите мне, я сам заберу клипы из галереи и проверю.</p>
+    </div>
+  </section>
+
+  <section class="warn" id="missing-warn">
+    <h3>Шаг 0: сгенерировать лист «герой на собеседование»</h3>
+    <p class="note">Его используют блоки 10 - 33. Генерируйте на сайте в GPT Image 2.5, безлимит, 16:9. Приложите две картинки: <code>sheets/hero_home.png</code> и <code>style_key.png</code>. Сохраните как <code>hero_interview.png</code> и напишите мне, я добавлю его на доску.</p>
+    <div class="row"><button class="copy" type="button" id="copy-sheet">Скопировать промпт листа</button></div>
+    <details><summary>Показать промпт листа</summary><textarea id="sheet-prompt" readonly></textarea></details>
+  </section>
+
+  <div id="acts"></div>
+
+  <section class="inserts">
+    <h2>Вставки, которые делаю я</h2>
+    <ul id="inserts"></ul>
+  </section>
+</div>
+
+<script>
+const DATA = __DATA__;
+const HAVE = __HAVE__;
+const SHEET_PROMPT = __SHEET_PROMPT__;
+const ACTS = [
+  {key:'all', name:'Все'},
+  {key:'a1', name:'Дом', from:1, to:13},
+  {key:'a2', name:'Город', from:14, to:33},
+  {key:'a3', name:'Спасение', from:34, to:47},
+  {key:'a4', name:'Вечер', from:48, to:54},
+];
+const KEY='spidey-ep01-status';
+let status={};
+try{status=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){status={}}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(status))}catch(e){}}
+const LABEL={todo:'Не начат',done:'Готов',bad:'Брак',accepted:'Принят'};
+const NEXT={todo:'done',done:'bad',bad:'todo'};
+
+function copyText(text, btn, ta){
+  const ok=()=>{const t=btn.textContent;btn.textContent='Скопировано';btn.classList.add('ok');setTimeout(()=>{btn.textContent=t;btn.classList.remove('ok')},1400)};
+  const fallback=()=>{if(ta){ta.closest('details').open=true;ta.focus();ta.select();btn.textContent='Выделено, нажмите Ctrl+C'}};
+  try{navigator.clipboard.writeText(text).then(ok,fallback)}catch(e){fallback()}
+}
+
+function refFig(path, i){
+  const wrap=document.createElement('div');wrap.className='ref';
+  if(HAVE.includes(path)){
+    const fig=document.createElement('figure');
+    const img=document.createElement('img');img.src=path;img.alt=path;img.loading='lazy';img.draggable=true;
+    const ord=document.createElement('span');ord.className='ord';ord.textContent=i+1;
+    fig.append(img,ord);wrap.append(fig);
+  }else{
+    const m=document.createElement('div');m.className='missing';m.textContent=(i+1)+'. сначала сгенерировать (шаг 0)';wrap.append(m);
+  }
+  const c=document.createElement('code');c.textContent=path.split('/').pop();wrap.append(c);
+  return wrap;
+}
+
+function render(filter){
+  const root=document.getElementById('acts');root.innerHTML='';
+  ACTS.filter(a=>a.key!=='all'&&(filter==='all'||filter===a.key)).forEach(a=>{
+    const sec=document.createElement('section');sec.className='act';
+    const blocks=DATA.blocks.filter(b=>+b.id>=a.from&&+b.id<=a.to);
+    const h=document.createElement('h2');h.innerHTML=`${a.name} <small>блоки ${String(a.from).padStart(2,'0')}–${a.to}</small>`;
+    sec.append(h);
+    blocks.forEach(b=>{
+      const el=document.createElement('article');el.className='blk';el.id='b'+b.id;
+      const s=b.accepted?'accepted':(status[b.id]||'todo');
+      const slate=document.createElement('div');slate.className='slate';
+      slate.innerHTML=`<div class="num">${b.id}</div>`;
+      const st=document.createElement('button');st.type='button';st.className='status';st.dataset.s=s;st.textContent=LABEL[s];
+      if(!b.accepted){st.addEventListener('click',()=>{const n=NEXT[st.dataset.s];st.dataset.s=n;st.textContent=LABEL[n];status[b.id]=n;save();progress()})}
+      slate.append(st);
+      const main=document.createElement('div');main.className='main';
+      const t=document.createElement('div');t.className='title';t.textContent=b.title;main.append(t);
+      if(b.vo_en){const v=document.createElement('div');v.className='vo';v.innerHTML='<b></b><br><span></span>';v.querySelector('b').textContent=b.vo_en;v.querySelector('span').textContent=b.vo_ru;main.append(v)}
+      else{const v=document.createElement('div');v.className='vo';v.textContent='Без текста рассказчика, только звук.';main.append(v)}
+      const refs=document.createElement('div');refs.className='refs';b.files.forEach((p,i)=>refs.append(refFig(p,i)));main.append(refs);
+      const row=document.createElement('div');row.className='row';
+      if(b.accepted){row.innerHTML='<span class="pill">Принят, генерация 325ac9b5</span>'}
+      const det=document.createElement('details');det.innerHTML='<summary>Показать промпт</summary>';
+      const ta=document.createElement('textarea');ta.readOnly=true;ta.id='p'+b.id;ta.value=b.prompt;det.append(ta);
+      if(!b.accepted){const btn=document.createElement('button');btn.type='button';btn.className='copy';btn.textContent='Скопировать промпт';btn.addEventListener('click',()=>copyText(b.prompt,btn,ta));row.append(btn)}
+      main.append(row,det);
+      el.append(slate,main);sec.append(el);
+    });
+    root.append(sec);
+  });
+}
+function progress(){
+  const n=DATA.blocks.filter(b=>b.accepted||status[b.id]==='done').length;
+  document.getElementById('prog-text').textContent=`${n} из ${DATA.blocks.length} готово`;
+  document.getElementById('prog-bar').style.width=(n/DATA.blocks.length*100)+'%';
+}
+const f=document.getElementById('filters');let cur='all';
+try{cur=localStorage.getItem(KEY+'-f')||'all'}catch(e){}
+ACTS.forEach(a=>{const b=document.createElement('button');b.type='button';b.className='chipbtn';b.textContent=a.name;b.setAttribute('aria-pressed',a.key===cur);
+  b.addEventListener('click',()=>{cur=a.key;[...f.children].forEach(x=>x.setAttribute('aria-pressed',x===b));try{localStorage.setItem(KEY+'-f',cur)}catch(e){};render(cur)});f.append(b)});
+document.getElementById('inserts').innerHTML=DATA.inserts.map(([w,t])=>`<li><b>${w}.</b> ${t.replace(/</g,'&lt;')}</li>`).join('');
+const sp=document.getElementById('sheet-prompt');sp.value=SHEET_PROMPT;
+document.getElementById('copy-sheet').addEventListener('click',e=>copyText(SHEET_PROMPT,e.currentTarget,sp));
+if(HAVE.includes('sheets/hero_interview.png'))document.getElementById('missing-warn').hidden=true;
+render(cur);progress();
+</script>
