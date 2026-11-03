@@ -77,13 +77,13 @@ idx = ['# Серия 1, готовые промпты, версия 2', '',
        '| Блок | Сцена | Картинки по порядку |', '|---|---|---|']
 for b in B:
     p = build_prompt(b)
-    if b['id'] != '01':
+    if b['id'] != '01' and not b.get('static'):
         open(f"ep01_ready/e01_b{b['id']}.txt", 'w', encoding='utf-8').write(p)
     start = f"стартовый кадр: последний кадр блока {b['chain_from']}, " if b.get('chain_from') else ''
     idx.append(f"| {b['id']} | {b['title']} | " + start + ', '.join(f'`{x}`' for x in files_for(b)) + ' |')
     board.append({'id': b['id'], 'title': b['title'], 'files': files_for(b), 'prompt': p,
                   'vo_en': b['vo_en'], 'vo_ru': b['vo_ru'], 'accepted': b['id'] == '01',
-                  'chain_from': b.get('chain_from')})
+                  'chain_from': b.get('chain_from'), 'static': b.get('static')})
 open('ep01_ready/README.md', 'w', encoding='utf-8').write('\n'.join(idx) + '\n')
 os.makedirs('board', exist_ok=True)
 json.dump({'blocks': board, 'inserts': INSERTS}, open('board/blocks.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
@@ -179,7 +179,7 @@ os.makedirs('ep01_ready_long', exist_ok=True)
 for f in os.listdir('ep01_ready_long'):
     os.remove(os.path.join('ep01_ready_long', f))
 long_idx = []
-for g in groups_of([b for b in B if b['id'] not in ('01', '02', '03', '04', '05')]):
+for g in groups_of([b for b in B if b['id'] not in ('01', '02', '03', '04', '05') and not b.get('static')]):
     r = build_long(g)
     ids = f"{g[0]['id']}-{g[-1]['id']}" if len(g) > 1 else g[0]['id']
     if r:

@@ -12,7 +12,8 @@
    "vo_en": "Today you woke up as Spider-Man. You know this because you're on the ceiling.",
    "vo_ru": "Сегодня ты проснулся Человеком-пауком. Ты понял это, потому что висишь на потолке.",
    "accepted": true,
-   "chain_from": null
+   "chain_from": null,
+   "static": null
   },
   {
    "id": "02",
@@ -26,7 +27,8 @@
    "vo_en": "Your phone is now also on the ceiling. It will stay there for the rest of the day.",
    "vo_ru": "Твой телефон теперь тоже на потолке. И останется там до вечера.",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": null
   },
   {
    "id": "03",
@@ -40,7 +42,8 @@
    "vo_en": "Spider-sense. In the movies it warns you about danger. Yours warns you about a fly.",
    "vo_ru": "Паучье чутьё. В кино оно предупреждает об опасности. Твоё предупреждает о мухе.",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": null
   },
   {
    "id": "04",
@@ -54,7 +57,8 @@
    "vo_en": "Everything you touch is yours now. Peeling it off does not count. You have to throw it.",
    "vo_ru": "Всё, к чему ты прикасаешься, теперь твоё. Отлепить не считается. Надо выбросить.",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": null
   },
   {
    "id": "05",
@@ -67,7 +71,8 @@
    "vo_en": "Walls are optional now. So are floors.",
    "vo_ru": "Стены теперь по желанию. Полы тоже.",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": null
   },
   {
    "id": "06",
@@ -81,7 +86,8 @@
    "vo_en": "This is Dave. Dave has lived with you for three years. Nothing surprises Dave.",
    "vo_ru": "Это Дэйв. Дэйв живёт с тобой три года. Дэйва ничем не удивить.",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": null
   },
   {
    "id": "07",
@@ -95,7 +101,8 @@
    "vo_en": "Spider reflexes. Finally, a power that is actually useful.",
    "vo_ru": "Реакция паука. Наконец-то сила, от которой есть польза.",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": null
   },
   {
    "id": "09",
@@ -109,7 +116,8 @@
    "vo_en": "Oh. Right. At ten you have a job interview. First one in a year. Rule one: nobody can know.",
    "vo_ru": "Ах да. В десять у тебя собеседование. Первое за год. Правило первое: никто не должен знать.",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": null
   },
   {
    "id": "10",
@@ -123,7 +131,8 @@
    "vo_en": "Rule two: wear a tie. Rule three: let Dave tie it.",
    "vo_ru": "Правило второе: галстук. Правило третье: завязывает Дэйв.",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": null
   },
   {
    "id": "11",
@@ -138,7 +147,8 @@
    "vo_en": "Dave made you a mask. Because rule one is going to break. Today.",
    "vo_ru": "Дэйв сделал тебе маску. Потому что правило первое сегодня точно нарушится.",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": null
   },
   {
    "id": "13",
@@ -153,7 +163,8 @@
    "vo_en": "Spider strength. You opened a door. Technically.",
    "vo_ru": "Паучья сила. Ты открыл дверь. Формально.",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": null
   },
   {
    "id": "14",
@@ -167,7 +178,8 @@
    "vo_en": "Say hi to the neighbor. Actually, don't.",
    "vo_ru": "Поздоровайся с соседом. Хотя нет, не надо.",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": null
   },
   {
    "id": "15",
@@ -180,7 +192,8 @@
    "vo_en": "The sidewalk is sticky now. Or you are.",
    "vo_ru": "Тротуар теперь липкий. Или это ты.",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": null
   },
   {
    "id": "16",
@@ -193,7 +206,8 @@
    "vo_en": "Nine thirty-one.",
    "vo_ru": "Девять тридцать одна.",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": null
   },
   {
    "id": "19",
@@ -208,7 +222,8 @@
    "vo_en": "Rule one: nobody can know. Good news: nobody in this city looks up from their phone. Also, coffee. Remember this cup.",
    "vo_ru": "Правило первое: никто не должен знать. Хорошая новость: в этом городе никто не отрывается от телефона. И да, кофе. Запомни этот стакан.",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": null
   },
   {
    "id": "30",
@@ -221,7 +236,8 @@
    "vo_en": "Meanwhile, at the top of the hill, a man wants a sandwich.",
    "vo_ru": "Тем временем наверху улицы человек хочет сэндвич.",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": null
   },
   {
    "id": "31",
@@ -233,7 +249,8 @@
    "vo_en": "",
    "vo_ru": "",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": null
   },
   {
    "id": "23",
@@ -248,7 +265,8 @@
    "vo_en": "You tried to help. Remember this lady. You'll see her again.",
    "vo_ru": "Ты хотел помочь. Запомни эту даму. Ты её ещё увидишь.",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": null
   },
   {
    "id": "24",
@@ -263,7 +281,8 @@
    "vo_en": "You'll come back for her. Later. After the interview.",
    "vo_ru": "Ты за ней вернёшься. Потом. После собеседования.",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": null
   },
   {
    "id": "24a",
@@ -277,7 +296,8 @@
    "vo_en": "And this time somebody looked up.",
    "vo_ru": "А вот в этот раз кто-то оторвался от телефона.",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": null
   },
   {
    "id": "28",
@@ -291,7 +311,8 @@
    "vo_en": "Nine fifty-eight. You made it. Shirt, tie, coffee. You look almost normal.",
    "vo_ru": "Девять пятьдесят восемь. Ты успел. Рубашка, галстук, кофе. Почти нормальный человек.",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": null
   },
   {
    "id": "32",
@@ -304,7 +325,8 @@
    "vo_en": "And this time your spider-sense isn't about a fly.",
    "vo_ru": "И в этот раз чутьё не про муху.",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": null
   },
   {
    "id": "33",
@@ -319,7 +341,8 @@
    "vo_en": "Dave. You beautiful, weird man.",
    "vo_ru": "Дэйв. Странный ты, прекрасный человек.",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": null
   },
   {
    "id": "34",
@@ -334,7 +357,8 @@
    "vo_en": "The bus is rolling down the hill. At the bottom: the lady you glued to a lamppost.",
    "vo_ru": "Автобус катится с горы. Внизу та самая дама, которую ты приклеил к фонарю.",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": null
   },
   {
    "id": "35",
@@ -347,7 +371,8 @@
    "vo_en": "",
    "vo_ru": "",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": "Страница из 3 панелей: лицо старушки, автобус вдали наверху улицы, шляпа съезжает на глаз"
   },
   {
    "id": "36",
@@ -361,7 +386,8 @@
    "vo_en": "In the movies he swings. You water-ski.",
    "vo_ru": "В кино он летает на паутине. Ты едешь на водных лыжах.",
    "accepted": false,
-   "chain_from": "34"
+   "chain_from": "34",
+   "static": null
   },
   {
    "id": "37",
@@ -375,7 +401,8 @@
    "vo_en": "Think. Not like in the movies. Like you.",
    "vo_ru": "Думай. Не как в кино. Как ты.",
    "accepted": false,
-   "chain_from": "36"
+   "chain_from": "36",
+   "static": null
   },
   {
    "id": "38",
@@ -389,7 +416,8 @@
    "vo_en": "Close.",
    "vo_ru": "Почти.",
    "accepted": false,
-   "chain_from": "37"
+   "chain_from": "37",
+   "static": null
   },
   {
    "id": "38a",
@@ -404,7 +432,8 @@
    "vo_en": "Breakfast. Technically.",
    "vo_ru": "Завтрак. Формально.",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": null
   },
   {
    "id": "38b",
@@ -418,7 +447,8 @@
    "vo_en": "Red light. Nobody is driving. Nobody is stopping.",
    "vo_ru": "Красный свет. За рулём никого. Никто не тормозит.",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": null
   },
   {
    "id": "38e",
@@ -432,7 +462,8 @@
    "vo_en": "",
    "vo_ru": "",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": null
   },
   {
    "id": "38c",
@@ -446,7 +477,8 @@
    "vo_en": "",
    "vo_ru": "",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": null
   },
   {
    "id": "38d",
@@ -460,7 +492,8 @@
    "vo_en": "Four hours ago you couldn't hold a phone.",
    "vo_ru": "Четыре часа назад ты не мог удержать телефон.",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": null
   },
   {
    "id": "39",
@@ -474,7 +507,8 @@
    "vo_en": "",
    "vo_ru": "",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": "Отсчёт: 3 панели, автобус всё крупнее, лицо старушки, лицо героя"
   },
   {
    "id": "40",
@@ -489,7 +523,8 @@
    "vo_en": "And not a single drop.",
    "vo_ru": "И ни капли.",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": null
   },
   {
    "id": "41",
@@ -503,7 +538,8 @@
    "vo_en": "",
    "vo_ru": "",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": null
   },
   {
    "id": "42",
@@ -516,7 +552,8 @@
    "vo_en": "Inside the coffee shop, nobody looks up.",
    "vo_ru": "В кофейне никто не поднял глаз.",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": "Одна панель: кофейня, все в телефонах, кружки висят на паутине"
   },
   {
    "id": "43",
@@ -530,7 +567,8 @@
    "vo_en": "Here's how the city will remember today.",
    "vo_ru": "Вот каким город запомнит этот день.",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": "Панель «рапорт»: полицейский пишет в блокнот, водитель с сэндвичем"
   },
   {
    "id": "44",
@@ -544,7 +582,8 @@
    "vo_en": "",
    "vo_ru": "",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": "Экран ТВ с бегущей строкой: репортёр и водитель"
   },
   {
    "id": "45",
@@ -558,7 +597,8 @@
    "vo_en": "Hero of the day. The bus driver. Twenty-two years of service.",
    "vo_ru": "Герой дня. Водитель автобуса. Двадцать два года стажа.",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": "Газета: LOCAL BUS DRIVER SAVES GRANDMA"
   },
   {
    "id": "46",
@@ -571,7 +611,8 @@
    "vo_en": "Ten forty-one.",
    "vo_ru": "Десять сорок одна.",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": "Панель: герой отлипает от автобуса, плашка 10:41 AM"
   },
   {
    "id": "47",
@@ -585,7 +626,8 @@
    "vo_en": "You came back for her. Just later than you planned.",
    "vo_ru": "Ты за ней вернулся. Просто позже, чем собирался.",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": null
   },
   {
    "id": "48",
@@ -599,7 +641,8 @@
    "vo_en": "Everything hurts. Even the peas.",
    "vo_ru": "Болит всё. Даже горошек.",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": null
   },
   {
    "id": "49",
@@ -614,7 +657,8 @@
    "vo_en": "On the news, you're the guy in the background.",
    "vo_ru": "В новостях ты парень на заднем плане.",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": "Экран ТВ: новости, герой в красном худи размыто на заднем плане"
   },
   {
    "id": "50",
@@ -628,7 +672,8 @@
    "vo_en": "The email came at six. They went with another candidate.",
    "vo_ru": "Письмо пришло в шесть. Они выбрали другого кандидата.",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": "Экран телефона: письмо «We went with another candidate»"
   },
   {
    "id": "51",
@@ -641,7 +686,8 @@
    "vo_en": "Dave is keeping a list. Dave is always keeping a list.",
    "vo_ru": "Дэйв ведёт список. Дэйв всегда ведёт список.",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": "Страница блокнота Дэйва со списком"
   },
   {
    "id": "52",
@@ -655,7 +701,8 @@
    "vo_en": "You told yourself it was one weird day.",
    "vo_ru": "Ты сказал себе, что это был просто странный день.",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": null
   },
   {
    "id": "53",
@@ -669,7 +716,8 @@
    "vo_en": "Your spider-sense disagrees.",
    "vo_ru": "Твоё чутьё не согласно.",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": null
   },
   {
    "id": "54",
@@ -683,7 +731,8 @@
    "vo_en": "Day two starts tonight.",
    "vo_ru": "Второй день начинается сегодня ночью.",
    "accepted": false,
-   "chain_from": null
+   "chain_from": null,
+   "static": null
   }
  ],
  "inserts": [

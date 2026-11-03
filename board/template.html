@@ -183,6 +183,7 @@ function render(filter){
       if(b.vo_en){const v=document.createElement('div');v.className='vo';v.innerHTML='<b></b><br><span></span>';v.querySelector('b').textContent=b.vo_en;v.querySelector('span').textContent=b.vo_ru;main.append(v)}
       else{const v=document.createElement('div');v.className='vo';v.textContent='Без текста рассказчика, только звук.';main.append(v)}
       if(b.chain_from){const c=document.createElement('div');c.className='chain';c.innerHTML='<b>Цепочка.</b> Запускать только после блока '+b.chain_from+' и по одному. Стартовым кадром идёт последний кадр блока '+b.chain_from+', его я вырежу и пришлю.';main.append(c)}
+      if(b.static){const c=document.createElement('div');c.className='chain';c.innerHTML='<b>Статичная вставка, генерировать не нужно.</b> Делаю кодом: ';c.append(document.createTextNode(b.static));main.append(c);el.append(slate,main);sec.append(el);return}
       const refs=document.createElement('div');refs.className='refs';
       if(b.chain_from){const w=document.createElement('div');w.className='ref';const m=document.createElement('div');m.className='missing start';m.textContent='Старт: последний кадр блока '+b.chain_from;const c=document.createElement('code');c.textContent='слот «стартовый кадр»';w.append(m,c);refs.append(w)}
       b.files.forEach((p,i)=>refs.append(refFig(p,i)));main.append(refs);
