@@ -296,17 +296,17 @@ blk('51','Дэйв ведёт список','02_kitchen',['dave'],'none',
  'Dave is keeping a list. Dave is always keeping a list.',
  'Дэйв ведёт список. Дэйв всегда ведёт список.')
 blk('52','Ложится спать, телефон всё ещё на потолке','12_bedroom_night',['hero_home','props'],'home',
- "SHOT 1 WIDE: the hero in his t-shirt and pajama pants climbs into bed; the red hoodie hangs on the hook by the door. HARD CUT. SHOT 2 CU: he looks up at the ceiling where the black phone with the yellow bell still hangs by a web. HARD CUT. SHOT 3 MEDIUM: he pulls the blanket up, it sticks to his hands, he gives up and lies under a tented blanket. HARD CUT. SHOT 4 CU: the cat settles on the nightstand, watches him. HARD CUT. SHOT 5 WIDE: lights off, moonlight through the blinds, he closes his eyes.",
+ "SHOT 1 WIDE: the hero in his t-shirt and pajama pants climbs into bed; the red hoodie hangs on a hook on the open bedroom door. HARD CUT. SHOT 2 CU: he looks up at the ceiling where the black phone with the yellow bell still hangs by a web. HARD CUT. SHOT 3 MEDIUM: he pulls the blanket up, it sticks to his hands, he gives up and lies under a tented blanket. HARD CUT. SHOT 4 CU: the cat settles on the nightstand, watches him. HARD CUT. SHOT 5 WIDE: lights off, moonlight through the blinds, he closes his eyes.",
  'bed creak, blanket rustle, cat settling, quiet night.',
  'You told yourself it was one weird day.',
  'Ты сказал себе, что это был просто странный день.')
 blk('53','Чутьё: настоящий сигнал','12_bedroom_night',['hero_home','props'],'home',
- "SHOT 1 CU: the hero asleep, mouth open, the black and white cat curled on his chest. HARD CUT. SHOT 2 CU: the black phone hanging from the ceiling by a web lights up with a notification glow. HARD CUT. SHOT 3 CU: the hero's eyes snap open, every hair on his head slowly stands up. HARD CUT. SHOT 4 MEDIUM: far outside the window, red and blue police lights flicker on the buildings. HARD CUT. SHOT 5 MEDIUM: he sits up and looks at the red hoodie hanging on the hook by the door.",
+ "SHOT 1 CU: the hero asleep, mouth open, the black and white cat curled on his chest. HARD CUT. SHOT 2 CU: the black phone hanging from the ceiling by a web lights up with a notification glow. HARD CUT. SHOT 3 CU: the hero's eyes snap open, every hair on his head slowly stands up. HARD CUT. SHOT 4 MEDIUM: far outside the window, red and blue police lights flicker on the buildings. HARD CUT. SHOT 5 MEDIUM: he sits up and looks at the red hoodie hanging on the hook on the open bedroom door.",
  'soft snore, phone buzz from above, a faint high tingle, distant siren.',
  'Your spider-sense disagrees.',
  'Твоё чутьё не согласно.')
 blk('54','Дэйв: пустая кровать, окно открыто','12_bedroom_night',['dave','props'],'none',
- "SHOT 1 WIDE from inside the dark bedroom: Dave appears in the doorway in his bathrobe, mug in hand. HARD CUT. SHOT 2 MEDIUM: the bed is empty, the hook by the door is empty, the window is wide open, curtains moving. HARD CUT. SHOT 3 CU: a strand of white web stretches from the window frame out into the night. HARD CUT. SHOT 4 CU: Dave takes a long sip. HARD CUT. SHOT 5 MEDIUM: he closes the window, the web strand snaps, he walks away; the cat watches from the bed.",
+ "SHOT 1 WIDE from inside the dark bedroom: Dave appears in the doorway in his bathrobe, mug in hand. HARD CUT. SHOT 2 MEDIUM: the bed is empty, the hook on the bedroom door is empty, the window is wide open, the blinds swaying. HARD CUT. SHOT 3 CU: a strand of white web stretches from the window frame out into the night. HARD CUT. SHOT 4 CU: Dave takes a long sip. HARD CUT. SHOT 5 MEDIUM: he closes the window, the web strand snaps, he walks away; the cat watches from the bed.",
  'floor creak, wind, sip, window click, distant siren.',
  'Day two starts tonight.',
  'Второй день начинается сегодня ночью.')
