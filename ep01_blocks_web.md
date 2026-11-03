@@ -29,7 +29,7 @@ SHOT 1 WIDE: Dave at the coffee maker pouring coffee into his white mug, eyes on
 AUDIO: coffee pour, sip, stool thump, quiet kitchen.
 
 **b07** · Реакция: ловит тосты в воздухе · `02_kitchen` · `hero_home`, `dave`
-SHOT 1 CU: two slices of toast pop high out of a chrome toaster next to the coffee maker. HARD CUT. SHOT 2 MEDIUM in slow motion: without looking, the hero catches both slices in mid-air, one in each hand. HARD CUT. SHOT 3 CU: his face, very proud of himself. HARD CUT. SHOT 4 CU: Dave silently holds out his plate. HARD CUT. SHOT 5 MEDIUM: the hero puts the toast on Dave's plate; Dave eats it.
+SHOT 1 CU: two slices of toast pop high out of a chrome toaster next to the coffee maker. HARD CUT. SHOT 2 MEDIUM in slow motion: without looking, the hero catches both slices in mid-air, one flat on each open palm. HARD CUT. SHOT 3 CU: his face, very proud of himself, hands out of frame. HARD CUT. SHOT 4 CU: Dave silently holds out his plate. HARD CUT. SHOT 5 MEDIUM: the hero puts the toast on Dave's plate; Dave eats it.
 AUDIO: toaster pop, slow-motion whoosh, soft catch, crunch.
 
 **b08** · Пакет молока прилип · `02_kitchen` · `hero_home`, `dave`, `props`

@@ -26,7 +26,7 @@ RULES = ("A single 10-second scene of FIVE hard-cut shots at 2.0s, 4.0s, 6.0s an
          "is always joined to him by a clearly visible white sticky web blob.")
 NEG = ("NEGATIVE: opening on a reference sheet, leading freeze, dissolves, new colors, recolored clothes, "
        "{extra}full superhero suit, face mask, extra people, duplicated characters, morphing faces, extra "
-       "fingers, twisted limbs, a second phone, a landline phone, any phone on the kitchen counter, "
+       "fingers, twisted limbs, rude hand gestures, a raised middle finger, a second phone, a landline phone, any phone on the kitchen counter, "
        "talking, lip-sync, on-screen text, captions, photorealism, 3D render, watermark{tail}.")
 NIGHTSTAND = 'The nightstand holds only a lamp and a white mug, no phone of any kind on it. '
 DIRECTION = ('SCREEN DIRECTION LOCK: the yellow school bus always faces and moves from screen LEFT to screen RIGHT, '
