@@ -60,7 +60,7 @@
 > _Это продлилось четыре секунды._
 
 **09. Цель дня: собеседование в десять** · герой дома: футболка, пижама
-> Oh. Right. At ten you have a job interview. Your first real one in a year. Rule one: nobody can know.
+> Oh. Right. At ten you have a job interview. First one in a year. Rule one: nobody can know.
 > _Ах да. В десять у тебя собеседование. Первое за год. Правило первое: никто не должен знать._
 
 **10. Галстук прилип, завязывает Дэйв** · герой на собеседование: рубашка, галстук, рюкзак
@@ -163,7 +163,7 @@
 ## Акт 3. Спасение
 
 **34. Догоняет автобус, паутина в бампер** · герой костюм поверх рубашки, капюшон, очки
-> The bus is going down the hill. At the bottom of the hill is the lady you glued to a lamppost.
+> The bus is rolling down the hill. At the bottom: the lady you glued to a lamppost.
 > _Автобус катится с горы. Внизу та самая дама, которую ты приклеил к фонарю._
 
 **35. Старушка на фонаре видит автобус** · герой героя нет в кадре

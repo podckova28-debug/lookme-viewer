@@ -82,7 +82,7 @@ blk('08','Пакет молока прилип','02_kitchen',['hero_home','dave'
 blk('09','Цель дня: собеседование в десять','02_kitchen',['hero_home','dave'],'home',
  "SHOT 1 CU: a paper calendar on the fridge, one day circled in red with a small drawing of a necktie. HARD CUT. SHOT 2 ECU: the hero's face, cereal spoon frozen halfway, eyes going wide. HARD CUT. SHOT 3 CU: a round kitchen wall clock, the hands at five past nine. HARD CUT. SHOT 4 MEDIUM: the hero puts a finger to his lips and points at himself, then at the ceiling, miming nobody can know. HARD CUT. SHOT 5 CU: Dave nods once, deadpan, and raises his mug.",
  'clock ticking, spoon clink, tense silence, sip.',
- "Oh. Right. At ten you have a job interview. Your first real one in a year. Rule one: nobody can know.",
+ "Oh. Right. At ten you have a job interview. First one in a year. Rule one: nobody can know.",
  'Ах да. В десять у тебя собеседование. Первое за год. Правило первое: никто не должен знать.')
 blk('10','Галстук прилип, завязывает Дэйв','04_hallway',['hero_interview','dave'],'interview',
  "SHOT 1 MEDIUM side view: the hero in a white shirt stands in front of the hallway mirror trying to tie a thin dark tie, his real body and his reflection both visible. HARD CUT. SHOT 2 CU: the tie sticks to his fingers and twists into a knot around his hand. HARD CUT. SHOT 3 MEDIUM: he shakes the hand, the tie stays wrapped around it like a bandage. HARD CUT. SHOT 4 MEDIUM: Dave steps in with his mug in one hand, unwraps the tie with the other and ties it properly on the hero's neck. HARD CUT. SHOT 5 CU: Dave pats the knot once, sips.",
@@ -210,7 +210,7 @@ blk('33','Переодевание за две секунды','09_office_entran
 blk('34','Догоняет автобус, паутина в бампер','10_bus_street',['hero_costume','cast_secondary','props'],'costume',
  "SHOT 1 WIDE side view: the empty yellow school bus rolls left to right down the hill; the bus driver with the sandwich runs after it on the left. HARD CUT. SHOT 2 MEDIUM: the hero in costume overtakes the driver, white paper coffee cup in his left hand. HARD CUT. SHOT 3 CU: the hero's right wrist raises, aiming. HARD CUT. SHOT 4 WIDE side view: a web line shoots and splats onto the rear bumper of the bus moving right. HARD CUT. SHOT 5 MEDIUM side view: the web line snaps taut, the hero grips it with both hands and leans back as it starts to pull him to the right.",
  'bus rumble, running, panting, web zip and splat, twang.',
- 'The bus is going down the hill. At the bottom of the hill is the lady you glued to a lamppost.',
+ 'The bus is rolling down the hill. At the bottom: the lady you glued to a lamppost.',
  'Автобус катится с горы. Внизу та самая дама, которую ты приклеил к фонарю.')
 blk('35','Старушка на фонаре видит автобус','10_bus_street',['cast_secondary'],'none',
  "SHOT 1 CU: the elderly woman glued to the lamppost at the bottom of the hill hears a rumble and turns her head. HARD CUT. SHOT 2 WIDE side view from the sidewalk: far up the hill on the left, the yellow bus rolls down from left to right toward her lamppost on the right. HARD CUT. SHOT 3 MEDIUM: she tugs at the web with all her strength, it does not give. HARD CUT. SHOT 4 CU: her hat slides over one eye. HARD CUT. SHOT 5 CU: she grips her handbag and stares the bus down.",
