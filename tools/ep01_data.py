@@ -152,12 +152,12 @@ blk('22','Сила: дверь кофейни снимается с петель
  'Spider strength, part two.',
  'Паучья сила, часть вторая.')
 blk('23','Шляпа старушки, приклеил её к фонарю','10_bus_street',['hero_interview','cast_secondary','props'],'interview',
- "SHOT 1 WIDE: outside the coffee shop, a gust of wind lifts the elderly woman's purple flowered hat off her head. HARD CUT. SHOT 2 CU: the hero's eyes widen, he lunges and fires a web strand from his wrist. HARD CUT. SHOT 3 WIDE: the web catches the hat AND the woman and yanks them both against the lamppost at the bottom of the street, where they stick. HARD CUT. SHOT 4 CU low angle: the woman, hat back on, looks down at him with a slow stern stare. HARD CUT. SHOT 5 MEDIUM: the hero below spreads his arms in a helpless shrug.",
+ "SHOT 1 WIDE: outside the coffee shop, a gust of wind lifts the elderly woman's purple flowered hat off her head. HARD CUT. SHOT 2 CU: the hero, white paper coffee cup in his left hand, eyes widen, he lunges and fires a web strand from his right wrist. HARD CUT. SHOT 3 WIDE: the web catches the hat AND the woman and yanks them both against the lamppost at the bottom of the street, where they stick. HARD CUT. SHOT 4 CU low angle: the woman, hat back on, looks down at him with a slow stern stare. HARD CUT. SHOT 5 MEDIUM: the hero below spreads his arms in a helpless shrug.",
  'wind gust, web zip, thump on metal, street ambience.',
  "You tried to help. Remember this lady. You'll see her again.",
  'Ты хотел помочь. Запомни эту даму. Ты её ещё увидишь.')
 blk('24','Сумочкой по очкам, уходит: опаздывает','10_bus_street',['hero_interview','cast_secondary','props'],'interview',
- "SHOT 1 CU: the hero's hands tug at the web on the woman, it stretches and snaps back. HARD CUT. SHOT 2 MEDIUM: her handbag swings and bonks him on the head. HARD CUT. SHOT 3 CU: he glances at a clock on the coffee shop wall, the hands at twenty to ten. HARD CUT. SHOT 4 MEDIUM: he holds up one finger to her, I will be back, and backs away. HARD CUT. SHOT 5 CU low angle: the woman on the lamppost, arms crossed, watches him go.",
+ "SHOT 1 CU: the hero's hands tug at the web on the woman, it stretches and snaps back. HARD CUT. SHOT 2 MEDIUM: her handbag swings and bonks him on the head. HARD CUT. SHOT 3 CU: he glances at his wristwatch and winces, white paper coffee cup in his other hand. HARD CUT. SHOT 4 MEDIUM: he holds up one finger to her, I will be back, and backs away. HARD CUT. SHOT 5 CU low angle: the woman on the lamppost, arms crossed, watches him go.",
  'elastic twang, soft bonk, clock tick, footsteps.',
  "You'll come back for her. Later. After the interview.",
  'Ты за ней вернёшься. Потом. После собеседования.')
@@ -177,7 +177,7 @@ blk('27','Тем временем дома: Дэйв и холодильник',
  'Meanwhile, at home.',
  'Тем временем дома.')
 blk('28','Офис, 9:58: поправляет галстук','09_office_entrance',['hero_interview','props'],'interview',
- "SHOT 1 WIDE: the hero arrives at the glass doors of the office building, slightly out of breath, white paper coffee cup in hand. HARD CUT. SHOT 2 CU over his shoulder: he and his reflection in the glass door; he straightens his tie. HARD CUT. SHOT 3 CU: a round clock on the lobby wall inside, the hands at two minutes to ten. HARD CUT. SHOT 4 MEDIUM: he takes a deep breath, eyes closed. HARD CUT. SHOT 5 CU: he smiles a tiny hopeful smile.",
+ "SHOT 1 WIDE: the hero arrives at the glass doors of the office building, slightly out of breath, white paper coffee cup in hand. HARD CUT. SHOT 2 CU over his shoulder: he and his reflection in the glass door; he straightens his tie. HARD CUT. SHOT 3 CU: through the glass, an empty waiting chair in the lobby next to a closed office door with a small nameplate. HARD CUT. SHOT 4 MEDIUM: he takes a deep breath, eyes closed. HARD CUT. SHOT 5 CU: he smiles a tiny hopeful smile.",
  'city ambience, breathing, clock tick.',
  'Nine fifty-eight. You made it. Shirt, tie, coffee. You look almost normal.',
  'Девять пятьдесят восемь. Ты успел. Рубашка, галстук, кофе. Почти нормальный человек.')
@@ -196,7 +196,7 @@ blk('31','Пустой автобус разгоняется','10_bus_street',[]
  'rattling, creaking wheel, rising engine hum.',
  '', '')
 blk('32','Выбор: дверь или автобус','09_office_entrance',['hero_interview'],'interview',
- "SHOT 1 ECU: the hero's face at the office door, his hair slowly stands up, eyes go wide. HARD CUT. SHOT 2 CU: in the glass of the door, the reflection of a yellow bus rolling past down the street behind him. HARD CUT. SHOT 3 CU: his fingers on the door handle, the lobby clock behind the glass at ten o'clock. HARD CUT. SHOT 4 CU: his face, looking at the door, then over his shoulder. HARD CUT. SHOT 5 MEDIUM: he lets go of the handle and turns away from the door.",
+ "SHOT 1 ECU: the hero's face at the office door, his hair slowly stands up, eyes go wide. HARD CUT. SHOT 2 CU: in the glass of the door, the reflection of a yellow bus rolling past down the street behind him. HARD CUT. SHOT 3 CU: his fingers tighten on the door handle, knuckles white. HARD CUT. SHOT 4 CU: his face, looking at the door, then over his shoulder. HARD CUT. SHOT 5 MEDIUM: he lets go of the handle and turns away from the door.",
  'high tingle sound rising, bus rumble, clock tick, silence.',
  "And this time your spider-sense isn't about a fly.",
  'И в этот раз чутьё не про муху.')
@@ -333,7 +333,7 @@ blk('38d','Замедление: старушка и прыжок','10_bus_stree
  'Четыре часа назад ты не мог удержать телефон.')
 
 blk('24a','Вор с сумкой: паутина не глядя','10_bus_street',['hero_interview','props'],'interview',
- "SHOT 1 WIDE side view: on the busy sidewalk a man in a black hoodie snatches a woman's red handbag and sprints left to right past the hero. HARD CUT. SHOT 2 CU: the hero, still in shirt and tie, glances at his wrist watch, does not look up. HARD CUT. SHOT 3 CU: without looking he flicks his wrist sideways, a web strand zips out. HARD CUT. SHOT 4 WIDE side view: the thief is yanked off his feet and glued flat to a bus stop bench by a big white web blob, the red handbag dangling from the web. HARD CUT. SHOT 5 MEDIUM: the hero keeps walking right, adjusting his tie, as if nothing happened; behind him a teenager at the bus stop holds up his phone and films the glued thief, then slowly turns the phone toward the hero.",
+ "SHOT 1 WIDE side view: on the busy sidewalk a man in a black hoodie snatches a woman's red handbag and sprints left to right past the hero. HARD CUT. SHOT 2 CU: the hero, still in shirt and tie, white paper coffee cup in his left hand, glances at his wristwatch, does not look up. HARD CUT. SHOT 3 CU: without looking he flicks his wrist sideways, a web strand zips out. HARD CUT. SHOT 4 WIDE side view: the thief is yanked off his feet and glued flat to a bus stop bench by a big white web blob, the red handbag dangling from the web. HARD CUT. SHOT 5 MEDIUM: the hero keeps walking right, adjusting his tie, as if nothing happened; behind him a teenager at the bus stop holds up his phone and films the glued thief, then slowly turns the phone toward the hero.",
  'running steps, a shout, web zip, thump on the bench, street ambience.',
  'And this time somebody looked up.',
  'А вот в этот раз кто-то оторвался от телефона.')
