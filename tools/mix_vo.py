@@ -1,7 +1,8 @@
 """Lay narration (and optional music bed) over an assembled cut.
 
 usage: python3 tools/mix_vo.py CUT.mp4 OUT.mp4 VO_DIR [--music BED.mp3] [--lead 0.4]
-CUT.timeline.json (written by assemble.py) gives each block's start; VO_DIR/vo_<id>.wav is placed at start+lead.
+CUT.timeline.json (written by assemble.py) gives each block's start; VO_DIR/vo_<id>.wav is placed at start+lead,
+VO_DIR/vo_<id>@<secs>.wav pieces at start+secs. A long line pushes the next one so two lines never overlap.
 Block sound is ducked under the voice with a sidechain compressor; music sits at -30 LUFS-ish under everything.
 """
 import sys, os, json, argparse, subprocess
@@ -14,13 +15,19 @@ at = {k: float(v) for k, v in (x.split('=', 1) for x in a.at)}
 dur = lambda f: float(subprocess.check_output(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', f]))
 tl = json.load(open(a.cut.rsplit('.', 1)[0] + '.timeline.json'))
 ins, parts = ['-i', a.cut], []
+import glob
 k = 1; prev_end = 0.0
+items = []   # (wanted time, file, block)
 for seg in tl:
-    f = os.path.join(a.vo_dir, f"vo_{seg['id']}.wav") if seg['id'] else None
-    if f and os.path.exists(f):
-        want = seg['start'] + at.get(seg['id'], a.lead); t0 = max(want, prev_end + a.gap); d = dur(f); prev_end = t0 + d
+    if not seg['id']: continue
+    f = os.path.join(a.vo_dir, f"vo_{seg['id']}.wav")
+    if os.path.exists(f): items.append((seg['start'] + at.get(seg['id'], a.lead), f, seg))
+    for g in glob.glob(os.path.join(a.vo_dir, f"vo_{seg['id']}@*.wav")):   # vo_ID@SECS.wav: a piece placed SECS into the block
+        items.append((seg['start'] + float(g.rsplit('@', 1)[1][:-4]), g, seg))
+for want, f, seg in sorted(items, key=lambda i: i[0]):
+        t0 = max(want, prev_end + a.gap); d = dur(f); prev_end = t0 + d
         end_blk = seg['start'] + seg['dur']
-        print(f"vo {seg['id']:5s} at {t0:7.2f}s  len {d:4.1f}s  push {t0 - want:+.1f}s  " + (f"OVER block end by {prev_end - end_blk:.1f}s" if prev_end > end_blk else ''))
+        print(f"vo {os.path.basename(f)[3:-4]:10s} at {t0:7.2f}s  len {d:4.1f}s  push {t0 - want:+.1f}s  " + (f"OVER block end by {prev_end - end_blk:.1f}s" if prev_end > end_blk else ''))
         ms = int(t0 * 1000)
         ins += ['-i', f]; parts.append(f'[{k}:a]aresample=48000,aformat=channel_layouts=stereo,adelay={ms}|{ms},volume=1.6[v{k}]'); k += 1
 if not parts: sys.exit('no narration files found')
