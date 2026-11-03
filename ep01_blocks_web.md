@@ -64,14 +64,6 @@ AUDIO: hopping, sticky pop, dog whine, footsteps.
 SHOT 1 MEDIUM: the hero at the counter, the barista in a green apron with a hair bun slides a white paper coffee cup with a brown sleeve toward him. HARD CUT. SHOT 2 WIDE: behind her a loaded wall shelf of white mugs breaks loose and starts to fall. HARD CUT. SHOT 3 MEDIUM fast: the hero vaults over the counter and fires web strands left and right, catching mug after mug in mid-air. HARD CUT. SHOT 4 WIDE: all the mugs hang in a neat row on white web strands under the shelf, swinging gently, not one broken. HARD CUT. SHOT 5 CU: the barista, one eyebrow raised, pushes the coffee cup toward him; he takes it, nods, and walks out; behind him every customer is still staring at their phone.
 AUDIO: cup slide, wood crack, rapid web zips, porcelain clinks, gentle swinging.
 
-**b30** · Тем временем: водитель и ручник · `10_bus_street` · `cast_secondary`
-SHOT 1 WIDE side view: a yellow school bus parked at the top of the street; the chubby bus driver gets out holding a sandwich and leaves the door open. HARD CUT. SHOT 2 CU: inside the empty cab, the handbrake lever slowly clicks down by itself. HARD CUT. SHOT 3 CU: the driver takes a big bite of the sandwich, eyes closed, happy. HARD CUT. SHOT 4 WIDE side view: behind him the empty bus slowly starts to roll from left to right down the hill. HARD CUT. SHOT 5 MEDIUM: the driver opens his eyes, sees it, mouth full, freezes with the sandwich in his hand.
-AUDIO: engine idle, ratchet click, bite, tires rolling, gulp.
-
-**b31** · Пустой автобус разгоняется · `10_bus_street` · 
-SHOT 1 CU side view through the window of the rolling yellow school bus: the empty driver seat. HARD CUT. SHOT 2 CU: the steering wheel turns slowly by itself. HARD CUT. SHOT 3 CU: a soda can rattles in the cup holder. HARD CUT. SHOT 4 CU: the speedometer needle creeps up. HARD CUT. SHOT 5 WIDE side view: the empty bus picks up speed from left to right down the hill.
-AUDIO: rattling, creaking wheel, rising engine hum.
-
 **b23** · Шляпа старушки, приклеил её к фонарю · `10_bus_street` · `hero_interview`, `cast_secondary`, `props`
 SHOT 1 WIDE: outside the coffee shop, a gust of wind lifts the elderly woman's purple flowered hat off her head. HARD CUT. SHOT 2 CU: the hero, white paper coffee cup in his left hand, eyes widen, he lunges and fires a web strand from his right wrist. HARD CUT. SHOT 3 WIDE: the web catches the hat AND the woman and yanks them both against the lamppost at the bottom of the street, where they stick. HARD CUT. SHOT 4 CU low angle: the woman, hat back on, looks down at him with a slow stern stare. HARD CUT. SHOT 5 MEDIUM: the hero below spreads his arms in a helpless shrug.
 AUDIO: wind gust, web zip, thump on metal, street ambience.
@@ -87,6 +79,14 @@ AUDIO: running steps, a shout, web zip, thump on the bench, street ambience.
 **b28** · Офис, 9:58: поправляет галстук · `09_office_entrance` · `hero_interview`, `props`
 SHOT 1 WIDE: the hero arrives at the glass doors of the office building, slightly out of breath, white paper coffee cup in hand. HARD CUT. SHOT 2 CU over his shoulder: he and his reflection in the glass door; he straightens his tie. HARD CUT. SHOT 3 CU: through the glass, an empty waiting chair in the lobby next to a closed office door with a small nameplate. HARD CUT. SHOT 4 MEDIUM: he takes a deep breath, eyes closed. HARD CUT. SHOT 5 CU: he smiles a tiny hopeful smile.
 AUDIO: city ambience, breathing, clock tick.
+
+**b30** · Тем временем: водитель и ручник · `10_bus_street` · `cast_secondary`
+SHOT 1 WIDE side view: a yellow school bus parked at the top of the street; the chubby bus driver gets out holding a sandwich and leaves the door open. HARD CUT. SHOT 2 CU: inside the empty cab, the handbrake lever slowly clicks down by itself. HARD CUT. SHOT 3 CU: the driver takes a big bite of the sandwich, eyes closed, happy. HARD CUT. SHOT 4 WIDE side view: behind him the empty bus slowly starts to roll from left to right down the hill. HARD CUT. SHOT 5 MEDIUM: the driver opens his eyes, sees it, mouth full, freezes with the sandwich in his hand.
+AUDIO: engine idle, ratchet click, bite, tires rolling, gulp.
+
+**b31** · Пустой автобус разгоняется · `10_bus_street` · 
+SHOT 1 CU side view through the window of the rolling yellow school bus: the empty driver seat. HARD CUT. SHOT 2 CU: the steering wheel turns slowly by itself. HARD CUT. SHOT 3 CU: a soda can rattles in the cup holder. HARD CUT. SHOT 4 CU: the speedometer needle creeps up. HARD CUT. SHOT 5 WIDE side view: the empty bus picks up speed from left to right down the hill.
+AUDIO: rattling, creaking wheel, rising engine hum.
 
 **b32** · Выбор: дверь или автобус · `09_office_entrance` · `hero_interview`
 SHOT 1 ECU: the hero's face at the office door, his hair slowly stands up, eyes go wide. HARD CUT. SHOT 2 CU: in the glass of the door, the reflection of a yellow bus rolling past down the street behind him. HARD CUT. SHOT 3 CU: his fingers tighten on the door handle, knuckles white. HARD CUT. SHOT 4 CU: his face, looking at the door, then over his shoulder. HARD CUT. SHOT 5 MEDIUM: he lets go of the handle and turns away from the door.
