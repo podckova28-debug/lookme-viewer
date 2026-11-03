@@ -29,7 +29,7 @@ PLATES = {
 }
 SHEETS = {
     'hero_home': 'hero_home', 'hero_interview': 'hero_interview', 'hero_costume': 'hero_costume',
-    'dave': 'DAVE (roommate, navy bathrobe over gray t-shirt, plaid pajama pants, slippers, white mug, heavy-lidded eyes)',
+    'dave': 'DAVE (roommate: big heavyset bald man with a thick dark-brown beard and small round glasses, navy bathrobe over gray t-shirt, blue plaid pajama pants, slippers, white mug, heavy-lidded calm eyes; he looks nothing like the hero)',
     'props': 'PROPS (black phone with yellow bell alarm, blue and white milk carton, white paper coffee cup with brown sleeve, swim goggles, red hoodie, brass door knob, white mug, black and white cat, web blob, pizza box)',
     'cast_secondary': 'SECONDARY CAST (elderly woman in purple coat and purple flowered hat, barista with hair bun and green apron, chubby bus driver with sandwich, police officer with notebook, neighbor in blue polo, TV reporter in purple blazer)',
 }
