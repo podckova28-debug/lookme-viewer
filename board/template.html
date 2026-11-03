@@ -107,11 +107,9 @@ textarea{width:100%;min-height:150px;font:12.5px/1.45 var(--mono);color:var(--in
     <details><summary>Показать промпт листа</summary><textarea id="sheet-prompt" readonly></textarea></details>
   </section>
 
-  <section class="warn">
-    <h3>Шаг 0б: убрать телефон с тумбочки на двух плейтах</h3>
-    <p class="note">На плейтах <code>01_bedroom.png</code> и <code>12_bedroom_night.png</code> на тумбочке нарисован чёрный телефон, из-за него в кадрах появляется второй телефон. В GPT Image 2.5 приложите плейт и вставьте промпт ниже. Сохраните под тем же именем и напишите мне, я обновлю доску. Блоки в спальне, 01 - 03 и 52 - 54, лучше запускать после этого.</p>
-    <div class="row"><button class="copy" type="button" id="copy-plate">Скопировать промпт правки</button></div>
-    <details><summary>Показать промпт</summary><textarea id="plate-prompt" readonly>Edit this image only: remove the black phone from the wooden nightstand. Leave the lamp and add a white ceramic mug where the phone was. Everything else stays exactly the same: same room, same style, same colors, same framing, same light. No people, no text.</textarea></details>
+  <section>
+    <h3>Шаг 0б: сделано</h3>
+    <p class="note">С картинки <code>plates/01_bedroom.png</code> стационарный телефон стёрт, на доске уже новая версия. Скачайте её заново и прикладывайте к блокам 01 - 03. На ночной картинке <code>12_bedroom_night.png</code> телефона не было, её не трогаем.</p>
   </section>
 
   <div id="acts"></div>
@@ -205,7 +203,6 @@ ACTS.forEach(a=>{const b=document.createElement('button');b.type='button';b.clas
   b.addEventListener('click',()=>{cur=a.key;[...f.children].forEach(x=>x.setAttribute('aria-pressed',x===b));try{localStorage.setItem(KEY+'-f',cur)}catch(e){};render(cur)});f.append(b)});
 document.getElementById('inserts').innerHTML=DATA.inserts.map(([w,t])=>`<li><b>${w}.</b> ${t.replace(/</g,'&lt;')}</li>`).join('');
 const sp=document.getElementById('sheet-prompt');sp.value=SHEET_PROMPT;
-document.getElementById('copy-plate').addEventListener('click',e=>copyText(document.getElementById('plate-prompt').value,e.currentTarget,document.getElementById('plate-prompt')));
 document.getElementById('copy-sheet').addEventListener('click',e=>copyText(SHEET_PROMPT,e.currentTarget,sp));
 if(HAVE.includes('sheets/hero_interview.png'))document.getElementById('missing-warn').hidden=true;
 render(cur);progress();
