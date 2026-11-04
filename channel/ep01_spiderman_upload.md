@@ -101,5 +101,5 @@ Who should you wake up as after that? Wrong answers only.
 Готовые файлы: `channel/art/thumb_ep01_A.jpg` (главная), `thumb_ep01_B.jpg` и `thumb_ep01_C.jpg` для теста Test & Compare.
 
 - **A:** огромное перевёрнутое лицо героя в панике на жёлто-оранжевых лучах, Дэйв с кружкой в углу. Надпись `WOKE UP LIKE THIS`.
-- **B:** автобус без водителя, герой в красном худи едет за ним на паутине с кофе. Надпись `WHO'S DRIVING?!` (запасные: `HERO BY 10?`, `DON'T SPILL IT!`, файлы `thumb_ep01_B_*.jpg`).
+- **B:** автобус без водителя, герой в красном худи едет за ним на паутине с кофе. Кроссовки тормозят об асфальт с искрами, на худи самодельный паук. Надпись `WHO'S DRIVING?!` (запасные: `THIS ISN'T AN INTERVIEW`, `LATE FOR THE INTERVIEW?!`, файлы `thumb_ep01_B_*.jpg`).
 - **C:** Дэйв крупно пьёт кофе, за ним герой кричит на потолке. Надпись `NORMAL MORNING`.
