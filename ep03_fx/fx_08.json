@@ -1,1 +1,1 @@
-[{"type":"zip","f0":0,"f1":9},{"type":"caption","f0":6,"f1":80,"x":60,"y":50,"lines":["HOME. 0.0001 SECONDS LATER."],"size":60}]
+[{"type":"zip","f0":0,"f1":9},{"type":"caption","f0":6,"f1":80,"x":60,"y":50,"lines":["HOME. 0.0001 SECONDS LATER."],"size":60},{"type":"timer","f0":20,"f1":96,"x":1380,"y":60,"from":3.40,"to":3.40,"label":"PAUSE"}]
