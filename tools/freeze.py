@@ -8,6 +8,7 @@ usage: python3 tools/freeze.py IN.mp4 OUT.mp4 [--keep F0:F1 ...] [--hold F0:F1:X
 import argparse, subprocess, numpy as np, cv2
 ap = argparse.ArgumentParser(); ap.add_argument('src'); ap.add_argument('out')
 ap.add_argument('--keep', nargs='*', default=[]); ap.add_argument('--hold', nargs='*', default=[]); ap.add_argument('--hero-hue', default='14:30')
+ap.add_argument('--world', nargs='*', default=[], help='F0:F1[:H] strict frozen world: only changes touching the hero survive; H = starting world frame (default F0)')
 a = ap.parse_args()
 cap = cv2.VideoCapture(a.src); fps = cap.get(5); w = int(cap.get(3)); h = int(cap.get(4))
 frames = []
@@ -18,11 +19,37 @@ while True:
 keep = set(range(len(frames))) if not a.keep else {i for r in a.keep for i in range(int(r.split(':')[0]), int(r.split(':')[1]) + 1)}
 holds = [tuple(float(v) for v in s.split(':')) for s in a.hold]
 lo, hi = (int(v) for v in a.hero_hue.split(':'))
+def hero_mask(f):
+    hsv = cv2.cvtColor(f, cv2.COLOR_BGR2HSV)
+    m = ((hsv[..., 0] >= lo) & (hsv[..., 0] <= hi) & (hsv[..., 1] > 120) & (hsv[..., 2] > 120)).astype(np.uint8)
+    m = cv2.morphologyEx(m, cv2.MORPH_OPEN, np.ones((5, 5), np.uint8))
+    return cv2.dilate(m, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (int(w * .05), int(h * .26))))
+
+worlds = []
+for s_ in a.world:
+    v = [int(x) for x in s_.split(':')]; worlds.append((v[0], v[1], v[2] if len(v) > 2 else v[0]))
+canvas = {}
 out = []
 for i, f in enumerate(frames):
-    if i not in keep: continue
     g = f.copy()
+    for (f0, f1, H) in worlds:
+        if f0 <= i <= f1:
+            key = (f0, f1)
+            if key not in canvas: canvas[key] = frames[H].astype(np.int16).copy()
+            C = canvas[key]; hm = hero_mask(f)
+            diff = (np.abs(f.astype(np.int16) - C).max(axis=2) > 28).astype(np.uint8)
+            diff = cv2.morphologyEx(diff, cv2.MORPH_CLOSE, np.ones((7, 7), np.uint8))
+            n, lab = cv2.connectedComponents(np.maximum(diff, hm))
+            touch = np.unique(lab[hm > 0]); live = np.isin(lab, touch[touch > 0]).astype(np.uint8)
+            live = cv2.dilate(live, np.ones((5, 5), np.uint8))
+            m = cv2.GaussianBlur(live.astype(np.float32), (9, 9), 0)[..., None]
+            g = (f * m + C * (1 - m)).astype(np.uint8)
+            far = cv2.dilate(hm, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (int(w * .12), int(h * .12))))
+            upd = (live > 0) & (far == 0)
+            C[upd] = f[upd]
+    if i not in keep: continue
     act = [x for x in holds if x[0] <= i <= x[1]]
+    f = g
     if act:
         hsv = cv2.cvtColor(f, cv2.COLOR_BGR2HSV)
         hero = ((hsv[..., 0] >= lo) & (hsv[..., 0] <= hi) & (hsv[..., 1] > 120) & (hsv[..., 2] > 120)).astype(np.uint8)
