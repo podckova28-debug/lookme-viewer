@@ -161,3 +161,10 @@ Wan всё равно шевелит «застывших» людей в пла
 | Акт 3: улица, кроссовки, спасение (2 брака + 2 переделки) | 20 |
 | Строгая заморозка, улица заново (2 картинки), спасение заново, финал (2 видео, 3 картинки) | 24 |
 | **Итого** | **166** |
+
+## 7. Версия v4 (правки по взгляду зрителя)
+
+- Перемонтаж `tools/recut.py` по `ep03_fx/edl_v4.json`: ванная ускорена в 1,6 раза; добавлены стоп-кадры на «вдох» Лили (2 с), на фантазиях (1,7 с), на ленте с собаками (4 с), на «…I WANT A DOG.» (3 с).
+- 9 новых реплик: bed, spoon, breath, stop («when the fastest man alive panics… the world stops»), ukulele, dogs, oh, busy, shelter. Убраны «And everything stopped» и «You also went to the shelter».
+- Крупные плашки: «WE NEED TO TALK…», «HER PAUSE: 4 SECONDS / FOR YOU: ~3 WEEKS», «…I WANT A DOG.» по центру (`ep03_fx/fx_v4_captions.json`).
+- Итог `out/e3_full_v4.mp4`, 2:45, −15 LUFS. Озвучка правок около 5 кредитов.
