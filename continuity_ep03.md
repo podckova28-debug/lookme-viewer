@@ -168,3 +168,9 @@ Wan всё равно шевелит «застывших» людей в пла
 - 9 новых реплик: bed, spoon, breath, stop («when the fastest man alive panics… the world stops»), ukulele, dogs, oh, busy, shelter. Убраны «And everything stopped» и «You also went to the shelter».
 - Крупные плашки: «WE NEED TO TALK…», «HER PAUSE: 4 SECONDS / FOR YOU: ~3 WEEKS», «…I WANT A DOG.» по центру (`ep03_fx/fx_v4_captions.json`).
 - Итог `out/e3_full_v4.mp4`, 2:45, −15 LUFS. Озвучка правок около 5 кредитов.
+
+## 8. Версия v5
+
+- Все стоп-кадры длиннее 0,8 с превращены в плавный наезд камеры (`tools/push_holds.py`): 0:54, 1:07, 1:15, 1:28, 1:34, 1:58–2:03, 2:21. Внутри одного плана наезд не сбрасывается.
+- Подтянута резкость всей серии: ступень 960×540 → lanczos 1080p + CAS 0.9 + лёгкий unsharp. Основная мягкость идёт от исходников Wan 480p; настоящий апскейл — Topaz (платно) или Real-ESRGAN anime (бесплатно, нужен разрешённый скачанный файл модели).
+- Итог `out/e3_full_v5.mp4`, 2:45.
