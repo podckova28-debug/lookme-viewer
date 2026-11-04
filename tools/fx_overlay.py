@@ -6,6 +6,10 @@ FX.json: list of effects, each with "type" and frame range "f0"/"f1" (inclusive,
   {"type": "burst", "f0": 58, "f1": 87, "x": 1600, "y": 170, "text": "TINGLE!", "size": 96, "rot": 8}
   {"type": "caption", "f0": 0, "f1": 60, "x": 60, "y": 50, "lines": ["7:02 AM"], "size": 64}
   {"type": "label", "f0": 30, "f1": 90, "x": 1200, "y": 700, "title": "DAVE", "sub": "Roommate. Nothing surprises him.", "size": 70}
+  {"type": "speed", "f0": 31, "f1": 44, "path": [[31, 427, 450], [42, 1710, 383]], "n": 5, "len": 420}
+      comic speed streaks trailing a moving thing; path = keyframes [frame, x, y], linear in between
+  {"type": "zip", "f0": 0, "f1": 10}
+      a ring of sharp speed lines from the frame edges toward the centre, flickering on twos (a burst of speed)
 """
 import sys, os, json, math, subprocess
 import numpy as np
@@ -45,6 +49,41 @@ def sense(d, e, f):
         L = 175 * grow * (0.85 + 0.3 * ((j * 7) % 3) / 2)
         if L > 4:
             squiggle(d, x0, y0, a, L, 20, hold * math.pi + j, 13)
+
+SPEEDC = (255, 214, 74, 255)   # the speed hero's mustard yellow, so speed never reads as spider-sense
+
+def path_at(path, f):
+    if f <= path[0][0]: return path[0][1], path[0][2], path[1][1] - path[0][1], path[1][2] - path[0][2]
+    for (fa, xa, ya), (fb, xb, yb) in zip(path, path[1:]):
+        if fa <= f <= fb:
+            t = (f - fa) / max(1, fb - fa)
+            return xa + (xb - xa) * t, ya + (yb - ya) * t, xb - xa, yb - ya
+    fa, xa, ya = path[-2]; fb, xb, yb = path[-1]
+    return xb, yb, xb - xa, yb - ya
+
+def speed(d, e, f):
+    x, y, vx, vy = path_at(e['path'], f)
+    n = math.hypot(vx, vy) or 1; ux, uy = vx / n, vy / n; px, py = -uy, ux
+    k = f - e['f0']; fade = min(1.0, (e['f1'] - f + 1) / 3)
+    L = e.get('len', 380) * fade; cnt = e.get('n', 5)
+    for i in range(cnt):
+        off = (i - (cnt - 1) / 2) * e.get('gap', 26) + (6 if (k // 2 + i) % 2 else -6)
+        li = L * (0.55 + 0.45 * ((i * 37) % 5) / 4)
+        x0, y0 = x + px * off - ux * 30, y + py * off - uy * 30
+        x1, y1 = x0 - ux * li, y0 - uy * li
+        w = max(3, int(14 * (1 - abs(off) / (e.get('gap', 26) * cnt))))
+        d.line([(x0, y0), (x1, y1)], fill=INK, width=w + 7)
+        d.line([(x0, y0), (x1, y1)], fill=SPEEDC, width=w)
+
+def zip_lines(d, e, f):
+    k = f - e['f0']; seed = (k // 2) * 97
+    for i in range(46):
+        a = (i / 46) * 2 * math.pi + ((seed + i * 13) % 7) * 0.02
+        r0 = 0.62 + ((seed + i * 31) % 5) * 0.04
+        rx, ry = W * 0.62, H * 0.62
+        x0, y0 = W / 2 + math.cos(a) * rx * r0, H / 2 + math.sin(a) * ry * r0
+        x1, y1 = W / 2 + math.cos(a) * rx * 1.5, H / 2 + math.sin(a) * ry * 1.5
+        d.line([(x0, y0), (x1, y1)], fill=INK, width=6 + (i % 3) * 3)
 
 _burst_cache = {}
 def burst_img(text, size, rot):
@@ -116,6 +155,8 @@ def main():
             layer = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(layer)
             for e in act:
                 if e['type'] == 'sense': sense(d, e, f)
+                elif e['type'] == 'speed': speed(d, e, f)
+                elif e['type'] == 'zip': zip_lines(d, e, f)
             for e in act:
                 if e['type'] == 'burst': burst(layer, e, f)
                 elif e['type'] == 'caption': caption(layer, e, f)
