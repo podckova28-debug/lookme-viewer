@@ -9,6 +9,8 @@ FX.json: list of effects, each with "type" and frame range "f0"/"f1" (inclusive,
   {"type": "speed", "f0": 31, "f1": 44, "path": [[31, 427, 450], [42, 1710, 383]], "n": 5, "len": 420}
       comic speed streaks trailing a moving thing; path = keyframes [frame, x, y], linear in between
   {"type": "zip", "f0": 0, "f1": 10}
+  {"type": "timer", "f0": 0, "f1": 60, "x": 1480, "y": 60, "from": 4.00, "to": 3.71, "label": "PAUSE"}
+      the frozen-time counter: yellow comic plate, value runs from 'from' to 'to' over the range, ticks on twos
       a ring of sharp speed lines from the frame edges toward the centre, flickering on twos (a burst of speed)
 """
 import sys, os, json, math, subprocess
@@ -124,6 +126,19 @@ def caption(canvas, e, f):
     b.putalpha(b.split()[3].point(lambda v: int(v * a)))
     canvas.alpha_composite(b, (e['x'], e['y']))
 
+def timer(canvas, e, f):
+    k = (f - e['f0']) / max(1, e['f1'] - e['f0']); k = (k * 12 // 1) / 12 if e.get('steps') else k
+    v = e['from'] + (e['to'] - e['from']) * min(1.0, k)
+    fnt = ImageFont.truetype(BANG, e.get('size', 70))
+    txt = f"{e.get('label', 'PAUSE')}: {v:.2f} s"
+    tw = int(fnt.getlength(txt)); pad = 24
+    box = Image.new('RGBA', (tw + 2 * pad + 10, int(e.get('size', 70) * 1.25) + 2 * pad), (0, 0, 0, 0)); d = ImageDraw.Draw(box)
+    d.rectangle((8, 8, box.width - 1, box.height - 1), fill=(20, 16, 18, 200))
+    d.rectangle((0, 0, box.width - 9, box.height - 9), fill=(255, 226, 92, 255), outline=INK, width=6)
+    d.text((pad, pad - 6), txt, font=fnt, fill=INK)
+    a = slide_alpha(e, f, 4); box.putalpha(box.split()[3].point(lambda q: int(q * a)))
+    canvas.alpha_composite(box, (e['x'], e['y']))
+
 def label(canvas, e, f):
     """Character intro: big name in white Bangers with ink outline, one line under it in a white box."""
     sz = e.get('size', 70)
@@ -161,6 +176,7 @@ def main():
                 if e['type'] == 'burst': burst(layer, e, f)
                 elif e['type'] == 'caption': caption(layer, e, f)
                 elif e['type'] == 'label': label(layer, e, f)
+                elif e['type'] == 'timer': timer(layer, e, f)
             buf = Image.alpha_composite(fr, layer).convert('RGB').tobytes()
         wr.stdin.write(buf); f += 1
     wr.stdin.close(); wr.wait(); rd.wait()
