@@ -8,23 +8,25 @@
 
 ## 1. Название: 5 вариантов (не длиннее 60 знаков)
 
+Главное в серии: ты на один день стал Человеком-пауком. Собеседование только фон, поэтому в названии его нет.
+
 | # | Название | Знаков | Чем цепляет |
 |---|---|---|---|
-| **1 (рекомендую)** | **What If You Woke Up as SPIDER-MAN on Job Interview Day?** | 55 | Формат серии + бытовая ставка. Зритель сразу видит конфликт: силы против собеседования. |
-| 2 | What If You Woke Up as SPIDER-MAN? | 34 | Чистый формат серии, максимум поиска, но без интриги. |
-| 3 | You Woke Up as Spider-Man. The Interview Is at 10. | 50 | Обращение на «you», как у рассказчика; таймер создаёт напряжение. |
-| 4 | You Stopped a Bus as Spider-Man. The Driver Got Credit. | 55 | Выдаёт кульминацию, но несправедливость цепляет. Хорош для A/B-теста. |
-| 5 | Spider-Man, But You Have a Job Interview at 10 | 46 | Формат «X, but…», популярный у пародий. |
+| **1 (рекомендую)** | **What If You Woke Up as SPIDER-MAN for a Day?** | 44 | Формат серии плюс «на один день»: сразу понятна ставка и что это комедия про обычный день. |
+| 2 | What If You Woke Up as SPIDER-MAN? | 34 | Чистый формат серии, максимум поиска. |
+| 3 | You Woke Up as Spider-Man. Just for One Day. | 44 | Обращение на «you», как у рассказчика. |
+| 4 | Spider-Man for One Day. Nobody Can Know. | 40 | Правило дня как интрига. |
+| 5 | What If You Woke Up as SPIDER-MAN on Job Interview Day? | 55 | Запасной, если захочешь вывести собеседование вперёд. |
 
-**Рекомендация: №1.** Начинается с поискового «What If You Woke Up as SPIDER-MAN» (совпадает с названием канала), а хвост «on Job Interview Day» даёт любопытство. Все следующие серии называть по той же схеме: «What If You Woke Up as HULK on Moving Day?» и т. п.
+**Рекомендация: №1.** Начинается с поискового «What If You Woke Up as SPIDER-MAN» (совпадает с названием канала). Следующие серии по той же схеме: «What If You Woke Up as HULK for a Day?».
 
 ## 2. Описание
 
 Первые две строки видны под видео без раскрытия, поэтому в них крючок.
 
 ```
-Today you woke up as Spider-Man. You know this because you're on the ceiling.
-At 10 you have your first job interview in a year. Rule one: nobody can know.
+Today you woke up as Spider-Man. Just for one day. You know this because you're on the ceiling.
+Rule one: nobody can know. Small problem: you also have a job interview at 10.
 
 Your phone is stuck to the ceiling for the rest of the day. Your spider-sense warns you about a fly. Your roommate Dave ties your tie, packs you a homemade mask "just in case", and is not surprised. Nothing surprises Dave.
 Then, at 9:58, standing at the office door, you see a bus rolling down the hill. Nobody is driving it.
@@ -94,35 +96,10 @@ Who should you wake up as after that? Wrong answers only.
 
 **Вариант Б (лучше, при следующем рендере):** продлить финальную карточку до 12-15 секунд (Дэйв отпивает из кружки в петле, затемнённый фон) и разместить элементы на ней: «Подписаться» слева, «Конкретное видео» справа, «Плейлист All Episodes» снизу по центру. Тогда тизер с зелёной рукой не перекрывается ничем.
 
-## 6. Обложка: 3 концепции
+## 6. Обложка
 
-Общие правила: 1280×720, стиль серии (рисованные 2D-мультики 90-х, толстые контуры, тёплый утренний свет). Без логотипов и фирменных эмблем: костюм героя в серии самодельный (красное худи, плавательные очки), на обложках его можно показывать, но без нарисованного паука-эмблемы крупно. Текст делать в редакторе (Photopea/Canva), не в генерации: шрифт Bangers из `assets/fonts`, жёлтый #FFE100, толстая чёрная обводка, в правой трети кадра (в правом нижнем углу YouTube ставит длительность, туда текст не ставить).
+Готовые файлы: `channel/art/thumb_ep01_A.jpg` (главная), `thumb_ep01_B.jpg` и `thumb_ep01_C.jpg` для теста Test & Compare.
 
-### A. «Потолок и Дэйв» (рекомендую)
-- **Композиция:** слева 55 % кадра: герой в пижаме (серая футболка, синие клетчатые штаны) висит на потолке вверх ногами, ладони и ступни прилипли, лицо крупно, глаза огромные, рот открыт в ужасе. Рядом с ним на потолке прилип смартфон. Справа внизу: Дэйв по пояс, синий халат, белая кружка у губ, смотрит прямо в камеру с полным равнодушием.
-- **Эмоция:** паника против полного спокойствия. Этот контраст и есть бренд серии, а Дэйв на каждой обложке делает серию узнаваемой в ленте.
-- **Текст (3 слова):** `INTERVIEW AT 10`. Ставка понятна без названия. Запасной вариант короче: `DAY 1`.
-- **Почему лучше:** нет костюма и эмблем, значит нет риска по товарным знакам; читается на маленьком экране (два лица, одна поза); совпадает с первыми секундами видео, поэтому зритель получает то, что обещала обложка.
-
-### B. «Никто не за рулём»
-- **Композиция:** жёлтый школьный автобус несётся с горы на зрителя (вид снизу, широкоугольник), на крыше герой в красном худи и синих плавательных очках, в одной руке паутина-трос, в другой целый стакан кофе. В правом нижнем углу крошечная старушка в фиолетовой шляпе, приклеенная паутиной к фонарю, с недовольным лицом.
-- **Эмоция:** отчаянная сосредоточенность героя и злое лицо старушки.
-- **Текст:** `NOBODY'S DRIVING`
-- Хорош для A/B-теста против A: больше экшена, но меньше Дэйва.
-
-### C. «Не тот герой»
-- **Композиция:** первая полоса газеты «THE DAILY HILL» на весь кадр с заголовком «DRIVER STOPS RUNAWAY BUS» и фото довольного водителя с сэндвичем. Из-за газеты сбоку выглядывает герой с синяком и пакетом замороженного горошка на плече, лицо: обида.
-- **Эмоция:** несправедливость.
-- **Текст:** `WRONG HERO`
-
-### Промпт для обложки A (вставить в генератор изображений, 16:9, 1280×720)
-
-```
-YouTube thumbnail, 16:9, 1280x720. Hand-drawn 2D cartoon in a 1990s TV animation style: thick clean black ink outlines, flat cel shading with soft gradients, warm morning sunlight, saturated but cozy colors, slight paper grain.
-Scene: a small messy city-apartment bedroom with blue walls, seen from a low angle. On the LEFT half of the frame, a skinny young man in his late 20s with messy dark curly hair, light-brown skin, stubble and tired eyes with dark circles, wearing a grey t-shirt and blue plaid pajama pants, is stuck UPSIDE DOWN to the ceiling, palms and bare feet flat on the ceiling, his face large and close to camera, eyes huge and terrified, mouth open in a silent scream. A smartphone is stuck to the ceiling right next to his hand with a small burst of white sticky web.
-On the RIGHT side, lower half: his roommate Dave, a big calm bald man with a large dark full beard and small round wire glasses, wearing a navy-blue bathrobe, holding a plain white coffee mug to his lips, looking straight at the viewer, completely unbothered, half-lidded eyes.
-Strong contrast between panic (left) and calm (right). Clear silhouettes, high readability at small size, simple background, empty space in the upper-right third for a title.
-No text, no letters, no logos, no emblems, no superhero costume, no spider symbol, no watermark.
-```
-
-После генерации: добавить текст `INTERVIEW AT 10` в верхнюю правую треть (Bangers, жёлтый, чёрная обводка 10-12 px), лёгкую тёмную виньетку по краям, проверить читаемость, уменьшив до 168×94.
+- **A:** огромное перевёрнутое лицо героя в панике на жёлто-оранжевых лучах, Дэйв с кружкой в углу. Надпись `WOKE UP LIKE THIS`.
+- **B:** автобус без водителя, герой в красном худи едет за ним на паутине с кофе. Надпись `DAY ONE.`
+- **C:** Дэйв крупно пьёт кофе, за ним герой кричит на потолке. Надпись `NORMAL MORNING`.

@@ -30,7 +30,7 @@ You Woke Up as Spider-Man. You're on the Ceiling.
 Описание:
 ```
 Day one with spider powers. Your phone is on the ceiling. Your spider-sense is warning you about a fly.
-Full episode: "What If You Woke Up as SPIDER-MAN on Job Interview Day?" (linked above)
+Full episode: "What If You Woke Up as SPIDER-MAN for a Day?" (linked above)
 
 #shorts #spiderman #whatifyouwokeupas #animation #superheroparody
 ```
