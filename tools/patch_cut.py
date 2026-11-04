@@ -1,10 +1,11 @@
 """Swap fixed versions of shots into a finished cut without rebuilding it. Free.
 
-usage: python3 tools/patch_cut.py CUT.mp4 OUT.mp4 OLD1.mp4:NEW1.mp4 [OLD2.mp4:NEW2.mp4 ...] [--xfade 7]
+usage: python3 tools/patch_cut.py CUT.mp4 OUT.mp4 OLD1.mp4:NEW1.mp4[@FRAME] [OLD2.mp4:NEW2.mp4 ...] [--xfade 7]
 
 Each OLD clip is the exact clip that went into CUT (same size/fps, overlays included); NEW is the fixed one
 (same length; a shorter NEW repeats its last frame). The position of OLD in CUT is found by frame matching.
-In crossfade frames at both ends the change is blended in (CUT + a*(NEW-OLD)), so dissolves stay intact.
+In crossfade frames at both ends the change is blended in (CUT + a*(NEW-OLD)), so dissolves stay intact;
+where the cut frame equals the OLD frame (a hard cut) the NEW frame is used as is.
 Audio is copied from CUT untouched.
 """
 import argparse, subprocess, numpy as np, cv2
@@ -28,15 +29,22 @@ cap = cv2.VideoCapture(a.cut); fps = cap.get(5); W = int(cap.get(3)); H = int(ca
 
 jobs = []
 for pr in a.pairs:
+    at = None
+    if '@' in pr: pr, at = pr.split('@'); at = int(at)  # OLD:NEW@FRAME forces the position
     old_p, new_p = pr.split(':')
     old = read_all(old_p, small); n_new = int(cv2.VideoCapture(new_p).get(7))
-    probe = [len(old) // 4, len(old) // 2]
+    if at is not None:
+        jobs.append({'s0': at, 'L': len(old), 'old_p': old_p, 'new_p': new_p}); print(f'{old_p} at frame {at} (given)'); continue
+    mot = [np.abs(old[k + 1].astype(np.int16) - old[k]).mean() for k in range(len(old) - 1)]
+    lo_, hi_ = len(old) // 5, len(old) * 4 // 5
+    probe = sorted((lo_ + np.argsort(mot[lo_:hi_])[-3:]).tolist())  # moving frames away from the dissolves
     starts = []
     for k in probe:
         o = old[k].astype(np.int16)
         d = np.array([np.abs(c - o).mean() for c in cut_small]); starts.append(int(np.argmin(d)) - k)
-    if starts[0] != starts[1]: raise SystemExit(f'{old_p}: unclear position {starts}')
-    s0 = starts[0]; print(f'{old_p} at frame {s0} ({s0 / fps:.2f}s), {len(old)} frames')
+    s0 = max(set(starts), key=starts.count)
+    if starts.count(s0) < 2: raise SystemExit(f'{old_p}: unclear position {starts}')
+    print(f'{old_p} at frame {s0} ({s0 / fps:.2f}s), {len(old)} frames')
     jobs.append({'s0': s0, 'L': len(old), 'old_p': old_p, 'new_p': new_p})
 
 dec = subprocess.Popen(['ffmpeg', '-v', 'error', '-i', a.cut, '-f', 'rawvideo', '-pix_fmt', 'bgr24', '-'], stdout=subprocess.PIPE)
@@ -55,6 +63,7 @@ for i in range(N):
             if ok: jb['last'] = nf
             else: nf = jb['last']
             al = (j + 1) / (X + 1) if j < X else ((L - j) / (X + 1) if j >= L - X else 1.0)
+            if al < 1 and np.abs(cv2.resize(f, small).astype(np.int16) - cv2.resize(of, small)).mean() < 4: al = 1.0  # hard cut, no dissolve here
             f = np.clip(f.astype(np.float32) + al * (nf.astype(np.float32) - of.astype(np.float32)), 0, 255).astype(np.uint8)
     enc.stdin.write(f.tobytes())
 enc.stdin.close(); enc.wait()
