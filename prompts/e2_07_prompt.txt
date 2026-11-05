@@ -1,7 +1,16 @@
-Style: hand-drawn 2D 1990s feature animation, clean confident ink lines, soft painted cel shading, warm painted backgrounds with depth, caricatured expressive faces, simple limited animation on twos. A family comedy cartoon. The visual style, characters, location and palette are EXACTLY as in the reference images.
-Continue the reference video seamlessly from its very last frame: same highway, same light. THE HERO: skinny nervous young man with messy ginger hair, thick black glasses, freckles, huge stretched-out gray t-shirt, gray sweatpants, barefoot.
-A 10-second scene of TWO hard-cut shots, hard cut at 5.0s. Characters do NOT talk.
-SHOT 1 WIDE: the green giant gently sets the remains of his tiny yellow hatchback back down on the road and shrinks back into the skinny hero. He looks at what is left of his car: no roof, no doors, just the floor, four wheels and two seats. He gives the stunned drivers a small apologetic wave and climbs into the driver's seat of his roofless car.
-HARD CUT. SHOT 2 MEDIUM, the hero sitting in his roofless little car: he closes his eyes and breathes in slowly for four counts and out for four; then looks down: the steering wheel is twisted into a perfect figure-eight; he shrugs and drives off with it as the traffic starts moving, his hair blowing in the wind.
-AUDIO: soft thuds, a sheepish chuckle, slow breathing, a soft chime, a small car engine, traffic moving. No voice, no music.
-NEGATIVE: dissolves, injuries, a car roof, car doors, readable text, logos, photorealism, 3D render, watermark.
+Style: hand-drawn 2D 1990s feature animation, clean confident ink lines, soft painted cel shading, warm painted backgrounds with depth, caricatured expressive faces, simple limited animation on twos. A family comedy cartoon. Golden morning light, warm haze.
+
+Continue the reference video seamlessly from its very last frame: the same highway, the same wide camera, the same cars, the same light. The green hero stands pressed against the gray sedan holding the remains of his little yellow car over his head; the center lane in front of him is empty; the angry driver in the red-orange car on the right stares.
+
+THE HERO, normal: skinny nervous young man, messy ginger hair, thick black glasses, freckles, huge stretched-out gray t-shirt, baggy gray sweatpants, barefoot. THE GREEN HERO: the same man, green and muscular, only a little bigger than a normal man (his head at the height of the ambulance roof), normal human proportions, the gray t-shirt stays on.
+
+FIXED WORLD: nothing in the jam changes. The same teal hatchback in the left foreground, the yellow sedan, the box truck, the gray sedan, the white van, the red-orange car with the angry driver on the right, the overpass, the blank billboard, the skyline.
+
+A 10-second scene of TWO shots, one hard cut at 5.0s. Characters only emote, they never talk.
+
+SHOT 1 (0-5s) WIDE, the same camera: the green hero steps back into the empty center lane and gently sets the remains of his car down on its four wheels: no roof left, just the floor, two seats and the hood. He shrinks back into the skinny hero. He picks up his bent steering wheel from the road, gives the stunned drivers a small apologetic wave and climbs into the driver's seat of his roofless car.
+SHOT 2 (5-10s) MEDIUM from the front, the hero sitting in his roofless little car: he closes his eyes, breathes in slowly and out slowly; opens his eyes and looks down: the steering wheel is twisted into a perfect figure-eight. He shrugs, grips the figure-eight wheel and drives forward as the traffic starts moving, his ginger hair blowing in the wind.
+
+AUDIO: a soft heavy thud, a deflating whoosh, a sheepish chuckle, slow breathing, a small sputtering car engine, traffic moving. No voice, no music.
+
+NEGATIVE: a huge giant, shirtless, squat body, the hero sliding or teleporting, a car roof, the car becoming whole again, cars appearing or disappearing, a different driver, dissolves, camera moves inside a shot, injuries, readable text, logos, photorealism, 3D render, watermark.
