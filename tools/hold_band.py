@@ -18,6 +18,7 @@ ap.add_argument('--feather', type=int, default=25)
 ap.add_argument('--hero-col', type=float, default=None)
 ap.add_argument('--patch', action='append', default=[], help='X0:Y0:X1:Y1:F  take this part of the reference from frame F (e.g. to drop a bird the hero walks through)')
 ap.add_argument('--hero-hue', default='14:30')
+ap.add_argument('--warm-only', action='store_true', help='with --hero-shape: the hero is only warm saturated pixels (red costume, skin); dark pixels stay frozen (grey birds)')
 ap.add_argument('--hero-shape', action='store_true', help='with --hero-col: inside the column keep only warm-coloured pixels (hoodie, skin, hair) that differ from the reference and connect to the hoodie; grey birds stay frozen')
 a = ap.parse_args()
 
@@ -58,6 +59,7 @@ def hero_column(f):
     hoodie = (lab == i).astype(np.uint8)
     diff = (np.abs(f.astype(np.int16) - ref.astype(np.int16)).max(axis=2) > 18)
     herocol = ((hsv[..., 0] <= 30) & (hsv[..., 1] > 40)) | (hsv[..., 2] < 95)  # hoodie, skin, dark hair
+    if a.warm_only: herocol = ((hsv[..., 0] <= 30) | (hsv[..., 0] >= 170)) & (hsv[..., 1] > 70)
     near = cv2.dilate(hoodie, np.ones((21, 21), np.uint8))
     cand = ((diff & herocol).astype(np.uint8) | near) * col.astype(np.uint8)
     cand = cv2.morphologyEx(cand, cv2.MORPH_CLOSE, np.ones((11, 11), np.uint8))
