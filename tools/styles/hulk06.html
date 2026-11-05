@@ -39,17 +39,17 @@ function car(x, z, col, opt = {}) {
   [-1, 1].forEach(s => add(new THREE.BoxGeometry(0.3, 0.2, 0.05), M(0xfff6d0, { emissive: 0x554422 }), s * Wd * 0.33, 0.9, L / 2 + 0.01, g));
   return g;
 }
-// lanes x: -8.2, -2.7, 2.7, 8.2
+// lanes x: -8.2, -2.7, 2.7, 8.2. Front row (closest to camera): the hero's yellow hatchback (left middle lane)
+// and the angry driver's blue car (right middle lane); the ambulance is stuck right behind them, between the lanes.
 const cols = [0x5f8f8a, 0xc9a94a, 0x6a7da0, 0xb85a3c, 0x9aa0a6, 0x7d8f6a, 0xd08a4a, 0x5a6a7a];
 const lanes = [-8.2, -2.7, 2.7, 8.2];
-const blockL = car(-2.7, -14, 0x9aa0a6), blockR = car(2.7, -14.6, 0xb85a3c);
-const hero = car(2.7, -2, 0xffcc22, { len: 3.4, w: 1.7, h: 0.8 });           // the tiny yellow hatchback
-const angry = car(8.2, -1.2, 0x3c6ea8);                                     // angry driver
-lanes.forEach((x, li) => { for (let k = 0; k < 14; k++) { const z = -2 - k * 6.2 - (li % 2) * 2.5; if (Math.abs(z + 14) < 3 && Math.abs(x) < 3) continue; if (li === 2 && k === 0) continue; if (li === 3 && k === 0) continue; if (Math.abs(x) < 3 && z < -18 && z > -40) continue; if (Math.abs(x) < 3 && z < -2 && z > -12.5) continue; car(x, z, cols[(li * 5 + k) % cols.length], { van: (li + k) % 6 === 0 }); } });
-// truck far left
-car(-8.2, -40, 0xe8e2d4, { van: true, len: 7, h: 1.2 });
-// ambulance in the gap between middle lanes, behind the two blocking cars
-const amb = car(0, -26, 0xffffff, { van: true, len: 5.2, h: 1.1 });
+const hero = car(-2.7, -1.5, 0xffd21f, { len: 3.8, w: 2.0, h: 0.95 });     // the tiny yellow hatchback
+const angry = car(2.7, -1.8, 0x3c6ea8);                                     // angry driver
+const blockL = hero, blockR = angry;
+const door = add(new THREE.BoxGeometry(0.08, 0.8, 1.2), M(0xffd21f, { roughness: 0.4 }), 0.95, 1.0, 0.2, hero); door.visible = false;
+lanes.forEach((x, li) => { for (let k = 0; k < 14; k++) { const z = -2 - k * 6.2 - (li % 2) * 2.5; if ((li === 1 || li === 2) && k < 3) continue; if ((li === 0 || li === 3) && k === 0) continue; car(x, z, cols[(li * 5 + k) % cols.length], { van: (li + k) % 6 === 0 }); } });
+car(-2.7, -20.5, 0x9aa0a6); car(2.7, -21, 0xb85a3c);
+const amb = car(0, -9, 0xffffff, { van: true, len: 5.2, h: 1.1 });
 add(new THREE.BoxGeometry(2.0, 0.25, 5.25), M(0xd02020), 0, 1.35, 0, amb);
 const sirenR = add(new THREE.BoxGeometry(0.4, 0.25, 0.4), M(0xff2020, { emissive: 0xff0000 }), -0.4, 3.0, 0.4, amb);
 const sirenB = add(new THREE.BoxGeometry(0.4, 0.25, 0.4), M(0x2050ff, { emissive: 0x0030ff }), 0.4, 3.0, 0.4, amb);
@@ -63,7 +63,7 @@ function head(parent, x, y, z, skin, hair, glasses, cap) {
   return h;
 }
 hero.children[1].material = M(0xffcc22, { transparent: true, opacity: 0.35 });
-head(hero, 0.35, 1.72, -0.5, 0xe8b48a, 0xd2691e, true).scale.setScalar(0.85);
+const heroHead = head(hero, 0.35, 1.72, -0.5, 0xe8b48a, 0xd2691e, true); heroHead.scale.setScalar(0.85);
 add(new THREE.BoxGeometry(0.7, 0.4, 0.4), M(0x9a9a9a), 0.35, 1.35, -0.5, hero);
 const angryHead = head(angry, 0.4, 2.1, -0.3, 0xd06a50, null, false, 0x2a2a6a);
 const angryArm = add(new THREE.BoxGeometry(0.18, 0.18, 0.7), M(0x3a5aa0), 0.0, 1.75, 0.1, angry);
@@ -88,35 +88,36 @@ const wheel = add(wheelGeo, M(0x1c1c1c), 0, 1.65, 0.05, cab); wheel.rotation.x =
 const handMat = M(0xe8b48a);
 const hands = [-1, 1].map(s => add(new THREE.SphereGeometry(0.11, 16, 12), handMat, s * 0.42, 1.65, 0.12, cab));
 hands.forEach((h, i) => add(new THREE.BoxGeometry(0.12, 0.12, 0.6), M(0x9a9a9a), (i ? 1 : -1) * 0.5, 1.5, 0.45, cab));
-const inHead = head(cab, 0.25, 2.35, 0.7, 0xe8b48a, 0xd2691e, true); const glassFog = add(new THREE.BoxGeometry(0.42, 0.09, 0.02), M(0xffffff, { transparent: true, opacity: 0 }), 0.25, 2.38, 1.03, cab);
+const inHead = head(cab, -0.55, 2.4, 0.9, 0xe8b48a, 0xd2691e, true); const glassFog = add(new THREE.BoxGeometry(0.42, 0.09, 0.02), M(0xffffff, { transparent: true, opacity: 0 }), -0.55, 2.43, 1.23, cab);
 
 const ease = x => x < 0 ? 0 : x > 1 ? 1 : x * x * (3 - 2 * x);
 window.renderAt = t => {
   const flash = Math.floor(t * 6) % 2;
   sirenR.material.emissive.setHex(flash ? 0xff0000 : 0x200000); sirenB.material.emissive.setHex(flash ? 0x000820 : 0x0030ff);
   angryArm.rotation.x = Math.sin(t * 14) * 0.3; angryHead.position.y = 2.1 + Math.abs(Math.sin(t * 7)) * 0.05;
-  giant.visible = t >= 7; amb.position.z = -26;
-  if (t < 3.5) { // shot 1: wide, slow push-in from above the hatchback
-    const k = t / 3.5; cam.fov = 45; cam.position.set(4 - k * 0.6, 7 - k * 0.8, 12 - k * 1.5); cam.lookAt(0.5, 1.5, -18);
+  giant.visible = t >= 7; heroHead.visible = t < 7; door.visible = t >= 7; amb.position.z = -9;
+  hero.position.set(-2.7, 0, -1.5); hero.rotation.set(0, 0, 0); angry.position.set(2.7, 0, -1.8); angry.rotation.set(0, 0, 0);
+  if (t < 3.5) { // shot 1: wide from the front, above the jam; slow push-in on the yellow hatchback
+    const k = t / 3.5; cam.fov = 45; cam.position.set(3.5 - k, 6.5 - k * 1.2, 11 - k * 2.5); cam.lookAt(-1.2, 1.4, -6);
   } else if (t < 7) { // shot 2: close-up in the cabin
     const k = (t - 3.5) / 3.5; cam.fov = 40; cam.position.set(201.5, 2.05, 1.6); cam.lookAt(200.1, 1.8, 0.2);
     const g = ease((k - 0.15) / 0.5);
     handMat.color.setRGB(0.91 - 0.56 * g, 0.71 - 0.05 * g, 0.54 - 0.31 * g);
     inHead.material.color.copy(handMat.color); glassFog.material.opacity = 0.85 * ease((k - 0.4) / 0.4);
-    const b = ease((k - 0.25) / 0.6), p = wheelGeo.attributes.position.array;   // bend: the wheel folds up at both grips and sags in the middle
-    for (let i = 0; i < p.length; i += 3) { const x = wheelPos0[i], y = wheelPos0[i + 1]; p[i] = x * (1 - 0.25 * b); p[i + 1] = y - b * (0.35 * Math.cos(x * 3.7) - 0.1) ; p[i + 2] = wheelPos0[i + 2] + b * 0.25 * Math.sin(x * 4); }
+    const b = ease((k - 0.25) / 0.6), p = wheelGeo.attributes.position.array;
+    for (let i = 0; i < p.length; i += 3) { const x = wheelPos0[i], y = wheelPos0[i + 1]; p[i] = x * (1 - 0.25 * b); p[i + 1] = y - b * (0.35 * Math.cos(x * 3.7) - 0.1); p[i + 2] = wheelPos0[i + 2] + b * 0.25 * Math.sin(x * 4); }
     wheelGeo.attributes.position.needsUpdate = true; wheelGeo.computeVertexNormals();
     hands.forEach((h, i) => { h.position.y = 1.65 - b * 0.12; h.position.x = (i ? 1 : -1) * (0.42 - 0.1 * b); });
-  } else { // shot 3: wide low angle, giant lifts both cars aside, ambulance passes
-    const k = (t - 7) / 3; cam.fov = 48; cam.position.set(6.5 - k * 1.0, 7.5, 3.5); cam.lookAt(-0.5, 3.0, -14);
-    giant.position.set(0, 0, -10.2);
-    const lift = ease(k / 0.45), aside = ease((k - 0.35) / 0.35);
-    gArmL.rotation.z = -0.4 - 0.9 * lift + 0.3 * aside; gArmR.rotation.z = 0.4 + 0.9 * lift - 0.3 * aside;
-    blockL.position.set(-2.7 - 3.2 * aside, 4.0 * lift * (1 - aside), -14); blockL.rotation.z = 0.5 * lift * (1 - aside);
-    blockR.position.set(2.7 + 3.2 * aside, 4.0 * lift * (1 - aside), -14.6); blockR.rotation.z = -0.5 * lift * (1 - aside);
-    giant.position.x = 0; legs[0].position.x = -0.6 - 0.25 * lift; legs[1].position.x = 0.6 + 0.25 * lift;
-    if (k > 0.62) { giant.position.x = -2.2 * ease((k - 0.62) / 0.15); }
-    amb.position.z = -26 + 19 * ease((k - 0.62) / 0.38);
+  } else { // shot 3: the giant stands between the two front cars (his own door open), lifts both aside, the ambulance drives through
+    const k = (t - 7) / 3; cam.fov = 50; cam.position.set(6 - k, 6.5, 13); cam.lookAt(0, 2.6, -3);
+    giant.position.set(0, 0, 0.6);
+    const lift = ease(k / 0.35), aside = ease((k - 0.3) / 0.3);
+    gArmL.rotation.z = -0.5 - 0.6 * lift - 0.4 * aside; gArmR.rotation.z = 0.5 + 0.6 * lift + 0.4 * aside;
+    hero.position.set(-2.7 - 5.3 * aside, 3.2 * lift * (1 - aside) + 0.0, -1.5); hero.rotation.z = 0.35 * lift * (1 - aside);
+    angry.position.set(2.7 + 5.3 * aside, 3.2 * lift * (1 - aside), -1.8); angry.rotation.z = -0.35 * lift * (1 - aside);
+    legs[0].position.x = -0.6 - 0.25 * lift; legs[1].position.x = 0.6 + 0.25 * lift;
+    if (k > 0.6) giant.position.x = -4.5 * ease((k - 0.6) / 0.15);
+    amb.position.z = -9 + 15 * ease((k - 0.68) / 0.32);
   }
   cam.updateProjectionMatrix(); R.render(scene, cam);
 };
