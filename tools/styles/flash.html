@@ -1,0 +1,234 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Bangers;src:url(Bangers-Regular.ttf)}
+html,body{margin:0;background:#000;overflow:hidden}
+canvas{display:block}
+</style>
+<script src="three.min.js"></script>
+</head><body>
+<canvas id="c" width="1280" height="720"></canvas>
+<script>
+// One scene, ten looks. Timeline (seconds): a flower pot falls from a window and a pigeon flies;
+// at 1.2 s time freezes; the hero in his homemade costume dashes in (1.2-2.0), catches the pot and holds it up.
+const W = 1280, H = 720;
+const S = +new URLSearchParams(location.search).get('s') || 1;
+const NAMES = ['', 'PIXEL ART', 'CHALKBOARD', 'GLOW SKETCH', 'PS2 STYLE', 'COMIC ART', 'FLAT VECTOR', 'DAN KOE STYLE', 'CGI MOTION', 'LEGO STYLE', 'ZACKD FILMS'];
+const ease = x => x < 0 ? 0 : x > 1 ? 1 : 1 - Math.pow(1 - x, 3);
+const FREEZE = 1.2, ARRIVE = 2.0, CX = 700;
+function state(t) {
+  const tf = Math.min(t, FREEZE);
+  const k = ease((t - FREEZE) / (ARRIVE - FREEZE));
+  const heroX = t < FREEZE ? -200 : -200 + (CX + 200) * k;
+  const moving = t >= FREEZE && t < ARRIVE;
+  const potY = t < ARRIVE ? 150 + 200 * (tf / FREEZE) * (tf / FREEZE) : 196 - 8 * Math.sin((t - ARRIVE) * 3);
+  return {
+    t, frozen: t >= FREEZE, moving, heroX,
+    pigeonX: 900 + 220 * tf, pigeonY: 170 - 40 * Math.sin(tf * 3), wing: t < FREEZE ? Math.sin(t * 22) : 0.6,
+    potX: t < ARRIVE ? CX + 10 : heroX + 18, potY, held: t >= ARRIVE,
+    phase: moving ? t * 22 : 0, timer: t < FREEZE ? 4.0 : 4.0 - 0.01 * Math.floor((t - FREEZE) * 2),
+  };
+}
+
+// ---------- shared 2D drawing ----------
+const cv = document.getElementById('c'); let ctx;
+function city2d(g, pal, line) {
+  g.fillStyle = pal.sky; g.fillRect(0, 0, W, H);
+  const bs = [[0, 120, 230, 420], [250, 60, 260, 480], [530, 140, 250, 400], [800, 90, 240, 450], [1060, 150, 240, 390]];
+  bs.forEach(([x, y, w, h], i) => {
+    g.fillStyle = pal.bld[i % pal.bld.length]; g.fillRect(x, y, w, h);
+    if (line) { g.strokeStyle = line; g.lineWidth = pal.lw || 4; g.strokeRect(x, y, w, h); }
+    g.fillStyle = pal.win;
+    for (let r = y + 30; r < y + h - 120; r += 70) for (let c = x + 25; c < x + w - 40; c += 60) g.fillRect(c, r, 30, 40);
+  });
+  g.fillStyle = pal.walk; g.fillRect(0, 540, W, 40); g.fillStyle = pal.road; g.fillRect(0, 580, W, 140);
+  if (line) { g.strokeStyle = line; g.beginPath(); g.moveTo(0, 540); g.lineTo(W, 540); g.moveTo(0, 580); g.lineTo(W, 580); g.stroke(); }
+}
+function hero2d(g, st, P, opt = {}) {
+  const x = st.heroX, y = 540, ph = st.phase, run = st.moving;
+  const lw = opt.lw ?? 5, ol = opt.outline;
+  const seg = (x1, y1, x2, y2, w, col) => { g.strokeStyle = col; g.lineWidth = w; g.lineCap = 'round'; g.beginPath(); g.moveTo(x1, y1); g.lineTo(x2, y2); g.stroke(); };
+  const limb = (ax, ay, a1, a2, l, w, col) => {
+    const kx = ax + Math.sin(a1) * l, ky = ay + Math.cos(a1) * l, fx = kx + Math.sin(a2) * l, fy = ky + Math.cos(a2) * l;
+    if (ol) { seg(ax, ay, kx, ky, w + lw * 2, ol); seg(kx, ky, fx, fy, w + lw * 2, ol); }
+    seg(ax, ay, kx, ky, w, col); seg(kx, ky, fx, fy, w, col); return [fx, fy];
+  };
+  const lean = run ? 0.35 : 0; const hipX = x, hipY = y - 110; const shX = hipX + Math.sin(lean) * 90, shY = hipY - Math.cos(lean) * 90;
+  const sw = run ? Math.sin(ph) : 0;
+  // legs
+  const f1 = limb(hipX, hipY, run ? 0.9 * sw : 0.15, run ? 0.9 * sw - 0.9 : 0.1, 55, 26, P.suit);
+  const f2 = limb(hipX, hipY, run ? -0.9 * sw : -0.15, run ? -0.9 * sw - 0.9 : -0.1, 55, 26, P.suit);
+  [f1, f2].forEach(([fx, fy]) => { g.fillStyle = P.shoe; if (ol) { g.strokeStyle = ol; g.lineWidth = lw; } g.beginPath(); g.ellipse(fx + 10, fy, 22, 11, 0, 0, 7); g.fill(); if (ol) g.stroke(); });
+  // torso
+  if (ol) seg(hipX, hipY, shX, shY, 58 + lw * 2, ol);
+  seg(hipX, hipY, shX, shY, 58, P.suit);
+  // bolt
+  const bx = (hipX + shX) / 2 + 4, by = (hipY + shY) / 2 - 5;
+  g.fillStyle = P.bolt; g.beginPath(); g.moveTo(bx + 6, by - 26); g.lineTo(bx - 12, by + 4); g.lineTo(bx, by + 4); g.lineTo(bx - 8, by + 28); g.lineTo(bx + 14, by - 4); g.lineTo(bx + 2, by - 4); g.closePath(); g.fill();
+  if (ol) { g.strokeStyle = ol; g.lineWidth = Math.max(2, lw / 2); g.stroke(); }
+  // arms
+  if (st.held) { limb(shX, shY + 8, Math.PI - 0.35, Math.PI - 0.15, 42, 18, P.suit); limb(shX, shY + 8, Math.PI + 0.35, Math.PI + 0.15, 42, 18, P.suit); }
+  else { limb(shX, shY + 8, run ? -1.2 * sw : 0.3, run ? -1.2 * sw + 1.4 : 0.2, 42, 18, P.suit); limb(shX, shY + 8, run ? 1.2 * sw : -0.3, run ? 1.2 * sw + 1.4 : -0.2, 42, 18, P.suit); }
+  // head + helmet + glove wings
+  const hx = shX + (run ? 12 : 0), hy = shY - 40;
+  g.fillStyle = P.skin; g.beginPath(); g.arc(hx, hy, 30, 0, 7); g.fill(); if (ol) { g.strokeStyle = ol; g.lineWidth = lw; g.stroke(); }
+  g.fillStyle = P.suit; g.beginPath(); g.arc(hx, hy - 4, 32, Math.PI, 0); g.fill(); if (ol) g.stroke();
+  [-1, 1].forEach(s => { g.fillStyle = P.bolt; g.beginPath(); g.ellipse(hx + s * 34, hy - 30, 10, 22, s * 0.6, 0, 7); g.fill(); if (ol) g.stroke(); });
+  g.fillStyle = P.eye || '#111'; g.beginPath(); g.arc(hx + 12, hy + 2, 4, 0, 7); g.fill();
+  // speed streaks
+  if (run) for (let i = 0; i < 7; i++) seg(x - 60 - i * 10, y - 170 + i * 24, x - 260 - i * 30, y - 170 + i * 24, 6, P.streak);
+}
+function pot2d(g, st, P, ol) { g.fillStyle = P.pot; g.beginPath(); g.moveTo(st.potX - 22, st.potY); g.lineTo(st.potX + 22, st.potY); g.lineTo(st.potX + 16, st.potY + 34); g.lineTo(st.potX - 16, st.potY + 34); g.closePath(); g.fill(); if (ol) { g.strokeStyle = ol; g.lineWidth = 4; g.stroke(); }
+  g.fillStyle = P.leaf; g.beginPath(); g.ellipse(st.potX - 10, st.potY - 14, 9, 18, -0.5, 0, 7); g.ellipse(st.potX + 10, st.potY - 14, 9, 18, 0.5, 0, 7); g.fill(); }
+function pigeon2d(g, st, P, ol) { g.fillStyle = P.bird; g.beginPath(); g.ellipse(st.pigeonX, st.pigeonY, 26, 14, 0, 0, 7); g.fill(); if (ol) { g.strokeStyle = ol; g.lineWidth = 3; g.stroke(); }
+  g.beginPath(); g.moveTo(st.pigeonX - 5, st.pigeonY - 4); g.lineTo(st.pigeonX - 25, st.pigeonY - 30 * st.wing - 6); g.lineTo(st.pigeonX + 12, st.pigeonY - 6); g.fill(); if (ol) g.stroke(); }
+function label(g, txt, font, col, bg) { g.font = font; const w = g.measureText(txt).width; if (bg) { g.fillStyle = bg; g.fillRect(30, 26, w + 40, 76); } g.fillStyle = col; g.textBaseline = 'middle'; g.fillText(txt, 50, 66); }
+function timer(g, st, font, col, bg) { const s = 'PAUSE ' + st.timer.toFixed(2) + ' s'; g.font = font; const w = g.measureText(s).width; g.fillStyle = bg; g.fillRect(W - w - 80, 26, w + 50, 70); g.fillStyle = col; g.textBaseline = 'middle'; g.fillText(s, W - w - 55, 62); }
+
+const P0 = { suit: '#d8342c', bolt: '#ffd21f', skin: '#c98b5f', shoe: '#ffffff', streak: '#ffb02e', pot: '#c0612b', leaf: '#3c9a3c', bird: '#8d93a3' };
+
+const draw2d = {
+  1(st) { // pixel art: render at 192x108, limited palette, nearest scaling
+    const o = draw2d._o || (draw2d._o = document.createElement('canvas')); o.width = 192; o.height = 108; const g = o.getContext('2d');
+    g.save(); g.scale(192 / W, 108 / H);
+    city2d(g, { sky: '#6cb8f0', bld: ['#a85a3c', '#7a4b8c', '#c47a3a', '#5a6a8c', '#9a4a4a'], win: '#ffe9a0', walk: '#9a9a9a', road: '#4a4a52' });
+    pigeon2d(g, st, P0); hero2d(g, st, P0, { outline: '#1a1020', lw: 6 }); pot2d(g, st, P0); g.restore();
+    ctx.imageSmoothingEnabled = false; ctx.drawImage(o, 0, 0, W, H);
+    label(ctx, NAMES[S], '64px monospace', '#fff', '#1a1020'); timer(ctx, st, '40px monospace', '#1a1020', '#ffd21f');
+  },
+  2(st) { // chalkboard: dark green, jittery chalk strokes
+    const g = ctx; g.fillStyle = '#20382c'; g.fillRect(0, 0, W, H);
+    for (let i = 0; i < 400; i++) { g.fillStyle = 'rgba(255,255,255,0.03)'; g.fillRect((i * 997) % W, (i * 631) % H, 40, 2); }
+    const chalk = (pts, col, w) => { for (let p = 0; p < 3; p++) { g.strokeStyle = col; g.globalAlpha = 0.5; g.lineWidth = w; g.beginPath(); pts.forEach(([x, y], i) => { const jx = x + Math.sin(i * 7 + p * 3) * 2, jy = y + Math.cos(i * 5 + p) * 2; i ? g.lineTo(jx, jy) : g.moveTo(jx, jy); }); g.stroke(); } g.globalAlpha = 1; };
+    [[0, 120, 230, 420], [250, 60, 260, 480], [530, 140, 250, 400], [800, 90, 240, 450], [1060, 150, 240, 390]].forEach(([x, y, w, h]) => chalk([[x, y + h], [x, y], [x + w, y], [x + w, y + h]], '#e8efe6', 3));
+    chalk([[0, 560], [W, 560]], '#e8efe6', 3);
+    g.save(); g.globalAlpha = 0.9;
+    const Pc = { suit: '#ff8a80', bolt: '#fff59d', skin: '#ffe0c0', shoe: '#ffffff', streak: '#ffffff', pot: '#ffab91', leaf: '#a5d6a7', bird: '#e0e0e0', eye: '#20382c' };
+    pigeon2d(g, st, Pc); hero2d(g, st, Pc, { outline: '#e8efe6', lw: 2 }); pot2d(g, st, Pc); g.restore();
+    label(g, NAMES[S], 'italic 60px "Comic Sans MS", cursive', '#f5f5f0'); timer(g, st, '38px "Comic Sans MS", cursive', '#20382c', '#f5f5f0');
+  },
+  3(st) { // glow sketch: black, neon strokes
+    const g = ctx; g.fillStyle = '#05060c'; g.fillRect(0, 0, W, H);
+    g.shadowBlur = 24; g.shadowColor = '#46c8ff';
+    city2d(g, { sky: 'rgba(0,0,0,0)', bld: ['rgba(0,0,0,0)'], win: 'rgba(70,200,255,0.25)', walk: 'rgba(0,0,0,0)', road: 'rgba(0,0,0,0)', lw: 2 }, '#46c8ff');
+    g.shadowColor = '#ff4040';
+    const Pg = { suit: 'rgba(0,0,0,0)', bolt: '#ffe14a', skin: 'rgba(0,0,0,0)', shoe: 'rgba(0,0,0,0)', streak: '#ff8a30', pot: 'rgba(0,0,0,0)', leaf: '#5cff8a', bird: 'rgba(0,0,0,0)', eye: '#ffffff' };
+    pigeon2d(g, st, Pg, '#c0d0ff'); hero2d(g, st, Pg, { outline: '#ff4a3a', lw: 3 }); pot2d(g, st, Pg, '#ffb060');
+    g.shadowBlur = 18; g.shadowColor = '#46c8ff'; label(g, NAMES[S], '58px Arial', '#bff0ff'); timer(g, st, '36px Arial', '#05060c', '#46c8ff'); g.shadowBlur = 0;
+  },
+  5(st) { // comic: halftone, thick outlines, panel, SFX
+    const g = ctx; g.fillStyle = '#ffe9b0'; g.fillRect(0, 0, W, H);
+    city2d(g, { sky: '#7fd0ff', bld: ['#ff8a65', '#ba68c8', '#ffb74d', '#64b5f6', '#e57373'], win: '#fff59d', walk: '#bdbdbd', road: '#757575', lw: 6 }, '#111');
+    g.fillStyle = 'rgba(0,0,0,0.13)'; for (let y = 0; y < 540; y += 14) for (let x = (y / 14 % 2) * 7; x < W; x += 14) { g.beginPath(); g.arc(x, y, 2.6, 0, 7); g.fill(); }
+    pigeon2d(g, st, P0, '#111'); hero2d(g, st, P0, { outline: '#111', lw: 6 }); pot2d(g, st, P0, '#111');
+    if (st.moving || st.held) { g.save(); g.translate(st.heroX + 120, 300); g.rotate(-0.15); g.fillStyle = '#ffeb3b'; g.strokeStyle = '#111'; g.lineWidth = 6; g.beginPath(); for (let i = 0; i < 24; i++) { const r = i % 2 ? 60 : 110, a = i / 24 * Math.PI * 2; g.lineTo(Math.cos(a) * r * 1.4, Math.sin(a) * r); } g.closePath(); g.fill(); g.stroke(); g.font = '64px Bangers'; g.fillStyle = '#d32f2f'; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText(st.moving ? 'WHOOSH!' : 'GOT IT!', 0, 0); g.restore(); g.textAlign = 'left'; }
+    g.lineWidth = 14; g.strokeStyle = '#111'; g.strokeRect(7, 7, W - 14, H - 14);
+    label(g, NAMES[S], '66px Bangers', '#111', '#ffeb3b'); timer(g, st, '44px Bangers', '#111', '#fff');
+  },
+  6(st) { // flat vector: pastel, no outlines, long shadows
+    const g = ctx; city2d(g, { sky: '#ffe4d6', bld: ['#ffb4a2', '#e5989b', '#b5838d', '#6d6875', '#ffcdb2'], win: '#fff1e6', walk: '#f4e1d2', road: '#cdb4db' });
+    g.fillStyle = 'rgba(80,40,60,0.12)'; g.beginPath(); g.ellipse(st.heroX + 20, 545, 70, 10, 0, 0, 7); g.fill();
+    const Pf = { suit: '#ef476f', bolt: '#ffd166', skin: '#f3c4a4', shoe: '#ffffff', streak: '#ffd166', pot: '#e07a5f', leaf: '#81b29a', bird: '#9a8c98', eye: '#3d405b' };
+    pigeon2d(g, st, Pf); hero2d(g, st, Pf); pot2d(g, st, Pf);
+    label(g, NAMES[S], '600 56px "Helvetica Neue", Arial', '#3d405b'); timer(g, st, '600 34px Arial', '#fff', '#3d405b');
+  },
+  7(st) { // dan koe: minimal typography, tiny figure, lots of space
+    const g = ctx; g.fillStyle = '#0d0d0d'; g.fillRect(0, 0, W, H);
+    g.fillStyle = '#f2efe8'; g.textBaseline = 'alphabetic';
+    g.font = '300 64px Georgia, serif'; const a = Math.min(1, st.t / 0.8); g.globalAlpha = a; g.fillText('She said: "We need to talk."', 140, 230);
+    if (st.t > FREEZE) { g.globalAlpha = Math.min(1, (st.t - FREEZE) / 0.5); g.font = 'italic 300 88px Georgia, serif'; g.fillText('4 seconds.', 140, 360); }
+    if (st.t > ARRIVE) { g.globalAlpha = Math.min(1, (st.t - ARRIVE) / 0.5); g.fillStyle = '#ffd21f'; g.font = 'italic 300 88px Georgia, serif'; g.fillText('For you: 3 weeks.', 140, 470); }
+    g.globalAlpha = 1; g.strokeStyle = '#f2efe8'; g.lineWidth = 2; g.beginPath(); g.moveTo(140, 600); g.lineTo(140 + 1000 * Math.min(1, st.t / 4), 600); g.stroke();
+    const x = 140 + 1000 * Math.min(1, st.t / 4); g.fillStyle = '#d8342c'; g.beginPath(); g.arc(x, 600, 9, 0, 7); g.fill();
+    g.font = '24px Georgia, serif'; g.fillStyle = '#888'; g.fillText(NAMES[S].toLowerCase(), 140, 120);
+  },
+};
+
+// ---------- 3D ----------
+let R, scene, cam, T = {};
+function init3d(kind) {
+  const lowres = kind === 4;
+  R = new THREE.WebGLRenderer({ canvas: cv, antialias: !lowres, preserveDrawingBuffer: true });
+  if (lowres) { R.setPixelRatio(0.25); cv.style.imageRendering = 'pixelated'; }
+  R.setSize(W, H, false);
+  R.shadowMap.enabled = kind !== 4; R.shadowMap.type = THREE.PCFSoftShadowMap;
+  scene = new THREE.Scene();
+  cam = new THREE.PerspectiveCamera(kind === 10 ? 35 : 50, W / H, 0.1, 200);
+  const flat = kind === 4, lego = kind === 9, zack = kind === 10;
+  scene.background = new THREE.Color(zack ? 0x0b0d14 : kind === 4 ? 0x8ab4d8 : lego ? 0xbfe3ff : 0xcfe4f5);
+  if (kind === 4) scene.fog = new THREE.Fog(0x8ab4d8, 18, 45);
+  if (zack) scene.fog = new THREE.FogExp2(0x0b0d14, 0.045);
+  const M = (c, o = {}) => flat ? new THREE.MeshPhongMaterial({ color: c, flatShading: true, shininess: 0 }) : new THREE.MeshStandardMaterial(Object.assign({ color: c, roughness: lego ? 0.25 : 0.55, metalness: 0 }, o));
+  T.M = M;
+  scene.add(new THREE.HemisphereLight(0xffffff, zack ? 0x101020 : 0x806050, zack ? 0.25 : 0.7));
+  const sun = new THREE.DirectionalLight(0xffffff, zack ? 0.5 : 0.9); sun.position.set(-8, 14, 10); sun.castShadow = true; sun.shadow.mapSize.set(2048, 2048);
+  Object.assign(sun.shadow.camera, { left: -20, right: 20, top: 20, bottom: -20 }); scene.add(sun);
+  if (zack) { const sp = new THREE.SpotLight(0xffd0a0, 2.2, 40, 0.5, 0.6); sp.position.set(4, 10, 6); sp.castShadow = true; scene.add(sp); T.sp = sp; const rim = new THREE.PointLight(0x4080ff, 1.5, 20); rim.position.set(-4, 3, -4); scene.add(rim); }
+  // ground + street
+  const ground = new THREE.Mesh(new THREE.BoxGeometry(80, 0.2, 30), M(lego ? 0x6aa84f : 0x55555e)); ground.position.y = -0.1; ground.receiveShadow = true; scene.add(ground);
+  const walk = new THREE.Mesh(new THREE.BoxGeometry(80, 0.3, 4), M(lego ? 0xc8c8c8 : 0x9a9a9a)); walk.position.set(0, 0, -4); walk.receiveShadow = true; scene.add(walk);
+  // buildings
+  const cols = [0xa85a3c, 0x7a4b8c, 0xc47a3a, 0x5a6a8c, 0x9a4a4a, 0x8c6a3a];
+  for (let i = -6; i <= 6; i++) {
+    const h = 6 + ((i * 37 + 100) % 7), b = new THREE.Mesh(new THREE.BoxGeometry(3.6, h, 4), M(cols[(i + 12) % cols.length]));
+    b.position.set(i * 4, h / 2, -8.5); b.castShadow = b.receiveShadow = true; scene.add(b);
+    if (lego) for (let sx = -1; sx <= 1; sx++) for (let sz = -1; sz <= 1; sz++) { const s = new THREE.Mesh(new THREE.CylinderGeometry(0.35, 0.35, 0.3, 16), M(cols[(i + 12) % cols.length])); s.position.set(i * 4 + sx * 1.1, h + 0.15, -8.5 + sz * 1.2); scene.add(s); }
+    for (let wy = 1.5; wy < h - 0.5; wy += 1.6) for (let wx = -1; wx <= 1; wx += 1) { const w = new THREE.Mesh(new THREE.BoxGeometry(0.6, 0.8, 0.05), new THREE.MeshBasicMaterial({ color: zack ? 0xffc870 : 0xffe9a0 })); w.position.set(i * 4 + wx, wy, -6.47); scene.add(w); }
+  }
+  // hero
+  const hero = new THREE.Group(); scene.add(hero); T.hero = hero;
+  const red = M(0xd8342c), yel = M(0xffd21f, { emissive: zack ? 0x332200 : 0x000000 }), skin = M(0xc98b5f), white = M(0xffffff);
+  const box = (w, h, d, m) => { const o = new THREE.Mesh(lego ? new THREE.BoxGeometry(w, h, d) : new THREE.BoxGeometry(w, h, d, 1, 1, 1), m); o.castShadow = true; return o; };
+  const torso = box(0.9, 1.1, 0.5, red); torso.position.y = 2.15; hero.add(torso);
+  const bolt = new THREE.Mesh(new THREE.ShapeGeometry((() => { const s = new THREE.Shape(); s.moveTo(0.08, 0.3); s.lineTo(-0.15, -0.02); s.lineTo(0, -0.02); s.lineTo(-0.1, -0.32); s.lineTo(0.17, 0.05); s.lineTo(0.02, 0.05); s.closePath(); return s; })()), yel); bolt.position.set(0, 2.2, 0.26); hero.add(bolt);
+  const head = lego ? new THREE.Mesh(new THREE.CylinderGeometry(0.32, 0.32, 0.55, 24), M(0xffd21f)) : new THREE.Mesh(new THREE.SphereGeometry(0.36, flat ? 6 : 24, flat ? 5 : 16), skin);
+  head.position.y = 3.05; head.castShadow = true; hero.add(head);
+  const helm = new THREE.Mesh(new THREE.SphereGeometry(0.4, flat ? 6 : 24, flat ? 4 : 12, 0, Math.PI * 2, 0, Math.PI / 2), red); helm.position.y = 3.12; hero.add(helm);
+  [-1, 1].forEach(s => { const g = new THREE.Mesh(new THREE.ConeGeometry(0.13, 0.5, flat ? 4 : 10), yel); g.position.set(s * 0.42, 3.45, 0); g.rotation.z = -s * 0.7; hero.add(g); });
+  const eye = new THREE.Mesh(new THREE.SphereGeometry(0.05, 8, 6), M(0x111111)); eye.position.set(0.14, 3.08, 0.33); hero.add(eye);
+  const limb = (x, y, m, len) => { const p = new THREE.Group(); p.position.set(x, y, 0); const l = box(0.3, len, 0.3, m); l.position.y = -len / 2; p.add(l); hero.add(p); return p; };
+  T.legL = limb(-0.22, 1.6, red, 1.5); T.legR = limb(0.22, 1.6, red, 1.5); T.armL = limb(-0.6, 2.65, red, 1.1); T.armR = limb(0.6, 2.65, red, 1.1);
+  [T.legL, T.legR].forEach(p => { const s = box(0.36, 0.2, 0.55, white); s.position.set(0, -1.55, 0.1); p.add(s); });
+  // streak trail
+  T.trail = []; for (let i = 0; i < 6; i++) { const s = new THREE.Mesh(new THREE.BoxGeometry(3, 0.06, 0.06), new THREE.MeshBasicMaterial({ color: 0xffb02e, transparent: true, opacity: 0.8 })); scene.add(s); T.trail.push(s); }
+  // pot + pigeon
+  const pot = new THREE.Group(); const pb = new THREE.Mesh(new THREE.CylinderGeometry(0.35, 0.25, 0.5, flat ? 6 : 20), M(0xc0612b)); pb.castShadow = true; pot.add(pb);
+  const pl = new THREE.Mesh(new THREE.SphereGeometry(0.35, flat ? 5 : 16, flat ? 4 : 10), M(0x3c9a3c)); pl.position.y = 0.4; pot.add(pl); scene.add(pot); T.pot = pot;
+  const pig = new THREE.Group(); const body = new THREE.Mesh(new THREE.SphereGeometry(0.3, flat ? 6 : 16, flat ? 4 : 10), M(0x8d93a3)); body.scale.set(1.4, 0.8, 0.8); pig.add(body);
+  T.wing = new THREE.Mesh(new THREE.BoxGeometry(0.5, 0.04, 0.6), M(0x7d8393)); T.wing.position.y = 0.15; pig.add(T.wing); scene.add(pig); T.pig = pig;
+}
+const to3 = (x, y) => [(x - 640) / 60, (560 - y) / 60];
+function draw3d(st) {
+  const [hx] = to3(st.heroX, 0); T.hero.position.set(hx, 0, 0); T.hero.rotation.y = st.moving ? Math.PI / 2 : 0.4; T.hero.rotation.z = st.moving ? -0.25 : 0;
+  const sw = st.moving ? Math.sin(st.phase) : 0;
+  T.legL.rotation.x = 0.9 * sw; T.legR.rotation.x = -0.9 * sw;
+  if (st.held) { T.armL.rotation.x = Math.PI; T.armR.rotation.x = Math.PI; T.armL.rotation.z = 0.25; T.armR.rotation.z = -0.25; }
+  else { T.armL.rotation.set(-1.1 * sw, 0, 0); T.armR.rotation.set(1.1 * sw, 0, 0); }
+  T.trail.forEach((s, i) => { s.visible = st.moving; s.position.set(hx - 2.2 - i * 0.2, 1.2 + i * 0.35, 0); });
+  const [px, py] = to3(st.potX, st.potY); T.pot.position.set(st.held ? hx : px, st.held ? 4.6 + 0.1 * Math.sin(st.t * 3) : py, st.held ? 0 : -2);
+  const [gx, gy] = to3(st.pigeonX, st.pigeonY); T.pig.position.set(gx, gy, -2.5); T.wing.rotation.x = st.wing * 0.9;
+  if (S === 10) { const a = 0.3 + st.t * 0.12; cam.position.set(hx * 0.3 + Math.sin(a) * 9, 3.2, Math.cos(a) * 9); cam.lookAt(hx * 0.5, 2.5, 0); T.sp.target = T.hero; }
+  else if (S === 8) { const a = -0.5 + st.t * 0.25; cam.position.set(Math.sin(a) * 13, 4.5, Math.cos(a) * 13); cam.lookAt(0, 2.2, -1); }
+  else { cam.position.set(0, 4.2, 14); cam.lookAt(0, 2.5, -1); }
+  R.render(scene, cam);
+}
+
+// overlay for 3D styles (2D canvas on top)
+let ov, og;
+function overlay3d(st) {
+  og.clearRect(0, 0, W, H);
+  const f = S === 9 ? '64px "Arial Black", Arial' : S === 4 ? 'bold 56px monospace' : S === 10 ? '600 52px "Helvetica Neue", Arial' : '600 56px Arial';
+  if (S === 10) { og.fillStyle = 'rgba(0,0,0,0.0)'; og.font = f; og.fillStyle = '#fff'; og.textBaseline = 'middle'; og.fillText('WHAT IF time stopped for you?', 50, 660); og.font = '28px Arial'; og.fillStyle = '#9ab'; og.fillText(NAMES[S], 50, 60); }
+  else { label(og, NAMES[S], f, '#fff', S === 9 ? '#d01012' : 'rgba(0,0,0,0.55)'); timer(og, st, S === 4 ? 'bold 34px monospace' : '600 34px Arial', '#111', '#ffd21f'); }
+}
+
+window.ready = (async () => {
+  await document.fonts.load('40px Bangers');
+  if ([4, 8, 9, 10].includes(S)) {
+    init3d(S); ov = document.createElement('canvas'); ov.width = W; ov.height = H; ov.style.cssText = 'position:absolute;left:0;top:0;width:1280px;height:720px'; document.body.appendChild(ov); og = ov.getContext('2d');
+    cv.style.width = '1280px'; cv.style.height = '720px';
+    window.renderAt = t => { const st = state(t); draw3d(st); overlay3d(st); };
+  } else { ctx = cv.getContext('2d'); window.renderAt = t => { const st = state(t); ctx.save(); draw2d[S](st); ctx.restore(); }; }
+  return true;
+})();
+</script></body></html>
