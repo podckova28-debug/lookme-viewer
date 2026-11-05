@@ -2,15 +2,15 @@ Style: hand-drawn 2D 1990s feature animation, clean confident ink lines, soft pa
 
 Continue the reference video seamlessly from its very last frame: the same highway, the same wide camera, the same cars, the same light. The green hero stands pressed against the gray sedan holding the remains of his little yellow car over his head; the center lane in front of him is empty; the angry driver in the red-orange car on the right stares.
 
-@Image1 = THE HERO, normal: skinny nervous young man, messy ginger hair, thick black glasses, freckles, huge stretched-out gray t-shirt, baggy gray sweatpants, barefoot. @Image2 = THE GREEN HERO: the same man, green and muscular, only a little bigger than a normal man (his head at the height of the ambulance roof), normal human proportions, the gray t-shirt stays on.
+@Image1 = THE HERO, normal: skinny nervous young man, messy ginger hair, thick black glasses, freckles, huge stretched-out gray t-shirt, baggy gray sweatpants, barefoot. @Image2 = THE GREEN HERO: the same man, green and muscular, only a little bigger than a normal man (his head at the height of the ambulance roof), normal human proportions, the gray t-shirt stays on. @Image3 = THE DRIVER of the red-orange car: stocky man, red baseball cap, blue polo shirt.
 
 FIXED WORLD: nothing in the jam changes. The same teal hatchback in the left foreground, the yellow sedan, the box truck, the gray sedan, the white van, the red-orange car with the angry driver on the right, the overpass, the blank billboard, the skyline.
 
 A 10-second scene of TWO shots, one hard cut at 5.0s. Characters only emote, they never talk.
 
-SHOT 1 (0-5s) WIDE, the same camera: the green hero steps back into the empty center lane and gently sets the remains of his car down on its four wheels: no roof left, just the floor, two seats and the hood. He shrinks back into the skinny hero. He picks up his bent steering wheel from the road, gives the stunned drivers a small apologetic wave and climbs into the driver's seat of his roofless car.
-SHOT 2 (5-10s) MEDIUM from the front, the hero sitting in his roofless little car: he closes his eyes, breathes in slowly and out slowly; opens his eyes and looks down: the steering wheel is twisted into a perfect figure-eight. He shrugs, grips the figure-eight wheel and drives forward as the traffic starts moving, his ginger hair blowing in the wind.
+SHOT 1 (0-5s) WIDE, the same camera: the green hero steps back into the empty center lane and sets the remains of his car down on the road. The remains fall apart into a pile of parts with a clatter: a wheel rolls away, a seat tips over. Only the bent steering wheel is left in his hands, twisted into a perfect figure-eight. He shrinks back into the skinny hero and looks sadly at the figure-eight steering wheel.
+SHOT 2 (5-10s) MEDIUM on the red-orange car on the right: the angry driver, now very polite and a little scared, leans over with a nervous smile and opens his passenger door for the hero. The skinny hero climbs in and sits in the passenger seat with the figure-eight steering wheel on his lap, closes his eyes and breathes in slowly and out slowly. The driver sits perfectly straight, both hands on the wheel, afraid to move. The traffic starts moving.
 
-AUDIO: a soft heavy thud, a deflating whoosh, a sheepish chuckle, slow breathing, a small sputtering car engine, traffic moving. No voice, no music.
+AUDIO: a heavy thud, a clatter of falling car parts, a rolling wheel, a deflating whoosh, a car door opening, slow breathing, traffic moving. No voice, no music.
 
-NEGATIVE: a huge giant, shirtless, squat body, the hero sliding or teleporting, a car roof, the car becoming whole again, cars appearing or disappearing, a different driver, dissolves, camera moves inside a shot, injuries, readable text, logos, photorealism, 3D render, watermark.
+NEGATIVE: a huge giant, shirtless, squat body, the hero sliding or teleporting, the hero driving his own car, the car becoming whole again, cars appearing or disappearing, a different driver, dissolves, camera moves inside a shot, injuries, readable text, logos, photorealism, 3D render, watermark.
