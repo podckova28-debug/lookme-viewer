@@ -2,7 +2,7 @@ Style: hand-drawn 2D 1990s feature animation, clean confident ink lines, soft pa
 
 Continue the reference video seamlessly from its very last frame: the same highway, the same wide camera, the same cars, the same light. The green hero stands pressed against the gray sedan holding the remains of his little yellow car over his head; the center lane in front of him is empty; the angry driver in the red-orange car on the right stares.
 
-THE HERO, normal: skinny nervous young man, messy ginger hair, thick black glasses, freckles, huge stretched-out gray t-shirt, baggy gray sweatpants, barefoot. THE GREEN HERO: the same man, green and muscular, only a little bigger than a normal man (his head at the height of the ambulance roof), normal human proportions, the gray t-shirt stays on.
+@Image1 = THE HERO, normal: skinny nervous young man, messy ginger hair, thick black glasses, freckles, huge stretched-out gray t-shirt, baggy gray sweatpants, barefoot. @Image2 = THE GREEN HERO: the same man, green and muscular, only a little bigger than a normal man (his head at the height of the ambulance roof), normal human proportions, the gray t-shirt stays on.
 
 FIXED WORLD: nothing in the jam changes. The same teal hatchback in the left foreground, the yellow sedan, the box truck, the gray sedan, the white van, the red-orange car with the angry driver on the right, the overpass, the blank billboard, the skyline.
 
