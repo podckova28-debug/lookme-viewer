@@ -1,0 +1,191 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#000;overflow:hidden}canvas{display:block}</style>
+<script src="three.min.js"></script><script src="OutlineEffect.js"></script><script src="RoundedBoxGeometry.js"></script>
+</head><body>
+<canvas id="c" width="1280" height="720"></canvas>
+<script>
+// Hulk block 06, cel-shaded with ink outlines. Same staging as the blockout:
+// 0-3.5 s jam (hero's yellow hatchback + angry driver in front, ambulance behind), 3.5-7 s cabin close-up, 7-10 s giant clears the way.
+const W = 1280, H = 720, cv = document.getElementById('c');
+const R = new THREE.WebGLRenderer({ canvas: cv, antialias: true, preserveDrawingBuffer: true });
+R.setSize(W, H, false); R.shadowMap.enabled = true; R.shadowMap.type = THREE.PCFSoftShadowMap;
+const FX = new THREE.OutlineEffect(R, { defaultThickness: 0.0042, defaultColor: [0.09, 0.07, 0.08], defaultAlpha: 1 });
+const scene = new THREE.Scene();
+const cam = new THREE.PerspectiveCamera(45, W / H, 0.05, 400);
+
+// --- painted sky: warm gradient, sun glow, soft clouds
+(() => {
+  const c = document.createElement('canvas'); c.width = 1024; c.height = 512; const g = c.getContext('2d');
+  const gr = g.createLinearGradient(0, 0, 0, 512); gr.addColorStop(0, '#f6c98a'); gr.addColorStop(0.55, '#fbe2b0'); gr.addColorStop(1, '#fff1d2');
+  g.fillStyle = gr; g.fillRect(0, 0, 1024, 512);
+  const sg = g.createRadialGradient(700, 300, 10, 700, 300, 260); sg.addColorStop(0, 'rgba(255,250,225,0.95)'); sg.addColorStop(1, 'rgba(255,240,200,0)');
+  g.fillStyle = sg; g.fillRect(0, 0, 1024, 512);
+  g.fillStyle = 'rgba(255,248,235,0.55)'; [[180, 120, 120, 26], [300, 100, 90, 20], [820, 140, 140, 24], [560, 80, 100, 16]].forEach(([x, y, rx, ry]) => { g.beginPath(); g.ellipse(x, y, rx, ry, 0, 0, 7); g.fill(); g.beginPath(); g.ellipse(x + rx * 0.4, y - ry * 0.6, rx * 0.5, ry * 0.9, 0, 0, 7); g.fill(); });
+  const t = new THREE.CanvasTexture(c); scene.background = t;
+})();
+scene.fog = new THREE.Fog(0xfbe2b0, 70, 200);
+
+// --- toon materials
+const grad = (() => { const d = new Uint8Array([90, 90, 90, 175, 175, 175, 255, 255, 255]); const t = new THREE.DataTexture(d, 3, 1, THREE.RGBFormat); t.minFilter = t.magFilter = THREE.NearestFilter; t.needsUpdate = true; return t; })();
+const TM = (c, o = {}) => { const m = new THREE.MeshToonMaterial(Object.assign({ color: c, gradientMap: grad }, o)); return m; };
+const NOLINE = m => { m.userData.outlineParameters = { visible: false }; return m; };
+const THICK = (m, k) => { m.userData.outlineParameters = { thickness: k }; return m; };
+scene.add(new THREE.HemisphereLight(0xfff2dc, 0x9a8466, 0.45));
+const sun = new THREE.DirectionalLight(0xffe0b0, 1.0); sun.position.set(-25, 35, 20); sun.castShadow = true; sun.shadow.mapSize.set(2048, 2048);
+Object.assign(sun.shadow.camera, { left: -30, right: 30, top: 30, bottom: -30, far: 140 }); sun.shadow.bias = -0.0005; scene.add(sun);
+const add = (geo, mat, x = 0, y = 0, z = 0, parent = scene) => { const m = new THREE.Mesh(geo, mat); m.position.set(x, y, z); m.castShadow = m.receiveShadow = true; parent.add(m); return m; };
+const RB = (w, h, d, r = 0.12) => new THREE.RoundedBoxGeometry(w, h, d, 3, r);
+
+// --- environment
+add(new THREE.BoxGeometry(26, 0.2, 300), NOLINE(TM(0x9b938a)), 0, -0.1, -110);
+for (const x of [-5.5, 0, 5.5]) for (let z = 14; z > -220; z -= 7) add(new THREE.BoxGeometry(0.22, 0.02, 2.6), NOLINE(TM(0xfaf4e4)), x, 0.01, z);
+for (const x of [-11.2, 11.2]) { add(new THREE.BoxGeometry(0.22, 0.02, 300), NOLINE(TM(0xfaf4e4)), x, 0.01, -110); add(RB(0.7, 0.9, 300, 0.1), TM(0xc8bfae), x * 1.1, 0.45, -110); }
+// overpass with pillars and a billboard
+add(RB(70, 1.8, 5, 0.2), TM(0xc9b796), 0, 10, -72); [-12, 0.01, 12].forEach(x => x && add(RB(1.8, 10, 1.8, 0.2), TM(0xbba886), x, 5, -72));
+add(RB(70, 0.8, 0.5, 0.1), TM(0xb8a582), 0, 11.2, -69.6);
+add(RB(9, 4.5, 0.3, 0.1), TM(0xd8d2c4), 18, 15, -60); add(RB(0.5, 10, 0.5, 0.1), TM(0x8a8070), 18, 6, -60.3);
+for (let z = 6; z > -150; z -= 22) for (const s of [-1, 1]) { const p = add(new THREE.CylinderGeometry(0.12, 0.16, 8, 8), TM(0x8a8a86), s * 13, 4, z); add(RB(1.6, 0.25, 0.4, 0.08), TM(0x8a8a86), s * 12.3, 8, z); }
+// skyline: hazy flat silhouettes in layers
+[[-180, 0xe9c99a, 0.9], [-200, 0xdfb98a, 1.0]].forEach(([z, col, k]) => { for (let i = 0; i < 26; i++) { const h = (14 + ((i * 53) % 34)) * k, w = 5 + (i * 7) % 6; const b = add(new THREE.BoxGeometry(w, h, 2), NOLINE(new THREE.MeshBasicMaterial({ color: col, fog: false })), -100 + i * 8.3 + (z % 7), h / 2, z); b.castShadow = false; } });
+// hills with trees at the sides
+for (const s of [-1, 1]) { add(new THREE.SphereGeometry(30, 24, 12), NOLINE(TM(0xa8b56a)), s * 48, -18, -60).scale.set(1, 0.8, 3); for (let i = 0; i < 14; i++) add(new THREE.SphereGeometry(1.6, 12, 8), TM(0x6f9a4a), s * (19 + (i * 5) % 9), 2.5 + (i % 3), 8 - i * 9); }
+
+// --- cars
+const PAL = [0x6fa59c, 0xd9b45a, 0x7d93bd, 0xcf6e4a, 0xaab0b6, 0x8ea374, 0xe09a55, 0x6c7d92, 0xb9847a];
+const glassMat = TM(0x33495e), lightMat = NOLINE(new THREE.MeshBasicMaterial({ color: 0xfff6cf })), rubber = TM(0x2a2628), hub = TM(0xd8d8d0), trim = TM(0x3a3a3e);
+function car(x, z, col, o = {}) {
+  const g = new THREE.Group(); g.position.set(x, 0, z); scene.add(g);
+  const L = o.len || 4.3, Wd = o.w || 2.0, hb = o.h || 0.75, body = TM(col);
+  add(RB(Wd, hb, L, 0.28), body, 0, 0.5 + hb / 2, 0, g);
+  if (o.van) add(RB(Wd * 0.98, 1.45, L * 0.74, 0.3), body, 0, 0.5 + hb + 0.68, -0.1 * L, g);
+  else add(RB(Wd * 0.86, 0.72, L * (o.hatch ? 0.56 : 0.5), 0.26), body, 0, 0.5 + hb + 0.32, (o.hatch ? -0.12 : -0.06) * L, g);
+  const cabZ = o.van ? 0.27 * L : (o.hatch ? 0.16 : 0.19) * L, cabH = o.van ? 0.5 + hb + 0.95 : 0.5 + hb + 0.36;
+  const ws = add(RB(Wd * 0.74, o.van ? 0.65 : 0.5, 0.06, 0.03), glassMat, 0, cabH, cabZ, g); ws.rotation.x = -0.35;
+  add(new THREE.BoxGeometry(Wd * 0.5, 0.06, 0.02), NOLINE(new THREE.MeshBasicMaterial({ color: 0xbfd8e6 })), -Wd * 0.08, cabH + 0.1, cabZ + 0.045, g).rotation.x = -0.35;
+  for (const s of [-1, 1]) add(RB(0.05, o.van ? 0.55 : 0.42, L * (o.van ? 0.5 : 0.36), 0.03), glassMat, s * (Wd * (o.van ? 0.49 : 0.43) + 0.01), cabH - 0.02, (o.van ? -0.05 : -0.08) * L, g);
+  [[-1, 1], [1, 1], [-1, -1], [1, -1]].forEach(([sx, sz]) => { const t = add(new THREE.TorusGeometry(0.33, 0.15, 10, 20), rubber, sx * (Wd / 2 - 0.06), 0.46, sz * L * 0.31, g); t.rotation.y = Math.PI / 2; const h = add(new THREE.CylinderGeometry(0.2, 0.2, 0.08, 14), hub, sx * (Wd / 2 + 0.02), 0.46, sz * L * 0.31, g); h.rotation.z = Math.PI / 2; });
+  add(RB(Wd * 1.02, 0.22, 0.22, 0.08), trim, 0, 0.45, L / 2, g); add(RB(Wd * 1.02, 0.22, 0.22, 0.08), trim, 0, 0.45, -L / 2, g);
+  for (const s of [-1, 1]) { add(new THREE.SphereGeometry(0.17, 12, 8), lightMat, s * Wd * 0.33, 0.85, L / 2 - 0.02, g); add(RB(0.2, 0.14, 0.24, 0.05), body, s * (Wd / 2 + 0.1), cabH - 0.15, cabZ - 0.15, g); }
+  add(RB(Wd * 0.34, 0.2, 0.05, 0.04), trim, 0, 0.78, L / 2 + 0.01, g);
+  g.userData = { cabH, cabZ, L, Wd };
+  return g;
+}
+
+// --- characters
+const black = TM(0x1e1a1c), white = NOLINE(TM(0xffffff));
+function face(parent, o) { // o: skin, hair, glasses, cap, mood ('worried' | 'angry' | 'rage')
+  const h = new THREE.Group(); parent.add(h);
+  const skin = TM(o.skin); h.userData.skin = skin;
+  add(new THREE.SphereGeometry(0.34, 28, 20), skin, 0, 0, 0, h).scale.set(1, 1.08, 0.98);
+  for (const s of [-1, 1]) add(new THREE.SphereGeometry(0.08, 12, 8), skin, s * 0.34, -0.02, -0.02, h);
+  add(new THREE.SphereGeometry(0.06, 12, 8), skin, 0, -0.04, 0.34, h);
+  const eyes = [-1, 1].map(s => { const e = add(new THREE.SphereGeometry(0.075, 14, 10), white, s * 0.12, 0.07, 0.29, h); add(new THREE.SphereGeometry(0.035, 10, 8), black, s * 0.12, 0.07, 0.36, h); return e; });
+  const brows = [-1, 1].map(s => { const b = add(RB(0.15, 0.035, 0.04, 0.015), TM(o.hair || 0x3a2a20), s * 0.12, 0.19, 0.31, h); b.rotation.z = s * (o.mood === 'angry' || o.mood === 'rage' ? -0.45 : 0.35); return b; });
+  const mouth = add(new THREE.TorusGeometry(0.07, 0.02, 8, 16, Math.PI), black, 0, -0.17, 0.3, h);
+  mouth.rotation.z = o.mood === 'worried' ? 0 : Math.PI; if (o.mood === 'angry' || o.mood === 'rage') { mouth.geometry = new THREE.SphereGeometry(0.08, 12, 8); mouth.scale.set(1.3, o.mood === 'rage' ? 1.1 : 0.7, 0.5); mouth.material = TM(0x5a1a1a); }
+  if (o.hair) for (let i = 0; i < 11; i++) { const a = i / 11 * Math.PI * 2, r = 0.22; add(new THREE.SphereGeometry(0.15 + (i % 3) * 0.03, 12, 8), TM(o.hair), Math.cos(a) * r, 0.27 + (i % 2) * 0.06, Math.sin(a) * r - 0.06, h); }
+  if (o.glasses) { for (const s of [-1, 1]) add(new THREE.TorusGeometry(0.09, 0.022, 8, 20), black, s * 0.12, 0.07, 0.36, h); add(RB(0.08, 0.02, 0.02, 0.01), black, 0, 0.08, 0.37, h); h.userData.lens = [-1, 1].map(s => { const l = add(new THREE.CircleGeometry(0.085, 20), NOLINE(new THREE.MeshBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0 })), s * 0.12, 0.07, 0.375, h); return l; }); }
+  if (o.cap) { add(new THREE.SphereGeometry(0.36, 20, 10, 0, Math.PI * 2, 0, 1.25), TM(o.cap), 0, 0.07, -0.01, h); add(RB(0.36, 0.04, 0.26, 0.02), TM(o.cap), 0, 0.2, 0.36, h).rotation.x = 0.15; }
+  return h;
+}
+function person(o) { // seated or standing figure from the waist up for drivers, full body for the giant
+  const g = new THREE.Group();
+  const shirt = TM(o.shirt); add(RB(o.sw || 0.78, o.sh || 0.7, 0.42, 0.18), shirt, 0, 0, 0, g);
+  const hd = face(g, o); hd.position.y = (o.sh || 0.7) / 2 + 0.36; g.userData.head = hd; g.userData.shirt = shirt;
+  return g;
+}
+
+// --- set dressing: traffic
+const lanes = [-8.2, -2.7, 2.7, 8.2];
+const hero = car(-2.7, -1.5, 0xffcf2a, { len: 3.7, w: 1.95, h: 0.78, hatch: true });
+const angry = car(2.7, -1.8, 0x4f7fc0, { len: 4.4 });
+lanes.forEach((x, li) => { for (let k = 0; k < 14; k++) { const z = -2 - k * 6.2 - (li % 2) * 2.5; if ((li === 1 || li === 2) && k < 3) continue; if ((li === 0 || li === 3) && k === 0) continue; car(x, z, PAL[(li * 5 + k) % PAL.length], { van: (li + k) % 6 === 0, hatch: (li + k) % 4 === 1 }); } });
+car(-2.7, -20.5, PAL[4]); car(2.7, -21, PAL[3]);
+car(-8.2, -40, 0xf0ebdf, { van: true, len: 7.2, h: 0.9 });
+// ambulance
+const amb = car(0, -9, 0xfdfdfb, { van: true, len: 5.4, h: 0.9 });
+add(RB(2.06, 0.26, 5.45, 0.06), NOLINE(TM(0xd8322c)), 0, 1.25, 0, amb);
+for (const s of [-1, 1]) { const cx = add(RB(0.06, 0.6, 0.18, 0.02), NOLINE(TM(0xd8322c)), s * 1.04, 2.1, -0.6, amb); add(RB(0.06, 0.18, 0.6, 0.02), NOLINE(TM(0xd8322c)), s * 1.04, 2.1, -0.6, amb); }
+add(RB(1.2, 0.18, 0.5, 0.06), trim, 0, 2.95, 1.0, amb);
+const sirenR = add(RB(0.5, 0.24, 0.42, 0.08), NOLINE(new THREE.MeshBasicMaterial({ color: 0xff2a2a })), -0.32, 3.15, 1.0, amb);
+const sirenB = add(RB(0.5, 0.24, 0.42, 0.08), NOLINE(new THREE.MeshBasicMaterial({ color: 0x3a6aff })), 0.32, 3.15, 1.0, amb);
+const glow = new THREE.PointLight(0xff3030, 0, 9); glow.position.set(0, 3.6, 1.2); amb.add(glow);
+
+// drivers
+const heroDrv = person({ skin: 0xf0c49c, hair: 0xd8692a, glasses: true, shirt: 0x9c9c9c, mood: 'worried' }); heroDrv.position.set(0.42, 1.38, -0.45); heroDrv.scale.setScalar(0.85); hero.add(heroDrv);
+const angryDrv = person({ skin: 0xe07a5e, cap: 0x2b3f86, shirt: 0x3d63b0, mood: 'angry' }); angryDrv.position.set(0.42, 1.45, -0.6); angryDrv.scale.setScalar(0.85); angry.add(angryDrv);
+const angryArm = add(new THREE.CylinderGeometry(0.08, 0.08, 0.7, 8), TM(0x3d63b0), 0.95, 1.85, -0.2, angry); angryArm.rotation.z = -1.2;
+const angryFist = add(new THREE.SphereGeometry(0.12, 10, 8), TM(0xe07a5e), 1.3, 2.05, -0.2, angry);
+// the hero's door, opened in shot 3
+const door = add(RB(0.08, 0.7, 1.1, 0.05), TM(0xffcf2a), 1.05, 1.05, 0.15, hero); door.visible = false;
+
+// giant: big torso in a stretched gray tee, gray sweatpants, green skin, same face
+const giant = new THREE.Group(); scene.add(giant);
+const gSkin = TM(0x63b04a), tee = TM(0x9c9c9c), pants = TM(0x868a8e);
+add(RB(2.7, 2.3, 1.5, 0.5), tee, 0, 4.4, 0, giant);
+add(RB(2.2, 0.9, 1.3, 0.4), pants, 0, 3.0, 0, giant);
+for (const s of [-1, 1]) add(new THREE.SphereGeometry(0.85, 18, 12), tee, s * 1.35, 5.2, 0, giant);
+add(new THREE.CylinderGeometry(0.42, 0.5, 0.4, 14), gSkin, 0, 5.75, 0, giant);
+const gHead = face(giant, { skin: 0x63b04a, hair: 0xd8692a, glasses: true, mood: 'rage' }); gHead.position.set(0, 6.5, 0.05); gHead.scale.setScalar(1.75);
+const gLegs = [-1, 1].map(s => { const p = new THREE.Group(); p.position.set(s * 0.6, 2.7, 0); giant.add(p); add(new THREE.CylinderGeometry(0.55, 0.45, 2.6, 14), pants, 0, -1.3, 0, p); add(RB(0.9, 0.4, 1.3, 0.15), TM(0xf2f2ee), 0, -2.6, 0.2, p); return p; });
+const gArm = s => { const p = new THREE.Group(); p.position.set(s * 1.6, 5.3, 0); giant.add(p); add(new THREE.SphereGeometry(0.62, 16, 12), gSkin, 0, -0.2, 0, p); add(new THREE.CylinderGeometry(0.58, 0.42, 1.4, 14), gSkin, 0, -0.95, 0, p); add(new THREE.CylinderGeometry(0.46, 0.38, 1.3, 14), gSkin, 0, -2.0, 0, p); add(new THREE.SphereGeometry(0.58, 16, 12), gSkin, 0, -2.85, 0.05, p); return p; };
+const gArmL = gArm(-1), gArmR = gArm(1);
+
+// --- cabin set for the close-up (built away from the road)
+const cab = new THREE.Group(); cab.position.set(200, 0, 0); scene.add(cab);
+add(RB(3.6, 0.7, 1.1, 0.3), TM(0x3c3a40), 0, 1.0, -0.6, cab);
+add(RB(3.6, 0.15, 0.6, 0.06), TM(0xffcf2a), 0, 1.38, -0.95, cab);
+const view = add(new THREE.PlaneGeometry(9, 4.2), NOLINE(new THREE.MeshBasicMaterial({ color: 0xffffff })), -0.5, 2.3, -1.7, cab);
+add(RB(6, 0.5, 4, 0.2), TM(0x5a5660), -0.5, 3.55, 0.4, cab); add(RB(0.3, 3, 4, 0.1), TM(0xffcf2a), -2.6, 2.0, 0.6, cab);
+(() => { const c = document.createElement('canvas'); c.width = 512; c.height = 256; const g = c.getContext('2d'); const gr = g.createLinearGradient(0, 0, 0, 256); gr.addColorStop(0, '#f8d49a'); gr.addColorStop(1, '#fbe6bf'); g.fillStyle = gr; g.fillRect(0, 0, 512, 256);
+  [['#6fa59c', 40], ['#cf6e4a', 150], ['#7d93bd', 270], ['#d9b45a', 390]].forEach(([c2, x]) => { g.fillStyle = c2; g.beginPath(); g.roundRect ? g.roundRect(x, 150, 100, 60, 14) : g.rect(x, 150, 100, 60); g.fill(); g.strokeStyle = '#1e1a1c'; g.lineWidth = 4; g.stroke(); g.fillStyle = '#33495e'; g.fillRect(x + 18, 128, 64, 28); g.strokeRect(x + 18, 128, 64, 28); });
+  g.fillStyle = '#8f877c'; g.fillRect(0, 210, 512, 46); view.material.map = new THREE.CanvasTexture(c); view.material.needsUpdate = true; })();
+for (const s of [-1, 1]) add(RB(0.12, 2.0, 0.12, 0.05), TM(0xffcf2a), s * 1.85, 2.0, -1.4, cab);
+const col = add(new THREE.CylinderGeometry(0.07, 0.09, 0.8, 12), TM(0x222024), 0, 1.4, -0.3, cab); col.rotation.x = 1.1;
+const wheelGeo = new THREE.TorusGeometry(0.42, 0.055, 12, 64); const wheel0 = wheelGeo.attributes.position.array.slice();
+const wheel = add(wheelGeo, TM(0x26232a), 0, 1.66, 0.05, cab); wheel.rotation.x = -0.45;
+add(new THREE.CylinderGeometry(0.11, 0.11, 0.06, 16), TM(0x26232a), 0, 1.62, 0.0, cab).rotation.x = 1.1;
+const handSkin = TM(0xf0c49c);
+const hands = [-1, 1].map(s => { const h = new THREE.Group(); cab.add(h); add(new THREE.SphereGeometry(0.12, 14, 10), handSkin, 0, 0, 0, h).scale.set(1, 0.85, 1.2); for (let f = 0; f < 4; f++) add(new THREE.CylinderGeometry(0.035, 0.035, 0.14, 8), handSkin, -0.06 + f * 0.04, 0.09, 0.06, h).rotation.x = 0.6; h.position.set(s * 0.42, 1.66, 0.12); return h; });
+hands.forEach((h, i) => { const a = add(new THREE.CylinderGeometry(0.075, 0.09, 0.7, 10), TM(0x9c9c9c), (i ? 1 : -1) * 0.55, 1.55, 0.5, cab); a.rotation.x = 1.1; a.rotation.z = (i ? -1 : 1) * 0.3; });
+const inDrv = face(cab, { skin: 0xf0c49c, hair: 0xd8692a, glasses: true, mood: 'worried' }); add(RB(0.85, 0.75, 0.45, 0.2), TM(0x9c9c9c), -0.45, 1.75, 0.85, cab);
+inDrv.position.set(-0.45, 2.3, 0.75); inDrv.rotation.y = 0.9; inDrv.scale.setScalar(1.0);
+
+const ease = x => x < 0 ? 0 : x > 1 ? 1 : x * x * (3 - 2 * x);
+const lerpC = (m, a, b, k) => m.color.setRGB(a.r + (b.r - a.r) * k, a.g + (b.g - a.g) * k, a.b + (b.b - a.b) * k);
+const C = h => new THREE.Color(h);
+window.renderAt = t => {
+  const flash = Math.floor(t * 6) % 2;
+  sirenR.material.color.setHex(flash ? 0xff2a2a : 0x6a1010); sirenB.material.color.setHex(flash ? 0x1a2a6a : 0x3a6aff); glow.intensity = flash ? 1.2 : 0.2; glow.color.setHex(flash ? 0xff3030 : 0x3060ff);
+  angryArm.rotation.x = Math.sin(t * 14) * 0.35; angryFist.position.y = 2.05 + Math.sin(t * 14) * 0.2; angryDrv.userData.head.position.y = 0.71 + Math.abs(Math.sin(t * 7)) * 0.04;
+  giant.visible = t >= 7; heroDrv.visible = t < 7; door.visible = t >= 7; amb.position.z = -9;
+  hero.position.set(-2.7, 0, -1.5); hero.rotation.set(0, 0, 0); angry.position.set(2.7, 0, -1.8); angry.rotation.set(0, 0, 0);
+  if (t < 3.5) {
+    const k = t / 3.5; cam.fov = 42; cam.position.set(3.5 - k, 6.2 - k * 1.2, 11 - k * 2.6); cam.lookAt(-1.2, 1.5, -6);
+    heroDrv.userData.head.rotation.y = 0.3 * Math.sin(t * 2);
+  } else if (t < 7) {
+    const k = (t - 3.5) / 3.5; cam.fov = 46; cam.position.set(201.45, 2.15, 1.35); cam.lookAt(199.7, 1.95, 0.35);
+    const g = ease((k - 0.12) / 0.5);
+    lerpC(handSkin, C(0xf0c49c), C(0x63b04a), g); lerpC(inDrv.userData.skin, C(0xf0c49c), C(0x63b04a), ease((k - 0.25) / 0.5));
+    inDrv.userData.lens.forEach(l => l.material.opacity = 0.85 * ease((k - 0.45) / 0.35));
+    inDrv.rotation.z = Math.sin(k * 40) * 0.02 * g;
+    const b = ease((k - 0.22) / 0.6), p = wheelGeo.attributes.position.array;
+    for (let i = 0; i < p.length; i += 3) { const x = wheel0[i], y = wheel0[i + 1]; p[i] = x * (1 - 0.22 * b); p[i + 1] = y - b * (0.33 * Math.cos(x * 3.7) - 0.1); p[i + 2] = wheel0[i + 2] + b * 0.25 * Math.sin(x * 4); }
+    wheelGeo.attributes.position.needsUpdate = true; wheelGeo.computeVertexNormals();
+    hands.forEach((h, i) => { h.position.y = 1.66 - b * 0.12; h.position.x = (i ? 1 : -1) * (0.42 - 0.09 * b); h.scale.setScalar(1 + 0.25 * g); });
+  } else {
+    const k = (t - 7) / 3; cam.fov = 48; cam.position.set(6.2 - k, 6.2, 13); cam.lookAt(0, 3.0, -3);
+    giant.position.set(0, 0, 0.6);
+    const lift = ease(k / 0.35), aside = ease((k - 0.3) / 0.3);
+    gArmL.rotation.z = -0.35 - 0.7 * lift - 0.35 * aside; gArmR.rotation.z = 0.35 + 0.7 * lift + 0.35 * aside;
+    hero.position.set(-2.7 - 5.3 * aside, 3.2 * lift * (1 - aside), -1.5); hero.rotation.z = 0.35 * lift * (1 - aside);
+    angry.position.set(2.7 + 5.3 * aside, 3.2 * lift * (1 - aside), -1.8); angry.rotation.z = -0.35 * lift * (1 - aside);
+    gLegs[0].position.x = -0.6 - 0.3 * lift; gLegs[1].position.x = 0.6 + 0.3 * lift;
+    if (k > 0.6) { giant.position.x = -4.5 * ease((k - 0.6) / 0.15); gHead.rotation.y = 0.6 * ease((k - 0.62) / 0.2); }
+    amb.position.z = -9 + 15 * ease((k - 0.68) / 0.32);
+  }
+  cam.updateProjectionMatrix(); FX.render(scene, cam);
+};
+window.ready = Promise.resolve(true);
+</script></body></html>
