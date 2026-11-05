@@ -1,6 +1,7 @@
-Style: hand-drawn 2D 1990s feature animation, clean confident ink lines, soft painted cel shading, warm painted backgrounds, caricatured expressive faces. A family comedy cartoon. Continue the reference video seamlessly from its very last frame: same highway, same light. THE HERO: skinny nervous young man with messy ginger hair, thick black glasses, freckles, huge gray t-shirt, gray sweatpants.
-A 10-second scene of TWO hard-cut shots, hard cut at 5.0s.
-SHOT 1 WIDE: the green giant carefully sets the two cars back down in neat rows, then shrinks back into the skinny hero, who politely waves sorry to the stunned drivers and climbs back into his tiny yellow hatchback.
-HARD CUT. SHOT 2 MEDIUM inside the hatchback: he closes his eyes and breathes in slowly for four counts and out for four; then looks down: the steering wheel is twisted into a perfect figure-eight; he shrugs and keeps driving with it as the traffic moves.
-AUDIO: soft thuds, a sheepish chuckle, a car door, slow breathing, a soft chime, traffic moving. No voice, no music.
-NEGATIVE: dissolves, injuries, readable text, logos, photorealism, 3D render, watermark.
+Style: hand-drawn 2D 1990s feature animation, clean confident ink lines, soft painted cel shading, warm painted backgrounds with depth, caricatured expressive faces, simple limited animation on twos. A family comedy cartoon. The visual style, characters, location and palette are EXACTLY as in the reference images.
+Continue the reference video seamlessly from its very last frame: same highway, same light. THE HERO: skinny nervous young man with messy ginger hair, thick black glasses, freckles, huge stretched-out gray t-shirt, gray sweatpants, barefoot.
+A 10-second scene of TWO hard-cut shots, hard cut at 5.0s. Characters do NOT talk.
+SHOT 1 WIDE: the green giant gently sets the remains of his tiny yellow hatchback back down on the road and shrinks back into the skinny hero. He looks at what is left of his car: no roof, no doors, just the floor, four wheels and two seats. He gives the stunned drivers a small apologetic wave and climbs into the driver's seat of his roofless car.
+HARD CUT. SHOT 2 MEDIUM, the hero sitting in his roofless little car: he closes his eyes and breathes in slowly for four counts and out for four; then looks down: the steering wheel is twisted into a perfect figure-eight; he shrugs and drives off with it as the traffic starts moving, his hair blowing in the wind.
+AUDIO: soft thuds, a sheepish chuckle, slow breathing, a soft chime, a small car engine, traffic moving. No voice, no music.
+NEGATIVE: dissolves, injuries, a car roof, car doors, readable text, logos, photorealism, 3D render, watermark.
