@@ -1,0 +1,8 @@
+Style: hand-drawn 2D 1990s feature animation, clean confident ink lines, soft painted cel shading, warm painted backgrounds with depth, caricatured expressive faces, simple limited animation on twos. A family comedy cartoon. The visual style, characters, location and palette are EXACTLY as in the reference images.
+REFERENCES: @Image1 = LOCATION: this exact small city park in late afternoon golden light with a green bench, a pond and pigeons. @Image2 = HERO: skinny nervous young man with messy ginger hair, thick black glasses, freckles. He wears a huge stretched-out gray t-shirt, baggy gray sweatpants and white sneakers.
+A single 10-second scene of THREE hard-cut shots, hard cuts at 3.5s and 7.0s, no dissolves. Do not open on a reference image. Characters only emote, they do NOT talk. Motion starts on frame 1. ONE action per shot.
+SHOT 1 (0-3.5s) WIDE: the hero sits on the green bench with his eyes closed, hands resting on his knees, a garment bag with a huge suit lying next to him; perfectly calm.
+HARD CUT. SHOT 2 (3.5-7s) MEDIUM: pigeons fly down and land on his shoulders, his head and his open palms; he smiles peacefully without opening his eyes.
+HARD CUT. SHOT 3 (7-10s) CLOSE-UP: a butterfly lands on the frame of his glasses; he does not blink, a serene little smile.
+AUDIO: birdsong, the fountain, soft cooing and fluttering wings. No voice, no music.
+NEGATIVE: green skin, giant form, opening on a reference sheet, dissolves, purple pants, Dave with hair, extra people, duplicated characters, morphing faces, extra fingers, readable text, captions, logos, photorealism, 3D render, watermark.

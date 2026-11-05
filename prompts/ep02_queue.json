@@ -1,0 +1,126 @@
+[
+ {
+  "id": "05",
+  "mode": "References",
+  "refs": [
+   "bedroom (спальня из блоков 01–02)",
+   "hero2_home.png",
+   "dave.png"
+  ],
+  "title": "Джинсы (v3, вместо отклонённого)",
+  "prompt": "Style: hand-drawn 2D 1990s feature animation, clean confident ink lines, soft painted cel shading, warm painted backgrounds with depth, caricatured expressive faces, simple limited animation on twos. A family comedy cartoon. The visual style, characters, room and palette are EXACTLY as in the reference images.\nREFERENCES: @Image1 = LOCATION: this exact bedroom in morning light, a broken wooden bed in the corner, moving boxes, blue walls. @Image2 = HERO: skinny nervous young man with messy ginger hair, thick black glasses, freckles. @Image3 = DAVE: big heavyset BALD man with a thick dark-brown beard, small round glasses, navy bathrobe, white mug.\nThe hero wears a white t-shirt, blue jeans and white sneakers. The same bedroom in all three shots.\nA single 10-second scene of THREE hard-cut shots, hard cuts at 4.0s and 7.0s, no dissolves. Do not open on a reference image. Characters only emote, they do NOT talk. Motion starts on frame 1. The camera always shows the whole figure from the knees up or wider.\nSHOT 1 (0-4s) MEDIUM: the hero sits on the edge of the broken bed and bends forward to tie his sneaker, straining; his knees glow green for a split second and his jeans split open at both knees with a comic tear, cartoon frayed holes; he freezes and stares at his knees in disbelief.\nHARD CUT. SHOT 2 (4-7s) WIDE, the same bedroom: the hero stands by the bed holding up another pair of blue jeans with big holes at the knees; a third torn pair hangs over the bed frame; he looks at the camera and sighs.\nHARD CUT. SHOT 3 (7-10s) MEDIUM two-shot by the bedroom door: Dave stands in the doorway holding his white mug and, without a word, hands the hero a folded pair of long baggy GRAY SWEATPANTS; the hero takes them with a defeated face; Dave takes a sip.\nAUDIO: a straining grunt, a cartoon fabric tear, a long sigh, slippers shuffling, a quiet sip. No voice, no music.\nNEGATIVE: close-ups of the waist or hips, opening on a reference sheet, dissolves, a different bedroom, posters of superheroes, the whole body turning green, giant form, purple pants, shorts, Dave with hair, extra people, morphing faces, extra fingers, text, captions, logos, photorealism, 3D render, watermark.\n"
+ },
+ {
+  "id": "06",
+  "mode": "References",
+  "refs": [
+   "highway.png",
+   "hero2_home.png",
+   "driver.png"
+  ],
+  "title": "Пробка, руль гнётся",
+  "prompt": "Style: hand-drawn 2D 1990s feature animation, clean confident ink lines, soft painted cel shading, warm painted backgrounds with depth, caricatured expressive faces, simple limited animation on twos. A family comedy cartoon. The visual style, characters, location and palette are EXACTLY as in the reference images.\nREFERENCES: @Image1 = LOCATION: this exact city highway jammed with cars, morning. @Image2 = HERO: skinny nervous young man with messy ginger hair, thick black glasses, freckles. He wears a huge stretched-out gray t-shirt, baggy gray sweatpants and white sneakers. @Image3 = ANGRY DRIVER: stocky man in a baseball cap and a blue polo shirt, red face.\nA single 10-second scene of THREE hard-cut shots, hard cuts at 3.5s and 7.0s, no dissolves. Do not open on a reference image. Characters only emote, they do NOT talk. Motion starts on frame 1. ONE action per shot.\nSHOT 1 (0-3.5s) WIDE: the hero sits in a tiny old yellow hatchback stuck in the traffic jam, both hands on the wheel, he takes a slow calm breath.\nHARD CUT. SHOT 2 (3.5-7s) MEDIUM, seen through the windshield of the car behind: the angry driver leans on his horn, shouting silently, waving his arm.\nHARD CUT. SHOT 3 (7-10s) CLOSE-UP inside the hatchback: the hero's hands grip the steering wheel, his knuckles turn green and the steering wheel slowly bends like soft rubber in his grip; his left eye twitches.\nAUDIO: idling engines, a long angry car horn, creaking metal, a twitch sound. No voice, no music.\nNEGATIVE: the whole body turning green, giant form, opening on a reference sheet, dissolves, purple pants, Dave with hair, extra people, duplicated characters, morphing faces, extra fingers, readable text, captions, logos, photorealism, 3D render, watermark."
+ },
+ {
+  "id": "07",
+  "mode": "Sequel (от 06)",
+  "refs": [],
+  "title": "Дышит по квадрату, руль-восьмёрка",
+  "prompt": "Style: hand-drawn 2D 1990s feature animation, clean confident ink lines, soft painted cel shading, warm painted backgrounds, caricatured expressive faces. A family comedy cartoon. Continue the reference video seamlessly from its very last frame: same place, same light, same clothes. THE HERO: skinny nervous young man with messy ginger hair, thick black glasses, freckles, huge gray t-shirt.\nONE continuous shot, no cuts, inside the small yellow hatchback: the hero closes his eyes and breathes in slowly for four counts, his chest rising, then out for four counts; the green fades from his hands. He opens his eyes and looks down: the steering wheel is now twisted into a perfect figure-eight. He blinks, shrugs, and carefully keeps driving with it as the traffic finally moves.\nAUDIO: slow breathing, a soft chime, traffic starting to move, a small happy honk. No voice, no music.\nNEGATIVE: cuts, dissolves, a different car, the whole body turning green, giant form, readable text, logos, photorealism, 3D render, watermark."
+ },
+ {
+  "id": "08",
+  "mode": "References",
+  "refs": [
+   "drycleaner.png",
+   "hero2_home.png",
+   "receptionist.png",
+   "hero2_rage.png"
+  ],
+  "title": "Химчистка: костюм потеряли",
+  "prompt": "Style: hand-drawn 2D 1990s feature animation, clean confident ink lines, soft painted cel shading, warm painted backgrounds with depth, caricatured expressive faces, simple limited animation on twos. A family comedy cartoon. The visual style, characters, location and palette are EXACTLY as in the reference images.\nREFERENCES: @Image1 = LOCATION: this exact dry cleaner shop with a long wooden counter, a bell and racks of clothes in plastic bags. @Image2 = HERO: skinny nervous young man with messy ginger hair, thick black glasses, freckles. He wears a huge stretched-out gray t-shirt, baggy gray sweatpants and white sneakers. @Image3 = RECEPTIONIST: bored young woman with headphones around her neck, purple apron, chewing bubble gum. @Image4 = the SAME hero grown into a big muscular green brute: same face, wild ginger hair, thick black glasses, gray t-shirt, gray sweatpants.\nA single 10-second scene of THREE hard-cut shots, hard cuts at 3.5s and 7.0s, no dissolves. Do not open on a reference image. Characters only emote, they do NOT talk. Motion starts on frame 1. ONE action per shot.\nSHOT 1 (0-3.5s) WIDE: the hero slides a small pink ticket across the counter; the receptionist walks to the rack, looks, comes back empty-handed and shrugs.\nHARD CUT. SHOT 2 (3.5-7s) MEDIUM: the hero's face turns green, his glasses steam up, and in a puff he swells into the big green brute from @Image4, filling the shop.\nHARD CUT. SHOT 3 (7-10s) WIDE: a gust from his roar sends dozens of empty hangers and plastic garment bags flying around the shop like confetti; the receptionist does not even blink, blows a pink gum bubble and calmly slides a paper receipt across the counter.\nAUDIO: a counter bell, a shrug sigh, a deep comic roar, clattering hangers, rustling plastic, a gum bubble pop. No voice, no music.\nNEGATIVE: purple pants, broken glass, injuries, opening on a reference sheet, dissolves, purple pants, Dave with hair, extra people, duplicated characters, morphing faces, extra fingers, readable text, captions, logos, photorealism, 3D render, watermark."
+ },
+ {
+  "id": "09",
+  "mode": "Sequel (от 08)",
+  "refs": [],
+  "title": "40 минут на линии, телефон всмятку",
+  "prompt": "Style: hand-drawn 2D 1990s feature animation, clean confident ink lines, soft painted cel shading, warm painted backgrounds, caricatured expressive faces. A family comedy cartoon. Continue the reference video seamlessly from its very last frame: same place, same light, same clothes. THE HERO: skinny nervous young man with messy ginger hair, thick black glasses, freckles, back to his normal skinny size, huge gray t-shirt and gray sweatpants. THE RECEPTIONIST: headphones, purple apron, bubble gum.\nA 10-second scene of THREE hard-cut shots, hard cuts at 3.5s and 7.0s.\nSHOT 1: the hero, normal size again, sits on a plastic chair by the counter with a phone to his ear, waiting; the wall clock's hands spin forward fast; the receptionist files her nails.\nHARD CUT. SHOT 2 CLOSE-UP: the hero's hand calmly squeezes the phone into a tiny crumpled ball of plastic; his face stays completely calm, a peaceful smile.\nHARD CUT. SHOT 3 WIDE: the receptionist slides a giant folded navy suit across the counter, so big it hangs off both ends; the hero looks at it, then at her.\nAUDIO: tinny hold music, a clock ticking fast, a soft crunch, a sliding sound. No voice.\nNEGATIVE: dissolves, giant form, the whole body green, readable text, logos, photorealism, 3D render, watermark."
+ },
+ {
+  "id": "10",
+  "mode": "References",
+  "refs": [
+   "park.png",
+   "hero2_home.png"
+  ],
+  "title": "Парк, голуби, внутренний покой",
+  "prompt": "Style: hand-drawn 2D 1990s feature animation, clean confident ink lines, soft painted cel shading, warm painted backgrounds with depth, caricatured expressive faces, simple limited animation on twos. A family comedy cartoon. The visual style, characters, location and palette are EXACTLY as in the reference images.\nREFERENCES: @Image1 = LOCATION: this exact small city park in late afternoon golden light with a green bench, a pond and pigeons. @Image2 = HERO: skinny nervous young man with messy ginger hair, thick black glasses, freckles. He wears a huge stretched-out gray t-shirt, baggy gray sweatpants and white sneakers.\nA single 10-second scene of THREE hard-cut shots, hard cuts at 3.5s and 7.0s, no dissolves. Do not open on a reference image. Characters only emote, they do NOT talk. Motion starts on frame 1. ONE action per shot.\nSHOT 1 (0-3.5s) WIDE: the hero sits on the green bench with his eyes closed, hands resting on his knees, a garment bag with a huge suit lying next to him; perfectly calm.\nHARD CUT. SHOT 2 (3.5-7s) MEDIUM: pigeons fly down and land on his shoulders, his head and his open palms; he smiles peacefully without opening his eyes.\nHARD CUT. SHOT 3 (7-10s) CLOSE-UP: a butterfly lands on the frame of his glasses; he does not blink, a serene little smile.\nAUDIO: birdsong, the fountain, soft cooing and fluttering wings. No voice, no music.\nNEGATIVE: green skin, giant form, opening on a reference sheet, dissolves, purple pants, Dave with hair, extra people, duplicated characters, morphing faces, extra fingers, readable text, captions, logos, photorealism, 3D render, watermark."
+ },
+ {
+  "id": "11",
+  "mode": "References",
+  "refs": [
+   "wedding_lawn.png",
+   "hero2_suit.png",
+   "emma.png",
+   "groom.png"
+  ],
+  "title": "Свадьба: Эмма поправляет бабочку",
+  "prompt": "Style: hand-drawn 2D 1990s feature animation, clean confident ink lines, soft painted cel shading, warm painted backgrounds with depth, caricatured expressive faces, simple limited animation on twos. A family comedy cartoon. The visual style, characters, location and palette are EXACTLY as in the reference images.\nREFERENCES: @Image1 = LOCATION: this exact wedding lawn with a huge old oak tree, a long white table with the wedding cake, a white tent and rows of chairs, golden evening light, storm clouds far away. @Image2 = HERO: skinny nervous young man with messy ginger hair, thick black glasses, freckles. He wears a navy suit three sizes too big for him: sleeves rolled up, trousers bunched over his shoes, a navy bow tie. @Image3 = EMMA, his sister, the bride: ginger hair in a bun, simple white wedding dress, white sneakers, bouquet. @Image4 = THE GROOM: tall man with a short beard in a light gray suit.\nA single 10-second scene of THREE hard-cut shots, hard cuts at 3.5s and 7.0s, no dissolves. Do not open on a reference image. Characters only emote, they do NOT talk. Motion starts on frame 1. ONE action per shot.\nSHOT 1 (0-3.5s) WIDE: guests sit on the chairs; the hero walks up the aisle in his enormous baggy suit, holding the sleeves up, smiling calmly.\nHARD CUT. SHOT 2 (3.5-7s) MEDIUM two-shot: Emma straightens his bow tie, smiles, then pokes him in the chest with a warning finger: be good.\nHARD CUT. SHOT 3 (7-10s) CLOSE-UP of the hero: serene like a monk, he gives her a slow thumbs-up; behind them the groom waves happily.\nAUDIO: soft string quartet music from the band, guests murmuring, birds. No voice lines.\nNEGATIVE: green skin, giant form, opening on a reference sheet, dissolves, purple pants, Dave with hair, extra people, duplicated characters, morphing faces, extra fingers, readable text, captions, logos, photorealism, 3D render, watermark."
+ },
+ {
+  "id": "12",
+  "mode": "Sequel (от 11)",
+  "refs": [],
+  "title": "Тост, ветер, дуб кренится",
+  "prompt": "Style: hand-drawn 2D 1990s feature animation, clean confident ink lines, soft painted cel shading, warm painted backgrounds, caricatured expressive faces. A family comedy cartoon. Continue the reference video seamlessly from its very last frame: same place, same light, same clothes. THE HERO: skinny nervous young man with messy ginger hair, thick black glasses, freckles, enormous baggy navy suit, bow tie. EMMA: bride in a white dress, ginger bun. THE GROOM: light gray suit.\nA 10-second scene of THREE hard-cut shots, hard cuts at 3.5s and 7.0s.\nSHOT 1 MEDIUM: the hero stands at the head table and taps a champagne glass with a fork, ready for his toast; guests turn to him.\nHARD CUT. SHOT 2 WIDE: a sudden gust of wind; the storm clouds roll in; the huge old oak creaks and its roots lift out of the grass.\nHARD CUT. SHOT 3 WIDE LOW ANGLE: the giant oak slowly leans over the wedding table with the cake; Emma and the groom look up in horror.\nAUDIO: a glass clink, a whoosh of wind, a deep wooden creak, gasps from the guests. No voice lines.\nNEGATIVE: dissolves, green skin, giant form, injuries, readable text, logos, photorealism, 3D render, watermark."
+ },
+ {
+  "id": "13",
+  "mode": "Sequel (от 12)",
+  "refs": [],
+  "title": "Пытается разозлиться — не выходит",
+  "prompt": "Style: hand-drawn 2D 1990s feature animation, clean confident ink lines, soft painted cel shading, warm painted backgrounds, caricatured expressive faces. A family comedy cartoon. Continue the reference video seamlessly from its very last frame: same place, same light, same clothes. THE HERO: skinny nervous young man with messy ginger hair, thick black glasses, freckles, enormous baggy navy suit, bow tie. The oak is leaning over the wedding table and creaking.\nONE continuous shot, no cuts, MEDIUM: the hero tries hard to get angry: he frowns, clenches his fists, stomps his foot, puffs his cheeks until his face is red, even pinches his own arm; nothing happens, he stays skinny and normal-colored; he looks at his hands in frustration while the oak creaks lower behind him.\nAUDIO: comic straining grunts, a little stomp, a deflating squeak, the oak creaking. No voice.\nNEGATIVE: cuts, dissolves, green skin, giant form, readable text, logos, photorealism, 3D render, watermark."
+ },
+ {
+  "id": "14",
+  "mode": "References",
+  "refs": [
+   "wedding_lawn.png",
+   "hero2_suit.png",
+   "hero2_rage.png",
+   "dave.png"
+  ],
+  "title": "Дэйв включает музыку ожидания → превращение",
+  "prompt": "Style: hand-drawn 2D 1990s feature animation, clean confident ink lines, soft painted cel shading, warm painted backgrounds with depth, caricatured expressive faces, simple limited animation on twos. A family comedy cartoon. The visual style, characters, location and palette are EXACTLY as in the reference images.\nREFERENCES: @Image1 = LOCATION: this exact wedding lawn; the huge old oak is LEANING dangerously over the long white table with the cake, storm clouds above. @Image2 = HERO: skinny nervous young man with messy ginger hair, thick black glasses, freckles. He wears a navy suit three sizes too big for him: sleeves rolled up, trousers bunched over his shoes, a navy bow tie. @Image3 = the SAME hero grown into a big muscular green brute: same face, wild ginger hair, thick black glasses; here the giant wears the SAME navy suit and bow tie, which now fits him perfectly. @Image4 = DAVE: big heavyset BALD man with a thick dark-brown beard, small round glasses, navy bathrobe over a gray t-shirt, plaid pajama pants, slippers, white mug; he is a wedding guest in his bathrobe.\nA single 10-second scene of THREE hard-cut shots, hard cuts at 3.5s and 7.0s, no dissolves. Do not open on a reference image. Characters only emote, they do NOT talk. Motion starts on frame 1. ONE action per shot.\nSHOT 1 (0-3.5s) MEDIUM: Dave calmly steps next to the hero, holds up his phone and plays tinny phone hold music right next to his ear.\nHARD CUT. SHOT 2 (3.5-7s) CLOSE-UP of the hero: his eye twitches, a vein pulses on his forehead, his skin flashes green.\nHARD CUT. SHOT 3 (7-10s) WIDE LOW ANGLE: in a puff he grows into the big green brute from @Image3, the huge navy suit now fits him perfectly, bow tie in place; he looks at the leaning oak.\nAUDIO: tinny hold music, a twitch sound, a deep comic roar, the oak creaking. No voice lines.\nNEGATIVE: torn clothes, purple pants, opening on a reference sheet, dissolves, purple pants, Dave with hair, extra people, duplicated characters, morphing faces, extra fingers, readable text, captions, logos, photorealism, 3D render, watermark."
+ },
+ {
+  "id": "15",
+  "mode": "Sequel (от 14)",
+  "refs": [],
+  "title": "Прыжок через стол, ловит дуб",
+  "prompt": "Style: hand-drawn 2D 1990s feature animation, clean confident ink lines, soft painted cel shading, warm painted backgrounds, caricatured expressive faces. A family comedy cartoon. Continue the reference video seamlessly from its very last frame: same place, same light, same clothes. THE GIANT: the big green brute with ginger hair and thick black glasses in a well-fitting navy suit and bow tie. EMMA in her white dress and THE GROOM in light gray at the table.\nA 10-second scene of THREE hard-cut shots, hard cuts at 3.5s and 7.0s.\nSHOT 1 WIDE: the giant leaps over the long wedding table in one huge bound, guests ducking.\nHARD CUT. SHOT 2 SLOW MOTION LOW ANGLE: the falling oak tree comes down, and the giant catches the trunk on his shoulders right above Emma and the groom.\nHARD CUT. SHOT 3 MEDIUM: he holds the whole oak above his head; under it Emma, the groom and the wedding cake are untouched; leaves drift down.\nAUDIO: a big whoosh, a heavy thud, leaves rustling, a gasp. No voice.\nNEGATIVE: dissolves, torn clothes, injuries, readable text, logos, photorealism, 3D render, watermark."
+ },
+ {
+  "id": "16",
+  "mode": "Sequel (от 15)",
+  "refs": [],
+  "title": "Сажает дуб, как цветок",
+  "prompt": "Style: hand-drawn 2D 1990s feature animation, clean confident ink lines, soft painted cel shading, warm painted backgrounds, caricatured expressive faces. A family comedy cartoon. Continue the reference video seamlessly from its very last frame: same place, same light, same clothes. THE GIANT: the big green brute with ginger hair and thick black glasses in a well-fitting navy suit and bow tie.\nA 10-second scene of TWO hard-cut shots, hard cut at 6.0s.\nSHOT 1 WIDE: the giant gently plants the oak back into its hole like a flower into a pot, pats the earth around the roots, straightens a branch and steps back.\nHARD CUT. SHOT 2 CLOSE-UP on the wedding cake: it is perfectly fine except for one giant green fingerprint dent on the top tier; a tiny bride and groom figure tilt in the dent.\nAUDIO: soft earth pats, a gentle creak, a tiny squish. No voice.\nNEGATIVE: dissolves, torn clothes, readable text, logos, photorealism, 3D render, watermark."
+ },
+ {
+  "id": "17",
+  "mode": "Sequel (от 16)",
+  "refs": [],
+  "title": "Эмма обнимает зелёную ногу",
+  "prompt": "Style: hand-drawn 2D 1990s feature animation, clean confident ink lines, soft painted cel shading, warm painted backgrounds, caricatured expressive faces. A family comedy cartoon. Continue the reference video seamlessly from its very last frame: same place, same light, same clothes. THE GIANT: the big green brute with ginger hair and thick black glasses in a navy suit. EMMA: bride, white dress, ginger bun. DAVE: big heavyset BALD man with a thick dark-brown beard, small round glasses, navy bathrobe over a gray t-shirt, plaid pajama pants, slippers, white mug. A plump older lady in a lavender dress and a big lavender hat (the mother).\nA 10-second scene of THREE hard-cut shots, hard cuts at 3.5s and 7.0s.\nSHOT 1 MEDIUM: Emma stares up at the giant in silence; he looks down, worried.\nHARD CUT. SHOT 2 WIDE: Emma runs to him and hugs his huge green leg, laughing and crying; he melts with a shy smile.\nHARD CUT. SHOT 3 MEDIUM: the mother in lavender faints into an old guest's arms; next to them Dave just takes a calm sip from his mug.\nAUDIO: a happy sob, laughter, a soft thud, a sip. No voice lines.\nNEGATIVE: dissolves, torn clothes, readable text, logos, photorealism, 3D render, watermark."
+ },
+ {
+  "id": "18",
+  "mode": "Sequel (от 17)",
+  "refs": [],
+  "title": "Сдувается, тост жестами, аплодисменты",
+  "prompt": "Style: hand-drawn 2D 1990s feature animation, clean confident ink lines, soft painted cel shading, warm painted backgrounds, caricatured expressive faces. A family comedy cartoon. Continue the reference video seamlessly from its very last frame: same place, same light, same clothes. THE HERO: skinny nervous young man with messy ginger hair, thick black glasses, freckles. THE GIANT is him in the big green form.\nA 10-second scene of THREE hard-cut shots, hard cuts at 3.5s and 7.0s.\nSHOT 1 MEDIUM: the giant shrinks back into the skinny hero; the navy suit now hangs on him like a tent again; he blinks, a glass of champagne still in his hand.\nHARD CUT. SHOT 2 MEDIUM: he raises the glass and gives the whole toast silently with big gestures: points to Emma, to the groom, draws a heart in the air, mimes the falling tree.\nHARD CUT. SHOT 3 WIDE: all the guests stand up and applaud; Emma and the groom raise their glasses; the sun comes out from the clouds over the oak.\nAUDIO: a deflating whoosh, a glass clink, a big round of applause, cheering. No voice lines.\nNEGATIVE: dissolves, torn clothes, readable text, logos, photorealism, 3D render, watermark."
+ }
+]
