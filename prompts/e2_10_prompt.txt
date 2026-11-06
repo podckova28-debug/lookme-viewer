@@ -1,6 +1,6 @@
 Style: hand-drawn 2D 1990s feature animation, clean confident ink lines, soft painted cel shading, warm painted backgrounds with depth, caricatured expressive faces, simple limited animation on twos. A family comedy cartoon. Late-afternoon golden light.
 
-REFERENCE IMAGES, in this order: the FIRST reference image (an empty city park with a green bench) = the LOCATION; every WIDE shot uses exactly its camera and layout. The SECOND reference image (character sheet of a skinny ginger guy) = HERO: skinny young man, messy ginger hair, thick black glasses, freckles, dressed exactly as in that sheet, with the same clothes for the whole scene.
+REFERENCE IMAGES, in this order: the FIRST reference image (an empty city park with a green bench) = the LOCATION; every WIDE shot uses exactly its camera and layout. The SECOND reference image (character sheet of a skinny ginger guy in gray clothes) = HERO: skinny young man, messy ginger hair, thick black glasses, freckles, a plain gray t-shirt and plain gray sweatpants, barefoot, exactly as in that sheet, the same clothes for the whole scene (no plaid, no green t-shirt).
 
 FIXED WORLD, IT NEVER CHANGES: an old green wooden bench in the middle; a black lamp post just left of the bench; on the right a round pond with a small fountain; behind them bushes, a black iron fence, trees with green and orange leaves, red-brick buildings; in the foreground a curved stone path with a few gray pigeons walking. No other people.
 
