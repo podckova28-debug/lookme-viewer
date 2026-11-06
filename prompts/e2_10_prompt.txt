@@ -1,8 +1,15 @@
-Style: hand-drawn 2D 1990s feature animation, clean confident ink lines, soft painted cel shading, warm painted backgrounds with depth, caricatured expressive faces, simple limited animation on twos. A family comedy cartoon. The visual style, characters, location and palette are EXACTLY as in the reference images.
-REFERENCES: @Image1 = LOCATION: this exact small city park in late afternoon golden light with a green bench, a pond and pigeons. @Image2 = HERO: skinny nervous young man with messy ginger hair, thick black glasses, freckles. He wears a huge stretched-out gray t-shirt, baggy gray sweatpants and white sneakers.
-A single 10-second scene of THREE hard-cut shots, hard cuts at 3.5s and 7.0s, no dissolves. Do not open on a reference image. Characters only emote, they do NOT talk. Motion starts on frame 1. ONE action per shot.
-SHOT 1 (0-3.5s) WIDE: the hero sits on the green bench with his eyes closed, hands resting on his knees, a garment bag with a huge suit lying next to him; perfectly calm.
-HARD CUT. SHOT 2 (3.5-7s) MEDIUM: pigeons fly down and land on his shoulders, his head and his open palms; he smiles peacefully without opening his eyes.
-HARD CUT. SHOT 3 (7-10s) CLOSE-UP: a butterfly lands on the frame of his glasses; he does not blink, a serene little smile.
-AUDIO: birdsong, the fountain, soft cooing and fluttering wings. No voice, no music.
-NEGATIVE: green skin, giant form, opening on a reference sheet, dissolves, purple pants, Dave with hair, extra people, duplicated characters, morphing faces, extra fingers, readable text, captions, logos, photorealism, 3D render, watermark.
+Style: hand-drawn 2D 1990s feature animation, clean confident ink lines, soft painted cel shading, warm painted backgrounds with depth, caricatured expressive faces, simple limited animation on twos. A family comedy cartoon. Late-afternoon golden light.
+
+REFERENCE IMAGES, in this order: the FIRST reference image (an empty city park with a green bench) = the LOCATION; every WIDE shot uses exactly its camera and layout. The SECOND reference image (character sheet of a skinny ginger guy) = HERO: skinny young man, messy ginger hair, thick black glasses, freckles, dressed exactly as in that sheet, with the same clothes for the whole scene.
+
+FIXED WORLD, IT NEVER CHANGES: an old green wooden bench in the middle; a black lamp post just left of the bench; on the right a round pond with a small fountain; behind them bushes, a black iron fence, trees with green and orange leaves, red-brick buildings; in the foreground a curved stone path with a few gray pigeons walking. No other people.
+
+A 10-second scene of THREE shots, hard cuts only, no dissolves, no camera moves inside a shot. The hero never talks.
+
+SHOT 1 (0-3.5s) WIDE, exactly like the first reference image: the hero sits in the middle of the green bench with his eyes closed and his hands resting on his knees, completely calm. Next to him on the bench lies an enormous folded navy suit and a tiny scrunched-up ball that used to be his phone. The fountain splashes, leaves drift down.
+SHOT 2 (3.5-7s) MEDIUM on the hero on the bench: the pigeons from the path flutter up and land on him, one on each shoulder, one on his head and two on his open palms. He smiles peacefully without opening his eyes. One pigeon pecks curiously at the scrunched-up phone ball.
+SHOT 3 (7-10s) CLOSE-UP on his face: a small orange butterfly lands on the frame of his glasses. He does not blink; a serene little smile. The pigeon on his head settles down like on a nest.
+
+AUDIO: birdsong, the fountain splashing, soft cooing, fluttering wings, rustling leaves. No voice, no music.
+
+NEGATIVE: green skin, a big green body, extra people, the bench moving, the fountain moving, duplicated characters, morphing faces, extra fingers, dissolves, camera moves, readable text, captions, logos, photorealism, 3D render, watermark.
