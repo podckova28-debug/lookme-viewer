@@ -1,0 +1,248 @@
+[
+{
+"type": "caption",
+"f0": 5,
+"f1": 62,
+"x": 50,
+"y": 40,
+"lines": [
+"7:02 AM"
+],
+"size": 70
+},
+{
+"type": "burst",
+"f0": 70,
+"f1": 94,
+"x": 1450,
+"y": 180,
+"text": "CRUNCH!",
+"size": 100,
+"rot": -8
+},
+{
+"type": "caption",
+"f0": 110,
+"f1": 166,
+"x": 1300,
+"y": 880,
+"lines": [
+"CEILINGS: 1"
+],
+"size": 72
+},
+{
+"type": "burst",
+"f0": 182,
+"f1": 202,
+"x": 1400,
+"y": 420,
+"text": "SNAP!",
+"size": 100,
+"rot": 10
+},
+{
+"type": "burst",
+"f0": 222,
+"f1": 240,
+"x": 1400,
+"y": 420,
+"text": "SNAP!",
+"size": 100,
+"rot": -8
+},
+{
+"type": "burst",
+"f0": 301,
+"f1": 334,
+"x": 1450,
+"y": 250,
+"text": "SKRRRT!",
+"size": 100,
+"rot": 8
+},
+{
+"type": "burst",
+"f0": 367,
+"f1": 401,
+"x": 900,
+"y": 170,
+"text": "AH-CHOO!",
+"size": 130,
+"rot": -6
+},
+{
+"type": "label",
+"f0": 425,
+"f1": 468,
+"x": 60,
+"y": 820,
+"title": "DAVE",
+"sub": "Roommate. Has seen worse.",
+"size": 64
+},
+{
+"type": "burst",
+"f0": 660,
+"f1": 698,
+"x": 1450,
+"y": 200,
+"text": "ZAP!",
+"size": 120,
+"rot": 10
+},
+{
+"type": "caption",
+"f0": 892,
+"f1": 962,
+"x": 1380,
+"y": 40,
+"lines": [
+"CEILINGS: 2"
+],
+"size": 72
+},
+{
+"type": "burst",
+"f0": 1166,
+"f1": 1195,
+"x": 560,
+"y": 250,
+"text": "FWOOSH!",
+"size": 100,
+"rot": -8
+},
+{
+"type": "burst",
+"f0": 1202,
+"f1": 1226,
+"x": 1400,
+"y": 180,
+"text": "POOF!",
+"size": 110,
+"rot": 8
+},
+{
+"type": "burst",
+"f0": 1284,
+"f1": 1324,
+"x": 430,
+"y": 150,
+"text": "BOING!",
+"size": 100,
+"rot": -8
+},
+{
+"type": "burst",
+"f0": 1428,
+"f1": 1449,
+"x": 1500,
+"y": 170,
+"text": "SWISH!",
+"size": 100,
+"rot": 8
+},
+{
+"type": "caption",
+"f0": 1459,
+"f1": 1490,
+"x": 60,
+"y": 40,
+"lines": [
+"IT'S GOING... WELL?"
+],
+"size": 70
+},
+{
+"type": "burst",
+"f0": 1534,
+"f1": 1551,
+"x": 1450,
+"y": 200,
+"text": "CRUNCH!",
+"size": 100,
+"rot": 8
+},
+{
+"type": "burst",
+"f0": 1607,
+"f1": 1634,
+"x": 1350,
+"y": 180,
+"text": "CRASH!",
+"size": 130,
+"rot": -6
+},
+{
+"type": "burst",
+"f0": 1796,
+"f1": 1823,
+"x": 700,
+"y": 180,
+"text": "KRA-KOOM!",
+"size": 120,
+"rot": -8
+},
+{
+"type": "burst",
+"f0": 2114,
+"f1": 2140,
+"x": 1450,
+"y": 820,
+"text": "SNAP!",
+"size": 110,
+"rot": 10
+},
+{
+"type": "burst",
+"f0": 2171,
+"f1": 2202,
+"x": 600,
+"y": 200,
+"text": "WHOOSH!",
+"size": 120,
+"rot": -8
+},
+{
+"type": "burst",
+"f0": 2221,
+"f1": 2248,
+"x": 1450,
+"y": 200,
+"text": "CLANG!",
+"size": 120,
+"rot": 8
+},
+{
+"type": "burst",
+"f0": 2348,
+"f1": 2372,
+"x": 1450,
+"y": 900,
+"text": "THUD.",
+"size": 90,
+"rot": -6
+},
+{
+"type": "caption",
+"f0": 2857,
+"f1": 2951,
+"x": 1250,
+"y": 40,
+"lines": [
+"CEILINGS: 4"
+],
+"size": 80
+},
+{
+"type": "caption",
+"f0": 2430,
+"f1": 2468,
+"x": 60,
+"y": 40,
+"lines": [
+"A MOMENT LATER..."
+],
+"size": 70
+}
+]

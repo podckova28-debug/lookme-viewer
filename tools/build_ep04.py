@@ -3,12 +3,12 @@ usage: python3 tools/build_ep04.py WORKDIR"""
 import subprocess, json, sys, os
 S = sys.argv[1]; C = 'assets/ep04/clips'; K = 'assets/ep04/keys'
 # (id, kind, src, start, end_or_dur, extra)
-seq = [('01','c','01',0,None),('02','c','02',0,None),('03','c','03ab',0,None),('S1','s',f'{S}/S1.png',5.6,'zoom'),
+seq = [('01','c','01',0,None),('02','c','02',0,None),('03','c','03ab',0,5.6),('S1','s',f'{S}/S1.png',5.6,'zoom'),
  ('04','c','04',0,None),('05a','c','05a',0,None),('05b','c','05b',0,None),('06a','c','06a',0,None),('06b','c','06b',0,None),
  ('07','c','07',0,None),('08','c','08',0,None),('09a','c','09a',0,None),('09b','c','09b',0,None),('10a','c','10a',0,None),
  ('11','c','11',0,None),('12a','c','12a',0,None),('12b','c','12b',0,None),('13','c','13',0,None),('14a','c','14a',0,2.6),
  ('14b','c','14b',0,None),('15','c','15',0,None),('16','c','16',0,None),('17','c','17',0,None),('S4','s',f'{S}/S4.png',4.6,'zoom'),
- ('18','c','18',0,3.0),('18b','s',f'{K}/18end.png',2.6,'float'),('19b','c','19b',0,None)]
+ ('18','c','18',0,None),('19b','c','19b',0,None)]
 dur = lambda f: float(subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration','-of','csv=p=0',f]))
 parts, tl, t = [], [], 0.0
 for i,(bid,kind,src,a,b) in enumerate(seq):
