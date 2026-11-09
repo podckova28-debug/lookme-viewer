@@ -1,5 +1,4 @@
 """Ep2 block 12 edit fixes:
-- red 'angry' skin -> normal pale skin (hue remap) in the wide shot (face box) and the close-up;
 - Dave reverse shot: 1.5x crop on Dave so the extra crowd and the hero's red ear leave the frame.
 usage: fix_block12.py IN OUT"""
 import sys, subprocess, cv2, numpy as np
@@ -29,13 +28,9 @@ i = 0
 while True:
     ok, f = cap.read()
     if not ok: break
-    if i < 90:                       # wide shot: only the hero's face
-        f = unred(f, (230, 140, 440, 380))
+    if i < 90:                       # wide shot: left as generated (red 'trying to get angry' face is wanted)
+        pass
     elif i < 171:                    # Dave reverse shot: crop the crowd away
         f = cv2.resize(f[40:580, 320:1280], (W, H), interpolation=cv2.INTER_LANCZOS4)
-    elif i < 200:                    # close-up, fully red
-        f = unred(f)
-    elif i < 222:                    # red -> green blend passes through brown: reach further, spare the hair
-        f = unred(f, reach=10, smax=190)
     p.stdin.write(f.tobytes()); i += 1
 p.stdin.close(); p.wait()
