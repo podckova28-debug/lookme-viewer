@@ -1,6 +1,6 @@
 # QA report: Why_Its_So_Hard_To_Be_A_Line_Cook.mp4
 
-Duration 399.2s, 200 sampled frames, 22 checks, 0 FAIL
+Duration 399.2s, 200 sampled frames, 26 checks, 0 FAIL
 
 | Check | Status | Detail |
 |---|---|---|
@@ -22,6 +22,10 @@ Duration 399.2s, 200 sampled frames, 22 checks, 0 FAIL
 | arrows point at something (ink near tip) | PASS | ok |
 | arrows start outside their text and are not stubs | PASS | ok |
 | animated clips keep the scene (no morphing drift) | PASS | ok |
+| first/last frame pairs are animatable (same composition) | PASS | 3 pairs ok |
+| clip anomaly hints (morph / phantom / multiplication) | PASS | none |
+| clocks agree with the script | PASS | all readable clocks match |
+| isolated black marks (possible baked-in arrows/symbols) | WARN | F19: 1 at [(0.21, 0.17, 0.29, 0.22)] (the knife icon, checked by eye) |
 | loudness around -16 LUFS | PASS | -16.3 LUFS |
 | no silence gaps > 2.5s | PASS | 0 gaps |
 | thumbnails 1280x720 jpg < 2MB | PASS | 2 thumbnails |

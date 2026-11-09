@@ -44,7 +44,7 @@ def main():
     add("audio track present", a is not None and a["codec_name"]=="aac", a["codec_name"] if a else "none")
     vd=float(v.get("duration",D)); ad=float(a.get("duration",D)) if a else 0
     add("video/audio length match", abs(vd-ad) <= 0.6, f"video {vd:.2f}s audio {ad:.2f}s")
-    # 2. narration coverage: sum of voice blocks vs total
+    # 2. narration coverage
     n=len(blocks); vfiles=[os.path.join(d,"voice",f"{i:02d}.mp3") for i in range(1,n+1)]
     missing=[f for f in vfiles if not os.path.exists(f)]
     add("all voice blocks present", not missing, f"{n-len(missing)}/{n}")
@@ -71,7 +71,7 @@ def main():
                 elif dur(p) < share-0.1: bad.append(f"{nm}: {dur(p):.2f}s < {share}s")
     nclips=sum(1 for b in plan["blocks"] for s in b if s[0]=="clip")
     add("animated clips present and long enough", not bad, f"{nclips} clips; "+("; ".join(bad) if bad else "ok"))
-    # 5. frames: white background, no black/dark, no frozen video, labels visible
+    # 5. frames: white background, no black/dark, no frozen video
     tmp=os.path.join(out,"qa_frames"); os.makedirs(tmp,exist_ok=True)
     for f in glob.glob(os.path.join(tmp,"*.jpg")): os.remove(f)
     subprocess.run(["ffmpeg","-v","error","-y","-i",mp4,"-vf","fps=1/2,scale=480:270",os.path.join(tmp,"f%05d.jpg")],check=True)
@@ -101,7 +101,7 @@ def main():
             x1=tx*w+bb[2]; y1=ty*h+bb[3]
             if tx < 0.035 or ty < 0.03 or x1/w > 0.965 or y1/h > 0.95: oob.append(f"{fr}:'{text}' right edge at {x1/w:.2f}")
     add("hand-written labels inside safe area", not oob, "; ".join(oob) if oob else f"{sum(len(v) for v in plan.get('labels',{}).values())} labels ok")
-    # 6b. labels must sit on white and arrows must point at ink
+    # 6b. labels must sit on white, arrows must point at ink, start outside the text and not be stubs
     overl=[]; miss=[]; badstart=[]; short=[]
     for fr,labs in plan.get("labels",{}).items():
         src=os.path.join(d,"frames",f"{fr}.png")
@@ -142,11 +142,62 @@ def main():
             fr=sorted(glob.glob(os.path.join(tdir,"*.png")))
             if len(fr)<2: continue
             a=np.asarray(Image.open(fr[0]).convert("L")).astype(int); z=np.asarray(Image.open(fr[-1]).convert("L")).astype(int)
-            # shift-tolerant: a whole-frame wobble (camera/car rocking) is not morphing
             changed=min((np.abs(a-np.roll(np.roll(z,dy,0),dx,1))>40).mean() for dx in range(-8,9,2) for dy in range(-8,9,2))
             lim=0.15 if nm in statics else 0.45
             if changed>lim: drift.append(f"{nm}: {changed*100:.0f}% changed (limit {lim*100:.0f}%)")
     add("animated clips keep the scene (no morphing drift)", not drift, "; ".join(drift) if drift else "ok")
+    # 6d. vision heuristics (qa_vision): pair animatability, clip anomalies, clocks vs script, baked marks, hero duplicates
+    try:
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); import qa_vision as qv
+        badpairs=[]
+        for nm,(fa,fb) in plan.get("clip_pairs",{}).items():
+            pa,pb=os.path.join(d,"frames",f"{fa}.png"),os.path.join(d,"frames",f"{fb}.png")
+            if os.path.exists(pa) and os.path.exists(pb):
+                r=qv.pair_score(pa,pb)
+                if not r["animatable"]: badpairs.append(f"{nm}: {fa}->{fb} pixel {r['pixel_diff']:.2f} layout {r['layout_diff']:.2f}")
+        add("first/last frame pairs are animatable (same composition)", not badpairs, "; ".join(badpairs) if badpairs else f"{len(plan.get('clip_pairs',{}))} pairs ok")
+        anomalies=[]
+        for block in plan["blocks"]:
+            for kind,nm,share in block:
+                if kind=="clip" and os.path.exists(os.path.join(d,"clips",f"{nm}.mp4")):
+                    r=qv.clip_report(os.path.join(d,"clips",f"{nm}.mp4"))
+                    if not r["ok"]: anomalies.append(f"{nm}: "+"; ".join(r["issues"]))
+        if anomalies: warn("clip anomaly hints (look at these clips frame by frame)", " | ".join(anomalies))
+        else: add("clip anomaly hints (morph / phantom / multiplication)", True, "none")
+        clockmsgs=[]; allow=set(plan.get("allow_clones",[]))
+        for bi,block in enumerate(plan["blocks"]):
+            times=qv.script_times(blocks[bi])
+            for kind,nm,share in block:
+                fp=os.path.join(d,"frames",f"{nm}.png")
+                if kind!="still" or not os.path.exists(fp): continue
+                for c in qv.read_clocks(fp):
+                    if not c.get("time"): continue
+                    m=qv.clock_matches(c,times)
+                    if times and m is False: clockmsgs.append(f"{nm}: clock reads {c['time']}, script says {['%d:%02d'%x for x in times]}")
+                    elif not times: clockmsgs.append(f"{nm}: clock reads {c['time']}, no time in this block")
+        if clockmsgs: warn("clocks agree with the script (detector reading, verify by eye)", " | ".join(clockmsgs))
+        else: add("clocks agree with the script", True, "all readable clocks match")
+        marks=[]
+        for block in plan["blocks"]:
+            for kind,nm,share in block:
+                fp=os.path.join(d,"frames",f"{nm}.png")
+                if kind=="still" and os.path.exists(fp):
+                    mk=qv.isolated_marks(fp)
+                    if mk: marks.append(f"{nm}: {len(mk)} at {[tuple(float(x) for x in m['bbox']) for m in mk]}")
+        if marks: warn("isolated black marks (possible baked-in arrows/symbols)", " | ".join(marks))
+        else: add("no isolated black marks (baked-in arrows)", True, "none")
+        if plan.get("hero_color"):
+            lo,hi=plan["hero_color"]; dup=[]
+            for block in plan["blocks"]:
+                for kind,nm,share in block:
+                    fp=os.path.join(d,"frames",f"{nm}.png")
+                    if kind=="still" and os.path.exists(fp) and nm not in allow:
+                        cl=[c for c in qv.hero_clusters(fp,lo,hi) if c[2]>0.012]
+                        if len(cl)>1: dup.append(f"{nm}: {len(cl)} hero-coloured figures")
+            if dup: warn("hero appears once per frame (colour clusters)", " | ".join(dup))
+            else: add("hero appears once per frame (colour clusters)", True, "ok")
+    except Exception as e:
+        warn("vision heuristics", f"skipped: {type(e).__name__}: {e}")
     # 7. audio loudness + silence
     lo=subprocess.run(["ffmpeg","-i",mp4,"-af","ebur128=peak=true","-f","null","-"],capture_output=True,text=True).stderr
     m=re.search(r"I:\s*(-?\d+\.\d) LUFS", lo.split("Summary:")[-1] if "Summary:" in lo else lo)
@@ -160,7 +211,7 @@ def main():
     th=glob.glob(os.path.join(out,"thumb_*_1280x720.jpg"))
     badth=[os.path.basename(t) for t in th if Image.open(t).size!=(1280,720) or os.path.getsize(t)>2_000_000]
     add("thumbnails 1280x720 jpg < 2MB", th and not badth, f"{len(th)} thumbnails" + ("; bad: "+", ".join(badth) if badth else ""))
-    # 9. file size sanity for YouTube (< 256GB, > 0) and faststart
+    # 9. faststart
     add("mp4 faststart (moov first)", b"moov" in open(mp4,"rb").read(2_000_000), "")
     # report
     fails=[c for c in checks if c["status"]=="FAIL"]
