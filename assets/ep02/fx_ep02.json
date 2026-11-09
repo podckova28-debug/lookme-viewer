@@ -1,0 +1,136 @@
+[
+ {
+  "type": "caption",
+  "f0": 5,
+  "f1": 48,
+  "x": 60,
+  "y": 50,
+  "lines": [
+   "7:02 AM"
+  ],
+  "size": 72
+ },
+ {
+  "type": "burst",
+  "f0": 55,
+  "f1": 74,
+  "x": 1450,
+  "y": 220,
+  "text": "STUB!",
+  "size": 100,
+  "rot": 8
+ },
+ {
+  "type": "burst",
+  "f0": 127,
+  "f1": 151,
+  "x": 1450,
+  "y": 200,
+  "text": "CRUNCH!",
+  "size": 100,
+  "rot": -8
+ },
+ {
+  "type": "burst",
+  "f0": 367,
+  "f1": 389,
+  "x": 1500,
+  "y": 200,
+  "text": "CRUNCH!",
+  "size": 100,
+  "rot": 10
+ },
+ {
+  "type": "burst",
+  "f0": 681,
+  "f1": 702,
+  "x": 1500,
+  "y": 260,
+  "text": "RIIIP!",
+  "size": 100,
+  "rot": -8
+ },
+ {
+  "type": "caption",
+  "f0": 731,
+  "f1": 796,
+  "x": 60,
+  "y": 50,
+  "lines": [
+   "JEANS DESTROYED: 3"
+  ],
+  "size": 72
+ },
+ {
+  "type": "burst",
+  "f0": 976,
+  "f1": 1000,
+  "x": 1450,
+  "y": 420,
+  "text": "HONK!",
+  "size": 100,
+  "rot": 8
+ },
+ {
+  "type": "burst",
+  "f0": 1163,
+  "f1": 1187,
+  "x": 520,
+  "y": 240,
+  "text": "CRUNCH!",
+  "size": 100,
+  "rot": -8
+ },
+ {
+  "type": "caption",
+  "f0": 1946,
+  "f1": 2006,
+  "x": 60,
+  "y": 50,
+  "lines": [
+   "ON HOLD: 40 MIN"
+  ],
+  "size": 72
+ },
+ {
+  "type": "burst",
+  "f0": 2011,
+  "f1": 2032,
+  "x": 1450,
+  "y": 240,
+  "text": "CRUNCH!",
+  "size": 100,
+  "rot": 8
+ },
+ {
+  "type": "caption",
+  "f0": 2452,
+  "f1": 2507,
+  "x": 60,
+  "y": 50,
+  "lines": [
+   "ANGER LEVEL: 0"
+  ],
+  "size": 72
+ },
+ {
+  "type": "burst",
+  "f0": 2663,
+  "f1": 2684,
+  "x": 1500,
+  "y": 200,
+  "text": "CREAK!",
+  "size": 100,
+  "rot": -8
+ },
+ {
+  "type": "burst",
+  "f0": 2728,
+  "f1": 2749,
+  "x": 1450,
+  "y": 220,
+  "text": "THUD!",
+  "size": 100,
+  "rot": 8
+ }
+]

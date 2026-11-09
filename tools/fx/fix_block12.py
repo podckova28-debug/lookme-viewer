@@ -32,7 +32,7 @@ while True:
     if i < 90:                       # wide shot: only the hero's face
         f = unred(f, (230, 140, 440, 380))
     elif i < 171:                    # Dave reverse shot: crop the crowd away
-        f = cv2.resize(f[100:640, 320:1280], (W, H), interpolation=cv2.INTER_LANCZOS4)
+        f = cv2.resize(f[40:580, 320:1280], (W, H), interpolation=cv2.INTER_LANCZOS4)
     elif i < 200:                    # close-up, fully red
         f = unred(f)
     elif i < 222:                    # red -> green blend passes through brown: reach further, spare the hair
