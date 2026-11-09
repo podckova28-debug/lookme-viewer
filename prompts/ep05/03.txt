@@ -1,7 +1,7 @@
-Hand-drawn 2D 1990s family cartoon, clean ink lines, soft cel shading, simple limited animation on twos. Start exactly on the reference image and keep everything in it: the same bathroom, the same young man, the same clothes, the same light. One continuous 5-second shot, the camera does not move, no cuts.
+Hand-drawn 2D 1990s family cartoon, soft cel shading, simple limited animation. Start exactly on the reference image: the same bathroom, the same young man, the same clothes, the same light. One continuous 5-second shot, static camera.
 
-ACTION: He looks at the toothbrush in his red metal glove. The metal fingers slowly close by themselves, the toothbrush bends in the middle and pops into two pieces; the head piece drops into the sink. He stares at the half left in his metal hand, then slowly lifts his eyes, puzzled.
+ACTION: The red robot glove slowly squeezes the plastic toothbrush, and the toothbrush bends into a soft curve like a wet noodle. He holds it up, looks at the bent toothbrush, then raises his eyebrows and sighs.
 
-AUDIO: a small mechanical whirr, a funny cartoon pop, a tiny clink in the sink. No voice lines.
+AUDIO: a small mechanical whirr, a soft creak, a sigh.
 
-NEGATIVE: a mirror, reflections, the toothbrush in his mouth, the glove covering more of his arm, new people, duplicated characters, extra arms, extra fingers, morphing faces, clothes changing, camera moves, zoom, cuts, readable text, logos, photorealism, 3D render, watermark.
+NEGATIVE: mirror, reflections, new people, extra fingers, morphing faces, camera moves, cuts, text, logos, watermark.
