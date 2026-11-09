@@ -1,0 +1,35 @@
+Михалыч эп. 4 «Что будет, если залить бензин в дизель» (5 окт)
+vo 1 908d2126-0ad1-487d-8f19-466a61a2c256
+vo 2 06c2ff5d-5ad7-414a-b5b2-084288e6a9a0
+vo 3 fc5007e8-6eb1-4b15-9931-a939b2781c32
+vo 4 a0687226-583e-46f7-a1db-96df0d0b0713
+vo 5 971793b5-af86-4859-a4a3-e81137d5ed64
+vo 6 8f07d49d-8c1d-42a8-94a0-294a3e14c0e9
+vo 7 6a63dada-9d64-4ded-a0a4-c57352d614ec
+vo 8 4dfa11ed-8390-49d5-bcd5-f6c4cc4621fd
+kf k1_hook 37722b12-fee4-459c-9aa6-f003dfcbc580
+kf k2_slide 88275654-be70-410a-b2df-c33097e112c8
+kf k3_tank 09fe479e-93de-4fc3-be56-89291c2293f0
+kf k4a_key bcd1beaf-46f9-4046-9d69-b2328ccdc3a7
+kf k4b_pump a949ba86-d169-4745-9089-8e523dc984b6
+kf k5_tnvd 095bd501-1ebb-40c0-83cf-98b606fb25ff
+kf k6_inject bfda4263-cacf-46aa-8358-2a1b7c2c615f
+kf k7_tow eadef7c1-0897-4f52-81c1-c1ce7bd8ed35
+kf k8_drain 29b186c1-0e8d-4609-863e-8d7cdc58180d
+vo2 2 6d39d1d1-18b7-4b83-892c-aa4124ededcf (короче)
+vo2 5 3da8eab0-c4f2-49ea-92ec-776a2585d464
+vo2 7 b0267906-87b5-498a-b40a-b786e98a2d6e
+kf2 k1_hook 128961ff-77e2-4bd7-be59-e76ad73986ed (переделка: было 2 пистолета)
+kf2 k2_slide b7dd13e3-bea8-40c5-9e1f-53d2a995ecc7 (переделка: 2 шланга)
+kf2 k3_tank 7bb15224-7d4d-4aaf-8a5c-e0f4cc18246f (переделка: бутыль, под топливом)
+clip c4a_key 6ec81e66-cf70-44da-a918-eff46f840cc8 (3s)
+clip c4b_pump 0b2d8ea4-0544-4b4b-b9ab-74f305107d10 (3s)
+clip c5_tnvd 82651533-b250-4799-970c-681559ce9b83 (5s)
+clip c6_inject bbdb9775-e46f-4662-b75d-f8090483fd21 (3s)
+clip c7_tow 975d9491-b27f-4338-85ac-b234b02b7fd1 (5s)
+clip c8_drain 27d885aa-81c0-4a4f-bf16-db2c3a256ba2 (5s)
+clip c1_hook db898a17-285d-4cfd-9eef-fbd919dff244 (3s, из k1b)
+clip c2_slide d553553f-39b0-41b1-ad12-04438b580c4b (4s, из k2b)
+sfx key_pump 148fcc38-5af7-49c5-b111-3d71d2a82c37
+sfx grind 6e7222ae-c604-48fd-adca-5d100daa5e30
+sfx engine_die 4f238758-1fd6-4b24-959c-2f6dc585908e

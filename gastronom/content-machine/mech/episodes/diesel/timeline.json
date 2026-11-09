@@ -1,0 +1,279 @@
+{
+ "out": "diesel_final.mp4",
+ "voice_tempo": 1.12,
+ "xfade": 0.2,
+ "music": {
+  "file": "music/bg.m4a",
+  "gain": 0.18,
+  "duck": 0.6
+ },
+ "sfx_gain": 0.7,
+ "beats": [
+  {
+   "voice": "vo/t01.wav",
+   "pad": [
+    0.05,
+    0.2
+   ],
+   "shots": [
+    {
+     "clip": "clips/c1_hook.mp4",
+     "ss": 0.2,
+     "w": 1
+    }
+   ],
+   "text": [
+    {
+     "kind": "title",
+     "text": "Бензин\nв дизель",
+     "size": 96,
+     "plate": true,
+     "color": [
+      208,
+      60,
+      40
+     ],
+     "pos": [
+      540,
+      300
+     ],
+     "at": 0.0,
+     "until": 2.05
+    }
+   ]
+  },
+  {
+   "voice": "vo/u02.wav",
+   "pad": [
+    0.05,
+    0.2
+   ],
+   "shots": [
+    {
+     "clip": "clips/c2_slide.mp4",
+     "ss": 0.4,
+     "w": 1,
+     "cut": true
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/whoosh.mp3",
+     "at": 0.4,
+     "gain": 0.4
+    },
+    {
+     "file": "sfx/drip.mp3",
+     "at": 2.1,
+     "gain": 0.4
+    }
+   ]
+  },
+  {
+   "voice": "vo/t04.wav",
+   "pad": [
+    0.05,
+    0.2
+   ],
+   "shots": [
+    {
+     "clip": "clips/c4a_key.mp4",
+     "ss": 0.3,
+     "w": 1.3,
+     "cut": true
+    },
+    {
+     "clip": "clips/c4b_pump.mp4",
+     "ss": 0.2,
+     "w": 2.3,
+     "cut": true
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/key_pump.mp3",
+     "at": 0.2,
+     "gain": 0.6
+    }
+   ],
+   "text": [
+    {
+     "kind": "sticker",
+     "big": "Ключ повёрнут",
+     "small": "насос в баке уже качает",
+     "color": [
+      40,
+      110,
+      190
+     ],
+     "pos": [
+      540,
+      300
+     ],
+     "at": 0.05,
+     "until": 3.6
+    }
+   ]
+  },
+  {
+   "voice": "vo/u05.wav",
+   "pad": [
+    0.05,
+    0.2
+   ],
+   "shots": [
+    {
+     "clip": "clips/c5_tnvd.mp4",
+     "ss": 0.1,
+     "w": 1,
+     "cut": true
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/grind.mp3",
+     "at": 1.6,
+     "gain": 0.45
+    }
+   ],
+   "text": [
+    {
+     "kind": "sticker",
+     "big": "ТНВД",
+     "small": "насос высокого давления",
+     "pos": [
+      540,
+      300
+     ],
+     "at": 0.05,
+     "until": 4.7
+    }
+   ]
+  },
+  {
+   "voice": "vo/t06.wav",
+   "pad": [
+    0.05,
+    0.2
+   ],
+   "shots": [
+    {
+     "clip": "clips/c6_inject.mp4",
+     "ss": 0.3,
+     "w": 1,
+     "cut": true
+    }
+   ],
+   "text": [
+    {
+     "kind": "sticker",
+     "big": "Форсунки",
+     "small": "впрыскивают топливо в мотор",
+     "pos": [
+      540,
+      300
+     ],
+     "at": 0.05,
+     "until": 2.25
+    }
+   ]
+  },
+  {
+   "voice": "vo/u07.wav",
+   "pad": [
+    0.05,
+    0.2
+   ],
+   "shots": [
+    {
+     "clip": "clips/c7_tow.mp4",
+     "ss": 0.0,
+     "w": 1,
+     "cut": true
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/engine_die.mp3",
+     "at": 0.0,
+     "gain": 0.45
+    }
+   ],
+   "text": [
+    {
+     "kind": "sticker",
+     "big": "Завёл мотор",
+     "small": "ремонт — десятки тысяч ₽",
+     "color": [
+      208,
+      60,
+      40
+     ],
+     "pos": [
+      540,
+      290
+     ],
+     "at": 0.05,
+     "until": 4.9
+    }
+   ]
+  },
+  {
+   "voice": "vo/t08.wav",
+   "pad": [
+    0.05,
+    1.2
+   ],
+   "shots": [
+    {
+     "clip": "clips/c8_drain.mp4",
+     "ss": 0.0,
+     "w": 1,
+     "cut": true
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/ding.mp3",
+     "at": 0.3,
+     "gain": 0.35
+    }
+   ],
+   "text": [
+    {
+     "kind": "sticker",
+     "big": "Не заводил",
+     "small": "слив бака ≈ 5 000 ₽",
+     "color": [
+      40,
+      140,
+      70
+     ],
+     "pos": [
+      540,
+      290
+     ],
+     "at": 0.05,
+     "until": 2.3
+    },
+    {
+     "kind": "title",
+     "text": "Путал ли ты\nтопливо?",
+     "size": 84,
+     "plate": true,
+     "color": [
+      208,
+      60,
+      40
+     ],
+     "pos": [
+      540,
+      300
+     ],
+     "at": 2.35,
+     "until": 4.3
+    }
+   ]
+  }
+ ]
+}

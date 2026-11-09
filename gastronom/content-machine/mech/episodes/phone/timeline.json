@@ -1,0 +1,206 @@
+{
+ "out": "mech_phone_fix_final.mp4",
+ "voice_tempo": 1.0,
+ "xfade": 0.25,
+ "music": {
+  "file": "music/bg.m4a",
+  "gain": 0.18,
+  "duck": 0.6
+ },
+ "sfx_gain": 0.7,
+ "beats": [
+  {
+   "voice": "vo/t01.wav",
+   "pad": [
+    0.1,
+    0.25
+   ],
+   "shots": [
+    {
+     "clip": "../fix/ep1_c1_hook.mp4",
+     "ss": 0.1,
+     "w": 1.6
+    },
+    {
+     "clip": "v2/clips/c1b_phone.mp4",
+     "ss": 0.0,
+     "cut": true,
+     "w": 1.35
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/whoosh.mp3",
+     "at": 0.05,
+     "gain": 0.3
+    },
+    {
+     "file": "sfx/ring.mp3",
+     "at": 1.69,
+     "gain": 0.35
+    }
+   ],
+   "text": [
+    {
+     "kind": "title",
+     "text": "Может ли телефон\nподжечь бензин?",
+     "size": 88,
+     "plate": true,
+     "color": [
+      208,
+      60,
+      40
+     ],
+     "pos": [
+      540,
+      352
+     ],
+     "at": 0.0
+    }
+   ]
+  },
+  {
+   "voice": "vo/t02.wav",
+   "pad": [
+    0.1,
+    0.25
+   ],
+   "shots": [
+    {
+     "clip": "../fix/ep1_c2_flame.mp4",
+     "ss": 0.0,
+     "cut": true,
+     "w": 2.8
+    },
+    {
+     "clip": "../fix/ep1_c2b_folder.mp4",
+     "ss": 0.0,
+     "cut": true,
+     "w": 2.9,
+     "speed": 0.95
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/pop.mp3",
+     "at": 0.3,
+     "gain": 0.35
+    }
+   ],
+   "text": [
+    {
+     "kind": "sticker",
+     "big": "Данные PEI, США",
+     "small": "институт оборудования для АЗС",
+     "pos": [
+      540,
+      330
+     ],
+     "at": 2.0,
+     "color": [
+      40,
+      110,
+      190
+     ]
+    }
+   ]
+  },
+  {
+   "voice": "vo/t03.wav",
+   "pad": [
+    0.1,
+    0.25
+   ],
+   "shots": [
+    {
+     "clip": "../fix/ep1_c3_ok.mp4",
+     "ss": 0.0,
+     "cut": true,
+     "w": 1
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/ding.mp3",
+     "at": 0.2,
+     "gain": 0.3
+    }
+   ],
+   "text": []
+  },
+  {
+   "voice": "vo/t04.wav",
+   "pad": [
+    0.1,
+    0.25
+   ],
+   "shots": [
+    {
+     "clip": "../fix/ep1_c4a_seat.mp4",
+     "ss": 0.0,
+     "cut": true,
+     "w": 2.5
+    },
+    {
+     "clip": "../fix/ep1_c4a2_reach.mp4",
+     "ss": 0.0,
+     "cut": true,
+     "w": 2.2,
+     "speed": 0.85
+    },
+    {
+     "clip": "v2/clips/c4b_spark.mp4",
+     "ss": 0.0,
+     "cut": true,
+     "w": 2.4
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/zap.mp3",
+     "at": 5.55,
+     "gain": 0.6
+    }
+   ],
+   "text": []
+  },
+  {
+   "voice": "vo/t05.wav",
+   "pad": [
+    0.1,
+    0.7
+   ],
+   "shots": [
+    {
+     "clip": "v2/clips/c4c_touch.mp4",
+     "ss": 0.0,
+     "cut": true,
+     "w": 1.5
+    },
+    {
+     "clip": "../fix/ep1_c5_end.mp4",
+     "ss": 0.0,
+     "cut": true,
+     "w": 1.9
+    }
+   ],
+   "text": [
+    {
+     "kind": "sticker",
+     "big": "Коснись кузова",
+     "small": "голой рукой — до пистолета",
+     "pos": [
+      540,
+      330
+     ],
+     "at": 0.1,
+     "color": [
+      61,
+      125,
+      72
+     ]
+    }
+   ]
+  }
+ ]
+}

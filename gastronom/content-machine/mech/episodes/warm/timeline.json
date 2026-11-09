@@ -1,0 +1,233 @@
+{
+ "out": "warm_final.mp4",
+ "voice_tempo": 1.0,
+ "xfade": 0.25,
+ "music": {
+  "file": "music/bg.m4a",
+  "gain": 0.18,
+  "duck": 0.6
+ },
+ "sfx_gain": 0.7,
+ "beats": [
+  {
+   "voice": "vo/t01.wav",
+   "pad": [
+    0.1,
+    0.3
+   ],
+   "shots": [
+    {
+     "clip": "clips/c1_hook.mp4",
+     "ss": 0.0,
+     "speed": 0.75,
+     "w": 1
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/brr.mp3",
+     "at": 0.1,
+     "gain": 0.4
+    }
+   ],
+   "text": [
+    {
+     "kind": "title",
+     "text": "Нужно ли греть\nмотор 10 минут?",
+     "size": 88,
+     "plate": true,
+     "color": [
+      208,
+      60,
+      40
+     ],
+     "pos": [
+      540,
+      352
+     ],
+     "at": 0.0,
+     "until": 3.0
+    }
+   ]
+  },
+  {
+   "voice": "vo/t02.wav",
+   "pad": [
+    0.1,
+    0.2
+   ],
+   "shots": [
+    {
+     "clip": "clips/c3b_drive.mp4",
+     "ss": 0.0,
+     "speed": 0.7,
+     "w": 1,
+     "cut": true
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/whoosh.mp3",
+     "at": 0.05,
+     "gain": 0.3
+    }
+   ],
+   "text": [
+    {
+     "kind": "sticker",
+     "big": "1–2 минуты",
+     "small": "дальше греется в пути",
+     "pos": [
+      540,
+      330
+     ],
+     "at": 0.15,
+     "until": 2.65
+    }
+   ]
+  },
+  {
+   "voice": "vo/t03.wav",
+   "pad": [
+    0.1,
+    0.2
+   ],
+   "shots": [
+    {
+     "clip": "clips/c2_cylinder_fix.mp4",
+     "ss": 0.0,
+     "speed": 0.68,
+     "w": 2.2
+    },
+    {
+     "clip": "clips/c2_cylinder_fix.mp4",
+     "ss": 1.63,
+     "speed": 0.66,
+     "zoom": 1.3,
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "cut": true,
+     "w": 2.3
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/drip.mp3",
+     "at": 0.4,
+     "gain": 0.4
+    }
+   ],
+   "text": [
+    {
+     "kind": "sticker",
+     "big": "Износ быстрее",
+     "small": "кольца и цилиндры",
+     "color": [
+      208,
+      60,
+      40
+     ],
+     "pos": [
+      540,
+      330
+     ],
+     "at": 0.3
+    }
+   ]
+  },
+  {
+   "voice": "vo/t04.wav",
+   "pad": [
+    0.1,
+    0.2
+   ],
+   "shots": [
+    {
+     "clip": "clips/c3b_drive.mp4",
+     "ss": 1.98,
+     "speed": 0.7,
+     "w": 1
+    }
+   ],
+   "text": [
+    {
+     "kind": "sticker",
+     "big": "Первые 10–15 мин",
+     "small": "без резкого газа",
+     "pos": [
+      540,
+      330
+     ],
+     "at": 0.1,
+     "until": 2.55
+    }
+   ]
+  },
+  {
+   "voice": "vo/t05.wav",
+   "pad": [
+    0.1,
+    0.2
+   ],
+   "shots": [
+    {
+     "clip": "clips/c3b_drive.mp4",
+     "ss": 3.91,
+     "speed": 0.7,
+     "w": 1.4
+    },
+    {
+     "clip": "clips/c1_pp.mp4",
+     "ss": 0.0,
+     "speed": 0.6,
+     "w": 3.1,
+     "cut": true
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/ding.mp3",
+     "at": 0.3,
+     "gain": 0.35
+    }
+   ],
+   "text": [
+    {
+     "kind": "sticker",
+     "big": "≈25 литров",
+     "small": "за зиму — просто на месте",
+     "pos": [
+      540,
+      330
+     ],
+     "at": 0.3
+    }
+   ]
+  },
+  {
+   "voice": "vo/t06.wav",
+   "pad": [
+    0.1,
+    0.5
+   ],
+   "shots": [
+    {
+     "clip": "clips/c1_pp.mp4",
+     "ss": 1.96,
+     "speed": 0.6,
+     "cut": true,
+     "w": 1
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/brr.mp3",
+     "at": 0.05,
+     "gain": 0.3
+    }
+   ]
+  }
+ ]
+}

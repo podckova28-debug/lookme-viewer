@@ -1,0 +1,11 @@
+Михалыч эп. 22 «Стоит ли переплачивать за 95-й?» (3 ноября 2026). Спрос: Shorts «92 или 95» 2,3 и 1,4 млн (analytics/2026-10-06_mech_viral_topics.md).
+Голос Alexey minimax 7c2133e5. Референсы: аватар 87ee183f, АЗС (эп. 1, исправленный хук) fac0da06.
+vo s01 94990404 · s02 b6d9be4f · s03 2340be11 · s04 b13b14d1 · s05 8088ab66 · s06 875da18a · s07 b9851a36 · s08 57677f76
+kf k1_hook cba048be · k3a_cyl 604d09df · k6_test 67e30bec
+vo s02b 1024e0d2 · s02c f6243a54 · s05b dcd1aa8b · s05c 776f9f48
+kf k2_myth 9a7ea2b6 · k_pump 973a017a · k3b_knock e95678ae · k4_listen 63239019 · k5_flap b3efba27 · k7_money 83f1e0e3
+kf k_pump2 429c570a (правка: у k_pump один шланг на оба пистолета → два отдельных) · k5b_flap 13277802 (правка: убраны красные выступы у лючка)
+clips c1_hook fdd4a194 (4 с) · c2_myth e3bfa23c (5) · c3a_cyl 41c806ae (5, start=end) · c3b_knock 3f4e25e8 (4, start=end) · c4_listen 6ec0f1cd (4) · c6_test c99312b0 (5, start=end) · c7_money 25886926 (4) · c8_outro 3cfef543 (4, start=end)
+clips c_pump 41ac3385 (4, start=end) · c5_flap 03a05a0b (7)
+Правка по замечанию пользователя («не хватает, что 92-й может сильно испортить мотор, которому нужен 95-й»): vo s04b 012e4895 / s04c c704a04d · kf k4b_piston 2323647a · k4c_hold cd4f9b45. Источник: Ренессанс Страхование, Йонас Полишкис — «двигатель будет работать на грани детонации, а она разрушает поршни, клапаны и стенки цилиндров».
+clips c4b_piston 445d349a (4, start=end) · c4c_hold c0470007 (4)

@@ -1,0 +1,63 @@
+# Гараж Михалыча, эп. 2 — С какой стороны бензобак? (маскот 87ee183f, сцена от хука эп. 1 d97953c6)
+vo 1 7c3a1396-7a4f-47cb-93b5-f06df1d69986
+vo 2 9075f4b3-03cb-4119-96db-43fc2b84fbd9
+vo 3 f43cd215-6615-4cb5-998a-c1a3c903e8a3
+vo 4 dcd6b67d-43c4-474d-b250-8a3d59d2c51d
+vo 5 a3f9c255-65f4-491f-86b3-9f0e6990d243
+kf k1_hose 43a5c0ca-b59e-44cb-899e-071225811f84
+kf k1b_scratch d8e83fbb-9555-4632-bc0a-05f470575687
+kf k2_dash 25d8b82b-3d07-442d-9691-2a0cc8acba41
+kf k2b_squint 6f6a89d1-0dbe-4ee1-a2d8-f1f2640964af
+kf k3_rain 4d62518f-5c30-4570-bf55-b872ae7ca68d
+kf k4b_happy 68632ef6-b82f-488c-bd71-b716b58f5d5d
+kf k1_hose_nb2 f4373119-819a-456d-ade9-b5b3bb444c3c
+kf k2_dash_fix 3045165a-422d-4271-b20b-c2ee9f25a7db
+kf k2b_squint_fix 7805646a-9ba0-4b5f-819c-07db1189fb73
+kf k3b_drafting 187bc767-687d-425d-bfd9-b811a0a684de
+kf k4_point c42a50e4-174d-48ab-9f6a-d41bbe17e6b0
+kf k5_end 425d467c-2b58-42ed-afc7-221ddbb15b3d
+kf k3c_retro e77a2c9f-b068-439c-8d7b-8b44afe0a0cd
+kf k4_point_fix 8bda9ef6-bcbc-4397-830e-ab491c5a707c
+clip c1_hose 569a86de-0133-46b6-9a80-d832e36381a8
+clip c1b_scratch e0b0d937-44c7-4a43-8791-4e2b4ed114c7
+clip c2_dash 14cd3dcb-c542-4fb4-9b7d-cedd63454ee1
+clip c3_rain 89d8a8c7-ee1e-44a0-9d2a-2b384c181ff4
+clip c3b_draft 5758bf67-4927-4393-978d-3b1cbad4da80
+clip c3c_retro c576ccbd-621d-40dd-8306-79b3fe1ef748
+clip c4b_happy 732da32d-a27c-416d-a078-1631338c9530
+clip c5_end b77d10fa-7a32-44b1-8beb-814ef124c060
+kf k4_point_nb2 be793fe9-614c-46b6-a5dd-a6a57b9e50f1
+clip c2b_squint 00f657d0-393d-4ab5-82a1-f538b7ec4f4d
+clip c4_point 7be61140-f93f-4970-a55a-754ed0ee0e5b
+# Исправление пистолетов/шлангов (по замечанию пользователя), правки ключевых кадров
+ep1 hook_e fac0da06-d14e-487a-9f9d-2614ec7f71d1
+ep2 hook_e_lite_nochange 632e0697-691c-4cd7-b3a4-5eb49e80de63
+ep1 folder_e 675fd3a5-1239-402e-8e54-bc13ebbc0fb5
+ep1 ok_e 7cfbbf98-b294-409c-aed5-a1cf56635a9a
+ep1 end_e 68838eb4-4747-429a-a391-846b332f2772
+ep1 flame_e 293c545a-41e6-4927-9172-326d378aad15
+ep2 happy_e 5c047fb1-53cf-44b9-9051-c0752dd18e76
+ep2 end_e c3a834eb-7b60-427f-a7f7-81993a5a1743
+ep2 hook_e_nb2 2e141aa6-1f91-4b7e-a267-fb3d76f6e839
+ep2 rain_nb2 9b4865cf-5bec-4000-85af-073f175177cf
+ep1 seat_e_nsfw_false_positive 8eda1a5b-5c82-4c79-886f-aa577ad5e447
+ep1 reach_e 9e63bb75-833d-4a3f-817c-650ade28aafd
+ep2 hook_nb2_v1_two_hoses 2e141aa6-1f91-4b7e-a267-fb3d76f6e839
+ep1 folder_nb2 b74ce07e-2c39-480e-a92d-41c2253c128f
+ep1 ok_nb2 91374cfa-63f0-4137-91e7-3507128c1df5
+ep1 reach_nb2 d35ccc48-937e-42b6-9b1a-272be52a32d4
+ep1 end_nb2 a4601f6d-b8a3-4a03-ae49-4fffdcea265b
+ep1 seat_nb2 38e6be63-aec3-473c-a2a3-39042a859503
+ep2 happy_nb2 df8f695d-858c-4efa-be7b-ae7ec6d44332
+ep2 end_nb2 aa57ff7e-f52c-459f-8a65-cc3bf7bd1fd8
+ep2 hook_nb2_v2 7a8ab531-99d8-4583-a26d-62bb34f2e881
+ep1 folder_nb2_v2 629c0045-58cc-45af-89f1-5a9ad66c755d
+clip ep1 c3_ok 142ef0b5-d58f-4e33-9262-28da99f7c78c
+clip ep1 c4a2_reach daa995b6-0abe-4373-af1e-8d8d3541870e
+clip ep1 c5_end cc6c87be-01e3-4485-afee-701c338da2a8
+clip ep1 c4a_seat aca7e18d-d019-4d75-a2c0-39d2e4636f56
+clip ep2 c4b_happy 1edca09f-4c8a-4392-b27c-13fe9d56cb96
+clip ep2 c5_end 5bf46d20-105e-41b6-8056-0c7f6b7106e6
+clip ep2 c1_hose 73f6ab2b-ec9d-45d9-a1f8-804986ca98a9
+clip ep2 c3_rain 597d010d-1601-4f5e-9514-f2dc976ec763
+clip ep1 c2b_folder 5f734b57-eeb2-4190-a8b4-8c7432b50f18
