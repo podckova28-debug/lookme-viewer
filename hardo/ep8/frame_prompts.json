@@ -1,0 +1,158 @@
+{
+ "WIDE": "Illustration in EXACTLY the style of the first reference sheet (and the second sheet, the cook, for line quality): thin clean line, realistic proportions, soft flat colour fills, small simple face, no thick cartoon outline. White background with a light partial setting drawn in the same thin line that fades into white at the edges: {set}. The hero is the construction laborer from the first reference sheet (Latino man in his early thirties, short black hair, short dark beard, yellow hard hat, orange high-visibility vest with grey reflective stripes over a plain grey t-shirt, blue jeans, tan steel-toe boots, brown leather tool belt, tan work gloves); draw him exactly ONCE with exactly two arms and two hands. Any other person must look clearly different from him. No text, no letters, no numbers, no labels, no arrows, no speech bubbles, no logos, no signs with writing; no clocks unless the scene gives one with hand positions. SCENE: {scene}",
+ "CLOSE": "Illustration in EXACTLY the style of the first reference sheet (and the second sheet, the cook, for line quality): thin clean line, realistic proportions, soft flat colour fills, no thick cartoon outline. PURE WHITE background, nothing but the subject. The third reference is the wide shot of this same moment: keep every person, outfit, object and colour exactly as in it. Close-up. No text, no letters, no numbers, no labels, no arrows, no logos. If the hero appears he is the construction laborer from the first reference sheet (Latino man in his early thirties, short black hair, short dark beard, yellow hard hat, orange high-visibility vest with grey reflective stripes over a plain grey t-shirt, blue jeans, tan steel-toe boots, brown leather tool belt, tan work gloves), seen once, with exactly two hands. SCENE: {scene}",
+ "W": {
+  "1": [
+   "the side of his old blue pickup truck with the driver's door window open; early morning shown only by deep blue window glass behind him",
+   "The hero sits in the driver's seat of his old blue pickup, seen from the side through the open window, sleepy, one hand on the wheel, a steel thermos on the dashboard."
+  ],
+  "2": [
+   "a chain-link fence along an empty dirt lot with a few wooden stakes and string lines",
+   "The hero stands outside the fence looking at the empty lot; above the lot a future four-storey apartment building is sketched only in very faint thin grey lines, like a ghost of the building to come."
+  ],
+  "3": [
+   "the corner of a white site office trailer with metal steps and a stack of lumber",
+   "First day: a younger-looking hero with a shiny new hard hat and a clean vest holds out his soft clean hands palms up; the foreman (an older Black man with a short grey beard, red hard hat, orange vest, grey work shirt) looks at the hands, half smiling."
+  ],
+  "4": [
+   "a chain-link fence and an open site gate, the end of a white site office trailer",
+   "Safety meeting: the hero stands holding a paper coffee cup, beside two co-workers who look different from him (a woman with a long braid in a white hard hat, an older white man with a grey moustache in a blue hard hat), all facing the foreman (an older Black man with a short grey beard, red hard hat, orange vest, grey work shirt) who speaks."
+  ],
+  "5": [
+   "a partial grey concrete-block wall two storeys high",
+   "the foreman (an older Black man with a short grey beard, red hard hat, orange vest, grey work shirt) points at an aluminium extension ladder leaning against the wall; the hero stands beside him watching, arms folded."
+  ],
+  "6": [
+   "nothing, pure white",
+   "Gear: the hero stands in a front view, centred-left, putting on clear safety glasses, wearing all his gear: hard hat, vest, gloves, tool belt, steel-toe boots. Keep the right third of the frame completely empty and white for a caption."
+  ],
+  "7": [
+   "bare concrete stairs without a railing and a bare concrete column of an unfinished building",
+   "The hero carries a large flat sheet of white drywall on his shoulder up the concrete stairs, leaning forward under the weight. Keep the right third of the frame completely empty and white for a caption."
+  ],
+  "8": [
+   "the edge of a bare concrete floor slab and a stack of grey concrete blocks",
+   "The hero, sweaty with dusty grey gloves, carries a heavy bucket; the site manager (a clean-shaven white man in a spotless white hard hat, crisp white shirt and khaki trousers, holding a tablet) walks past him looking at his tablet and gives a thumbs up."
+  ],
+  "9": [
+   "nothing, pure white",
+   "The hero stands on the left, serious, holding his yellow hard hat in both hands at his chest; on the right, a row of five simple hard hat icons in thin line: one filled yellow, four only grey outlines. Keep the top right area above the icons empty and white for a caption."
+  ],
+  "10": [
+   "a two-storey building frame under construction with wooden studs, a scaffold along one side and an aluminium ladder against it",
+   "The hero stands on the ground at the left, small, looking up at the scaffold and the ladder; the upper part of the frame is open white. Keep the top left area empty and white for a caption."
+  ],
+  "11": [
+   "a partial wall with a low roof edge",
+   "The hero sets an aluminium extension ladder against the roof edge, one hand on a rail, checking the angle with his eyes; a rope hangs from the top rung."
+  ],
+  "12": [
+   "the edge of a second-floor concrete slab with a few vertical steel rebar, open white beyond the edge",
+   "The hero wears a yellow full-body safety harness over his vest and clips a lanyard with a steel hook to a metal anchor point on the slab, standing back from the edge."
+  ],
+  "13": [
+   "a corner of chain-link fence on gravel",
+   "A single blue portable toilet stands alone in the sun at the edge of the site, thin wavy heat lines rising from its roof; the hero walks toward it, reluctant, shoulders slumped."
+  ],
+  "14": [
+   "a big green steel dumpster on gravel",
+   "Noon: the hero sits on an upturned orange bucket eating a sandwich, squeezed into the narrow strip of shadow beside the dumpster; a small sun drawn high in the corner."
+  ],
+  "15": [
+   "a stack of bare steel I-beams",
+   "The hero fills a paper cup from a big orange water cooler; the foreman (an older Black man with a short grey beard, red hard hat, orange vest, grey work shirt) stands beside him pointing at the cup, insisting; thin wavy heat lines in the air."
+  ],
+  "16": [
+   "nothing, pure white",
+   "The hero stands on the far left wiping sweat from his forehead; on the right, two simple flat circle charts side by side in thin line: the first circle mostly light grey with a thin orange slice of about one sixteenth, the second circle with an orange slice of about one third. Keep the area above both circles empty and white for captions."
+  ],
+  "17": [
+   "wooden formwork boards around a rectangular slab and the rear of an orange concrete mixer truck with its chute",
+   "Concrete pour: grey wet concrete flows from the truck chute into the formwork; the hero and one other worker who looks different (the woman with a long braid, white hard hat) spread it fast with rakes."
+  ],
+  "18": [
+   "the edge of wooden formwork boards around a smooth fresh grey concrete slab",
+   "The hero kneels at the corner of the smooth new slab and scratches a tiny mark into the corner with a nail; the marks are just a few small scratches, no readable digits."
+  ],
+  "19": [
+   "nothing, pure white",
+   "The hero stands on the left holding a paper pay stub; on the right two stacks of gold coins: a shorter stack with a small tag showing a hard hat icon, and a taller stack with a small tag showing a simple person icon. Keep the area above the shorter stack empty and white for a caption."
+  ],
+  "20": [
+   "a closed chain-link site gate with a padlock and chain",
+   "Rain: thin grey rain lines fall; the hero sits in the cab of his old blue pickup parked in front of the locked gate, looking at the rain through the windshield."
+  ],
+  "21": [
+   "nothing, pure white",
+   "The hero stands alone on the far left wearing his yellow hard hat; on the right a large tidy grid of many small empty hard hat outlines in thin grey line, like places waiting to be filled. Keep the top area above the grid empty and white for a caption."
+  ],
+  "22": [
+   "an open steel shipping container used as a tool store, with coiled orange extension cords at its door",
+   "Clean-up: the hero sweeps a bare concrete floor with a wide push broom toward the container."
+  ],
+  "23": [
+   "the side of his old blue pickup truck on a road shown by a single thin road line",
+   "Driving home in afternoon light: the hero at the wheel seen through the side window, rolling his sore shoulder with his free hand, tired."
+  ],
+  "24": [
+   "a house doorway with a coat hook holding his orange vest and yellow hard hat",
+   "At home, vest and hard hat off (grey t-shirt, jeans, socks), the hero kneels to listen to his daughter (about six years old, two puffs of curly hair, yellow t-shirt, denim shorts), who holds up a paper crown, unimpressed, arms crossed."
+  ],
+  "25": [
+   "the head of a simple bed and a nightstand with a lamp switched on and a round alarm clock",
+   "The hero, in a grey t-shirt and jeans, lies asleep on top of the blanket, one arm hanging off the bed, lamp still on; the alarm clock shows half past nine: short hand halfway between 9 and 10, long hand pointing straight down at 6."
+  ],
+  "26": [
+   "a quiet street with the finished four-storey apartment building: windows in, small balconies, a potted plant on one balcony, a small child waving from a third-floor window",
+   "Sunday, six months later: the hero in a grey t-shirt and jeans, no vest and no hard hat, stands beside his old blue pickup on the street and looks up at the building."
+  ],
+  "27": [
+   "the corner of the finished building's brick wall at street level",
+   "The hero, in a grey t-shirt and jeans, no vest and no hard hat, rests one hand flat on the corner of the building and smiles a small private smile."
+  ],
+  "28": [
+   "the finished four-storey apartment building behind them",
+   "The hero, in a grey t-shirt and jeans, no vest and no hard hat, carries his daughter (about six years old, two puffs of curly hair, yellow t-shirt, denim shorts) on his shoulders; both point up proudly at the building."
+  ],
+  "29": [
+   "a big green steel dumpster on gravel and a stack of lumber",
+   "The crew at lunch: the hero sits among six other workers in orange vests who all look clearly different from him and from each other (the foreman with grey beard and red hard hat, the woman with a long braid, the older white man with a grey moustache, a tall young Black man, a short stocky man with glasses, a young woman with a ponytail), sitting on buckets and lumber in the dumpster's shade, eating sandwiches and laughing."
+  ],
+  "30": [
+   "the side of his old blue pickup and a chain-link fence; early morning shown only by deep blue window glass",
+   "The hero stands at the open driver's door of his pickup holding a steel thermos and gives a small wave toward the viewer."
+  ]
+ },
+ "C": {
+  "1": "Close-up of the passenger seat of the pickup: a steel thermos, two sandwiches wrapped in wax paper, and a small old radio on the dashboard edge.",
+  "2": "Close-up of the hero's gloved hand resting on the chain-link fence, the empty lot blurred beyond.",
+  "3": "Close-up of two pairs of hands side by side: the hero's soft clean young hands palms up, and the foreman's rough, calloused, darker hand beside them.",
+  "4": "Close-up of a paper coffee cup with a little steam in the hero's tan work glove.",
+  "5": "Close-up of the feet of an aluminium extension ladder with rubber pads standing level on the ground.",
+  "6": "Close-up of the hero's brown leather tool belt on his hips: hammer in a loop, a tape measure, a pencil, a utility knife in the pouches.",
+  "7": "Close-up of a heavy grey paper sack of concrete mix with no printing on it, carried on the hero's shoulder, his gloved hand holding the corner.",
+  "8": "Close-up of the site manager's clean hands holding a tablet whose screen glows plain light blue with no content.",
+  "9": "Close-up of a row of hard hats hanging on hooks on a white trailer wall, one hook empty.",
+  "10": "Close-up of a single work boot standing on the edge of a wooden scaffold plank, seen from the side, empty white space below.",
+  "11": "Close-up of gloved hands tying a rope from the top rung of the ladder to a metal anchor with a firm knot.",
+  "12": "Close-up of the steel snap hook of the lanyard clicking onto a round metal D-ring anchor.",
+  "13": "Close-up of the door of the blue portable toilet in harsh sun, thin wavy heat lines rising.",
+  "14": "Close-up of half a sandwich in wax paper and a water bottle on the lid of an upturned orange bucket.",
+  "15": "Close-up of a round outdoor dial thermometer with no numbers on its face, its needle deep in the red zone.",
+  "16": "Close-up of the hero's face and shoulders, sweat on his forehead, wiping it with the back of his gloved hand.",
+  "17": "Close-up of a long wooden screed board being drawn across wet grey concrete, leaving it smooth, the hero's rubber-booted feet at the edge.",
+  "18": "Close-up of the hero's hand holding a nail over the smooth grey concrete corner, a few tiny scratches, no readable digits.",
+  "19": "Close-up of a paper pay stub held in a hand, covered only in blurred grey lines, no readable text.",
+  "20": "Close-up of a padlock and chain on the wet chain-link gate, raindrops on the metal.",
+  "21": "Close-up of one empty orange high-visibility vest hanging alone on a hook.",
+  "22": "Close-up of gloved hands closing a padlock on the steel doors of the tool container.",
+  "23": "Close-up of the hero in the driver's seat pressing his hand against his lower back, wincing.",
+  "24": "Close-up of the daughter's hands holding a crayon drawing of a castle on paper, no writing.",
+  "25": "Close-up of his tan work boots standing next to the bed with grey socks tucked into them.",
+  "26": "Close-up of a potted green plant on a small balcony railing in sunshine.",
+  "27": "Close-up of a polished floor corner where the edge of a carpet folds back to show a few tiny scratched marks in grey concrete, no readable digits.",
+  "28": "Close-up of the hero's hand pointing up, the building soft behind.",
+  "29": "Close-up of two different gloved hands passing a steaming thermos cup between them.",
+  "30": "Close-up of a hand waving from the open window of the blue pickup."
+ }
+}

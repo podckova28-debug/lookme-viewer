@@ -39,7 +39,7 @@ If a frame comes back too empty or too dark, fix it by an edit pass with the fra
 ### Hook, motion and sound (from the cook analytics, applied from ep7)
 - No empty start: the voice begins at 0:00 and a sound effect plays at 0:00 (ep7: the station alarm tone, quiet under the voice, then loud in the first pause).
 - The first block cuts faster than the rest: 4 shots, the first one about 4 s.
-- Every still moves: a slow push-in on all shots, and a stronger eased push-in (12%) on stat and label frames (`zoom_strong` in plan.json, default = all labelled frames).
+- Every still moves, slowly and evenly (linear, no easing): a 4% push-in or pull-out on ordinary shots (`zoom`) and 6% on stat and label frames (`zoom_strong_amount`, frames listed in `zoom_strong`, default = all labelled frames). Never more: the owner flagged that bigger zooms cut off too much of the frame (ep7 used 6% and 12%).
 - Informative stretches (stats, money, health) never hold one picture: a label pop sound (`label_pop`) marks each number as it appears.
 - Sound effects are synthesized in `assemble_ep.py` (`sfx` in plan.json: block, offset, "alert" or "pop", amplitude) and cost nothing. Keep them sparse: an opening cue, a callback cue, pops on numbers.
 
@@ -48,12 +48,18 @@ If a frame comes back too empty or too dark, fix it by an edit pass with the fra
 - Tempo 1.1 in the assembler (about 150 words per minute). Never Piper or another voice without the owner's OK.
 
 ## 6. Labels
-- Hand-lettered (PatrickHand), black, only on white, never touching a face or a drawing; 6–10 per episode.
+- Hand-lettered (PatrickHand), black, only on white, never touching a face or a drawing. The owner wants MORE text inserts (ep8 on):
+  about one per narration block, 25–35 per episode: every number, every time of day ("5:15 a.m."), short punchlines and quotes
+  ("looking good.", "yours."). If a wide shot has no white spot, put the insert on the block's close-up.
+- Labels write themselves on: `assemble_ep.py` reveals the label pixels left to right between 0.15 s and 0.9 s of the shot
+  (REVEAL), with the pop sound at the start of the writing. Free.
 - Auto-placed by `pipeline/label_place.py`; the author sets only the wish position and the arrow TARGET, and must re-check targets
   after any frame is redrawn.
 
 ## 7. Animation
-- Optional, 5 credits per clip. Only first/last-frame pairs with the same composition (`qa_vision.py pair` animatable),
+- The owner wants more animation (ep8 on): 3–5 Wan clips per episode, 5 credits each, on shots WITHOUT people where only one
+  small thing moves (rain, steam, a needle, a light). Prompt: "static camera, the illustration stays exactly as drawn, only X moves".
+- Optional beyond that, 5 credits per clip. Only first/last-frame pairs with the same composition (`qa_vision.py pair` animatable),
   or scenes without people. Never animate from a single frame of a person.
 
 ## 8. Checks before delivery

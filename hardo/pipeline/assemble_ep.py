@@ -3,6 +3,7 @@ from PIL import Image, ImageDraw, ImageFont
 E = os.path.dirname(os.path.abspath(__file__))
 FR, VO, CL, OUT = [os.path.join(E, d) for d in ("frames", "voice", "clips", "out")]
 os.makedirs(os.path.join(OUT, "seg"), exist_ok=True); os.makedirs(os.path.join(OUT, "labeled"), exist_ok=True)
+REVEAL = (0.15, 0.9)
 GAP = 0.4; FPS = 30; W, H = 1920, 1080; TEMPO = 1.1
 FONT = os.path.join(os.path.dirname(E), "pilot", "fonts", "PatrickHand.ttf")
 plan = json.load(open(os.path.join(E, "plan.json")))
@@ -37,7 +38,21 @@ def labeled(name):
             t=min(tX,tY); sx,sy = cx+dx*t, cy+dy*t
         draw_arrow(d, (sx,sy), (bx*w,by*h), max(3,int(7*w/1536)), k)
     out = os.path.join(OUT,"labeled",f"{name}.png"); im.save(out); return out
-def kenburns(src, out, frames, z, zoom_in, ease=False):
+def _fit(im):
+    sw, sh = im.size
+    if abs(sw/sh - W/H) > 1e-3:
+        if sw/sh > W/H: nw=int(sh*W/H); im=im.crop(((sw-nw)//2,0,(sw-nw)//2+nw,sh))
+        else: nh=int(sw*H/W); im=im.crop((0,(sh-nh)//2,sw,(sh-nh)//2+nh))
+    if im.size[0] < W*1.5: im = im.resize((W*2,H*2), Image.LANCZOS)
+    return im
+def kenburns(src, out, frames, z, zoom_in, ease=False, base=None):
+    if base:   # labels write themselves on: reveal the label pixels left to right between REVEAL[0] and REVEAL[1] seconds
+        import numpy as np
+        lab = np.asarray(_fit(Image.open(src).convert("RGB"))); bas = np.asarray(_fit(Image.open(base).convert("RGB")))
+        diff = np.abs(lab.astype(np.int16)-bas.astype(np.int16)).max(2) > 18
+        ys, xs = np.nonzero(diff); order = np.argsort(xs, kind="stable"); ys, xs = ys[order], xs[order]
+        canvas = bas.copy(); shown = 0; sw, sh = W*2, H*2
+        f0, f1 = int(REVEAL[0]*FPS), max(int(REVEAL[0]*FPS)+1, int(REVEAL[1]*FPS))
     im = Image.open(src).convert("RGB"); sw, sh = im.size
     if abs(sw/sh - W/H) > 1e-3:
         if sw/sh > W/H: nw=int(sh*W/H); im=im.crop(((sw-nw)//2,0,(sw-nw)//2+nw,sh))
@@ -46,6 +61,10 @@ def kenburns(src, out, frames, z, zoom_in, ease=False):
     if sw < W*1.5: im = im.resize((W*2,H*2), Image.LANCZOS); sw, sh = im.size
     proc = subprocess.Popen(["ffmpeg","-y","-f","rawvideo","-pix_fmt","rgb24","-s",f"{W}x{H}","-r",str(FPS),"-i","-","-an","-c:v","libx264","-preset","fast","-crf","19","-pix_fmt","yuv420p",out], stdin=subprocess.PIPE, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
     for i in range(frames):
+        if base:
+            want = len(xs) if i >= f1 else (0 if i < f0 else int(len(xs)*(i-f0)/(f1-f0)))
+            if want > shown: canvas[ys[shown:want], xs[shown:want]] = lab[ys[shown:want], xs[shown:want]]; shown = want
+            im = Image.fromarray(canvas)
         p=i/max(frames-1,1); p = p*p*(3-2*p) if ease else p; zoom = 1+z*p if zoom_in else 1+z-z*p
         a=(sw/zoom)/W; x0=(sw-sw/zoom)/2; y0=(sh-sh/zoom)/2
         proc.stdin.write(im.transform((W,H), Image.AFFINE, (a,0,x0,0,a,y0), resample=Image.BILINEAR).tobytes())
@@ -57,6 +76,7 @@ n = len(blocks)
 vdur = [dur(os.path.join(VO, f"{i:02d}.mp3"))/TEMPO for i in range(1,n+1)]
 segs=[]; srt=[]; t=0.0; zoom_dir=1; jobs=[]; seg_t=[]; block_t=[]
 STRONG = set(plan.get("zoom_strong", list(labels)))  # stat / label frames get a visible eased push-in
+Z_NORMAL = plan.get("zoom", 0.04); Z_STRONG = plan.get("zoom_strong_amount", 0.06)  # keep small: big zooms cut off the frame edges
 for bi, block in enumerate(blocks):
     block_t.append(t); seg_cursor=t
     total = vdur[bi]+GAP; srt.append((t,t+vdur[bi],texts[bi]))
@@ -73,9 +93,13 @@ for bi, block in enumerate(blocks):
             d = rest if share is None else rest*share
         out=os.path.join(OUT,"seg",f"{len(segs):02d}.mp4")
         if kind=="clip": jobs.append(("clip",src,out,d,None,0))
-        else: jobs.append(("still",labeled(name),out,int(round(d*FPS)),zoom_dir>0,0.12 if name in STRONG else 0.06)); zoom_dir*=-1
+        else: jobs.append(("still",labeled(name),out,int(round(d*FPS)),zoom_dir>0,Z_STRONG if name in STRONG else Z_NORMAL)); zoom_dir*=-1
         segs.append(out); seg_t.append((seg_cursor,name)); seg_cursor+=d
     t+=total
+def _base(src):
+    if os.path.dirname(src)==os.path.join(OUT,"labeled"): return os.path.join(FR, os.path.basename(src))
+    return None
+def name_strong(src): return os.path.splitext(os.path.basename(src))[0] in STRONG
 def _do(j):
     kind,src,out,d,zi,z=j
     import json as _json
@@ -83,15 +107,15 @@ def _do(j):
     if os.path.exists(out) and os.path.getsize(out)>1000 and os.path.exists(meta):
         try:
             m = _json.load(open(meta))
-            ok = m.get("src")==src and m.get("kind")==kind and abs(m.get("want",-1)-want)<0.01 and bool(m.get("zi"))==bool(zi) and abs(m.get("z",0.06)-(z or 0.06))<1e-6 \
+            ok = m.get("src")==src and m.get("kind")==kind and abs(m.get("want",-1)-want)<0.01 and bool(m.get("zi"))==bool(zi) and abs(m.get("z",0.06)-(z or 0.06))<1e-6 and bool(m.get("anim"))==bool(_base(src)) \
                  and abs(dur(out)-want) < 0.12 and os.path.getmtime(out) > os.path.getmtime(src)
         except Exception: ok = False
         if ok: return out
     for f in (out, meta):
         if os.path.exists(f): os.remove(f)
-    _json.dump({"src":src,"kind":kind,"want":want,"zi":bool(zi),"z":z or 0.06}, open(meta,"w"))
+    _json.dump({"src":src,"kind":kind,"want":want,"zi":bool(zi),"z":z or 0.06,"anim":bool(_base(src))}, open(meta,"w"))
     if kind=="clip": run(["ffmpeg","-y","-i",src,"-vf",f"scale={W}:{H}:flags=lanczos,fps={FPS},tpad=stop_mode=clone:stop_duration=6,format=yuv420p","-t",f"{d:.3f}","-an","-c:v","libx264","-preset","fast","-crf","19",out])
-    else: kenburns(src,out,d,z,zi,ease=z>0.06)
+    else: kenburns(src,out,d,z,zi,ease=False,base=_base(src))  # even, slow move; labels write on
     return out
 from multiprocessing import Pool
 with Pool(4) as pool:
@@ -103,19 +127,20 @@ fc = "".join(f"[{i}:a]aresample=44100,atempo={TEMPO},apad=pad_dur={GAP}[a{i}];" 
 run(["ffmpeg","-y",*inputs,"-filter_complex",fc,"-map","[a]","-c:a","aac","-b:a","192k",os.path.join(OUT,"voice.m4a")])
 VOICE = os.path.join(OUT,"voice.m4a")
 def sfx_track():
-    # plan["sfx"]: [[block (1-based), offset s, "alert"|"pop", amplitude]]; plan["label_pop"]: amplitude of a pop at each label shot
+    # plan["sfx"]: [[block (1-based), offset s, "alert"|"beep"|"pop", amplitude]]; plan["label_pop"]: amplitude of a pop at each label shot
     import numpy as np, wave
     ev = [(block_t[b-1]+off, kind, amp) for b,off,kind,amp in plan.get("sfx", [])]
-    if plan.get("label_pop"): ev += [(t0+0.05,"pop",plan["label_pop"]) for t0,name in seg_t if name in labels]
+    if plan.get("label_pop"): ev += [(t0+REVEAL[0],"pop",plan["label_pop"]) for t0,name in seg_t if name in labels]
     if not ev: return None
     sr=44100; total=sum(vdur)+GAP*n; buf=np.zeros(int(total*sr)+sr)
     def tone(f, d):
         x=np.arange(int(d*sr))/sr; y=np.sin(2*np.pi*f*x)+0.35*np.sin(4*np.pi*f*x)+0.15*np.sin(6*np.pi*f*x)
         env=np.minimum(1,np.minimum(x/0.01,(d-x)/0.03)); return y*env/1.5
     alert=np.concatenate([tone(853,0.42),tone(960,0.42)])
+    gap=np.zeros(int(0.1*sr)); beep=np.concatenate([tone(1000,0.12),gap,tone(1000,0.12),gap,tone(1000,0.12)])  # phone alarm
     x=np.arange(int(0.09*sr))/sr; pop=np.sin(2*np.pi*(900*x-3000*x*x))*np.exp(-x/0.02)
     for t0,kind,amp in ev:
-        y=(alert if kind=="alert" else pop)*amp; i=int(t0*sr); buf[i:i+len(y)]+=y[:len(buf)-i]
+        y={"alert":alert,"beep":beep}.get(kind,pop)*amp; i=int(t0*sr); buf[i:i+len(y)]+=y[:len(buf)-i]
     p=os.path.join(OUT,"sfx.wav"); w=wave.open(p,"wb"); w.setnchannels(1); w.setsampwidth(2); w.setframerate(sr)
     w.writeframes((np.clip(buf,-1,1)*32767).astype("<i2").tobytes()); w.close(); return p
 _sfx = sfx_track()
