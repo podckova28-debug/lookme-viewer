@@ -17,20 +17,20 @@ Based on real research:
 
 Chapters
 0:00 3:50 a.m.
-0:27 Rewind
-0:38 Report
-1:13 Boarding, unpaid
-2:09 Door closes
-2:34 The cart
-2:56 Light chop
-3:30 Denver turn
-3:58 The rules
-4:30 The money
-4:56 The delay
-5:09 Last leg
-5:36 Buh-bye
-5:59 Why
-6:24 The bag never fit
+0:35 Rewind
+0:50 Report
+1:40 Boarding, unpaid
+2:56 Door closes
+3:33 The cart
+4:04 Light chop
+4:50 Denver turn
+5:28 The rules
+6:16 The money
+6:49 The delay
+7:11 Last leg
+7:47 Buh-bye
+8:17 Why
+8:56 The bag never fit
 
 New episode every week.
 
