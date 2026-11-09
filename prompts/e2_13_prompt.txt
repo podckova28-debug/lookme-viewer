@@ -1,4 +1,17 @@
-Style: hand-drawn 2D 1990s feature animation, clean confident ink lines, soft painted cel shading, warm painted backgrounds, caricatured expressive faces. A family comedy cartoon. Continue the reference video seamlessly from its very last frame: same place, same light, same clothes. THE HERO: skinny nervous young man with messy ginger hair, thick black glasses, freckles, enormous baggy navy suit, bow tie. The oak is leaning over the wedding table and creaking.
-ONE continuous shot, no cuts, MEDIUM: the hero tries hard to get angry: he frowns, clenches his fists, stomps his foot, puffs his cheeks until his face is red, even pinches his own arm; nothing happens, he stays skinny and normal-colored; he looks at his hands in frustration while the oak creaks lower behind him.
-AUDIO: comic straining grunts, a little stomp, a deflating squeak, the oak creaking. No voice.
-NEGATIVE: cuts, dissolves, green skin, giant form, readable text, logos, photorealism, 3D render, watermark.
+Style: hand-drawn 2D 1990s feature animation, clean confident ink lines, soft painted cel shading, warm painted backgrounds with depth, caricatured expressive faces, simple limited animation on twos. A family comedy cartoon. Sunset light under storm clouds, wind.
+
+Continue the reference video from its very last frame (a close-up of the hero who has just turned green), then cut back to the wedding.
+
+REFERENCE IMAGES, in this order: the FIRST = the wedding LAYOUT: every WIDE shot uses exactly this camera and these places (the oak on the left, the head table with the white three-tier cake, the white tent on the right, Dave in his navy bathrobe in the right foreground, three guests seen from behind; nobody else). The SECOND = the GREEN HERO: the same skinny ginger guy turned green and muscular, only about 2.2 m tall (his head just above the groom's head), same face, black glasses, ginger hair, his navy suit stretched tight but still on him. The THIRD = EMMA, the ginger bride in a white dress.
+
+The oak is already leaning over the head table at the start.
+
+A 10-second scene of THREE shots, hard cuts only, no camera moves inside a shot. Nobody talks.
+
+SHOT 1 (0-3s) WIDE: the green hero leaps from behind the table toward the leaning oak; Emma and the groom duck behind the table.
+SHOT 2 (3-6.5s) WIDE: he catches the leaning trunk with both hands just above Emma, the groom and the cake, and holds it; leaves shower down on him.
+SHOT 3 (6.5-10s) WIDE: he pushes the oak back upright, pats the soil around its roots flat with his foot like planting a flower, and steps back, proud. The cake is fine, only one big green fingerprint on its top tier. Dave sips from his mug.
+
+AUDIO: wind, a deep wooden creak, a heavy thud, rustling leaves, a soft pat-pat. No voice lines.
+
+NEGATIVE: a huge giant, the hero taller than the oak's lowest branch, shirtless, torn clothes, red face, the oak falling down, the cake destroyed, injuries, extra people, a crowd, duplicated characters, extra arms, extra fingers, morphing faces, dissolves, camera moves, readable text, logos, photorealism, 3D render, watermark.
