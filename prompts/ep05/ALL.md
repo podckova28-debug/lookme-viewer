@@ -29,13 +29,13 @@ NEGATIVE: the screen grows, the screen shows text, new people, extra people, dup
 ## Сцена 03 · стартовый кадр `03.png`
 
 ```
-Hand-drawn 2D 1990s feature animation, clean ink lines, soft cel shading, simple limited animation on twos. Start exactly on the reference image and keep everything in it: the same place, the same people in the same places, the same clothes, the same light. One continuous 5-second shot, the camera does not move, no cuts.
+Hand-drawn 2D 1990s family cartoon, clean ink lines, soft cel shading, simple limited animation on twos. Start exactly on the reference image and keep everything in it: the same bathroom, the same young man, the same clothes, the same light. One continuous 5-second shot, the camera does not move, no cuts.
 
-ACTION: The metal glove squeezes by itself: the toothbrush snaps in half with a crack, he stares at the two pieces in his metal hand, foam on his lips.
+ACTION: While he brushes his teeth, his red metal glove closes a little too tightly by itself and the plastic toothbrush pops into two pieces with a funny little "pop". He freezes, looks at the two pieces in his metal hand, then looks at his reflection in the mirror, puzzled.
 
-AUDIO: a metallic whirr, a plastic snap. No voice lines.
+AUDIO: a small mechanical whirr, a funny cartoon pop. No voice lines.
 
-NEGATIVE: blood, injuries, the glove grows over his arm, new people, extra people, duplicated characters, extra arms, extra fingers, morphing faces, clothes changing, camera moves, zoom, cuts, dissolves, readable text, letters, logos, emblems, photorealism, 3D render, watermark.
+NEGATIVE: the glove covering more of his arm, new people, duplicated characters, extra arms, extra fingers, morphing faces, clothes changing, camera moves, zoom, cuts, readable text, logos, photorealism, 3D render, watermark.
 ```
 
 ## Сцена 04 · стартовый кадр `04.png`
