@@ -1,0 +1,52 @@
+# Why It's So Hard to Be a Warehouse Worker — Episode 9 (~7.5 min, 30 blocks)
+
+Style: STYLE.md (cook look: thin line, realistic proportions, soft flat colour, light partial setting fading into white). Narrator: Grady (ElevenLabs), tempo x1.1.
+Hero: order picker, white woman in her early forties, freckles, auburn hair in a low ponytail, neon-green high-visibility vest over a grey zip hoodie, dark grey work trousers, black safety sneakers, grey work gloves, a handheld scanner on a wrist strap. Recurring prop: the handheld scanner, plain grey, with a small light and a coloured bar (green, yellow, red) instead of readable text.
+Other people: the area manager (Asian American man in his mid-twenties, neat side part, spotless orange vest over a navy polo, lanyard, takeaway coffee); Denise, the veteran picker (Black woman in her early sixties, short grey curls, reading glasses on a beaded cord, yellow vest, a knee brace on each knee); the hero's son (about fourteen, shaggy brown hair, oversized black hoodie).
+
+## COLD OPEN
+1. Five fifty a.m. You're in a line of two hundred people shuffling through a turnstile, holding a clear plastic bag with your lunch, your phone and your keys. Clear, so security can see you didn't steal anything. You didn't.
+2. Behind the turnstile is a building so big you've never seen all of it. Inside, shelf after shelf of things are waiting for strangers who clicked a button last night. Your job is to find those things. Fast. Then faster.
+## REWIND
+3. To understand why you count steps in your sleep, rewind to your first week: a new vest, a borrowed scanner, four hours of safety videos, and a trainer who said, "Don't worry about the rate yet." Yet.
+## CHAPTER 1 — THE MORNING
+4. Six twenty. The stand-up meeting by the time clock. Stretches first: arms up, arms down, roll the shoulders. Two hundred people in neon vests stretching at dawn. It looks like a very tired aerobics class. Then the manager reads the numbers.
+5. The manager is twenty-five, with a clean vest, a lanyard and a coffee. He says yesterday the building shipped a lot, and today it needs to ship more. Every day the building needs to ship more. Nobody remembers a day it needed less.
+6. Your gear: a vest, safety shoes, gloves, a yellow cart, and the scanner. The scanner is the real boss. It tells you where to go, what to grab and how long you have to grab it. It beeps when you're right. It beeps differently when you're not.
+7. Six thirty. First pick. Aisle forty-two, shelf C, bin seven. A phone case. Scan the bin, scan the case, drop it in the tote, and the scanner already wants the next one, three aisles away. A garden hose. Then a single sock.
+8. Here's the secret nobody tells you. Picking isn't mostly picking. Warehouse researchers have measured it: about half of a picker's time is just walking between shelves. Some buildings have robots that bring shelves to you. Your building has you.
+## CHAPTER 2 — THE RATE
+9. Your rate is how many items you pick per hour, and every scan is timed. The scanner shows a little bar. Green means fine. Yellow means hurry. Red means you will have a conversation later, in a small room, with the coffee.
+10. The gaps between scans are counted too. Too long between beeps, and it's called time off task. Tie your shoe: time. Help a lost new hire: time. Search an empty bin for an item the scanner swears is there: also your time.
+11. In 2021, California passed a law about exactly this. Big warehouses there must give you your quota in writing, and a quota cannot stop you from taking your meal break, your rest break, or going to the bathroom. A handful of other states followed.
+12. Which brings us to the bathroom. It's at the far end of the building. You do the math every time: four minutes there, four minutes back, and the bar turning yellow behind you. So you wait. You get very good at waiting.
+13. If this sounds familiar, you've met the nurse, the courier, the teacher, the cook, the trucker, the flight attendant, the firefighter and the construction worker. Same bladder. Now with a stopwatch.
+## CHAPTER 3 — THE BODY
+14. Nine thirty. First break. Fifteen minutes, which sounds generous until you remember the break room is a five-minute walk away. That leaves five minutes to sit, eat half a granola bar and stare at the wall. You've grown fond of the wall.
+15. Back on the floor. Top shelf: reach. Bottom shelf: squat. Top, bottom, top, bottom. A box of cat litter. A case of water. A kettlebell somebody ordered at two in the morning. You lift with your legs, like the video said. Your legs have notes.
+16. Here's what the reaching costs. In 2024, warehousing reported four point eight injuries and illnesses for every hundred full-time workers. All of private industry: two point three. Same country, same year. In a warehouse, about twice the rate.
+17. And most of those injuries don't send you home. More than half of warehouse cases meant restricted duty or a different job, in the same building, with an ice pack. Can't lift with that wrist? No problem. Go fold flat boxes. With the other one.
+18. Denise has been here eleven years. She wears a brace on each knee and calls them "the twins." On your second day she showed you how to turn your feet instead of twisting your back. Nobody else taught you that. Denise is the training.
+## CHAPTER 4 — THE MONEY
+19. Noon. Lunch is thirty minutes, unpaid, minus the walk both ways. You eat at a long table between two strangers. The building holds thousands of workers. You know about eleven. You chew fast.
+20. In American warehouses, the median order filler makes about twenty-one dollars and fifty cents an hour. The median for all jobs in America is about twenty-four fifty. So you're three dollars below the middle, in a job where your body is the machine.
+21. About one point eight million people work in American warehousing, and your building is always hiring. The hiring banner outside has never come down. Most of the faces from your first week are already gone. You've stopped learning names until week three.
+## CHAPTER 5 — THE END OF THE SHIFT
+22. Three p.m. Second break. Your watch says you've walked farther today than your drive to work. You didn't need the watch. Your feet sent that report at eleven. Your feet are very punctual.
+23. And this is a normal day. In November, the ten-hour shifts become eleven, and the four-day week becomes five. It's called mandatory overtime, and it lasts until Christmas. The word "mandatory" is doing a lot of work. So are you.
+24. Five p.m. The shift ends. Two hundred people shuffle back through the turnstile. Nobody runs. Nobody has anything left to run with. In the parking lot, you sit in the car a minute before turning the key.
+25. Home by six. Your son has a package on the kitchen counter. New headphones. Ordered last night, here this afternoon. He says, "That was fast." You look at the box for a long time. Then you say, "Yeah. It was."
+## CHAPTER 6 — WHY
+26. So why do it. Because the hours are steady, the pay comes every week, and nobody asks where you went to college. You walked in on a Monday and had a job by Tuesday. Not many doors open that fast.
+27. Because there's Denise, who saves you a chair at lunch and the good ice pack in the freezer. Eleven years, two twins, zero complaints out loud. You want to be Denise. With better knees.
+28. And because somewhere tonight, a man is watering his tomatoes with a garden hose you found in aisle forty-five at six thirty-two this morning. He doesn't know your name. The hose got there anyway. You got it there.
+29. Most people never think about the space between "click" and "doorstep." That space is a person, walking. Thousands of steps, every day. And today, a few thousand of them were yours.
+30. That was one day. Tomorrow starts at five fifty, in a line, with a clear bag. Next time: a different job, a different door. Subscribe if you want to be there. And the next time a package shows up fast, remember: somebody walked for it.
+
+## Sources
+- Median pay: stock clerks and order fillers in the warehousing and storage industry, median $21.49 an hour — BLS Industries at a Glance, Warehousing and Storage (NAICS 493), May 2025 OEWS. All-occupations median $24.51 an hour ($50,980 a year) — BLS OEWS, May 2025 (national release, May 2026). For reference, the OOH median for all stockers and order fillers across industries was $37,330 a year (May 2025).
+- Injuries: warehousing and storage, 4.8 total recordable injury and illness cases per 100 full-time workers in 2024; of these, 2.6 involved job transfer or restriction and 1.5 involved days away from work — BLS Industries at a Glance, NAICS 493 (Survey of Occupational Injuries and Illnesses, 2024). Private industry overall: 2.3 per 100 — BLS "Employer-Reported Workplace Injuries and Illnesses — 2024" news release, 22 Jan 2026.
+- Walking: travel is about 50% of an order picker's time in a typical picker-to-parts warehouse — de Koster, Le-Duc & Roodbergen, "Design and control of warehouse order picking: A literature review," European Journal of Operational Research 182 (2007), Fig. 4, citing Tompkins et al., Facilities Planning (2003).
+- Quotas: California AB 701, signed 2021, in force 1 Jan 2022 — employers must give each worker a written description of each quota; a quota may not prevent meal or rest periods, bathroom use or compliance with safety laws; workers may request their last 90 days of work-speed data — California Labor Commissioner (DIR) FAQ on Warehouse Quotas. Other states with warehouse-quota laws: New York (Warehouse Worker Protection Act, 2022), Minnesota (Minn. Stat. 182.6526, 2023), Washington (in force July 2024), Oregon (in force Jan 2025) — state statutes and law-firm summaries (Fisher Phillips, Ogletree).
+- Employment: about 1.84 million employees in warehousing and storage (NAICS 493), October 2026, preliminary — BLS Current Employment Statistics via Industries at a Glance.
+- Common practice, not statistics: clear-bag and turnstile security screening, start-of-shift stretch meetings, four ten-hour shifts, two paid 15-minute breaks and an unpaid 30-minute lunch, peak-season mandatory overtime from November to Christmas, scanner-timed picking with "time off task" tracking, and high turnover ("most of the faces are gone") are typical of large US e-commerce fulfillment centers and are presented as the hero's experience, not as measured figures.

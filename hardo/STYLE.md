@@ -30,10 +30,11 @@ no arrows, no speech bubbles, no logos; no clocks unless the scene gives one wit
 If a frame comes back too empty or too dark, fix it by an edit pass with the frame itself as the only reference
 ("keep everything, only add a light background: ..."), 0.25 credit, instead of a new generation.
 
-## 4. Edit rhythm (no extra cost)
-- Two generated frames per narration block: a wide shot and a close-up.
-- Plus a punch-in crop of the wide shot (66% crop, top of the drawing kept in frame, so heads are never cut).
-- Shots per block = round(block length / 5 s), between 2 and 3. Target: a cut about every 5 s (ep6 was ~9.5 s).
+## 4. Edit rhythm
+- NO punch-in crops: the owner said crops cut off too much of the frame (ep8). Every shot is its own generated frame.
+- A cut about every 3.5 s (ep8: 136 shots in 7:53). Per block: a wide shot, a close-up, and 1–4 more distinct shots of the same
+  moment (a face, a detail, another person, an object, a different angle), 0.25 credit each, each with the block's wide shot as a
+  reference so outfits, people and props match. Count per block = round(block length / 3.5 s).
 - Length is set only by the narration; more cuts never make the video longer.
 
 ### Hook, motion and sound (from the cook analytics, applied from ep7)
@@ -49,7 +50,8 @@ If a frame comes back too empty or too dark, fix it by an edit pass with the fra
 
 ## 6. Labels
 - Hand-lettered (PatrickHand), black, only on white, never touching a face or a drawing. The owner wants MORE text inserts (ep8 on):
-  about one per narration block, 25–35 per episode: every number, every time of day ("5:15 a.m."), short punchlines and quotes
+  70–90 per episode (ep8: 82): on most shots, especially object and detail shots. Use ARROWS from short words to the thing
+  they name ("new." -> the hard hat, "80 lb each." -> the sacks); no empty pictures: every number, every time of day ("5:15 a.m."), short punchlines and quotes
   ("looking good.", "yours."). If a wide shot has no white spot, put the insert on the block's close-up.
 - Labels write themselves on: `assemble_ep.py` reveals the label pixels left to right between 0.15 s and 0.9 s of the shot
   (REVEAL), with the pop sound at the start of the writing. Free.

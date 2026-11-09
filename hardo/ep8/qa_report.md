@@ -6,7 +6,7 @@ Duration 472.8s, 236 sampled frames, 26 checks, 0 FAIL
 |---|---|---|
 | 1080p30 | PASS | 1920x1080 @ 30/1 |
 | audio track present | PASS | aac |
-| video/audio length match | PASS | video 472.73s audio 472.80s |
+| video/audio length match | PASS | video 472.77s audio 472.80s |
 | all voice blocks present | PASS | 30/30 |
 | narration fits the cut (no clipped ending) | PASS | planned 435.1s, final 472.8s |
 | srt cue count == blocks | PASS | 30 cues / 30 blocks |
@@ -16,8 +16,8 @@ Duration 472.8s, 236 sampled frames, 26 checks, 0 FAIL
 | animated clips present and long enough | PASS | 3 clips; ok |
 | white-background rule (mean luminance >= 120 on all samples) | PASS | 0 dark samples of 236 |
 | no frozen video (>=6s without any motion) | PASS | 0 frozen samples |
-| no pure black frames | PASS | min luminance 130 |
-| hand-written labels inside safe area | PASS | 31 labels ok |
+| no pure black frames | PASS | min luminance 129 |
+| hand-written labels inside safe area | PASS | 82 labels ok |
 | labels do not cover drawing (ink under text < 6%) | PASS | ok |
 | arrows point at something (ink near tip) | PASS | ok |
 | arrows start outside their text and are not stubs | PASS | ok |
