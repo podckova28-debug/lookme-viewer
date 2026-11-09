@@ -44,3 +44,10 @@ Needs `ANTHROPIC_API_KEY`; without it the script exits 2 and Tier 2 remains the 
 - Hero truck colour and other recurring props must be named in every prompt (ep5: two frames came back with a white cab instead of blue).
 - Narration: Piper (offline, free) `en_US-lessac-high` at tempo 1.1 gives about 197 wpm; Higgsfield seed_speech is 0.3 credits per block,
   ElevenLabs/MiniMax 0.6.
+
+## Added for ep6
+- Wan 3.0 from a SINGLE start frame on a white-background illustration invents a full background within a second and bends limbs
+  (ep6: cart and turbulence clips rejected, 10 credits). Animate only first/last-frame pairs with the same composition
+  (`qa_vision.py pair` says animatable) or scenes with no people and no white void (planes in the sky, a window, a sunrise).
+- Two frames per narration block keep every shot under about 7 s; the second frame is a close-up (hands, object) and costs 0.25 credit.
+- Real prices on this account: gpt-image-2.6 0.25 per image, Wan 5 s clip 5, ElevenLabs block 0.6–0.75, Piper 0.
