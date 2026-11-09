@@ -63,3 +63,7 @@ at most a thin ground line or a few outline buildings. Target: white share >= 0.
 Episode 6 drifted again (white 0.37 average): the prompts described full cabins, galleys and hotel rooms, so the model drew them.
 Prompt rule: every scene prompt names only the hero, the one object the line is about and at most one other person; it says
 "no background, no walls, no ceiling, no floor, white around" explicitly. Check the white-share numbers before building.
+- Character drawing: the reference for new heroes is the COOK (ep4 char_ref, job 49f55c6b-4f18-438d-a011-7ffb378e91e0): thin
+  line, realistic proportions, soft flat fills, small simple face. Not the teacher sheet (thicker outline, bigger head) and not
+  the ep6 attendant. Say "thin line, realistic proportions, no thick cartoon outline" in the character prompt and check the sheet
+  against the cook before generating scenes.
