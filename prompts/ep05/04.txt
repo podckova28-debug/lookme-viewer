@@ -1,0 +1,7 @@
+Hand-drawn 2D 1990s feature animation, clean ink lines, soft cel shading, simple limited animation on twos. Start exactly on the reference image and keep everything in it: the same place, the same people in the same places, the same clothes, the same light. One continuous 5-second shot, the camera does not move, no cuts.
+
+ACTION: The metal-gloved hand squeezes the cereal box: it bursts and a cloud of cereal flakes flies into the air and rains down over the kitchen island. Dave calmly lifts his mug and takes a sip without looking.
+
+AUDIO: a crunch, cereal pattering down, a calm sip. No voice lines.
+
+NEGATIVE: Dave reacting, Dave moving away, a third person, new people, extra people, duplicated characters, extra arms, extra fingers, morphing faces, clothes changing, camera moves, zoom, cuts, dissolves, readable text, letters, logos, emblems, photorealism, 3D render, watermark.
