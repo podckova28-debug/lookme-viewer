@@ -101,6 +101,7 @@ fc = "".join(f"[{i}:a]aresample=44100,atempo={TEMPO},apad=pad_dur={GAP}[a{i}];" 
 run(["ffmpeg","-y",*inputs,"-filter_complex",fc,"-map","[a]","-c:a","aac","-b:a","192k",os.path.join(OUT,"voice.m4a")])
 def ts(x): return f"{int(x//3600):02d}:{int(x%3600//60):02d}:{x%60:06.3f}".replace(".",",")
 with open(os.path.join(OUT,f"{NAME}.srt"),"w",encoding="utf8") as f:
-    for i,(a,b,tx) in enumerate(srt,1): f.write(f"{i}\n{ts(a)} --> {ts(b)}\n{tx}\n\n")
+    total_len = sum(vdur)+GAP*n
+    for i,(a,b,tx) in enumerate(srt,1): f.write(f"{i}\n{ts(a)} --> {ts(min(b,total_len-0.3))}\n{tx}\n\n")
 run(["ffmpeg","-y","-i",os.path.join(OUT,"video_silent.mp4"),"-i",os.path.join(OUT,"voice.m4a"),"-map","0:v","-map","1:a","-c:v","copy","-c:a","copy","-shortest","-movflags","+faststart",os.path.join(OUT,f"{NAME}.mp4")])
 print("video",round(dur(os.path.join(OUT,"video_silent.mp4")),2),"audio",round(dur(os.path.join(OUT,"voice.m4a")),2),"final",round(dur(os.path.join(OUT,f"{NAME}.mp4")),2))
