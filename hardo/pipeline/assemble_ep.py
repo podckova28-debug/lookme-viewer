@@ -3,7 +3,7 @@ from PIL import Image, ImageDraw, ImageFont
 E = os.path.dirname(os.path.abspath(__file__))
 FR, VO, CL, OUT = [os.path.join(E, d) for d in ("frames", "voice", "clips", "out")]
 os.makedirs(os.path.join(OUT, "seg"), exist_ok=True); os.makedirs(os.path.join(OUT, "labeled"), exist_ok=True)
-GAP = 0.4; FPS = 30; W, H = 1920, 1080; TEMPO = 1.2
+GAP = 0.4; FPS = 30; W, H = 1920, 1080; TEMPO = 1.1
 FONT = os.path.join(os.path.dirname(E), "pilot", "fonts", "PatrickHand.ttf")
 plan = json.load(open(os.path.join(E, "plan.json")))
 texts = json.load(open(os.path.join(E, "blocks.json")))
@@ -76,7 +76,12 @@ for bi, block in enumerate(blocks):
     t+=total
 def _do(j):
     kind,src,out,d,zi=j
-    if os.path.exists(out) and os.path.getsize(out)>1000: return out
+    if os.path.exists(out) and os.path.getsize(out)>1000:
+        want = d if kind=="clip" else d/FPS
+        try: ok = abs(dur(out)-want) < 0.12 and os.path.getmtime(out) > os.path.getmtime(src)
+        except Exception: ok = False
+        if ok: return out
+        os.remove(out)
     if kind=="clip": run(["ffmpeg","-y","-i",src,"-vf",f"scale={W}:{H}:flags=lanczos,fps={FPS},tpad=stop_mode=clone:stop_duration=6,format=yuv420p","-t",f"{d:.3f}","-an","-c:v","libx264","-preset","fast","-crf","19",out])
     else: kenburns(src,out,d,0.06,zi)
     return out
