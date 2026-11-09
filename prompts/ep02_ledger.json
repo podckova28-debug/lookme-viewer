@@ -1,0 +1,11 @@
+{
+ "episode": "Hulk (ep02)",
+ "facts": [
+  {"what": "hero's yellow hatchback", "state": "destroyed on the highway (block 06); he rode on in the angry driver's red-orange car", "forbid": ["his car", "hatchback", "drives off in his", "his own car"]},
+  {"what": "hero's day clothes", "state": "plain gray t-shirt + gray sweatpants, barefoot (from block 05 to the park)", "forbid": ["plaid pajama", "green t-shirt", "jeans"]},
+  {"what": "hero's wedding suit", "state": "the enormous navy suit from the dry cleaner, far too big for him", "forbid": ["fitted suit", "well-fitting"]},
+  {"what": "hero's phone", "state": "crushed into a ball at the dry cleaner; he has no phone", "forbid": ["his phone", "checks his phone", "calls"]},
+  {"what": "green form size", "state": "about 2.2 m, keeps his t-shirt/suit on", "forbid": ["giant", "huge green brute", "shirtless", "bare chest"]},
+  {"what": "Dave", "state": "bald, full beard, round glasses, navy bathrobe, plaid pajama pants, white mug; never surprised", "forbid": ["Dave with hair", "Dave in a suit"]}
+ ]
+}
