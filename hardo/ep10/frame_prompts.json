@@ -1,0 +1,157 @@
+{
+ "WIDE": "Illustration in EXACTLY the style of the first reference sheet (and the third, the cook, for line quality): thin clean line, realistic proportions, soft flat colour fills, small simple faces, no thick cartoon outline. White background with a light partial setting drawn in the same thin line that fades into white at the edges: {set}. The hero is {hero}; draw him exactly ONCE with exactly two arms and two hands. Recurring people, exactly as on the second reference sheet when they appear: the chief of staff (tall Black man, shaved head, rimless glasses, white shirt with rolled sleeves, loosened navy tie, clipboard); the military aide (young sandy-haired man in a dark-blue uniform without readable insignia, black leather satchel); the Secret Service agent (Latina woman, dark hair in a tight bun, dark suit, earpiece); the wife (white-haired woman around sixty, short white curls, soft green cardigan, reading glasses pushed up on her head). Any other person looks clearly different from him. No text, no letters, no numbers, no labels, no arrows, no logos, no seals, no flags, no readable documents; no clocks. Nobody resembles any real person. SCENE: {scene}",
+ "HERO": "the President from the first reference sheet (a fictional East Asian American man in his late fifties, short silver-grey hair neatly combed, round tortoiseshell glasses, clean-shaven, charcoal-grey suit, white shirt, plain navy tie, small gold star pin on the lapel)",
+ "HOME": "the President from the first reference sheet (fictional East Asian American man in his late fifties, short silver-grey hair, round tortoiseshell glasses, clean-shaven), here in a grey cardigan over dark blue striped pyjamas",
+ "W": {
+  "1": [
+   "a tall old-fashioned window with deep blue night glass and heavy cream curtains",
+   "the President from the first reference sheet (fictional East Asian American man in his late fifties, short silver-grey hair, round tortoiseshell glasses, clean-shaven), here in a grey cardigan over dark blue striped pyjamas",
+   "Before dawn he stands at the window holding the curtain aside, looking down; far below through the glass a tiny figure in a dark coat stands on a lawn. Leave the upper left of the frame empty white for a caption."
+  ],
+  "2": [
+   "a small private kitchen corner with a counter and a coffee pot",
+   "the President from the first reference sheet (fictional East Asian American man in his late fifties, short silver-grey hair, round tortoiseshell glasses, clean-shaven), here in a grey cardigan over dark blue striped pyjamas",
+   "He pours coffee into a chipped white diner mug with one faded red stripe. Leave the right third of the frame empty white for a caption."
+  ],
+  "3": [
+   "a few stone steps and a pale winter sky hint, light snow",
+   "the President from the first reference sheet (a fictional East Asian American man in his late fifties, short silver-grey hair neatly combed, round tortoiseshell glasses, clean-shaven, charcoal-grey suit, white shirt, plain navy tie, small gold star pin on the lapel) with a dark wool coat over the suit",
+   "Noon on a cold day: he stands with his left hand resting on a closed plain dark book held by an unseen person at the frame edge and his right hand raised, taking an oath. Leave the upper right of the frame empty white for a caption."
+  ],
+  "4": [
+   "a stately office with a large wooden desk, a tall window with pale curtains",
+   "the President from the first reference sheet (a fictional East Asian American man in his late fifties, short silver-grey hair neatly combed, round tortoiseshell glasses, clean-shaven, charcoal-grey suit, white shirt, plain navy tie, small gold star pin on the lapel)",
+   "Morning: he sits down at the desk and opens a plain brown leather folder. Leave the upper right of the frame empty white for a caption."
+  ],
+  "5": [
+   "the corner of the large wooden desk, a small globe",
+   "the President from the first reference sheet (a fictional East Asian American man in his late fifties, short silver-grey hair neatly combed, round tortoiseshell glasses, clean-shaven, charcoal-grey suit, white shirt, plain navy tie, small gold star pin on the lapel)",
+   "He reads papers from the leather folder, frowning slightly; beside him the chipped white mug with a faded red stripe, no steam. Leave the upper left of the frame empty white for a caption."
+  ],
+  "6": [
+   "the office doorway",
+   "the President from the first reference sheet (a fictional East Asian American man in his late fifties, short silver-grey hair neatly combed, round tortoiseshell glasses, clean-shaven, charcoal-grey suit, white shirt, plain navy tie, small gold star pin on the lapel)",
+   "The chief of staff hands him a clipboard with a printed schedule; he takes it with a small sigh. Leave the upper right of the frame empty white for a caption."
+  ],
+  "7": [
+   "a long corridor with doors and a carpet runner",
+   "the President from the first reference sheet (a fictional East Asian American man in his late fifties, short silver-grey hair neatly combed, round tortoiseshell glasses, clean-shaven, charcoal-grey suit, white shirt, plain navy tie, small gold star pin on the lapel)",
+   "He walks down the corridor; two steps behind him walks the military aide carrying the black leather satchel. Leave the right third of the frame empty white for a caption."
+  ],
+  "8": [
+   "a meeting room with a long table",
+   "the President from the first reference sheet (a fictional East Asian American man in his late fifties, short silver-grey hair neatly combed, round tortoiseshell glasses, clean-shaven, charcoal-grey suit, white shirt, plain navy tie, small gold star pin on the lapel)",
+   "He sits at the head of the table listening; two advisers who look clearly different (an older bald white man in a brown suit, a young woman with curly red hair) present a problem."
+  ],
+  "9": [
+   "a tall window with pale curtains",
+   "the President from the first reference sheet (a fictional East Asian American man in his late fifties, short silver-grey hair neatly combed, round tortoiseshell glasses, clean-shaven, charcoal-grey suit, white shirt, plain navy tie, small gold star pin on the lapel)",
+   "He stands at the window, hands clasped behind his back, deciding; the chief of staff waits quietly by the door. Leave the upper left of the frame empty white for a caption."
+  ],
+  "10": [
+   "the large wooden desk",
+   "the President from the first reference sheet (a fictional East Asian American man in his late fifties, short silver-grey hair neatly combed, round tortoiseshell glasses, clean-shaven, charcoal-grey suit, white shirt, plain navy tie, small gold star pin on the lapel)",
+   "He signs a stack of papers with a fountain pen, a tall pile beside him. Leave the upper right of the frame empty white for a caption."
+  ],
+  "11": [
+   "an armchair by a small side table",
+   "the President from the first reference sheet (a fictional East Asian American man in his late fifties, short silver-grey hair neatly combed, round tortoiseshell glasses, clean-shaven, charcoal-grey suit, white shirt, plain navy tie, small gold star pin on the lapel)",
+   "He reads a handwritten letter; a small stack of envelopes on the table beside him. Leave the upper right of the frame empty white for a caption."
+  ],
+  "12": [
+   "the large wooden desk",
+   "the President from the first reference sheet (a fictional East Asian American man in his late fifties, short silver-grey hair neatly combed, round tortoiseshell glasses, clean-shaven, charcoal-grey suit, white shirt, plain navy tie, small gold star pin on the lapel)",
+   "Lunch at the desk: he eats half a sandwich from a plate with one hand while reading a paper in the other, in a hurry. Leave the upper right of the frame empty white for a caption."
+  ],
+  "13": [
+   "the side of a long black car with the rear door open",
+   "the President from the first reference sheet (a fictional East Asian American man in his late fifties, short silver-grey hair neatly combed, round tortoiseshell glasses, clean-shaven, charcoal-grey suit, white shirt, plain navy tie, small gold star pin on the lapel)",
+   "The Secret Service agent holds the rear door open; the President gets into the back seat. Leave the upper right of the frame empty white for a caption."
+  ],
+  "14": [
+   "the inside of a car: the rear side window, the back of a front seat",
+   "the President from the first reference sheet (a fictional East Asian American man in his late fifties, short silver-grey hair neatly combed, round tortoiseshell glasses, clean-shaven, charcoal-grey suit, white shirt, plain navy tie, small gold star pin on the lapel)",
+   "He sits in the back seat looking out of the closed window at a small coffee shop with a short line of people outside."
+  ],
+  "15": [
+   "a pavement and the side of a long black car",
+   "the President from the first reference sheet (a fictional East Asian American man in his late fifties, short silver-grey hair neatly combed, round tortoiseshell glasses, clean-shaven, charcoal-grey suit, white shirt, plain navy tie, small gold star pin on the lapel)",
+   "The Secret Service agent walks one step beside him, calm, touching her earpiece; the President walks toward an entrance. Leave the upper left of the frame empty white for a caption."
+  ],
+  "16": [
+   "a low rope barrier at an outdoor event",
+   "the President from the first reference sheet (a fictional East Asian American man in his late fifties, short silver-grey hair neatly combed, round tortoiseshell glasses, clean-shaven, charcoal-grey suit, white shirt, plain navy tie, small gold star pin on the lapel)",
+   "He leans over the rope barrier shaking hands with a row of smiling people who all look different from him and each other (an old man in a cap, a young Black woman, a teenage boy)."
+  ],
+  "17": [
+   "a cosy sitting room with a lamp",
+   "the President from the first reference sheet (a fictional East Asian American man in his late fifties, short silver-grey hair neatly combed, round tortoiseshell glasses, clean-shaven, charcoal-grey suit, white shirt, plain navy tie, small gold star pin on the lapel)",
+   "Evening: his wife hands him a cup of tea and asks him something, waiting for his answer; he smiles tiredly. Leave the upper left of the frame empty white for a caption."
+  ],
+  "18": [
+   "nothing, pure white",
+   "the President from the first reference sheet (a fictional East Asian American man in his late fifties, short silver-grey hair neatly combed, round tortoiseshell glasses, clean-shaven, charcoal-grey suit, white shirt, plain navy tie, small gold star pin on the lapel)",
+   "He stands on the left; on the right two simple hourglass icons drawn in thin line, the right one with clearly less sand left. Leave the top area above the hourglasses of the frame empty white for a caption."
+  ],
+  "19": [
+   "a bathroom mirror with a simple frame",
+   "the President from the first reference sheet (a fictional East Asian American man in his late fifties, short silver-grey hair neatly combed, round tortoiseshell glasses, clean-shaven, charcoal-grey suit, white shirt, plain navy tie, small gold star pin on the lapel)",
+   "He looks at himself in the mirror touching his short silver-grey hair at the temple, a wry half smile. Leave the upper right of the frame empty white for a caption."
+  ],
+  "20": [
+   "a window with a dark night sky and a small moon",
+   "the President from the first reference sheet (a fictional East Asian American man in his late fifties, short silver-grey hair neatly combed, round tortoiseshell glasses, clean-shaven, charcoal-grey suit, white shirt, plain navy tie, small gold star pin on the lapel)",
+   "Night: he sits at the desk under a lamp with a pile of papers, holding a plain paper pay envelope, looking at it with mild irony. Leave the upper left of the frame empty white for a caption."
+  ],
+  "21": [
+   "a small dining table in a private kitchen",
+   "the President from the first reference sheet (a fictional East Asian American man in his late fifties, short silver-grey hair neatly combed, round tortoiseshell glasses, clean-shaven, charcoal-grey suit, white shirt, plain navy tie, small gold star pin on the lapel)",
+   "He reads a long itemised paper bill that lies on a plate, one eyebrow raised; a sandwich on a second plate. Leave the upper right of the frame empty white for a caption."
+  ],
+  "22": [
+   "a small private dining table with a lamp",
+   "the President from the first reference sheet (fictional East Asian American man in his late fifties, short silver-grey hair, round tortoiseshell glasses, clean-shaven), here in a grey cardigan over dark blue striped pyjamas",
+   "Dinner with his wife: she steals a fry from his plate, both laughing."
+  ],
+  "23": [
+   "an armchair, a floor lamp",
+   "the President from the first reference sheet (fictional East Asian American man in his late fifties, short silver-grey hair, round tortoiseshell glasses, clean-shaven), here in a grey cardigan over dark blue striped pyjamas",
+   "He reads a thick binder on his lap in the armchair, holding the chipped white mug with a faded red stripe, now with tea. Leave the upper right of the frame empty white for a caption."
+  ],
+  "24": [
+   "the desk at night, a desk lamp",
+   "the President from the first reference sheet (fictional East Asian American man in his late fifties, short silver-grey hair, round tortoiseshell glasses, clean-shaven), here in a grey cardigan over dark blue striped pyjamas",
+   "He stands holding a telephone receiver to his ear, serious and focused, the binder open on the desk. Leave the upper left of the frame empty white for a caption."
+  ],
+  "25": [
+   "the tall window with deep blue night glass and cream curtains",
+   "the President from the first reference sheet (fictional East Asian American man in his late fifties, short silver-grey hair, round tortoiseshell glasses, clean-shaven), here in a grey cardigan over dark blue striped pyjamas",
+   "Late night, seen from behind: he stands at the window; far below a tiny figure in a dark coat still stands on the lawn. Leave the upper left of the frame empty white for a caption."
+  ],
+  "26": [
+   "the large wooden desk",
+   "the President from the first reference sheet (a fictional East Asian American man in his late fifties, short silver-grey hair neatly combed, round tortoiseshell glasses, clean-shaven, charcoal-grey suit, white shirt, plain navy tie, small gold star pin on the lapel)",
+   "He writes a reply by hand on a card; beside it an open letter with a child's crayon drawing of a small dog. Leave the upper right of the frame empty white for a caption."
+  ],
+  "27": [
+   "a small river and a road bridge with repair scaffolding",
+   null,
+   "Two construction workers in orange vests finish repairing a small bridge while a family car drives across. No President in this shot. Leave the upper left of the frame empty white for a caption."
+  ],
+  "28": [
+   "the stately office, empty desk, tall window",
+   "the President from the first reference sheet (a fictional East Asian American man in his late fifties, short silver-grey hair neatly combed, round tortoiseshell glasses, clean-shaven, charcoal-grey suit, white shirt, plain navy tie, small gold star pin on the lapel)",
+   "He walks toward the door carrying only the chipped white mug, glancing back at the empty desk. Leave the upper right of the frame empty white for a caption."
+  ],
+  "29": [
+   "the front of a small coffee shop with a line of people",
+   "the President from the first reference sheet (fictional East Asian American man in his late fifties, short silver-grey hair, round tortoiseshell glasses, clean-shaven), years later and retired, in a casual camel coat over a blue sweater, no suit, no tie",
+   "Years later: he stands happily in the line outside the coffee shop among ordinary people who look different from him, smiling. Leave the upper left of the frame empty white for a caption."
+  ],
+  "30": [
+   "the tall window at dawn with soft orange light, cream curtains",
+   "the President from the first reference sheet (a fictional East Asian American man in his late fifties, short silver-grey hair neatly combed, round tortoiseshell glasses, clean-shaven, charcoal-grey suit, white shirt, plain navy tie, small gold star pin on the lapel)",
+   "Dawn: he stands at the window with the leather folder under his arm and the chipped mug in his hand, ready for the day. Leave the upper left of the frame empty white for a caption."
+  ]
+ }
+}

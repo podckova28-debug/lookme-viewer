@@ -9,6 +9,7 @@ FONT = os.path.join(os.path.dirname(E), "pilot", "fonts", "PatrickHand.ttf")
 plan = json.load(open(os.path.join(E, "plan.json")))
 texts = json.load(open(os.path.join(E, "blocks.json")))
 labels = plan["labels"]; blocks = plan["blocks"]
+TEMPO = plan.get("tempo", TEMPO)  # paid ElevenLabs voice is sped up 1.1x; the free OmniVoice clone is generated at its final pace (tempo 1.0)
 assert len(blocks) == len(texts), (len(blocks), len(texts))
 NAME = sys.argv[1] if len(sys.argv) > 1 else "episode"
 def draw_arrow(d, a, b, width, k=1):
