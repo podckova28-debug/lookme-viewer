@@ -25,7 +25,7 @@ Duration 399.2s, 200 sampled frames, 26 checks, 0 FAIL
 | first/last frame pairs are animatable (same composition) | PASS | 3 pairs ok |
 | clip anomaly hints (morph / phantom / multiplication) | PASS | none |
 | clocks agree with the script | PASS | all readable clocks match |
-| isolated black marks (possible baked-in arrows/symbols) | WARN | F19: 1 at [(0.21, 0.17, 0.29, 0.22)] (the knife icon, checked by eye) |
+| isolated black marks (possible baked-in arrows/symbols) | WARN | F19: 1 at [(np.float64(0.21), np.float64(0.17), np.float64(0.29), np.float64(0.22))] |
 | loudness around -16 LUFS | PASS | -16.3 LUFS |
 | no silence gaps > 2.5s | PASS | 0 gaps |
 | thumbnails 1280x720 jpg < 2MB | PASS | 2 thumbnails |

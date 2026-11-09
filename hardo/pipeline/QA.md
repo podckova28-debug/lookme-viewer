@@ -1,6 +1,6 @@
-# QA mechanism (three tiers)
+# QA mechanism (four tiers)
 
-Every episode goes through all three before anything is uploaded. Nothing ships with a FAIL; every WARN is looked at on the review sheets.
+Every episode goes through all four before anything is uploaded. Nothing ships with a FAIL; every WARN is looked at on the review sheets; the blind checker must say "ship" on the final sheets.
 
 ## Tier 1: `qa_check.py <episode_dir> --name <basename>` (26 automatic checks, exit 1 on FAIL)
 Container and sync (1080p30, AAC, video = audio, narration not clipped, faststart), SRT (count, order, text = script),
@@ -16,6 +16,12 @@ Writes `out/review/`: every label cropped at 2x from the finished video, every c
 every detected clock cropped with detector reading vs script, every scene numbered with its narration line, plus `CHECKLIST.md`.
 The reviewer answers the checklist per sheet. This is what catches extra limbs, duplicated objects and "second hero" frames: pixel heuristics cannot
 separate a mutation from legitimate motion (kids running in, lamps switching on), so this pass stays mandatory.
+
+## Tier 2b: blind checker (`qa_blind_review.md`)
+A fresh subagent that has not seen the episode reads `out/review/` with the prompt in `qa_blind_review.md` and reports per sheet
+(arms/hands per person in every scene, counts per clip cell, labels, clocks, smudges) with a verdict: ship / fix by editing / regenerate.
+Reason: ep4 F34 shipped with three arms on two characters after an author pass and 26 green checks; pixel metrics cannot see limbs,
+and the author is anchored on their own frames. After every fix: rebuild, regenerate the sheets, run the checker again.
 
 ## Tier 3: `qa_semantic.py frames|clips <episode_dir>` (vision model, optional)
 Asks a Claude vision model narrow JSON questions per frame (hero count, other people, extra limbs, arrows/text, clock times, style) and per clip (hands/heads/objects per sample).
