@@ -1,0 +1,95 @@
+{
+ "project": "../winter",
+ "video": "../winter/winter_1080p.mp4",
+ "overlays": 48,
+ "plan_total": 456.33,
+ "stats": {
+  "duration": 456.33,
+  "lufs": -15.3,
+  "peak": -1.2
+ },
+ "issues": [
+  {
+   "level": "fail",
+   "code": "face",
+   "t": 86.0,
+   "what": "chapter@B1",
+   "shot": "KB1",
+   "cover": 0.663594470046083,
+   "image": "face_chapter_B1_86.jpg",
+   "msg": "chapter@B1 86.0 с (план KB1): закрывает 66 % головы"
+  },
+  {
+   "level": "review",
+   "code": "face",
+   "t": 177.8,
+   "what": "chapter@D1",
+   "shot": "KD1",
+   "cover": 0.28,
+   "image": "face_chapter_D1_178.jpg",
+   "msg": "chapter@D1 177.8 с (план KD1): закрывает 28 % головы"
+  },
+  {
+   "level": "review",
+   "code": "face",
+   "t": 388.7,
+   "what": "chapter@H1",
+   "shot": "KH1",
+   "cover": 0.23945428187728457,
+   "image": "face_chapter_H1_389.jpg",
+   "msg": "chapter@H1 388.7 с (план KH1): закрывает 24 % головы"
+  },
+  {
+   "level": "review",
+   "code": "face",
+   "t": 190.7,
+   "what": "caption@D3",
+   "shot": "KD2",
+   "cover": 0.1199337808417997,
+   "image": "face_caption_D3_191.jpg",
+   "msg": "caption@D3 190.7 с (план KD2): закрывает 12 % головы"
+  },
+  {
+   "level": "review",
+   "code": "edge",
+   "t": 65.5,
+   "what": "stamp@A5",
+   "image": "edge_stamp_A5_66.jpg",
+   "msg": "stamp@A5 65.5 с: плашка упирается в край кадра (обрезана?)"
+  },
+  {
+   "level": "review",
+   "code": "edge",
+   "t": 119.2,
+   "what": "stamp@B6",
+   "image": "edge_stamp_B6_119.jpg",
+   "msg": "stamp@B6 119.2 с: плашка упирается в край кадра (обрезана?)"
+  },
+  {
+   "level": "fail",
+   "code": "face",
+   "t": 208.1,
+   "what": "stamp@D6",
+   "shot": "KD4",
+   "cover": 0.35916178815672595,
+   "image": "face_stamp_D6_208.jpg",
+   "msg": "stamp@D6 208.1 с (план KD4): закрывает 36 % головы"
+  },
+  {
+   "level": "review",
+   "code": "edge",
+   "t": 262.9,
+   "what": "stamp@E4",
+   "image": "edge_stamp_E4_263.jpg",
+   "msg": "stamp@E4 262.9 с: плашка упирается в край кадра (обрезана?)"
+  },
+  {
+   "level": "review",
+   "code": "edge",
+   "t": 336.9,
+   "what": "stamp@F5",
+   "image": "edge_stamp_F5_337.jpg",
+   "msg": "stamp@F5 336.9 с: плашка упирается в край кадра (обрезана?)"
+  }
+ ]
+}

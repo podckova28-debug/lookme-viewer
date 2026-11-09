@@ -1,0 +1,617 @@
+{
+ "frames": {
+  "china_F00": {
+   "cast": [
+    "mikhalych"
+   ],
+   "hands": 2,
+   "issues": []
+  },
+  "china_KA1": {
+   "cast": [
+    "mikhalych"
+   ],
+   "hands": 1,
+   "issues": []
+  },
+  "china_KA2": {
+   "cast": [
+    "other"
+   ],
+   "hands": 17,
+   "issues": []
+  },
+  "china_KA3": {
+   "cast": [
+    "other"
+   ],
+   "hands": 1,
+   "issues": []
+  },
+  "china_KA4": {
+   "cast": [
+    "mikhalych"
+   ],
+   "hands": 2,
+   "issues": []
+  },
+  "china_KB1": {
+   "cast": [
+    "other"
+   ],
+   "hands": 0,
+   "issues": []
+  },
+  "china_KB2": {
+   "cast": [
+    "mikhalych"
+   ],
+   "hands": 2,
+   "issues": []
+  },
+  "china_KB3": {
+   "cast": [
+    "mikhalych",
+    "other"
+   ],
+   "hands": 3,
+   "issues": []
+  },
+  "china_KB4": {
+   "cast": [],
+   "hands": 0,
+   "issues": []
+  },
+  "china_KB5": {
+   "cast": [
+    "mikhalych"
+   ],
+   "hands": 2,
+   "issues": []
+  },
+  "china_KC1": {
+   "cast": [
+    "driver"
+   ],
+   "hands": 2,
+   "issues": []
+  },
+  "china_KC2": {
+   "cast": [
+    "driver"
+   ],
+   "hands": 2,
+   "issues": []
+  },
+  "china_KC3": {
+   "cast": [
+    "other"
+   ],
+   "hands": 0,
+   "issues": []
+  },
+  "china_KC4": {
+   "cast": [
+    "driver"
+   ],
+   "hands": 2,
+   "issues": []
+  },
+  "china_KD1": {
+   "cast": [
+    "mikhalych"
+   ],
+   "hands": 1,
+   "issues": []
+  },
+  "china_KD2": {
+   "cast": [
+    "mikhalych"
+   ],
+   "hands": 1,
+   "issues": []
+  },
+  "china_KD3": {
+   "cast": [
+    "mikhalych"
+   ],
+   "hands": 2,
+   "issues": []
+  },
+  "china_KD4": {
+   "cast": [
+    "mikhalych"
+   ],
+   "hands": 2,
+   "issues": []
+  },
+  "china_KD5": {
+   "cast": [],
+   "hands": 0,
+   "issues": []
+  },
+  "china_KD6": {
+   "cast": [
+    "mikhalych"
+   ],
+   "hands": 2,
+   "issues": []
+  },
+  "china_KE1": {
+   "cast": [
+    "mikhalych"
+   ],
+   "hands": 4,
+   "issues": []
+  },
+  "china_KE2": {
+   "cast": [
+    "mikhalych"
+   ],
+   "hands": 1,
+   "issues": []
+  },
+  "china_KE3": {
+   "cast": [
+    "mikhalych",
+    "other"
+   ],
+   "hands": 5,
+   "issues": [
+    {
+     "level": "review",
+     "code": "hands",
+     "msg": "рук 5 на 2 чел. — проверить лишнюю руку"
+    }
+   ]
+  },
+  "china_KF1": {
+   "cast": [
+    "mikhalych"
+   ],
+   "hands": 2,
+   "issues": []
+  },
+  "china_KF2": {
+   "cast": [
+    "mikhalych"
+   ],
+   "hands": 3,
+   "issues": [
+    {
+     "level": "review",
+     "code": "hands",
+     "msg": "рук 3 на 1 чел. — проверить лишнюю руку"
+    }
+   ]
+  },
+  "china_KF3": {
+   "cast": [
+    "mikhalych",
+    "other"
+   ],
+   "hands": 3,
+   "issues": []
+  },
+  "china_KG1": {
+   "cast": [
+    "driver",
+    "mikhalych"
+   ],
+   "hands": 3,
+   "issues": []
+  },
+  "china_KG4": {
+   "cast": [
+    "mikhalych"
+   ],
+   "hands": 2,
+   "issues": []
+  },
+  "china_KI1": {
+   "cast": [
+    "mikhalych"
+   ],
+   "hands": 2,
+   "issues": []
+  },
+  "china_KI2": {
+   "cast": [
+    "mikhalych"
+   ],
+   "hands": 2,
+   "issues": []
+  },
+  "china_KI3": {
+   "cast": [
+    "mikhalych"
+   ],
+   "hands": 1,
+   "issues": []
+  },
+  "china_KZ": {
+   "cast": [
+    "mikhalych"
+   ],
+   "hands": 2,
+   "issues": []
+  },
+  "sovhacks_K02": {
+   "cast": [
+    "mikhalych"
+   ],
+   "hands": 1,
+   "issues": []
+  },
+  "sovhacks_K03": {
+   "cast": [],
+   "hands": 0,
+   "issues": []
+  },
+  "sovhacks_K04": {
+   "cast": [],
+   "hands": 0,
+   "issues": []
+  },
+  "sovhacks_K05": {
+   "cast": [
+    "mikhalych"
+   ],
+   "hands": 2,
+   "issues": []
+  },
+  "sovhacks_K06": {
+   "cast": [
+    "other"
+   ],
+   "hands": 1,
+   "issues": []
+  },
+  "sovhacks_K07": {
+   "cast": [],
+   "hands": 0,
+   "issues": []
+  },
+  "sovhacks_K08": {
+   "cast": [
+    "mikhalych"
+   ],
+   "hands": 2,
+   "issues": []
+  },
+  "sovhacks_K09": {
+   "cast": [
+    "other"
+   ],
+   "hands": 2,
+   "issues": []
+  },
+  "sovhacks_K10": {
+   "cast": [],
+   "hands": 1,
+   "issues": []
+  },
+  "sovhacks_K11": {
+   "cast": [],
+   "hands": 0,
+   "issues": []
+  },
+  "sovhacks_K12": {
+   "cast": [
+    "mikhalych"
+   ],
+   "hands": 2,
+   "issues": []
+  },
+  "sovhacks_K13": {
+   "cast": [
+    "mikhalych"
+   ],
+   "hands": 1,
+   "issues": []
+  },
+  "sovhacks_K14": {
+   "cast": [],
+   "hands": 1,
+   "issues": []
+  },
+  "sovhacks_K15": {
+   "cast": [],
+   "hands": 0,
+   "issues": []
+  },
+  "sovhacks_K16": {
+   "cast": [
+    "mikhalych",
+    "other"
+   ],
+   "hands": 3,
+   "issues": []
+  },
+  "sovhacks_K17": {
+   "cast": [
+    "mikhalych"
+   ],
+   "hands": 2,
+   "issues": []
+  },
+  "sovhacks_K18": {
+   "cast": [
+    "other"
+   ],
+   "hands": 3,
+   "issues": [
+    {
+     "level": "review",
+     "code": "hands",
+     "msg": "рук 3 на 1 чел. — проверить лишнюю руку"
+    }
+   ]
+  },
+  "sovhacks_K19": {
+   "cast": [],
+   "hands": 0,
+   "issues": []
+  },
+  "sovhacks_K20": {
+   "cast": [],
+   "hands": 0,
+   "issues": []
+  },
+  "sovhacks_K21": {
+   "cast": [
+    "mikhalych"
+   ],
+   "hands": 2,
+   "issues": []
+  },
+  "sovhacks_K22": {
+   "cast": [
+    "other"
+   ],
+   "hands": 2,
+   "issues": []
+  },
+  "sovhacks_K23": {
+   "cast": [
+    "mikhalych",
+    "other"
+   ],
+   "hands": 2,
+   "issues": []
+  },
+  "sovhacks_K24": {
+   "cast": [],
+   "hands": 0,
+   "issues": []
+  },
+  "sovhacks_K25": {
+   "cast": [
+    "driver"
+   ],
+   "hands": 2,
+   "issues": []
+  },
+  "sovhacks_K26": {
+   "cast": [
+    "driver"
+   ],
+   "hands": 1,
+   "issues": []
+  },
+  "sovhacks_K27": {
+   "cast": [],
+   "hands": 0,
+   "issues": []
+  },
+  "sovhacks_K28": {
+   "cast": [],
+   "hands": 0,
+   "issues": []
+  },
+  "sovhacks_K29": {
+   "cast": [
+    "other"
+   ],
+   "hands": 2,
+   "issues": []
+  },
+  "sovhacks_K30": {
+   "cast": [
+    "other"
+   ],
+   "hands": 1,
+   "issues": []
+  },
+  "sovhacks_K31": {
+   "cast": [
+    "other"
+   ],
+   "hands": 1,
+   "issues": []
+  },
+  "sovhacks_K32": {
+   "cast": [],
+   "hands": 0,
+   "issues": []
+  },
+  "sovhacks_K33": {
+   "cast": [
+    "mikhalych"
+   ],
+   "hands": 2,
+   "issues": []
+  },
+  "sovhacks_K34": {
+   "cast": [
+    "driver"
+   ],
+   "hands": 2,
+   "issues": []
+  },
+  "sovhacks_K35": {
+   "cast": [],
+   "hands": 2,
+   "issues": []
+  },
+  "sovhacks_K36": {
+   "cast": [
+    "mikhalych"
+   ],
+   "hands": 2,
+   "issues": []
+  },
+  "sovhacks_K37": {
+   "cast": [],
+   "hands": 0,
+   "issues": []
+  },
+  "sovhacks_K38": {
+   "cast": [],
+   "hands": 1,
+   "issues": []
+  },
+  "sovhacks_K39": {
+   "cast": [],
+   "hands": 0,
+   "issues": []
+  },
+  "sovhacks_K40": {
+   "cast": [
+    "mikhalych"
+   ],
+   "hands": 2,
+   "issues": []
+  },
+  "sovhacks_K41": {
+   "cast": [
+    "mikhalych"
+   ],
+   "hands": 2,
+   "issues": []
+  },
+  "sovhacks_K42": {
+   "cast": [
+    "mikhalych",
+    "other"
+   ],
+   "hands": 2,
+   "issues": []
+  },
+  "sovhacks_K44": {
+   "cast": [
+    "driver",
+    "other"
+   ],
+   "hands": 2,
+   "issues": []
+  },
+  "sovhacks_K45": {
+   "cast": [
+    "mikhalych"
+   ],
+   "hands": 2,
+   "issues": []
+  },
+  "sovhacks_K47": {
+   "cast": [],
+   "hands": 0,
+   "issues": []
+  },
+  "sovhacks_K48": {
+   "cast": [],
+   "hands": 0,
+   "issues": []
+  },
+  "sovhacks_S1": {
+   "cast": [],
+   "hands": 0,
+   "issues": []
+  },
+  "sovhacks_S1c": {
+   "cast": [],
+   "hands": 0,
+   "issues": []
+  },
+  "sovhacks_S2": {
+   "cast": [
+    "other"
+   ],
+   "hands": 0,
+   "issues": []
+  },
+  "sovhacks_S2c": {
+   "cast": [
+    "mikhalych"
+   ],
+   "hands": 0,
+   "issues": []
+  },
+  "sovhacks_S3": {
+   "cast": [],
+   "hands": 0,
+   "issues": []
+  },
+  "sovhacks_S3c": {
+   "cast": [],
+   "hands": 1,
+   "issues": []
+  },
+  "sovhacks_S4": {
+   "cast": [
+    "mikhalych"
+   ],
+   "hands": 2,
+   "issues": []
+  },
+  "sovhacks_S4b": {
+   "cast": [
+    "mikhalych"
+   ],
+   "hands": 2,
+   "issues": []
+  },
+  "sovhacks_S4n": {
+   "cast": [
+    "mikhalych"
+   ],
+   "hands": 2,
+   "issues": []
+  },
+  "sovhacks_S4o": {
+   "cast": [
+    "mikhalych"
+   ],
+   "hands": 2,
+   "issues": []
+  },
+  "whatif_KA3": {
+   "cast": [
+    "other"
+   ],
+   "hands": 1,
+   "issues": []
+  },
+  "whatif_KB3": {
+   "cast": [
+    "mikhalych"
+   ],
+   "hands": 2,
+   "issues": []
+  },
+  "whatif_KG1": {
+   "cast": [
+    "mikhalych"
+   ],
+   "hands": 3,
+   "issues": [
+    {
+     "level": "review",
+     "code": "hands",
+     "msg": "рук 3 на 1 чел. — проверить лишнюю руку"
+    }
+   ]
+  }
+ },
+ "clips": {}
+}
