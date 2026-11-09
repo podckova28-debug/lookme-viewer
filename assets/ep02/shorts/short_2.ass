@@ -1,0 +1,28 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Kicker,Comic Neue,46,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,1,0,0,0,100,100,1,0,1,4,0,8,60,60,280,1
+Style: Title,Bangers,118,&H0000E1FF,&H0000E1FF,&H00000000,&H90000000,0,0,0,0,100,100,3,0,1,9,5,8,50,50,350,1
+Style: Cap,Bangers,96,&H00FFFFFF,&H00FFFFFF,&H00000000,&H90000000,0,0,0,0,100,100,2,0,1,8,4,8,80,80,1310,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:27.30,Kicker,,0,0,0,,What If You Woke Up As... · Ep 2
+Dialogue: 1,0:00:00.00,0:00:27.30,Title,,0,0,0,,ROAD RAGE,\NBUT YOU'RE THE HULK
+Dialogue: 0,0:00:00.56,0:00:01.20,Cap,,0,0,0,,{\fad(40,40)}TRAFFIC.
+Dialogue: 0,0:00:09.36,0:00:10.68,Cap,,0,0,0,,{\fad(40,40)}BREATHE IN FOR FOUR,
+Dialogue: 0,0:00:10.88,0:00:12.00,Cap,,0,0,0,,{\fad(40,40)}OUT FOR FOUR.
+Dialogue: 0,0:00:14.16,0:00:14.62,Cap,,0,0,0,,{\fad(40,40)}YOU ARE CARRYING
+Dialogue: 0,0:00:14.62,0:00:15.44,Cap,,0,0,0,,{\fad(40,40)}YOUR CAR,
+Dialogue: 0,0:00:15.46,0:00:15.94,Cap,,0,0,0,,{\fad(40,40)}THAT'S ONE WAY
+Dialogue: 0,0:00:15.94,0:00:16.78,Cap,,0,0,0,,{\fad(40,40)}TO BEAT TRAFFIC.
+Dialogue: 0,0:00:22.78,0:00:23.52,Cap,,0,0,0,,{\fad(40,40)}THE GUY WHO HONKED
+Dialogue: 0,0:00:23.52,0:00:24.40,Cap,,0,0,0,,{\fad(40,40)}AT YOU OFFERED YOU
+Dialogue: 0,0:00:24.40,0:00:25.12,Cap,,0,0,0,,{\fad(40,40)}A RIDE.
+Dialogue: 0,0:00:25.34,0:00:25.92,Cap,,0,0,0,,{\fad(40,40)}HE DID NOT WANT
+Dialogue: 0,0:00:25.92,0:00:26.80,Cap,,0,0,0,,{\fad(40,40)}TO FIND OUT.

@@ -1,0 +1,31 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Kicker,Comic Neue,46,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,1,0,0,0,100,100,1,0,1,4,0,8,60,60,280,1
+Style: Title,Bangers,118,&H0000E1FF,&H0000E1FF,&H00000000,&H90000000,0,0,0,0,100,100,3,0,1,9,5,8,50,50,350,1
+Style: Cap,Bangers,96,&H00FFFFFF,&H00FFFFFF,&H00000000,&H90000000,0,0,0,0,100,100,2,0,1,8,4,8,80,80,1310,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:23.95,Kicker,,0,0,0,,What If You Woke Up As... · Ep 2
+Dialogue: 1,0:00:00.00,0:00:23.95,Title,,0,0,0,,YOU STUBBED YOUR TOE.\NNOW THERE'S NO BED.
+Dialogue: 0,0:00:00.35,0:00:01.03,Cap,,0,0,0,,{\fad(40,40)}TODAY YOU WOKE UP
+Dialogue: 0,0:00:01.03,0:00:01.83,Cap,,0,0,0,,{\fad(40,40)}AS THE HULK.
+Dialogue: 0,0:00:02.21,0:00:03.03,Cap,,0,0,0,,{\fad(40,40)}YOU KNOW THIS BECAUSE
+Dialogue: 0,0:00:03.03,0:00:04.39,Cap,,0,0,0,,{\fad(40,40)}YOU STUBBED YOUR TOE.
+Dialogue: 0,0:00:06.35,0:00:06.83,Cap,,0,0,0,,{\fad(40,40)}AND NOW THERE
+Dialogue: 0,0:00:06.83,0:00:07.81,Cap,,0,0,0,,{\fad(40,40)}IS NO BED.
+Dialogue: 0,0:00:08.76,0:00:09.50,Cap,,0,0,0,,{\fad(40,40)}IT LASTS ABOUT
+Dialogue: 0,0:00:09.50,0:00:10.50,Cap,,0,0,0,,{\fad(40,40)}TEN SECONDS.
+Dialogue: 0,0:00:11.02,0:00:11.50,Cap,,0,0,0,,{\fad(40,40)}THE BED DOES
+Dialogue: 0,0:00:11.50,0:00:12.52,Cap,,0,0,0,,{\fad(40,40)}NOT COME BACK.
+Dialogue: 0,0:00:16.14,0:00:17.42,Cap,,0,0,0,,{\fad(40,40)}YOU BURNED THE TOAST.
+Dialogue: 0,0:00:18.00,0:00:18.78,Cap,,0,0,0,,{\fad(40,40)}THE TOASTER PAID
+Dialogue: 0,0:00:18.78,0:00:19.58,Cap,,0,0,0,,{\fad(40,40)}FOR IT.
+Dialogue: 0,0:00:20.14,0:00:21.38,Cap,,0,0,0,,{\fad(40,40)}THIS IS DAVE.
+Dialogue: 0,0:00:22.48,0:00:23.46,Cap,,0,0,0,,{\fad(40,40)}DAVE IS NOT SURPRISED.

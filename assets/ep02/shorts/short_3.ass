@@ -1,0 +1,31 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Kicker,Comic Neue,46,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,1,0,0,0,100,100,1,0,1,4,0,8,60,60,280,1
+Style: Title,Bangers,118,&H0000E1FF,&H0000E1FF,&H00000000,&H90000000,0,0,0,0,100,100,3,0,1,9,5,8,50,50,350,1
+Style: Cap,Bangers,96,&H00FFFFFF,&H00FFFFFF,&H00000000,&H90000000,0,0,0,0,100,100,2,0,1,8,4,8,80,80,1310,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:37.40,Kicker,,0,0,0,,What If You Woke Up As... · Ep 2
+Dialogue: 1,0:00:00.00,0:00:37.40,Title,,0,0,0,,TOO CALM TO HULK OUT?\NDAVE HAS A TRICK
+Dialogue: 0,0:00:00.34,0:00:01.14,Cap,,0,0,0,,{\fad(40,40)}THEN THE OAK
+Dialogue: 0,0:00:01.14,0:00:02.14,Cap,,0,0,0,,{\fad(40,40)}TREE DECIDED TO
+Dialogue: 0,0:00:02.14,0:00:03.12,Cap,,0,0,0,,{\fad(40,40)}JOIN THE WEDDING.
+Dialogue: 0,0:00:03.83,0:00:04.67,Cap,,0,0,0,,{\fad(40,40)}TO GET BIG,
+Dialogue: 0,0:00:04.83,0:00:05.29,Cap,,0,0,0,,{\fad(40,40)}YOU HAVE TO
+Dialogue: 0,0:00:05.29,0:00:06.05,Cap,,0,0,0,,{\fad(40,40)}GET ANGRY.
+Dialogue: 0,0:00:06.27,0:00:07.13,Cap,,0,0,0,,{\fad(40,40)}YOU CAN'T.
+Dialogue: 0,0:00:07.23,0:00:08.25,Cap,,0,0,0,,{\fad(40,40)}YOU'RE TOO CALM.
+Dialogue: 0,0:00:08.67,0:00:09.49,Cap,,0,0,0,,{\fad(40,40)}DAVE KNOWS EXACTLY
+Dialogue: 0,0:00:09.49,0:00:10.71,Cap,,0,0,0,,{\fad(40,40)}WHAT TO DO.
+Dialogue: 0,0:00:26.97,0:00:28.69,Cap,,0,0,0,,{\fad(40,40)}NOBODY HUGS THE HULK.
+Dialogue: 0,0:00:29.43,0:00:30.63,Cap,,0,0,0,,{\fad(40,40)}EXCEPT FAMILY.
+Dialogue: 0,0:00:33.17,0:00:34.77,Cap,,0,0,0,,{\fad(40,40)}BEST TOAST OF
+Dialogue: 0,0:00:34.77,0:00:35.53,Cap,,0,0,0,,{\fad(40,40)}THE YEAR.
+Dialogue: 0,0:00:36.05,0:00:37.23,Cap,,0,0,0,,{\fad(40,40)}NO WORDS.
