@@ -1,8 +1,12 @@
 # lookme-viewer: все проекты в одной ветке
 
-Эта ветка собирает работу из нескольких чатов Claude Code, которые раньше жили
-в отдельных ветках одного и того же репозитория. Каждый проект лежит в своей
-папке, история коммитов исходных веток сохранена целиком.
+Эта ветка собирает работу закреплённых чатов Claude Code (Hardo, What if,
+Маньяки, Михалыч), которые раньше жили в отдельных ветках одного и того же
+репозитория. Каждый проект лежит в своей папке, история коммитов исходных
+веток сохранена целиком. Проекты незакреплённых чатов (shorts-scout, Мерлиоша,
+Mosquito, финплан) остаются в своих ветках `claude/brave-curie-px76bq`,
+`claude/sharp-feynman-3aqsal`, `claude/magical-hopper-9ofehu`,
+`claude/dazzling-feynman-b1p9dv` и в эту сборку не входят.
 
 Собрано 9 ноября 2026. Ветка: `claude/clever-keller-n0ul3i`.
 
@@ -13,12 +17,8 @@
 | `what-if/` | Серия «Сегодня ты проснулся…»: ситком про обычного парня, который каждый выпуск просыпается с силами другого супергероя (Человек-паук, Халк, Флэш, Супермен) | **What if** (закреплён) | `claude/compassionate-thompson-rzoaqf` |
 | `delo-zakryto/` | True-crime канал «Дело закрыто» и его английская версия How They Got Caught: шортсы и длинные ролики по делам маньяков | **Маньяки** (закреплён) | `claude/hopeful-ride-rshyq5` |
 | `mikhalych/` | Канал «Гараж Михалыча» (старый автомеханик): исследования прецедентов и монетизации, а в `mikhalych/gastronom/` снимок производства из репозитория `gastronom` (эпизоды шортсов и длинных роликов, код монтажа, обложки, факт-чеки, инструменты озвучки) | **Михалыч** (закреплён) | `claude/inspiring-dirac-7vp5d3` (+ `gastronom`, ветка `main`, коммит 024aae2) |
-| `shorts-scout/` | Ежедневный сборщик смешных клипов для англоязычного Shorts-канала: отбор, монтаж, публикация | Приколы | `claude/brave-curie-px76bq` |
-| `merlyosha/` | Мерлиоша, маскот канала Merlion о бытовой технике: концепция, модель-лист, пилот, Shorts, бренд-кит | Мерлион | `claude/sharp-feynman-3aqsal` |
-| `yt-military/` | Безликий английский канал по военной истории; первый выпуск про бомбардировщик Mosquito (сценарий, озвучка, кадры, сборка) | ветка от 21 октября, чат не определён | `claude/magical-hopper-9ofehu` |
-| `media-business/` | План выхода на $5 000 в месяц: оценка активов, финмодель, календарь на ноябрь, юридика для резидента РФ | Стратегия заработка на YouTube и Instagram | `claude/dazzling-feynman-b1p9dv` |
-| `.claude/skills/yt-*` | Навыки для работы с YouTube (сценарий, упаковка, SEO, ретеншн и т. д.), общие для всех каналов | Приколы, Маньяки, Стикман Выживает | три ветки, содержимое совпадает |
-| `.claude/youtube/voice.*.md` | Профили голоса трёх каналов: «Дело закрыто», shorts-scout, Stickoalipse | те же чаты | см. ниже |
+| `.claude/skills/yt-*` | Навыки для работы с YouTube (сценарий, упаковка, SEO, ретеншн и т. д.) | Маньяки | `claude/hopeful-ride-rshyq5` |
+| `.claude/youtube/voice.delo-zakryto.md` | Профиль голоса канала «Дело закрыто» | Маньяки | та же |
 | `index.html`, `models/` | Исходный просмотрщик 3D-моделей, с которого начинался репозиторий | | `main` |
 
 ## Чего здесь нет
@@ -55,30 +55,14 @@ https://claude.ai/artifact/XRfVXucgXcVnVDRosPwSiZ
 эпизодов ссылаются на путь `/home/user/gastronom/...`, то есть запускаются из
 рабочей копии gastronom. Последний хаб: https://claude.ai/artifact/Xqg5hSD9n34H3dgKwjf9kb
 
-**shorts-scout.** Скрипты сбора, монтажа и публикации готовы, есть ежедневный
-GitHub Actions workflow (`.github/workflows/shorts-scout.yml`). Расписание
-Actions работает только на ветке по умолчанию, поэтому на этой ветке оно не
-запускается само.
-
-**merlyosha.** Пилот анимирован, Shorts v2, план экономии кредитов
-(`merlyosha/production/`), аватары и баннер (`merlyosha/social/`).
-
-**yt-military.** Выпуск про Mosquito собран: озвучка 11:23, кадры, сборка
-ffmpeg с подписями, заголовок и описание для YouTube.
-
-**media-business.** План версии 3.1 с учётом запрета рекламы в Instagram и
-Facebook в РФ, модель в `media-business/model.xlsx`, календарь на ноябрь.
-
 ## Как пользоваться навыками yt-*
 
 Навыки читают профиль голоса из `~/.claude/youtube/voice.md`. Перед работой
-над конкретным каналом скопируйте нужный профиль:
+над «Делом закрыто» скопируйте профиль:
 
 ```bash
 mkdir -p ~/.claude/youtube && cp .claude/youtube/voice.delo-zakryto.md ~/.claude/youtube/voice.md
 ```
-
-Варианты: `voice.delo-zakryto.md`, `voice.shorts-scout.md`, `voice.stickoalipse.md`.
 
 ## Что изменилось при объединении
 
@@ -90,5 +74,5 @@ mkdir -p ~/.claude/youtube && cp .claude/youtube/voice.delo-zakryto.md ~/.claude
   скрипты работают во внешней папке `/home/user/mk` и от расположения в
   репозитории не зависят.
 - `reports/`, `research_notes/` и снимок `gastronom/` из чата «Михалыч» перенесены в `mikhalych/`.
-- Три разных `voice.md` сохранены под именами каналов.
+- `voice.md` канала «Дело закрыто» сохранён как `voice.delo-zakryto.md`.
 - `.gitignore` объединён из всех веток.
