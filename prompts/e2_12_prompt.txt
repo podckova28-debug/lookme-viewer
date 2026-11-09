@@ -1,7 +1,15 @@
-Style: hand-drawn 2D 1990s feature animation, clean confident ink lines, soft painted cel shading, warm painted backgrounds, caricatured expressive faces. A family comedy cartoon. Continue the reference video seamlessly from its very last frame: same place, same light, same clothes. THE HERO: skinny nervous young man with messy ginger hair, thick black glasses, freckles, enormous baggy navy suit, bow tie. EMMA: bride in a white dress, ginger bun. THE GROOM: light gray suit.
-A 10-second scene of THREE hard-cut shots, hard cuts at 3.5s and 7.0s.
-SHOT 1 MEDIUM: the hero stands at the head table and taps a champagne glass with a fork, ready for his toast; guests turn to him.
-HARD CUT. SHOT 2 WIDE: a sudden gust of wind; the storm clouds roll in; the huge old oak creaks and its roots lift out of the grass.
-HARD CUT. SHOT 3 WIDE LOW ANGLE: the giant oak slowly leans over the wedding table with the cake; Emma and the groom look up in horror.
-AUDIO: a glass clink, a whoosh of wind, a deep wooden creak, gasps from the guests. No voice lines.
-NEGATIVE: dissolves, green skin, giant form, injuries, readable text, logos, photorealism, 3D render, watermark.
+Style: hand-drawn 2D 1990s feature animation, clean confident ink lines, soft painted cel shading, warm painted backgrounds with depth, caricatured expressive faces, simple limited animation on twos. A family comedy cartoon. Sunset light darkening under storm clouds.
+
+Continue the reference video seamlessly from its very last frame: the same wedding lawn, the same camera, the same people in the same places. Behind the head table: the skinny ginger hero in his oversized navy suit with one arm stretched out, Emma the ginger bride next to him, the tall bald bearded groom in a light gray suit; the huge oak leans over them and the cake; Dave (bald, full beard, round glasses, navy bathrobe, plaid pajama pants, white mug) sits in the right foreground; three guests seen from behind. Nobody else.
+
+REFERENCE IMAGES, in this order: the FIRST = the HERO (skinny ginger guy in a navy suit). The SECOND = DAVE. The THIRD = the GREEN HERO: the same man turned green and muscular, only about 2.2 m tall, same face, glasses and clothes.
+
+A 10-second scene of THREE shots, hard cuts only, no camera moves inside a shot. Nobody talks.
+
+SHOT 1 (0-4s) MEDIUM on the hero behind the table: he lowers his arm and tries very hard to get angry: he frowns, squeezes his eyes, stomps one foot, puffs out his cheeks. Nothing happens: he stays skinny, his skin stays its normal color, only his cheeks turn a little pink. He looks at his hands, disappointed. The shadow of the leaning oak slides over the table.
+SHOT 2 (4-7s) MEDIUM on Dave in his chair: calm as always, he sets his mug on the grass, takes a phone out of his bathrobe pocket, taps it once and holds it up toward the hero, screen facing away from the camera.
+SHOT 3 (7-10s) CLOSE-UP on the hero's face: he hears the tinny hold music, his left eye starts to twitch, a vein pulses on his forehead, and his skin turns green from the collar up to his ginger hair; his glasses stay on; his shoulders swell and the oversized jacket stretches tight.
+
+AUDIO: wind, a deep wooden creak, a comic stomp, a phone tap, tinny phone hold music, a low comic growl. No voice lines.
+
+NEGATIVE: red face, red mask, a full red head, extra people, people changing places, the hero walking away, a giant, shirtless, torn clothes, extra arms, extra fingers, duplicated characters, morphing faces, the oak falling down, injuries, dissolves, camera moves, readable text on the phone, logos, photorealism, 3D render, watermark.

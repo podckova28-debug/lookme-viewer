@@ -152,6 +152,14 @@ def lint(a):
             for w in fact.get('forbid', []):
                 for m in re.finditer(re.escape(w.lower()), low):
                     neg = low[max(0, m.start() - 60):m.start()]
+                    near = fact.get('near')                 # only about this character: name must be close before
+                    if near:
+                        ctx = low[max(0, m.start() - 120):m.start()]
+                        pos = lambda w: max([mm.start() for mm in re.finditer(r'\b' + re.escape(w.lower().strip()) + r'\b', ctx)] or [-1])
+                        last = {w: pos(w) for w in near + fact.get('not_near', [])}
+                        mine = max(last[w] for w in near)
+                        other = max([last[w] for w in fact.get('not_near', [])] or [-1])
+                        if mine < 0 or other > mine: continue
                     if 'negative' in low[:m.start()].split('\n')[-1] or re.search(r'\b(no|not|never|without)\b[^.]*$', neg):
                         continue
                     F.append(f'«{w}» в промте, а по истории: {fact["what"]} — {fact["state"]}')
