@@ -91,3 +91,8 @@ Prompt rule: every scene prompt names only the hero, the one object the line is 
 - Recurring characters and places in group or late scenes drift (foreman, hard hat colours, the finished building, the truck):
   pass the frame where they were introduced as an extra reference, not just the character sheet.
 - The blind checker hits an image limit after about 60 full-resolution reads: split the full-resolution pass over two checkers.
+- Arrows (ep8 owner complaint): the old placer only checked the TEXT box, so arrows crossed faces and bodies, ran across
+  the whole frame or ended on the wrong thing. Now `label_arrow.py <ep> targets.json` places every arrow label: target point
+  INSIDE the named object; text on clean white; the arrow runs over white only and its tip is the first ink it meets, which must
+  be the same drawing as the target and within 110 px of it; length 6.5–25% of the width. No clean arrow -> text without arrow.
+  Order: label_arrow.py, then label_strict.py (text-only labels). Then look at EVERY arrow frame at 672 px wide before the build.
