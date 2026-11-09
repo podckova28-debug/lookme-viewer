@@ -53,7 +53,7 @@ def place(d):
             if best is None: log.append(f"{name} '{text}': NO white spot found, keeping wish"); gx,gy,k_ink=tx,ty,-1
             else: _,gx,gy,k_ink=best
             # arrow start = centre of text box (assembler snaps it to the box edge)
-            cxs,cys=(gx*w+bb[0]+bb[2])/2/w,(gy*h+bb[1]+bb[3])/2/h
+            cxs,cys=(gx*w+(bb[0]+bb[2])/2)/w,(gy*h+(bb[1]+bb[3])/2)/h
             new.append([text,[round(float(gx),3),round(float(gy),3)],[round(float(cxs),3),round(float(cys),3)] if arrow else [round(float(gx),3),round(float(gy),3)],[round(float(bx),3),round(float(by),3)] if arrow else [round(float(gx),3),round(float(gy),3)],size]+([k] if len(lab)>5 else []))
             dr.text((gx*w,gy*h),text,font=f,fill="black")
             if arrow:
