@@ -1,0 +1,6 @@
+# Шорт «Что будет, если на ходу выключить зажигание?» — анимация кодом (cutout), 9:16, ~30 с. 2 нояб. ~19:00
+# Спрайты gpt_image_2_5 medium, реф стиля S4 2939e3b0 (облик Михалыча, который нравится пользователю)
+SPR mih_wow 0901c46c-0643-4673-a21f-d195aee9e6ca | mih_advice 6fed1361-6a45-447a-9991-e628aa9db206 | car 187f7c0e-1db4-403c-a43b-01432a33bee4 | wheel 0016d647-28b0-4ec3-b03a-769900e9c8cf
+SPR steer de029c2d-1ec4-466e-a3ad-dd6295dd50b2 | key c770dff9-5586-4c1e-8101-27f4a55183c8 | bg_road acfda01d-315f-48e9-b8ae-a4ce1823df3f | bg_dash 305395e4-8a7a-42ef-a9d6-7fa0506578c7
+VO 1 404a3077 | 2 c640919b | 3 b0eb56a6 | 4 32d12047 | 5 4dca5c16 | 6 3e3704de | 7 34db06e7 | 8 ae1db3e5
+SPR pedal 8c609355-f662-4bc2-91e0-bddeb99c1544 | VO 2b 6eec94d8 | 3b c6d4bb28 | 4b 2c417c66

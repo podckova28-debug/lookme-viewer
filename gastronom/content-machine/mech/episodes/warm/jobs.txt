@@ -1,0 +1,14 @@
+vo 1 dd0bb66e-28b5-4cfe-9c6b-ec1b8e1782d6
+vo 2 1f83e9cf-3d74-4c5a-9cff-73d81b130f56
+vo 3 87a106fc-5afb-47f7-9a65-78cdd6b3d6bf
+vo 4 1e396295-6308-47ee-b7ba-5ea1658fe701
+vo 5 317adbc9-8065-4c49-ba88-1defd1ca59c4
+vo 6 49da3d63-3cd6-4100-bd48-62c66120b9c5
+kf k1_hook 3311ebb8-97c1-4ba2-bf23-12f27ca52fb7
+kf k2_cylinder d2ec2716-5440-4c23-a705-8525ea2f06f8
+kf k3_drive 340e38bb-615a-4c53-b25d-a629363fafe6
+clip c1_hook 73edec7c-f23d-47b9-ba4b-f11a0ae16870
+clip c2_cylinder efa0ad24-3f65-4cc8-b279-6fb356746241
+clip c3_drive 7b99c49c-9003-4ab1-9d6e-1931e00ca616
+kf k3b_drive_nb2 982ba0b3-e4ea-42b6-8dce-3785b8ed03ed (исправление: водитель в окне передней двери)
+clip c3b_drive 286a3f4b-f59d-462a-a85f-ef4b57339eb3 (исправление)

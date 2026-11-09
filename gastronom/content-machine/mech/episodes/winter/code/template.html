@@ -1,0 +1,222 @@
+<title>Зимние ошибки водителей</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Oswald:wght@500;600&display=swap">
+<style>
+/* Одна колонка: обложка и кнопка скачивания сверху, ниже тексты для YouTube с кнопками «Копировать» */
+:root{
+  --bg:#eef1f5; --card:#fbfcfe; --ink:#1c2230; --ink2:#46506a; --muted:#77819a;
+  --line:#d3d9e6; --accent:#cf6a14; --accent-ink:#fffaf3; --tomato:#c4432d; --ok:#3d7d48; --field:#f0f3f8;
+  --disp:'Nunito',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --label:'Oswald','Arial Narrow',system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#11151d; --card:#191f2a; --ink:#e6eaf2; --ink2:#bac3d6; --muted:#8a94aa;
+  --line:#2b3344; --accent:#f0923a; --accent-ink:#1a1208; --tomato:#ff7d66; --ok:#8fca8a; --field:#202737; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#11151d; --card:#191f2a; --ink:#e6eaf2; --ink2:#bac3d6; --muted:#8a94aa;
+  --line:#2b3344; --accent:#f0923a; --accent-ink:#1a1208; --tomato:#ff7d66; --ok:#8fca8a; --field:#202737; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--disp);font-size:16px;line-height:1.5;margin:0}
+.wrap{max-width:760px;margin:0 auto;padding-inline:16px;padding-block:28px 56px;display:grid;gap:22px}
+header{display:grid;gap:8px}
+.eyebrow{font-family:var(--label);text-transform:uppercase;letter-spacing:.08em;font-size:13px;color:var(--muted)}
+h1{font-weight:900;font-size:clamp(26px,6vw,36px);line-height:1.12;margin:0;text-wrap:balance}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px;display:grid;gap:14px;min-width:0}
+.poster{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:14px;display:block;background:#000}
+video{width:100%;aspect-ratio:16/9;border-radius:14px;background:#000;display:block}
+.facts{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-family:var(--label);text-transform:uppercase;letter-spacing:.06em;font-size:12px;padding:2px 9px;border-radius:999px;border:1px solid var(--line);color:var(--ink2)}
+.btns{display:grid;grid-template-columns:1fr auto;gap:8px}
+.btns.one{grid-template-columns:1fr}
+.hint{margin:0;font-size:14px;color:var(--ink2)}
+.thumbs{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.thumb{display:grid;gap:8px;min-width:0}
+.thumb img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;display:block;border:1px solid var(--line)}
+.thumb-h{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.thumb-h span{font-weight:800;font-size:15px}
+.thumb-h small{display:block;font-weight:600;font-size:13px;color:var(--muted)}
+.thumb-h button{padding:7px 12px;font-size:14px;flex:none}
+@media (max-width:420px){.btns{grid-template-columns:1fr}}
+button{font:inherit;cursor:pointer;border-radius:12px;border:1px solid var(--line);background:var(--field);color:var(--ink);font-weight:800;font-size:15px;padding:12px 14px}
+button:hover{border-color:var(--accent)}
+button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+button.main{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-size:16px}
+button:disabled{opacity:.6;cursor:default}
+.bar{height:8px;border-radius:999px;background:var(--field);border:1px solid var(--line);overflow:hidden;display:none}
+.bar.on{display:block}
+.bar i{display:block;height:100%;width:0;background:var(--accent);border-radius:999px;transition:width .25s ease}
+.note{font-size:14px;color:var(--muted);min-height:1.2em;margin:0}
+.note.ok{color:var(--ok)} .note.err{color:var(--tomato)}
+.how{margin:0;padding-left:20px;display:grid;gap:4px;color:var(--ink2);font-size:14px}
+h2{font-family:var(--label);font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-size:14px;margin:0;color:var(--ink2)}
+.field{display:grid;gap:6px;min-width:0}
+.field-h{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.field-h span{font-family:var(--label);font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-size:13px;color:var(--muted)}
+.field-h button{padding:6px 12px;font-size:13px}
+pre{margin:0;white-space:pre-wrap;word-break:break-word;font-family:var(--disp);font-size:15px;line-height:1.5;background:var(--field);border:1px solid var(--line);border-radius:12px;padding:10px 12px;color:var(--ink)}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Гараж Михалыча · длинный ролик</div>
+    <h1>7 ошибок в мороз, которые губят машину</h1>
+  </header>
+
+  <section class="card" aria-label="Видео">
+    <img class="poster" id="poster" src="thumb_kettle.jpg" alt="Обложка: кипяток на лобовое стекло, трещина, Михалыч в ужасе, наклейка «Не делай так в мороз!»">
+    <div class="facts"><span class="chip">7:36</span><span class="chip">16:9 · 1080p</span><span class="chip" id="size"></span></div>
+    <div class="btns one">
+      <button class="main" id="get">Скачать видео</button>
+    </div>
+    <div class="bar" id="bar"><i id="fill"></i></div>
+    <p class="note" id="note" role="status" aria-live="polite"></p>
+    <ol class="how">
+      <li>Нажми «Скачать видео» и не закрывай страницу, пока идёт загрузка.</li>
+      <li>Подтверди сохранение. На iPhone выбери «Сохранить видео», на Android файл ляжет в «Загрузки».</li>
+      <li>Если кнопка не срабатывает, открой эту ссылку в приложении Claude или на claude.ai в браузере.</li>
+    </ol>
+  </section>
+
+  <section class="card" aria-label="Обложки">
+    <h2>Обложки для теста на YouTube</h2>
+    <p class="hint">В YouTube Studio у ролика: «Тестирование и сравнение» → загрузи все три. YouTube сам покажет их разным зрителям и оставит ту, что набирает больше просмотров.</p>
+    <div class="thumbs" id="thumbs"></div>
+  </section>
+
+  <section class="card" aria-label="Тексты для YouTube" id="texts">
+    <h2>Тексты для YouTube</h2>
+  </section>
+</div>
+
+<script>
+const PARTS = %%PARTS%%;
+const TOTAL = PARTS.reduce((s, p) => s + p.size, 0);
+const FILENAME = 'mihalych_7_oshibok_v_moroz_1080p.mp4';
+const TEXTS = %%TEXTS%%;
+const $ = id => document.getElementById(id);
+const mb = n => (n / 1048576).toFixed(0);
+$('size').textContent = mb(TOTAL) + ' МБ';
+
+let downloads = null;
+const downloadsReady = (window.claude && window.claude.use ? window.claude.use('downloads') : Promise.resolve(null))
+  .then(d => { downloads = d; return d; }).catch(() => null);
+
+let videoBlob = null;
+
+function say(text, kind) { const n = $('note'); n.className = 'note' + (kind ? ' ' + kind : ''); n.textContent = text; }
+
+function errText(code) {
+  return code === 'declined' ? 'Сохранение отменено. Файл уже загружен — нажми «Сохранить видео» ещё раз.'
+    : code === 'rate_limited' ? 'Уже открыт другой запрос на сохранение — подтверди или закрой его и нажми ещё раз.'
+    : code === 'too_large' ? 'Это приложение не принимает такой большой файл. Открой ссылку на claude.ai в браузере телефона.'
+    : 'Не получилось сохранить файл. Открой страницу на claude.ai в браузере и попробуй там.';
+}
+
+async function fetchVideo() {
+  const bar = $('bar'), fill = $('fill');
+  bar.classList.add('on');
+  const chunks = []; let got = 0;
+  for (const p of PARTS) {
+    let r;
+    for (let attempt = 0; attempt < 3; attempt++) {
+      try { r = await fetch(p.path); if (r.ok) break; } catch (e) { r = null; }
+    }
+    if (!r || !r.ok) throw { code: 'fetch' };
+    const reader = r.body && r.body.getReader ? r.body.getReader() : null;
+    if (reader) {
+      for (;;) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        chunks.push(value); got += value.length;
+        fill.style.width = (100 * got / TOTAL).toFixed(1) + '%';
+        say('Загружаю: ' + mb(got) + ' из ' + mb(TOTAL) + ' МБ');
+      }
+    } else {
+      const b = await r.blob(); chunks.push(b); got += b.size;
+      fill.style.width = (100 * got / TOTAL).toFixed(1) + '%';
+      say('Загружаю: ' + mb(got) + ' из ' + mb(TOTAL) + ' МБ');
+    }
+  }
+  if (got !== TOTAL) throw { code: 'fetch' };
+  return new Blob(chunks, { type: 'video/mp4' });
+}
+
+async function getVideo() {
+  const btn = $('get');
+  const d = downloads || await downloadsReady;
+  if (!d) { say('Здесь скачивание недоступно. Открой эту ссылку в приложении Claude или на claude.ai в браузере.', 'err'); return; }
+  btn.disabled = true;
+  try {
+    if (!videoBlob) {
+      btn.textContent = 'Загружаю…';
+      videoBlob = await fetchVideo();
+      const v = document.createElement('video');
+      v.controls = true; v.playsInline = true; v.src = URL.createObjectURL(videoBlob);
+      $('poster').replaceWith(v);
+    }
+    btn.textContent = 'Подтверди сохранение…';
+    say('Файл готов, подтверди сохранение.');
+    await d.save({ filename: FILENAME, data: videoBlob });
+    say('Видео сохранено.', 'ok');
+  } catch (e) {
+    const code = e && e.code;
+    if (code === 'fetch') say('Загрузка прервалась. Проверь интернет и нажми ещё раз.', 'err');
+    else say(errText(code), code === 'declined' ? '' : 'err');
+  } finally {
+    btn.disabled = false;
+    btn.textContent = videoBlob ? 'Сохранить видео' : 'Скачать видео';
+  }
+}
+
+const THUMBS = [
+  ['thumb_kettle.jpg', 'Не делай так в мороз!', '1 — главная', 'thumbs'],
+  ['thumb_warm.jpg', 'Греть мотор 15 минут?', '2', 'thumbs'],
+  ['thumb_snow.jpg', '7 ошибок в мороз', '3', 'thumbs'],
+];
+async function getThumb(path, btn) {
+  const d = downloads || await downloadsReady;
+  if (!d) { say('Здесь скачивание недоступно. Открой эту ссылку в приложении Claude или на claude.ai в браузере.', 'err'); return; }
+  btn.disabled = true;
+  try {
+    const r = await fetch(path); if (!r.ok) throw { code: 'fetch' };
+    await d.save({ filename: 'mihalych_' + path, data: await r.blob() });
+    say('Обложка сохранена.', 'ok'); btn.textContent = 'Сохранено ✓'; setTimeout(() => { btn.textContent = 'Скачать'; }, 2500);
+  } catch (e) {
+    const code = e && e.code;
+    say(code === 'fetch' ? 'Не удалось загрузить обложку. Нажми ещё раз.' : errText(code).replace(' Файл уже загружен — нажми «Сохранить видео» ещё раз.', ''), code === 'declined' ? '' : 'err');
+    if (code !== 'declined') { btn.textContent = 'Не вышло'; setTimeout(() => { btn.textContent = 'Скачать'; }, 2500); }
+  } finally { btn.disabled = false; }
+}
+
+function copyText(text, btn, pre) {
+  const done = () => { const o = btn.textContent; btn.textContent = 'Скопировано'; setTimeout(() => btn.textContent = o, 1600); };
+  const fallback = () => {
+    const range = document.createRange(); range.selectNodeContents(pre);
+    const sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(range);
+    btn.textContent = 'Выделено — скопируй';
+  };
+  try { navigator.clipboard.writeText(text).then(done, fallback); } catch (e) { fallback(); }
+}
+
+for (const [name, text] of TEXTS) {
+  const pre = document.createElement('pre'); pre.textContent = text;
+  const b = document.createElement('button'); b.textContent = 'Копировать';
+  b.addEventListener('click', () => copyText(text, b, pre));
+  const h = document.createElement('div'); h.className = 'field-h';
+  const s = document.createElement('span'); s.textContent = name;
+  h.append(s, b);
+  const f = document.createElement('div'); f.className = 'field'; f.append(h, pre);
+  $('texts').append(f);
+}
+$('get').addEventListener('click', getVideo);
+for (const [path, name, tag, where] of THUMBS) {
+  const img = document.createElement('img'); img.src = path; img.alt = 'Обложка «' + name + '»'; img.loading = 'lazy';
+  const b = document.createElement('button'); b.textContent = 'Скачать';
+  b.addEventListener('click', () => getThumb(path, b));
+  const t = document.createElement('span'); t.textContent = name;
+  const sm = document.createElement('small'); sm.textContent = tag; t.append(sm);
+  const h = document.createElement('div'); h.className = 'thumb-h'; h.append(t, b);
+  const box = document.createElement('div'); box.className = 'thumb'; box.append(img, h);
+  $(where).append(box);
+}
+</script>

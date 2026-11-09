@@ -1,0 +1,226 @@
+{
+ "out": "tire_final.mp4",
+ "voice_tempo": 1.0,
+ "xfade": 0.25,
+ "music": {
+  "file": "music/bg.m4a",
+  "gain": 0.18,
+  "duck": 0.6
+ },
+ "sfx_gain": 0.7,
+ "beats": [
+  {
+   "voice": "vo/t01.wav",
+   "pad": [
+    0.1,
+    0.3
+   ],
+   "shots": [
+    {
+     "clip": "clips/c1_hook.mp4",
+     "ss": 0.3,
+     "speed": 0.9,
+     "w": 1
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/pop.mp3",
+     "at": 0.15,
+     "gain": 0.3
+    }
+   ],
+   "text": [
+    {
+     "kind": "title",
+     "text": "Зачем на новых\nшинах волоски?",
+     "size": 88,
+     "plate": true,
+     "color": [
+      208,
+      60,
+      40
+     ],
+     "pos": [
+      540,
+      352
+     ],
+     "at": 0.0,
+     "until": 2.6
+    }
+   ]
+  },
+  {
+   "voice": "vo/t02b.wav",
+   "pad": [
+    0.1,
+    0.25
+   ],
+   "shots": [
+    {
+     "clip": "clips/c2_mold.mp4",
+     "ss": 0.0,
+     "speed": 0.85,
+     "w": 1,
+     "cut": true
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/whoosh.mp3",
+     "at": 0.05,
+     "gain": 0.3
+    }
+   ],
+   "text": [
+    {
+     "kind": "sticker",
+     "big": "Пекут в форме",
+     "small": "под горячим паром",
+     "pos": [
+      540,
+      330
+     ],
+     "at": 0.3,
+     "until": 2.85
+    }
+   ]
+  },
+  {
+   "voice": "vo/t09.wav",
+   "pad": [
+    0.1,
+    0.25
+   ],
+   "shots": [
+    {
+     "clip": "clips/c3_vent.mp4",
+     "ss": 0.0,
+     "speed": 0.85,
+     "w": 2.3,
+     "cut": true
+    },
+    {
+     "clip": "clips/c3_vent.mp4",
+     "ss": 1.96,
+     "speed": 0.85,
+     "zoom": 1.35,
+     "focus": [
+      0.5,
+      0.35
+     ],
+     "w": 2.38,
+     "cut": true
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/bubbles.mp3",
+     "at": 0.4,
+     "gain": 0.35
+    }
+   ],
+   "text": [
+    {
+     "kind": "sticker",
+     "big": "Выход для воздуха",
+     "small": "сотни дырочек в форме",
+     "pos": [
+      540,
+      330
+     ],
+     "at": 0.3,
+     "until": 4.6
+    }
+   ]
+  },
+  {
+   "voice": "vo/t11.wav",
+   "pad": [
+    0.1,
+    0.25
+   ],
+   "shots": [
+    {
+     "clip": "clips/c1_hook.mp4",
+     "ss": 2.5,
+     "speed": 0.82,
+     "w": 1,
+     "cut": true
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/ding.mp3",
+     "at": 1.2,
+     "gain": 0.35
+    }
+   ],
+   "text": [
+    {
+     "kind": "sticker",
+     "big": "Нет пузырей",
+     "small": "волоски — знак качества",
+     "pos": [
+      540,
+      330
+     ],
+     "at": 0.3,
+     "until": 2.85
+    }
+   ]
+  },
+  {
+   "voice": "vo/t14.wav",
+   "pad": [
+    0.1,
+    0.25
+   ],
+   "shots": [
+    {
+     "clip": "clips/c4_wheel.mp4",
+     "ss": 0.0,
+     "speed": 1.0,
+     "w": 1,
+     "cut": true
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/whoosh.mp3",
+     "at": 0.05,
+     "gain": 0.25
+    }
+   ],
+   "text": [
+    {
+     "kind": "sticker",
+     "big": "Сотрутся сами",
+     "small": "а на боковине останутся",
+     "pos": [
+      540,
+      330
+     ],
+     "at": 0.3,
+     "until": 2.78
+    }
+   ]
+  },
+  {
+   "voice": "vo/t06.wav",
+   "pad": [
+    0.1,
+    0.7
+   ],
+   "shots": [
+    {
+     "clip": "clips/c1_hook.mp4",
+     "ss": 0.3,
+     "speed": 0.9,
+     "w": 1,
+     "cut": true
+    }
+   ]
+  }
+ ]
+}

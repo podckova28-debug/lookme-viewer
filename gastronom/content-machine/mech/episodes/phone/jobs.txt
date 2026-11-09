@@ -1,0 +1,92 @@
+mascot m1 cc796ec8-81a1-45ab-9fcb-d63b26898e2f
+mascot m2 87ee183f-9089-4c8d-bbe2-f2bdaec3c14c
+voice-test vlad e5666b9c-99a2-4fac-8b4e-abee078b186d abe5ed8d-fffb-49ea-b114-d227c717042b
+voice-test alexey 7c2133e5-68ab-511f-9aed-9a67664382b1 54e400b3-70bf-411a-b652-a4bbdf4b8063
+voice-test bob ca12fd00-218c-5198-b10c-7d36e768c12c 89d7ccd5-93b0-4914-b4ec-18a420eeb6b6
+kf k1_hook 24ef352f-64b6-49d4-a637-ea25bb12fb17
+voice Alexey text2speech_v2/minimax 7c2133e5-68ab-511f-9aed-9a67664382b1
+vo 1 b48cc094-0b55-45de-92cb-9c6abb1be8d0
+vo 2 7ec779d3-d965-493c-a254-a18a4e41056f
+vo 3 60a0fcea-30dd-4080-bc69-7754914bdaee
+vo 4 588fa84b-b819-4d6c-9e1d-efd5f945f10f
+vo 5 37b3321b-d688-4f7a-af64-1524b6fc55f8
+kf k1_edit bdff6186-2506-47ea-ace7-eb68c0a8aa12
+kf k1_nb2 a0ef3ac7-8e13-4292-aadf-8ddb554ee47c
+kf k1b_phone c2d739b5-ddce-4a31-993a-1346db90f38a
+kf k2_flame 58016b72-0004-412e-b1da-65ee7cbe34c9
+kf k2b_folder 67dc8438-8d33-45ac-93e4-a926582db0ed
+kf k3_ok d483d725-f0cc-4dc4-b029-3450391d0600
+kf k4a_seat 653255ab-7e01-47e8-a3a5-276ebb558d62
+kf k4b_spark b09997a9-a49e-47d6-ac9e-de4860e62928
+kf k4c_touch be87ab7f-f7a4-4735-b68a-83390a5019fb
+kf k5_end cddf0fa9-a923-4ee7-af6f-429abdde0c37
+vo 5b 05947ed9-e076-4408-9060-a001de6a4a78
+kf k2b_cap_fix 630e451a-6aa6-4e3f-bd8e-0fc5990d445f
+kf k4a2_reach 8ba5443e-397c-4859-aad9-6e15aa06069d
+clip c1_hook 3f76cc0e-f340-4d32-bcf1-69f3b172bc83
+clip c1b_phone ecddd60d-e961-4448-a4e1-a9e14c7f9c94
+clip c2_flame 98f31afa-bbd0-4990-9861-4d721ba554c4
+clip c2b_folder cff9027b-a72c-4272-a3ff-db16870f4329
+clip c3_ok 4d4ff68f-55ff-4fbd-84ea-96b6a6f521a9
+clip c4a_seat e19bd003-f197-490d-957a-cd45eed3a6c6
+clip c4a2_reach 454b3e6b-2ed8-4c89-9d16-dc4fa63bc391
+clip c4b_spark b0cff291-62e8-4ba5-a521-8b9f4b04269a
+clip c4c_touch 297848c0-75c3-4fef-92e8-ae93c94ed3d7
+clip c5_end fb81f868-5257-4c44-9fe0-54f034e8c3b9
+sfx zap 54dd3f36-e19b-4e74-b7a3-fb7fac1573b3
+sfx ring 9456408a-b051-4142-a69f-911e768e3747
+# v2: маскот «оранжевая футболка» (87ee183f), по просьбе пользователя
+v2 kf k1_hook 5621751f-e594-4bf1-b07b-9a52b8e34661
+v2 kf k1b_phone 75ea2212-6584-420d-a5fd-13d90ad7112f
+v2 kf k4b_spark 3bf90042-d3e1-4391-a4e9-467c50547183
+v2 kf k4c_touch b5188d34-86a8-4dcc-bde1-b28f6347265c
+v2 kf k4a_seat 7743a8d3-5036-4ef7-be59-3eade8fcaa99
+v2 kf k1_hook_nb2 d97953c6-7424-40ae-9aa2-024f9410bab1
+v2 kf k1_hook_lite_failed 0b62c87b-63ba-44ee-a447-52b159b26071
+v2 kf k2b_folder ef05d924-2347-478f-8f0c-d7cf33bf4347
+v2 kf k3_ok 28ed7f4e-8486-44a9-8234-89247d25af7c
+v2 kf k4a2_reach d9b7804a-1d23-4a73-bc0d-fb28860521b4
+v2 kf k5_end 14741549-4e98-409a-a63e-8d8a3088fb7b
+v2 kf k4a_seat_fix c91052b9-9057-405e-b360-bd942f0d63c3
+v2 clip c1_hook 328287fa-f906-4573-8fb8-8781084c1ba8
+v2 clip c1b_phone ca267719-07e9-4a3a-a63a-82a140fe2343
+v2 clip c2b_folder e70053bd-ffa4-4f4d-95f4-1b84604773d2
+v2 clip c3_ok 47218ec8-a093-455d-90df-6a510de45571
+v2 clip c4a2_reach 2e37d2ad-9119-43d1-980e-67e02d0b28be
+v2 clip c4b_spark 2a7f654b-34ad-4136-a5c2-dc3b9dbbe437
+v2 clip c4c_touch 9405c6af-a1b1-4583-ba01-abd9eb4c3c2b
+v2 clip c5_end a023867c-ed07-4430-b011-7faf5d9dad88
+v2 kf k4a_seat_nb2 f24cc722-bacf-4790-942e-043b1f951a8b
+v2 clip c4a_seat 403cd8a4-7eb3-47fc-93fc-300e6d7a26c5
+# Исправление пистолетов/шлангов (по замечанию пользователя), правки ключевых кадров
+ep1 hook_e fac0da06-d14e-487a-9f9d-2614ec7f71d1
+ep2 hook_e_lite_nochange 632e0697-691c-4cd7-b3a4-5eb49e80de63
+ep1 folder_e 675fd3a5-1239-402e-8e54-bc13ebbc0fb5
+ep1 ok_e 7cfbbf98-b294-409c-aed5-a1cf56635a9a
+ep1 end_e 68838eb4-4747-429a-a391-846b332f2772
+ep1 flame_e 293c545a-41e6-4927-9172-326d378aad15
+ep2 happy_e 5c047fb1-53cf-44b9-9051-c0752dd18e76
+ep2 end_e c3a834eb-7b60-427f-a7f7-81993a5a1743
+ep2 hook_e_nb2 2e141aa6-1f91-4b7e-a267-fb3d76f6e839
+ep2 rain_nb2 9b4865cf-5bec-4000-85af-073f175177cf
+ep1 seat_e_nsfw_false_positive 8eda1a5b-5c82-4c79-886f-aa577ad5e447
+ep1 reach_e 9e63bb75-833d-4a3f-817c-650ade28aafd
+ep2 hook_nb2_v1_two_hoses 2e141aa6-1f91-4b7e-a267-fb3d76f6e839
+ep1 folder_nb2 b74ce07e-2c39-480e-a92d-41c2253c128f
+ep1 ok_nb2 91374cfa-63f0-4137-91e7-3507128c1df5
+ep1 reach_nb2 d35ccc48-937e-42b6-9b1a-272be52a32d4
+ep1 end_nb2 a4601f6d-b8a3-4a03-ae49-4fffdcea265b
+ep1 seat_nb2 38e6be63-aec3-473c-a2a3-39042a859503
+ep2 happy_nb2 df8f695d-858c-4efa-be7b-ae7ec6d44332
+ep2 end_nb2 aa57ff7e-f52c-459f-8a65-cc3bf7bd1fd8
+ep2 hook_nb2_v2 7a8ab531-99d8-4583-a26d-62bb34f2e881
+ep1 folder_nb2_v2 629c0045-58cc-45af-89f1-5a9ad66c755d
+clip ep1 c3_ok 142ef0b5-d58f-4e33-9262-28da99f7c78c
+clip ep1 c4a2_reach daa995b6-0abe-4373-af1e-8d8d3541870e
+clip ep1 c5_end cc6c87be-01e3-4485-afee-701c338da2a8
+clip ep1 c4a_seat aca7e18d-d019-4d75-a2c0-39d2e4636f56
+clip ep2 c4b_happy 1edca09f-4c8a-4392-b27c-13fe9d56cb96
+clip ep2 c5_end 5bf46d20-105e-41b6-8056-0c7f6b7106e6
+clip ep2 c1_hose 73f6ab2b-ec9d-45d9-a1f8-804986ca98a9
+clip ep2 c3_rain 597d010d-1601-4f5e-9514-f2dc976ec763
+clip ep1 c2b_folder 5f734b57-eeb2-4190-a8b4-8c7432b50f18

@@ -1,0 +1,216 @@
+{
+ "out": "lamp_final.mp4",
+ "voice_tempo": 1.0,
+ "xfade": 0.25,
+ "music": {
+  "file": "music/bg.m4a",
+  "gain": 0.18,
+  "duck": 0.6
+ },
+ "sfx_gain": 0.7,
+ "beats": [
+  {
+   "voice": "vo/t01.wav",
+   "pad": [
+    0.1,
+    0.3
+   ],
+   "shots": [
+    {
+     "clip": "clips/c6_pov.mp4",
+     "ss": 0.0,
+     "speed": 0.9,
+     "w": 1.15
+    },
+    {
+     "clip": "clips/c1_hook.mp4",
+     "ss": 0.3,
+     "speed": 0.85,
+     "zoom": 1.35,
+     "focus": [
+      0.5,
+      0.0
+     ],
+     "w": 1.75,
+     "cut": true
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/chime.mp3",
+     "at": 0.05,
+     "gain": 0.3
+    }
+   ],
+   "text": [
+    {
+     "kind": "title",
+     "text": "Горит лампочка,\nа я еду дальше",
+     "size": 88,
+     "plate": true,
+     "color": [
+      208,
+      60,
+      40
+     ],
+     "pos": [
+      540,
+      352
+     ],
+     "at": 0.0,
+     "until": 3.1
+    }
+   ]
+  },
+  {
+   "voice": "vo/b2.wav",
+   "pad": [
+    0.1,
+    0.25
+   ],
+   "shots": [
+    {
+     "clip": "clips/c6_pov.mp4",
+     "ss": 1.1,
+     "speed": 0.9,
+     "w": 1.75,
+     "cut": true
+    },
+    {
+     "clip": "clips/c2b_tank.mp4",
+     "ss": 0.2,
+     "speed": 0.9,
+     "w": 2.6,
+     "cut": true
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/whoosh.mp3",
+     "at": 0.05,
+     "gain": 0.3
+    },
+    {
+     "file": "sfx/bubbles.mp3",
+     "at": 1.85,
+     "gain": 0.35
+    }
+   ],
+   "text": [
+    {
+     "kind": "sticker",
+     "big": "Перегрев — миф",
+     "small": "насос стоит в бензине",
+     "pos": [
+      540,
+      330
+     ],
+     "at": 0.3
+    }
+   ]
+  },
+  {
+   "voice": "vo/t04.wav",
+   "pad": [
+    0.1,
+    0.25
+   ],
+   "shots": [
+    {
+     "clip": "clips/c3_push.mp4",
+     "ss": 0.0,
+     "speed": 0.95,
+     "w": 1,
+     "cut": true
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/engine_die.mp3",
+     "at": 0.0,
+     "gain": 0.45
+    }
+   ],
+   "text": [
+    {
+     "kind": "sticker",
+     "big": "До нуля — нельзя",
+     "small": "насос глотнёт воздух",
+     "color": [
+      208,
+      60,
+      40
+     ],
+     "pos": [
+      540,
+      330
+     ],
+     "at": 0.3
+    }
+   ]
+  },
+  {
+   "voice": "vo/t05.wav",
+   "pad": [
+    0.1,
+    0.25
+   ],
+   "shots": [
+    {
+     "clip": "clips/c2b_tank.mp4",
+     "ss": 2.5,
+     "speed": 0.7,
+     "zoom": 1.4,
+     "focus": [
+      0.5,
+      0.62
+     ],
+     "w": 3.6,
+     "cut": true
+    },
+    {
+     "clip": "clips/c4b_station.mp4",
+     "ss": 2.6,
+     "speed": 0.7,
+     "w": 2.04,
+     "cut": true
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/ding.mp3",
+     "at": 2.25,
+     "gain": 0.35
+    }
+   ],
+   "text": [
+    {
+     "kind": "sticker",
+     "big": "5 л ≈ 50 км",
+     "small": "на лампочке",
+     "pos": [
+      540,
+      330
+     ],
+     "at": 2.2
+    }
+   ]
+  },
+  {
+   "voice": "vo/t06.wav",
+   "pad": [
+    0.1,
+    0.6
+   ],
+   "shots": [
+    {
+     "clip": "clips/c6_pov.mp4",
+     "ss": 2.95,
+     "speed": 0.95,
+     "w": 1,
+     "cut": true
+    }
+   ]
+  }
+ ]
+}

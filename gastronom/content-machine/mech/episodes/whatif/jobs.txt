@@ -1,0 +1,36 @@
+Длинный «Что будет, если… 10 опытов над машиной» (5 нояб 2026). Голос Alexey minimax 7c2133e5. Кадры gpt_image_2_5 medium 2k 16:9 (1 кр), клипы wan3_0 480p 16:9 без звука (1 кр/с).
+Референсы: Михалыч длинных роликов 2939e3b0. Опорный кадр гаража с серебристой Грантой — F00 23313f2f.
+vo (индекс = номер реплики в script.py): 1 2c4cc7da · 2 26afc378 · 3 f2f84856 · 4 3f3b7cad · 5 d4d9c91b · 6 32fcec8d · 7 a05ef0f7 · 8 4b358a79 · 9 34df1eb5 · 10 eaa27f03 · 11 291b9102 · 12 fe8f35ac
+vo 13 265b9ab0 · 14 bb22a784 · 15 28390e11 · 16 0028d8e4 · 17 ad3201dc · 18 c5c1d243 · 19 9513a75b · 20 69ccbf3f · 21 bb70769d · 22 9da4a7a5 · 23 f5f9f710 · 24 6d73d298
+vo 25 1f1770dc · 26 3e49bdf0 (после 429) · 27 95109f21 · 28 1799eec7 · 29 7153ce91 · 30 1014864b · 31 4383e670 · 32 8d616cd0 · 33 647eae4f · 34 33699460 · 35 f8121a35 · 36 2c784ca5
+vo 37 d327959c · 38 34480b32 · 39 02dc3dfe · 40 a493ea2b · 41 e00c8954 · 42 1f69ea03 · 43 60acf82d · 44 6e341555 · 45 6adc6585 · 46 3ff09f85 · 47 50f22c9d
+kf F01 fc003812 · KA1 bdb48c0e · KA2 be285276 · KA3 bafada9b · KB1 1da6cb46 · KB2 5a4f12ee · KB3 56285a79 · KB4 6604c027 · KC1 78cc6834 · KC2 2ee059d2 · KC3 39101d9a · KC4 bb4dd5b2 · KD1 3b8fdbc9 · KD2 6f78757c · KD3 65246b9f · KE1 c8008515 · KE2 981b47db · KE3 59f38c9b · KF1 d85d5ec7 · KF2 c6739377 · KF3 e4b74efe · KF4 9b26e93a · KG1 6445130a · KG2 5fa500b4 · KG3 57518538 · KG4 180addec · KH1 6634f970 · KH2 5f2d891e · KH3 fcb566fc · KJ1 746b2880 · KJ2 2853b82c · KJ3 01302049 · KK1 07ce2005 · KK2 f983ffd2 · KK3 4171b179 · KZ fac5f9b2
+clips M_A 8687a976 (5) · M_B d87e1e14 (5) · M_C 1e27b50a (4) · M_D 95c5bc1c (4) · M_E 282bb865 (5) · M_F 703f852c (4) · M_G a6cb65c4 (4) · M_H b24199bb (4) · M_J 08dd8d41 (3) · M_K aefcc38c (5) · M_I 9d27bd04 (5, с F00) · M_Z b7f85ba7 (4, с KZ)
+thumb bases hose 1fc6a57d · diesel d5a82819 · kettle a9c7419e (gpt_image_2_5 high 2k, 2,75 кр)
+# 5 нояб: переозвучка 9 реплик (ударение, «тысяч», вопросы без «ли»), по 2 дубля; текст — work/redo.json
+TAKE I01_a 636b91bb-b502-47f2-b989-21a1f7b60f2c
+TAKE I01_b 246e3991-7366-4d64-bb19-a3f32e2baf5e
+TAKE A3_a b121af34-651c-466d-90ce-b7befbba93b3
+TAKE A3_b 9bd6216d-8b31-4a3d-8a01-c9a989dab0cc
+TAKE B2_a 6a25c7d8-46c5-475b-8ba7-7bd60a408b53
+TAKE B2_b 4e22638f-02a1-4b93-a0b7-a6d5e6638c48
+TAKE B3_a f8a58ebf-57af-47d9-bd58-4820d0dcf717
+TAKE B3_b 836872b3-cb17-48ed-b637-61311a222544
+TAKE C3_a 5ebe4161-c904-4441-8d18-f1ee942c9bd9
+TAKE C3_b a7b327f6-8065-49bd-989d-45cce1130f71
+TAKE G4_a a080911f-82ba-442e-bd47-2c17dbde1815
+TAKE G4_b 378a09c2-4b07-4b3a-9efc-9a9ea37f7603
+TAKE H2_a df874cd4-c1ae-4f31-b817-355c4a14bb4f
+TAKE H2_b 2b7c7359-1e15-48b8-a2ff-829763f83f66
+TAKE H4_a 48145124-b1a0-4db3-8f6f-e658d8d5285a
+TAKE H4_b a2ba1d39-3ada-4915-bc1c-95e835beac9b
+TAKE Z1_a 67bd4f4b-62de-4c62-9532-bb390e6e7950
+TAKE Z1_b a1d1fcd8-08b4-4d29-b72a-5da6e6361ef9
+# 5 нояб: перерисовка кадров с третьей рукой (gpt_image_2_5 medium 2k, по 2 варианта)
+KB3_v2a c8c17e05-7f75-4e1c-a1f1-b7053cd45255 · KB3_v2b f6e94823-a6aa-48aa-b14b-6311fccf1430
+KG1_v2a da4ea8a6-a481-4b53-baab-545a55affc41 · KG1_v2b 3867dfa5-ad30-4b0c-96ef-e53faaf39347
+KA3_v2a be877644-0b6d-45bc-97cb-f7f134e3fcc1 · KA3_v2b a58cbda8-9c1f-4144-b53f-f260b4fac4e2
+TAKE B3_c e2a035b3-adfd-4c36-ab8c-a7b0759ad725 · B3_d ad76432b-46a1-476b-bee9-fc9d6cebab2b (страховка вместо ОСАГО)
+TAKE H2_c 45c6b1fd-4c01-4a30-a005-671e1eb4ade0 · H2_d b1911a33-bfb0-42dc-af50-f02d63038f69
+TAKE H4_c 918a74bb-9a2b-40a9-a444-0998b6996229 · H4_d 977b11f3-100d-4713-b497-b9962372539a
+KF замена: KB3 ← KB3_v2a, KG1 ← KG1_v2a, KA3 ← KA3_v2a (старые в kf_v1/)

@@ -1,0 +1,220 @@
+{
+ "out": "mech_tank_fix_final.mp4",
+ "voice_tempo": 1.0,
+ "xfade": 0.25,
+ "music": {
+  "file": "music/bg.m4a",
+  "gain": 0.18,
+  "duck": 0.6
+ },
+ "sfx_gain": 0.7,
+ "beats": [
+  {
+   "voice": "vo/t01.wav",
+   "pad": [
+    0.1,
+    0.25
+   ],
+   "shots": [
+    {
+     "clip": "../fix/ep2_c1_hose.mp4",
+     "ss": 0.0,
+     "w": 2.5,
+     "speed": 0.74
+    },
+    {
+     "clip": "clips/c1b_scratch.mp4",
+     "ss": 0.0,
+     "cut": true,
+     "w": 1.77,
+     "speed": 0.6,
+     "to": 1.92
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/whoosh.mp3",
+     "at": 0.05,
+     "gain": 0.3
+    }
+   ],
+   "text": [
+    {
+     "kind": "title",
+     "text": "С какой стороны\nбензобак?",
+     "size": 88,
+     "plate": true,
+     "color": [
+      208,
+      60,
+      40
+     ],
+     "pos": [
+      540,
+      352
+     ],
+     "at": 0.0
+    }
+   ]
+  },
+  {
+   "voice": "vo/t02.wav",
+   "pad": [
+    0.1,
+    0.25
+   ],
+   "shots": [
+    {
+     "clip": "clips/c2_dash.mp4",
+     "ss": 0.0,
+     "cut": true,
+     "w": 2.3,
+     "speed": 0.8
+    },
+    {
+     "clip": "clips/c2b_squint.mp4",
+     "ss": 0.0,
+     "cut": true,
+     "w": 2.4
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/pop.mp3",
+     "at": 0.6,
+     "gain": 0.35
+    }
+   ],
+   "text": [
+    {
+     "kind": "sticker",
+     "big": "Шланг не в счёт",
+     "small": "не указывает сторону",
+     "pos": [
+      540,
+      330
+     ],
+     "at": 0.6,
+     "color": [
+      208,
+      60,
+      40
+     ]
+    }
+   ]
+  },
+  {
+   "voice": "vo/t03.wav",
+   "pad": [
+    0.1,
+    0.25
+   ],
+   "shots": [
+    {
+     "clip": "../fix/ep2_c3_rain.mp4",
+     "ss": 0.0,
+     "cut": true,
+     "w": 2.6
+    },
+    {
+     "clip": "clips/c3b_draft.mp4",
+     "ss": 0.0,
+     "cut": true,
+     "w": 2.4
+    },
+    {
+     "clip": "clips/c3c_retro.mp4",
+     "ss": 0.0,
+     "cut": true,
+     "w": 2.3,
+     "speed": 0.27,
+     "to": 2.46
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/ding.mp3",
+     "at": 5.0,
+     "gain": 0.3
+    }
+   ],
+   "text": [
+    {
+     "kind": "sticker",
+     "big": "Джим Мойлан, Ford",
+     "small": "стрелка — с 1989 года",
+     "pos": [
+      540,
+      330
+     ],
+     "at": 2.7,
+     "color": [
+      40,
+      110,
+      190
+     ]
+    }
+   ]
+  },
+  {
+   "voice": "vo/t04.wav",
+   "pad": [
+    0.1,
+    0.25
+   ],
+   "shots": [
+    {
+     "clip": "clips/c4_point.mp4",
+     "ss": 0.0,
+     "cut": true,
+     "w": 2.6
+    },
+    {
+     "clip": "../fix/ep2_c4b_happy.mp4",
+     "ss": 0.0,
+     "cut": true,
+     "w": 2.6
+    }
+   ],
+   "sfx": [
+    {
+     "file": "sfx/pop.mp3",
+     "at": 1.2,
+     "gain": 0.35
+    }
+   ],
+   "text": [
+    {
+     "kind": "sticker",
+     "big": "Стрелка вправо",
+     "small": "лючок справа, влево — слева",
+     "pos": [
+      540,
+      330
+     ],
+     "at": 1.2,
+     "color": [
+      61,
+      125,
+      72
+     ]
+    }
+   ]
+  },
+  {
+   "voice": "vo/t05.wav",
+   "pad": [
+    0.1,
+    0.7
+   ],
+   "shots": [
+    {
+     "clip": "../fix/ep2_c5_end.mp4",
+     "ss": 0.0,
+     "cut": true,
+     "w": 1
+    }
+   ]
+  }
+ ]
+}

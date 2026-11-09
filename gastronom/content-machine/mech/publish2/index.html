@@ -1,0 +1,356 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Ролики Михалыча · 2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Oswald:wght@500;600&display=swap">
+<style>
+/* Layout: одна колонка карточек-эпизодов; в карточке видео слева и тексты справа, на телефоне — друг под другом */
+:root{
+  --bg:#eef1f5; --card:#fbfcfe; --ink:#1c2230; --ink2:#46506a; --muted:#77819a;
+  --line:#d3d9e6; --accent:#cf6a14; --accent-ink:#fffaf3; --tomato:#c4432d; --ok:#3d7d48; --field:#f0f3f8;
+  --disp:'Nunito',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --label:'Oswald','Arial Narrow',system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#11151d; --card:#191f2a; --ink:#e6eaf2; --ink2:#bac3d6; --muted:#8a94aa;
+  --line:#2b3344; --accent:#f0923a; --accent-ink:#1a1208; --tomato:#ff7d66; --ok:#8fca8a; --field:#202737; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#11151d; --card:#191f2a; --ink:#e6eaf2; --ink2:#bac3d6; --muted:#8a94aa;
+  --line:#2b3344; --accent:#f0923a; --accent-ink:#1a1208; --tomato:#ff7d66; --ok:#8fca8a; --field:#202737; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:var(--disp);font-size:16px;line-height:1.5}
+.wrap{max-width:980px;margin:0 auto;padding-inline:16px;padding-block:28px 56px;display:grid;gap:28px}
+header{display:grid;gap:10px}
+.eyebrow{font-family:var(--label);text-transform:uppercase;letter-spacing:.08em;font-size:13px;color:var(--muted)}
+h1{font-weight:900;font-size:clamp(28px,6vw,40px);line-height:1.1;margin:0;text-wrap:balance}
+.how{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;display:grid;gap:8px}
+.how h2{font-family:var(--label);font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-size:14px;margin:0;color:var(--ink2)}
+.how ol{margin:0;padding-left:20px;display:grid;gap:6px;color:var(--ink2)}
+.how b{color:var(--ink)}
+.ep{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px;display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:22px}
+@media (max-width:720px){.ep{grid-template-columns:minmax(0,1fr)}.media{max-width:340px;margin:0 auto;width:100%}}
+.media{display:grid;gap:10px;align-content:start}
+video{width:100%;aspect-ratio:9/16;border-radius:14px;background:#000;display:block}
+.btns{display:grid;grid-template-columns:1fr auto;gap:8px}
+button{font:inherit;cursor:pointer;border-radius:12px;border:1px solid var(--line);background:var(--field);color:var(--ink);font-weight:800;font-size:15px;padding:11px 14px}
+button:hover{border-color:var(--accent)}
+button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+button.main{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+button:disabled{opacity:.6;cursor:default}
+.note{font-size:13px;color:var(--muted);min-height:1.2em;margin:0}
+.note.ok{color:var(--ok)} .note.err{color:var(--tomato)}
+.info{display:grid;gap:14px;min-width:0;align-content:start}
+.info h3{margin:0;font-size:24px;font-weight:900;line-height:1.15;text-wrap:balance}
+.meta{font-family:var(--label);text-transform:uppercase;letter-spacing:.06em;font-size:13px;color:var(--muted)}
+.plat{border-top:1px solid var(--line);padding-top:12px;display:grid;gap:8px}
+.plat-h{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.plat-h span{font-family:var(--label);font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-size:14px;color:var(--ink2)}
+.plat-h button{padding:6px 12px;font-size:13px}
+.txt{background:var(--field);border-radius:10px;padding:10px 12px;white-space:pre-wrap;overflow-wrap:anywhere;font-weight:600;font-size:14px;color:var(--ink);margin:0}
+.lbl{font-size:12px;color:var(--muted);font-weight:700;margin:0 0 -4px}
+.ep.profile{grid-template-columns:minmax(0,1fr)}
+.hint{font-size:13px;color:var(--muted);margin:0}
+.hint a{color:var(--accent);font-weight:800}
+.sched{display:grid;gap:8px}
+.slot{display:grid;grid-template-columns:4.2em minmax(0,1fr);gap:12px;align-items:baseline;background:var(--field);border-radius:10px;padding:8px 12px}
+.slot .t{font-family:var(--label);font-weight:600;font-size:18px;font-variant-numeric:tabular-nums;color:var(--accent)}
+.slot .p{font-weight:700;color:var(--ink)}
+.slot .w{display:block;font-weight:600;font-size:13px;color:var(--muted)}
+.chip{display:inline-block;font-family:var(--label);text-transform:uppercase;letter-spacing:.06em;font-size:12px;padding:2px 8px;border-radius:999px;border:1px solid var(--line);color:var(--ink2)}
+.chip.next{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.ptime{font-family:var(--label);font-size:13px;color:var(--accent);font-variant-numeric:tabular-nums;margin-left:8px}
+.avatar{display:grid;grid-template-columns:120px minmax(0,1fr);gap:16px;align-items:center}
+.avatar img{width:120px;height:120px;max-width:100%;border-radius:50%;border:3px solid var(--line);display:block}
+.avatar-t{display:grid;gap:8px;justify-items:start;min-width:0}
+.banner{display:grid;gap:8px;justify-items:start}
+.banner img{width:100%;height:auto;max-width:100%;border-radius:12px;border:1px solid var(--line);display:block}
+@media (max-width:420px){.avatar{grid-template-columns:minmax(0,1fr)}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Гараж Михалыча · автомифы</div>
+    <h1>Ролики к выкладке · часть 2</h1>
+    <p class="hint">Эпизоды 1–21 остались на <a href="https://claude.ai/artifact/NLaJ458ud5UFDZofAvgnVm" target="_blank" rel="noopener">первой странице</a>. Она заполнилась, поэтому новые ролики выходят здесь.</p>
+  </header>
+
+  <section class="how" aria-label="Как выложить">
+    <h2>Как выложить</h2>
+    <ol>
+      <li>Нажми <b>«Скачать ролик»</b> и подтверди. На iPhone откроется меню «Поделиться» — выбери <b>«Сохранить видео»</b>, ролик появится в «Фото». На Android он попадёт в «Загрузки».</li>
+      <li>Загрузи ролик на площадку и поставь <b>отложенную публикацию</b> на дату ролика и время из расписания ниже: в YouTube Studio, Rutube, Дзене, TikTok Studio и Instagram — «Запланировать», в VK и Одноклассниках — «Отложенная публикация», в Telegram — «Отправить позже».</li>
+      <li>Нажми <b>«Копировать»</b> у этой площадки и вставь текст. Где есть название и описание — копируй их по отдельности.</li>
+      <li>Нажми <b>«Обложка»</b> и поставь её обложкой ролика. Надпись стоит так, что сетка профиля Instagram (3:4) её не срезает. В Instagram при загрузке: «Обложка» → «Добавить из фотоплёнки». Для уже выложенных Reels: открой ролик → «⋯» → «Изменить» → «Изменить обложку»; если такого пункта нет, новая обложка встанет только на новые ролики.</li>
+    </ol>
+  </section>
+
+  <section class="how" aria-label="Расписание выкладки">
+    <h2>Расписание выкладки</h2>
+    <p class="hint">Новые ролики выходят по воскресеньям: в этот день нет ни Повара, ни Зоолога. Первый ролик можно выложить сразу, как заведёшь канал. Время московское, одна дата на все площадки.</p>
+    <div class="sched">
+      <div class="slot"><span class="t">11:00</span><span class="p">YouTube Shorts · Одноклассники<span class="w">Shorts набирает показы дольше, аудитория Одноклассников активна раньше</span></span></div>
+      <div class="slot"><span class="t">12:00</span><span class="p">VK Клипы · Rutube · Дзен · Telegram-канал<span class="w">В выходной смотрят с утра: первые зрители приходят к обеду</span></span></div>
+      <div class="slot"><span class="t">14:00</span><span class="p">TikTok · Instagram Reels<span class="w">Аудитория моложе, просыпается позже</span></span></div>
+    </div>
+    <p class="hint">Если выкладываешь не в воскресенье, а в будний день, — те же группы в 17:00, 18:00 и 20:00.</p>
+  </section>
+
+
+  <div id="list"></div>
+</div>
+
+<script>
+const EPISODES = [
+  {"n": 22, "title": "Стоит ли переплачивать за 95-й бензин?", "dur": "45 с", "date": "Вс 8 ноября", "file": "mech_gas92.mp4", "cover": "mech_gas92.jpg", "poster": "mech_gas92_poster.jpg", "save": "mihalych_22_92_ili_95", "plats": [{"name": "YouTube Shorts", "parts": [["Название", "92 или 95: стоит ли переплачивать? ⛽ #shorts"], ["Описание", "Октановое число — это не мощность и не «чистота», а стойкость бензина к детонации: насколько он терпит сжатие и не вспыхивает раньше времени. Если мотор рассчитан на 95-й, на 92-м он может стучать и терять мощность, а постоянная детонация разрушает поршни и клапаны — ремонт выйдет дороже любой экономии. Если завод разрешает 92-й (например, восьмиклапанной Гранте), 95-й ничего не даст: в тесте «За рулём» расход вышел 10,34 л на 92-м и 10,35 л на 95-м. А переплата при 15 000 км в год — около 6 600 ₽. Какой бензин нужен твоей машине — смотри в инструкции или на лючке бака. А ты какой заливаешь? 👇\n#shorts #авто #бензин #машина #михалыч"], ["Теги", "92 или 95, какой бензин лучше, 95 бензин, 92 бензин, октановое число, детонация, можно ли заливать 92 вместо 95, переплата за бензин, бензин для гранты, лада гранта, восьмиклапанная гранта, расход топлива, советы водителям, михалыч, гараж михалыча, авто, машина, shorts"], ["Закреплённый комментарий", "А ты что льёшь — 92 или 95? И что написано у тебя на лючке бака? 👇"]]}, {"name": "VK Клипы", "parts": [["Описание", "95-й лучше 92-го? ⛽ Цифра на колонке — не про мощность. Если мотору нужен 95-й, на 92-м он стучит, а детонация бьёт поршни. А если завод разрешает 92-й — переплата около 6 600 ₽ в год впустую. Михалыч объясняет. А ты какой заливаешь? 👇\n#авто #бензин #машина #михалыч"]]}, {"name": "Одноклассники", "parts": [["Текст поста", "Стоит ли переплачивать за 95-й бензин? ⛽\n\n• Октановое число — это не мощность, а стойкость бензина к детонации\n• Если мотор требует 95-й, на 92-м он может стучать и терять мощность, а детонация разрушает поршни и клапаны\n• Если завод разрешает 92-й, 95-й ничего не даст: в тесте «За рулём» расход одинаковый — 10,34 и 10,35 л\n• Переплата при 15 000 км в год — около 6 600 ₽\n\nКакой бензин заливаете вы — 92 или 95?"]]}, {"name": "Rutube", "parts": [["Название", "92 или 95 бензин: что будет, если залить не тот, и стоит ли переплачивать"], ["Описание", "Какой бензин лучше — 92 или 95? Октановое число показывает стойкость топлива к детонации, а не мощность. Если двигатель рассчитан на АИ-95, на АИ-92 он работает на грани детонации: мотор стучит, теряет мощность, а со временем разрушаются поршни, клапаны и стенки цилиндров. Если производитель разрешает АИ-92 (как восьмиклапанной Lada Granta), 95-й ничего не даёт: в тесте журнала «За рулём» расход вышел 10,34 и 10,35 л. Переплата при пробеге 15 000 км в год — около 6 600 рублей. Какой бензин нужен вашему мотору, написано в руководстве по эксплуатации.\n#авто #бензин #михалыч #автосоветы"]]}, {"name": "Дзен", "parts": [["Заголовок", "92 или 95: когда переплата не нужна, а когда спасёт мотор"], ["Описание", "Октановое число — не про мощность. Михалыч объясняет, когда 92-й опасен для мотора, а когда 95-й — просто лишние 6 600 ₽ в год."]]}, {"name": "Telegram-канал", "parts": [["Пост", "⛽ 92 или 95 — стоит ли переплачивать?\n\nЦифра на колонке — это не мощность, а стойкость бензина к детонации.\n\nМотору нужен 95-й? Не экономь: на 92-м он стучит, а детонация разбивает поршни и клапаны.\n\nЗавод разрешает 92-й? Тогда 95-й ничего не даст — расход в тесте «За рулём» одинаковый, а переплата около 6 600 ₽ в год.\n\nА ты какой заливаешь? 👇"]]}, {"name": "TikTok", "parts": [["Подпись", "95-й мощнее 92-го? 🤔 Михалыч объясняет, когда это правда, а когда — 6 600 ₽ в год на ветер 👇 А ты что льёшь? #авто #бензин #машина #михалыч #fyp"]]}, {"name": "Instagram Reels", "parts": [["Подпись", "95-й лучше 92-го? ⛽ Досмотри — дело не в мощности 😉 Отправь тому, кто всегда льёт «подороже, чтобы мотору лучше»\n#авто #бензин #машина #михалыч"]]}]},
+  {"n": 23, "title": "Нужно ли счищать снег с крыши машины?", "dur": "34 с", "date": "Вс 15 ноября", "file": "mech_snow.mp4", "cover": "mech_snow.jpg", "poster": "mech_snow_poster.jpg", "save": "mihalych_23_sneg_s_kryshi", "plats": [{"name": "YouTube Shorts", "parts": [["Название", "Снег с крыши сам слетит? ❄️ #shorts"], ["Описание", "«Сам слетит» — слетит, только в самый неудачный момент. При торможении подтаявший снег с крыши сползает на лобовое стекло и полностью закрывает обзор — об этом предупреждает «Автодор». На трассе снег и лёд срываются с крыши и летят в машины сзади и могут повредить им стекло. А 20 см мокрого снега на крыше легковушки весят почти 100 кг. Отдельного штрафа за снег на крыше нет, но за номер под снегом — предупреждение или 500 ₽ (ч. 1 ст. 12.2 КоАП). Так что чисти всю машину, а не только стёкла. А ты чистишь крышу? 👇\n#shorts #авто #зима #машина #михалыч"], ["Теги", "снег на крыше машины, нужно ли чистить крышу машины, снег с крыши на лобовое, чистка машины от снега, как чистить машину от снега, зима авто, штраф за снег на машине, номер под снегом штраф, советы водителям зимой, лада 2114, михалыч, гараж михалыча, авто, машина, shorts"], ["Закреплённый комментарий", "А ты чистишь крышу каждый раз — или «сам слетит»? 👇"]]}, {"name": "VK Клипы", "parts": [["Описание", "Снег с крыши сам слетит? ❄️ Слетит — при торможении прямо на лобовое, а на трассе в машину сзади. А 20 см мокрого снега на крыше — почти 100 кг. Михалыч объясняет. Чистишь ли ты крышу? 👇\n#авто #зима #машина #михалыч"]]}, {"name": "Одноклассники", "parts": [["Текст поста", "Нужно ли счищать снег с крыши машины? ❄️\n\n• При торможении снег с крыши сползает на лобовое и полностью закрывает обзор («Автодор»)\n• На трассе снег и лёд срываются с крыши и летят в машины сзади\n• 20 см мокрого снега на крыше весят почти 100 кг\n• Штрафа за сам снег на крыше нет, но за номер под снегом — предупреждение или 500 ₽\n\nА вы чистите крышу каждый раз?"]]}, {"name": "Rutube", "parts": [["Название", "Нужно ли чистить снег с крыши машины: что будет, если не чистить"], ["Описание", "Многие чистят только стёкла: снег с крыши, мол, сам слетит. Слетит — но в самый неудачный момент. При торможении подтаявший снег сползает с крыши на лобовое стекло и полностью закрывает обзор (предупреждение госкомпании «Автодор»). На скорости снег и лёд срываются с крыши и летят в машины, которые едут сзади, и могут повредить им стекло. Двадцать сантиметров мокрого снега на крыше легковушки весят почти 100 кг. Отдельного штрафа за снег на крыше в КоАП нет, но за нечитаемый номер — предупреждение или 500 рублей (ч. 1 ст. 12.2 КоАП). Перед поездкой очищайте всю машину: крышу, капот, фары и номера.\n#авто #зима #михалыч #автосоветы"]]}, {"name": "Дзен", "parts": [["Заголовок", "Снег на крыше машины: почему «сам слетит» — плохая идея"], ["Описание", "Михалыч показывает, куда на самом деле слетает снег с крыши, сколько он весит и за что могут оштрафовать."]]}, {"name": "Telegram-канал", "parts": [["Пост", "❄️ Снег с крыши сам слетит?\n\nСлетит. Притормозил на светофоре — и сугроб на лобовом, впереди ничего не видно.\n\nНа трассе он срывается и летит в машину сзади.\n\n20 см мокрого снега на крыше — почти 100 кг.\n\nШтрафа за снег на крыше нет, а за номер под снегом — до 500 ₽.\n\nА ты чистишь крышу? 👇"]]}, {"name": "TikTok", "parts": [["Подпись", "Снег с крыши «сам слетит»? 😏 Слетит — но в самый неудачный момент ❄️ А ты чистишь крышу? #авто #зима #машина #михалыч #fyp"]]}, {"name": "Instagram Reels", "parts": [["Подпись", "Снег с крыши сам слетит? ❄️ Досмотри — слетит, но не туда 😬 Отправь тому, кто чистит только стёкла\n#авто #зима #машина #михалыч"]]}]},
+  {"n": 24, "title": "Нужно ли выжимать сцепление, когда заводишь машину в мороз?", "dur": "35 с", "date": "Вс 22 ноября", "file": "mech_clutch.mp4", "cover": "mech_clutch.jpg", "poster": "mech_clutch_poster.jpg", "save": "mihalych_24_sceplenie_v_moroz", "plats": [{"name": "YouTube Shorts", "parts": [["Название", "Выжимать сцепление, когда заводишь в мороз? ❄️ #shorts"], ["Описание", "Многие считают, что выжимать сцепление при запуске — старая привычка. Но без выжатой педали стартер крутит не только мотор, но и шестерни коробки, а масло в ней на морозе густое, как мёд. Выжал сцепление — коробка отключилась: стартеру и аккумулятору легче, и мотор заводится проще. А если машина осталась на передаче, она не прыгнет с места. Только не держи педаль минутами: мотор заработал ровно — плавно отпускай. А ты выжимаешь сцепление, когда заводишься? 👇\n#shorts #авто #зима #машина #михалыч"], ["Теги", "выжимать сцепление при запуске, как завести машину в мороз, запуск двигателя зимой, сцепление зимой, механика зимой, стартер зимой, аккумулятор зимой, масло в коробке зимой, советы водителям зимой, лада 2114, михалыч, гараж михалыча, авто, машина, shorts"], ["Закреплённый комментарий", "А ты выжимаешь сцепление, когда заводишься — или «и так заведётся»? 👇"]]}, {"name": "VK Клипы", "parts": [["Описание", "Выжимать сцепление в мороз — привычка или польза? ❄️ Без педали стартер крутит ещё и шестерни коробки в густом, как мёд, масле. Михалыч объясняет. А ты выжимаешь? 👇\n#авто #зима #машина #михалыч"]]}, {"name": "Одноклассники", "parts": [["Текст поста", "Нужно ли выжимать сцепление, когда заводишь машину в мороз? ❄️\n\n• Без выжатой педали стартер крутит не только мотор, но и шестерни коробки\n• Масло в коробке на морозе густое, как мёд\n• Выжал сцепление — стартеру и аккумулятору легче, мотор заводится проще\n• Если машина осталась на передаче, она не прыгнет с места\n• Педаль минутами не держите: мотор заработал ровно — плавно отпускайте\n\nА вы выжимаете сцепление при запуске?"]]}, {"name": "Rutube", "parts": [["Название", "Нужно ли выжимать сцепление при запуске двигателя зимой"], ["Описание", "На машине с механической коробкой при запуске без выжатого сцепления стартер раскручивает не только коленвал, но и шестерни коробки передач. Зимой трансмиссионное масло густеет, и стартеру приходится работать тяжелее. Выжатое сцепление отключает коробку от двигателя: стартеру и аккумулятору легче, и мотор заводится проще. Ещё одна причина — безопасность: если машина осталась на передаче, при пуске она не прыгнет с места. Педаль достаточно держать, пока двигатель не заработает ровно, потом плавно отпустить.\n#авто #зима #михалыч #автосоветы"]]}, {"name": "Дзен", "parts": [["Заголовок", "Сцепление при запуске в мороз: привычка из прошлого или реальная польза?"], ["Описание", "Михалыч показывает, что крутит стартер, когда педаль не выжата, и почему зимой это важно."]]}, {"name": "Telegram-канал", "parts": [["Пост", "❄️ Выжимаешь сцепление, когда заводишь машину в мороз?\n\nБез педали стартер крутит ещё и шестерни коробки, а масло там на морозе густое, как мёд.\n\nВыжал — коробка отключилась: стартеру и аккумулятору легче, заводится проще.\n\nИ если машина на передаче — не прыгнет вперёд.\n\nА ты выжимаешь? 👇"]]}, {"name": "TikTok", "parts": [["Подпись", "Выжимать сцепление в мороз — бред или польза? 🤔 Михалыч объясняет ❄️ А ты выжимаешь? #авто #зима #машина #михалыч #fyp"]]}, {"name": "Instagram Reels", "parts": [["Подпись", "Выжимать сцепление, когда заводишь в мороз? ❄️ Досмотри — дело в коробке 😉 Отправь тому, кто «и так заведётся»\n#авто #зима #машина #михалыч"]]}]}
+];
+
+const el = (tag, attrs = {}, ...kids) => {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === 'class') e.className = v; else if (k.startsWith('on')) e.addEventListener(k.slice(2), v); else e.setAttribute(k, v);
+  }
+  for (const k of kids) e.append(k);
+  return e;
+};
+
+let downloads = null;
+const downloadsReady = (window.claude && window.claude.use ? window.claude.use('downloads') : Promise.resolve(null))
+  .then(d => { downloads = d; return d; }).catch(() => null);
+
+async function offer(url, filename, btn, note, label) {
+  note.className = 'note'; note.textContent = '';
+  const d = downloads || await downloadsReady;
+  if (!d) {
+    note.className = 'note err';
+    note.textContent = 'Здесь скачивание недоступно. Открой эту страницу по ссылке в приложении Claude или на claude.ai в браузере.';
+    return;
+  }
+  btn.disabled = true; const old = btn.textContent; btn.textContent = 'Готовлю файл…';
+  try {
+    const r = await fetch(url);
+    if (!r.ok) throw { code: 'fetch' };
+    const blob = await r.blob();
+    btn.textContent = 'Подтверди сохранение…';
+    await d.save({ filename, data: blob });
+    note.className = 'note ok'; note.textContent = label + ' сохранён.';
+  } catch (e) {
+    const code = e && e.code;
+    note.className = 'note' + (code === 'declined' ? '' : ' err');
+    note.textContent = code === 'declined' ? 'Сохранение отменено.'
+      : code === 'rate_limited' ? 'Уже открыт другой запрос на сохранение — подтверди или закрой его и нажми ещё раз.'
+      : code === 'fetch' ? 'Не удалось загрузить файл. Проверь интернет и нажми ещё раз.'
+      : 'Не получилось сохранить файл. Открой страницу на claude.ai в браузере и попробуй там.';
+  } finally { btn.disabled = false; btn.textContent = old; }
+}
+
+function copyText(text, btn, pre) {
+  const done = () => { const o = btn.textContent; btn.textContent = 'Скопировано'; setTimeout(() => btn.textContent = o, 1600); };
+  const fallback = () => {
+    const range = document.createRange(); range.selectNodeContents(pre);
+    const sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(range);
+    btn.textContent = 'Выделено — скопируй';
+  };
+  try { navigator.clipboard.writeText(text).then(done, fallback); } catch { fallback(); }
+}
+
+const PROFILE = [
+ {
+  "name": "YouTube",
+  "parts": [
+   [
+    "Название канала",
+    "Гараж Михалыча"
+   ],
+   [
+    "Псевдоним (@)",
+    "@garazh_mihalycha"
+   ],
+   [
+    "Описание канала",
+    "Мультяшный механик Михалыч проверяет автомифы.\n\nМожно ли звонить на заправке? Нужно ли прогревать мотор зимой? Экономит ли нейтралка под горку? Каждый ролик — меньше минуты: что говорят факты и что это значит для твоей машины.\n\nПиши в комментариях, какой миф проверить дальше, — лучшие идеи станут новыми выпусками."
+   ]
+  ],
+  "hint": "Если псевдоним занят — @garazh.mihalycha или @mihalych_garazh. Аудитория — «Нет, не для детей»."
+ },
+ {
+  "name": "VK Клипы",
+  "parts": [
+   [
+    "Название сообщества",
+    "Гараж Михалыча"
+   ],
+   [
+    "Адрес",
+    "vk.com/garazh_mihalycha"
+   ],
+   [
+    "Описание",
+    "Мультяшный механик Михалыч проверяет автомифы: можно ли звонить на заправке, нужно ли греть мотор зимой, экономит ли нейтралка. Короткие ролики каждую неделю.\n\nПиши в комментариях, какой миф проверить дальше 👇"
+   ]
+  ],
+  "hint": "«Создать сообщество» → «Тематическое сообщество» → «Авто, мото»."
+ },
+ {
+  "name": "Одноклассники",
+  "parts": [
+   [
+    "Название группы",
+    "Гараж Михалыча"
+   ],
+   [
+    "Описание",
+    "Механик Михалыч разбирает автомифы: можно ли звонить на заправке, нужно ли прогревать двигатель зимой, экономит ли нейтралка под горку.\n\nКороткие ролики каждую неделю. Напишите в комментариях, какой миф проверить дальше."
+   ]
+  ],
+  "hint": "Тип группы — «По интересам», тематика «Авто»."
+ },
+ {
+  "name": "Rutube",
+  "parts": [
+   [
+    "Название канала",
+    "Гараж Михалыча"
+   ],
+   [
+    "Описание",
+    "Мультяшный механик Михалыч проверяет автомифы: можно ли звонить на заправке, нужно ли прогревать двигатель зимой, экономит ли нейтралка под горку. Короткие ролики каждую неделю."
+   ]
+  ],
+  "hint": "Категория роликов — «Авто-мото»."
+ },
+ {
+  "name": "Дзен",
+  "parts": [
+   [
+    "Название",
+    "Гараж Михалыча"
+   ],
+   [
+    "Описание",
+    "Автомифы за минуту: можно ли звонить на заправке, нужно ли греть мотор зимой, экономит ли нейтралка. Мультяшный механик Михалыч."
+   ]
+  ],
+  "hint": "Рубрика «Авто»."
+ },
+ {
+  "name": "Telegram-канал",
+  "parts": [
+   [
+    "Название",
+    "Гараж Михалыча"
+   ],
+   [
+    "Ссылка",
+    "t.me/garazh_mihalycha"
+   ],
+   [
+    "Описание",
+    "Автомифы за минуту 🔧 Мультяшный механик Михалыч проверяет, что правда, а что нет. Новые ролики каждую неделю."
+   ]
+  ],
+  "hint": "Описание канала — до 255 знаков."
+ },
+ {
+  "name": "TikTok",
+  "parts": [
+   [
+    "Имя",
+    "Гараж Михалыча"
+   ],
+   [
+    "Описание профиля",
+    "Автомифы за минуту: проверяем с Михалычем 🔧 Какой миф проверить? 👇"
+   ]
+  ],
+  "hint": "Лимит описания 80 знаков. Имя пользователя — garazh_mihalycha."
+ },
+ {
+  "name": "Instagram",
+  "parts": [
+   [
+    "Имя",
+    "Гараж Михалыча"
+   ],
+   [
+    "Описание профиля",
+    "Механик Михалыч 🔧\nАвтомифы за минуту: что правда, а что нет\nПиши, какой миф проверить 👇"
+   ]
+  ],
+  "hint": "Лимит 150 знаков. Без ссылок."
+ }
+];
+
+function renderPlat(p, into) {
+  const box = el('div', { class: 'plat' });
+  const head = el('div', { class: 'plat-h' }, el('span', {}, p.name));
+  box.append(head);
+  const pres = [];
+  for (const [lbl, t] of p.parts) {
+    const pre = el('pre', { class: 'txt' }, t); pres.push(pre);
+    if (p.parts.length > 1) {
+      const row = el('div', { class: 'plat-h' }, el('p', { class: 'lbl' }, lbl));
+      const b = el('button', { type: 'button' }, 'Копировать');
+      b.addEventListener('click', () => copyText(t, b, pre));
+      row.append(b); box.append(row);
+    }
+    box.append(pre);
+  }
+  if (p.parts.length === 1) {
+    const b = el('button', { type: 'button' }, 'Копировать');
+    b.addEventListener('click', () => copyText(p.parts[0][1], b, pres[0]));
+    head.append(b);
+  }
+  if (p.hint) box.append(el('p', { class: 'hint' }, p.hint));
+  into.append(box);
+}
+
+
+const PLAT_TIME = { 'YouTube Shorts': '11:00', 'Одноклассники': '11:00', 'VK Клипы': '12:00', 'Rutube': '12:00',
+  'Дзен': '12:00', 'Telegram-канал': '12:00', 'TikTok': '14:00', 'Instagram Reels': '14:00' };
+const list = document.getElementById('list');
+list.style.display = 'grid'; list.style.gap = '22px';
+for (const ep of [...EPISODES].reverse()) {
+  const note = el('p', { class: 'note', role: 'status', 'aria-live': 'polite' });
+  const vbtn = el('button', { class: 'main', type: 'button', id: 'dl-' + ep.n }, 'Скачать ролик');
+  const cbtn = el('button', { type: 'button', id: 'cv-' + ep.n }, 'Обложка');
+  vbtn.addEventListener('click', () => offer(ep.file, ep.save + '.mp4', vbtn, note, 'Ролик'));
+  cbtn.addEventListener('click', () => offer(ep.cover, ep.save + '_oblozhka.jpg', cbtn, note, 'Файл обложки'));
+  const media = el('div', { class: 'media' },
+    el('video', { src: ep.file, poster: ep.poster, controls: '', playsinline: '', preload: 'none' }),
+    el('div', { class: 'btns' }, vbtn, cbtn), note);
+
+  const info = el('div', { class: 'info' },
+    el('div', { class: 'meta' }, `Эпизод ${ep.n} · ${ep.dur} · 1080×1920`),
+    el('h3', {}, ep.title),
+    el('div', {}, ep.date ? el('span', { class: 'chip next' }, 'Выход: ' + ep.date) : el('span', { class: 'chip' }, 'Уже выложен')));
+  for (const p of ep.plats) {
+    const full = p.parts.map(([, t]) => t).join('\n\n');
+    const box = el('div', { class: 'plat' });
+    const pres = [];
+    const nameEl = el('span', {}, p.name);
+    if (ep.date && PLAT_TIME[p.name]) nameEl.append(el('span', { class: 'ptime' }, PLAT_TIME[p.name]));
+    const head = el('div', { class: 'plat-h' }, nameEl);
+    box.append(head);
+    for (const [lbl, t] of p.parts) {
+      const pre = el('pre', { class: 'txt' }, t); pres.push(pre);
+      if (p.parts.length > 1) {
+        const row = el('div', { class: 'plat-h' }, el('p', { class: 'lbl' }, lbl));
+        const b = el('button', { type: 'button' }, 'Копировать');
+        b.addEventListener('click', () => copyText(t, b, pre));
+        row.append(b); box.append(row);
+      }
+      box.append(pre);
+    }
+    if (p.parts.length === 1) {
+      const b = el('button', { type: 'button' }, 'Копировать');
+      b.addEventListener('click', () => copyText(full, b, pres[0]));
+      head.append(b);
+    }
+    info.append(box);
+  }
+  list.append(el('article', { class: 'ep', id: 'ep' + ep.n }, media, info));
+}
+</script>
+
+</body></html>

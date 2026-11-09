@@ -1,0 +1,182 @@
+{
+ "c01": {
+  "rank": 1,
+  "partial": false,
+  "cost": "near",
+  "note": "конденсер 6 500 при вилке до 6 000"
+ },
+ "c02": {
+  "rank": 4,
+  "partial": false,
+  "cost": "in",
+  "note": "забитый радиатор печки — только 4-я причина"
+ },
+ "c03": {
+  "rank": 1,
+  "partial": false,
+  "cost": "out",
+  "note": "сцепление робота + актуатор, 65 000 за детали"
+ },
+ "c04": {
+  "rank": 1,
+  "partial": false,
+  "cost": "in",
+  "note": ""
+ },
+ "c05": {
+  "rank": 1,
+  "partial": false,
+  "cost": "in",
+  "note": ""
+ },
+ "c06": {
+  "rank": 1,
+  "partial": false,
+  "cost": "out",
+  "note": "кулиса + попутно сцепление, 40 000"
+ },
+ "c07": {
+  "rank": 1,
+  "partial": false,
+  "cost": "out",
+  "note": "шлицы 5-й, 45 000 при вилке до 29 500"
+ },
+ "c08": {
+  "rank": 2,
+  "partial": false,
+  "cost": "near",
+  "note": "радиатор печки 6 500 при вилке от 7 500"
+ },
+ "c09": {
+  "rank": 1,
+  "partial": false,
+  "cost": "out",
+  "note": "ремкомплект суппорта за 600 вместо нового суппорта"
+ },
+ "c10": {
+  "rank": 4,
+  "partial": false,
+  "cost": "near",
+  "note": "ШРУС кардана — только 4-я причина"
+ },
+ "c11": {
+  "rank": 0,
+  "partial": false,
+  "cost": "na",
+  "note": "лямбда-зонд, симптом расплывчатый"
+ },
+ "c12": {
+  "rank": 2,
+  "partial": true,
+  "cost": "near",
+  "note": "подушка глушителя; названо «труба касается»"
+ },
+ "c13": {
+  "rank": 1,
+  "partial": false,
+  "cost": "out",
+  "note": "владелец поставил новый вариатор за 234 000"
+ },
+ "c14": {
+  "rank": 2,
+  "partial": true,
+  "cost": "in",
+  "note": "пальцы суппорта; названо «колодки в скобе»"
+ },
+ "c15": {
+  "rank": 1,
+  "partial": false,
+  "cost": "in",
+  "note": ""
+ },
+ "c16": {
+  "rank": 0,
+  "partial": true,
+  "cost": "in",
+  "note": "приводной ремень; названы ролик/натяжитель"
+ },
+ "c17": {
+  "rank": 1,
+  "partial": false,
+  "cost": "in",
+  "note": "две неисправности, счёт всё равно в вилке"
+ },
+ "c18": {
+  "rank": 0,
+  "partial": false,
+  "cost": "na",
+  "note": "обрыв ремня ГРМ, 250 000"
+ },
+ "c19": {
+  "rank": 1,
+  "partial": false,
+  "cost": "near",
+  "note": "аккумулятор 6 300 при вилке от 7 000"
+ },
+ "c20": {
+  "rank": 2,
+  "partial": false,
+  "cost": "in",
+  "note": ""
+ },
+ "c21": {
+  "rank": 1,
+  "partial": false,
+  "cost": "near",
+  "note": "14 000 при вилке до 13 000"
+ },
+ "c22": {
+  "rank": 2,
+  "partial": true,
+  "cost": "in",
+  "note": "окислился провод стартера; назван стартер"
+ },
+ "c23": {
+  "rank": 2,
+  "partial": false,
+  "cost": "in",
+  "note": ""
+ },
+ "c24": {
+  "rank": 1,
+  "partial": false,
+  "cost": "out",
+  "note": "ремонт платы 58 400 дешевле замены мехатроника"
+ },
+ "c25": {
+  "rank": 1,
+  "partial": false,
+  "cost": "in",
+  "note": ""
+ },
+ "c26": {
+  "rank": 0,
+  "partial": false,
+  "cost": "na",
+  "note": "термостат"
+ },
+ "c27": {
+  "rank": 1,
+  "partial": true,
+  "cost": "out",
+  "note": "ступица + оба ШРУСа в одном счёте"
+ },
+ "c28": {
+  "rank": 1,
+  "partial": false,
+  "cost": "out",
+  "note": "колодки + диски + пыльники, 20 000"
+ },
+ "c29": {
+  "rank": 0,
+  "partial": false,
+  "cost": "na",
+  "note": "грязная дроссельная заслонка, был только чек"
+ },
+ "c30": {
+  "rank": 3,
+  "partial": false,
+  "cost": "near",
+  "note": "капремонт вариатора 180 000 при вилке до 157 000"
+ }
+}

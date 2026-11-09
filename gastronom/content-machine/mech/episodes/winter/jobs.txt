@@ -1,0 +1,54 @@
+Длинный «7 ошибок в мороз, которые губят машину» (7 нояб 2026). Самый дешёвый рецепт: gpt_image_2_5 medium 2k (1 кр), wan3_0 480p (1 кр/с), Alexey minimax.
+Референсы: Михалыч 87ee183f-9089-4c8d-bbe2-f2bdaec3c14c, двор с вишнёвой 2114 08996e99-8177-4b7d-8b13-c1ae3a50f7bb, водитель (KC1 из china) 53a2bd70-7357-464a-9e4d-a32495b0d3ee,
+гараж 23313f2f-6cbd-489b-b445-5159ade03183, разрез 7f40d856-2419-4f5f-ac40-fcb851a96b24, мёд d0ed1097-a78e-41a4-9bf1-8555e947413f, салон 5c515c13-1a53-4716-85c0-199f40c4cf5d, педаль 01157745-dd14-4db0-87b6-736c7b380d99
+KF KI1 1 0d7af570-2610-4bc1-87d6-7b5d4bd4f5af
+KF KI2 2 adbab9d5-3f85-4ed7-95ee-3185039b4c7c
+KF KI3 3 3e6710a9-9ccd-4ecb-b7b9-7443aec03e8a
+KF KA1 4 25694285-e1fc-4d53-bc0a-5aab001f5a97
+KF KA2 5 54dfbf6c-6d8d-47eb-9438-ac23d32ea36b
+KF KA3 6 6bc20291-f0c4-4e93-a541-4f54090680ad
+KF KA4 7 0c02b4c4-bd06-4190-b784-534f9e5a692a
+KF KB1 8 6847b23f-b5fb-4627-892c-f40751393e57
+KF KB2 9 98e6a454-2fbb-4499-8d9f-215312efd55e
+KF KB3 10 67b02eac-70ee-4b33-8868-2da352d69002
+KF KB4 11 055575cd-aada-4c93-b193-342e06126606
+KF KB5 12 7be67355-e319-41db-b265-7319313f2a1e
+KF KC1 13 d5538372-7efb-4307-9cd9-2837ca46e18c
+KF KC2 14 d0999ecb-6a9c-432c-88bc-742904debe9c
+KF KC3 15 e84780bf-673d-491e-b7e2-2942750b0472
+KF KC4 16 2c3b732c-9dc0-4c61-b216-82c00dbaa917
+KF KC5 17 c7301bc9-bbeb-4be0-9ada-645e472114fd
+KF KD1 18 ae19404a-b470-4a54-a7eb-2cd444f16f4d
+KF KD2 19 a8374bf1-815c-4615-803b-505224744aa8
+KF KD3 20 f6c7cebd-648b-40c5-84cd-ddc172d838d4
+KF KD4 21 a2f58a7f-398d-4eb8-a23e-adfb04e2cd2f
+KF KD5 22 fbf6fe1e-f9e9-4e9a-b872-601bd9e0d914
+KF KE1 23 0ffdbf22-405a-45f1-9540-2b224ddb0687
+KF KE2 24 67e38b12-fc55-4642-9a13-12a7ed73418b
+KF KE3 25 baebe7c3-9e1e-4cc7-a581-f80b916e6f2d
+KF KF1 26 dfece61b-dc48-4e5e-80f9-80c3f532bbc8
+KF KF2 27 038c6ba6-4b5a-4a85-9876-7f63e531bcee
+KF KG1 28 9709fa40-bc2c-447c-b4b0-f7e1e726bcd8
+KF KG2 29 71df77bd-c061-4d4a-b17a-290c9eb57f5c
+KF KG3 30 eb80b094-e137-4ee9-bbe3-24ec5653695e
+KF KG4 31 31a9cea9-b178-4cdd-8001-b7096c86ac80
+KF KH1 32 7d6c2746-c46f-48b1-9471-35d073087ebd
+KF KH2 33 d3ccfb4e-b6bb-4d32-b55b-3e5b08fdd076
+KF KZ1 34 b6c25a93-ac03-4a1c-998c-84ed9c124665
+KF KG1b 35 538a942a-4c08-4ff4-a618-9fe7bde89546 (правка: за рулём водитель, не Михалыч)
+KF KG2b 36 23c01ee6-d5ad-47d0-8055-93e6fb487431 (правка: рукава чёрной куртки)
+CL M_I1 101 71ed62a1-d482-4eed-8c01-93aecfdf2b87 (5)
+CL M_A3 102 5bee2f93-0b4c-41ee-ae00-30fe6ed82c73 (5)
+CL M_B2 103 81f5a17d-c9e1-4566-9085-eb616b6a7c68 (5)
+CL M_B4 104 9abf4e78-5916-483c-92da-93f1260c287f (5)
+CL M_C1 105 c2a460c6-5312-4123-8787-ffc5ee5e0095 (4)
+CL M_C4 106 b4d66cf0-bd2c-47d6-bd30-571bf0a340dd (4)
+CL M_D1 107 dd8f6e0a-e3aa-427c-924e-f74320ecf9b9 (5)
+CL M_D3 108 a451a123-ab88-420c-90cd-ce05cdd877c9 (5)
+CL M_E1 109 e433b7d9-ee11-45e0-96be-64c7d005d5b2 (5)
+CL M_E3 110 4b293fef-29e3-4836-bb10-57856790589b (5)
+CL M_G3 111 ac4a4c55-bf91-48df-a2f3-abe4b6f02171 (5)
+CL M_G2 112 (5) — id ниже
+CL M_G2 112 13ec6d86-70c6-48fb-9fdf-31459c2dfb3f (5)
+KF KC4b 37 cee9e122-3ac2-4853-9b92-4dc870e42b94 (правка: ладонь по краю двери, по факт-чеку)
+TH th_kettle 90 b17fec94-9c00-47db-ae78-521f8ac87c9a (high 2.75)
