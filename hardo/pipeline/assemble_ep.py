@@ -76,12 +76,18 @@ for bi, block in enumerate(blocks):
     t+=total
 def _do(j):
     kind,src,out,d,zi=j
-    if os.path.exists(out) and os.path.getsize(out)>1000:
-        want = d if kind=="clip" else d/FPS
-        try: ok = abs(dur(out)-want) < 0.12 and os.path.getmtime(out) > os.path.getmtime(src)
+    import json as _json
+    meta = out + ".json"; want = d if kind=="clip" else d/FPS
+    if os.path.exists(out) and os.path.getsize(out)>1000 and os.path.exists(meta):
+        try:
+            m = _json.load(open(meta))
+            ok = m.get("src")==src and m.get("kind")==kind and abs(m.get("want",-1)-want)<0.01 and bool(m.get("zi"))==bool(zi) \
+                 and abs(dur(out)-want) < 0.12 and os.path.getmtime(out) > os.path.getmtime(src)
         except Exception: ok = False
         if ok: return out
-        os.remove(out)
+    for f in (out, meta):
+        if os.path.exists(f): os.remove(f)
+    _json.dump({"src":src,"kind":kind,"want":want,"zi":bool(zi)}, open(meta,"w"))
     if kind=="clip": run(["ffmpeg","-y","-i",src,"-vf",f"scale={W}:{H}:flags=lanczos,fps={FPS},tpad=stop_mode=clone:stop_duration=6,format=yuv420p","-t",f"{d:.3f}","-an","-c:v","libx264","-preset","fast","-crf","19",out])
     else: kenburns(src,out,d,0.06,zi)
     return out
