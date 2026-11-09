@@ -51,3 +51,8 @@ Needs `ANTHROPIC_API_KEY`; without it the script exits 2 and Tier 2 remains the 
   (`qa_vision.py pair` says animatable) or scenes with no people and no white void (planes in the sky, a window, a sunrise).
 - Two frames per narration block keep every shot under about 7 s; the second frame is a close-up (hands, object) and costs 0.25 credit.
 - Real prices on this account: gpt-image-2.6 0.25 per image, Wan 5 s clip 5, ElevenLabs block 0.6–0.75, Piper 0.
+
+## Episode 6, second pass (style and voice)
+- The series look is the ep1–3 cartoon (char_ref of ep3 as a style reference in every prompt); ep5 and the first ep6 pass drifted and were rejected.
+- Narration: Grady (ElevenLabs) at tempo 1.0–1.05 (about 135–140 wpm). Piper was rejected as monotone and female-sounding; never pick a voice by a metric without listening.
+- Style reference: always pass a frame of the approved episode as a second image reference and write "in EXACTLY the style of the reference" first.

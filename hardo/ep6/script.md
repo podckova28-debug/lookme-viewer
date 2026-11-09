@@ -1,6 +1,6 @@
 # Why It's So Hard to Be a Flight Attendant — Episode 6 (~6 min, 30 blocks)
 
-Style: original series look (episodes 3–4): white background, thin clean lines, soft flat colour, second person, deadpan. Narrator: Piper lessac (free), tempo x1.1.
+Style: original series look (episodes 3–4): white background, thin clean lines, soft flat colour, second person, deadpan. Narrator: Grady (ElevenLabs), tempo x1.05. Visual style: episodes 1-3 (flat cartoon, white background, Dinzo reference).
 Hero: flight attendant, man in his late twenties, short black hair, white shirt, navy waistcoat, burgundy tie, blank name tag, black rolling suitcase.
 
 ## COLD OPEN
