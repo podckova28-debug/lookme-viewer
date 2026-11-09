@@ -31,11 +31,11 @@ NEGATIVE: the screen grows, the screen shows text, new people, extra people, dup
 ```
 Hand-drawn 2D 1990s family cartoon, clean ink lines, soft cel shading, simple limited animation on twos. Start exactly on the reference image and keep everything in it: the same bathroom, the same young man, the same clothes, the same light. One continuous 5-second shot, the camera does not move, no cuts.
 
-ACTION: While he brushes his teeth, his red metal glove closes a little too tightly by itself and the plastic toothbrush pops into two pieces with a funny little "pop". He freezes, looks at the two pieces in his metal hand, then looks at his reflection in the mirror, puzzled.
+ACTION: He looks at the toothbrush in his red metal glove. The metal fingers slowly close by themselves, the toothbrush bends in the middle and pops into two pieces; the head piece drops into the sink. He stares at the half left in his metal hand, then slowly lifts his eyes, puzzled.
 
-AUDIO: a small mechanical whirr, a funny cartoon pop. No voice lines.
+AUDIO: a small mechanical whirr, a funny cartoon pop, a tiny clink in the sink. No voice lines.
 
-NEGATIVE: the glove covering more of his arm, new people, duplicated characters, extra arms, extra fingers, morphing faces, clothes changing, camera moves, zoom, cuts, readable text, logos, photorealism, 3D render, watermark.
+NEGATIVE: a mirror, reflections, the toothbrush in his mouth, the glove covering more of his arm, new people, duplicated characters, extra arms, extra fingers, morphing faces, clothes changing, camera moves, zoom, cuts, readable text, logos, photorealism, 3D render, watermark.
 ```
 
 ## Сцена 04 · стартовый кадр `04.png`
