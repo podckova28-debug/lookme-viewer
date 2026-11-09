@@ -67,3 +67,17 @@ Prompt rule: every scene prompt names only the hero, the one object the line is 
   line, realistic proportions, soft flat fills, small simple face. Not the teacher sheet (thicker outline, bigger head) and not
   the ep6 attendant. Say "thin line, realistic proportions, no thick cartoon outline" in the character prompt and check the sheet
   against the cook before generating scenes.
+
+## Added for ep7
+- Close-ups drift from their wide shot: the close-up prompts only said "the hero", so the model used the station outfit from the
+  character sheet while the wide shot of the same moment had turnout gear (5 close-ups), and secondary characters and the dog
+  came out as different people and animals (4 close-ups). Rule: every close-up passes its WIDE frame as a second image reference
+  and names the outfit and each secondary character ("the same wife as in the reference: brown bun, maroon cardigan").
+  Fix after the fact with an edit pass (frame + wide frame as references), 0.25 each, not a new generation.
+- Animals seen from behind: say "tail down, no anatomical details" (ep7 F117 came back with explicit detail).
+- Clocks the detector misses are common (it found 3 of 8). Check every clock by eye against the narration; fix by redrawing the
+  hands in code (keep the face, repaint the inner disk, draw hands with the original colour and width), then recut the punch-in crop.
+- Strong zoom (12%) on labelled frames hides 5.4% of each edge: labels must sit inside 5.9%..94.1% (qa_check reads zoom_strong).
+- A label next to a second person reads as that person's number (ep7 "$59,530" beside the mechanic): put the number on the
+  frame that shows the object (coin stack) instead.
+- Blind checker run 1 found 10 continuity and anatomy defects after 26 green automatic checks; the second run is mandatory.

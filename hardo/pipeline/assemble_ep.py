@@ -37,7 +37,7 @@ def labeled(name):
             t=min(tX,tY); sx,sy = cx+dx*t, cy+dy*t
         draw_arrow(d, (sx,sy), (bx*w,by*h), max(3,int(7*w/1536)), k)
     out = os.path.join(OUT,"labeled",f"{name}.png"); im.save(out); return out
-def kenburns(src, out, frames, z, zoom_in):
+def kenburns(src, out, frames, z, zoom_in, ease=False):
     im = Image.open(src).convert("RGB"); sw, sh = im.size
     if abs(sw/sh - W/H) > 1e-3:
         if sw/sh > W/H: nw=int(sh*W/H); im=im.crop(((sw-nw)//2,0,(sw-nw)//2+nw,sh))
@@ -46,7 +46,7 @@ def kenburns(src, out, frames, z, zoom_in):
     if sw < W*1.5: im = im.resize((W*2,H*2), Image.LANCZOS); sw, sh = im.size
     proc = subprocess.Popen(["ffmpeg","-y","-f","rawvideo","-pix_fmt","rgb24","-s",f"{W}x{H}","-r",str(FPS),"-i","-","-an","-c:v","libx264","-preset","fast","-crf","19","-pix_fmt","yuv420p",out], stdin=subprocess.PIPE, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
     for i in range(frames):
-        p=i/max(frames-1,1); zoom = 1+z*p if zoom_in else 1+z-z*p
+        p=i/max(frames-1,1); p = p*p*(3-2*p) if ease else p; zoom = 1+z*p if zoom_in else 1+z-z*p
         a=(sw/zoom)/W; x0=(sw-sw/zoom)/2; y0=(sh-sh/zoom)/2
         proc.stdin.write(im.transform((W,H), Image.AFFINE, (a,0,x0,0,a,y0), resample=Image.BILINEAR).tobytes())
     proc.stdin.close(); proc.wait()
@@ -55,8 +55,10 @@ def dur(f): return float(subprocess.check_output(["ffprobe","-v","error","-show_
 def run(cmd): subprocess.run(cmd, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
 n = len(blocks)
 vdur = [dur(os.path.join(VO, f"{i:02d}.mp3"))/TEMPO for i in range(1,n+1)]
-segs=[]; srt=[]; t=0.0; zoom_dir=1; jobs=[]
+segs=[]; srt=[]; t=0.0; zoom_dir=1; jobs=[]; seg_t=[]; block_t=[]
+STRONG = set(plan.get("zoom_strong", list(labels)))  # stat / label frames get a visible eased push-in
 for bi, block in enumerate(blocks):
+    block_t.append(t); seg_cursor=t
     total = vdur[bi]+GAP; srt.append((t,t+vdur[bi],texts[bi]))
     fixed = sum(s[2] for s in block if s[0]=="clip" and os.path.exists(os.path.join(CL,f"{s[1]}.mp4")))
     rest = total-fixed
@@ -70,26 +72,26 @@ for bi, block in enumerate(blocks):
         else:
             d = rest if share is None else rest*share
         out=os.path.join(OUT,"seg",f"{len(segs):02d}.mp4")
-        if kind=="clip": jobs.append(("clip",src,out,d,None))
-        else: jobs.append(("still",labeled(name),out,int(round(d*FPS)),zoom_dir>0)); zoom_dir*=-1
-        segs.append(out)
+        if kind=="clip": jobs.append(("clip",src,out,d,None,0))
+        else: jobs.append(("still",labeled(name),out,int(round(d*FPS)),zoom_dir>0,0.12 if name in STRONG else 0.06)); zoom_dir*=-1
+        segs.append(out); seg_t.append((seg_cursor,name)); seg_cursor+=d
     t+=total
 def _do(j):
-    kind,src,out,d,zi=j
+    kind,src,out,d,zi,z=j
     import json as _json
     meta = out + ".json"; want = d if kind=="clip" else d/FPS
     if os.path.exists(out) and os.path.getsize(out)>1000 and os.path.exists(meta):
         try:
             m = _json.load(open(meta))
-            ok = m.get("src")==src and m.get("kind")==kind and abs(m.get("want",-1)-want)<0.01 and bool(m.get("zi"))==bool(zi) \
+            ok = m.get("src")==src and m.get("kind")==kind and abs(m.get("want",-1)-want)<0.01 and bool(m.get("zi"))==bool(zi) and abs(m.get("z",0.06)-(z or 0.06))<1e-6 \
                  and abs(dur(out)-want) < 0.12 and os.path.getmtime(out) > os.path.getmtime(src)
         except Exception: ok = False
         if ok: return out
     for f in (out, meta):
         if os.path.exists(f): os.remove(f)
-    _json.dump({"src":src,"kind":kind,"want":want,"zi":bool(zi)}, open(meta,"w"))
+    _json.dump({"src":src,"kind":kind,"want":want,"zi":bool(zi),"z":z or 0.06}, open(meta,"w"))
     if kind=="clip": run(["ffmpeg","-y","-i",src,"-vf",f"scale={W}:{H}:flags=lanczos,fps={FPS},tpad=stop_mode=clone:stop_duration=6,format=yuv420p","-t",f"{d:.3f}","-an","-c:v","libx264","-preset","fast","-crf","19",out])
-    else: kenburns(src,out,d,0.06,zi)
+    else: kenburns(src,out,d,z,zi,ease=z>0.06)
     return out
 from multiprocessing import Pool
 with Pool(4) as pool:
@@ -99,9 +101,30 @@ run(["ffmpeg","-y","-f","concat","-safe","0","-i",os.path.join(OUT,"segs.txt"),"
 inputs=[]; [inputs.extend(["-i",os.path.join(VO,f"{i:02d}.mp3")]) for i in range(1,n+1)]
 fc = "".join(f"[{i}:a]aresample=44100,atempo={TEMPO},apad=pad_dur={GAP}[a{i}];" for i in range(n)) + "".join(f"[a{i}]" for i in range(n)) + f"concat=n={n}:v=0:a=1,loudnorm=I=-16:TP=-1.5[a]"
 run(["ffmpeg","-y",*inputs,"-filter_complex",fc,"-map","[a]","-c:a","aac","-b:a","192k",os.path.join(OUT,"voice.m4a")])
+VOICE = os.path.join(OUT,"voice.m4a")
+def sfx_track():
+    # plan["sfx"]: [[block (1-based), offset s, "alert"|"pop", amplitude]]; plan["label_pop"]: amplitude of a pop at each label shot
+    import numpy as np, wave
+    ev = [(block_t[b-1]+off, kind, amp) for b,off,kind,amp in plan.get("sfx", [])]
+    if plan.get("label_pop"): ev += [(t0+0.05,"pop",plan["label_pop"]) for t0,name in seg_t if name in labels]
+    if not ev: return None
+    sr=44100; total=sum(vdur)+GAP*n; buf=np.zeros(int(total*sr)+sr)
+    def tone(f, d):
+        x=np.arange(int(d*sr))/sr; y=np.sin(2*np.pi*f*x)+0.35*np.sin(4*np.pi*f*x)+0.15*np.sin(6*np.pi*f*x)
+        env=np.minimum(1,np.minimum(x/0.01,(d-x)/0.03)); return y*env/1.5
+    alert=np.concatenate([tone(853,0.42),tone(960,0.42)])
+    x=np.arange(int(0.09*sr))/sr; pop=np.sin(2*np.pi*(900*x-3000*x*x))*np.exp(-x/0.02)
+    for t0,kind,amp in ev:
+        y=(alert if kind=="alert" else pop)*amp; i=int(t0*sr); buf[i:i+len(y)]+=y[:len(buf)-i]
+    p=os.path.join(OUT,"sfx.wav"); w=wave.open(p,"wb"); w.setnchannels(1); w.setsampwidth(2); w.setframerate(sr)
+    w.writeframes((np.clip(buf,-1,1)*32767).astype("<i2").tobytes()); w.close(); return p
+_sfx = sfx_track()
+if _sfx:
+    VOICE = os.path.join(OUT,"voice_sfx.m4a")
+    run(["ffmpeg","-y","-i",os.path.join(OUT,"voice.m4a"),"-i",_sfx,"-filter_complex","[1:a]aresample=44100,aformat=channel_layouts=stereo[s];[0:a][s]amix=inputs=2:duration=first:normalize=0[a]","-map","[a]","-c:a","aac","-b:a","192k",VOICE])
 def ts(x): return f"{int(x//3600):02d}:{int(x%3600//60):02d}:{x%60:06.3f}".replace(".",",")
 with open(os.path.join(OUT,f"{NAME}.srt"),"w",encoding="utf8") as f:
     total_len = sum(vdur)+GAP*n
     for i,(a,b,tx) in enumerate(srt,1): f.write(f"{i}\n{ts(a)} --> {ts(min(b,total_len-0.3))}\n{tx}\n\n")
-run(["ffmpeg","-y","-i",os.path.join(OUT,"video_silent.mp4"),"-i",os.path.join(OUT,"voice.m4a"),"-map","0:v","-map","1:a","-c:v","copy","-c:a","copy","-shortest","-movflags","+faststart",os.path.join(OUT,f"{NAME}.mp4")])
+run(["ffmpeg","-y","-i",os.path.join(OUT,"video_silent.mp4"),"-i",VOICE,"-map","0:v","-map","1:a","-c:v","copy","-c:a","copy","-shortest","-movflags","+faststart",os.path.join(OUT,f"{NAME}.mp4")])
 print("video",round(dur(os.path.join(OUT,"video_silent.mp4")),2),"audio",round(dur(os.path.join(OUT,"voice.m4a")),2),"final",round(dur(os.path.join(OUT,f"{NAME}.mp4")),2))

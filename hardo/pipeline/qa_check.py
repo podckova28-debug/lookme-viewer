@@ -88,8 +88,9 @@ def main():
     add("white-background rule (mean luminance >= 120 on all samples)", not dark, f"{len(dark)} dark samples of {len(frames)}" + (f", first at {dark[0][0]}s" if dark else ""))
     add("no frozen video (>=6s without any motion)", not frozen, f"{len(frozen)} frozen samples" + (f", first at {frozen[0]}s" if frozen else ""))
     add("no pure black frames", all(l>30 for l in lum), f"min luminance {min(lum):.0f}")
-    # 6. labels inside safe area (text box within 3%..97% of width after 6% zoom)
+    # 6. labels inside safe area (text box visible at the tightest zoom: 6%, or 12% for zoom_strong / labelled frames)
     FONT=os.path.join(os.path.dirname(os.path.abspath(__file__)),"pilot","fonts","PatrickHand.ttf")
+    if not os.path.exists(FONT): FONT=os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),"pilot","fonts","PatrickHand.ttf")
     oob=[]
     for fr,labs in plan.get("labels",{}).items():
         src=os.path.join(d,"frames",f"{fr}.png")
@@ -99,7 +100,10 @@ def main():
             text,(tx,ty),a1,a2,size = lab[:5]
             font=ImageFont.truetype(FONT,int(size*w/1536)); bb=font.getbbox(text)
             x1=tx*w+bb[2]; y1=ty*h+bb[3]
-            if tx < 0.035 or ty < 0.03 or x1/w > 0.965 or y1/h > 0.95: oob.append(f"{fr}:'{text}' right edge at {x1/w:.2f}")
+            z = 0.12 if fr in set(plan.get("zoom_strong", plan.get("labels", {}).keys() if "label_pop" in plan else [])) else 0.06
+            m = (1-1/(1+z))/2 + 0.005   # part of each edge hidden at the tightest zoom, plus a small margin
+            x0=tx*w+bb[0]; y0=ty*h+bb[1]
+            if x0/w < m or y0/h < m or x1/w > 1-m or y1/h > 1-m: oob.append(f"{fr}:'{text}' box {x0/w:.3f}-{x1/w:.3f} x {y0/h:.3f}-{y1/h:.3f}, zoom {z:.0%}")
     add("hand-written labels inside safe area", not oob, "; ".join(oob) if oob else f"{sum(len(v) for v in plan.get('labels',{}).values())} labels ok")
     # 6b. labels must sit on white, arrows must point at ink, start outside the text and not be stubs
     overl=[]; miss=[]; badstart=[]; short=[]

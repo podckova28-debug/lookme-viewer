@@ -36,6 +36,13 @@ If a frame comes back too empty or too dark, fix it by an edit pass with the fra
 - Shots per block = round(block length / 5 s), between 2 and 3. Target: a cut about every 5 s (ep6 was ~9.5 s).
 - Length is set only by the narration; more cuts never make the video longer.
 
+### Hook, motion and sound (from the cook analytics, applied from ep7)
+- No empty start: the voice begins at 0:00 and a sound effect plays at 0:00 (ep7: the station alarm tone, quiet under the voice, then loud in the first pause).
+- The first block cuts faster than the rest: 4 shots, the first one about 4 s.
+- Every still moves: a slow push-in on all shots, and a stronger eased push-in (12%) on stat and label frames (`zoom_strong` in plan.json, default = all labelled frames).
+- Informative stretches (stats, money, health) never hold one picture: a label pop sound (`label_pop`) marks each number as it appears.
+- Sound effects are synthesized in `assemble_ep.py` (`sfx` in plan.json: block, offset, "alert" or "pop", amplitude) and cost nothing. Keep them sparse: an opening cue, a callback cue, pops on numbers.
+
 ## 5. Voice
 - ElevenLabs preset "Grady" (`e2a2d2e6-9ed2-59cd-82af-feaa27f8a678`) via text2speech_v2, variant elevenlabs, 0.6–0.75 credit per block.
 - Tempo 1.1 in the assembler (about 150 words per minute). Never Piper or another voice without the owner's OK.
