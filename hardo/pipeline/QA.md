@@ -33,3 +33,14 @@ Needs `ANTHROPIC_API_KEY`; without it the script exits 2 and Tier 2 remains the 
 
 ## Plan fields used by QA
 `labels`, `clip_pairs` {clip: [startFrame, endFrame]}, `static_clips`, `hero_description`, `hero_color` [[H,S,V],[H,S,V]] (PIL 0-255), `allow_clones` (frames where several copies of the hero are intended).
+
+## Added for ep5
+- `label_place.py <ep_dir>`: takes the author's label wishes from plan.json, snaps every arrow tip to the nearest ink and moves the text
+  to the nearest white area (ink under the box < 4%, inside the safe area, arrow length 12–35% of the width). Labels with no white spot
+  are dropped instead of being drawn over the artwork. Run before the build; it writes previews to review/labels/.
+- Before the build the frames go to the blind checker at FULL resolution (one PNG per Read), not the scenes sheets.
+- Night scenes: ask for a white background explicitly ("night shown only by a dark window / lamp cone"); a first pass with "night, dark sky"
+  produced 11 frames with 0–2% white and all of them had to be redrawn.
+- Hero truck colour and other recurring props must be named in every prompt (ep5: two frames came back with a white cab instead of blue).
+- Narration: Piper (offline, free) `en_US-lessac-high` at tempo 1.1 gives about 197 wpm; Higgsfield seed_speech is 0.3 credits per block,
+  ElevenLabs/MiniMax 0.6.
