@@ -111,6 +111,18 @@ def analyse(path, prev=None):
         if hit:
             flags.append(dict(type='COLOR_BLOB', t=T(hit[0]), f=hit[0], value=hit[4],
                               note=f'в зоне x≈{hit[2] * 20 / 320:.0%} y≈{hit[3] * 20 / 180:.0%} появилось новое насыщенное пятно (оттенок {hit[1] * 16}°): маска на лице, заливка, огонь?'))
+        # RED_SKIN: strong red (not orange hair) appearing in a shot that started without it: red face mask, blood,
+        # laser. The generators turn "angry" into a flat red head, so this one is worth a look every time.
+        def red_share(h):
+            hh = h[..., 0].astype(int)
+            return (((hh <= 5) | (hh >= 175)) & (h[..., 1] > 110) & (h[..., 1] < 235) & (h[..., 2] > 130)).mean()
+        r0 = red_share(hsv[s0])
+        for i in range(s0 + 1, s1, 3):
+            r = red_share(hsv[i])
+            if r > 0.002 and r > 5 * (r0 + 0.0002):
+                flags.append(dict(type='RED_SKIN', t=T(i), f=i, value=round(float(r) * 100, 2),
+                                  note=f'появился ярко-красный цвет ({r * 100:.1f}% кадра, в начале шота {r0 * 100:.2f}%): красное лицо-маска? (или лазер/огонь по сценарию)'))
+                break
         # BG_DRIFT: only if the camera is static (border motion small on average)
         if s1 - s0 > fps:
             e0 = cv2.Canny(gray[s0], 60, 140) > 0; e1 = cv2.Canny(gray[s1 - 1], 60, 140) > 0
