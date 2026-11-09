@@ -1,0 +1,8 @@
+*.mp4
+*.mov
+*.m4a
+*.mp3
+frames/
+clips/
+voice/
+seg/
