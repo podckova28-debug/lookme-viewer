@@ -56,3 +56,10 @@ Needs `ANTHROPIC_API_KEY`; without it the script exits 2 and Tier 2 remains the 
 - The series look is the ep1–3 cartoon (char_ref of ep3 as a style reference in every prompt); ep5 and the first ep6 pass drifted and were rejected.
 - Narration: Grady (ElevenLabs) at tempo 1.0–1.05 (about 135–140 wpm). Piper was rejected as monotone and female-sounding; never pick a voice by a metric without listening.
 - Style reference: always pass a frame of the approved episode as a second image reference and write "in EXACTLY the style of the reference" first.
+
+## Style rule (set after episode 6)
+The channel look is the courier/teacher/cook look: the hero and one or two props on PURE WHITE, no room, no ceiling, no floor fill,
+at most a thin ground line or a few outline buildings. Target: white share >= 0.55 per frame on average, no frame below 0.30.
+Episode 6 drifted again (white 0.37 average): the prompts described full cabins, galleys and hotel rooms, so the model drew them.
+Prompt rule: every scene prompt names only the hero, the one object the line is about and at most one other person; it says
+"no background, no walls, no ceiling, no floor, white around" explicitly. Check the white-share numbers before building.
