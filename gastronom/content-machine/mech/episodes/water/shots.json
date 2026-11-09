@@ -1,0 +1,175 @@
+{
+ "frames": {
+  "KI1": {
+   "cast": [
+    "mikhalych",
+    "driver"
+   ]
+  },
+  "KI2": {
+   "cast": [
+    "mikhalych"
+   ]
+  },
+  "KI3": {
+   "cast": [
+    "driver"
+   ]
+  },
+  "KA1": {
+   "cast": [
+    "mikhalych"
+   ]
+  },
+  "KA2": {
+   "cast": []
+  },
+  "KA3": {
+   "cast": [
+    "mikhalych"
+   ]
+  },
+  "KA4": {
+   "cast": []
+  },
+  "KB1": {
+   "cast": []
+  },
+  "KB2": {
+   "cast": [
+    "mikhalych"
+   ]
+  },
+  "KB3": {
+   "cast": [
+    "driver"
+   ]
+  },
+  "KC1": {
+   "cast": [
+    "driver"
+   ]
+  },
+  "KC2": {
+   "cast": []
+  },
+  "KC3": {
+   "cast": []
+  },
+  "KC4": {
+   "cast": [
+    "mikhalych"
+   ]
+  },
+  "KD1": {
+   "cast": []
+  },
+  "KD2": {
+   "cast": []
+  },
+  "KD3": {
+   "cast": [
+    "mikhalych"
+   ]
+  },
+  "KE1": {
+   "cast": []
+  },
+  "KE2": {
+   "cast": []
+  },
+  "KE3": {
+   "cast": []
+  },
+  "KF1": {
+   "cast": []
+  },
+  "KF2": {
+   "cast": []
+  },
+  "KF3": {
+   "cast": []
+  },
+  "KF4": {
+   "cast": []
+  },
+  "KG1": {
+   "cast": []
+  },
+  "KG2": {
+   "cast": []
+  },
+  "KG3": {
+   "cast": [
+    "driver"
+   ]
+  },
+  "KG4": {
+   "cast": []
+  },
+  "KG5": {
+   "cast": [
+    "mikhalych"
+   ]
+  },
+  "KG6": {
+   "cast": [
+    "driver"
+   ]
+  },
+  "KZ1": {
+   "cast": [
+    "mikhalych"
+   ]
+  },
+  "KZ2": {
+   "cast": [
+    "mikhalych",
+    "driver"
+   ]
+  },
+  "KF5": {
+   "cast": []
+  },
+  "KG7": {
+   "cast": []
+  }
+ },
+ "clips": {
+  "M_A2": {
+   "cast": []
+  },
+  "M_A4": {
+   "cast": []
+  },
+  "M_B1": {
+   "cast": []
+  },
+  "M_C2": {
+   "cast": []
+  },
+  "M_C3": {
+   "cast": []
+  },
+  "M_D2": {
+   "cast": []
+  },
+  "M_E2": {
+   "cast": []
+  },
+  "M_F1": {
+   "cast": []
+  },
+  "M_F4": {
+   "cast": []
+  },
+  "M_G2": {
+   "cast": []
+  },
+  "M_G3": {
+   "cast": [
+    "driver"
+   ]
+  }
+ }
+}

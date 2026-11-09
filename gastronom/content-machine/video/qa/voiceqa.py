@@ -2,7 +2,7 @@
 """Проверка дублей озвучки ПОСЛЕ синтеза: без участия человека решает, какой дубль годен, и что переозвучить.
 
     python3.13 voiceqa.py --lines <script.py|lines.json> --takes <папка с <id>_<дубль>.mp3|wav> [--only I01,A2]
-                          [--risk textgate.json] [--out voice_qa.json]
+                          [--risk textgate.json] [--out voice_qa.json] [--engine minimax|silero]
 
 На каждый дубль:
   1. Распознавание (faster-whisper medium) и сверка со сценарием по словам. Расхождение не считается ошибкой сразу:
@@ -229,7 +229,7 @@ def expected_stress(word, stressed_line):
     return None
 
 
-def check_take(wm, ac, path, text, risk, stressed_line, omo=()):
+def check_take(wm, ac, path, text, risk, stressed_line, omo=(), stress=True):
     x = load_audio(path); dur = len(x) / SR
     segs, _ = wm.transcribe(x, language='ru', beam_size=5, word_timestamps=True, vad_filter=False,
                             initial_prompt='Михалыч рассказывает про машины.')
@@ -252,6 +252,8 @@ def check_take(wm, ac, path, text, risk, stressed_line, omo=()):
         if not content and all(w in FUNC for w in aw): continue                          # служебные слова
         if len(sw) == len(aw) and all(a == b or same_stem(a, b) or (a in FUNC and b in FUNC) for a, b in zip(sw, aw)): continue
         if ''.join(sw) == ''.join(aw): continue                                         # «то же»/«тоже», «от дыхания»/«отдыхания»
+        tsya = lambda ws: [re.sub(r'ться$', 'тся', w) for w in ws]
+        if tsya(sw) == tsya(aw): continue                                               # «гнутся»/«гнуться» звучат одинаково
         if re.search(r'[a-z]', ''.join(aw)):                                             # ASR записал латиницей («trade in»):
             issues.append(dict(level='info', code='asr_latin', msg=f"ASR латиницей: «{' '.join(aw)}» вместо «{' '.join(sw)}»"))
             continue                                                                     # акустическая модель латиницу не читает
@@ -281,6 +283,7 @@ def check_take(wm, ac, path, text, risk, stressed_line, omo=()):
         else: issues.append(dict(level='info', code='asr_only', msg=f"ASR: «{rec['heard']}» вместо «{rec['script']}», акустика за сценарий ({delta:+.2f})", **rec))
     # ударения в рискованных словах
     risk = {norm(r) for r in risk}; omo = {norm(r) for r in omo} - risk
+    if not stress: risk, omo = set(), set()   # Silero: ударение задано разметкой «+», акустический детектор на этом голосе не работает
     for i, s in enumerate(S):
         if s['n'] not in risk and s['n'] not in omo: continue
         is_omo = s['n'] in omo
@@ -323,6 +326,7 @@ def main():
         if name in args: i = args.index(name); v = args[i + 1]; del args[i:i + 2]; return v
         return default
     lines = load_lines(opt('--lines')); tdir = opt('--takes'); only = opt('--only'); out = opt('--out', 'voice_qa.json'); riskf = opt('--risk')
+    engine = opt('--engine', 'minimax')   # silero — ударения ставятся разметкой, проверка ударения по звуку отключена
     risk_by = {r['id']: r['risk'] for r in json.load(open(riskf, encoding='utf-8'))} if riskf else {}
     stressed_by = {r['id']: r['stressed'] for r in json.load(open(riskf, encoding='utf-8'))} if riskf else {}
     omo_by = {r['id']: r.get('omographs', []) for r in json.load(open(riskf, encoding='utf-8'))} if riskf else {}
@@ -338,7 +342,7 @@ def main():
         risk = set(risk_by.get(lid, [])) | {norm(w) for w in re.findall(r'[\w-]+', text) if norm(w) in check_words or any(norm(w).startswith(c) for c in check_words if len(c) >= 5)}
         res[lid] = {}
         for f in takes:
-            r = check_take(wm, ac, os.path.join(tdir, f), text, risk, stressed_by.get(lid, ''), omo_by.get(lid, []))
+            r = check_take(wm, ac, os.path.join(tdir, f), text, risk, stressed_by.get(lid, ''), omo_by.get(lid, []), stress=engine != 'silero')
             res[lid][f] = r
             print(json.dumps(dict(id=lid, take=f, fails=r['fails'], warns=r['warns'], issues=[z['msg'] for z in r['issues'] if z['level'] != 'info']), ensure_ascii=False), flush=True)
     picks, retake = {}, {}

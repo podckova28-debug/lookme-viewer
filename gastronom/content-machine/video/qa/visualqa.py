@@ -175,8 +175,19 @@ def check_clip(path, refs, exp):
     return dict(dur=round(dur, 2), spikes=spikes, rows=rows, issues=issues)
 
 
+def strip_times(r):
+    """8 равномерных кадров до самого конца клипа (брак чаще в конце) + моменты флагов, затем скачки — не больше 12."""
+    base = [round(float(t), 2) for t in np.linspace(0, r['dur'] - 0.1, 8)]
+    extra = [z['t'] for z in r['issues']] + [t for t in r['spikes'] if t not in [z['t'] for z in r['issues']]]
+    out = list(base)
+    for t in extra:
+        if len(out) >= 12: break
+        if all(abs(t - u) > 0.12 for u in out): out.append(t)
+    return sorted(out)
+
+
 def strip(path, times, title):
-    ims = [grab(path, t) for t in times[:10]]
+    ims = [grab(path, t) for t in times[:12]]
     w, h = 384, 216; s = Image.new('RGB', (w * min(5, len(ims)) + 10, (h + 26) * ((len(ims) + 4) // 5) + 40), (20, 20, 20))
     d = ImageDraw.Draw(s); f = _font(18); d.text((8, 8), title, font=_font(22), fill=(255, 255, 0))
     for i, (im, t) in enumerate(zip(ims, times)):
@@ -219,7 +230,7 @@ def main():
     for f in cfiles:
         k = os.path.basename(f).replace('_raw.mp4', '').replace('.mp4', ''); spec = M.get('clips', {}).get(k, {})
         r = check_clip(f, refs, spec.get('cast')); res['clips'][k] = r
-        times = sorted(set([z['t'] for z in r['issues']] + r['spikes'] + [round(t, 1) for t in np.linspace(0, r['dur'] - 0.1, 8)]))
+        times = strip_times(r)
         strip(f, times, f"{k}: " + ('; '.join(z['msg'] for z in r['issues']) or 'флагов нет — проверить по чек-листу')[:110]).save(os.path.join(pack, f'clip_{k}.jpg'), quality=86)
         print(json.dumps(dict(clip=k, spikes=r['spikes'], issues=[z['msg'] + (f" → to={z['to']}" if 'to' in z else '') for z in r['issues']]), ensure_ascii=False), flush=True)
     json.dump(res, open(out, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)

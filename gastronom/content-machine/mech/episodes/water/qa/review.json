@@ -1,0 +1,152 @@
+{
+ "frame:KD1:в кадре driver, хотя по плану без людей": {
+  "verdict": "ok",
+  "note": "обычные люди того же рисованного стиля (бизнесмены), не наши герои; «рука 6» — ботинок",
+  "level": "review",
+  "image": "pack/frame_KD1.jpg"
+ },
+ "frame:KD1:рук 7 на 3 чел. — проверить лишнюю руку": {
+  "verdict": "ok",
+  "note": "обычные люди того же рисованного стиля (бизнесмены), не наши герои; «рука 6» — ботинок",
+  "level": "review",
+  "image": "pack/frame_KD1.jpg"
+ },
+ "frame:KD2:в кадре mikhalych, хотя по плану без людей": {
+  "verdict": "ok",
+  "note": "судья — обычный персонаж, не Михалыч",
+  "level": "review",
+  "image": "pack/frame_KD2.jpg"
+ },
+ "frame:KF2:в кадре mikhalych, хотя по плану без людей": {
+  "verdict": "ok",
+  "note": "солдаты в ушанках — обычные персонажи, не Михалыч",
+  "level": "review",
+  "image": "pack/frame_KF2.jpg"
+ },
+ "frame:KF3:в кадре driver, хотя по плану без людей": {
+  "verdict": "ok",
+  "note": "молодой военный техник 1941 года — отдельный персонаж, не водитель",
+  "level": "review",
+  "image": "pack/frame_KF3.jpg"
+ },
+ "clip:M_A2:полоса кадров — разбор по чек-листу": {
+  "verdict": "ok",
+  "note": "молекулы сталкиваются со вспышкой, брака нет",
+  "level": "review",
+  "image": "pack/clip_M_A2.jpg"
+ },
+ "clip:M_A4:полоса кадров — разбор по чек-листу": {
+  "verdict": "ok",
+  "note": "пар и капли из глушителя, брака нет",
+  "level": "review",
+  "image": "pack/clip_M_A4.jpg"
+ },
+ "clip:M_B1:полоса кадров — разбор по чек-листу": {
+  "verdict": "ok",
+  "note": "пузыри в U-трубке, наезд камеры, брака нет",
+  "level": "review",
+  "image": "pack/clip_M_B1.jpg"
+ },
+ "clip:M_C2:полоса кадров — разбор по чек-листу": {
+  "verdict": "ok",
+  "note": "пузыри в банке под капотом до конца клипа, брака нет",
+  "level": "review",
+  "image": "pack/clip_M_C2.jpg"
+ },
+ "clip:M_C3:полоса кадров — разбор по чек-листу": {
+  "verdict": "ok",
+  "note": "после 2,5 с мотор весь в дыму — в монтаже to=2.5",
+  "level": "review",
+  "image": "pack/clip_M_C3.jpg"
+ },
+ "clip:M_D2:0.5 с: в кадре driver, mikhalych, хотя по плану без людей": {
+  "verdict": "ok",
+  "note": "суд: люди того же стиля, не наши герои; рук и предметов не прибавляется",
+  "level": "review",
+  "image": "pack/clip_M_D2.jpg"
+ },
+ "clip:M_D2:1.0 с: в кадре mikhalych, хотя по плану без людей": {
+  "verdict": "ok",
+  "note": "суд: люди того же стиля, не наши герои; рук и предметов не прибавляется",
+  "level": "review",
+  "image": "pack/clip_M_D2.jpg"
+ },
+ "clip:M_D2:1.5 с: в кадре driver, mikhalych, хотя по плану без людей": {
+  "verdict": "ok",
+  "note": "суд: люди того же стиля, не наши герои; рук и предметов не прибавляется",
+  "level": "review",
+  "image": "pack/clip_M_D2.jpg"
+ },
+ "clip:M_D2:2.0 с: в кадре driver, хотя по плану без людей": {
+  "verdict": "ok",
+  "note": "суд: люди того же стиля, не наши герои; рук и предметов не прибавляется",
+  "level": "review",
+  "image": "pack/clip_M_D2.jpg"
+ },
+ "clip:M_D2:2.3–2.3 с: в кадре mikhalych, хотя по плану без людей": {
+  "verdict": "ok",
+  "note": "суд: люди того же стиля, не наши герои; рук и предметов не прибавляется",
+  "level": "review",
+  "image": "pack/clip_M_D2.jpg"
+ },
+ "clip:M_D2:2.4 с: в кадре driver, mikhalych, хотя по плану без людей": {
+  "verdict": "ok",
+  "note": "суд: люди того же стиля, не наши герои; рук и предметов не прибавляется",
+  "level": "review",
+  "image": "pack/clip_M_D2.jpg"
+ },
+ "clip:M_D2:2.5–4.0 с: в кадре driver, хотя по плану без людей": {
+  "verdict": "ok",
+  "note": "суд: люди того же стиля, не наши герои; рук и предметов не прибавляется",
+  "level": "review",
+  "image": "pack/clip_M_D2.jpg"
+ },
+ "clip:M_D2:4.5 с: в кадре driver, mikhalych, хотя по плану без людей": {
+  "verdict": "ok",
+  "note": "суд: люди того же стиля, не наши герои; рук и предметов не прибавляется",
+  "level": "review",
+  "image": "pack/clip_M_D2.jpg"
+ },
+ "clip:M_D2:полоса кадров — разбор по чек-листу": {
+  "verdict": "ok",
+  "note": "суд: люди того же стиля, не наши герои; рук и предметов не прибавляется",
+  "level": "review",
+  "image": "pack/clip_M_D2.jpg"
+ },
+ "clip:M_E2:полоса кадров — разбор по чек-листу": {
+  "verdict": "ok",
+  "note": "после 3,3 с исчезает лужа — в монтаже to=3.3",
+  "level": "review",
+  "image": "pack/clip_M_E2.jpg"
+ },
+ "clip:M_F1:полоса кадров — разбор по чек-листу": {
+  "verdict": "ok",
+  "note": "аэростаты над Невой, брака нет",
+  "level": "review",
+  "image": "pack/clip_M_F1.jpg"
+ },
+ "clip:M_F4:полоса кадров — разбор по чек-листу": {
+  "verdict": "ok",
+  "note": "лебедка, аэростат, прожекторы, брака нет",
+  "level": "review",
+  "image": "pack/clip_M_F4.jpg"
+ },
+ "clip:M_G2:полоса кадров — разбор по чек-листу": {
+  "verdict": "ok",
+  "note": "купе на треке без логотипов, брака нет",
+  "level": "review",
+  "image": "pack/clip_M_G2.jpg"
+ },
+ "clip:M_G3:3.0 с: появилась надпись «BFPS-256» (обрезать до 2.85 с)": {
+  "verdict": "ok",
+  "note": "с 1,4 с логотип VW, с 2,8 с номер BFPS-256 — в монтаже to=1.2",
+  "level": "review",
+  "image": "pack/clip_M_G3.jpg"
+ },
+ "clip:M_G3:полоса кадров — разбор по чек-листу": {
+  "verdict": "ok",
+  "note": "с 1,4 с логотип VW, с 2,8 с номер BFPS-256 — в монтаже to=1.2",
+  "level": "review",
+  "image": "pack/clip_M_G3.jpg"
+ }
+}
