@@ -81,3 +81,13 @@ Prompt rule: every scene prompt names only the hero, the one object the line is 
 - A label next to a second person reads as that person's number (ep7 "$59,530" beside the mechanic): put the number on the
   frame that shows the object (coin stack) instead.
 - Blind checker run 1 found 10 continuity and anatomy defects after 26 green automatic checks; the second run is mandatory.
+
+## Added for ep8
+- Labels: run `label_place.py` (arrows) and THEN `label_strict.py` (no-arrow text): zero non-white pixels within 20 px of the text.
+  label_place alone let 12 of 33 inserts touch light lines (rain, heat shimmer, a sketched building, a hard hat). Never run
+  label_place after label_strict: it nudges the text back onto ink.
+- Prop duplicates: the model often hangs a second hammer on the tool belt (3 of 30 wide frames). Name "exactly ONE hammer" in the
+  hero description. Edit passes fixed two of three; the third resisted two passes and was left (prop, not a limb).
+- Recurring characters and places in group or late scenes drift (foreman, hard hat colours, the finished building, the truck):
+  pass the frame where they were introduced as an extra reference, not just the character sheet.
+- The blind checker hits an image limit after about 60 full-resolution reads: split the full-resolution pass over two checkers.

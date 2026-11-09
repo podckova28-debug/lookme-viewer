@@ -17,7 +17,7 @@ Duration 472.8s, 236 sampled frames, 26 checks, 0 FAIL
 | white-background rule (mean luminance >= 120 on all samples) | PASS | 0 dark samples of 236 |
 | no frozen video (>=6s without any motion) | PASS | 0 frozen samples |
 | no pure black frames | PASS | min luminance 130 |
-| hand-written labels inside safe area | PASS | 33 labels ok |
+| hand-written labels inside safe area | PASS | 31 labels ok |
 | labels do not cover drawing (ink under text < 6%) | PASS | ok |
 | arrows point at something (ink near tip) | PASS | ok |
 | arrows start outside their text and are not stubs | PASS | ok |
