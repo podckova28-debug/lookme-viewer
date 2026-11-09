@@ -96,3 +96,23 @@ Prompt rule: every scene prompt names only the hero, the one object the line is 
   INSIDE the named object; text on clean white; the arrow runs over white only and its tip is the first ink it meets, which must
   be the same drawing as the target and within 110 px of it; length 6.5–25% of the width. No clean arrow -> text without arrow.
   Order: label_arrow.py, then label_strict.py (text-only labels). Then look at EVERY arrow frame at 672 px wide before the build.
+
+## Ep10 lessons (President, free voice)
+- Free narrator: `tts_omnivoice.py` clones Grady with OmniVoice on CPU (~70 s per block, speed 0.85, plan "tempo": 1.0).
+  The clone sometimes repeats or stumbles on a phrase (ep10: "This house. This house has...", "the flighter, attendant").
+  Always transcribe every block with faster-whisper (small.en) and compare with the script; re-voice blocks with repeats
+  or broken words (numbers written as digits by Whisper are fine). Re-voicing is free, so never ship a glitch.
+- Voice durations: ffprobe's mp3 duration includes ~0.07 s of encoder padding per file; over 30 blocks the cut drifted
+  2.4 s ahead of the voice. assemble_ep.py now measures the decoded length (adur). QA "narration fits the cut" catches it.
+- Car interiors, night windows and dark suits in close-up push zoomed samples under luminance 120. Brighten with a small
+  white blend (6-14%) or an edit pass ("edges fade to white"), but keep the interior colour the same as in the wide shot:
+  the blind checker flagged beige close-ups of a charcoal car.
+- Recurring prop continuity: say the prop's look in EVERY prompt where it appears (the chipped mug with one faded red
+  stripe) - the office wide shot drew a plain white mug, and two close-ups copied it.
+- Crowd/extra people must be described as clearly different from the hero AND the cast; a mail-room clerk came out as
+  a grey-haired East Asian man in round glasses (reads as the President) and another as the chief of staff.
+- Mirror shots: the reflection must raise the hand on the same screen side as the real person; check by eye.
+- Diagrams with a count in the label (17 countries): count the dots (connected components) before the build.
+- label_arrow.py still passed 2 wrong arrows of 18 (ep10: "the Daily Brief" ended on the credenza behind the desk,
+  "you read every one." on the armchair back) because the whole desk/chair drawing is one connected component.
+  The eyeball pass over every arrow frame stays mandatory; turn such labels into text-only.

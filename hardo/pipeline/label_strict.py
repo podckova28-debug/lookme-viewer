@@ -10,8 +10,12 @@ D=sys.argv[1]; F=os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__
 def fits(a,x0,y0,x1,y1,w,h):
     if x0/w<M or y0/h<M or x1/w>1-M or y1/h>1-M: return False
     return not a[max(0,int(y0)-PAD):int(y1)+PAD, max(0,int(x0)-PAD):int(x1)+PAD].any()
-def find(name,text,wx,wy,size):
+def box(text,x,y,size,w,h):
+    f=ImageFont.truetype(F,int(size*w/1536)); b=f.getbbox(text); return (x*w+b[0],y*h+b[1],x*w+b[2],y*h+b[3])
+def find(name,text,wx,wy,size,occ=()):
     im=Image.open(os.path.join(D,"frames",f"{name}.png")).convert("RGB"); w,h=im.size; a=np.asarray(im).min(2)<228
+    a=a.copy()
+    for x0,y0,x1,y1 in occ: a[max(0,int(y0)):int(y1)+1, max(0,int(x0)):int(x1)+1]=True   # other labels on this frame count as ink (ep10: two labels overlapped)
     for sz in (size,int(size*0.85),int(size*0.72)):
         f=ImageFont.truetype(F,int(sz*w/1536)); b=f.getbbox(text); best=None
         for gy in np.arange(0.0,1.0,0.01):
@@ -23,10 +27,12 @@ def find(name,text,wx,wy,size):
     return None
 p=json.load(open(os.path.join(D,"plan.json"))); out={}
 for fr,labs in p["labels"].items():
+    w,h=Image.open(os.path.join(D,"frames",f"{fr}.png")).size
+    occ=[box(l[0],l[1][0],l[1][1],l[4],w,h) for l in labs if l[2]!=l[3]]
     for lab in labs:
         text,(tx,ty),A,B,size=lab[:5]
         if A!=B: out.setdefault(fr,[]).append(lab); continue
-        r=find(fr,text,tx,ty,size)
-        if r: out.setdefault(fr,[]).append(r); print(f"{fr} '{text}' at {r[1]} size {r[4]}")
+        r=find(fr,text,tx,ty,size,occ)
+        if r: out.setdefault(fr,[]).append(r); occ.append(box(text,r[1][0],r[1][1],r[4],w,h)); print(f"{fr} '{text}' at {r[1]} size {r[4]}")
         else: print(f"DROPPED {fr} '{text}': no clean white spot")
 p["labels"]=out; json.dump(p,open(os.path.join(D,"plan.json"),"w"),indent=1)

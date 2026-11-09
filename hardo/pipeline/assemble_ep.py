@@ -74,7 +74,10 @@ def kenburns(src, out, frames, z, zoom_in, ease=False, base=None):
 def dur(f): return float(subprocess.check_output(["ffprobe","-v","error","-show_entries","format=duration","-of","csv=p=0",f]).decode())
 def run(cmd): subprocess.run(cmd, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
 n = len(blocks)
-vdur = [dur(os.path.join(VO, f"{i:02d}.mp3"))/TEMPO for i in range(1,n+1)]
+def adur(f):  # decoded length: ffprobe's mp3 duration includes encoder padding (~0.07 s per file), which drifts the cut
+    raw = subprocess.run(["ffmpeg","-v","error","-i",f,"-f","s16le","-ac","1","-ar","44100","-"], capture_output=True, check=True).stdout
+    return len(raw)/2/44100
+vdur = [adur(os.path.join(VO, f"{i:02d}.mp3"))/TEMPO for i in range(1,n+1)]
 segs=[]; srt=[]; t=0.0; zoom_dir=1; jobs=[]; seg_t=[]; block_t=[]
 STRONG = set(plan.get("zoom_strong", list(labels)))  # stat / label frames get a visible eased push-in
 Z_NORMAL = plan.get("zoom", 0.04); Z_STRONG = plan.get("zoom_strong_amount", 0.06)  # keep small: big zooms cut off the frame edges

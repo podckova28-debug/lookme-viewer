@@ -49,7 +49,10 @@ def main():
     missing=[f for f in vfiles if not os.path.exists(f)]
     add("all voice blocks present", not missing, f"{n-len(missing)}/{n}")
     if not missing:
-        planned = sum(dur(f)/TEMPO for f in vfiles) + GAP*n
+        def adur(f):  # decoded length (ffprobe's mp3 duration includes encoder padding)
+            raw=subprocess.run(["ffmpeg","-v","error","-i",f,"-f","s16le","-ac","1","-ar","44100","-"],capture_output=True).stdout
+            return len(raw)/2/44100
+        planned = sum(adur(f)/TEMPO for f in vfiles) + GAP*n
         add("narration fits the cut (no clipped ending)", D >= planned - 1.0, f"planned {planned:.1f}s, final {D:.1f}s")
     # 3. SRT
     if os.path.exists(srt):
