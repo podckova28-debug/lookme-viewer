@@ -41,3 +41,9 @@ Also read CHECKLIST.md in the same directory.
 Output: a markdown report with one section per sheet, then a final verdict for the whole episode:
 "ship", "fix by editing" (list what), or "regenerate" (list what). Be concrete: scene numbers, label
 texts, cell positions (row, column).
+
+## Calibration result (ep4, first run)
+The checker found a real defect the author missed (ghost bucket in clipC_mop, frames 12-16) plus two
+baked marks and two script/number mismatches, but it did NOT see the three arms in F34 on the
+scenes sheet (960 px tiles, six per sheet). Limb counting needs full-resolution frames: give the
+checker `frames/*.png` one by one (or 2x crops per person), not only the scenes sheets.
