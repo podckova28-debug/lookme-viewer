@@ -1,7 +1,7 @@
 # lookme-viewer: все проекты в одной ветке
 
 Эта ветка собирает работу закреплённых чатов Claude Code (Hardo, What if,
-Маньяки, Михалыч), которые раньше жили в отдельных ветках одного и того же
+Маньяки, Михалыч, Здоровье), которые раньше жили в отдельных ветках одного и того же
 репозитория. Каждый проект лежит в своей папке, история коммитов исходных
 веток сохранена целиком. Проекты незакреплённых чатов (shorts-scout, Мерлиоша,
 Mosquito, финплан) остаются в своих ветках `claude/brave-curie-px76bq`,
@@ -29,6 +29,13 @@ Mosquito, финплан) остаются в своих ветках `claude/br
   папку `hardo/` и локальный коммит 65e5feb на ветке `claude/epic-meitner-m4svd7`,
   но push из неё требует подтверждения пользователя в том чате. На GitHub ветка
   пока равна `main`. Хаб выпусков: https://claude.ai/artifact/WMH69KsmNqJhmSmBBwf2oX
+- **Здоровье** (закреплённый чат): канал про здоровье для американской
+  аудитории, ведущий Dr. Oliver. Опубликованы шортсы 1–3, в работе четвёртый
+  («Why paper cuts hurt so much»). Ветки `claude/happy-feynman-yonga5` на GitHub
+  нет; сессии отправлена просьба сложить лёгкую часть проекта в `health/` и
+  запушить. Хабы: Dr. Oliver Brand Kit https://claude.ai/artifact/YTuG3ZnSQeDouDg6cQ3Pir,
+  Topic and Thumbnail Playbook https://claude.ai/artifact/DAR5TAPmNqDYELAvQbiNa4,
+  Shorts Binder https://claude.ai/artifact/FoSDCopiMnRRb6QMYoh9Vj
 - Тяжёлые рендеры, озвучка и превью: папки `out/`, `preview_*/`, `downloads/`,
   `ready/` и рендеры «Гаража Михалыча» исключены в исходных ветках. Основная
   рабочая копия Михалыча остаётся в репозитории `gastronom`.
