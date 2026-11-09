@@ -31,7 +31,7 @@ shutil.copy(G+'/vo/new2/vo_costume.wav',out+'/vo_all@129.70.wav')
 shutil.copy(G+'/vo/new2/vo_hide.wav',out+'/vo_all@147.35.wav')
 print(sorted(os.listdir(out)))
 EOF
-cd /home/user/lookme-viewer
+cd "$(dirname "$0")/.."
 python3 tools/mix_vo.py $G/e3_v7_pic.mp4 $G/e3_v7_vo.mp4 $G/vo/mix5 --lead 0
 python3 tools/push_holds.py $G/e3_v7_vo.mp4 $G/e3_v7_push.mp4
 ffmpeg -v error -y -i $G/e3_v7_push.mp4 -vf "scale=960:540:flags=area,scale=1920:1080:flags=lanczos,cas=0.9,unsharp=5:5:0.8:5:5:0" -c:v libx264 -preset medium -crf 15 -pix_fmt yuv420p -c:a copy $G/e3_v7_sharp.mp4
