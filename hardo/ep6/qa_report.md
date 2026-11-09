@@ -14,10 +14,10 @@ Duration 397.1s, 199 sampled frames, 26 checks, 1 FAIL
 | srt no overlaps | PASS | 0 overlaps |
 | srt text == script | PASS | 0 differ |
 | animated clips present and long enough | PASS | 3 clips; ok |
-| white-background rule (mean luminance >= 120 on all samples) | FAIL | 4 dark samples of 199, first at 246s |
+| white-background rule (mean luminance >= 120 on all samples) | FAIL | 3 dark samples of 199, first at 336s |
 | no frozen video (>=6s without any motion) | PASS | 0 frozen samples |
 | no pure black frames | PASS | min luminance 109 |
-| hand-written labels inside safe area | PASS | 10 labels ok |
+| hand-written labels inside safe area | PASS | 9 labels ok |
 | labels do not cover drawing (ink under text < 6%) | PASS | ok |
 | arrows point at something (ink near tip) | PASS | ok |
 | arrows start outside their text and are not stubs | PASS | ok |
