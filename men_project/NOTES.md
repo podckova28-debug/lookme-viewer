@@ -12,3 +12,6 @@
   Harrison, Hughes & Gott 2019 (55+55 US SKs): men ~6x more likely to kill strangers, stalking 65.4% vs 3.6%;
   Ivanyutina (Kyiv 1987, thallium, 9 murders per court, death sentence); Gaidamachuk (2002–2010, posed as social
   worker, 17 murders, police assumed a man, survivor said a woman, 20 years = max for women in RF, 2012).
+- Delivered: 5:43, HQ 1080p (347 MB) media 6b337042-0f45-4c0c-954b-4cf67e516290; web 720p 2b527478-afa6-49f0-a176-d9c3e3981421.
+- QA: 16/16 pass; WARNs are false positives («90 %» digits, «грипп»/«гриб» homophone, «жизней»/«жизни»).
+- Spend: 12 images 6 cr + 2 cover bases 1 cr + TTS ~1.9 cr ≈ 9 cr.
