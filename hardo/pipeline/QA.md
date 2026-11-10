@@ -121,3 +121,14 @@ Prompt rule: every scene prompt names only the hero, the one object the line is 
   land visibly inside the object's surface. When fixing an arrow by hand, set its start point ON the text box edge
   (assemble_ep only moves starts that lie inside the box; a start at the text origin is above the box and the arrow then
   runs down the side of the first letter). Check the fixed arrow in a frame grabbed from the final video.
+- Ep12 lessons:
+  - Background extras made with the cast sheet as reference turn into cast lookalikes (an "office row" became the whole cast:
+    orange vest, red ponytail, straw hat, hoodie). Describe every extra explicitly (age, hair, colour of clothes) and say
+    "no hi-vis vests, no hats, no hoodies" etc. when the cast wears them.
+  - Crowded scenes (audiences raising hands, rows of keyboard operators) keep producing ghost/orphan hands even after edits;
+    redraw them with hands hidden (seen from behind, hands in pockets/on desks) instead of editing again and again.
+  - A full-cast lineup frame broke on every edit (new third hand each time). Reuse a lineup that already passed the blind
+    check (mirrored) rather than editing a broken one.
+  - Every fix needs a second blind check: of 16 fixed frames, 6 had new defects.
+  - Close-ups filled edge to edge leave no white for labels: place_all.py tries the label's own frame first, then the other
+    frames of the same block (title labels like "#N job" never move), max 2 labels per frame.

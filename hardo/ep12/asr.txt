@@ -1,0 +1,27 @@
+01 0.93 | In 10 years, somebody will have a job that sounds like a joke today.  Robot teacher Heat officer  Deep fake detective  Some of these people are already at work and almost nobody has heard of them.
+02 0.87 | The World Economic Forum asked more than a thousand employers.  Their forecast?  About 170 million new jobs by 2030 and 92 million gone.  So here are 10 jobs of the next 10 years.  Forecasts not promises.  But the first job ads are already out.
+03 0.976 | 
+04 0.925 | You sit in an office, maybe in another city.  You see what the car sees, see and you give it advice.  You don't steer.  The car still drives itself.  One robotaxi company has said it keeps about 70 helpers on duty for around 3,000 cars.
+05 0.961 | 
+06 0.941 | 
+07 0.972 | 
+08 0.977 | 
+09 0.962 | 
+10 0.968 | 
+11 0.912 | 6. The Chief Heat Officer  In 2021, Miami-Dade County in Florida appointed the world's first. The job, protect a city  from heatwaves, the way a fire chief protects it from fires.
+12 0.977 | 
+13 1.0 | 
+14 0.958 | 
+15 0.812 | 4. The Care Robot Technician  Japan is getting older, fast. Its government estimates the country will need about 2.7  million care workers in 2040. Today it has fewer than 2.2 million.
+16 1.0 | 
+17 0.811 | 3. The Wind Turbine Technician  According to the US Bureau of Labor Statistics, it's the fastest-growing job in America,  up about 60% in 10 years. The office is 300 feet in the air.
+18 0.97 | 
+19 0.963 | 
+20 0.967 | 
+21 0.951 | 
+22 0.769 | In 2024, one American carmaker advertised exactly that.  Where a motion-capture suit and a headset,  walk for more than seven hours a day,  carry up to 30 pounds.  Pay up to $48 an hour, 5'7 to 5'11.  You are the robot's role model.
+23 0.919 | and a bonus twist.  When the World Economic Forum counted which job will add the most workers by 2030,  the winner wasn't a coder or an engineer.  It was the farm worker.  About 35 million more.
+24 1.0 | 
+25 1.0 | 
+26 1.0 | 
+27 0.969 | 

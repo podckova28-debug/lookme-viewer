@@ -6,7 +6,7 @@ S=88; BIG=150
 # per block: list of (text, preferred frame, wx, wy, size)
 B={
 1:[("robot teacher","F01",.6,.1,S),("heat officer","F101",.05,.1,S),("deepfake detective","F201",.6,.1,S),("already at work.","F401",.3,.1,S)],
-2:[("1,000+ employers","F02",.05,.1,S),("+170 million jobs","F102",.6,.1,S),("10 jobs. 10 years.","F202",.3,.08,S),("forecasts, not promises.","F402",.05,.08,S)],
+2:[("1,000+ firms","F02",.05,.3,S),("+170 million jobs","F102",.6,.1,S),("10 jobs. 10 years.","F202",.3,.08,S),("forecasts, not promises.","F402",.05,.08,S)],
 3:[("#10","F03",.75,.1,BIG),("robotaxi helper","F03",.66,.4,S),("nobody driving.","F103",.05,.1,S),("now what?","F203",.05,.1,S),("it asks a human.","F403",.05,.1,S)],
 4:[("advice, not steering","F04",.6,.1,S),("one click.","F104",.05,.1,S),("~70 helpers","F204",.6,.85,S),("~3,000 cars","F404",.05,.1,S)],
 5:[("#9","F05",.75,.1,BIG),("drone supervisor","F05",.66,.4,S),("out of sight.","F205",.6,.15,S),("proposed U.S. rules","F405",.05,.1,S)],
@@ -33,7 +33,7 @@ B={
 26:[("calm. careful. curious.","F26",.05,.1,S),("+ one new skill","F126",.05,.1,S),("now hiring: people","F226",.25,.06,S),("robot caretakers","F426",.05,.06,S)],
 27:[("which one?","F27",.62,.12,S),("tell us below","F127",.3,.85,S),("subscribe!","F227",.38,.06,BIG),("see you in 10 years","F427",.25,.06,S)],
 }
-NOMOVE={'see you in 10 years','cooling centers','robot teacher','heat officer','deepfake detective','robotaxi helper','drone supervisor','battery recycler','chief heat officer','data center tech','care robot tech','wind turbine tech','AI auditor','robot trainer','farmworker','hot.','fall sensor','urgent transfer?','half nurse','clip in.','one click.'}
+NOMOVE={'1,000+ firms','see you in 10 years','cooling centers','robot teacher','heat officer','deepfake detective','robotaxi helper','drone supervisor','battery recycler','chief heat officer','data center tech','care robot tech','wind turbine tech','AI auditor','robot trainer','farmworker','hot.','fall sensor','urgent transfer?','half nurse','clip in.','one click.'}
 p=json.load(open('plan_wish.json'))
 clips={s[1] for b in p['blocks'] for s in b if s[0]=='clip'}
 L={}; occ={}
