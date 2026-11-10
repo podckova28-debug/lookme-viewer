@@ -57,7 +57,7 @@ def main():
     # 3. SRT
     if os.path.exists(srt):
         cues=srt_parse(srt)
-        add("srt cue count == blocks", len(cues)==n, f"{len(cues)} cues / {n} blocks")
+        add("srt cues cover every block (>= blocks; ep14+ splits paragraphs into short cues)", len(cues)>=n, f"{len(cues)} cues / {n} blocks")
         add("srt inside video duration", cues and cues[-1][1] <= D-0.05, f"last cue ends {cues[-1][1]:.2f}s, video {D:.2f}s" if cues else "no cues")
         overlaps=[i for i in range(1,len(cues)) if cues[i][0] < cues[i-1][1]-0.01]
         add("srt no overlaps", not overlaps, f"{len(overlaps)} overlaps")
