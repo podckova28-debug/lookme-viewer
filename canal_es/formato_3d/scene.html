@@ -1,0 +1,146 @@
+<!doctype html>
+<meta charset="utf-8">
+<style>html,body{margin:0;background:#000;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js"}}</script>
+<script type="module">
+// «El mundo se detuvo»: lluvia congelada, gente gris, héroe a color.
+// La escena es una función pura del tiempo: window.renderAt(t) dibuja el fotograma t (segundos).
+import * as THREE from 'three';
+const P = new URLSearchParams(location.search);
+const W = +P.get('w') || 1080, H = +P.get('h') || 1920;
+const CUE = JSON.parse(decodeURIComponent(P.get('cues') || '{}')); // {freeze, walk, arrive, end}
+const freezeT = CUE.freeze ?? 2.0, walkT = CUE.walk ?? 6.0, arriveT = CUE.arrive ?? 12.0, endT = CUE.end ?? 16.0;
+
+const renderer = new THREE.WebGLRenderer({antialias:true, preserveDrawingBuffer:true});
+renderer.setPixelRatio(1); renderer.setSize(W, H);
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+document.body.appendChild(renderer.domElement);
+
+// seeded random, so every render is identical
+let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+
+const scene = new THREE.Scene();
+const SKY = new THREE.Color('#7f93ad'), SKY_GREY = new THREE.Color('#8a8d92');
+scene.background = SKY.clone();
+scene.fog = new THREE.Fog(SKY.clone(), 18, 75);
+const cam = new THREE.PerspectiveCamera(W < H ? 62 : 40, W / H, 0.1, 200);
+
+scene.add(new THREE.HemisphereLight('#dfe8ff', '#3a3f48', 1.6));
+const sun = new THREE.DirectionalLight('#fff4e0', 1.4); sun.position.set(6, 14, 8); scene.add(sun);
+
+// Every coloured material registers its colour and its grey twin; desat(k) blends them.
+const tinted = [];
+function mat(hex, opts = {}) {
+  const m = new THREE.MeshStandardMaterial({color: hex, roughness: 0.85, ...opts});
+  const c = new THREE.Color(hex), l = c.r * 0.3 + c.g * 0.59 + c.b * 0.11;
+  tinted.push({m, c, g: new THREE.Color(l * 0.95, l * 0.97, l * 1.02)});
+  return m;
+}
+function desat(k) {
+  for (const {m, c, g} of tinted) m.color.copy(c).lerp(g, k);
+  scene.background.copy(SKY).lerp(SKY_GREY, k); scene.fog.color.copy(scene.background);
+}
+
+// Street
+const ground = new THREE.Mesh(new THREE.PlaneGeometry(40, 200), mat('#3b3f46', {roughness: 0.35, metalness: 0.2}));
+ground.rotation.x = -Math.PI / 2; ground.position.z = -60; scene.add(ground);
+for (const x of [-4.2, 4.2]) {
+  const walk = new THREE.Mesh(new THREE.BoxGeometry(3, 0.2, 200), mat('#8d8a84'));
+  walk.position.set(x, 0.1, -60); scene.add(walk);
+}
+for (let z = 6; z > -150; z -= 4) { // lane marks
+  const d = new THREE.Mesh(new THREE.BoxGeometry(0.18, 0.02, 1.8), mat('#e8d27a')); d.position.set(0, 0.02, z); scene.add(d);
+}
+// Buildings with windows
+const facade = ['#c96f4a', '#d9b26f', '#7aa7a0', '#b5806b', '#9c8cc0', '#d98b8b', '#6f9bc9'];
+const winMat = mat('#ffe7a8', {emissive: '#3a2f10', roughness: 0.3});
+for (const side of [-1, 1]) {
+  for (let z = 4; z > -150; ) {
+    const w = 5 + rnd() * 4, h = 6 + rnd() * 14, d = 6;
+    const b = new THREE.Mesh(new THREE.BoxGeometry(d, h, w), mat(facade[Math.floor(rnd() * facade.length)]));
+    b.position.set(side * (5.7 + d / 2), h / 2, z - w / 2); scene.add(b);
+    for (let y = 2; y < h - 1; y += 2.4) for (let k = -w / 2 + 1; k < w / 2 - 0.6; k += 1.6) {
+      const win = new THREE.Mesh(new THREE.PlaneGeometry(0.8, 1.1), winMat);
+      win.position.set(side * 5.69, y, z - w / 2 + k); win.rotation.y = -side * Math.PI / 2; scene.add(win);
+    }
+    z -= w + 0.4;
+  }
+}
+
+// People: capsule body, sphere head, some with umbrellas. Frozen mid-stride.
+function person(colour, withUmbrella) {
+  const g = new THREE.Group(), skin = mat('#e0b48f');
+  const body = new THREE.Mesh(new THREE.CapsuleGeometry(0.28, 0.75, 4, 12), mat(colour)); body.position.y = 1.15; g.add(body);
+  const head = new THREE.Mesh(new THREE.SphereGeometry(0.22, 16, 12), skin); head.position.y = 1.9; g.add(head);
+  const legs = [];
+  for (const s of [-1, 1]) {
+    const leg = new THREE.Group(); leg.position.set(s * 0.13, 0.75, 0);
+    const m = new THREE.Mesh(new THREE.CapsuleGeometry(0.1, 0.55, 4, 8), mat('#3d4250')); m.position.y = -0.38; leg.add(m);
+    g.add(leg); legs.push(leg);
+  }
+  for (const s of [-1, 1]) { // arms
+    const arm = new THREE.Mesh(new THREE.CapsuleGeometry(0.08, 0.5, 4, 8), mat(colour)); arm.position.set(s * 0.36, 1.25, 0); arm.rotation.z = s * 0.12; g.add(arm);
+  }
+  if (withUmbrella) {
+    const u = new THREE.Mesh(new THREE.ConeGeometry(0.85, 0.4, 16, 1, true), mat(['#d23c3c', '#2f6fd6', '#2fa36b', '#e0a32a'][Math.floor(rnd() * 4)], {side: THREE.DoubleSide}));
+    u.position.y = 2.45; g.add(u);
+    const stick = new THREE.Mesh(new THREE.CylinderGeometry(0.02, 0.02, 0.9), mat('#333')); stick.position.y = 2.0; g.add(stick);
+  }
+  return {g, legs};
+}
+const crowdColours = ['#c0392b', '#2e86c1', '#27ae60', '#8e44ad', '#d35400', '#16a085'];
+for (let i = 0; i < 16; i++) {
+  const {g, legs} = person(crowdColours[i % 6], rnd() < 0.5);
+  const side = i % 2 ? -1 : 1;
+  g.position.set(side * (3.4 + rnd() * 1.4), 0.2, -4 - i * 3.2 - rnd() * 2);
+  g.rotation.y = rnd() < 0.5 ? 0 : Math.PI; legs[0].rotation.x = 0.45; legs[1].rotation.x = -0.45;
+  scene.add(g);
+}
+
+// Hero: stays in colour, walks down the middle of the road.
+const hero = person('#ff8a1f', false); hero.g.position.set(0.6, 0, 2); scene.add(hero.g);
+const pack = new THREE.Mesh(new THREE.BoxGeometry(0.42, 0.5, 0.2), mat('#2d6fd2')); pack.position.set(0, 1.25, -0.3); hero.g.add(pack);
+const hood = new THREE.Mesh(new THREE.SphereGeometry(0.25, 16, 12, 0, Math.PI * 2, 0, Math.PI / 2), mat('#e0701a')); hood.position.y = 1.93; hood.rotation.x = -0.3; hero.g.add(hood);
+const heroMats = []; hero.g.traverse(o => { if (o.isMesh) { const i = tinted.findIndex(t => t.m === o.material); if (i >= 0) heroMats.push(tinted.splice(i, 1)[0]); } });
+
+// Rain: thin streaks, instanced. Falls before the freeze, hangs after it, parts around the hero.
+const N = 9000, dropGeo = new THREE.SphereGeometry(0.02, 8, 6);
+const dropMat = new THREE.MeshStandardMaterial({color: '#d8ecff', emissive: '#2b3b55', transparent: true, opacity: 0.8, roughness: 0.1});
+const rain = new THREE.InstancedMesh(dropGeo, dropMat, N); scene.add(rain);
+const base = []; for (let i = 0; i < N; i++) base.push([(rnd() - 0.5) * 13, rnd() * 12, 6 - rnd() * 70]);
+const M = new THREE.Matrix4(), Q = new THREE.Quaternion(), S = new THREE.Vector3(1, 1, 1), V = new THREE.Vector3();
+const FALL = 9; // m/s
+function heroZ(t) { const k = Math.min(1, Math.max(0, (t - walkT) / (arriveT - walkT))); return 2 - k * 30; }
+
+window.renderAt = function (t) {
+  const fT = Math.min(t, freezeT); // rain time stops at the clap
+  const flash = Math.max(0, 1 - Math.abs(t - freezeT) / 0.18);
+  desat(Math.min(1, Math.max(0, (t - freezeT) / 0.6)));
+  scene.background.lerp(new THREE.Color('#ffffff'), flash * 0.6);
+  const hz = heroZ(t);
+  const bead = Math.min(1, Math.max(0, (t - freezeT) / 0.4)); S.set(1 + bead * 0.4, 11 - bead * 9.4, 1 + bead * 0.4);
+  for (let i = 0; i < N; i++) {
+    const [x, y0, z] = base[i];
+    let y = ((y0 - fT * FALL) % 12 + 12) % 12, px = x;
+    // drops near the hero's path are pushed aside, as if he dodged them
+    const dz = z - hz, dx = x - 0.6, r = Math.hypot(dx, dz);
+    if (t > walkT && r < 1.1 && y < 2.4) px += Math.sign(dx || 1) * (1.1 - r) * 0.9;
+    V.set(px, y, z); M.compose(V, Q, S); rain.setMatrixAt(i, M);
+  }
+  rain.instanceMatrix.needsUpdate = true;
+  // hero walk cycle
+  const walking = t > walkT && t < arriveT, ph = (t - walkT) * 7;
+  hero.g.position.z = hz; hero.g.rotation.y = Math.PI;
+  hero.legs[0].rotation.x = walking ? Math.sin(ph) * 0.55 : 0; hero.legs[1].rotation.x = walking ? -Math.sin(ph) * 0.55 : 0;
+  hero.g.position.y = walking ? Math.abs(Math.sin(ph)) * 0.05 : 0;
+  // camera: wide street → slow push into the frozen drops → follow behind the hero
+  const k0 = Math.min(1, t / freezeT), push = Math.min(1, Math.max(0, (t - freezeT) / (walkT - freezeT)));
+  const camZ = 9 - k0 * 1 - push * 1.8, follow = t > walkT ? hz + 5.5 : camZ;
+  cam.position.set(Math.sin(t * 0.25) * 0.6, 2.2 - push * 0.6 + (t > walkT ? 0.6 : 0), Math.min(camZ, follow));
+  cam.lookAt(0.6, 1.5, cam.position.z - 10);
+  renderer.render(scene, cam);
+  return true;
+};
+window.ready = true;
+</script>
