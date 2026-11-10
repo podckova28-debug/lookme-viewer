@@ -3,6 +3,7 @@
    Everything is drawn into a canvas context passed as `g`, so the same characters can go
    to the "world" layer (which turns gray-blue when time stops) or the "color" layer. */
 const W = 1920, H = 1080, OUT = '#1b1320', LW = 5;
+let CUR_LOOK = {};   // per-location light: rim colour, grade tint (set by drawSet)
 const clamp = (v, a = 0, b = 1) => Math.max(a, Math.min(b, v));
 const io = t => { t = clamp(t); return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
 const outC = t => { t = clamp(t); return 1 - Math.pow(1 - t, 3); };
@@ -19,9 +20,10 @@ const blinkAt = (t, list) => Math.max(0, ...list.map(b => bump(t, b, b + .16)));
 const autoBlink = (t, seed = 0) => { const p = 3.3 + (seed % 5) * .37, u = ((t + seed * 1.37) % p); return bump(u, 0, .16); };
 
 function rrPath(g, x, y, w, h, r) { r = Math.min(r, w / 2, h / 2); g.moveTo(x + r, y); g.arcTo(x + w, y, x + w, y + h, r); g.arcTo(x + w, y + h, x, y + h, r); g.arcTo(x, y + h, x, y, r); g.arcTo(x, y, x + w, y, r); g.closePath(); }
-function shape(g, path, fill, lw = LW) { g.beginPath(); path(g); if (fill) { g.fillStyle = fill; g.fill(); } if (lw) { g.lineWidth = lw; g.strokeStyle = OUT; g.lineJoin = 'round'; g.stroke(); } }
+let INK = OUT, INK_W = .85;   // outline colour/weight; sets are built with a lighter, tinted ink
+function shape(g, path, fill, lw = LW) { g.beginPath(); path(g); if (fill) { g.fillStyle = fill; g.fill(); } if (lw) { g.lineWidth = lw * INK_W; g.strokeStyle = INK; g.lineJoin = 'round'; g.stroke(); } }
 function tube(g, pts, col, w, ol = LW) { g.lineCap = 'round'; g.lineJoin = 'round'; g.beginPath(); pts.forEach((p, i) => i ? g.lineTo(p[0], p[1]) : g.moveTo(p[0], p[1]));
-  if (ol) { g.strokeStyle = OUT; g.lineWidth = w + 2 * ol; g.stroke(); } g.strokeStyle = col; g.lineWidth = w; g.stroke(); }
+  if (ol) { g.strokeStyle = INK; g.lineWidth = w + 2 * ol * INK_W; g.stroke(); } g.strokeStyle = col; g.lineWidth = w; g.stroke(); }
 function ik(sx, sy, tx, ty, L1, L2, out) { let dx = tx - sx, dy = ty - sy, d = Math.hypot(dx, dy); const m = L1 + L2 - 1; if (d > m) { tx = sx + dx / d * m; ty = sy + dy / d * m; d = m; }
   if (d < 1) d = 1; const b = Math.atan2(ty - sy, tx - sx), o = Math.acos(clamp((L1 * L1 + d * d - L2 * L2) / (2 * L1 * d), -1, 1));
   const e1 = [sx + L1 * Math.cos(b + o), sy + L1 * Math.sin(b + o)], e2 = [sx + L1 * Math.cos(b - o), sy + L1 * Math.sin(b - o)];
@@ -29,7 +31,7 @@ function ik(sx, sy, tx, ty, L1, L2, out) { let dx = tx - sx, dy = ty - sy, d = M
 function mitten(g, x, y, r, col = '#f1ece6') { shape(g, q => q.arc(x, y, r, 0, 7), col); }
 function circ(g, x, y, r, fill, lw = LW) { shape(g, q => q.arc(x, y, r, 0, 7), fill, lw); }
 function ell(g, x, y, rx, ry, rot, fill, lw = LW) { shape(g, q => q.ellipse(x, y, rx, ry, rot, 0, 7), fill, lw); }
-function line(g, pts, col = OUT, w = LW) { g.lineCap = 'round'; g.lineJoin = 'round'; g.strokeStyle = col; g.lineWidth = w; g.beginPath(); pts.forEach((p, i) => i ? g.lineTo(p[0], p[1]) : g.moveTo(p[0], p[1])); g.stroke(); }
+function line(g, pts, col = OUT, w = LW) { const ink = col === OUT; g.lineCap = 'round'; g.lineJoin = 'round'; g.strokeStyle = ink ? INK : col; g.lineWidth = ink ? w * INK_W : w; g.beginPath(); pts.forEach((p, i) => i ? g.lineTo(p[0], p[1]) : g.moveTo(p[0], p[1])); g.stroke(); }
 function text(g, s, x, y, size, col, font = 'Bangers', align = 'left', stroke = null, sw = 8) { g.font = `${size}px ${font}`; g.textAlign = align; g.textBaseline = 'alphabetic';
   if (stroke) { g.lineJoin = 'round'; g.strokeStyle = stroke; g.lineWidth = sw; g.strokeText(s, x, y); } g.fillStyle = col; g.fillText(s, x, y); g.textAlign = 'left'; }
 
@@ -174,6 +176,7 @@ function drawChar(g, cname, p) {
   g.save(); g.translate(p.x || 0, p.y || 0); g.scale(S * (p.flip || 1), S); if (p.lean) g.rotate(p.lean);
   const { hipY, top, sit, walk, ph } = G;
   const legW = 22;
+  if (!p.noShadow) { g.save(); g.fillStyle = 'rgba(20,14,32,.2)'; g.beginPath(); g.ellipse(0, -2, 78, 14, 0, 0, 7); g.fill(); g.restore(); }
   // legs
   for (const s of [-1, 1]) {
     if (sit > .5) {
@@ -211,6 +214,7 @@ function drawChar(g, cname, p) {
     q.lineTo(wH, hem - 12); q.quadraticCurveTo(wH, hem, wH - 10, hem); q.lineTo(-wH + 10, hem); q.quadraticCurveTo(-wH, hem, -wH, hem - 12); q.closePath(); };
   shape(g, torso, c.top, 0);
   g.save(); g.beginPath(); torso(g); g.clip(); g.fillStyle = 'rgba(0,0,0,.13)'; g.fillRect(-wT - 10, top - 10, 44, 400);
+  if (CUR_LOOK.rim) { g.globalAlpha = .45; g.fillStyle = CUR_LOOK.rim; g.fillRect(wH - 16, top, 24, 420); g.globalAlpha = 1; }
   if (c.body === 'jacket' || c.body === 'cardigan' || c.body === 'suit') { g.fillStyle = c.inner; g.beginPath(); g.moveTo(-30, top); g.lineTo(30, top); g.lineTo(c.body === 'suit' ? 0 : 26, hem); g.lineTo(c.body === 'suit' ? 0 : -26, hem); g.closePath(); g.fill();
     g.strokeStyle = OUT; g.lineWidth = 4; g.beginPath(); g.moveTo(-30, top); g.lineTo(c.body === 'suit' ? -2 : -26, hem); g.moveTo(30, top); g.lineTo(c.body === 'suit' ? 2 : 26, hem); g.stroke(); }
   if (c.body === 'suit') { shape(g, q => { q.moveTo(-9, top + 8); q.lineTo(9, top + 8); q.lineTo(14, top + 150); q.lineTo(0, top + 172); q.lineTo(-14, top + 150); q.closePath(); }, c.tie, 3);
@@ -228,7 +232,7 @@ function drawChar(g, cname, p) {
   // secondary motion: idle head sway and ponytail swing while walking (live characters only)
   const live = !p.still && p.t != null, headIdle = live && p.rot == null ? Math.sin(tt * .8 + c.seed) * .025 : 0;
   const tail = p.tailSwing != null ? p.tailSwing : (live ? Math.sin(ph * 2) * .18 * walk + Math.sin(tt * 1.6 + c.seed) * .05 : 0);
-  drawHead(g, c, hx, hy, (p.rot || 0) + headIdle, Object.assign({ blink: p.blink != null ? p.blink : (p.still ? 0 : autoBlink(p.t || 0, c.seed)) }, p, { rim: p.rim, tailSwing: tail }));
+  drawHead(g, c, hx, hy, (p.rot || 0) + headIdle, Object.assign({ blink: p.blink != null ? p.blink : (p.still ? 0 : autoBlink(p.t || 0, c.seed)) }, p, { rim: p.rim !== undefined ? p.rim : CUR_LOOK.rim, tailSwing: tail }));
   // far arm in front (for clapping, typing) and near arm
   if (p.armsFront) farArm();
   tube(g, [shR, eR, hRf], c.sleeve || c.top, 36); if (c.stripe) tube(g, [mix2(shR, eR, .2), eR, mix2(eR, hRf, .8)], c.stripe, 6, 0);
@@ -392,13 +396,14 @@ function freezeState(t, claps, cam, start = 0) {
    M: mask of things that keep their color while time is stopped (drawn with `col`);
       world things drawn after them erase the mask (`wld`), so occlusion stays correct.
    Final frame: gray(A) with the masked color on top, or plain A while the world runs. */
-function stage(cam) { const A = layer('A'), M = layer('M'); camApply(A, cam); camApply(M, cam);
+function stage(cam) { window.__camz = cam.z || 1; const A = layer('A'), M = layer('M'); camApply(A, cam); camApply(M, cam);
   return { A, M, cam,
     wld(fn) { fn(A); M.save(); M.globalCompositeOperation = 'destination-out'; fn(M); M.restore(); },
     col(fn) { fn(A); fn(M); } }; }
 function drawGrayOf(X, A) { X.save(); X.filter = FROZEN_FILTER; X.drawImage(A.canvas, 0, 0); X.restore();
   X.save(); X.globalCompositeOperation = 'multiply'; X.fillStyle = 'rgba(170,195,230,1)'; X.fillRect(0, 0, W, H); X.restore();
   X.save(); X.globalCompositeOperation = 'screen'; X.fillStyle = 'rgba(40,55,80,.35)'; X.fillRect(0, 0, W, H); X.restore(); }
+let VIG = null;
 function compose2(X, st, f) {
   window.__frz = (f && f.amt >= .5) ? 1 : 0;
   const A = st.A, M = st.M; X.setTransform(1, 0, 0, 1, 0, 0); X.filter = 'none'; X.globalAlpha = 1;
@@ -411,6 +416,11 @@ function compose2(X, st, f) {
     else { gray(); X.save(); X.beginPath(); X.arc(f.x, f.y, rr, 0, 7); X.clip(); color(); X.restore(); }
     X.save(); X.strokeStyle = 'rgba(255,255,255,.9)'; X.lineWidth = 12 * (1 - f.wipe) + 2; X.beginPath(); X.arc(f.x, f.y, rr, 0, 7); X.stroke(); X.restore();
   } else if (f.amt >= .5) gray(); else color();
+  // colour grade per location and a soft vignette: the light that flat fills lack
+  if (CUR_LOOK.grade && !(f.amt >= .5 && !(f.wipe > 0 && f.wipe < 1))) { X.save(); X.globalCompositeOperation = 'multiply'; X.fillStyle = CUR_LOOK.grade; X.fillRect(0, 0, W, H); X.restore(); }
+  if (!VIG) { VIG = document.createElement('canvas'); VIG.width = W; VIG.height = H; const v = VIG.getContext('2d'), gr = v.createRadialGradient(W / 2, H * .46, H * .35, W / 2, H / 2, H * 1.05);
+    gr.addColorStop(0, 'rgba(10,6,20,0)'); gr.addColorStop(1, 'rgba(10,6,20,.42)'); v.fillStyle = gr; v.fillRect(0, 0, W, H); }
+  X.drawImage(VIG, 0, 0);
   window.__cam = st.cam;
   if (f.wipe != null && f.wipe > 0 && f.wipe < 1 && !(typeof FLASH !== 'undefined' && FLASH)) comicWord(X, '¡CLAP!', f.x + 40, f.y - 170, f.wipe * .55, 84, '#fde047', .55);
 }

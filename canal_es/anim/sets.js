@@ -3,7 +3,37 @@
    (desks, tables, goal net) are separate functions in FG. */
 const FLOOR = 940;
 const SET_BUILDERS = {}, SETS_CACHE = {};
-const SETS = new Proxy({}, { get: (o, k) => SETS_CACHE[k] || (SETS_CACHE[k] = SET_BUILDERS[k]()) });
+const SETS = new Proxy({}, { get: (o, k) => SETS_CACHE[k] || (SETS_CACHE[k] = buildSet(k)) });
+/* Light and mood per location: key light sources (screen-blended glows), rim colour on characters, grade tint */
+const LOOK = {
+  hallway:    { rim: 'rgba(255,232,190,.9)', grade: '#fff2e2', lights: [[250, 40, 520, 'rgba(255,240,200,.32)'], [890, 40, 520, 'rgba(255,240,200,.32)'], [1530, 40, 520, 'rgba(255,240,200,.32)'], [2170, 40, 520, 'rgba(255,240,200,.32)']] },
+  bedroom:    { rim: 'rgba(255,210,150,.95)', grade: '#ffeedd', lights: [[1440, 380, 950, 'rgba(255,205,140,.42)']], beam: [1180, 150, 1700, 550] },
+  kitchen:    { rim: 'rgba(255,244,215,.9)', grade: '#fff7ea', lights: [[1460, 300, 950, 'rgba(255,246,215,.36)']], beam: [1180, 140, 1740, 470] },
+  classroom:  { rim: 'rgba(225,242,255,.9)', grade: '#f3f8ff', lights: [[210, 330, 750, 'rgba(240,250,255,.34)'], [1730, 330, 750, 'rgba(240,250,255,.34)']] },
+  street:     { rim: 'rgba(255,232,185,.9)', grade: '#fff5e6', lights: [[1850, -50, 1300, 'rgba(255,236,190,.32)']] },
+  streetRain: { rim: 'rgba(215,232,255,.6)', grade: '#e4eaf3', lights: [] },
+  field:      { rim: 'rgba(255,236,190,.95)', grade: '#fff4e2', lights: [[150, -60, 1400, 'rgba(255,238,195,.36)']] },
+  party:      { rim: 'rgba(255,214,170,.9)', grade: '#ffeedf', lights: [[300, 320, 700, 'rgba(255,240,210,.3)'], [1100, 140, 800, 'rgba(255,210,160,.22)']] },
+  park:       { rim: 'rgba(255,234,190,.9)', grade: '#fff5e4', lights: [[1750, 60, 1300, 'rgba(255,238,195,.34)']] },
+  parkNight:  { rim: 'rgba(255,226,150,.9)', grade: '#e4e6ff', lights: [[1420, 360, 700, 'rgba(255,226,150,.38)'], [1600, 180, 420, 'rgba(230,235,255,.18)']] },
+  bathroom:   { rim: 'rgba(245,252,255,.9)', grade: '#f3fbff', lights: [[960, 40, 850, 'rgba(255,255,240,.34)']] },
+};
+function buildSet(k) {
+  const pi = INK, pw = INK_W; INK = 'rgba(40,30,58,.62)'; INK_W = .55;   // thin, tinted lines: backgrounds recede, characters pop
+  const s = SET_BUILDERS[k](); INK = pi; INK_W = pw;
+  const g = s.bg.getContext('2d'), w = s.bg.width, L = LOOK[k] || {};
+  g.save();
+  // soft ambient occlusion where walls meet floor and ceiling
+  let gr = g.createLinearGradient(0, FLOOR - 90, 0, FLOOR + 6); gr.addColorStop(0, 'rgba(20,12,35,0)'); gr.addColorStop(1, 'rgba(20,12,35,.16)'); g.fillStyle = gr; g.fillRect(0, FLOOR - 90, w, 96);
+  gr = g.createLinearGradient(0, FLOOR, 0, H); gr.addColorStop(0, 'rgba(20,12,35,.10)'); gr.addColorStop(1, 'rgba(20,12,35,0)'); g.fillStyle = gr; g.fillRect(0, FLOOR, w, H - FLOOR);
+  gr = g.createLinearGradient(0, 0, 0, 160); gr.addColorStop(0, 'rgba(20,12,35,.12)'); gr.addColorStop(1, 'rgba(20,12,35,0)'); g.fillStyle = gr; g.fillRect(0, 0, w, 160);
+  // light sources
+  g.globalCompositeOperation = 'screen';
+  for (const [x, y, r, col] of (L.lights || [])) { gr = g.createRadialGradient(x, y, 0, x, y, r); gr.addColorStop(0, col); gr.addColorStop(1, 'rgba(0,0,0,0)'); g.fillStyle = gr; g.fillRect(x - r, y - r, 2 * r, 2 * r); }
+  if (L.beam) { const [x0, y0, x1, y1] = L.beam; g.globalAlpha = .16; g.fillStyle = '#fff1d6'; g.beginPath(); g.moveTo(x0, y0); g.lineTo(x1, y0); g.lineTo(x1 - 520, FLOOR + 80); g.lineTo(x0 - 760, FLOOR + 80); g.closePath(); g.fill(); g.globalAlpha = 1; }
+  g.restore();
+  return s;
+}
 function mkCanvas(w = W, h = H) { const c = document.createElement('canvas'); c.width = w; c.height = h; return c; }
 function vgrad(g, y0, y1, stops) { const gr = g.createLinearGradient(0, y0, 0, y1); stops.forEach(([o, c]) => gr.addColorStop(o, c)); return gr; }
 function windowFrame(g, x, y, w, h, sky, frame = '#f4efe6', bars = true) {
@@ -200,4 +230,9 @@ SET_BUILDERS.bathroom = () => { const c = mkCanvas(), g = c.getContext('2d');
 function mirrorGlass(g) { g.fillStyle = '#e8f6fb'; g.fillRect(710, 100, 500, 430); g.strokeStyle = 'rgba(255,255,255,.8)'; g.lineWidth = 12; g.beginPath(); g.moveTo(760, 160); g.lineTo(840, 120); g.moveTo(780, 210); g.lineTo(900, 150); g.stroke(); }
 
 /* draw a set into the world layer */
-function drawSet(g, name) { g.drawImage(SETS[name].bg, 0, 0); }
+function drawSet(g, name) {   // close-ups get a softly blurred background (depth of field)
+  const s = SETS[name]; CUR_LOOK = LOOK[name] || {};
+  const z = window.__camz || 1, k = clamp((z - 1.45) / .6);
+  if (k <= 0) { g.drawImage(s.bg, 0, 0); return; }
+  if (!s.blur) { s.blur = document.createElement('canvas'); s.blur.width = s.bg.width; s.blur.height = s.bg.height; const b = s.blur.getContext('2d'); b.filter = 'blur(6px)'; b.drawImage(s.bg, 0, 0); }
+  g.drawImage(s.bg, 0, 0); g.save(); g.globalAlpha = k; g.drawImage(s.blur, 0, 0); g.restore(); }
