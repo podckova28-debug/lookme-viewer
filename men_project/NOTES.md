@@ -15,3 +15,7 @@
 - Delivered: 5:43, HQ 1080p (347 MB) media 6b337042-0f45-4c0c-954b-4cf67e516290; web 720p 2b527478-afa6-49f0-a176-d9c3e3981421.
 - QA: 16/16 pass; WARNs are false positives («90 %» digits, «грипп»/«гриб» homophone, «жизней»/«жизни»).
 - Spend: 12 images 6 cr + 2 cover bases 1 cr + TTS ~1.9 cr ≈ 9 cr.
+- v2 (user feedback): long callouts were cut off at the frame edge → callout_img now wraps into two balanced lines /
+  shrinks to ≤1100 px; stamps (ТАЛЛИЙ, 20 ЛЕТ) barely visible → solid cream stamp card, darkened picture, shake.
+  Images repeated → 21 new images x1–x21 (~10.5 cr), ~55 shots, almost every picture used once.
+  w10 had three hands → replaced with v10b (woman on stairs, two hands checked).

@@ -378,22 +378,35 @@ class Count:
 
 # ---------------------------------------------------------------- stamp
 class Stamp:
+    """Still with Ken Burns; the picture darkens and a big solid stamp card slams on (readable on any image)."""
     def __init__(self, sid, text, dur):
         self.dur = dur; self.base = R.ImgShot(sid, dur, "in"); self.text = text
+        f = R.font(240); tmp = ImageDraw.Draw(Image.new("RGB", (10, 10)))
+        sw = int(tmp.textlength(text, font=f)); bb = tmp.textbbox((0, 0), text, font=f)
+        th = bb[3] - bb[1]; w, h = sw + 160, th + 150
+        st = Image.new("RGBA", (w, h), CREAM + (245,)); sd = ImageDraw.Draw(st)
+        sd.rectangle((10, 10, w - 10, h - 10), outline=CRIMSON + (255,), width=20)
+        sd.rectangle((34, 34, w - 34, h - 34), outline=CRIMSON + (255,), width=6)
+        sd.text((80, 75 - bb[1]), text, font=f, fill=CRIMSON + (255,))
+        st = st.rotate(-7, expand=True, resample=Image.BICUBIC)
+        sh = Image.new("RGBA", (st.width + 80, st.height + 80), (0, 0, 0, 0))
+        sh.paste((0, 0, 0, 150), (40, 40), st.split()[3])
+        self.st = st; self.sh = sh.filter(ImageFilter.GaussianBlur(16))
+        self.dark = Image.new("RGB", (W, H), (16, 14, 12))
     def frame(self, t):
         im = self.base.frame(t)
-        k = ease((t - 0.8) / 0.25)
+        k = ease((t - 0.8) / 0.22)
         if k > 0:
-            f = R.font(200); s = self.text
-            tmp = ImageDraw.Draw(Image.new("RGB", (10, 10))); sw = int(tmp.textlength(s, font=f))
-            st = Image.new("RGBA", (sw + 120, 300), (0, 0, 0, 0)); sd = ImageDraw.Draw(st)
-            sd.rectangle((8, 8, sw + 112, 292), outline=CRIMSON + (255,), width=14)
-            sd.text((60, 30), s, font=f, fill=CRIMSON + (255,))
-            st = st.rotate(-8, expand=True, resample=Image.BICUBIC)
-            sc = 1.3 - 0.3 * k
-            st = st.resize((int(st.width * sc), int(st.height * sc)), Image.BICUBIC)
-            st.putalpha(st.split()[3].point(lambda v: int(v * 0.9 * k)))
-            im.paste(st, ((W - st.width) // 2, (H - st.height) // 2), st)
+            im = Image.blend(im, self.dark, 0.5 * k)
+            sc = 1.35 - 0.35 * k
+            st = self.st.resize((int(self.st.width * sc), int(self.st.height * sc)), Image.BICUBIC)
+            sh = self.sh.resize((int(self.sh.width * sc), int(self.sh.height * sc)), Image.BICUBIC)
+            st.putalpha(st.split()[3].point(lambda v: int(v * k)))
+            sh.putalpha(sh.split()[3].point(lambda v: int(v * k)))
+            jx = int(10 * math.sin(t * 60) * max(0.0, 1 - (t - 1.02) / 0.2)) if t > 1.02 else 0  # small impact shake
+            x = (W - st.width) // 2 + jx; y = (H - st.height) // 2
+            im.paste(sh, (x - 30, y - 22), sh)
+            im.paste(st, (x, y), st)
         return im
 
 def make(spec, dur):

@@ -131,19 +131,39 @@ def callout_img(text):
     if text in _cal: return _cal[text]
     kind, a, b = split_callout(text)
     tmp = ImageDraw.Draw(Image.new("RGB", (10, 10)))
+    MAXW = 1100  # text width limit: the callout must stay a corner element and never be cut off
+    def fit(txt, sz, lo=56):
+        while sz > lo and tmp.textlength(txt, font=font(sz)) > MAXW: sz -= 4
+        return font(sz)
+    lines = None
     if kind == "num":
-        fa, fb = font(300), font(84)
+        fa, fb = font(300), fit(b, 84) if b else font(84)
         wa, wb = tmp.textlength(a, font=fa), tmp.textlength(b, font=fb)
         bbn = tmp.textbbox((0, 0), a, font=fa); bbl = tmp.textbbox((0, 0), b or "Ж", font=fb)
         w = int(max(wa, wb)) + 160
         h = 40 + (bbn[3] - bbn[1]) + (34 + 30 + (bbl[3] - bbl[1]) + 50 if b else 50)
     elif kind == "two":
-        fa, fb = font(124), font(72)
+        fa, fb = fit(a, 124), fit(b, 80)
         wa, wb = tmp.textlength(a, font=fa), tmp.textlength(b, font=fb)
-        w = int(max(wa, wb)) + 140; h = 124 + 72 + 150
+        w = int(max(wa, wb)) + 140; h = 124 + 80 + 150
     else:
         fa = font(120); wa = tmp.textlength(a, font=fa); fb = None; wb = 0
-        w = int(wa) + 140; h = 120 + 110
+        if wa > MAXW and " " in a:
+            # two balanced lines instead of one long strip
+            ws_ = a.split(" "); best = None
+            for i in range(1, len(ws_)):
+                l1, l2 = " ".join(ws_[:i]), " ".join(ws_[i:])
+                m = max(tmp.textlength(l1, font=font(104)), tmp.textlength(l2, font=font(104)))
+                if best is None or m < best[0]: best = (m, l1, l2)
+            l1, l2 = best[1], best[2]
+            sz = 104
+            while sz > 56 and max(tmp.textlength(l1, font=font(sz)), tmp.textlength(l2, font=font(sz))) > MAXW: sz -= 4
+            fa = font(sz); lines = [l1, l2]
+            wa = max(tmp.textlength(l1, font=fa), tmp.textlength(l2, font=fa))
+            w = int(wa) + 140; h = 2 * sz + 24 + 110
+        else:
+            fa = fit(a, 120); wa = tmp.textlength(a, font=fa)
+            w = int(wa) + 140; h = 120 + 110
     w = min(w, 1700)
     pad = 40
     im = Image.new("RGBA", (w + 2 * pad, h + 2 * pad), (0, 0, 0, 0))
@@ -168,7 +188,11 @@ def callout_img(text):
         dd.rectangle((0, 0, 16, h), fill=CRIMSON + (255,))
         dd.text((70, 32), a, font=fa, fill=INK + (255,))
         dd.rectangle((70, 196, 70 + min(wa, w - 140), 204), fill=CRIMSON + (255,))
-        dd.text((70, 218), b, font=fb, fill=CRIMSON + (255,))
+        dd.text((70, 216), b, font=fb, fill=CRIMSON + (255,))
+    elif lines:
+        dd.rectangle((0, 0, 16, h), fill=CRIMSON + (255,))
+        lh = fa.size + 24
+        for i, ln in enumerate(lines): dd.text((70, 44 + i * lh), ln, font=fa, fill=INK + (255,))
     else:
         dd.rectangle((0, 0, 16, h), fill=CRIMSON + (255,))
         dd.text((70, 40), a, font=fa, fill=INK + (255,))
