@@ -50,6 +50,15 @@ function shadeClip(path, toX, col) {
   X.save(); X.beginPath(); path(X); X.clip(); const gr = X.createLinearGradient(toX - 110, 0, toX + 70, 0);
   gr.addColorStop(0, col); gr.addColorStop(1, col.replace(/[\d.]+\)$/, '0)')); X.fillStyle = gr; X.fillRect(-5000, -5000, 10000, 10000); X.restore();
 }
+/* a slice of toast: crust + crumb; dunked = bottom soaked darker */
+function toastSlice(x, y, rot, s = 1, dunked = false) {
+  X.save(); X.translate(x, y); X.rotate(rot); X.scale(s, s);
+  const sl = g => { g.moveTo(-24, 22); g.lineTo(-24, -22); g.quadraticCurveTo(-34, -50, -10, -50); g.quadraticCurveTo(0, -58, 10, -50); g.quadraticCurveTo(34, -50, 24, -22); g.lineTo(24, 22); g.closePath(); };
+  shape(X, sl, '#c98a45'); X.save(); X.translate(0, -6); X.scale(.76, .78); X.beginPath(); sl(X); X.fillStyle = '#f2d39a'; X.fill(); X.restore();
+  X.fillStyle = 'rgba(150,90,40,.35)'; for (const [a, b] of [[-8, -24], [6, -10], [-4, 4], [10, -32]]) { X.beginPath(); X.arc(a, b, 2.4, 0, 7); X.fill(); }
+  if (dunked) { X.save(); X.beginPath(); sl(X); X.clip(); X.fillStyle = 'rgba(90,55,35,.55)'; X.fillRect(-40, 4, 80, 30); X.restore(); shape(X, sl, null); }
+  X.restore();
+}
 function shadeCol(hex, k) { const n = parseInt(hex.slice(1), 16); return `rgb(${(n >> 16) * k | 0},${(n >> 8 & 255) * k | 0},${(n & 255) * k | 0})`; }
 function mitten(x, y, r, col = '#f1ece6') { shape(X, g => g.arc(x, y, r, 0, 7), col); X.save(); X.beginPath(); X.arc(x, y, r - 5, -1.2, 0.2); X.strokeStyle = RIM; X.shadowColor = 'rgba(255,214,150,.9)'; X.shadowBlur = 10; X.lineWidth = 4; X.stroke(); X.restore(); }
 function glow(x, y, r, a, rgb = '150,225,255') {
@@ -326,13 +335,16 @@ function dave(t, gx, gy, p = {}) {
   [e, h] = ik(gx + 124, top + 60, tx, ty, 124, 118, 1); limb([gx + 124, top + 60], e, h, N, 46, Nd);
   X.save(); X.translate(h[0] - 40, h[1] - 10); X.rotate(-0.42 * lift);
   X.beginPath(); X.arc(-32, -2, 22, 1.5, 4.7); X.lineWidth = 12; X.strokeStyle = OUT; X.stroke(); X.lineWidth = 6; X.strokeStyle = '#f4f1ea'; X.stroke();
-  const mug = g => { g.moveTo(-32, -40); g.lineTo(-30, 26); g.quadraticCurveTo(-30, 36, -18, 36); g.lineTo(18, 36); g.quadraticCurveTo(30, 36, 30, 26); g.lineTo(32, -40); };
-  { const gr = X.createLinearGradient(-32, 0, 32, 0); gr.addColorStop(0, '#d9d2c8'); gr.addColorStop(.55, '#f6f2ea'); gr.addColorStop(1, '#ffffff'); shape(X, mug, gr); }
-  shape(X, g => g.ellipse(0, -40, 32, 9, 0, 0, 7), '#e7e0d6', 4);                    // rim
+  // opening first (rim + coffee), then whatever sticks out of it, then the body whose top edge is the front of the rim
+  shape(X, g => g.ellipse(0, -40, 32, 9, 0, 0, 7), '#e7e0d6', 4);
   X.save(); X.beginPath(); X.ellipse(0, -39, 26, 6, 0, 0, 7); X.clip(); X.rotate(.42 * lift);
   X.fillStyle = '#4e3426'; X.fillRect(-40, -60, 80, 60); X.fillStyle = '#7a5440'; X.beginPath(); X.ellipse(0, -36, 26, 5, 0, 0, 7); X.fill();
   X.fillStyle = 'rgba(255,230,200,.45)'; X.beginPath(); X.ellipse(8, -37, 8, 1.6, 0, 0, 7); X.fill(); X.restore();
-  if (p.toastInMug) { shape(X, g => rrPath(g, -22, -80, 44, 48, 10), '#d9a35a', 4); shape(X, g => rrPath(g, -15, -73, 30, 34, 8), '#f3d7a0', 0); }
+  if (p.toastInMug) toastSlice(4, -42, .32 + .1 * Math.sin(t * 1.3), .9, true);
+  const mug = g => { g.moveTo(-32, -40); g.ellipse(0, -40, 32, 9, 0, Math.PI, 0, true); g.lineTo(30, 26); g.quadraticCurveTo(30, 36, 18, 36); g.lineTo(-18, 36); g.quadraticCurveTo(-30, 36, -30, 26); g.closePath(); };
+  { const gr = X.createLinearGradient(-32, 0, 32, 0); gr.addColorStop(0, '#d9d2c8'); gr.addColorStop(.55, '#f6f2ea'); gr.addColorStop(1, '#ffffff'); shape(X, mug, gr); }
+  if (p.splash > 0 && p.splash < .5) { const u = p.splash / .5; X.save(); X.globalAlpha = 1 - u;
+    for (const [vx, vy] of [[-60, -150], [-20, -190], [30, -170], [70, -130]]) shape(X, g => g.ellipse(vx * u, -44 + vy * u + 260 * u * u, 6, 8, 0, 0, 7), '#6b4a36', 3); X.restore(); }
   X.restore();
   mitten(h[0], h[1], 23);
   if ((p.steam ?? 1) > 0) {

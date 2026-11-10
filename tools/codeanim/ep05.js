@@ -25,7 +25,7 @@ function pop(t, a, s) { return back(clamp((t - a) / .35)) * s; }
 
 const SCENES = [
 /* 01: night, chest glows through the blanket like a night light; he wakes and looks at it */
-{ id: '01', dur: 6.2, draw(t) {
+{ id: '01', dur: 5.9, draw(t) {
   camera(t, [{ a: 0, b: 99, cx: 860, cy: 600, z: 1.12, dz: .1, dx: -60 }]);
   X.drawImage(BGS.bedN, 0, 0);
   const wake = R(t, 3.0, 3.4), lift = R(t, 3.6, 4.2);
@@ -38,7 +38,7 @@ const SCENES = [
   letterbox();
 } },
 /* 02: morning, standing by the bed, covering the chest: the light leaks through his fingers */
-{ id: '02', dur: 4.2, draw(t) {
+{ id: '02', dur: 3.2, draw(t) {
   camera(t, [{ a: 0, b: 99, cx: 1430, cy: 560, z: 1.32, dz: .05 }]);
   X.drawImage(BGS.bedD, 0, 0); bedFront(t, 0);
   const gx = 1480, gy = 944, top = TOP(gy);
@@ -46,13 +46,14 @@ const SCENES = [
   letterbox();
 } },
 /* 03: kitchen. He snaps ("I remember!"), the window bursts, the suit flies in and locks on; toast lands in Dave's mug; Dave sips */
-{ id: '03', dur: 10.6, draw(t) {
+{ id: '03', dur: 8.4, draw(t) {
+  t = t < 5.4 ? t : t + 2.2;                          // the close-up starts right after the line
   const s = camera(t, [{ a: 0, b: 7.6, cx: 980, cy: 560, z: 1.06, dz: .03, shake: t => bump(t, 1.6, 2.1) * 10 }, { a: 7.6, b: 99, cx: 640, cy: 420, z: 1.6, dz: .05, blur: 1 }]);
   X.drawImage(s.blur ? BGS.kitchenB : BGS.kitchen, 0, 0);
   windowCracks(R(t, 1.55, 1.7));
   const dgx = 560, dgy = 944, hgx = 1300, hgy = 944, ht = TOP(hgy);
   const toastIn = t > 2.6;
-  dave(t, dgx, dgy, { blink: blinkAmt(t, [1.0, 4.5, 6.2, 9.9]) || (t > 8.9 && t < 9.6 ? 1 : 0), lift: R(t, 8.4, 8.9) * (1 - R(t, 9.7, 10.2)), toastInMug: toastIn, steam: toastIn ? 0 : 1 });
+  dave(t, dgx, dgy, { blink: blinkAmt(t, [1.0, 4.5, 6.2, 9.9]) || (t > 8.9 && t < 9.6 ? 1 : 0), lift: R(t, 8.4, 8.9) * (1 - R(t, 9.7, 10.2)), toastInMug: toastIn, splash: t - 2.6, steam: toastIn ? 0 : 1 });
   if (!s.blur) {
     const A = armorState(t, 1.7), full = A.helmet;
     const think = R(t, .2, .6) * (1 - R(t, .95, 1.05)), snap = R(t, .95, 1.05) * (1 - R(t, 1.5, 1.9));
@@ -66,14 +67,14 @@ const SCENES = [
     shards(t, 1.6, [1600, 360]);
     // toast pops out of the toaster and arcs into Dave's mug
     if (t > 1.75 && t < 2.6) { const u = R(t, 1.75, 2.6, x => x), x = mix(955, dgx + 30, u), y = mix(530, 534, u) - Math.sin(u * Math.PI) * 330;
-      X.save(); X.translate(x, y); X.rotate(u * 9); shape(X, g => rrPath(g, -24, -26, 48, 52, 10), '#d9a35a', 4); X.restore(); }
+      toastSlice(x, y, u * 9, .95); }
     burst('SNAP!', hgx + 260, ht - 120, .7, bump(t, 1.1, 1.6), .15);
     burst('CRASH!', 1560, 230, .9, bump(t, 1.6, 2.3), -.12);
   }
   letterbox();
 } },
 /* 04: rule card */
-{ id: '04', dur: 5.4, draw(t) {
+{ id: '04', dur: 4.7, draw(t) {
   card(t, '#fde047', () => {
     X.save(); X.translate(960, 300); X.scale(pop(t, .3, 1), pop(t, .3, 1)); text("TODAY: DAVE'S BIRTHDAY", 0, 0, 92, '#e8382f', 'center', 'Bangers', 12); X.restore();
     X.save(); X.translate(960, 390); X.scale(pop(t, 2.0, 1), pop(t, 2.0, 1)); text('RULE #1', 0, 0, 80, '#141014', 'center'); X.restore();
@@ -85,7 +86,7 @@ const SCENES = [
   letterbox();
 } },
 /* 05: Dave tapes the broken window; the suit lies in a pile at the hero's feet */
-{ id: '05', dur: 3.8, draw(t) {
+{ id: '05', dur: 3.6, draw(t) {
   camera(t, [{ a: 0, b: 99, cx: 1180, cy: 560, z: 1.08, dz: .03 }]);
   X.drawImage(BGS.kitchen, 0, 0); windowCracks(1); const u = R(t, .3, 3.4, x => x); windowTape(u);
   const { x, y, w, h } = KWIN, cx = x + w * .62, cy = y + h * .55, strips = [[-150, -90, 150, 90], [-150, 90, 150, -90], [-170, 0, 170, 0]];
@@ -98,7 +99,7 @@ const SCENES = [
   letterbox();
 } },
 /* 05b: Dave's solution: oven mitts. The hero tries to snap in them: nothing */
-{ id: '05b', dur: 7.5, draw(t) {
+{ id: '05b', dur: 6.6, draw(t) {
   const s = camera(t, [{ a: 0, b: 2.4, cx: 960, cy: 560, z: 1.12, dz: .03 }, { a: 2.4, b: 99, cx: 1366, cy: 470, z: 1.75, dz: .05 }]);
   X.drawImage(BGS.kitchen, 0, 0); windowCracks(1); windowTape(1);
   const gx = 1250, gy = 944, ht = TOP(gy), dg = 700;
@@ -116,7 +117,7 @@ const SCENES = [
   letterbox();
 } },
 /* 05c: the hero can't wrap the present in mitts; Dave wraps his own present */
-{ id: '05c', dur: 6.8, draw(t) {
+{ id: '05c', dur: 6.6, draw(t) {
   camera(t, [{ a: 0, b: 99, cx: 900, cy: 520, z: 1.25, dz: .05 }]);
   X.drawImage(BGS.kitchen, 0, 0); windowCracks(1); windowTape(1);
   const gy = 944, hg = 1090, dg = 520, bx = 830, by = 604;
@@ -132,11 +133,11 @@ const SCENES = [
   letterbox();
 } },
 /* 06: bus stop. The phone ignores oven mitts; one mitt comes off; music; he snaps to the beat; the suit drops in; the bus leaves */
-{ id: '06', dur: 10.8, draw(t) {
+{ id: '06', dur: 10.0, draw(t) {
   camera(t, [{ a: 0, b: 99, cx: 1000, cy: 560, z: 1.05, dz: .04, shake: t => bump(t, 6.85, 7.2) * 9 }]);
   X.drawImage(BGS.street, 0, 0);
-  const bx = t < 3.4 ? 1950 : t < 4.8 ? mix(1950, 260, outq((t - 3.4) / 1.4)) : t < 8.2 ? 260 : mix(260, -1100, R(t, 8.2, 9.8, x => x * x));
-  bus(bx, t > 4.9 && t < 7.8);
+  const bx = t < 3.4 ? 1950 : t < 4.8 ? mix(1950, 260, outq((t - 3.4) / 1.4)) : t < 7.6 ? 260 : mix(260, -1100, R(t, 7.6, 9.2, x => x * x));
+  bus(bx, t > 4.9 && t < 7.3);
   busStopFront();
   const gx = 800, gy = 944, ht = TOP(gy), A = armorState(t, 5.9);
   const music = t > 3.3 && t < 5.85, beat = music ? Math.abs(Math.sin((t - .2) * Math.PI * 2 + Math.PI / 2)) * 8 : 0;
@@ -145,10 +146,10 @@ const SCENES = [
   person(t, 1480, gy, GUEST2, { cup: 1, handL: [1480 - 60, gy - 330], look: t > 5.9 ? [-22, 0] : [0, 0], wide: t > 6.2, mouthO: t > 6.4, blink: blinkAmt(t, [1.0, 9.6]) });
   const hl = [gx - 10, gy - 290];
   const hr = snapUp > 0 ? mix2([gx + 112, gy - 212], [gx + 175, ht - 40], snapUp) : (t < 3.4 ? mix2([gx + 62, gy - 360 + tap * 16], [gx + 150, gy - 250], off * (1 - tap2)) : undefined);
-  person(t, gx, gy, HERO, { armor: A, headphones: !A.helmet, mittL: !A.armL, mittR: t < 2.85, bounce: beat, happy: music, mouth: music ? .8 : (t > 9.4 ? -.8 : (t < 2.8 ? -.3 : 0)),
+  person(t, gx, gy, HERO, { armor: A, headphones: !A.helmet, mittL: !A.armL, mittR: t < 2.85, bounce: beat, happy: music, mouth: music ? .8 : (t > 8.8 ? -.8 : (t < 2.8 ? -.3 : 0)),
     headRot: music ? Math.sin((t - .2) * Math.PI * 2) * .05 : 0, handL: A.armL ? undefined : hl, handR: hr,
     snapR: snapUp > .5 ? Math.max(bump(t, 5.1, 5.3), bump(t, 5.6, 5.8)) : undefined,
-    look: t > 8.2 ? [-24, 0] : (t < 3.4 ? [4, 16] : [0, 0]), brow: t < 2.8 ? .6 : 0, wide: t > 5.9 && t < 7.4, chestGlow: A.chest ? .2 : 0, blink: blinkAmt(t, [8.6, 10.2]) });
+    look: t > 7.6 ? [-24, 0] : (t < 3.4 ? [4, 16] : [0, 0]), brow: t < 2.8 ? .6 : 0, wide: t > 5.9 && t < 7.4, chestGlow: A.chest ? .2 : 0, blink: blinkAmt(t, [8.6, 10.2]) });
   if (!A.armL && HERO._hl) { ovenMitt(HERO._hl[0], HERO._hl[1], 1.0, -Math.PI / 2 - .2, 1); phone(HERO._hl[0] + 4, HERO._hl[1] - 66, t > 3.15, -.12); }
   if (off > 0) { const u = R(t, 2.85, 3.5, x => x); if (u < 1) ovenMitt(mix(gx + 150, gx + 330, u), gy - 250 - Math.sin(u * Math.PI) * 160 + u * 200, 1.0, u * 8, -1); else ovenMitt(gx + 330, gy - 40, 1.0, 1.4, -1); }
   if (music) musicNotes(gx + 120, ht - 120, t, 1 - R(t, 5.5, 5.85));
@@ -158,8 +159,8 @@ const SCENES = [
   letterbox();
 } },
 /* B: bakery. The empty suit waits outside. The box slips out of the mitts, he catches it bare-handed, snaps for joy: the suit comes through the window */
-{ id: 'B', dur: 12.0, draw(t) {
-  const s = camera(t, [{ a: 0, b: 6.3, cx: 960, cy: 560, z: 1.02, dz: .04, shake: t => bump(t, 7.15, 7.6) * 10 }, { a: 6.3, b: 9.0, cx: 960, cy: 560, z: 1.06, dz: .02, shake: t => bump(t, 7.15, 7.6) * 10 }, { a: 9.0, b: 99, cx: 1260, cy: 470, z: 1.4, dz: .05 }]);
+{ id: 'B', dur: 10.6, draw(t) {
+  const s = camera(t, [{ a: 0, b: 6.3, cx: 960, cy: 560, z: 1.02, dz: .04, shake: t => bump(t, 7.15, 7.6) * 10 }, { a: 6.3, b: 8.4, cx: 960, cy: 560, z: 1.06, dz: .02, shake: t => bump(t, 7.15, 7.6) * 10 }, { a: 8.4, b: 99, cx: 1260, cy: 470, z: 1.4, dz: .05 }]);
   X.drawImage(BGS.bakery, 0, 0);
   const gx = 980, gy = 944, ht = TOP(gy), T0 = 7.25, A = armorState(t, T0);
   const launched = t > 7.1;
@@ -192,11 +193,11 @@ const SCENES = [
   burst('SNAP!', gx + 250, ht - 140, .6, bump(t, 6.8, 7.3), .15);
   burst('CRASH!', 420, 260, .9, bump(t, 7.1, 7.8), -.1);
   if (sq > 0) burst('SQUISH', 1000, 470, .55, bump(t, T0 + .55, T0 + 1.1), .1, '#f7c6dc');
-  caption('WINDOWS: 2', R(t, 9.2, 9.45) * (1 - R(t, 11.6, 11.9)));
+  caption('WINDOWS: 2', R(t, 8.4, 8.65));
   letterbox();
 } },
 /* 06c: home again. Dave fixes the cake with tape; the suit is a pile on the floor again */
-{ id: '06c', dur: 6.0, draw(t) {
+{ id: '06c', dur: 4.6, draw(t) {
   camera(t, [{ a: 0, b: 99, cx: 900, cy: 580, z: 1.3, dz: .06 }]);
   X.drawImage(BGS.kitchen, 0, 0); windowCracks(1); windowTape(1);
   const gy = 944, dg = 520, hg = 1270, cx = 900, cy = 604;
@@ -212,7 +213,7 @@ const SCENES = [
   letterbox();
 } },
 /* 07: counters card (7 snaps, 4 windows) with Dave and a stack of tape */
-{ id: '07', dur: 5.6, draw(t) {
+{ id: '07', dur: 5.3, draw(t) {
   card(t, '#4a3a52', () => {
     const n1 = Math.min(7, Math.floor(R(t, .9, 1.95, x => x) * 7.99)), n2 = Math.min(4, Math.floor(R(t, 2.3, 2.95, x => x) * 4.99));
     X.save(); X.translate(150, 230); X.scale(pop(t, .3, 1), pop(t, .3, 1)); X.translate(-150, -230); fillR(X, 150, 230, 820, 190, 18, '#fde047', 8); text('6:00 PM', 190, 210, 64, '#fde047', 'left', 'Bangers', 8); text(`SNAPS: ${n1}`, 200, 360, 130, '#141014'); X.restore();
@@ -223,21 +224,22 @@ const SCENES = [
   letterbox();
 } },
 /* 08: the party. Everyone is happy, he keeps his hands in his pockets */
-{ id: '08', dur: 5.0, draw(t) { party(t, 'hands'); } },
+{ id: '08', dur: 3.6, draw(t) { party(t, 'hands'); } },
 /* 09: everybody starts snapping to the music; he sweats */
-{ id: '09', dur: 5.4, draw(t) { party(t, 'snapping'); } },
+{ id: '09', dur: 4.6, draw(t) { party(t, 'snapping'); } },
 /* 10: the power goes out */
-{ id: '10', dur: 4.2, draw(t) { party(t, 'dark'); } },
+{ id: '10', dur: 3.3, draw(t) { party(t, 'dark'); } },
 /* 11: close-up in the dark: fine, one snap */
-{ id: '11', dur: 4.4, draw(t) { party(t, 'onesnap'); } },
+{ id: '11', dur: 3.4, draw(t) { party(t, 'onesnap'); } },
 /* 12: the suit crashes in, his chest lights the room, the speaker plugs into it, everyone dances */
-{ id: '12', dur: 6.8, draw(t) { party(t, 'suit'); } },
+{ id: '12', dur: 5.6, draw(t) { party(t, 'suit'); } },
 /* 12b: Dave danced. A little. */
-{ id: '12b', dur: 5.0, draw(t) { party(t + 4.0, 'suit', { shots: [{ a: 0, b: 99, cx: 1000, cy: 485, z: 1.45, dz: .02 }], daveDance: t }); } },
+{ id: '12b', dur: 4.2, draw(t) { party(t + 4.0, 'suit', { shots: [{ a: 0, b: 99, cx: 1000, cy: 485, z: 1.45, dz: .02 }], daveDance: t }); } },
 /* 13: Dave's wish: new windows; he blows the candles out */
 { id: '13', dur: 6.2, draw(t) { party(t, 'wish'); } },
 /* 14: next morning. New windows (Dave's wish). The hero stretches, snaps by accident: window number six. Dave sips */
-{ id: '14', dur: 9.8, draw(t) {
+{ id: '14', dur: 9.2, draw(t) {
+  t = t + .6 * R(t, 2.6, 3.4, x => x);
   const s = camera(t, [{ a: 0, b: 7.0, cx: 980, cy: 560, z: 1.06, dz: .03, shake: t => bump(t, 4.5, 4.9) * 10 }, { a: 7.0, b: 99, cx: 640, cy: 420, z: 1.6, dz: .05, blur: 1 }]);
   X.drawImage(s.blur ? BGS.kitchenDayB : BGS.kitchenDay, 0, 0);
   const gx = 1300, gy = 944, ht = TOP(gy), T0 = 4.65, A = armorState(t, T0);

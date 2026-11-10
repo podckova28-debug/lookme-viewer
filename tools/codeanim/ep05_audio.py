@@ -8,8 +8,8 @@ from scipy.io import wavfile
 from scipy.signal import butter, sosfilt, resample_poly
 
 SR = 48000
-DUR = {'01': 6.2, '02': 4.2, '03': 10.6, '04': 5.4, '05': 3.8, '05b': 7.5, '05c': 6.8, '06': 10.8, 'B': 12.0, '06c': 6.0, '07': 5.6, '08': 5.0, '09': 5.4,
-       '10': 4.2, '11': 4.4, '12': 6.8, '12b': 5.0, '13': 6.2, '14': 9.8}
+import re as _re
+DUR = {m[0]: float(m[1]) for m in _re.findall(r"\{ id: '(\w+)', dur: ([\d.]+)", open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'ep05.js')).read())}
 START, acc = {}, 0.0
 for k, d in DUR.items(): START[k] = acc; acc += round(d * 24) / 24      # scenes are whole frames
 TOTAL = acc
@@ -158,13 +158,13 @@ def vo(sc, t, name, g=1.0):
     x = x / (np.max(np.abs(x)) or 1) * .8; put('vo', S(sc, t), x, g); return len(x) / SR
 
 # narration (times line up with the action in ep05.js)
-VO = [('01', .3, 'vo_01.wav'), ('02', .6, 'vo_02.wav'), ('03', .2, 'vo_03a.wav'), ('03', 7.8, 'vo_03b.wav'), ('04', .4, 'vo_04.wav'), ('05', .5, 'vo_05.wav'),
+VO = [('01', .3, 'vo_01.wav'), ('02', .3, 'vo_02.wav'), ('03', .2, 'vo_03a.wav'), ('03', 5.6, 'vo_03b.wav'), ('04', .4, 'vo_04.wav'), ('05', .5, 'vo_05.wav'),
       ('05b', .3, 'vo_05b_a.wav'), ('05b', 3.0, 'vo_05b_b.wav'), ('05c', .3, 'vo_05c_a.wav'), ('05c', 4.3, 'vo_05c_b.wav'),
-      ('06', .3, 'vo_06_0.wav'), ('06', 3.6, 'vo_06a.wav'), ('06', 8.8, 'vo_06b.wav'),
-      ('B', .3, 'vo_B1.wav'), ('B', 3.15, 'vo_B2.wav'), ('B', 5.6, 'vo_B3.wav'), ('B', 9.4, 'vo_B4.wav'), ('06c', 1.6, 'vo_06c.wav'),
+      ('06', .3, 'vo_06_0.wav'), ('06', 3.6, 'vo_06a.wav'), ('06', 8.0, 'vo_06b.wav'),
+      ('B', .3, 'vo_B1.wav'), ('B', 3.15, 'vo_B2.wav'), ('B', 5.6, 'vo_B3.wav'), ('B', 8.6, 'vo_B4.wav'), ('06c', 1.0, 'vo_06c.wav'),
       ('07', .4, 'vo_08.wav'), ('08', .5, 'vo_09.wav'), ('09', .3, 'vo_10.wav'), ('10', .8, 'vo_11.wav'),
-      ('11', .5, 'vo_12.wav'), ('12', 3.4, 'vo_13.wav'), ('12b', 1.0, 'vo_12b.wav'), ('13', .2, 'vo_14a.wav'), ('13', 2.15, 'vo_14b.wav'),
-      ('14', .4, 'vo_15a.wav'), ('14', 7.7, 'vo_15b.wav')]
+      ('11', .5, 'vo_12.wav'), ('12', 2.9, 'vo_13.wav'), ('12b', .5, 'vo_12b.wav'), ('13', .2, 'vo_14a.wav'), ('13', 2.15, 'vo_14b.wav'),
+      ('14', .4, 'vo_15a.wav'), ('14', 7.1, 'vo_15b.wav')]
 for sc, t, f in VO:
     if not os.path.exists(os.path.join(vo_dir, f)): print('MISSING', f); continue
     d = vo(sc, t, f); print(f'{f:13s} scene {sc:3s} at {t:4.1f}s  ends {t + d:4.1f}s / {DUR[sc]}s' + ('  OVER' if t + d > DUR[sc] + .2 else ''))
@@ -199,11 +199,12 @@ put('amb', S('08', 0), ambience(START['14'] - START['08'], 500, .03))
 put('amb', S('14', 0), birds(DUR['14']) + ambience(DUR['14'], 400, .03))
 
 # sfx
-fx = lambda sc, t, x, g=1.0: put('sfx', S(sc, t), x, g)
+def fx(sc, t, x, g=1.0):
+    if t < DUR[sc]: put('sfx', S(sc, t), x, g)      # nothing spills into the next scene
 fx('01', 3.0, whoosh(.5, 200, 900), .25)                       # blanket shift on waking
 fx('03', 1.22, snap()); fx('03', 1.6, glass(), .9)
 for d in ARMOR: fx('03', 1.7 + d, whoosh(.4), .4); fx('03', 1.7 + d + .42, clank(1 + d * .3), .55)
-fx('03', 1.75, toaster_pop(), .7); fx('03', 2.6, plop(), .8); fx('03', 8.45, slurp(), .9)
+fx('03', 1.75, toaster_pop(), .7); fx('03', 2.6, plop(), .8); fx('03', 2.62, splat()[:N(.25)] * .5, .6); fx('03', 6.25, slurp(), .9)
 fx('04', .3, pop()); fx('04', 2.0, pop(), .8); fx('04', 2.9, pop(), 1.0); fx('04', 3.4, tick(), 1.2)
 fx('05', .3, pop(), .7)
 for i in range(3): fx('05', .3 + i * 1.03, tape_rip(.95), .8)
@@ -219,14 +220,14 @@ fx('06', 2.85, whoosh(.5, 300, 1500), .3); fx('06', 3.5, thup(), .7); fx('06', 3
 fx('06', 3.4, engine(1.5, .8, .5), .5); fx('06', 4.8, hiss(.6), .6); fx('06', 4.95, hiss(.4), .4); fx('06', 4.9, engine(3.3, .35, .35), .5)
 fx('06', 5.2, snap()); fx('06', 5.7, snap())
 for d in ARMOR: fx('06', 5.9 + d, whoosh(.4, 600, 3000), .35); fx('06', 5.9 + d + .42, clank(1.1 + d * .3), .5)
-fx('06', 6.85, clank(.8, 1.0), .8); fx('06', 7.8, hiss(.5), .5); fx('06', 8.2, engine(2.6, .5, .0) * np.linspace(1, .2, N(2.6)), .7)
+fx('06', 6.85, clank(.8, 1.0), .8); fx('06', 7.3, hiss(.5), .5); fx('06', 7.6, engine(2.4, .5, .0) * np.linspace(1, .2, N(2.4)), .7)
 # B bakery
 fx('B', .3, slide(1.2)); fx('B', 1.5, thup(), .5)
 for k in range(5): fx('B', 2.5 + k * .52, thup(), .6)
 fx('B', 4.6, whoosh(.5, 300, 1600), .4); fx('B', 4.8, whoosh(.5, 400, 2200), .3); fx('B', 5.38, thunk(), .7); fx('B', 5.5, thup(), .6); fx('B', 5.62, thup(), .6)
 fx('B', 6.88, snap()); fx('B', 6.95, power_up()[:N(.3)], .5); fx('B', 7.1, glass(), 1.0)
 for d in ARMOR: fx('B', 7.25 + d, whoosh(.4), .35); fx('B', 7.25 + d + .42, clank(1 + d * .3), .55)
-fx('B', 7.95, splat(), 1.0); fx('B', 9.2, pop(), .7)
+fx('B', 7.95, splat(), 1.0); fx('B', 8.4, pop(), .7)
 # 06c Dave fixes the cake
 for i in range(3): fx('06c', .6 + i, tape_rip(.95), .8)
 fx('06c', 3.7, ding(2093), .5)
@@ -244,9 +245,9 @@ fx('12', 1.3, power_up(), .7); put('amb', S('12', 1.6), hum(START['14'] - S('12'
 fx('13', 3.35, blow(), 1.0); fx('13', 3.95, horn(), .7); fx('13', 5.15, slurp(), .9)
 # 14 the morning after
 fx('14', .3, ding(2349), .35); fx('14', 1.4, ding(1975), .25)
-fx('14', 4.4, snap()); fx('14', 4.5, glass(), 1.0)
-for d in ARMOR: fx('14', 4.65 + d, whoosh(.4), .4); fx('14', 4.65 + d + .42, clank(1 + d * .3), .55)
-fx('14', 6.2, pop(), .7); fx('14', 7.65, slurp(), .9)
+fx('14', 3.8, snap()); fx('14', 3.9, glass(), 1.0)
+for d in ARMOR: fx('14', 4.05 + d, whoosh(.4), .4); fx('14', 4.05 + d + .42, clank(1 + d * .3), .55)
+fx('14', 5.6, pop(), .7); fx('14', 7.05, slurp(), .9)
 
 # ducking: music/ambience/sfx dip under the narration
 v = L['vo']; env = np.convolve(np.abs(v), np.ones(N(.05)) / N(.05), 'same'); env = np.minimum(env / .05, 1)
