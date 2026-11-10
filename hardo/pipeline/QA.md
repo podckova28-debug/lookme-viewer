@@ -143,3 +143,9 @@ Prompt rule: every scene prompt names only the hero, the one object the line is 
 - Zoom vs edge: if the drawing touches the frame edge (lineups, tall chimneys, candle flames, headscarves), shift or shrink the art 3–7 % on a background-coloured canvas before assembly.
 - Clips: wan3_0 night skies darken and lose the white edges (F216 rejected); river skies fill with clouds after ~2.5 s — trim clips to the clean part.
 - Labels: the placer moves labels to other shots in the block when the preferred shot has no white space; check every moved label still matches the picture and the narration order.
+
+## Ep15 lessons
+- Subtitle cues placed by character share start during the pause before a sentence (up to 0.9 s early). assemble_ep.py now snaps each new cue to the nearest speech onset (silencedetect on the block audio).
+- OmniVoice mangles short rhetorical openers ("So which jobs are most exposed?" → "So switched…") and reads "AI" as "a" in "jobs AI can't" — always ASR-check; write "A.I." in the voice text, the SRT writer turns it back into "AI".
+- When a crowd frame keeps a smeared hand after an edit, drop the shot instead of spending more credits; reuse an already-checked frame to keep cut length ≤ ~4 s.
+- Higgsfield credits on this account are also being used by something else (ep14/ep15: ~23–180 credits gone between my own calls). Check the balance before a big batch.
