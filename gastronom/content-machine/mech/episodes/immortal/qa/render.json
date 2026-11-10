@@ -1,0 +1,12 @@
+{
+ "project": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/immortal",
+ "video": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/immortal/immortal_1080p.mp4",
+ "overlays": 49,
+ "plan_total": 358.69,
+ "stats": {
+  "duration": 358.7,
+  "lufs": -14.3,
+  "peak": -1.4
+ },
+ "issues": []
+}

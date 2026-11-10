@@ -1,0 +1,52 @@
+Длинный «10 машин, которые Михалыч за 30 лет так и не смог убить» (10 нояб 2026). Рецепт: gpt_image_2_5 medium 2k (1 кр), wan3_0 480p (1 кр/с), голос — бесплатный клон Alexey (video/voiceclone).
+Референсы: Михалыч 87ee183f-9089-4c8d-bbe2-f2bdaec3c14c, водитель 53a2bd70-7357-464a-9e4d-a32495b0d3ee, гараж 23313f2f-6cbd-489b-b445-5159ade03183, двор 08996e99-8177-4b7d-8b13-c1ae3a50f7bb
+KF KI1 1 916bc314-870e-4e50-8b4d-4376b167943a
+KF KI2 2 e078ac06-1811-4472-92b9-60c235b5979d
+KF KI3 3 9aa6f859-1dfe-4ada-b9eb-54f74c437d3c
+KF KA1 4 ce0d7055-9629-4eed-9d76-a22652ecfc4e
+KF KA2 5 0fcb7c1b-c132-448f-a748-095b49b54bf7
+KF KA3 6 f8f8122c-a0d7-46ce-a0e4-eb1896f98f39
+KF KB1 7 bdbae4e8-7abd-41be-8a1a-040594fa4de2
+KF KB2 8 d841221d-b047-4956-8a87-c4d4d3b792b8
+KF KC1 9 c17f51af-38d2-419e-862f-5d1184a9bac5
+KF KC2 10 7fdab799-d23c-4ee7-a0b6-38f8edce064e
+KF KC3 11 66f53c3d-b291-4b6d-a32c-68a82035a113
+KF KD1 12 2c5b5925-0095-4c66-80a3-bd756603da7a
+KF KD3 13 8ffbe855-c452-4905-a4f2-f6c4f590078e
+KF KD4 14 40e36572-5181-4095-bbb9-ec9c76adcaba
+KF KE1 15 fda12d7f-00eb-4b0a-b781-3def7a9953ef
+KF KE2 16 10510972-242b-4ef1-b822-6a2cdd90f9e8
+KF KE3 17 3b254308-9fe3-4201-88da-dc76276e8bc8
+KF KF1 18 b17dde0d-a21d-432f-acb3-af61710bd144
+KF KF3 19 0b98ca83-7550-40ef-af9a-3431552cfe62
+KF KF4 20 a44dd4fc-9384-4c66-8da5-d38ccc7bab50 (повтор: первый вариант с рукой и отвёрткой отклонил фильтр)
+KF KG1 21 5fee9f87-aeff-42b1-84cf-b964f3673928
+KF KG2 22 39af7d01-6ae0-4f10-b3c1-3031729d02d2
+KF KG3 23 e4a12186-3e77-4223-b803-4f301f5e1682
+KF KH1 24 b3bc1577-8f52-4316-a8db-9c73aa68ef63
+KF KH2 25 c54be3e4-ccd2-440f-a68f-63c8b1db4952
+KF KJ1 26 e18575ca-9d91-4e08-a889-d6f82445f1d8
+KF KJ2 27 52115e27-fa37-439a-aa1e-0bc52c904924
+KF KJ3 28 bab34041-6e26-4986-bf11-a6c856fe2814
+KF KK1 29 e79cb729-d1b1-474a-9222-ec52cc981e55
+KF KK2 30 f25dceb4-5a4f-45b5-9ddf-b00499b02f04
+KF KK3 31 8e28fe1d-aef9-4bef-b139-f3201a333fc8
+KF KK4 32 e6d48a8f-6dc9-4f73-950e-fdbd0d98d6e0
+KF KM3 33 fc42ed76-8299-4fa6-adc6-0ebb134de053
+KF KM4 34 ddb1419c-3deb-44df-888e-581835bad608
+KF KM6 35 def0e98c-f3d2-4a36-a200-638a6958a107
+KF KM7 36 170e3963-7acf-4cb1-a5f6-43e18115989e
+KF KZ1 37 2fbabc0e-205f-44da-982b-1f3aa0dde7ab
+CLIP M_I1 1 4315488f-ce6a-4a8a-a0c4-a562309acb56 (от KI1, wan3_0 480p 5 с)
+CLIP M_A1 2 289dea7b-ad0c-4c5e-9547-481930f91139 (от KA1)
+CLIP M_B1 3 2be0be71-a4e7-4030-bd80-7a7eb5a31b6d (от KB1)
+CLIP M_D1 4 b10f56f7-9771-4e1d-bd06-d0f56b22c777 (от KD1)
+CLIP M_E2 5 d320269c-f31c-4870-b13b-d78236eb38f4 (от KE2)
+CLIP M_G1 6 d63b7906-50e1-465c-8c7a-ba621eada14c (от KG1)
+CLIP M_H1 7 d018fe87-4697-4798-9a49-253be2b576e2 (от KH1)
+CLIP M_J1 8 06146e5c-dca5-454f-93eb-a3d38957823d (от KJ1)
+CLIP M_K1 9 9216277b-b77a-49fd-9ec6-74b794ac5af8 (от KK1)
+CLIP M_M3 10 c5a9825c-623d-4d6c-a9eb-e09e256487b4 (от KM3)
+THUMB th_hammer 1e9dcd87-8c8c-448b-aaae-68eaf58dbd26 (база обложки, 1 кр)
+THUMB th_odo d922481d-54a8-4172-b551-935e18b47f75
+THUMB th_flag 1a937fd0-4bbc-48b2-b86a-aea44ff7f5e2

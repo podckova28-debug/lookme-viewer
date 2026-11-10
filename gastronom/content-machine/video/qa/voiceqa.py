@@ -315,6 +315,14 @@ def check_take(wm, ac, path, text, risk, stressed_line, omo=(), stress=True):
                 issues.append(dict(level='fail', code='break', msg=f"разрыв фразы после «{S[i]['w']}»: ASR ставит «{A[j]['punct']}», тишина {sil:.2f} с", t=round(a0 / fps, 2)))
             elif sil > 0.15:
                 issues.append(dict(level='warn', code='pause', msg=f"пауза без знака после «{S[i]['w']}» {sil:.2f} с (снимет gapfix)"))
+    # хвост: клон (Chatterbox) иногда дописывает после фразы бормотание или дыхание, которое ASR не записывает
+    # (immortal D2: текст кончился на 7,4 с, дальше 4 с звука). Считается звук громче пик−40 дБ позже 0,4 с от начала последней буквы.
+    lf = [v for v in (wf[-1]['fs'] if wf else []) if v is not None]
+    if lf:
+        last = lf[-1] / fps; k0 = int((last + 0.4) * 100)   # начало последней буквы + 0,4 с на саму букву и затухание
+        loud = dbf[k0:] > dbf.max() - 40; tail = float(loud.sum()) * 0.01
+        if tail > 0.5:
+            issues.append(dict(level='fail', code='tail', msg=f"лишний звук после текста: {tail:.1f} с (текст кончился на {last:.1f} с из {dur:.1f})", t=round(last, 2)))
     probs = [w.probability for w in words]
     return dict(file=path, heard=heard, issues=issues, fails=sum(1 for z in issues if z['level'] == 'fail'),
                 warns=sum(1 for z in issues if z['level'] == 'warn'), conf=round(float(np.mean(probs)) if probs else 0, 3), dur=round(dur, 2))

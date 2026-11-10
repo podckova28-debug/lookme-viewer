@@ -94,13 +94,31 @@ def check(lines):
         if re.search(r'[»"][.,:;!?]', text): add('warn', 'quote_punct', '»', 'знак после кавычки: паузу ставить вручную (gapfix NATURAL)')
         omo = {w.lower() for w in words if (w.lower() in acc.omographs or w.lower() in acc.yo_homographs)
                and len(re.findall('[аеёиоуыэюя]', w.lower())) >= 2} - risk
-        report.append(dict(id=lid, text=text, stressed=stressed, issues=issues, risk=sorted(risk), omographs=sorted(omo)))
+        rua = stressed; stressed = apply_fix(stressed)
+        rec = dict(id=lid, text=text, stressed=stressed, issues=issues, risk=sorted(risk), omographs=sorted(omo))
+        if rua != stressed: rec['stressed_ruaccent'] = rua
+        report.append(rec)
     return report
+
+
+FIX = {}   # <папка ролика>/stress.json: {"камри": "К+амри", …} — ударения марок и имён, которые RUAccent ставит неверно
+
+
+def apply_fix(s):
+    """Заменяет слово (без «+», в нижнем регистре) на вариант из stress.json, сохраняя заглавную букву.
+    Тот же словарь берёт voiceclone/clone_tts.py, поэтому голос и ожидание voiceqa совпадают."""
+    def w(m):
+        x = m.group(0); k = x.replace('+', '').lower()
+        if k not in FIX: return x
+        r = FIX[k]; return (r[0].upper() if x[0].isupper() else r[0].lower()) + r[1:]
+    return re.sub(r'[\w+]+', w, s) if FIX else s
 
 
 if __name__ == '__main__':
     args = sys.argv[1:]; out = None
     if '--json' in args: i = args.index('--json'); out = args[i + 1]; del args[i:i + 2]
+    sf = os.path.join(os.path.dirname(os.path.abspath(args[0])), 'stress.json')
+    if os.path.exists(sf): FIX.update({k.lower(): v for k, v in json.load(open(sf, encoding='utf-8')).items()})
     rep = check(load_lines(args[0]))
     nb = sum(1 for r in rep for x in r['issues'] if x['level'] == 'block'); nw = sum(1 for r in rep for x in r['issues'] if x['level'] == 'warn')
     for r in rep:

@@ -53,6 +53,16 @@ def main():
     lines = load_lines(a.project)
     tg = os.path.join(a.project, 'qa_out', 'textgate.json')
     stressed = {r['id']: r.get('stressed') for r in json.load(open(tg))} if os.path.exists(tg) else {}
+    # <проект>/stress.json — ударения марок и имён, которые RUAccent угадывает неверно: {"камри": "К+амри", ...}
+    sf = os.path.join(a.project, 'stress.json')
+    fix = json.load(open(sf, encoding='utf-8')) if os.path.exists(sf) else {}
+    def apply_fix(s):
+        def w(m):
+            t = m.group(0); k = t.replace('+', '').lower()
+            if k not in fix: return t
+            v = fix[k]; return v[0].upper() + v[1:] if t.replace('+', '')[:1].isupper() else v[0].lower() + v[1:]
+        return re.sub(r'[\w+]+', w, s)
+    stressed = {k: apply_fix(v) if v else v for k, v in stressed.items()}
     ids = a.ids or [i for i, _ in lines]
     out_dir = os.path.join(a.project, 'vo_takes'); os.makedirs(out_dir, exist_ok=True)
 
