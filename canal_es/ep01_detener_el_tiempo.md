@@ -1,5 +1,19 @@
 # Серия 1. ¿Qué pasaría si pudieras detener el tiempo?
 
+## Версия 2 (обгоняем референсы)
+- **Сцена 0, холодное открытие с кульминации** (как у Anima, Giro Imposible, Jeremy Bearimy): мир заморожен, горшок висит над головой Валерии, герой бежит к ней, затем перемотка к началу.
+  > Esta maceta está a medio metro de la cabeza de Valeria. El mundo entero está congelado. Y tú eres el único que se mueve. ¿Cómo llegaste hasta aquí? Empecemos por el principio.
+
+  _Этот горшок в полуметре от головы Валерии. Весь мир заморожен. И двигаешься только ты. Как ты здесь оказался? Начнём с начала._
+- **Реплики персонажей** (было 5, стало 16): мама «¿Eh? ¿Y la taza?», профе «¿Ya terminaste? ¿Tú?», Начо «Mmm… me queda bien», «¿Pero… cómo?», «¡Gracias, gracias!», Валерия «¿Qué… acaba de pasar?», хор «¡Gooool!» и «¡Feliz cumpleaños, Nacho!», герой «Ay, no…» и «Y entonces Valeria… bueno, tú me entiendes, Pepe».
+- **Рассказчик короче:** убрана фраза «Hoy vamos a ver qué pasaría de verdad…», сокращены сцены с усами, дождём и горшком.
+- **Закольцованный финал:**
+  > Aquella maceta, a medio metro de su cabeza… y tú creías que eras el único que se movía.
+
+  _Тот горшок в полуметре от её головы… а ты думал, что двигаешься только ты._
+
+Ниже первая версия сценария, тайминги в ней старые.
+
 **Название на YouTube:** ¿Qué pasaría si pudieras detener el tiempo?
 **Почему эта тема:** самый частый поисковый запрос формата в испанском, около 29,7 тыс. поисков в месяц. У канала Anima с 41 тыс. подписчиков ролик на эту тему набрал 623 тыс. просмотров, в 17 раз больше обычного для канала. Остановленный мир идеально подходит для анимации кодом: все стоят неподвижно, двигается только герой.
 **Длина:** около 7:11 при темпе рассказчика 0,92. Если подержать паузы на шутках чуть дольше, ролик переходит за 8:00, и тогда в середину можно ставить рекламу.

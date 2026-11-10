@@ -24,18 +24,20 @@ for sec in re.split(r'^### ', md, flags=re.M)[1:]:
             k += 1; para_first.add(f's{num:02d}_{k:02d}')
 
 GAP_SENT, GAP_PARA = 0.28, 0.65
-LEAD = {'s01': 1.6, 's10': 0.9, 's16': 0.8}
-TAIL = {'s04': 1.2, 's10': 1.2, 's13': 1.4, 's15': 1.2, 's16': 1.6, 's17': 5.5}
+LEAD = {'s00': 1.2, 's01': 1.0, 's10': 0.9, 's16': 0.8}
+TAIL = {'s00': 1.3, 's04': 1.2, 's10': 1.2, 's13': 1.4, 's15': 1.2, 's16': 1.6, 's17': 5.5}
 HOLD = {  # extra seconds after a line, for visual gags
+    's00_01': .3, 's00_03': .5, 's00_04': .4,
+    's04_08b': .5, 's06_06b': .3, 's07_04b': .7, 's09_05b': .4, 's10_06b': .6, 's10_07b': .6, 's12_04b': .3, 's13_01b': .3, 's13_02b': .2, 's14_05b': .4, 's17_00': .6,
     's01_02': .6, 's01_05': .8,
     's03_02': 1.1, 's03_03': .6, 's03_06': .8,
-    's04_03': .6, 's04_05': .5, 's04_08': 1.1,
+    's04_03': .6, 's04_05': .5, 's04_08': .25,
     's05_01': .5, 's05_02': 1.6,
     's06_03': .9, 's06_05': .6, 's06_08': 1.5,
     's07_02': 1.1, 's07_04': .9,
     's08_02': .4, 's08_04': 1.6,
     's09_01': .5, 's09_03': .8, 's09_05': .6,
-    's10_02': .9, 's10_04': .6, 's10_06': 1.1,
+    's10_02': .9, 's10_04': .6, 's10_06': .15,
     's11_05': .6, 's11_06': .4, 's11_07': .9,
     's13_03': .9, 's13_05': .3, 's13_11': 1.3,
     's14_04': .8, 's14_05': 1.0, 's14_06': .8,
@@ -70,6 +72,14 @@ for sid in order:
     out['scenes'][sid] = {'start': round(t0, 4), 'dur': dur, 'L': L}
     t0 += dur
 out['total'] = round(t0, 3); out['vo'] = os.path.basename(os.path.normpath(VO))
+import numpy as np
+env = {}
+for l in lines:
+    if l['who'] == 'narrador': continue
+    x, sr = sf.read(os.path.join(VO, l['id'] + '.wav'), dtype='float32'); x = x.mean(1) if x.ndim > 1 else x
+    hop = sr // 30; r = np.array([np.sqrt(np.mean(x[i:i + hop] ** 2)) for i in range(0, len(x), hop)])
+    env[l['id']] = [round(float(v), 3) for v in np.clip(r / (np.percentile(r, 95) + 1e-6), 0, 1)]
+open(os.path.join(HERE, 'vo_env.js'), 'w').write('const VO_ENV = ' + json.dumps(env) + ';\n')
 json.dump(out, open(os.path.join(HERE, 'timing.json'), 'w'), indent=1)
 open(os.path.join(HERE, 'timing.js'), 'w').write('const TIM = ' + json.dumps(out) + ';\n')
 print(f"total {int(t0 // 60)}:{t0 % 60:04.1f}  ({len(lines)} lines, voice: {out['vo']})")

@@ -71,6 +71,8 @@ def sting():
     return out
 def whistle(dur): t = secs(dur); return np.sin(2 * np.pi * np.cumsum(np.linspace(1800, 700, len(t))) / SR) * np.minimum(1, t * 6) * .13
 def coo(): t = secs(.9); f = 390 + 25 * np.sin(2 * np.pi * 6 * t); x = np.sin(2 * np.pi * np.cumsum(f) / SR) + .3 * np.sin(4 * np.pi * np.cumsum(f) / SR); return lp(x, 1200) * np.sin(np.pi * t / .9) ** 2 * .35
+def heartbeat(): t = secs(.5); x = np.sin(2 * np.pi * np.cumsum(np.linspace(70, 40, len(t))) / SR) * np.exp(-t * 14); y = np.zeros(int(.75 * SR)); add(y, x, 0); add(y, x * .7, .22); return y * .9
+def rewind(d): t = secs(d); s = sweep(300, 2600, d, .7) * .12; n = bp(rng.standard_normal(len(t)), 800, 6000) * .25 * (.6 + .4 * np.sin(2 * np.pi * 18 * t)); return (s + n) * np.minimum(1, t * 8)
 def tick(): t = secs(.05); return hp(rng.standard_normal(len(t)), 3000) * env(len(t), .0005, .006) * .6
 def blow(dur=.7): t = secs(dur); return bp(rng.standard_normal(len(t)), 600, 4000) * np.sin(np.pi * t / dur) * .35
 def applause(dur, dens=28):
@@ -177,6 +179,9 @@ for sid in T['order']:
         add(fx, clap(), t - .01, .9)
         if gap > .3: add(fx, freeze_fx() if state else unfreeze_fx(), t + .02, .8)
         else: add(fx, tick(), t + .02, .6)
+s = 's00'; rw = Lm(s, 's00_05', .5)
+for k in range(int((Lt(s, 's00_05') + .3 - sc(s)['start']) / .85)): add(fx, heartbeat(), sc(s)['start'] + .4 + k * .85, .9)
+add(fx, rewind(sc(s)['start'] + sc(s)['dur'] - rw), rw, .9)
 s = 's02'; add(fx, pop(), sc(s)['start'] + .75, .8); add(fx, whoosh(.4), sc(s)['start'] + .6, .6)
 s = 's03'; a = Lt(s, 's03_02'); b = Lm(s, 's03_03', .3); add(fx, alarm(b - a), a, .9)
 s = 's04'; tr = Lm(s, 's04_06', .12); add(fx, pour(2.4), tr + .05, .9); add(fx, pop(), Lt(s, 's04_09') - .15, .8); add(fx, pop(), Lt(s, 's04_10') - .1, .6); add(fx, pop(), Le(s, 's04_08') - .05, .6)

@@ -5,7 +5,10 @@ const SC = {};
 const T = () => TIM.scenes[SID];
 const Lt = id => T().L[id][0], Ld = id => T().L[id][1], Le = id => Lt(id) + Ld(id), Lm = (id, f) => Lt(id) + Ld(id) * f;
 const speaking = (t, id) => t >= Lt(id) && t <= Le(id);
-const talk = (t, id) => speaking(t, id) ? .25 + .45 * Math.abs(Math.sin((t - Lt(id)) * 13)) * (1 - .4 * Math.abs(Math.sin((t - Lt(id)) * 3.1))) : 0;
+/* lip sync: mouth follows the loudness envelope of the actual voice line (vo_env.js) */
+const talk = (t, id) => { if (!speaking(t, id)) return 0; const e = typeof VO_ENV !== 'undefined' && VO_ENV[id];
+  if (e) { const f = (t - Lt(id)) * 30, i = Math.floor(f), u = f - i, a = e[Math.min(i, e.length - 1)] || 0, b = e[Math.min(i + 1, e.length - 1)] || 0; return clamp(mix(a, b, u) * .9); }
+  return .25 + .45 * Math.abs(Math.sin((t - Lt(id)) * 13)) * (1 - .4 * Math.abs(Math.sin((t - Lt(id)) * 3.1))); };
 const S0 = .78, FEET = 930;
 /* camera shots: hard cuts between entries; inside a shot cx/cy/z ease from first to second value */
 function shots(t, claps, list) {
@@ -50,7 +53,7 @@ SC.s01 = (X, t) => {
     { t: 0, cx: tt => heroX(tt) + 180, cy: 560, z: 1.0, w: 2600 },
     { t: k2 + .35, cx: 1770, cy: 520, z: 1.6, z2: 1.7, w: 2600 },
     { t: Lt('s01_03') - .1, cx: 1660, cy: 600, z: 1.3, z2: 1.38, w: 2600 },
-    { t: Lt('s01_06') - .1, cx: 1250, cy: 560, z: 1.0, z2: 1.05, w: 2600 },
+    { t: Lt('s01_07') - .1, cx: 1250, cy: 560, z: 1.0, z2: 1.05, w: 2600 },
     { t: Lt('s01_08') - .05, cx: 1665, cy: 470, z: 2.1, z2: 2.25, w: 2600 },
   ]);
   const st = stage(cam);
@@ -70,9 +73,9 @@ SC.s01 = (X, t) => {
   let hp = { x: hx, y: FEET, s: S0, t, walk: walking ? 1 : 0, phase: walkPh(hx), look: [8, -4], mouth: .35 };
   if (t > poke - .35 && t < poke + .4) { const u = bump(t, poke - .35, poke + .4); hp.hR = [mix(112, 150, u), mix(-200, -585, u)]; hp.look = [14, -14]; }
   if (t > k3 && t < Lt('s01_03')) { hp.hR = [170 + Math.sin(t * 16) * 22, -590]; hp.look = [16, -8]; hp.brow = .4; hp.mouth = .2; }
-  if (t >= Lt('s01_03') - .1 && t < Lt('s01_06')) { const u = R(t, Lt('s01_03') - .1, Lt('s01_03') + .35, back), G = charGeom(CAST.tu, hp); [hp.hL, hp.hR] = POSE.shrug(u, G); hp.mouth = mix(.4, .9, u); hp.look = [0, 0];
+  if (t >= Lt('s01_03') - .1 && t < Lt('s01_07')) { const u = R(t, Lt('s01_03') - .1, Lt('s01_03') + .35, back), G = charGeom(CAST.tu, hp); [hp.hL, hp.hR] = POSE.shrug(u, G); hp.mouth = mix(.4, .9, u); hp.look = [0, 0];
     const fall = R(t, Lt('s01_05'), Le('s01_05')); hp.mouth = mix(hp.mouth, -.25, fall); hp.brow = .6 * fall; [hp.hL, hp.hR] = POSE.shrug(u * (1 - fall * .8), G); }
-  if (t >= Lt('s01_06')) { hp.look = [0, 2]; hp.mouth = .2; }
+  if (t >= Lt('s01_07')) { hp.look = [0, 2]; hp.mouth = .2; }
   if (t >= Lt('s01_08') - .05) { const G = charGeom(CAST.tu, hp); [hp.hL, hp.hR] = POSE.shrug(R(t, Lt('s01_08'), Lt('s01_08') + .4, back) * .7, G); hp.mouth = -.3; hp.brow = .7; hp.sweat = 1; hp.look = [0, 0]; }
   st.col(g => drawChar(g, 'tu', hp));
   compose2(X, st, { amt: 1 });
@@ -146,6 +149,7 @@ SC.s04 = (X, t) => {
   const mugX = mix(960, 870, slide), potX = 1080, potY = 610;
   const mp = { x: 1210, y: FEET, s: S0, t: wt, still: fz, blink: fz ? 0 : null, mouth: .3, look: [-14, 10], hL: [(potX + 30 - 1210) / (S0 * 1.03), (potY - 10 - FEET) / (S0 * 1.03)], hR: [128, -250] };
   if (wt > .3) { mp.look = [-10, 18]; mp.open = R(wt, .4, .7); mp.wide = R(wt, .4, .7) * .7; }
+  if (speaking(t, 's04_08b')) { mp.open = talk(t, 's04_08b'); mp.look = [-12, 14]; mp.brow = .7; mp.wide = .5; }
   st.wld(g => drawChar(g, 'mama', mp));
   st.wld(g => { const sx = potX - 62, sy = potY - 36;
     if (!fz && wt > .05) coffeeStream(g, sx, sy, 960, 780, Math.sin(wt * 20) * 4); else coffeeStream(g, sx, sy, 960, 724);
@@ -170,7 +174,6 @@ SC.s04 = (X, t) => {
   st.wld(g => propMug(g, mugX, 752, 1, '#f4f1ea'));
   const cp = worldToScreen(cam, ...clapPoint('tu', hp));
   compose2(X, st, freezeState(t, [{ t: tc, x: cp[0], y: cp[1], screen: 1 }], cam, 1));
-  if (t > Le('s04_08') - .1 && t < Lt('s04_09') - .1) { const [bx, by] = worldToScreen(cam, 1260, 420); bubble(X, '¿EH?', bx, by, R(t, Le('s04_08') - .1, Le('s04_08') + .2, outC), 70); }
   ruleCard(X, 1, 'UN APLAUSO: TODO SE DETIENE', t > Lt('s04_10') - .1 ? 'OTRO APLAUSO: TODO SIGUE' : '', R(t, Lt('s04_09') - .2, Lt('s04_09') + .2, outC));
 };
 

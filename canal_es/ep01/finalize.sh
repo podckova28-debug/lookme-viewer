@@ -12,4 +12,5 @@ $PY mix.py "$VO" $W/probe.json $W/mix.wav
 ./assemble.sh $W/render $W/mix.wav $W/ep01_final.mp4
 $PY shorts.py $W/ep01_final.mp4 $W/shorts
 python3 upload_pack.py > /dev/null
+python3 srt.py
 echo "final: $W/ep01_final.mp4"

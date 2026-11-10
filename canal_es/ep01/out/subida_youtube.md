@@ -1,9 +1,11 @@
 # Subida a YouTube · Episodio 1
 
 ## Título
-¿Qué pasaría si pudieras detener el tiempo?
+¿Qué pasaría si pudieras detener el tiempo… y no fueras el único?
 
 Alternativa para prueba A/B: ¿Qué pasaría si pudieras detener el tiempo con un aplauso?
+
+(vidIQ: 84 y 83 puntos; el título simple «¿Qué pasaría si pudieras detener el tiempo?» saca 81. Los tres empiezan con la búsqueda exacta, 29,7 mil al mes.)
 
 ## Miniatura
 - A (principal): `miniatura_A.png`: «1 APLAUSO»
@@ -15,22 +17,23 @@ Alternativa para prueba A/B: ¿Qué pasaría si pudieras detener el tiempo con u
 ¿Qué harías tú con el tiempo detenido? Déjalo en los comentarios.
 ¿En qué escenas encontraste a Pepe? 🐦
 
-0:00 ¿Qué pasaría si…?
-0:27 El primer aplauso
-0:43 Regla #1
-1:07 Ocho horas más de sueño
-1:23 El examen de matemáticas
-1:49 El bigote de Nacho
-2:06 La lluvia congelada
-2:26 Los libros de Valeria
-2:51 El penal imposible
-3:13 El precio: una cana
-3:35 Nada funciona
-3:48 El cumpleaños de Nacho
-4:23 Pepe
-4:45 La maceta
-5:14 No eres el único
-5:48 Final
+0:00 La maceta
+0:15 ¿Qué pasaría si…?
+0:38 El primer aplauso
+0:54 Regla #1
+1:19 Ocho horas más de sueño
+1:35 El examen de matemáticas
+2:03 El bigote de Nacho
+2:22 La lluvia congelada
+2:41 Los libros de Valeria
+3:07 El penal imposible
+3:32 El precio: una cana
+3:54 Nada funciona
+4:08 El cumpleaños de Nacho
+4:47 Pepe
+5:13 La maceta
+5:41 No eres el único
+6:15 Final
 
 Historia de ficción animada. Personajes, guion y animación originales.
 
@@ -42,9 +45,12 @@ qué pasaría si, que pasaria si pudieras detener el tiempo, detener el tiempo, 
 ## Comentario fijado
 ¿En cuántas escenas aparece Pepe? 🐦 Pista: más de cinco. El primero en encontrarlas todas elige el próximo «¿qué pasaría si…?»
 
+## Subtítulos
+`subtitulos_es.srt`: subir en YouTube Studio → Subtítulos → Español.
+
 ## Shorts
 1. `short1_penal.mp4`: ¿Y si detienes el tiempo en un penal? #shorts #quepasariasi
 2. `short2_cumple.mp4`: Detienes el tiempo… y todos aplauden 😅 #shorts #quepasariasi
 3. `short3_giro.mp4`: ¿Y si no eres el único que detiene el tiempo? #shorts #quepasariasi
 
-Duración total: 6:05 · voz: vo
+Duración total: 6:38 · voz: vo

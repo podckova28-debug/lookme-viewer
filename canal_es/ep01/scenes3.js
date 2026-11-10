@@ -63,6 +63,7 @@ SC.s12 = (X, t) => {
     if (t > tPhone - .1) { hp.hR = [20, -380]; hp.look = [6, 16]; hp.holdR = (g, x, y) => { propPhone(g, x - 4, y - 50, .8, 3, -.1); line(g, [[x - 4, y + 10], [x + 30, y + 120], [x + 200, y + 160]], '#e8e4ee', 6); }; } }
   else { hp = { x: 600, y: 945, s: S0, t, look: [18, -4], mouth: -.2, brow: .6, hR: [190, -440], holdR: (g, x, y) => remote(g, x, y - 20) };
     if (t > tTv + .7) { hp.hR = [190 + Math.sin(t * 20) * 6, -440]; hp.mouth = -.5; }
+    if (speaking(t, 's12_04b')) { hp.open = talk(t, 's12_04b'); hp.brow = .8; }
     if (t > Lt('s12_05') - .1) { hp.slump = 1; hp.rot = .15; hp.blink = 1; hp.mouth = -.6; hp.hR = null; hp.holdR = null; } }
   if (t >= tTv) { st.col(g => drawChar(g, 'tu', hp)); st.wld(g => bedFront(g, .6)); } else { st.wld(g => bedFront(g)); st.col(g => drawChar(g, 'tu', hp)); }
   compose2(X, st, { amt: 1 });
@@ -91,6 +92,7 @@ SC.s13 = (X, t) => {
   const guests = [['ex1', 560, 1], ['ex4', 740, 2], ['ex5', 1180, 3], ['ex2', 1340, 4]];
   guests.forEach(([n, x, sd]) => { const p = { ...W0, x, y: FEET, s: S0, look: [x < 960 ? 12 : -12, 6], mouth: .6 }; const G = charGeom(CAST[n], p);
     if (singing) { p.open = .3 + .3 * Math.abs(Math.sin(wt * 6 + sd)); p.rot = Math.sin(wt * 3 + sd) * .05; }
+    if (speaking(t, 's13_01b')) { p.open = .15 + .8 * talk(t, 's13_01b'); p.blink = 1; }
     if (clapping || (fz && t < after && t > clapOn)) { [p.hL, p.hR] = guestClap(wt, sd, G); p.armsFront = 1; p.open = .5; p.blink = fz ? 0 : (p.blink ?? null); }
     if (t > after) { p.open = Math.abs(Math.sin(t * 4 + sd)) * .4; p.mouth = .8; p.look = [Math.sin(t + sd) * 14, 0]; p.still = 0; p.t = t; }
     st.wld(g => drawChar(g, n, p)); });
@@ -98,6 +100,7 @@ SC.s13 = (X, t) => {
   if (wt > blow - .3 && wt < blow + .6) { np.open = .7; np.lean = .08; np.look = [0, 18]; np.hy = 14; }
   if (clapping || (fz && t > clapOn && t < after)) { const G = charGeom(CAST.nacho, np); [np.hL, np.hR] = guestClap(wt, 0, G); np.armsFront = 1; np.mouth = 1; }
   if (t > after) { np.still = 0; np.t = t; np.mouth = 1; np.holdR = (g, x, y) => { shape(g, q => { q.moveTo(x - 30, y - 10); q.lineTo(x + 30, y - 10); q.lineTo(x, y - 60); q.closePath(); }, '#f6c6d4', 4); }; np.hR = [80, -360]; }
+  if (speaking(t, 's13_02b')) { np.open = talk(t, 's13_02b'); np.mouth = 1; np.blink = 1; }
   st.wld(g => { drawChar(g, 'nacho', np); const S = S0 * CAST.nacho.s, hy = FEET + S * (charGeom(CAST.nacho, np).top - 100 + (np.hy || 0)); partyHat(g, 960 + (np.lean || 0) * 200, hy - CAST.nacho.r * S * .95, .8); });
   // hero on the right
   let hp = { x: 1520, y: FEET, s: S0, t, look: [-14, 4], mouth: .7 };
@@ -134,6 +137,7 @@ SC.s14 = (X, t) => {
   else { hp = { x: 880, y: 905, s: S0, t, sit: 1, look: [16, 6], open: talk(t, 's14_03') * 0 };
     const talking = (t > sitT && t < Lt('s14_06') - .1) || t > Lt('s14_07') + .6; if (talking) hp.open = .25 + .35 * Math.abs(Math.sin(t * 11)) * Math.abs(Math.sin(t * 2.3));
     if (t > Lt('s14_05') - .1 && t < Lt('s14_06')) { hp.hR = [120 + Math.sin(t * 5) * 40, -380 + Math.cos(t * 4) * 40]; }
+    if (speaking(t, 's14_05b')) { hp.open = talk(t, 's14_05b'); hp.look = [18, 8]; }
     if (t > Lt('s14_07') - .05) { hp.hR = [210, -330]; hp.mouth = .9; hp.blush = .4; hp.open = 0; } }
   st.col(g => drawChar(g, 'tu', hp));
   st.wld(g => { bench(g, 1); drawPigeon(g, 1060, 792, .62, { flip: -1 }); });
@@ -232,6 +236,10 @@ SC.s16 = (X, t) => {
 
 /* ================================================================ 17. outro: Pepe wants to know */
 SC.s17 = (X, t) => {
+  if (t >= Lt('s17_00') && t < Lm('s17_00', .55)) {   // callback to the cold open: the pot over her head
+    const sid = SID, k = R(t, Lt('s17_00'), Lm('s17_00', .55), lin); SID = 's00'; SC.s00(X, 1.2 + k * 2.5); SID = sid;
+    X.save(); X.globalCompositeOperation = 'multiply'; X.fillStyle = 'rgba(255,225,180,1)'; X.fillRect(0, 0, W, H); X.restore();
+    X.save(); X.globalAlpha = .12; X.fillStyle = '#000'; for (let y = (t * 60) % 6; y < H; y += 6) X.fillRect(0, y, W, 2); X.restore(); return; }
   const end = Le('s17_04') + .9, pepeAlive = Lm('s17_04', .55);
   const cam = shots(t, (typeof claps !== 'undefined' ? claps : []), [{ t: 0, cx: 1000, cy: 600, z: 1.2, z2: 1.5 }, { t: Lt('s17_04') - .1, cx: 1080, cy: 740, z: 3.0, z2: 3.2 }]);
   const st = stage(cam); st.wld(g => { drawSet(g, 'parkNight'); bench(g, 0); });

@@ -24,6 +24,8 @@ SC.s06 = (X, t) => {
     { t: Lt('s06_04') - .05, cx: 800, cy: 600, z: 1.5, z2: 1.6 },
     { t: Lm('s06_04', .55), cx: 1070, cy: 470, z: 2.2, z2: 2.35 },
     { t: Lt('s06_06') - .05, cx: 900, cy: 580, z: 1.3 },
+    { t: Lt('s06_06b') - .05, cx: 1050, cy: 470, z: 2.1, z2: 2.2 },
+    { t: Lt('s06_07') - .05, cx: 900, cy: 580, z: 1.3 },
     { t: Lt('s06_08') - .05, cx: 940, cy: 540, z: 1.55, z2: 1.62 },
   ]);
   const st = stage(cam); st.wld(g => { drawSet(g, 'classroom'); teacherDesk(g, 1690); });
@@ -49,6 +51,7 @@ SC.s06 = (X, t) => {
     holdR: (g, x, y) => { for (let i = 0; i < 4; i++) propPaper(g, x - 10, y - 30 - i * 4, -.1, .8); } };
   if (t > Lt('s06_06') + .6) { pp.hR = [-70, -470]; pp.holdR = (g, x, y) => propPaper(g, x, y - 46, -.05, 1); pp.lid = .2; pp.brow = .9;
     const k = R(t, Lt('s06_08'), Le('s06_08') + 1.2, lin), n = Math.floor(k * 8); pp.look = n % 2 ? [-18, 4] : [0, -16]; pp.rot = n % 2 ? .06 : -.04; if (t > Le('s06_08')) { pp.wide = .5; pp.mouth = -.5; } }
+  if (speaking(t, 's06_06b')) { pp.hR = [-60, -320]; pp.holdR = (g, x, y) => propPaper(g, x, y - 30, -.05, 1); pp.open = talk(t, 's06_06b'); pp.look = [-18, 2]; pp.lid = .35; pp.brow = .9; pp.mouth = -.3; }
   st.wld(g => drawChar(g, 'profe', pp));
   st.wld(g => { desk(g, 380, FEET + 6, .9); desk(g, 800, FEET + 6, .9); desk(g, 1260, FEET + 6, .9); });
   if (t > Lt('s06_01') + 1.6) st.wld(g => { paperFlat(g, 420, 708, .9); paperFlat(g, 1290, 708, .9); });
@@ -64,7 +67,7 @@ SC.s06 = (X, t) => {
 function boardOverlay(g, l1, l2) { shape(g, q => q.rect(430, 130, 1060, 420), '#f8fbfb', 0); text(g, l1, 520, 260, 74, '#3a6fb0', 'ComicNeue'); text(g, l2, 520, 380, 64, '#c0262d', 'ComicNeue'); }
 SC.s07 = (X, t) => {
   const tc = Lm('s07_02', .22), tr = Lt('s07_04') + .05, claps = [{ t: tc }, { t: tr }], wt = worldClock(t, claps), fz = isFrozen(t, claps);
-  const drawStart = Lm('s07_02', .6), drawEnd = Le('s07_02') + 1.0, wake = tr + .5, mirror = Lm('s07_04', .35), nod = Lm('s07_04', .75);
+  const drawStart = Lm('s07_02', .6), drawEnd = Le('s07_02') + 1.0, wake = tr + .5, mirror = Lm('s07_04', .35), nod = Lt('s07_04b') - .05;
   const cam = shots(t, (typeof claps !== 'undefined' ? claps : []), [
     { t: 0, cx: 760, cy: 580, z: 1.15, z2: 1.2 },
     { t: drawStart - .1, cx: 1000, cy: 520, z: 2.2, z2: 2.35 },
@@ -86,6 +89,7 @@ SC.s07 = (X, t) => {
   else { np.hy = 70 * (1 - awakeK); np.rot = .28 * (1 - awakeK); np.look = t < nod ? [18, -6] : [0, 0]; np.brow = t > mirror + .4 ? .8 : .2; np.wide = t > mirror + .4 && t < nod ? .5 : 0; np.mouth = t > nod ? .9 : .1;
     if (t > nod) np.hy += Math.abs(Math.sin((t - nod) * 7)) * -14 * (1 - R(t, nod + 1, nod + 1.4)); }
   if (t > Lt('s07_05') - .1) { Object.assign(hp0, { sit: 0, hL: null, hR: null, armsFront: 0, mouth: .9, look: [14, 0] }); Object.assign(np, { sit: 0, hL: POSE.hips(charGeom(CAST.nacho, { sit: 0 }))[0], hR: POSE.hips(charGeom(CAST.nacho, { sit: 0 }))[1], armsFront: 0, mouth: 1, look: [0, 0], hy: 0, rot: 0, brow: .6, lid: .3 }); }
+  if (speaking(t, 's07_04b')) { np.open = talk(t, 's07_04b'); np.lid = .35; np.brow = .5; }
   st.wld(g => drawChar(g, 'nacho', np));
   // hero: seated, then walks over with a marker while time is stopped
   const out = t > tc + .4 && t < tr;
@@ -172,6 +176,7 @@ SC.s09 = (X, t) => {
   if (fz && t > tc + .8) { vp.look = [mix(-4, -16, R(t, tc + .8, tc + 2.5)), 2]; vp.brow = R(t, Lm('s09_03', .6), Lm('s09_03', .8)) * .5; }
   if (sorted) { vp.hL = [-70, G.top + 190]; vp.hR = [70, G.top + 190]; vp.lean = 0; vp.wide = 0; vp.open = 0; vp.flip = 1; }
   if (t > tr + .2) { const u = t - tr; vp.look = [Math.sin(u * 2.5) * 16, 8]; vp.mouth = -.1; vp.brow = .3; }
+  if (speaking(t, 's09_05b')) { vp.open = talk(t, 's09_05b'); vp.look = [12, -4]; vp.brow = .5; }
   if (t > Lt('s09_06') - .05) { vp.look = [6, -18]; vp.lid = .45; vp.brow = .9; vp.mouth = -.3; }
   if (typeof FLASH !== 'undefined' && FLASH) { vp.look = [-16 + Math.sin(t * 3) * 4, 2]; vp.mouth = .8; vp.lid = .25; vp.wide = 0; vp.open = 0; vp.brow = t > Lm('s09_03', .75) ? .9 : .3; vp.still = 0; vp.t = t; vp.blink = null; }
   ((typeof FLASH !== 'undefined' && FLASH) ? st.col : st.wld)(g => drawChar(g, 'valeria', vp));
@@ -222,6 +227,7 @@ SC.s10 = (X, t) => {
   if (t > kick && t < tc) { np.lean = -.25 * R(t, kick, kick + .5); np.look = [-18, -4]; }
   if (t > Lt('s10_07') - .05) { Object.assign(np, { hL: [-40, -470], hR: [40, -470], look: [0, 20], mouth: -.5, wide: .3, brow: .8, lean: 0, rot: Math.sin(t * 1.3) * .08, blink: autoBlink(t, 2), still: 0, t }); }
   if (cheer) { np.mouth = -.5; np.wide = .6; }
+  if (speaking(t, 's10_07b')) { np.open = talk(t, 's10_07b'); np.wide = .5; }
   st.wld(g => drawChar(g, 'nacho', np));
   // ball: shot flies wide toward the school, freezes mid-air, gets carried, placed in the top corner, then hits the net
   const FLY = 4.0, b0 = [860, 900], b1 = [170, 360];

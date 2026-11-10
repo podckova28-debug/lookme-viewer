@@ -1,7 +1,7 @@
 """Writes out/subida_youtube.md: title, description with chapters (from timing.json), tags, pinned comment, Shorts titles."""
 import json, os
 HERE = os.path.dirname(os.path.abspath(__file__)); T = json.load(open(os.path.join(HERE, 'timing.json')))
-CH = [('s01', '¿Qué pasaría si…?'), ('s03', 'El primer aplauso'), ('s04', 'Regla #1'), ('s05', 'Ocho horas más de sueño'), ('s06', 'El examen de matemáticas'),
+CH = [('s00', 'La maceta'), ('s01', '¿Qué pasaría si…?'), ('s03', 'El primer aplauso'), ('s04', 'Regla #1'), ('s05', 'Ocho horas más de sueño'), ('s06', 'El examen de matemáticas'),
       ('s07', 'El bigote de Nacho'), ('s08', 'La lluvia congelada'), ('s09', 'Los libros de Valeria'), ('s10', 'El penal imposible'), ('s11', 'El precio: una cana'),
       ('s12', 'Nada funciona'), ('s13', 'El cumpleaños de Nacho'), ('s14', 'Pepe'), ('s15', 'La maceta'), ('s16', 'No eres el único'), ('s17', 'Final')]
 def mmss(x): x = int(x); return f'{x // 60}:{x % 60:02d}'
@@ -9,9 +9,11 @@ chap = '\n'.join(f"{mmss(T['scenes'][s]['start'])} {n}" for s, n in CH)
 md = f"""# Subida a YouTube · Episodio 1
 
 ## Título
-¿Qué pasaría si pudieras detener el tiempo?
+¿Qué pasaría si pudieras detener el tiempo… y no fueras el único?
 
 Alternativa para prueba A/B: ¿Qué pasaría si pudieras detener el tiempo con un aplauso?
+
+(vidIQ: 84 y 83 puntos; el título simple «¿Qué pasaría si pudieras detener el tiempo?» saca 81. Los tres empiezan con la búsqueda exacta, 29,7 mil al mes.)
 
 ## Miniatura
 - A (principal): `miniatura_A.png`: «1 APLAUSO»
@@ -34,6 +36,9 @@ qué pasaría si, que pasaria si pudieras detener el tiempo, detener el tiempo, 
 
 ## Comentario fijado
 ¿En cuántas escenas aparece Pepe? 🐦 Pista: más de cinco. El primero en encontrarlas todas elige el próximo «¿qué pasaría si…?»
+
+## Subtítulos
+`subtitulos_es.srt`: subir en YouTube Studio → Subtítulos → Español.
 
 ## Shorts
 1. `short1_penal.mp4`: ¿Y si detienes el tiempo en un penal? #shorts #quepasariasi
