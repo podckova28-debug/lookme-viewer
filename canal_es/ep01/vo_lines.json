@@ -1,5 +1,30 @@
 [
  {
+  "id": "s00_01",
+  "who": "narrador",
+  "text": "Esta maceta está a medio metro de la cabeza de Valeria."
+ },
+ {
+  "id": "s00_02",
+  "who": "narrador",
+  "text": "El mundo entero está congelado."
+ },
+ {
+  "id": "s00_03",
+  "who": "narrador",
+  "text": "Y tú eres el único que se mueve."
+ },
+ {
+  "id": "s00_04",
+  "who": "narrador",
+  "text": "¿Cómo llegaste hasta aquí?"
+ },
+ {
+  "id": "s00_05",
+  "who": "narrador",
+  "text": "Empecemos por el principio."
+ },
+ {
   "id": "s01_01",
   "who": "narrador",
   "text": "Imagina que puedes detener el tiempo."
@@ -23,11 +48,6 @@
   "id": "s01_05",
   "who": "narrador",
   "text": "Durante unos diez minutos."
- },
- {
-  "id": "s01_06",
-  "who": "narrador",
-  "text": "Hoy vamos a ver qué pasaría de verdad si pudieras detener el tiempo."
  },
  {
   "id": "s01_07",
@@ -110,6 +130,11 @@
   "text": "Sobre la mesa."
  },
  {
+  "id": "s04_08b",
+  "who": "mama",
+  "text": "¿Eh? ¿Y la taza?"
+ },
+ {
   "id": "s04_09",
   "who": "narrador",
   "text": "Regla número uno: un aplauso detiene el mundo."
@@ -170,6 +195,11 @@
   "text": "Entregas el examen en dos minutos."
  },
  {
+  "id": "s06_06b",
+  "who": "profe",
+  "text": "¿Ya terminaste? ¿Tú?"
+ },
+ {
   "id": "s06_07",
   "who": "narrador",
   "text": "Diez de diez."
@@ -197,7 +227,12 @@
  {
   "id": "s07_04",
   "who": "narrador",
-  "text": "Nacho se despierta, se ve en el reflejo de la ventana… y decide que le queda bien."
+  "text": "Nacho se despierta y se ve en el reflejo de la ventana."
+ },
+ {
+  "id": "s07_04b",
+  "who": "nacho",
+  "text": "Mmm… me queda bien."
  },
  {
   "id": "s07_05",
@@ -217,7 +252,7 @@
  {
   "id": "s08_03",
   "who": "narrador",
-  "text": "Millones de gotas se quedan colgadas en el aire, como cortinas de cristal."
+  "text": "Millones de gotas se quedan colgadas en el aire."
  },
  {
   "id": "s08_04",
@@ -260,6 +295,11 @@
   "text": "Desde su punto de vista, sus libros se cayeron… y volvieron solos."
  },
  {
+  "id": "s09_05b",
+  "who": "valeria",
+  "text": "¿Qué… acaba de pasar?"
+ },
+ {
   "id": "s09_06",
   "who": "narrador",
   "text": "Seguramente ahora Valeria cree que la escuela está embrujada."
@@ -300,9 +340,19 @@
   "text": "Gol."
  },
  {
+  "id": "s10_06b",
+  "who": "chicos",
+  "text": "¡Gooool!"
+ },
+ {
   "id": "s10_07",
   "who": "narrador",
   "text": "Nacho, el portero, se queda mirando sus manos durante el resto del día."
+ },
+ {
+  "id": "s10_07b",
+  "who": "nacho",
+  "text": "¿Pero… cómo?"
  },
  {
   "id": "s11_01",
@@ -365,6 +415,11 @@
   "text": "Intentas ver una serie… y está en pausa."
  },
  {
+  "id": "s12_04b",
+  "who": "tu",
+  "text": "Ay, no…"
+ },
+ {
   "id": "s12_05",
   "who": "narrador",
   "text": "Literalmente todo está en pausa."
@@ -375,9 +430,19 @@
   "text": "El segundo problema es más ruidoso."
  },
  {
+  "id": "s13_01b",
+  "who": "chicos",
+  "text": "¡Feliz cumpleaños, Nacho!"
+ },
+ {
   "id": "s13_02",
   "who": "narrador",
   "text": "Es el cumpleaños de Nacho."
+ },
+ {
+  "id": "s13_02b",
+  "who": "nacho",
+  "text": "¡Gracias, gracias!"
  },
  {
   "id": "s13_03",
@@ -465,6 +530,11 @@
   "text": "Le cuentas lo de Valeria, lo de la cana, lo del examen."
  },
  {
+  "id": "s14_05b",
+  "who": "tu",
+  "text": "Y entonces Valeria… bueno, tú me entiendes, Pepe."
+ },
+ {
   "id": "s14_06",
   "who": "narrador",
   "text": "Pepe no dice nada."
@@ -502,7 +572,7 @@
  {
   "id": "s15_06",
   "who": "narrador",
-  "text": "Y ahora tienes un problema: si aplaudes, Valeria te va a ver a su lado, con una maceta en las manos, salido de la nada."
+  "text": "Y ahora tienes un problema: si aplaudes, Valeria te verá a su lado. Con una maceta. Salido de la nada."
  },
  {
   "id": "s15_07",
@@ -573,6 +643,11 @@
   "id": "s16_11",
   "who": "narrador",
   "text": "Hasta cuando los ordenaste por tamaño."
+ },
+ {
+  "id": "s17_00",
+  "who": "narrador",
+  "text": "Aquella maceta, a medio metro de su cabeza… y tú creías que eras el único que se movía."
  },
  {
   "id": "s17_01",
