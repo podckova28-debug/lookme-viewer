@@ -11,7 +11,7 @@ const GUEST3 = { col: '#8a6fd1', colD: '#6a52ad', hair: 'band', hairCol: '#e8b64
 function partyTable(t, lit) {
   shape(X, q => { q.moveTo(760, 760); q.lineTo(1160, 760); q.lineTo(1190, 944); q.lineTo(730, 944); q.closePath(); }, '#e8e1ec', 4);
   X.strokeStyle = 'rgba(0,0,0,.08)'; X.lineWidth = 8; for (let x = 780; x < 1180; x += 50) { X.beginPath(); X.moveTo(x, 770); X.lineTo(x - 10, 940); X.stroke(); }
-  cake(t, 960, 760, lit); cakeTape(960, 760, 1);
+  cake(t, 960, 760, lit); cakeTape(960, 760, 2 / 3, 18);
 }
 function speaker(x, y, on, t) {
   fillR(X, x - 60, y - 170, 120, 170, 12, '#2f2a3a'); for (const [yy, r] of [[-120, 30], [-50, 40]]) { const k = on ? 1 + Math.sin(t * 25) * .06 : 1; shape(X, g => g.arc(x, y + yy, r * k, 0, 7), '#4a4458', 4); shape(X, g => g.arc(x, y + yy, r * .35, 0, 7), '#1b1320', 3); }

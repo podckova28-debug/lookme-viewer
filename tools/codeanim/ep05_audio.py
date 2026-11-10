@@ -161,10 +161,10 @@ def vo(sc, t, name, g=1.0):
 VO = [('01', .3, 'vo_01.wav'), ('02', .6, 'vo_02.wav'), ('03', .2, 'vo_03a.wav'), ('03', 7.8, 'vo_03b.wav'), ('04', .4, 'vo_04.wav'), ('05', .5, 'vo_05.wav'),
       ('05b', .3, 'vo_05b_a.wav'), ('05b', 3.0, 'vo_05b_b.wav'), ('05c', .3, 'vo_05c_a.wav'), ('05c', 4.3, 'vo_05c_b.wav'),
       ('06', .3, 'vo_06_0.wav'), ('06', 3.6, 'vo_06a.wav'), ('06', 8.8, 'vo_06b.wav'),
-      ('B', .3, 'vo_B1.wav'), ('B', 2.9, 'vo_B2.wav'), ('B', 5.6, 'vo_B3.wav'), ('B', 9.4, 'vo_B4.wav'), ('06c', 1.6, 'vo_06c.wav'),
+      ('B', .3, 'vo_B1.wav'), ('B', 3.15, 'vo_B2.wav'), ('B', 5.6, 'vo_B3.wav'), ('B', 9.4, 'vo_B4.wav'), ('06c', 1.6, 'vo_06c.wav'),
       ('07', .4, 'vo_08.wav'), ('08', .5, 'vo_09.wav'), ('09', .3, 'vo_10.wav'), ('10', .8, 'vo_11.wav'),
       ('11', .5, 'vo_12.wav'), ('12', 3.4, 'vo_13.wav'), ('12b', 1.0, 'vo_12b.wav'), ('13', .2, 'vo_14a.wav'), ('13', 2.15, 'vo_14b.wav'),
-      ('14', .4, 'vo_15a.wav'), ('14', 7.9, 'vo_15b.wav')]
+      ('14', .4, 'vo_15a.wav'), ('14', 7.7, 'vo_15b.wav')]
 for sc, t, f in VO:
     if not os.path.exists(os.path.join(vo_dir, f)): print('MISSING', f); continue
     d = vo(sc, t, f); print(f'{f:13s} scene {sc:3s} at {t:4.1f}s  ends {t + d:4.1f}s / {DUR[sc]}s' + ('  OVER' if t + d > DUR[sc] + .2 else ''))

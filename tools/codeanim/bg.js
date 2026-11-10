@@ -256,9 +256,9 @@ function puff(x, y, a, word = 'pff') {
   for (const [dx, dy, r] of [[0, 0, 30], [28, -12, 24], [-26, -10, 22], [8, -30, 20]]) shape(X, g => g.arc(x + dx * k, y + dy * k - (1 - a) * 30, r * k, 0, 7), '#ece8ee', 4);
   text(word, x + 70, y - 30 - (1 - a) * 30, 64, '#f4f1e0', 'left', 'Bangers', 10); X.restore();
 }
-function cakeTape(x, y, u = 1) {    // tape holding Dave's cake together
+function cakeTape(x, y, u = 1, w = 30) {    // tape holding Dave's cake together
   const strips = [[-120, -40, 120, -120], [-120, -120, 120, -30], [-40, -128, 30, 0]];
   strips.forEach(([x0, y0, x1, y1], i) => { const v = clamp(u * 3 - i); if (v <= 0) return;
-    X.save(); X.lineCap = 'butt'; X.strokeStyle = OUT; X.lineWidth = 30; X.beginPath(); X.moveTo(x + x0, y + y0); X.lineTo(x + mix(x0, x1, v), y + mix(y0, y1, v)); X.stroke();
-    X.strokeStyle = '#c9c4b8'; X.lineWidth = 24; X.stroke(); X.restore(); });
+    X.save(); X.lineCap = 'butt'; X.strokeStyle = OUT; X.lineWidth = w; X.beginPath(); X.moveTo(x + x0, y + y0); X.lineTo(x + mix(x0, x1, v), y + mix(y0, y1, v)); X.stroke();
+    X.strokeStyle = '#c9c4b8'; X.lineWidth = w - 6; X.stroke(); X.restore(); });
 }
