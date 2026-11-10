@@ -87,7 +87,7 @@ for sid in T['order']:
     for i, v in enumerate(pr['frz']):
         a = int((st + i / hz) * 100); fr[a:a + int(100 / hz) + 1] = v
 # the end card plays with music
-_e = int((Le('s17', 's17_04') + .9) * 100); fr[_e:] = 0
+_e = int((Le('s19', 's19_05') + .9) * 100); fr[_e:] = 0
 def frozen_at(t): i = int(t * 100); return fr[min(max(i, 0), len(fr) - 1)]
 
 # ---------------------------------------------------------------- music: a light, curious loop, tape-stops when time stops
@@ -198,7 +198,15 @@ ap = applause(b - a); gate = 1 - np.interp((a + np.arange(len(ap)) / SR), tt, fz
 add(fx, pop(), Lt(s, 's13_14') - .1, .8)
 s = 's15'; tc = Lt(s, 's15_03') + .1; add(fx, whistle(1.76), tc - 1.76, 1)
 s = 's16'; add(fx, snap(), Lm(s, 's16_04', .9) + .05, .9); add(fx, whoosh(.6), Lt(s, 's16_08') - .3, .7); add(fx, pop(), Lm(s, 's16_06', .75), .5)
-s = 's17'; add(fx, coo(), Lm(s, 's17_04', .55) + .3, .9); add(fx, pop(), Lm(s, 's17_03', .7), .6)
+s = 's16'; add(fx, pop(), Lm(s, 's16_18', .55), .6)
+s = 's17'; add(fx, coo(), Lm(s, 's17_07', .2) + .1, .9); add(fx, coo(), Lm(s, 's17_09', .5), .7)
+for k in range(4): add(fx, whoosh(.25), Lm(s, 's17_10', .42) + k * (sc(s)['start'] + sc(s)['dur'] - .3 - Lm(s, 's17_10', .42)) / 4, .5)
+s = 's18'; _h = Lm(s, 's18_02', .7)   # chronostasis: the ticking stops for a beat, then carries on
+for k in range(40):
+    tt = Lt(s, 's18_02') + k
+    if tt >= Lt(s, 's18_04') - .2: break
+    if tt < _h or tt > _h + 1.4: add(fx, tick(), tt, 1.2)
+s = 's19'; add(fx, pop(), Lm(s, 's19_04', .6), .6); add(fx, coo(), Le(s, 's19_05') + .2, .8)
 
 # ---------------------------------------------------------------- narration
 vo = np.zeros(N); voice_env = np.zeros(N)

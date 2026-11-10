@@ -9,6 +9,7 @@ const LOOK = {
   hallway:    { rim: 'rgba(255,232,190,.9)', grade: '#fff2e2', lights: [[250, 40, 520, 'rgba(255,240,200,.32)'], [890, 40, 520, 'rgba(255,240,200,.32)'], [1530, 40, 520, 'rgba(255,240,200,.32)'], [2170, 40, 520, 'rgba(255,240,200,.32)']] },
   bedroom:    { rim: 'rgba(255,210,150,.95)', grade: '#ffeedd', lights: [[1440, 380, 950, 'rgba(255,205,140,.42)']], beam: [1180, 150, 1700, 550] },
   kitchen:    { rim: 'rgba(255,244,215,.9)', grade: '#fff7ea', lights: [[1460, 300, 950, 'rgba(255,246,215,.36)']], beam: [1180, 140, 1740, 470] },
+  kitchenNight: { rim: 'rgba(255,206,140,.85)', grade: '#ffe6c8' },
   classroom:  { rim: 'rgba(225,242,255,.9)', grade: '#f3f8ff', lights: [[210, 330, 750, 'rgba(240,250,255,.34)'], [1730, 330, 750, 'rgba(240,250,255,.34)']] },
   street:     { rim: 'rgba(255,232,185,.9)', grade: '#fff5e6', lights: [[1850, -50, 1300, 'rgba(255,236,190,.32)']] },
   streetRain: { rim: 'rgba(215,232,255,.6)', grade: '#e4eaf3', lights: [] },
@@ -175,6 +176,9 @@ function kitchenTable(g) {
   g.fillStyle = 'rgba(255,255,255,.45)'; g.fillRect(566, 781, 788, 3); }
 
 /* ---- classroom */
+SET_BUILDERS.kitchenNight = () => { const s = SET_BUILDERS.kitchen(), g = s.bg.getContext('2d');
+  g.save(); g.globalCompositeOperation = 'multiply'; g.fillStyle = '#7a6a8a'; g.fillRect(0, 0, W, H); g.globalCompositeOperation = 'screen';
+  const gr = g.createRadialGradient(960, 200, 0, 960, 200, 700); gr.addColorStop(0, 'rgba(255,200,120,.5)'); gr.addColorStop(1, 'rgba(0,0,0,0)'); g.fillStyle = gr; g.fillRect(0, 0, W, H); g.restore(); return s; };
 SET_BUILDERS.classroom = () => { const c = mkCanvas(), g = c.getContext('2d');
   g.fillStyle = vgrad(g, 0, FLOOR, [[0, '#d9e5d0'], [1, '#c9d8bf']]); g.fillRect(0, 0, W, FLOOR);
   shape(g, q => q.rect(420, 120, 1080, 440), '#f8fbfb', 8); shape(g, q => q.rect(400, 560, 1120, 20), '#b9c2c9', 4);

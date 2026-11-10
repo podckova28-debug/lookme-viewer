@@ -2,7 +2,7 @@
 import json, os
 HERE = os.path.dirname(os.path.abspath(__file__)); T = json.load(open(os.path.join(HERE, 'timing.json')))
 L = {l['id']: l for l in json.load(open(os.path.join(HERE, 'vo_lines.json'), encoding='utf-8'))}
-NAMES = {'valeria': 'VALERIA', 'tu': 'TÚ', 'mama': 'MAMÁ', 'profe': 'PROFE', 'nacho': 'NACHO', 'chicos': 'TODOS'}
+NAMES = {'valeria': 'RENATA', 'tu': 'TÚ', 'mama': 'MAMÁ', 'profe': 'PROFE', 'nacho': 'NACHO', 'chicos': 'TODOS'}
 def ts(x): h = int(x // 3600); m = int(x % 3600 // 60); s = x % 60; return f"{h:02d}:{m:02d}:{int(s):02d},{int(round((s - int(s)) * 1000)):03d}"
 ev = []
 for sid in T['order']:

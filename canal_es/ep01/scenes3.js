@@ -33,7 +33,12 @@ SC.s11 = (X, t) => {
       const items = [['SIESTA: +8 HORAS', .05], ['ESTUDIO: +3 HORAS', .36], ['PENAL: +20 MIN', .64]];
       items.forEach(([s, f], i) => sticker(X, s, R(t, Lm('s11_03', f), Lm('s11_03', f) + .25, outC), 90, 690 + i * 120, 58)); }
     if (t > Lt('s11_04') - .1 && t < Lt('s11_05')) { const n = Math.round(312 * R(t, Lt('s11_04'), Le('s11_04') - .2, outC)); bigCounter(X, 'HORAS EXTRA:', String(n), R(t, Lt('s11_04') - .1, Lt('s11_04') + .2, outC), 560, 760); }
-    if (t > Lt('s11_05') - .1) calendarCard(X, R(t, Lt('s11_05') - .1, Lt('s11_05') + .3, outC), t);
+    if (t > Lt('s11_05') - .1 && t < Lt('s11_05b') - .1) calendarCard(X, R(t, Lt('s11_05') - .1, Lt('s11_05') + .3, outC), t);
+    if (t > Lt('s11_05b') - .1) { const a = R(t, Lt('s11_05b') - .1, Lt('s11_05b') + .25, outC), beat = 1 + .12 * Math.pow(Math.max(0, Math.sin(t * Math.PI * 2.4)), 8);
+      X.save(); X.globalAlpha = a; X.translate(560, 420); X.scale(beat * a, beat * a);
+      shape(X, q => { q.moveTo(0, 60); q.bezierCurveTo(-150, -30, -90, -150, 0, -80); q.bezierCurveTo(90, -150, 150, -30, 0, 60); }, '#e0485c', 8); X.restore();
+      const n = Math.round(1300000 * R(t, Lt('s11_05b'), Le('s11_05b') - .3, outC)).toLocaleString('es-ES');
+      bigCounter(X, 'LATIDOS:', n, a, 300, 640); }
     return;
   }
   const hairPt = [978, 196];
@@ -91,6 +96,8 @@ SC.s13 = (X, t) => {
     { t: Lt('s13_08') - .05, cx: 1200, cy: 560, z: 1.35 },
     { t: after, cx: 1180, cy: 600, z: 1.3, z2: 1.36 },
     { t: Lt('s13_14') - .2, cx: 1500, cy: 640, z: 1.4 },
+      { t: Lt('s13_13b') - .1, cx: 1500, cy: 520, z: 1.9, z2: 1.0, lock: 1 },
+    { t: Lt('s13_14') - .1, cx: 960, cy: 560, z: 1.05 },
   ]);
   const st = stage(cam); st.wld(g => drawSet(g, 'party'));
   const W0 = { still: fz, t: wt, blink: fz ? 0 : null };
@@ -119,7 +126,8 @@ SC.s13 = (X, t) => {
   st.col(g => drawChar(g, 'tu', hp));
   st.wld(g => { partyTable(g); propCake(g, 960, 760, .8, 1, wt, wt < blow); if (wt > blow && t < after) smoke(g, 960, 640, .55 * R(wt, blow, blow + 1.2), fz ? 0 : wt); });
   const cp = worldToScreen(cam, ...clapPoint('tu', hp));
-  compose2(X, st, freezeState(t, claps.map(c => ({ t: c.t, x: cp[0], y: cp[1], screen: 1 })), cam));
+  const alone = t > Lt('s13_13b') - .1 && t < Lt('s13_14') - .1;   // memory of the 40 minutes: everyone frozen mid-song
+  compose2(X, st, alone ? { amt: 1 } : freezeState(t, claps.map(c => ({ t: c.t, x: cp[0], y: cp[1], screen: 1 })), cam));
   if (t > Lt('s13_13') - .05 && t < Lt('s13_14') - .2) bigCounter(X, 'APLAUSO:', '40 MINUTOS', R(t, Lt('s13_13') - .05, Lt('s13_13') + .25, outC), 70, 60);
   ruleCard(X, 2, 'EN LAS FIESTAS,', 'TE SIENTAS SOBRE TUS MANOS', R(t, Lt('s13_14') - .1, Lt('s13_14') + .25, outC));
 };
@@ -133,6 +141,8 @@ SC.s14 = (X, t) => {
     { t: sitT - .1, cx: 960, cy: 600, z: 1.3, z2: 1.36 },
     { t: Lt('s14_06') - .05, cx: 1000, cy: 680, z: 2.15, z2: 2.25 },
     { t: Lt('s14_07') - .05, cx: 960, cy: 620, z: 1.45, z2: 1.55 },
+    { t: Lt('s14_08') - .05, cx: 1020, cy: 740, z: 2.4, z2: 2.55 },
+    { t: Lt('s14_10') - .05, cx: 960, cy: 600, z: 1.7, z2: 1.75 },
   ]);
   const st = stage(cam); st.wld(g => { drawSet(g, 'park'); bench(g, 0); });
   st.wld(g => drawChar(g, 'ex3', { x: 1560, y: 900, s: .7, still: 1, walk: 1, phase: .8, jump: 20, mouth: .3, look: [-10, 0], hL: [-150, -380], hR: [140, -330] }));
@@ -144,14 +154,19 @@ SC.s14 = (X, t) => {
     const talking = (t > sitT && t < Lt('s14_06') - .1) || t > Lt('s14_07') + .6; if (talking) hp.open = .25 + .35 * Math.abs(Math.sin(t * 11)) * Math.abs(Math.sin(t * 2.3));
     if (t > Lt('s14_05') - .1 && t < Lt('s14_06')) { hp.hR = [120 + Math.sin(t * 5) * 40, -380 + Math.cos(t * 4) * 40]; }
     if (speaking(t, 's14_05b')) { hp.open = talk(t, 's14_05b'); hp.look = [18, 8]; }
-    if (t > Lt('s14_07') - .05) { hp.hR = [210, -330]; hp.mouth = .9; hp.blush = .4; hp.open = 0; } }
+    if (t > Lt('s14_07') - .05) { hp.hR = [210, -330]; hp.mouth = .9; hp.blush = .4; hp.open = 0; }
+    if (t > Lt('s14_08') - .05) { hp.hR = null; hp.mouth = -.2; hp.blush = 0; hp.look = [18, 10]; hp.wide = .4; hp.open = 0; }
+    if (t > Lt('s14_10') - .05) { hp.open = talk(t, 's14_10'); hp.brow = .9; hp.lid = .2; hp.look = [18, 12]; } }
   st.col(g => drawChar(g, 'tu', hp));
-  st.wld(g => { bench(g, 1); drawPigeon(g, 1060, 792, .62, { flip: -1 }); });
+  st.wld(g => bench(g, 1));
+  const crumbs = t > Lt('s14_08') - .05, peck = crumbs ? Math.max(0, Math.sin(t * 7)) * (1 - R(t, Lt('s14_10'), Lt('s14_10') + .2)) : 0;
+  if (crumbs) st.wld(g => { for (const [dx, dy, r] of [[-60, -2, 7], [-40, 3, 5], [-75, 4, 5], [-28, -1, 6]]) circ(g, 1060 + dx, 792 + dy, r, '#e2b878', 2); });
+  st.col(g => drawPigeon(g, 1060, 792, .62, { flip: -1, peck, tilt: t > Lt('s14_10') ? -.25 : Math.sin(t * .9) * .08 }));   // Pepe never turns grey
   compose2(X, st, { amt: 1 });
   if (t > Lt('s14_04') - .05 && t < Lt('s14_05') + .2) { const a = R(t, Lt('s14_04') - .05, Lt('s14_04') + .25, outC), [px, py] = worldToScreen(cam, 1030, 690); sticker(X, 'PEPE', a, px - 40, py - 260, 90); X.save(); X.globalAlpha = a; line(X, [[px + 30, py - 120], [px + 20, py - 40]], OUT, 10); line(X, [[px + 30, py - 120], [px + 20, py - 40]], '#fde047', 5); X.restore(); }
   if (t > Lt('s14_05') - .05 && t < Lt('s14_06') - .05) { const [bx, by] = worldToScreen(cam, 820, 380); const icons = ['♥', 'CANA', '10/10'];
     icons.forEach((s, i) => { const f = R(t, Lm('s14_05', i * .3), Lm('s14_05', i * .3) + .25, outC); bubble(X, s, bx - 220 + i * 230, by - 40 * (i % 2), f, 60); }); }
-  if (t > Lt('s14_07')) sticker(X, 'SEMANA 3', R(t, Lt('s14_07'), Lt('s14_07') + .25, outC), 70, 60, 80);
+  if (t > Lt('s14_07') && t < Lt('s14_08') - .05) sticker(X, 'SEMANA 3', R(t, Lt('s14_07'), Lt('s14_07') + .25, outC), 70, 60, 80);
 };
 
 /* ================================================================ 15. the flowerpot */
@@ -165,12 +180,16 @@ SC.s15 = (X, t) => {
     { t: Lt('s15_06') - .05, cx: 1300, cy: 500, z: 1.7, z2: 1.8 },
     { t: tr - .6, cx: 1300, cy: 520, z: 1.45 },
     { t: Lt('s15_08') - .1, cx: 1340, cy: 470, z: 1.9, z2: 2.0 },
+    { t: Lt('s15_10') - .05, cx: 1340, cy: 520, z: 1.6 },
+    { t: Lt('s15_11') - .05, cx: 1420, cy: 470, z: 2.3, z2: 2.4 },
   ]);
   const st = stage(cam); st.wld(g => drawSet(g, 'street'));
   // Valeria walks under the balcony reading her phone
   const vx = mix(500, 1400, R(wt, .3, Lm('s15_01', .8), lin)), vp = { x: vx, y: FEET, s: S0, t: wt, still: fz, blink: fz ? 0 : null, walk: wt < Lm('s15_01', .8) ? 1 : 0, phase: walkPh(vx), look: [4, 18], mouth: .1, hR: [20, -380], holdR: (g, x, y) => propPhone(g, x, y - 40, .55, 76, -.1) };
   if (fz && t > grab + .4) vp.look = [-3, 16];               // clue: she glances at the hero
-  if (t > tr + .3) { vp.look = [-18, 0]; vp.hR = [30, -300]; vp.lid = .25; vp.mouth = .5; vp.brow = .4; vp.open = talk(t, 's15_08'); if (t > Lt('s15_09')) { vp.mouth = .9; vp.open = 0; vp.lid = .4; } }
+  if (t > tr + .3) { vp.look = [-18, 0]; vp.hR = [30, -300]; vp.lid = .25; vp.mouth = .5; vp.brow = .4; vp.open = talk(t, 's15_08'); if (t > Lt('s15_09')) { vp.mouth = .9; vp.open = 0; vp.lid = .4; }
+    if (t > Lt('s15_10') - .05) { const u = R(t, Lt('s15_10'), Le('s15_10'), io); vp.look = [-18, mix(-8, 18, Math.sin(u * Math.PI))]; vp.lid = .35; vp.mouth = .5; }
+    if (t > Lt('s15_11') - .05) { vp.open = talk(t, 's15_11'); vp.look = [-18, 0]; vp.lid = .45; vp.mouth = .8; vp.brow = .5; } }
   st.wld(g => drawChar(g, 'valeria', vp));
   // the pot: wobbles on the rail, falls, stops half a meter above her head
   const potY = t < fall0 ? 39 : Math.min(349, 39 + .5 * 200 * Math.pow(Math.max(0, wt - worldClock(fall0, claps)), 2));
@@ -190,7 +209,8 @@ SC.s15 = (X, t) => {
     if (t > headPot) { hp.hL = [-60, -690]; hp.hR = [60, -690]; hp.holdR = null; hp.potOnHead = 1; hp.look = [0, -12]; hp.mouth = .3; }
     if (t > tr - .45 && t < tr + .4) { const G = charGeom(CAST.tu, hp); [hp.hL, hp.hR] = clapHands(t, tr, G, .1); }
     if (t > tr + .4) { hp.look = [16, 0]; hp.mouth = -.3; hp.sweat = 1; hp.hL = null; hp.hR = null; }
-    if (t > Lt('s15_09') - .05) { hp.open = talk(t, 's15_09'); hp.hR = [130, -560]; hp.mouth = .3; } }
+    if (t > Lt('s15_09') - .05) { hp.open = talk(t, 's15_09'); hp.hR = [130, -560]; hp.mouth = .3; }
+    if (t > Lt('s15_10') - .05) { hp.hR = null; hp.hL = null; hp.armsFront = 0; hp.open = 0; hp.look = [16, -2]; hp.mouth = -.2; hp.sweat = 1; } }
   st.col(g => { if (hp.potOnHead) { const G = charGeom(CAST.tu, { ...hp, t }), yc = FEET + S0 * (G.top - 100 + (hp.hy || 0)); drawChar(g, 'tu', hp); propPot(g, hp.x, yc - CAST.tu.r * S0 * 1.02 - 21, .7, 0); } else drawChar(g, 'tu', hp); });
   const cp = worldToScreen(cam, ...clapPoint('tu', hp));
   compose2(X, st, freezeState(t, [{ t: tc, x: cp[0], y: cp[1], screen: 1 }, { t: tr, x: cp[0], y: cp[1], screen: 1 }], cam));
@@ -200,9 +220,9 @@ SC.s15 = (X, t) => {
 /* ================================================================ 16. the twist: Valeria moves */
 let FLASH = false;
 SC.s16 = (X, t) => {
-  const tc = Lm('s16_01', .3), claps = [{ t: tc }], fz = isFrozen(t, claps), flash = Lt('s16_08') - .15;
-  if (t > flash) { // flashback to the books, now with Valeria's eyes following the hero
-    const sid = SID, u = R(t, flash, T().dur - .2, lin); SID = 's09'; FLASH = true; const t9 = mix(TIM.scenes.s09.L.s09_03[0] + .5, TIM.scenes.s09.L.s09_03[0] + TIM.scenes.s09.L.s09_03[1] * .97, u);
+  const tc = Lm('s16_01', .3), claps = [{ t: tc }], fz = isFrozen(t, claps), flash = Lt('s16_08') - .15, flashEnd = Le('s16_11') + .3;
+  if (t > flash && t < flashEnd) { // flashback to the books, now with Valeria's eyes following the hero
+    const sid = SID, u = R(t, flash, flashEnd - .1, lin); SID = 's09'; FLASH = true; const t9 = mix(TIM.scenes.s09.L.s09_03[0] + .5, TIM.scenes.s09.L.s09_03[0] + TIM.scenes.s09.L.s09_03[1] * .97, u);
     SC.s09(X, t9); FLASH = false; SID = sid;
     X.save(); X.globalCompositeOperation = 'multiply'; X.fillStyle = 'rgba(255,225,180,1)'; X.fillRect(0, 0, W, H); X.restore();
     X.save(); X.globalAlpha = .12; X.fillStyle = '#000'; for (let y = (t * 60) % 6; y < H; y += 6) X.fillRect(0, y, W, 2); X.restore();
@@ -217,6 +237,11 @@ SC.s16 = (X, t) => {
     { t: Lt('s16_05') - .05, cx: 900, cy: 560, z: 1.7 },
     { t: Lt('s16_06') - .05, cx: 1180, cy: 560, z: 1.8, z2: 1.9 },
     { t: Lt('s16_07') - .05, cx: 1000, cy: 600, z: 1.2, z2: 1.26 },
+    { t: Lt('s16_12') - .05, cx: 1210, cy: 560, z: 2.0, z2: 2.1 },
+    { t: Lt('s16_13') - .05, cx: 930, cy: 560, z: 2.0 },
+    { t: Lt('s16_14') - .05, cx: 1180, cy: 600, z: 1.7, z2: 1.85 },
+    { t: Lt('s16_16') - .05, cx: 1070, cy: 600, z: 1.55, z2: 1.05, lock: 1 },
+    { t: Lt('s16_18') - .05, cx: 1200, cy: 560, z: 1.9, z2: 2.0 },
   ]);
   const st = stage(cam); st.wld(g => { drawSet(g, 'parkNight'); bench(g, 0); });
   // Valeria on the bench, in color: swings her foot, then turns to the hero
@@ -224,6 +249,10 @@ SC.s16 = (X, t) => {
   vp.lean = Math.sin(t * 1.4) * .02; vp.footSwing = Math.sin(t * 4.2) * 34;
   if (t > Lm('s16_03', .5)) { vp.look = [-18, 0]; vp.mouth = .6; vp.lid = .2; }
   if (t > Lt('s16_04') - .05) { vp.open = talk(t, 's16_04') + talk(t, 's16_06'); vp.lid = .3; vp.mouth = .7; vp.brow = .3; }
+  if (t > Lt('s16_03b') - .05 && t < Lt('s16_04') - .1) { vp.look = [-10, 18]; vp.hL = [-150 + Math.sin(t * 6) * 12, -330]; vp.mouth = .5; vp.lid = 0; }   // feeding Pepe
+  if (t > Lt('s16_12') - .05) { vp.open = talk(t, 's16_12') + talk(t, 's16_14') + talk(t, 's16_15') + talk(t, 's16_18'); vp.look = [-18, 0]; vp.lid = .35; vp.mouth = .8; }
+  if (t > Lt('s16_14') - .05 && t < Lt('s16_16')) { vp.look = [-8, 14]; vp.lid = .25; vp.mouth = .2; vp.brow = -.3; }   // softer: looks down at Pepe
+  if (t > Lt('s16_16') - .05) { vp.look = [-16, 2]; vp.mouth = .6; vp.blush = .5; vp.lid = .1; }
   if (t > Lm('s16_04', .7) && t < Le('s16_04') + .5) { vp.hR = [120, -470]; vp.holdR = (g, x, y) => { const k = bump(t, Lm('s16_04', .9), Lm('s16_04', .9) + .3); if (k > 0) { g.save(); g.strokeStyle = '#fde047'; g.lineWidth = 5; for (let i = 0; i < 8; i++) { const a = i * Math.PI / 4; g.beginPath(); g.moveTo(x + Math.cos(a) * 26, y - 20 + Math.sin(a) * 26); g.lineTo(x + Math.cos(a) * (26 + 30 * k), y - 20 + Math.sin(a) * (26 + 30 * k)); g.stroke(); } g.restore(); } }; }
   st.col(g => drawChar(g, 'valeria', vp));
   // hero arrives
@@ -232,35 +261,18 @@ SC.s16 = (X, t) => {
     if (t > tc - .4 && t < tc + .4) { const G = charGeom(CAST.tu, hp); [hp.hL, hp.hR] = clapHands(t, tc, G, .15); hp.armsFront = 1; } if (t > Lt('s16_02')) { hp.walk = 0; hp.x = 760; hp.wide = .5; } }
   else { hp = { x: 760, y: 930, s: S0, t, look: [16, 0], mouth: -.2, wide: .6 }; if (t > Lt('s16_05') - .05) { hp.open = talk(t, 's16_05'); hp.hR = [160, -420]; }
     if (t > Lt('s16_06')) { hp.wide = 1; hp.open = t > Lm('s16_06', .8) ? .6 : 0; hp.hR = null; }
-    if (t > Lt('s16_07') - .05) { hp = { x: 900, y: 905, s: S0, t, sit: 1, look: [16, 0], wide: .8, mouth: -.2, hL: [-40, -300], hR: [40, -300], armsFront: 1 }; } }
+    if (t > Lt('s16_07') - .05) { hp = { x: 900, y: 905, s: S0, t, sit: 1, look: [16, 0], wide: .8, mouth: -.2, hL: [-40, -300], hR: [40, -300], armsFront: 1 };
+      if (t > Lt('s16_13') - .05 && t < Lt('s16_14')) { hp.open = talk(t, 's16_13'); hp.wide = 1; hp.brow = .9; hp.hL = [-110, -470]; hp.hR = [110, -470]; }
+      if (t > Lt('s16_14') - .05) { hp.wide = 0; hp.mouth = .3; hp.look = [16, 4]; hp.brow = -.2; }
+      if (t > Lt('s16_16') - .05) { hp.mouth = .7; hp.blush = .6; } } }
   st.col(g => drawChar(g, 'tu', hp));
-  st.wld(g => { bench(g, 1); drawPigeon(g, 1080, 792, .62, { flip: -1 }); });
+  st.wld(g => bench(g, 1));
+  const fed = t > Lt('s16_03b') - .05, peck = fed && t < Lt('s16_05') ? Math.max(0, Math.sin(t * 7)) : 0;
+  if (fed) st.wld(g => { for (const [dx, dy, r] of [[50, -2, 7], [70, 3, 5], [36, 4, 5]]) circ(g, 1080 + dx, 792 + dy, r, '#e2b878', 2); });
+  st.col(g => drawPigeon(g, 1080, 792, .62, { flip: -1, peck, tilt: Math.sin(t * .8) * .08 }));
   const cp = worldToScreen(cam, ...clapPoint('tu', hp));
   compose2(X, st, freezeState(t, [{ t: tc, x: cp[0], y: cp[1], screen: 1 }], cam));
-  if (t > Lm('s16_06', .75)) sticker(X, '19 AÑOS', R(t, Lm('s16_06', .75), Lm('s16_06', .75) + .25, outC), 70, 60, 90);
+  ruleCard(X, 3, 'NUNCA DETENGAS', 'EL TIEMPO SOLO', R(t, Lm('s16_18', .55), Lm('s16_18', .55) + .25, outC));
+  if (t > Lm('s16_06', .75) && t < Lt('s16_12')) sticker(X, '19 AÑOS', R(t, Lm('s16_06', .75), Lm('s16_06', .75) + .25, outC), 70, 60, 90);
 };
 
-/* ================================================================ 17. outro: Pepe wants to know */
-SC.s17 = (X, t) => {
-  if (t >= Lt('s17_00') && t < Lm('s17_00', .55)) {   // callback to the cold open: the pot over her head
-    const sid = SID, k = R(t, Lt('s17_00'), Lm('s17_00', .55), lin); SID = 's00'; SC.s00(X, 1.2 + k * 2.5); SID = sid;
-    X.save(); X.globalCompositeOperation = 'multiply'; X.fillStyle = 'rgba(255,225,180,1)'; X.fillRect(0, 0, W, H); X.restore();
-    X.save(); X.globalAlpha = .12; X.fillStyle = '#000'; for (let y = (t * 60) % 6; y < H; y += 6) X.fillRect(0, y, W, 2); X.restore(); return; }
-  const end = Le('s17_04') + .9, pepeAlive = Lm('s17_04', .55);
-  const cam = shots(t, (typeof claps !== 'undefined' ? claps : []), [{ t: 0, cx: 1000, cy: 600, z: 1.2, z2: 1.5 }, { t: Lt('s17_04') - .1, cx: 1095, cy: 768, z: 4.4, z2: 4.6 }]);
-  const st = stage(cam); st.wld(g => { drawSet(g, 'parkNight'); bench(g, 0); });
-  st.col(g => { drawChar(g, 'valeria', { x: 1240, y: 905, s: S0, t, sit: 1, look: [-14, 4], mouth: .6, hL: [-40, -300], hR: [40, -300], armsFront: 1 });
-    drawChar(g, 'tu', { x: 900, y: 905, s: S0, t, sit: 1, look: [14, 4], mouth: .4, blush: .5, hL: [-40, -300], hR: [40, -300], armsFront: 1 }); });
-  st.wld(g => bench(g, 1));
-  if (t < pepeAlive) st.wld(g => drawPigeon(g, 1080, 792, .62, { flip: -1 }));
-  else st.col(g => drawPigeon(g, 1080, 792, .62, { flip: -1, tilt: -.5 * R(t, pepeAlive, pepeAlive + .25), blink: blinkAt(t, [pepeAlive + .45, pepeAlive + 1.1]) }));
-  compose2(X, st, { amt: 1 });
-  if (t > Lt('s17_02') - .05 && t < Lt('s17_04') - .1) sticker(X, '¿QUÉ HARÍAS TÚ?', R(t, Lt('s17_02') - .05, Lt('s17_02') + .25, outC), 70, 60, 70);
-  if (t > Lm('s17_03', .7) && t < Lt('s17_04') - .1) { const a = R(t, Lm('s17_03', .7), Lm('s17_03', .7) + .3, back); X.save(); X.translate(W / 2, H - 200); X.scale(a, a); shape(X, q => rrPath(q, -260, -60, 520, 120, 20), '#e02424', 6); text(X, 'SUSCRÍBETE', 0, 26, 76, '#ffffff', 'Bangers', 'center'); X.restore(); }
-  if (t > end) { const a = R(t, end, end + .5, outC); X.save(); X.globalAlpha = a; X.fillStyle = '#141a2e'; X.fillRect(0, 0, W, H);
-    text(X, CHANNEL_NAME, W / 2, 230, 150, '#fde047', 'Bangers', 'center', OUT, 18);
-    text(X, 'PRÓXIMO EPISODIO:', W / 2, 400, 64, '#ffffff', 'Bangers', 'center');
-    text(X, '¿Y SI PUDIERAS VER', W / 2, 500, 84, '#ffffff', 'Bangers', 'center', OUT, 10); text(X, '5 SEGUNDOS DEL FUTURO?', W / 2, 600, 84, '#ffffff', 'Bangers', 'center', OUT, 10);
-    shape(X, q => rrPath(q, W / 2 - 300, 720, 600, 130, 22), '#e02424', 7); text(X, 'SUSCRÍBETE', W / 2, 812, 84, '#ffffff', 'Bangers', 'center');
-    drawPigeon(X, 1600, 960, .9, { flip: -1, blink: autoBlink(t, 3) }); X.restore(); }
-};

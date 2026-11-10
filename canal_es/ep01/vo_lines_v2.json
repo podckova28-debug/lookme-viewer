@@ -1,0 +1,672 @@
+[
+ {
+  "id": "s00_01",
+  "who": "narrador",
+  "text": "Esta maceta está a medio metro de la cabeza de Valeria."
+ },
+ {
+  "id": "s00_02",
+  "who": "narrador",
+  "text": "El mundo entero está congelado."
+ },
+ {
+  "id": "s00_03",
+  "who": "narrador",
+  "text": "Y tú eres el único que se mueve."
+ },
+ {
+  "id": "s00_04",
+  "who": "narrador",
+  "text": "¿Cómo llegaste hasta aquí?"
+ },
+ {
+  "id": "s00_05",
+  "who": "narrador",
+  "text": "Empecemos por el principio."
+ },
+ {
+  "id": "s01_01",
+  "who": "narrador",
+  "text": "Imagina que puedes detener el tiempo."
+ },
+ {
+  "id": "s01_02",
+  "who": "narrador",
+  "text": "Todo el mundo se queda congelado: tus compañeros, el balón… y Nacho, a mitad de un estornudo."
+ },
+ {
+  "id": "s01_03",
+  "who": "narrador",
+  "text": "Suena increíble."
+ },
+ {
+  "id": "s01_04",
+  "who": "narrador",
+  "text": "Y lo es."
+ },
+ {
+  "id": "s01_05",
+  "who": "narrador",
+  "text": "Durante unos diez minutos."
+ },
+ {
+  "id": "s01_07",
+  "who": "narrador",
+  "text": "Y créeme: el problema no es el tiempo."
+ },
+ {
+  "id": "s01_08",
+  "who": "narrador",
+  "text": "El problema eres tú."
+ },
+ {
+  "id": "s03_01",
+  "who": "narrador",
+  "text": "Todo empieza un martes cualquiera."
+ },
+ {
+  "id": "s03_02",
+  "who": "narrador",
+  "text": "Suena la alarma."
+ },
+ {
+  "id": "s03_03",
+  "who": "narrador",
+  "text": "Tú aplaudes para despertarte… y la alarma se calla."
+ },
+ {
+  "id": "s03_04",
+  "who": "narrador",
+  "text": "No porque la apagaste."
+ },
+ {
+  "id": "s03_05",
+  "who": "narrador",
+  "text": "Porque el mundo entero se detuvo."
+ },
+ {
+  "id": "s03_06",
+  "who": "narrador",
+  "text": "Tu gato Michi se quedó flotando a medio salto."
+ },
+ {
+  "id": "s04_01",
+  "who": "narrador",
+  "text": "En la cocina, tu mamá sirve café."
+ },
+ {
+  "id": "s04_02",
+  "who": "narrador",
+  "text": "Bueno, servía."
+ },
+ {
+  "id": "s04_03",
+  "who": "narrador",
+  "text": "El chorro de café está quieto en el aire, como una escultura."
+ },
+ {
+  "id": "s04_04",
+  "who": "narrador",
+  "text": "Lo tocas."
+ },
+ {
+  "id": "s04_05",
+  "who": "narrador",
+  "text": "Está tibio."
+ },
+ {
+  "id": "s04_06",
+  "who": "narrador",
+  "text": "Aplaudes otra vez, y todo sigue."
+ },
+ {
+  "id": "s04_07",
+  "who": "narrador",
+  "text": "El café también."
+ },
+ {
+  "id": "s04_08",
+  "who": "narrador",
+  "text": "Sobre la mesa."
+ },
+ {
+  "id": "s04_08b",
+  "who": "mama",
+  "text": "¿Eh? ¿Y la taza?"
+ },
+ {
+  "id": "s04_09",
+  "who": "narrador",
+  "text": "Regla número uno: un aplauso detiene el mundo."
+ },
+ {
+  "id": "s04_10",
+  "who": "narrador",
+  "text": "Otro aplauso lo vuelve a encender."
+ },
+ {
+  "id": "s05_01",
+  "who": "narrador",
+  "text": "Lo primero que haces con el poder más grande de la historia es… dormir."
+ },
+ {
+  "id": "s05_02",
+  "who": "narrador",
+  "text": "Detienes el tiempo y duermes ocho horas más."
+ },
+ {
+  "id": "s05_03",
+  "who": "narrador",
+  "text": "Despiertas, y siguen siendo las seis cincuenta y nueve."
+ },
+ {
+  "id": "s05_04",
+  "who": "narrador",
+  "text": "Es el mejor día de tu vida."
+ },
+ {
+  "id": "s06_01",
+  "who": "narrador",
+  "text": "Examen de matemáticas."
+ },
+ {
+  "id": "s06_02",
+  "who": "narrador",
+  "text": "Podrías copiar, claro."
+ },
+ {
+  "id": "s06_03",
+  "who": "narrador",
+  "text": "Pero tienes una idea mejor: detienes el tiempo y estudias."
+ },
+ {
+  "id": "s06_04",
+  "who": "narrador",
+  "text": "Tres horas, mientras el profe Ramírez se queda congelado con cara de sospecha."
+ },
+ {
+  "id": "s06_05",
+  "who": "narrador",
+  "text": "Que, para ser justos, es su cara normal."
+ },
+ {
+  "id": "s06_06",
+  "who": "narrador",
+  "text": "Entregas el examen en dos minutos."
+ },
+ {
+  "id": "s06_06b",
+  "who": "profe",
+  "text": "¿Ya terminaste? ¿Tú?"
+ },
+ {
+  "id": "s06_07",
+  "who": "narrador",
+  "text": "Diez de diez."
+ },
+ {
+  "id": "s06_08",
+  "who": "narrador",
+  "text": "El profe Ramírez lo revisa cuatro veces."
+ },
+ {
+  "id": "s07_01",
+  "who": "narrador",
+  "text": "En clase de historia, Nacho se queda dormido."
+ },
+ {
+  "id": "s07_02",
+  "who": "narrador",
+  "text": "Detienes el tiempo y le dibujas un bigote."
+ },
+ {
+  "id": "s07_03",
+  "who": "narrador",
+  "text": "Uno elegante, con puntas."
+ },
+ {
+  "id": "s07_04",
+  "who": "narrador",
+  "text": "Nacho se despierta y se ve en el reflejo de la ventana."
+ },
+ {
+  "id": "s07_04b",
+  "who": "nacho",
+  "text": "Mmm… me queda bien."
+ },
+ {
+  "id": "s07_05",
+  "who": "narrador",
+  "text": "Lo usa toda la semana."
+ },
+ {
+  "id": "s08_01",
+  "who": "narrador",
+  "text": "A la salida empieza a llover."
+ },
+ {
+  "id": "s08_02",
+  "who": "narrador",
+  "text": "Aplaudes."
+ },
+ {
+  "id": "s08_03",
+  "who": "narrador",
+  "text": "Millones de gotas se quedan colgadas en el aire."
+ },
+ {
+  "id": "s08_04",
+  "who": "narrador",
+  "text": "Caminas a casa esquivándolas, una por una."
+ },
+ {
+  "id": "s08_05",
+  "who": "narrador",
+  "text": "Llegas completamente seco."
+ },
+ {
+  "id": "s08_06",
+  "who": "narrador",
+  "text": "Tu mamá, que te vio salir sin paraguas, decide no hacer preguntas."
+ },
+ {
+  "id": "s09_01",
+  "who": "narrador",
+  "text": "En el pasillo, a Valeria se le caen los libros."
+ },
+ {
+  "id": "s09_02",
+  "who": "narrador",
+  "text": "Sí, esa Valeria."
+ },
+ {
+  "id": "s09_03",
+  "who": "narrador",
+  "text": "Aplaudes, recoges todo, lo ordenas por tamaño y se lo devuelves a sus manos."
+ },
+ {
+  "id": "s09_04",
+  "who": "narrador",
+  "text": "Aplaudes otra vez."
+ },
+ {
+  "id": "s09_05",
+  "who": "narrador",
+  "text": "Desde su punto de vista, sus libros se cayeron… y volvieron solos."
+ },
+ {
+  "id": "s09_05b",
+  "who": "valeria",
+  "text": "¿Qué… acaba de pasar?"
+ },
+ {
+  "id": "s09_06",
+  "who": "narrador",
+  "text": "Seguramente ahora Valeria cree que la escuela está embrujada."
+ },
+ {
+  "id": "s09_07",
+  "who": "narrador",
+  "text": "No es exactamente la impresión que querías dar."
+ },
+ {
+  "id": "s10_01",
+  "who": "narrador",
+  "text": "En educación física te toca patear un penal."
+ },
+ {
+  "id": "s10_02",
+  "who": "narrador",
+  "text": "Tu tiro va directo hacia… la cafetería."
+ },
+ {
+  "id": "s10_03",
+  "who": "narrador",
+  "text": "Aplaudes."
+ },
+ {
+  "id": "s10_04",
+  "who": "narrador",
+  "text": "Caminas hasta el balón, lo cargas como a un bebé y lo acomodas en el ángulo."
+ },
+ {
+  "id": "s10_05",
+  "who": "narrador",
+  "text": "Aplaudes."
+ },
+ {
+  "id": "s10_06",
+  "who": "narrador",
+  "text": "Gol."
+ },
+ {
+  "id": "s10_06b",
+  "who": "chicos",
+  "text": "¡Gooool!"
+ },
+ {
+  "id": "s10_07",
+  "who": "narrador",
+  "text": "Nacho, el portero, se queda mirando sus manos durante el resto del día."
+ },
+ {
+  "id": "s10_07b",
+  "who": "nacho",
+  "text": "¿Pero… cómo?"
+ },
+ {
+  "id": "s11_01",
+  "who": "narrador",
+  "text": "Pero hay un detalle que nadie te explicó."
+ },
+ {
+  "id": "s11_02",
+  "who": "narrador",
+  "text": "Cuando el mundo se detiene, tú no."
+ },
+ {
+  "id": "s11_03",
+  "who": "narrador",
+  "text": "Cada siesta, cada hora de estudio, cada penal… tú sí los vives."
+ },
+ {
+  "id": "s11_04",
+  "who": "narrador",
+  "text": "En un mes ya llevas trescientas doce horas extra."
+ },
+ {
+  "id": "s11_05",
+  "who": "narrador",
+  "text": "Eso son trece días que viviste tú, y nadie más."
+ },
+ {
+  "id": "s11_06",
+  "who": "narrador",
+  "text": "Y un día, en el espejo, la ves."
+ },
+ {
+  "id": "s11_07",
+  "who": "narrador",
+  "text": "Una cana."
+ },
+ {
+  "id": "s11_08",
+  "who": "narrador",
+  "text": "Tienes dieciséis años."
+ },
+ {
+  "id": "s12_01",
+  "who": "narrador",
+  "text": "Además, en el tiempo detenido nada funciona."
+ },
+ {
+  "id": "s12_02",
+  "who": "narrador",
+  "text": "El celular no carga."
+ },
+ {
+  "id": "s12_03",
+  "who": "narrador",
+  "text": "El agua no sale de la llave."
+ },
+ {
+  "id": "s12_04",
+  "who": "narrador",
+  "text": "Intentas ver una serie… y está en pausa."
+ },
+ {
+  "id": "s12_04b",
+  "who": "tu",
+  "text": "Ay, no…"
+ },
+ {
+  "id": "s12_05",
+  "who": "narrador",
+  "text": "Literalmente todo está en pausa."
+ },
+ {
+  "id": "s13_01",
+  "who": "narrador",
+  "text": "El segundo problema es más ruidoso."
+ },
+ {
+  "id": "s13_01b",
+  "who": "chicos",
+  "text": "¡Feliz cumpleaños, Nacho!"
+ },
+ {
+  "id": "s13_02",
+  "who": "narrador",
+  "text": "Es el cumpleaños de Nacho."
+ },
+ {
+  "id": "s13_02b",
+  "who": "nacho",
+  "text": "¡Gracias, gracias!"
+ },
+ {
+  "id": "s13_03",
+  "who": "narrador",
+  "text": "Todos cantan, Nacho sopla las velas, y todo el mundo aplaude."
+ },
+ {
+  "id": "s13_04",
+  "who": "narrador",
+  "text": "Tú también."
+ },
+ {
+  "id": "s13_05",
+  "who": "narrador",
+  "text": "Por reflejo."
+ },
+ {
+  "id": "s13_06",
+  "who": "narrador",
+  "text": "Todo se congela."
+ },
+ {
+  "id": "s13_07",
+  "who": "narrador",
+  "text": "Aplaudes para seguir… pero todos siguen aplaudiendo, y tus manos siguen el ritmo."
+ },
+ {
+  "id": "s13_08",
+  "who": "narrador",
+  "text": "Congelado."
+ },
+ {
+  "id": "s13_09",
+  "who": "narrador",
+  "text": "Sigue."
+ },
+ {
+  "id": "s13_10",
+  "who": "narrador",
+  "text": "Congelado."
+ },
+ {
+  "id": "s13_11",
+  "who": "narrador",
+  "text": "Sigue."
+ },
+ {
+  "id": "s13_12",
+  "who": "narrador",
+  "text": "Para los demás, fue una fiesta normal."
+ },
+ {
+  "id": "s13_13",
+  "who": "narrador",
+  "text": "Para ti, ese aplauso duró cuarenta minutos."
+ },
+ {
+  "id": "s13_14",
+  "who": "narrador",
+  "text": "Regla número dos: en las fiestas, te sientas sobre tus manos."
+ },
+ {
+  "id": "s14_01",
+  "who": "narrador",
+  "text": "Y el tercer problema es el silencio."
+ },
+ {
+  "id": "s14_02",
+  "who": "narrador",
+  "text": "En el tiempo detenido no hay nadie con quien hablar."
+ },
+ {
+  "id": "s14_03",
+  "who": "narrador",
+  "text": "Así que empiezas a hablar con una paloma."
+ },
+ {
+  "id": "s14_04",
+  "who": "narrador",
+  "text": "Le pones Pepe."
+ },
+ {
+  "id": "s14_05",
+  "who": "narrador",
+  "text": "Le cuentas lo de Valeria, lo de la cana, lo del examen."
+ },
+ {
+  "id": "s14_05b",
+  "who": "tu",
+  "text": "Y entonces Valeria… bueno, tú me entiendes, Pepe."
+ },
+ {
+  "id": "s14_06",
+  "who": "narrador",
+  "text": "Pepe no dice nada."
+ },
+ {
+  "id": "s14_07",
+  "who": "narrador",
+  "text": "Pepe es, sinceramente, el mejor amigo que has tenido en semanas."
+ },
+ {
+  "id": "s15_01",
+  "who": "narrador",
+  "text": "Un viernes, saliendo de la escuela, una maceta cae desde un balcón."
+ },
+ {
+  "id": "s15_02",
+  "who": "narrador",
+  "text": "Justo encima de Valeria."
+ },
+ {
+  "id": "s15_03",
+  "who": "narrador",
+  "text": "Aplaudes."
+ },
+ {
+  "id": "s15_04",
+  "who": "narrador",
+  "text": "La maceta se queda a medio metro de su cabeza."
+ },
+ {
+  "id": "s15_05",
+  "who": "narrador",
+  "text": "La bajas con cuidado."
+ },
+ {
+  "id": "s15_06",
+  "who": "narrador",
+  "text": "Y ahora tienes un problema: si aplaudes, Valeria te verá a su lado. Con una maceta. Salido de la nada."
+ },
+ {
+  "id": "s15_07",
+  "who": "narrador",
+  "text": "Aplaudes de todas formas."
+ },
+ {
+  "id": "s15_08",
+  "who": "valeria",
+  "text": "¿Cómo llegaste tan rápido?"
+ },
+ {
+  "id": "s15_09",
+  "who": "tu",
+  "text": "Eh… hago mucho ejercicio."
+ },
+ {
+  "id": "s16_01",
+  "who": "narrador",
+  "text": "Esa noche detienes el tiempo para ir a hablar con Pepe."
+ },
+ {
+  "id": "s16_02",
+  "who": "narrador",
+  "text": "Pero esta vez, en la banca, hay alguien más."
+ },
+ {
+  "id": "s16_03",
+  "who": "narrador",
+  "text": "Alguien que se mueve."
+ },
+ {
+  "id": "s16_04",
+  "who": "valeria",
+  "text": "¿Tú también aplaudes? Qué tierno. Yo chasqueo los dedos."
+ },
+ {
+  "id": "s16_05",
+  "who": "tu",
+  "text": "¿Desde cuándo puedes hacer esto?"
+ },
+ {
+  "id": "s16_06",
+  "who": "valeria",
+  "text": "¿Contando el tiempo detenido? Tengo diecinueve años."
+ },
+ {
+  "id": "s16_07",
+  "who": "narrador",
+  "text": "Resulta que no eres la única persona que puede detener el tiempo."
+ },
+ {
+  "id": "s16_08",
+  "who": "narrador",
+  "text": "Y lo de los libros…"
+ },
+ {
+  "id": "s16_09",
+  "who": "narrador",
+  "text": "Valeria nunca estuvo congelada."
+ },
+ {
+  "id": "s16_10",
+  "who": "narrador",
+  "text": "Lo vio todo."
+ },
+ {
+  "id": "s16_11",
+  "who": "narrador",
+  "text": "Hasta cuando los ordenaste por tamaño."
+ },
+ {
+  "id": "s17_00",
+  "who": "narrador",
+  "text": "Aquella maceta, a medio metro de su cabeza… y tú creías que eras el único que se movía."
+ },
+ {
+  "id": "s17_01",
+  "who": "narrador",
+  "text": "¿Y tú qué harías con el tiempo detenido?"
+ },
+ {
+  "id": "s17_02",
+  "who": "narrador",
+  "text": "Déjamelo en los comentarios."
+ },
+ {
+  "id": "s17_03",
+  "who": "narrador",
+  "text": "Y si quieres saber qué pasa con Valeria… suscríbete."
+ },
+ {
+  "id": "s17_04",
+  "who": "narrador",
+  "text": "Pepe también quiere saber."
+ }
+]

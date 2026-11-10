@@ -9,23 +9,12 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 VO = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, 'vo_kokoro')
 lines = json.load(open(os.path.join(HERE, 'vo_lines.json'), encoding='utf-8'))
 
-# paragraph starts: first sentence of each "> " paragraph in the script
-md = open(os.path.join(HERE, '..', 'ep01_detener_el_tiempo.md'), encoding='utf-8').read()
-para_first = set()
-for sec in re.split(r'^### ', md, flags=re.M)[1:]:
-    sec = sec.split('\n---\n')[0]; num = int(re.match(r'(\d+)\.', sec).group(1)); k = 0
-    for l in sec.splitlines()[1:]:
-        if l.startswith('> ') and l[2:].strip():
-            parts = re.split(r'(?<=[.!?…])\s+(?=[¿¡A-ZÁÉÍÓÚÑ])', l[2:].strip())
-            for i, _ in enumerate(parts):
-                k += 1
-                if i == 0: para_first.add(f's{num:02d}_{k:02d}')
-        elif re.match(r'\*\*(VALERIA|TÚ):\*\*', l):
-            k += 1; para_first.add(f's{num:02d}_{k:02d}')
+# paragraph starts are flagged per line in vo_lines.json ('p': 1): a longer pause before them
+para_first = {l['id'] for l in lines if l.get('p')}
 
 GAP_SENT, GAP_PARA = 0.28, 0.65
-LEAD = {'s00': 1.2, 's01': 1.0, 's10': 0.9, 's16': 0.8}
-TAIL = {'s00': 1.3, 's04': 1.2, 's10': 1.2, 's13': 1.4, 's15': 1.2, 's16': 1.6, 's17': 5.5}
+LEAD = {'s00': 1.2, 's01': 1.0, 's10': 0.9, 's11b': 0.8, 's16': 0.8, 's18': 1.4, 's19': 0.4}
+TAIL = {'s00': 1.3, 's04': 1.2, 's10': 1.2, 's11b': 0.8, 's13': 1.4, 's15': 1.2, 's16': 1.6, 's17': 1.2, 's18': 1.0, 's19': 5.5}
 HOLD = {  # extra seconds after a line, for visual gags
     's00_01': .3, 's00_03': .5, 's00_04': .4,
     's04_08b': .5, 's06_06b': .3, 's07_04b': .7, 's09_05b': .4, 's10_06b': .6, 's10_07b': .6, 's12_04b': .3, 's13_01b': .3, 's13_02b': .2, 's14_05b': .4, 's17_00': .6,
@@ -43,14 +32,17 @@ HOLD = {  # extra seconds after a line, for visual gags
     's14_04': .8, 's14_05': 1.0, 's14_06': .8,
     's15_02': .4, 's15_05': .6, 's15_07': .9, 's15_08': .4,
     's16_03': 1.1, 's16_04': .6, 's16_06': 1.3,
-    's17_04': 1.5,
+    's07_07': .8, 's07_08': .5, 's07_09': .6, 's11_05b': .5, 's11b_02': .4, 's11b_03': .4, 's11b_04': .3, 's11b_05': .6, 's11b_06': .6,
+    's13_13b': .5, 's14_09': .5, 's14_10': .6, 's15_10': .5, 's15_11': .6, 's16_03b': .5, 's16_13': .5, 's16_15': .8, 's16_17': .6, 's16_18': 1.0,
+    's17_06': .5, 's17_07': 1.2, 's17_08': .6, 's17_09': .8, 's17_10': .8,
+    's18_01': .6, 's18_03': .8, 's18_04': .8, 's18_05': .6, 's18_07': .6, 's18_08': .8, 's19_05': 1.5,
 }
 SHORT_GAP = {f's13_{i:02d}': .15 for i in range(8, 11)}  # "Congelado. Sigue. Congelado. Sigue." back to back
 FIXED = {'s02': 3.6}  # title card, no narration
 
 scenes, order = {}, []
 for l in lines:
-    sid = l['id'][:3]
+    sid = l['id'].split('_')[0]
     if sid not in scenes: scenes[sid] = []; order.append(sid)
     scenes[sid].append(l)
 for sid in FIXED:

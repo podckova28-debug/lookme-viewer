@@ -107,6 +107,7 @@ SC.s03 = (X, t) => {
     { t: Lt('s03_06') - .05, cx: 800, cy: 640, z: 1.4, z2: 1.48 },   // hero + the cat frozen mid-jump in one frame
   ]);
   const st = stage(cam); st.wld(g => { drawSet(g, 'bedroom'); bedBack(g); nightstand(g); });
+  st.col(g => drawPigeon(g, 1380, 562, .45, { flip: -1, tilt: Math.sin(t * .7) * .1 }));   // Pepe on the window sill: never grey
   const ring = wt > Lt('s03_02') && wt < tc ? wt : 0;
   st.wld(g => propAlarm(g, 1075, 700, .7, 6, 59, ring));
   // cat: sits on the rug, jumps toward the bed just before the clap and stays in mid-air

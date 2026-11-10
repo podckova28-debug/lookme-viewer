@@ -28,7 +28,7 @@ SC.s06 = (X, t) => {
     { t: Lt('s06_07') - .05, cx: 900, cy: 580, z: 1.3 },
     { t: Lt('s06_08') - .05, cx: 940, cy: 540, z: 1.55, z2: 1.62 },
   ]);
-  const st = stage(cam); st.wld(g => { drawSet(g, 'classroom'); teacherDesk(g, 1690); });
+  const st = stage(cam); st.wld(g => { drawSet(g, 'classroom'); if (HYB) boardText(g, 'x² + 2x − 15 = 0', 'x = ?'); teacherDesk(g, 1690); });
   const W0 = { still: fz, t: wt, blink: fz ? 0 : null };
   // classmates
   st.wld(g => { drawChar(g, 'ex2', seated('ex2', 380, { ...W0, look: [0, 10], mouth: -.1, brow: .3 })); });
@@ -76,10 +76,15 @@ SC.s07 = (X, t) => {
     { t: mirror, cx: 1730, cy: 330, z: 2.4, z2: 2.5 },
     { t: nod - .1, cx: 1000, cy: 520, z: 2.0 },
     { t: Lt('s07_05') - .1, cx: 1000, cy: 560, z: 1.35, z2: 1.45 },
+    { t: Lt('s07_06') - .05, cx: 1000, cy: 470, z: 2.3, z2: 2.4 },
+    { t: Lt('s07_09') - .05, cx: 980, cy: 560, z: 1.2, z2: 1.25 },
   ]);
   const st = stage(cam); st.wld(g => { drawSet(g, 'classroom'); boardOverlay(g, 'HISTORIA', 'Independencia: 1810'); });
   const W0 = { still: fz, t: wt, blink: fz ? 0 : null };
-  st.wld(g => drawChar(g, 'ex4', seated('ex4', 1420, { ...W0, look: [0, 12], mouth: -.1 })));
+  const rp = seated('valeria', 1420, { ...W0, look: [0, 12], mouth: -.1 });
+  if (fz && t > drawStart) rp.look = [-16, 4];                                   // clue: 'frozen', yet watching
+  if (t > Lt('s07_09') - .05) { rp.look = [-12, 2]; rp.mouth = .7; rp.lid = .3; rp.brow = .3; }   // clue: the smirk
+  st.wld(g => drawChar(g, 'valeria', rp));
   // Nacho asleep on his desk, then wakes and admires the mustache
   const hp0 = {};
   const asleep = wt < wake - (tr - worldClock(tr, claps)) ? true : false;
@@ -90,6 +95,8 @@ SC.s07 = (X, t) => {
     if (t > nod) np.hy += Math.abs(Math.sin((t - nod) * 7)) * -14 * (1 - R(t, nod + 1, nod + 1.4)); }
   if (t > Lt('s07_05') - .1) { Object.assign(hp0, { sit: 0, hL: null, hR: null, armsFront: 0, mouth: .9, look: [14, 0] }); Object.assign(np, { sit: 0, hL: POSE.hips(charGeom(CAST.nacho, { sit: 0 }))[0], hR: POSE.hips(charGeom(CAST.nacho, { sit: 0 }))[1], armsFront: 0, mouth: 1, look: [0, 0], hy: 0, rot: 0, brow: .6, lid: .3 }); }
   if (speaking(t, 's07_04b')) { np.open = talk(t, 's07_04b'); np.lid = .35; np.brow = .5; }
+  if (t > Lt('s07_06')) { np.monocle = 1; np.look = [0, 0]; np.mouth = .8; np.brow = .5; }
+  if (t > Lt('s07_08') - .1 && t < Le('s07_08') + .4) { np.open = talk(t, 's07_08'); np.hR = [55, -600]; np.lid = .3; np.brow = .8; }
   st.wld(g => drawChar(g, 'nacho', np));
   // hero: seated, then walks over with a marker while time is stopped
   const out = t > tc + .4 && t < tr;
@@ -101,6 +108,7 @@ SC.s07 = (X, t) => {
     if (t > drawStart - .1 && t < drawEnd + .2) { const k = R(t, drawStart, drawEnd, lin), ang = (k * 2 - 1); hp.hR = [(1000 - 860 + ang * 48) / S0, (628 - FEET) / S0 + Math.sin(k * 30) * 4]; hp.rot = .1;
       hp.holdR = (g, x, y) => { g.save(); g.translate(x, y); g.rotate(-.6); shape(g, q => rrPath(q, -8, -70, 16, 70, 6), '#2a2a3a', 3); shape(g, q => rrPath(q, -8, -20, 16, 20, 4), '#ffffff', 2); g.restore(); }; }
     if (t > Lt('s07_03') - .05) { [hp.hL, hp.hR] = POSE.hips(charGeom(CAST.tu, hp)); hp.holdR = null; hp.mouth = 1; hp.look = [14, 0]; hp.rot = 0; } }
+  if (t > Lt('s07_09') - .05) { hp.look = [18, 2]; hp.mouth = -.4; hp.brow = -.7; hp.wide = .3; hp.hR = [70, -520]; }
   st.col(g => drawChar(g, 'tu', hp));
   if (t < Lt('s07_05') - .1) st.wld(g => { desk(g, 520, FEET + 6, .9); desk(g, 1000, FEET + 6, .9); });
   st.wld(g => desk(g, 1420, FEET + 6, .9));
@@ -109,7 +117,7 @@ SC.s07 = (X, t) => {
   const cp = worldToScreen(cam, ...clapPoint('tu', hp));
   compose2(X, st, freezeState(t, [{ t: tc, x: cp[0], y: cp[1], screen: 1 }, { t: tr, x: cp[0], y: cp[1], screen: 1 }], cam));
   if (t < tc) zzz(X, ...worldToScreen(cam, 1040, 520), t);
-  if (t > Lt('s07_05') - .1) { const days = ['LUNES', 'MARTES', 'MIÉRCOLES', 'JUEVES', 'VIERNES'], k = Math.min(4, Math.floor(R(t, Lt('s07_05'), T().dur - .4, lin) * 5)); sticker(X, days[k], 1, 70, 60, 80); }
+  if (t > Lt('s07_05') - .1) { const days = ['LUNES', 'MARTES', 'MIÉRCOLES', 'JUEVES', 'VIERNES'], k = t > Lt('s07_06') - .1 ? 3 : Math.min(2, Math.floor(R(t, Lt('s07_05'), Lt('s07_06') - .1, lin) * 3)); sticker(X, days[k], 1, 70, 60, 80); }
 };
 
 /* ================================================================ 8. frozen rain */
@@ -218,6 +226,7 @@ SC.s10 = (X, t) => {
     { t: Lt('s10_07') - .05, cx: 1590, cy: 500, z: 2.8, z2: 2.95 },
   ]);
   const st = stage(cam); st.wld(g => { drawSet(g, 'field'); goal(g, 0); });
+  st.col(g => drawPigeon(g, 1560, 270, .5, { flip: -1, tilt: Math.sin(t * .6) * .1 }));   // Pepe on the crossbar: never grey
   const W0 = { still: fz, t: wt, blink: fz ? 0 : null };
   // spectators
   const cheer = t > goalT + .2 && t < Lt('s10_07');

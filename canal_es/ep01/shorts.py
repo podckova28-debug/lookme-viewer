@@ -8,7 +8,7 @@ EP, OUT = sys.argv[1], sys.argv[2]; os.makedirs(OUT, exist_ok=True)
 T = json.load(open(os.path.join(HERE, 'timing.json')))
 LINES = {l['id']: l for l in json.load(open(os.path.join(HERE, 'vo_lines.json'), encoding='utf-8'))}
 FONTS = os.path.join(HERE, '..', 'anim', 'fonts')
-NAMES = {'valeria': 'VALERIA', 'tu': 'TÚ', 'mama': 'MAMÁ', 'profe': 'PROFE', 'nacho': 'NACHO', 'chicos': 'TODOS'}
+NAMES = {'valeria': 'RENATA', 'tu': 'TÚ', 'mama': 'MAMÁ', 'profe': 'PROFE', 'nacho': 'NACHO', 'chicos': 'TODOS'}
 def S(sid): return T['scenes'][sid]
 def Lt(sid, lid): return S(sid)['start'] + S(sid)['L'][lid][0]
 def Le(sid, lid): return Lt(sid, lid) + S(sid)['L'][lid][1]

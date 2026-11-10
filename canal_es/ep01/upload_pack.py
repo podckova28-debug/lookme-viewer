@@ -2,8 +2,9 @@
 import json, os
 HERE = os.path.dirname(os.path.abspath(__file__)); T = json.load(open(os.path.join(HERE, 'timing.json')))
 CH = [('s00', 'La maceta'), ('s01', '¿Qué pasaría si…?'), ('s03', 'El primer aplauso'), ('s04', 'Regla #1'), ('s05', 'Ocho horas más de sueño'), ('s06', 'El examen de matemáticas'),
-      ('s07', 'El bigote de Nacho'), ('s08', 'La lluvia congelada'), ('s09', 'Los libros de Valeria'), ('s10', 'El penal imposible'), ('s11', 'El precio: una cana'),
-      ('s12', 'Nada funciona'), ('s13', 'El cumpleaños de Nacho'), ('s14', 'Pepe'), ('s15', 'La maceta'), ('s16', 'No eres el único'), ('s17', 'Final')]
+      ('s07', 'El bigote (y el monóculo)'), ('s08', 'La lluvia congelada'), ('s09', 'Los libros de Renata'), ('s10', 'El penal imposible'), ('s11', 'El precio: una cana'),
+      ('s11b', 'La cena'), ('s12', 'Nada funciona'), ('s13', 'El cumpleaños de Nacho'), ('s14', 'Pepe'), ('s15', 'La maceta'), ('s16', 'No eres el único'), ('s17', 'Pepe nunca se puso gris'),
+      ('s18', '¿Algo de esto es real?'), ('s19', 'Final')]
 def mmss(x): x = int(x); return f'{x // 60}:{x % 60:02d}'
 chap = '\n'.join(f"{mmss(T['scenes'][s]['start'])} {n}" for s, n in CH)
 md = f"""# Subida a YouTube · Episodio 1

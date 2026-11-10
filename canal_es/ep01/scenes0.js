@@ -21,8 +21,10 @@ SC.s00 = (X, t) => {
   const st = stage(cam); st.wld(g => drawSet(g, 'street'));
   const fr = { still: 1, t: 0, blink: 0, s: S0, y: FEET };
   st.wld(g => { drawChar(g, 'ex3', { ...fr, x: 420, walk: 1, phase: .9, look: [10, 0], mouth: .2 }); drawChar(g, 'ex2', { ...fr, x: 760, walk: 1, phase: 2.4, flip: -1, look: [-10, 4], open: .4 }); });
-  st.wld(g => drawChar(g, 'valeria', { ...fr, x: 1400, look: [4, 18], mouth: .1, hR: [20, -380], holdR: (q, x, y) => propPhone(q, x, y - 40, .55, 76, -.1) }));
-  st.wld(g => { propPot(g, 1400, 349, .7, 0); drawPigeon(g, 1700, 170, .5, { flip: -1 }); });
+  const vblink = bump(t, Lm('s00_02', .55), Lm('s00_02', .55) + .22);   // on 'el mundo entero está congelado'   // clue: she blinks (rewatch payoff in s19_03)
+  st.wld(g => drawChar(g, 'valeria', { ...fr, x: 1400, look: [4, 18], mouth: .1, blink: vblink, hR: [20, -380], holdR: (q, x, y) => propPhone(q, x, y - 40, .55, 76, -.1) }));
+  st.wld(g => propPot(g, 1400, 349, .7, 0));
+  st.col(g => drawPigeon(g, 1700, 170, .5, { flip: -1, tilt: .25 * bump(t, Lt('s00_04'), Lt('s00_04') + 1.2) }));   // clue: Pepe never turns grey
   // the hero: runs in, stops, looks up at the pot, sweating
   const hp = { x: hx, y: FEET, s: S0, t, walk: running ? 1 : 0, phase: walkPh(hx) * 1.9, lean: running ? .14 : 0, look: [16, -6], mouth: -.3, brow: .7, wide: .5, sweat: tr > run1 ? 1 : 0 };
   if (t >= rw) hp.lean = running ? -.14 : 0;

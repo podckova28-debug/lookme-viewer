@@ -37,8 +37,15 @@ def tube_metrics(m):
 def main(sheet, name):
     A = np.array(Image.open(sheet).convert('RGBA'))
     a = A[..., 3].astype(float)
-    lab, n = ndimage.label(a > 40)
-    sizes = ndimage.sum(np.ones_like(a), lab, range(1, n + 1))
+    # parts sometimes touch through faint glow: raise the alpha threshold / erode until 8 parts separate
+    for thr, ero in ((40, 0), (128, 0), (200, 0), (200, 3), (200, 6)):
+        m0 = a > thr
+        if ero: m0 = ndimage.binary_erosion(m0, iterations=ero)
+        lab, n = ndimage.label(m0)
+        sizes = ndimage.sum(np.ones_like(a), lab, range(1, n + 1))
+        if (sizes >= 1500).sum() >= 8: break
+    if ero:   # grow the eroded labels back over the full alpha
+        lab = ndimage.grey_dilation(lab, size=(2 * ero + 3, 2 * ero + 3)) * (a > 40)
     comps = []
     for i in np.argsort(-sizes)[:8]:
         if sizes[i] < 1500: continue
@@ -94,8 +101,8 @@ def main(sheet, name):
             a0, b0 = row_span(m, int(H * .8)); spec[k] = dict(cx=round((a0 + b0) / 2, 1), w=int(b0 - a0))
         rgb = c['img'][m][:, :3]
         print(f'{k:6s} {W}x{H} skin={c["skin"]:.2f}', spec[k])
-    # sleeve colour for the elbow cap: median colour of the upper arm's middle
-    u = parts['upper']; core = u['img'][int(u['img'].shape[0] * .45):int(u['img'].shape[0] * .55)]; mm = core[..., 3] > 250
+    # elbow cap colour: the top of the forearm (sleeve for jackets, skin for t-shirts), away from the outline
+    f = parts['fore']['img']; Hf, Wf = f.shape[:2]; core = f[int(Hf * .12):int(Hf * .3), int(Wf * .3):int(Wf * .7)]; mm = core[..., 3] > 250
     med = np.median(core[mm][:, :3], axis=0).astype(int); spec['sleeve'] = '#%02x%02x%02x' % tuple(med)
     json.dump(spec, open(os.path.join(out, 'spec.json'), 'w'), indent=1)
     write_specs()

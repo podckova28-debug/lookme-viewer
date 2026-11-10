@@ -2,671 +2,1052 @@
  {
   "id": "s00_01",
   "who": "narrador",
-  "text": "Esta maceta está a medio metro de la cabeza de Valeria."
+  "text": "Esta maceta está a medio metro de la cabeza de Renata.",
+  "p": 0
  },
  {
   "id": "s00_02",
   "who": "narrador",
-  "text": "El mundo entero está congelado."
+  "text": "El mundo entero está congelado.",
+  "p": 0
  },
  {
   "id": "s00_03",
   "who": "narrador",
-  "text": "Y tú eres el único que se mueve."
+  "text": "Y tú eres el único que se mueve.",
+  "p": 0
  },
  {
   "id": "s00_04",
   "who": "narrador",
-  "text": "¿Cómo llegaste hasta aquí?"
+  "text": "¿Cómo llegaste hasta aquí?",
+  "p": 0
  },
  {
   "id": "s00_05",
   "who": "narrador",
-  "text": "Empecemos por el principio."
+  "text": "Empecemos por el principio.",
+  "p": 0
  },
  {
   "id": "s01_01",
   "who": "narrador",
-  "text": "Imagina que puedes detener el tiempo."
+  "text": "Imagina que puedes detener el tiempo.",
+  "p": 1
  },
  {
   "id": "s01_02",
   "who": "narrador",
-  "text": "Todo el mundo se queda congelado: tus compañeros, el balón… y Nacho, a mitad de un estornudo."
+  "text": "Todo el mundo se queda congelado: tus compañeros, el balón… y Nacho, a mitad de un estornudo.",
+  "p": 0
  },
  {
   "id": "s01_03",
   "who": "narrador",
-  "text": "Suena increíble."
+  "text": "Suena increíble.",
+  "p": 0
  },
  {
   "id": "s01_04",
   "who": "narrador",
-  "text": "Y lo es."
+  "text": "Y lo es.",
+  "p": 0
  },
  {
   "id": "s01_05",
   "who": "narrador",
-  "text": "Durante unos diez minutos."
+  "text": "Durante unos diez minutos.",
+  "p": 0
  },
  {
   "id": "s01_07",
   "who": "narrador",
-  "text": "Y créeme: el problema no es el tiempo."
+  "text": "Y créeme: el problema no es el tiempo.",
+  "p": 0
  },
  {
   "id": "s01_08",
   "who": "narrador",
-  "text": "El problema eres tú."
+  "text": "El problema es que lo vives solo.",
+  "p": 0
  },
  {
   "id": "s03_01",
   "who": "narrador",
-  "text": "Todo empieza un martes cualquiera."
+  "text": "Todo empieza un martes cualquiera.",
+  "p": 1
  },
  {
   "id": "s03_02",
   "who": "narrador",
-  "text": "Suena la alarma."
+  "text": "Suena la alarma.",
+  "p": 0
  },
  {
   "id": "s03_03",
   "who": "narrador",
-  "text": "Tú aplaudes para despertarte… y la alarma se calla."
+  "text": "Tú aplaudes para despertarte… y la alarma se calla.",
+  "p": 0
  },
  {
   "id": "s03_04",
   "who": "narrador",
-  "text": "No porque la apagaste."
+  "text": "No porque la apagaste.",
+  "p": 0
  },
  {
   "id": "s03_05",
   "who": "narrador",
-  "text": "Porque el mundo entero se detuvo."
+  "text": "Porque el mundo entero se detuvo.",
+  "p": 0
  },
  {
   "id": "s03_06",
   "who": "narrador",
-  "text": "Tu gato Michi se quedó flotando a medio salto."
+  "text": "Tu gato Croqueta se quedó flotando a medio salto.",
+  "p": 0
  },
  {
   "id": "s04_01",
   "who": "narrador",
-  "text": "En la cocina, tu mamá sirve café."
+  "text": "En la cocina, tu mamá sirve café.",
+  "p": 1
  },
  {
   "id": "s04_02",
   "who": "narrador",
-  "text": "Bueno, servía."
+  "text": "Bueno, servía.",
+  "p": 0
  },
  {
   "id": "s04_03",
   "who": "narrador",
-  "text": "El chorro de café está quieto en el aire, como una escultura."
+  "text": "El chorro de café está quieto en el aire, como una escultura.",
+  "p": 0
  },
  {
   "id": "s04_04",
   "who": "narrador",
-  "text": "Lo tocas."
+  "text": "Lo tocas.",
+  "p": 0
  },
  {
   "id": "s04_05",
   "who": "narrador",
-  "text": "Está tibio."
+  "text": "Está tibio.",
+  "p": 0
  },
  {
   "id": "s04_06",
   "who": "narrador",
-  "text": "Aplaudes otra vez, y todo sigue."
+  "text": "Aplaudes otra vez, y todo sigue.",
+  "p": 0
  },
  {
   "id": "s04_07",
   "who": "narrador",
-  "text": "El café también."
+  "text": "El café también.",
+  "p": 0
  },
  {
   "id": "s04_08",
   "who": "narrador",
-  "text": "Sobre la mesa."
+  "text": "Sobre la mesa.",
+  "p": 0
  },
  {
   "id": "s04_08b",
   "who": "mama",
-  "text": "¿Eh? ¿Y la taza?"
+  "text": "¿Eh? ¿Y la taza?",
+  "p": 0
  },
  {
   "id": "s04_09",
   "who": "narrador",
-  "text": "Regla número uno: un aplauso detiene el mundo."
+  "text": "Regla número uno: un aplauso detiene el mundo.",
+  "p": 1
  },
  {
   "id": "s04_10",
   "who": "narrador",
-  "text": "Otro aplauso lo vuelve a encender."
+  "text": "Otro aplauso lo vuelve a encender.",
+  "p": 0
  },
  {
   "id": "s05_01",
   "who": "narrador",
-  "text": "Lo primero que haces con el poder más grande de la historia es… dormir."
+  "text": "Lo primero que haces con el poder más grande de la historia es… dormir.",
+  "p": 1
  },
  {
   "id": "s05_02",
   "who": "narrador",
-  "text": "Detienes el tiempo y duermes ocho horas más."
+  "text": "Detienes el tiempo y duermes ocho horas más.",
+  "p": 0
  },
  {
   "id": "s05_03",
   "who": "narrador",
-  "text": "Despiertas, y siguen siendo las seis cincuenta y nueve."
+  "text": "Despiertas, y siguen siendo las seis cincuenta y nueve.",
+  "p": 0
  },
  {
   "id": "s05_04",
   "who": "narrador",
-  "text": "Es el mejor día de tu vida."
+  "text": "Es el mejor día de tu vida.",
+  "p": 0
  },
  {
   "id": "s06_01",
   "who": "narrador",
-  "text": "Examen de matemáticas."
+  "text": "Examen de matemáticas.",
+  "p": 1
  },
  {
   "id": "s06_02",
   "who": "narrador",
-  "text": "Podrías copiar, claro."
+  "text": "Podrías copiar, claro.",
+  "p": 0
  },
  {
   "id": "s06_03",
   "who": "narrador",
-  "text": "Pero tienes una idea mejor: detienes el tiempo y estudias."
+  "text": "Pero tienes una idea mejor: detienes el tiempo y estudias.",
+  "p": 0
  },
  {
   "id": "s06_04",
   "who": "narrador",
-  "text": "Tres horas, mientras el profe Ramírez se queda congelado con cara de sospecha."
+  "text": "Tres horas, mientras el profe Ramírez se queda congelado con cara de sospecha.",
+  "p": 0
  },
  {
   "id": "s06_05",
   "who": "narrador",
-  "text": "Que, para ser justos, es su cara normal."
+  "text": "Que, para ser justos, es su cara normal.",
+  "p": 0
  },
  {
   "id": "s06_06",
   "who": "narrador",
-  "text": "Entregas el examen en dos minutos."
+  "text": "Entregas el examen en dos minutos.",
+  "p": 1
  },
  {
   "id": "s06_06b",
   "who": "profe",
-  "text": "¿Ya terminaste? ¿Tú?"
+  "text": "¿Ya terminaste? ¿Tú?",
+  "p": 0
  },
  {
   "id": "s06_07",
   "who": "narrador",
-  "text": "Diez de diez."
+  "text": "Diez de diez.",
+  "p": 0
  },
  {
   "id": "s06_08",
   "who": "narrador",
-  "text": "El profe Ramírez lo revisa cuatro veces."
+  "text": "El profe Ramírez lo revisa cuatro veces.",
+  "p": 0
  },
  {
   "id": "s07_01",
   "who": "narrador",
-  "text": "En clase de historia, Nacho se queda dormido."
+  "text": "En clase de historia, Nacho se queda dormido.",
+  "p": 1
  },
  {
   "id": "s07_02",
   "who": "narrador",
-  "text": "Detienes el tiempo y le dibujas un bigote."
+  "text": "Detienes el tiempo y le dibujas un bigote.",
+  "p": 0
  },
  {
   "id": "s07_03",
   "who": "narrador",
-  "text": "Uno elegante, con puntas."
+  "text": "Uno elegante, con puntas.",
+  "p": 0
  },
  {
   "id": "s07_04",
   "who": "narrador",
-  "text": "Nacho se despierta y se ve en el reflejo de la ventana."
+  "text": "Nacho se despierta y se ve en el reflejo de la ventana.",
+  "p": 1
  },
  {
   "id": "s07_04b",
   "who": "nacho",
-  "text": "Mmm… me queda bien."
+  "text": "Mmm… me queda bien.",
+  "p": 0
  },
  {
   "id": "s07_05",
   "who": "narrador",
-  "text": "Lo usa toda la semana."
+  "text": "Lo usa toda la semana.",
+  "p": 0
+ },
+ {
+  "id": "s07_06",
+  "who": "narrador",
+  "text": "El jueves, el bigote tiene algo nuevo.",
+  "p": 1
+ },
+ {
+  "id": "s07_07",
+  "who": "narrador",
+  "text": "Un monóculo.",
+  "p": 0
+ },
+ {
+  "id": "s07_08",
+  "who": "nacho",
+  "text": "Elegante, ¿no?",
+  "p": 0
+ },
+ {
+  "id": "s07_09",
+  "who": "narrador",
+  "text": "Tú no dibujaste ningún monóculo.",
+  "p": 0
  },
  {
   "id": "s08_01",
   "who": "narrador",
-  "text": "A la salida empieza a llover."
+  "text": "A la salida empieza a llover.",
+  "p": 1
  },
  {
   "id": "s08_02",
   "who": "narrador",
-  "text": "Aplaudes."
+  "text": "Aplaudes.",
+  "p": 0
  },
  {
   "id": "s08_03",
   "who": "narrador",
-  "text": "Millones de gotas se quedan colgadas en el aire."
+  "text": "Millones de gotas se quedan colgadas en el aire.",
+  "p": 0
  },
  {
   "id": "s08_04",
   "who": "narrador",
-  "text": "Caminas a casa esquivándolas, una por una."
+  "text": "Caminas a casa esquivándolas, una por una.",
+  "p": 0
  },
  {
   "id": "s08_05",
   "who": "narrador",
-  "text": "Llegas completamente seco."
+  "text": "Llegas completamente seco.",
+  "p": 1
  },
  {
   "id": "s08_06",
   "who": "narrador",
-  "text": "Tu mamá, que te vio salir sin paraguas, decide no hacer preguntas."
+  "text": "Tu mamá, que te vio salir sin paraguas, decide no hacer preguntas.",
+  "p": 0
  },
  {
   "id": "s09_01",
   "who": "narrador",
-  "text": "En el pasillo, a Valeria se le caen los libros."
+  "text": "En el pasillo, a Renata se le caen los libros.",
+  "p": 1
  },
  {
   "id": "s09_02",
   "who": "narrador",
-  "text": "Sí, esa Valeria."
+  "text": "Sí, esa Renata.",
+  "p": 0
  },
  {
   "id": "s09_03",
   "who": "narrador",
-  "text": "Aplaudes, recoges todo, lo ordenas por tamaño y se lo devuelves a sus manos."
+  "text": "Aplaudes, recoges todo, lo ordenas por tamaño y se lo devuelves a sus manos.",
+  "p": 0
  },
  {
   "id": "s09_04",
   "who": "narrador",
-  "text": "Aplaudes otra vez."
+  "text": "Aplaudes otra vez.",
+  "p": 0
  },
  {
   "id": "s09_05",
   "who": "narrador",
-  "text": "Desde su punto de vista, sus libros se cayeron… y volvieron solos."
+  "text": "Desde su punto de vista, sus libros se cayeron… y volvieron solos.",
+  "p": 1
  },
  {
   "id": "s09_05b",
   "who": "valeria",
-  "text": "¿Qué… acaba de pasar?"
+  "text": "¿Qué… acaba de pasar?",
+  "p": 0
  },
  {
   "id": "s09_06",
   "who": "narrador",
-  "text": "Seguramente ahora Valeria cree que la escuela está embrujada."
+  "text": "Seguramente ahora Renata cree que la escuela está embrujada.",
+  "p": 0
  },
  {
   "id": "s09_07",
   "who": "narrador",
-  "text": "No es exactamente la impresión que querías dar."
+  "text": "No es exactamente la impresión que querías dar.",
+  "p": 0
  },
  {
   "id": "s10_01",
   "who": "narrador",
-  "text": "En educación física te toca patear un penal."
+  "text": "En educación física te toca patear un penal.",
+  "p": 1
  },
  {
   "id": "s10_02",
   "who": "narrador",
-  "text": "Tu tiro va directo hacia… la cafetería."
+  "text": "Tu tiro va directo hacia… la cafetería.",
+  "p": 0
  },
  {
   "id": "s10_03",
   "who": "narrador",
-  "text": "Aplaudes."
+  "text": "Aplaudes.",
+  "p": 0
  },
  {
   "id": "s10_04",
   "who": "narrador",
-  "text": "Caminas hasta el balón, lo cargas como a un bebé y lo acomodas en el ángulo."
+  "text": "Caminas hasta el balón, lo cargas como a un bebé y lo acomodas en el ángulo.",
+  "p": 0
  },
  {
   "id": "s10_05",
   "who": "narrador",
-  "text": "Aplaudes."
+  "text": "Aplaudes.",
+  "p": 0
  },
  {
   "id": "s10_06",
   "who": "narrador",
-  "text": "Gol."
+  "text": "Gol.",
+  "p": 0
  },
  {
   "id": "s10_06b",
   "who": "chicos",
-  "text": "¡Gooool!"
+  "text": "¡Gooool!",
+  "p": 0
  },
  {
   "id": "s10_07",
   "who": "narrador",
-  "text": "Nacho, el portero, se queda mirando sus manos durante el resto del día."
+  "text": "Nacho, el portero, se queda mirando sus manos durante el resto del día.",
+  "p": 1
  },
  {
   "id": "s10_07b",
   "who": "nacho",
-  "text": "¿Pero… cómo?"
+  "text": "¿Pero… cómo?",
+  "p": 0
  },
  {
   "id": "s11_01",
   "who": "narrador",
-  "text": "Pero hay un detalle que nadie te explicó."
+  "text": "Pero hay un detalle que nadie te explicó.",
+  "p": 1
  },
  {
   "id": "s11_02",
   "who": "narrador",
-  "text": "Cuando el mundo se detiene, tú no."
+  "text": "Cuando el mundo se detiene, tú no.",
+  "p": 0
  },
  {
   "id": "s11_03",
   "who": "narrador",
-  "text": "Cada siesta, cada hora de estudio, cada penal… tú sí los vives."
+  "text": "Cada siesta, cada hora de estudio, cada penal… tú sí los vives.",
+  "p": 0
  },
  {
   "id": "s11_04",
   "who": "narrador",
-  "text": "En un mes ya llevas trescientas doce horas extra."
+  "text": "En un mes ya llevas trescientas doce horas extra.",
+  "p": 1
  },
  {
   "id": "s11_05",
   "who": "narrador",
-  "text": "Eso son trece días que viviste tú, y nadie más."
+  "text": "Eso son trece días que viviste tú, y nadie más.",
+  "p": 0
+ },
+ {
+  "id": "s11_05b",
+  "who": "narrador",
+  "text": "Trece días en los que tu corazón latió más de un millón de veces… y nadie lo oyó.",
+  "p": 0
  },
  {
   "id": "s11_06",
   "who": "narrador",
-  "text": "Y un día, en el espejo, la ves."
+  "text": "Y un día, en el espejo, la ves.",
+  "p": 0
  },
  {
   "id": "s11_07",
   "who": "narrador",
-  "text": "Una cana."
+  "text": "Una cana.",
+  "p": 0
  },
  {
   "id": "s11_08",
   "who": "narrador",
-  "text": "Tienes dieciséis años."
+  "text": "Tienes dieciséis años.",
+  "p": 0
+ },
+ {
+  "id": "s11b_01",
+  "who": "narrador",
+  "text": "Esa noche, en la cena, tu mamá te mira raro.",
+  "p": 1
+ },
+ {
+  "id": "s11b_02",
+  "who": "mama",
+  "text": "¿No te cortaste el pelo la semana pasada?",
+  "p": 1
+ },
+ {
+  "id": "s11b_03",
+  "who": "narrador",
+  "text": "El pelo crece casi medio milímetro al día. Aunque el mundo esté en pausa.",
+  "p": 0
+ },
+ {
+  "id": "s11b_04",
+  "who": "mama",
+  "text": "Te ves cansado, mi amor.",
+  "p": 1
+ },
+ {
+  "id": "s11b_05",
+  "who": "tu",
+  "text": "Estoy bien, ma.",
+  "p": 1
+ },
+ {
+  "id": "s11b_06",
+  "who": "narrador",
+  "text": "Para ti pasaron trece días. Para ella, un martes.",
+  "p": 1
+ },
+ {
+  "id": "s11b_07",
+  "who": "narrador",
+  "text": "Y no se lo puedes contar a nadie.",
+  "p": 0
  },
  {
   "id": "s12_01",
   "who": "narrador",
-  "text": "Además, en el tiempo detenido nada funciona."
+  "text": "Además, en el tiempo detenido nada funciona.",
+  "p": 1
  },
  {
   "id": "s12_02",
   "who": "narrador",
-  "text": "El celular no carga."
+  "text": "El celular no carga.",
+  "p": 0
  },
  {
   "id": "s12_03",
   "who": "narrador",
-  "text": "El agua no sale de la llave."
+  "text": "El agua no sale de la llave.",
+  "p": 0
  },
  {
   "id": "s12_04",
   "who": "narrador",
-  "text": "Intentas ver una serie… y está en pausa."
+  "text": "Intentas ver una serie… y está en pausa.",
+  "p": 0
  },
  {
   "id": "s12_04b",
   "who": "tu",
-  "text": "Ay, no…"
+  "text": "Ay, no…",
+  "p": 0
  },
  {
   "id": "s12_05",
   "who": "narrador",
-  "text": "Literalmente todo está en pausa."
+  "text": "Literalmente todo está en pausa.",
+  "p": 0
  },
  {
   "id": "s13_01",
   "who": "narrador",
-  "text": "El segundo problema es más ruidoso."
+  "text": "El segundo problema es más ruidoso.",
+  "p": 1
  },
  {
   "id": "s13_01b",
   "who": "chicos",
-  "text": "¡Feliz cumpleaños, Nacho!"
+  "text": "¡Feliz cumpleaños, Nacho!",
+  "p": 0
  },
  {
   "id": "s13_02",
   "who": "narrador",
-  "text": "Es el cumpleaños de Nacho."
+  "text": "Es el cumpleaños de Nacho.",
+  "p": 0
  },
  {
   "id": "s13_02b",
   "who": "nacho",
-  "text": "¡Gracias, gracias!"
+  "text": "¡Gracias, gracias!",
+  "p": 0
  },
  {
   "id": "s13_03",
   "who": "narrador",
-  "text": "Todos cantan, Nacho sopla las velas, y todo el mundo aplaude."
+  "text": "Todos cantan, Nacho sopla las velas, y todo el mundo aplaude.",
+  "p": 0
  },
  {
   "id": "s13_04",
   "who": "narrador",
-  "text": "Tú también."
+  "text": "Tú también.",
+  "p": 0
  },
  {
   "id": "s13_05",
   "who": "narrador",
-  "text": "Por reflejo."
+  "text": "Por reflejo.",
+  "p": 0
  },
  {
   "id": "s13_06",
   "who": "narrador",
-  "text": "Todo se congela."
+  "text": "Todo se congela.",
+  "p": 1
  },
  {
   "id": "s13_07",
   "who": "narrador",
-  "text": "Aplaudes para seguir… pero todos siguen aplaudiendo, y tus manos siguen el ritmo."
+  "text": "Aplaudes para seguir… pero todos siguen aplaudiendo, y tus manos siguen el ritmo.",
+  "p": 0
  },
  {
   "id": "s13_08",
   "who": "narrador",
-  "text": "Congelado."
+  "text": "Congelado.",
+  "p": 0
  },
  {
   "id": "s13_09",
   "who": "narrador",
-  "text": "Sigue."
+  "text": "Sigue.",
+  "p": 0
  },
  {
   "id": "s13_10",
   "who": "narrador",
-  "text": "Congelado."
+  "text": "Congelado.",
+  "p": 0
  },
  {
   "id": "s13_11",
   "who": "narrador",
-  "text": "Sigue."
+  "text": "Sigue.",
+  "p": 0
  },
  {
   "id": "s13_12",
   "who": "narrador",
-  "text": "Para los demás, fue una fiesta normal."
+  "text": "Para los demás, fue una fiesta normal.",
+  "p": 1
  },
  {
   "id": "s13_13",
   "who": "narrador",
-  "text": "Para ti, ese aplauso duró cuarenta minutos."
+  "text": "Para ti, ese aplauso duró cuarenta minutos.",
+  "p": 0
+ },
+ {
+  "id": "s13_13b",
+  "who": "narrador",
+  "text": "Cuarenta minutos, solo, en medio de la canción.",
+  "p": 1
  },
  {
   "id": "s13_14",
   "who": "narrador",
-  "text": "Regla número dos: en las fiestas, te sientas sobre tus manos."
+  "text": "Regla número dos: en las fiestas, te sientas sobre tus manos.",
+  "p": 0
  },
  {
   "id": "s14_01",
   "who": "narrador",
-  "text": "Y el tercer problema es el silencio."
+  "text": "Y el tercer problema es el silencio.",
+  "p": 1
  },
  {
   "id": "s14_02",
   "who": "narrador",
-  "text": "En el tiempo detenido no hay nadie con quien hablar."
+  "text": "En el tiempo detenido no hay nadie con quien hablar.",
+  "p": 0
  },
  {
   "id": "s14_03",
   "who": "narrador",
-  "text": "Así que empiezas a hablar con una paloma."
+  "text": "Así que empiezas a hablar con una paloma.",
+  "p": 0
  },
  {
   "id": "s14_04",
   "who": "narrador",
-  "text": "Le pones Pepe."
+  "text": "Le pones Pepe.",
+  "p": 0
  },
  {
   "id": "s14_05",
   "who": "narrador",
-  "text": "Le cuentas lo de Valeria, lo de la cana, lo del examen."
+  "text": "Le cuentas lo de Renata, lo de la cana, lo del examen.",
+  "p": 1
  },
  {
   "id": "s14_05b",
   "who": "tu",
-  "text": "Y entonces Valeria… bueno, tú me entiendes, Pepe."
+  "text": "Y entonces Renata… bueno, tú me entiendes, Pepe.",
+  "p": 0
  },
  {
   "id": "s14_06",
   "who": "narrador",
-  "text": "Pepe no dice nada."
+  "text": "Pepe no dice nada.",
+  "p": 0
  },
  {
   "id": "s14_07",
   "who": "narrador",
-  "text": "Pepe es, sinceramente, el mejor amigo que has tenido en semanas."
+  "text": "Pepe es, sinceramente, el mejor amigo que has tenido en semanas.",
+  "p": 0
+ },
+ {
+  "id": "s14_08",
+  "who": "narrador",
+  "text": "Hasta que un día llegas a la banca y Pepe está comiendo pan.",
+  "p": 1
+ },
+ {
+  "id": "s14_09",
+  "who": "narrador",
+  "text": "Tú nunca le traes pan.",
+  "p": 0
+ },
+ {
+  "id": "s14_10",
+  "who": "tu",
+  "text": "Pepe… ¿con quién más hablas?",
+  "p": 1
  },
  {
   "id": "s15_01",
   "who": "narrador",
-  "text": "Un viernes, saliendo de la escuela, una maceta cae desde un balcón."
+  "text": "Un viernes, saliendo de la escuela, una maceta cae desde un balcón.",
+  "p": 1
  },
  {
   "id": "s15_02",
   "who": "narrador",
-  "text": "Justo encima de Valeria."
+  "text": "Justo encima de Renata.",
+  "p": 0
  },
  {
   "id": "s15_03",
   "who": "narrador",
-  "text": "Aplaudes."
+  "text": "Aplaudes.",
+  "p": 0
  },
  {
   "id": "s15_04",
   "who": "narrador",
-  "text": "La maceta se queda a medio metro de su cabeza."
+  "text": "La maceta se queda a medio metro de su cabeza.",
+  "p": 0
  },
  {
   "id": "s15_05",
   "who": "narrador",
-  "text": "La bajas con cuidado."
+  "text": "La bajas con cuidado.",
+  "p": 0
  },
  {
   "id": "s15_06",
   "who": "narrador",
-  "text": "Y ahora tienes un problema: si aplaudes, Valeria te verá a su lado. Con una maceta. Salido de la nada."
+  "text": "Y ahora tienes un problema: si aplaudes, Renata te verá a su lado. Con una maceta. Salido de la nada.",
+  "p": 1
  },
  {
   "id": "s15_07",
   "who": "narrador",
-  "text": "Aplaudes de todas formas."
+  "text": "Aplaudes de todas formas.",
+  "p": 0
  },
  {
   "id": "s15_08",
   "who": "valeria",
-  "text": "¿Cómo llegaste tan rápido?"
+  "text": "¿Cómo llegaste tan rápido?",
+  "p": 1
  },
  {
   "id": "s15_09",
   "who": "tu",
-  "text": "Eh… hago mucho ejercicio."
+  "text": "Eh… hago mucho ejercicio.",
+  "p": 1
+ },
+ {
+  "id": "s15_10",
+  "who": "narrador",
+  "text": "Renata te mira de arriba abajo.",
+  "p": 1
+ },
+ {
+  "id": "s15_11",
+  "who": "valeria",
+  "text": "Ya veo.",
+  "p": 1
  },
  {
   "id": "s16_01",
   "who": "narrador",
-  "text": "Esa noche detienes el tiempo para ir a hablar con Pepe."
+  "text": "Esa noche detienes el tiempo para ir a hablar con Pepe.",
+  "p": 1
  },
  {
   "id": "s16_02",
   "who": "narrador",
-  "text": "Pero esta vez, en la banca, hay alguien más."
+  "text": "Pero esta vez, en la banca, hay alguien más.",
+  "p": 0
  },
  {
   "id": "s16_03",
   "who": "narrador",
-  "text": "Alguien que se mueve."
+  "text": "Alguien que se mueve.",
+  "p": 0
+ },
+ {
+  "id": "s16_03b",
+  "who": "narrador",
+  "text": "Y le está dando pan a Pepe.",
+  "p": 1
  },
  {
   "id": "s16_04",
   "who": "valeria",
-  "text": "¿Tú también aplaudes? Qué tierno. Yo chasqueo los dedos."
+  "text": "¿Tú también aplaudes? Qué tierno. Yo chasqueo los dedos.",
+  "p": 1
  },
  {
   "id": "s16_05",
   "who": "tu",
-  "text": "¿Desde cuándo puedes hacer esto?"
+  "text": "¿Desde cuándo puedes hacer esto?",
+  "p": 1
  },
  {
   "id": "s16_06",
   "who": "valeria",
-  "text": "¿Contando el tiempo detenido? Tengo diecinueve años."
+  "text": "¿Contando el tiempo detenido? Tengo diecinueve años.",
+  "p": 1
  },
  {
   "id": "s16_07",
   "who": "narrador",
-  "text": "Resulta que no eres la única persona que puede detener el tiempo."
+  "text": "Resulta que no eres la única persona que puede detener el tiempo.",
+  "p": 1
  },
  {
   "id": "s16_08",
   "who": "narrador",
-  "text": "Y lo de los libros…"
+  "text": "Y lo de los libros…",
+  "p": 0
  },
  {
   "id": "s16_09",
   "who": "narrador",
-  "text": "Valeria nunca estuvo congelada."
+  "text": "Renata nunca estuvo congelada.",
+  "p": 0
  },
  {
   "id": "s16_10",
   "who": "narrador",
-  "text": "Lo vio todo."
+  "text": "Lo vio todo.",
+  "p": 0
  },
  {
   "id": "s16_11",
   "who": "narrador",
-  "text": "Hasta cuando los ordenaste por tamaño."
+  "text": "Hasta cuando los ordenaste por tamaño.",
+  "p": 0
+ },
+ {
+  "id": "s16_12",
+  "who": "valeria",
+  "text": "Y al bigote de Nacho le faltaba algo.",
+  "p": 1
+ },
+ {
+  "id": "s16_13",
+  "who": "tu",
+  "text": "¿¡El monóculo fuiste tú!?",
+  "p": 1
+ },
+ {
+  "id": "s16_14",
+  "who": "valeria",
+  "text": "Tres años en la pausa, sin nadie con quien hablar…",
+  "p": 1
+ },
+ {
+  "id": "s16_15",
+  "who": "valeria",
+  "text": "Bueno. Estaba Pepe.",
+  "p": 0
+ },
+ {
+  "id": "s16_16",
+  "who": "narrador",
+  "text": "El tiempo detenido es el lugar más solitario del mundo.",
+  "p": 1
+ },
+ {
+  "id": "s16_17",
+  "who": "narrador",
+  "text": "A menos que encuentres a alguien que viva en la misma pausa.",
+  "p": 0
+ },
+ {
+  "id": "s16_18",
+  "who": "valeria",
+  "text": "Regla número tres: nunca detengas el tiempo solo.",
+  "p": 1
  },
  {
   "id": "s17_00",
   "who": "narrador",
-  "text": "Aquella maceta, a medio metro de su cabeza… y tú creías que eras el único que se movía."
+  "text": "Aquella maceta, a medio metro de su cabeza… y tú creías que eras el único que se movía.",
+  "p": 0
  },
  {
-  "id": "s17_01",
+  "id": "s17_05",
   "who": "narrador",
-  "text": "¿Y tú qué harías con el tiempo detenido?"
+  "text": "Esa noche, en el parque congelado, se mueven dos personas.",
+  "p": 1
  },
  {
-  "id": "s17_02",
+  "id": "s17_06",
   "who": "narrador",
-  "text": "Déjamelo en los comentarios."
+  "text": "Bueno… dos personas…",
+  "p": 0
  },
  {
-  "id": "s17_03",
+  "id": "s17_07",
   "who": "narrador",
-  "text": "Y si quieres saber qué pasa con Valeria… suscríbete."
+  "text": "…y una paloma.",
+  "p": 0
  },
  {
-  "id": "s17_04",
+  "id": "s17_08",
+  "who": "tu",
+  "text": "Pepe… ¿tú también?",
+  "p": 1
+ },
+ {
+  "id": "s17_09",
   "who": "narrador",
-  "text": "Pepe también quiere saber."
+  "text": "Pepe no dice nada.",
+  "p": 0
+ },
+ {
+  "id": "s17_10",
+  "who": "narrador",
+  "text": "Pero si vuelves a ver este video, fíjate bien: en el mundo congelado, Pepe nunca se puso gris.",
+  "p": 1
+ },
+ {
+  "id": "s18_01",
+  "who": "narrador",
+  "text": "¿Algo de esto es real? Más de lo que crees.",
+  "p": 0
+ },
+ {
+  "id": "s18_02",
+  "who": "narrador",
+  "text": "Uno. ¿Alguna vez miraste un reloj y el segundero pareció quedarse quieto?",
+  "p": 1
+ },
+ {
+  "id": "s18_03",
+  "who": "narrador",
+  "text": "Se llama cronostasis: tu cerebro rellena el instante en que mueves los ojos. Todos detenemos el tiempo un poquito, varias veces al día.",
+  "p": 0
+ },
+ {
+  "id": "s18_04",
+  "who": "narrador",
+  "text": "Dos. Tu cuerpo no se pausa: tu corazón late unas cien mil veces al día, y el pelo crece casi medio milímetro.",
+  "p": 1
+ },
+ {
+  "id": "s18_05",
+  "who": "narrador",
+  "text": "Tres. Tu cabeza es más vieja que tus pies.",
+  "p": 1
+ },
+ {
+  "id": "s18_06",
+  "who": "narrador",
+  "text": "En 2010, unos relojes atómicos demostraron que el tiempo pasa un poquito más rápido cuanto más lejos estás del suelo.",
+  "p": 0,
+  "say": "En dos mil diez, unos relojes atómicos demostraron que el tiempo pasa un poquito más rápido cuanto más lejos estás del suelo."
+ },
+ {
+  "id": "s18_07",
+  "who": "narrador",
+  "text": "Si vivieras treinta centímetros más arriba, envejecerías unas noventa milmillonésimas de segundo más en toda tu vida.",
+  "p": 0
+ },
+ {
+  "id": "s18_08",
+  "who": "narrador",
+  "text": "No es mucho. Pero el tiempo nunca pasa igual para todos.",
+  "p": 1
+ },
+ {
+  "id": "s19_01",
+  "who": "narrador",
+  "text": "¿Y tú qué harías con el tiempo detenido?",
+  "p": 1
+ },
+ {
+  "id": "s19_02",
+  "who": "narrador",
+  "text": "Déjamelo en los comentarios.",
+  "p": 0
+ },
+ {
+  "id": "s19_03",
+  "who": "narrador",
+  "text": "Y si viste a Renata parpadear al principio… tienes muy buen ojo.",
+  "p": 1
+ },
+ {
+  "id": "s19_04",
+  "who": "narrador",
+  "text": "Y si quieres saber quién es Pepe en realidad… suscríbete.",
+  "p": 1
+ },
+ {
+  "id": "s19_05",
+  "who": "narrador",
+  "text": "Pepe ya lo sabe.",
+  "p": 0
  }
 ]

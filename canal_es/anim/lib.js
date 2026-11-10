@@ -108,6 +108,8 @@ function face(g, c, r, p) {
       if (c.lashes) { g.lineWidth = 3.5; g.beginPath(); g.moveTo(x + s * r * .07, y - r * .06); g.lineTo(x + s * r * .15, y - r * .09); g.stroke(); } }
     if (p.brow != null || c.browAlways) { const k = (p.brow || 0) * s, by = ey - r * .3 - wide * r * .06; g.lineWidth = 6; g.beginPath(); g.moveTo(x - r * .12, by - k * r * .06); g.lineTo(x + r * .12, by + k * r * .06); g.stroke(); }
   }
+  if (p.monocle) { const x = ex + lx, y = ey + ly; g.save(); g.strokeStyle = '#c9a227'; g.lineWidth = 6; g.beginPath(); g.arc(x, y, r * .19, 0, 7); g.stroke();
+    g.fillStyle = 'rgba(220,240,255,.25)'; g.fill(); g.lineWidth = 3; g.beginPath(); g.moveTo(x + r * .17, y + r * .08); g.quadraticCurveTo(x + r * .4, y + r * .6, x + r * .22, y + r * .95); g.stroke(); g.restore(); }
   if (c.freckles) { g.fillStyle = 'rgba(160,90,60,.55)'; for (const s of [-1, 1]) for (const [a, b] of [[.3, .22], [.42, .18], [.36, .3]]) { g.beginPath(); g.arc(s * a * r, b * r, 3, 0, 7); g.fill(); } }
   if (p.blush) { g.fillStyle = `rgba(240,120,130,${.35 * p.blush})`; for (const s of [-1, 1]) { g.beginPath(); g.ellipse(s * r * .5, r * .26, r * .14, r * .08, 0, 0, 7); g.fill(); } }
   if (c.glasses) { g.strokeStyle = OUT; g.lineWidth = 5; for (const s of [-1, 1]) { g.beginPath(); g.arc(s * ex, ey, r * .22, 0, 7); g.stroke(); }

@@ -1,0 +1,9 @@
+<!doctype html><html><head><meta charset="utf-8"><style>@font-face{font-family:Bangers;src:url("fonts/Bangers-Regular.ttf")}@font-face{font-family:ComicNeue;src:url("fonts/ComicNeue-Bold.ttf")}html,body{margin:0;background:#000}canvas{display:block}</style></head>
+<body><canvas id="c" width="1920" height="1080"></canvas><script src="lib.js"></script><script src="sets.js"></script><script>
+// one vector set, full frame, without the props scenes draw on top: layout reference for painted plates (?set=name&props=1 adds them)
+const X = document.getElementById('c').getContext('2d'), Q = new URLSearchParams(location.search), n = Q.get('set') || 'kitchen';
+window.render = () => { X.drawImage(SETS[n].bg, 0, 0, W, H, 0, 0, W, H);
+  if (Q.get('props')) { if (n === 'bedroom') { bedBack(X); bedFront(X); nightstand(X); } if (n === 'kitchen') kitchenTable(X); if (n === 'classroom') { teacherDesk(X, 1500); desk(X, 500); desk(X, 1000); }
+    if (n === 'field') { goal(X, 0); goal(X, 1); } if (n === 'party') partyTable(X); if (n === 'park' || n === 'parkNight') { bench(X, 0); bench(X, 1); } if (n === 'bathroom') mirrorGlass(X); } };
+window.ready = Promise.all([document.fonts.load('70px Bangers'), document.fonts.load('70px ComicNeue')]).then(() => true);
+</script></body></html>
