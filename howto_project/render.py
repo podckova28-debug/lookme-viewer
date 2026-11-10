@@ -267,7 +267,10 @@ def main():
                             "-i", "-", "-c:v", "libx264", "-preset", spec.get("preset", "veryfast"), "-crf", "18",
                             "-pix_fmt", "yuv420p", out], stdin=subprocess.PIPE)
     stickers = []
-    for st in spec.get("stickers", []):
+    raw = sorted(spec.get("stickers", []), key=lambda x: x["t"])
+    for j, st in enumerate(raw):
+        # never two callouts at once: cut each one before the next appears
+        if j + 1 < len(raw): st = dict(st, dur=min(st["dur"], raw[j + 1]["t"] - st["t"] - 0.15))
         # a callout belongs to the picture on screen when it appears: only over pictures, cut at that shot's end
         i0 = max([i for i, s0 in enumerate(starts) if s0 <= st["t"]] or [0])
         if not isinstance(shots[i0], ImgShot): continue
