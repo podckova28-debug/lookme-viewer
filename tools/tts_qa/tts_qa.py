@@ -218,8 +218,12 @@ def text_checks(script_text, words, dur):
             garbled_idx.update(widx)
             issues.append({"type": "GARBLED", "t": t, "detail": f"script «{e_txt}» heard «{h_txt}» (sim {ratio:.2f})", "sev": sev})
         elif op == "delete":
-            if all(len(x) <= 2 for x in exp[a1:a2]):
+            NEG = {"не", "ни", "нет", "без"}
+            if all(len(x) <= 2 and x not in NEG for x in exp[a1:a2]):
                 continue  # dropped tiny function word - recogniser noise
+            if any(x in NEG for x in exp[a1:a2]):
+                issues.append({"type": "MISSING", "t": t, "detail": f"NEGATION not heard: «{e_txt}» (meaning flips!)", "sev": 3})
+                continue
             sev = 2 if (a2 - a1) >= 2 else 1
             issues.append({"type": "MISSING", "t": t, "detail": f"not heard: «{e_txt}»", "sev": sev})
         elif op == "insert":
