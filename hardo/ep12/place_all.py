@@ -22,18 +22,18 @@ B={
 15:[("#4","F15",.75,.1,BIG),("care robot tech","F15",.6,.4,S),("Japan: aging fast","F115",.05,.1,S),("2040: need 2.7M","F215",.05,.08,S),("today: <2.2M","F415",.05,.08,S)],
 16:[("the robot lifts.","F16",.62,.15,S),("half engineer","F116",.05,.85,S),("half nurse","F416",.05,.1,S)],
 17:[("#3","F17",.75,.1,BIG),("wind turbine tech","F17",.55,.4,S),("fastest-growing job","F117",.05,.1,S),("~300 ft up","F217",.05,.1,S)],
-18:[("+60% in 10 years","F18",.62,.15,S),("clip in.","F118",.05,.1,S),("size of a bus","F218",.62,.08,S),("solar: +48%","F418",.05,.1,S)],
+18:[("+60% in 10 years","F18",.62,.15,S),("clip in.","F118",.05,.1,S),("solar: +48%","F418",.05,.1,S)],
 19:[("#2","F19",.75,.1,BIG),("AI auditor","F19",.66,.4,S),("who decided?","F119",.05,.1,S),("check it first.","F219",.62,.15,S),("it can't explain itself.","F419",.05,.08,S)],
 20:[("caught.","F220",.05,.1,S),("fake applicants","F20",.25,.85,S),("same face. new name.","F120",.2,.06,S),("EU: Dec 2027","F420",.05,.08,S)],
 21:[("#1","F21",.75,.1,BIG),("robot trainer","F21",.66,.4,S),("learning by copying","F121",.05,.1,S),("first steps.","F221",.62,.15,S),("ready.","F421",.05,.1,S)],
 22:[("up to $48 an hour","F22",.62,.15,S),("7+ hours a day","F122",.05,.1,S),("5'7\" to 5'11\"","F222",.05,.1,S),("role model.","F422",.05,.08,S)],
 23:[("BONUS","F23",.7,.1,BIG),("farmworker","F23",.66,.4,S),("+35 million by 2030","F123",.05,.1,S),("the biggest growth","F223",.25,.85,S),("everyone eats.","F423",.62,.12,S)],
 24:[("drones over fields","F24",.05,.1,S),("sensors in the soil","F124",.05,.08,S),("the farm of the future","F424",.05,.08,S)],
-25:[("new machine = new job","F25",.25,.06,S),("robots need teachers","F125",.05,.1,S),("cars need helpers","F225",.25,.06,S),("AI needs auditors","F425",.05,.06,S)],
+25:[("new machine = new job","F25",.25,.06,S),("robots need teachers","F25",.42,.2,S),("cars need helpers","F225",.25,.06,S),("AI needs auditors","F425",.05,.06,S)],
 26:[("calm. careful. curious.","F26",.05,.1,S),("+ one new skill","F126",.05,.1,S),("now hiring: people","F226",.25,.06,S),("robot caretakers","F426",.05,.06,S)],
 27:[("which one?","F27",.62,.12,S),("tell us below","F127",.3,.85,S),("subscribe!","F227",.38,.06,BIG),("see you in 10 years","F427",.25,.06,S)],
 }
-NOMOVE={'1,000+ firms','see you in 10 years','cooling centers','robot teacher','heat officer','deepfake detective','robotaxi helper','drone supervisor','battery recycler','chief heat officer','data center tech','care robot tech','wind turbine tech','AI auditor','robot trainer','farmworker','hot.','fall sensor','urgent transfer?','half nurse','clip in.','one click.'}
+NOMOVE={'robots need teachers','1,000+ firms','see you in 10 years','cooling centers','robot teacher','heat officer','deepfake detective','robotaxi helper','drone supervisor','battery recycler','chief heat officer','data center tech','care robot tech','wind turbine tech','AI auditor','robot trainer','farmworker','hot.','fall sensor','urgent transfer?','half nurse','clip in.','one click.'}
 p=json.load(open('plan_wish.json'))
 clips={s[1] for b in p['blocks'] for s in b if s[0]=='clip'}
 L={}; occ={}
