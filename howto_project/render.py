@@ -186,15 +186,25 @@ _cal_side = {}
 def draw_sticker(frame, text, t, dur):
     im = callout_img(text)
     a = ease(t / 0.35); b = ease((dur - t) / 0.4); k = min(a, b)
-    # dim the picture behind the callout so it reads instantly
-    dim = Image.new("RGB", frame.size, (20, 18, 16))
-    frame.paste(Image.blend(frame, dim, 0.26 * k))
-    sc = 1.12 - 0.12 * ease(t / 0.35)
+    # lower-third: darken only the bottom band so the picture itself stays visible
+    band = _band()
+    shade = Image.new("RGBA", (W, band.height), (20, 18, 16, 0)); shade.putalpha(band.split()[3].point(lambda v: int(v * k)))
+    frame.paste(shade.convert("RGB"), (0, H - band.height), shade)
+    sc = 0.85 * (1.12 - 0.12 * ease(t / 0.35))
     s = im.resize((int(im.width * sc), int(im.height * sc)), Image.BICUBIC) if sc != 1 else im.copy()
     al = s.split()[3].point(lambda v: int(v * k))
     s.putalpha(al)
-    x = (W - s.width) // 2; y = (H - s.height) // 2 - 20 + int(30 * (1 - a))
+    # bottom-right corner: people in the pictures stand left of centre, animated cards are centred
+    x = W - s.width - 70; y = H - s.height - 60 + int(30 * (1 - a))
     frame.paste(s, (x, y), s)
+
+_bandc = []
+def _band():
+    if not _bandc:
+        bh = 330
+        g = Image.linear_gradient("L").resize((W, bh)).point(lambda v: int(v * 0.42))
+        b = Image.new("RGBA", (W, bh), (20, 18, 16, 255)); b.putalpha(g); _bandc.append(b)
+    return _bandc[0]
 
 # ---------- shots ----------
 class ImgShot:
@@ -256,7 +266,13 @@ def main():
     enc = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
                             "-i", "-", "-c:v", "libx264", "-preset", spec.get("preset", "veryfast"), "-crf", "18",
                             "-pix_fmt", "yuv420p", out], stdin=subprocess.PIPE)
-    stickers = spec.get("stickers", [])
+    stickers = []
+    for st in spec.get("stickers", []):
+        # a callout belongs to the picture on screen when it appears: only over pictures, cut at that shot's end
+        i0 = max([i for i, s0 in enumerate(starts) if s0 <= st["t"]] or [0])
+        if not isinstance(shots[i0], ImgShot): continue
+        d = min(st["dur"], starts[i0] + shots[i0].dur - XF / 2 - st["t"])
+        if d >= 0.9: stickers.append(dict(st, dur=d))
     for f in range(nfr):
         t = f / FPS
         act = [i for i, st in enumerate(starts) if st <= t < st + shots[i].dur] or [len(shots) - 1]

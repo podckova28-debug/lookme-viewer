@@ -3,6 +3,8 @@
 - Voice: Harrison (voice_id 573e5163-59b3-4926-aab1-951ef2985f81). Cheapest engine: `qwen_audio_tts`
   (Qwen TTS Flash, language ru, plain text, no `<#..#>` tags) — 0.13 cr per ~340 chars, 8x cheaper than
   `text2speech_v2`/minimax. Never put the stress mark U+0301 over «е».
+- Do NOT use the free OmniVoice clone (howto_project/gen.py) for Russian narration: the user hears a
+  non-native accent/stress that whisper language-ID does not detect (P(ru)≈0.97, same as Qwen). Use Qwen.
 - **Every TTS line must pass `tools/tts_qa/tts_qa.py` (skill `tts-qa`) before it goes into a render.**
   FAIL lines are re-recorded automatically (3–4 variants in one batch, then `pick`). The user does not
   listen to check voice-overs; never ask them to.

@@ -522,11 +522,53 @@ class Dots:
             d.text((W / 2 - sw / 2, y + 12), self.label, font=f, fill=CREAM)
         return zoom_frame(im, t, self.dur, 1.0, 1.03)
 
+# ---------------------------------------------------------------- archive portraits row
+class Portraits:
+    """4 tall archival portraits (waist-up) side by side, revealed one by one, label bar under each."""
+    PW, PH, TOP = 423, 760, 70
+    def __init__(self, ids, labels, dur):
+        self.dur = dur; self.labels = labels; self.ph = []
+        rot = [-1.2, 0.8, -0.6, 1.1]
+        for i, sid in enumerate(ids):
+            im = Image.open(f"{R.ROOT}/img/{sid}.png").convert("RGB")
+            w, h = im.size
+            ch = int(h * 0.93); cw = int(ch * self.PW / self.PH)
+            if cw > w: cw = w; ch = int(cw * self.PH / self.PW)
+            x0 = (w - cw) // 2
+            big = im.crop((x0, 0, x0 + cw, ch)).resize((int(self.PW * 1.08), int(self.PH * 1.08)), Image.LANCZOS)
+            self.ph.append((big, rot[i % 4]))
+    def frame(self, t):
+        im = R.paper(); d = ImageDraw.Draw(im)
+        n = len(self.ph); gap = 36; side = (W - n * self.PW - (n - 1) * gap) / 2
+        for i, (big, rot) in enumerate(self.ph):
+            k = ease((t - 0.35 * i) / 0.5)
+            if k <= 0: continue
+            # crop window shrinks over time = push in, anchored near the face (upper third)
+            sc = 1.0 + 0.07 * min(1.0, max(0.0, t - 0.35 * i) / max(self.dur, 1e-3))
+            ww, hh = big.width / sc, big.height / sc
+            x0 = (big.width - ww) / 2; y0 = (big.height - hh) * 0.25
+            photo = big.resize((self.PW, self.PH), Image.BILINEAR, box=(x0, y0, x0 + ww, y0 + hh))
+            card = Image.new("RGBA", (self.PW + 24, self.PH + 24), (246, 240, 226, 255))
+            card.paste(photo, (12, 12))
+            card = card.rotate(rot, expand=True, resample=Image.BICUBIC)
+            card.putalpha(card.split()[3].point(lambda v: int(v * k)))
+            x = side + i * (self.PW + gap) - 12; y = self.TOP + int((1 - k) * 90)
+            shadow_paste(im, card, x, y, blur=10, alpha=int(110 * k))
+            kl = ease((t - 0.35 * i - 0.6) / 0.3)
+            if kl > 0 and i < len(self.labels):
+                f = R.font(56); s = self.labels[i]; sw = d.textlength(s, font=f)
+                cx = side + i * (self.PW + gap) + self.PW / 2
+                ly = self.TOP + self.PH + 48 + int((1 - kl) * 20)
+                d.rectangle((cx - sw / 2 - 22, ly, cx + sw / 2 + 22, ly + 82), fill=INK)
+                d.text((cx - sw / 2, ly + 2), s, font=f, fill=CREAM)
+        return zoom_frame(im, t, self.dur, 1.0, 1.03)
+
 _make_old = make
 def make(spec, dur):
     parts = spec.split(":")
     k = parts[0]
     if k == "lineup": return Lineup(parts[1].split(","), parts[2].split("|"), dur)
+    if k == "portraits": return Portraits(parts[1].split(","), parts[2].split("|"), dur)
     if k == "myth":
         a, b = ":".join(parts[1:]).split("|", 1); return Myth(a, b, dur)
     if k == "list":

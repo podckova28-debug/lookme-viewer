@@ -50,3 +50,9 @@ Calibrated on the Mikhasevich long video (Nov 2026): the accented takes («Ма�
   add stress marks on non-«е» vowels: «Патрио́ты Ви́тебщины».
 - NEVER put U+0301 over «е» (the voice then says «э»). Use only а/о/у/ы/и/я/ю.
 - Replace a word that keeps failing with a synonym or reorder the sentence.
+
+## Known blind spot
+
+- Language-ID only catches a strong foreign accent. Wrong word stress / a mild non-native accent passes
+  (OmniVoice clone of Harrison, Nov 2026: QA PASS, P(ru)≈0.97, but the user heard an accent). For Russian use
+  only voices the user has already accepted (Qwen TTS Harrison, minimax Harrison).

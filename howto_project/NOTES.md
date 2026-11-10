@@ -2,7 +2,7 @@
 
 - 7:01, 1920x1080, 30 fps. 17 chapters (script.json), procedural animations (anim.py: Lineup, Myth, Checklist,
   Dots + the pich_long_project set). Cards anchored to whisper word timestamps (plan.py STK).
-- Voice: FREE — OmniVoice (k2-fsa/OmniVoice) voice clone of Harrison on the Higgsfield sandbox CPU
+- v1 voice (REJECTED by the user: audible accent): FREE — OmniVoice (k2-fsa/OmniVoice) voice clone of Harrison on the Higgsfield sandbox CPU
   (gen.py, gen_takes.py; 7.25 s reference, num_step 16, sentence by sentence). 0 credits.
   All 17 chapters passed tools/tts_qa. Re-recorded: ch3 («не» was dropped → NEGATION rule added to tts_qa,
   text rephrased) and ch13 (accent on «А что с психопатами?» → «Теперь о психопатах.»); 2 takes each, `pick`.
@@ -17,3 +17,13 @@
   `cd /home/user/ov/lib && ls | xargs -P 24 -I{} cp -rn {} /tmp/fast/ov/lib/`, `cp -r /home/user/hf /tmp/fast/hf`,
   then run with `OVLIB=/tmp/fast/ov/lib OVHF=/tmp/fast/hf`. Model load is then ~35 s, ~4 min per 20-s take.
 - Never `pkill -f "cp -r"` inside sandbox_exec — it matches and kills its own shell.
+
+## v2 (user feedback: accent, callouts covering things, weak first shot)
+- Voice re-done with Qwen TTS Flash Harrison (all 17 chapters, ~2.3 cr). QA: 17/17 pass (2 minor WARN).
+  OmniVoice passed whisper language-ID (P(ru)≈0.97) but the user still heard an accent → never use it for RU.
+- Callouts: bottom-right corner, 85% size, soft dark band only at the bottom; shown only over pictures
+  (never over animated text cards) and cut at the end of the picture they appear on.
+- plan.py: shots can be anchored to a spoken word: "ID@word" / "ID@word#k" — pictures now match the names
+  (ch3 teacher→Chikatilo, militiaman→Popkov, druzhinnik→Mikhasevich).
+- Opening: anim `portraits:` — 4 archival waist-up B/W portraits (L1–L4, GPT Image 2.6 low 9:16, 2 cr),
+  revealed one by one with labels; reused at the end.
