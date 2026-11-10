@@ -262,3 +262,88 @@ function cakeTape(x, y, u = 1, w = 30) {    // tape holding Dave's cake together
     X.save(); X.lineCap = 'butt'; X.strokeStyle = OUT; X.lineWidth = w; X.beginPath(); X.moveTo(x + x0, y + y0); X.lineTo(x + mix(x0, x1, v), y + mix(y0, y1, v)); X.stroke();
     X.strokeStyle = '#c9c4b8'; X.lineWidth = w - 6; X.stroke(); X.restore(); });
 }
+
+/* ---------- hallway with the front door (open amount drawn per frame) ---------- */
+const DOOR = { x: 760, y: 250, w: 340, h: 694 };
+function bgHall() {
+  const [b, g] = mk(); const { x, y, w, h } = DOOR;
+  g.fillStyle = lg(g, 0, H, [[0, '#5d4a66'], [1, '#4c3c55']]); g.fillRect(0, 0, W, H);
+  g.fillStyle = 'rgba(255,255,255,.05)'; for (let yy = 0; yy < 944; yy += 60) g.fillRect(0, yy, W, 4);
+  // coat hooks, a small mirror, a shoe rack
+  shape(g, q => q.rect(160, 330, 380, 18), '#8a5a3c', 4); for (const hx of [210, 330, 450]) shape(g, q => q.arc(hx, 360, 9, 0, 7), '#e0b45c', 3);
+  shape(g, q => { q.moveTo(205, 368); q.lineTo(170, 560); q.lineTo(270, 560); q.lineTo(225, 368); q.closePath(); }, '#2f6fb5', 4);
+  shape(g, q => { q.moveTo(445, 368); q.lineTo(410, 520); q.lineTo(500, 520); q.lineTo(465, 368); q.closePath(); }, '#c4302b', 4);
+  fillR(g, 1330, 260, 200, 250, 90, '#cfe4f2'); g.strokeStyle = '#8a5a3c'; g.lineWidth = 12; g.beginPath(); rrPath(g, 1330, 260, 200, 250, 90); g.stroke();
+  fillR(g, 1300, 820, 420, 30, 6, '#8a5a3c'); for (const sx of [1340, 1430, 1520, 1610]) shape(g, q => q.ellipse(sx, 808, 34, 14, 0, 0, 7), ['#e2d8c6', '#3b3f52', '#e8382f', '#efe6d6'][(sx / 90 | 0) % 4], 4);
+  // door frame + outside (seen when the door opens)
+  g.fillStyle = lg(g, y, y + h, [[0, '#2c2a5a'], [1, '#4a3a6a']]); g.fillRect(x, y, w, h);
+  g.fillStyle = '#f4f1e0'; g.beginPath(); g.arc(x + 250, y + 90, 22, 0, 7); g.fill();
+  g.strokeStyle = OUT; g.lineWidth = 22; g.strokeRect(x - 11, y - 11, w + 22, h + 11); g.strokeStyle = '#8a5a3c'; g.lineWidth = 14; g.strokeRect(x - 11, y - 11, w + 22, h + 11);
+  shape(g, q => q.rect(x - 60, y - 70, w + 120, 40), '#8a5a3c', 4);
+  g.fillStyle = lg(g, 944, H, [[0, '#5a4636'], [1, '#43352a']]); g.fillRect(0, 944, W, H - 944); g.strokeStyle = OUT; g.lineWidth = 4; g.beginPath(); g.moveTo(0, 944); g.lineTo(W, 944); g.stroke();
+  shape(g, q => q.ellipse(930, 1000, 300, 34, 0, 0, 7), '#8a4f5a', 4);
+  vignette(g, .45); return b;
+}
+function hallDoor(open) {            // the door leaf swings in (drawn narrower as it opens)
+  const { x, y, w, h } = DOOR, dw = w * (1 - .8 * open), x0 = x + w - dw;
+  fillR(X, x0, y, dw, h, 6, '#7a4f3a'); X.strokeStyle = 'rgba(0,0,0,.18)'; X.lineWidth = 6; for (const [py, ph] of [[40, 260], [360, 280]]) X.strokeRect(x0 + 30 * (dw / w), y + py, (w - 60) * (dw / w), ph);
+  shape(X, g => g.arc(x0 + 40 * (dw / w), y + 380, 16, 0, 7), '#e0b45c', 4); return [x0 + 40 * (dw / w), y + 380];
+}
+
+/* ---------- hardware store: tape everywhere ---------- */
+function bgStore() {
+  const [b, g] = mk();
+  g.fillStyle = lg(g, 0, H, [[0, '#5d6b7d'], [1, '#4c5868']]); g.fillRect(0, 0, W, H);
+  for (const sy of [230, 420, 610]) { shape(g, q => q.rect(60, sy, 1000, 16), '#8a5a3c', 4);
+    for (let i = 0; i < 12; i++) { const x = 100 + i * 80; shape(g, q => q.ellipse(x, sy - 30, 32, 30, 0, 0, 7), ['#c9c4b8', '#b8b0a2', '#e3b44c', '#c9c4b8'][i % 4], 4); shape(g, q => q.ellipse(x, sy - 30, 13, 12, 0, 0, 7), '#4c5868', 3); } }
+  fillR(g, 1180, 110, 420, 120, 10, '#e3b44c'); g.font = '74px Bangers'; g.textAlign = 'center'; g.fillStyle = OUT; g.fillText('TAPE & MORE', 1390, 195); g.textAlign = 'left';
+  g.fillStyle = '#d8d1c3'; g.fillRect(0, 944, W, H - 944); g.strokeStyle = 'rgba(0,0,0,.1)'; g.lineWidth = 3; for (let x = 0; x < W; x += 120) { g.beginPath(); g.moveTo(x, 944); g.lineTo(x - 50, H); g.stroke(); }
+  g.strokeStyle = OUT; g.lineWidth = 4; g.beginPath(); g.moveTo(0, 944); g.lineTo(W, 944); g.stroke();
+  vignette(g, .4); return b;
+}
+function storeCounter(cracked) {
+  shape(X, g => g.rect(1100, 600, 820, 24), '#8a5a3c', 4); shape(X, g => g.rect(1100, 624, 820, 330), '#6e5a4a', 4);
+  // card terminal on a stand
+  shape(X, g => g.rect(1236, 520, 14, 80), '#2a2333', 3); fillR(X, 1180, 400, 130, 150, 14, '#2a2333');
+  X.fillStyle = cracked ? '#2b3440' : '#9fe4ff'; X.fillRect(1194, 414, 102, 90);
+  if (!cracked) { text('SIGN', 1245, 452, 30, '#2a2333', 'center', 'Bangers', 0); text('HERE', 1245, 486, 30, '#2a2333', 'center', 'Bangers', 0); }
+  else { X.save(); X.strokeStyle = '#e8f6ff'; X.lineWidth = 3; const r = rng(17); for (let i = 0; i < 8; i++) { const a = i * .8 + r(); X.beginPath(); X.moveTo(1240, 452); X.lineTo(1240 + Math.cos(a) * 70, 452 + Math.sin(a) * 60); X.stroke(); } X.restore(); }
+  // a tower of tape rolls on the counter
+  for (let i = 0; i < 7; i++) { shape(X, g => g.ellipse(1820, 588 - i * 26, 56, 18, 0, 0, 7), '#c9c4b8', 4); shape(X, g => g.ellipse(1820, 588 - i * 26, 22, 7, 0, 0, 7), '#6e5a4a', 3); }
+}
+
+/* ---------- café ---------- */
+function bgCafe() {
+  const [b, g] = mk();
+  g.fillStyle = lg(g, 0, H, [[0, '#7a5a4a'], [1, '#68493c']]); g.fillRect(0, 0, W, H);
+  g.fillStyle = 'rgba(255,255,255,.05)'; for (let x = 0; x < W; x += 140) g.fillRect(x, 0, 70, 944);
+  for (const lx of [420, 960, 1500]) { g.strokeStyle = OUT; g.lineWidth = 4; g.beginPath(); g.moveTo(lx, 0); g.lineTo(lx, 170); g.stroke(); shape(g, q => { q.moveTo(lx - 60, 230); q.quadraticCurveTo(lx, 130, lx + 60, 230); q.closePath(); }, '#2f3a35', 4);
+    const gr = g.createRadialGradient(lx, 240, 5, lx, 240, 420); gr.addColorStop(0, 'rgba(255,210,140,.35)'); gr.addColorStop(1, 'rgba(255,210,140,0)'); g.fillStyle = gr; g.fillRect(0, 0, W, H); }
+  fillR(g, 1460, 330, 360, 230, 10, '#2f3a35'); g.font = '60px Bangers'; g.textAlign = 'center'; g.fillStyle = '#f4f1e0'; g.fillText('COFFEE', 1640, 410); g.font = '34px Bangers'; g.fillStyle = '#fde047'; g.fillText('SNAP FOR SERVICE', 1640, 470); g.fillStyle = '#f7c6dc'; g.fillText('(PLEASE)', 1640, 520); g.textAlign = 'left';
+  g.fillStyle = '#3e2c24'; g.fillRect(0, 944, W, H - 944); g.strokeStyle = OUT; g.lineWidth = 4; g.beginPath(); g.moveTo(0, 944); g.lineTo(W, 944); g.stroke();
+  vignette(g, .45); return b;
+}
+function cafeTable(x, cups = 0) {
+  shape(X, g => g.ellipse(x, 640, 170, 30, 0, 0, 7), '#a8735a', 4); shape(X, g => g.rect(x - 12, 650, 24, 290), '#4e4a58', 4); shape(X, g => g.ellipse(x, 940, 90, 14, 0, 0, 7), '#4e4a58', 4);
+  for (let i = 0; i < cups; i++) { const cx = x - 110 + i * 46; shape(X, g => rrPath(g, cx - 18, 590, 36, 42, 8), '#f4f1ea', 4); shape(X, g => g.ellipse(cx, 592, 16, 5, 0, 0, 7), '#6b4a36', 2); }
+}
+
+/* ---------- sky for the flight: scrolling skyline layers ---------- */
+function bgSky() {
+  const [b, g] = mk(); g.fillStyle = lg(g, 0, H, [[0, '#7fb3e0'], [.7, '#cfe4f2'], [1, '#f2e6c8']]); g.fillRect(0, 0, W, H);
+  for (const [x, y, s] of [[300, 200, 1], [1100, 140, 1.3], [1650, 300, .9]]) for (const [dx, dy, r] of [[0, 0, 60], [60, -20, 70], [130, 0, 55]]) { g.fillStyle = 'rgba(255,255,255,.85)'; g.beginPath(); g.arc(x + dx * s, y + dy * s, r * s, 0, 7); g.fill(); }
+  return b;
+}
+const SKYL = {};
+function skyLayer(seed, cols, base, lit) { const c = document.createElement('canvas'); c.width = W * 2; c.height = H; const g = c.getContext('2d'); skyline(g, 0, W * 2, base, seed, cols, lit); return c; }
+function scrollLayer(c, off) { const o = ((off % W) + W) % W; X.drawImage(c, -o, 0); X.drawImage(c, W * 2 - o, 0); }
+
+/* ---------- small props ---------- */
+function laptopDesk(x, y, screenOn = 1) {      // standing desk seen from the front, laptop back facing us
+  shape(X, g => g.rect(x - 220, y, 440, 22), '#8a5a3c', 4); for (const sx of [-200, 186]) shape(X, g => g.rect(x + sx, y + 22, 14, 944 - y - 22), '#4e4a58', 4);
+  shape(X, g => { g.moveTo(x - 120, y); g.lineTo(x - 104, y - 150); g.lineTo(x + 104, y - 150); g.lineTo(x + 120, y); g.closePath(); }, '#9a95a6', 4);
+  shape(X, g => g.arc(x, y - 78, 16, 0, 7), '#cfcad6', 3); if (screenOn) glow(x, y - 150, 160, .25, '159,228,255');
+}
+function bird(x, y, t, s = 1) { const f = Math.sin(t * 14) * .6; X.save(); X.translate(x, y); X.scale(s, s); X.strokeStyle = OUT; X.lineWidth = 5; X.lineCap = 'round'; X.beginPath(); X.moveTo(-26, -10 * f); X.quadraticCurveTo(-12, -14 - 10 * f, 0, 0); X.quadraticCurveTo(12, -14 - 10 * f, 26, -10 * f); X.stroke(); X.restore(); }
+function cerealBowl(x, y) { shape(X, g => { g.moveTo(x - 80, y - 40); g.quadraticCurveTo(x - 76, y + 10, x, y + 12); g.quadraticCurveTo(x + 76, y + 10, x + 80, y - 40); g.closePath(); }, '#3fb6e8', 4); shape(X, g => g.ellipse(x, y - 40, 80, 14, 0, 0, 7), '#f4f1ea', 4); }
+function flake(x, y, rot, s = 1) { X.save(); X.translate(x, y); X.rotate(rot); X.scale(s, s); shape(X, g => g.ellipse(0, 0, 14, 9, 0, 0, 7), '#e3b44c', 3); X.restore(); }

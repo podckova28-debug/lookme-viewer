@@ -9,9 +9,11 @@ from scipy.signal import butter, sosfilt, resample_poly
 
 SR = 48000
 import re as _re
-DUR = {m[0]: float(m[1]) for m in _re.findall(r"\{ id: '(\w+)', dur: ([\d.]+)", open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'ep05.js')).read())}
+_HERE = os.path.dirname(os.path.abspath(__file__)); _src = open(os.path.join(_HERE, 'ep05.js')).read() + open(os.path.join(_HERE, 'ep05b.js')).read()
+DUR = {m[0]: float(m[1]) for m in _re.findall(r"\{ id: '(\w+)', dur: ([\d.]+)", _src)}
+ORDER = _re.findall(r"'(\w+)'", _re.search(r"const ORDER = \[(.*?)\]", _src).group(1))
 START, acc = {}, 0.0
-for k, d in DUR.items(): START[k] = acc; acc += round(d * 24) / 24      # scenes are whole frames
+for k in ORDER: START[k] = acc; acc += round(DUR[k] * 24) / 24      # scenes are whole frames
 TOTAL = acc
 rng = np.random.default_rng(5)
 N = lambda s: int(round(s * SR))
@@ -157,14 +159,20 @@ def vo(sc, t, name, g=1.0):
     if sr != SR: x = resample_poly(x, SR, sr)
     x = x / (np.max(np.abs(x)) or 1) * .8; put('vo', S(sc, t), x, g); return len(x) / SR
 
-# narration (times line up with the action in ep05.js)
-VO = [('01', .3, 'vo_01.wav'), ('02', .3, 'vo_02.wav'), ('03', .2, 'vo_03a.wav'), ('03', 5.6, 'vo_03b.wav'), ('04', .4, 'vo_04.wav'), ('05', .5, 'vo_05.wav'),
-      ('05b', .3, 'vo_05b_a.wav'), ('05b', 3.0, 'vo_05b_b.wav'), ('05c', .3, 'vo_05c_a.wav'), ('05c', 4.3, 'vo_05c_b.wav'),
-      ('06', .3, 'vo_06_0.wav'), ('06', 3.6, 'vo_06a.wav'), ('06', 8.0, 'vo_06b.wav'),
-      ('B', .3, 'vo_B1.wav'), ('B', 3.15, 'vo_B2.wav'), ('B', 5.6, 'vo_B3.wav'), ('B', 8.6, 'vo_B4.wav'), ('06c', 1.0, 'vo_06c.wav'),
-      ('07', .4, 'vo_08.wav'), ('08', .5, 'vo_09.wav'), ('09', .3, 'vo_10.wav'), ('10', .8, 'vo_11.wav'),
-      ('11', .5, 'vo_12.wav'), ('12', 2.9, 'vo_13.wav'), ('12b', .5, 'vo_12b.wav'), ('13', .2, 'vo_14a.wav'), ('13', 2.15, 'vo_14b.wav'),
-      ('14', .4, 'vo_15a.wav'), ('14', 7.1, 'vo_15b.wav')]
+# narration (times line up with the action in ep05.js / ep05b.js)
+VO = [('01', .3, 'vo_01.wav'), ('02', .3, 'vo_02.wav'), ('N1', .3, 'vo_N1a.wav'), ('N1', 3.0, 'vo_N1b.wav'), ('N1', 5.0, 'vo_N1c.wav'),
+      ('03', .2, 'vo_03a.wav'), ('03', 5.6, 'vo_03b.wav'), ('04', .4, 'vo_04.wav'), ('05', .5, 'vo_05.wav'), ('N2', .3, 'vo_N2.wav'),
+      ('05b', .3, 'vo_05b_a.wav'), ('05b', 3.0, 'vo_05b_b.wav'), ('N12', .4, 'vo_N12.wav'), ('05c', .3, 'vo_05c_a.wav'), ('05c', 4.3, 'vo_05c_b.wav'),
+      ('N10', .3, 'vo_N10a.wav'), ('N10', 3.4, 'vo_N10b.wav'), ('N10', 6.3, 'vo_N10c.wav'), ('N10', 9.6, 'vo_N10d.wav'),
+      ('N20', .3, 'vo_N20a.wav'), ('N20', 4.5, 'vo_N20b.wav'),
+      ('06', .3, 'vo_06_0.wav'), ('06', 3.6, 'vo_06a.wav'), ('06', 8.0, 'vo_06b.wav'), ('N3', .5, 'vo_N3a.wav'), ('N3', 6.0, 'vo_N3b.wav'),
+      ('B', .3, 'vo_B1.wav'), ('B', 3.15, 'vo_B2.wav'), ('B', 5.6, 'vo_B3.wav'), ('B', 8.6, 'vo_B4.wav'),
+      ('N23', .3, 'vo_N23a.wav'), ('N23', 3.0, 'vo_N23b.wav'), ('N4', .3, 'vo_N4a.wav'), ('N4', 3.6, 'vo_N4b.wav'), ('N13', .3, 'vo_N13a.wav'), ('N13', 4.2, 'vo_N13b.wav'),
+      ('06c', 1.0, 'vo_06c.wav'), ('07', .4, 'vo_08v2.wav'),
+      ('N7', .3, 'vo_N7a.wav'), ('N7', 3.4, 'vo_N7b.wav'), ('N7', 6.6, 'vo_N7c.wav'), ('08', .4, 'vo_09v2.wav'), ('09', .3, 'vo_10.wav'), ('10', .8, 'vo_11.wav'),
+      ('11', .5, 'vo_12.wav'), ('12', 2.9, 'vo_13.wav'), ('12b', .5, 'vo_12b.wav'), ('N8', .3, 'vo_N8a.wav'), ('N8', 5.4, 'vo_N8b.wav'),
+      ('N17', .3, 'vo_N17a.wav'), ('N17', 3.0, 'vo_N17b.wav'), ('N9', .3, 'vo_N9a.wav'), ('N9', 2.8, 'vo_N9b.wav'),
+      ('13', .2, 'vo_14a.wav'), ('13', 2.15, 'vo_14b.wav'), ('N19', .4, 'vo_N19a.wav'), ('N19', 3.4, 'vo_N19b.wav'), ('14', .4, 'vo_15a.wav'), ('14', 7.1, 'vo_15b.wav')]
 for sc, t, f in VO:
     if not os.path.exists(os.path.join(vo_dir, f)): print('MISSING', f); continue
     d = vo(sc, t, f); print(f'{f:13s} scene {sc:3s} at {t:4.1f}s  ends {t + d:4.1f}s / {DUR[sc]}s' + ('  OVER' if t + d > DUR[sc] + .2 else ''))
@@ -181,22 +189,27 @@ def ding(f=1760): d = 1.2; t = tt(d); return norm((np.sin(2 * np.pi * f * t) + .
 def slide(d=1.0): return norm(fade(filt(noise(d), 'bandpass', [300, 1500]), .1, .2), .25)
 ARMOR = [0, .12, .28, .44, .56, .72]
 
-# music: calm bed through the day, headphone leak at the bus stop, party, calm bed again for the morning after
-put('mus', 0, fade(bed(START['08']), 1.5, 1.2), .55)
+# music: calm bed through the day, headphone leak at the bus stop, party (from the guests' arrival), calm again at midnight
+put('mus', 0, fade(bed(START['N7']), 1.5, 1.2), .55)
 put('mus', S('06', 3.25), filt(party(2.75, .2 - 3.25 % .5, .7), 'bandpass', [1200, 5000]) * np.r_[np.ones(N(2.45)), np.linspace(1, 0, N(.3))], .35)
-m = party(START['10'] - START['08'] + .45, .25); m = tape_stop(m, .5); put('mus', S('08', 0), fade(m, .3, .01), .7)
-p_len = START['14'] - S('12', 2.5); put('mus', S('12', 2.5), fade(party(p_len + .5, .25 - 2.5 % .5), .05, 1.2), .5)
-put('mus', S('14', .3), fade(bed(DUR['14']), 1.5, 1.0), .5)
+m = party(START['10'] - START['N7'] + .45, (START['09'] + .25 - START['N7']) % .5); m = tape_stop(m, .5); put('mus', S('N7', 0), fade(m, .6, .01), .6)
+p_len = START['N19'] - S('12', 2.5); put('mus', S('12', 2.5), fade(party(p_len + .5, .25 - 2.5 % .5), .05, 1.0), .5)
+put('mus', S('N19', .2), fade(bed(START['14'] - START['N19'] + DUR['14']), 2.0, 1.0), .45)
 
-# ambience
-put('amb', S('01', 0), crickets(DUR['01']) + ambience(DUR['01'], 300, .03)); put('amb', S('01', 0), hum(DUR['01'], .05))
-put('amb', S('02', 0), birds(DUR['02']) + ambience(DUR['02'], 400, .03)); put('amb', S('02', 0), hum(DUR['02'], .07))
-put('amb', S('03', 0), ambience(DUR['03'], 400, .025))
-put('amb', S('05', 0), ambience(DUR['05'] + DUR['05b'] + DUR['05c'], 400, .025))
-put('amb', S('06', 0), ambience(DUR['06'], 700, .07) + birds(DUR['06']) * .6)
-put('amb', S('B', 0), ambience(DUR['B'], 600, .035) + birds(DUR['B']) * .25); put('amb', S('06c', 0), ambience(DUR['06c'], 400, .025))
-put('amb', S('08', 0), ambience(START['14'] - START['08'], 500, .03))
-put('amb', S('14', 0), birds(DUR['14']) + ambience(DUR['14'], 400, .03))
+# ambience by location
+LOC = {'01': 'night', '02': 'morning', 'N1': 'morning', 'N10': 'morning', '03': 'room', '05': 'room', '05b': 'room', '05c': 'room', 'N12': 'room', 'N20': 'room', '06c': 'room',
+       '06': 'street', 'N4': 'street', 'B': 'shop', 'N13': 'shop', 'N23': 'cafe', 'N3': 'wind', 'N7': 'room', 'N19': 'night', '14': 'morning'}
+for sc, kind in LOC.items():
+    d = DUR[sc]
+    if kind == 'night': put('amb', S(sc, 0), crickets(d) + ambience(d, 300, .03))
+    elif kind == 'morning': put('amb', S(sc, 0), birds(d) + ambience(d, 400, .03))
+    elif kind == 'room': put('amb', S(sc, 0), ambience(d, 400, .025))
+    elif kind == 'street': put('amb', S(sc, 0), ambience(d, 700, .07) + birds(d) * .6)
+    elif kind == 'shop': put('amb', S(sc, 0), ambience(d, 600, .035) + birds(d) * .2)
+    elif kind == 'cafe': put('amb', S(sc, 0), ambience(d, 900, .05))
+    elif kind == 'wind': put('amb', S(sc, 0), fade(filt(noise(d), 'bandpass', [200, 1200]) * (.6 + .4 * np.sin(2 * np.pi * .4 * tt(d))), .3, .3) * .12)
+put('amb', S('01', 0), hum(DUR['01'], .05)); put('amb', S('02', 0), hum(DUR['02'], .07)); put('amb', S('N1', 0), hum(DUR['N1'], .07))
+put('amb', S('08', 0), ambience(START['N19'] - START['08'], 500, .03))
 
 # sfx
 def fx(sc, t, x, g=1.0):
@@ -241,8 +254,37 @@ fx('10', .3, power_down(), .8); fx('10', .3, click(), .8)
 fx('11', 2.72, snap(), 1.0)
 fx('12', .15, glass(), .9)
 for d in ARMOR: fx('12', .4 + d, whoosh(.4), .35); fx('12', .4 + d + .42, clank(1 + d * .3), .5)
-fx('12', 1.3, power_up(), .7); put('amb', S('12', 1.6), hum(START['14'] - S('12', 1.6), .05)); fx('12', 2.4, click(), .8); fx('12', 2.42, thunk(), .9)
+fx('12', 1.3, power_up(), .7); put('amb', S('12', 1.6), hum(START['13'] + DUR['13'] - S('12', 1.6), .05)); fx('12', 2.4, click(), .8); fx('12', 2.42, thunk(), .9)
 fx('13', 3.35, blow(), 1.0); fx('13', 3.95, horn(), .7); fx('13', 5.15, slurp(), .9)
+# new scenes
+fx('N1', 2.55, puff_snd(), .9); fx('N1', 3.25, puff_snd(), .9); fx('N1', 4.9, power_up(), .5)
+fx('N2', .2, pop(), .8)
+for a in (1.3, 2.0, 2.7, 3.6): fx('N2', a, crinkle(.35), .9)
+fx('N12', 1.4, crinkle(2.2), 1.0)
+for k in range(10): fx('N12', 1.6 + k * .2, tick(), .25)
+fx('N12', 4.7, slurp(), .8)
+for k in range(7): fx('N20', .2 + k * .4, thup(), .5)
+fx('N20', 3.0, sweep(180, 120, .6, 1) * expd(.6, .3) * .4, .6); fx('N20', 4.15, whoosh(.3, 400, 3000), .4); fx('N20', 4.3, crinkle(2.0), .7); fx('N20', 6.35, whoosh(.25, 800, 4000), .4); fx('N20', 6.8, ding(1568), .5)
+fx('N10', .3, ding(1320), .3); fx('N10', 3.3, ding(1760), .25)
+for a in [4.0, 4.9, 5.6, 6.2, 6.7, 7.1, 8.2, 8.9]: fx('N10', a, filt(snap(), 'bandpass', [1000, 4000]), .7 if a < 7.5 else .45)
+for a in [8.2, 8.9]: fx('N10', a + .05, thup(), .7)
+fx('N10', 9.75, pop(), .5)
+fx('N3', 0, fade(filt(noise(DUR['N3']), 'bandpass', [400, 2500]), .3, .3) * .15, 1.0); fx('N3', 5.35, thunk(), 1.0); fx('N3', 5.38, clank(.7, .8), .7); fx('N3', 5.5, whoosh(.6, 300, 2000), .5)
+fx('N3', 9.0, thunk(), 1.0); fx('N3', 9.02, filt(noise(.6), 'lowpass', 300) * expd(.6, .15), 1.0)
+fx('N23', .7, snap(), .7)
+for a in (2.8, 5.0, 6.6): fx('N23', a, snap())
+for a in (4.2, 6.4, 8.2): fx('N23', a, ding(2637)[:N(.4)], .4)
+for a in (1.9, 3.3, 5.3): fx('N4', a, norm(filt(noise(.12), 'lowpass', 3000) * expd(.12, .02), 1.0), .9)
+fx('N4', 6.4, whoosh(1.2, 200, 800), .2)
+fx('N13', 1.9, np.sin(2 * np.pi * 1975 * tt(.15)) * .25, 1.0); fx('N13', 3.0, glass()[:N(.6)], .8); fx('N13', 3.0, click(), 1.0); fx('N13', 3.6, pop(), .6)
+fx('N7', .05, ding(1319), .5); fx('N7', .45, ding(1047), .5)
+for a in (3.3, 6.5): fx('N7', a, whoosh(.3, 500, 3000), .35)
+for a in (1.4, 4.7, 7.9): fx('N7', a, thup(), .8)
+fx('N8', .05, thunk(), .6); fx('N8', .25, thunk(), .6)
+fx('N17', 2.35, click(), 1.0); fx('N17', 2.38, filt(noise(.5), 'highpass', 3000) * expd(.5, .1), .5)
+for a in (.9, 1.4, 1.9): fx('N17', a, tick(), .8)
+fx('N9', 1.0, crinkle(.9), 1.0); fx('N9', 2.6, ding(1568), .5)
+
 # 14 the morning after
 fx('14', .3, ding(2349), .35); fx('14', 1.4, ding(1975), .25)
 fx('14', 3.8, snap()); fx('14', 3.9, glass(), 1.0)

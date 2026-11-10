@@ -213,18 +213,19 @@ const SCENES = [
   letterbox();
 } },
 /* 07: counters card (7 snaps, 4 windows) with Dave and a stack of tape */
-{ id: '07', dur: 5.3, draw(t) {
+{ id: '07', dur: 6.6, draw(t) {
   card(t, '#4a3a52', () => {
-    const n1 = Math.min(7, Math.floor(R(t, .9, 1.95, x => x) * 7.99)), n2 = Math.min(4, Math.floor(R(t, 2.3, 2.95, x => x) * 4.99));
-    X.save(); X.translate(150, 230); X.scale(pop(t, .3, 1), pop(t, .3, 1)); X.translate(-150, -230); fillR(X, 150, 230, 820, 190, 18, '#fde047', 8); text('6:00 PM', 190, 210, 64, '#fde047', 'left', 'Bangers', 8); text(`SNAPS: ${n1}`, 200, 360, 130, '#141014'); X.restore();
-    if (t > 2.15) { X.save(); X.translate(150, 470); X.scale(pop(t, 2.15, 1), pop(t, 2.15, 1)); X.translate(-150, -470); fillR(X, 150, 470, 820, 190, 18, '#fde047', 8); text(`WINDOWS: ${n2}`, 200, 600, 130, '#141014'); X.restore(); }
+    const n1 = Math.min(7, Math.floor(R(t, .9, 1.95, x => x) * 7.99)), n2 = Math.min(3, Math.floor(R(t, 2.3, 2.95, x => x) * 3.99));
+    const row = (y, a, s) => { if (t <= a) return; X.save(); X.translate(150, y); X.scale(pop(t, a, 1), pop(t, a, 1)); X.translate(-150, -y); fillR(X, 150, y, 820, 170, 18, '#fde047', 8); text(s, 200, y + 125, 116, '#141014'); X.restore(); };
+    if (t > .3) text('6:00 PM', 190, 160, 64, '#fde047', 'left', 'Bangers', 8);
+    row(190, .3, `SNAPS: ${n1}`); row(400, 2.15, `WINDOWS: ${n2}`); row(610, 3.35, 'SCREENS: 1');
     X.save(); X.translate(1430, 990); X.scale(.85, .85); X.translate(-1430, -990); dave(t, 1430, 990, { noMug: 1, tapeRoll: 1, handR: [1580, 640], handL: [1300, 700], blink: blinkAmt(t, [2.8]) }); X.restore();
-    for (let i = 0; i < 4; i++) if (t > 3.75 + i * .2) { const y = 600 - i * 52; shape(X, g => g.ellipse(1640, y, 60, 26, 0, 0, 7), '#c9c4b8'); shape(X, g => g.ellipse(1640, y, 24, 10, 0, 0, 7), '#4a3a52', 4); }
+    for (let i = 0; i < 4; i++) if (t > 4.4 + i * .2) { const y = 600 - i * 52; shape(X, g => g.ellipse(1640, y, 60, 26, 0, 0, 7), '#c9c4b8'); shape(X, g => g.ellipse(1640, y, 24, 10, 0, 0, 7), '#4a3a52', 4); }
   });
   letterbox();
 } },
 /* 08: the party. Everyone is happy, he keeps his hands in his pockets */
-{ id: '08', dur: 3.6, draw(t) { party(t, 'hands'); } },
+{ id: '08', dur: 4.6, draw(t) { party(t, 'hands'); } },
 /* 09: everybody starts snapping to the music; he sweats */
 { id: '09', dur: 4.6, draw(t) { party(t, 'snapping'); } },
 /* 10: the power goes out */
@@ -254,7 +255,7 @@ const SCENES = [
     burst('SNAP!', gx + 230, ht - 230, .6, bump(t, 4.3, 4.8), .15);
     burst('CRASH!', 1560, 230, .9, bump(t, 4.5, 5.2), -.12);
   }
-  caption('WINDOWS: 6', R(t, 6.2, 6.45));
+  caption('WINDOWS: 5', R(t, 6.2, 6.45));
   letterbox();
 } },
 ];
@@ -294,7 +295,8 @@ function party(t, mode, opt = {}) {
   const dd = opt.daveDance, dk = dd === undefined ? 0 : R(dd, .5, 1.0);
   dave(t, dg, gy - 30, { bounce: dk * Math.abs(Math.sin(t * Math.PI * 2)) * 6, headRot: dk * Math.sin(t * Math.PI * 2) * .07, partyHat: 1, blink: wishEyes ? 1 : blinkAmt(t, [2.2, 4.4]), blowO: mode === 'wish' ? bump(t, 3.3, 3.9) : 0, lift: mode === 'wish' ? R(t, 5.0, 5.4) * (1 - R(t, 5.85, 6.2)) : 0, steam: 1,
     happy: (mode === 'wish' && t > 3.9 && t < 4.9) || (dd !== undefined && dd > 3.2), look: mode === 'hands' ? [14, 0] : [5, 0],
-    ...(dd !== undefined ? { lift: R(dd, 2.6, 3.0) * (1 - R(dd, 4.0, 4.4)) * .45, steam: 0 } : {}) });
+    ...(dd !== undefined ? { lift: R(dd, 2.6, 3.0) * (1 - R(dd, 4.0, 4.4)) * .45, steam: 0 } : {}), ...(opt.daveP || {}) });
+  if (opt.preTable) opt.preTable(t);
   partyTable(t, lit);
   // the hero on the right
   const pockets = mode === 'hands' || mode === 'snapping' || (mode === 'dark') || (mode === 'onesnap' && t < 1.0);
@@ -308,12 +310,14 @@ function party(t, mode, opt = {}) {
   if (mode === 'suit') { armorFlights(t, suitT0, [LWIN.x + 200, LWIN.y + 150], hg, gy); clankFlash(t, suitT0, hg, gy); shards(t, .2, [LWIN.x + 250, LWIN.y + 200], 16, 7); }
   if (mode === 'suit' || mode === 'wish') { const on = mode === 'wish' || t > 2.4; speaker(hg + 260, gy, on, t);
     X.strokeStyle = OUT; X.lineWidth = 8; X.beginPath(); X.moveTo(hg + 260, gy - 90); X.quadraticCurveTo(hg + 200, gy - 20, hg + 30, TOP(gy) + 110); X.stroke(); X.strokeStyle = '#3b3f52'; X.lineWidth = 4; X.stroke(); }
+  if (opt.extra) opt.extra(t);
   if (music) musicNotes(mode === 'snapping' ? 700 : hg + 230, 420, t, 1);
   // light: lamp off in the dark; the chest becomes the light source
   const chestOn = mode === 'suit' ? R(t, 1.3, 1.9) : (mode === 'wish' ? 1 : 0);
   const lights = [lightAt(960, 600, 260 * lit, .9)];
   if (chestOn > 0) lights.push(lightAt(hg, TOP(gy) + 96, 1400 * chestOn, 1));
   if (mode === 'onesnap') lights.push(lightAt(hg, 600, 520, .55));
+  for (const [x, y, r, k] of (opt.lights || [])) lights.push(lightAt(x, y, r, k));
   darkness(dark * .86 * (1 - .15 * chestOn), lights);
   if (chestOn > 0) { glow(hg, TOP(gy) + 96, 900 * chestOn, .16, '110,190,255');
     if (mode === 'suit' && t > 2.6 || mode === 'wish') { X.save(); X.globalCompositeOperation = 'lighter'; X.globalAlpha = .13; X.fillStyle = '#9fe4ff';

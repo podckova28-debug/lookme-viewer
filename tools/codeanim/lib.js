@@ -123,6 +123,8 @@ function head(cx, cy, r, rot, o) {
     shape(X, g => { g.moveTo(-r * .95, -r * .25); g.quadraticCurveTo(-r * .9, -r * 1.05, 0, -r * 1.02); g.quadraticCurveTo(r * .9, -r * 1.05, r * .95, -r * .25); g.closePath(); }, o.hairCol || '#2f7d5b', 4);
     shape(X, g => rrPath(g, r * .2, -r * .4, r * 1.05, r * .2, r * .08), o.hairCol || '#2f7d5b', 4);
   }
+  if (o.hair === 'nightcap') { shape(X, g => { g.moveTo(-r * .95, -r * .3); g.quadraticCurveTo(-r * .7, -r * 1.25, r * .3, -r * 1.2); g.quadraticCurveTo(r * 1.1, -r * 1.1, r * 1.35, -r * .2); g.quadraticCurveTo(r * .7, -r * .75, r * .95, -r * .3); g.closePath(); }, o.hairCol || '#5d70a3', 4);
+    shape(X, g => g.arc(r * 1.38, -r * .14, r * .16, 0, 7), '#f4f1ea', 4); shape(X, g => rrPath(g, -r, -r * .42, r * 2, r * .2, r * .1), '#f4f1ea', 4); }
   if (o.hair === 'chef') { for (const [a, b, rr] of [[-.45, -1.25, .36], [0, -1.42, .42], [.45, -1.25, .36], [-.2, -1.6, .3], [.25, -1.58, .3]]) shape(X, g => g.arc(a * r, b * r, rr * r, 0, 7), '#fbf8f2', 4);
     shape(X, g => rrPath(g, -r * .72, -r * 1.12, r * 1.44, r * .34, r * .08), '#fbf8f2', 4); }
   if (o.hair === 'band') shape(X, g => { g.moveTo(-r * .97, -r * .38); g.quadraticCurveTo(0, -r * .62, r * .97, -r * .38); g.lineTo(r * .9, -r * .55); g.quadraticCurveTo(0, -r * .8, -r * .9, -r * .55); g.closePath(); }, o.hairCol || '#e8b64a', 4);
@@ -230,14 +232,17 @@ function clankFlash(t, t0, gx, gy, sc = 1, dur = .42) {
 /* ---------- people ---------- */
 /* generic person. spec: {col, colD, hair, hairCol, legs, r, sc}  pose: see fields used below */
 function person(t, gx, gy, spec, p = {}) {
-  const sc = spec.sc || 1, r = (spec.r || 100) * sc, br = Math.sin(t * 2.2 + (spec.ph || 0)) * 2.5 * sc + (p.bounce || 0);
+  const sc = spec.sc || 1, r = (spec.r || 100) * sc, br = Math.sin(t * 2.2 + (spec.ph || 0)) * 2.5 * sc + (p.bounce || 0) + (p.walk !== undefined ? Math.abs(Math.cos(p.walk)) * 7 * sc : 0);
   const jit = p.jitter ? (Math.sin(t * 23) * .7 + Math.sin(t * 37 + 1) * .3) * p.jitter : 0, K = 'P' + (spec.id ||= ++SMID);
   const top = gy - 460 * sc - br + sm('P' + (spec.id ||= ++SMID) + 'sl0', t, p.slump || 0, .12) * 12 - (p.inhale || 0) * 7, A = p.armor || {};
   const Y = spec.col, Yd = spec.colD, LEG = spec.legs || '#efe6d6';
   if (!p.noShadow) floorShadow(gx, gy - 4 * sc, 125 * sc, .45);
   // legs
+  const wk = p.walk, wf = (dx) => wk === undefined ? [0, 0] : [Math.sin(wk + (dx > 0 ? Math.PI : 0)) * 34 * sc, -Math.max(0, Math.cos(wk + (dx > 0 ? Math.PI : 0))) * 16 * sc];
   for (const [dx, k] of [[-30, 'legL'], [30, 'legR']]) {
-    if (A[k]) { tube([[gx + dx * sc, gy - 200 * sc], [gx + dx * sc, gy - 22 * sc]], RED, 34 * sc); shape(X, g => g.arc(gx + dx * sc, gy - 110 * sc, 13 * sc, 0, 7), GOLD, 4); shape(X, g => g.ellipse(gx + dx * sc + (dx > 0 ? 10 : -10), gy - 10 * sc, 30 * sc, 14 * sc, 0, 0, 7), RED, 4); }
+    const [fx, fy] = wf(dx);
+    if (wk !== undefined && !A[k]) { tube([[gx + dx * sc, gy - 200 * sc], [gx + dx * sc + fx, gy - 12 * sc + fy]], LEG, 16 * sc); shape(X, g => g.ellipse(gx + dx * sc + fx + (p.face || 1) * 8, gy - 8 * sc + fy, 22 * sc, 10 * sc, 0, 0, 7), spec.shoes || '#e2d8c6', 4); continue; }
+    if (A[k]) { tube([[gx + dx * sc, gy - 200 * sc], [gx + dx * sc + fx, gy - 22 * sc + fy]], RED, 34 * sc); shape(X, g => g.arc(gx + dx * sc, gy - 110 * sc, 13 * sc, 0, 7), GOLD, 4); shape(X, g => g.ellipse(gx + dx * sc + (dx > 0 ? 10 : -10), gy - 10 * sc, 30 * sc, 14 * sc, 0, 0, 7), RED, 4); }
     else { tube([[gx + dx * sc, gy - 200 * sc], [gx + dx * sc, gy - 12 * sc]], LEG, 16 * sc); shape(X, g => g.ellipse(gx + dx * sc + (dx > 0 ? 8 : -8), gy - 8 * sc, 22 * sc, 10 * sc, 0, 0, 7), spec.shoes || '#e2d8c6', 4); }
   }
   gx += Math.sin(t * .9 + (spec.ph || 0) * 2.1) * 3.5 * sc * (p.still ? 0 : 1);           // idle weight shift (feet stay planted)
@@ -258,6 +263,7 @@ function person(t, gx, gy, spec, p = {}) {
   const mL = p.mittL ?? p.mitts, mR = p.mittR ?? p.mitts;
   spec._hl = h;
   if (!p.pockets) { if (mL) ovenMitt(h[0], h[1], 1.0 * sc, Math.atan2(h[1] - e[1], h[0] - e[0]), 1); else mitten(h[0], h[1], 18 * sc, handCol('armL')); }
+  if (p.behind) { const [e2, h2] = ik(gx + sh, syR, hr[0], hr[1], 108 * sc, 104 * sc, 2); limb([gx + sh, syR], e2, h2, armCol('armR'), 36 * sc, cuffCol('armR')); mitten(h2[0], h2[1], 20 * sc, handCol('armR')); }
   if (p.cup) { shape(X, g => rrPath(g, h[0] - 18 * sc, h[1] - 52 * sc, 36 * sc, 46 * sc, 8), '#f4f1ea', 4); shape(X, g => g.rect(h[0] - 18 * sc, h[1] - 52 * sc, 36 * sc, 12 * sc), '#8a5a3c', 4); }
   // torso
   const torso = g => {
@@ -271,6 +277,7 @@ function person(t, gx, gy, spec, p = {}) {
     shape(X, g => g.arc(gx, top + 96 * sc, 30 * sc, 0, 7), '#cdf3ff', 4);
     glow(gx, top + 96 * sc, (44 + 90 * (p.chestGlow || 0)) * sc, .55 + .3 * (p.chestGlow || 0));
   } else {
+    (p.layers || []).forEach((c, i) => { const k = (p.layers.length - i) * 9 * sc; shape(X, g => { g.moveTo(gx - 60 * sc - k * .3, top + 2); g.lineTo(gx, top + 52 * sc + k); g.lineTo(gx + 60 * sc + k * .3, top + 2); }, c, 4); });
     shape(X, g => { g.moveTo(gx - 56 * sc, top + 2); g.lineTo(gx, top + 52 * sc); g.lineTo(gx + 56 * sc, top + 2); }, Yd, 4);
     shape(X, g => { g.moveTo(gx - 58 * sc, gy - 288 * sc); g.lineTo(gx + 58 * sc, gy - 288 * sc); g.lineTo(gx + 72 * sc, gy - 226 * sc); g.lineTo(gx - 72 * sc, gy - 226 * sc); g.closePath(); }, 'rgba(0,0,0,.08)', 4);
     if (p.chestLight) { glow(gx, top + 96 * sc, (40 + 90 * p.chestLight) * sc, .95 * p.chestLight); shape(X, g => g.arc(gx, top + 96 * sc, 16 * sc, 0, 7), 'rgba(220,250,255,.9)', 0); }
@@ -281,6 +288,7 @@ function person(t, gx, gy, spec, p = {}) {
   head(hx, hy, r, p.headRot || 0, { hair: spec.hair, hairCol: spec.hairCol, helmet: A.helmet, blink: p.blink, mouth: p.mouth, mouthOpen: p.mouthOpen, mouthO: p.mouthO, wavy: p.wavy,
     look: p.look, brow: p.brow, lid: p.lid, wide: p.wide, happy: p.happy, headphones: p.headphones, sweat: p.sweat, t, partyHat: p.partyHat, faceplate: p.faceplate, eyes: p.eyes });
   // near (right) arm in front
+  if (p.behind) { spec._hr = hr; return; }
   if (p.snapR !== undefined) hr = [hr[0], hr[1] + 9 * sc * clamp(p.snapR * 2)];      // the wrist flicks down on the snap
   [e, h] = ik(gx + sh, syR, hr[0], hr[1], 108 * sc, 104 * sc, 2); limb([gx + sh, syR], e, h, armCol('armR'), 36 * sc, p.pockets ? null : cuffCol('armR'));
   spec._hr = h;

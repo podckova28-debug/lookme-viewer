@@ -3,7 +3,7 @@
 # usage: tools/codeanim/make_ep05.sh TMPDIR [skip-render]   (run from the repo root)
 set -e
 TMP=$1; mkdir -p $TMP out
-IDS="01 02 03 04 05 05b 05c 06 B 06c 07 08 09 10 11 12 12b 13 14"
+IDS=$(grep -o "const ORDER = \[.*\]" tools/codeanim/ep05b.js | grep -o "'[A-Za-z0-9]*'" | tr -d "'" | tr '\n' ' ')
 if [ "$2" != "skip-render" ]; then
   (cd tools/codeanim && for id in $IDS; do node render_scene.js ep05.html $id $TMP/s$id.mp4; done)
 fi
