@@ -127,7 +127,8 @@ with Pool(4) as pool:
 open(os.path.join(OUT,"segs.txt"),"w").write("".join(f"file '{s}'\n" for s in segs))
 run(["ffmpeg","-y","-f","concat","-safe","0","-i",os.path.join(OUT,"segs.txt"),"-c","copy",os.path.join(OUT,"video_silent.mp4")])
 inputs=[]; [inputs.extend(["-i",os.path.join(VO,f"{i:02d}.mp3")]) for i in range(1,n+1)]
-fc = "".join(f"[{i}:a]aresample=44100,atempo={TEMPO},apad=whole_dur={vdur[i]+GAP:.5f},atrim=end={vdur[i]+GAP:.5f}[a{i}];" for i in range(n))  # ep14: atempo output runs ~30 ms short per block; pad each block to its planned length so cuts and subtitles do not drift + "".join(f"[a{i}]" for i in range(n)) + f"concat=n={n}:v=0:a=1,loudnorm=I=-16:TP=-1.5[a]"
+# ep14: atempo/apad lose ~30 ms per block; pad each block to its planned length so cuts and subtitles do not drift
+fc = "".join(f"[{i}:a]aresample=44100,atempo={TEMPO},apad=whole_dur={vdur[i]+GAP:.5f},atrim=end={vdur[i]+GAP:.5f}[a{i}];" for i in range(n)) + "".join(f"[a{i}]" for i in range(n)) + f"concat=n={n}:v=0:a=1,loudnorm=I=-16:TP=-1.5[a]"
 run(["ffmpeg","-y",*inputs,"-filter_complex",fc,"-map","[a]","-c:a","aac","-b:a","192k",os.path.join(OUT,"voice.m4a")])
 VOICE = os.path.join(OUT,"voice.m4a")
 def sfx_track():
