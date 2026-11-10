@@ -116,3 +116,8 @@ Prompt rule: every scene prompt names only the hero, the one object the line is 
 - label_arrow.py still passed 2 wrong arrows of 18 (ep10: "the Daily Brief" ended on the credenza behind the desk,
   "you read every one." on the armchair back) because the whole desk/chair drawing is one connected component.
   The eyeball pass over every arrow frame stays mandatory; turn such labels into text-only.
+- Ep10 owner check ("borrowed."): the arrow tip sat exactly on the far corner of the desk top where it meets the wall
+  panelling, so it read as pointing at the wall. A tip on the outer corner or edge line of an object is not enough: it must
+  land visibly inside the object's surface. When fixing an arrow by hand, set its start point ON the text box edge
+  (assemble_ep only moves starts that lie inside the box; a start at the text origin is above the box and the arrow then
+  runs down the side of the first letter). Check the fixed arrow in a frame grabbed from the final video.
