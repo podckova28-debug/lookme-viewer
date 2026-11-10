@@ -563,12 +563,50 @@ class Portraits:
                 d.text((cx - sw / 2, ly + 2), s, font=f, fill=CREAM)
         return zoom_frame(im, t, self.dur, 1.0, 1.03)
 
+# ---------------------------------------------------------------- what the neighbours said
+class Quotes:
+    """Background picture (slow push-in, darkened) + quote slips popping in at given times (s)."""
+    def __init__(self, sid, times, quotes, dur):
+        self.dur = dur; self.times = times; self.quotes = quotes
+        src = Image.open(f"{R.ROOT}/img/{sid}.png").convert("RGB")
+        self.bg = src.resize((W, int(W * src.height / src.width)), Image.LANCZOS)
+        self.dark = Image.new("RGB", (W, H), (18, 16, 14))
+        self.slips = []
+        rot = [-3.0, 2.2, -1.4]
+        for i, q in enumerate(quotes):
+            txt = "«" + q.upper() + "»"
+            f = R.font(118 if len(txt) < 14 else 96)
+            tmp = ImageDraw.Draw(Image.new("RGB", (10, 10)))
+            tw = int(tmp.textlength(txt, font=f))
+            sl = Image.new("RGBA", (tw + 120, 220), (244, 238, 224, 255)); d = ImageDraw.Draw(sl)
+            d.text((60, 22), txt, font=f, fill=INK)
+            d.rectangle((60, 176, 60 + min(tw, 260), 184), fill=CRIMSON)
+            d.text((60 + min(tw, 260) + 20, 160), "СОСЕДИ", font=R.font(40), fill=GREY)
+            self.slips.append(sl.rotate(rot[i % 3], expand=True, resample=Image.BICUBIC))
+        self.pos = [(100, 70), (1240, 110), (0, 370)]  # keep the bottom (people on the bench) clear
+    def frame(self, t):
+        z = 1.0 + 0.07 * (t / max(self.dur, 1e-3))
+        cw, chh = W / z, H / z
+        x0 = (W - cw) / 2; y0 = max(0.0, (self.bg.height - chh) / 2)
+        im = self.bg.resize((W, H), Image.BILINEAR, box=(x0, y0, x0 + cw, y0 + chh))
+        first = self.times[0] if self.times else 0
+        im = Image.blend(im, self.dark, 0.45 * ease((t - first + 0.4) / 0.5))
+        for i, sl in enumerate(self.slips):
+            if i >= len(self.times) or t < self.times[i]: continue
+            k = pop((t - self.times[i]) / 0.35)
+            s = sl.resize((max(1, int(sl.width * k)), max(1, int(sl.height * k))), Image.BICUBIC)
+            x, y = self.pos[i % 3]
+            if i == len(self.slips) - 1: x = (W - sl.width) // 2
+            shadow_paste(im, s, x + (sl.width - s.width) / 2, y + (sl.height - s.height) / 2, blur=10, alpha=140)
+        return im
+
 _make_old = make
 def make(spec, dur):
     parts = spec.split(":")
     k = parts[0]
     if k == "lineup": return Lineup(parts[1].split(","), parts[2].split("|"), dur)
     if k == "portraits": return Portraits(parts[1].split(","), parts[2].split("|"), dur)
+    if k == "quotes": return Quotes(parts[1], [float(x) for x in parts[2].split(",")], ":".join(parts[3:]).split("|"), dur)
     if k == "myth":
         a, b = ":".join(parts[1:]).split("|", 1); return Myth(a, b, dur)
     if k == "list":

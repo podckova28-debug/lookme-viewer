@@ -28,3 +28,5 @@
   (ch3 teacher→Chikatilo, militiaman→Popkov, druzhinnik→Mikhasevich).
 - Opening: anim `portraits:` — 4 archival waist-up B/W portraits (L1–L4, GPT Image 2.6 low 9:16, 2 cr),
   revealed one by one with labels; reused at the end.
+- v3: newspaper shot in ch1 replaced by anim `quotes:IMG:t1,t2,t3:q1|q2|q3` — neighbours' courtyard (n101), darkened,
+  quote slips «Вежливый» / «Тихий» / «Никогда бы не подумали» pop in on the spoken words; next shot n1301.
