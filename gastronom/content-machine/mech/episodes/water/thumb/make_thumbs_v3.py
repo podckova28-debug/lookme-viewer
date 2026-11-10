@@ -18,15 +18,19 @@ W, H = 1280, 720
 WHITE, YELLOW, BLACK, RED = (255, 255, 255), (255, 214, 0), (12, 12, 16), (232, 28, 36)
 
 
-def base(name):
-    im = Image.open(os.path.join(D, 'base', name + '.png')).convert('RGB').crop((0, 4, 2688, 1516)).resize((W, H), Image.LANCZOS)
+def base(name, x0=0, y0=0, z=1.0):
+    """База → 1280×720 с наездом: окно 1280/z × 720/z с левым верхним углом (x0, y0) в координатах базы 1280×720.
+    Наезд убирает пустой фон («Много свободного места»): персонаж и предмет заполняют кадр."""
+    im = Image.open(os.path.join(D, 'base', name + '.png')).convert('RGB').crop((0, 4, 2688, 1516))
+    k = im.width / W
+    im = im.crop((int(x0 * k), int(y0 * k), int((x0 + W / z) * k), int((y0 + H / z) * k))).resize((W, H), Image.LANCZOS)
     im = ImageEnhance.Color(im).enhance(1.22); im = ImageEnhance.Contrast(im).enhance(1.12)
     im = im.filter(ImageFilter.UnsharpMask(radius=2, percent=60, threshold=2))
-    # виньетка: края темнее на ~30 %
+    # лёгкая виньетка: края темнее на ~20 %
     m = Image.new('L', (W, H), 0); d = ImageDraw.Draw(m)
     d.ellipse([-W * 0.25, -H * 0.35, W * 1.25, H * 1.35], fill=255)
     m = m.filter(ImageFilter.GaussianBlur(160))
-    dark = ImageEnhance.Brightness(im).enhance(0.62)
+    dark = ImageEnhance.Brightness(im).enhance(0.8)
     return Image.composite(im, dark, m)
 
 
@@ -78,21 +82,21 @@ def put(im, layer, x, y):
 
 
 def build(key):
+    # координаты кружков — уже в кадре после наезда
     if key == 'pump':
-        im = base('th_pump')
-        im = arrow(im, 250, 330, 330, 450)
-        tb = text_block([('БЕНЗИН', WHITE), ('НЕ НУЖЕН?', YELLOW)], 600)
-        return put(im, tb, 28, 18)
+        im = base('th_pump', 213, 0, 1.2)
+        tb = text_block([('БЕНЗИН', WHITE), ('НЕ НУЖЕН?', YELLOW)], 620)
+        return put(im, tb, 16, 10)
     if key == 'boom':
-        im = base('th_boom')
-        im = ring(im, 535, 240, 135, 118)
-        tb = text_block([('МОТОР', WHITE), ('НА ВОДЕ?!', YELLOW)], 560)
-        return put(im, tb, 28, H - tb.height - 14)
+        im = base('th_boom', 200, 0, 1.25)
+        im = ring(im, 419, 287, 169, 148)
+        tb = text_block([('МОТОР', WHITE), ('НА ВОДЕ?!', YELLOW)], 490)
+        return put(im, tb, 14, H - tb.height - 8)
     if key == 'secret':
-        im = base('th_secret')
-        im = ring(im, 470, 395, 122, 150)
-        tb = text_block([('ЭТО', WHITE), ('СКРЫВАЮТ?', YELLOW)], 600)
-        return put(im, tb, 22, 14)
+        im = base('th_secret', 332, 0, 1.35)
+        im = ring(im, 180, 540, 152, 172)
+        tb = text_block([('ЭТО', WHITE), ('СКРЫВАЮТ?', YELLOW)], 560)
+        return put(im, tb, 12, 6)
     raise KeyError(key)
 
 
