@@ -1,0 +1,293 @@
+{
+ "D": {
+  "H": "the hero from the reference sheet on deck (Black man in his early thirties, close-cropped black hair, short black beard, navy t-shirt, grey work trousers, black rubber boots)",
+  "HD": "the hero from the reference sheet in his diving gear (Black man in his early thirties, short black beard, black hot-water suit, round yellow commercial diving helmet with a clear faceplate showing his face, orange umbilical hose, black weight harness, black gloves)",
+  "SUP": "the dive supervisor from the reference sheet (white woman in her fifties, grey ponytail, navy cap, red windbreaker, radio headset, clipboard)",
+  "TEN": "the fellow tender from the reference sheet (young Latino man with a thin moustache, grey hoodie, yellow rubber bib overalls, work gloves)",
+  "INS": "the dive-school instructor from the reference sheet (older East Asian man, short grey hair, glasses, white polo shirt, khaki shorts, whistle)",
+  "KID": "the hero's daughter from the reference sheet (girl about seven, two braids, purple t-shirt, denim shorts)"
+ },
+ "S": {
+  "1": [
+   [
+    "HD"
+   ],
+   "pale green-blue water that fades to white at the edges, light and airy, soft light rays, around the giant steel leg of an offshore oil platform",
+   "He hangs in the water next to a huge rusty steel leg of an oil platform, one gloved hand on the steel, a soft beam from his helmet lamp.",
+   "Close-up of his face behind the helmet faceplate, eyes wide, a few small bubbles.",
+   "Far view: a tiny diver beside the giant platform legs that rise up into the hazy water.",
+   "Above the water at dawn: an offshore oil platform and a small dive barge on a calm sea. No people."
+  ],
+  "2": [
+   [],
+   "a plain white space",
+   "A neat collage of five small vignettes on white, no people: an oil platform, a pipeline on the seabed, a bridge pier in water, a dam wall, the hull of a ship.",
+   "Close-up of a cracked, rusty steel beam underwater, small fish nearby. No people.",
+   "The hero in his diving gear welds on a bridge pier underwater with a bright small arc; pale green-blue water that fades to white at the edges, light and airy, soft light rays.",
+   "A smartphone screen showing a dramatic video thumbnail of a diver with a red warning triangle icon, no text, no numbers."
+  ],
+  "3": [
+   [
+    "H",
+    "INS"
+   ],
+   "an indoor dive-school training pool",
+   "The instructor stands at the edge of a deep training pool blowing his whistle while five students in black wetsuits sit on the edge, all clearly different people; the hero (in a black wetsuit, no helmet) sits among them.",
+   "Close-up of a bench with thick training binders, a coil of rope and a scuffed yellow training helmet. No text.",
+   "The hero (in his navy t-shirt) looks wide-eyed at a long paper bill held in both hands, blank paper with only grey lines, no numbers.",
+   "A tiny dorm room with a bunk bed, a hot plate and a stack of instant noodle cups. No people."
+  ],
+  "4": [
+   [
+    "HD",
+    "INS"
+   ],
+   "a cloudy indoor training tank with murky green water",
+   "The hero in his yellow helmet kneels on the bottom of a murky training tank, feeling a steel plate with both gloved hands, eyes closed.",
+   "Close-up of two gloved hands feeling a bolt on a steel plate in murky water.",
+   "The instructor watches from above the water surface of the tank, leaning over the edge.",
+   "A practice steel plate on a workbench with a few rough, uneven weld beads. No people."
+  ],
+  "5": [
+   [
+    "H",
+    "INS"
+   ],
+   "a small outdoor graduation at the dive school with a flagless pole and a palm tree",
+   "The hero proudly holds up a blank certificate (paper with a gold seal, no text) while the instructor shakes his hand.",
+   "Close-up of the blank certificate paper with a gold seal, no text, no letters.",
+   "A tall ladder leaning against the side of a dive barge; the hero stands on the very bottom rung looking up.",
+   "On a barge deck, the dive supervisor hands the hero a huge coil of orange hose; he staggers under its weight."
+  ],
+  "6": [
+   [
+    "H",
+    "SUP",
+    "TEN"
+   ],
+   "the deck of a dive barge at sea",
+   "The hero, now a tender, pays out a long orange umbilical hose over the side of the barge while bubbles rise from the water; the supervisor watches with her clipboard.",
+   "Close-up of his gloved hands feeding the orange umbilical hose over the barge edge.",
+   "The hero and the Latino tender help dress a different diver (an older white man with a red beard) into a yellow helmet on a bench.",
+   "Bubbles rising and breaking on the sea surface beside the barge hull. No people."
+  ],
+  "7": [
+   [
+    "H",
+    "TEN"
+   ],
+   "a cramped cabin on a work barge at night",
+   "The hero lies awake in a narrow bunk in a small cabin with three other bunks; other men sleep in them, all clearly different; a lamp hangs tilted as the barge rolls.",
+   "Close-up of his tired face on the pillow, eyes open.",
+   "A work barge on rough grey sea at night under a cloudy sky. No people.",
+   "The hero leans over the barge rail looking seasick while the Latino tender pats his back."
+  ],
+  "8": [
+   [
+    "H",
+    "SUP"
+   ],
+   "the deck of a dive barge on a sunny morning",
+   "The supervisor points at the hero with her pen; he looks surprised and excited, hands raised.",
+   "Close-up of the supervisor's face under her cap with the headset, a small smile.",
+   "The hero grins and punches the air with one fist.",
+   "The yellow diving helmet waiting on a bench in the sun next to a coiled orange hose. No people."
+  ],
+  "9": [
+   [
+    "HD",
+    "TEN"
+   ],
+   "the deck of a dive barge",
+   "The hero sits on a bench in his black hot-water suit while the Latino tender lowers the heavy yellow helmet onto his head.",
+   "Close-up of a hot-water hose connected to a valve on the suit at his hip, a little steam rising.",
+   "The hero in full gear steps off the edge of the barge feet first toward the water.",
+   "A boxy water heater machine on deck with hoses running to the side of the barge. No people."
+  ],
+  "10": [
+   [
+    "HD"
+   ],
+   "a vertical column of sea water, bright near the surface and dimmer green below, fading to white at the edges",
+   "The hero descends along a vertical rope line, small bubbles rising from his helmet, the light fading below him.",
+   "Close-up of his gloved hand sliding down the rope line.",
+   "Seen from below: his small dark shape against the bright surface far above.",
+   "Bubbles rising toward a bright sea surface. No people."
+  ],
+  "11": [
+   [
+    "HD"
+   ],
+   "pale green-blue water that fades to white at the edges, light and airy, soft light rays",
+   "The hero feels along a steel beam with both gloved hands, eyes closed behind the faceplate.",
+   "Close-up of gloved fingertips tracing a thin crack in the steel.",
+   "A dim beam from his helmet lamp lights only a small circle of murky water around the beam.",
+   "The hero with his faceplate close to the steel, squinting."
+  ],
+  "12": [
+   [
+    "SUP",
+    "TEN"
+   ],
+   "a small dive-control shack on the barge deck",
+   "The supervisor sits at a small console wearing her headset, talking, watching a monitor that shows a blurry greenish underwater view.",
+   "Close-up of the monitor showing a blurry green view of gloved hands on steel. No text.",
+   "The Latino tender and the supervisor both stare at the monitor, tense.",
+   "Several crew members on the barge deck stand frozen and silent, looking at the water. All clearly different people."
+  ],
+  "13": [
+   [
+    "HD"
+   ],
+   "pale green-blue water that fades to white at the edges, light and airy, soft light rays",
+   "The hero welds a seam on a steel pipe with a bright white-blue arc; a pocket of gas bubbles and steam boils around the arc, the brightest thing in the water.",
+   "Close-up of the welding electrode holder (a stinger) in his gloved hand, insulated grip.",
+   "Far view: one tiny bright spark of light in the vast pale water.",
+   "Close-up of the glowing weld spot with bubbles streaming up. No hands, no people."
+  ],
+  "14": [
+   [
+    "SUP",
+    "HD"
+   ],
+   "the dive-control shack",
+   "The supervisor speaks into her headset with her hand on the lever of a big red electrical knife switch on the wall.",
+   "Close-up of her hand gripping the knife switch lever.",
+   "Underwater, the hero holds the welding rod carefully away from his body, the arc not yet lit; pale green-blue water that fades to white at the edges, light and airy, soft light rays.",
+   "Thick welding cables running from a welding machine on deck over the side of the barge. No people."
+  ],
+  "15": [
+   [
+    "HD"
+   ],
+   "a small dry welding habitat on the seabed: a box chamber built around a pipeline, filled with air, water only at the floor",
+   "Inside the dry habitat the hero kneels and welds the pipeline in air, wearing a breathing mask instead of the big helmet.",
+   "Close-up of a clean, shiny, even weld bead on a pipe.",
+   "Outside view: the habitat box on the seabed around the pipeline, bubbles escaping from its top; pale green-blue water that fades to white at the edges, light and airy, soft light rays. No people visible.",
+   "Two weld samples side by side on a bench: one cracked and brittle, one smooth and even. No people."
+  ],
+  "16": [
+   [
+    "H",
+    "TEN"
+   ],
+   "the small mess room of the barge",
+   "The hero scrolls his phone at a table in the mess, frowning; the Latino tender sits opposite eating soup.",
+   "Close-up of a phone screen with a red warning triangle and a skull icon, no text, no numbers.",
+   "The Latino tender laughs and shakes his head, spoon in hand.",
+   "The supervisor in the doorway shrugs with her clipboard."
+  ],
+  "17": [
+   [],
+   "a plain white space",
+   "A simple bar chart drawn on white: one tall red bar and one very short grey bar, no numbers, no text.",
+   "Many tiny simple person icons in neat rows on white, all grey except one red. No text.",
+   "A snowy harbor in Alaska with a small dive boat and mountains. No people.",
+   "A small memorial wreath on a wooden dock. No people."
+  ],
+  "18": [
+   [
+    "HD"
+   ],
+   "pale green-blue water that fades to white at the edges, light and airy, soft light rays, near a large dam intake grate",
+   "Swirling lines of water rush toward a big intake grate at the base of a dam; the hero stays back at a safe distance, held by his taut umbilical, wary.",
+   "Close-up of swirl lines pulling leaves and debris into the grate. No people.",
+   "On the barge deck the supervisor and the Latino tender go through a checklist on her clipboard (lines only, no text).",
+   "An orange hose tangled around a broken pipe on the seabed. No people."
+  ],
+  "19": [
+   [
+    "H"
+   ],
+   "a plain white space",
+   "A plastic soda bottle being opened, a burst of fizzing bubbles shooting up. No people.",
+   "A simple drawing of a blood vessel with tiny bubbles inside it. No text.",
+   "On the barge deck the hero winces, holding his elbow with one hand and his knee with the other.",
+   "A diagram-like drawing of a diver's silhouette with a few small bubbles marked at the knees and elbows. No text."
+  ],
+  "20": [
+   [
+    "HD",
+    "TEN"
+   ],
+   "a column of sea water fading to white",
+   "The hero hangs on the rope line at a stop, arm wrapped around the rope, waiting calmly, looking up at the faint bright surface.",
+   "Close-up of his calm face behind the faceplate, eyes closed, breathing slowly.",
+   "On deck, the hero sits inside a white steel decompression chamber, seen through its small round window.",
+   "On the barge deck the Latino tender and other crew eat dinner at a table, a white chamber behind them."
+  ],
+  "21": [
+   [
+    "HD"
+   ],
+   "the inside of a cramped steel saturation living chamber",
+   "The hero, in a dark t-shirt and shorts, sits on a bunk inside a cramped round steel chamber with two other divers (a bald white man and a young East Asian man), a tiny round window.",
+   "Close-up of the round porthole of the chamber seen from outside, with the hero's face looking out through it.",
+   "A cutaway drawing of a ship with steel chambers inside and a diving bell hanging on a cable under it. No people.",
+   "A tiny fold-down table in the chamber with playing cards and three mugs. No people."
+  ],
+  "22": [
+   [
+    "HD"
+   ],
+   "the inside of the saturation chamber",
+   "The hero and the two other divers laugh hard, faces scrunched, as if their voices sound silly. No speech bubbles, no text.",
+   "Close-up of a food tray sliding through a small round airlock door in the steel wall.",
+   "A yellow diving bell being lowered on a cable from the side of a ship into the sea. No people.",
+   "The hero alone inside a small round yellow diving bell, wearing his yellow helmet, sitting ready above an open hatch in the floor."
+  ],
+  "23": [
+   [
+    "HD"
+   ],
+   "the inside of the saturation chamber",
+   "The hero lies on his bunk staring at the curved steel ceiling, bored and patient.",
+   "Close-up of a small whiteboard with eight tally marks drawn in marker. No numbers, no text.",
+   "The heavy round hatch of the chamber, closed and bolted. No people.",
+   "The hero finally climbs out of the chamber hatch, blinking at daylight."
+  ],
+  "24": [
+   [
+    "H"
+   ],
+   "the barge deck at sunset",
+   "The hero sits on a crate holding an envelope (blank, no text), tired but smiling, the sun low.",
+   "Close-up of a blank pay envelope in his hands. No text.",
+   "An oil platform on the horizon at sunset. No people.",
+   "The hero zips up a big duffel bag on his bunk."
+  ],
+  "25": [
+   [
+    "H",
+    "KID"
+   ],
+   "the front door of a small house",
+   "The hero drops his duffel bag and hugs his daughter at the front door; she wrinkles her nose.",
+   "Close-up of the daughter holding her nose and giggling.",
+   "On the barge in the wind, the hero holds a phone to his ear, straining to hear.",
+   "A kitchen table with a birthday cake with candles and one empty chair. No people."
+  ],
+  "26": [
+   [
+    "H"
+   ],
+   "a plain white space",
+   "A collage on white of a long bridge, a pipeline, a big cargo ship and a city with lights on. No people.",
+   "Close-up of the hero's proud, tired face.",
+   "A big cargo ship sailing under a long bridge. No people.",
+   "Underwater, a neat weld holding two steel beams together; pale green-blue water that fades to white at the edges, light and airy, soft light rays. No people."
+  ],
+  "27": [
+   [
+    "HD",
+    "KID"
+   ],
+   "pale green-blue water that fades to white at the edges, light and airy, soft light rays",
+   "A small neat weld seam on a giant steel leg; the hero swims away into the hazy water.",
+   "Close-up of the neat weld seam on the steel.",
+   "On the barge deck the hero, helmet under his arm, waves at the viewer.",
+   "The hero and his daughter stand together and wave at the viewer on a plain white background."
+  ]
+ },
+ "C": "fca4c575-de2a-437b-9fde-fcb5e4bfdf47"
+}
