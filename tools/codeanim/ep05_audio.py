@@ -162,16 +162,16 @@ def vo(sc, t, name, g=1.0):
 # narration (times line up with the action in ep05.js / ep05b.js)
 VO = [('01', .3, 'vo_01.wav'), ('02', .3, 'vo_02.wav'), ('N1', .3, 'vo_N1a.wav'), ('N1', 3.0, 'vo_N1b.wav'), ('N1', 5.0, 'vo_N1c.wav'),
       ('03', .2, 'vo_03a.wav'), ('03', 5.6, 'vo_03b.wav'), ('04', .4, 'vo_04.wav'), ('05', .5, 'vo_05.wav'), ('N2', .3, 'vo_N2.wav'),
-      ('05b', .3, 'vo_05b_a.wav'), ('05b', 3.0, 'vo_05b_b.wav'), ('N12', .4, 'vo_N12.wav'), ('05c', .3, 'vo_05c_a.wav'), ('05c', 4.3, 'vo_05c_b.wav'),
-      ('N10', .3, 'vo_N10a.wav'), ('N10', 3.4, 'vo_N10b.wav'), ('N10', 6.3, 'vo_N10c.wav'), ('N10', 9.6, 'vo_N10d.wav'),
+      ('05b', .3, 'vo_05b_a.wav'), ('05b', 3.0, 'vo_05b_b.wav'), ('N12', .4, 'vo_N12.wav'), ('NB', .3, 'vo_NB.wav'), ('05c', .3, 'vo_05c_a.wav'), ('05c', 4.3, 'vo_05c_b.wav'),
+      ('N10', .3, 'vo_N10a.wav'), ('N10', 3.4, 'vo_N10b.wav'), ('N10', 6.3, 'vo_N10c.wav'), ('N10', 9.25, 'vo_N10d.wav'),
       ('N20', .3, 'vo_N20a.wav'), ('N20', 4.5, 'vo_N20b.wav'),
       ('06', .3, 'vo_06_0.wav'), ('06', 3.6, 'vo_06a.wav'), ('06', 8.0, 'vo_06b.wav'), ('N3', .5, 'vo_N3a.wav'), ('N3', 6.0, 'vo_N3b.wav'),
       ('B', .3, 'vo_B1.wav'), ('B', 3.15, 'vo_B2.wav'), ('B', 5.6, 'vo_B3.wav'), ('B', 8.6, 'vo_B4.wav'),
       ('N23', .3, 'vo_N23a.wav'), ('N23', 3.0, 'vo_N23b.wav'), ('N4', .3, 'vo_N4a.wav'), ('N4', 3.6, 'vo_N4b.wav'), ('N13', .3, 'vo_N13a.wav'), ('N13', 4.2, 'vo_N13b.wav'),
-      ('06c', 1.0, 'vo_06c.wav'), ('07', .4, 'vo_08v2.wav'),
+      ('06c', 1.0, 'vo_06c.wav'), ('07', .4, 'vo_08v2.wav'), ('NW', .3, 'vo_NWa.wav'), ('NW', 3.6, 'vo_NWb.wav'), ('NE', .3, 'vo_NEa.wav'), ('NE', 2.4, 'vo_NEb.wav'),
       ('N7', .3, 'vo_N7a.wav'), ('N7', 3.4, 'vo_N7b.wav'), ('N7', 6.6, 'vo_N7c.wav'), ('08', .4, 'vo_09v2.wav'), ('09', .3, 'vo_10.wav'), ('10', .8, 'vo_11.wav'),
-      ('11', .5, 'vo_12.wav'), ('12', 2.9, 'vo_13.wav'), ('12b', .5, 'vo_12b.wav'), ('N8', .3, 'vo_N8a.wav'), ('N8', 5.4, 'vo_N8b.wav'),
-      ('N17', .3, 'vo_N17a.wav'), ('N17', 3.0, 'vo_N17b.wav'), ('N9', .3, 'vo_N9a.wav'), ('N9', 2.8, 'vo_N9b.wav'),
+      ('11', .5, 'vo_12.wav'), ('12', 2.9, 'vo_13.wav'), ('12b', .5, 'vo_12b.wav'), ('N8', .3, 'vo_N8a.wav'), ('N8', 5.4, 'vo_N8b.wav'), ('NK', .3, 'vo_NKa.wav'), ('NK', 3.2, 'vo_NKb.wav'),
+      ('N17', .3, 'vo_N17a.wav'), ('N17', 3.0, 'vo_N17b.wav'), ('NX', .3, 'vo_NXa.wav'), ('NX', 2.6, 'vo_NXb.wav'), ('N9', .3, 'vo_N9a.wav'), ('N9', 2.8, 'vo_N9b.wav'),
       ('13', .2, 'vo_14a.wav'), ('13', 2.15, 'vo_14b.wav'), ('N19', .4, 'vo_N19a.wav'), ('N19', 3.4, 'vo_N19b.wav'), ('14', .4, 'vo_15a.wav'), ('14', 7.1, 'vo_15b.wav')]
 for sc, t, f in VO:
     if not os.path.exists(os.path.join(vo_dir, f)): print('MISSING', f); continue
@@ -198,7 +198,7 @@ put('mus', S('N19', .2), fade(bed(START['14'] - START['N19'] + DUR['14']), 2.0, 
 
 # ambience by location
 LOC = {'01': 'night', '02': 'morning', 'N1': 'morning', 'N10': 'morning', '03': 'room', '05': 'room', '05b': 'room', '05c': 'room', 'N12': 'room', 'N20': 'room', '06c': 'room',
-       '06': 'street', 'N4': 'street', 'B': 'shop', 'N13': 'shop', 'N23': 'cafe', 'N3': 'wind', 'N7': 'room', 'N19': 'night', '14': 'morning'}
+       '06': 'street', 'N4': 'street', 'B': 'shop', 'N13': 'shop', 'N23': 'cafe', 'N3': 'wind', 'N7': 'room', 'N19': 'night', '14': 'morning', 'NB': 'room', 'NW': 'room', 'NE': 'room', 'T0': 'night'}
 for sc, kind in LOC.items():
     d = DUR[sc]
     if kind == 'night': put('amb', S(sc, 0), crickets(d) + ambience(d, 300, .03))
@@ -284,6 +284,23 @@ fx('N8', .05, thunk(), .6); fx('N8', .25, thunk(), .6)
 fx('N17', 2.35, click(), 1.0); fx('N17', 2.38, filt(noise(.5), 'highpass', 3000) * expd(.5, .1), .5)
 for a in (.9, 1.4, 1.9): fx('N17', a, tick(), .8)
 fx('N9', 1.0, crinkle(.9), 1.0); fx('N9', 2.6, ding(1568), .5)
+
+fx('T0', .3, whoosh(.5, 300, 2000), .4); fx('T0', .9, pop(), .9); fx('T0', 1.0, ding(1319), .5)
+fx('NB', .4, fade(filt(noise(4.2), 'bandpass', [1500, 5000]) * (.5 + .5 * np.sin(2 * np.pi * 2.7 * tt(4.2))) ** 2, .05, .2) * .35, 1.0)
+for i in range(6): fx('NB', 1.0 + i * .5, plop(), .5)
+fx('NW', .05, ding(1319), .5); fx('NW', .4, ding(1047), .5); fx('NW', .4, sweep(180, 120, .6, 1) * expd(.6, .3) * .4, .5); fx('NW', 3.2, thup(), .9)
+for a in (2.4, 3.9, 5.5): fx('NE', a, ding(1760), .35)
+fx('NE', 5.55, thunk(), .7)
+fx('NX', 1.6, ding(2637)[:N(.5)], .5); fx('NX', 1.66, ding(2349)[:N(.5)], .4)
+# Dave sings (a soft lead line over the party track)
+def sing(notes, beat=.5):
+    out = np.zeros(N(beat * sum(d for _, d in notes)) + SR); t0 = 0.0
+    for m, d in notes:
+        dd = d * beat; tt_ = tt(dd); f = midi(m) * (1 + .012 * np.sin(2 * np.pi * 5.5 * tt_) * np.minimum(tt_ / .2, 1))
+        ph = 2 * np.pi * np.cumsum(f) / SR; x = (np.sin(ph) + .35 * np.sin(2 * ph) + .12 * np.sin(3 * ph)) * fade(np.ones(N(dd)), .04, .08)
+        out[N(t0):N(t0) + len(x)] += x; t0 += dd
+    return filt(out, 'lowpass', 2500) * .25
+fx('NK', .75, sing([(69, 1), (72, 1), (76, 2), (74, 1), (72, 1), (69, 2), (67, 1), (69, 1), (72, 2), (76, 1), (74, 1)]), .9)
 
 # 14 the morning after
 fx('14', .3, ding(2349), .35); fx('14', 1.4, ding(1975), .25)
