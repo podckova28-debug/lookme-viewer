@@ -72,6 +72,10 @@ https://claude.ai/artifact/XRfVXucgXcVnVDRosPwSiZ
 Страница для шапки Instagram (@garage_y_mihalicha), собрана 10 ноября:
 https://claude.ai/artifact/YHeCT2QGPYkAb4DTdLMFn7 (без рекламы, цен и
 партнёрских ссылок, как требует запрет рекламы в Instagram для РФ).
+«Напоминалка Михалыча», бесплатная страница «мой гараж» для зрителей из
+Instagram (переобувка по городу, ОСАГО, масло, аккумулятор, данные только в
+браузере зрителя): https://claude.ai/artifact/PvBEwNEzJL7w721kgCxXdd.
+Письма для 11 лидов автобизнеса: `mikhalych/outreach.md`.
 
 ## Как пользоваться навыками yt-*
 
