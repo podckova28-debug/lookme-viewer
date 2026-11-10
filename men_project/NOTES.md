@@ -19,3 +19,4 @@
   shrinks to ≤1100 px; stamps (ТАЛЛИЙ, 20 ЛЕТ) barely visible → solid cream stamp card, darkened picture, shake.
   Images repeated → 21 new images x1–x21 (~10.5 cr), ~55 shots, almost every picture used once.
   w10 had three hands → replaced with v10b (woman on stairs, two hands checked).
+- v2 delivered: HQ 1080p 5:43 (348 MB) media 544a0f16-7aeb-4bd1-9d9b-37cb34a112bc; web 112150d0-da92-4282-a71e-6ee31d69548f. Total spend ≈ 20 cr.
