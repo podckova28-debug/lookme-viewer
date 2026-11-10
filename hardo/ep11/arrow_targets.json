@@ -1,0 +1,42 @@
+{
+ "F107|each one needs a sentence.": [
+  0.5,
+  0.45
+ ],
+ "F410|the uniform.": [
+  0.5,
+  0.45
+ ],
+ "F219|hen?": [
+  0.3,
+  0.5
+ ],
+ "F219|rooster?": [
+  0.7,
+  0.5
+ ],
+ "F122|still there.": [
+  0.5,
+  0.6
+ ],
+ "F225|claims need proof": [
+  0.25,
+  0.4
+ ],
+ "F104|locked to nothing.": [
+  0.47,
+  0.82
+ ],
+ "F12|alligator.": [
+  0.47,
+  0.58
+ ],
+ "F117|gold-plated": [
+  0.6,
+  0.35
+ ],
+ "F106|her office.": [
+  0.5,
+  0.5
+ ]
+}
