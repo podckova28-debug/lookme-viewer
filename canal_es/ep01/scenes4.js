@@ -107,10 +107,10 @@ SC.s18 = (X, t) => {
         g.strokeStyle = '#2b1a1f'; g.lineWidth = 6; g.beginPath(); g.moveTo(1140, 470); g.quadraticCurveTo(1160, 400, 1145, 470 - 160 * a((t - Lm('s18_04', .55)) * 1.2)); g.stroke();
         text(g, '+0,5 mm / día', 1190, 400, 40, '#2d2a40', 'ComicNeue', 'left'); g.globalAlpha = 1; } }
     if (t > Lt('s18_05') - .1 && t < Lt('s18_08') - .1) {        // 3. your head is older than your feet
-      g.strokeStyle = '#2d2a40'; g.lineWidth = 7; g.lineCap = 'round'; circ(g, 560, 250, 34, '#fbfaf6', 6);
-      g.beginPath(); g.moveTo(560, 284); g.lineTo(560, 410); g.moveTo(560, 320); g.lineTo(510, 370); g.moveTo(560, 320); g.lineTo(610, 370); g.moveTo(560, 410); g.lineTo(520, 500); g.moveTo(560, 410); g.lineTo(600, 500); g.stroke();
-      boardClock(g, 700, 250, 54, (t - Lt('s18_05')) * 1.06); boardClock(g, 700, 470, 54, (t - Lt('s18_05')));
-      text(g, 'más rápido', 770, 262, 30, '#c0262d', 'ComicNeue', 'left'); text(g, 'más lento', 770, 482, 30, '#3a6fb0', 'ComicNeue', 'left');
+      g.strokeStyle = '#2d2a40'; g.lineWidth = 7; g.lineCap = 'round'; circ(g, 560, 300, 34, '#fbfaf6', 6);
+      g.beginPath(); g.moveTo(560, 334); g.lineTo(560, 440); g.moveTo(560, 365); g.lineTo(515, 410); g.moveTo(560, 365); g.lineTo(605, 410); g.moveTo(560, 440); g.lineTo(525, 520); g.moveTo(560, 440); g.lineTo(595, 520); g.stroke();
+      boardClock(g, 700, 310, 50, (t - Lt('s18_05')) * 1.06); boardClock(g, 700, 480, 50, (t - Lt('s18_05')));
+      text(g, 'más rápido', 765, 322, 30, '#c0262d', 'ComicNeue', 'left'); text(g, 'más lento', 765, 492, 30, '#3a6fb0', 'ComicNeue', 'left');
       if (t > Lt('s18_06') - .1) { g.globalAlpha = a((t - Lt('s18_06')) * 3); text(g, 'RELOJES ATÓMICOS · 2010', 990, 300, 44, '#3a6fb0', 'Bangers', 'left'); g.globalAlpha = 1; }
       if (t > Lt('s18_07') - .1) { g.globalAlpha = a((t - Lt('s18_07')) * 3); text(g, '30 cm más arriba =', 990, 380, 36, '#2d2a40', 'ComicNeue', 'left'); text(g, '+90 milmillonésimas', 990, 428, 36, '#c0262d', 'ComicNeue', 'left'); text(g, 'de segundo en 79 años', 990, 474, 32, '#2d2a40', 'ComicNeue', 'left'); g.globalAlpha = 1; } }
     if (t > Lt('s18_08') - .1) { g.globalAlpha = a((t - Lt('s18_08')) * 2); text(g, 'EL TIEMPO NUNCA PASA', 966, 340, 72, '#2d2a40', 'Bangers', 'center'); text(g, 'IGUAL PARA TODOS', 966, 430, 72, '#2d2a40', 'Bangers', 'center'); g.globalAlpha = 1; }

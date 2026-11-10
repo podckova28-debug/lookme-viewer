@@ -110,6 +110,9 @@ function cutHeadImg(g, R, r) {
 // draw sprite rows [f0..f1] (fractions of its height) into the world box x, y, w, h
 function spr(g, k, x, y, w, h, f0 = 0, f1 = 1) { const I = SPR[k]; g.drawImage(I, 0, I.height * f0, I.width, I.height * (f1 - f0), x, y, w, h); }
 function installHybridProps() {
+  const vecHead = window.drawHead;
+  window.drawHead = (g, c, x, y, rot, p) => { if (!c.cut) return vecHead(g, c, x, y, rot, p); const R = CUT[c.cut];
+    g.save(); g.translate(x, y); g.rotate(rot || 0); cutHeadImg(g, R, c.r); face(g, c, c.r, p); g.restore(); };
   const BED = { x: 50, w: 950, top: 383, h: 562 };   // mattress top lands at y≈700, legs on the floor
   window.bedBack = g => spr(g, 'bed', BED.x, BED.top, BED.w, BED.h);
   window.bedFront = (g, cover = 1) => { const top = 712 + (1 - cover) * 50; spr(g, 'blanket', 250, top, 760, 948 - top); };
