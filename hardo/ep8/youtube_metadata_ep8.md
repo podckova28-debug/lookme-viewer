@@ -47,3 +47,6 @@ A: thumb_A_one_in_5_1280x720.jpg — "1 in 5 work deaths."
 B: thumb_B_elevator_1280x720.jpg — "You are the elevator."
 C: thumb_A2_you_are_the_elevator_1280x720.jpg — close-up, straining under drywall: "No elevator. You ARE the elevator." (image job 33c6122b-befc-4f41-a7c4-7c8f1a830cd2)
 D: thumb_B2_ladders_1280x720.jpg — wobbling on a ladder: "109 deaths. from ladders & stairs in one year." (BLS CFOI 2023, construction; image job df5f2ebb-42ad-47da-993f-1ee5342adc54)
+Bold set (new thumbnail format, recommended):
+E: thumb_A3_you_are_the_elevator_1280x720.jpg — "YOU are the ELEVATOR." (art 33c6122b, mirrored)
+F: thumb_B3_109_ladders_1280x720.jpg — "109 deaths a year, ladders & stairs" (BLS CFOI 2023, construction; art 7132aaec-ba2f-47f6-8d01-a28e1620cc2a)
