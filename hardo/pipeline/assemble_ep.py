@@ -153,7 +153,7 @@ if _sfx:
     run(["ffmpeg","-y","-i",os.path.join(OUT,"voice.m4a"),"-i",_sfx,"-filter_complex","[1:a]aresample=44100,aformat=channel_layouts=stereo[s];[0:a][s]amix=inputs=2:duration=first:normalize=0[a]","-map","[a]","-c:a","aac","-b:a","192k",VOICE])
 def ts(x): return f"{int(x//3600):02d}:{int(x%3600//60):02d}:{x%60:06.3f}".replace(".",",")
 with open(os.path.join(OUT,f"{NAME}.srt"),"w",encoding="utf8") as f:
-    total_len = sum(vdur)+GAP*n
+    total_len = min(sum(vdur)+GAP*n, dur(os.path.join(OUT,"video_silent.mp4")))  # ep12: planned length ran 0.5s past the real video
     for i,(a,b,tx) in enumerate(srt,1): f.write(f"{i}\n{ts(a)} --> {ts(min(b,total_len-0.3))}\n{tx}\n\n")
 run(["ffmpeg","-y","-i",os.path.join(OUT,"video_silent.mp4"),"-i",VOICE,"-map","0:v","-map","1:a","-c:v","copy","-c:a","copy","-shortest","-movflags","+faststart",os.path.join(OUT,f"{NAME}.mp4")])
 print("video",round(dur(os.path.join(OUT,"video_silent.mp4")),2),"audio",round(dur(os.path.join(OUT,"voice.m4a")),2),"final",round(dur(os.path.join(OUT,f"{NAME}.mp4")),2))
