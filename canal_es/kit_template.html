@@ -1,0 +1,224 @@
+<title>Ponle Que · испанский канал</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: one reading column; the "frozen world" is cool slate, the hero's hoodie yellow is the only warm color. */
+:root{
+  --bg:#EDF1F4; --surface:#FFFFFF; --frost:#DCE3E9; --ink:#17212B; --muted:#5A6774; --line:#C9D2DA;
+  --hoodie:#F2B705; --hoodie-ink:#3A2C00; --frozen:#7D93A8;
+  --f-display:"Bricolage Grotesque", "Inter", system-ui, sans-serif;
+  --f-body:"Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono:"JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#11161B; --surface:#182028; --frost:#1F2933; --ink:#E4EAF0; --muted:#9AA7B4; --line:#2C3843;
+  --hoodie:#F5C431; --hoodie-ink:#2B2000; --frozen:#8EA3B6; color-scheme:dark }}
+:root[data-theme="dark"]{
+  --bg:#11161B; --surface:#182028; --frost:#1F2933; --ink:#E4EAF0; --muted:#9AA7B4; --line:#2C3843;
+  --hoodie:#F5C431; --hoodie-ink:#2B2000; --frozen:#8EA3B6; color-scheme:dark }
+body{background:var(--bg); color:var(--ink); font:16px/1.6 var(--f-body);
+  padding-left:max(16px, env(safe-area-inset-left, 0px)); padding-right:max(16px, env(safe-area-inset-right, 0px)); padding-block:40px 64px}
+.wrap{max-width:860px; margin:0 auto; display:flex; flex-direction:column; gap:48px}
+h1,h2,h3{font-family:var(--f-display); text-wrap:balance; margin:0; line-height:1.15}
+h1{font-size:clamp(34px, 7vw, 56px); font-weight:800; letter-spacing:-0.02em}
+h1 .hi{background:var(--hoodie); color:var(--hoodie-ink); padding:0 .18em; border-radius:6px}
+h2{font-size:26px; font-weight:800}
+h3{font-size:18px; font-weight:600}
+p{margin:0; max-width:68ch}
+section{display:flex; flex-direction:column; gap:16px}
+.eyebrow{font:500 12px/1 var(--f-mono); letter-spacing:.08em; text-transform:uppercase; color:var(--muted)}
+.lede{font-size:18px; color:var(--muted)}
+header{display:flex; flex-direction:column; gap:16px}
+.rule-strip{display:flex; flex-wrap:wrap; gap:10px; margin-top:4px}
+.chip{font:500 13px/1 var(--f-mono); padding:8px 12px; border-radius:999px; border:1px solid var(--line); background:var(--surface)}
+.chip.y{background:var(--hoodie); color:var(--hoodie-ink); border-color:transparent}
+.chip.f{color:var(--frozen)}
+.todo{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--hoodie); border-radius:10px; padding:20px; display:flex; flex-direction:column; gap:12px}
+.todo ol{margin:0; padding-left:20px; display:flex; flex-direction:column; gap:6px}
+.voices{display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:12px}
+.voice{background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:16px; display:flex; flex-direction:column; gap:10px; min-width:0}
+.voice .vn{font:600 16px var(--f-display)}
+.voice .vd{font-size:14px; color:var(--muted)}
+.voice audio{width:100%}
+.tbl{overflow-x:auto; border:1px solid var(--line); border-radius:10px; background:var(--surface)}
+table{border-collapse:collapse; width:100%; font-size:14px}
+th,td{text-align:left; vertical-align:top; padding:10px 14px; border-bottom:1px solid var(--line)}
+tr:last-child td{border-bottom:none}
+th{font:500 12px/1.3 var(--f-mono); letter-spacing:.05em; text-transform:uppercase; color:var(--muted); background:var(--frost)}
+td.num{font-family:var(--f-mono); font-variant-numeric:tabular-nums; white-space:nowrap}
+td[lang="es"]{font-weight:500}
+.warn{background:var(--frost); border-radius:10px; padding:16px 18px; display:flex; flex-direction:column; gap:6px}
+.warn b{font-family:var(--f-display)}
+ul.plain{margin:0; padding-left:20px; display:flex; flex-direction:column; gap:8px; max-width:68ch}
+.names{display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:12px}
+.name{background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:16px; display:flex; flex-direction:column; gap:8px}
+.name .nm{font:800 22px var(--f-display)}
+.name.rec{border-color:var(--hoodie); box-shadow:0 0 0 1px var(--hoodie) inset}
+.name .tag{align-self:flex-start; font:500 11px/1 var(--f-mono); letter-spacing:.06em; text-transform:uppercase; background:var(--hoodie); color:var(--hoodie-ink); padding:5px 8px; border-radius:4px}
+.name p{font-size:14px; color:var(--muted)}
+.scenes{display:flex; flex-direction:column; gap:8px}
+details.scene{background:var(--surface); border:1px solid var(--line); border-radius:10px}
+details.scene summary{cursor:pointer; list-style:none; display:grid; grid-template-columns:56px 28px 1fr; align-items:baseline; gap:8px; padding:12px 16px}
+details.scene summary::-webkit-details-marker{display:none}
+details.scene summary:focus-visible{outline:2px solid var(--hoodie); outline-offset:2px; border-radius:10px}
+details[open].scene summary{border-bottom:1px solid var(--line)}
+.tc{font:500 13px var(--f-mono); color:var(--muted); font-variant-numeric:tabular-nums}
+.sn{font:500 13px var(--f-mono); color:var(--frozen)}
+.st{font-weight:600}
+.sb{padding:14px 16px 16px; display:flex; flex-direction:column; gap:12px}
+.pic{font-size:14px; color:var(--muted)}
+.esbox{border-left:3px solid var(--hoodie); padding-left:14px; display:flex; flex-direction:column; gap:8px}
+.es{font-size:16px}
+.es.line b{font:500 12px var(--f-mono); letter-spacing:.05em; color:var(--frozen); margin-right:6px}
+.ru{font-size:14px; color:var(--muted); font-style:italic}
+.card{font:500 13px var(--f-mono); background:var(--frost); padding:8px 10px; border-radius:6px; align-self:flex-start}
+.meta{display:grid; grid-template-columns:repeat(auto-fit, minmax(180px,1fr)); gap:12px}
+.meta div{background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:14px 16px; display:flex; flex-direction:column; gap:4px}
+.meta .k{font:500 12px var(--f-mono); color:var(--muted); letter-spacing:.05em; text-transform:uppercase}
+.meta .v{font-weight:600}
+footer{font-size:13px; color:var(--muted)}
+code{font-family:var(--f-mono); font-size:.9em}
+</style>
+
+<div class="wrap">
+<header>
+  <span class="eyebrow">Испанский канал · пакет запуска · 10 ноября 2026</span>
+  <h1><span class="hi">Ponle Que…</span> ¿qué pasaría si pudieras detener el tiempo?</h1>
+  <p class="lede">Анимационный канал на испанском в формате «что, если бы ты…». Анимация рисуется кодом, озвучка бесплатная с коммерческой лицензией. Кредиты не нужны. Название рабочее, варианты ниже.</p>
+  <div class="rule-strip">
+    <span class="chip y">Герой в цвете</span><span class="chip f">мир на паузе — серо-голубой</span><span class="chip">голубь Пепе в каждой серии</span>
+  </div>
+</header>
+
+<section class="todo" aria-labelledby="todo-h">
+  <h2 id="todo-h">Что нужно от вас</h2>
+  <ol>
+    <li>Выбрать голос рассказчика из трёх проб ниже.</li>
+    <li>Выбрать название канала (или предложить своё).</li>
+    <li>Утвердить сценарий пилота или сказать, что поменять.</li>
+  </ol>
+  <p>После этого я рисую героев и места кодом и собираю пилот целиком.</p>
+</section>
+
+<section aria-labelledby="voice-h">
+  <h2 id="voice-h">Голос рассказчика</h2>
+  <p>Модель Kokoro, лицензия Apache 2.0, монетизировать можно. Все три пробы Whisper распознал слово в слово, значит произношение чистое.</p>
+  <div class="voices">
+    <div class="voice"><span class="vn">Alex</span><span class="vd">Мужской, ровный, чуть быстрый. Подходит для сухого юмора.</span><audio controls preload="none" src="voz/muestra_em_alex.mp3"></audio></div>
+    <div class="voice"><span class="vn">Santa</span><span class="vd">Мужской, ниже и теплее.</span><audio controls preload="none" src="voz/muestra_em_santa.mp3"></audio></div>
+    <div class="voice"><span class="vn">Dora</span><span class="vd">Женский. Можно взять рассказчицей или оставить для реплик Валерии.</span><audio controls preload="none" src="voz/muestra_ef_dora.mp3"></audio></div>
+  </div>
+</section>
+
+<section aria-labelledby="mkt-h">
+  <h2 id="mkt-h">Что показал рынок</h2>
+  <p>Формат работает и в испанском: небольшие каналы, которые выпускают ролики каждый день, набирают сотни тысяч просмотров.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Канал</th><th>Подписчики</th><th>Лучшие ролики</th></tr></thead>
+    <tbody>
+      <tr><td>Giro Imposible · Колумбия</td><td class="num">12,6 тыс.</td><td><span lang="es">dejaras de sentir dolor</span> — 876 тыс.; <span lang="es">todos bebés, excepto tú</span> — 377 тыс.; <span lang="es">fueras inmortal</span> — 275 тыс.</td></tr>
+      <tr><td>Noah_Ketalsi · Колумбия</td><td class="num">5,2 тыс.</td><td><span lang="es">IQ de 500</span> — 402 тыс.; <span lang="es">reaccionaras 10 veces más rápido</span> — 303 тыс.</td></tr>
+      <tr><td>Anima · Мексика</td><td class="num">41 тыс.</td><td><span lang="es">pudieras detener el tiempo</span> — 623 тыс., в 17 раз больше обычного для канала</td></tr>
+    </tbody>
+  </table></div>
+  <div class="warn">
+    <b>Главный риск</b>
+    <p>За последние 3–4 недели в нише появились десятки новых каналов с почти одинаковыми описаниями. Только под названием «Supongamos» нашлось больше десяти каналов, созданных в октябре–ноябре. Почти у всех меньше 100 подписчиков. Значит, просто делать формат уже мало, нужно заметно отличаться.</p>
+  </div>
+  <h3>Как выделиться</h3>
+  <ul class="plain">
+    <li><b>Постоянные герои и сквозной сюжет.</b> У конкурентов безликие стикмены и скелеты. У нас Начо, Валерия и профе Рамирес, а каждая серия заканчивается крючком на следующую.</li>
+    <li><b>Голубь Пепе в каждой серии.</b> Он где-то спрятан, зрители ищут его и пишут в комментариях, где нашли.</li>
+    <li><b>Фирменный кадр.</b> Когда работает сила героя, мир серо-голубой, а цветной только герой. Обложку видно издалека.</li>
+    <li><b>Чистая картинка.</b> Анимация кодом — это 1080p без искажений. Ролики нейросетей рядом выглядят хуже.</li>
+    <li><b>Темп.</b> Сначала 3 длинных ролика в неделю и по 3 Shorts к каждому. Когда наберётся библиотека сцен — ролик каждый день.</li>
+  </ul>
+</section>
+
+<section aria-labelledby="name-h">
+  <h2 id="name-h">Название</h2>
+  <p>Простые слова уже заняты: «Supongamos», «Imagina», «¿Y si fueras tú?», «Tu Otra Vida», «Casi Posible» и «Don Quizás» есть по несколько раз. Название на YouTube может повторяться, а @handle должен быть уникальным, его проверим при регистрации.</p>
+  <div class="names">
+    <div class="name rec"><span class="tag">Рекомендую</span><span class="nm" lang="es">Ponle Que…</span><p>Разговорное «допустим…» в Мексике и большей части Латинской Америки. Каждая серия может начинаться словами «Ponle que puedes…».</p></div>
+    <div class="name"><span class="nm" lang="es">¿Y Qué Tal Si…?</span><p>«А что, если…» — нейтрально для всех испаноязычных стран.</p></div>
+    <div class="name"><span class="nm" lang="es">Pasaría Pasaría</span><p>Игривый повтор, легко запомнить.</p></div>
+  </div>
+</section>
+
+<section aria-labelledby="pilot-h">
+  <h2 id="pilot-h">Пилот: <span lang="es">¿Qué pasaría si pudieras detener el tiempo?</span></h2>
+  <div class="meta">
+    <div><span class="k">Длина</span><span class="v">около 7:11, можно вытянуть за 8:00</span></div>
+    <div><span class="k">Правило</span><span class="v">1 хлопок — стоп, 2-й — пуск</span></div>
+    <div><span class="k">Почему тема</span><span class="v">29,7 тыс. поисков в месяц</span></div>
+    <div><span class="k">Поворот</span><span class="v">Валерия тоже так умеет</span></div>
+  </div>
+  <p>Тайминги посчитаны по настоящей озвучке каждой сцены плюс паузы на визуальные шутки. Нажмите на сцену, чтобы увидеть текст на испанском и перевод.</p>
+  <div class="scenes">
+{{SCENES}}
+  </div>
+</section>
+
+<section aria-labelledby="cast-h">
+  <h2 id="cast-h">Герои</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Герой</th><th>Кто</th><th>Внешность</th></tr></thead>
+    <tbody>
+      <tr><td lang="es">Tú</td><td>главный герой, 16 лет</td><td>кудри, жёлтое худи (уже нарисован кодом)</td></tr>
+      <tr><td lang="es">Nacho</td><td>лучший друг</td><td>высокий, зелёная кепка</td></tr>
+      <tr><td lang="es">Valeria</td><td>одноклассница, «та самая»</td><td>хвост, фиолетовая куртка</td></tr>
+      <tr><td lang="es">Profe Ramírez</td><td>учитель математики</td><td>усы, подозрительный взгляд</td></tr>
+      <tr><td lang="es">Mamá</td><td>мама героя</td><td>—</td></tr>
+      <tr><td lang="es">Pepe</td><td>голубь, талисман канала</td><td>молчит, лучший слушатель</td></tr>
+      <tr><td lang="es">Michi</td><td>кот героя</td><td>—</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section aria-labelledby="top-h">
+  <h2 id="top-h">Первые 20 тем</h2>
+  <p>Темы отсортированы по тому, сколько уже набирали такие ролики на испанском и английском.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>#</th><th>Тема</th><th>Почему</th></tr></thead>
+    <tbody>
+      <tr><td class="num">1</td><td lang="es">¿Qué pasaría si pudieras detener el tiempo?</td><td>29,7 тыс. поисков в месяц, 623 тыс. у Anima · пилот</td></tr>
+      <tr><td class="num">2</td><td lang="es">¿Qué pasaría si pudieras ver quién está enamorado de ti?</td><td>1,84 млн на английском, в испанском пока нет · продолжает линию Валерии</td></tr>
+      <tr><td class="num">3</td><td lang="es">¿Qué pasaría si dejaras de sentir dolor?</td><td>876 тыс.</td></tr>
+      <tr><td class="num">4</td><td lang="es">¿Y si todos se convirtieran en bebés, excepto tú?</td><td>377 тыс.</td></tr>
+      <tr><td class="num">5</td><td lang="es">¿Qué pasaría si tuvieras 500 de IQ?</td><td>402 тыс.</td></tr>
+      <tr><td class="num">6</td><td lang="es">¿Qué pasaría si fueras inmortal?</td><td>275 тыс., спрос растёт на 86%</td></tr>
+      <tr><td class="num">7</td><td lang="es">¿Qué pasaría si pudieras ver 5 segundos del futuro?</td><td>246 тыс., низкая конкуренция в поиске</td></tr>
+      <tr><td class="num">8</td><td lang="es">¿Qué pasaría si nadie pudiera mentir, excepto tú?</td><td>216 тыс.</td></tr>
+      <tr><td class="num">9</td><td lang="es">¿Qué pasaría si reaccionaras 10 veces más rápido?</td><td>303 и 268 тыс. на двух каналах</td></tr>
+      <tr><td class="num">10</td><td lang="es">¿Qué pasaría si tuvieras dinero infinito?</td><td>920 тыс. на английском</td></tr>
+      <tr><td class="num">11</td><td lang="es">¿Qué pasaría si tuvieras modo creativo en la vida real?</td><td>140 и 90 тыс.</td></tr>
+      <tr><td class="num">12</td><td lang="es">¿Qué pasaría si pudieras controlar tu suerte?</td><td>732 тыс. на английском</td></tr>
+      <tr><td class="num">13</td><td lang="es">¿Qué pasaría si crecieras 1 cm por minuto?</td><td>129 тыс.</td></tr>
+      <tr><td class="num">14</td><td lang="es">¿Qué pasaría si dejaras de envejecer?</td><td>114 тыс.</td></tr>
+      <tr><td class="num">15</td><td lang="es">¿Qué pasaría si fueras el único chico en una escuela de chicas?</td><td>957 тыс. на английском</td></tr>
+      <tr><td class="num">16</td><td lang="es">¿Qué pasaría si pudieras volverte invisible?</td><td>63 тыс.; 7,1 тыс. поисков в месяц</td></tr>
+      <tr><td class="num">17</td><td lang="es">¿Qué pasaría si pudieras teletransportarte?</td><td>59 тыс.</td></tr>
+      <tr><td class="num">18</td><td lang="es">¿Qué pasaría si dejaras de dormir?</td><td>9,2 тыс. поисков в месяц</td></tr>
+      <tr><td class="num">19</td><td lang="es">¿Qué pasaría si vivieras en un bucle temporal?</td><td>26 тыс.</td></tr>
+      <tr><td class="num">20</td><td lang="es">¿Qué pasaría si fueras el último humano en la Tierra?</td><td>12,6 тыс. поисков в месяц</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section aria-labelledby="prod-h">
+  <h2 id="prod-h">Производство</h2>
+  <ul class="plain">
+    <li><b>Анимация:</b> кодом в браузере (canvas + Playwright). Инструменты перенесены из ветки «What if» и проверены здесь. Герои, места и предметы собираются в библиотеку и переиспользуются в каждой серии.</li>
+    <li><b>Озвучка:</b> Kokoro-82M, лицензия Apache 2.0. Реплики Валерии и героя озвучиваются отдельными голосами.</li>
+    <li><b>Кредиты:</b> не нужны ни на картинку, ни на звук.</li>
+  </ul>
+  <div class="warn">
+    <b>Про английский канал</b>
+    <p>Модель OmniVoice, которой озвучивали серию 5 «What if», распространяется по лицензии CC-BY-NC, то есть только для некоммерческого использования. Для монетизируемого канала её лучше заменить.</p>
+  </div>
+</section>
+
+<footer>Файлы в репозитории <code>lookme-viewer</code>, папка <code>canal_es/</code>, ветка <code>claude/compassionate-brahmagupta-4zst0y</code>. Данные vidIQ на 10 ноября 2026.</footer>
+</div>

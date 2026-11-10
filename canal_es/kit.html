@@ -1,0 +1,240 @@
+<title>Ponle Que · испанский канал</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: one reading column; the "frozen world" is cool slate, the hero's hoodie yellow is the only warm color. */
+:root{
+  --bg:#EDF1F4; --surface:#FFFFFF; --frost:#DCE3E9; --ink:#17212B; --muted:#5A6774; --line:#C9D2DA;
+  --hoodie:#F2B705; --hoodie-ink:#3A2C00; --frozen:#7D93A8;
+  --f-display:"Bricolage Grotesque", "Inter", system-ui, sans-serif;
+  --f-body:"Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono:"JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#11161B; --surface:#182028; --frost:#1F2933; --ink:#E4EAF0; --muted:#9AA7B4; --line:#2C3843;
+  --hoodie:#F5C431; --hoodie-ink:#2B2000; --frozen:#8EA3B6; color-scheme:dark }}
+:root[data-theme="dark"]{
+  --bg:#11161B; --surface:#182028; --frost:#1F2933; --ink:#E4EAF0; --muted:#9AA7B4; --line:#2C3843;
+  --hoodie:#F5C431; --hoodie-ink:#2B2000; --frozen:#8EA3B6; color-scheme:dark }
+body{background:var(--bg); color:var(--ink); font:16px/1.6 var(--f-body);
+  padding-left:max(16px, env(safe-area-inset-left, 0px)); padding-right:max(16px, env(safe-area-inset-right, 0px)); padding-block:40px 64px}
+.wrap{max-width:860px; margin:0 auto; display:flex; flex-direction:column; gap:48px}
+h1,h2,h3{font-family:var(--f-display); text-wrap:balance; margin:0; line-height:1.15}
+h1{font-size:clamp(34px, 7vw, 56px); font-weight:800; letter-spacing:-0.02em}
+h1 .hi{background:var(--hoodie); color:var(--hoodie-ink); padding:0 .18em; border-radius:6px}
+h2{font-size:26px; font-weight:800}
+h3{font-size:18px; font-weight:600}
+p{margin:0; max-width:68ch}
+section{display:flex; flex-direction:column; gap:16px}
+.eyebrow{font:500 12px/1 var(--f-mono); letter-spacing:.08em; text-transform:uppercase; color:var(--muted)}
+.lede{font-size:18px; color:var(--muted)}
+header{display:flex; flex-direction:column; gap:16px}
+.rule-strip{display:flex; flex-wrap:wrap; gap:10px; margin-top:4px}
+.chip{font:500 13px/1 var(--f-mono); padding:8px 12px; border-radius:999px; border:1px solid var(--line); background:var(--surface)}
+.chip.y{background:var(--hoodie); color:var(--hoodie-ink); border-color:transparent}
+.chip.f{color:var(--frozen)}
+.todo{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--hoodie); border-radius:10px; padding:20px; display:flex; flex-direction:column; gap:12px}
+.todo ol{margin:0; padding-left:20px; display:flex; flex-direction:column; gap:6px}
+.voices{display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:12px}
+.voice{background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:16px; display:flex; flex-direction:column; gap:10px; min-width:0}
+.voice .vn{font:600 16px var(--f-display)}
+.voice .vd{font-size:14px; color:var(--muted)}
+.voice audio{width:100%}
+.tbl{overflow-x:auto; border:1px solid var(--line); border-radius:10px; background:var(--surface)}
+table{border-collapse:collapse; width:100%; font-size:14px}
+th,td{text-align:left; vertical-align:top; padding:10px 14px; border-bottom:1px solid var(--line)}
+tr:last-child td{border-bottom:none}
+th{font:500 12px/1.3 var(--f-mono); letter-spacing:.05em; text-transform:uppercase; color:var(--muted); background:var(--frost)}
+td.num{font-family:var(--f-mono); font-variant-numeric:tabular-nums; white-space:nowrap}
+td[lang="es"]{font-weight:500}
+.warn{background:var(--frost); border-radius:10px; padding:16px 18px; display:flex; flex-direction:column; gap:6px}
+.warn b{font-family:var(--f-display)}
+ul.plain{margin:0; padding-left:20px; display:flex; flex-direction:column; gap:8px; max-width:68ch}
+.names{display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:12px}
+.name{background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:16px; display:flex; flex-direction:column; gap:8px}
+.name .nm{font:800 22px var(--f-display)}
+.name.rec{border-color:var(--hoodie); box-shadow:0 0 0 1px var(--hoodie) inset}
+.name .tag{align-self:flex-start; font:500 11px/1 var(--f-mono); letter-spacing:.06em; text-transform:uppercase; background:var(--hoodie); color:var(--hoodie-ink); padding:5px 8px; border-radius:4px}
+.name p{font-size:14px; color:var(--muted)}
+.scenes{display:flex; flex-direction:column; gap:8px}
+details.scene{background:var(--surface); border:1px solid var(--line); border-radius:10px}
+details.scene summary{cursor:pointer; list-style:none; display:grid; grid-template-columns:56px 28px 1fr; align-items:baseline; gap:8px; padding:12px 16px}
+details.scene summary::-webkit-details-marker{display:none}
+details.scene summary:focus-visible{outline:2px solid var(--hoodie); outline-offset:2px; border-radius:10px}
+details[open].scene summary{border-bottom:1px solid var(--line)}
+.tc{font:500 13px var(--f-mono); color:var(--muted); font-variant-numeric:tabular-nums}
+.sn{font:500 13px var(--f-mono); color:var(--frozen)}
+.st{font-weight:600}
+.sb{padding:14px 16px 16px; display:flex; flex-direction:column; gap:12px}
+.pic{font-size:14px; color:var(--muted)}
+.esbox{border-left:3px solid var(--hoodie); padding-left:14px; display:flex; flex-direction:column; gap:8px}
+.es{font-size:16px}
+.es.line b{font:500 12px var(--f-mono); letter-spacing:.05em; color:var(--frozen); margin-right:6px}
+.ru{font-size:14px; color:var(--muted); font-style:italic}
+.card{font:500 13px var(--f-mono); background:var(--frost); padding:8px 10px; border-radius:6px; align-self:flex-start}
+.meta{display:grid; grid-template-columns:repeat(auto-fit, minmax(180px,1fr)); gap:12px}
+.meta div{background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:14px 16px; display:flex; flex-direction:column; gap:4px}
+.meta .k{font:500 12px var(--f-mono); color:var(--muted); letter-spacing:.05em; text-transform:uppercase}
+.meta .v{font-weight:600}
+footer{font-size:13px; color:var(--muted)}
+code{font-family:var(--f-mono); font-size:.9em}
+</style>
+
+<div class="wrap">
+<header>
+  <span class="eyebrow">Испанский канал · пакет запуска · 10 ноября 2026</span>
+  <h1><span class="hi">Ponle Que…</span> ¿qué pasaría si pudieras detener el tiempo?</h1>
+  <p class="lede">Анимационный канал на испанском в формате «что, если бы ты…». Анимация рисуется кодом, озвучка бесплатная с коммерческой лицензией. Кредиты не нужны. Название рабочее, варианты ниже.</p>
+  <div class="rule-strip">
+    <span class="chip y">Герой в цвете</span><span class="chip f">мир на паузе — серо-голубой</span><span class="chip">голубь Пепе в каждой серии</span>
+  </div>
+</header>
+
+<section class="todo" aria-labelledby="todo-h">
+  <h2 id="todo-h">Что нужно от вас</h2>
+  <ol>
+    <li>Выбрать голос рассказчика из трёх проб ниже.</li>
+    <li>Выбрать название канала (или предложить своё).</li>
+    <li>Утвердить сценарий пилота или сказать, что поменять.</li>
+  </ol>
+  <p>После этого я рисую героев и места кодом и собираю пилот целиком.</p>
+</section>
+
+<section aria-labelledby="voice-h">
+  <h2 id="voice-h">Голос рассказчика</h2>
+  <p>Модель Kokoro, лицензия Apache 2.0, монетизировать можно. Все три пробы Whisper распознал слово в слово, значит произношение чистое.</p>
+  <div class="voices">
+    <div class="voice"><span class="vn">Alex</span><span class="vd">Мужской, ровный, чуть быстрый. Подходит для сухого юмора.</span><audio controls preload="none" src="voz/muestra_em_alex.mp3"></audio></div>
+    <div class="voice"><span class="vn">Santa</span><span class="vd">Мужской, ниже и теплее.</span><audio controls preload="none" src="voz/muestra_em_santa.mp3"></audio></div>
+    <div class="voice"><span class="vn">Dora</span><span class="vd">Женский. Можно взять рассказчицей или оставить для реплик Валерии.</span><audio controls preload="none" src="voz/muestra_ef_dora.mp3"></audio></div>
+  </div>
+</section>
+
+<section aria-labelledby="mkt-h">
+  <h2 id="mkt-h">Что показал рынок</h2>
+  <p>Формат работает и в испанском: небольшие каналы, которые выпускают ролики каждый день, набирают сотни тысяч просмотров.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Канал</th><th>Подписчики</th><th>Лучшие ролики</th></tr></thead>
+    <tbody>
+      <tr><td>Giro Imposible · Колумбия</td><td class="num">12,6 тыс.</td><td><span lang="es">dejaras de sentir dolor</span> — 876 тыс.; <span lang="es">todos bebés, excepto tú</span> — 377 тыс.; <span lang="es">fueras inmortal</span> — 275 тыс.</td></tr>
+      <tr><td>Noah_Ketalsi · Колумбия</td><td class="num">5,2 тыс.</td><td><span lang="es">IQ de 500</span> — 402 тыс.; <span lang="es">reaccionaras 10 veces más rápido</span> — 303 тыс.</td></tr>
+      <tr><td>Anima · Мексика</td><td class="num">41 тыс.</td><td><span lang="es">pudieras detener el tiempo</span> — 623 тыс., в 17 раз больше обычного для канала</td></tr>
+    </tbody>
+  </table></div>
+  <div class="warn">
+    <b>Главный риск</b>
+    <p>За последние 3–4 недели в нише появились десятки новых каналов с почти одинаковыми описаниями. Только под названием «Supongamos» нашлось больше десяти каналов, созданных в октябре–ноябре. Почти у всех меньше 100 подписчиков. Значит, просто делать формат уже мало, нужно заметно отличаться.</p>
+  </div>
+  <h3>Как выделиться</h3>
+  <ul class="plain">
+    <li><b>Постоянные герои и сквозной сюжет.</b> У конкурентов безликие стикмены и скелеты. У нас Начо, Валерия и профе Рамирес, а каждая серия заканчивается крючком на следующую.</li>
+    <li><b>Голубь Пепе в каждой серии.</b> Он где-то спрятан, зрители ищут его и пишут в комментариях, где нашли.</li>
+    <li><b>Фирменный кадр.</b> Когда работает сила героя, мир серо-голубой, а цветной только герой. Обложку видно издалека.</li>
+    <li><b>Чистая картинка.</b> Анимация кодом — это 1080p без искажений. Ролики нейросетей рядом выглядят хуже.</li>
+    <li><b>Темп.</b> Сначала 3 длинных ролика в неделю и по 3 Shorts к каждому. Когда наберётся библиотека сцен — ролик каждый день.</li>
+  </ul>
+</section>
+
+<section aria-labelledby="name-h">
+  <h2 id="name-h">Название</h2>
+  <p>Простые слова уже заняты: «Supongamos», «Imagina», «¿Y si fueras tú?», «Tu Otra Vida», «Casi Posible» и «Don Quizás» есть по несколько раз. Название на YouTube может повторяться, а @handle должен быть уникальным, его проверим при регистрации.</p>
+  <div class="names">
+    <div class="name rec"><span class="tag">Рекомендую</span><span class="nm" lang="es">Ponle Que…</span><p>Разговорное «допустим…» в Мексике и большей части Латинской Америки. Каждая серия может начинаться словами «Ponle que puedes…».</p></div>
+    <div class="name"><span class="nm" lang="es">¿Y Qué Tal Si…?</span><p>«А что, если…» — нейтрально для всех испаноязычных стран.</p></div>
+    <div class="name"><span class="nm" lang="es">Pasaría Pasaría</span><p>Игривый повтор, легко запомнить.</p></div>
+  </div>
+</section>
+
+<section aria-labelledby="pilot-h">
+  <h2 id="pilot-h">Пилот: <span lang="es">¿Qué pasaría si pudieras detener el tiempo?</span></h2>
+  <div class="meta">
+    <div><span class="k">Длина</span><span class="v">около 7:11, можно вытянуть за 8:00</span></div>
+    <div><span class="k">Правило</span><span class="v">1 хлопок — стоп, 2-й — пуск</span></div>
+    <div><span class="k">Почему тема</span><span class="v">29,7 тыс. поисков в месяц</span></div>
+    <div><span class="k">Поворот</span><span class="v">Валерия тоже так умеет</span></div>
+  </div>
+  <p>Тайминги посчитаны по настоящей озвучке каждой сцены плюс паузы на визуальные шутки. Нажмите на сцену, чтобы увидеть текст на испанском и перевод.</p>
+  <div class="scenes">
+<details class="scene"><summary><span class="tc">0:00</span><span class="sn">1</span><span class="st">Холодное открытие</span></summary><div class="sb"><p class="pic">школьный коридор, все замерли на полушаге. Мяч висит в воздухе, Начо застыл посреди чиха, капли видно. Герой идёт сквозь толпу, он единственный в цвете. Щёлкает пальцем по висящему мячу.</p><div class="esbox" lang="es"><p class="es">Imagina que puedes detener el tiempo. Todo el mundo se queda congelado: tus compañeros, el balón… y Nacho, a mitad de un estornudo. Suena increíble. Y lo es. Durante unos diez minutos.</p><p class="es">Hoy vamos a ver qué pasaría de verdad si pudieras detener el tiempo. Y créeme: el problema no es el tiempo. El problema eres tú.</p></div><p class="ru">Представь, что можешь остановить время. Все замирают: одноклассники, мяч… и Начо посреди чиха. Звучит потрясающе. Так и есть. Минут десять. Сегодня разберёмся, что было бы на самом деле. И поверь: проблема не во времени. Проблема в тебе.</p></div></details>
+<details class="scene"><summary><span class="tc">0:27</span><span class="sn">2</span><span class="st">Заставка</span></summary><div class="sb"><p class="card">«¿QUÉ PASARÍA SI PUDIERAS DETENER EL TIEMPO?» Хлопок, всё сереет.</p></div></details>
+<details class="scene"><summary><span class="tc">0:31</span><span class="sn">3</span><span class="st">Утро</span></summary><div class="sb"><p class="pic">спальня, будильник 6:59 звенит. Герой потягивается и хлопает в ладоши, чтобы проснуться. Звон обрывается, стрелки замирают, кот Мичи висит в воздухе посреди прыжка на кровать.</p><div class="esbox" lang="es"><p class="es">Todo empieza un martes cualquiera. Suena la alarma. Tú aplaudes para despertarte… y la alarma se calla. No porque la apagaste. Porque el mundo entero se detuvo. Tu gato Michi se quedó flotando a medio salto.</p></div><p class="ru">Всё начинается в обычный вторник. Звенит будильник. Ты хлопаешь, чтобы проснуться, и будильник замолкает. Не потому что ты его выключил: остановился весь мир. Кот Мичи завис посреди прыжка.</p></div></details>
+<details class="scene"><summary><span class="tc">0:52</span><span class="sn">4</span><span class="st">Кухня</span></summary><div class="sb"><p class="pic">мама замерла с кофейником, струя кофе висит в воздухе. Герой трогает струю, капля остаётся на пальце. Хлопок: всё оживает, кофе льётся на стол, мама: «¿Eh?» Карточка правила.</p><div class="esbox" lang="es"><p class="es">En la cocina, tu mamá sirve café. Bueno, servía. El chorro de café está quieto en el aire, como una escultura. Lo tocas. Está tibio. Aplaudes otra vez, y todo sigue. El café también. Sobre la mesa.</p><p class="es">Regla número uno: un aplauso detiene el mundo. Otro aplauso lo vuelve a encender.</p></div><p class="ru">На кухне мама наливает кофе. Вернее, наливала. Струя стоит в воздухе, как скульптура. Ты её трогаешь, она тёплая. Хлопаешь ещё раз, и всё продолжается. Кофе тоже. Прямо на стол. Правило номер один: один хлопок выключает мир, второй включает.</p><p class="card">REGLA #1 · 👏 = TODO SE DETIENE · 👏👏 = TODO SIGUE</p></div></details>
+<details class="scene"><summary><span class="tc">1:18</span><span class="sn">5</span><span class="st">Лишний сон</span></summary><div class="sb"><p class="pic">герой останавливает время, ложится обратно, храпит. Склейка: просыпается бодрый, часы всё ещё 6:59, солнце за окном на том же месте.</p><div class="esbox" lang="es"><p class="es">Lo primero que haces con el poder más grande de la historia es… dormir. Detienes el tiempo y duermes ocho horas más. Despiertas, y siguen siendo las seis cincuenta y nueve. Es el mejor día de tu vida.</p></div><p class="ru">Первое, что ты делаешь с величайшей силой в истории, — спишь. Останавливаешь время и спишь ещё восемь часов. Просыпаешься — всё ещё 6:59. Лучший день в твоей жизни.</p></div></details>
+<details class="scene"><summary><span class="tc">1:38</span><span class="sn">6</span><span class="st">Контрольная</span></summary><div class="sb"><p class="pic">класс, профе Рамирес раздаёт листы. Хлопок. Герой не списывает, а открывает учебник и учит, счётчик «Horas extra: 3». Хлопок, он решает всё за две минуты и сдаёт. Профе смотрит в лист, потом на героя, потом снова в лист.</p><div class="esbox" lang="es"><p class="es">Examen de matemáticas. Podrías copiar, claro. Pero tienes una idea mejor: detienes el tiempo y estudias. Tres horas, mientras el profe Ramírez se queda congelado con cara de sospecha. Que, para ser justos, es su cara normal.</p><p class="es">Entregas el examen en dos minutos. Diez de diez. El profe Ramírez lo revisa cuatro veces.</p></div><p class="ru">Контрольная по математике. Можно было бы списать. Но у тебя идея получше: останавливаешь время и учишь. Три часа, пока профе Рамирес стоит замерший с подозрительным лицом. Хотя, честно говоря, это его обычное лицо. Ты сдаёшь работу через две минуты. Десять из десяти. Профе проверяет её четыре раза.</p></div></details>
+<details class="scene"><summary><span class="tc">2:06</span><span class="sn">7</span><span class="st">Усы для Начо</span></summary><div class="sb"><p class="pic">урок истории, Начо спит на парте. Хлопок. Герой рисует ему маркером аккуратные закрученные усы. Хлопок. Начо просыпается, видит себя в отражении окна, поворачивает голову и одобрительно кивает. Склейка: Начо всю неделю с усами, гордо.</p><div class="esbox" lang="es"><p class="es">En clase de historia, Nacho se queda dormido. Detienes el tiempo y le dibujas un bigote. Uno elegante, con puntas.</p><p class="es">Nacho se despierta, se ve en el reflejo de la ventana… y decide que le queda bien. Lo usa toda la semana.</p></div><p class="ru">На истории Начо засыпает. Ты останавливаешь время и рисуешь ему усы. Элегантные, с закрученными кончиками. Начо просыпается, видит себя в отражении окна… и решает, что ему идёт. Ходит с ними всю неделю.</p></div></details>
+<details class="scene"><summary><span class="tc">2:28</span><span class="sn">8</span><span class="st">Дождь</span></summary><div class="sb"><p class="pic">выход из школы, начинается ливень. Хлопок. Капли висят в воздухе, как бусины на нитках. Герой идёт домой между ними, одну отодвигает пальцем. Дома хлопок, за окном снова ливень. Мама смотрит на сухого сына и на пустую вешалку для зонта.</p><div class="esbox" lang="es"><p class="es">A la salida empieza a llover. Aplaudes. Millones de gotas se quedan colgadas en el aire, como cortinas de cristal. Caminas a casa esquivándolas, una por una.</p><p class="es">Llegas completamente seco. Tu mamá, que te vio salir sin paraguas, decide no hacer preguntas.</p></div><p class="ru">После уроков начинается дождь. Хлопок. Миллионы капель висят в воздухе, как стеклянные шторы. Ты идёшь домой, обходя их по одной. Приходишь совершенно сухим. Мама, которая видела, что ты ушёл без зонта, решает не задавать вопросов.</p></div></details>
+<details class="scene"><summary><span class="tc">2:55</span><span class="sn">9</span><span class="st">Книги Валерии</span></summary><div class="sb"><p class="pic">коридор, у Валерии падают книги, листы разлетаются. Хлопок, листы висят в воздухе. Герой собирает их, складывает по размеру и вкладывает ей в руки. Возвращается на место, хлопок. Валерия моргает, смотрит на аккуратную стопку и оглядывается.</p><div class="esbox" lang="es"><p class="es">En el pasillo, a Valeria se le caen los libros. Sí, esa Valeria. Aplaudes, recoges todo, lo ordenas por tamaño y se lo devuelves a sus manos. Aplaudes otra vez.</p><p class="es">Desde su punto de vista, sus libros se cayeron… y volvieron solos. Seguramente ahora Valeria cree que la escuela está embrujada. No es exactamente la impresión que querías dar.</p></div><p class="ru">В коридоре у Валерии падают книги. Да, у той самой Валерии. Ты хлопаешь, собираешь всё, раскладываешь по размеру и возвращаешь ей в руки. Хлопаешь снова. С её точки зрения, книги упали и вернулись сами. Наверное, теперь Валерия думает, что в школе водятся привидения. Не совсем то впечатление, которое ты хотел произвести.</p></div></details>
+<details class="scene"><summary><span class="tc">3:25</span><span class="sn">10</span><span class="st">Пенальти</span></summary><div class="sb"><p class="pic">школьное поле. Герой бьёт пенальти, мяч летит мимо ворот, в сторону столовой. Хлопок. Герой идёт к мячу, несёт его на руках, как младенца, и кладёт в угол ворот. Хлопок. ГОЛ, все прыгают. Начо в воротах смотрит на свои пустые перчатки.</p><div class="esbox" lang="es"><p class="es">En educación física te toca patear un penal. Tu tiro va directo hacia… la cafetería. Aplaudes. Caminas hasta el balón, lo cargas como a un bebé y lo acomodas en el ángulo. Aplaudes. Gol.</p><p class="es">Nacho, el portero, se queda mirando sus manos durante el resto del día.</p></div><p class="ru">На физкультуре тебе бить пенальти. Мяч летит прямиком… в столовую. Хлопок. Ты подходишь к мячу, несёшь его на руках, как младенца, и кладёшь в девятку. Хлопок. Гол. Начо, вратарь, до конца дня разглядывает свои руки.</p></div></details>
+<details class="scene"><summary><span class="tc">3:50</span><span class="sn">11</span><span class="st">Проблема первая: ты стареешь</span></summary><div class="sb"><p class="pic">дома у зеркала. Счётчик крутится до «312 horas». Календарь: «+13 días». Крупный план: один седой волос. За ужином мама прищуривается.</p><div class="esbox" lang="es"><p class="es">Pero hay un detalle que nadie te explicó. Cuando el mundo se detiene, tú no. Cada siesta, cada hora de estudio, cada penal… tú sí los vives.</p><p class="es">En un mes ya llevas trescientas doce horas extra. Eso son trece días que viviste tú, y nadie más. Y un día, en el espejo, la ves. Una cana. Tienes dieciséis años.</p></div><p class="ru">Но есть деталь, о которой тебе никто не сказал. Когда мир стоит, ты не стоишь. Каждый лишний сон, каждый час учёбы, каждый пенальти ты проживаешь на самом деле. За месяц набирается 312 лишних часов. Это 13 дней, которые прожил только ты. И однажды в зеркале ты его видишь. Седой волос. Тебе шестнадцать.</p></div></details>
+<details class="scene"><summary><span class="tc">4:17</span><span class="sn">12</span><span class="st">Ничего не работает</span></summary><div class="sb"><p class="pic">серый мир, комната героя. Он подключает телефон — 3%, не заряжается. Открывает кран — вода стоит в носике сосулькой. Включает телевизор — на экране пауза. Падает лицом в подушку.</p><div class="esbox" lang="es"><p class="es">Además, en el tiempo detenido nada funciona. El celular no carga. El agua no sale de la llave. Intentas ver una serie… y está en pausa. Literalmente todo está en pausa.</p></div><p class="ru">К тому же в остановленном времени ничего не работает. Телефон не заряжается. Вода не течёт из крана. Пытаешься посмотреть сериал… а он на паузе. Буквально всё на паузе.</p></div></details>
+<details class="scene"><summary><span class="tc">4:35</span><span class="sn">13</span><span class="st">Проблема вторая: аплодисменты</span></summary><div class="sb"><p class="pic">день рождения Начо, торт, шарики. Все поют, Начо задувает свечи, все хлопают. Герой хлопает по привычке, мир застывает, пламя свечей тоже. Хлопает, чтобы продолжить, но все ещё аплодируют, и руки сами попадают в ритм: стоп, пуск, стоп, пуск, картинка мигает серым и цветным. В конце герой садится на свои ладони. Карточка правила.</p><div class="esbox" lang="es"><p class="es">El segundo problema es más ruidoso. Es el cumpleaños de Nacho. Todos cantan, Nacho sopla las velas, y todo el mundo aplaude. Tú también. Por reflejo.</p><p class="es">Todo se congela. Aplaudes para seguir… pero todos siguen aplaudiendo, y tus manos siguen el ritmo. Congelado. Sigue. Congelado. Sigue.</p><p class="es">Para los demás, fue una fiesta normal. Para ti, ese aplauso duró cuarenta minutos. Regla número dos: en las fiestas, te sientas sobre tus manos.</p></div><p class="ru">Вторая проблема погромче. День рождения Начо. Все поют, Начо задувает свечи, все хлопают. Ты тоже, по привычке. Всё замирает. Ты хлопаешь, чтобы продолжить, но все продолжают хлопать, и твои руки попадают в ритм. Стоп. Пуск. Стоп. Пуск. Для остальных это был обычный праздник. Для тебя эти аплодисменты длились сорок минут. Правило номер два: на праздниках сиди на своих руках.</p><p class="card">REGLA #2 · EN LAS FIESTAS, NO APLAUDAS</p></div></details>
+<details class="scene"><summary><span class="tc">5:16</span><span class="sn">14</span><span class="st">Проблема третья: тишина</span></summary><div class="sb"><p class="pic">парк, серый мир, на скамейке застывший голубь. Герой садится рядом и говорит с ним. Короткий монтаж: разные дни, герой что-то рассказывает и показывает руками, голубь неподвижен. Подпись: «PEPE».</p><div class="esbox" lang="es"><p class="es">Y el tercer problema es el silencio. En el tiempo detenido no hay nadie con quien hablar. Así que empiezas a hablar con una paloma. Le pones Pepe.</p><p class="es">Le cuentas lo de Valeria, lo de la cana, lo del examen. Pepe no dice nada. Pepe es, sinceramente, el mejor amigo que has tenido en semanas.</p></div><p class="ru">Третья проблема — тишина. В остановленном времени поговорить не с кем. Так что ты начинаешь разговаривать с голубем. Называешь его Пепе. Рассказываешь про Валерию, про седой волос, про контрольную. Пепе молчит. Честно говоря, Пепе — лучший друг, который был у тебя за последние недели.</p></div></details>
+<details class="scene"><summary><span class="tc">5:44</span><span class="sn">15</span><span class="st">Кульминация: горшок</span></summary><div class="sb"><p class="pic">улица у школы, сверху с балкона падает цветочный горшок прямо на Валерию. Хлопок. Горшок висит в полуметре над её головой. Герой аккуратно снимает его. Пауза: он понимает, что будет дальше. Хлопок. Валерия видит его рядом с горшком в руках.</p><div class="esbox" lang="es"><p class="es">Un viernes, saliendo de la escuela, una maceta cae desde un balcón. Justo encima de Valeria. Aplaudes. La maceta se queda a medio metro de su cabeza. La bajas con cuidado.</p><p class="es">Y ahora tienes un problema: si aplaudes, Valeria te va a ver a su lado, con una maceta en las manos, salido de la nada. Aplaudes de todas formas.</p><p class="es line"><b>VALERIA</b> ¿Cómo llegaste tan rápido?</p><p class="es line"><b>TÚ</b> Eh… hago mucho ejercicio.</p></div><p class="ru">В пятницу после школы с балкона падает цветочный горшок. Прямо на Валерию. Хлопок. Горшок висит в полуметре над её головой. Ты аккуратно снимаешь его. И тут проблема: если хлопнешь, Валерия увидит тебя рядом с горшком в руках, появившегося из ниоткуда. Ты всё равно хлопаешь. — Как ты так быстро тут оказался? — Э… я много тренируюсь.</p></div></details>
+<details class="scene"><summary><span class="tc">6:17</span><span class="sn">16</span><span class="st">Поворот</span></summary><div class="sb"><p class="pic">ночь, серый парк. Герой идёт к скамейке с Пепе. Рядом с голубем кто-то сидит, и этот кто-то двигается. Валерия, в цвете. Она смотрит на героя, потом на Пепе.</p><div class="esbox" lang="es"><p class="es">Esa noche detienes el tiempo para ir a hablar con Pepe. Pero esta vez, en la banca, hay alguien más. Alguien que se mueve.</p><p class="es line"><b>VALERIA</b> ¿Tú también aplaudes? Qué tierno. Yo chasqueo los dedos.</p><p class="es line"><b>TÚ</b> ¿Desde cuándo puedes hacer esto?</p><p class="es line"><b>VALERIA</b> ¿Contando el tiempo detenido? Tengo diecinueve años.</p><p class="es">Resulta que no eres la única persona que puede detener el tiempo. Y lo de los libros… Valeria nunca estuvo congelada. Lo vio todo. Hasta cuando los ordenaste por tamaño.</p></div><p class="ru">Этой ночью ты останавливаешь время, чтобы поговорить с Пепе. Но на скамейке кто-то есть. Кто-то, кто двигается. — Ты тоже хлопаешь? Как мило. Я щёлкаю пальцами. — И давно ты так умеешь? — Если считать остановленное время, мне девятнадцать. Оказывается, время умеешь останавливать не только ты. А тогда, с книгами… Валерия вовсе не замирала. Она всё видела. Даже как ты раскладывал их по размеру.</p></div></details>
+<details class="scene"><summary><span class="tc">6:54</span><span class="sn">17</span><span class="st">Концовка</span></summary><div class="sb"><p class="pic">Пепе крупно. Пепе моргает. Конечная заставка.</p><div class="esbox" lang="es"><p class="es">¿Y tú qué harías con el tiempo detenido? Déjamelo en los comentarios. Y si quieres saber qué pasa con Valeria… suscríbete. Pepe también quiere saber.</p></div><p class="ru">А что бы сделал ты с остановленным временем? Напиши в комментариях. А если хочешь узнать, что будет с Валерией, подпишись. Пепе тоже хочет знать.</p></div></details>
+  </div>
+</section>
+
+<section aria-labelledby="cast-h">
+  <h2 id="cast-h">Герои</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Герой</th><th>Кто</th><th>Внешность</th></tr></thead>
+    <tbody>
+      <tr><td lang="es">Tú</td><td>главный герой, 16 лет</td><td>кудри, жёлтое худи (уже нарисован кодом)</td></tr>
+      <tr><td lang="es">Nacho</td><td>лучший друг</td><td>высокий, зелёная кепка</td></tr>
+      <tr><td lang="es">Valeria</td><td>одноклассница, «та самая»</td><td>хвост, фиолетовая куртка</td></tr>
+      <tr><td lang="es">Profe Ramírez</td><td>учитель математики</td><td>усы, подозрительный взгляд</td></tr>
+      <tr><td lang="es">Mamá</td><td>мама героя</td><td>—</td></tr>
+      <tr><td lang="es">Pepe</td><td>голубь, талисман канала</td><td>молчит, лучший слушатель</td></tr>
+      <tr><td lang="es">Michi</td><td>кот героя</td><td>—</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section aria-labelledby="top-h">
+  <h2 id="top-h">Первые 20 тем</h2>
+  <p>Темы отсортированы по тому, сколько уже набирали такие ролики на испанском и английском.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>#</th><th>Тема</th><th>Почему</th></tr></thead>
+    <tbody>
+      <tr><td class="num">1</td><td lang="es">¿Qué pasaría si pudieras detener el tiempo?</td><td>29,7 тыс. поисков в месяц, 623 тыс. у Anima · пилот</td></tr>
+      <tr><td class="num">2</td><td lang="es">¿Qué pasaría si pudieras ver quién está enamorado de ti?</td><td>1,84 млн на английском, в испанском пока нет · продолжает линию Валерии</td></tr>
+      <tr><td class="num">3</td><td lang="es">¿Qué pasaría si dejaras de sentir dolor?</td><td>876 тыс.</td></tr>
+      <tr><td class="num">4</td><td lang="es">¿Y si todos se convirtieran en bebés, excepto tú?</td><td>377 тыс.</td></tr>
+      <tr><td class="num">5</td><td lang="es">¿Qué pasaría si tuvieras 500 de IQ?</td><td>402 тыс.</td></tr>
+      <tr><td class="num">6</td><td lang="es">¿Qué pasaría si fueras inmortal?</td><td>275 тыс., спрос растёт на 86%</td></tr>
+      <tr><td class="num">7</td><td lang="es">¿Qué pasaría si pudieras ver 5 segundos del futuro?</td><td>246 тыс., низкая конкуренция в поиске</td></tr>
+      <tr><td class="num">8</td><td lang="es">¿Qué pasaría si nadie pudiera mentir, excepto tú?</td><td>216 тыс.</td></tr>
+      <tr><td class="num">9</td><td lang="es">¿Qué pasaría si reaccionaras 10 veces más rápido?</td><td>303 и 268 тыс. на двух каналах</td></tr>
+      <tr><td class="num">10</td><td lang="es">¿Qué pasaría si tuvieras dinero infinito?</td><td>920 тыс. на английском</td></tr>
+      <tr><td class="num">11</td><td lang="es">¿Qué pasaría si tuvieras modo creativo en la vida real?</td><td>140 и 90 тыс.</td></tr>
+      <tr><td class="num">12</td><td lang="es">¿Qué pasaría si pudieras controlar tu suerte?</td><td>732 тыс. на английском</td></tr>
+      <tr><td class="num">13</td><td lang="es">¿Qué pasaría si crecieras 1 cm por minuto?</td><td>129 тыс.</td></tr>
+      <tr><td class="num">14</td><td lang="es">¿Qué pasaría si dejaras de envejecer?</td><td>114 тыс.</td></tr>
+      <tr><td class="num">15</td><td lang="es">¿Qué pasaría si fueras el único chico en una escuela de chicas?</td><td>957 тыс. на английском</td></tr>
+      <tr><td class="num">16</td><td lang="es">¿Qué pasaría si pudieras volverte invisible?</td><td>63 тыс.; 7,1 тыс. поисков в месяц</td></tr>
+      <tr><td class="num">17</td><td lang="es">¿Qué pasaría si pudieras teletransportarte?</td><td>59 тыс.</td></tr>
+      <tr><td class="num">18</td><td lang="es">¿Qué pasaría si dejaras de dormir?</td><td>9,2 тыс. поисков в месяц</td></tr>
+      <tr><td class="num">19</td><td lang="es">¿Qué pasaría si vivieras en un bucle temporal?</td><td>26 тыс.</td></tr>
+      <tr><td class="num">20</td><td lang="es">¿Qué pasaría si fueras el último humano en la Tierra?</td><td>12,6 тыс. поисков в месяц</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section aria-labelledby="prod-h">
+  <h2 id="prod-h">Производство</h2>
+  <ul class="plain">
+    <li><b>Анимация:</b> кодом в браузере (canvas + Playwright). Инструменты перенесены из ветки «What if» и проверены здесь. Герои, места и предметы собираются в библиотеку и переиспользуются в каждой серии.</li>
+    <li><b>Озвучка:</b> Kokoro-82M, лицензия Apache 2.0. Реплики Валерии и героя озвучиваются отдельными голосами.</li>
+    <li><b>Кредиты:</b> не нужны ни на картинку, ни на звук.</li>
+  </ul>
+  <div class="warn">
+    <b>Про английский канал</b>
+    <p>Модель OmniVoice, которой озвучивали серию 5 «What if», распространяется по лицензии CC-BY-NC, то есть только для некоммерческого использования. Для монетизируемого канала её лучше заменить.</p>
+  </div>
+</section>
+
+<footer>Файлы в репозитории <code>lookme-viewer</code>, папка <code>canal_es/</code>, ветка <code>claude/compassionate-brahmagupta-4zst0y</code>. Данные vidIQ на 10 ноября 2026.</footer>
+</div>
