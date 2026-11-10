@@ -125,3 +125,35 @@ OmniVoice на CPU, голоса по описанию, без клона реа
 | s17_02 | narrador | 1.6 | 0.0 | Déjamelo en los comentarios. |
 | s17_03 | narrador | 2.8 | 0.0 | y si quieres saber que pasa con Valeria, suscríbete. |
 | s17_04 | narrador | 1.5 | 0.0 | Pepe también quiere saber. |
+
+## Вторая версия (v2): 19 реплик, 23 файла
+
+Новые голоса по описанию, без клона реального человека: mama «female, middle-aged», profe «male, elderly, low pitch», nacho «male, teenager», хор: chico1 «male, teenager», chico2 «male, young adult», chica1 «female, teenager». Якоря лежат в `vo_trial/anchor_*.wav`. s07_04, s08_03, s15_06 перезаписаны новыми текстами.
+
+Проверка: faster-whisper small, language=es, 16 кГц через ffmpeg. «tasa» вместо «taza» это омофон в латиноамериканском произношении, не ошибка озвучки.
+
+| id | кто | длина, с | текст | Whisper |
+|---|---|---|---|---|
+| s00_01 | narrador | 3.18 | Esta maceta está a medio metro de la cabeza de Valeria. | Esta maceta está a medio metro de la cabeza de Valeria. |
+| s00_02 | narrador | 1.74 | El mundo entero está congelado. | el mundo entero está congelado. |
+| s00_03 | narrador | 1.7 | Y tú eres el único que se mueve. | y tú eres el único que se mueve. |
+| s00_04 | narrador | 1.45 | ¿Cómo llegaste hasta aquí? | ¿Cómo llegaste hasta aquí? |
+| s00_05 | narrador | 1.53 | Empecemos por el principio. | Empecemos por el principio. |
+| s07_04 | narrador | 2.87 | Nacho se despierta y se ve en el reflejo de la ventana. | Nacho se despierta y se ve en el reflejo de la ventana. |
+| s08_03 | narrador | 2.53 | Millones de gotas se quedan colgadas en el aire. | Millones de gotas se quedan colgadas en el aire. |
+| s15_06 | narrador | 5.8 | Y ahora tienes un problema: si aplaudes, Valeria te verá a su lado. Con una maceta. Salido de la nada. | Y ahora tienes un problema, si aplaudes, Valeria te verá a su lado, con una maceta, salido de la nada. |
+| s04_08b | mama | 1.44 | ¿Eh? ¿Y la taza? | ¿Eh? ¿Y la tasa? |
+| s06_06b | profe | 1.64 | ¿Ya terminaste? ¿Tú? | Ya terminaste? ¿Tú? |
+| s07_04b | nacho | 1.58 | Mmm… me queda bien. | Mmm, me queda bien. |
+| s09_05b | valeria | 1.71 | ¿Qué… acaba de pasar? | ¿Qué acaba de pasar? |
+| s10_06b_1 | chicos | 0.49 | ¡Gooool! | GOOL. |
+| s10_06b_2 | chicos | 1.27 | ¡Gooool! | GOOOL! |
+| s10_06b_3 | chicos | 0.76 | ¡Gooool! | GOOL |
+| s10_07b | nacho | 1.35 | ¿Pero… cómo? | Pero como... |
+| s12_04b | tu | 1.09 | Ay, no… | ¡Ay no! |
+| s13_01b_1 | chicos | 1.68 | ¡Feliz cumpleaños, Nacho! | ¡Feliz cumpleaños! Nacho. |
+| s13_01b_2 | chicos | 1.86 | ¡Feliz cumpleaños, Nacho! | ¡Feliz cumpleaños Nacho! |
+| s13_01b_3 | chicos | 1.74 | ¡Feliz cumpleaños, Nacho! | ¡Feliz cumpleaños Nacho! |
+| s13_02b | nacho | 1.59 | ¡Gracias, gracias! | Gracias, gracias. |
+| s14_05b | tu | 2.65 | Y entonces Valeria… bueno, tú me entiendes, Pepe. | Y entonces, Valeria, bueno, tú me entiendes, pepe. |
+| s17_00 | narrador | 4.93 | Aquella maceta, a medio metro de su cabeza… y tú creías que eras el único que se movía. | aquella maceta a medio metro de su cabeza y tú creías que eras el único que se movía. |
