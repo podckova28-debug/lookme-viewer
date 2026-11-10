@@ -146,18 +146,18 @@ SC.s04 = (X, t) => {
   const st = stage(cam); st.wld(g => drawSet(g, 'kitchen'));
   // mom pours: pot held over where the mug was; the mug gets slid aside by the hero
   const slide = R(t, Lm('s04_03', .45), Le('s04_03'));
-  const mugX = mix(960, 870, slide), potX = 1080, potY = 610;
-  const mp = { x: 1210, y: FEET, s: S0, t: wt, still: fz, blink: fz ? 0 : null, mouth: .3, look: [-14, 10], hL: [(potX + 30 - 1210) / (S0 * 1.03), (potY - 10 - FEET) / (S0 * 1.03)], hR: [128, -250] };
+  const mugX = mix(960, 870, slide), potX = 1066, potY = 600;
+  const mp = { x: 1190, y: FEET, s: S0, t: wt, still: fz, blink: fz ? 0 : null, mouth: .3, look: [-14, 12], hL: [(potX + 34 - 1190) / S0, (potY - 14 - FEET) / S0], hR: [130, -290] };
   if (wt > .3) { mp.look = [-10, 18]; mp.open = R(wt, .4, .7); mp.wide = R(wt, .4, .7) * .7; }
   if (speaking(t, 's04_08b')) { mp.open = talk(t, 's04_08b'); mp.look = [-12, 14]; mp.brow = .7; mp.wide = .5; }
   st.wld(g => drawChar(g, 'mama', mp));
-  st.wld(g => { const sx = potX - 62, sy = potY - 36;
-    if (!fz && wt > .05) coffeeStream(g, sx, sy, 960, 780, Math.sin(wt * 20) * 4); else coffeeStream(g, sx, sy, 960, 724);
-    propCoffeePot(g, potX, potY, .7, -.75); });
+  st.wld(g => { const sx = potX - 74, sy = potY - 2;   // spout tip of the tilted pot
+    propCoffeePot(g, potX, potY, .78, -.7);
+    if (!fz && wt > .05) coffeeStream(g, sx, sy, 960, 780, Math.sin(wt * 20) * 4); else coffeeStream(g, sx, sy, 960, 714); });
   // puddle on the table after the world resumes
   const pud = clamp(wt / 2.2);
   st.wld(g => { kitchenTable(g); if (pud > 0) { ell(g, 960, 784, 40 + 190 * pud, 10 + 8 * pud, 0, '#6a3b22', 4); if (pud > .5) for (const dx of [-140, 160]) { const k = R(wt, 1.2, 2.2); shape(g, q => rrPath(q, 960 + dx * pud - 6, 790, 12, 30 + 120 * k, 6), '#6a3b22', 3); } }
-    propMug(g, mugX, 752, 1, '#f4f1ea'); });
+    propMug(g, mugX, 748, 1.25, '#f4f1ea'); if (!fz && t < Lt('s04_06')) for (const d of [-10, 10]) line(g, [[mugX + d, 690], [mugX + d + Math.sin(wt * 3 + d) * 6, 650]], 'rgba(255,255,255,.7)', 4); });
   // hero walks in behind the table
   const hxw = mix(160, 840, R(t, .2, Lt('s04_02') - .2, lin)), walking = t > .2 && t < Lt('s04_02') - .2;
   const hp = { x: hxw, y: FEET, s: S0, t, walk: walking ? 1 : 0, phase: walkPh(hxw), mouth: .2, look: [14, 0] };
@@ -171,7 +171,7 @@ SC.s04 = (X, t) => {
   if (t > Le('s04_08') + .05) { hp.sweat = 1; hp.look = [16, 0]; }
   st.col(g => drawChar(g, 'tu', hp));
   st.wld(g => kitchenTable(g));
-  st.wld(g => propMug(g, mugX, 752, 1, '#f4f1ea'));
+  st.wld(g => propMug(g, mugX, 748, 1.25, '#f4f1ea'));
   const cp = worldToScreen(cam, ...clapPoint('tu', hp));
   compose2(X, st, freezeState(t, [{ t: tc, x: cp[0], y: cp[1], screen: 1 }], cam, 1));
   ruleCard(X, 1, 'UN APLAUSO: TODO SE DETIENE', t > Lt('s04_10') - .1 ? 'OTRO APLAUSO: TODO SIGUE' : '', R(t, Lt('s04_09') - .2, Lt('s04_09') + .2, outC));

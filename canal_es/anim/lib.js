@@ -27,7 +27,8 @@ function tube(g, pts, col, w, ol = LW) { g.lineCap = 'round'; g.lineJoin = 'roun
 function ik(sx, sy, tx, ty, L1, L2, out) { let dx = tx - sx, dy = ty - sy, d = Math.hypot(dx, dy); const m = L1 + L2 - 1; if (d > m) { tx = sx + dx / d * m; ty = sy + dy / d * m; d = m; }
   if (d < 1) d = 1; const b = Math.atan2(ty - sy, tx - sx), o = Math.acos(clamp((L1 * L1 + d * d - L2 * L2) / (2 * L1 * d), -1, 1));
   const e1 = [sx + L1 * Math.cos(b + o), sy + L1 * Math.sin(b + o)], e2 = [sx + L1 * Math.cos(b - o), sy + L1 * Math.sin(b - o)];
-  return [(out > 0) === (e1[0] > e2[0]) ? e1 : e2, [tx, ty]]; }
+  const sc = e => e[1] + .35 * out * e[0];   // y grows downward: prefer the lower elbow, then the outer one
+  return [sc(e1) >= sc(e2) ? e1 : e2, [tx, ty]]; }
 function mitten(g, x, y, r, col = '#f1ece6') { shape(g, q => q.arc(x, y, r, 0, 7), col); }
 function circ(g, x, y, r, fill, lw = LW) { shape(g, q => q.arc(x, y, r, 0, 7), fill, lw); }
 function ell(g, x, y, rx, ry, rot, fill, lw = LW) { shape(g, q => q.ellipse(x, y, rx, ry, rot, 0, 7), fill, lw); }
@@ -41,8 +42,8 @@ const CAST = {
   tu:      { r: 100, hair: 'curly', hairCol: '#1f1719', body: 'hoodie', top: '#e4ae3c', topD: '#bf8a24', pants: '#3b4a6b', shoe: '#e9e2d4', seed: 1 },
   nacho:   { r: 104, hair: 'cap', hairCol: '#5a3a26', capCol: '#3f8a4f', body: 'track', top: '#d9643a', topD: '#b04a26', stripe: '#f4efe6', pants: '#2f3440', shoe: '#f2f2f2', s: 1.07, seed: 2, freckles: 1 },
   valeria: { r: 96, hair: 'ponytail', hairCol: '#2b1a1f', body: 'jacket', top: '#7a4fb3', topD: '#5d3a8f', inner: '#f4f1ea', pants: '#2c2f45', shoe: '#e9e2d4', s: .97, seed: 3, lashes: 1 },
-  mama:    { r: 100, hair: 'bob', hairCol: '#6b3f2a', body: 'cardigan', top: '#3f8f8a', topD: '#2f6d69', inner: '#f2e6d8', pants: '#4a3b52', shoe: '#5a4a5a', s: 1.03, seed: 4, lashes: 1, earrings: 1 },
-  profe:   { r: 108, hair: 'baldSides', hairCol: '#9a9aa2', body: 'suit', top: '#7b5a3c', topD: '#5e4329', inner: '#f4f1ea', tie: '#b8343a', pants: '#4a3a2c', shoe: '#2a2020', s: 1.08, seed: 5, stache: 1, glasses: 1 },
+  mama:    { r: 92, hair: 'bob', hairCol: '#6b3f2a', body: 'cardigan', top: '#3f8f8a', topD: '#2f6d69', inner: '#f2e6d8', apron: '#f6efe2', pants: '#4a3b52', shoe: '#5a4a5a', s: 1.0, legL: 238, torsoL: 290, seed: 4, lashes: 1, earrings: 1 },
+  profe:   { r: 100, hair: 'baldSides', hairCol: '#9a9aa2', body: 'suit', top: '#7b5a3c', topD: '#5e4329', inner: '#f4f1ea', tie: '#b8343a', pants: '#4a3a2c', shoe: '#2a2020', s: 1.02, legL: 236, torsoL: 296, seed: 5, stache: 1, glasses: 1 },
   // extras: classmates and party guests
   ex1: { r: 96, hair: 'short', hairCol: '#3b2a20', body: 'tee', top: '#4f7fc4', topD: '#3a63a0', pants: '#33384a', shoe: '#ddd', seed: 6 },
   ex2: { r: 94, hair: 'bun', hairCol: '#1d1418', body: 'tee', top: '#e07a8a', topD: '#c05a6c', pants: '#3a3550', shoe: '#ddd', seed: 7, lashes: 1 },
@@ -146,8 +147,8 @@ function charGeom(c, p) {
   const sit = p.sit || 0, walk = p.walk || 0, ph = p.phase || 0;
   const bob = -Math.abs(Math.sin(ph)) * 10 * walk;
   const breathe = p.still ? 0 : Math.sin((p.t || 0) * 2.2 + c.seed) * 2.5;
-  const hipY = -200 + sit * 92 + bob - (p.jump || 0);
-  const top = hipY - 262 + (p.slump || 0) * 14 - breathe;
+  const legL = c.legL || 200, hipY = -legL + sit * 92 * legL / 200 + bob - (p.jump || 0);
+  const top = hipY - (c.torsoL || 262) + (p.slump || 0) * 14 - breathe;
   return { sit, walk, ph, hipY, top, sh: 82 };
 }
 const restHand = (s, G) => [s * 116, G.hipY - 34];   // a little elbow bend at rest
@@ -220,6 +221,8 @@ function drawChar(g, cname, p) {
   if (c.body === 'suit') { shape(g, q => { q.moveTo(-9, top + 8); q.lineTo(9, top + 8); q.lineTo(14, top + 150); q.lineTo(0, top + 172); q.lineTo(-14, top + 150); q.closePath(); }, c.tie, 3);
     shape(g, q => { q.moveTo(-30, top); q.lineTo(-62, top + 70); q.lineTo(-24, top + 120); }, null, 4); shape(g, q => { q.moveTo(30, top); q.lineTo(62, top + 70); q.lineTo(24, top + 120); }, null, 4); }
   if (c.body === 'cardigan') { g.fillStyle = '#f2e6d8'; for (let i = 0; i < 4; i++) { g.beginPath(); g.arc(34, top + 60 + i * 52, 6, 0, 7); g.fill(); } }
+  if (c.apron) { shape(g, q => { q.moveTo(-50, top + 120); q.lineTo(50, top + 120); q.lineTo(62, hem + 2); q.lineTo(-62, hem + 2); q.closePath(); }, c.apron, 4); line(g, [[-50, top + 120], [-wT, top + 132]], OUT, 3); line(g, [[50, top + 120], [wT, top + 132]], OUT, 3);
+    shape(g, q => rrPath(q, -26, top + 170, 52, 40, 6), 'rgba(0,0,0,.06)', 3); }
   if (c.body === 'track') { g.fillStyle = c.stripe; g.fillRect(-wT - 4, top + 30, 12, 300); g.fillRect(wT - 8, top + 30, 12, 300); shape(g, q => { q.moveTo(0, top); q.lineTo(0, hem); }, null, 4); }
   if (c.body === 'tee') { g.strokeStyle = 'rgba(0,0,0,.18)'; g.lineWidth = 4; g.beginPath(); g.arc(0, top - 6, 34, .3, Math.PI - .3); g.stroke(); }
   g.restore();
