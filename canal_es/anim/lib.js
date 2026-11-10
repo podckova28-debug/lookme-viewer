@@ -148,7 +148,26 @@ function charGeom(c, p) {
   const top = hipY - 262 + (p.slump || 0) * 14 - breathe;
   return { sit, walk, ph, hipY, top, sh: 82 };
 }
-const restHand = (s, G) => [s * 112, G.hipY - 14];
+const restHand = (s, G) => [s * 116, G.hipY - 34];   // a little elbow bend at rest
+/* Arm physics: every hand target goes through a damped spring (per scene, character and side),
+   so gestures accelerate, overshoot a little and settle instead of snapping between poses.
+   Sequential rendering (render.js) integrates it; a jump in time or a frozen character snaps. */
+const ARMS = {};
+function armSpring(key, target, t, still, stiff = 1) {
+  let s = ARMS[key];
+  if (!s || still || !(t > s.t) || t - s.t > .25) { ARMS[key] = { x: target[0], y: target[1], vx: 0, vy: 0, t }; return target.slice(); }
+  const w = 2 * Math.PI * 4.4 * stiff, z = .56, dt = t - s.t, n = Math.max(1, Math.ceil(dt * 480)), h = dt / n;
+  for (let i = 0; i < n; i++) { const ax = w * w * (target[0] - s.x) - 2 * z * w * s.vx, ay = w * w * (target[1] - s.y) - 2 * z * w * s.vy; s.vx += ax * h; s.vy += ay * h; s.x += s.vx * h; s.y += s.vy * h; }
+  s.t = t; return [s.x, s.y];
+}
+/* mitten with a thumb on the inner side of the forearm; `squash` flattens it on a clap */
+function hand(g, e, h, r, col, squash = 0) {
+  let dx = h[0] - e[0], dy = h[1] - e[1]; const L = Math.hypot(dx, dy) || 1; dx /= L; dy /= L;
+  let px = -dy, py = dx; if (px * -Math.sign(h[0] || 1) < 0) { px = -px; py = -py; }
+  const tx = h[0] + dx * r * .1 + px * r * .8, ty = h[1] + dy * r * .1 + py * r * .8;
+  if (!squash) circ(g, tx, ty, r * .42, col, 4);
+  shape(g, q => q.ellipse(h[0], h[1], r * (1 - .2 * squash), r * (1 + .1 * squash), 0, 0, 7), col);
+}
 function drawChar(g, cname, p) {
   const c = typeof cname === 'string' ? CAST[cname] : cname, G = charGeom(c, p);
   const S = (p.s || 1) * (c.s || 1);
@@ -172,12 +191,20 @@ function drawChar(g, cname, p) {
   }
   // far arm (screen left = -1), behind the torso
   const shL = [-G.sh, top + 46], shR = [G.sh, top + 46];
-  const swing = Math.sin(ph) * walk * 30;
-  let hL = p.hL || [restHand(-1, G)[0] - swing * .3, restHand(-1, G)[1] + swing * .1];
-  let hR = p.hR || [restHand(1, G)[0] + swing * .3, restHand(1, G)[1] - swing * .1];
+  const swing = Math.sin(ph) * walk * 34, tt = p.t || 0, idle = p.still ? 0 : 1;
+  const iL = [Math.sin(tt * 1.7 + c.seed) * 3 * idle, Math.cos(tt * 1.3 + c.seed) * 2.5 * idle], iR = [Math.sin(tt * 1.5 + c.seed + 2) * 3 * idle, Math.cos(tt * 1.1 + c.seed + 1) * 2.5 * idle];
+  let hL = p.hL || [restHand(-1, G)[0] - swing * .35 + iL[0], restHand(-1, G)[1] + Math.abs(swing) * .12 + iL[1]];
+  let hR = p.hR || [restHand(1, G)[0] + swing * .35 + iR[0], restHand(1, G)[1] + Math.abs(swing) * .12 + iR[1]];
+  const clapT = Math.abs(hR[0] - hL[0]) < 60 && Math.abs(hR[1] - hL[1]) < 60;   // hands meeting: stiffer spring, no pass-through
+  const akey = (typeof SID !== 'undefined' ? SID : '') + ':' + (typeof cname === 'string' ? cname : 'x') + (p.key || '');
+  if (p.t != null && !p.noSpring) { hL = armSpring(akey + 'L', hL, tt, p.still, clapT ? 1.8 : 1); hR = armSpring(akey + 'R', hR, tt, p.still, clapT ? 1.8 : 1); }
+  const rH = p.handCol ? 23 : 19;
+  if (clapT && hR[0] - hL[0] < 2 * rH * .8) { const m = (hL[0] + hR[0]) / 2; hL = [m - rH * .8, hL[1]]; hR = [m + rH * .8, hR[1]]; }
+  const squash = clapT ? clamp(1 - (hR[0] - hL[0] - 2 * rH * .8) / (rH * .9)) * (Math.abs(hR[1] - hL[1]) < rH ? 1 : 0) : 0;
   const armCol = c.sleeve || c.topD;
-  let [e, h] = ik(shL[0], shL[1], hL[0], hL[1], 108, 104, -1);
-  if (!p.armsFront) { tube(g, [shL, e, h], armCol, 34); if (c.stripe) tube(g, [mix2(shL, e, .2), e, mix2(e, h, .8)], c.stripe, 6, 0); mitten(g, h[0], h[1], p.handCol ? 22 : 18, p.handCol || HAND); if (p.holdL) p.holdL(g, h[0], h[1]); }
+  const [eL, hLf] = ik(shL[0], shL[1], hL[0], hL[1], 108, 104, -1), [eR, hRf] = ik(shR[0], shR[1], hR[0], hR[1], 108, 104, 1);
+  const farArm = () => { tube(g, [shL, eL, hLf], armCol, 34); if (c.stripe) tube(g, [mix2(shL, eL, .2), eL, mix2(eL, hLf, .8)], c.stripe, 6, 0); hand(g, eL, hLf, p.handCol ? 22 : 18, p.handCol || HAND, squash); if (p.holdL) p.holdL(g, hLf[0], hLf[1]); };
+  if (!p.armsFront) farArm();
   // torso
   const wT = c.body === 'suit' ? 96 : 88, wH = wT - 4, hem = hipY + 6;
   const torso = q => { q.moveTo(-wT, top + 34); q.quadraticCurveTo(-wT - 4, top + 4, -62, top); q.lineTo(62, top); q.quadraticCurveTo(wT + 4, top + 4, wT, top + 34);
@@ -200,10 +227,9 @@ function drawChar(g, cname, p) {
   tube(g, [[0, top + 4], [hx * .6, hy + c.r * .8]], SKIN, 13);
   drawHead(g, c, hx, hy, p.rot || 0, Object.assign({ blink: p.blink != null ? p.blink : (p.still ? 0 : autoBlink(p.t || 0, c.seed)) }, p, { rim: p.rim }));
   // far arm in front (for clapping, typing) and near arm
-  if (p.armsFront) { [e, h] = ik(shL[0], shL[1], hL[0], hL[1], 108, 104, -1); tube(g, [shL, e, h], armCol, 34); if (c.stripe) tube(g, [mix2(shL, e, .2), e, mix2(e, h, .8)], c.stripe, 6, 0); mitten(g, h[0], h[1], p.handCol ? 22 : 18, p.handCol || HAND); if (p.holdL) p.holdL(g, h[0], h[1]); }
-  [e, h] = ik(shR[0], shR[1], hR[0], hR[1], 108, 104, 1);
-  tube(g, [shR, e, h], c.sleeve || c.top, 36); if (c.stripe) tube(g, [mix2(shR, e, .2), e, mix2(e, h, .8)], c.stripe, 6, 0);
-  mitten(g, h[0], h[1], p.handCol ? 24 : 20, p.handCol || HAND); if (p.holdR) p.holdR(g, h[0], h[1]);
+  if (p.armsFront) farArm();
+  tube(g, [shR, eR, hRf], c.sleeve || c.top, 36); if (c.stripe) tube(g, [mix2(shR, eR, .2), eR, mix2(eR, hRf, .8)], c.stripe, 6, 0);
+  hand(g, eR, hRf, p.handCol ? 24 : 20, p.handCol || HAND, squash); if (p.holdR) p.holdR(g, hRf[0], hRf[1]);
   g.restore();
   return G;
 }
@@ -382,6 +408,8 @@ function compose2(X, st, f) {
     else { gray(); X.save(); X.beginPath(); X.arc(f.x, f.y, rr, 0, 7); X.clip(); color(); X.restore(); }
     X.save(); X.strokeStyle = 'rgba(255,255,255,.9)'; X.lineWidth = 12 * (1 - f.wipe) + 2; X.beginPath(); X.arc(f.x, f.y, rr, 0, 7); X.stroke(); X.restore();
   } else if (f.amt >= .5) gray(); else color();
+  window.__cam = st.cam;
+  if (f.wipe != null && f.wipe > 0 && f.wipe < 1 && !(typeof FLASH !== 'undefined' && FLASH)) comicWord(X, '¡CLAP!', f.x + 40, f.y - 170, f.wipe * .55, 84, '#fde047', .55);
 }
 /* world clock: advances only while the world runs (claps toggle; start=1 means frozen at t=0) */
 function worldClock(t, claps, start = 0) { let state = start, last = 0, acc = 0;
@@ -391,3 +419,13 @@ function isFrozen(t, claps, start = 0) { let s = start; for (const c of claps) i
 /* world-space point between the hands at chest height, for the clap ripple */
 function clapPoint(cname, p) { const c = CAST[cname], G = charGeom(c, p), S = (p.s || 1) * (c.s || 1); return [p.x, p.y + S * (G.top + 150)]; }
 function dropsSpray(g, x, y, n, seed, s = 1) { const r = rnd(seed); for (let i = 0; i < n; i++) { const a = Math.PI * (.85 + r() * .35), d = 30 + r() * 120 * s; circ(g, x + Math.cos(a) * d, y + Math.sin(a) * d * .5 + r() * 20, 4 + r() * 5, '#bfe6ff', 3); } }
+
+/* comic sound word: pops in with overshoot, wobbles, fades; u = seconds since it appeared */
+function comicWord(g, word, x, y, u, size = 96, col = '#fde047', dur = .75) {
+  if (u < 0 || u > dur) return; const k = back(clamp(u / .18)), a = 1 - clamp((u - dur + .18) / .18);
+  g.save(); g.globalAlpha = a; g.translate(x, y); g.rotate(-.12 + Math.sin(u * 30) * .03 * (1 - clamp(u / .4))); g.scale(k, k);
+  g.font = `${size}px Bangers`; g.textAlign = 'center'; const w = g.measureText(word).width;
+  g.beginPath(); for (let i = 0; i < 22; i++) { const ang = i / 22 * Math.PI * 2, r = (i % 2 ? .42 : .62) * (w + 60); g.lineTo(Math.cos(ang) * r, Math.sin(ang) * r * .55); } g.closePath();
+  g.fillStyle = '#ffffff'; g.fill(); g.lineWidth = 5; g.strokeStyle = OUT; g.stroke();
+  g.lineJoin = 'round'; g.strokeStyle = OUT; g.lineWidth = size * .18; g.strokeText(word, 0, size * .35); g.fillStyle = col; g.fillText(word, 0, size * .35);
+  g.restore(); }

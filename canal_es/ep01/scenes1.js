@@ -8,11 +8,28 @@ const speaking = (t, id) => t >= Lt(id) && t <= Le(id);
 const talk = (t, id) => speaking(t, id) ? .25 + .45 * Math.abs(Math.sin((t - Lt(id)) * 13)) * (1 - .4 * Math.abs(Math.sin((t - Lt(id)) * 3.1))) : 0;
 const S0 = .78, FEET = 930;
 /* camera shots: hard cuts between entries; inside a shot cx/cy/z ease from first to second value */
-function shots(t, list) {
+function shots(t, claps, list) {
+  // explicit shots: hard cuts between entries; inside a shot cx/cy/z ease from first to second value
   let i = 0; for (let k = 0; k < list.length; k++) if (t >= list[k].t) i = k;
   const s = list[i], end = i + 1 < list.length ? list[i + 1].t : T().dur, u = io(clamp((t - s.t) / Math.max(.01, end - s.t)));
   const v = (a, b) => typeof a === 'function' ? a(t) : mix(a, b == null ? a : b, u);
   const cam = { cx: v(s.cx, s.cx2), cy: v(s.cy, s.cy2), z: v(s.z, s.z2) };
+  // extra coverage: cut on narration sentence starts inside long shots, alternating a punch-in and an offset angle;
+  // never within 0.7 s of a clap, never closer than 1.5 s to another cut
+  let seg = i + ':0';
+  if (!s.lock) {
+    const ct = (claps || []).map(c => c.t != null ? c.t : c), cuts = []; let last = s.t;
+    const cand = [];   // sentence starts, plus the middle of long sentences
+    for (const x of Object.values(T().L)) { cand.push(x[0]); if (x[1] > 3.0) cand.push(x[0] + x[1] * .5); }
+    for (const lt of cand.sort((a, b) => a - b)) {
+      if (lt < s.t + 1.1 || lt > end - .9 || lt - last < 1.25 || ct.some(c => Math.abs(lt - c) < .6)) continue; cuts.push(lt); last = lt; }
+    let k = -1; for (let j = 0; j < cuts.length; j++) if (t >= cuts[j]) k = j;
+    if (k >= 0) { const cend = k + 1 < cuts.length ? cuts[k + 1] : end, du = clamp((t - cuts[k]) / Math.max(.01, cend - cuts[k]));
+      if (k % 2 === 0) { const z0 = cam.z; cam.z = z0 * (1.36 + .03 * du); cam.cy -= 70 / z0; cam.cx += (s.fx != null ? (s.fx - cam.cx) * .6 : 0); }
+      else { const side = (k % 4 === 1 ? 1 : -1); cam.z *= 1.1 + .02 * du; cam.cx += side * 150 / cam.z; cam.cy -= 25 / cam.z; }
+      seg = i + ':' + (k + 1); }
+  }
+  window.__seg = SID + '/' + seg;
   if (s.shake) { const k = s.shake * Math.max(0, 1 - (t - s.t) / .5); cam.sx = Math.sin(t * 80) * 14 * k; cam.sy = Math.cos(t * 67) * 10 * k; }
   // keep the frame inside the set
   const sw = s.w || W, hw = W / 2 / cam.z, hh = H / 2 / cam.z; cam.cx = clamp(cam.cx, hw, sw - hw); cam.cy = clamp(cam.cy, hh, H - hh);
@@ -29,7 +46,7 @@ SC.s01 = (X, t) => {
   const a = Lt('s01_02'), b = Le('s01_02'), k1 = a + 2.0, poke = a + 2.45, k2 = a + 2.9, k3 = b - .25;
   const heroX = tt => tt < k1 ? mix(140, 1300, clamp(tt / k1)) : tt < k2 ? 1300 : mix(1300, 1660, clamp((tt - k2) / (k3 - k2)));
   const hx = heroX(t), walking = t < k1 || (t > k2 && t < k3);
-  const cam = shots(t, [
+  const cam = shots(t, (typeof claps !== 'undefined' ? claps : []), [
     { t: 0, cx: tt => heroX(tt) + 180, cy: 560, z: 1.0, w: 2600 },
     { t: k2 + .35, cx: 1770, cy: 520, z: 1.6, z2: 1.7, w: 2600 },
     { t: Lt('s01_03') - .1, cx: 1660, cy: 600, z: 1.3, z2: 1.38, w: 2600 },
@@ -78,7 +95,7 @@ SC.s02 = (X, t) => {
 function lyingHead(g, x = 300, y = 680, p = {}) { drawHead(g, CAST.tu, x, y, -1.35, Object.assign({ sleep: 1 }, p)); }
 SC.s03 = (X, t) => {
   const tc = Lm('s03_03', .3), claps = [{ t: tc }], wt = worldClock(t, claps), fz = isFrozen(t, claps), up = Lt('s03_03') - .05;
-  const cam = shots(t, [
+  const cam = shots(t, (typeof claps !== 'undefined' ? claps : []), [
     { t: 0, cx: 700, cy: 600, z: 1.0, z2: 1.06 },
     { t: Lt('s03_02') - .1, cx: 760, cy: 660, z: 1.55, z2: 1.62 },
     { t: up, cx: 760, cy: 620, z: 1.25 },
@@ -114,7 +131,7 @@ function coffeeStream(g, sx, sy, ex, ey, wob = 0) { g.lineCap = 'round'; g.begin
   g.strokeStyle = OUT; g.lineWidth = 22; g.stroke(); g.strokeStyle = '#6a3b22'; g.lineWidth = 12; g.stroke(); g.strokeStyle = 'rgba(255,220,180,.35)'; g.lineWidth = 3; g.stroke(); }
 SC.s04 = (X, t) => {
   const tc = Lm('s04_06', .12), claps = [{ t: tc }], wt = worldClock(t, claps, 1), fz = isFrozen(t, claps, 1);
-  const cam = shots(t, [
+  const cam = shots(t, (typeof claps !== 'undefined' ? claps : []), [
     { t: 0, cx: 900, cy: 560, z: 1.0, z2: 1.05 },
     { t: Lt('s04_02') - .05, cx: 1140, cy: 560, z: 1.7, z2: 1.78 },
     { t: Lt('s04_03') - .05, cx: 990, cy: 640, z: 1.6, z2: 1.7 },
@@ -160,7 +177,7 @@ SC.s04 = (X, t) => {
 /* ================================================================ 5. sleeping eight more hours */
 SC.s05 = (X, t) => {
   const tc = Lm('s05_01', .22), claps = [{ t: tc }], wt = worldClock(t, claps), fz = isFrozen(t, claps), flop = Lm('s05_01', .86), wake = Lt('s05_03') - .05;
-  const cam = shots(t, [
+  const cam = shots(t, (typeof claps !== 'undefined' ? claps : []), [
     { t: 0, cx: 1000, cy: 580, z: 1.12 },
     { t: flop, cx: 520, cy: 640, z: 1.5, z2: 1.6 },
     { t: wake, cx: 700, cy: 620, z: 1.3 },

@@ -41,7 +41,7 @@ def sweep(f0, f1, dur, shape=1.0):
 def freeze_fx():
     d = .7; t = secs(d); s = sweep(1400, 160, d, .6) * np.exp(-t * 3) * .35
     w = bp(rng.standard_normal(len(t)), 300, 3000) * np.exp(-t * 4) * .5
-    ting = (np.sin(2 * np.pi * 2637 * secs(1.6)) + .6 * np.sin(2 * np.pi * 3951 * secs(1.6))) * np.exp(-secs(1.6) * 2.6) * .22
+    ting = (np.sin(2 * np.pi * 1318.5 * secs(1.1)) + .45 * np.sin(2 * np.pi * 1975.5 * secs(1.1))) * np.exp(-secs(1.1) * 4.5) * .12
     out = np.zeros(len(ting)); out[:len(t)] += s + w; out += ting; return out
 def unfreeze_fx():
     d = .45; t = secs(d); s = sweep(180, 1500, d, 1.4) * (t / d) * .3; w = bp(rng.standard_normal(len(t)), 400, 4000) * (t / d) ** 2 * .45
@@ -89,42 +89,66 @@ _e = int((Le('s17', 's17_04') + .9) * 100); fr[_e:] = 0
 def frozen_at(t): i = int(t * 100); return fr[min(max(i, 0), len(fr) - 1)]
 
 # ---------------------------------------------------------------- music: a light, curious loop, tape-stops when time stops
-def music(total):
+MOODS = {
+    'happy': [[60, 64, 67], [57, 60, 64], [53, 57, 60], [55, 59, 62], [60, 64, 67], [52, 55, 59], [53, 57, 60], [55, 59, 62]],
+    'tense': [[57, 60, 64], [57, 60, 64], [53, 57, 60], [52, 56, 59], [57, 60, 64], [50, 53, 57], [52, 56, 59], [52, 56, 59]],
+    'sad':   [[57, 60, 64], [53, 57, 60], [48, 52, 55], [55, 59, 62], [57, 60, 64], [53, 57, 60], [50, 53, 57], [52, 55, 59]],
+}
+def music(total, mood_at=lambda t: 'happy'):
     bpm = 96; beat = 60 / bpm; bar = 4 * beat
-    prog = [[60, 64, 67], [57, 60, 64], [53, 57, 60], [55, 59, 62], [60, 64, 67], [52, 55, 59], [53, 57, 60], [55, 59, 62]]
     hz = lambda m: 440 * 2 ** ((m - 69) / 12)
     L = int((total + 4) * SR); x = np.zeros(L); r2 = np.random.default_rng(3)
     penta = [72, 74, 76, 79, 81, 84]
     nb = int(total / bar) + 2
     for b in range(nb):
-        ch = prog[b % len(prog)]; t0 = b * bar
+        t0 = b * bar; md = mood_at(t0); ch = MOODS[md][b % 8]
         # bass
-        for k in (0, 2):
-            t = secs(beat * 1.2); f = hz(ch[0] - 24); add(x, (np.sin(2 * np.pi * f * t) + .25 * np.sin(4 * np.pi * f * t)) * np.exp(-t * 3.2) * .5, t0 + k * beat)
+        for k in ((0, .5, 1, 1.5, 2, 2.5, 3, 3.5) if md == 'tense' else (0, 2)):
+            t = secs(beat * (.45 if md == 'tense' else 1.2)); f = hz(ch[0] - 24); add(x, (np.sin(2 * np.pi * f * t) + .25 * np.sin(4 * np.pi * f * t)) * np.exp(-t * (9 if md == 'tense' else 3.2)) * (.42 if md == 'tense' else .5), t0 + k * beat)
         # plucked arpeggio (eighths)
         arp = [ch[0], ch[1], ch[2], ch[1] + 12, ch[2], ch[1], ch[0] + 12, ch[2]]
         for k, m in enumerate(arp):
+            if md == 'sad' and k % 2: continue
             t = secs(.5); f = hz(m); add(x, (np.sin(2 * np.pi * f * t) + .35 * np.sin(2 * np.pi * 4 * f * t) * np.exp(-t * 20)) * np.exp(-t * 7) * .18, t0 + k * beat / 2)
         # soft offbeat ticks
         for k in range(4):
             t = secs(.06); add(x, hp(r2.standard_normal(len(t)), 7000) * np.exp(-t * 90) * .05, t0 + k * beat + beat / 2)
         # glockenspiel melody, sparse
         for k in range(4):
-            if r2.random() < .45:
+            if md == 'happy' and r2.random() < .45:
                 t = secs(1.2); f = hz(r2.choice(penta)); add(x, (np.sin(2 * np.pi * f * t) + .4 * np.sin(2 * np.pi * 2.76 * f * t)) * np.exp(-t * 3) * .12, t0 + k * beat)
     return x
 def frozen_pad(total):
-    t = np.arange(int((total + 1) * SR)) / SR
-    x = (np.sin(2 * np.pi * 1046.5 * t) + .7 * np.sin(2 * np.pi * 1568 * t) + .4 * np.sin(2 * np.pi * 2093 * t)) * (.6 + .4 * np.sin(2 * np.pi * .35 * t))
-    return x * .025 + lp(rng.standard_normal(len(t)), 900) * .02
+    """Quiet, warm pad for stopped time: low chord tones that follow the music's progression, soft attack,
+    lowpassed under 900 Hz, plus a little low 'air'. Nothing high or constant enough to tire the ears."""
+    bpm = 96; bar = 4 * 60 / bpm
+    prog = [[48, 55, 64], [45, 52, 60], [41, 48, 57], [43, 50, 59], [48, 55, 64], [40, 47, 55], [41, 48, 57], [43, 50, 59]]
+    hz = lambda m: 440 * 2 ** ((m - 69) / 12)
+    L = int((total + 4) * SR); x = np.zeros(L); seg = int(bar * 2 * SR)          # one chord every two bars
+    tt = np.arange(seg + SR) / SR
+    win = np.minimum(1, tt / 1.2) * np.minimum(1, np.maximum(0, (seg / SR + 1.0 - tt)) / 1.2)   # slow fade in/out, overlapping
+    for b in range(int(total / (bar * 2)) + 2):
+        y = np.zeros(len(tt))
+        for k, m in enumerate(prog[b % len(prog)]):
+            f = hz(m); y += (np.sin(2 * np.pi * f * tt) + .25 * np.sin(2 * np.pi * 2 * f * tt + .5)) * (1 / (k + 1.4))
+        add(x, y * win * (.75 + .25 * np.sin(2 * np.pi * .12 * tt)), b * seg / SR)
+    x = lp(x, 900, 4)
+    return x * .05 + lp(rng.standard_normal(L), 300) * .009
 
 print('music...', flush=True)
-mus = music(TOTAL)
 # tape: rate follows the frozen state (ramps down ~0.45 s, back up ~0.2 s)
 n100 = len(fr); rate = np.zeros(n100); r = 1.0
 for i in range(n100):
     tgt = 0.0 if fr[i] else 1.0; k = .045 if tgt < r else .12; r += (tgt - r) * k; rate[i] = r
 pos = np.cumsum(rate) / 100.0  # music seconds at each 10 ms
+SECTIONS = [(sc('s11')['start'], sc('s12')['start'] + sc('s12')['dur'], 'sad'),
+            (sc('s15')['start'], sc('s15')['start'] + sc('s15')['L']['s15_03'][0] + .2, 'tense')]
+sec_m = [(np.interp(a, np.arange(n100) / 100.0, pos), np.interp(b, np.arange(n100) / 100.0, pos), m) for a, b, m in SECTIONS]
+def mood_at(mt):
+    for a, b, m in sec_m:
+        if a - 1.5 <= mt < b: return m
+    return 'happy'
+mus = music(pos[-1] + 2, mood_at)
 tt = np.arange(N) / SR; mpos = np.interp(tt, np.arange(n100) / 100.0, pos) * SR
 music_out = np.interp(mpos, np.arange(len(mus)), mus) * np.interp(tt, np.arange(n100) / 100.0, np.clip(rate * 1.4, 0, 1))
 fz = np.interp(tt, np.arange(n100) / 100.0, movavg(fr.astype(float), 15))
@@ -182,7 +206,7 @@ for sid in T['order']:
         add(vo, x, sc(sid)['start'] + t); add(voice_env, np.ones(len(x)), sc(sid)['start'] + t)
 duck = 1 - .55 * movavg(np.minimum(voice_env, 1), int(.25 * SR))
 
-mix = vo * 1.0 + music_out * .55 * duck + pad * .7 + amb * duck + fx * .55
+mix = vo * 1.0 + music_out * .55 * duck + pad * .55 * (1 - .35 * (1 - duck)) + amb * duck + fx * .55
 mix = mix / max(1e-6, np.max(np.abs(mix))) * .89
 sf.write(OUT, mix.astype(np.float32), SR)
 print('wrote', OUT, round(len(mix) / SR, 1), 's')

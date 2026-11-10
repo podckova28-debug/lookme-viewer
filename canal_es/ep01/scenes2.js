@@ -18,7 +18,7 @@ function seated(name, x, extra = {}) { return Object.assign({ x, y: FEET, s: S0,
 /* ================================================================ 6. the exam */
 SC.s06 = (X, t) => {
   const tc = Lm('s06_03', .6), tr = Lt('s06_06') + .1, claps = [{ t: tc }, { t: tr }], wt = worldClock(t, claps), fz = isFrozen(t, claps);
-  const cam = shots(t, [
+  const cam = shots(t, (typeof claps !== 'undefined' ? claps : []), [
     { t: 0, cx: 960, cy: 560, z: 1.0, z2: 1.04 },
     { t: Lt('s06_02') - .05, cx: 760, cy: 600, z: 1.7 },
     { t: Lt('s06_04') - .05, cx: 800, cy: 600, z: 1.5, z2: 1.6 },
@@ -65,7 +65,7 @@ function boardOverlay(g, l1, l2) { shape(g, q => q.rect(430, 130, 1060, 420), '#
 SC.s07 = (X, t) => {
   const tc = Lm('s07_02', .22), tr = Lt('s07_04') + .05, claps = [{ t: tc }, { t: tr }], wt = worldClock(t, claps), fz = isFrozen(t, claps);
   const drawStart = Lm('s07_02', .6), drawEnd = Le('s07_02') + 1.0, wake = tr + .5, mirror = Lm('s07_04', .35), nod = Lm('s07_04', .75);
-  const cam = shots(t, [
+  const cam = shots(t, (typeof claps !== 'undefined' ? claps : []), [
     { t: 0, cx: 760, cy: 580, z: 1.15, z2: 1.2 },
     { t: drawStart - .1, cx: 1000, cy: 520, z: 2.2, z2: 2.35 },
     { t: Lt('s07_03') - .05, cx: 860, cy: 560, z: 1.45 },
@@ -119,7 +119,7 @@ function umbrellaStand(g, x) { shape(g, q => rrPath(q, x - 34, 820, 68, 120, 8),
 SC.s08 = (X, t) => {
   const tc = Lt('s08_02') + .15, claps = [{ t: tc }], wt = worldClock(t, claps), fz = isFrozen(t, claps), home = Lt('s08_05') - .1;
   if (t < home) {
-    const cam = shots(t, [{ t: 0, cx: 620, cy: 560, z: 1.25 }, { t: Lt('s08_03') - .05, cx: 900, cy: 520, z: 2.0, z2: 2.2 }, { t: Lt('s08_04') - .05, cx: 960, cy: 560, z: 1.0 }]);
+    const cam = shots(t, (typeof claps !== 'undefined' ? claps : []), [{ t: 0, cx: 620, cy: 560, z: 1.25 }, { t: Lt('s08_03') - .05, cx: 900, cy: 520, z: 2.0, z2: 2.2 }, { t: Lt('s08_04') - .05, cx: 960, cy: 560, z: 1.0 }]);
     const st = stage(cam); st.wld(g => drawSet(g, 'streetRain'));
     const awning = (x, y) => x > 230 && x < 640 && y > 380;
     const walkT0 = Lt('s08_04') - .2, hx = t < walkT0 ? 420 : mix(420, 2050, R(t, walkT0, home - .2, lin));
@@ -134,7 +134,7 @@ SC.s08 = (X, t) => {
     compose2(X, st, freezeState(t, [{ t: tc, x: cp[0], y: cp[1], screen: 1 }], cam));
     if (t > Lt('s08_03') && t < Lt('s08_04')) { X.save(); X.globalCompositeOperation = 'screen'; const r = rnd(4); for (let i = 0; i < 26; i++) { const u = (t * .7 + r()) % 1; X.globalAlpha = Math.sin(u * Math.PI) * .9; X.fillStyle = '#ffffff'; const x = r() * W, y = r() * H; X.beginPath(); X.moveTo(x, y - 14); X.lineTo(x + 4, y); X.lineTo(x, y + 14); X.lineTo(x - 4, y); X.fill(); } X.restore(); }
   } else {
-    const k = t - home, cam = shots(t, [{ t: home, cx: 900, cy: 560, z: 1.15, z2: 1.2 }, { t: Lm('s08_06', .3), cx: 1000, cy: 520, z: 1.5, z2: 1.58 }]);
+    const k = t - home, cam = shots(t, (typeof claps !== 'undefined' ? claps : []), [{ t: home, cx: 900, cy: 560, z: 1.15, z2: 1.2 }, { t: Lm('s08_06', .3), cx: 1000, cy: 520, z: 1.5, z2: 1.58 }]);
     const st = stage(cam); st.wld(g => { drawSet(g, 'kitchen'); g.save(); rain(g, t * 1.0, 1180, 140, 1740, 470, 90, 3, false); g.restore(); umbrellaStand(g, 140); });
     const hx = mix(260, 720, R(t, home, home + 1.6, lin));
     st.col(g => drawChar(g, 'tu', { x: hx, y: FEET, s: S0, t, walk: k < 1.6 ? 1 : 0, phase: walkPh(hx), mouth: .9, brow: -.2, look: [14, 0] }));
@@ -152,7 +152,7 @@ SC.s08 = (X, t) => {
 const BOOKS = [{ w: 62, h: 84, c: '#4f86b8' }, { w: 54, h: 72, c: '#c0262d' }, { w: 46, h: 62, c: '#5aa37a' }, { w: 38, h: 52, c: '#f0d06a' }];
 SC.s09 = (X, t) => {
   const trip = Lm('s09_01', .55), tc = Lt('s09_03') + .15, tr = Lm('s09_04', .3), claps = [{ t: tc }, { t: tr }], wt = worldClock(t, claps), fz = isFrozen(t, claps);
-  const cam = shots(t, [
+  const cam = shots(t, (typeof claps !== 'undefined' ? claps : []), [
     { t: 0, cx: 1000, cy: 560, z: 1.0, w: 2600 },
     { t: Lt('s09_02') - .05, cx: 520, cy: 470, z: 2.2, z2: 2.3, w: 2600 },
     { t: Lt('s09_03') - .05, cx: 920, cy: 560, z: 1.15, w: 2600 },
@@ -204,7 +204,7 @@ SC.s09 = (X, t) => {
 SC.s10 = (X, t) => {
   const kick = Lt('s10_02') + .25, tc = Lt('s10_03') + .1, tr = Lt('s10_05') + .1, claps = [{ t: tc }, { t: tr }], wt = worldClock(t, claps), fz = isFrozen(t, claps);
   const pick = Lm('s10_04', .3), place = Lm('s10_04', .9), goalT = tr;
-  const cam = shots(t, [
+  const cam = shots(t, (typeof claps !== 'undefined' ? claps : []), [
     { t: 0, cx: 960, cy: 560, z: 1.0 },
     { t: kick + .05, cx: 760, cy: 600, z: 1.1 },
     { t: Lt('s10_04') - .05, cx: 900, cy: 560, z: 1.05 },

@@ -22,7 +22,7 @@ function guestClap(wt, seed, G) { const u = Math.abs(Math.sin(wt * Math.PI * 2.2
 SC.s11 = (X, t) => {
   const mirror = Lt('s11_06') - .1;
   if (t < mirror) {
-    const cam = shots(t, [{ t: 0, cx: 960, cy: 560, z: 1.25, z2: 1.32 }]);
+    const cam = shots(t, (typeof claps !== 'undefined' ? claps : []), [{ t: 0, cx: 960, cy: 560, z: 1.25, z2: 1.32 }]);
     const st = stage(cam); st.wld(g => { drawSet(g, 'bedroom'); bedBack(g); bedFront(g); nightstand(g); propAlarm(g, 1075, 700, .7, 6, 59, 0); drawCat(g, 1650, 1010, .7, { flip: -1 }); });
     const hp = { x: 1300, y: FEET + 40, s: S0, t, look: [0, 0], mouth: -.1, brow: .3 };
     if (t > Lt('s11_04')) { hp.wide = .3; hp.mouth = -.3; } if (t > Lt('s11_05')) { hp.sweat = 1; hp.mouth = -.5; }
@@ -37,7 +37,7 @@ SC.s11 = (X, t) => {
     return;
   }
   const hairPt = [978, 196];
-  const cam = shots(t, [{ t: mirror, cx: 960, cy: 470, z: 1.2, z2: 1.3 }, { t: Lt('s11_07') - .05, cx: hairPt[0], cy: hairPt[1] + 40, z: 3.6, z2: 3.9, shake: 1 }, { t: Lt('s11_08') - .05, cx: 960, cy: 330, z: 2.0, z2: 2.1 }]);
+  const cam = shots(t, (typeof claps !== 'undefined' ? claps : []), [{ t: mirror, cx: 960, cy: 470, z: 1.2, z2: 1.3 }, { t: Lt('s11_07') - .05, cx: hairPt[0], cy: hairPt[1] + 40, z: 3.6, z2: 3.9, shake: 1 }, { t: Lt('s11_08') - .05, cx: 960, cy: 330, z: 2.0, z2: 2.1 }]);
   const st = stage(cam); st.wld(g => drawSet(g, 'bathroom'));
   st.wld(g => { g.save(); g.beginPath(); g.rect(710, 100, 500, 430); g.clip(); mirrorGlass(g);
     const rp = { x: 960, y: 845, s: .95, t, look: [0, 0], mouth: .2, grayHair: 1 };
@@ -52,11 +52,11 @@ SC.s11 = (X, t) => {
 SC.s12 = (X, t) => {
   const tPhone = Lt('s12_02') - .1, tTap = Lt('s12_03') - .1, tTv = Lt('s12_04') - .1;
   if (t >= tTap && t < tTv) { // bathroom faucet: water stuck as an icicle
-    const cam = shots(t, [{ t: tTap, cx: 1020, cy: 610, z: 3.1, z2: 3.3 }]);
+    const cam = shots(t, (typeof claps !== 'undefined' ? claps : []), [{ t: tTap, cx: 1020, cy: 610, z: 3.1, z2: 3.3 }]);
     const st = stage(cam); st.wld(g => { drawSet(g, 'bathroom'); shape(g, q => { q.moveTo(1048, 600); q.quadraticCurveTo(1060, 640, 1052, 690); q.quadraticCurveTo(1046, 700, 1040, 690); q.quadraticCurveTo(1034, 640, 1048, 600); }, '#9fd3ff', 4); });
     st.col(g => { const k = R(t, tTap + .2, tTap + .6), y = 560; tube(g, [[1180, 760], [1100, 640], [1000, 560]], '#bf8a24', 34); mitten(g, 1000 + 6 * Math.sin(t * 10) * k, y, 22); });
     compose2(X, st, { amt: 1 }); return; }
-  const cam = shots(t, [{ t: 0, cx: 960, cy: 560, z: 1.15 }, { t: tPhone, cx: 1180, cy: 560, z: 2.4, z2: 2.5 }, { t: tTv, cx: 1280, cy: 620, z: 1.25 }, { t: Lt('s12_05') - .1, cx: 960, cy: 560, z: 1.0 }]);
+  const cam = shots(t, (typeof claps !== 'undefined' ? claps : []), [{ t: 0, cx: 960, cy: 560, z: 1.15 }, { t: tPhone, cx: 1180, cy: 560, z: 2.4, z2: 2.5 }, { t: tTv, cx: 1280, cy: 620, z: 1.25 }, { t: Lt('s12_05') - .1, cx: 960, cy: 560, z: 1.0 }]);
   const st = stage(cam); st.wld(g => { drawSet(g, 'bedroom'); bedBack(g); nightstand(g); propAlarm(g, 1075, 700, .7, 6, 59, 0); tv(g, 1710, 520, 0, t > tTv + .7); });
   let hp;
   if (t < tTv) { hp = { x: 1180, y: FEET + 40, s: S0, t, look: [0, 12], mouth: -.3, slump: R(t, Lt('s12_01') + .5, Lt('s12_01') + 1.2), brow: .4 };
@@ -75,7 +75,7 @@ SC.s13 = (X, t) => {
   const strobe = []; for (let k = Le('s13_11') + .12; k < Le('s13_11') + 1.25; k += .14) strobe.push({ t: k }); if (strobe.length % 2) strobe.pop();
   const claps = [{ t: Lt('s13_05') + .2 }, { t: Lm('s13_07', .15) }, { t: Lm('s13_07', .6) }, { t: Lm('s13_07', .85) }, { t: Lt('s13_08') }, { t: Lt('s13_09') }, { t: Lt('s13_10') }, { t: Lt('s13_11') }, ...strobe];
   const wt = worldClock(t, claps), fz = isFrozen(t, claps), after = Lt('s13_12') - .1;
-  const cam = shots(t, [
+  const cam = shots(t, (typeof claps !== 'undefined' ? claps : []), [
     { t: 0, cx: 960, cy: 560, z: 1.05 },
     { t: Lt('s13_02') - .05, cx: 960, cy: 520, z: 1.8, z2: 1.9 },
     { t: Lt('s13_03') - .05, cx: 960, cy: 560, z: 1.2 },
@@ -118,7 +118,7 @@ SC.s13 = (X, t) => {
 /* ================================================================ 14. talking to Pepe */
 SC.s14 = (X, t) => {
   const sitT = Lt('s14_03') + .2;
-  const cam = shots(t, [
+  const cam = shots(t, (typeof claps !== 'undefined' ? claps : []), [
     { t: 0, cx: 960, cy: 560, z: 1.0 },
     { t: Lt('s14_02') + .8, cx: 1450, cy: 520, z: 1.5 },
     { t: sitT - .1, cx: 960, cy: 600, z: 1.3, z2: 1.36 },
@@ -148,7 +148,7 @@ SC.s14 = (X, t) => {
 SC.s15 = (X, t) => {
   const tc = Lt('s15_03') + .1, tr = Lm('s15_07', .55), claps = [{ t: tc }, { t: tr }], wt = worldClock(t, claps), fz = isFrozen(t, claps);
   const fall0 = tc - 1.76, grab = Lm('s15_05', .15), headPot = Lm('s15_06', .8);
-  const cam = shots(t, [
+  const cam = shots(t, (typeof claps !== 'undefined' ? claps : []), [
     { t: 0, cx: 900, cy: 560, z: 1.0 },
     { t: Lt('s15_02') - .1, cx: 1380, cy: 330, z: 1.45 },
     { t: tc + .4, cx: 1140, cy: 520, z: 1.25 },
@@ -199,7 +199,7 @@ SC.s16 = (X, t) => {
     sticker(X, 'FLASHBACK', 1, 70, 60, 70, '#ffffff');
     return; }
   const walkEnd = Lt('s16_02') + .3;
-  const cam = shots(t, [
+  const cam = shots(t, (typeof claps !== 'undefined' ? claps : []), [
     { t: 0, cx: tt => mix(120, 760, R(tt, 0, walkEnd, lin)), cy: 540, z: 1.8 },
     { t: Lt('s16_02') - .05, cx: 960, cy: 560, z: 1.0, z2: 1.06 },
     { t: Lt('s16_03') - .05, cx: 1240, cy: 820, z: 2.6, z2: 2.7 },
@@ -233,7 +233,7 @@ SC.s16 = (X, t) => {
 /* ================================================================ 17. outro: Pepe wants to know */
 SC.s17 = (X, t) => {
   const end = Le('s17_04') + .9, pepeAlive = Lm('s17_04', .55);
-  const cam = shots(t, [{ t: 0, cx: 1000, cy: 600, z: 1.2, z2: 1.5 }, { t: Lt('s17_04') - .1, cx: 1080, cy: 740, z: 3.0, z2: 3.2 }]);
+  const cam = shots(t, (typeof claps !== 'undefined' ? claps : []), [{ t: 0, cx: 1000, cy: 600, z: 1.2, z2: 1.5 }, { t: Lt('s17_04') - .1, cx: 1080, cy: 740, z: 3.0, z2: 3.2 }]);
   const st = stage(cam); st.wld(g => { drawSet(g, 'parkNight'); bench(g, 0); });
   st.col(g => { drawChar(g, 'valeria', { x: 1240, y: 905, s: S0, t, sit: 1, look: [-14, 4], mouth: .6, hL: [-40, -300], hR: [40, -300], armsFront: 1 });
     drawChar(g, 'tu', { x: 900, y: 905, s: S0, t, sit: 1, look: [14, 4], mouth: .4, blush: .5, hL: [-40, -300], hR: [40, -300], armsFront: 1 }); });
