@@ -1,0 +1,269 @@
+{
+ "D": {
+  "RH": [
+   "8a6523be-dacf-4fdd-bc1f-123142d02bcd",
+   "the robotaxi helper from the reference sheet (young Filipino woman in her twenties, long black hair in a low ponytail, teal cardigan over a white top, thin black headset with a microphone)"
+  ],
+  "DS": [
+   "8a6523be-dacf-4fdd-bc1f-123142d02bcd",
+   "the drone supervisor from the reference sheet (Black man in his thirties, short beard, grey polo shirt, bright orange high-visibility vest, tablet)"
+  ],
+  "DD": [
+   "8a6523be-dacf-4fdd-bc1f-123142d02bcd",
+   "the deepfake detective from the reference sheet (white woman in her thirties, red hair in a ponytail, black-rimmed glasses, dark green turtleneck, large magnifying glass)"
+  ],
+  "BR": [
+   "8a6523be-dacf-4fdd-bc1f-123142d02bcd",
+   "the battery recycler from the reference sheet (Middle Eastern man in his forties, dark moustache, blue protective coverall, thick orange insulated gloves, clear safety goggles)"
+  ],
+  "HO": [
+   "8a6523be-dacf-4fdd-bc1f-123142d02bcd",
+   "the heat officer from the reference sheet (Latina woman in her fifties, short grey hair, light beige linen blazer, wide-brimmed straw sun hat)"
+  ],
+  "DC": [
+   "8a6523be-dacf-4fdd-bc1f-123142d02bcd",
+   "the data center technician from the reference sheet (South Asian man in his twenties, navy hoodie, black jeans, grey ear defenders around his neck)"
+  ],
+  "CR": [
+   "1534bc85-db51-4f64-90ff-50bb4b873103",
+   "the care robot technician from the reference sheet (Japanese man in his thirties, short black hair, light blue scrubs top, grey trousers, tool pouch on his belt)"
+  ],
+  "WT": [
+   "1534bc85-db51-4f64-90ff-50bb4b873103",
+   "the wind turbine technician from the reference sheet (white woman in her thirties, blond braid, white safety helmet, red work jacket, orange climbing harness)"
+  ],
+  "AA": [
+   "1534bc85-db51-4f64-90ff-50bb4b873103",
+   "the AI auditor from the reference sheet (Black woman in her sixties, short grey afro, mustard yellow blazer, reading glasses, laptop)"
+  ],
+  "RT": [
+   "1534bc85-db51-4f64-90ff-50bb4b873103",
+   "the robot trainer from the reference sheet (young Latino man in his twenties, tight black motion-capture suit covered with small white dots, white VR headset)"
+  ],
+  "FA": [
+   "1534bc85-db51-4f64-90ff-50bb4b873103",
+   "the farmworker from the reference sheet (East African man in his forties, straw hat, olive green work shirt)"
+  ]
+ },
+ "S": {
+  "1": [
+   "RT",
+   "a robotics lab with a few cameras on tripods",
+   "He lifts a cardboard box in his motion-capture suit while the humanoid robot from the reference sheet (smooth white and light grey plastic body, plain dark glossy face visor with no features) beside him copies the exact same pose with its own box.",
+   "Close-up of the heat officer's face from the reference sheet, under her straw sun hat, squinting in bright heat, a drop of sweat on her temple.",
+   "The deepfake detective from the reference sheet leans close to a computer monitor showing the blank, featureless head-and-shoulders of a man in a suit, holding her magnifying glass up to the screen.",
+   "A busy city sidewalk: ordinary passers-by, all different, walk past a ground-floor office window without noticing it; inside the window a worker in a headset watches screens."
+  ],
+  "2": [
+   null,
+   "a big conference hall",
+   "Rows of many different employers in business clothes sit in a conference hall and raise their hands, while a presenter stands beside a big blank chart with one tall green bar and one shorter red bar.",
+   "Close-up of a whiteboard chart: one tall green bar and one shorter red bar, no numbers, no words.",
+   "All eleven workers and the humanoid robot from the two reference sheets stand together in one row on a white background, smiling at the viewer, each drawn exactly once.",
+   "A cork notice board with eleven pinned blank job-ad cards, each card showing one simple pictogram: a car, a drone, a magnifying glass, a battery, a sun, a server rack, a robot hand, a wind turbine, a balance scale, a walking figure, an ear of wheat. No text."
+  ],
+  "3": [
+   "RH",
+   "a quiet suburban street with trees",
+   "a plain white driverless car with a small sensor dome on its roof, no logos, nobody in the driver's seat has stopped in front of a big fallen tree branch lying across the road; a road worker in an orange vest stands beside it waving a small orange flag.",
+   "Close-up through the side window of the same driverless car: the empty driver's seat and the steering wheel, nobody inside. No people.",
+   "The road worker (a stocky older white man with grey stubble, white hard hat, yellow high-visibility vest over a red shirt) waves his small orange flag in front of the bonnet of the white driverless car, looking puzzled at the empty driver's seat.",
+   "She sits at her desk wearing her headset, looking at a monitor that shows the same street, fallen branch and car seen from the car's own camera."
+  ],
+  "4": [
+   "RH",
+   "a calm, quiet remote-assistance office with rows of desks and monitors",
+   "She sits at a desk with two monitors that show a street seen from a car's camera; on one screen she has drawn a simple curved route line around an obstacle, and she clicks the mouse calmly.",
+   "Close-up of her hand on a computer mouse, a coffee mug beside it.",
+   "A long row of similar desks with different operators, all clearly different people, each in a headset, each in front of two monitors.",
+   "A big wall screen with a simple city map covered in many small white car icons. No people. No text."
+  ],
+  "5": [
+   "DS",
+   "open farm fields with a small town far away",
+   "He stands at the edge of a field shading his eyes with one hand, watching a small white delivery drone carrying a parcel fly away over the fields.",
+   "Close-up of a small white four-rotor delivery drone in flight, carrying a brown cardboard parcel beneath it. No people.",
+   "The same drone is now only a tiny dot above the far horizon; he stands small in the field, still shading his eyes.",
+   "An empty office desk with a tall stack of thick paper documents, a desk lamp and a small toy model of a drone. No people."
+  ],
+  "6": [
+   "DS",
+   "a drone operations control room",
+   "He stands in front of a big wall of screens showing a map dotted with many small drone icons; two flight coordinators, clearly different people, work at desks below.",
+   "Close-up of the tablet in his two hands, its screen showing dozens of small drone icons on a simple map, no text.",
+   "A large eight-rotor cargo drone lifts a heavy wooden crate off a concrete pad, dust blowing. No people.",
+   "A small white drone lowers a small white box on a cable into the garden of a country house. No people."
+  ],
+  "7": [
+   "DD",
+   "a dim newsroom desk at night",
+   "She sits at a monitor showing a video of a fictional bald middle-aged man in a suit shouting angrily at a podium; she frowns, suspicious.",
+   "Close-up of a smartphone screen showing an incoming voice message as a waveform with a play button and a red warning circle, no text, no names.",
+   "She leans very close to her monitor, holding her large magnifying glass up to the screen.",
+   "A long filmstrip of identical frames of the same fictional bald man's face; one frame in the middle is slightly glitchy and smeared. No text."
+  ],
+  "8": [
+   "DD",
+   "a video forensics lab",
+   "She points at one of two side-by-side monitors showing the same fictional bald man's face; on one version the edge of his jaw is subtly blurred and glitchy.",
+   "Extreme close-up of a pixel grid of an eye on a screen: one single square pixel is the wrong colour, bright magenta. No text.",
+   "Two newsroom editors, a tall man and a short woman, clearly different from her, gather behind her chair and look at her screen.",
+   "A courtroom: a judge in a black robe, an older woman, leans forward to look at a video screen on a stand. No text, no flags."
+  ],
+  "9": [
+   "BR",
+   "a car workshop",
+   "He guides a large flat electric-car battery pack as it is lowered on a lift from under the floor of a raised car.",
+   "Close-up of the flat battery pack opened up: neat rows of rectangular battery modules and orange high-voltage cables. No people.",
+   "A long warehouse aisle with old car battery packs stacked on wooden pallets. No people.",
+   "He sits at a workbench in his orange gloves and goggles, carefully unscrewing one battery module with an insulated screwdriver."
+  ],
+  "10": [
+   "BR",
+   "a clean recycling plant",
+   "He stands beside a conveyor machine; at its end, separated materials fall into bins: black powder, silver metal flakes and copper-coloured pieces.",
+   "Close-up of his orange-gloved hand holding a small glass jar of pale grey metal flakes.",
+   "A battery factory line where clean new battery cells move along a conveyor. No people.",
+   "An old dented blue car on the left and a shiny new blue car on the right, with a conveyor belt carrying battery parts from the old one to the new one. No people."
+  ],
+  "11": [
+   "HO",
+   "a hot city street with palm trees and bright sun",
+   "She stands on a blazing sidewalk beside a big outdoor thermometer with its red line near the top, while a few sweating passers-by fan themselves.",
+   "Close-up of her face under the straw hat, determined, squinting in the sun.",
+   "She and a firefighter in uniform (a tall bearded man) stand side by side and nod to each other, colleagues.",
+   "A city skyline wobbling in heat haze under a huge blazing sun. No people."
+  ],
+  "12": [
+   "HO",
+   "a city neighbourhood with low houses",
+   "She directs two workers planting a young shade tree on the sidewalk; in the background another worker paints a flat roof white with a roller.",
+   "Close-up of a paint roller spreading bright white paint across a dark roof. Only a hand and the roller visible.",
+   "A cooling center: a bright hall with fans, folding chairs and water bottles, where several different people rest in the cool.",
+   "She knocks at an apartment door; an elderly man in a vest opens it and she hands him a bottle of water."
+  ],
+  "13": [
+   "DC",
+   "a huge data center hall",
+   "He walks down a long aisle between tall black server racks covered with tiny blinking green and blue lights.",
+   "Close-up of the front of a server rack: rows of tiny blinking green and blue lights and cables. No people.",
+   "A giant windowless grey warehouse building seen from outside, rows of big cooling fans on its roof. No people.",
+   "He holds his open palm near a server rack and feels hot air coming out, wavy heat lines in the air."
+  ],
+  "14": [
+   "DC",
+   "a dim data center aisle at night",
+   "He kneels in front of a server rack with a small flashlight, pulling out a broken drive with a red light.",
+   "Close-up of two hands sliding a flat drive into a slot in a server.",
+   "A big electrical substation with tall power lines feeding a large data center building. No people.",
+   "A simple map outline of Japan seen from space at night, glowing with small yellow city lights. No text."
+  ],
+  "15": [
+   "CR",
+   "a Japanese care home lounge",
+   "Many elderly residents sit in armchairs and wheelchairs; one tired young care worker in pink scrubs hurries between them with a tray.",
+   "Close-up of the tired care worker's face in pink scrubs, a strand of hair loose, exhausted.",
+   "A long empty care home corridor with an empty nurses' desk. No people.",
+   "He arrives at the care home entrance carrying a toolbox, smiling."
+  ],
+  "16": [
+   "CR",
+   "a care home bedroom",
+   "He adjusts a large padded white lifting robot that gently lifts an elderly man from his bed, while the care worker in pink scrubs holds the man's hand.",
+   "Close-up of his hands tightening a screw on the white robot's elbow joint with a screwdriver.",
+   "A small white motion sensor in the corner of a ceiling above an elderly woman sleeping in bed.",
+   "He shows a tablet to three care workers in pink scrubs, all clearly different people, teaching them."
+  ],
+  "17": [
+   "WT",
+   "green hills with tall white wind turbines",
+   "A row of tall white wind turbines on green hills; on top of the nearest turbine's nacelle a tiny worker in a red jacket stands clipped to a rail.",
+   "Close-up of her face in the white helmet, wind blowing loose hair, smiling.",
+   "Seen from the top of the turbine: she stands on the nacelle clipped to a safety rail, the fields and roads tiny far below.",
+   "Rows of wind turbines on hills at sunset, blades turning. No people."
+  ],
+  "18": [
+   "WT",
+   "inside a tall turbine tower",
+   "She climbs a long steel ladder up the inside of the tall tube-shaped tower, her harness clipped to a safety rail.",
+   "Close-up of a steel carabiner clipped to a safety rail, her gloved hand on it.",
+   "Inside the turbine's nacelle she works with a large wrench next to a huge gearbox.",
+   "On a sunny house roof, a solar panel installer (a different man with a cap) lifts a panel while the wind blows his cap off."
+  ],
+  "19": [
+   "AA",
+   "a bank office",
+   "A young applicant in a shirt sits at a desk facing a computer screen showing a big red X, looking confused.",
+   "Close-up of a computer screen showing one big red X and one green check mark side by side. No text.",
+   "She sits at a desk with her laptop open, peering over her reading glasses, suspicious.",
+   "A courtroom witness box with a closed laptop sitting on the chair, its screen blank. No people. No flags."
+  ],
+  "20": [
+   "AA",
+   "an audit office",
+   "She stands in front of a large screen showing a grid of many small simple portraits of different fictional applicants.",
+   "Close-up of two identical applicant cards side by side with the same face photo; the name line is drawn only as grey squiggles; one card has a green check, the other a red X. No readable text.",
+   "She lifts her reading glasses with one hand, eyebrows raised: she has caught something.",
+   "A thick rulebook lying on a desk next to a rubber stamp and a pen. No text. No people."
+  ],
+  "21": [
+   "RT",
+   "a robotics lab",
+   "the humanoid robot from the reference sheet (smooth white and light grey plastic body, plain dark glossy face visor with no features) stands at a table carefully but clumsily folding a T-shirt; a crumpled pile of shirts beside it.",
+   "Close-up of the humanoid robot's white hand gripping a cardboard box. No people.",
+   "the humanoid robot from the reference sheet (smooth white and light grey plastic body, plain dark glossy face visor with no features) takes a wobbly step forward while two engineers, clearly different people in lab coats, watch nervously.",
+   "He pulls the white VR headset down over his eyes, ready to start."
+  ],
+  "22": [
+   "RT",
+   "a motion-capture studio with cameras on tripods around the edges",
+   "He walks along a taped route carrying a cardboard box; behind him the humanoid robot from the reference sheet (smooth white and light grey plastic body, plain dark glossy face visor with no features) copies exactly the same pose and steps.",
+   "Close-up of his feet in the black dotted suit walking along a taped line on the floor.",
+   "He and the humanoid robot stand back to back against a wall with a plain height chart of horizontal lines, no numbers; they are almost the same height.",
+   "He sits on a bench exhausted, and the humanoid robot hands him a water bottle."
+  ],
+  "23": [
+   "FA",
+   "wheat fields at sunrise",
+   "He stands in a golden wheat field; many different farmworkers harvest in the distance.",
+   "Close-up of his hand holding golden ears of wheat.",
+   "A long line of many different farmworkers walking along a dirt road toward the fields at dawn, tools on their shoulders.",
+   "A simple family table with a bowl of rice, a loaf of bread and vegetables. No people."
+  ],
+  "24": [
+   "FA",
+   "a modern farm with green crop rows",
+   "He flies a small drone over green crop rows with his remote controller, watching it.",
+   "Close-up of a slim sensor stick pushed into dark soil with a small glowing green light. No people.",
+   "At dawn he sits in a tractor cab holding a tablet showing a simple progress bar, a coffee mug on the dashboard.",
+   "A big green tractor with a wide sprayer driving across a field. No people."
+  ],
+  "25": [
+   null,
+   "a plain white space",
+   "Three pairs stand side by side: the robotaxi helper beside a plain white driverless car with a small sensor dome on its roof, no logos, nobody in the driver's seat; the robot trainer beside the humanoid robot; the AI auditor beside an open laptop.",
+   "Close-up: the robot trainer and the humanoid robot give each other a high five.",
+   "The robotaxi helper from the reference sheet leans on the roof of the white driverless car, smiling.",
+   "The AI auditor from the reference sheet holds her open laptop and nods approvingly."
+  ],
+  "26": [
+   null,
+   "a sunny park",
+   "A teenage student with a backpack, a girl with short curly hair, sits on a park bench, thinking, looking at the sky.",
+   "Close-up of the student's face, curious and hopeful.",
+   "Several workers from the two reference sheets walk together toward a modern building entrance, chatting.",
+   "The humanoid robot from the reference sheet holds a glass door open for two people walking in."
+  ],
+  "27": [
+   null,
+   "a plain white space",
+   "The robot trainer, the heat officer and the deepfake detective from the reference sheets stand side by side waving at the viewer.",
+   "Close-up of three empty speech bubbles floating on white. No text.",
+   "All eleven workers and the humanoid robot from the reference sheets wave goodbye at the viewer, each drawn exactly once.",
+   "Two hands burying a small metal time-capsule box in a garden. No text."
+  ]
+ },
+ "ROBOT": "the humanoid robot from the reference sheet (smooth white and light grey plastic body, plain dark glossy face visor with no features)",
+ "C1": "8a6523be-dacf-4fdd-bc1f-123142d02bcd",
+ "C2": "1534bc85-db51-4f64-90ff-50bb4b873103"
+}
