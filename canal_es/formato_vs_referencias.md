@@ -27,4 +27,4 @@
 6. **Темп выпуска:** длинный ролик каждый день в постоянное время (как Giro: 19:00 UTC, 13:00 по Мехико) и 1–2 Shorts в день.
 
 ## Осторожно: тема серии 2 уже занята
-Giro Imposible 9 ноября выпустил «¿Qué pasaría si pudieras ver a quién le gustas?», а это наша запланированная серия 2. Её нужно заменить.
+Giro Imposible 9 ноября выпустил «¿Qué pasaría si pudieras ver a quién le gustas?», а это наша запланированная серия 2. Её нужно заменить. Анонс в конце ep01 v2 уже заменён на тему 7: «¿Y si pudieras ver 5 segundos del futuro?».

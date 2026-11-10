@@ -1,535 +1,535 @@
 1
-00:00:01,200 --> 00:00:04,764
+00:00:01,200 --> 00:00:04,575
 Esta maceta está a medio metro de la cabeza de Valeria.
 
 2
-00:00:05,144 --> 00:00:07,393
+00:00:04,955 --> 00:00:06,893
 El mundo entero está congelado.
 
 3
-00:00:07,474 --> 00:00:09,782
+00:00:06,973 --> 00:00:08,870
 Y tú eres el único que se mueve.
 
 4
-00:00:10,362 --> 00:00:12,264
+00:00:09,450 --> 00:00:11,101
 ¿Cómo llegaste hasta aquí?
 
 5
-00:00:12,744 --> 00:00:14,660
+00:00:11,581 --> 00:00:13,316
 Empecemos por el principio.
 
 6
-00:00:16,750 --> 00:00:18,944
+00:00:15,417 --> 00:00:17,611
 Imagina que puedes detener el tiempo.
 
 7
-00:00:19,024 --> 00:00:24,524
+00:00:17,691 --> 00:00:23,191
 Todo el mundo se queda congelado: tus compañeros, el balón… y Nacho, a mitad de un estornudo.
 
 8
-00:00:25,205 --> 00:00:26,232
+00:00:23,872 --> 00:00:24,899
 Suena increíble.
 
 9
-00:00:26,311 --> 00:00:27,461
+00:00:24,978 --> 00:00:26,128
 Y lo es.
 
 10
-00:00:27,542 --> 00:00:29,337
+00:00:26,209 --> 00:00:28,004
 Durante unos diez minutos.
 
 11
-00:00:30,216 --> 00:00:32,530
+00:00:28,883 --> 00:00:31,197
 Y créeme: el problema no es el tiempo.
 
 12
-00:00:32,610 --> 00:00:34,067
+00:00:31,277 --> 00:00:32,734
 El problema eres tú.
 
 13
-00:00:39,158 --> 00:00:40,924
+00:00:37,825 --> 00:00:39,591
 Todo empieza un martes cualquiera.
 
 14
-00:00:41,004 --> 00:00:42,244
+00:00:39,671 --> 00:00:40,911
 Suena la alarma.
 
 15
-00:00:43,424 --> 00:00:46,484
+00:00:42,091 --> 00:00:45,151
 Tú aplaudes para despertarte… y la alarma se calla.
 
 16
-00:00:47,165 --> 00:00:48,584
+00:00:45,832 --> 00:00:47,251
 No porque la apagaste.
 
 17
-00:00:48,663 --> 00:00:50,530
+00:00:47,330 --> 00:00:49,197
 Porque el mundo entero se detuvo.
 
 18
-00:00:50,610 --> 00:00:53,182
+00:00:49,277 --> 00:00:51,849
 Tu gato Michi se quedó flotando a medio salto.
 
 19
-00:00:55,492 --> 00:00:57,611
+00:00:54,158 --> 00:00:56,277
 En la cocina, tu mamá sirve café.
 
 20
-00:00:57,691 --> 00:00:59,196
+00:00:56,357 --> 00:00:57,862
 Bueno, servía.
 
 21
-00:00:59,276 --> 00:01:02,942
+00:00:57,942 --> 00:01:01,608
 El chorro de café está quieto en el aire, como una escultura.
 
 22
-00:01:03,622 --> 00:01:04,511
+00:01:02,288 --> 00:01:03,177
 Lo tocas.
 
 23
-00:01:04,591 --> 00:01:05,565
+00:01:03,257 --> 00:01:04,231
 Está tibio.
 
 24
-00:01:06,145 --> 00:01:08,236
+00:01:04,811 --> 00:01:06,902
 Aplaudes otra vez, y todo sigue.
 
 25
-00:01:08,316 --> 00:01:10,052
+00:01:06,982 --> 00:01:08,718
 El café también.
 
 26
-00:01:10,132 --> 00:01:11,265
+00:01:08,798 --> 00:01:09,931
 Sobre la mesa.
 
 27
-00:01:11,595 --> 00:01:12,835
+00:01:10,261 --> 00:01:11,969
 MAMÁ: ¿Eh? ¿Y la taza?
 
 28
-00:01:13,785 --> 00:01:16,597
+00:01:12,919 --> 00:01:15,731
 Regla número uno: un aplauso detiene el mundo.
 
 29
-00:01:16,677 --> 00:01:18,775
+00:01:15,811 --> 00:01:17,909
 Otro aplauso lo vuelve a encender.
 
 30
-00:01:20,492 --> 00:01:24,623
+00:01:19,617 --> 00:01:23,748
 Lo primero que haces con el poder más grande de la historia es… dormir.
 
 31
-00:01:25,203 --> 00:01:27,787
+00:01:24,328 --> 00:01:26,912
 Detienes el tiempo y duermes ocho horas más.
 
 32
-00:01:29,467 --> 00:01:32,725
+00:01:28,592 --> 00:01:31,850
 Despiertas, y siguen siendo las seis cincuenta y nueve.
 
 33
-00:01:32,805 --> 00:01:34,481
+00:01:31,930 --> 00:01:33,606
 Es el mejor día de tu vida.
 
 34
-00:01:35,992 --> 00:01:37,944
+00:01:35,117 --> 00:01:37,069
 Examen de matemáticas.
 
 35
-00:01:38,024 --> 00:01:39,630
+00:01:37,149 --> 00:01:38,755
 Podrías copiar, claro.
 
 36
-00:01:39,710 --> 00:01:43,257
+00:01:38,835 --> 00:01:42,382
 Pero tienes una idea mejor: detienes el tiempo y estudias.
 
 37
-00:01:44,238 --> 00:01:48,904
+00:01:43,363 --> 00:01:48,029
 Tres horas, mientras el profe Ramírez se queda congelado con cara de sospecha.
 
 38
-00:01:48,984 --> 00:01:51,411
+00:01:48,109 --> 00:01:50,536
 Que, para ser justos, es su cara normal.
 
 39
-00:01:52,461 --> 00:01:54,619
+00:01:51,586 --> 00:01:53,744
 Entregas el examen en dos minutos.
 
 40
-00:01:54,699 --> 00:01:56,538
+00:01:53,824 --> 00:01:55,660
 PROFE: ¿Ya terminaste? ¿Tú?
 
 41
-00:01:56,918 --> 00:01:58,567
+00:01:56,041 --> 00:01:57,690
 Diez de diez.
 
 42
-00:01:58,647 --> 00:02:01,197
+00:01:57,770 --> 00:02:00,320
 El profe Ramírez lo revisa cuatro veces.
 
 43
-00:02:04,200 --> 00:02:06,909
+00:02:03,325 --> 00:02:06,034
 En clase de historia, Nacho se queda dormido.
 
 44
-00:02:06,989 --> 00:02:09,551
+00:02:06,114 --> 00:02:08,676
 Detienes el tiempo y le dibujas un bigote.
 
 45
-00:02:10,731 --> 00:02:12,600
+00:02:09,856 --> 00:02:11,725
 Uno elegante, con puntas.
 
 46
-00:02:13,049 --> 00:02:16,600
+00:02:12,174 --> 00:02:15,241
 Nacho se despierta y se ve en el reflejo de la ventana.
 
 47
-00:02:17,580 --> 00:02:19,246
+00:02:16,221 --> 00:02:18,002
 NACHO: Mmm… me queda bien.
 
 48
-00:02:20,026 --> 00:02:21,573
+00:02:18,782 --> 00:02:20,329
 Lo usa toda la semana.
 
 49
-00:02:23,075 --> 00:02:24,607
+00:02:21,825 --> 00:02:23,357
 A la salida empieza a llover.
 
 50
-00:02:24,687 --> 00:02:26,043
+00:02:23,437 --> 00:02:24,793
 Aplaudes.
 
 51
-00:02:26,523 --> 00:02:29,686
+00:02:25,273 --> 00:02:27,998
 Millones de gotas se quedan colgadas en el aire.
 
 52
-00:02:29,766 --> 00:02:32,416
+00:02:28,078 --> 00:02:30,728
 Caminas a casa esquivándolas, una por una.
 
 53
-00:02:34,466 --> 00:02:36,283
+00:02:32,778 --> 00:02:34,595
 Llegas completamente seco.
 
 54
-00:02:36,363 --> 00:02:40,335
+00:02:34,675 --> 00:02:38,647
 Tu mamá, que te vio salir sin paraguas, decide no hacer preguntas.
 
 55
-00:02:41,825 --> 00:02:44,662
+00:02:40,158 --> 00:02:42,995
 En el pasillo, a Valeria se le caen los libros.
 
 56
-00:02:45,242 --> 00:02:46,829
+00:02:43,575 --> 00:02:45,162
 Sí, esa Valeria.
 
 57
-00:02:46,909 --> 00:02:51,534
+00:02:45,242 --> 00:02:49,867
 Aplaudes, recoges todo, lo ordenas por tamaño y se lo devuelves a sus manos.
 
 58
-00:02:52,414 --> 00:02:53,997
+00:02:50,747 --> 00:02:52,330
 Aplaudes otra vez.
 
 59
-00:02:54,447 --> 00:02:58,397
+00:02:52,780 --> 00:02:56,730
 Desde su punto de vista, sus libros se cayeron… y volvieron solos.
 
 60
-00:02:59,077 --> 00:03:00,554
+00:02:57,410 --> 00:02:59,318
 VALERIA: ¿Qué… acaba de pasar?
 
 61
-00:03:01,034 --> 00:03:04,390
+00:02:59,798 --> 00:03:03,154
 Seguramente ahora Valeria cree que la escuela está embrujada.
 
 62
-00:03:04,470 --> 00:03:07,066
+00:03:03,234 --> 00:03:05,830
 No es exactamente la impresión que querías dar.
 
 63
-00:03:08,775 --> 00:03:11,430
+00:03:07,525 --> 00:03:10,180
 En educación física te toca patear un penal.
 
 64
-00:03:11,510 --> 00:03:13,724
+00:03:10,260 --> 00:03:12,474
 Tu tiro va directo hacia… la cafetería.
 
 65
-00:03:14,704 --> 00:03:16,114
+00:03:13,454 --> 00:03:14,864
 Aplaudes.
 
 66
-00:03:16,194 --> 00:03:20,538
+00:03:14,944 --> 00:03:19,288
 Caminas hasta el balón, lo cargas como a un bebé y lo acomodas en el ángulo.
 
 67
-00:03:21,219 --> 00:03:22,189
+00:03:19,969 --> 00:03:20,939
 Aplaudes.
 
 68
-00:03:22,269 --> 00:03:22,867
+00:03:21,019 --> 00:03:21,617
 Gol.
 
 69
-00:03:23,097 --> 00:03:24,071
+00:03:21,847 --> 00:03:23,359
 TODOS: ¡Gooool!
 
 70
-00:03:25,122 --> 00:03:29,316
+00:03:24,409 --> 00:03:28,603
 Nacho, el portero, se queda mirando sus manos durante el resto del día.
 
 71
-00:03:29,396 --> 00:03:30,454
+00:03:28,683 --> 00:03:30,231
 NACHO: ¿Pero… cómo?
 
 72
-00:03:32,742 --> 00:03:34,892
+00:03:32,533 --> 00:03:34,683
 Pero hay un detalle que nadie te explicó.
 
 73
-00:03:34,972 --> 00:03:36,799
+00:03:34,763 --> 00:03:36,590
 Cuando el mundo se detiene, tú no.
 
 74
-00:03:36,878 --> 00:03:40,636
+00:03:36,669 --> 00:03:40,427
 Cada siesta, cada hora de estudio, cada penal… tú sí los vives.
 
 75
-00:03:41,087 --> 00:03:43,936
+00:03:40,878 --> 00:03:43,727
 En un mes ya llevas trescientas doce horas extra.
 
 76
-00:03:44,015 --> 00:03:46,837
+00:03:43,806 --> 00:03:46,628
 Eso son trece días que viviste tú, y nadie más.
 
 77
-00:03:47,518 --> 00:03:49,376
+00:03:47,309 --> 00:03:49,167
 Y un día, en el espejo, la ves.
 
 78
-00:03:49,856 --> 00:03:51,252
+00:03:49,647 --> 00:03:51,043
 Una cana.
 
 79
-00:03:52,232 --> 00:03:53,823
+00:03:52,023 --> 00:03:53,614
 Tienes dieciséis años.
 
 80
-00:03:55,325 --> 00:03:58,148
+00:03:55,117 --> 00:03:57,940
 Además, en el tiempo detenido nada funciona.
 
 81
-00:03:58,228 --> 00:03:59,643
+00:03:58,020 --> 00:03:59,435
 El celular no carga.
 
 82
-00:03:59,723 --> 00:04:01,380
+00:03:59,515 --> 00:04:01,172
 El agua no sale de la llave.
 
 83
-00:04:01,460 --> 00:04:03,905
+00:04:01,252 --> 00:04:03,697
 Intentas ver una serie… y está en pausa.
 
 84
-00:04:03,985 --> 00:04:04,809
+00:04:03,777 --> 00:04:05,070
 TÚ: Ay, no…
 
 85
-00:04:05,189 --> 00:04:07,201
+00:04:05,451 --> 00:04:07,463
 Literalmente todo está en pausa.
 
 86
-00:04:08,700 --> 00:04:10,974
+00:04:08,950 --> 00:04:11,224
 El segundo problema es más ruidoso.
 
 87
-00:04:11,054 --> 00:04:13,048
+00:04:11,304 --> 00:04:13,408
 TODOS: ¡Feliz cumpleaños, Nacho!
 
 88
-00:04:13,428 --> 00:04:15,120
+00:04:13,788 --> 00:04:15,480
 Es el cumpleaños de Nacho.
 
 89
-00:04:15,200 --> 00:04:16,625
+00:04:15,560 --> 00:04:17,351
 NACHO: ¡Gracias, gracias!
 
 90
-00:04:16,905 --> 00:04:20,634
+00:04:17,630 --> 00:04:21,359
 Todos cantan, Nacho sopla las velas, y todo el mundo aplaude.
 
 91
-00:04:21,613 --> 00:04:22,883
+00:04:22,339 --> 00:04:23,609
 Tú también.
 
 92
-00:04:22,963 --> 00:04:24,457
+00:04:23,689 --> 00:04:25,183
 Por reflejo.
 
 93
-00:04:25,207 --> 00:04:26,392
+00:04:25,933 --> 00:04:27,118
 Todo se congela.
 
 94
-00:04:26,472 --> 00:04:31,408
+00:04:27,198 --> 00:04:32,134
 Aplaudes para seguir… pero todos siguen aplaudiendo, y tus manos siguen el ritmo.
 
 95
-00:04:31,488 --> 00:04:32,331
+00:04:32,214 --> 00:04:33,057
 Congelado.
 
 96
-00:04:32,351 --> 00:04:33,467
+00:04:33,077 --> 00:04:34,193
 Sigue.
 
 97
-00:04:33,487 --> 00:04:34,351
+00:04:34,213 --> 00:04:35,076
 Congelado.
 
 98
-00:04:34,371 --> 00:04:35,714
+00:04:35,096 --> 00:04:36,439
 Sigue.
 
 99
-00:04:37,463 --> 00:04:39,847
+00:04:38,189 --> 00:04:40,573
 Para los demás, fue una fiesta normal.
 
 100
-00:04:39,927 --> 00:04:42,624
+00:04:40,653 --> 00:04:43,350
 Para ti, ese aplauso duró cuarenta minutos.
 
 101
-00:04:42,704 --> 00:04:46,415
+00:04:43,430 --> 00:04:47,141
 Regla número dos: en las fiestas, te sientas sobre tus manos.
 
 102
-00:04:48,325 --> 00:04:50,515
+00:04:49,033 --> 00:04:51,223
 Y el tercer problema es el silencio.
 
 103
-00:04:50,595 --> 00:04:53,350
+00:04:51,303 --> 00:04:54,058
 En el tiempo detenido no hay nadie con quien hablar.
 
 104
-00:04:53,430 --> 00:04:55,762
+00:04:54,138 --> 00:04:56,470
 Así que empiezas a hablar con una paloma.
 
 105
-00:04:55,843 --> 00:04:56,954
+00:04:56,551 --> 00:04:57,662
 Le pones Pepe.
 
 106
-00:04:58,204 --> 00:05:01,373
+00:04:58,912 --> 00:05:02,081
 Le cuentas lo de Valeria, lo de la cana, lo del examen.
 
 107
-00:05:02,453 --> 00:05:05,362
+00:05:03,161 --> 00:05:06,014
 TÚ: Y entonces Valeria… bueno, tú me entiendes, Pepe.
 
 108
-00:05:05,842 --> 00:05:07,612
+00:05:06,494 --> 00:05:08,264
 Pepe no dice nada.
 
 109
-00:05:08,492 --> 00:05:12,346
+00:05:09,144 --> 00:05:12,998
 Pepe es, sinceramente, el mejor amigo que has tenido en semanas.
 
 110
-00:05:13,867 --> 00:05:17,969
+00:05:14,492 --> 00:05:18,594
 Un viernes, saliendo de la escuela, una maceta cae desde un balcón.
 
 111
-00:05:18,049 --> 00:05:19,400
+00:05:18,674 --> 00:05:20,025
 Justo encima de Valeria.
 
 112
-00:05:19,880 --> 00:05:20,755
+00:05:20,505 --> 00:05:21,380
 Aplaudes.
 
 113
-00:05:20,835 --> 00:05:23,446
+00:05:21,460 --> 00:05:24,071
 La maceta se queda a medio metro de su cabeza.
 
 114
-00:05:23,525 --> 00:05:25,334
+00:05:24,150 --> 00:05:25,959
 La bajas con cuidado.
 
 115
-00:05:26,384 --> 00:05:32,411
+00:05:27,009 --> 00:05:33,009
 Y ahora tienes un problema: si aplaudes, Valeria te verá a su lado. Con una maceta. Salido de la nada.
 
 116
-00:05:32,491 --> 00:05:34,312
+00:05:33,089 --> 00:05:34,910
 Aplaudes de todas formas.
 
 117
-00:05:35,662 --> 00:05:37,670
+00:05:36,260 --> 00:05:38,268
 VALERIA: ¿Cómo llegaste tan rápido?
 
 118
-00:05:38,520 --> 00:05:40,345
+00:05:39,119 --> 00:05:40,944
 TÚ: Eh… hago mucho ejercicio.
 
 119
-00:05:42,133 --> 00:05:45,143
+00:05:42,758 --> 00:05:45,768
 Esa noche detienes el tiempo para ir a hablar con Pepe.
 
 120
-00:05:45,223 --> 00:05:47,810
+00:05:45,848 --> 00:05:48,435
 Pero esta vez, en la banca, hay alguien más.
 
 121
-00:05:47,891 --> 00:05:49,772
+00:05:48,516 --> 00:05:50,397
 Alguien que se mueve.
 
 122
-00:05:51,322 --> 00:05:55,027
+00:05:51,947 --> 00:05:55,652
 VALERIA: ¿Tú también aplaudes? Qué tierno. Yo chasqueo los dedos.
 
 123
-00:05:56,077 --> 00:05:57,465
+00:05:56,702 --> 00:05:58,090
 TÚ: ¿Desde cuándo puedes hacer esto?
 
 124
-00:05:57,915 --> 00:06:01,396
+00:05:58,540 --> 00:06:02,021
 VALERIA: ¿Contando el tiempo detenido? Tengo diecinueve años.
 
 125
-00:06:03,146 --> 00:06:06,980
+00:06:03,771 --> 00:06:07,605
 Resulta que no eres la única persona que puede detener el tiempo.
 
 126
-00:06:07,060 --> 00:06:08,307
+00:06:07,685 --> 00:06:08,932
 Y lo de los libros…
 
 127
-00:06:08,387 --> 00:06:10,391
+00:06:09,012 --> 00:06:11,016
 Valeria nunca estuvo congelada.
 
 128
-00:06:10,471 --> 00:06:11,423
+00:06:11,096 --> 00:06:12,048
 Lo vio todo.
 
 129
-00:06:11,503 --> 00:06:13,962
+00:06:12,128 --> 00:06:14,587
 Hasta cuando los ordenaste por tamaño.
 
 130
-00:06:16,075 --> 00:06:21,374
+00:06:16,700 --> 00:06:21,835
 Aquella maceta, a medio metro de su cabeza… y tú creías que eras el único que se movía.
 
 131
-00:06:22,424 --> 00:06:24,583
+00:06:22,885 --> 00:06:25,044
 ¿Y tú qué harías con el tiempo detenido?
 
 132
-00:06:24,663 --> 00:06:26,513
+00:06:25,123 --> 00:06:26,973
 Déjamelo en los comentarios.
 
 133
-00:06:26,593 --> 00:06:29,575
+00:06:27,053 --> 00:06:30,035
 Y si quieres saber qué pasa con Valeria… suscríbete.
 
 134
-00:06:29,654 --> 00:06:31,341
+00:06:30,115 --> 00:06:31,802
 Pepe también quiere saber.

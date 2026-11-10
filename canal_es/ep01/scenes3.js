@@ -254,7 +254,7 @@ SC.s17 = (X, t) => {
   if (t > end) { const a = R(t, end, end + .5, outC); X.save(); X.globalAlpha = a; X.fillStyle = '#141a2e'; X.fillRect(0, 0, W, H);
     text(X, CHANNEL_NAME, W / 2, 230, 150, '#fde047', 'Bangers', 'center', OUT, 18);
     text(X, 'PRÓXIMO EPISODIO:', W / 2, 400, 64, '#ffffff', 'Bangers', 'center');
-    text(X, '¿Y SI PUDIERAS VER QUIÉN', W / 2, 500, 84, '#ffffff', 'Bangers', 'center', OUT, 10); text(X, 'ESTÁ ENAMORADO DE TI?', W / 2, 600, 84, '#ffffff', 'Bangers', 'center', OUT, 10);
+    text(X, '¿Y SI PUDIERAS VER', W / 2, 500, 84, '#ffffff', 'Bangers', 'center', OUT, 10); text(X, '5 SEGUNDOS DEL FUTURO?', W / 2, 600, 84, '#ffffff', 'Bangers', 'center', OUT, 10);
     shape(X, q => rrPath(q, W / 2 - 300, 720, 600, 130, 22), '#e02424', 7); text(X, 'SUSCRÍBETE', W / 2, 812, 84, '#ffffff', 'Bangers', 'center');
     drawPigeon(X, 1600, 960, .9, { flip: -1, blink: autoBlink(t, 3) }); X.restore(); }
 };
