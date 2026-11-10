@@ -25,7 +25,20 @@ function ik(sx, sy, tx, ty, L1, L2, out) {
   if (d < 1) d = 1;
   const b = Math.atan2(ty - sy, tx - sx), o = Math.acos(clamp((L1 * L1 + d * d - L2 * L2) / (2 * L1 * d), -1, 1));
   const e1 = [sx + L1 * Math.cos(b + o), sy + L1 * Math.sin(b + o)], e2 = [sx + L1 * Math.cos(b - o), sy + L1 * Math.sin(b - o)];
-  return [(out > 0) === (e1[0] > e2[0]) ? e1 : e2, [tx, ty]];
+  if (Math.abs(out) < 2) return [(out > 0) === (e1[0] > e2[0]) ? e1 : e2, [tx, ty]];
+  const s1 = e1[1] + Math.sign(out) * e1[0] * .6, s2 = e2[1] + Math.sign(out) * e2[0] * .6;
+  return [s1 >= s2 ? e1 : e2, [tx, ty]];
+}
+function limb(s, e, h, col, w, cuff) {
+  const c = [mix(e[0], 2 * e[0] - (s[0] + h[0]) / 2, .8), mix(e[1], 2 * e[1] - (s[1] + h[1]) / 2, .8)];
+  const B = u => [(1 - u) * (1 - u) * s[0] + 2 * (1 - u) * u * c[0] + u * u * h[0], (1 - u) * (1 - u) * s[1] + 2 * (1 - u) * u * c[1] + u * u * h[1]];
+  X.lineCap = 'round'; X.lineJoin = 'round'; X.beginPath(); X.moveTo(s[0], s[1]); X.quadraticCurveTo(c[0], c[1], h[0], h[1]);
+  X.strokeStyle = OUT; X.lineWidth = w + 2 * LW; X.stroke(); X.strokeStyle = col; X.lineWidth = w; X.stroke();
+  // light along the top edge of the limb
+  X.save(); X.beginPath(); X.moveTo(s[0], s[1]); X.quadraticCurveTo(c[0], c[1], h[0], h[1]); X.strokeStyle = 'rgba(255,226,168,.1)'; X.lineWidth = w * .35; X.translate(2, -w * .22); X.stroke(); X.restore();
+  if (cuff) { X.beginPath(); for (let i = 0; i <= 6; i++) { const q = B(.82 + i * .025); i ? X.lineTo(q[0], q[1]) : X.moveTo(q[0], q[1]); }
+    X.lineCap = 'butt'; X.strokeStyle = OUT; X.lineWidth = w + 2 * LW + 4; X.stroke(); X.strokeStyle = cuff; X.lineWidth = w + 4; X.stroke(); X.lineCap = 'round'; }
+  return c;
 }
 function rimClip(path, fromX, col = RIM, w = 10) {
   X.save(); X.beginPath(); path(X); X.clip();
@@ -37,6 +50,7 @@ function shadeClip(path, toX, col) {
   X.save(); X.beginPath(); path(X); X.clip(); const gr = X.createLinearGradient(toX - 110, 0, toX + 70, 0);
   gr.addColorStop(0, col); gr.addColorStop(1, col.replace(/[\d.]+\)$/, '0)')); X.fillStyle = gr; X.fillRect(-5000, -5000, 10000, 10000); X.restore();
 }
+function shadeCol(hex, k) { const n = parseInt(hex.slice(1), 16); return `rgb(${(n >> 16) * k | 0},${(n >> 8 & 255) * k | 0},${(n & 255) * k | 0})`; }
 function mitten(x, y, r, col = '#f1ece6') { shape(X, g => g.arc(x, y, r, 0, 7), col); X.save(); X.beginPath(); X.arc(x, y, r - 5, -1.2, 0.2); X.strokeStyle = RIM; X.shadowColor = 'rgba(255,214,150,.9)'; X.shadowBlur = 10; X.lineWidth = 4; X.stroke(); X.restore(); }
 function glow(x, y, r, a, rgb = '150,225,255') {
   if (a <= 0) return; X.save(); X.globalCompositeOperation = 'lighter';
@@ -222,14 +236,16 @@ function person(t, gx, gy, spec, p = {}) {
   const restL = [gx - 112 * sc, gy - 212 * sc], restR = [gx + 112 * sc, gy - 212 * sc];
   const pocketL = [gx - 38 * sc, gy - 250 * sc], pocketR = [gx + 38 * sc, gy - 250 * sc];
   let hl = p.handL || (p.pockets ? pocketL : restL), hr = p.handR || (p.pockets ? pocketR : restR);
-  hl = smRel(K + 'hl', t, hl, gx, gy, .055); hr = smRel(K + 'hr', t, hr, gx, gy, .055);
+  hl = sprRel(K + 'hl', t, hl, gx, gy, 4.2, .7); hr = sprRel(K + 'hr', t, hr, gx, gy, 4.2, .7);
   p = Object.assign({}, p, { look: sm(K + 'lk', t, p.look || [0, 0], .07), headRot: sm(K + 'hrot', t, p.headRot || 0, .09) + Math.sin(t * .75 + (spec.ph || 0) * 1.3) * .025 * (p.still ? 0 : 1), headX: sm(K + 'hx', t, p.headX || 0, .09),
     headDrop: sm(K + 'hd', t, p.headDrop || 0, .09), wide: sm(K + 'wd', t, p.wide ? 1 : 0, .06), mouthOpen: sm(K + 'mo', t, +p.mouthOpen || 0, .05), slump: sm(K + 'sl', t, p.slump || 0, .12) });
   hl = [hl[0] + jit, hl[1]]; hr = [hr[0] - jit, hr[1]];
   const armCol = k => A[k] ? RED : (k === 'armL' ? Yd : Y);
   const handCol = k => A[k] ? GOLD : '#f1ece6';
   // far (left) arm behind body
-  let [e, h] = ik(gx - sh, sy, hl[0], hl[1], 108 * sc, 104 * sc, -1); tube([[gx - sh, sy], e, h], armCol('armL'), 34 * sc);
+  const cuffCol = k => A[k] ? GOLD : (k === 'armL' ? shadeCol(Yd, .82) : Yd);
+  const syL = sy - clamp((sy - hl[1]) / 260) * 12 * sc, syR = sy - clamp((sy - hr[1]) / 260) * 12 * sc;
+  let [e, h] = ik(gx - sh, syL, hl[0], hl[1], 108 * sc, 104 * sc, -2); limb([gx - sh, syL], e, h, armCol('armL'), 34 * sc, p.pockets ? null : cuffCol('armL'));
   const mL = p.mittL ?? p.mitts, mR = p.mittR ?? p.mitts;
   spec._hl = h;
   if (!p.pockets) { if (mL) ovenMitt(h[0], h[1], 1.0 * sc, Math.atan2(h[1] - e[1], h[0] - e[0]), 1); else mitten(h[0], h[1], 18 * sc, handCol('armL')); }
@@ -256,10 +272,14 @@ function person(t, gx, gy, spec, p = {}) {
   head(hx, hy, r, p.headRot || 0, { hair: spec.hair, hairCol: spec.hairCol, helmet: A.helmet, blink: p.blink, mouth: p.mouth, mouthOpen: p.mouthOpen, mouthO: p.mouthO, wavy: p.wavy,
     look: p.look, brow: p.brow, lid: p.lid, wide: p.wide, happy: p.happy, headphones: p.headphones, sweat: p.sweat, t, partyHat: p.partyHat, faceplate: p.faceplate, eyes: p.eyes });
   // near (right) arm in front
-  [e, h] = ik(gx + sh, sy, hr[0], hr[1], 108 * sc, 104 * sc, 1); tube([[gx + sh, sy], e, h], armCol('armR'), 36 * sc);
+  if (p.snapR !== undefined) hr = [hr[0], hr[1] + 9 * sc * clamp(p.snapR * 2)];      // the wrist flicks down on the snap
+  [e, h] = ik(gx + sh, syR, hr[0], hr[1], 108 * sc, 104 * sc, 2); limb([gx + sh, syR], e, h, armCol('armR'), 36 * sc, p.pockets ? null : cuffCol('armR'));
+  spec._hr = h;
   if (p.pockets) return;
   if (p.snapR !== undefined) {               // snapping hand: thumb + middle finger, a click flash at the snap moment
-    shape(X, g => rrPath(g, h[0] - 8 * sc, h[1] - 44 * sc, 16 * sc, 36 * sc, 8 * sc), handCol('armR'), 4);
+    const fl = clamp(p.snapR * 2.5), fa = mix(-.25, 1.25, fl);
+    X.save(); X.translate(h[0], h[1] - 14 * sc); X.rotate(fa); shape(X, g => rrPath(g, -7 * sc, -36 * sc, 14 * sc, 36 * sc, 7 * sc), handCol('armR'), 4); X.restore();
+    shape(X, g => g.ellipse(h[0] - 15 * sc, h[1] - 12 * sc, 8 * sc, 12 * sc, -.5, 0, 7), handCol('armR'), 4);
     mitten(h[0], h[1], 20 * sc, handCol('armR'));
     if (p.snapR > 0) { X.save(); X.strokeStyle = `rgba(255,240,170,${p.snapR})`; X.lineWidth = 6; for (let i = 0; i < 6; i++) { const a = -Math.PI / 2 + (i - 2.5) * .45; X.beginPath(); X.moveTo(h[0] + Math.cos(a) * 40, h[1] - 40 + Math.sin(a) * 40); X.lineTo(h[0] + Math.cos(a) * (70 + 30 * p.snapR), h[1] - 40 + Math.sin(a) * (70 + 30 * p.snapR)); X.stroke(); } X.restore(); }
   } else if (mR) ovenMitt(h[0], h[1], 1.05 * sc, Math.atan2(h[1] - e[1], h[0] - e[0]), -1); else mitten(h[0], h[1], 20 * sc, handCol('armR'));
@@ -271,6 +291,7 @@ function person(t, gx, gy, spec, p = {}) {
 const HERO = { col: '#e4ae3c', colD: '#bf8a24', hair: 'curly' };
 
 /* Dave: bald, beard, round glasses, navy bathrobe, plaid pants, mug */
+let DAVEH = [0, 0];
 function dave(t, gx, gy, p = {}) {
   const br = Math.sin(t * 1.7 + 1) * 2.5 + (p.bounce || 0), top = gy - 520 - br;
   const N = '#2c3d6e', Nd = '#1f2c52', Nl = '#5d70a3';
@@ -283,9 +304,9 @@ function dave(t, gx, gy, p = {}) {
     shape(X, g => g.ellipse(gx + dx + (dx > 0 ? 10 : -10), gy - 6, 40, 13, 0, 0, 7), '#25233c', 4);
   }
   gx += Math.sin(t * .8 + 2) * 3 * (p.still ? 0 : 1);
-  const hl = smRel('Dhl', t, p.handL || [gx - 150, gy - 250], gx, gy, .06);
+  const hl = p.exact ? (p.handL || [gx - 150, gy - 250]) : sprRel('Dhl', t, p.handL || [gx - 150, gy - 250], gx, gy, 5, .7);
   p = Object.assign({}, p, { look: sm('Dlk', t, p.look || [5, 0], .07), headRot: sm('Drot', t, p.headRot || 0, .09) + Math.sin(t * .6 + 1) * .02 * (p.still ? 0 : 1), lid: sm('Dlid', t, p.lid ?? .25, .08) });
-  let [e, h] = ik(gx - 124, top + 60, hl[0], hl[1], 124, 118, -1); tube([[gx - 124, top + 60], e, h], Nd, 46);
+  let [e, h] = ik(gx - 124, top + 60, hl[0], hl[1], 124, 118, -1); limb([gx - 124, top + 60], e, h, Nd, 46, '#18213f');
   if (p.tapeRoll) { shape(X, g => g.arc(h[0], h[1] - 30, 30, 0, 7), '#b8b8c0'); shape(X, g => g.arc(h[0], h[1] - 30, 13, 0, 7), '#4a3d4c', 4); }
   mitten(h[0], h[1], 22);
   const robe = g => {
@@ -300,12 +321,17 @@ function dave(t, gx, gy, p = {}) {
   const rot = p.headRot || 0, hx = gx + rot * -60, hy = top - 112;
   tube([[gx, top + 6], [hx, hy + 90]], '#efe6d6', 14);
   head(hx, hy, 114, rot, { beard: 1, glasses: 1, blink: p.blink, look: p.look || [5, 0], lid: p.lid ?? .25, partyHat: p.partyHat, blowO: p.blowO, happy: p.happy, t });
-  if (p.noMug) { const hr = smRel('Dhr', t, p.handR || [gx + 150, gy - 250], gx, gy, .06); [e, h] = ik(gx + 124, top + 60, hr[0], hr[1], 124, 118, 1); tube([[gx + 124, top + 60], e, h], N, 46); mitten(h[0], h[1], 23); return; }
+  if (p.noMug) { const hr = p.exact ? (p.handR || [gx + 150, gy - 250]) : sprRel('Dhr', t, p.handR || [gx + 150, gy - 250], gx, gy, 5, .7); [e, h] = ik(gx + 124, top + 60, hr[0], hr[1], 124, 118, 2); limb([gx + 124, top + 60], e, h, N, 46, Nd); DAVEH = h; mitten(h[0], h[1], 23); return; }
   const lift = p.lift || 0, tx = gx + 70, ty = mix(top + 178, hy + 112, lift);
-  [e, h] = ik(gx + 124, top + 60, tx, ty, 124, 118, 1); tube([[gx + 124, top + 60], e, h], N, 46);
+  [e, h] = ik(gx + 124, top + 60, tx, ty, 124, 118, 1); limb([gx + 124, top + 60], e, h, N, 46, Nd);
   X.save(); X.translate(h[0] - 40, h[1] - 10); X.rotate(-0.42 * lift);
-  shape(X, g => rrPath(g, -32, -40, 64, 76, 12), '#f4f1ea'); X.beginPath(); X.arc(-32, -2, 22, 1.5, 4.7); X.lineWidth = 12; X.strokeStyle = OUT; X.stroke(); X.lineWidth = 6; X.strokeStyle = '#f4f1ea'; X.stroke();
-  X.fillStyle = '#6b4a36'; X.beginPath(); X.ellipse(0, -38, 26, 6, 0, 0, 7); X.fill();
+  X.beginPath(); X.arc(-32, -2, 22, 1.5, 4.7); X.lineWidth = 12; X.strokeStyle = OUT; X.stroke(); X.lineWidth = 6; X.strokeStyle = '#f4f1ea'; X.stroke();
+  const mug = g => { g.moveTo(-32, -40); g.lineTo(-30, 26); g.quadraticCurveTo(-30, 36, -18, 36); g.lineTo(18, 36); g.quadraticCurveTo(30, 36, 30, 26); g.lineTo(32, -40); };
+  { const gr = X.createLinearGradient(-32, 0, 32, 0); gr.addColorStop(0, '#d9d2c8'); gr.addColorStop(.55, '#f6f2ea'); gr.addColorStop(1, '#ffffff'); shape(X, mug, gr); }
+  shape(X, g => g.ellipse(0, -40, 32, 9, 0, 0, 7), '#e7e0d6', 4);                    // rim
+  X.save(); X.beginPath(); X.ellipse(0, -39, 26, 6, 0, 0, 7); X.clip(); X.rotate(.42 * lift);
+  X.fillStyle = '#4e3426'; X.fillRect(-40, -60, 80, 60); X.fillStyle = '#7a5440'; X.beginPath(); X.ellipse(0, -36, 26, 5, 0, 0, 7); X.fill();
+  X.fillStyle = 'rgba(255,230,200,.45)'; X.beginPath(); X.ellipse(8, -37, 8, 1.6, 0, 0, 7); X.fill(); X.restore();
   if (p.toastInMug) { shape(X, g => rrPath(g, -22, -80, 44, 48, 10), '#d9a35a', 4); shape(X, g => rrPath(g, -15, -73, 30, 34, 8), '#f3d7a0', 0); }
   X.restore();
   mitten(h[0], h[1], 23);
@@ -348,6 +374,14 @@ function sm(key, t, v, tau = .08) {
   s.v = arr ? s.v.map((x, i) => x + (v[i] - x) * k) : s.v + (v - s.v) * k; return arr ? s.v.slice() : s.v;
 }
 const smRel = (key, t, p, ox, oy, tau) => { const r = sm(key, t, [p[0] - ox, p[1] - oy], tau); return [r[0] + ox, r[1] + oy]; };
+function spr(key, t, v, f = 4.2, z = .7) {
+  const s = SMS.get(key);
+  if (!s || t < s.t || t - s.t > .12) { SMS.set(key, { t, v: v.slice(), vel: v.map(() => 0) }); return v.slice(); }
+  const dt = t - s.t, w = 2 * Math.PI * f, n = Math.max(1, Math.ceil(dt / .004)), h = dt / Math.max(n, 1); s.t = t;
+  for (let k = 0; k < n; k++) for (let i = 0; i < v.length; i++) { const a = w * w * (v[i] - s.v[i]) - 2 * z * w * s.vel[i]; s.vel[i] += a * h; s.v[i] += s.vel[i] * h; }
+  return s.v.slice();
+}
+const sprRel = (key, t, p, ox, oy, f, z) => { const r = spr(key, t, [p[0] - ox, p[1] - oy], f, z); return [r[0] + ox, r[1] + oy]; };
 
 /* ---------- soft frame: motion blur (sub-frames) + bloom + light haze + vignette + grain ---------- */
 let ACC = null, PP = null;

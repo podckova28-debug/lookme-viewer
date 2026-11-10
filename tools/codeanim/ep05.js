@@ -56,9 +56,10 @@ const SCENES = [
   if (!s.blur) {
     const A = armorState(t, 1.7), full = A.helmet;
     const think = R(t, .2, .6) * (1 - R(t, .95, 1.05)), snap = R(t, .95, 1.05) * (1 - R(t, 1.5, 1.9));
-    const handR = think > 0 && snap === 0 ? [hgx + 60, ht - 40] : mix2([hgx + 112, hgy - 212], [hgx + 190, ht - 60], snap);
+    const rest = [hgx + 112, hgy - 212], thinkP = [hgx + 150, ht - 5], raiseP = [hgx + 190, ht - 60];
+    const handR = t < .95 ? mix2(rest, thinkP, R(t, .2, .6)) : t < 1.5 ? mix2(thinkP, raiseP, R(t, .95, 1.05)) : mix2(raiseP, rest, R(t, 1.5, 1.9));
     const looking = R(t, 3.3, 3.8);
-    person(t, hgx, hgy, HERO, { armor: A, handR: looking > 0 ? mix2(handR, [hgx + 150, ht + 40], looking) : handR, snapR: snap > .5 ? bump(t, 1.1, 1.35) : undefined,
+    person(t, hgx, hgy, HERO, { armor: A, handR: looking > 0 ? mix2(handR, [hgx + 150, ht + 40], looking) : handR, snapR: (snap > .5 || (t > .4 && t < 1.5)) ? bump(t, 1.1, 1.35) : undefined,
       wide: t > 1.55 && t < 3.3, mouthO: t > 1.6 && t < 3.0, mouth: t < 1.0 ? .6 : (looking > 0 ? .9 : 0), happy: t < .9 && think > .5, chestGlow: full ? .2 + .15 * Math.sin(t * 3) : 0,
       look: looking > 0 ? [18, 14] : (t > 1.6 && t < 3 ? [-10, -8] : [0, 0]), blink: blinkAmt(t, [4.6, 6.6]), headRot: think * .08 });
     armorFlights(t, 1.7, [1650, 330], hgx, hgy); clankFlash(t, 1.7, hgx, hgy);
@@ -89,7 +90,7 @@ const SCENES = [
   X.drawImage(BGS.kitchen, 0, 0); windowCracks(1); const u = R(t, .3, 3.4, x => x); windowTape(u);
   const { x, y, w, h } = KWIN, cx = x + w * .62, cy = y + h * .55, strips = [[-150, -90, 150, 90], [-150, 90, 150, -90], [-170, 0, 170, 0]];
   const i = Math.min(2, Math.floor(u * 3)), v = clamp(u * 3 - i), st = strips[i], hand = [cx + mix(st[0], st[2], v), cy + mix(st[1], st[3], v)];
-  dave(t, 1260, 944, { noMug: 1, handR: hand, handL: [1110, 640], tapeRoll: 1, look: [16, -12], blink: blinkAmt(t, [2.2]) });
+  dave(t, 1260, 944, { exact: 1, noMug: 1, handR: hand, handL: [1110, 640], tapeRoll: 1, look: [16, -12], blink: blinkAmt(t, [2.2]) });
   const gx = 640;
   for (const [k, px, py, rot] of [['chest', gx - 130, 900, -.3], ['legL', gx + 150, 920, 1.4], ['helmet', gx + 40, 905, .2], ['armL', gx - 220, 925, 1.2]]) pieceSprite(k, px, py, rot, .5);
   person(t, gx, 944, HERO, { wavy: 1, look: [20, -6], brow: .4, handL: [gx - 60, TOP(944) - 30], blink: blinkAmt(t, [1.2]) });
@@ -103,7 +104,7 @@ const SCENES = [
   const gx = 1250, gy = 944, ht = TOP(gy), dg = 700;
   const give = R(t, .4, 1.0) * (1 - R(t, 1.7, 2.1)), take = R(t, 1.1, 1.6), on = t > 1.75;
   dave(t, dg, gy, { noMug: 1, handR: mix2([dg + 110, gy - 240], [dg + 300, gy - 330], give), look: [14, 0], blink: blinkAmt(t, [3.0, 6.2]) });
-  if (!on) { const hx = mix(dg + 300, gx - 120, take * .0), hy = gy - 330; if (give > .1) { const k = R(t, .4, 1.0); ovenMitt(mix(dg + 150, dg + 300, k) + 18, mix(gy - 250, gy - 330, k) - 20, 1.0, -1.2, 1); ovenMitt(mix(dg + 150, dg + 300, k) + 40, mix(gy - 250, gy - 330, k) - 6, 1.0, -1.5, 1); } }
+  if (!on && give > .05) { ovenMitt(DAVEH[0] + 14, DAVEH[1] - 18, 1.0, -1.2, 1); ovenMitt(DAVEH[0] + 34, DAVEH[1] - 4, 1.0, -1.5, 1); }
   const tries = [[2.9, 3.5], [4.6, 5.2]], tr = Math.max(...tries.map(([a, b]) => bump(t, a, b)));
   const up = R(t, 2.5, 2.8) * (1 - R(t, 5.4, 5.7)), thumb = R(t, 5.8, 6.2);
   const hr = t < 1.75 ? mix2([gx + 112, gy - 212], [dg + 280, gy - 330], take * (1 - R(t, 1.6, 1.75))) :
@@ -183,6 +184,7 @@ const SCENES = [
   person(t, gx, gy, HERO, { armor: A, mitts, handL: hl, handR: yes > 0 ? mix2(hr, [gx + 170, ht - 50], yes) : hr, snapR: yes > .5 ? bump(t, 6.8, 7.0) : undefined,
     look: t < 4.6 ? [12, 10] : (t < 5.4 ? [10, -16] : [10, 6]), wide: t > 2.4 && t < 5.5, sweat: t > 2.6 && t < 5.4 ? .8 : 0, mouthO: t > 4.6 && t < 5.4,
     happy: t > 5.6 && t < 7.1, mouth: t > 8.6 ? -.9 : .5, brow: t > 8.6 ? -.5 : 0, chestGlow: A.chest ? .2 : 0, blink: blinkAmt(t, [1.2, 10.2]) });
+  if (hold && HERO._hl && HERO._hr && sq === 0 && !(t > 4.55 && t < 5.45)) box = [(HERO._hl[0] + HERO._hr[0]) / 2, (HERO._hl[1] + HERO._hr[1]) / 2 - 12];
   cakeBox(box[0], box[1], rot, sq);
   if (t > 4.7 && t < 5.6) { const u = R(t, 4.7, 5.6, x => x); ovenMitt(mix(gx - 60, gx - 300, u), gy - 300 - Math.sin(u * Math.PI) * 200 + u * 260, 1.0, u * 7, 1); ovenMitt(mix(gx + 80, gx + 340, u), gy - 300 - Math.sin(u * Math.PI) * 240 + u * 260, 1.0, -u * 8, -1); }
   if (t >= 5.6) { ovenMitt(gx - 300, gy - 40, 1.0, -1.4, 1); ovenMitt(gx + 340, gy - 40, 1.0, 1.5, -1); }
@@ -203,7 +205,7 @@ const SCENES = [
   cakeTape(cx, cy, u);
   const i = Math.min(2, Math.floor(u * 3)), v = clamp(u * 3 - i), st = [[-120, -40, 120, -120], [-120, -120, 120, -30], [-40, -128, 30, 0]][i];
   const hand = u > 0 && u < 1 ? [cx + mix(st[0], st[2], v), cy + mix(st[1], st[3], v)] : [dg + 150, gy - 250];
-  dave(t, dg, gy, { noMug: 1, tapeRoll: 1, handR: hand, look: [16, 6], lid: .3, blink: blinkAmt(t, [4.3]), headRot: R(t, 4.0, 4.3) * (1 - R(t, 4.6, 4.9)) * .06 });
+  dave(t, dg, gy, { exact: 1, noMug: 1, tapeRoll: 1, handR: hand, look: [16, 6], lid: .3, blink: blinkAmt(t, [4.3]), headRot: R(t, 4.0, 4.3) * (1 - R(t, 4.6, 4.9)) * .06 });
   for (const [k, px, py, rot] of [['chest', hg + 170, 905, -.3], ['helmet', hg + 280, 900, .3], ['legL', hg - 170, 925, 1.3]]) pieceSprite(k, px, py, rot, .5);
   person(t, hg, gy, HERO, { look: [-20, 4], brow: .5, wavy: 1, pockets: 1, sweat: .4, blink: blinkAmt(t, [2.2, 5.0]) });
   if (u >= 1) sparkle(cx + 60, cy - 200, .7, bump(t, 3.7, 4.3));
