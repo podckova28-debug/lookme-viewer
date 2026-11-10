@@ -1,0 +1,22 @@
+{"clips": "assets/ep05/clips/e5_%s.mp4", "stills": "assets/ep05/stills", "out": "out/e5_cut.mp4",
+ "seq": [
+  {"id": "01", "src": "01", "in": 0.0, "out": 5.0, "slow": 1.15, "tr": "cut"},
+  {"id": "02", "src": "02", "in": 0.0, "out": 5.0, "tr": "mix"},
+  {"id": "04", "src": "04", "in": 0.0, "out": 5.0, "slow": 1.1, "tr": "mix"},
+  {"id": "S1", "still": "S1.png", "dur": 5.6, "tr": "mix"},
+  {"id": "05", "src": "05", "in": 0.0, "out": 5.0, "tr": "mix"},
+  {"id": "06", "src": "06", "in": 0.0, "out": 3.6, "tr": "cut"},
+  {"id": "07", "src": "07", "in": 0.0, "out": 4.6, "tr": "mix"},
+  {"id": "08", "src": "08", "in": 0.0, "out": 4.6, "tr": "cut"},
+  {"id": "09", "src": "09", "in": 0.0, "out": 2.8, "tr": "cut"},
+  {"id": "10", "src": "10", "in": 0.0, "out": 4.0, "tr": "mix"},
+  {"id": "11", "src": "11", "in": 0.0, "out": 3.6, "tr": "mix"},
+  {"id": "12", "src": "12", "in": 0.0, "out": 2.4, "tr": "cut"},
+  {"id": "13", "src": "13", "in": 0.0, "out": 3.45, "tr": "cut"},
+  {"id": "14", "src": "14", "in": 0.0, "out": 1.8, "tr": "cut"},
+  {"id": "15", "src": "15", "in": 0.0, "out": 4.0, "tr": "cut"},
+  {"id": "16", "src": "16", "in": 0.0, "out": 4.4, "zoom": [1.18, 1.0, 0.7], "tr": "cut"},
+  {"id": "S2", "still": "S2.png", "dur": 3.2, "tr": "cut"},
+  {"id": "17", "src": "17", "in": 0.0, "out": 4.0, "tr": "cut"},
+  {"id": "18", "src": "18", "in": 0.0, "out": 5.0, "tr": "mix"}
+ ]}
