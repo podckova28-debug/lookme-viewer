@@ -58,7 +58,7 @@ order = sorted(set(order) | set(FIXED))
 out, t0 = {'scenes': {}, 'order': order}, 0.0
 for sid in order:
     if sid in FIXED and not scenes[sid]:
-        out['scenes'][sid] = {'start': round(t0, 3), 'dur': FIXED[sid], 'L': {}}; t0 += FIXED[sid]; continue
+        fd = round(FIXED[sid] * 24) / 24; out['scenes'][sid] = {'start': round(t0, 4), 'dur': fd, 'L': {}}; t0 += fd; continue
     t, L = LEAD.get(sid, .7), {}
     for i, l in enumerate(scenes[sid]):
         if i:
@@ -66,8 +66,8 @@ for sid in order:
         d = sf.info(os.path.join(VO, l['id'] + '.wav')).duration
         L[l['id']] = [round(t, 3), round(d, 3), l['who']]
         t += d + HOLD.get(l['id'], 0)
-    dur = t + TAIL.get(sid, 1.0)
-    out['scenes'][sid] = {'start': round(t0, 3), 'dur': round(dur, 3), 'L': L}
+    dur = round((t + TAIL.get(sid, 1.0)) * 24) / 24  # whole frames, so scene starts match the rendered video
+    out['scenes'][sid] = {'start': round(t0, 4), 'dur': dur, 'L': L}
     t0 += dur
 out['total'] = round(t0, 3); out['vo'] = os.path.basename(os.path.normpath(VO))
 json.dump(out, open(os.path.join(HERE, 'timing.json'), 'w'), indent=1)

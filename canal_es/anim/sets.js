@@ -117,7 +117,7 @@ function buildStreet(sky) { const c = mkCanvas(), g = c.getContext('2d');
   // apartment building with balcony (right)
   shape(g, q => q.rect(1180, 40, 760, 900), '#e7b38b', 5);
   for (let r = 0; r < 3; r++) for (let k = 0; k < 3; k++) { const x = 1240 + k * 230, y = 90 + r * 250; shape(g, q => q.rect(x, y, 150, 170), '#bfe0f2', 5); line(g, [[x + 75, y], [x + 75, y + 170]], OUT, 4); }
-  shape(g, q => q.rect(1200, 300, 360, 24), '#cfd5da', 5); for (let i = 0; i < 9; i++) line(g, [[1210 + i * 42, 324], [1210 + i * 42, 410]], OUT, 5); line(g, [[1200, 410], [1560, 410]], OUT, 7);
+  shape(g, q => q.rect(1200, 60, 360, 24), '#cfd5da', 5); for (let i = 0; i < 9; i++) line(g, [[1210 + i * 42, 84], [1210 + i * 42, 170]], OUT, 5); line(g, [[1200, 170], [1560, 170]], OUT, 7);
   // school fence and gate (left)
   shape(g, q => q.rect(0, 380, 900, 560), '#f0e6d2', 5); text(g, 'ESCUELA SECUNDARIA', 450, 470, 64, '#2f3b4a', 'Bangers', 'center');
   for (let i = 0; i < 4; i++) { shape(g, q => q.rect(60 + i * 210, 540, 150, 170), '#bfe0f2', 5); }

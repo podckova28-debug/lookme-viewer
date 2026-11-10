@@ -173,7 +173,8 @@ SC.s09 = (X, t) => {
   if (sorted) { vp.hL = [-70, G.top + 190]; vp.hR = [70, G.top + 190]; vp.lean = 0; vp.wide = 0; vp.open = 0; vp.flip = 1; }
   if (t > tr + .2) { const u = t - tr; vp.look = [Math.sin(u * 2.5) * 16, 8]; vp.mouth = -.1; vp.brow = .3; }
   if (t > Lt('s09_06') - .05) { vp.look = [6, -18]; vp.lid = .45; vp.brow = .9; vp.mouth = -.3; }
-  st.wld(g => drawChar(g, 'valeria', vp));
+  if (typeof FLASH !== 'undefined' && FLASH) { vp.look = [-16 + Math.sin(t * 3) * 4, 2]; vp.mouth = .8; vp.lid = .25; vp.wide = 0; vp.open = 0; vp.brow = t > Lm('s09_03', .75) ? .9 : .3; vp.still = 0; vp.t = t; vp.blink = null; }
+  ((typeof FLASH !== 'undefined' && FLASH) ? st.col : st.wld)(g => drawChar(g, 'valeria', vp));
   const vS = S0 * CAST.valeria.s;
   if (!sorted) st.wld(g => BOOKS.forEach((b, i) => { if (wt < trip) { propBook(g, vx, FEET + (G.top + 150) * vS - i * 22, b.w * 1.2, b.h * .5, b.c, 0); return; }
       const vx0 = (i - 1.5) * 160, vy0 = -620 - i * 90, gx = vx + vx0 * fly * 1.2, gy = FEET + (G.top + 150) * vS + vy0 * fly + 700 * fly * fly;

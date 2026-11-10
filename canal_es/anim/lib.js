@@ -160,8 +160,9 @@ function drawChar(g, cname, p) {
     if (sit > .5) {
       const kx = s * 36, ky = hipY + 8;
       tube(g, [[s * 30, hipY], [kx, ky]], c.pants, legW + 8);
-      tube(g, [[kx, ky], [kx + s * 4, -10]], c.pants, legW);
-      ell(g, kx + s * 10, -8, 24, 11, 0, c.shoe, 4);
+      const fs = s > 0 ? (p.footSwing || 0) : 0;
+      tube(g, [[kx, ky], [kx + s * 4 + fs, -10 - Math.abs(fs) * .4]], c.pants, legW);
+      ell(g, kx + s * 10 + fs, -8 - Math.abs(fs) * .4, 24, 11, 0, c.shoe, 4);
     } else {
       const sw = Math.sin(ph + (s > 0 ? 0 : Math.PI)) * walk, lift = Math.max(0, Math.cos(ph + (s > 0 ? 0 : Math.PI))) * walk * 22;
       const fx = s * 30 + sw * 34, fy = -10 - lift - (p.jump || 0);
@@ -348,7 +349,9 @@ function compose(X, world, color, frz) {
 }
 /* frozen-state helper: list of clap events [{t, x, y}] toggling the state (first stops time).
    returns {amt, wipe, dir, x, y, since} for time t */
+const EVENTS = {};
 function freezeState(t, claps, cam, start = 0) {
+  if (typeof SID !== 'undefined' && !(typeof FLASH !== 'undefined' && FLASH)) EVENTS[SID] = { claps: claps.map(c => c.t), start };
   let state = start, last = null;
   for (const c of claps) if (t >= c.t) { state = 1 - state; last = c; }
   if (last && t < last.t + .55) { const [sx, sy] = last.screen ? [last.x, last.y] : worldToScreen(cam, last.x, last.y); return { amt: state, wipe: (t - last.t) / .55, dir: state ? 1 : -1, x: sx, y: sy, since: t - last.t }; }
@@ -368,6 +371,7 @@ function drawGrayOf(X, A) { X.save(); X.filter = FROZEN_FILTER; X.drawImage(A.ca
   X.save(); X.globalCompositeOperation = 'multiply'; X.fillStyle = 'rgba(170,195,230,1)'; X.fillRect(0, 0, W, H); X.restore();
   X.save(); X.globalCompositeOperation = 'screen'; X.fillStyle = 'rgba(40,55,80,.35)'; X.fillRect(0, 0, W, H); X.restore(); }
 function compose2(X, st, f) {
+  window.__frz = (f && f.amt >= .5) ? 1 : 0;
   const A = st.A, M = st.M; X.setTransform(1, 0, 0, 1, 0, 0); X.filter = 'none'; X.globalAlpha = 1;
   const K = layer('K'); K.drawImage(A.canvas, 0, 0); K.globalCompositeOperation = 'destination-in'; K.drawImage(M.canvas, 0, 0); K.globalCompositeOperation = 'source-over';
   const gray = () => { drawGrayOf(X, A); X.drawImage(K.canvas, 0, 0); }, color = () => X.drawImage(A.canvas, 0, 0);
