@@ -1,0 +1,139 @@
+[
+ {
+  "type": "caption",
+  "f0": 7,
+  "f1": 58,
+  "x": 60,
+  "y": 50,
+  "lines": [
+   "6:58 AM"
+  ],
+  "size": 72
+ },
+ {
+  "type": "burst",
+  "f0": 267,
+  "f1": 291,
+  "x": 880,
+  "y": 170,
+  "text": "FWOOSH!",
+  "size": 100,
+  "rot": 8
+ },
+ {
+  "type": "caption",
+  "f0": 522,
+  "f1": 599,
+  "x": 60,
+  "y": 50,
+  "lines": [
+   "$9.99 / MONTH / PER FINGER"
+  ],
+  "size": 72
+ },
+ {
+  "type": "caption",
+  "f0": 611,
+  "f1": 686,
+  "x": 60,
+  "y": 50,
+  "lines": [
+   "FINGERS PAID: 1"
+  ],
+  "size": 72
+ },
+ {
+  "type": "caption",
+  "f0": 718,
+  "f1": 786,
+  "x": 60,
+  "y": 50,
+  "lines": [
+   "FAILED: 4 TIMES"
+  ],
+  "size": 72
+ },
+ {
+  "type": "caption",
+  "f0": 800,
+  "f1": 896,
+  "x": 60,
+  "y": 50,
+  "lines": [
+   "HEART RATE: 164"
+  ],
+  "size": 72
+ },
+ {
+  "type": "burst",
+  "f0": 931,
+  "f1": 950,
+  "x": 1500,
+  "y": 330,
+  "text": "BONK!",
+  "size": 100,
+  "rot": -8
+ },
+ {
+  "type": "burst",
+  "f0": 988,
+  "f1": 1012,
+  "x": 1250,
+  "y": 330,
+  "text": "ZAP!",
+  "size": 100,
+  "rot": 8
+ },
+ {
+  "type": "burst",
+  "f0": 1172,
+  "f1": 1185,
+  "x": 1350,
+  "y": 330,
+  "text": "SNAP!",
+  "size": 100,
+  "rot": -8
+ },
+ {
+  "type": "burst",
+  "f0": 1225,
+  "f1": 1249,
+  "x": 1400,
+  "y": 260,
+  "text": "CLICK!",
+  "size": 100,
+  "rot": 8
+ },
+ {
+  "type": "caption",
+  "f0": 1356,
+  "f1": 1407,
+  "x": 60,
+  "y": 50,
+  "lines": [
+   "FREE TRIAL ENDED"
+  ],
+  "size": 72
+ },
+ {
+  "type": "burst",
+  "f0": 1411,
+  "f1": 1431,
+  "x": 1660,
+  "y": 170,
+  "text": "THUD!",
+  "size": 100,
+  "rot": -8
+ },
+ {
+  "type": "caption",
+  "f0": 1704,
+  "f1": 1781,
+  "x": 60,
+  "y": 50,
+  "lines": [
+   "PAID BY: DAVE"
+  ],
+  "size": 72
+ }
+]
