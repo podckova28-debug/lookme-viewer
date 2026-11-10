@@ -8,5 +8,16 @@
   "lufs": -14.9,
   "peak": -1.3
  },
- "issues": []
+ "issues": [
+  {
+   "level": "review",
+   "code": "face",
+   "t": 294.0,
+   "what": "chip@F1",
+   "shot": "KF3",
+   "cover": 0.15863971419526976,
+   "image": "face_chip_F1_294.jpg",
+   "msg": "chip@F1 294.0 с (план KF3): закрывает 16 % головы"
+  }
+ ]
 }

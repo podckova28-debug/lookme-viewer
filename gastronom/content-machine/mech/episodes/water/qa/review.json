@@ -148,5 +148,11 @@
   "note": "с 1,4 с логотип VW, с 2,8 с номер BFPS-256 — в монтаже to=1.2",
   "level": "review",
   "image": "pack/clip_M_G3.jpg"
+ },
+ "render:chip@F1:chip@F1 294.0 с (план KF3): закрывает 16 % головы": {
+  "verdict": "ok",
+  "note": "счётчик «6 / 7» лежит на аэростате — детектор принял его верх за голову; лиц под счётчиком нет",
+  "level": "review",
+  "image": "pack/face_chip_F1_294.jpg"
  }
 }

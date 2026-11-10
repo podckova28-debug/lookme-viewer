@@ -12,6 +12,8 @@
     тем же cut.source() без плашек. Плашка закрывает ≥35 % головы — ошибка, ≥10 % — на разбор. Длинная плашка
     проверяется на каждом плане, который она перекрывает;
   • плашки друг на друге в одно время — на разбор.
+Наезды камеры: зум кадра-картинки больше 1,25× (в кадре меньше 64 % картинки) — ошибка, 1,2–1,25× — на разбор;
+край кадра режет голову персонажа — ошибка; персонаж целиком ушел за край — на разбор. Доказательство — pack/zoom_*.jpg.
 Готовый файл (--video): громкость ebur128 (норма −16…−13 LUFS, пик ≤ −1 dBTP), тишина ≥ 1,2 с внутри ролика,
 замершая картинка ≥ 2 с (клип кончился раньше плана), чёрные кадры, расхождение длины с раскладкой.
 """
@@ -141,6 +143,55 @@ def check_overlays(cut, shots, pack):
     return issues, len(ws)
 
 
+ZOOM_REVIEW, ZOOM_FAIL = 1.20, 1.25   # 1,2× — в кадре 69 % картинки; больше 1,25× (меньше 64 %) — «обрезает большую часть кадра»
+
+
+def crop_rect(z, cx, cy, iw, ih, W=1920, H=1080):
+    """Тот же расчет кадрирования, что в cut.Still.next: прямоугольник картинки, который попадает в кадр."""
+    cw = iw / z; ch = cw * H / W
+    if ch > ih: ch = ih; cw = ch * W / H
+    x0 = min(max(cx * iw - cw / 2, 0), iw - cw); y0 = min(max(cy * ih - ch / 2, 0), ih - ch)
+    return x0, y0, x0 + cw, y0 + ch
+
+
+def check_zoom(cut, shots, pack):
+    """Наезды на кадры-картинки: сколько картинки остается в кадре и не режет ли край кадра головы."""
+    from imgutils.detect import detect_heads
+    from PIL import ImageDraw
+    issues = []; heads_cache = {}
+    for s in shots:
+        c = cut.CLIPS[s['name']]
+        if c['file'].endswith('.mp4') or 'pose' not in s: continue
+        f = cut.P(c['file']); a, b = s['pose']; zmax = max(a[0], b[0])
+        if f not in heads_cache:
+            im = Image.open(f).convert('RGB'); sc = 1280 / im.width; sm = im.resize((1280, int(im.height * sc)))
+            hs = [tuple(v / sc for v in box) for box, _, _ in detect_heads(sm, conf_threshold=0.35)]
+            hs = [h for h in hs if (h[2] - h[0]) >= 0.02 * im.width]   # мелкие «головы» (фонари, пуговицы) — не головы
+            heads_cache[f] = (im.size, hs, sm, sc)
+        (iw, ih), heads, sm, sc = heads_cache[f]
+        what = f"{s['name']}@{s['line']}"; probs = []; lvl = None
+        if zmax > ZOOM_FAIL: lvl = 'fail'; probs.append(f'зум {zmax:.2f}× — в кадре {100 / zmax ** 2:.0f} % картинки')
+        elif zmax > ZOOM_REVIEW + 1e-6: lvl = 'review'; probs.append(f'зум {zmax:.2f}× — в кадре {100 / zmax ** 2:.0f} % картинки')
+        for pose in (a, b):
+            x0, y0, x1, y1 = crop_rect(*pose, iw, ih)
+            for hx0, hy0, hx1, hy1 in heads:
+                area = max(1, (hx1 - hx0) * (hy1 - hy0))
+                inside = max(0, min(x1, hx1) - max(x0, hx0)) * max(0, min(y1, hy1) - max(y0, hy0)) / area
+                if 0.15 < inside < 0.85:
+                    lvl = 'fail'; probs.append(f'край кадра режет голову ({inside * 100:.0f} % в кадре)')
+                elif inside <= 0.15 and pose[0] > 1.0:
+                    lvl = lvl or 'review'; probs.append('персонаж ушел за край кадра')
+        if not probs: continue
+        ev = sm.copy(); d = ImageDraw.Draw(ev)
+        for pose, col in ((a, (60, 220, 60)), (b, (230, 60, 60))):
+            d.rectangle([v * sc for v in crop_rect(*pose, iw, ih)], outline=col, width=5)
+        for hb in heads: d.rectangle([v * sc for v in hb], outline=(255, 220, 0), width=3)
+        name = f"zoom_{s['name']}_{s['line']}.jpg"; ev.save(os.path.join(pack, name), quality=82)
+        issues.append(dict(level=lvl, code='zoom', what=what, t=round(s['t'], 1), image=name,
+                           msg=f"{what} {s['t']:.1f} с: " + '; '.join(dict.fromkeys(probs)) + ' (зелёная рамка — начало, красная — конец)'))
+    return issues
+
+
 def check_file(video, total):
     FF = __import__('imageio_ffmpeg').get_ffmpeg_exe()
     fc = ('[0:a]ebur128=peak=true,silencedetect=noise=-40dB:d=1.2[a];'
@@ -179,6 +230,7 @@ def main():
     if project and os.path.exists(os.path.join(project, 'cut.py')):   # шортсы собираются другим скриптом — только файл
         cut, shots, total = load(project)
         issues, n_ov = check_overlays(cut, shots, pack)
+        issues += check_zoom(cut, shots, pack)
     stats = {}
     if video:
         fi, stats = check_file(video, total); issues += fi

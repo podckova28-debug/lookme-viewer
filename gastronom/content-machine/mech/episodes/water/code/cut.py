@@ -58,8 +58,33 @@ def plan():
         if i and shots[i - 1]['name'] == s['name'] and 'pose' in shots[i - 1]:
             a = shots[i - 1]['pose'][1]; s['cont'] = True
             if max(abs(x - y) for x, y in zip(a, b)) < 0.02: b = (a[0] * 1.08, a[1], a[2])
+        a, b = fit_pose(a, s['name']), fit_pose(b, s['name'])
         s['pose'] = (a, b)
     return shots, t
+
+# ---------- безопасный зум ----------
+ZMAX = 1.2   # «иногда обрезает большую часть кадра»: больше 1,2× (в кадре меньше 69 % картинки) не наезжаем
+try:
+    import json as _json
+    HEADS = _json.load(open(P('kf/heads.json')))   # qa/heads.py: головы на каждом кадре, в долях картинки
+except Exception:
+    HEADS = {}
+    print('нет kf/heads.json (python3.13 qa/heads.py kf): зум ограничен 1,2×, но головы при наезде не защищены', file=sys.stderr)
+
+def fit_pose(pose, name, margin=0.02):
+    """Зум не больше ZMAX, и кадрирование сдвинуто так, чтобы все головы целиком остались в кадре;
+    если головы не помещаются при этом зуме, зум уменьшается."""
+    z, cx, cy = pose; z = min(z, ZMAX)
+    info = HEADS.get(name)
+    if not info or not info['heads']: return (z, cx, cy)
+    iw, ih = info['size']; k = (iw / ih) * H / W            # высота кадрирования в долях картинки = k / z
+    ux0 = min(h[0] for h in info['heads']) - margin; uy0 = min(h[1] for h in info['heads']) - margin
+    ux1 = max(h[2] for h in info['heads']) + margin; uy1 = max(h[3] for h in info['heads']) + margin
+    ux0, uy0, ux1, uy1 = max(0, ux0), max(0, uy0), min(1, ux1), min(1, uy1)
+    z = max(1.0, min(z, 1 / max(1e-6, ux1 - ux0), k / max(1e-6, uy1 - uy0)))
+    cw, ch = 1 / z, min(1.0, k / z)
+    cx = min(max(cx, ux1 - cw / 2), ux0 + cw / 2); cy = min(max(cy, uy1 - ch / 2), uy0 + ch / 2)
+    return (round(z, 4), round(cx, 4), round(cy, 4))
 
 PRESETS = {'in': ((1.0, .5, .5), (1.12, .5, .5)), 'out': ((1.12, .5, .5), (1.0, .5, .5)),
            'left': ((1.1, .56, .5), (1.1, .44, .5)), 'right': ((1.1, .44, .5), (1.1, .56, .5)),
