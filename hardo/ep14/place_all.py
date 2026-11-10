@@ -6,7 +6,7 @@ S=88; BIG=150
 # per block: list of (text, preferred frame, wx, wy, size)
 B={
 1:[("no alarm clocks","F101",.05,.1,S),("paid to wake you up","F201",.62,.1,S),("paid to empty it","F401",.05,.1,S)],
-2:[("10 real jobs","F02",.3,.1,S),("from bad to unbelievable","F402",.05,.1,S)],
+2:[("10 jobs + a bonus","F02",.3,.1,S),("from bad to unbelievable","F402",.05,.1,S)],
 3:[("#10 the knocker-upper","F03",.55,.1,S),("shifts before dawn","F403",.62,.1,S),("tap tap tap","F103",.05,.1,S),("I'm up!","F203",.62,.1,S)],
 4:[("pea shooter","F04",.62,.1,S),("dried peas","F104",.05,.1,S),("a few pence a week","F204",.05,.1,S),("last ones: 1970s","F404",.62,.1,S)],
 5:[("#9 the leech collector","F05",.55,.1,S),("leeches for everything","F205",.05,.1,S),("1800s medicine","F405",.05,.1,S),("bare legs = bait","F105",.05,.1,S)],
@@ -17,9 +17,9 @@ B={
 10:[("one glove","F110",.05,.1,S),("sold by the bucket","F410",.62,.1,S),("very elegant gloves","F210",.62,.1,S)],
 11:[("#6 the whipping boy","F11",.55,.1,S),("the prince","F111",.05,.1,S),("his friend pays","F211",.05,.1,S)],
 12:[("very little evidence","F212",.05,.1,S),("maybe never existed","F412",.05,.1,S),("best version of the job","F12",.62,.1,S)],
-13:[("#5 the climbing boy","F13",.55,.1,S),("total darkness","F113",.05,.1,S),("narrow chimney","F213",.05,.1,S)],
+13:[("#5 the climbing boy","F13",.55,.1,S),("up into the dark","F113",.05,.1,S),("narrow chimney","F213",.05,.1,S)],
 14:[("1788: age 8+","F14",.62,.1,S),("hardly enforced","F114",.05,.1,S),("stuck · burned · sick","F414",.05,.1,S),("1875: police licence","F214",.05,.1,S)],
-15:[("#4 the gong farmer","F15",.55,.1,S),("the \"gong\"","F415",.05,.1,S),("by hand","F215",.62,.1,S),("into barrels","F115",.05,.1,S)],
+15:[("#4 the gong farmer","F15",.55,.1,S),("the privy","F415",.05,.1,S),("by hand","F215",.62,.1,S),("into barrels","F115",.05,.1,S)],
 16:[("night work only","F16",.05,.1,S),("ugh!","F416",.05,.1,S),("sixpence a day","F116",.05,.1,S)],
 17:[("#3 the sin eater","F17",.55,.1,S),("Wales & western England","F117",.05,.1,S),("bread & salt","F117",.05,.85,S),("eat the sins","F217",.62,.1,S)],
 18:[("shunned","F18",.62,.1,S),("everyone's sins","F118",.05,.1,S),("historians argue","F218",.05,.1,S),("put it on a CV?","F418",.05,.1,S)],
@@ -28,12 +28,12 @@ B={
 21:[("#1 the resurrection man","F21",.55,.1,S),("fresh graves","F121",.05,.1,S),("sold to anatomists","F421",.62,.1,S)],
 22:[("~8 guineas (1828)","F122",.05,.1,S),("months of wages","F22",.62,.1,S),("iron cages","F222",.62,.1,S),("Anatomy Act 1832","F422",.05,.1,S)],
 23:[("BONUS","F23",.75,.12,BIG),("Cuba, 1860s","F423",.05,.1,S),("even Shakespeare","F223",.05,.1,S)],
-24:[("the lector","F224",.62,.1,S),("paid from their wages","F24",.62,.1,S),("still exists","F424",.05,.1,S)],
-25:[("no machine yet","F25",.45,.1,S),("no sewers","F225",.05,.1,S),("no medicine","F425",.05,.1,S)],
-26:[("poor · young · or both","F26",.62,.1,S),("could be worse","F126",.05,.1,S),("could be leeches","F226",.62,.1,S)],
-27:[("which one would you take?","F27",.55,.1,S),("tell us below","F127",.05,.85,S),("subscribe!","F227",.62,.1,BIG),("next: our century","F427",.05,.1,S)],
+24:[("the lector","F224",.62,.1,S),("paid from their wages","F24",.62,.1,S),("still exists today","F124",.05,.1,S)],
+25:[("no machine yet","F25",.45,.1,S),("no medicine","F425",.05,.1,S)],
+26:[("your job feels bad?","F26",.62,.1,S),("could be worse","F126",.05,.1,S),("could be leeches","F226",.62,.1,S)],
+27:[("your pick?","F27",.6,.3,S),("tell us below","F127",.05,.85,S),("subscribe!","F227",.62,.1,BIG),("next: our century","F427",.05,.1,S)],
 }
-NOMOVE={"Cuba, 1860s","the lector","royal toilet","put it on a CV?","medical schools","even Shakespeare","named after novels","they chose the books","pea shooter","bare legs = bait","iron cages","tap tap tap","I'm up!","#10 the knocker-upper","#9 the leech collector","#8 the mudlark","#7 the pure finder","#6 the whipping boy","#5 the climbing boy","#4 the gong farmer","#3 the sin eater","#2 the Groom of the Stool","#1 the resurrection man","BONUS","subscribe!","bread & salt","one glove","the \"gong\"","his friend pays","the prince","barefoot","dried peas","shunned"}
+NOMOVE={"your pick?","still exists today","the privy","Cuba, 1860s","the lector","royal toilet","put it on a CV?","medical schools","even Shakespeare","named after novels","they chose the books","pea shooter","bare legs = bait","iron cages","tap tap tap","I'm up!","#10 the knocker-upper","#9 the leech collector","#8 the mudlark","#7 the pure finder","#6 the whipping boy","#5 the climbing boy","#4 the gong farmer","#3 the sin eater","#2 the Groom of the Stool","#1 the resurrection man","BONUS","subscribe!","bread & salt","one glove","the \"gong\"","his friend pays","the prince","barefoot","dried peas","shunned"}
 p=json.load(open('plan_wish.json'))
 clips={s[1] for b in p['blocks'] for s in b if s[0]=='clip'}
 L={}; occ={}

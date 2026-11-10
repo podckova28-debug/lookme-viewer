@@ -127,7 +127,7 @@ with Pool(4) as pool:
 open(os.path.join(OUT,"segs.txt"),"w").write("".join(f"file '{s}'\n" for s in segs))
 run(["ffmpeg","-y","-f","concat","-safe","0","-i",os.path.join(OUT,"segs.txt"),"-c","copy",os.path.join(OUT,"video_silent.mp4")])
 inputs=[]; [inputs.extend(["-i",os.path.join(VO,f"{i:02d}.mp3")]) for i in range(1,n+1)]
-fc = "".join(f"[{i}:a]aresample=44100,atempo={TEMPO},apad=pad_dur={GAP}[a{i}];" for i in range(n)) + "".join(f"[a{i}]" for i in range(n)) + f"concat=n={n}:v=0:a=1,loudnorm=I=-16:TP=-1.5[a]"
+fc = "".join(f"[{i}:a]aresample=44100,atempo={TEMPO},apad=whole_dur={vdur[i]+GAP:.5f},atrim=end={vdur[i]+GAP:.5f}[a{i}];" for i in range(n))  # ep14: atempo output runs ~30 ms short per block; pad each block to its planned length so cuts and subtitles do not drift + "".join(f"[a{i}]" for i in range(n)) + f"concat=n={n}:v=0:a=1,loudnorm=I=-16:TP=-1.5[a]"
 run(["ffmpeg","-y",*inputs,"-filter_complex",fc,"-map","[a]","-c:a","aac","-b:a","192k",os.path.join(OUT,"voice.m4a")])
 VOICE = os.path.join(OUT,"voice.m4a")
 def sfx_track():
@@ -154,6 +154,20 @@ if _sfx:
 def ts(x): return f"{int(x//3600):02d}:{int(x%3600//60):02d}:{x%60:06.3f}".replace(".",",")
 with open(os.path.join(OUT,f"{NAME}.srt"),"w",encoding="utf8") as f:
     total_len = min(sum(vdur)+GAP*n, dur(os.path.join(OUT,"video_silent.mp4")), dur(VOICE))  # ep12: planned length ran 0.5s past the real video
-    for i,(a,b,tx) in enumerate(srt,1): f.write(f"{i}\n{ts(a)} --> {ts(min(b,total_len-0.3))}\n{tx}\n\n")
+    import re as _re, textwrap as _tw
+    def _chunks(tx, maxc=78):  # ep14: one cue per paragraph wrapped to 4-6 lines on YouTube; split into <=2 lines of <=42 chars
+        out=[]
+        for sent in _re.split(r'(?<=[.!?])\s+', tx.strip()):
+            while len(sent)>maxc:
+                cut=max((m.end() for m in _re.finditer(r'[,:;]\s', sent[:maxc])), default=0) or sent.rfind(' ',0,maxc)
+                out.append(sent[:cut].strip()); sent=sent[cut:].strip()
+            if sent: out.append(sent)
+        return out
+    k=0
+    for a,b,tx in srt:
+        a+=0.25; b=min(b,total_len-0.3); parts=_chunks(tx); L=sum(len(p) for p in parts); t0=a
+        for p in parts:
+            t1=t0+(b-a)*len(p)/L; k+=1
+            f.write(f"{k}\n{ts(t0)} --> {ts(t1-0.04)}\n" + "\n".join(_tw.wrap(p,42)) + "\n\n"); t0=t1
 run(["ffmpeg","-y","-i",os.path.join(OUT,"video_silent.mp4"),"-i",VOICE,"-map","0:v","-map","1:a","-c:v","copy","-c:a","copy","-shortest","-movflags","+faststart",os.path.join(OUT,f"{NAME}.mp4")])
 print("video",round(dur(os.path.join(OUT,"video_silent.mp4")),2),"audio",round(dur(os.path.join(OUT,"voice.m4a")),2),"final",round(dur(os.path.join(OUT,f"{NAME}.mp4")),2))

@@ -132,3 +132,14 @@ Prompt rule: every scene prompt names only the hero, the one object the line is 
   - Every fix needs a second blind check: of 16 fixed frames, 6 had new defects.
   - Close-ups filled edge to edge leave no white for labels: place_all.py tries the label's own frame first, then the other
     frames of the same block (title labels like "#N job" never move), max 2 labels per frame.
+
+## Ep14 lessons
+- Audio drift: `atempo` returns ~30 ms less per block than planned, so cuts and subtitles slid up to 0.8 s late by the end (ep13 had it too). assemble_ep.py now pads every block with `apad=whole_dur` + `atrim` to its planned length.
+- Subtitles: one cue per paragraph wraps to 4–6 lines on YouTube. assemble_ep.py now splits cues by sentence/comma into ≤2 lines of ≤42 chars, timed by character share.
+- Trim leading silence of every voice block to a uniform ~0.3 s (some OmniVoice blocks start with 1.2 s), or the cue shows before the narrator speaks.
+- Cross-section / "inside a narrow space" shots fuse people (two heads in one chimney). Draw them large, one figure, simple background, and re-check.
+- Lineups in the prompt: count them (ep14 cast row got a 12th person; a "boy" replaced the old knocker-upper in a split scene).
+- Image edits can re-introduce small logo smudges painted out earlier — re-check painted fixes after any later edit.
+- Zoom vs edge: if the drawing touches the frame edge (lineups, tall chimneys, candle flames, headscarves), shift or shrink the art 3–7 % on a background-coloured canvas before assembly.
+- Clips: wan3_0 night skies darken and lose the white edges (F216 rejected); river skies fill with clouds after ~2.5 s — trim clips to the clean part.
+- Labels: the placer moves labels to other shots in the block when the preferred shot has no white space; check every moved label still matches the picture and the narration order.
