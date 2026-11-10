@@ -8,6 +8,7 @@ EP, OUT = sys.argv[1], sys.argv[2]; os.makedirs(OUT, exist_ok=True)
 T = json.load(open(os.path.join(HERE, 'timing.json')))
 LINES = {l['id']: l for l in json.load(open(os.path.join(HERE, 'vo_lines.json'), encoding='utf-8'))}
 FONTS = os.path.join(HERE, '..', 'anim', 'fonts')
+NAMES = {'valeria': 'VALERIA', 'tu': 'TÚ', 'mama': 'MAMÁ', 'profe': 'PROFE', 'nacho': 'NACHO', 'chicos': 'TODOS'}
 def S(sid): return T['scenes'][sid]
 def Lt(sid, lid): return S(sid)['start'] + S(sid)['L'][lid][0]
 def Le(sid, lid): return Lt(sid, lid) + S(sid)['L'][lid][1]
@@ -41,7 +42,7 @@ for name, a, b, hook in SHORTS:
             st = S(sid)['start'] + t - a; en = st + d + .15
             if en < 0 or st > dur: continue
             txt = LINES[lid]['text'].replace('…', '...')
-            if who != 'narrador': txt = ('VALERIA: ' if who == 'valeria' else 'TÚ: ') + txt
+            if who != 'narrador': txt = NAMES.get(who, who.upper()) + ': ' + txt
             ev.append(f'Dialogue: 1,{ts(st)},{ts(min(en, dur))},Sub,,0,0,0,,{txt.upper()}')
     ev.append(f'Dialogue: 2,{ts(dur - 2.2)},{ts(dur)},End,,0,0,0,,{{\\fad(200,0)}}VIDEO COMPLETO\\NEN EL CANAL')
     ass = os.path.join(OUT, name + '.ass'); open(ass, 'w', encoding='utf-8').write(HEAD + '\n'.join(ev) + '\n')

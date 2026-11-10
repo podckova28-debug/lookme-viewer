@@ -207,7 +207,7 @@ for sid in T['order']:
         x, sr = sf.read(os.path.join(VO, lid + '.wav'), dtype='float32')
         if x.ndim > 1: x = x.mean(1)
         if sr != SR: x = resample_poly(x, SR // 1000, sr // 1000) if sr in (24000, 16000, 22050, 44100) and SR % 1000 == 0 and sr % 1000 == 0 else resample_poly(x, SR, sr)
-        rms = np.sqrt(np.mean(x[np.abs(x) > .01] ** 2)) if np.any(np.abs(x) > .01) else .1; x = x * (.11 / rms)
+        rms = np.sqrt(np.mean(x[np.abs(x) > .01] ** 2)) if np.any(np.abs(x) > .01) else .1; x = x * (.11 / rms) * (1.35 if who == 'chicos' else 1.0)   # crowd shouts sit a bit above single voices
         add(vo, x, sc(sid)['start'] + t); add(voice_env, np.ones(len(x)), sc(sid)['start'] + t)
 duck = 1 - .55 * movavg(np.minimum(voice_env, 1), int(.25 * SR))
 

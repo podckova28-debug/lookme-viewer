@@ -158,4 +158,4 @@ OmniVoice на CPU, голоса по описанию, без клона реа
 | s14_05b | tu | 2.65 | Y entonces Valeria… bueno, tú me entiendes, Pepe. | Y entonces, Valeria, bueno, tú me entiendes, pepe. |
 | s17_00 | narrador | 4.93 | Aquella maceta, a medio metro de su cabeza… y tú creías que eras el único que se movía. | aquella maceta a medio metro de su cabeza y tú creías que eras el único que se movía. |
 
-Хоровые реплики s10_06b и s13_01b в этой ветке сведены из трёх дублей в один файл: сдвиги 0, 45 и 90 мс, уровни 1.0, 0.9 и 0.85.
+Хоровые реплики в этой ветке сведены из трёх дублей в один файл. s10_06b: сдвиги 0, 45 и 90 мс, уровни 1.0, 0.9 и 0.85. s13_01b: сдвиги 0, 20 и 40 мс, уровни 1.0, 0.65 и 0.55 (так слова разборчивее под музыкой праздника).

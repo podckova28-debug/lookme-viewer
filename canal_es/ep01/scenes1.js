@@ -104,7 +104,7 @@ SC.s03 = (X, t) => {
     { t: up, cx: 760, cy: 620, z: 1.25 },
     { t: Lt('s03_04') - .05, cx: 860, cy: 640, z: 1.5, z2: 1.55 },
     { t: Lt('s03_05') - .05, cx: 760, cy: 560, z: 1.0, z2: 1.04 },
-    { t: Lt('s03_06') - .05, cx: 1080, cy: 650, z: 1.85, z2: 1.95 },
+    { t: Lt('s03_06') - .05, cx: 800, cy: 640, z: 1.4, z2: 1.48 },   // hero + the cat frozen mid-jump in one frame
   ]);
   const st = stage(cam); st.wld(g => { drawSet(g, 'bedroom'); bedBack(g); nightstand(g); });
   const ring = wt > Lt('s03_02') && wt < tc ? wt : 0;

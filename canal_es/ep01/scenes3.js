@@ -5,7 +5,7 @@ function clockFace(g, x, y, r, label, spin, gray) { g.save(); g.translate(x, y);
   const am = spin * 2 * Math.PI - Math.PI / 2, ah = spin * 2 * Math.PI / 12 - Math.PI / 2 + (gray ? 2.1 : 0);
   line(g, [[0, 0], [Math.cos(ah) * r * .4, Math.sin(ah) * r * .4]], OUT, 10); line(g, [[0, 0], [Math.cos(am) * r * .62, Math.sin(am) * r * .62]], OUT, 7); circ(g, 0, 0, 10, OUT, 0);
   text(g, label, 0, r + 70, 64, gray ? '#c9d2dc' : '#fde047', 'Bangers', 'center', OUT, 10); g.restore(); }
-function calendarCard(g, a, t) { if (a <= 0) return; g.save(); g.globalAlpha = clamp(a); g.translate(W * .7, H * .45); g.rotate(.05); const k = .85 + .15 * back(a); g.scale(k, k);
+function calendarCard(g, a, t) { if (a <= 0) return; g.save(); g.globalAlpha = clamp(a); g.translate(W * .34, H * .42); g.rotate(-.05); const k = .85 + .15 * back(a); g.scale(k, k);
   shape(g, q => rrPath(q, -200, -230, 400, 460, 16), '#fbfaf6', 7); shape(g, q => rrPath(q, -200, -230, 400, 110, 16), '#c0262d', 7); text(g, 'CALENDARIO', 0, -155, 54, '#ffffff', 'Bangers', 'center');
   for (const x of [-120, 120]) circ(g, x, -230, 16, '#9aa3ad', 4);
   text(g, '+13', 0, 60, 190, '#c0262d', 'Bangers', 'center'); text(g, 'DÍAS', 0, 170, 90, OUT, 'Bangers', 'center'); g.restore(); }
@@ -51,10 +51,16 @@ SC.s11 = (X, t) => {
 /* ================================================================ 12. nothing works while time is stopped */
 SC.s12 = (X, t) => {
   const tPhone = Lt('s12_02') - .1, tTap = Lt('s12_03') - .1, tTv = Lt('s12_04') - .1;
-  if (t >= tTap && t < tTv) { // bathroom faucet: water stuck as an icicle
-    const cam = shots(t, (typeof claps !== 'undefined' ? claps : []), [{ t: tTap, cx: 1020, cy: 610, z: 3.1, z2: 3.3 }]);
-    const st = stage(cam); st.wld(g => { drawSet(g, 'bathroom'); shape(g, q => { q.moveTo(1048, 600); q.quadraticCurveTo(1060, 640, 1052, 690); q.quadraticCurveTo(1046, 700, 1040, 690); q.quadraticCurveTo(1034, 640, 1048, 600); }, '#9fd3ff', 4); });
-    st.col(g => { const k = R(t, tTap + .2, tTap + .6), y = 560; tube(g, [[1180, 760], [1100, 640], [1000, 560]], '#bf8a24', 34); mitten(g, 1000 + 6 * Math.sin(t * 10) * k, y, 22); });
+  if (t >= tTap && t < tTv) { // bathroom tap: turned on, but the water will not come out (one drop stuck at the spout)
+    const cam = shots(t, [], [{ t: tTap, cx: 1000, cy: 600, z: 2.4, z2: 2.55, lock: 1 }]);
+    const st = stage(cam);
+    st.wld(g => { drawSet(g, 'bathroom');   // the set is blurred at this zoom: redraw sink and tap as crisp vectors on top
+      shape(g, q => q.ellipse(960, 650, 260, 40, 0, 0, 7), '#ffffff', 5);
+      shape(g, q => rrPath(q, 940, 560, 40, 70, 8), '#c8ced6', 4);
+      shape(g, q => { q.moveTo(950, 572); q.lineTo(1060, 572); q.lineTo(1060, 600); q.lineTo(1040, 600); q.lineTo(1040, 590); q.lineTo(950, 590); q.closePath(); }, '#c8ced6', 4);
+      shape(g, q => rrPath(q, 922, 536, 76, 16, 7), '#c8ced6', 4);
+      shape(g, q => { q.moveTo(1050, 600); q.quadraticCurveTo(1066, 624, 1059, 637); q.quadraticCurveTo(1050, 648, 1041, 637); q.quadraticCurveTo(1034, 624, 1050, 600); }, '#9fd3ff', 3); });
+    st.col(g => { const k = R(t, tTap + .2, tTap + .6); tube(g, [[690, 840], [815, 690], [952, 548]], '#bf8a24', 34); mitten(g, 955 + 5 * Math.sin(t * 10) * k, 540, 22); });
     compose2(X, st, { amt: 1 }); return; }
   const cam = shots(t, (typeof claps !== 'undefined' ? claps : []), [{ t: 0, cx: 960, cy: 560, z: 1.15 }, { t: tPhone, cx: 1180, cy: 560, z: 2.4, z2: 2.5 }, { t: tTv, cx: 1280, cy: 620, z: 1.25 }, { t: Lt('s12_05') - .1, cx: 960, cy: 560, z: 1.0 }]);
   const st = stage(cam); st.wld(g => { drawSet(g, 'bedroom'); bedBack(g); nightstand(g); propAlarm(g, 1075, 700, .7, 6, 59, 0); tv(g, 1710, 520, 0, t > tTv + .7); });
@@ -125,7 +131,7 @@ SC.s14 = (X, t) => {
     { t: 0, cx: 960, cy: 560, z: 1.0 },
     { t: Lt('s14_02') + .8, cx: 1450, cy: 520, z: 1.5 },
     { t: sitT - .1, cx: 960, cy: 600, z: 1.3, z2: 1.36 },
-    { t: Lt('s14_06') - .05, cx: 1060, cy: 760, z: 3.0, z2: 3.15 },
+    { t: Lt('s14_06') - .05, cx: 1000, cy: 680, z: 2.15, z2: 2.25 },
     { t: Lt('s14_07') - .05, cx: 960, cy: 620, z: 1.45, z2: 1.55 },
   ]);
   const st = stage(cam); st.wld(g => { drawSet(g, 'park'); bench(g, 0); });
@@ -241,7 +247,7 @@ SC.s17 = (X, t) => {
     X.save(); X.globalCompositeOperation = 'multiply'; X.fillStyle = 'rgba(255,225,180,1)'; X.fillRect(0, 0, W, H); X.restore();
     X.save(); X.globalAlpha = .12; X.fillStyle = '#000'; for (let y = (t * 60) % 6; y < H; y += 6) X.fillRect(0, y, W, 2); X.restore(); return; }
   const end = Le('s17_04') + .9, pepeAlive = Lm('s17_04', .55);
-  const cam = shots(t, (typeof claps !== 'undefined' ? claps : []), [{ t: 0, cx: 1000, cy: 600, z: 1.2, z2: 1.5 }, { t: Lt('s17_04') - .1, cx: 1080, cy: 740, z: 3.0, z2: 3.2 }]);
+  const cam = shots(t, (typeof claps !== 'undefined' ? claps : []), [{ t: 0, cx: 1000, cy: 600, z: 1.2, z2: 1.5 }, { t: Lt('s17_04') - .1, cx: 1095, cy: 768, z: 4.4, z2: 4.6 }]);
   const st = stage(cam); st.wld(g => { drawSet(g, 'parkNight'); bench(g, 0); });
   st.col(g => { drawChar(g, 'valeria', { x: 1240, y: 905, s: S0, t, sit: 1, look: [-14, 4], mouth: .6, hL: [-40, -300], hR: [40, -300], armsFront: 1 });
     drawChar(g, 'tu', { x: 900, y: 905, s: S0, t, sit: 1, look: [14, 4], mouth: .4, blush: .5, hL: [-40, -300], hR: [40, -300], armsFront: 1 }); });
