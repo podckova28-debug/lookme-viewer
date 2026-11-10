@@ -69,6 +69,9 @@ https://claude.ai/artifact/XRfVXucgXcVnVDRosPwSiZ
 `analytics/`, общие инструменты озвучки и апскейла в `video/`. Скрипты
 эпизодов ссылаются на путь `/home/user/gastronom/...`, то есть запускаются из
 рабочей копии gastronom. Последний хаб: https://claude.ai/artifact/Xqg5hSD9n34H3dgKwjf9kb
+Страница для шапки Instagram (@garage_y_mihalicha), собрана 10 ноября:
+https://claude.ai/artifact/YHeCT2QGPYkAb4DTdLMFn7 (без рекламы, цен и
+партнёрских ссылок, как требует запрет рекламы в Instagram для РФ).
 
 ## Как пользоваться навыками yt-*
 
