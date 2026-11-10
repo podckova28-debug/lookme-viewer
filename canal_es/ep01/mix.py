@@ -144,7 +144,8 @@ for i in range(n100):
     tgt = 0.0 if fr[i] else 1.0; k = .045 if tgt < r else .12; r += (tgt - r) * k; rate[i] = r
 pos = np.cumsum(rate) / 100.0  # music seconds at each 10 ms
 SECTIONS = [(sc('s11')['start'], sc('s12')['start'] + sc('s12')['dur'], 'sad'),
-            (sc('s15')['start'], sc('s15')['start'] + sc('s15')['L']['s15_03'][0] + .2, 'tense')]
+            (sc('s15')['start'], sc('s15')['start'] + sc('s15')['L']['s15_03'][0] + .2, 'tense'),
+            (Lt('s16', 's16_14') - .3, Lt('s16', 's16_18') - .2, 'sad')]
 sec_m = [(np.interp(a, np.arange(n100) / 100.0, pos), np.interp(b, np.arange(n100) / 100.0, pos), m) for a, b, m in SECTIONS]
 def mood_at(mt):
     for a, b, m in sec_m:
