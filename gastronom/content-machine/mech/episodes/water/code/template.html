@@ -63,7 +63,7 @@ pre{margin:0;white-space:pre-wrap;word-break:break-word;font-family:var(--disp);
   </header>
 
   <section class="card" aria-label="Видео">
-    <img class="poster" id="poster" src="thumb_pump.jpg" alt="Обложка: Михалыч на ночной заправке, из пистолета бьёт вода, наклейка «Бензин не нужен?»">
+    <img class="poster" id="poster" src="thumb_tap.jpg" alt="Обложка: в бензобак вишнёвой «четырнадцатой» вкручен водопроводный кран, Михалыч в недоумении, наклейка «Бензин из крана?»">
     <div class="facts"><span class="chip">%%DUR%%</span><span class="chip">16:9 · 1080p</span><span class="chip" id="size"></span></div>
     <div class="btns one">
       <button class="main" id="get">Скачать видео</button>
@@ -169,9 +169,12 @@ async function getVideo() {
 }
 
 const THUMBS = [
-  ['thumb_pump.jpg', 'Бензин не нужен?', '1 — главная', 'thumbs'],
-  ['thumb_boom.jpg', 'Мотор на воде?', '2', 'thumbs'],
-  ['thumb_secret.jpg', 'Это скрывают?', '3', 'thumbs'],
+  ['thumb_tap.jpg', 'Бензин из крана?', '1 — главная', 'thumbs'],
+  ['thumb_bottle.jpg', 'Поедет на воде?', '2', 'thumbs'],
+  ['thumb_pump.jpg', 'Бензин не нужен?', '3', 'thumbs'],
+  ['thumb_boom.jpg', 'Мотор на воде?', '4', 'thumbs'],
+  ['thumb_secret.jpg', 'Это скрывают?', '5', 'thumbs'],
+  ['thumb_scales.jpg', 'Вода или бензин?', '6', 'thumbs'],
 ];
 async function getThumb(path, btn) {
   const d = downloads || await downloadsReady;

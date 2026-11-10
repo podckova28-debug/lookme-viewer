@@ -31,6 +31,6 @@ t = t.replace('%%DUR%%', f'{int(dur // 60)}:{int(dur % 60):02d}')
 t = t.replace('%%PARTS%%', json.dumps(parts)).replace('%%TEXTS%%', json.dumps(texts, ensure_ascii=False))
 assert '</script' not in json.dumps(texts, ensure_ascii=False)
 open(OUT + 'index.html', 'w', encoding='utf-8').write(t)
-for n in ['pump', 'boom', 'secret']: subprocess.run(['cp', f'{D}thumb/out/thumb_{n}.jpg', OUT])   # в стиле обложек шортсов
+for n in ['tap', 'bottle', 'pump', 'boom', 'secret', 'scales']: subprocess.run(['cp', f'{D}thumb/out4/thumb_{n}.jpg', OUT])   # v4: наклейка шортсов, плотный кадр
 print(len(parts), 'кусков', sum(p['size'] for p in parts) / 1048576, 'МБ; md5 ok')
 for k, v in texts: print('-', k, len(v))

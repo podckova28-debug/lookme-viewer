@@ -49,3 +49,6 @@ KF KG7 34 d00943a4-5491-43e7-9979-132b9f68aeff
 TH2 th_pump 1 32e40f4f-7dad-4fd5-b8ad-cf4238c4dd22 (medium, 10 нояб: «Параллельно дай другие обложку. Текущие не цепляют вообще»)
 TH2 th_boom 2 8415ec1d-6fa0-46de-8548-276115321630 (medium)
 TH2 th_secret 3 561598f5-9d34-4655-9c58-ee2ca530e92c (medium)
+TH3 th_bottle 1 0ebd1581-2311-45e9-af84-b4f190f2a048 (medium, «Ладно, верни нас классический стиль обложки и попробуй еще раз»)
+TH3 th_tap 2 c630540c-9824-401e-9aeb-11de6ecd816a (medium)
+TH3 th_scales 3 dc87fa7f-10b4-456e-9ba3-e21ded76b9ea (medium)
