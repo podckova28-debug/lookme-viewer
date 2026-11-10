@@ -27,17 +27,17 @@ Sources:
 Chapters
 0:00 Cold open
 0:28 #10 The knocker-upper
-1:05 #9 The leech collector
-1:42 #8 The mudlark
-2:13 #7 The pure finder
-2:48 #6 The whipping boy
-3:21 #5 The climbing boy
-3:56 #4 The gong farmer
-4:28 #3 The sin eater
-5:02 #2 The Groom of the Stool
-5:30 #1 The resurrection man
-6:10 Bonus: the lector
-6:44 Why these jobs existed
+1:04 #9 The leech collector
+1:40 #8 The mudlark
+2:10 #7 The pure finder
+2:45 #6 The whipping boy
+3:18 #5 The climbing boy
+3:52 #4 The gong farmer
+4:24 #3 The sin eater
+4:58 #2 The Groom of the Stool
+5:26 #1 The resurrection man
+6:04 Bonus: the lector
+6:39 Why these jobs existed
 
 ## Tags
 worst jobs in history, weird jobs, strange jobs, history, victorian jobs, tudor jobs, knocker-upper, leech collector, mudlark, gong farmer, sin eater, groom of the stool, resurrection men, body snatchers, cigar lector, animated explainer
