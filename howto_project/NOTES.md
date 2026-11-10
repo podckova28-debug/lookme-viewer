@@ -30,3 +30,4 @@
   revealed one by one with labels; reused at the end.
 - v3: newspaper shot in ch1 replaced by anim `quotes:IMG:t1,t2,t3:q1|q2|q3` — neighbours' courtyard (n101), darkened,
   quote slips «Вежливый» / «Тихий» / «Никогда бы не подумали» pop in on the spoken words; next shot n1301.
+- v3 HQ 1080p 6:35: media e98778d8-43c5-45fa-ad15-9b2b60d240cc; web 720p: 474b715f-d592-4aee-8c25-f0917e06587c.
