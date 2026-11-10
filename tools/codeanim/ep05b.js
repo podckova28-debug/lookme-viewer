@@ -213,8 +213,8 @@ SCENES.push(
   dave(t, 520, gy, { partyHat: 1, look: [16, 2], lid: .3, blink: blinkAmt(t, [2.0, 5.5, 8.4]) });
   const offer = R(u, .3, .8), bumpE = R(u, 1.3, 1.6) * (1 - R(u, 2.4, 2.8));
   const gx = mix(930, 1010, R(u, 0, .6));
-  person(t, gx, gy, G, { handR: offer > 0 ? mix2([gx + 112, gy - 212], [hg - 170, gy - 330], offer * (1 - bumpE * .4)) : undefined, look: [16, 0], happy: u < 1.3, mouth: u > 1.6 ? .1 : .7, brow: u > 1.6 ? .4 : 0, wide: u > 1.6 && u < 2.4, blink: blinkAmt(u, [2.6]) });
-  person(t, hg, gy, HERO, { pockets: bumpE < .1, handL: bumpE > 0 ? [hg - 60, gy - 360] : undefined, look: [-18, 0], wavy: 1, sweat: .3, partyHat: 0, blink: blinkAmt(u, [.9]) });
+  person(t, gx, gy, G, { handR: offer > 0 ? mix2([gx + 112, gy - 212], [hg - 150, gy - 370], offer * (1 - bumpE * .3)) : undefined, look: [16, 0], happy: u < 1.3, mouth: u > 1.6 ? .1 : .7, brow: u > 1.6 ? .4 : 0, wide: u > 1.6 && u < 2.4, blink: blinkAmt(u, [2.6]) });
+  person(t, hg, gy, HERO, { pockets: bumpE < .1, elbowL: bumpE > 0, handL: bumpE > 0 ? [hg - 30, gy - 300] : undefined, look: [-18, 0], wavy: 1, sweat: .3, partyHat: 0, blink: blinkAmt(u, [.9]) });
   if (bumpE > .5 && bumpE < 1) burst('BUMP', hg - 210, ht + 150, .35, bump(u, 1.4, 1.9), .1, '#fde047');
   if (u < .25 && k > 0) { X.save(); X.globalAlpha = 1 - u / .25; X.fillStyle = '#fff'; X.fillRect(0, 0, W, H); X.restore(); }
   letterbox();

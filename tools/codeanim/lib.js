@@ -29,8 +29,18 @@ function ik(sx, sy, tx, ty, L1, L2, out) {
   const s1 = e1[1] + Math.sign(out) * e1[0] * .6, s2 = e2[1] + Math.sign(out) * e2[0] * .6;
   return [s1 >= s2 ? e1 : e2, [tx, ty]];
 }
-function limb(s, e, h, col, w, cuff) {
-  const c = [mix(e[0], 2 * e[0] - (s[0] + h[0]) / 2, .8), mix(e[1], 2 * e[1] - (s[1] + h[1]) / 2, .8)];
+function limb(s, e, h, col, w, cuff, elbow = false) {
+  let c;
+  if (elbow) {                                  // a real elbow (only where the story needs one)
+    X.lineCap = 'round'; X.lineJoin = 'round'; X.beginPath(); X.moveTo(s[0], s[1]); X.lineTo(e[0], e[1]); X.lineTo(h[0], h[1]);
+    X.strokeStyle = OUT; X.lineWidth = w + 2 * LW; X.stroke(); X.strokeStyle = col; X.lineWidth = w; X.stroke(); return e;
+  }
+  {
+    const dx = h[0] - s[0], dy = h[1] - s[1], d = Math.hypot(dx, dy) || 1, L = Math.hypot(e[0] - s[0], e[1] - s[1]) + Math.hypot(h[0] - e[0], h[1] - e[1]);
+    let nx = -dy / d, ny = dx / d; if (ny < 0) { nx = -nx; ny = -ny; }            // the perpendicular that points down
+    const sag = clamp((L - d) * .12, 0, 16) + 3;
+    c = [(s[0] + h[0]) / 2 + nx * sag, (s[1] + h[1]) / 2 + ny * sag];
+  }
   const B = u => [(1 - u) * (1 - u) * s[0] + 2 * (1 - u) * u * c[0] + u * u * h[0], (1 - u) * (1 - u) * s[1] + 2 * (1 - u) * u * c[1] + u * u * h[1]];
   X.lineCap = 'round'; X.lineJoin = 'round'; X.beginPath(); X.moveTo(s[0], s[1]); X.quadraticCurveTo(c[0], c[1], h[0], h[1]);
   X.strokeStyle = OUT; X.lineWidth = w + 2 * LW; X.stroke(); X.strokeStyle = col; X.lineWidth = w; X.stroke();
@@ -259,11 +269,11 @@ function person(t, gx, gy, spec, p = {}) {
   // far (left) arm behind body
   const cuffCol = k => A[k] ? GOLD : (k === 'armL' ? shadeCol(Yd, .82) : Yd);
   const syL = sy - clamp((sy - hl[1]) / 260) * 12 * sc, syR = sy - clamp((sy - hr[1]) / 260) * 12 * sc;
-  let [e, h] = ik(gx - sh, syL, hl[0], hl[1], 108 * sc, 104 * sc, -2); limb([gx - sh, syL], e, h, armCol('armL'), 34 * sc, p.pockets ? null : cuffCol('armL'));
+  let [e, h] = ik(gx - sh, syL, hl[0], hl[1], 108 * sc, 104 * sc, p.elbowL ? -1 : -2); limb([gx - sh, syL], e, h, armCol('armL'), 30 * sc, p.pockets ? null : cuffCol('armL'), !!p.elbowL);
   const mL = p.mittL ?? p.mitts, mR = p.mittR ?? p.mitts;
   spec._hl = h;
   if (!p.pockets) { if (mL) ovenMitt(h[0], h[1], 1.0 * sc, Math.atan2(h[1] - e[1], h[0] - e[0]), 1); else mitten(h[0], h[1], 18 * sc, handCol('armL')); }
-  if (p.behind) { const [e2, h2] = ik(gx + sh, syR, hr[0], hr[1], 108 * sc, 104 * sc, 2); limb([gx + sh, syR], e2, h2, armCol('armR'), 36 * sc, cuffCol('armR')); mitten(h2[0], h2[1], 20 * sc, handCol('armR')); }
+  if (p.behind) { const [e2, h2] = ik(gx + sh, syR, hr[0], hr[1], 108 * sc, 104 * sc, 2); limb([gx + sh, syR], e2, h2, armCol('armR'), 32 * sc, cuffCol('armR')); mitten(h2[0], h2[1], 20 * sc, handCol('armR')); }
   if (p.cup) { shape(X, g => rrPath(g, h[0] - 18 * sc, h[1] - 52 * sc, 36 * sc, 46 * sc, 8), '#f4f1ea', 4); shape(X, g => g.rect(h[0] - 18 * sc, h[1] - 52 * sc, 36 * sc, 12 * sc), '#8a5a3c', 4); }
   // torso
   const torso = g => {
@@ -290,7 +300,7 @@ function person(t, gx, gy, spec, p = {}) {
   // near (right) arm in front
   if (p.behind) { spec._hr = hr; return; }
   if (p.snapR !== undefined) hr = [hr[0], hr[1] + 9 * sc * clamp(p.snapR * 2)];      // the wrist flicks down on the snap
-  [e, h] = ik(gx + sh, syR, hr[0], hr[1], 108 * sc, 104 * sc, 2); limb([gx + sh, syR], e, h, armCol('armR'), 36 * sc, p.pockets ? null : cuffCol('armR'));
+  [e, h] = ik(gx + sh, syR, hr[0], hr[1], 108 * sc, 104 * sc, 2); limb([gx + sh, syR], e, h, armCol('armR'), 32 * sc, p.pockets ? null : cuffCol('armR'));
   spec._hr = h;
   if (p.pockets) return;
   if (p.snapR !== undefined) {               // snapping hand: thumb + middle finger, a click flash at the snap moment
