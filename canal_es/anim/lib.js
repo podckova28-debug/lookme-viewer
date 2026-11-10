@@ -390,3 +390,4 @@ function worldClock(t, claps, start = 0) { let state = start, last = 0, acc = 0;
 function isFrozen(t, claps, start = 0) { let s = start; for (const c of claps) if (t >= c.t) s = 1 - s; return s === 1; }
 /* world-space point between the hands at chest height, for the clap ripple */
 function clapPoint(cname, p) { const c = CAST[cname], G = charGeom(c, p), S = (p.s || 1) * (c.s || 1); return [p.x, p.y + S * (G.top + 150)]; }
+function dropsSpray(g, x, y, n, seed, s = 1) { const r = rnd(seed); for (let i = 0; i < n; i++) { const a = Math.PI * (.85 + r() * .35), d = 30 + r() * 120 * s; circ(g, x + Math.cos(a) * d, y + Math.sin(a) * d * .5 + r() * 20, 4 + r() * 5, '#bfe6ff', 3); } }

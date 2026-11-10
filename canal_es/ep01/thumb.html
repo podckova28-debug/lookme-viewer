@@ -1,0 +1,36 @@
+<!doctype html><html><head><meta charset="utf-8">
+<style>@font-face{font-family:Bangers;src:url("../anim/fonts/Bangers-Regular.ttf")}@font-face{font-family:ComicNeue;src:url("../anim/fonts/ComicNeue-Bold.ttf")}html,body{margin:0;background:#000}canvas{display:block}</style></head>
+<body><canvas id="c" width="1920" height="1080"></canvas>
+<script src="../anim/lib.js"></script><script src="../anim/sets.js"></script>
+<script>
+const X = document.getElementById('c').getContext('2d'), V = new URLSearchParams(location.search).get('v') || 'A';
+function bigText(s, x, y, size, fill, rot = -.04, align = 'left') { X.save(); X.translate(x, y); X.rotate(rot); X.font = `${size}px Bangers`; X.textAlign = align; X.lineJoin = 'round';
+  X.strokeStyle = '#000'; X.lineWidth = size * .22; X.strokeText(s, 0, 0); X.strokeStyle = '#ffffff'; X.lineWidth = size * .09; X.strokeText(s, 0, 0); X.fillStyle = fill; X.fillText(s, 0, 0); X.restore(); }
+window.render = () => {
+  if (V === 'A') {
+    const cam = { cx: 1500, cy: 520, z: 1.45 }, st = stage(cam);
+    st.wld(g => drawSet(g, 'hallway'));
+    st.wld(g => { const fr = { still: 1, t: 0, blink: 0, s: .78, y: 930 };
+      drawChar(g, 'ex5', { ...fr, x: 1180, hR: [150, -720], look: [12, -8], mouth: .4 });
+      drawChar(g, 'nacho', { ...fr, x: 1880, rot: -.22, hx: -10, hy: 10, blink: 1, open: .95, hL: [-60, -610], hR: [40, -600] }); dropsSpray(g, 1845, 455, 18, 3, 1.3);
+      propBall(g, 1290, 330, 46, .4); });
+    const hp = { x: 1530, y: 980, s: .95, t: 0, mouth: 1, open: .7, wide: .9, brow: .9, armsFront: 1 }; const G = charGeom(CAST.tu, hp); [hp.hL, hp.hR] = POSE.clap(1, G);
+    st.col(g => drawChar(g, 'tu', hp));
+    compose2(X, st, { amt: 1 });
+    const [cx, cy] = worldToScreen(cam, ...clapPoint('tu', hp));
+    X.save(); for (let i = 0; i < 3; i++) { X.strokeStyle = `rgba(255,255,255,${.9 - i * .25})`; X.lineWidth = 14 - i * 3; X.beginPath(); X.arc(cx, cy, 110 + i * 70, 0, 7); X.stroke(); } X.restore();
+    X.save(); X.globalAlpha = .55; const gr = X.createLinearGradient(0, 0, 900, 0); gr.addColorStop(0, '#000'); gr.addColorStop(1, 'rgba(0,0,0,0)'); X.fillStyle = gr; X.fillRect(0, 0, 900, H); X.restore();
+    bigText('1', 90, 600, 460, '#fde047'); bigText('APLAUSO', 60, 880, 250, '#fde047');
+  } else {
+    const cam = { cx: 1180, cy: 560, z: 1.75 }, st = stage(cam);
+    st.wld(g => { drawSet(g, 'parkNight'); bench(g, 0); });
+    st.col(g => drawChar(g, 'valeria', { x: 1240, y: 905, s: .78, t: 0, sit: 1, look: [-18, 0], mouth: .8, lid: .3, brow: .4, hR: [140, -470], hL: [-40, -300], armsFront: 1 }));
+    st.col(g => drawChar(g, 'tu', { x: 820, y: 930, s: .78, t: 0, look: [16, 0], wide: 1, open: .8, brow: .9, sweat: 1 }));
+    st.wld(g => { bench(g, 1); drawPigeon(g, 1080, 792, .62, { flip: -1 }); });
+    compose2(X, st, { amt: 1 });
+    X.save(); X.globalAlpha = .5; const gr = X.createLinearGradient(0, 0, 0, 380); gr.addColorStop(0, '#000'); gr.addColorStop(1, 'rgba(0,0,0,0)'); X.fillStyle = gr; X.fillRect(0, 0, W, 380); X.restore();
+    bigText('¿TÚ TAMBIÉN?', W / 2, 250, 230, '#fde047', -.03, 'center');
+  }
+};
+window.ready = Promise.all([document.fonts.load('70px Bangers'), document.fonts.load('70px ComicNeue')]).then(() => true);
+</script></body></html>
