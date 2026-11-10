@@ -1,0 +1,44 @@
+Длинный «Почему „Жигули“ жили по 40 лет, а новые машины — одноразовые?» (10 нояб 2026). Рецепт: gpt_image_2_5 medium 2k (1 кр), wan3_0 480p (1 кр/с), голос — бесплатный клон Alexey.
+Референсы: Михалыч 87ee183f, водитель 53a2bd70, гараж 23313f2f, двор 08996e99, «копейка» 4964dd32 (sovhacks K02). Кадры KM3/KM4/KM6/KG3 и клип M_M3 — из ../immortal.
+KF KI1 1 d5872ed5-a833-4ec7-b92f-bb3b9ea991b8
+KF KI2 2 985f8ca7-5285-4797-87b7-c8d28503e83b
+KF KI3 3 eefb882d-0dbe-4e8a-847b-675f558840dc
+KF KA1 4 2bed371c-cc36-4f54-8330-c20a4e7e6083
+KF KA2 5 5c067b9c-8347-447d-9014-9b77d21879b5
+KF KB1 6 2b8b8089-a412-432b-b18b-a29f9467ea56
+KF KB2 7 eb588720-853b-4ea7-9b5d-f237b6baed2d
+KF KB3 8 30b58206-df0a-44e7-a085-8e8b197ab818
+KF KC1 9 81444cc7-cb6a-4df7-b552-d4e3a2b87299
+KF KC2 10 9383a529-cb7c-4eb0-8570-4b371045bab3
+KF KC3 11 3658a3e0-6499-4779-8484-54faf7c667ca
+KF KC4 12 6b9f1a9f-000a-4896-b0a0-485d146f5166
+KF KD1 13 27b17129-0bbb-4e22-a2fb-7be8c0018d56
+KF KD2 14 465b1e0c-7b0c-4833-ab05-81a6279210fe
+KF KD3 15 9d449bf5-0168-43a4-9425-c9a28f7a51ce
+KF KD4 16 a46f65bc-2c59-4564-b469-a6607cad9022
+KF KE1 17 be6ed56c-0f78-432d-b6ca-0d8eca4cb4b8
+KF KE3 18 013f2157-710d-4bcd-813a-d743175eff3a
+KF KE6 19 3c63f47b-4ebc-4644-8373-7b8e769da962
+KF KE7 20 77f912ac-89fd-4fa9-b24f-8de2f5dc63a6
+KF KF2 21 468b6d44-15fc-4d86-baaa-0eee0787b16a
+KF KF3 22 c40e9360-9238-46ab-acd7-ec003c338d94
+KF KF4 23 dcbd18c4-4b12-4351-b588-bca486eb3c1c
+KF KF5 24 7282c2ad-4099-4b86-b4d9-e97671d54ada
+KF KG1 25 b764cf35-f21e-4857-bd21-646b2388c26a
+KF KG2 26 1fdb4544-287d-425f-b0b2-73a61171b685
+KF KG3 27 2f477a90-b817-4f64-ad09-4b04ce907fbd
+KF KH3 28 861159c4-f77b-4d03-a286-6ae5764482af
+KF KZ1 29 67ca33e3-fd54-4b04-ae3c-66d150e3aa21
+CLIP M_I1 1 46ece8e7-ee83-425b-b287-27e0480baa19 (от KI1, wan3_0 480p 5 с)
+CLIP M_A1 2 5a935ff1-e232-4295-985c-b50ac1e80b4a (от KA1)
+CLIP M_C1 3 df268b25-12a1-4800-be65-bb133dbde45b (от KC1)
+CLIP M_C4 4 47b81e63-56c9-4360-8f42-2ec95dad1a19 (от KC4)
+CLIP M_D2 5 6106acae-a2c2-42ae-8c1f-7c4f75e94bf2 (от KD2)
+CLIP M_D4 6 f06038c1-59a2-4651-a716-65d61b9023b8 (от KD4)
+CLIP M_E6 7 4f66a4be-f5e9-4053-9b9a-3322733924cc (от KE6)
+CLIP M_F2 8 79b74e4a-7f7b-4b54-ad80-2de26a1f3dfc (от KF2)
+CLIP M_Z1 9 74ceff8c-1af4-4d51-bb5d-fed61f87ace7 (от KZ1)
+CLIP M_M3 — копия из ../immortal (бесплатно)
+THUMB th_vs a83d07cc-8e9a-4fe4-9fdc-a006b244c1a3 (база обложки, 1 кр)
+THUMB th_bin 13b9b7f2-82b5-4aa4-bc01-727dc73f6e35
+THUMB th_parts 18ca887e-e0d8-4f44-901d-77554e4872a3

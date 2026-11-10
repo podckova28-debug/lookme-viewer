@@ -1,0 +1,33 @@
+{
+ "project": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/disposable",
+ "video": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/disposable/disposable_1080p.mp4",
+ "overlays": 42,
+ "plan_total": 306.07,
+ "stats": {
+  "duration": 306.07,
+  "lufs": -14.2,
+  "peak": -1.3
+ },
+ "issues": [
+  {
+   "level": "review",
+   "code": "face",
+   "t": 264.5,
+   "what": "chapter@H1",
+   "shot": "KI3",
+   "cover": 0.11295918367346938,
+   "image": "face_chapter_H1_265.jpg",
+   "msg": "chapter@H1 264.5 с (план KI3): закрывает 11 % головы"
+  },
+  {
+   "level": "review",
+   "code": "face",
+   "t": 132.5,
+   "what": "caption@D3",
+   "shot": "KD3",
+   "cover": 0.21598877980364656,
+   "image": "face_caption_D3_132.jpg",
+   "msg": "caption@D3 132.5 с (план KD3): закрывает 22 % головы"
+  }
+ ]
+}
