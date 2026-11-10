@@ -8,7 +8,8 @@
   text rephrased) and ch13 (accent on «А что с психопатами?» → «Теперь о психопатах.»); 2 takes each, `pick`.
 - Images: GPT Image 2.6 low 2k with style ref (14 new, 0.5 cr each) + reused pc/mk/ck images; cover bases 3×1 cr.
   Total spend ≈ 10 credits.
-- HQ 1080p (429 MB): media d9d4a60b-d540-4bc2-9233-7cdde9342819; web 720p: 0d0e892f-3969-4730-b0ca-accd8746294d.
+- v1 HQ (429 MB, OmniVoice, superseded): d9d4a60b-d540-4bc2-9233-7cdde9342819.
+- v2 HQ 1080p 6:35 (402 MB): media 71484077-2ccb-485b-906b-9d3077d6bfba; web 720p: 362bf8ed-51b1-42c6-92e9-d2b669716ed5.
 - Cover: preview_howto/cover_A.jpg (split face, «ОН БЫЛ ТВОИМ СОСЕДОМ»).
 
 ## Sandbox gotchas
