@@ -110,20 +110,68 @@ function nightstand(g) { shape(g, q => q.rect(1000, 760, 150, 180), '#9b6b45', 5
 
 /* ---- kitchen (daylight) */
 SET_BUILDERS.kitchen = () => { const c = mkCanvas(), g = c.getContext('2d');
-  g.fillStyle = vgrad(g, 0, FLOOR, [[0, '#f5e7b8'], [1, '#efdca4']]); g.fillRect(0, 0, W, FLOOR);
-  windowFrame(g, 1180, 140, 560, 330, skyDay);
-  for (let i = 0; i < 4; i++) { const x = 60 + i * 250; shape(g, q => rrPath(q, x, 90, 230, 260, 6), '#7fc4b0', 4); shape(g, q => rrPath(q, x + 186, 200, 9, 40, 4), '#e0b45c', 3); }
-  shape(g, q => rrPath(q, 1780, 120, 160, 820, 14), '#e6ebef', 5); line(g, [[1780, 420], [1940, 420]], OUT, 5); shape(g, q => rrPath(q, 1800, 300, 12, 90, 5), '#9aa3ad', 3); shape(g, q => rrPath(q, 1800, 450, 12, 120, 5), '#9aa3ad', 3);
-  // magnet: Pepe drawing on the fridge
-  poster(g, 1860, 220, 70, 80, '#fbfaf6', (q) => drawPigeon(q, -4, 22, .26, {}));
-  shape(g, q => q.rect(-10, 600, 1790, 30), '#e7e0d2', 4); shape(g, q => q.rect(-10, 630, 1790, 310), '#6fb5a1', 4);
-  for (let i = 0; i < 7; i++) { const x = 24 + i * 250; shape(g, q => rrPath(q, x, 656, 226, 250, 6), '#7fc4b0', 4); shape(g, q => rrPath(q, x + 96, 680, 40, 9, 4), '#e0b45c', 3); }
-  propPot(g, 1640, 600, .5);
-  g.fillStyle = '#e9e1d2'; g.fillRect(0, FLOOR, W, H - FLOOR); g.fillStyle = '#d9cfbd'; for (let y = FLOOR, r = 0; y < H; y += 50, r++) for (let x = (r % 2) * 70; x < W; x += 140) g.fillRect(x, y, 70, 50);
-  line(g, [[0, FLOOR], [W, FLOOR]], OUT, 5);
+  // wall with a faint pattern
+  g.fillStyle = vgrad(g, 0, FLOOR, [[0, '#f7ebcb'], [.6, '#f1dfb2'], [1, '#e9d3a2']]); g.fillRect(0, 0, W, FLOOR);
+  g.fillStyle = 'rgba(190,150,90,.07)'; for (let y = 20; y < 600; y += 36) for (let x = (y / 36 % 2) * 18; x < W; x += 36) { g.beginPath(); g.arc(x, y, 3, 0, 7); g.fill(); }
+  // backsplash: subway tiles with grout and a highlight on each tile
+  g.save(); g.beginPath(); g.rect(0, 350, 1780, 250); g.clip();
+  for (let r = 0, y = 350; y < 600; y += 32, r++) for (let x = -((r % 2) * 34); x < 1780; x += 68) {
+    const gr = g.createLinearGradient(x, y, x, y + 30); gr.addColorStop(0, '#fbf8f1'); gr.addColorStop(1, '#ebe4d6'); g.fillStyle = gr; g.fillRect(x + 2, y + 2, 64, 28);
+    g.fillStyle = 'rgba(255,255,255,.7)'; g.fillRect(x + 6, y + 5, 22, 3); }
+  g.fillStyle = '#d9d0bf'; for (let y = 350; y < 600; y += 32) g.fillRect(0, y, 1780, 2); g.restore();
+  // shadow under the upper cabinets
+  let gr = g.createLinearGradient(0, 350, 0, 400); gr.addColorStop(0, 'rgba(60,40,30,.22)'); gr.addColorStop(1, 'rgba(60,40,30,0)'); g.fillStyle = gr; g.fillRect(0, 350, 1180, 50);
+  // window: soft morning sky, distant trees, curtains with folds
+  windowFrame(g, 1180, 140, 560, 330, (q, x, y, w, h) => { q.fillStyle = vgrad(q, y, y + h, [[0, '#9ecff0'], [.65, '#d8eefa'], [1, '#fde9c4']]); q.fillRect(x, y, w, h);
+    q.fillStyle = 'rgba(255,255,255,.9)'; for (const [cx, cy, k] of [[x + 120, y + 70, 1], [x + 400, y + 50, .8]]) for (const [dx, dy, rr] of [[0, 0, 30], [34, -12, 38], [70, 0, 30], [34, 10, 32]]) { q.beginPath(); q.arc(cx + dx * k, cy + dy * k, rr * k, 0, 7); q.fill(); }
+    q.fillStyle = 'rgba(120,170,140,.55)'; for (let i = 0; i < 9; i++) { q.beginPath(); q.arc(x + 30 + i * 64, y + h - 18 - (i % 3) * 10, 46 + (i % 2) * 14, 0, 7); q.fill(); }
+    q.fillStyle = 'rgba(150,170,190,.5)'; q.fillRect(x + 240, y + h - 120, 50, 120); q.fillRect(x + 300, y + h - 90, 40, 90); });
+  for (const [x0, dir] of [[1120, 1], [1740, -1]]) { for (let k = 0; k < 6; k++) { const x = x0 + dir * k * 14, gr2 = g.createLinearGradient(x, 0, x + dir * 14, 0); gr2.addColorStop(0, '#fbe6a8'); gr2.addColorStop(1, '#efcf7c'); g.fillStyle = gr2; g.beginPath(); g.moveTo(x, 110); g.lineTo(x + dir * 14, 110); g.quadraticCurveTo(x + dir * (20 + k * 3), 330, x + dir * (8 + k * 9), 500); g.lineTo(x - dir * 2 + dir * k * 8, 500); g.closePath(); g.fill(); }
+    shape(g, q => q.ellipse(x0 + dir * 46, 330, 30, 10, 0, 0, 7), '#d9a84a', 3); }
+  line(g, [[1090, 108], [1790, 108]], OUT, 7);
+  // window sill: succulent and a cup
+  shape(g, q => rrPath(q, 1300, 444, 46, 34, 6), '#d9774f', 3); for (const [dx, dy] of [[-12, -6], [0, -14], [12, -6]]) shape(g, q => q.ellipse(1323 + dx, 440 + dy, 9, 16, dx * .05, 0, 7), '#6aaa72', 3); propMug(g, 1660, 450, .6, '#e9f0f6');
+  // upper cabinets with bevels and brass knobs
+  for (let i = 0; i < 4; i++) { const x = 60 + i * 250; const gr3 = g.createLinearGradient(0, 90, 0, 350); gr3.addColorStop(0, '#93d2bf'); gr3.addColorStop(1, '#78bea9'); shape(g, q => rrPath(q, x, 90, 230, 260, 8), gr3, 4);
+    shape(g, q => rrPath(q, x + 18, 108, 194, 224, 6), null, 3); g.strokeStyle = 'rgba(255,255,255,.45)'; g.lineWidth = 3; g.beginPath(); g.moveTo(x + 20, 330); g.lineTo(x + 20, 110); g.lineTo(x + 210, 110); g.stroke();
+    circ(g, x + 196, 226, 9, '#e3b84f', 3); g.fillStyle = '#fff3c9'; g.beginPath(); g.arc(x + 199, 223, 3, 0, 7); g.fill(); }
+  // open shelf with jars under the cabinets
+  shape(g, q => rrPath(q, 300, 470, 520, 16, 4), '#b98a5a', 3);
+  const jars = [['#f2c46a', 'PASTA'], ['#c8794a', 'CAFÉ'], ['#f4f1ea', 'AZÚCAR'], ['#9bc47a', 'TÉ']];
+  jars.forEach(([col, lab], i) => { const x = 340 + i * 118; shape(g, q => rrPath(q, x, 396, 86, 74, 14), 'rgba(225,240,250,.85)', 3); shape(g, q => rrPath(q, x + 8, 420, 70, 46, 10), col, 0); shape(g, q => rrPath(q, x + 4, 386, 78, 16, 5), '#8a6a52', 3);
+    shape(g, q => rrPath(q, x + 14, 430, 58, 22, 3), '#fbfaf6', 2); text(g, lab, x + 43, 447, 17, OUT, 'Bangers', 'center'); g.fillStyle = 'rgba(255,255,255,.6)'; g.fillRect(x + 70, 402, 6, 52); });
+  // pendant lamp
+  line(g, [[960, 0], [960, 150]], '#3a3040', 4); shape(g, q => { q.moveTo(900, 205); q.quadraticCurveTo(905, 150, 960, 148); q.quadraticCurveTo(1015, 150, 1020, 205); q.closePath(); }, '#3f7f72', 4); shape(g, q => q.ellipse(960, 206, 26, 8, 0, 0, 7), '#fff6d0', 3);
+  // fridge with shading, magnets and a calendar
+  const gf = g.createLinearGradient(1780, 0, 1940, 0); gf.addColorStop(0, '#f6f8fa'); gf.addColorStop(1, '#d5dbe2'); shape(g, q => rrPath(q, 1780, 120, 170, 820, 16), gf, 5);
+  line(g, [[1780, 420], [1950, 420]], OUT, 4); shape(g, q => rrPath(q, 1800, 300, 12, 90, 5), '#a9b1bb', 3); shape(g, q => rrPath(q, 1800, 450, 12, 120, 5), '#a9b1bb', 3);
+  poster(g, 1866, 220, 70, 80, '#fbfaf6', (q) => drawPigeon(q, -4, 22, .26, {})); poster(g, 1870, 330, 66, 60, '#ffe7a3', q => { text(q, 'MARTES', 0, 4, 16, '#c0262d', 'Bangers', 'center'); });
+  for (const [x, y, col] of [[1830, 520, '#e0546a'], [1900, 560, '#4f86b8'], [1850, 640, '#f0d06a']]) circ(g, x, y, 10, col, 3);
+  // counter: top with a lit front edge, bevelled lower cabinets, toe kick
+  shape(g, q => q.rect(-10, 596, 1790, 34), '#ebe4d6', 4); g.fillStyle = 'rgba(255,255,255,.7)'; g.fillRect(0, 600, 1780, 5);
+  g.fillStyle = '#6aaf9b'; g.fillRect(-10, 630, 1790, 310); line(g, [[0, 630], [1780, 630]], OUT, 4);
+  for (let i = 0; i < 7; i++) { const x = 24 + i * 250, gr4 = g.createLinearGradient(0, 656, 0, 900); gr4.addColorStop(0, '#86c9b5'); gr4.addColorStop(1, '#6db29d'); shape(g, q => rrPath(q, x, 656, 226, 250, 8), gr4, 4);
+    shape(g, q => rrPath(q, x + 16, 672, 194, 218, 6), null, 3); shape(g, q => rrPath(q, x + 93, 686, 40, 10, 5), '#e3b84f', 3); }
+  g.fillStyle = '#3e5f58'; g.fillRect(-10, 910, 1790, 30);
+  // things on the counter: kettle, fruit bowl, cutting board, utensils
+  shape(g, q => rrPath(q, 160, 520, 110, 80, 26), '#e25b4b', 4); shape(g, q => rrPath(q, 196, 506, 38, 16, 6), '#3a3040', 3); g.fillStyle = 'rgba(255,255,255,.5)'; g.fillRect(244, 534, 8, 40);
+  shape(g, q => q.ellipse(560, 586, 90, 18, 0, 0, 7), '#f4efe6', 4); for (const [dx, col] of [[-40, '#f39c3a'], [0, '#f6c84a'], [40, '#f39c3a'], [-18, '#7fbf5a'], [20, '#e25b4b']]) circ(g, 560 + dx, 562 - (Math.abs(dx) < 25 ? 14 : 0), 24, col, 3);
+  shape(g, q => rrPath(q, 1500, 560, 150, 36, 8), '#d8a46a', 3); propPot(g, 1660, 600, .5);
+  // floor in perspective
+  g.fillStyle = '#e8dfcf'; g.fillRect(0, FLOOR, W, H - FLOOR); const vx = 960, vy = 420;
+  g.strokeStyle = 'rgba(150,130,100,.45)'; g.lineWidth = 2; for (let k = -14; k <= 14; k++) { g.beginPath(); g.moveTo(vx + k * 150 * ((FLOOR - vy) / (H - vy)), FLOOR); g.lineTo(vx + k * 150, H); g.stroke(); }
+  for (let y = FLOOR + 16, d = 16; y < H; d *= 1.35, y += d) { g.beginPath(); g.moveTo(0, y); g.lineTo(W, y); g.stroke(); }
+  gr = g.createLinearGradient(0, FLOOR, 0, H); gr.addColorStop(0, 'rgba(255,255,255,.18)'); gr.addColorStop(1, 'rgba(255,255,255,0)'); g.fillStyle = gr; g.fillRect(0, FLOOR, W, 60);
+  line(g, [[0, FLOOR], [W, FLOOR]], OUT, 4);
+  // dust motes in the window light
+  const rr = rnd(21); g.fillStyle = 'rgba(255,250,230,.75)'; for (let i = 0; i < 40; i++) { const t2 = rr(); g.beginPath(); g.arc(mix(1200, 760, t2) + rr() * 300, mix(170, 900, t2), 1.5 + rr() * 2, 0, 7); g.fill(); }
   return { bg: c };
 };
-function kitchenTable(g) { shape(g, q => q.rect(560, 780, 800, 30), '#c98d5a', 5); for (const x of [600, 1300]) shape(g, q => q.rect(x, 810, 26, 150), '#b07848', 4); }
+function kitchenTable(g) {
+  for (const x of [600, 1300]) { const gl = g.createLinearGradient(x, 0, x + 26, 0); gl.addColorStop(0, '#c48a55'); gl.addColorStop(1, '#94603a'); shape(g, q => q.rect(x, 808, 26, 132), gl, 4); }
+  const gt = g.createLinearGradient(0, 778, 0, 812); gt.addColorStop(0, '#d9a066'); gt.addColorStop(1, '#b07848'); shape(g, q => rrPath(q, 556, 778, 808, 32, 6), gt, 4);
+  g.save(); g.strokeStyle = 'rgba(110,60,25,.25)'; g.lineWidth = 2; for (let i = 0; i < 5; i++) { g.beginPath(); g.moveTo(580 + i * 150, 786); g.bezierCurveTo(640 + i * 150, 790, 700 + i * 150, 798, 760 + i * 150, 794); g.stroke(); } g.restore();
+  g.fillStyle = 'rgba(255,255,255,.45)'; g.fillRect(566, 781, 788, 3); }
 
 /* ---- classroom */
 SET_BUILDERS.classroom = () => { const c = mkCanvas(), g = c.getContext('2d');
