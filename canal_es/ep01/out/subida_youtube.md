@@ -8,42 +8,48 @@ Alternativa para prueba A/B: ¿Qué pasaría si pudieras detener el tiempo con u
 (vidIQ: 84 y 83 puntos; el título simple «¿Qué pasaría si pudieras detener el tiempo?» saca 81. Los tres empiezan con la búsqueda exacta, 29,7 mil al mes.)
 
 ## Miniatura
-- A (principal): `miniatura_A.png`: «1 APLAUSO»
-- B: `miniatura_B.png`: «¿TÚ TAMBIÉN?»
+- A (principal): `miniatura_A.jpg`: «¿ELLA TAMBIÉN?» (los dos en color en el mundo congelado)
+- B: `miniatura_B.jpg`: «1 APLAUSO»
+- C: `miniatura_C.jpg`: «¿ÉL TAMBIÉN?» (Pepe; para probar después del primer día)
 
 ## Descripción
-¿Qué pasaría si pudieras detener el tiempo con un aplauso? Al principio es increíble: duermes ocho horas más, sacas diez en matemáticas y metes el gol imposible. Pero el tiempo detenido tiene un precio… y no eres el único que lo sabe.
+¿Qué pasaría si pudieras detener el tiempo con un aplauso? Al principio es increíble: duermes ocho horas más, sacas diez en matemáticas y metes el gol imposible. Pero cada segundo detenido lo vives tú solo… y alguien más está dejando pistas en el mundo congelado.
+
+Al final: ¿algo de esto es real? Cronostasis, tu corazón que no se pausa y los relojes atómicos que demostraron que tu cabeza envejece más rápido que tus pies.
 
 ¿Qué harías tú con el tiempo detenido? Déjalo en los comentarios.
-¿En qué escenas encontraste a Pepe? 🐦
+¿Viste a Renata parpadear al principio? ¿Y en cuántas escenas Pepe sigue en color? 🐦
 
 0:00 La maceta
-0:14 ¿Qué pasaría si…?
-0:37 El primer aplauso
-0:53 Regla #1
-1:18 Ocho horas más de sueño
-1:34 El examen de matemáticas
-2:02 El bigote de Nacho
-2:21 La lluvia congelada
-2:39 Los libros de Valeria
-3:06 El penal imposible
-3:31 El precio: una cana
-3:54 Nada funciona
-4:08 El cumpleaños de Nacho
-4:48 Pepe
-5:13 La maceta
-5:41 No eres el único
-6:16 Final
+0:15 ¿Qué pasaría si…?
+0:39 El primer aplauso
+0:56 Regla #1
+1:22 Ocho horas más de sueño
+1:38 El examen de matemáticas
+2:07 El bigote (y el monóculo)
+2:35 La lluvia congelada
+2:54 Los libros de Renata
+3:22 El penal imposible
+3:47 El precio: una cana
+4:17 La cena
+4:40 Nada funciona
+4:55 El cumpleaños de Nacho
+5:38 Pepe
+6:14 La maceta
+6:48 No eres el único
+7:50 Pepe nunca se puso gris
+8:19 ¿Algo de esto es real?
+9:14 Final
 
 Historia de ficción animada. Personajes, guion y animación originales.
 
 #quepasariasi #detenereltiempo #animacion
 
 ## Etiquetas
-qué pasaría si, que pasaria si pudieras detener el tiempo, detener el tiempo, pudieras detener el tiempo, qué pasaría si animación, historias animadas, superpoderes en la vida real, qué harías si, animación en español, pepe la paloma
+qué pasaría si, que pasaria si pudieras detener el tiempo, detener el tiempo, pudieras detener el tiempo, qué pasaría si animación, historias animadas, superpoderes en la vida real, qué harías si, animación en español, pepe la paloma, cronostasis, dilatación del tiempo, relojes atómicos
 
 ## Comentario fijado
-¿En cuántas escenas aparece Pepe? 🐦 Pista: más de cinco. El primero en encontrarlas todas elige el próximo «¿qué pasaría si…?»
+Pepe nunca se pone gris. ¿En cuántas escenas del mundo congelado lo encontraste? 🐦 Y la pregunta de verdad: ¿quién es Pepe? Las mejores teorías salen en el próximo episodio.
 
 ## Subtítulos
 `subtitulos_es.srt`: subir en YouTube Studio → Subtítulos → Español.
@@ -53,5 +59,7 @@ qué pasaría si, que pasaria si pudieras detener el tiempo, detener el tiempo, 
 2. `short2_cumple.mp4`: Detienes el tiempo… y todos aplauden 😅 #shorts #quepasariasi
 3. `short3_giro.mp4`: ¿Y si no eres el único que detiene el tiempo? #shorts #quepasariasi
 4. `short4_maceta.mp4`: Todo se congeló… menos tú. #shorts #quepasariasi
+5. `short5_ciencia.mp4`: Tu cabeza es más vieja que tus pies (es real) #shorts #ciencia
+6. `short6_pepe.mp4`: Nadie se mueve… excepto la paloma 🐦 #shorts #quepasariasi
 
-Duración total: 6:38 · voz: vo
+Duración total: 9:34 · voz: vo_v3

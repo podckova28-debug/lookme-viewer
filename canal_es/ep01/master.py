@@ -10,7 +10,7 @@ TARGET = -14.0
 def chain(gain):
     # the limiter runs 4x oversampled so inter-sample peaks are caught too
     return (f'acompressor=threshold=0.063:ratio=3:attack=8:release=160:knee=4,'
-            f'volume={gain:.2f}dB,aresample=192000,alimiter=limit=0.8:attack=2:release=60:level=false,aresample=48000')
+            f'volume={gain:.2f}dB,aresample=192000,alimiter=limit=0.72:attack=2:release=60:level=false,aresample=48000')
 
 def measure(af):
     r = subprocess.run(['ffmpeg', '-hide_banner', '-nostats', '-i', SRC, '-af', af + ',ebur128=peak=true', '-f', 'null', '-'],
