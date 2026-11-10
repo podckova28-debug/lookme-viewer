@@ -34,14 +34,14 @@ Cast (fictional): roofer, massage therapist, plumber, electrician, wind turbine 
 19. Number two. The nurse practitioner. These are advanced nurses who can examine, diagnose and treat patients. It's the fastest growing healthcare job in the United States, projected to grow about forty percent by twenty thirty-four.
 20. AI will help them, by writing notes, checking scans and flagging risks. But someone still has to sit with the patient, notice what's wrong, and be trusted with the decision.
 ## #1 — HOME HEALTH AIDE
-21. Number one. The home health aide. These workers help older and sick people at home: getting up, washing, eating, taking medicine. They are the human side of care.
+21. Number one. The home health aide. These workers help elderly and sick people at home: getting up, washing, eating, taking medicine. They are the human side of care.
 22. In the United States, this job is projected to add about seven hundred and forty thousand jobs by twenty thirty-four. That's more than any other occupation. And nursing assistants ranked second in Microsoft's list of jobs least affected by AI.
 ## WHO IS MOST EXPOSED
-23. So which jobs are most exposed? In the same study: interpreters and translators, historians, writers, and customer service. And the World Economic Forum expects bank tellers, data entry clerks and postal clerks to shrink the most.
+23. So, which jobs are the most exposed? In the same study: interpreters and translators, historians, writers, and customer service. And the World Economic Forum expects bank tellers, data entry clerks and postal clerks to shrink the most.
 24. That doesn't mean those people simply disappear. It means the tasks change. The World Economic Forum still expects about a hundred and seventy million new jobs worldwide by twenty thirty, against ninety-two million lost.
 ## WHY THE SAFE JOBS ARE SAFE
 25. So why are the safe jobs safe? In the nineteen eighties, a robotics researcher named Hans Moravec noticed something strange. For computers, the hard things, like chess and math, are easy. The easy things, like walking, grabbing and seeing, are incredibly hard.
-26. That is still mostly true. The jobs AI can't replace need hands, unpredictable places, and people who trust you. If your work has all three, a robot is not coming for it anytime soon.
+26. That is still mostly true. The jobs that A.I. can't replace need hands, unpredictable places, and people who trust you. If your work has all three, a robot is not coming for it anytime soon.
 ## OUTRO
 27. Which job on this list would you pick? Tell us in the comments. And if you liked this, subscribe. Next time, we'll look at the jobs AI is already changing, right now.
 

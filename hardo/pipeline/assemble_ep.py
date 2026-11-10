@@ -164,11 +164,21 @@ with open(os.path.join(OUT,f"{NAME}.srt"),"w",encoding="utf8") as f:
                 out.append(sent[:cut].strip()); sent=sent[cut:].strip()
             if sent: out.append(sent)
         return out
+    def _onsets(i):  # ep15: speech onsets inside block i (timeline seconds from block start), from silencedetect
+        r=subprocess.run(["ffmpeg","-i",os.path.join(VO,f"{i+1:02d}.mp3"),"-af","silencedetect=n=-40dB:d=0.25","-f","null","-"],capture_output=True,text=True).stderr
+        return [float(x)/TEMPO for x in _re.findall(r"silence_end: ([\d.]+)",r)]
     k=0
-    for a,b,tx in srt:
-        a+=0.25; b=min(b,total_len-0.3); parts=_chunks(tx); L=sum(len(p) for p in parts); t0=a
-        for p in parts:
-            t1=t0+(b-a)*len(p)/L; k+=1
-            f.write(f"{k}\n{ts(t0)} --> {ts(t1-0.04)}\n" + "\n".join(_tw.wrap(p,42)) + "\n\n"); t0=t1
+    for bi,(a,b,tx) in enumerate(srt):
+        blk=a; a+=0.25; b=min(b,total_len-0.3); parts=_chunks(tx); L=sum(len(p) for p in parts)
+        on=[blk+o for o in _onsets(bi)]
+        starts=[a]; acc=a
+        for p in parts[:-1]:
+            acc+=(b-a)*len(p)/L
+            near=[o for o in on if abs(o-acc)<=0.9 and o>starts[-1]+0.7]
+            starts.append(min(near,key=lambda o:abs(o-acc)) if near else acc)  # snap each new cue to the next speech onset
+        ends=[x-0.04 for x in starts[1:]]+[b]
+        for p,t0,t1 in zip(parts,starts,ends):
+            k+=1
+            f.write(f"{k}\n{ts(t0)} --> {ts(t1)}\n" + "\n".join(_tw.wrap(p.replace('A.I.','AI'),42)) + "\n\n")
 run(["ffmpeg","-y","-i",os.path.join(OUT,"video_silent.mp4"),"-i",VOICE,"-map","0:v","-map","1:a","-c:v","copy","-c:a","copy","-shortest","-movflags","+faststart",os.path.join(OUT,f"{NAME}.mp4")])
 print("video",round(dur(os.path.join(OUT,"video_silent.mp4")),2),"audio",round(dur(os.path.join(OUT,"voice.m4a")),2),"final",round(dur(os.path.join(OUT,f"{NAME}.mp4")),2))
