@@ -1,0 +1,16 @@
+<!doctype html><html><head><meta charset="utf-8"><style>@font-face{font-family:Bangers;src:url("fonts/Bangers-Regular.ttf")}@font-face{font-family:ComicNeue;src:url("fonts/ComicNeue-Bold.ttf")}html,body{margin:0;background:#000}canvas{display:block}</style></head>
+<body><canvas id="c" width="1920" height="1080"></canvas><script src="lib.js"></script><script src="sets.js"></script><script>
+const X=document.getElementById('c').getContext('2d');
+window.render=function(t){
+  X.fillStyle='#222';X.fillRect(0,0,W,H);
+  const names=['hallway','bedroom','kitchen','classroom','street','streetRain','field','party','park','parkNight','bathroom'];
+  names.forEach((n,i)=>{const col=i%4,row=Math.floor(i/4),s=.24,x=20+col*478,y=20+row*350;
+    X.save();X.translate(x,y);X.scale(s,s);X.drawImage(SETS[n].bg,0,0);
+    if(n==='bedroom'){bedBack(X);bedFront(X);nightstand(X);propAlarm(X,1075,690,.7,6,59,0);}
+    if(n==='kitchen')kitchenTable(X); if(n==='classroom'){teacherDesk(X,1500);desk(X,500);desk(X,1000);}
+    if(n==='field'){goal(X,0);goal(X,1);} if(n==='party')partyTable(X); if(n==='park'||n==='parkNight'){bench(X,0);bench(X,1);}
+    if(n==='bathroom')mirrorGlass(X);
+    X.restore(); X.fillStyle='#fff';X.font='40px Bangers';X.fillText(n,x+10,y+300);});
+};
+window.ready=Promise.all([document.fonts.load('70px Bangers'),document.fonts.load('70px ComicNeue')]).then(()=>true);
+</script></body></html>

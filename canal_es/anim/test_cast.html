@@ -1,0 +1,21 @@
+<!doctype html><html><head><meta charset="utf-8"><style>@font-face{font-family:Bangers;src:url("fonts/Bangers-Regular.ttf")}html,body{margin:0;background:#000}canvas{display:block}</style></head>
+<body><canvas id="c" width="1920" height="1080"></canvas><script src="lib.js"></script><script>
+const X=document.getElementById('c').getContext('2d');
+window.render=function(t){
+  const wg=layer('world'), cg=layer('color');
+  wg.fillStyle='#cfe3ef';wg.fillRect(0,0,W,H); wg.fillStyle='#9cc28a';wg.fillRect(0,820,W,260);
+  const names=['tu','nacho','valeria','mama','profe','ex1','ex2','ex3','ex4','ex5','ex6'];
+  names.forEach((n,i)=>{const x=110+i*172, g=(n==='tu'||n==='valeria')?cg:wg;
+    let p={x,y:900,s:.62,t, mouth:.5};
+    if(n==='tu'){const G=charGeom(CAST.tu,p);const [a,b]=clapHands(t,0.5,G);p.hL=a;p.hR=b;p.armsFront=1;}
+    if(n==='nacho'){p.marker=1;p.walk=1;p.phase=t*6;}
+    if(n==='valeria'){p.open=.6;p.brow=-.4;}
+    if(n==='profe'){p.brow=.8;p.mouth=-.5;}
+    if(n==='mama'){p.holdR=(g,x,y)=>propMug(g,x+10,y-10,.8);}
+    drawChar(g,n,p);});
+  drawCat(wg,300,1040,.7,{jump:1}); drawPigeon(wg,1700,1040,.9,{}); propBall(wg,900,1000,40,.3); propAlarm(wg,1100,1000,.6,6,59,0); propPot(wg,1300,1020,.7); propCake(wg,1500,1040,.6,1,t); propPhone(wg,700,1000,.7,3);
+  compose(X, wg, cg, {amt: t>1?1:0});
+  sticker(X,'¿QUÉ PASARÍA SI…? ñ á é í ó ú',1,60,40);
+};
+window.ready=document.fonts.load('70px Bangers').then(()=>true);
+</script></body></html>
