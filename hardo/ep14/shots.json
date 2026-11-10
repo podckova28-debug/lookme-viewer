@@ -1,0 +1,268 @@
+{
+ "D": {
+  "KU": [
+   "255d2642-6e11-438b-9adb-6b768ef1ba8f",
+   "the knocker-upper from the reference sheet (thin elderly man, grey side whiskers, brown wool overcoat, flat cap, very long thin pole)"
+  ],
+  "LC": [
+   "255d2642-6e11-438b-9adb-6b768ef1ba8f",
+   "the leech collector from the reference sheet (young woman, red hair in a headscarf, grey shawl, skirt tied up to the knees, bare legs and feet, small wooden pail)"
+  ],
+  "ML": [
+   "255d2642-6e11-438b-9adb-6b768ef1ba8f",
+   "the mudlark from the reference sheet (skinny boy about ten, messy brown hair, ragged too-big jacket, rolled-up trousers, bare muddy feet, small wicker basket)"
+  ],
+  "PF": [
+   "255d2642-6e11-438b-9adb-6b768ef1ba8f",
+   "the pure finder from the reference sheet (old woman, black bonnet, faded blue dress, patched apron, one leather glove, lidded bucket)"
+  ],
+  "WB": [
+   "255d2642-6e11-438b-9adb-6b768ef1ba8f",
+   "the whipping boy from the reference sheet (boy about ten, plain brown Tudor doublet, white collar, short dark hair)"
+  ],
+  "CB": [
+   "255d2642-6e11-438b-9adb-6b768ef1ba8f",
+   "the climbing boy from the reference sheet (small boy about eight, soot-blackened face and clothes, grey cap, small hand brush)"
+  ],
+  "GF": [
+   "3c85a222-6bb8-4d79-ba17-74b0f1c615ed",
+   "the gong farmer from the reference sheet (burly bald man, brown beard, stained leather apron, tall boots, wooden shovel, lantern)"
+  ],
+  "SE": [
+   "3c85a222-6bb8-4d79-ba17-74b0f1c615ed",
+   "the sin eater from the reference sheet (gaunt pale man, long grey hair and beard, hooded grey wool cloak)"
+  ],
+  "GS": [
+   "3c85a222-6bb8-4d79-ba17-74b0f1c615ed",
+   "the Groom of the Stool from the reference sheet (slim clean-shaven Tudor courtier, short fair hair, black velvet doublet, thin gold chain, white towel over one arm)"
+  ],
+  "RM": [
+   "3c85a222-6bb8-4d79-ba17-74b0f1c615ed",
+   "the resurrection man from the reference sheet (thin man, dark stubble, long dark coat, battered low hat, short spade)"
+  ],
+  "LE": [
+   "3c85a222-6bb8-4d79-ba17-74b0f1c615ed",
+   "the cigar factory lector from the reference sheet (Cuban man in his forties, neat black moustache, round glasses, white shirt, braces, open book)"
+  ]
+ },
+ "S": {
+  "1": [
+   null,
+   "a plain white space",
+   "Split scene on white: on the left, the knocker-upper taps a bedroom window with his long pole at dawn; on the right, the gong farmer climbs down a ladder into a pit with a lantern.",
+   "An empty bedside table beside a bed with a candle and a small jug, no clock anywhere. No people.",
+   "The knocker-upper walks a dark-blue dawn street of brick terraced houses (still light in tone, fading to white).",
+   "The gong farmer's lantern glowing at the mouth of a dark pit, seen from above. No faces."
+  ],
+  "2": [
+   null,
+   "a plain white space",
+   "All eleven historical workers from the two reference sheets stand together in one row on a white background, each drawn exactly once, looking at the viewer.",
+   "Close-up of an old-fashioned illustrated history book lying open, its pages showing small simple drawings of a pole, a bucket, a shovel and a chimney. No text. No people.",
+   "A proud mother in a Victorian dress and bonnet, standing in a doorway with her arms crossed, smiling with a doubtful face. Clearly different from the cast.",
+   "A wooden sign-post with eleven blank arrow-shaped boards pointing in different directions. No text. No people."
+  ],
+  "3": [
+   "KU",
+   "a Victorian industrial street of brick terraced houses before dawn, a factory chimney in the distance, fading to white",
+   "He walks down the street tapping an upstairs bedroom window with his very long pole.",
+   "Close-up of the tip of the long pole tapping on a small window pane.",
+   "A sleepy man in a nightcap opens an upstairs window and waves down, yawning.",
+   "Workers in caps walking toward a factory at dawn, all different, seen from behind."
+  ],
+  "4": [
+   "KU",
+   "the same Victorian street before dawn",
+   "He aims a long thin pea shooter tube at an upstairs window, cheeks puffed, a dried pea flying toward the glass.",
+   "Close-up of a handful of dried green peas in his palm.",
+   "A few copper pennies in a worn cloth purse on a windowsill. No text. No people.",
+   "He walks home at sunrise, the pole over his shoulder, yawning."
+  ],
+  "5": [
+   "LC",
+   "a misty cold marsh with reeds, pale water, fading to white",
+   "She wades knee-deep into the marsh with her skirt tied up, holding her wooden pail, waiting, wincing.",
+   "Close-up of her bare shin above the water with three dark leeches stuck on it.",
+   "A Victorian doctor in a black coat (an older man with grey sideburns, clearly different) holding a glass jar of leeches in his consulting room.",
+   "A glass apothecary jar full of dark leeches on a shelf. No labels, no text. No people."
+  ],
+  "6": [
+   "LC",
+   "the edge of the marsh at the end of the day",
+   "She sits on a tree stump, pale and tired, pulling a leech off her leg, her pail full beside her.",
+   "Close-up of the wooden pail full of wriggling dark leeches in water. No people.",
+   "A row of wooden barrels on a horse cart at a port, a sailing ship behind. No people, no text.",
+   "She limps home along a path, a bandage on her leg, the pail in her hand."
+  ],
+  "7": [
+   "ML",
+   "the grey muddy bank of the River Thames at low tide, old wooden piers, a bridge in the distance, fading to white",
+   "He walks barefoot through deep grey mud with his wicker basket, bent over, searching.",
+   "Close-up of his bare feet sinking into the grey mud.",
+   "Three other mudlark children, all different (a girl with a shawl, a tall boy, a small boy), searching the mud further along.",
+   "A wide view of the river at low tide with sailing barges resting on the mud. No people close."
+  ],
+  "8": [
+   "ML",
+   "the Thames riverbank at low tide",
+   "He holds up a lump of coal and a copper nail, grinning, mud up to his knees.",
+   "Close-up of his wicker basket holding lumps of coal, a coil of old rope, a bone and a few copper nails. No people.",
+   "A big outflow pipe pouring dirty water onto the mud. No people.",
+   "In winter, he wades into the cold mud with frost on the riverbank, shivering."
+  ],
+  "9": [
+   "PF",
+   "the yard of a Victorian tannery with wooden pits and hanging hides, fading to white",
+   "She hands her lidded bucket to a tanner, a big man in a leather apron and rolled sleeves (clearly different), who holds his nose.",
+   "Close-up of soft pale leather gloves and a leather-bound book on a table. No text. No people.",
+   "A tanner (different man) stirring a wooden pit with a long pole. No text.",
+   "Close-up of the lidded bucket, a few flies around it."
+  ],
+  "10": [
+   "PF",
+   "a Victorian London street with cobblestones",
+   "She bends down on the cobblestones with her gloved hand, her bucket beside her, a small dog watching her from a doorway.",
+   "Close-up of her single gloved hand reaching down, her bare other hand holding the bucket handle.",
+   "A very elegant lady in a fine dress pulling on a pair of pale kid gloves, clearly different, unaware.",
+   "She walks away down the street with the bucket, seen from behind."
+  ],
+  "11": [
+   "WB",
+   "a Tudor schoolroom with a wooden desk, books and a window",
+   "A stern tutor in a black gown (an older man with a white beard, clearly different) raises a thin birch switch toward the whipping boy, while a young prince in a fine red and gold doublet with a small gold circlet sits at the desk watching.",
+   "Close-up of the prince's face, looking guilty.",
+   "Close-up of the whipping boy's worried face.",
+   "The prince's desk with an ink blot and a broken quill. No text."
+  ],
+  "12": [
+   "WB",
+   "a Tudor schoolroom",
+   "The whipping boy shrugs with both palms up, smiling with relief, the tutor gone.",
+   "Close-up of a dusty old book being closed by two hands. No text.",
+   "A historian (a woman in modern clothes, glasses, cardigan) in a library with a magnifying glass over an old manuscript, shaking her head. No readable text.",
+   "A big question mark made of rope hanging on a wall. No text. No people."
+  ],
+  "13": [
+   "CB",
+   "a Georgian house interior with a big fireplace, light and airy",
+   "A master sweep (a big man with a black top hat and soot-stained coat, clearly different) points up the fireplace while the climbing boy steps into it.",
+   "Close-up of the climbing boy's sooty face looking up into the dark chimney.",
+   "Cross-section view of a narrow chimney inside a wall with a small boy climbing up inside it with a brush.",
+   "Soot falling into an empty fireplace. No people."
+  ],
+  "14": [
+   "CB",
+   "a Georgian street",
+   "The climbing boy coughs, sitting on the doorstep, black with soot, holding his brush.",
+   "Close-up of his small sooty hands holding the brush.",
+   "A policeman in a Victorian uniform (a tall man with a moustache) hands a paper licence to a sweep. Blank paper, no text.",
+   "A group of chimney pots on a roof against the sky. No people."
+  ],
+  "15": [
+   "GF",
+   "a Tudor backyard at night with a wooden privy hut, lit by a lantern, still light in tone, fading to white",
+   "He climbs down a ladder into a deep brick pit beside the privy, holding his lantern.",
+   "Close-up of his wooden shovel and a wooden barrel at the edge of the pit. No people.",
+   "He hands up a heavy barrel to a helper (a young thin man with a cloth over his nose, clearly different).",
+   "A wooden privy hut with a crescent cut in the door at night. No people."
+  ],
+  "16": [
+   "GF",
+   "a Tudor town street at night under the moon",
+   "He pushes a cart of barrels through the empty street at night, the lantern hanging on the cart.",
+   "Close-up of a small pile of silver coins in his dirty palm.",
+   "A grand Tudor palace with chimneys under the moon. No people.",
+   "Townspeople peeking from behind shutters and holding their noses, all different."
+  ],
+  "17": [
+   "SE",
+   "a small Welsh stone cottage room with a candle, fading to white",
+   "He stands by a wooden table where a covered body lies, a plate with bread and salt on the cloth over the chest, mourners in black standing back.",
+   "Close-up of the plate with a round loaf of bread and a small heap of salt. No people.",
+   "He eats the piece of bread, eyes closed, solemn.",
+   "A misty Welsh hillside with a tiny stone cottage. No people."
+  ],
+  "18": [
+   "SE",
+   "a village lane in Wales",
+   "He walks away down the lane alone while villagers turn their backs to him, all different.",
+   "Close-up of his tired face under the grey hood.",
+   "An old handwritten book lying open on a desk, its writing drawn as unreadable squiggles. No people.",
+   "A job application form drawn as blank lines with a single checkbox ticked, no text. No people."
+  ],
+  "19": [
+   "GS",
+   "a richly decorated Tudor palace corridor with tapestries",
+   "He stands outside a closed carved wooden door, holding a white towel and a silver bowl of water, patient and dignified.",
+   "Close-up of the closed carved door of the royal privy chamber. No people.",
+   "A cushioned velvet close-stool (a box-shaped royal toilet chair with a padded lid). No people.",
+   "He bows deeply at the door."
+  ],
+  "20": [
+   "GS",
+   "a Tudor palace hall",
+   "He walks through the hall while a crowd of jealous noblemen in fine clothes watch him, all different.",
+   "Close-up of a heavy gold seal ring on his hand. No text.",
+   "He writes at a desk with a quill beside a pile of folded letters with red wax seals. No readable text.",
+   "Two noblemen whispering behind their hands, envious."
+  ],
+  "21": [
+   "RM",
+   "a foggy churchyard at night with gravestones, light in tone, fading to white",
+   "He digs at a fresh grave with his short spade by the light of a shaded lantern.",
+   "Close-up of his spade biting into the earth.",
+   "A Georgian anatomy lecture theatre with tiers of students in dark coats looking down. No body visible, a covered table in the middle.",
+   "An old wooden cart with a canvas cover parked by a churchyard wall at night. No people."
+  ],
+  "22": [
+   "RM",
+   "a churchyard at night",
+   "He hurries away pulling his covered cart, looking over his shoulder.",
+   "Close-up of a few gold coins on a wooden table. No text. No people.",
+   "An iron cage (a mortsafe) built over a grave in a churchyard. No people.",
+   "A Victorian doctor (an older man with white whiskers, clearly different) receiving a sealed letter. No text."
+  ],
+  "23": [
+   "LE",
+   "a large bright Cuban cigar factory hall with rows of workbenches",
+   "He sits on a raised wooden platform reading aloud from his book while rows of cigar rollers at long benches roll cigars, all different people.",
+   "Close-up of hands rolling a cigar from brown tobacco leaves.",
+   "Close-up of his face reading with feeling, glasses on his nose.",
+   "A stack of old books beside a glass of water on his platform. No text on the spines. No people."
+  ],
+  "24": [
+   "LE",
+   "the cigar factory hall",
+   "The workers drop coins into a tin cup that is passed along the benches toward the lector.",
+   "Close-up of a wooden box of cigars with a blank label. No text. No people.",
+   "He reads a dramatic passage with one hand raised, the workers listening, smiling.",
+   "A small modern Cuban street with a colourful facade. No text, no signs. No people."
+  ],
+  "25": [
+   null,
+   "a plain white space",
+   "The knocker-upper's pole, the leech collector's pail, the gong farmer's shovel and the climbing boy's brush lie together on white. No people.",
+   "Close-up of a modern alarm clock ringing. No numbers on its face. No people.",
+   "A modern city with sewers and street lights at dusk, seen in cutaway: pipes under the street. No people.",
+   "A modern hospital room with clean equipment. No people."
+  ],
+  "26": [
+   null,
+   "a plain white space",
+   "A modern office worker (a tired young man in a shirt and tie) sighs at his desk with a laptop, a coffee cup in his hand.",
+   "Close-up of the office worker's face changing to a relieved smile.",
+   "The leech collector from the reference sheet waves from her marsh, smiling, leeches on her legs.",
+   "A comfortable office chair next to a pair of muddy boots. No people."
+  ],
+  "27": [
+   null,
+   "a plain white space",
+   "The knocker-upper, the mudlark, the gong farmer and the lector from the reference sheets stand side by side and wave at the viewer, each drawn once.",
+   "Close-up of three empty speech bubbles on white. No text. No people.",
+   "All eleven workers from the reference sheets wave goodbye, each drawn exactly once.",
+   "A modern smartphone and a laptop on a desk, seen as museum exhibits with a velvet rope. No text. No people."
+  ]
+ },
+ "C1": "255d2642-6e11-438b-9adb-6b768ef1ba8f",
+ "C2": "3c85a222-6bb8-4d79-ba17-74b0f1c615ed"
+}

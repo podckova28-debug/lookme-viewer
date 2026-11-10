@@ -1,0 +1,27 @@
+01 1.0 | 
+02 1.0 | 
+03 0.961 | 
+04 0.967 | 
+05 0.935 | 
+06 0.9 | A good collector could gather up to 2,500 leeches in a day.  At the height of the craze, France alone imported more than 30 million leeches in a single year.  Many collectors suffered from blood loss and infections.
+07 0.949 | 
+08 1.0 | 
+09 0.952 | 
+10 1.0 | 
+11 0.97 | 
+12 1.0 | 
+13 0.951 | 
+14 0.886 | A law in 1788 said they had to be at least eight years old. It was hardly enforced. Boys  got stuck, burned, and sick. It took until 1875 for Britain to finally stop it by making  every sweep get a police license.
+15 1.0 | 
+16 0.964 | 
+17 0.952 | 
+18 1.0 | 
+19 0.939 | 
+20 1.0 | 
+21 0.96 | 
+22 0.878 | In 1828, a body could sell for around eight guineas more than a labourer earned in months.  Families guarded graves with iron cages. The trade only faded after the Anatomy Act of  1832 gave doctors legal bodies to study.
+23 0.961 | 
+24 1.0 | 
+25 1.0 | 
+26 1.0 | 
+27 0.974 | 
