@@ -3,10 +3,11 @@
 # usage: tools/codeanim/make_ep05.sh TMPDIR [skip-render]   (run from the repo root)
 set -e
 TMP=$1; mkdir -p $TMP out
+IDS="01 02 03 04 05 05b 05c 06 B 06c 07 08 09 10 11 12 12b 13 14"
 if [ "$2" != "skip-render" ]; then
-  (cd tools/codeanim && for id in 01 02 03 04 05 06 07 08 09 10 11 12 13; do node render_scene.js ep05.html $id $TMP/s$id.mp4; done)
+  (cd tools/codeanim && for id in $IDS; do node render_scene.js ep05.html $id $TMP/s$id.mp4; done)
 fi
-for id in 01 02 03 04 05 06 07 08 09 10 11 12 13; do echo "file '$TMP/s$id.mp4'"; done > $TMP/list.txt
+for id in $IDS; do echo "file '$TMP/s$id.mp4'"; done > $TMP/list.txt
 ffmpeg -v error -y -f concat -safe 0 -i $TMP/list.txt -c copy $TMP/video.mp4
 python3 tools/codeanim/ep05_audio.py assets/ep05/vo2 $TMP/audio.wav
 ffmpeg -v error -y -i $TMP/video.mp4 -i $TMP/audio.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -shortest $TMP/body.mp4

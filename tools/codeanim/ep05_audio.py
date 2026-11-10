@@ -8,7 +8,8 @@ from scipy.io import wavfile
 from scipy.signal import butter, sosfilt, resample_poly
 
 SR = 48000
-DUR = {'01': 6.2, '02': 4.2, '03': 10.6, '04': 5.4, '05': 3.8, '06': 8.0, '07': 5.6, '08': 5.0, '09': 5.4, '10': 4.2, '11': 4.4, '12': 6.8, '13': 6.2}
+DUR = {'01': 6.2, '02': 4.2, '03': 10.6, '04': 5.4, '05': 3.8, '05b': 7.5, '05c': 6.8, '06': 10.8, 'B': 12.0, '06c': 6.0, '07': 5.6, '08': 5.0, '09': 5.4,
+       '10': 4.2, '11': 4.4, '12': 6.8, '12b': 5.0, '13': 6.2, '14': 9.8}
 START, acc = {}, 0.0
 for k, d in DUR.items(): START[k] = acc; acc += round(d * 24) / 24      # scenes are whole frames
 TOTAL = acc
@@ -158,41 +159,77 @@ def vo(sc, t, name, g=1.0):
 
 # narration (times line up with the action in ep05.js)
 VO = [('01', .3, 'vo_01.wav'), ('02', .6, 'vo_02.wav'), ('03', .2, 'vo_03a.wav'), ('03', 7.8, 'vo_03b.wav'), ('04', .4, 'vo_04.wav'), ('05', .5, 'vo_05.wav'),
-      ('06', .3, 'vo_06a.wav'), ('06', 5.6, 'vo_06b.wav'), ('07', .4, 'vo_08.wav'), ('08', .5, 'vo_09.wav'), ('09', .3, 'vo_10.wav'), ('10', .8, 'vo_11.wav'),
-      ('11', .5, 'vo_12.wav'), ('12', 3.4, 'vo_13.wav'), ('13', .2, 'vo_14a.wav'), ('13', 2.15, 'vo_14b.wav')]
+      ('05b', .3, 'vo_05b_a.wav'), ('05b', 3.0, 'vo_05b_b.wav'), ('05c', .3, 'vo_05c_a.wav'), ('05c', 4.3, 'vo_05c_b.wav'),
+      ('06', .3, 'vo_06_0.wav'), ('06', 3.6, 'vo_06a.wav'), ('06', 8.8, 'vo_06b.wav'),
+      ('B', .3, 'vo_B1.wav'), ('B', 2.9, 'vo_B2.wav'), ('B', 5.6, 'vo_B3.wav'), ('B', 9.4, 'vo_B4.wav'), ('06c', 1.6, 'vo_06c.wav'),
+      ('07', .4, 'vo_08.wav'), ('08', .5, 'vo_09.wav'), ('09', .3, 'vo_10.wav'), ('10', .8, 'vo_11.wav'),
+      ('11', .5, 'vo_12.wav'), ('12', 3.4, 'vo_13.wav'), ('12b', 1.0, 'vo_12b.wav'), ('13', .2, 'vo_14a.wav'), ('13', 2.15, 'vo_14b.wav'),
+      ('14', .4, 'vo_15a.wav'), ('14', 7.9, 'vo_15b.wav')]
 for sc, t, f in VO:
     if not os.path.exists(os.path.join(vo_dir, f)): print('MISSING', f); continue
-    d = vo(sc, t, f); print(f'{f:12s} scene {sc} at {t:4.1f}s  ends {t + d:4.1f}s / {DUR[sc]}s' + ('  OVER' if t + d > DUR[sc] + .2 else ''))
+    d = vo(sc, t, f); print(f'{f:13s} scene {sc:3s} at {t:4.1f}s  ends {t + d:4.1f}s / {DUR[sc]}s' + ('  OVER' if t + d > DUR[sc] + .2 else ''))
 
-# music
+# extra sounds for the new scenes
+def crinkle(d):
+    imp = (rng.random(N(d)) < .006) * rng.uniform(.2, 1, N(d)); x = filt(imp, 'bandpass', [2000, 8000]) + .05 * filt(noise(d), 'highpass', 4000)
+    return norm(fade(x, .02, .1), .35)
+def puff_snd(): d = .35; return norm(fade(filt(noise(d), 'lowpass', 900) * expd(d, .08), .01, .1), .45)
+def thup(): d = .12; return norm(filt(noise(d), 'lowpass', 500) * expd(d, .02) + .5 * np.sin(2 * np.pi * 120 * tt(d)) * expd(d, .03), .4)
+def splat():
+    d = .5; x = filt(noise(d), 'lowpass', 1500) * expd(d, .07) + .6 * sweep(300, 80, d, .5) * expd(d, .1); return norm(att(x, .001), .8)
+def ding(f=1760): d = 1.2; t = tt(d); return norm((np.sin(2 * np.pi * f * t) + .4 * np.sin(2 * np.pi * f * 2.76 * t) * np.exp(-t / .2)) * np.exp(-t / .5), .35)
+def slide(d=1.0): return norm(fade(filt(noise(d), 'bandpass', [300, 1500]), .1, .2), .25)
+ARMOR = [0, .12, .28, .44, .56, .72]
+
+# music: calm bed through the day, headphone leak at the bus stop, party, calm bed again for the morning after
 put('mus', 0, fade(bed(START['08']), 1.5, 1.2), .55)
-put('mus', S('06', 0), filt(party(2.75, .1, .7), 'bandpass', [1200, 5000]) * np.r_[np.ones(N(2.6)), np.linspace(1, 0, N(.15))], .35)   # headphone leak
+put('mus', S('06', 3.25), filt(party(2.75, .2 - 3.25 % .5, .7), 'bandpass', [1200, 5000]) * np.r_[np.ones(N(2.45)), np.linspace(1, 0, N(.3))], .35)
 m = party(START['10'] - START['08'] + .45, .25); m = tape_stop(m, .5); put('mus', S('08', 0), fade(m, .3, .01), .7)
-put('mus', S('12', 2.5), fade(party(DUR['12'] - 2.5 + DUR['13'], .25 - 2.5 % .5), .05, 1.0), .5)
-put('mus', S('13', DUR['13']), fade(bed(4.0), .5, 2.5), .5)
+p_len = START['14'] - S('12', 2.5); put('mus', S('12', 2.5), fade(party(p_len + .5, .25 - 2.5 % .5), .05, 1.2), .5)
+put('mus', S('14', .3), fade(bed(DUR['14']), 1.5, 1.0), .5)
 
 # ambience
 put('amb', S('01', 0), crickets(DUR['01']) + ambience(DUR['01'], 300, .03)); put('amb', S('01', 0), hum(DUR['01'], .05))
 put('amb', S('02', 0), birds(DUR['02']) + ambience(DUR['02'], 400, .03)); put('amb', S('02', 0), hum(DUR['02'], .07))
-put('amb', S('03', 0), ambience(DUR['03'] + DUR['04'] * 0, 400, .025)); put('amb', S('05', 0), ambience(DUR['05'], 400, .025))
+put('amb', S('03', 0), ambience(DUR['03'], 400, .025))
+put('amb', S('05', 0), ambience(DUR['05'] + DUR['05b'] + DUR['05c'], 400, .025))
 put('amb', S('06', 0), ambience(DUR['06'], 700, .07) + birds(DUR['06']) * .6)
-put('amb', S('08', 0), ambience(DUR['08'] + DUR['09'] + DUR['10'] + DUR['11'] + DUR['12'] + DUR['13'], 500, .03))
+put('amb', S('B', 0), ambience(DUR['B'], 600, .035) + birds(DUR['B']) * .25); put('amb', S('06c', 0), ambience(DUR['06c'], 400, .025))
+put('amb', S('08', 0), ambience(START['14'] - START['08'], 500, .03))
+put('amb', S('14', 0), birds(DUR['14']) + ambience(DUR['14'], 400, .03))
 
 # sfx
 fx = lambda sc, t, x, g=1.0: put('sfx', S(sc, t), x, g)
 fx('01', 3.0, whoosh(.5, 200, 900), .25)                       # blanket shift on waking
 fx('03', 1.22, snap()); fx('03', 1.6, glass(), .9)
-for k, d in [('legL', 0), ('legR', .12), ('chest', .28), ('armL', .44), ('armR', .56), ('helmet', .72)]:
-    fx('03', 1.7 + d, whoosh(.4), .4); fx('03', 1.7 + d + .42, clank(1 + d * .3), .55)
+for d in ARMOR: fx('03', 1.7 + d, whoosh(.4), .4); fx('03', 1.7 + d + .42, clank(1 + d * .3), .55)
 fx('03', 1.75, toaster_pop(), .7); fx('03', 2.6, plop(), .8); fx('03', 8.45, slurp(), .9)
 fx('04', .3, pop()); fx('04', 2.0, pop(), .8); fx('04', 2.9, pop(), 1.0); fx('04', 3.4, tick(), 1.2)
 fx('05', .3, pop(), .7)
 for i in range(3): fx('05', .3 + i * 1.03, tape_rip(.95), .8)
-fx('06', 0, engine(1.7, .8, .5), .5); fx('06', 1.5, hiss(.6), .6); fx('06', 1.75, hiss(.4), .4)
-fx('06', 1.6, engine(3.4, .35, .35), .5); fx('06', 2.1, snap()); fx('06', 2.6, snap())
-for k, d in [('legL', 0), ('legR', .12), ('chest', .28), ('armL', .44), ('armR', .56), ('helmet', .72)]:
-    fx('06', 2.7 + d, whoosh(.4, 600, 3000), .35); fx('06', 2.7 + d + .42, clank(1.1 + d * .3), .5)
-fx('06', 3.85, clank(.8, 1.0), .8); fx('06', 4.6, hiss(.5), .5); fx('06', 5.0, engine(2.6, .5, .0) * np.linspace(1, .2, N(2.6)), .7)
+# 05b oven mitts
+fx('05b', .45, whoosh(.4, 300, 1200), .25); fx('05b', 1.7, thup(), .9); fx('05b', 1.78, ding(2093), .5)
+fx('05b', 3.05, puff_snd(), .9); fx('05b', 4.75, puff_snd(), 1.0); fx('05b', 5.9, pop(), .5)
+# 05c present
+fx('05c', .2, crinkle(3.2), .9); fx('05c', 3.9, whoosh(.25, 800, 4000), .4); fx('05c', 4.0, crinkle(.5), 1.0); fx('05c', 4.15, tape_rip(.3), .7); fx('05c', 4.3, tape_rip(.25), .7)
+fx('05c', 4.55, pop(), .7); fx('05c', 4.6, ding(1568), .5)
+# 06 bus stop
+for k in range(7): fx('06', .2 + k * .393, thup(), .6)
+fx('06', 2.85, whoosh(.5, 300, 1500), .3); fx('06', 3.5, thup(), .7); fx('06', 3.18, click(), .7)
+fx('06', 3.4, engine(1.5, .8, .5), .5); fx('06', 4.8, hiss(.6), .6); fx('06', 4.95, hiss(.4), .4); fx('06', 4.9, engine(3.3, .35, .35), .5)
+fx('06', 5.2, snap()); fx('06', 5.7, snap())
+for d in ARMOR: fx('06', 5.9 + d, whoosh(.4, 600, 3000), .35); fx('06', 5.9 + d + .42, clank(1.1 + d * .3), .5)
+fx('06', 6.85, clank(.8, 1.0), .8); fx('06', 7.8, hiss(.5), .5); fx('06', 8.2, engine(2.6, .5, .0) * np.linspace(1, .2, N(2.6)), .7)
+# B bakery
+fx('B', .3, slide(1.2)); fx('B', 1.5, thup(), .5)
+for k in range(5): fx('B', 2.5 + k * .52, thup(), .6)
+fx('B', 4.6, whoosh(.5, 300, 1600), .4); fx('B', 4.8, whoosh(.5, 400, 2200), .3); fx('B', 5.38, thunk(), .7); fx('B', 5.5, thup(), .6); fx('B', 5.62, thup(), .6)
+fx('B', 6.88, snap()); fx('B', 6.95, power_up()[:N(.3)], .5); fx('B', 7.1, glass(), 1.0)
+for d in ARMOR: fx('B', 7.25 + d, whoosh(.4), .35); fx('B', 7.25 + d + .42, clank(1 + d * .3), .55)
+fx('B', 7.95, splat(), 1.0); fx('B', 9.2, pop(), .7)
+# 06c Dave fixes the cake
+for i in range(3): fx('06c', .6 + i, tape_rip(.95), .8)
+fx('06c', 3.7, ding(2093), .5)
 fx('07', .3, pop()); fx('07', 2.15, pop())
 for k in range(1, 8): fx('07', .9 + k / 7.99 * 1.05, tick())
 for k in range(1, 5): fx('07', 2.3 + k / 4.99 * .65, tick())
@@ -202,10 +239,14 @@ for k in range(9): fx('09', .75 + 1.5 + k * .5, snap(), .5); fx('09', .87 + 1.5 
 fx('10', .3, power_down(), .8); fx('10', .3, click(), .8)
 fx('11', 2.72, snap(), 1.0)
 fx('12', .15, glass(), .9)
-for k, d in [('legL', 0), ('legR', .12), ('chest', .28), ('armL', .44), ('armR', .56), ('helmet', .72)]:
-    fx('12', .4 + d, whoosh(.4), .35); fx('12', .4 + d + .42, clank(1 + d * .3), .5)
-fx('12', 1.3, power_up(), .7); put('amb', S('12', 1.6), hum(DUR['12'] - 1.6 + DUR['13'], .05)); fx('12', 2.4, click(), .8); fx('12', 2.42, thunk(), .9)
+for d in ARMOR: fx('12', .4 + d, whoosh(.4), .35); fx('12', .4 + d + .42, clank(1 + d * .3), .5)
+fx('12', 1.3, power_up(), .7); put('amb', S('12', 1.6), hum(START['14'] - S('12', 1.6), .05)); fx('12', 2.4, click(), .8); fx('12', 2.42, thunk(), .9)
 fx('13', 3.35, blow(), 1.0); fx('13', 3.95, horn(), .7); fx('13', 5.15, slurp(), .9)
+# 14 the morning after
+fx('14', .3, ding(2349), .35); fx('14', 1.4, ding(1975), .25)
+fx('14', 4.4, snap()); fx('14', 4.5, glass(), 1.0)
+for d in ARMOR: fx('14', 4.65 + d, whoosh(.4), .4); fx('14', 4.65 + d + .42, clank(1 + d * .3), .55)
+fx('14', 6.2, pop(), .7); fx('14', 7.65, slurp(), .9)
 
 # ducking: music/ambience/sfx dip under the narration
 v = L['vo']; env = np.convolve(np.abs(v), np.ones(N(.05)) / N(.05), 'same'); env = np.minimum(env / .05, 1)

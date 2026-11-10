@@ -100,14 +100,29 @@ function head(cx, cy, r, rot, o) {
     shape(X, g => { g.moveTo(-r * .95, -r * .25); g.quadraticCurveTo(-r * .9, -r * 1.05, 0, -r * 1.02); g.quadraticCurveTo(r * .9, -r * 1.05, r * .95, -r * .25); g.closePath(); }, o.hairCol || '#2f7d5b', 4);
     shape(X, g => rrPath(g, r * .2, -r * .4, r * 1.05, r * .2, r * .08), o.hairCol || '#2f7d5b', 4);
   }
+  if (o.hair === 'chef') { for (const [a, b, rr] of [[-.45, -1.25, .36], [0, -1.42, .42], [.45, -1.25, .36], [-.2, -1.6, .3], [.25, -1.58, .3]]) shape(X, g => g.arc(a * r, b * r, rr * r, 0, 7), '#fbf8f2', 4);
+    shape(X, g => rrPath(g, -r * .72, -r * 1.12, r * 1.44, r * .34, r * .08), '#fbf8f2', 4); }
   if (o.hair === 'band') shape(X, g => { g.moveTo(-r * .97, -r * .38); g.quadraticCurveTo(0, -r * .62, r * .97, -r * .38); g.lineTo(r * .9, -r * .55); g.quadraticCurveTo(0, -r * .8, -r * .9, -r * .55); g.closePath(); }, o.hairCol || '#e8b64a', 4);
   if (o.helmet) { for (const s of [-1, 1]) shape(X, g => { g.moveTo(s * r * .82, -r * .62); g.quadraticCurveTo(s * r * 1.2, 0, s * r * .8, r * .68); g.lineTo(s * r * .98, r * .28); g.quadraticCurveTo(s * r * 1.05, -r * .2, s * r * .82, -r * .62); }, '#c4302b', 4);
     shape(X, g => { g.moveTo(-r * .7, -r * .78); g.quadraticCurveTo(0, -r * 1.12, r * .7, -r * .78); g.lineTo(r * .6, -r * .66); g.quadraticCurveTo(0, -r * .95, -r * .6, -r * .66); g.closePath(); }, '#e3b44c', 4); }
+  if (o.faceplate) {            // empty suit: closed helmet, eye slits
+    shape(X, circ, '#c4302b'); X.save(); X.beginPath(); circ(X); X.clip(); X.fillStyle = 'rgba(0,0,0,.18)'; X.beginPath(); X.arc(-r * .3, r * .2, r, 0, 7); X.fill(); X.restore();
+    shape(X, g => { g.moveTo(-r * .62, -r * .5); g.quadraticCurveTo(0, -r * .72, r * .62, -r * .5); g.lineTo(r * .56, r * .32); g.quadraticCurveTo(r * .3, r * .78, 0, r * .8); g.quadraticCurveTo(-r * .3, r * .78, -r * .56, r * .32); g.closePath(); }, '#e3b44c', 4);
+    for (const sd of [-1, 1]) { shape(X, g => { g.moveTo(sd * r * .12, -r * .08); g.lineTo(sd * r * .46, -r * .14); g.lineTo(sd * r * .42, r * .0); g.lineTo(sd * r * .14, r * .04); g.closePath(); }, `rgba(200,240,255,${.35 + .65 * (o.eyes || 0)})`, 3);
+      if (o.eyes) glow(sd * r * .3, -r * .05, r * .5, .6 * o.eyes); }
+    X.strokeStyle = OUT; X.lineWidth = 4; X.beginPath(); X.moveTo(-r * .2, r * .5); X.lineTo(r * .2, r * .5); X.stroke(); X.restore(); return;
+  }
   if (o.beard) {
-    shape(X, g => { g.moveTo(-r * .94, -r * .06); g.quadraticCurveTo(-r * .9, r * 1.0, 0, r * 1.12); g.quadraticCurveTo(r * .9, r * 1.0, r * .94, -r * .06); g.quadraticCurveTo(r * .6, r * .2, 0, r * .22); g.quadraticCurveTo(-r * .6, r * .2, -r * .94, -r * .06); }, '#2c201d');
-    X.strokeStyle = '#54403a'; X.lineWidth = 4; for (const s of [-1, 1]) { X.beginPath(); X.arc(s * r * .42, r * .55, r * .18, s > 0 ? 3.4 : 4.6, s > 0 ? 4.8 : 6); X.stroke(); }
-    if (o.blowO) { shape(X, g => g.ellipse(0, r * .46, r * .1 * o.blowO + 2, r * .12 * o.blowO + 2, 0, 0, 7), '#5a2e2a', 4); }
-    else { X.strokeStyle = '#e7d9c9'; X.lineWidth = 5; X.lineCap = 'round'; X.beginPath(); X.moveTo(-r * .13, r * .44); X.lineTo(r * .13, r * .44); X.stroke(); }
+    const bp = g => { g.moveTo(-r * .97, r * .02); g.quadraticCurveTo(-r * .98, r * .95, 0, r * 1.1); g.quadraticCurveTo(r * .98, r * .95, r * .97, r * .02);
+      g.quadraticCurveTo(r * .8, r * .3, r * .5, r * .3); g.quadraticCurveTo(r * .22, r * .26, 0, r * .36); g.quadraticCurveTo(-r * .22, r * .26, -r * .5, r * .3); g.quadraticCurveTo(-r * .8, r * .3, -r * .97, r * .02); };
+    { const gr = X.createLinearGradient(-r, 0, r, 0); gr.addColorStop(0, '#231915'); gr.addColorStop(.65, '#3a2a24'); gr.addColorStop(1, '#4d3a31'); shape(X, bp, gr); }
+    X.save(); X.beginPath(); bp(X); X.clip(); X.beginPath(); X.arc(0, 0, r - 4, -1.0, 0.5); X.strokeStyle = 'rgba(255,214,150,.55)'; X.lineWidth = 8; X.stroke(); X.restore();
+    // moustache
+    shape(X, g => { g.moveTo(0, r * .36); g.quadraticCurveTo(-r * .2, r * .3, -r * .36, r * .44); g.quadraticCurveTo(-r * .18, r * .5, 0, r * .44); g.quadraticCurveTo(r * .18, r * .5, r * .36, r * .44); g.quadraticCurveTo(r * .2, r * .3, 0, r * .36); }, '#2a1e1a', 3);
+    X.strokeStyle = 'rgba(120,90,75,.55)'; X.lineWidth = 3; X.lineCap = 'round'; for (const [a, b, c] of [[-.55, .62, .2], [.5, .66, .2], [-.25, .85, .15], [.3, .88, .15]]) { X.beginPath(); X.arc(a * r, b * r, c * r, -2.4, -1.4); X.stroke(); }
+    if (o.blowO) { shape(X, g => g.ellipse(0, r * .58, r * .09 * o.blowO + 3, r * .11 * o.blowO + 3, 0, 0, 7), '#5a2e2a', 4); }
+    else if (o.happy) { shape(X, g => { g.moveTo(-r * .16, r * .55); g.quadraticCurveTo(0, r * .7, r * .16, r * .55); g.closePath(); }, '#5a2e2a', 3); }
+    else { X.strokeStyle = '#d9c3b0'; X.lineWidth = 5; X.lineCap = 'round'; X.beginPath(); X.moveTo(-r * .11, r * .58); X.quadraticCurveTo(0, r * .6, r * .11, r * .58); X.stroke(); }
     if (!o.partyHat) { X.fillStyle = 'rgba(255,255,255,.55)'; X.beginPath(); X.ellipse(r * .32, -r * .6, r * .16, r * .07, -.5, 0, 7); X.fill(); }
   }
   const [lx, ly] = o.look || [0, 0], ex = r * .33, ey = -r * .04;
@@ -147,6 +162,21 @@ function head(cx, cy, r, rot, o) {
   X.restore();
 }
 
+function floorShadow(x, y, w, a = .3) {
+  X.save(); X.translate(x, y); X.scale(1, .14); const g = X.createRadialGradient(0, 0, 0, 0, 0, w); g.addColorStop(0, `rgba(10,4,16,${a})`); g.addColorStop(1, 'rgba(10,4,16,0)');
+  X.fillStyle = g; X.beginPath(); X.arc(0, 0, w, 0, 7); X.fill(); X.restore();
+}
+/* quilted oven mitt; ang points from wrist to fingertips, side -1/1 puts the thumb on that side */
+function ovenMitt(x, y, s, ang = -Math.PI / 2, side = 1) {
+  X.save(); X.translate(x, y); X.rotate(ang + Math.PI / 2); X.scale(s, s);
+  const body = g => { g.moveTo(-26, 18); g.lineTo(-30, -30); g.quadraticCurveTo(-30, -66, 0, -68); g.quadraticCurveTo(30, -66, 30, -30); g.lineTo(26, 18); g.closePath(); };
+  shape(X, g => { g.ellipse(side * 30, -14, 13, 22, side * .5, 0, 7); }, '#d4553b', 4);
+  shape(X, body, '#d4553b'); X.save(); X.beginPath(); body(X); X.clip(); X.strokeStyle = 'rgba(120,30,20,.35)'; X.lineWidth = 3;
+  for (let i = -3; i <= 3; i++) { X.beginPath(); X.moveTo(-40 + i * 16, 20); X.lineTo(20 + i * 16, -70); X.stroke(); X.beginPath(); X.moveTo(40 + i * 16, 20); X.lineTo(-20 + i * 16, -70); X.stroke(); }
+  X.beginPath(); body(X); X.strokeStyle = 'rgba(255,214,150,.7)'; X.lineWidth = 7; X.shadowColor = 'rgba(255,214,150,.8)'; X.shadowBlur = 8; X.stroke(); X.restore();
+  shape(X, body, null); shape(X, g => rrPath(g, -30, 8, 60, 22, 8), '#f2ece2', 4); X.restore();
+}
+
 /* ---------- armor pieces (stand-alone sprites for flying in) ---------- */
 const RED = '#c4302b', REDD = '#9d2420', GOLD = '#e3b44c';
 function pieceSprite(kind, x, y, rot, s = 1) {
@@ -181,24 +211,28 @@ function person(t, gx, gy, spec, p = {}) {
   const jit = p.jitter ? (Math.sin(t * 23) * .7 + Math.sin(t * 37 + 1) * .3) * p.jitter : 0, K = 'P' + (spec.id ||= ++SMID);
   const top = gy - 460 * sc - br + sm('P' + (spec.id ||= ++SMID) + 'sl0', t, p.slump || 0, .12) * 12 - (p.inhale || 0) * 7, A = p.armor || {};
   const Y = spec.col, Yd = spec.colD, LEG = spec.legs || '#efe6d6';
+  if (!p.noShadow) floorShadow(gx, gy - 4 * sc, 125 * sc, .45);
   // legs
   for (const [dx, k] of [[-30, 'legL'], [30, 'legR']]) {
     if (A[k]) { tube([[gx + dx * sc, gy - 200 * sc], [gx + dx * sc, gy - 22 * sc]], RED, 34 * sc); shape(X, g => g.arc(gx + dx * sc, gy - 110 * sc, 13 * sc, 0, 7), GOLD, 4); shape(X, g => g.ellipse(gx + dx * sc + (dx > 0 ? 10 : -10), gy - 10 * sc, 30 * sc, 14 * sc, 0, 0, 7), RED, 4); }
     else { tube([[gx + dx * sc, gy - 200 * sc], [gx + dx * sc, gy - 12 * sc]], LEG, 16 * sc); shape(X, g => g.ellipse(gx + dx * sc + (dx > 0 ? 8 : -8), gy - 8 * sc, 22 * sc, 10 * sc, 0, 0, 7), spec.shoes || '#e2d8c6', 4); }
   }
+  gx += Math.sin(t * .9 + (spec.ph || 0) * 2.1) * 3.5 * sc * (p.still ? 0 : 1);           // idle weight shift (feet stay planted)
   const sh = sc * 92, sy = top + 46 * sc;
   const restL = [gx - 112 * sc, gy - 212 * sc], restR = [gx + 112 * sc, gy - 212 * sc];
   const pocketL = [gx - 38 * sc, gy - 250 * sc], pocketR = [gx + 38 * sc, gy - 250 * sc];
   let hl = p.handL || (p.pockets ? pocketL : restL), hr = p.handR || (p.pockets ? pocketR : restR);
   hl = smRel(K + 'hl', t, hl, gx, gy, .055); hr = smRel(K + 'hr', t, hr, gx, gy, .055);
-  p = Object.assign({}, p, { look: sm(K + 'lk', t, p.look || [0, 0], .07), headRot: sm(K + 'hrot', t, p.headRot || 0, .09), headX: sm(K + 'hx', t, p.headX || 0, .09),
+  p = Object.assign({}, p, { look: sm(K + 'lk', t, p.look || [0, 0], .07), headRot: sm(K + 'hrot', t, p.headRot || 0, .09) + Math.sin(t * .75 + (spec.ph || 0) * 1.3) * .025 * (p.still ? 0 : 1), headX: sm(K + 'hx', t, p.headX || 0, .09),
     headDrop: sm(K + 'hd', t, p.headDrop || 0, .09), wide: sm(K + 'wd', t, p.wide ? 1 : 0, .06), mouthOpen: sm(K + 'mo', t, +p.mouthOpen || 0, .05), slump: sm(K + 'sl', t, p.slump || 0, .12) });
   hl = [hl[0] + jit, hl[1]]; hr = [hr[0] - jit, hr[1]];
   const armCol = k => A[k] ? RED : (k === 'armL' ? Yd : Y);
   const handCol = k => A[k] ? GOLD : '#f1ece6';
   // far (left) arm behind body
   let [e, h] = ik(gx - sh, sy, hl[0], hl[1], 108 * sc, 104 * sc, -1); tube([[gx - sh, sy], e, h], armCol('armL'), 34 * sc);
-  if (!p.pockets) mitten(h[0], h[1], 18 * sc, handCol('armL'));
+  const mL = p.mittL ?? p.mitts, mR = p.mittR ?? p.mitts;
+  spec._hl = h;
+  if (!p.pockets) { if (mL) ovenMitt(h[0], h[1], 1.0 * sc, Math.atan2(h[1] - e[1], h[0] - e[0]), 1); else mitten(h[0], h[1], 18 * sc, handCol('armL')); }
   if (p.cup) { shape(X, g => rrPath(g, h[0] - 18 * sc, h[1] - 52 * sc, 36 * sc, 46 * sc, 8), '#f4f1ea', 4); shape(X, g => g.rect(h[0] - 18 * sc, h[1] - 52 * sc, 36 * sc, 12 * sc), '#8a5a3c', 4); }
   // torso
   const torso = g => {
@@ -220,7 +254,7 @@ function person(t, gx, gy, spec, p = {}) {
   const hx = gx + (p.headX || 0) + jit * .5, hy = top - 100 * sc + (p.headDrop || 0);
   tube([[gx, top + 4], [hx, hy + 80 * sc]], LEG === RED ? '#efe6d6' : '#efe6d6', 13 * sc);
   head(hx, hy, r, p.headRot || 0, { hair: spec.hair, hairCol: spec.hairCol, helmet: A.helmet, blink: p.blink, mouth: p.mouth, mouthOpen: p.mouthOpen, mouthO: p.mouthO, wavy: p.wavy,
-    look: p.look, brow: p.brow, lid: p.lid, wide: p.wide, happy: p.happy, headphones: p.headphones, sweat: p.sweat, t, partyHat: p.partyHat });
+    look: p.look, brow: p.brow, lid: p.lid, wide: p.wide, happy: p.happy, headphones: p.headphones, sweat: p.sweat, t, partyHat: p.partyHat, faceplate: p.faceplate, eyes: p.eyes });
   // near (right) arm in front
   [e, h] = ik(gx + sh, sy, hr[0], hr[1], 108 * sc, 104 * sc, 1); tube([[gx + sh, sy], e, h], armCol('armR'), 36 * sc);
   if (p.pockets) return;
@@ -228,7 +262,7 @@ function person(t, gx, gy, spec, p = {}) {
     shape(X, g => rrPath(g, h[0] - 8 * sc, h[1] - 44 * sc, 16 * sc, 36 * sc, 8 * sc), handCol('armR'), 4);
     mitten(h[0], h[1], 20 * sc, handCol('armR'));
     if (p.snapR > 0) { X.save(); X.strokeStyle = `rgba(255,240,170,${p.snapR})`; X.lineWidth = 6; for (let i = 0; i < 6; i++) { const a = -Math.PI / 2 + (i - 2.5) * .45; X.beginPath(); X.moveTo(h[0] + Math.cos(a) * 40, h[1] - 40 + Math.sin(a) * 40); X.lineTo(h[0] + Math.cos(a) * (70 + 30 * p.snapR), h[1] - 40 + Math.sin(a) * (70 + 30 * p.snapR)); X.stroke(); } X.restore(); }
-  } else mitten(h[0], h[1], 20 * sc, handCol('armR'));
+  } else if (mR) ovenMitt(h[0], h[1], 1.05 * sc, Math.atan2(h[1] - e[1], h[0] - e[0]), -1); else mitten(h[0], h[1], 20 * sc, handCol('armR'));
   if (p.coverChest) { mitten(gx - 20 * sc, top + 100 * sc, 22 * sc); mitten(gx + 22 * sc, top + 92 * sc, 22 * sc);
     X.save(); X.globalCompositeOperation = 'lighter'; X.globalAlpha = .55 * p.coverChest; X.fillStyle = '#9fe4ff';
     for (const [a, l] of [[-2.75, 260], [-0.55, 300], [-0.15, 250], [0.5, 230], [2.6, 240], [3.0, 200]]) { X.beginPath(); X.moveTo(gx, top + 96 * sc); X.lineTo(gx + Math.cos(a - .05) * l, top + 96 * sc + Math.sin(a - .05) * l); X.lineTo(gx + Math.cos(a + .05) * l, top + 96 * sc + Math.sin(a + .05) * l); X.fill(); }
@@ -238,8 +272,9 @@ const HERO = { col: '#e4ae3c', colD: '#bf8a24', hair: 'curly' };
 
 /* Dave: bald, beard, round glasses, navy bathrobe, plaid pants, mug */
 function dave(t, gx, gy, p = {}) {
-  const br = Math.sin(t * 1.7 + 1) * 2.5, top = gy - 520 - br;
+  const br = Math.sin(t * 1.7 + 1) * 2.5 + (p.bounce || 0), top = gy - 520 - br;
   const N = '#2c3d6e', Nd = '#1f2c52', Nl = '#5d70a3';
+  if (!p.noShadow) floorShadow(gx, gy - 4, 175, .45);
   for (const dx of [-46, 46]) {
     const leg = g => rrPath(g, gx + dx - 26, gy - 200, 52, 196, 14);
     shape(X, leg, '#3e5a95', 0); X.save(); X.beginPath(); leg(X); X.clip(); X.strokeStyle = '#7192cc'; X.lineWidth = 4;
@@ -247,8 +282,9 @@ function dave(t, gx, gy, p = {}) {
     for (let x = gx + dx - 14; x < gx + dx + 30; x += 20) { X.beginPath(); X.moveTo(x, gy - 200); X.lineTo(x, gy); X.stroke(); } X.restore(); shape(X, leg, null);
     shape(X, g => g.ellipse(gx + dx + (dx > 0 ? 10 : -10), gy - 6, 40, 13, 0, 0, 7), '#25233c', 4);
   }
+  gx += Math.sin(t * .8 + 2) * 3 * (p.still ? 0 : 1);
   const hl = smRel('Dhl', t, p.handL || [gx - 150, gy - 250], gx, gy, .06);
-  p = Object.assign({}, p, { look: sm('Dlk', t, p.look || [5, 0], .07), headRot: sm('Drot', t, p.headRot || 0, .09), lid: sm('Dlid', t, p.lid ?? .25, .08) });
+  p = Object.assign({}, p, { look: sm('Dlk', t, p.look || [5, 0], .07), headRot: sm('Drot', t, p.headRot || 0, .09) + Math.sin(t * .6 + 1) * .02 * (p.still ? 0 : 1), lid: sm('Dlid', t, p.lid ?? .25, .08) });
   let [e, h] = ik(gx - 124, top + 60, hl[0], hl[1], 124, 118, -1); tube([[gx - 124, top + 60], e, h], Nd, 46);
   if (p.tapeRoll) { shape(X, g => g.arc(h[0], h[1] - 30, 30, 0, 7), '#b8b8c0'); shape(X, g => g.arc(h[0], h[1] - 30, 13, 0, 7), '#4a3d4c', 4); }
   mitten(h[0], h[1], 22);
@@ -265,7 +301,7 @@ function dave(t, gx, gy, p = {}) {
   tube([[gx, top + 6], [hx, hy + 90]], '#efe6d6', 14);
   head(hx, hy, 114, rot, { beard: 1, glasses: 1, blink: p.blink, look: p.look || [5, 0], lid: p.lid ?? .25, partyHat: p.partyHat, blowO: p.blowO, happy: p.happy, t });
   if (p.noMug) { const hr = smRel('Dhr', t, p.handR || [gx + 150, gy - 250], gx, gy, .06); [e, h] = ik(gx + 124, top + 60, hr[0], hr[1], 124, 118, 1); tube([[gx + 124, top + 60], e, h], N, 46); mitten(h[0], h[1], 23); return; }
-  const lift = p.lift || 0, tx = gx + 70, ty = mix(top + 178, hy + 70, lift);
+  const lift = p.lift || 0, tx = gx + 70, ty = mix(top + 178, hy + 112, lift);
   [e, h] = ik(gx + 124, top + 60, tx, ty, 124, 118, 1); tube([[gx + 124, top + 60], e, h], N, 46);
   X.save(); X.translate(h[0] - 40, h[1] - 10); X.rotate(-0.42 * lift);
   shape(X, g => rrPath(g, -32, -40, 64, 76, 12), '#f4f1ea'); X.beginPath(); X.arc(-32, -2, 22, 1.5, 4.7); X.lineWidth = 12; X.strokeStyle = OUT; X.stroke(); X.lineWidth = 6; X.strokeStyle = '#f4f1ea'; X.stroke();
