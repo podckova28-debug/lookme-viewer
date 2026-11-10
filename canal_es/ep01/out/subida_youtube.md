@@ -16,21 +16,21 @@ Alternativa para prueba A/B: ¿Qué pasaría si pudieras detener el tiempo con u
 ¿En qué escenas encontraste a Pepe? 🐦
 
 0:00 ¿Qué pasaría si…?
-0:28 El primer aplauso
-0:47 Regla #1
-1:11 Ocho horas más de sueño
-1:28 El examen de matemáticas
-1:55 El bigote de Nacho
-2:13 La lluvia congelada
-2:34 Los libros de Valeria
-2:59 El penal imposible
-3:22 El precio: una cana
-3:47 Nada funciona
-4:00 El cumpleaños de Nacho
-4:35 Pepe
-4:59 La maceta
-5:28 No eres el único
-6:03 Final
+0:27 El primer aplauso
+0:43 Regla #1
+1:07 Ocho horas más de sueño
+1:23 El examen de matemáticas
+1:49 El bigote de Nacho
+2:06 La lluvia congelada
+2:26 Los libros de Valeria
+2:51 El penal imposible
+3:13 El precio: una cana
+3:35 Nada funciona
+3:48 El cumpleaños de Nacho
+4:23 Pepe
+4:45 La maceta
+5:14 No eres el único
+5:48 Final
 
 Historia de ficción animada. Personajes, guion y animación originales.
 
@@ -47,4 +47,4 @@ qué pasaría si, que pasaria si pudieras detener el tiempo, detener el tiempo, 
 2. `short2_cumple.mp4`: Detienes el tiempo… y todos aplauden 😅 #shorts #quepasariasi
 3. `short3_giro.mp4`: ¿Y si no eres el único que detiene el tiempo? #shorts #quepasariasi
 
-Duración total: 6:21 · voz: vo_kokoro
+Duración total: 6:05 · voz: vo
