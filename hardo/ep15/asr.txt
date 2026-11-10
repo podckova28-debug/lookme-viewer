@@ -1,0 +1,27 @@
+01 1.0 | 
+02 0.973 | 
+03 0.841 | Number 10. The roofer. In 2025, Microsoft researchers looked at 200,000 real conversations with their AI assistant, and measured which jobs it could actually help with.  Roofers landed near the very bottom.
+04 0.974 | 
+05 0.96 | 
+06 0.97 | 
+07 0.949 | 
+08 1.0 | 
+09 0.778 | Number seven. The electrician. In the United States, jobs for electricians are projected  to grow 9% by 2034. That's about 77,000 new jobs.
+10 0.941 | 
+11 0.808 | 6. The Wind Turbine Technician  It's one of the fastest-growing jobs in America, with employment projected to grow almost  50% by 2034.
+12 1.0 | 
+13 1.0 | 
+14 0.967 | 
+15 1.0 | 
+16 1.0 | 
+17 0.933 | 
+18 0.969 | 
+19 0.857 | 2. The Nurse Practitioner  These are advanced nurses who can examine, diagnose, and treat patients.  It's the fastest-growing healthcare job in the United States, projected to grow about 40% by 2034.
+20 1.0 | 
+21 0.852 | 1. The Home Health Aid. These workers help older citizens people at home. Getting up,  washing, eating, taking medicine. They are the human side of care.
+22 0.864 | In the United States, this job is projected to add about 740,000 jobs by 2034.  That's more than any other occupation.  And nursing assistants ranked second in Microsoft's list of jobs least affected by AI.
+23 0.93 | So switched. Which jobs jobsed?  In the same study, interpreters and translators,  historians, writers and customer service.  And the World Economic Forum expects bank tellers,  data entry clerks and postal clerks to shrink the most.
+24 0.836 | That doesn't mean those people simply disappear. It means the tasks change.  The World Economic Forum still expects about 170 million new jobs worldwide by 2030 against  92 million lost.
+25 0.94 | 
+26 0.93 | That is still mostly true.  The job's a can't replace, need hands, unpredictable places, and people who trust you.  If your work has all three, a robot is not coming for it anytime soon.
+27 0.925 | Which job on this list would you pick? Tell us in the comments.  And if you like this, subscribe.  Next time, we'll look at the job's AI is already changing, right now.

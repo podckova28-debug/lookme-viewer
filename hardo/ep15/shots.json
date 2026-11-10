@@ -1,0 +1,264 @@
+{
+ "D": {
+  "RF": [
+   "6ecfa940-ce92-4f23-b30d-522fb81edd09",
+   "the roofer from the reference sheet (young Black woman, braids tied back, orange hard hat, grey t-shirt, tan work trousers, safety harness, tool belt)"
+  ],
+  "MT": [
+   "6ecfa940-ce92-4f23-b30d-522fb81edd09",
+   "the massage therapist from the reference sheet (middle-aged East Asian man, short black hair, plain navy tunic)"
+  ],
+  "PL": [
+   "6ecfa940-ce92-4f23-b30d-522fb81edd09",
+   "the plumber from the reference sheet (stocky white man in his fifties, grey stubble, red knitted beanie, blue overalls over a white t-shirt, big red pipe wrench)"
+  ],
+  "EL": [
+   "6ecfa940-ce92-4f23-b30d-522fb81edd09",
+   "the electrician from the reference sheet (young Latino man, yellow hard hat, high-visibility orange vest over a dark shirt, tool belt)"
+  ],
+  "WT": [
+   "6ecfa940-ce92-4f23-b30d-522fb81edd09",
+   "the wind turbine technician from the reference sheet (woman in her thirties, freckles, white climbing helmet, red one-piece work suit, full-body harness with carabiners)"
+  ],
+  "HZ": [
+   "6ecfa940-ce92-4f23-b30d-522fb81edd09",
+   "the hazardous materials removal worker from the reference sheet (bald man with a dark beard, white disposable coverall suit with hood, blue gloves, half-face respirator)"
+  ],
+  "PB": [
+   "c12e1803-d014-41f3-a9ee-974193de9f89",
+   "the phlebotomist from the reference sheet (young South Asian woman, black hair in a bun, light blue scrubs, purple gloves)"
+  ],
+  "EM": [
+   "c12e1803-d014-41f3-a9ee-974193de9f89",
+   "the embalmer and funeral director from the reference sheet (older Black man, short grey hair, grey moustache, dark charcoal suit, white shirt, dark tie)"
+  ],
+  "NP": [
+   "c12e1803-d014-41f3-a9ee-974193de9f89",
+   "the nurse practitioner from the reference sheet (white woman in her forties, short blonde bob, teal scrubs, white coat, stethoscope)"
+  ],
+  "HA": [
+   "c12e1803-d014-41f3-a9ee-974193de9f89",
+   "the home health aide from the reference sheet (Filipino woman in her fifties, black hair in a ponytail, lavender scrub top) and the elderly client from the reference sheet (very old white man, thin white hair, beige cardigan, walking cane)"
+  ]
+ },
+ "S": {
+  "1": [
+   null,
+   "a plain white space",
+   "A laptop screen glowing on a desk, with three floating sheets of paper coming out of it: an essay with wavy lines, a painted landscape, and a page with wavy lines in two colours. No people. No readable text.",
+   "Close-up of a worried young office worker (a woman with curly red hair and a green sweater) biting her nails while looking at her laptop.",
+   "The simple white humanoid service robot from the reference sheet stands in an office holding a stack of folders, looking around.",
+   "A big question mark made of glowing blue light over a row of empty office desks. No people."
+  ],
+  "2": [
+   null,
+   "a plain white space",
+   "Ten small figures of modern workers standing in a row on white: a roofer, a massage therapist, a plumber, an electrician, a wind turbine technician, a hazmat worker in a white suit, a phlebotomist, a funeral director in a dark suit, a nurse practitioner, and a home health aide, each drawn exactly once.",
+   "Close-up of a stack of research papers and a magnifying glass on a desk. Pages show only wavy lines and simple bar charts without numbers. No people.",
+   "The simple white humanoid service robot from the reference sheet scratching its head, confused. No people.",
+   "A wooden ladder leaning against a white wall, a hard hat hanging on it. No people."
+  ],
+  "3": [
+   "RF",
+   "a residential street with a house whose roof is being repaired, fading to white",
+   "She kneels on a steep roof, nailing down a row of shingles with a hammer, a ladder leaning against the gutter.",
+   "Close-up of a laptop showing a simple bar chart with ten bars of different heights and no numbers or text. No people.",
+   "A large pile of chat speech-bubble icons on white, hundreds of small empty rounded bubbles in soft colours. No people, no text.",
+   "Far view: a small figure in an orange hard hat on the roof of a suburban house under a pale sky."
+  ],
+  "4": [
+   "RF",
+   "a steep roof under a windy grey-white sky, fading to white",
+   "She climbs a tall ladder against the edge of a roof, a bundle of shingles on her shoulder, wind blowing her braids.",
+   "Close-up of her gloved hands placing a shingle and holding a nail. Exactly two hands.",
+   "The simple white humanoid service robot from the reference sheet stands at the bottom of a ladder looking up, unsure.",
+   "Rain clouds and a small rainbow above a half-finished roof. No people."
+  ],
+  "5": [
+   "MT",
+   "a calm light massage room with a massage table, a plant and folded towels, fading to white",
+   "He massages the shoulders of a client lying face-down on the massage table (a man with short brown hair, back covered with a white towel up to the shoulders).",
+   "Close-up of two hands pressing on a shoulder covered by a white towel. Exactly two hands.",
+   "He stands by the massage table, smiling, rolling up his sleeves, a client waiting under a towel.",
+   "A neat stack of white folded towels, a small bottle of oil and a candle. No people, no labels."
+  ],
+  "6": [
+   "MT",
+   "the calm massage room",
+   "A robotic arm on a stand clumsily pokes the back of a nervous client lying on a massage table (a woman with a dark ponytail), while the massage therapist watches with his arms crossed, amused.",
+   "Close-up of a simple diagram of back muscles on a pale card, drawn as soft red shapes, no labels. No people.",
+   "The client (a woman with a dark ponytail) sits up on the massage table looking relieved, smiling at the massage therapist.",
+   "A simple white robotic arm on a stand, switched off, drooping. No people."
+  ],
+  "7": [
+   "PL",
+   "a small kitchen with a sink cabinet open, fading to white",
+   "He lies on his back half inside the open cabinet under the kitchen sink, working on the pipes with his red wrench, a torch beside him.",
+   "Close-up of old twisted copper and grey pipes with a small drip of water. No people.",
+   "He kneels in the kitchen, looking at a wet patch on the wall, scratching his chin.",
+   "A cross-section of a house wall showing a tangle of old pipes behind it with a small leak. No people."
+  ],
+  "8": [
+   "PL",
+   "a narrow crawl space under an old house with wooden beams, light and airy, fading to white",
+   "He crawls through the narrow space under the house with a torch, looking at old pipes.",
+   "Close-up of his red pipe wrench gripping a rusty pipe joint, one hand. Exactly one hand.",
+   "Inside a clean factory, a row of identical orange robot arms assembling identical parts on a line. No people.",
+   "A ringing old-fashioned telephone on a workbench next to his toolbox. No people, no numbers."
+  ],
+  "9": [
+   "EL",
+   "a modern house under construction with open wall studs, fading to white",
+   "He stands at an open wall, connecting wires in an electrical box, a coil of wire over his shoulder.",
+   "Close-up of his hands stripping a wire with pliers. Exactly two hands.",
+   "A simple rising line chart drawn on white, an arrow going up, no numbers or text. No people.",
+   "A neat row of new electrical panels with switches, no labels. No people."
+  ],
+  "10": [
+   "EL",
+   "a large modern data center hall with tall server racks, light and bright, fading to white",
+   "He pulls thick cables along a cable tray between rows of server racks.",
+   "Close-up of an electric car charging station with a cable plugged in. No people, no text.",
+   "He kneels on a roof installing wiring for solar panels, the panels behind him.",
+   "A huge data center building seen from outside with power lines leading to it. No people."
+  ],
+  "11": [
+   "WT",
+   "a field of tall white wind turbines under a pale sky, fading to white",
+   "She stands at the foot of a giant wind turbine tower, looking up, helmet on, harness ready.",
+   "Close-up of her gloved hands clipping a carabiner onto a steel rope. Exactly two hands.",
+   "A simple rising line chart on white with a small wind turbine icon at the top, no numbers or text. No people.",
+   "Far view: a row of white wind turbines on green hills, blades turning. No people."
+  ],
+  "12": [
+   "WT",
+   "the top of a wind turbine high in the sky, clouds below, light and airy",
+   "She stands on top of the turbine housing, clipped to a safety rail, working on a panel, the giant blades beside her.",
+   "Close-up of her face, smiling in the wind, helmet strap under the chin.",
+   "She climbs a long ladder inside the narrow tower, seen from below.",
+   "The giant turbine housing with an open hatch, seen next to a small bus for scale on the ground far below. No people."
+  ],
+  "13": [
+   "HZ",
+   "an old empty building with peeling ceiling tiles, plastic sheets taped over the walls, light and airy, fading to white",
+   "He carefully removes an old ceiling panel and puts it into a heavy plastic bag, wearing his white suit and respirator.",
+   "Close-up of a sealed thick plastic bag and a yellow drum with a plain warning triangle shape and no text. No people.",
+   "He pulls the white hood over his head and adjusts his respirator before going in.",
+   "A doorway covered with plastic sheeting and tape, an old building behind it. No people."
+  ],
+  "14": [
+   "HZ",
+   "the old building with plastic sheeting",
+   "He stands in the plastic-wrapped room, holding a clipboard with blank lines, checking his work.",
+   "Close-up of his blue-gloved hands wiping a surface with a damp cloth. Exactly two hands.",
+   "Two other workers in the same white suits (one tall woman, one short young man, faces visible behind clear goggles) carry a sealed bag together.",
+   "A small simple bar chart on white with the shortest bar highlighted in orange, no numbers or text. No people."
+  ],
+  "15": [
+   "PB",
+   "a bright clinic room with a blood-draw chair, fading to white",
+   "She draws blood from the arm of a calm older man (grey hair, glasses, rolled-up sleeve) sitting in the blood-draw chair.",
+   "Close-up of a row of small blood tubes with coloured caps in a plastic rack. No people, no labels.",
+   "She smiles and chats with the older man as she ties the tourniquet on his arm.",
+   "The same simple bar chart on white, the very last bar tiny and highlighted, no numbers or text. No people."
+  ],
+  "16": [
+   "PB",
+   "the bright clinic room",
+   "She crouches at eye level with a nervous five-year-old boy (curly brown hair, striped t-shirt) who sits on his mother's lap (a woman with long black hair), showing him a small sticker before the test.",
+   "Close-up of her gloved fingers gently feeling for a vein on an arm. Exactly two hands.",
+   "The five-year-old boy smiles proudly, showing a small round plaster on his arm.",
+   "A small simple white robotic arm holding a needle, labelled nothing, standing unused in a corner. No people."
+  ],
+  "17": [
+   "EM",
+   "a calm, dignified funeral home room with soft light, flowers and a closed wooden casket, fading to white",
+   "He stands quietly beside the closed wooden casket, adjusting a white lily in a vase, calm and respectful.",
+   "Close-up of a simple bouquet of white lilies and a candle. No people.",
+   "He gently speaks to a grieving family (a middle-aged woman in black and her teenage son) in a quiet hallway.",
+   "A quiet stone chapel exterior with trees, fading to white. No people."
+  ],
+  "18": [
+   "EM",
+   "the calm funeral home",
+   "He carefully straightens his tie in front of a mirror, a calm and respectful expression.",
+   "Close-up of his hands neatly folding a white cloth. Exactly two hands.",
+   "The family (a middle-aged woman in black and her teenage son) leave the funeral home together, comforted. No other people.",
+   "The simple bar chart on white with several short bars highlighted, no numbers or text. No people."
+  ],
+  "19": [
+   "NP",
+   "a bright modern clinic examination room, fading to white",
+   "She listens to the chest of a young male patient (short black hair, sitting on the exam table) with her stethoscope.",
+   "Close-up of her stethoscope and a clipboard with blank lines on a desk. No people.",
+   "She points at a light box showing a simple X-ray of a chest to the same patient.",
+   "A simple rising line chart on white with a small heart icon, no numbers or text. No people."
+  ],
+  "20": [
+   "NP",
+   "the clinic examination room",
+   "She sits beside the patient, holding his hand and talking kindly, a tablet showing simple coloured blocks on the desk beside her.",
+   "Close-up of a tablet screen showing simple soft coloured blocks and a small warning triangle, no text, no numbers. No people.",
+   "She looks thoughtfully at the patient, making a decision, pen in hand.",
+   "The simple white humanoid service robot from the reference sheet stands at the back of the room holding a clipboard, waiting. No people."
+  ],
+  "21": [
+   "HA",
+   "a cosy small living room in an apartment, fading to white",
+   "She gently helps the elderly client get up from his armchair, his walking cane in his hand.",
+   "Close-up of a weekly pill organiser and a glass of water on a small table. No people, no letters.",
+   "She serves the elderly client a bowl of soup at a small kitchen table, both smiling.",
+   "The outside of a small apartment building in the morning, a woman in a lavender scrub top walking toward the door, seen from behind."
+  ],
+  "22": [
+   "HA",
+   "the cosy living room",
+   "She and the elderly client look at an old photo album together on the sofa, laughing.",
+   "Close-up of his hand and her hand resting together on the arm of the sofa. Exactly two hands.",
+   "A simple bar chart on white where the last bar is much taller than all the others, no numbers or text. No people.",
+   "A row of small houses and apartments with lit windows at dusk. No people."
+  ],
+  "23": [
+   null,
+   "a modern office, light and airy, fading to white",
+   "A young translator (a man with glasses and a beige sweater) at a desk with headphones and a laptop, beside the simple white humanoid service robot from the reference sheet doing the same task at the next desk.",
+   "Close-up of an old bank counter with a closed window and a small bell. No people, no text.",
+   "A stack of paper forms beside a computer keyboard in an empty office. No people, no readable text.",
+   "A row of empty post office counters. No people, no signs, no text."
+  ],
+  "24": [
+   null,
+   "a plain white space",
+   "A simple illustrated globe surrounded by small icons of different jobs: a hard hat, a stethoscope, a wrench, a laptop, a paint brush and a leaf. No people, no text.",
+   "Close-up of two hands, one human and one simple white robot gripper, holding the same pencil together.",
+   "A large crowd of small diverse workers walking forward together on white, seen from far away, all different.",
+   "A simple scale with two piles of small coloured blocks, the left pile taller than the right. No people, no numbers."
+  ],
+  "25": [
+   null,
+   "a plain white space",
+   "The simple white humanoid service robot from the reference sheet sits at a table winning a game of chess against itself, the board perfectly drawn.",
+   "Close-up of the robot's three-finger gripper failing to pick up a single egg, the egg rolling away.",
+   "The robot tries to walk across a messy room full of toys and slips on a ball.",
+   "A one-year-old toddler (curly black hair, yellow romper) easily stacking colourful blocks on a play mat, smiling."
+  ],
+  "26": [
+   null,
+   "a plain white space",
+   "A simple triptych on white: a pair of working hands with a wrench, a crooked old house, and two people shaking hands. No text.",
+   "Close-up of the plumber from the reference sheet (red knitted beanie, grey stubble) giving a thumbs up. Exactly one hand.",
+   "The simple white humanoid service robot from the reference sheet walks away into the distance, waving goodbye.",
+   "A toolbox, a stethoscope and a hard hat lying together on white. No people."
+  ],
+  "27": [
+   null,
+   "a plain white space",
+   "The roofer, the plumber, the electrician, the nurse practitioner and the home health aide from the reference sheets stand side by side and wave at the viewer, each drawn exactly once.",
+   "Close-up of three empty speech bubbles on white. No text.",
+   "The simple white humanoid service robot from the reference sheet waves at the viewer, holding a small toolbox.",
+   "A modern office with a desk where a laptop and a small robot figurine sit side by side. No people, no text."
+  ]
+ },
+ "C1": "6ecfa940-ce92-4f23-b30d-522fb81edd09",
+ "C2": "c12e1803-d014-41f3-a9ee-974193de9f89"
+}
