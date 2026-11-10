@@ -14,8 +14,8 @@ rowh = A.shape[0] / 3
 comps.sort(key=lambda c: (int(((c[0][0].start + c[0][0].stop) / 2) // rowh), c[0][1].start))
 os.makedirs(os.path.join(HERE, 'props'), exist_ok=True)
 for name, ((sy, sx), k) in zip(names, comps):
-    mm = ndimage.binary_dilation(lab == k, iterations=3)[sy.start - 3 if sy.start >= 3 else 0:sy.stop + 3, sx.start - 3 if sx.start >= 3 else 0:sx.stop + 3]
-    crop = A[max(0, sy.start - 3):sy.stop + 3, max(0, sx.start - 3):sx.stop + 3].copy()
-    crop[..., 3] = np.where(mm, (np.clip((crop[..., 3].astype(float) - 40) / 160, 0, 1) * 255), 0).astype(np.uint8)
+    core = ndimage.binary_dilation((lab == k) & (a > 128), iterations=2); ys, xs = np.where(core); y0, y1, x0, x1 = ys.min(), ys.max() + 1, xs.min(), xs.max() + 1
+    crop = A[y0:y1, x0:x1].copy()
+    crop[..., 3] = np.where(core[y0:y1, x0:x1], (np.clip((crop[..., 3].astype(float) - 110) / 110, 0, 1) * 255), 0).astype(np.uint8)
     Image.fromarray(crop).save(os.path.join(HERE, 'props', name + '.png'), optimize=True)
     print(name, crop.shape[1], 'x', crop.shape[0])

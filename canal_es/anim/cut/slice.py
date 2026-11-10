@@ -49,10 +49,11 @@ def main(sheet, name):
     comps = []
     for i in np.argsort(-sizes)[:8]:
         if sizes[i] < 1500: continue
-        mm = ndimage.binary_dilation(lab == i + 1, iterations=3)
+        # keep the solid part only: some sheets paint a soft white glow around each part, which would leave gaps at the joints
+        mm = ndimage.binary_dilation((lab == i + 1) & (a > 128), iterations=2)
         ys, xs = np.where(mm); y0, y1, x0, x1 = ys.min(), ys.max() + 1, xs.min(), xs.max() + 1
         crop = A[y0:y1, x0:x1].copy(); crop[..., 3] = np.where(mm[y0:y1, x0:x1], crop[..., 3], 0)
-        crop[..., 3] = (np.clip((crop[..., 3].astype(float) - 40) / 160, 0, 1) * 255).astype(np.uint8)
+        crop[..., 3] = (np.clip((crop[..., 3].astype(float) - 110) / 110, 0, 1) * 255).astype(np.uint8)
         m = crop[..., 3] > 128; sk = skin_mask(crop)
         comps.append(dict(img=crop, m=m, area=int(m.sum()), skin=float(sk.sum() / max(1, m.sum())), w=x1 - x0, h=y1 - y0, x=x0, y=y0))
     if len(comps) != 8: sys.exit(f'expected 8 parts, found {len(comps)}')

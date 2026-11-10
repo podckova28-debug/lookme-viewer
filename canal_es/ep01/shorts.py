@@ -18,6 +18,8 @@ SHORTS = [
     ('short2_cumple', S('s13')['start'], Lt('s13', 's13_14') + 3.0, 'DETIENES EL TIEMPO\\N...Y TODOS APLAUDEN'),
     ('short3_giro', S('s16')['start'], Le('s16', 's16_07') + .6, '¿Y SI NO ERES EL ÚNICO\\NQUE DETIENE EL TIEMPO?'),
     ('short4_maceta', S('s00')['start'], S('s00')['start'] + S('s00')['dur'], 'TODO SE CONGELÓ\\N...MENOS TÚ'),
+    ('short5_ciencia', Lt('s18', 's18_05') - .4, Le('s18', 's18_08') + .8, 'TU CABEZA ES MÁS VIEJA\\NQUE TUS PIES'),
+    ('short6_pepe', Lt('s17', 's17_05') - .3, S('s17')['start'] + S('s17')['dur'], 'NADIE SE MUEVE...\\NEXCEPTO LA PALOMA'),
 ]
 def ts(x): x = max(0, x); h = int(x // 3600); m = int(x % 3600 // 60); s = x % 60; return f'{h}:{m:02d}:{s:05.2f}'
 HEAD = """[Script Info]
