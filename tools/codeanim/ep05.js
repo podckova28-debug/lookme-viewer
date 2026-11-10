@@ -117,11 +117,11 @@ const SCENES = [
 /* 07: counters card (7 snaps, 4 windows) with Dave and a stack of tape */
 { id: '07', dur: 5.6, draw(t) {
   card(t, '#4a3a52', () => {
-    const n1 = Math.min(7, Math.floor(R(t, .4, 1.4, x => x) * 7)), n2 = Math.min(4, Math.floor(R(t, 1.6, 2.4, x => x) * 4));
+    const n1 = Math.min(7, Math.floor(R(t, .9, 1.95, x => x) * 7.99)), n2 = Math.min(4, Math.floor(R(t, 2.3, 2.95, x => x) * 4.99));
     X.save(); X.translate(150, 230); X.scale(pop(t, .3, 1), pop(t, .3, 1)); X.translate(-150, -230); fillR(X, 150, 230, 820, 190, 18, '#fde047', 8); text('6:00 PM', 190, 210, 64, '#fde047', 'left', 'Bangers', 8); text(`SNAPS: ${n1}`, 200, 360, 130, '#141014'); X.restore();
-    if (t > 1.5) { X.save(); X.translate(150, 470); X.scale(pop(t, 1.5, 1), pop(t, 1.5, 1)); X.translate(-150, -470); fillR(X, 150, 470, 820, 190, 18, '#fde047', 8); text(`WINDOWS: ${n2}`, 200, 600, 130, '#141014'); X.restore(); }
+    if (t > 2.15) { X.save(); X.translate(150, 470); X.scale(pop(t, 2.15, 1), pop(t, 2.15, 1)); X.translate(-150, -470); fillR(X, 150, 470, 820, 190, 18, '#fde047', 8); text(`WINDOWS: ${n2}`, 200, 600, 130, '#141014'); X.restore(); }
     X.save(); X.translate(1430, 990); X.scale(.85, .85); X.translate(-1430, -990); dave(t, 1430, 990, { noMug: 1, tapeRoll: 1, handR: [1580, 640], handL: [1300, 700], blink: blinkAmt(t, [2.8]) }); X.restore();
-    for (let i = 0; i < 4; i++) if (t > 3.2 + i * .25) { const y = 600 - i * 52; shape(X, g => g.ellipse(1640, y, 60, 26, 0, 0, 7), '#c9c4b8'); shape(X, g => g.ellipse(1640, y, 24, 10, 0, 0, 7), '#4a3a52', 4); }
+    for (let i = 0; i < 4; i++) if (t > 3.75 + i * .2) { const y = 600 - i * 52; shape(X, g => g.ellipse(1640, y, 60, 26, 0, 0, 7), '#c9c4b8'); shape(X, g => g.ellipse(1640, y, 24, 10, 0, 0, 7), '#4a3a52', 4); }
   });
   letterbox();
 } },
@@ -151,7 +151,7 @@ function party(t, mode) {
   X.drawImage(s.blur ? BGS.livingB : BGS.living, 0, 0);
   const dark = mode === 'dark' ? R(t, .3, .45) : (mode === 'onesnap' || mode === 'suit' || mode === 'wish') ? 1 : 0;
   const suitT0 = .4, A = mode === 'suit' ? armorState(t, suitT0) : (mode === 'wish' ? armorState(99, 0) : {});
-  const lit = mode === 'wish' ? 1 - R(t, 3.0, 3.15) : 1;
+  const lit = mode === 'wish' ? 1 - R(t, 3.6, 3.75) : 1;
   if (mode === 'suit' || mode === 'wish') windowCracks(mode === 'suit' ? R(t, .15, .3) : 1, LWIN);
   balloons(t, 250, 380);
   const music = mode === 'snapping' || (mode === 'suit' && t > 2.6) || mode === 'wish';
@@ -169,9 +169,9 @@ function party(t, mode) {
   }
   // Dave behind the table, party hat
   const dg = 960;
-  const wishEyes = mode === 'wish' && t > .4 && t < 2.6;
-  dave(t, dg, gy - 30, { partyHat: 1, blink: wishEyes ? 1 : blinkAmt(t, [2.2, 4.4]), blowO: mode === 'wish' ? bump(t, 2.7, 3.3) : 0, lift: mode === 'wish' ? R(t, 4.6, 5.1) * (1 - R(t, 5.8, 6.2)) : 0, steam: 1,
-    happy: mode === 'wish' && t > 3.3 && t < 4.5, look: mode === 'hands' ? [14, 0] : [5, 0] });
+  const wishEyes = mode === 'wish' && t > .4 && t < 3.2;
+  dave(t, dg, gy - 30, { partyHat: 1, blink: wishEyes ? 1 : blinkAmt(t, [2.2, 4.4]), blowO: mode === 'wish' ? bump(t, 3.3, 3.9) : 0, lift: mode === 'wish' ? R(t, 5.0, 5.4) * (1 - R(t, 5.85, 6.2)) : 0, steam: 1,
+    happy: mode === 'wish' && t > 3.9 && t < 4.9, look: mode === 'hands' ? [14, 0] : [5, 0] });
   partyTable(t, lit);
   // the hero on the right
   const pockets = mode === 'hands' || mode === 'snapping' || (mode === 'dark') || (mode === 'onesnap' && t < 1.0);
@@ -197,13 +197,13 @@ function party(t, mode) {
       for (let i = 0; i < 6; i++) { const a = t * .9 + i * Math.PI / 3; X.beginPath(); X.moveTo(hg, TOP(gy) + 96); X.lineTo(hg + Math.cos(a - .07) * 2200, TOP(gy) + 96 + Math.sin(a - .07) * 2200); X.lineTo(hg + Math.cos(a + .07) * 2200, TOP(gy) + 96 + Math.sin(a + .07) * 2200); X.fill(); } X.restore(); } }
   if (mode === 'onesnap') burst('SNAP!', hg + 230, ht - 170, .85, bump(t, 2.6, 3.2), .12);
   if (mode === 'suit') burst('CRASH!', 1560, 250, .9, bump(t, .15, .8), -.12);
-  if (mode === 'wish' && t > .5 && t < 2.8) {           // thought bubble: a brand-new window
-    const a = R(t, .5, .8) * (1 - R(t, 2.5, 2.8)); X.save(); X.globalAlpha = a;
+  if (mode === 'wish' && t > .5 && t < 3.4) {           // thought bubble: a brand-new window
+    const a = R(t, .5, .8) * (1 - R(t, 3.1, 3.4)); X.save(); X.globalAlpha = a;
     for (const [x, y, r] of [[1085, 300, 14], [1125, 262, 22]]) shape(X, g => g.arc(x, y, r, 0, 7), '#fff');
     shape(X, g => g.ellipse(1300, 200, 190, 110, 0, 0, 7), '#fff'); fillR(X, 1220, 140, 160, 120, 6, '#bfe3ff', 6);
     X.strokeStyle = OUT; X.lineWidth = 6; X.beginPath(); X.moveTo(1300, 140); X.lineTo(1300, 260); X.moveTo(1220, 200); X.lineTo(1380, 200); X.stroke();
     text('✦', 1390, 160, 50, '#fde047', 'center', 'serif', 5); X.restore(); }
-  if (mode === 'wish') { const f = bump(t, 2.8, 3.3); if (f > 0) { X.save(); X.globalAlpha = f * .7; X.strokeStyle = '#fff'; X.lineWidth = 6; for (let i = -1; i <= 1; i++) { X.beginPath(); X.moveTo(990, 560 + i * 20); X.lineTo(1000 + 40 * f, 600 + i * 30); X.stroke(); } X.restore(); } }
+  if (mode === 'wish') { const f = bump(t, 3.4, 3.9); if (f > 0) { X.save(); X.globalAlpha = f * .7; X.strokeStyle = '#fff'; X.lineWidth = 6; for (let i = -1; i <= 1; i++) { X.beginPath(); X.moveTo(990, 560 + i * 20); X.lineTo(1000 + 40 * f, 600 + i * 30); X.stroke(); } X.restore(); } }
   letterbox();
 }
 

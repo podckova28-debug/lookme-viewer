@@ -10,7 +10,7 @@ from scipy.signal import butter, sosfilt, resample_poly
 SR = 48000
 DUR = {'01': 6.2, '02': 4.2, '03': 10.6, '04': 5.4, '05': 3.8, '06': 8.0, '07': 5.6, '08': 5.0, '09': 5.4, '10': 4.2, '11': 4.4, '12': 6.8, '13': 6.2}
 START, acc = {}, 0.0
-for k, d in DUR.items(): START[k] = acc; acc += d
+for k, d in DUR.items(): START[k] = acc; acc += round(d * 24) / 24      # scenes are whole frames
 TOTAL = acc
 rng = np.random.default_rng(5)
 N = lambda s: int(round(s * SR))
@@ -159,7 +159,7 @@ def vo(sc, t, name, g=1.0):
 # narration (times line up with the action in ep05.js)
 VO = [('01', .3, 'vo_01.wav'), ('02', .6, 'vo_02.wav'), ('03', .2, 'vo_03a.wav'), ('03', 7.8, 'vo_03b.wav'), ('04', .4, 'vo_04.wav'), ('05', .5, 'vo_05.wav'),
       ('06', .3, 'vo_06a.wav'), ('06', 5.6, 'vo_06b.wav'), ('07', .4, 'vo_08.wav'), ('08', .5, 'vo_09.wav'), ('09', .3, 'vo_10.wav'), ('10', .8, 'vo_11.wav'),
-      ('11', .5, 'vo_12.wav'), ('12', 3.4, 'vo_13.wav'), ('13', .4, 'vo_14a.wav'), ('13', 1.9, 'vo_14b.wav')]
+      ('11', .5, 'vo_12.wav'), ('12', 3.4, 'vo_13.wav'), ('13', .2, 'vo_14a.wav'), ('13', 2.15, 'vo_14b.wav')]
 for sc, t, f in VO:
     if not os.path.exists(os.path.join(vo_dir, f)): print('MISSING', f); continue
     d = vo(sc, t, f); print(f'{f:12s} scene {sc} at {t:4.1f}s  ends {t + d:4.1f}s / {DUR[sc]}s' + ('  OVER' if t + d > DUR[sc] + .2 else ''))
@@ -193,10 +193,10 @@ fx('06', 1.6, engine(3.4, .35, .35), .5); fx('06', 2.1, snap()); fx('06', 2.6, s
 for k, d in [('legL', 0), ('legR', .12), ('chest', .28), ('armL', .44), ('armR', .56), ('helmet', .72)]:
     fx('06', 2.7 + d, whoosh(.4, 600, 3000), .35); fx('06', 2.7 + d + .42, clank(1.1 + d * .3), .5)
 fx('06', 3.85, clank(.8, 1.0), .8); fx('06', 4.6, hiss(.5), .5); fx('06', 5.0, engine(2.6, .5, .0) * np.linspace(1, .2, N(2.6)), .7)
-fx('07', .3, pop()); fx('07', 1.5, pop())
-for k in range(1, 8): fx('07', .4 + k / 7 * 1.0, tick())
-for k in range(1, 5): fx('07', 1.6 + k / 4 * .8, tick())
-for i in range(4): fx('07', 3.2 + i * .25, thunk())
+fx('07', .3, pop()); fx('07', 2.15, pop())
+for k in range(1, 8): fx('07', .9 + k / 7.99 * 1.05, tick())
+for k in range(1, 5): fx('07', 2.3 + k / 4.99 * .65, tick())
+for i in range(4): fx('07', 3.75 + i * .2, thunk())
 for k in range(3): fx('09', .75 + k * .5, snap(), .6)
 for k in range(9): fx('09', .75 + 1.5 + k * .5, snap(), .5); fx('09', .87 + 1.5 + k * .5, snap(), .35)
 fx('10', .3, power_down(), .8); fx('10', .3, click(), .8)
@@ -205,7 +205,7 @@ fx('12', .15, glass(), .9)
 for k, d in [('legL', 0), ('legR', .12), ('chest', .28), ('armL', .44), ('armR', .56), ('helmet', .72)]:
     fx('12', .4 + d, whoosh(.4), .35); fx('12', .4 + d + .42, clank(1 + d * .3), .5)
 fx('12', 1.3, power_up(), .7); put('amb', S('12', 1.6), hum(DUR['12'] - 1.6 + DUR['13'], .05)); fx('12', 2.4, click(), .8); fx('12', 2.42, thunk(), .9)
-fx('13', 2.75, blow(), 1.0); fx('13', 3.35, horn(), .7); fx('13', 4.75, slurp(), .9)
+fx('13', 3.35, blow(), 1.0); fx('13', 3.95, horn(), .7); fx('13', 5.15, slurp(), .9)
 
 # ducking: music/ambience/sfx dip under the narration
 v = L['vo']; env = np.convolve(np.abs(v), np.ones(N(.05)) / N(.05), 'same'); env = np.minimum(env / .05, 1)
