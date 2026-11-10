@@ -53,7 +53,7 @@ def sign_text(im, quad, text='ПРОДАМ', col=RED):
 
 SERIES = []     # заголовки всех обложек серии: кегль один на всех, как в шортсах (заполняется ниже из V)
 
-def series_size(maxw=640, size=84):
+def series_size(maxw=560, size=104):
     while size > 30:
         f = ImageFont.truetype(FONT, size)
         if all(f.getlength(''.join(t for t, _ in runs(l))) <= maxw for title in SERIES for l in title.split('\n')): return size
@@ -92,9 +92,11 @@ def finish(im):
 
 SIGNS = {}
 V = {          # имя обложки → (база, заголовок, центр наклейки x, y в 1280×720)
-    'hose': ('th_hose', 'Залил *воду*\nв бак?!', 330, 570),
-    'glass': ('th_glass', 'Машина\n*на воде*?', 360, 570),
-    'jar': ('th_jar', '*Водородный*\nгенератор?', 360, 150),
+    # v2 (10 нояб: «Текущие не цепляют вообще»): крупная эмоция, движение и контраст, 2–3 слова на наклейке.
+    # Прежние (hose, glass, jar) — в out_v1/.
+    'pump': ('th_pump', 'Бензин\n*не нужен*?', 300, 175),
+    'boom': ('th_boom', 'Мотор\n*на воде*?', 300, 560),
+    'secret': ('th_secret', 'Это\n*скрывают*?', 290, 165),
 }
 SERIES[:] = [v[1] for v in V.values()]
 

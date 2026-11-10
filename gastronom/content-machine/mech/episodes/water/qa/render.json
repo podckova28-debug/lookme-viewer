@@ -2,22 +2,22 @@
  "project": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/water",
  "video": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/water/water_1080p.mp4",
  "overlays": 43,
- "plan_total": 411.32,
+ "plan_total": 416.2,
  "stats": {
-  "duration": 411.33,
-  "lufs": -14.9,
+  "duration": 416.2,
+  "lufs": -14.4,
   "peak": -1.3
  },
  "issues": [
   {
    "level": "review",
    "code": "face",
-   "t": 294.0,
+   "t": 275.9,
    "what": "chip@F1",
-   "shot": "KF3",
-   "cover": 0.15863971419526976,
-   "image": "face_chip_F1_294.jpg",
-   "msg": "chip@F1 294.0 с (план KF3): закрывает 16 % головы"
+   "shot": "KF1",
+   "cover": 0.3268398268398268,
+   "image": "face_chip_F1_276.jpg",
+   "msg": "chip@F1 275.9 с (план KF1): закрывает 33 % головы"
   }
  ]
 }

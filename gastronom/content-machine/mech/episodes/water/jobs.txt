@@ -46,3 +46,6 @@ CL M_G3 111 aeabd9d6-ec88-4e76-a424-3b50a939b40f (KG3, 5)
 TH th_hose 90 458b2037-d490-4031-b985-4a3e712b8d21 (high)
 KF KF5 33 5f0bb633-cd05-4580-9f6b-7301e61ca603
 KF KG7 34 d00943a4-5491-43e7-9979-132b9f68aeff
+TH2 th_pump 1 32e40f4f-7dad-4fd5-b8ad-cf4238c4dd22 (medium, 10 нояб: «Параллельно дай другие обложку. Текущие не цепляют вообще»)
+TH2 th_boom 2 8415ec1d-6fa0-46de-8548-276115321630 (medium)
+TH2 th_secret 3 561598f5-9d34-4655-9c58-ee2ca530e92c (medium)

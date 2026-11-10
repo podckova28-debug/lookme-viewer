@@ -10,7 +10,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 FF = imageio_ffmpeg.get_ffmpeg_exe()
 W, H, FPS, SR = 1920, 1080, 30, 44100
-TEMPO = 0.8; LEAD = 0.10; TAIL = 0.20; XF = 0.5  # края реплик уже в vo/*.wav (pauses3: 30 мс до, 60 мс после)  # паузы короче, чем в sovhacks (0,25/0,45): «поработай с паузками»
+TEMPO = 1.0; LEAD = 0.10; TAIL = 0.20; XF = 0.5  # края реплик уже в vo/*.wav (pauses3: 30 мс до, 60 мс после)  # паузы короче, чем в sovhacks (0,25/0,45): «поработай с паузками»
 FONT = '/home/user/gastronom/content-machine/video/fonts/Nunito-Black.ttf'
 INK = (43, 33, 24); CREAM = (255, 248, 232)
 HERE = os.path.dirname(os.path.abspath(__file__)); P = lambda p: os.path.join(HERE, p)
