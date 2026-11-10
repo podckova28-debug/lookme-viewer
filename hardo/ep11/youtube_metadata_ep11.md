@@ -42,6 +42,11 @@ Chapters
 weird jobs, strangest jobs, unusual jobs, jobs that sound fake, odor judge, snake milker, golf ball diver, train pusher, chick sexer, fortune cookie writer, water slide tester, animated explainer
 
 ## Thumbnails
+Bold set (owner asked for more eye-catching covers; use these):
+A2: thumb_A2_sniff_this_1280x720.jpg — "PAID to sniff THIS."
+B2: thumb_B2_push_1280x720.jpg — "His job: PUSH."
+C2: thumb_C2_milks_snakes_1280x720.jpg — "He MILKS snakes."
+First set (too quiet):
 A: thumb_A_armpits_1280x720.jpg — "Paid to sniff armpits."
 B: thumb_B_train_pusher_1280x720.jpg — "Paid to push people."
 

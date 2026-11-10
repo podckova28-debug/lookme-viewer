@@ -67,3 +67,9 @@ If a frame comes back too empty or too dark, fix it by an edit pass with the fra
 ## 8. Checks before delivery
 `qa_check.py` (0 FAIL), white-share numbers, `qa_review_sheets.py`, then two independent checkers on full-resolution frames:
 mutations (limbs, fingers, duplicates) and continuity (picture vs narration, props, clocks, labels).
+
+## Thumbnails (owner feedback, ep11: "covers don't attract at all")
+- One big face with a strong, exaggerated emotion (grimace, squashed faces, deadpan next to danger), cropped close, filling ~60% of the frame.
+- 2-4 words max, huge, thick hand-lettered (PatrickHand with a stroke), black plus one red key word on a yellow marker strip.
+- Keep the text block left, clear of the bottom-right corner (YouTube duration badge); no arrow unless it lands on the object.
+- Script: `pipeline/thumb_bold.py` (make(src, crop, lines, out)).
