@@ -21,6 +21,7 @@ const LOOK = {
 function buildSet(k) {
   const pi = INK, pw = INK_W; INK = 'rgba(40,30,58,.62)'; INK_W = .55;   // thin, tinted lines: backgrounds recede, characters pop
   const s = SET_BUILDERS[k](); INK = pi; INK_W = pw;
+  if (s.raw) return s;   // painted plates (cutout.js) come lit already
   const g = s.bg.getContext('2d'), w = s.bg.width, L = LOOK[k] || {};
   g.save();
   // soft ambient occlusion where walls meet floor and ceiling

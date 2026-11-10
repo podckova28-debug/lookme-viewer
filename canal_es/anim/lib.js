@@ -153,9 +153,9 @@ function charGeom(c, p) {
   const breathe = p.still ? 0 : Math.sin((p.t || 0) * 2.2 + c.seed) * 2.5;
   const legL = c.legL || 200, hipY = -legL + sit * 92 * legL / 200 + bob - (p.jump || 0);
   const top = hipY - (c.torsoL || 262) + (p.slump || 0) * 14 - breathe;
-  return { sit, walk, ph, hipY, top, sh: 82 };
+  return { sit, walk, ph, hipY, top, sh: 82, rest: [c.restX || 116, c.restY || -34] };
 }
-const restHand = (s, G) => [s * 116, G.hipY - 34];   // a little elbow bend at rest
+const restHand = (s, G) => [s * G.rest[0], G.hipY + G.rest[1]];   // a little elbow bend at rest
 /* Arm physics: every hand target goes through a damped spring (per scene, character and side),
    so gestures accelerate, overshoot a little and settle instead of snapping between poses.
    Sequential rendering (render.js) integrates it; a jump in time or a frozen character snaps. */
@@ -175,8 +175,25 @@ function hand(g, e, h, r, col, squash = 0) {
   if (!squash) circ(g, tx, ty, r * .42, col, 4);
   shape(g, q => q.ellipse(h[0], h[1], r * (1 - .2 * squash), r * (1 + .1 * squash), 0, 0, 7), col);
 }
+/* hand targets -> springs -> clap contact -> IK; shared by the vector and the cut-out renderer */
+function solveArms(c, cname, p, G, shx, shy) {
+  const shL = [-shx, G.top + shy], shR = [shx, G.top + shy], walk = G.walk, ph = G.ph;
+  const swing = Math.sin(ph) * walk * 34, tt = p.t || 0, idle = p.still ? 0 : 1;
+  const iL = [Math.sin(tt * 1.7 + c.seed) * 3 * idle, Math.cos(tt * 1.3 + c.seed) * 2.5 * idle], iR = [Math.sin(tt * 1.5 + c.seed + 2) * 3 * idle, Math.cos(tt * 1.1 + c.seed + 1) * 2.5 * idle];
+  let hL = p.hL || [restHand(-1, G)[0] - swing * .35 + iL[0], restHand(-1, G)[1] + Math.abs(swing) * .12 + iL[1]];
+  let hR = p.hR || [restHand(1, G)[0] + swing * .35 + iR[0], restHand(1, G)[1] + Math.abs(swing) * .12 + iR[1]];
+  const clapT = Math.abs(hR[0] - hL[0]) < 60 && Math.abs(hR[1] - hL[1]) < 60;   // hands meeting: stiffer spring, no pass-through
+  const akey = (typeof SID !== 'undefined' ? SID : '') + ':' + (typeof cname === 'string' ? cname : 'x') + (p.key || '');
+  if (p.t != null && !p.noSpring) { hL = armSpring(akey + 'L', hL, tt, p.still, clapT ? 1.8 : 1); hR = armSpring(akey + 'R', hR, tt, p.still, clapT ? 1.8 : 1); }
+  const rH = p.handCol ? 23 : 19;
+  if (clapT && hR[0] - hL[0] < 2 * rH * .8) { const m = (hL[0] + hR[0]) / 2; hL = [m - rH * .8, hL[1]]; hR = [m + rH * .8, hR[1]]; }
+  const squash = clapT ? clamp(1 - (hR[0] - hL[0] - 2 * rH * .8) / (rH * .9)) * (Math.abs(hR[1] - hL[1]) < rH ? 1 : 0) : 0;
+  const [eL, hLf] = ik(shL[0], shL[1], hL[0], hL[1], 108, 104, -1), [eR, hRf] = ik(shR[0], shR[1], hR[0], hR[1], 108, 104, 1);
+  return { shL, shR, eL, hLf, eR, hRf, squash };
+}
 function drawChar(g, cname, p) {
   const c = typeof cname === 'string' ? CAST[cname] : cname, G = charGeom(c, p);
+  if (c.cut && typeof drawCut === 'function') return drawCut(g, c, cname, p, G);
   const S = (p.s || 1) * (c.s || 1);
   g.save(); g.translate(p.x || 0, p.y || 0); g.scale(S * (p.flip || 1), S); if (p.lean) g.rotate(p.lean);
   const { hipY, top, sit, walk, ph } = G;
@@ -198,19 +215,8 @@ function drawChar(g, cname, p) {
     }
   }
   // far arm (screen left = -1), behind the torso
-  const shL = [-G.sh, top + 46], shR = [G.sh, top + 46];
-  const swing = Math.sin(ph) * walk * 34, tt = p.t || 0, idle = p.still ? 0 : 1;
-  const iL = [Math.sin(tt * 1.7 + c.seed) * 3 * idle, Math.cos(tt * 1.3 + c.seed) * 2.5 * idle], iR = [Math.sin(tt * 1.5 + c.seed + 2) * 3 * idle, Math.cos(tt * 1.1 + c.seed + 1) * 2.5 * idle];
-  let hL = p.hL || [restHand(-1, G)[0] - swing * .35 + iL[0], restHand(-1, G)[1] + Math.abs(swing) * .12 + iL[1]];
-  let hR = p.hR || [restHand(1, G)[0] + swing * .35 + iR[0], restHand(1, G)[1] + Math.abs(swing) * .12 + iR[1]];
-  const clapT = Math.abs(hR[0] - hL[0]) < 60 && Math.abs(hR[1] - hL[1]) < 60;   // hands meeting: stiffer spring, no pass-through
-  const akey = (typeof SID !== 'undefined' ? SID : '') + ':' + (typeof cname === 'string' ? cname : 'x') + (p.key || '');
-  if (p.t != null && !p.noSpring) { hL = armSpring(akey + 'L', hL, tt, p.still, clapT ? 1.8 : 1); hR = armSpring(akey + 'R', hR, tt, p.still, clapT ? 1.8 : 1); }
-  const rH = p.handCol ? 23 : 19;
-  if (clapT && hR[0] - hL[0] < 2 * rH * .8) { const m = (hL[0] + hR[0]) / 2; hL = [m - rH * .8, hL[1]]; hR = [m + rH * .8, hR[1]]; }
-  const squash = clapT ? clamp(1 - (hR[0] - hL[0] - 2 * rH * .8) / (rH * .9)) * (Math.abs(hR[1] - hL[1]) < rH ? 1 : 0) : 0;
+  const { shL, shR, eL, hLf, eR, hRf, squash } = solveArms(c, cname, p, G, G.sh, 46);
   const armCol = c.sleeve || c.topD;
-  const [eL, hLf] = ik(shL[0], shL[1], hL[0], hL[1], 108, 104, -1), [eR, hRf] = ik(shR[0], shR[1], hR[0], hR[1], 108, 104, 1);
   const farArm = () => { tube(g, [shL, eL, hLf], armCol, 34); tubeHi(g, [shL, eL, hLf], armCol, 34); if (c.stripe) tube(g, [mix2(shL, eL, .2), eL, mix2(eL, hLf, .8)], c.stripe, 6, 0); hand(g, eL, hLf, p.handCol ? 22 : 18, p.handCol || HAND, squash); if (p.holdL) p.holdL(g, hLf[0], hLf[1]); };
   if (!p.armsFront) farArm();
   // torso
@@ -239,7 +245,7 @@ function drawChar(g, cname, p) {
   const hx = (p.hx || 0), hy = top - 100 + (p.hy || 0) + (p.slump || 0) * 14;
   tube(g, [[0, top + 4], [hx * .6, hy + c.r * .8]], SKIN, 13);
   // secondary motion: idle head sway and ponytail swing while walking (live characters only)
-  const live = !p.still && p.t != null, headIdle = live && p.rot == null ? Math.sin(tt * .8 + c.seed) * .025 : 0;
+  const tt = p.t || 0, live = !p.still && p.t != null, headIdle = live && p.rot == null ? Math.sin(tt * .8 + c.seed) * .025 : 0;
   const tail = p.tailSwing != null ? p.tailSwing : (live ? Math.sin(ph * 2) * .18 * walk + Math.sin(tt * 1.6 + c.seed) * .05 : 0);
   drawHead(g, c, hx, hy, (p.rot || 0) + headIdle, Object.assign({ blink: p.blink != null ? p.blink : (p.still ? 0 : autoBlink(p.t || 0, c.seed)) }, p, { rim: p.rim !== undefined ? p.rim : CUR_LOOK.rim, tailSwing: tail }));
   // far arm in front (for clapping, typing) and near arm
