@@ -49,7 +49,7 @@ Pepe nunca tuvo fantasma… hasta el final. ¿Qué crees que dijo Pepe? Las mejo
 4. `short4_pizza.mp4`: Respondes antes de que te pregunten 🍕 #shorts #quepasariasi
 5. `short5_pregunta.mp4`: Ya sabes lo que te va a preguntar #shorts #quepasariasi
 6. `short6_pepe.mp4`: En 5 segundos, Pepe va a hablar 🐦 #shorts #quepasariasi
-7. `short7_ciencia.mp4`: Tu ciudad puede ver el futuro (es real) #shorts #ciencia
+7. `short7_ciencia.mp4`: 3 cosas reales sobre ver el futuro 🧠 #shorts #ciencia
 
 Duración total: {mmss(T['total'])} · voz: {T['vo']}
 """

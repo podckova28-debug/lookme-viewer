@@ -20,7 +20,7 @@ SHORTS = [
     ('short4_pizza', S('s10')['start'], Le('s10', 's10_08') + .8, 'RESPONDES ANTES\\NDE QUE TE PREGUNTEN'),
     ('short5_pregunta', Lt('s14', 's14_02') - .3, S('s14')['start'] + S('s14')['dur'], 'YA SABES LO QUE\\NTE VA A PREGUNTAR'),
     ('short6_pepe', S('s16')['start'], S('s16')['start'] + S('s16')['dur'], 'EN 5 SEGUNDOS\\NPEPE VA A HABLAR'),
-    ('short7_ciencia', Lt('s17', 's17_05') - .4, Le('s17', 's17_06') + 1.0, 'TU CIUDAD PUEDE\\NVER EL FUTURO'),
+    ('short7_ciencia', Lt('s17', 's17_02') - .4, Le('s17', 's17_07') + 1.0, '3 COSAS REALES\\NSOBRE VER EL FUTURO'),
 ]
 def ts(x): x = max(0, x); h = int(x // 3600); m = int(x % 3600 // 60); s = x % 60; return f'{h}:{m:02d}:{s:05.2f}'
 HEAD = """[Script Info]
@@ -38,6 +38,15 @@ Style: End,Bangers,80,&H00FFFFFF,&H000000FF,&H001C1CE0,&H00000000,0,0,0,0,100,10
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 """
+def chunks(txt, most=8):
+    """split a long line into pieces of at most `most` words, preferring to break after punctuation"""
+    w = txt.split(); out, cur = [], []
+    if len(w) <= most + 1: return [txt]
+    for i, x in enumerate(w):
+        cur.append(x); left = len(w) - i - 1
+        if left and (len(cur) >= most or (len(cur) >= 4 and x[-1] in ',:;.')) and left >= 3: out.append(' '.join(cur)); cur = []
+    if cur: out.append(' '.join(cur))
+    return out
 for name, a, b, hook, *vert in SHORTS:
     dur = b - a; ev = [f'Dialogue: 0,{ts(0)},{ts(dur)},Hook,,0,0,0,,{hook}']
     for sid in T['order']:
@@ -45,8 +54,12 @@ for name, a, b, hook, *vert in SHORTS:
             st = S(sid)['start'] + t - a; en = st + d + .15
             if en < 0 or st > dur: continue
             txt = LINES[lid]['text'].replace('…', '...')
-            if who != 'narrador': txt = NAMES.get(who, who.upper()) + ': ' + txt
-            ev.append(f'Dialogue: 1,{ts(st)},{ts(min(en, dur))},Sub,,0,0,0,,{txt.upper()}')
+            parts = chunks(txt); n = sum(len(c) for c in parts); t0 = st
+            for k, c in enumerate(parts):   # long lines come up a few words at a time, timed by their length
+                t1 = en if k == len(parts) - 1 else t0 + (en - .15 - st) * len(c) / n
+                if k == 0 and who != 'narrador': c = NAMES.get(who, who.upper()) + ': ' + c
+                if t1 > 0 and t0 < dur: ev.append(f'Dialogue: 1,{ts(t0)},{ts(min(t1, dur))},Sub,,0,0,0,,{c.upper()}')
+                t0 = t1
     endpos = '\\pos(540,620)' if vert else ''
     ev.append(f'Dialogue: 2,{ts(dur - 2.2)},{ts(dur)},End,,0,0,0,,{{\\fad(200,0){endpos}}}VIDEO COMPLETO\\NEN EL CANAL')
     ass = os.path.join(OUT, name + '.ass'); open(ass, 'w', encoding='utf-8').write(HEAD + '\n'.join(ev) + '\n')
