@@ -63,7 +63,7 @@
  },
  {
   "img": "c08a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. The Speckled Monster exactly as on the attached sheet: a tall, straight-backed 18th-century nobleman with a big full-bottomed powdered white periwig of tight curls to the shoulders, a long pale powdered face covered with raised red speckles and pockmark scars, two small black beauty patches, cold narrow pale eyes and a thin cruel sneer; a dark plum-black velvet coat with tarnished gold embroidery, lace jabot, a gold lorgnette on a chain. Exactly ONE Speckled Monster, with exactly two arms and two hands. Haughty and evil. The Speckled Monster adjusts his lace jabot in front of a tall gilded mirror, admiring himself, vain.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. The Speckled Monster exactly as on the attached sheet: a tall, straight-backed 18th-century nobleman with a big full-bottomed powdered white periwig of tight curls to the shoulders, a long pale powdered face covered with raised red speckles and pockmark scars, two small black beauty patches, cold narrow pale eyes and a thin cruel sneer; a dark plum-black velvet coat with tarnished gold embroidery, lace jabot, a gold lorgnette on a chain. Exactly ONE Speckled Monster, with exactly two arms and two hands. Haughty and evil. The Speckled Monster stands alone in a candlelit dressing room, straightening his lace jabot with both hands, chin raised, admiring himself. No mirror, no reflections.",
   "refs": [
    "3ab41c2f-b46e-4a4c-abc5-c37ae21cf2e4"
   ]
@@ -109,8 +109,10 @@
  },
  {
   "img": "c13c",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. A comic diagram on aged parchment: a small rodent, an arrow, a camel, an arrow, a human silhouette; a brick-shaped virus doodle travelling along the arrows. No words. Any people are tiny distant stickman silhouettes only.",
-  "refs": []
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple clothes of ordinary people of the period. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. A comic diagram painted on aged parchment: a small rodent, an arrow, a camel, an arrow, a simple stickman with a white round head; a brick-shaped virus doodle travels along the arrows. No words.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
  },
  {
   "img": "c14a",
@@ -181,7 +183,7 @@
  },
  {
   "img": "c21a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. The Speckled Monster exactly as on the attached sheet: a tall, straight-backed 18th-century nobleman with a big full-bottomed powdered white periwig of tight curls to the shoulders, a long pale powdered face covered with raised red speckles and pockmark scars, two small black beauty patches, cold narrow pale eyes and a thin cruel sneer; a dark plum-black velvet coat with tarnished gold embroidery, lace jabot, a gold lorgnette on a chain. Exactly ONE Speckled Monster, with exactly two arms and two hands. Haughty and evil. The Speckled Monster walks along a glass display cabinet full of royal crowns in a dark gallery, admiring them through his lorgnette.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. The Speckled Monster exactly as on the attached sheet: a tall, straight-backed 18th-century nobleman with a big full-bottomed powdered white periwig of tight curls to the shoulders, a long pale powdered face covered with raised red speckles and pockmark scars, two small black beauty patches, cold narrow pale eyes and a thin cruel sneer; a dark plum-black velvet coat with tarnished gold embroidery, lace jabot, a gold lorgnette on a chain. Exactly ONE Speckled Monster, with exactly two arms and two hands. Haughty and evil. The Speckled Monster stands beside an open velvet-lined table full of royal crowns in a dark gallery, holding his lorgnette to his eye with one hand, the other hand behind his back. No glass, no reflections.",
   "refs": [
    "3ab41c2f-b46e-4a4c-abc5-c37ae21cf2e4"
   ]
@@ -248,7 +250,7 @@
  },
  {
   "img": "c30b",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple clothes of ordinary people of the period. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. An Ottoman-style room with carpets and cushions: a stickman lady in an 18th-century English gown and a turban-like headscarf watches as an old stickman woman healer kneels beside a small stickman boy, holding a needle to his arm.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple clothes of ordinary people of the period. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. An Ottoman-style room with carpets and cushions: a stickman lady in an 18th-century English gown stands watching, while a stickman woman healer in a simple headscarf kneels beside a small stickman boy sitting on a cushion, touching a small needle to his arm.",
   "refs": [
    "84427fc9-09ce-40e6-b032-6f2700874458"
   ]
@@ -286,7 +288,7 @@
  },
  {
   "img": "c32c",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. The Speckled Monster exactly as on the attached sheet: a tall, straight-backed 18th-century nobleman with a big full-bottomed powdered white periwig of tight curls to the shoulders, a long pale powdered face covered with raised red speckles and pockmark scars, two small black beauty patches, cold narrow pale eyes and a thin cruel sneer; a dark plum-black velvet coat with tarnished gold embroidery, lace jabot, a gold lorgnette on a chain. Exactly ONE Speckled Monster, with exactly two arms and two hands. Haughty and evil. The Speckled Monster stands in the snow at the edge of an army camp, arms crossed, scowling at a row of tents.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. The Speckled Monster exactly as on the attached sheet: a tall, straight-backed 18th-century nobleman with a big full-bottomed powdered white periwig of tight curls to the shoulders, a long pale powdered face covered with raised red speckles and pockmark scars, two small black beauty patches, cold narrow pale eyes and a thin cruel sneer; a dark plum-black velvet coat with tarnished gold embroidery, lace jabot, a gold lorgnette on a chain. Exactly ONE Speckled Monster, with exactly two arms and two hands. Haughty and evil. The Speckled Monster stands alone in the snow at the edge of an empty army camp, arms crossed, scowling at a row of canvas tents. No soldiers, nobody else.",
   "refs": [
    "3ab41c2f-b46e-4a4c-abc5-c37ae21cf2e4"
   ]
@@ -410,7 +412,7 @@
  },
  {
   "img": "c47a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. The Speckled Monster exactly as on the attached sheet: a tall, straight-backed 18th-century nobleman with a big full-bottomed powdered white periwig of tight curls to the shoulders, a long pale powdered face covered with raised red speckles and pockmark scars, two small black beauty patches, cold narrow pale eyes and a thin cruel sneer; a dark plum-black velvet coat with tarnished gold embroidery, lace jabot, a gold lorgnette on a chain. Exactly ONE Speckled Monster, with exactly two arms and two hands. Haughty and evil. The Speckled Monster hides behind a mud wall in a hot dusty village, peeking out nervously, holding his wig on with one hand.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. The Speckled Monster exactly as on the attached sheet: a tall, straight-backed 18th-century nobleman with a big full-bottomed powdered white periwig of tight curls to the shoulders, a long pale powdered face covered with raised red speckles and pockmark scars, two small black beauty patches, cold narrow pale eyes and a thin cruel sneer; a dark plum-black velvet coat with tarnished gold embroidery, lace jabot, a gold lorgnette on a chain. Exactly ONE Speckled Monster, with exactly two arms and two hands. Haughty and evil. The Speckled Monster hides behind a mud wall in an empty hot dusty village street, peeking out nervously, one hand holding his wig on, the other on the wall. Nobody else in the street.",
   "refs": [
    "3ab41c2f-b46e-4a4c-abc5-c37ae21cf2e4"
   ]
@@ -453,7 +455,7 @@
  },
  {
   "img": "c54a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple clothes of ordinary people of the period. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. A conference room: two stickman scientists in suits sit apart at a long table arguing, one pointing at a document, the other with arms folded.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple clothes of ordinary people of the period. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. A conference room: two stickman scientists in suits stand apart on either side of a long empty table, arguing, one pointing at a document, the other with arms folded.",
   "refs": [
    "84427fc9-09ce-40e6-b032-6f2700874458"
   ]

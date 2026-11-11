@@ -62,7 +62,7 @@ N('L01', "So who is he? Smallpox is caused by the variola virus. A big, brick-sh
   sh('c07a', W(), "An old brass microscope on a cluttered desk lit by a candle, glass slides, notebooks."),
   sh('c07b', C(.5, .5, 1.15), "View through a microscope: a round bright circular field on black with several large brick-shaped virus particles with rounded corners and a bumpy surface; one in the centre wears a tiny powdered wig. Cute but sinister."))
 K('L02', "I'm not big. I'm important.",
-  kg('c08a', C(.5, .45, 1.1), "The Speckled Monster adjusts his lace jabot in front of a tall gilded mirror, admiring himself, vain."))
+  kg('c08a', C(.5, .45, 1.1), "The Speckled Monster stands alone in a candlelit dressing room, straightening his lace jabot with both hands, chin raised, admiring himself. No mirror, no reflections."))
 N('L03', "He spread from person to person, through the air, and on clothes and bedding. About two weeks after catching him came a high fever, and then a rash that turned into hard, painful blisters, all over the face and body.",
   ch('c09a', W(), "A simple 18th-century cottage room: one stickman lies in bed under a blanket with a cold cloth on his forehead and small red dots on his white round face; a candle and a jug on a stool."),
   sh('c09b', W(), "A pile of folded linen sheets and a blanket on a wooden chair by a window, with a faint sinister reddish haze around them. Symbolic still life."))
@@ -79,7 +79,7 @@ N('L06', "The English called him: the speckled monster.",
 N('L07', "But where did he come from? His closest living relatives are poxviruses of animals: one found in African gerbils, and camelpox. So scientists think smallpox began as a virus of rodents that jumped into humans, probably somewhere in Africa or Asia, and adapted to us so well that it stopped needing animals at all.",
   sh('c13a', W(), "A small African gerbil sitting at the entrance of its burrow in dry savanna at dusk, acacia trees. Cute, no people."),
   sh('c13b', W(), "Two camels resting in desert dunes at sunset, a lone palm tree. No people."),
-  sh('c13c', WL(), "A comic diagram on aged parchment: a small rodent, an arrow, a camel, an arrow, a human silhouette; a brick-shaped virus doodle travelling along the arrows. No words."))
+  ch('c13c', WL(), "A comic diagram painted on aged parchment: a small rodent, an arrow, a camel, an arrow, a simple stickman with a white round head; a brick-shaped virus doodle travels along the arrows. No words."))
 K('L08', "I outgrew the gerbils. Humans had so much more potential.",
   kg('c14a', C(.5, .45, 1.1), "The Speckled Monster looks down his nose through his gold lorgnette at a tiny gerbil sitting on a velvet cushion, unimpressed."))
 N('L09', "To survive, he needed lots of people living close together. So he probably only became a big problem after the rise of farming, and the first cities.",
@@ -102,7 +102,7 @@ N('L13', "Over the centuries, he spread across Asia, Africa and Europe, and he d
 N('L14', "So did Queen Mary the Second of England, the young tsar Peter the Second of Russia, and the Holy Roman Emperor Joseph the First.",
   sh('c20a', WL(), "Three empty gilded thrones in a row in a dark palace hall, each with a crown resting on its seat, candles, long shadows."))
 K('L15', "I collect crowns. Every collector has a favourite piece.",
-  kg('c21a', W(), "The Speckled Monster walks along a glass display cabinet full of royal crowns in a dark gallery, admiring them through his lorgnette."))
+  kg('c21a', W(), "The Speckled Monster stands beside an open velvet-lined table full of royal crowns in a dark gallery, holding his lorgnette to his eye with one hand, the other hand behind his back. No glass, no reflections."))
 N('L16', "Rich women covered their scars with thick white make-up and little black patches of fabric on the face. Those patches became high fashion.",
   ch('c22a', C(.5, .5, 1.05), "An 18th-century dressing table with a mirror: a stickman lady in a tall powdered wig and a wide silk gown dabs white powder on her round white face; a small box of black beauty patches on the table."))
 
@@ -128,7 +128,7 @@ N('L24', "Variolation usually caused a milder illness. It still killed about one
   sh('c10a', STILL, text=[label('1–2 / 100', 960, 260, 100)]))
 N('L25', "In 1717, Lady Mary Wortley Montagu, the wife of the British ambassador in Constantinople, saw it done. Smallpox had scarred her face and killed her brother. She had her own son variolated, and brought the idea home to England.",
   sh('c30a', WL(), "Constantinople in 1717 across the Bosphorus: domes and minarets, sailing ships, a golden evening sky. People only as tiny distant figures.", text=cap('CONSTANTINOPLE · 1717')),
-  ch('c30b', W(), "An Ottoman-style room with carpets and cushions: a stickman lady in an 18th-century English gown and a turban-like headscarf watches as an old stickman woman healer kneels beside a small stickman boy, holding a needle to his arm."))
+  ch('c30b', W(), "An Ottoman-style room with carpets and cushions: a stickman lady in an 18th-century English gown stands watching, while a stickman woman healer in a simple headscarf kneels beside a small stickman boy sitting on a cushion, touching a small needle to his arm."))
 N('L26', "In Boston in 1721, an enslaved West African man named Onesimus told the minister Cotton Mather that he'd been variolated as a child back home. Mather spread the word. During that year's epidemic, about fourteen percent of the people who caught smallpox naturally died. Among those who were variolated, about two percent.",
   sh('c31a', WL(), "Colonial Boston harbour in 1721: wooden wharves, sailing ships, brick and clapboard houses, a white church steeple. People only as tiny distant figures.", text=cap('BOSTON · 1721')),
   ch('c31b', W(), "A colonial study: a stickman man in simple working clothes and a stickman minister in a black coat with white bands and a wig sit apart at a table, talking; a candle and books."),
@@ -140,7 +140,7 @@ K('L27', "Two percent. Still. Two percent of something is something.",
 N('L27b', "Smallpox even shaped the American Revolution. George Washington had survived it as a young man. In 1777, worried it would wreck his army, he ordered the soldiers of the Continental Army to be variolated. One of the first mass immunisation campaigns in history.",
   ch('c32b', W(), "A snowy 1777 army camp of canvas tents: a tall stickman general in a blue coat with gold epaulettes and a black tricorn hat stands outside a tent; two stickman soldiers in tricorns wait in line a few steps apart.", text=cap('GEORGE WASHINGTON · 1777')))
 K('L27c', "Washington. A very rude man.",
-  kg('c32c', C(.5, .45, 1.1), "The Speckled Monster stands in the snow at the edge of an army camp, arms crossed, scowling at a row of tents."))
+  kg('c32c', C(.5, .45, 1.1), "The Speckled Monster stands alone in the snow at the edge of an empty army camp, arms crossed, scowling at a row of canvas tents. No soldiers, nobody else."))
 N('L27d', "He had famous survivors too. The eleven-year-old Mozart caught smallpox in 1767, and recovered. And Abraham Lincoln came down with a mild case right after giving the Gettysburg Address.",
   ch('c32d', W(), "An 18th-century music room: a small stickman boy in a little powdered wig and a red coat sits at a harpsichord playing, candles and sheet music.", text=cap('MOZART · 1767')),
   ch('c32e', W(), "A very tall thin stickman in a black suit, a tall black stovepipe hat and a simple line-drawn chin beard stands at a wooden lectern outdoors, autumn trees behind.", text=cap('ABRAHAM LINCOLN · 1863')))
@@ -182,7 +182,7 @@ N('L40', "Instead of trying to vaccinate everyone, teams hunted for every single
 N('L41', "A simple tool helped too: a two-pronged needle that held exactly one dose, and could be used by almost anyone after a short lesson.",
   sh('c46a', C(.5, .5, 1.1), "Close-up still life: a small steel bifurcated needle with two short prongs lying next to a tiny glass vaccine vial on a white cloth. Simple, clean."))
 K('L42', "They hunted me. Village by village. Like a common criminal.",
-  kg('c47a', W(), "The Speckled Monster hides behind a mud wall in a hot dusty village, peeking out nervously, holding his wig on with one hand."))
+  kg('c47a', W(), "The Speckled Monster hides behind a mud wall in an empty hot dusty village street, peeking out nervously, one hand holding his wig on, the other on the wall. Nobody else in the street."))
 N('L43', "Even during the Cold War, the United States and the Soviet Union worked together on it. The Soviet Union donated huge amounts of vaccine.",
   sh('c48a', W(), "Two wooden crates of vaccine vials side by side on a dock, one stencilled with a red star, the other with stars and stripes, a small olive branch between them. No people, no words."))
 N('L44', "In 1975, a two-year-old girl in Bangladesh, Rahima Banu, became the last person to catch the deadly major form naturally. She survived.",
@@ -200,7 +200,7 @@ K('L48', "Eradicated. Such a strong word. I prefer: retired.",
 N('L49', "So is he really gone? Almost. Officially, live samples of the virus are kept in just two laboratories, one in the United States and one in Russia.",
   sh('c53a', W(), "A high-security laboratory corridor with two heavy steel freezer doors side by side, warning lights, cold blue light. No people.", text=[label('USA', 690, 860, 60), label('RUSSIA', 1230, 860, 60)]))
 N('L50', "For decades, scientists have argued about whether to destroy them for good. So far, nobody has.",
-  ch('c54a', W(), "A conference room: two stickman scientists in suits sit apart at a long table arguing, one pointing at a document, the other with arms folded."))
+  ch('c54a', W(), "A conference room: two stickman scientists in suits stand apart on either side of a long empty table, arguing, one pointing at a document, the other with arms folded."))
 K('L51', "Two freezers. That's my whole kingdom now. But I am very, very patient.",
   kg('c55a', C(.5, .45, 1.1), "The Speckled Monster stands in a frosty steel freezer room, frost on his wig and eyebrows, hands behind his back, smiling coldly."))
 N('L52', "Thousands of years of scarred faces. Hundreds of millions of lives. Beaten by a milkmaid's blister, a living chain of orphans, and doctors who hunted down every last case.",
