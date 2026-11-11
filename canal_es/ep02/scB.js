@@ -62,7 +62,7 @@ SC.s07 = (X, t) => {
   const ask0 = Lt('s07_05'), turn = Lt('s07_04') + .2, nb1 = Lm('s07_06', .55), nb2 = Lt('s07_08');
   const cam = shots(t, [], [
     { t: 0, cx: 960, cy: 560, z: 1.0, z2: 1.04, lock: 1 },
-    { t: Lt('s07_02') - .05, cx: 800, cy: 520, z: 1.8, z2: 1.9, lock: 1 },
+    { t: Lt('s07_02') - .05, cx: 860, cy: 470, z: 1.6, z2: 1.7, lock: 1 },
     { t: Lt('s07_03') - .05, cx: 960, cy: 560, z: 1.15, lock: 1 },
     { t: Lt('s07_04') - .05, cx: 1500, cy: 470, z: 1.9, z2: 2.0, lock: 1 },
     { t: ask0 - .05, cx: 1180, cy: 520, z: 1.35, z2: 1.4, lock: 1 },
@@ -89,7 +89,7 @@ SC.s07 = (X, t) => {
   if (ga > 0) st.fut(g => drawChar(g, 'profe', { x: 1440, y: FEET, s: S0, t, flip: -1, look: [-14, 4], brow: .6, open: .2 + .5 * Math.abs(Math.sin(t * 8)), hR: [180, -520] }));
   st.col(g => futEyes(g, 'tu', hp, ga));
   composeF(X, st, { ghost: ga, t });
-  if (ga > .2 && t < Lt('s07_03')) bubble(X, '¿6 × 7?', ...worldToScreen(cam, 1440, 280), ga, 60);
+  if (ga > .2 && t < Lt('s07_03')) { const [bx, by] = worldToScreen(cam, 1440, 280); bubble(X, '¿6 × 7?', Math.min(bx, W - 330), Math.max(by, 360), ga, 60); }   // kept clear of the frame edge and the HUD
   if (t > Lt('s07_03') - .1 && t < Lt('s07_04') + 1.5) bubble(X, '¡42!', ...worldToScreen(cam, 820, 400), R(t, Lt('s07_03') - .1, Lt('s07_03') + .2, back), 70);
   if (t > ask0 && t < Lt('s07_06')) bubble(X, '¿6 × 7?', ...worldToScreen(cam, 1500, 300), R(t, ask0, ask0 + .25, back), 64);
   futHUD(X, ga, hudN(t, Lt('s07_02') - .1, ask0));
@@ -100,9 +100,9 @@ SC.s08 = (X, t) => {
   const A = [Lm('s08_02', .55), Lm('s08_03', .55), Lm('s08_04', .6)];   // catch moments: pencil, juice, phone
   const sh = t < Lt('s08_02') - .1 ? 0 : t < Lt('s08_03') - .1 ? 1 : t < Lt('s08_04') - .1 ? 2 : 3;
   const cam = [
-    { cx: 960, cy: 560, z: 1.0 }, { cx: 880, cy: 640, z: 1.9 }, { cx: 880, cy: 640, z: 1.9 }, { cx: 1300, cy: 640, z: 1.45 },
+    { cx: 960, cy: 540, z: 1.0 }, { cx: 880, cy: 640, z: 1.9 }, { cx: 880, cy: 640, z: 1.9 }, { cx: 1250, cy: 640, z: 1.45 },
   ][sh];
-  if (t > Lt('s08_05') - .05) Object.assign(cam, { cx: 1450, cy: 480, z: 2.0 });
+  if (t > Lt('s08_05') - .05) Object.assign(cam, { cx: 1420, cy: 480, z: 2.0 });
   if (t > Lt('s08_06') - .05) Object.assign(cam, { cx: 1000, cy: 540, z: 1.1 });
   const st = stageF(cam); st.wld(g => drawSet(g, 'classroom'));
   st.col(g => drawPigeon(g, 260, 380, .38, { flip: 1, tilt: Math.sin(t * .8) * .12 }));
@@ -191,7 +191,7 @@ SC.s10 = (X, t) => {
     const mp = { x: 1190, y: FEET, s: S0, t, flip: -1, look: [-8, 14], mouth: .2, hL: [-130, -300], hR: [140, -330] };
     if (speaking(t, 's10_04')) { mp.open = talk(t, 's10_04'); mp.look = [-16, 0]; mp.brow = .7; mp.wide = .3; }
     if (speaking(t, 's10_06')) { mp.open = talk(t, 's10_06'); mp.look = [-16, 0]; mp.mouth = .4; }
-    if (t > Lt('s10_08') - .05) { mp.look = [-16, 0]; mp.wide = .7; mp.mouth = -.3; mp.brow = .9; const u = R(t, Lt('s10_08'), Lt('s10_08') + .4, back); mp.hR = [mix(140, 60, u), mix(-330, -560, u)]; mp.holdR = (g, x, y) => { line(g, [[x, y - 70], [x, y + 40]], '#9aa3ad', 10); line(g, [[x - 30, y - 30], [x + 30, y - 30]], '#9aa3ad', 10); }; }
+    if (t > Lt('s10_08') - .05) { mp.look = [-16, 0]; mp.wide = .7; mp.mouth = -.3; mp.brow = .9; const u = R(t, Lt('s10_08'), Lt('s10_08') + .4, back); mp.hR = [mix(140, 250, u), mix(-330, -480, u)]; mp.holdR = (g, x, y) => { for (const [c, w] of [['#3b2614', 20], ['#d9a94a', 11]]) { line(g, [[x, y - 110], [x, y + 50]], c, w); line(g, [[x - 42, y - 62], [x + 42, y - 62]], c, w); } }; }
     st.wld(g => drawChar(g, 'mama', mp));
     const hp = seated('tu', 760, { t, look: [14, 0], mouth: .1 });
     if (speaking(t, 's10_03')) { hp.open = talk(t, 's10_03'); hp.mouth = .4; }
