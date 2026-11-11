@@ -9,9 +9,9 @@ A shot either reuses an existing frame or defines a new one to generate (prompt 
 """
 import sys, json, os
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-P_SHEET, S_SHEET = '80552411-22ff-414f-8f40-9af41f66ebff', '93833ab4-ddb5-4cfe-8d32-66482b1f74a0'
+P_SHEET, S_SHEET = '80552411-22ff-414f-8f40-9af41f66ebff', '9185ef25-1343-4cea-8e45-133d20eb4894'  # stickmen_cast_nodoc.jpg (plague doctor removed)
 STYLE = "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette; warm light only from fire, candles, lanterns. Not gory."
-STICK = "People = STICKMEN as on the attached stickman sheet (white round heads, dot eyes, stick limbs, simple period clothes)."
+STICK = "EVERY human is a simple STICKMAN exactly like the attached stickman sheet: plain white round head, two dot eyes, simple mouth, NO nose, NO beard, NO realistic faces, thin black stick arms and legs, simple period clothes. NO plague doctors, NO beaked or bird masks anywhere."
 PLAGUE = "The Plague exactly as on the attached sheet: tall thin figure, tattered black-brown hooded cloak, shadowed face, small glowing white eyes, hooked grey nose, thin cruel smile, grey spotted bony hands, bronze clasp, red-eyed black rat on his shoulder; his trunk = battered leather trunk with city stickers."
 
 def W(): return [[.5, .5, 1.0], [.5, .5, 1.05]]                      # wide, slow push
