@@ -102,6 +102,18 @@
 [S27] Флоренция; писатель Боккаччо за столом.
 **NARRATOR:** In Florence, the writer Giovanni Boccaccio described people who ate breakfast with their families in the morning, and that same night dined with their ancestors in the next world.
 
+[S27a] Десять молодых флорентийцев на вилле за городом рассказывают друг другу истории; Чума подсматривает из-за колонны.
+**NARRATOR:** Boccaccio also wrote one of the most famous books of the Middle Ages about it, the Decameron: ten young people flee Florence to a villa in the countryside and pass the time telling each other a hundred stories. History's first quarantine binge-watch.
+**PLAGUE:** I wasn't invited. Rude.
+
+[S27b] Авиньон: Папа Климент VI сидит на троне между двумя огромными кострами, потеет.
+**NARRATOR:** Even the Pope took precautions. In Avignon, Pope Clement the Sixth followed his doctor's advice and spent his days sitting between two enormous fires, to purify the air. Strangely enough, it may have helped: fleas don't love extreme heat.
+**PLAGUE:** Honestly? Respect.
+
+[S27c] Подпись на экране: «The Black Death» — и рядом зачёркнутое «The Great Mortality».
+**NARRATOR:** By the way, nobody back then called it the Black Death. People called it the great pestilence, or the great mortality. The name "Black Death" only caught on centuries later.
+**PLAGUE:** Took them long enough to get my name right.
+
 [S28] ⚠ Пустая улица, закрытые ставни, колокол. Чумы в кадре нет, музыка стихает.
 **NARRATOR:** Towns lost a third of their people, half, sometimes more. For Europe as a whole, estimates run from about thirty to sixty percent of the population, in about five years. It was one of the deadliest disasters in human history.
 
@@ -166,11 +178,28 @@
 [S46] Ньютон под яблоней. На ветке сидит Чума и «случайно» роняет яблоко.
 **NARRATOR:** With nothing else to do, he worked on calculus, light and gravity. Quarantine productivity at its finest.
 
+[S46a] Деревня Иам в горах Дербишира, межевые камни с ямками, в которых лежат монеты в уксусе.
+**NARRATOR:** That same year, the plague reached Eyam, a small village in the north of England, reportedly in a bundle of cloth from London. And the villagers did something extraordinary. Led by their rector, they agreed to seal themselves off so the disease wouldn't spread to the towns around them. Neighbors left food at the village edge, and the villagers paid with coins left in holes in the boundary stones, soaked in vinegar.
+
+[S46b] ⚠ Тихий кадр: церковь Иама на закате, Чумы в кадре нет.
+**NARRATOR:** A large share of the village died. But the plague didn't get past them.
+
+[S46c] Детский хоровод «Ring a ring o' roses»; на кадр ложится штамп «MYTH».
+**NARRATOR:** And no, the nursery rhyme "Ring a ring o' roses" is probably not about the plague. That theory only appeared in the twentieth century, and most folklorists don't buy it.
+**PLAGUE:** I would never write something that catchy.
+
 [S47] Сентябрь 1666 года: Великий пожар, зарево над Лондоном.
 **NARRATOR:** Then, in September 1666, the Great Fire of London burned through much of the city. People said the fire had burned the plague away. Historians aren't so sure. The outbreak was already fading.
 
 [S48] Чума стоит в стороне с чашкой чая, невозмутимо.
 **PLAGUE:** I left on my own terms.
+
+[S48a] Марсель, 1720: корабль «Гран-Сент-Антуан» в порту; купцы спорят с карантинной службой, машут контрактами.
+**NARRATOR:** Western Europe's last big outbreak came in 1720, in Marseille. A merchant ship carrying her arrived, and the quarantine was cut short, reportedly so its valuable cargo could make it to a trade fair in time.
+
+[S48b] Карта Прованса; через горы строят длинную каменную стену.
+**NARRATOR:** Roughly half the city died. Authorities built a long wall of stone across the countryside to keep the plague in. After that, she mostly stopped visiting Western Europe.
+**PLAGUE:** They built me a *wall*. I've never felt so appreciated.
 
 ## 11:00 · The third pandemic
 
@@ -182,6 +211,10 @@
 
 [S51] Чума смотрит на бейдж со своим научным именем.
 **PLAGUE:** He named me after *himself*?
+
+[S51a] Сан-Франциско 1900 года, трамваи; губернатор на трибуне машет руками «ничего нет!», за его спиной стоит Чума.
+**NARRATOR:** In 1900 she even reached San Francisco. The governor of California insisted there was no plague at all, because it would be bad for business. There was. It took years, and a huge campaign against the city's rats, to get rid of her.
+**PLAGUE:** Denial is my favorite disinfectant.
 
 [S52] Лаборатория: Поль-Луи Симон с блохой под лупой (1898).
 **NARRATOR:** A few years later, Paul-Louis Simond showed how rat fleas spread her.
@@ -224,6 +257,11 @@
 - Великая чума Лондона 1665 года: около 100 тыс. погибших, примерно четверть города; Ньютон в Вулсторпе 1665–1666; пожар — сентябрь 1666 года.
 - Третья пандемия: Юньнань, середина XIX века → Гонконг 1894 года; Индия — 10+ млн погибших; Йерсен 1894 года (параллельно Китасато); Симон 1898 года; стрептомицин — 1940-е.
 - Сегодня: основная часть случаев — Мадагаскар и ДР Конго; в США несколько случаев в год.
+- «Декамерон»: 10 рассказчиков, 100 историй. Климент VI между двумя кострами (совет Ги де Шолиака). Название «Black Death» закрепилось лишь в XVI–XIX веках.
+- Иам, 1665–1666: добровольная изоляция под руководством ректора Уильяма Момпессона; монеты в уксусе в межевых камнях. Число погибших в источниках разное, поэтому в тексте «a large share».
+- «Ring a ring o' roses»: связь с чумой — поздняя теория XX века, фольклористы её отвергают.
+- Марсель, 1720: корабль «Гран-Сент-Антуан»; карантин сокращён ради ярмарки в Бокере; погибла примерно половина города; «чумная стена» (Mur de la Peste).
+- Сан-Франциско, 1900–1904: губернатор Генри Гейдж отрицал чуму.
 
 ## Производство
 
