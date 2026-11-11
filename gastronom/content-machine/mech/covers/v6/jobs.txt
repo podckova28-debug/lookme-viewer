@@ -1,0 +1,17 @@
+# Обложки v6 (11 нояб 2026): фото-базы gpt_image_2_5 medium 2k 16:9, по 1 кр
+winter_kettle a8651a3c-c67c-428d-87cc-a66a7e788273
+winter_roof 68476e00-6da1-40ea-aa9f-a2465e4b017c
+winter_face eb679094-e2b6-4638-95ed-c480bf0dd8ca
+sov_fire 46cfa2ff-01ec-400a-870a-2e664efaaebb
+sov_tights 9ea7054c-8bbd-4be6-9c87-ea3f739e0432
+sov_flatlay 84975469-d236-43f8-a372-6fc1071fdfe3
+whatif_sugar 4215cef7-ba21-450e-b50a-1b66300a56cd
+whatif_nozzle 4ae0390d-6c63-4a0c-9f76-b9b944ae2d83
+whatif_face 03e79847-a7fd-42d5-87e1-3d91fe5e84fc
+china_lot 8b75073f-5c4c-440e-a959-66ef48ca9044
+china_wait c38b8263-28a3-4eee-a514-694e8be1b534
+china_rust ceb4fa4b-b3f8-42ac-96b3-1e39c03b7a52
+imm_odo 9032beab-a55b-4b95-a3a0-b25f6966c75e
+imm_taxi 40d80492-92ce-430c-86d6-a3bb7768ef12
+imm_hammer 8da0e6be-4dff-4098-a95c-22f904a22739
+imm_taxi(v2, W124) 6657820f-67ba-4808-a5c8-17f1409a47b1
