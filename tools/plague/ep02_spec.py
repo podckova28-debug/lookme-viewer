@@ -50,14 +50,14 @@ N('C01', "London. The last night of August, 1854. In Soho, on Broad Street, peop
   sh('c01c', W(), "Morning in the same Victorian street: several doors marked with chalk crosses, shutters closed, a dropped bucket on the cobbles, fog. No people."))
 N('C02', "Within three days, a hundred and twenty-seven people are dead. The doctors blame the air. The smell. A bad cloud over the city.",
   ch('c02a', W(), "Two Victorian stickman doctors in top hats stand in the foggy street, one pointing up at a dark greenish cloud of smoke hanging over the rooftops, the other holding a handkerchief to his nose."),
-  sh('c02b', C(.5, .4, 1.15), "A greenish foul cloud drawn like a cartoon fog with a frowning face drifting over Victorian London chimneys at dusk."))
+  sh('c02b', C(.5, .4, 1.15), "A greenish foul cloud drawn like a cartoon fog with a frowning face drifting over Victorian London chimneys and rooftops at dusk, seen from above the roofs."))
 K('C03', "The smell! Honestly. I have never been so insulted.",
   kg('c03a', C(.5, .45, 1.1), "Medium shot: King Cholera stands in the foggy street at night, one hand on his chest, deeply offended, nose in the air, dripping water."))
 N('C04', "One doctor thinks they're wrong. He thinks the killer is hiding somewhere much closer. In the water pump on the corner.",
   ch('c04a', W(), "A single stickman doctor in a dark Victorian coat and top hat stands alone in the foggy street at night, staring thoughtfully at a cast-iron public water pump."),
   sh('c04b', C(.5, .5, 1.25), "Close-up of the spout of a cast-iron Victorian water pump at night, a single drop of water hanging from it, gas-lamp glow. Ominous."))
 K('C05', "Clever man. I hate him already.",
-  kg('c05a', C(.5, .45, 1.1), "King Cholera peeks out from behind the cast-iron water pump at night, grinning, narrowing his glowing eyes, one hand on the pump."))
+  kg('c05a', C(.5, .45, 1.1), "King Cholera leans out from behind the cast-iron water pump at night, grinning, narrowing his glowing eyes; his left arm rests along the top of the pump, his sleeve and hand clearly visible; his right hand holds his tin cup."))
 HOLD(4.6, kg('c06a', O(), "Title shot: King Cholera stands on the left third of the frame on a wet cobbled London street at night, under a gas lamp, holding his tin cup up like a toast; empty dark fog on the right side.",)
      | {'text': [label('CHOLERA', 1300, 330, 170, style='title', pop=True, at=.15, len=4.2), label('1817 – 2026', 1300, 480, 80, style='title', color=[150, 196, 186], at=.5, len=3.9)],
         'sfx': [{'kind': 'boom', 'at': .1, 'gain': .8}]})
@@ -73,29 +73,29 @@ N('L03', "He doesn't need rats or fleas. He travels by water. A sick person shed
   sh('c09a', W(), "A comic diagram painted on aged parchment: a sick stickman, an arrow to a cesspit, an arrow through the soil to a well, an arrow to a cup, an arrow to a second stickman; tiny comma-shaped doodles travel along the arrows. No words."),
   ch('c09b', C(.5, .5, 1.1), "A single Victorian stickman fills a tin cup from a street water pump and is about to drink, unaware; murky water."))
 N('L04', "Once inside, he makes a toxin that turns your gut into a pump. It pulls water out of the body and flushes it away. A patient can lose up to twenty litres of fluid in a single day.",
-  sh('c10a', W(), "A cartoon cutaway diagram on aged paper: a simple stylised gut drawn like a pipe with a little hand-pump attached, water being pumped out of it. Not gross, symbolic. No words."),
+  sh('c10a', W(), "A cartoon diagram on aged paper: a coiled copper pipe shaped like a simple stylised intestine, with a little brass hand-pump attached to it, water spurting out of the pipe into a bucket. Symbolic, not anatomical. No words."),
   sh('c10b', C(.5, .5, 1.1), "A row of twenty large glass water bottles lined up on a wooden floor, lit by a candle. Symbolic, still life.", text=ink('20 L', 1500, 220, 120)))
 K('L05', "Twenty litres. I do not do things by halves.",
   kg('c11a', C(.5, .45, 1.1), "King Cholera holds up his tin cup triumphantly like a trophy, water splashing from it, grinning."))
 N('L06', "People could be healthy at breakfast and dead by dinner. Their skin turned grey-blue and wrinkled from losing so much water. The Victorians had a name for it: the blue death.",
   ch('c12a', W(), "A Victorian breakfast table in the morning: one stickman in a waistcoat eats toast happily, a cup of tea and a jug of water beside him."),
   sh('c12b', W(), "The same Victorian breakfast table at night: the chair is empty and pushed back, the candle burnt low, the toast untouched. No people. Somber."),
-  sh('c12c', C(.5, .5, 1.1), "An old Victorian broadsheet poster on a brick wall with a drawing of a pale blue shadowy figure. Leave the poster without words.", text=ink('THE BLUE DEATH', 960, 300, 92)))
+  sh('c12c', C(.5, .5, 1.1), "A single blank, weathered paper poster pasted on a sooty brick wall under a gas lamp at night, its edges torn, a pale blue glow around it. Leave the poster completely blank.", text=ink('THE BLUE DEATH', 960, 300, 92)))
 N('L07', "Untreated, the worst cases killed around half of their victims. Today, with treatment, fewer than one in a hundred die. Hold that thought.",
   kg('c13a', C(.5, .45, 1.1), "King Cholera holds up a small set of brass weighing scales, smirking, one hand on his belly."),
-  sh('c13b', C(.5, .5, 1.05), "A glass of clean water and a small paper sachet on a simple wooden table, morning light. Calm, hopeful."))
+  sh('c13b', C(.5, .5, 1.05), "Still life: a single glass of clean water and a small paper sachet on a simple wooden table by a window, morning light. Calm, hopeful."))
 
 # ---- origin
 N('L08', "But where did he come from? His home is the brackish water where rivers meet the sea, especially the great delta of the Ganges, in what is now India and Bangladesh. There, Vibrio bacteria live quietly on the shells of tiny crustaceans called copepods.",
-  sh('c14a', WL(), "The vast Ganges delta seen from above at sunrise: winding brackish channels, mangrove forests of the Sundarbans, mist, wooden fishing boats. Muted colours."),
-  sh('c14b', W(), "An old parchment map of the Bay of Bengal and the Ganges delta drawn in ink with the river mouths highlighted. No words."),
+  sh('c14a', WL(), "The vast Ganges delta seen from high above at sunrise like a landscape painting: winding brackish channels, mangrove forests of the Sundarbans, mist, a few small empty wooden boats. Muted colours."),
+  sh('c14b', W(), "An old parchment map lying flat on a desk: the Bay of Bengal and the Ganges delta drawn in ink with the river mouths highlighted, a brass compass beside it. No words."),
   sh('c14c', C(.5, .5, 1.1), "Underwater cartoon close-up: a tiny shrimp-like copepod with one red eye drifting in green brackish water; little comma-shaped bacteria cling to its shell like passengers on a bus. Cute."))
 K('L09', "Meet Pod. Pod is family.",
   kg('c15a', C(.5, .45, 1.1), "King Cholera lifts the little glass jar from his watch chain to his face and gazes lovingly at the tiny copepod inside; the copepod waves a feeler."))
 N('L10', "And here's the twist. Most Vibrio cholerae are pretty harmless. The killer kind got its weapon from a virus. A virus that infects bacteria slipped into one of them and carried in the genes for the cholera toxin. So the deadliest diarrhoea in history is, basically, a bacterium that caught a virus.",
   sh('c16a', W(), "A cartoon on aged paper: a crowd of plain, harmless comma-shaped bacteria with sleepy friendly faces floating in water. No words."),
   sh('c16b', C(.5, .5, 1.1), "Cartoon: a tiny spidery bacteriophage virus, drawn like a lunar lander with a geometric head and thin legs, landing on a comma-shaped bacterium and injecting a glowing strand of DNA. Clear, simple, not scary."),
-  sh('c16c', W(), "Cartoon: the same comma-shaped bacterium now glowing pale green, wearing a tiny tin crown, sinister grin. No words."))
+  sh('c16c', W(), "Microscopic cartoon close-up on a dark background: a single comma-shaped bacterium with a whip-like tail, now glowing pale green, wearing a tiny tin crown, sinister grin. No words."))
 K('L11', "We don't talk about how I got my powers. It's a sensitive subject.",
   kg('c17a', C(.5, .45, 1.1), "King Cholera turns his face away and holds up one palm to the viewer, refusing to talk, offended, dripping."))
 N('L12', "Nobody knows exactly when that happened. Ancient texts from India may describe a cholera-like illness, and Portuguese visitors in the 1500s wrote about a disease that could kill a man within hours. But for centuries, he mostly stayed home, in Bengal.",
@@ -104,7 +104,7 @@ N('L12', "Nobody knows exactly when that happened. Ancient texts from India may 
 
 # ---- 1817
 N('L13', "Then, in 1817, everything changed. An outbreak started near the town of Jessore, in Bengal, and this time, it didn't stay put.",
-  sh('c19a', W(), "A small Bengal town in 1817 by a river, thatched houses, palm trees, monsoon clouds; ominous green-grey mist rising from the water.", text=cap('JESSORE, BENGAL · 1817')))
+  sh('c19a', W(), "A small Bengal town in 1817 seen from across the river at dusk: thatched houses, palm trees, monsoon clouds; ominous green-grey mist rising from the water.", text=cap('JESSORE, BENGAL · 1817')))
 N('L14', "The world was more connected than ever. Ships, armies and traders moved along the routes of the British Empire, and he rode along with them. Within a few years he reached Southeast Asia, China, Japan, the Persian Gulf and East Africa.",
   sh('c20a', W(), "A busy 1810s harbour with tall East India Company sailing ships, cargo crates and bales on the docks, morning light. People only as tiny distant figures."),
   ch('c20b', W(), "A column of three stickman soldiers in red coats with muskets on their shoulders marches along a dusty road, spaced apart."),
@@ -118,17 +118,17 @@ N('L16', "That was the first cholera pandemic. There would be seven.",
 # ---- 1830s: west
 N('L17', "The second one went west. Through Russia in 1830, and into Europe. In October 1831 he landed in the English port of Sunderland. Months later he was in London and Paris, and then across the Atlantic, in Quebec and New York.",
   sh('c23a', WL(), "An old parchment map of Europe drawn in ink with a dark stain spreading from Russia westward across the continent. No words.", text=ink('1830', 1650, 200, 110)),
-  sh('c23b', W(), "The English port of Sunderland in 1831: a grey North Sea harbour, coal ships, brick warehouses, overcast sky.", text=cap('SUNDERLAND · OCTOBER 1831')),
-  sh('c23c', W(), "New York harbour in 1832: sailing ships, the low skyline of brick buildings and church spires, choppy water, grey sky.", text=cap('NEW YORK · 1832')))
+  sh('c23b', W(), "The English port of Sunderland in 1831 seen from the sea: a grey North Sea harbour, moored coal ships, brick warehouses, a lighthouse, overcast sky.", text=cap('SUNDERLAND · OCTOBER 1831')),
+  sh('c23c', W(), "New York harbour in 1832 seen from the water: moored sailing ships, the low skyline of brick buildings and church spires, choppy water, grey sky.", text=cap('NEW YORK · 1832')))
 N('L18', "In Paris, around eighteen thousand people died in just a few months. In New York, so many people fled the city that whole streets went quiet.",
   sh('c24a', W(), "Paris in 1832: the river Seine, Notre-Dame in the mist, empty bridges, grey dawn. People only as tiny distant figures."),
   sh('c24b', WL(), "An empty New York street in 1832: brick houses with closed shutters, a lone cart, scattered papers blowing. No people."),
   ch('c24c', W(), "A horse-drawn cart piled with trunks and furniture leaves the city along a country road, a stickman family of three walking beside it."))
 N('L19', "And people were terrified in a very specific way. In Britain and Russia, crowds rioted, convinced that doctors were poisoning the poor, or that hospitals were collecting bodies for dissection.",
   ch('c25a', W(), "Three angry stickmen with torches and clubs stand in front of the closed iron gate of a Victorian hospital at night, shouting, spaced apart."),
-  ch('c25b', C(.5, .5, 1.1), "A nervous stickman doctor with a black bag hides behind a door, peeking out, sweating."))
+  ch('c25b', C(.5, .5, 1.1), "Only one figure: a nervous stickman doctor in a dark coat, holding a black bag in one hand, peeks out from behind a half-open door in a dim corridor, sweating."))
 K('L20', "I let them argue. It saves me time.",
-  kg('c26a', C(.5, .45, 1.1), "King Cholera leans against a lamppost at night, arms folded, watching distant torchlight with an amused grin."))
+  kg('c26a', C(.5, .45, 1.1), "King Cholera leans against a lamppost at night with both hands in his coat pockets, watching distant torchlight with an amused grin; his tin cup hangs from a chain on his waistcoat."))
 
 N('L20b', "And he didn't care who you were. Former US president James K. Polk died of cholera in 1849, just three months after leaving office. The composer Tchaikovsky, officially, died of cholera in 1893, after drinking a glass of unboiled water.",
   ch('c26b', W(), "A stickman gentleman with grey hair in an 1840s black suit and cravat stands on the porch of a white Southern mansion with columns, a little tired.", text=cap('JAMES K. POLK · 1849')),
@@ -141,10 +141,10 @@ N('L21', "So what did the experts think caused it? Bad air. The miasma theory sa
   ch('c27a', W(), "A Victorian lecture room: one stickman professor in a frock coat points with a cane at a big drawing of a green stinking cloud on a blackboard. No words on the board."),
   sh('c27b', C(.5, .5, 1.1), "Cartoon: a pile of rotting rubbish in a Victorian alley with a wavy green smell rising from it, drawn as a ghostly cloud with a mean face.", text=stamp('MIASMA', x=1400, y=230)))
 N('L22', "To be fair, Victorian London really did stink. Sewage ran into cesspits, and straight into the Thames. The same river that much of the city drank from.",
-  sh('c28a', WL(), "The river Thames in the 1850s: brown murky water, sewage outflow pipes pouring into it, old wooden wharves, factory chimneys, the dome of St Paul's in smog."),
+  sh('c28a', WL(), "The river Thames in the 1850s seen from a bridge: brown murky water, sewage outflow pipes pouring into it, old wooden wharves, moored barges, factory chimneys, the dome of St Paul's in smog."),
   ch('c28b', C(.5, .5, 1.1), "A single stickman water seller fills buckets straight from the murky Thames at a wooden jetty, a sewage pipe pouring in just upstream."))
 K('L23', "They blamed the smell. The smell! I am offended on a personal level.",
-  kg('c29a', C(.5, .45, 1.1), "King Cholera, outraged, points at a stinking pile of rubbish in an alley and then at himself, as if to say 'that's not me'."))
+  kg('c29a', C(.5, .45, 1.1), "One single scene: King Cholera stands in an alley next to a stinking pile of rubbish, outraged, pointing at it with one hand and pressing the other hand to his chest."))
 N('L24', "So cities scrubbed, burned tar and fumigated. None of it touched him. Because he wasn't in the air. He was in the cup.",
   ch('c30a', W(), "A Victorian street with a barrel of burning tar sending up thick black smoke; one stickman sweeps the cobbles with a broom, another sprinkles lime from a bucket, apart from each other."),
   sh('c30b', C(.5, .55, 1.25), "Close-up of a dented tin cup full of cloudy water on a wooden windowsill, gas light. Ominous still life."))
@@ -152,7 +152,7 @@ N('L24', "So cities scrubbed, burned tar and fumigated. None of it touched him. 
 # ---- John Snow
 N('L25', "Enter John Snow. A London doctor, famous for something else entirely. He was one of the first experts in anaesthesia, and he gave chloroform to Queen Victoria when she gave birth.",
   ch('c31a', C(.5, .45, 1.05), "Portrait shot: a stickman Victorian doctor with neat dark side-whiskers drawn as simple lines, a dark frock coat and cravat, standing calmly in his study with books and a small glass inhaler on the desk."),
-  sh('c31b', W(), "A small brown glass bottle of chloroform and a folded cloth on an elegant palace side table, a royal crest on the wallpaper. No people.", text=cap('JOHN SNOW · 1813–1858')))
+  sh('c31b', W(), "A small brown glass bottle of chloroform and a folded white cloth on an elegant palace side table with a vase of flowers. No people.", text=cap('JOHN SNOW · 1813–1858')))
 N('L26', "Snow didn't buy the bad-air idea. Cholera hit the gut, not the lungs, so he suspected people were swallowing it. In 1849 he published his theory. Almost nobody listened.",
   ch('c32a', W(), "The stickman doctor John Snow writes at his desk by lamp light, a stack of papers, a glass of water beside him that he eyes suspiciously."),
   ch('c32b', W(), "A Victorian meeting room: three stickman gentlemen in top hats sit with arms folded, unimpressed, one yawning, while a thin pamphlet lies ignored on the table."))
@@ -166,10 +166,10 @@ N('L28', "The exceptions told the same story. Workers at a nearby brewery mostly
   sh('c34b', W(), "A grim Victorian workhouse building with its own small private well in the courtyard, a bucket on the rim. No people."),
   ch('c34c', W(), "A stickman delivery boy carries a big stoneware jug of water up the path to a pretty house on a green hill outside London."))
 K('L29', "She had excellent taste. In water, anyway.",
-  kg('c35a', C(.5, .45, 1.1), "King Cholera raises his tin cup in a toast with a wicked grin, as if at a wine tasting, pinky finger out."))
+  kg('c35a', C(.5, .45, 1.1), "King Cholera alone in a dim parlour raises his tin cup in a toast with a wicked grin, as if at a wine tasting, pinky finger out."))
 N('L30', "On the seventh of September, Snow showed his evidence to the local officials. The next day, they removed the handle from the pump.",
   ch('c36a', W(), "A Victorian parish meeting room: the stickman doctor John Snow stands at a table spreading out his map in front of three seated stickman officials who lean in."),
-  ch('c36b', C(.5, .5, 1.1), "A stickman workman in a cap unscrews and lifts the iron handle off a cast-iron public water pump in a foggy Soho street; the stickman doctor watches from a few steps away.", text=cap('8 SEPTEMBER 1854')))
+  ch('c36b', C(.5, .5, 1.1), "A stickman workman in a flat cap and waistcoat lifts the iron handle off a cast-iron public water pump in a foggy Soho street; a few steps away watches the stickman doctor John Snow in a dark frock coat and top hat.", text=cap('8 SEPTEMBER 1854')))
 K('L31', "My pump. My beautiful pump.",
   kg('c37a', C(.5, .45, 1.1), "King Cholera hugs the handle-less cast-iron water pump in the fog, weeping theatrically, water streaming off his hat."))
 N('L32', "The outbreak was already fading by then, and the officials soon went back to blaming the air. Later, a local priest found the likely source: a baby's dirty nappies, washed into a cesspit just a few feet from the well.",
@@ -180,14 +180,14 @@ N('L33', "Snow died in 1858, before most people accepted that he was right.",
 
 # ---- Great Stink & sewers
 N('L34', "That same summer, the Thames smelled so bad that Parliament could barely work. The papers called it the Great Stink.",
-  sh('c40a', WL(), "The Houses of Parliament on the Thames in the hot summer of 1858, wavy green stench lines rising from the brown river, hazy sun.", text=stamp('THE GREAT STINK', x=1380, y=230, size=84)),
+  sh('c40a', WL(), "The Houses of Parliament seen from across the Thames in the hot summer of 1858, wavy green stench lines rising from the brown river, hazy sun.", text=stamp('THE GREAT STINK', x=1380, y=230, size=84)),
   ch('c40b', C(.5, .5, 1.1), "Inside Parliament: two stickman politicians in frock coats hold handkerchiefs over their noses, the windows hung with soaked curtains."))
 N('L35', "Finally, the government paid for a huge new sewer system, designed by the engineer Joseph Bazalgette. Over a thousand miles of sewers, carrying London's waste away, downstream.",
   ch('c41a', W(), "A Victorian engineer stickman with big side-whiskers drawn as simple lines and a top hat studies huge blueprints of tunnels spread on a table."),
   sh('c41b', WL(), "A vast brick sewer tunnel under construction in the 1860s, a long curved brick vault receding into darkness, scaffolding, lanterns. People only as tiny distant figures."),
   sh('c41c', W(), "A grand Victorian pumping station interior with ornate painted cast-iron columns and huge beam engines. No people."))
 N('L36', "And here's the irony. They built it to get rid of the smell. But by keeping sewage out of the drinking water, it did what all the fumigating never could. It cut him off.",
-  sh('c42a', C(.5, .5, 1.1), "Cutaway diagram on aged paper: a clean water pipe running to a house tap on top, and below it a separate big sewer pipe carrying waste away, clearly apart. No words."))
+  sh('c42a', C(.5, .5, 1.1), "Technical cutaway diagram on aged paper, like an engineer's drawing: under a street, a small clean water pipe on top running to a tap, and below it a separate big brick sewer tunnel carrying waste away. No words."))
 K('L37', "Defeated by plumbing. Do you know how humiliating that is?",
   kg('c43a', W(), "King Cholera sits dejected on the edge of a brick sewer outlet, chin in his hand, his crown slipping sideways, a small puddle around him."))
 
@@ -196,7 +196,7 @@ N('L38', "Across Europe, scientists were hunting for the actual culprit. In 1854
   ch('c44a', W(), "A stickman Italian scientist with round spectacles peers into a brass microscope in a sunlit study in Florence, the red cathedral dome visible through the window.", text=cap('FLORENCE · 1854')))
 N('L39', "Thirty years later, the German scientist Robert Koch found them again, in Egypt and then in Calcutta. And this time, the world paid attention.",
   ch('c45a', W(), "A stickman German scientist with small round glasses and a white coat holds up a glass test tube in a bright 1880s laboratory, triumphant.", text=cap('CALCUTTA · 1884')),
-  sh('c45b', C(.5, .5, 1.1), "An 1880s scientific drawing on paper of curved comma-shaped bacteria seen through a microscope, neat ink. No words."))
+  sh('c45b', C(.5, .5, 1.1), "An 1880s scientific plate on paper: a round microscope field drawn in neat ink full of curved comma-shaped bacteria. No words."))
 N('L40', "Not everyone was convinced. In 1892, an old-school professor, Max von Pettenkofer, asked for a flask of live cholera bacteria, and drank it. To prove they were harmless.",
   ch('c46a', C(.5, .45, 1.1), "An elderly stickman professor with a big bushy grey moustache drawn as simple lines, in a frock coat, raises a small glass flask of cloudy liquid to drink it, confident."))
 K('L41', "I respect the confidence.",
@@ -204,8 +204,8 @@ K('L41', "I respect the confidence.",
 N('L42', "He got a nasty case of diarrhoea, and survived. Nobody is quite sure why. He was lucky. Others weren't.",
   ch('c48a', W(), "The elderly stickman professor with a bushy moustache sits pale in an armchair wrapped in a blanket, clutching his stomach, a hot water bottle on his lap."))
 N('L43', "That same year, Hamburg was drinking unfiltered water from the river Elbe, and about eight and a half thousand people died. Next door, the town of Altona filtered its water. It was barely touched.",
-  sh('c49a', W(), "The port of Hamburg in 1892: warehouses, ships on the river Elbe, church spires, grey sky.", text=cap('HAMBURG · 1892')),
-  sh('c49b', W(), "Cutaway diagram on aged paper of a Victorian sand-filter bed: layers of sand and gravel, murky water on top, clean water coming out below. No words."))
+  sh('c49a', W(), "The port of Hamburg in 1892 seen from the river: brick warehouses, moored ships on the Elbe, church spires, grey sky.", text=cap('HAMBURG · 1892')),
+  sh('c49b', W(), "Technical cutaway diagram on aged paper of a Victorian sand-filter bed: layers of sand and gravel in a brick tank, murky water on top, clean water coming out of a pipe below. No words."))
 
 N('L43b', "He also changed how countries work together. In 1851, European states met in Paris for the first International Sanitary Conference, mostly because of him. It was the start of international cooperation on health that, a century later, led to the World Health Organization.",
   ch('c49c', W(), "A grand 1851 Paris conference hall with chandeliers: three stickman diplomats in different national uniforms sit apart around a long table with a big map of Europe and Asia.", text=cap('PARIS · 1851')))
@@ -214,7 +214,7 @@ K('L43c', "I brought the nations together. You're welcome.",
 
 # ---- the cure
 N('L44', "Clean water stopped him from spreading. But for the people already sick, the problem was simple. The body was running dry.",
-  sh('c50a', C(.5, .5, 1.1), "A cracked dry riverbed under a hot sun, a single small puddle left. Symbolic."))
+  sh('c50a', C(.5, .5, 1.1), "A cracked dry riverbed under a hot sun, a single small puddle left, a dead branch. Empty landscape, symbolic."))
 N('L45', "In the 1960s, researchers in Dhaka and Calcutta tested a treatment so simple it sounds like a joke. Clean water, a little salt and a little sugar, in the right amounts. Oral rehydration solution.",
   ch('c51a', W(), "A 1960s research hospital ward in Dhaka: one stickman doctor in a white coat measures salt and sugar with a small spoon into a jug of clean water on a table."),
   sh('c51b', STILL, "Three simple things on a clean wooden table, side by side with space between them: a glass jug of clean water, a small bowl of salt, a small bowl of sugar. Bright, hopeful.",
@@ -222,10 +222,10 @@ N('L45', "In the 1960s, researchers in Dhaka and Calcutta tested a treatment so 
 N('L46', "In 1971, during Bangladesh's war of independence, cholera swept through the refugee camps. A doctor named Dilip Mahalanabis ran out of IV drips, and gave out this drink instead. In other camps, around thirty percent of cholera patients died. In his, under four percent.",
   sh('c52a', WL(), "A large refugee camp in 1971 under monsoon clouds, rows of tents and makeshift shelters, mud paths. People only as tiny distant figures."),
   ch('c52b', W(), "A stickman doctor in a white coat hands a cup of drink to a stickman patient sitting up on a simple camp bed; big drums of water and sacks behind them."),
-  sh('c52c', STILL, "A simple hand-drawn bar chart on aged paper: one tall dark bar on the left, one very short bar on the right. No words.",
+  sh('c52c', STILL, "Close-up of a sheet of aged paper filling the frame, with a simple hand-drawn bar chart: one tall dark bar on the left, one very short bar on the right. No words.",
      text=[ink('30%', 640, 230, 80), ink('<4%', 1290, 640, 80, at=.8)]))
 N('L47', "The medical journal The Lancet later called it potentially the most important medical advance of the twentieth century.",
-  sh('c53a', C(.5, .5, 1.05), "An old printed medical journal lying open on a desk next to a glass of water, a pair of reading glasses on top. No readable words."))
+  sh('c53a', C(.5, .5, 1.05), "An old medical journal lying open on a desk, its pages showing only columns of grey text lines and no pictures, next to a glass of water and a pair of reading glasses."))
 K('L48', "Salt. Sugar. Water. That's it?",
   kg('c54a', C(.5, .45, 1.1), "King Cholera stares in disbelief at a small glass of rehydration drink on a table in front of him, his crown tilted, mouth open."))
 N('L49', "That's it. Today there are also cholera vaccines, and antibiotics for severe cases.",
@@ -260,7 +260,9 @@ def frames():
                 seen.add(s['img']); refs = []
                 if 'K' in s['refs']: refs.append(K_SHEET)
                 if 'S' in s['refs']: refs.append(S_SHEET)
-                out.append({'img': s['img'], 'prompt': STYLE + ' ' + s['prompt'], 'refs': refs})
+                pr = s['prompt']
+                if not refs: pr += ' No people and no human figures anywhere in the picture.' if 'tiny distant' not in pr else ' Any people are tiny distant stickman silhouettes only.'
+                out.append({'img': s['img'], 'prompt': STYLE + ' ' + pr, 'refs': refs})
     json.dump(out, open(os.path.join(ROOT, 'tools/plague/ep02_frames_todo.json'), 'w'), indent=1); print(len(out), 'frames')
 
 def beats():
