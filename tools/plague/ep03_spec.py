@@ -97,8 +97,8 @@ K('L12', "Even the Vikings had me. I was fashionable early.",
 
 # ---- crowns
 N('L13', "Over the centuries, he spread across Asia, Africa and Europe, and he didn't care about rank. Queen Elizabeth the First of England caught him in 1562 and survived. Louis the Fifteenth of France died of him in 1774.",
-  ch('c19a', W(), "A Tudor palace chamber: a stickman queen with a red Elizabethan wig, a big white ruff and a pale white face sits upright on a throne, candles around her.", text=cap('ELIZABETH I · 1562')),
-  ch('c19b', W(), "A dim royal bedchamber at Versailles: a grand canopy bed with heavy curtains drawn, a gilded crown on a cushion on a side table, a single candle.", text=cap('LOUIS XV · 1774')))
+  ch('c19a', W(), "A Tudor palace chamber with tapestries and candles. Only ONE figure in the whole picture: a stickman queen with a red Elizabethan wig, a big white ruff and a pale white round face sits upright on a throne. Nobody else.", text=cap('ELIZABETH I · 1562')),
+  sh('c19b', W(), "A dim, empty royal bedchamber at Versailles: a grand canopy bed with heavy curtains drawn, a gilded crown on a cushion on a side table, a single candle.", text=cap('LOUIS XV · 1774')))
 N('L14', "So did Queen Mary the Second of England, the young tsar Peter the Second of Russia, and the Holy Roman Emperor Joseph the First.",
   sh('c20a', WL(), "Three empty gilded thrones in a row in a dark palace hall, each with a crown resting on its seat, candles, long shadows."))
 K('L15', "I collect crowns. Every collector has a favourite piece.",
