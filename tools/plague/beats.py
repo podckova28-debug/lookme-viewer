@@ -11,7 +11,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 src = json.load(open(sys.argv[1]))
 GAP, LEAD = src.get('gap', .3), src.get('lead', .15)
 MAXS = src.get('max_shot', 99)
-DETAIL = [(.42, .45), (.58, .5), (.5, .42), (.38, .55), (.62, .45)]
+ZMAX, KEEP = src.get('zoom_max', 1.12), set(src.get('keep_zoom', []))   # keep_zoom: frames that need a crop (e.g. to hide a stray banner)
+DETAIL = [(.46, .48), (.54, .5), (.5, .46), (.45, .52), (.55, .48)]   # gentle: second half of a long shot drifts, it does not crop
 dur = lambda f: float(subprocess.check_output(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', os.path.join(ROOT, f)]))
 out = {k: src[k] for k in ('base', 'fade_in', 'music') if k in src}; out.update(shots=[], texts=[], vo=[], sfx=list(src.get('sfx_global', [])))
 t = src.get('start', .4)
@@ -25,12 +26,14 @@ for b in src['beats']:
     for s, w in zip(b['shots'], ws):
         sl = length * w / sum(ws)
         sh = {k: v for k, v in s.items() if k not in ('w', 'sfx', 'text')}
+        if sh['img'] not in KEEP:   # cap camera zoom: frames are composed wide, deep crops cut characters
+            sh['from'] = sh['from'][:2] + [min(sh['from'][2], ZMAX)]; sh['to'] = sh['to'][:2] + [min(sh['to'][2], ZMAX + .03)]
         n = max(1, int(sl / MAXS + .35)) if not s.get('text') else 1        # long shot -> wide + 1-2 detail cuts of the same frame
         for k in range(n):
             part = dict(sh); a0 = acc + sl * k / n; a1 = acc + sl * (k + 1) / n
             if k > 0:
-                x, y = DETAIL[(len(out['shots']) + k) % len(DETAIL)]; z = max(1.3, sh['from'][2] + .25)
-                part['from'] = [x, y, z]; part['to'] = [x + .01, y, z + .07]
+                x, y = DETAIL[(len(out['shots']) + k) % len(DETAIL)]; z = min(1.12, max(1.06, sh['from'][2] + .06))
+                part['from'] = [x, y, z]; part['to'] = [x + .015, y, z + .03]
             part['t0'] = round(a0, 3); part['t1'] = round(a1, 3); out['shots'].append(part)
         for e in s.get('sfx', []): out['sfx'].append({**{k: v for k, v in e.items() if k != 'at'}, 't': round(acc + e.get('at', 0), 3)})
         for tx in ([s['text']] if isinstance(s.get('text'), dict) else s.get('text', [])):

@@ -21,7 +21,7 @@ KING = ("King Cholera exactly as on the attached sheet: a stout pot-bellied Vict
 def W(): return [[.5, .5, 1.0], [.5, .5, 1.05]]
 def WL(): return [[.47, .5, 1.04], [.53, .5, 1.04]]
 def WR(): return [[.53, .5, 1.04], [.47, .5, 1.04]]
-def C(x, y, z=1.3): return [[x, y, z], [x, y, z + .08]]
+def C(x, y, z=1.3): z = 1 + (z - 1) * .4; return [[x, y, z], [x, y, z + .03]]              # close-up, kept mild: never crops much
 def O(): return [[.5, .5, 1.08], [.5, .5, 1.0]]
 STILL = [[.5, .5, 1.0], [.5, .5, 1.02]]
 

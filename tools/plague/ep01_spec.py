@@ -17,7 +17,7 @@ PLAGUE = "The Plague exactly as on the attached sheet: tall thin figure, tattere
 def W(): return [[.5, .5, 1.0], [.5, .5, 1.05]]                      # wide, slow push
 def WL(): return [[.47, .5, 1.04], [.53, .5, 1.04]]                  # slow pan right
 def WR(): return [[.53, .5, 1.04], [.47, .5, 1.04]]
-def C(x, y, z=1.4): return [[x, y, z], [x, y, z + .08]]              # close-up
+def C(x, y, z=1.3): z = 1 + (z - 1) * .4; return [[x, y, z], [x, y, z + .03]]              # close-up, kept mild: never crops much              # close-up
 def O(): return [[.5, .5, 1.08], [.5, .5, 1.0]]                      # pull out
 
 def sh(img, cam=None, prompt=None, refs='', text=None, sfx=None, w=1):
@@ -305,7 +305,7 @@ def frames():
 
 def beats():
     cold = json.load(open(os.path.join(ROOT, 'tools/plague/cold_open_beats.json')))
-    out = dict(cold); out['beats'] = list(cold['beats'])
+    out = dict(cold); out['beats'] = list(cold['beats']); out['keep_zoom'] = ['f26a']
     M = 'assets/plague/music/'
     out['music'] = [{'file': M + 'plague_a.mp3', 't0': 0.0, 't1': 232.0, 'gain': 1.0, 'fade_in': 2.0, 'fade_out': 4.0},
                     {'file': M + 'plague_b.mp3', 't0': 228.0, 't1': 470.0, 'gain': 1.0, 'fade_in': 4.0, 'fade_out': 4.0},
