@@ -243,6 +243,6 @@ def beats():
         else: out['beats'].append({'hold': t, 'shots': sl})
     json.dump(out, open(os.path.join(ROOT, 'tools/plague/ep03_beats.json'), 'w'), indent=1); print(len(out['beats']), 'beats')
 
-MUSIC = [(0, 'ALL', 'plague_a.mp3')]   # re-split by chapter once the voice-over (and real timings) exist
+MUSIC = [(0, 163, 'plague_a.mp3'), (159, 250, 'plague_b.mp3'), (246, 427, 'cholera_a.mp3'), (423, 'ALL', 'cholera_b.mp3')]   # origins | crowns+Americas | variolation+Jenner | Balmis+eradication
 
 {'lines': lines, 'frames': frames, 'beats': beats}[sys.argv[1]]()
