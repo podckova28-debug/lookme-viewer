@@ -387,6 +387,7 @@ class Stamp:
             ws = text.split(); best = None
             for i in range(1, len(ws)):
                 a, b = " ".join(ws[:i]), " ".join(ws[i:])
+                if b.startswith("—"): continue  # never start a line with a dash
                 m = max(tmp.textlength(a, font=R.font(240)), tmp.textlength(b, font=R.font(240)))
                 if best is None or m < best[0]: best = (m, [a, b])
             lines = best[1]
