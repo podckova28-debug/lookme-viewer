@@ -17,11 +17,11 @@ YouTube Studio → Probar y comparar: subir A, B y C juntas.
 ¿Qué pasaría si pudieras ver cinco segundos del futuro? Una historia animada sobre lo que ganarías y lo que perderías. Al final, la ciencia real detrás de la idea.
 
 0:00 Inicio
-1:36 Quemados
+1:35 Quemados
 3:34 Todo dos veces
-5:59 La pregunta
-7:15 Pepe
-7:43 ¿Algo de esto es real?
+6:00 La pregunta
+7:17 Pepe
+7:47 ¿Algo de esto es real?
 
 Animación original.
 
@@ -49,4 +49,4 @@ Pepe nunca tuvo fantasma… hasta el final. ¿Qué crees que dijo Pepe? Las mejo
 6. `short6_pepe.mp4`: En 5 segundos, Pepe va a hablar 🐦 #shorts #quepasariasi
 7. `short7_ciencia.mp4`: 3 cosas reales sobre ver el futuro 🧠 #shorts #ciencia
 
-Duración total: 9:01 · voz: vo_kokoro
+Duración total: 9:05 · voz: vo_final
