@@ -1,0 +1,63 @@
+id	role	sec	ratio	whisper
+C01	NARRATOR	10.3	0.96	Geneva. The 8th of May, 1980. The World Health Assembly makes an announcement that had never been made before and has never been made since.
+C02	NARRATOR	8.3	0.88	A disease that killed around 300 million people in the 20th century alone is gone. Not cured, not controlled, gone.
+C03	SMALLPOX	1.7	1.00	Gone is such an ugly word.
+C04	NARRATOR	6.9	0.92	Getting there took thousands of years, a milkmaid, a cow called Blossom, and 22 orphan boys on a ship.
+C05	SMALLPOX	1.0	1.00	I hate that cow.
+L01	NARRATOR	9.4	0.94	So who is he? Smallpox is caused by the Varai Ola virus, a big, brick-shaped virus, one of the largest that infect humans.
+L02	SMALLPOX	1.8	1.00	I'm not big, I'm important.
+L03	NARRATOR	12.7	1.00	He spread from person to person through the air and on clothes and bedding. About two weeks after catching him came a high fever and then a rash that turned into hard painful blisters all over the face and body.
+L04	NARRATOR	7.9	1.00	Around three in ten people who caught the classic form died. Survivors were often left with deep scars and some went blind.
+L05	SMALLPOX	2.6	1.00	I like to leave a little something to remember me by.
+L06	NARRATOR	2.7	1.00	The English called him the Speckled Monster.
+L07	NARRATOR	20.2	1.00	But where did he come from? His closest living relatives are poxviruses of animals, one found in African gerbils and camelpox. So scientists think smallpox began as a virus of rodents that jumped into humans, probably somewhere in Africa or Asia, and adapted to us so well that it stopped needing animals at all.
+L08	SMALLPOX	3.5	1.00	I outgrew the gerbils. Humans had so much more potential.
+L09	NARRATOR	8.7	1.00	To survive, he needed lots of people living close together, so he probably only became a big problem after the rise of farming and the first cities.
+L10	NARRATOR	11.4	0.87	The Egyptian pharaoh Ram sees the fifth, who died more than 3,000 years ago, as a rash of bumps on his mummified face that looks a lot like smallpox, though nobody can prove it.
+L10b	NARRATOR	11.9	0.90	The Antonine Plague, which swept across the Roman Empire from the year 165, may also have been him. It killed millions of people, and possibly the co-emperor Lou Shouse via us.
+L11	NARRATOR	13.1	0.96	what we can prove is newer. In 2020, scientists found smallpox DNA in the teeth of Viking-age skeletons from about 1400 years ago. By then, he was already all over Northern Europe.
+L12	SMALLPOX	3.3	1.00	Even the Vikings had me. I was fashionable early.
+L13	NARRATOR	14.0	0.92	Over the centuries, he spread across Asia, Africa, and Europe, and he didn't care about rank. Queen Elizabeth I of England caught him in 1562 and survived. Louis XV of France died of him in 1774.
+L14	NARRATOR	7.5	0.80	So did Queen Mary II of England, the young Tsar Peter II of Russia, and the Holy Roman Emperor Joseph I.
+L15	SMALLPOX	3.2	0.89	I collect crowns. Every collector has a favorite piece.
+L16	NARRATOR	8.3	0.94	Rich women covered their scars with thick white makeup and little black patches of fabric on the face. Those patches became high fashion.
+L17	NARRATOR	10.9	1.00	then came the darkest chapter. After 1492, Europeans reached the Americas and he came with them into a world where nobody had ever met him before.
+L18	NARRATOR	12.2	0.91	In 1520, as Spanish conquistadors fought the Aztecs, smallpox swept through their capital, Tenochtitilan, and killed the new emperor, Cuitláhuac, after only a few months on the throne.
+L19	NARRATOR	11.7	0.95	A few years later he reached the Inca Empire. The Emperor Huayna Ka Park died, probably of smallpox, and his sons fought a civil war over the throne just as the Spanish arrived.
+L20	NARRATOR	9.3	1.00	Smallpox, measles and other new diseases killed a huge share of the native population across the Americas. In some places, most of the people died.
+L21	NARRATOR	14.6	1.00	Long before vaccines, people noticed something. If you survived smallpox, you never got it again. So in China, India, Africa, and the Ottoman Empire, people tried something risky. They deliberately gave healthy people a mild dose.
+L22	NARRATOR	10.8	0.97	In China, they ground up dried scabs and blew the powder up your nose. In other places, they scratched a little pus from a sick person into the skin. It was called veereolation.
+L23	SMALLPOX	3.3	1.00	snorting me how rude and yet effective.
+L24	NARRATOR	8.1	0.90	Variolation usually caused a milder illness. It still killed about one or two people in 100, but that was far better than three in 10.
+L25	NARRATOR	16.2	0.93	In 1717, Lady Mary Wortley Montague, the wife of the British ambassador in Constantinople, saw it done. Smallpox had scarred her face and killed her brother. She had her own son, Vary O. Lated, and brought the idea home to England.
+L26	NARRATOR	22.3	0.85	In Boston in 1721, an enslaved West African man named Onus I. Muz told the minister Cotton Mather that he'd been veereo-lated as a child back home. Mather spread the word. During that year's epidemic, about 14% of the people who caught smallpox naturally died. Among those who were veereo-lated, about 2%.
+L27	SMALLPOX	4.0	0.62	2% still 2% of something is something
+L27b	NARRATOR	17.8	0.93	Smallpox even shaped the American Revolution. George Washington had survived it as a young man. In 1777, worried it would wreck his army, he ordered the soldiers of the Continental Army to be Vah Rai Olated, one of the first mass immunization campaigns in history.
+L27c	SMALLPOX	2.1	1.00	Washington a very rude man
+L27d	NARRATOR	12.8	0.97	he had famous survivors too. The 11-year-old Mozart caught smallpox in 1767 and recovered. And Abraham Lincoln came down with a mild case right after giving the Gettysburg address.
+L28	NARRATOR	10.1	0.96	Then came the cow. In the English countryside, people had a story. Milkmaids who caught cowpox, a mild disease from cows udders, never got smallpox.
+L29	NARRATOR	13.6	0.96	In 1796, the Dr. Edward Jenner tested it. He took fluid from a cowpox blister on the hand of a milkmaid, Sarah Nelms, who had caught it from a cow called Blossom and scratched it into the arm of an eight-year-old boy, James Phipps.
+L30	NARRATOR	6.6	0.93	Six weeks later, Jenna exposed the boy to real smallpox. Nothing happened. He was protected.
+L31	NARRATOR	9.3	0.92	Jenna called it, vaccination from vacca, the Latin word for cow. Glossom's hide still hangs in the library of St. George's Medical School in London.
+L32	SMALLPOX	3.5	1.00	I have been beaten by a cow. Put that on my gravestone.
+L33	NARRATOR	5.0	1.00	Testing it on a child would never be allowed today, but it worked and it spread fast.
+L34	NARRATOR	8.8	1.00	There was one problem. The vaccine had to be kept alive and in 1803 there were no fridges. So Spain came up with a solution that sounds unbelievable.
+L35	NARRATOR	13.8	0.94	The Balmese expedition sailed for the Americas with 22 orphan boys. Every week or so, the cowpox was passed from the arm of one boy to the next, a living chain that kept the vaccine fresh across the Atlantic.
+L36	NARRATOR	9.9	0.91	The boys were cared for on the voyage by E.A. Saabel Sendal, the head of their orphanage. The expedition went on to carry the vaccine as far as the Philippines and China.
+L37	SMALLPOX	4.3	1.00	Children, carrying my doom in a boat, I was not consulted.
+L38	NARRATOR	11.6	1.00	Over the next century and a half, vaccination pushed him out of Europe and North America. But in 1967 he still infected millions of people a year in Asia, Africa and South America.
+L39	NARRATOR	8.3	1.00	That year the World Health Organization launched an all-out campaign to wipe him off the planet. It was led by an American doctor, D. A. Henderson.
+L40	NARRATOR	14.2	1.00	Instead of trying to vaccinate everyone, teams hunted for every single case. When they found one, they vaccinated everyone around it, building a ring of immune people he couldn't cross. It was called ring vaccination.
+L41	NARRATOR	7.9	1.00	A simple tool helped too, a two-pronged needle that held exactly one dose and could be used by almost anyone after a short lesson.
+L42	SMALLPOX	4.3	1.00	They hunted me, village by village, like a common criminal.
+L43	NARRATOR	8.6	1.00	Even during the Cold War, the United States and the Soviet Union worked together on it. The Soviet Union donated huge amounts of vaccine.
+L44	NARRATOR	9.7	1.00	In 1975, a two-year-old girl in Bangladesh, Rahima Banu, became the last person to catch the deadly major form naturally. She survived.
+L45	NARRATOR	14.3	0.96	In October 1977, a hospital cook in Somalia, Ali Maomaline, caught the milder form. He was the last natural case in history. He recovered and later spent years working to wipe out polio.
+L46	NARRATOR	13.2	1.00	There was one more death. In 1978, a medical photographer, Janet Parker, caught smallpox from a laboratory in Birmingham in England and died. She was the last person known to die of smallpox.
+L47	NARRATOR	8.1	0.95	And on the 8th of May, 1980, the world declared smallpox eradicated, the only human disease ever wiped out.
+L48	SMALLPOX	4.2	1.00	Eradicated. Such a strong word. I prefer retired.
+L49	NARRATOR	10.2	1.00	So, is he really gone? Almost. Officially, live samples of the virus are kept in just two laboratories, one in the United States and one in Russia.
+L50	NARRATOR	5.6	1.00	For decades, scientists have argued about whether to destroy them for good. So far, nobody has.
+L51	SMALLPOX	5.2	1.00	two freezers. That's my whole kingdom now, but I am very, very patient.
+L52	NARRATOR	11.6	1.00	thousands of years of scarred faces, hundreds of millions of lives, beaten by a milkmaid's blister, a living chain of orphans and doctors who hunted down every last case.
+L53	NARRATOR	6.6	1.00	Next time, a flu that came home with the soldiers at the end of a world war and killed more people than the war itself.
