@@ -8,9 +8,13 @@ Alternativa para prueba A/B: ¿Qué pasaría si pudieras detener el tiempo con u
 (vidIQ: 84 y 83 puntos; el título simple «¿Qué pasaría si pudieras detener el tiempo?» saca 81. Los tres empiezan con la búsqueda exacta, 29,7 mil al mes.)
 
 ## Miniatura
-- A (principal): `miniatura_A.jpg`: «¿ELLA TAMBIÉN?» (los dos en color en el mundo congelado)
-- B: `miniatura_B.jpg`: «1 APLAUSO»
-- C: `miniatura_C.jpg`: «¿ÉL TAMBIÉN?» (Pepe; para probar después del primer día)
+Estilo del canal: ilustración brillante, mundo congelado en gris azulado, los que se mueven en color con luz dorada; título de dos líneas (blanca + amarilla), un poco inclinado. Se compone con `../../marca/miniatura.py`; el arte sin texto está en `miniaturas_arte/`.
+- A (principal): `miniatura_A.jpg`: «¿ELLA TAMBIÉN?»: él en shock, Renata detrás chasqueando los dedos, el mundo congelado.
+- B: `miniatura_B.jpg`: «TODO SE CONGELÓ»: el aplauso, la onda dorada, la lluvia detenida.
+- C: `miniatura_C.jpg`: «SOLO YO ME MUEVO»: la maceta congelada sobre la cabeza de un peatón.
+- D (reserva): `miniatura_D.jpg`: «¿ELLA TAMBIÉN?», otra pose.
+
+YouTube Studio → Probar y comparar: subir A, B y C juntas; YouTube elige la ganadora por tiempo de visualización.
 
 ## Descripción
 ¿Qué pasaría si pudieras detener el tiempo con un aplauso? Al principio es increíble: duermes ocho horas más, sacas diez en matemáticas y metes el gol imposible. Pero cada segundo detenido lo vives tú solo… y alguien más está dejando pistas en el mundo congelado.
@@ -46,7 +50,7 @@ Historia de ficción animada. Personajes, guion y animación originales.
 #quepasariasi #detenereltiempo #animacion
 
 ## Etiquetas
-qué pasaría si, que pasaria si pudieras detener el tiempo, detener el tiempo, pudieras detener el tiempo, qué pasaría si animación, historias animadas, superpoderes en la vida real, qué harías si, animación en español, pepe la paloma, cronostasis, dilatación del tiempo, relojes atómicos
+qué pasaría si pudieras detener el tiempo, que pasaria si pudieras detener el tiempo, y si pudieras detener el tiempo, detener el tiempo, qué pasaría si, que pasaria si, historias animadas, animación en español, qué harías si, superpoderes en la vida real, ponle que, pepe la paloma, cronostasis, dilatación del tiempo, relojes atómicos
 
 ## Comentario fijado
 Pepe nunca se pone gris. ¿En cuántas escenas del mundo congelado lo encontraste? 🐦 Y la pregunta de verdad: ¿quién es Pepe? Las mejores teorías salen en el próximo episodio.
