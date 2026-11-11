@@ -675,9 +675,8 @@
        "x": 622,
        "y": 562,
        "size": 46,
-       "style": "tag",
        "at": 0.3,
-       "maxw": 300
+       "maxw": 320
       },
       {
        "style": "dim",
@@ -754,18 +753,16 @@
        "x": 622,
        "y": 562,
        "size": 46,
-       "style": "tag",
        "at": 0,
-       "maxw": 300
+       "maxw": 320
       },
       {
        "text": "SEPTICEMIC",
        "x": 1020,
        "y": 562,
        "size": 46,
-       "style": "tag",
        "at": 0.3,
-       "maxw": 300
+       "maxw": 320
       },
       {
        "style": "dim",
@@ -828,27 +825,24 @@
        "x": 622,
        "y": 562,
        "size": 46,
-       "style": "tag",
        "at": 0,
-       "maxw": 300
+       "maxw": 320
       },
       {
        "text": "SEPTICEMIC",
        "x": 1020,
        "y": 562,
        "size": 46,
-       "style": "tag",
        "at": 0,
-       "maxw": 300
+       "maxw": 320
       },
       {
        "text": "PNEUMONIC",
        "x": 1434,
        "y": 562,
        "size": 46,
-       "style": "tag",
        "at": 0.3,
-       "maxw": 300
+       "maxw": 320
       },
       {
        "style": "dim",
@@ -3415,6 +3409,32 @@
      ]
     }
    ]
+  }
+ ],
+ "music": [
+  {
+   "file": "assets/plague/music/plague_a.mp3",
+   "t0": 0.0,
+   "t1": 232.0,
+   "gain": 1.0,
+   "fade_in": 2.0,
+   "fade_out": 4.0
+  },
+  {
+   "file": "assets/plague/music/plague_b.mp3",
+   "t0": 228.0,
+   "t1": 470.0,
+   "gain": 1.0,
+   "fade_in": 4.0,
+   "fade_out": 4.0
+  },
+  {
+   "file": "assets/plague/music/plague_a.mp3",
+   "t0": 466.0,
+   "t1": "ALL",
+   "gain": 1.0,
+   "fade_in": 4.0,
+   "fade_out": 5.0
   }
  ]
 }

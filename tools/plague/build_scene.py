@@ -78,12 +78,12 @@ def draw_item(it, k):
         T = T.rotate(it.get('rot', -6), resample=Image.BICUBIC, expand=True)
         L.alpha_composite(T, (int(x - T.width / 2), int(y - T.height / 2)))
         return L
-    # plate
+    # plate (default caption): cream letters on a soft dark shadow, no box
     col = tuple(it.get('color', CREAM)); sw = max(1, size // 40)
-    px, py = int(size * .55), int(size * .28)
-    box = (bx[0] - px, bx[1] - py, bx[2] + px, bx[3] + py)
-    d.rectangle(box, fill=(16, 12, 10, 215))
-    g = max(2, size // 30); d.rectangle((box[0] + g * 3, box[1] + g * 3, box[2] - g * 3, box[3] - g * 3), outline=GOLD + (230,), width=g)
+    S = Image.new('RGBA', (W, H), (0, 0, 0, 0)); sd = ImageDraw.Draw(S)
+    sd.text((x + 2, y + 3), txt, font=f, fill=(0, 0, 0, 235), anchor=anc, stroke_width=sw + max(6, size // 5), stroke_fill=(0, 0, 0, 235))
+    L = Image.alpha_composite(S.filter(ImageFilter.GaussianBlur(max(6, size // 5))), L); d = ImageDraw.Draw(L)
+    d.text((x, y), txt, font=f, fill=col + (255,), anchor=anc, stroke_width=sw + 1, stroke_fill=(20, 14, 10, 255))
     d.text((x, y), txt, font=f, fill=col + (255,), anchor=anc, stroke_width=sw, stroke_fill=col + (255,))
     return L
 
@@ -212,10 +212,21 @@ def sound(path):
         put('vo', v['t'], x / (np.max(np.abs(x)) or 1) * .85, v.get('gain', 1.0))
     for e in spec['sfx']:
         args = e.get('args', {}); x = SFX[e['kind']](**args); put('mus' if e['kind'] == 'drone' else 'fx', e['t'], x, e.get('gain', 1.0))
+    bed = np.zeros_like(L['mus'])
+    for m in spec.get('music', []):   # music bed: each entry loops its file (3 s crossfades) over [t0, t1] with fades
+        raw = subprocess.check_output(['ffmpeg', '-v', 'error', '-i', os.path.join(ROOT, m['file']), '-ac', '1', '-ar', str(SR), '-f', 'f32le', '-'])
+        x = np.frombuffer(raw, np.float32).astype(np.float64); x = x / (np.sqrt(np.mean(x ** 2)) or 1) * .07   # equal loudness per track
+        t1 = TOTAL if m.get('t1', 'ALL') == 'ALL' else m['t1']; need = N(t1 - m['t0']); xf = N(3.0)
+        y = x.copy()
+        while len(y) < need:
+            r = np.linspace(0, 1, xf); y = np.concatenate([y[:-xf], y[-xf:] * (1 - r) + x[:xf] * r, x[xf:]])
+        y = y[:need].copy(); fi, fo = N(m.get('fade_in', 3.0)), N(m.get('fade_out', 3.0))
+        y[:fi] *= np.linspace(0, 1, fi); y[-fo:] *= np.linspace(1, 0, fo)
+        n0 = N(m['t0']); bed[n0:n0 + len(y)] += y[:len(bed) - n0] * m.get('gain', 1.0)
     v = L['vo']; env = np.convolve(np.abs(v), np.ones(N(.08)) / N(.08), 'same'); env = np.minimum(env / .06, 1)
     k = np.exp(-1 / (SR * .25)); sm = np.empty_like(env); y = 0.0
     for i in range(0, len(env), 48): y = max(env[i], y * k ** 48); sm[i:i + 48] = y
-    mix = v + L['fx'] * (1 - .6 * sm) * .5 + L['mus'] * (1 - .55 * sm) * .4
+    mix = v + L['fx'] * (1 - .6 * sm) * .5 + L['mus'] * (1 - .55 * sm) * .4 * (.5 if spec.get('music') else 1) + bed * (1 - .6 * sm)
     mix = mix[:N(TOTAL)]; mix = mix / np.max(np.abs(mix)) * .89
     wavfile.write(path, SR, (np.stack([mix, mix], 1) * 32767).astype(np.int16))
 

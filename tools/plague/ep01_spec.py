@@ -36,7 +36,7 @@ def MENU(n):   # menu board: words written into the panels one by one, the curre
     out = []
     for i in range(n + 1):
         cx = (PANEL[i][0] + PANEL[i][2]) // 2
-        out += [{**ink(MENU_W[i][0], cx, 562, 46, maxw=300, at=.3 if i == n else 0), 'style': 'tag'}]
+        out += [label(MENU_W[i][0], cx, 562, 46, maxw=320, at=.3 if i == n else 0)]
     return out + [dim(PANEL[i], fill=[0, 0, 0, 150]) for i in range(3) if i != n]
 STILL = [[.5, .5, 1.0], [.5, .5, 1.02]]   # near-static wide: keeps in-picture text aligned
 def label(t, x, y, size=64, **k): return {'text': t, 'x': x, 'y': y, 'size': size, 'at': .3, **k}
@@ -306,6 +306,10 @@ def frames():
 def beats():
     cold = json.load(open(os.path.join(ROOT, 'tools/plague/cold_open_beats.json')))
     out = dict(cold); out['beats'] = list(cold['beats'])
+    M = 'assets/plague/music/'
+    out['music'] = [{'file': M + 'plague_a.mp3', 't0': 0.0, 't1': 232.0, 'gain': 1.0, 'fade_in': 2.0, 'fade_out': 4.0},
+                    {'file': M + 'plague_b.mp3', 't0': 228.0, 't1': 470.0, 'gain': 1.0, 'fade_in': 4.0, 'fade_out': 4.0},
+                    {'file': M + 'plague_a.mp3', 't0': 466.0, 't1': 'ALL', 'gain': 1.0, 'fade_in': 4.0, 'fade_out': 5.0}]
     for i, r, t, shots in B:
         sl = []
         for s in shots:

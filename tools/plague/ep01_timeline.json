@@ -1,6 +1,32 @@
 {
  "base": "assets/plague/ep01/frames",
  "fade_in": 0.8,
+ "music": [
+  {
+   "file": "assets/plague/music/plague_a.mp3",
+   "t0": 0.0,
+   "t1": 232.0,
+   "gain": 1.0,
+   "fade_in": 2.0,
+   "fade_out": 4.0
+  },
+  {
+   "file": "assets/plague/music/plague_b.mp3",
+   "t0": 228.0,
+   "t1": 470.0,
+   "gain": 1.0,
+   "fade_in": 4.0,
+   "fade_out": 4.0
+  },
+  {
+   "file": "assets/plague/music/plague_a.mp3",
+   "t0": 466.0,
+   "t1": "ALL",
+   "gain": 1.0,
+   "fade_in": 4.0,
+   "fade_out": 5.0
+  }
+ ],
  "shots": [
   {
    "img": "co_01",
@@ -2946,8 +2972,7 @@
    "x": 622,
    "y": 562,
    "size": 46,
-   "style": "tag",
-   "maxw": 300,
+   "maxw": 320,
    "t0": 89.419,
    "t1": 92.17
   },
@@ -2998,8 +3023,7 @@
    "x": 622,
    "y": 562,
    "size": 46,
-   "style": "tag",
-   "maxw": 300,
+   "maxw": 320,
    "t0": 95.522,
    "t1": 98.574
   },
@@ -3008,8 +3032,7 @@
    "x": 1020,
    "y": 562,
    "size": 46,
-   "style": "tag",
-   "maxw": 300,
+   "maxw": 320,
    "t0": 95.822,
    "t1": 98.574
   },
@@ -3060,8 +3083,7 @@
    "x": 622,
    "y": 562,
    "size": 46,
-   "style": "tag",
-   "maxw": 300,
+   "maxw": 320,
    "t0": 98.724,
    "t1": 101.776
   },
@@ -3070,8 +3092,7 @@
    "x": 1020,
    "y": 562,
    "size": 46,
-   "style": "tag",
-   "maxw": 300,
+   "maxw": 320,
    "t0": 98.724,
    "t1": 101.776
   },
@@ -3080,8 +3101,7 @@
    "x": 1434,
    "y": 562,
    "size": 46,
-   "style": "tag",
-   "maxw": 300,
+   "maxw": 320,
    "t0": 99.024,
    "t1": 101.776
   },

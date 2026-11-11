@@ -13,7 +13,7 @@ GAP, LEAD = src.get('gap', .3), src.get('lead', .15)
 MAXS = src.get('max_shot', 99)
 DETAIL = [(.42, .45), (.58, .5), (.5, .42), (.38, .55), (.62, .45)]
 dur = lambda f: float(subprocess.check_output(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', os.path.join(ROOT, f)]))
-out = {k: src[k] for k in ('base', 'fade_in') if k in src}; out.update(shots=[], texts=[], vo=[], sfx=list(src.get('sfx_global', [])))
+out = {k: src[k] for k in ('base', 'fade_in', 'music') if k in src}; out.update(shots=[], texts=[], vo=[], sfx=list(src.get('sfx_global', [])))
 t = src.get('start', .4)
 for b in src['beats']:
     if 'vo' in b:
