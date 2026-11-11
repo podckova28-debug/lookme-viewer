@@ -44,7 +44,7 @@ worst jobs in history, weird jobs, strange jobs, history, victorian jobs, tudor 
 
 ## Thumbnails
 A: thumb_A_paid_to_get_bitten_1280x720.jpg — "PAID to get BITTEN"
-B: thumb_B_night_shift_cesspit_1280x720.jpg — "NIGHT SHIFT in a CESSPIT" (replaced "WORST JOB in HISTORY?", which repeated the title)
+B: thumb_B_toilets_by_hand_1280x720.jpg — "TOILETS. By HAND." (replaced "WORST JOB in HISTORY?", which repeated the title)
 C: thumb_C_kings_toilet_guy_1280x720.jpg — "The KING'S TOILET GUY"
 
 ## Voice
