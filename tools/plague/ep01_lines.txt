@@ -1,0 +1,72 @@
+L06a|NARRATOR|So who is he, exactly? Under a microscope, the plague is a bacterium called Yersinia pestis. A tiny rod. Which explains the figure.
+L06b|PLAGUE|I travel light.
+L07|NARRATOR|He lives in rodents, mostly rats, and he travels by flea. A flea bites an infected rat, the bacteria block the flea's gut, and the starving flea starts biting everything it can find. Including you.
+L08a|NARRATOR|His travel partner is the black rat, whose scientific name, and we are not making this up, is Rattus rattus.
+L08b|PLAGUE|Rattus handles transport. The fleas handle deliveries.
+L09|NARRATOR|Once inside, he comes in three flavors. Bubonic: it attacks the lymph nodes, which swell up into lumps called buboes. That's where the name comes from. Septicemic: it gets into the blood. And pneumonic: it gets into the lungs, and that version can spread from person to person with a cough.
+L10|NARRATOR|Without treatment, the bubonic plague killed around half of the people it infected. The pneumonic plague killed almost all of them.
+L11|NARRATOR|For a long time, everyone assumed his story began in the Middle Ages. Then scientists learned to read DNA from ancient skeletons.
+L12a|NARRATOR|And they found him inside the teeth of people who died about five thousand years ago, in the late Stone Age and the Bronze Age, from the Baltic all the way to Siberia.
+L12b|PLAGUE|Five thousand years, and nobody called?
+L13a|NARRATOR|Those early versions probably couldn't travel by flea yet. That trick came later, as the bacterium evolved. Some researchers think the plague may have helped empty out parts of Stone Age Europe. Others aren't convinced.
+L13b|PLAGUE|Allegedly.
+L14|NARRATOR|His first big headline came in 541 AD, in Constantinople, the capital of the Eastern Roman Empire.
+L15|NARRATOR|The emperor Justinian was busy trying to win back the old Roman Empire. Then grain ships arrived from Egypt. With grain. With rats. With fleas. And with him.
+L17|NARRATOR|The historian Procopius wrote that at its worst, up to ten thousand people a day were dying in the city. Even the emperor himself caught it.
+L18|NARRATOR|Justinian survived. His dream of rebuilding Rome mostly didn't.
+L19|NARRATOR|For the next two hundred years, he kept coming back to the Mediterranean in waves. And then, he vanished. For about six hundred years.
+L20|PLAGUE|I needed some me-time.
+L21|NARRATOR|He spent it somewhere in Central Asia, getting ready for the comeback. In the 1340s he headed west along the Silk Road, with merchants, caravans and armies.
+L22|NARRATOR|In 1346, the army of the Golden Horde was besieging Caffa, a Genoese trading port in Crimea. The plague broke out among the besiegers.
+L23|NARRATOR|One chronicler claimed they launched their dead over the city walls. Historians still argue about whether that really happened. Either way, Genoese ships soon sailed away from Caffa, and the plague sailed with them.
+L24|NARRATOR|Which brings us back to Messina. October 1347.
+L25|NARRATOR|From Sicily, he toured Europe faster than any king ever could. 1348: Italy, France, Spain and England. 1349: Germany, Scandinavia. By 1351, Russia.
+L26|PLAGUE|Every city. Sold out.
+L27|NARRATOR|In Florence, the writer Giovanni Boccaccio described people who ate breakfast with their families in the morning, and that same night dined with their ancestors in the next world.
+L27a|NARRATOR|Boccaccio also wrote one of the most famous books of the Middle Ages about it, the Decameron: ten young people flee Florence to a villa in the countryside and pass the time telling each other a hundred stories. History's first quarantine binge-watch.
+L27aP|PLAGUE|I wasn't invited. Rude.
+L27b|NARRATOR|Even the Pope took precautions. In Avignon, Pope Clement the Sixth followed his doctor's advice and spent his days sitting between two enormous fires, to purify the air. Strangely enough, it may have helped: fleas don't love extreme heat.
+L27bP|PLAGUE|Honestly? Respect.
+L27c|NARRATOR|By the way, nobody back then called it the Black Death. People called it the great pestilence, or the great mortality. The name 'Black Death' only caught on centuries later.
+L27cP|PLAGUE|Took them long enough to get my name right.
+L28|NARRATOR|Towns lost a third of their people, half, sometimes more. For Europe as a whole, estimates run from about thirty to sixty percent of the population, in about five years. It was one of the deadliest disasters in human history.
+L30|NARRATOR|So how did people fight back? Mostly, badly. The top medical experts in Paris officially concluded that the cause was a conjunction of Saturn, Jupiter and Mars, back in 1345.
+L31|PLAGUE|Excuse me? I did the work.
+L32|NARRATOR|Others blamed bad air, which they called miasma. So people carried flowers and herbs, burned incense, and tried very hard to avoid bad smells.
+L33|NARRATOR|Some decided God was angry, and marched from town to town whipping their own backs in penance. They were called the flagellants. It did not help.
+L34|NARRATOR|And some people went looking for someone to blame. Across Europe, Jewish communities were falsely accused of poisoning the wells, and thousands of people were murdered. It is one of the darkest chapters of this whole story.
+L35|NARRATOR|But one idea actually worked. In 1377, the port city of Ragusa, today's Dubrovnik, ordered ships from infected places to wait thirty days before anyone could come ashore.
+L36|NARRATOR|Later, places like Venice stretched it to forty days. In Italian, forty days is quaranta giorni. And that's where we get the word quarantine.
+L36P|PLAGUE|Forty days? I have a schedule.
+L37|NARRATOR|And that famous plague doctor with the bird mask? It didn't exist during the Black Death. The costume first shows up about three hundred years later, in the 1600s. The beak was stuffed with herbs to filter out the bad air.
+L38|PLAGUE|Cute. Didn't work.
+L39|NARRATOR|When the Black Death finally moved on, Europe was a different place. With so many workers gone, the survivors could suddenly ask for higher wages.
+L40|NARRATOR|Lords tried to stop them. In England, a law tried to freeze wages at their old, pre-plague level. It didn't really work.
+L41|NARRATOR|Thirty years later, England got the Peasants' Revolt. Many historians argue the plague helped crack the old feudal system wide open.
+L42a|PLAGUE|You're welcome?
+L42b|NARRATOR|Nobody thanked him.
+L43|NARRATOR|But he never really left. For three hundred years, he kept coming back every few decades.
+L44|NARRATOR|His last big show in England was London, 1665. The Great Plague killed around a hundred thousand people, close to a quarter of the city.
+L45|NARRATOR|Cambridge University shut down, and a young student named Isaac Newton went home to his family's farm.
+L46|NARRATOR|With nothing else to do, he worked on calculus, light and gravity. Quarantine productivity at its finest.
+L46a|NARRATOR|That same year, the plague reached Eyam, a small village in the north of England, reportedly in a bundle of cloth from London. And the villagers did something extraordinary. Led by their rector, they agreed to seal themselves off so the disease wouldn't spread to the towns around them. Neighbors left food at the village edge, and the villagers paid with coins left in holes in the boundary stones, soaked in vinegar.
+L46b|NARRATOR|A large share of the village died. But the plague didn't get past them.
+L46c|NARRATOR|And no, the nursery rhyme Ring a ring o' roses is probably not about the plague. That theory only appeared in the twentieth century, and most folklorists don't buy it.
+L46cP|PLAGUE|I would never write something that catchy.
+L47|NARRATOR|Then, in September 1666, the Great Fire of London burned through much of the city. People said the fire had burned the plague away. Historians aren't so sure. The outbreak was already fading.
+L48|PLAGUE|I left on my own terms.
+L48a|NARRATOR|Western Europe's last big outbreak came in 1720, in Marseille. A merchant ship carrying him arrived, and the quarantine was cut short, reportedly so its valuable cargo could make it to a trade fair in time.
+L48b|NARRATOR|Roughly half the city died. Authorities built a long wall of stone across the countryside to keep the plague in. After that, he mostly stopped visiting Western Europe.
+L48bP|PLAGUE|They built me a wall. I've never felt so appreciated.
+L49|NARRATOR|His last world tour began in China in the mid-1800s. By 1894 he reached Hong Kong, and from there steamships carried him to every inhabited continent. India alone lost more than ten million people.
+L50|NARRATOR|But this time, science was waiting for him. In Hong Kong in 1894, a doctor named Alexandre Yersin found the culprit under his microscope. That's why he's called Yersinia pestis.
+L51|PLAGUE|He named me after himself?
+L51a|NARRATOR|In 1900 he even reached San Francisco. The governor of California insisted there was no plague at all, because it would be bad for business. There was. It took years, and a huge campaign against the city's rats, to get rid of him.
+L51aP|PLAGUE|Denial is my favorite disinfectant.
+L52|NARRATOR|A few years later, Paul-Louis Simond showed how rat fleas spread him.
+L53|NARRATOR|And in the 1940s, antibiotics arrived. For the first time in five thousand years, the plague could be cured.
+L54|NARRATOR|So where is he now? Still around. Every year there are cases, mostly in Madagascar and the Democratic Republic of the Congo, and even a handful in the American Southwest, where he lives in prairie dogs.
+L55|PLAGUE|I'm not gone. I'm semi-retired.
+L56|NARRATOR|But caught early, it's cured with a course of common antibiotics.
+L57|NARRATOR|Five thousand years. Three pandemics. One of the deadliest diseases humanity has ever faced. Beaten, in the end, by a course of pills and a forty-day wait.
+L58|NARRATOR|Next time: a killer that's been hiding in the water supply.
