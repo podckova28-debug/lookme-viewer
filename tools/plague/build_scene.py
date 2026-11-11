@@ -79,7 +79,7 @@ def finish(img, t):
         yy, xx = np.mgrid[0:H, 0:W]; r = np.sqrt(((xx - W / 2) / (W / 2)) ** 2 + ((yy - H / 2) / (H / 2)) ** 2)
         vig = (1 - .32 * np.clip(r - .55, 0, 1) ** 1.4)[..., None].astype(np.float32)
     f = img.astype(np.float32) * vig
-    g = rng.normal(0, 5.5, (H // 2, W // 2, 1)).astype(np.float32); f += cv2.resize(g, (W, H))[..., None]
+    g = rng.normal(0, 2.2, (H // 2, W // 2, 1)).astype(np.float32); f += cv2.resize(g, (W, H))[..., None]
     return np.clip(f, 0, 255).astype(np.uint8)
 
 def picture(path):
@@ -112,9 +112,9 @@ def norm(x, p=1.0): return x / (np.max(np.abs(x)) or 1) * p
 def sweep(f0, f1, d, c=1.0): u = np.linspace(0, 1, N(d)) ** c; return np.sin(2 * np.pi * np.cumsum(f0 + (f1 - f0) * u) / SR)
 
 def waves(d):
-    x = filt(noise(d), 'lowpass', 500) * (.55 + .45 * np.sin(2 * np.pi * tt(d) / 5.5) ** 2)
-    return fade(x + .3 * filt(noise(d), 'bandpass', [800, 2500]) * (.5 + .5 * np.sin(2 * np.pi * tt(d) / 3.7 + 1)) ** 4, 1, 1)
-def wind(d): return fade(filt(noise(d), 'bandpass', [180, 700]) * (.6 + .4 * np.sin(2 * np.pi * tt(d) / 7)), 1.5, 1.5)
+    x = filt(noise(d), 'lowpass', 300, 4) * (.55 + .45 * np.sin(2 * np.pi * tt(d) / 5.5) ** 2)
+    return fade(x + .08 * filt(noise(d), 'bandpass', [600, 1400]) * (.5 + .5 * np.sin(2 * np.pi * tt(d) / 3.7 + 1)) ** 4, 1, 1)
+def wind(d): return fade(filt(noise(d), 'bandpass', [150, 450], 4) * (.6 + .4 * np.sin(2 * np.pi * tt(d) / 7)), 1.5, 1.5)
 def creak(d=.9, f=180):
     t = tt(d); pulses = (np.sin(2 * np.pi * (35 + 25 * t / d) * t) > .7).astype(float)
     return fade(filt(pulses * noise(d) * .5 + pulses, 'bandpass', [f, f * 6]) * np.sin(np.linspace(0, np.pi, N(d))), .05, .2)
@@ -159,7 +159,7 @@ def sound(path):
     v = L['vo']; env = np.convolve(np.abs(v), np.ones(N(.08)) / N(.08), 'same'); env = np.minimum(env / .06, 1)
     k = np.exp(-1 / (SR * .25)); sm = np.empty_like(env); y = 0.0
     for i in range(0, len(env), 48): y = max(env[i], y * k ** 48); sm[i:i + 48] = y
-    mix = v + L['fx'] * (1 - .45 * sm) * .7 + L['mus'] * (1 - .5 * sm) * .45
+    mix = v + L['fx'] * (1 - .6 * sm) * .5 + L['mus'] * (1 - .55 * sm) * .4
     mix = mix[:N(TOTAL)]; mix = mix / np.max(np.abs(mix)) * .89
     wavfile.write(path, SR, (np.stack([mix, mix], 1) * 32767).astype(np.int16))
 
