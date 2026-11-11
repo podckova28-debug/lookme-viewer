@@ -8,6 +8,7 @@
  "sfx_global": [
   {
    "kind": "drone",
+   "t": 0.0,
    "args": {
     "d": "ALL"
    },
@@ -15,6 +16,7 @@
   },
   {
    "kind": "wind",
+   "t": 0.0,
    "args": {
     "d": "ALL"
    },

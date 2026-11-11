@@ -267,7 +267,7 @@ def frames():
 
 def beats():
     out = {'base': 'assets/plague/ep02/frames', 'fade_in': .8, 'start': 0.0, 'lead': .45, 'gap': .6, 'max_shot': 3.2,
-           'sfx_global': [{'kind': 'drone', 'args': {'d': 'ALL'}, 'gain': .9}, {'kind': 'wind', 'args': {'d': 'ALL'}, 'gain': .1}], 'beats': []}
+           'sfx_global': [{'kind': 'drone', 't': 0.0, 'args': {'d': 'ALL'}, 'gain': .9}, {'kind': 'wind', 't': 0.0, 'args': {'d': 'ALL'}, 'gain': .1}], 'beats': []}
     M = 'assets/plague/music/'; segs = [(0, 171, 'a'), (167, 300, 'b'), (296, 422, 'a'), (418, 566, 'b'), (562, 'ALL', 'a')]   # switch at chapter starts
     out['music'] = [{'file': M + f'cholera_{k}.mp3', 't0': float(a0), 't1': a1, 'gain': 1.0, 'fade_in': 2.0 if a0 == 0 else 4.0, 'fade_out': 5.0 if a1 == 'ALL' else 4.0} for a0, a1, k in segs]
     for i, r, t, shots in B:
