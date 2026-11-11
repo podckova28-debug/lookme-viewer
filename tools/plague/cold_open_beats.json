@@ -13,7 +13,7 @@
  "beats": [
   {"vo": "assets/plague/ep01/vo_final/n1.wav", "shots": [
     {"img": "co_01", "from": [0.5, 0.5, 1.0], "to": [0.48, 0.52, 1.05], "w": 1.2,
-     "text": {"text": "MESSINA, SICILY · OCTOBER 1347", "x": 960, "y": 965, "size": 52, "plate": true, "at": 0.3, "len": 4.0},
+     "text": {"text": "MESSINA, SICILY · OCTOBER 1347", "x": 960, "y": 965, "size": 52, "at": 0.3, "len": 4.0},
      "sfx": [{"kind": "creak", "at": 2.0, "gain": 0.5}]},
     {"img": "co_04", "from": [0.46, 0.52, 1.1], "to": [0.5, 0.52, 1.04], "sfx": [{"kind": "murmur", "args": {"d": 2.4}, "gain": 0.36}, {"kind": "bell", "at": 0.3, "gain": 0.4}]}
   ]},
@@ -42,8 +42,8 @@
   ]},
   {"hold": 4.6, "shots": [
     {"img": "co_11", "from": [0.5, 0.5, 1.0], "to": [0.49, 0.51, 1.03],
-     "text": [{"text": "THE PLAGUE", "x": 1300, "y": 300, "size": 160, "pop": true, "at": 0.15, "len": 4.0},
-              {"text": "3000 BC – 2026", "x": 1300, "y": 470, "size": 78, "color": [214, 180, 110], "at": 0.5, "len": 3.65}],
+     "text": [{"text": "THE PLAGUE", "x": 1300, "y": 300, "size": 170, "style": "title", "pop": true, "at": 0.15, "len": 4.0},
+              {"text": "3000 BC – 2026", "x": 1300, "y": 470, "size": 80, "style": "title", "color": [214, 180, 110], "at": 0.5, "len": 3.65}],
      "sfx": [{"kind": "boom", "at": 0.15}]}
   ]}
  ]

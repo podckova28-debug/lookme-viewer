@@ -26,8 +26,19 @@ def sh(img, cam=None, prompt=None, refs='', text=None, sfx=None, w=1):
     if text: s['text'] = text
     if sfx: s['sfx'] = sfx
     return s
-def cap(t, **k): return {'text': t, 'x': 960, 'y': 975, 'size': 46, 'plate': True, 'at': .3, **k}
-def stamp(t, **k): return {'text': t, 'x': 1380, 'y': 230, 'size': 110, 'color': [196, 48, 36], 'pop': True, 'at': .5, **k}
+def cap(t, **k): return {'text': t, 'x': 960, 'y': 985, 'size': 50, 'at': .3, **k}                      # plate caption
+def stamp(t, **k): return {'text': t, 'x': 1380, 'y': 240, 'size': 96, 'style': 'stamp', 'pop': True, 'at': .5, **k}
+def ink(t, x, y, size=64, **k): return {'text': t, 'x': x, 'y': y, 'size': size, 'style': 'ink', 'at': .3, **k}   # written on paper in the frame
+def dim(rect, **k): return {'style': 'dim', 'rect': rect, 'text': '', 'size': 1, 'x': 0, 'y': 0, 'at': 0, **k}
+PANEL = [(330, 245, 742, 805), (772, 245, 1182, 805), (1213, 245, 1622, 805)]
+MENU_W = [('BUBONIC', 'the lumps'), ('SEPTICEMIC', 'the blood'), ('PNEUMONIC', 'the lungs')]
+def MENU(n):   # menu board: words written into the panels one by one, the current panel lit, the others dimmed
+    out = []
+    for i in range(n + 1):
+        cx = (PANEL[i][0] + PANEL[i][2]) // 2
+        out += [ink(MENU_W[i][0], cx, 590, 76, maxw=340, at=.3 if i == n else 0), ink(MENU_W[i][1], cx, 670, 46, at=.6 if i == n else 0)]
+    return out + [dim(PANEL[i], fill=[0, 0, 0, 150]) for i in range(3) if i != n]
+STILL = [[.5, .5, 1.0], [.5, .5, 1.02]]   # near-static wide: keeps in-picture text aligned
 def label(t, x, y, size=64, **k): return {'text': t, 'x': x, 'y': y, 'size': size, 'at': .3, **k}
 
 B = []   # beats: (id, role, text, shots)  role None = silent hold (text holds seconds)
@@ -48,17 +59,17 @@ N('L07', "He lives in rodents, mostly rats, and he travels by flea. A flea bites
   sh('f07c', W(), STICK + " A comic diagram painted on aged parchment: a rat, an arrow, a flea, an arrow, a stickman; small doodled germs travel along the arrows. No words.", 'S'),
   sh('f07d', C(.5, .45, 1.2), STICK + " A stickman peasant in a doorway scratching his ankle, annoyed, a tiny flea hopping onto him.", 'S'))
 N('L08a', "His travel partner is the black rat, whose scientific name, and we are not making this up, is Rattus rattus.",
-  sh('co_08', C(.38, .45, 1.25), text=label('RATTUS RATTUS', 1300, 760, 96, len=4.0)),
-  sh('f08b', C(.5, .5, 1.1), PLAGUE + " Close-up of the rat on the Plague's shoulder, smug; on the rat's nose sits a tiny flea wearing a little postman's satchel.", 'P', text=label('(yes, really)', 1300, 900, 60, len=3.0)))
+  sh('co_08', C(.38, .45, 1.25), text=label('RATTUS RATTUS', 1300, 760, 76, len=4.0)),
+  sh('f08b', C(.5, .5, 1.1), PLAGUE + " Close-up of the rat on the Plague's shoulder, smug; on the rat's nose sits a tiny flea wearing a little postman's satchel.", 'P', text=label('(yes, really)', 1300, 900, 56, len=3.0)))
 Pl('L08b', "Rattus handles transport. The fleas handle deliveries.",
   sh('f08c', W(), PLAGUE + " The Plague strides down a foggy cobbled road with his trunk; the rat rides on his shoulder; behind them several tiny fleas hop along carrying tiny mail satchels.", 'P'))
 N('L09', "Once inside, he comes in three flavors. Bubonic: it attacks the lymph nodes, which swell up into lumps called buboes. That's where the name comes from. Septicemic: it gets into the blood. And pneumonic: it gets into the lungs, and that version can spread from person to person with a cough.",
   sh('f09a', W(), "A dark wooden tavern menu board with three empty framed panels in a row, each panel with a simple icon: a small round lump, a drop, a pair of lungs. Candlelit. No words.",
-     text=[label('THE MENU', 960, 170, 80, len=99)]),
-  sh('f09a', C(.2, .55, 1.6), text=label('BUBONIC', 960, 900, 90, len=99)),
+     text=[label('THE MENU', 960, 112, 60, len=99)]),
+  sh('f09a', STILL, text=MENU(0)),
   sh('f09b', W(), STICK + " A stickman medieval doctor points with a stick at a big anatomical chart of a stickman with small dots at the neck, armpits and groin. Simple, not medical-gory.", 'S'),
-  sh('f09a', C(.5, .55, 1.6), text=label('SEPTICEMIC', 960, 900, 90, len=99)),
-  sh('f09a', C(.8, .55, 1.6), text=label('PNEUMONIC', 960, 900, 90, len=99)),
+  sh('f09a', STILL, text=MENU(1)),
+  sh('f09a', STILL, text=MENU(2)),
   sh('f09d', W(), STICK + " A stickman coughing into his elbow in a market; a little cartoon cloud with tiny dark specks drifts toward another stickman who looks alarmed.", 'S'))
 N('L10', "Without treatment, the bubonic plague killed around half of the people it infected. The pneumonic plague killed almost all of them.",
   sh('f10a', C(.5, .45, 1.15), PLAGUE + " The Plague holds up three long bony fingers proudly, cruel smile, fog behind.", 'P'),
@@ -97,7 +108,7 @@ N('L18', "Justinian survived. His dream of rebuilding Rome mostly didn't.",
   sh('f18a', W(), STICK + " The stickman emperor, recovered but tired, looks sadly at a map of the Mediterranean where most of his army figurines have fallen over.", 'S'))
 N('L19', "For the next two hundred years, he kept coming back to the Mediterranean in waves. And then, he vanished. For about six hundred years.",
   sh('f19a', WL(), "An old parchment map of the Mediterranean Sea drawn in ink with dark ink-wash smudges rippling out from the coasts like waves. No words.",
-     text=label('541 – 750', 1500, 200, 90, len=99)),
+     text=label('541 – 750', 1450, 200, 84, len=99)),
   sh('f19b', W(), PLAGUE + " The Plague closes the door of an old house behind him and hangs a wooden sign on the door that reads exactly: \"BACK IN 600 YEARS\".", 'P'))
 Pl('L20', "I needed some me-time.",
   sh('f20a', W(), PLAGUE + " The Plague lounges in a hammock between two trees on a misty Central Asian steppe, hands behind his head; the rat sleeps on his chest; the trunk is parked below.", 'P'))
@@ -118,9 +129,9 @@ N('L24', "Which brings us back to Messina. October 1347.",
   sh('co_06', C(.45, .45, 1.3)))
 N('L25', "From Sicily, he toured Europe faster than any king ever could. 1348: Italy, France, Spain and England. 1349: Germany, Scandinavia. By 1351, Russia.",
   sh('f25a', C(.55, .62, 1.6), "An old parchment map of medieval Europe drawn in ink from Spain to Russia, with a dark ink-wash stain spreading north from Sicily across Italy and France. No words."),
-  sh('f25a', C(.45, .5, 1.25), text=label('1348', 1650, 200, 120, len=99)),
-  sh('f25a', C(.55, .4, 1.15), text=label('1349', 1650, 200, 120, len=99)),
-  sh('f25a', W(), text=label('1351', 1650, 200, 120, len=99)))
+  sh('f25a', C(.45, .5, 1.25), text=ink('1348', 1650, 200, 120, len=99)),
+  sh('f25a', C(.55, .4, 1.15), text=ink('1349', 1650, 200, 120, len=99)),
+  sh('f25a', W(), text=ink('1351', 1650, 200, 120, len=99)))
 Pl('L26', "Every city. Sold out.",
   sh('f26a', C(.47, .62, 1.45), PLAGUE + " Close-up of the Plague's battered leather travel trunk covered in old travel stickers that read exactly: \"MESSINA 1347\", \"FLORENCE 1348\", \"PARIS 1348\", \"LONDON 1348\", \"BERGEN 1349\". His bony hand rests on it.", 'P'))
 N('L27', "In Florence, the writer Giovanni Boccaccio described people who ate breakfast with their families in the morning, and that same night dined with their ancestors in the next world.",
@@ -140,9 +151,9 @@ N('L27b', "Even the Pope took precautions. In Avignon, Pope Clement the Sixth fo
 Pl('L27bP', "Honestly? Respect.",
   sh('f27i', W(), PLAGUE + " The Plague stands at a distance from the fires, slowly clapping, impressed; the rat claps too.", 'P'))
 N('L27c', "By the way, nobody back then called it the Black Death. People called it the great pestilence, or the great mortality. The name 'Black Death' only caught on centuries later.",
-  sh('f27j', W(), "An open aged parchment manuscript on a desk, with blank space for writing in the middle, candle, quill.",
-     text=[label('THE GREAT PESTILENCE', 960, 470, 92, len=99), label('THE GREAT MORTALITY', 960, 620, 92, at=1.6, len=99)]),
-  sh('f27j', C(.5, .5, 1.1), text=label('THE BLACK DEATH', 960, 540, 120, pop=True, at=.4, len=99)))
+  sh('f27j', STILL, "An open aged parchment manuscript on a desk, with blank space for writing in the middle, candle, quill.",
+     text=[ink('THE GREAT', 625, 520, 62, len=99), ink('PESTILENCE', 625, 610, 72, len=99), ink('THE GREAT', 1200, 520, 62, at=1.6, len=99), ink('MORTALITY', 1200, 610, 72, at=1.6, len=99)]),
+  sh('f27j', C(.5, .5, 1.1), text=stamp('THE BLACK DEATH', x=960, y=560, size=104, rot=-5, at=.4, len=99)))
 Pl('L27cP', "Took them long enough to get my name right.",
   sh('f27k', C(.5, .5, 1.1), PLAGUE + " The Plague polishes a small brass nameplate on his trunk with a cloth, satisfied; the nameplate reads exactly: \"THE BLACK DEATH\".", 'P'))
 N('L28', "Towns lost a third of their people, half, sometimes more. For Europe as a whole, estimates run from about thirty to sixty percent of the population, in about five years. It was one of the deadliest disasters in human history.",
@@ -173,7 +184,7 @@ N('L35', "But one idea actually worked. In 1377, the port city of Ragusa, today'
 N('L36', "Later, places like Venice stretched it to forty days. In Italian, forty days is quaranta giorni. And that's where we get the word quarantine.",
   sh('f36a', WL(), "The Venetian lagoon with a merchant ship at anchor flying a yellow flag, Venice skyline in the distance, mist."),
   sh('f36b', C(.5, .5, 1.1), STICK + " A stickman Venetian official with a big ledger counting days; a wall behind him full of tally marks.", 'S',
-     text=label('QUARANTA GIORNI = QUARANTINE', 960, 160, 70, at=1.2, len=99)))
+     text=label('QUARANTA GIORNI = QUARANTINE', 960, 150, 58, at=1.2, len=99)))
 Pl('L36P', "Forty days? I have a schedule.",
   sh('f36c', W(), PLAGUE + " On the deck of the anchored ship the Plague stands with arms crossed, tapping his foot impatiently and checking a pocket watch.", 'P'))
 N('L37', "And that famous plague doctor with the bird mask? It didn't exist during the Black Death. The costume first shows up about three hundred years later, in the 1600s. The beak was stuffed with herbs to filter out the bad air.",
@@ -189,8 +200,8 @@ N('L39', "When the Black Death finally moved on, Europe was a different place. W
   sh('f39b', W(), STICK + " In a castle hall a stickman lord clutches his head in despair at an empty work rota.", 'S'),
   sh('f39c', C(.5, .5, 1.15), STICK + " A confident stickman peasant holds out his hand with a few coins, demanding more, smug.", 'S'))
 N('L40', "Lords tried to stop them. In England, a law tried to freeze wages at their old, pre-plague level. It didn't really work.",
-  sh('f40a', W(), "A royal decree scroll with a red wax seal pinned to a wooden post in a village. Leave the scroll surface plain.",
-     text=label('STATUTE OF LABOURERS · 1351', 960, 160, 70, len=99)),
+  sh('f40a', STILL, "A royal decree scroll with a red wax seal pinned to a wooden post in a village. Leave the scroll surface plain.",
+     text=[ink('STATUTE OF', 1505, 320, 66, maxw=470, len=99), ink('LABOURERS', 1505, 405, 66, maxw=470, len=99), ink('1351', 1505, 535, 96, at=.8, len=99)]),
   sh('f40b', W(), STICK + " Stickman peasants walk past the decree on the post, ignoring it completely, one yawning.", 'S'))
 N('L41', "Thirty years later, England got the Peasants' Revolt. Many historians argue the plague helped crack the old feudal system wide open.",
   sh('f41a', WL(), STICK + " A crowd of angry stickman peasants with pitchforks, scythes and banners marching toward medieval London.", 'S', text=cap('ENGLAND · 1381')),
@@ -201,8 +212,8 @@ N('L42b', "Nobody thanked him.",
 
 # ---- 10:00 London
 N('L43', "But he never really left. For three hundred years, he kept coming back every few decades.",
-  sh('f43a', WL(), "A long aged parchment scroll unrolled across the frame like a timeline, with small ink vignettes of towns along it and dark ink blots at intervals. Leave the scroll free of words.",
-     text=[label('1350', 330, 900, 64), label('1500', 960, 900, 64, at=1.0), label('1650', 1590, 900, 64, at=1.8)]))
+  sh('f43a', STILL, "A long aged parchment scroll unrolled across the frame like a timeline, with small ink vignettes of towns along it and dark ink blots at intervals. Leave the scroll free of words.",
+     text=[ink('1350', 230, 770, 80), ink('1500', 960, 770, 80, at=1.0), ink('1650', 1700, 770, 80, at=1.8)]))
 N('L44', "His last big show in England was London, 1665. The Great Plague killed around a hundred thousand people, close to a quarter of the city.",
   sh('f44a', WL(), STICK + " London in 1665: crowded timber-framed houses, the Thames with boats, old St Paul's cathedral with its tower, grey sky.", 'S', text=cap('LONDON · 1665')),
   sh('f44b', C(.5, .5, 1.1), "A wooden door in old London with a large red cross painted on it, shut, a lantern beside it. No people."),
@@ -269,7 +280,7 @@ N('L57', "Five thousand years. Three pandemics. One of the deadliest diseases hu
   sh('f13a', W()), sh('f14a', W()), sh('co_01', W()), sh('f44a', W()), sh('f53a', W()), sh('f26a', C(.47, .62, 1.45)))
 N('L58', "Next time: a killer that's been hiding in the water supply.",
   sh('f58a', C(.5, .5, 1.05), "An old cast-iron street water pump in a foggy Victorian street at night; a single drop of water falls from the spout, and inside the drop there is a tiny dark silhouette of a mysterious figure. Ominous."))
-HOLD(5.0, sh('f58a', O(), text=[label('NEXT TIME', 1380, 360, 110, pop=True, at=.2, len=4.6), label('SUBSCRIBE', 1380, 520, 70, color=[214, 180, 110], at=.8, len=4.0)]))
+HOLD(5.0, sh('f58a', O(), text=[label('NEXT TIME', 1380, 360, 110, style='title', pop=True, at=.2, len=4.6), label('SUBSCRIBE', 1380, 500, 64, at=.8, len=4.0)]))
 
 def lines():
     for i, r, t, _ in B:

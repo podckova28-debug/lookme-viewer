@@ -14,7 +14,8 @@ from scipy.signal import butter, sosfilt, resample_poly
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 W, H, FPS, SR = 1920, 1080, 24, 48000
-FONT = os.path.join(ROOT, 'assets/fonts/AbrilFatface.ttf')
+FONT_SC = os.path.join(ROOT, 'assets/fonts/IMFellEnglishSC.ttf')   # old-print small caps, matches the ink look
+FONT_RM = os.path.join(ROOT, 'assets/fonts/IMFellEnglish.ttf')
 spec = json.load(open(sys.argv[1])); out = sys.argv[2]
 base = os.path.join(ROOT, spec['base'])
 TOTAL = spec['duration']
@@ -24,29 +25,76 @@ rng = np.random.default_rng(3)
 def ease(u): u = min(max(u, 0), 1); return u * u * (3 - 2 * u)
 
 # ---------------- picture ----------------
-def font(size, weight=None):
-    return ImageFont.truetype(FONT, size)   # Abril Fatface: one heavy weight
+_fc = {}
+def font(size, lower=False):
+    k = (size, lower)
+    if k not in _fc: _fc[k] = ImageFont.truetype(FONT_RM if lower else FONT_SC, size)
+    return _fc[k]
+
+INK, CREAM, GOLD, RED = (50, 32, 20), (242, 232, 208), (184, 146, 84), (176, 38, 28)
+
+def draw_item(it, k):
+    """one text/box item -> full-frame RGBA layer. styles:
+       ink   - dark ink printed onto a paper surface in the picture (menu panels, book pages, decrees, maps)
+       plate - cream letters on a dark museum-label plate with a thin gold rule (captions, labels over scenes)
+       stamp - red rubber stamp: red letters in a red frame on a pale patch, slightly rotated
+       title - big cream letters with a soft shadow (title card)
+       dim   - darkened soft rectangle (to spotlight one part of the picture)"""
+    L = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(L)
+    st = it.get('style', 'plate')
+    if st == 'dim':
+        d.rounded_rectangle(it['rect'], 24, fill=tuple(it.get('fill', (0, 0, 0, 120))))
+        return L.filter(ImageFilter.GaussianBlur(10))
+    txt = it['text']; low = any(c.islower() for c in txt); size = int(it['size'] * k)
+    while it.get('maxw') and size > 20 and font(size, low).getlength(txt) > it['maxw'] * k: size -= 2   # shrink to fit
+    f = font(size, low)
+    x, y, anc = it['x'], it['y'], it.get('anchor', 'mm')
+    bx = d.textbbox((x, y), txt, font=f, anchor=anc)
+    if st == 'ink':
+        col = tuple(it.get('color', INK)); sw = max(1, size // 34)
+        d.text((x, y), txt, font=f, fill=col + (235,), anchor=anc, stroke_width=sw, stroke_fill=col + (235,))
+        return L
+    if st == 'title':
+        col = tuple(it.get('color', CREAM)); sw = max(1, size // 40)
+        S = Image.new('RGBA', (W, H), (0, 0, 0, 0)); ImageDraw.Draw(S).text((x + 4, y + 6), txt, font=f, fill=(0, 0, 0, 220), anchor=anc, stroke_width=sw + 4, stroke_fill=(0, 0, 0, 220))
+        L = Image.alpha_composite(S.filter(ImageFilter.GaussianBlur(8)), L); d = ImageDraw.Draw(L)
+        d.text((x, y), txt, font=f, fill=col + (255,), anchor=anc, stroke_width=sw, stroke_fill=col + (255,))
+        return L
+    if st == 'stamp':
+        px, py = int(size * .35), int(size * .18)
+        T = Image.new('RGBA', (bx[2] - bx[0] + 2 * px + 40, bx[3] - bx[1] + 2 * py + 40), (0, 0, 0, 0)); td = ImageDraw.Draw(T)
+        r = (20, 20, T.width - 20, T.height - 20)
+        td.rectangle(r, fill=(238, 226, 200, 235)); td.rectangle(r, outline=RED + (255,), width=max(4, size // 16))
+        td.rectangle((r[0] + size // 9, r[1] + size // 9, r[2] - size // 9, r[3] - size // 9), outline=RED + (255,), width=max(2, size // 40))
+        td.text((T.width / 2, T.height / 2), txt, font=f, fill=RED + (255,), anchor='mm', stroke_width=max(1, size // 30), stroke_fill=RED + (255,))
+        T = T.rotate(it.get('rot', -6), resample=Image.BICUBIC, expand=True)
+        L.alpha_composite(T, (int(x - T.width / 2), int(y - T.height / 2)))
+        return L
+    # plate
+    col = tuple(it.get('color', CREAM)); sw = max(1, size // 40)
+    px, py = int(size * .55), int(size * .28)
+    box = (bx[0] - px, bx[1] - py, bx[2] + px, bx[3] + py)
+    d.rectangle(box, fill=(16, 12, 10, 215))
+    g = max(2, size // 30); d.rectangle((box[0] + g * 3, box[1] + g * 3, box[2] - g * 3, box[3] - g * 3), outline=GOLD + (230,), width=g)
+    d.text((x, y), txt, font=f, fill=col + (255,), anchor=anc, stroke_width=sw, stroke_fill=col + (255,))
+    return L
 
 def text_layer(items, t):
-    """items: [{text, x, y, size, t0, t1, color, anchor, weight, track}] -> RGBA overlay or None"""
     lay = None
     for it in items:
         a = min(1, (t - it['t0']) / .35, (it.get('t1', 1e9) - t) / .35)
         if a <= 0: continue
         if lay is None: lay = Image.new('RGBA', (W, H), (0, 0, 0, 0))
         k = 1 + .25 * (1 - ease(min(1, (t - it['t0']) / .45))) if it.get('pop') else 1
-        f = font(int(it['size'] * k), it.get('weight', 'Black'))
-        L = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(L)
-        col = tuple(it.get('color', [244, 238, 224]))
-        sw = max(2, it['size'] // 26)
-        d.text((it['x'], it['y']), it['text'], font=f, fill=col + (255,), anchor=it.get('anchor', 'mm'), stroke_width=sw, stroke_fill=(16, 12, 10, 255))
-        if it.get('plate'):   # dark band behind small captions
-            bx = d.textbbox((it['x'], it['y']), it['text'], font=f, anchor=it.get('anchor', 'mm'), stroke_width=sw)
-            P = Image.new('RGBA', (W, H), (0, 0, 0, 0)); ImageDraw.Draw(P).rectangle((bx[0] - 30, bx[1] - 16, bx[2] + 30, bx[3] + 16), fill=(10, 8, 8, 150))
-            L = Image.alpha_composite(P, L)
-        L.putalpha(L.getchannel('A').point(lambda v: int(v * a)))
+        key = (id(it), round(k, 3))
+        L = _lc.get(key)
+        if L is None:
+            L = draw_item(it, k)
+            if k == 1: _lc[key] = L
+        if a < 1: L = L.copy(); L.putalpha(L.getchannel('A').point(lambda v: int(v * a)))
         lay = Image.alpha_composite(lay, L)
     return lay
+_lc = {}
 
 class Frame:
     cache = {}
@@ -163,7 +211,16 @@ def sound(path):
     mix = mix[:N(TOTAL)]; mix = mix / np.max(np.abs(mix)) * .89
     wavfile.write(path, SR, (np.stack([mix, mix], 1) * 32767).astype(np.int16))
 
-if __name__ == '__main__':
+def still(t, path):
+    sh = next((s for s in spec['shots'] if s['t0'] <= t < s['t1']), spec['shots'][-1])
+    img = render_shot(sh, t); lay = text_layer(spec.get('texts', []), t)
+    if lay is not None:
+        img = cv2.cvtColor(np.array(Image.alpha_composite(Image.fromarray(cv2.cvtColor(img, cv2.COLOR_BGR2RGB)).convert('RGBA'), lay).convert('RGB')), cv2.COLOR_RGB2BGR)
+    cv2.imwrite(path, finish(img, t))
+
+if __name__ == '__main__' and os.environ.get('STILLS'):   # STILLS="12.5,40" -> OUT_12.5.jpg ...: check text placement without a render
+    for t in os.environ['STILLS'].split(','): still(float(t), f'{out}_{t}.jpg')
+elif __name__ == '__main__':
     tmp_v, tmp_a = out + '.v.mp4', out + '.a.wav'
     sound(tmp_a); picture(tmp_v)
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', tmp_v, '-i', tmp_a, '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k',
