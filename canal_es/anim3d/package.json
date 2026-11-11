@@ -1,0 +1,6 @@
+{
+  "name": "anim3d",
+  "private": true,
+  "description": "Stylized 3D shots for the canal: Three.js scenes with our painted textures and cut-out characters",
+  "dependencies": { "three": "0.170.0" }
+}

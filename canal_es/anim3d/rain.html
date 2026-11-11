@@ -1,0 +1,142 @@
+<!doctype html><html><head><meta charset="utf-8">
+<style>@font-face{font-family:Bangers;src:url("../anim/fonts/Bangers-Regular.ttf")}@font-face{font-family:ComicNeue;src:url("../anim/fonts/ComicNeue-Bold.ttf")}html,body{margin:0;background:#000}canvas{display:block}#gl{display:none}</style></head>
+<body><canvas id="c" width="1920" height="1080"></canvas>
+<!-- our 2D look: characters, freeze compositing, grade, vignette, comic words -->
+<script src="../anim/lib.js"></script><script src="../anim/sets.js"></script><script src="../anim/cut/specs.js"></script><script src="../anim/cutout.js"></script>
+<script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js"}}</script>
+<script type="module">
+/* Stylized 3D shot «la lluvia congelada» (ep01 s08) in the channel's painted look.
+   3D gives depth and camera moves; everything you see is styled like the 2D episode:
+   - facades, sidewalk and sky are cut from our AI-painted rain plate, toon-lit, with thin plum ink lines;
+   - people are our cut-out characters (drawChar) on camera-facing cards;
+   - raindrops are our 2D drop (ellipse, ink outline, white highlight) as sprites;
+   - the frozen look is our own compositing (compose2): grey world, the hero in colour, radial wipe, ¡CLAP!.
+   window.render(t) draws frame t. Cues in the URL: ?hyb=1&cues={"clap":..,"walk":..,"end":..} */
+import * as THREE from 'three';
+const Q = new URLSearchParams(location.search), CUE = JSON.parse(Q.get('cues') || '{}');
+const TC = CUE.clap ?? 2.2, WALK = CUE.walk ?? 6.0, END = CUE.end ?? 12;
+const INK = '#2d1b2e';
+window.SID = 's3d';
+
+const gl = new THREE.WebGLRenderer({ antialias: true, alpha: true, preserveDrawingBuffer: true });
+gl.setPixelRatio(1); gl.setSize(W, H); gl.outputColorSpace = THREE.SRGBColorSpace; gl.domElement.id = 'gl'; document.body.appendChild(gl.domElement);
+const scene = new THREE.Scene(), cam = new THREE.PerspectiveCamera(38, W / H, .1, 220);
+scene.add(new THREE.HemisphereLight('#e8eeff', '#5a5060', 1.25));
+const sun = new THREE.DirectionalLight('#fff1dc', 1.35); sun.position.set(-8, 16, 10); scene.add(sun);
+const grad = (() => { const d = new Uint8Array([90, 170, 255]), t = new THREE.DataTexture(d, 3, 1, THREE.RedFormat); t.minFilter = t.magFilter = THREE.NearestFilter; t.needsUpdate = true; return t; })();
+const toon = (opt) => new THREE.MeshToonMaterial(Object.assign({ gradientMap: grad }, opt));
+const ink = new THREE.LineBasicMaterial({ color: INK, transparent: true, opacity: .75 });
+function outlined(geo, mats) { const m = new THREE.Mesh(geo, mats); m.add(new THREE.LineSegments(new THREE.EdgesGeometry(geo, 30), ink)); return m; }
+
+// ---------- painted textures cut from our AI rain plate
+const plate = await new Promise(ok => { const im = new Image(); im.onload = () => ok(im); im.src = '../anim/cut/bg/streetRain.jpg'; });
+function crop(x, y, w, h, rx = 1, ry = 1) { const c = document.createElement('canvas'); c.width = w; c.height = h; c.getContext('2d').drawImage(plate, x, y, w, h, 0, 0, w, h);
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.wrapS = t.wrapT = THREE.RepeatWrapping; t.repeat.set(rx, ry); t.anisotropy = 4; return t; }
+const PL = plate.width / 2000;   // crop boxes measured on the 2000-wide preview
+const facadeOrange = (rx, ry) => crop(1262 * PL, 335 * PL, 720 * PL, 262 * PL, rx, ry);
+const facadeCream = (rx, ry) => crop(40 * PL, 548 * PL, 860 * PL, 210 * PL, rx, ry);
+const sky = crop(0, 0, 1650 * PL, 380 * PL); sky.wrapS = sky.wrapT = THREE.ClampToEdgeWrapping;
+scene.background = sky; scene.fog = new THREE.Fog('#8c98ad', 26, 95);
+const sidewalk = crop(0, 990 * PL, 2000 * PL, 140 * PL, 1, 18);
+
+// ---------- street: road, sidewalks, curbs, lane marks
+const road = new THREE.Mesh(new THREE.PlaneGeometry(10, 220), toon({ color: '#4a4f5c' })); road.rotation.x = -Math.PI / 2; road.position.z = -90; scene.add(road);
+for (const s of [-1, 1]) {
+  const sw = outlined(new THREE.BoxGeometry(4, .18, 220), [toon({ color: '#8f8a86' }), toon({ color: '#8f8a86' }), toon({ map: sidewalk }), toon({ color: '#8f8a86' }), toon({ color: '#8f8a86' }), toon({ color: '#8f8a86' })]);
+  sw.position.set(s * 7, .09, -90); scene.add(sw); }
+for (let z = 8; z > -200; z -= 5) { const d = new THREE.Mesh(new THREE.PlaneGeometry(.22, 2.2), toon({ color: '#e8d6a0' })); d.rotation.x = -Math.PI / 2; d.position.set(0, .01, z); scene.add(d); }
+// puddles: flat painted ellipses that catch the sky
+for (let i = 0; i < 18; i++) { const p = new THREE.Mesh(new THREE.CircleGeometry(1, 24), new THREE.MeshBasicMaterial({ color: '#9fb2cc', transparent: true, opacity: .45 }));
+  p.rotation.x = -Math.PI / 2; p.scale.set(.6 + (i * 37 % 10) / 8, .25 + (i * 53 % 7) / 18, 1); p.position.set(((i * 71) % 9) - 4.5, .015, 2 - i * 9.3); scene.add(p); }
+// buildings: painted facade on the street side, toon walls, ink edges
+let seed = 11; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+const WALLS = ['#d79a7c', '#d9c9b4', '#c9a184', '#bfb4c9', '#cfa58f'];
+for (const s of [-1, 1]) for (let z = 6; z > -190;) {
+  const w = 9 + Math.round(rnd() * 2) * 4.5, h = 9.6 + Math.round(rnd() * 3) * 3.2, d = 7, orange = rnd() < .55;
+  const face = orange ? facadeOrange(w / 9, h / 3.2) : facadeCream(w / 11, h / 3.4);
+  const wall = toon({ color: WALLS[Math.floor(rnd() * WALLS.length)] }), front = toon({ map: face });
+  const mats = s < 0 ? [front, wall, wall, wall, wall, wall] : [wall, front, wall, wall, wall, wall];
+  const b = outlined(new THREE.BoxGeometry(d, h, w), mats); b.position.set(s * (9 + d / 2), h / 2, z - w / 2); scene.add(b);
+  // roof ledge for a hand-drawn silhouette
+  const l = outlined(new THREE.BoxGeometry(d + .5, .4, w + .3), toon({ color: '#e9ded0' })); l.position.set(s * (9 + d / 2), h + .2, z - w / 2); scene.add(l);
+  z -= w + .6; }
+// street lamps
+for (let z = -4; z > -150; z -= 16) for (const s of [-1, 1]) {
+  const pole = outlined(new THREE.CylinderGeometry(.08, .1, 4.6, 10), toon({ color: '#3a3f4a' })); pole.position.set(s * 5.4, 2.3, z - (s > 0 ? 8 : 0)); scene.add(pole);
+  const lamp = outlined(new THREE.BoxGeometry(.5, .32, .5), toon({ color: '#fff3c4', emissive: '#6b5a20' })); lamp.position.set(s * 5.4, 4.7, z - (s > 0 ? 8 : 0)); scene.add(lamp); }
+
+// ---------- people: our cut-out characters on camera-facing cards (feet at the card's bottom centre)
+const U = .0026;   // metres per character unit (the hero is ~700 units tall -> ~1.8 m)
+function umbrella(col) { return (g, x, y) => { g.save(); g.translate(x, y); line(g, [[0, 0], [0, -260]], '#2a2a30', 7);
+  shape(g, q => { q.moveTo(-190, -250); q.quadraticCurveTo(0, -420, 190, -250); q.quadraticCurveTo(95, -275, 0, -250); q.quadraticCurveTo(-95, -275, -190, -250); q.closePath(); }, col, 5);
+  g.strokeStyle = 'rgba(0,0,0,.18)'; g.lineWidth = 4; for (const k of [-95, 0, 95]) { g.beginPath(); g.moveTo(0, -385); g.lineTo(k, -262); g.stroke(); } g.restore(); }; }
+function card(draw, w = 720, h = 980) {
+  const c = document.createElement('canvas'); c.width = w; c.height = h; const g = c.getContext('2d'); const tex = new THREE.CanvasTexture(c); tex.colorSpace = THREE.SRGBColorSpace;
+  const mesh = new THREE.Mesh(new THREE.PlaneGeometry(w * U, h * U).translate(0, h * U / 2 - 40 * U, 0), new THREE.MeshBasicMaterial({ map: tex, alphaTest: .5, side: THREE.DoubleSide, fog: true }));
+  const blob = new THREE.Mesh(new THREE.CircleGeometry(.45, 24), new THREE.MeshBasicMaterial({ color: '#1a1424', transparent: true, opacity: .28, depthWrite: false }));
+  blob.rotation.x = -Math.PI / 2; blob.scale.set(1, .45, 1); blob.position.y = .2;
+  const grp = new THREE.Group(); grp.add(mesh, blob);
+  const redraw = (p) => { g.setTransform(1, 0, 0, 1, 0, 0); g.clearRect(0, 0, w, h); draw(g, Object.assign({ x: w / 2, y: h - 40, noShadow: 1 }, p)); tex.needsUpdate = true; };
+  return { grp, mesh, redraw };
+}
+const crowd = [];
+const EXTRAS = ['ex1', 'ex2', 'ex3', 'ex4', 'ex5', 'ex6', 'nacho', 'ex2', 'ex1', 'ex3', 'ex5', 'ex4'], UMB = ['#c0262d', '#3a6fb0', '#2f8f5a', '#e0a32a'];
+EXTRAS.forEach((n, i) => { const k = card((g, p) => drawChar(g, n, p)), s = i % 2 ? -1 : 1, um = i % 3 !== 1;
+  k.redraw({ still: 1, t: 0, blink: 0, walk: 1, phase: .6 + i * 1.3, flip: rnd() < .5 ? -1 : 1, look: [rnd() * 20 - 10, 4], mouth: .2, hR: um ? [70, -480] : null, holdR: um ? umbrella(UMB[i % 4]) : null });
+  k.grp.position.set(s * (5.6 + rnd() * 1.6), .18, -6 - i * 6.5 - rnd() * 3); scene.add(k.grp); crowd.push(k); });
+const hero = card((g, p) => drawChar(g, 'tu', p)); hero.mesh.layers.set(1); hero.grp.children[1].layers.set(0); scene.add(hero.grp);
+
+// ---------- rain: our 2D drop as sprites; falling streaks before the clap, hanging beads after
+function dropTex(frozen) { const c = document.createElement('canvas'); c.width = c.height = 64; const g = c.getContext('2d');
+  if (frozen) { g.fillStyle = 'rgba(214,236,255,1)'; g.strokeStyle = INK; g.lineWidth = 5; g.beginPath(); g.ellipse(32, 34, 13, 20, 0, 0, 7); g.fill(); g.stroke(); g.fillStyle = '#fff'; g.beginPath(); g.arc(27, 25, 5, 0, 7); g.fill(); }
+  else { const gr = g.createLinearGradient(0, 0, 0, 64); gr.addColorStop(0, 'rgba(225,238,255,0)'); gr.addColorStop(1, 'rgba(225,238,255,.95)'); g.strokeStyle = gr; g.lineWidth = 5; g.lineCap = 'round'; g.beginPath(); g.moveTo(34, 2); g.lineTo(30, 62); g.stroke(); }
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; return t; }
+const N = 9000, pos = new Float32Array(N * 3), base = [];   // dense around the hero's path, thinner far away
+for (let i = 0; i < N; i++) { const far = rnd() < .3; base.push([(rnd() - .5) * (far ? 17 : 12), rnd() * (far ? 9 : 5.5), far ? -12 - rnd() * 60 : 9 - rnd() * 21]); }
+const rainGeo = new THREE.BufferGeometry(); rainGeo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+const streakMat = new THREE.PointsMaterial({ map: dropTex(0), size: .34, transparent: true, depthWrite: false, alphaTest: .05 });
+const beadMat = new THREE.PointsMaterial({ map: dropTex(1), size: .15, transparent: true, depthWrite: false, alphaTest: .4 });
+const rain = new THREE.Points(rainGeo, streakMat); scene.add(rain);
+
+// ---------- timeline
+function heroPose(t) {
+  const walking = (t < TC - .35) || (t > WALK && t < END - 1.2);
+  let z = t < TC ? mix(-9, -6.2, R(t, 0, TC - .35, lin)) : t < WALK ? -6.2 : mix(-6.2, 2.2, R(t, WALK, END - 1.2, lin));
+  const p = { t, walk: walking ? 1 : 0, phase: t * 7.5, look: [0, -4], mouth: .2, blush: .2 };
+  if (t < TC - .5) { p.hR = [60, -660]; p.look = [0, -10]; p.mouth = -.3; p.brow = .6; }   // hand over head in the rain
+  if (t > TC - .45 && t < TC + .6) { const G = charGeom(CAST.tu, p); [p.hL, p.hR] = clapHands(t, TC, G, .25); p.armsFront = 1; }
+  if (t > TC + .5) { p.look = [Math.sin((t - TC) * 1.4) * 16, -10]; p.wide = .5; p.mouth = .6; }
+  if (t > WALK) { p.look = [Math.sin(t * 1.7) * 14, -6]; p.mouth = .9; p.wide = 0; p.blush = .4; }
+  return { z, p };
+}
+const A = layer('A'), M = layer('M'), CAMV = { cx: W / 2, cy: H / 2, z: 1 };
+window.render = t => {
+  const { z: hz, p } = heroPose(t); hero.redraw(p); hero.grp.position.set(0, .18, hz);
+  // camera: low, close, dollies back as the hero walks towards it; slow push-in while the world hangs
+  const push = R(t, TC + .4, WALK, io), back = R(t, WALK, END, lin);
+  cam.position.set(Math.sin(t * .35) * .5, 1.35 + .25 * push, hz + 5.2 - 1.6 * push + 1.0 * back);
+  cam.lookAt(0, 1.2 + .2 * push, hz - 3); cam.updateMatrixWorld();
+  for (const k of [...crowd, hero]) { k.grp.rotation.set(   // cards turn to face the camera
+    0, Math.atan2(cam.position.x - k.grp.position.x, cam.position.z - k.grp.position.z), 0); }
+  // rain: falls until the clap, then hangs; drops part around the hero's path
+  const ft = Math.min(t, TC), frozen = t >= TC;
+  rain.material = frozen ? beadMat : streakMat;
+  for (let i = 0; i < N; i++) { const [x, y0, z] = base[i]; let y = ((y0 - ft * 11) % 9 + 9) % 9, px = x;
+    const dx = x, dz = z - hz, r = Math.hypot(dx, dz); if (frozen && t > WALK && r < 1.0 && y < 2.2 && z > hz - .2) px += Math.sign(dx || 1) * (1.0 - r) * 1.1;
+    pos[i * 3] = px; pos[i * 3 + 1] = y + .05; pos[i * 3 + 2] = z; }
+  rainGeo.attributes.position.needsUpdate = true;
+  // pass 1: the world (layer 0) into A; pass 2: the hero (layer 1) into A and the colour mask M
+  A.setTransform(1, 0, 0, 1, 0, 0); M.setTransform(1, 0, 0, 1, 0, 0); M.clearRect(0, 0, W, H);
+  cam.layers.set(0); gl.setClearColor(0x000000, 1); gl.render(scene, cam); A.drawImage(gl.domElement, 0, 0);
+  const bg = scene.background, fog = scene.fog; scene.background = null; cam.layers.set(1); gl.setClearColor(0x000000, 0); gl.clear(); gl.render(scene, cam); scene.background = bg;
+  A.drawImage(gl.domElement, 0, 0); M.drawImage(gl.domElement, 0, 0);
+  // our freeze compositing: grey world, coloured hero, radial wipe from the clap point
+  const v = new THREE.Vector3(0, 1.35, hz).project(cam), cx = (v.x + 1) / 2 * W, cy = (1 - v.y) / 2 * H;
+  CUR_LOOK = LOOK.streetRain || {};
+  compose2(X, { A, M, cam: CAMV }, freezeState(t, [{ t: TC, x: cx, y: cy, screen: 1 }], CAMV));
+  if (t > TC - .02 && t < TC + .14) { X.save(); X.globalAlpha = 1 - Math.abs(t - TC - .05) / .1; X.fillStyle = '#fff'; X.fillRect(0, 0, W, H); X.restore(); }
+};
+const X = document.getElementById('c').getContext('2d');
+await document.fonts.load('70px Bangers'); await (window.CUT_READY || true);
+window.ready = true;
+</script></body></html>
