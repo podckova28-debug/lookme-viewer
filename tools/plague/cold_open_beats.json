@@ -24,16 +24,16 @@
   {"hold": 1.8, "shots": [
     {"img": "co_05", "from": [0.48, 0.54, 1.0], "to": [0.46, 0.56, 1.06], "sfx": [{"kind": "step", "at": 0.3}, {"kind": "step", "at": 1.1}]}
   ]},
-  {"vo": "assets/plague/ep01/vo_final/p1.wav", "gain": 1.05, "tail": 0.2, "shots": [
+  {"vo": "assets/plague/ep01/vo_final/p1_m.wav", "gain": 1.05, "tail": 0.2, "shots": [
     {"img": "co_06", "from": [0.5, 0.5, 1.0], "to": [0.48, 0.48, 1.06], "w": 1.2, "sfx": [{"kind": "gasp", "at": 0.1}, {"kind": "murmur", "args": {"d": 1.6}, "gain": 0.5}]},
     {"img": "co_09", "from": [0.5, 0.5, 1.0], "to": [0.52, 0.5, 1.05]}
   ]},
-  {"vo": "assets/plague/ep01/vo_final/n3.wav", "shots": [
+  {"vo": "assets/plague/ep01/vo_final/n3_m.wav", "shots": [
     {"img": "co_07", "from": [0.54, 0.5, 1.0], "to": [0.54, 0.49, 1.06]},
     {"img": "co_08", "from": [0.46, 0.48, 1.0], "to": [0.45, 0.48, 1.06], "sfx": [{"kind": "squeak", "at": 0.3, "gain": 1.1}]},
     {"img": "co_12", "from": [0.5, 0.52, 1.0], "to": [0.54, 0.52, 1.05], "sfx": [{"kind": "shutter", "at": 0.2}, {"kind": "shutter", "at": 0.8, "gain": 0.8}, {"kind": "bell", "at": 0.1, "args": {"f": 174}, "gain": 0.4}]}
   ]},
-  {"vo": "assets/plague/ep01/vo_final/n4.wav", "shots": [
+  {"vo": "assets/plague/ep01/vo_final/n4_m.wav", "shots": [
     {"img": "co_10", "from": [0.5, 0.5, 1.0], "to": [0.48, 0.48, 1.05], "sfx": [{"kind": "page", "at": 0.1}]},
     {"img": "co_10", "from": [0.36, 0.34, 1.45], "to": [0.38, 0.35, 1.55], "sfx": [{"kind": "page", "at": 0.1}]},
     {"img": "co_06", "from": [0.42, 0.42, 1.38], "to": [0.42, 0.4, 1.46]},
