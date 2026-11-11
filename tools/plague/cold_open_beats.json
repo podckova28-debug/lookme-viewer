@@ -4,6 +4,7 @@
  "start": 0.0,
  "lead": 0.45,
  "gap": 0.6,
+ "max_shot": 3.2,
  "sfx_global": [
   {"kind": "drone", "t": 0, "args": {"d": "ALL"}, "gain": 0.9},
   {"kind": "wind", "t": 0, "args": {"d": "ALL"}, "gain": 0.12},
