@@ -256,7 +256,7 @@ N('L51a', "In 1900 he even reached San Francisco. The governor of California ins
   sh('f51c', W(), STICK + " " + PLAGUE + " A stickman governor at a podium waves his hands dismissively to a crowd; right behind him stands the Plague, smiling.", 'PS'),
   sh('f51d', W(), STICK + " Stickman city workers with traps and nets chasing rats through a street; rats fleeing.", 'S'))
 Pl('L51aP', "Denial is my favorite disinfectant.", sh('f51c', C(.62, .4, 1.5)))
-N('L52', "A few years later, Paul-Louis Simond showed how rat fleas spread him.",
+N('L52', "Meanwhile, in 1898, Paul-Louis Simond showed how rat fleas spread him.",
   sh('f52a', W(), STICK + " A stickman scientist with round glasses holds a magnifying glass over a glass jar with a flea inside.", 'S'))
 N('L53', "And in the 1940s, antibiotics arrived. For the first time in five thousand years, the plague could be cured.",
   sh('f53a', W(), STICK + " A 1940s laboratory: a stickman woman scientist in a white coat raises a vial of medicine triumphantly.", 'S'),

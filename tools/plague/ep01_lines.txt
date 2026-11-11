@@ -63,7 +63,7 @@ L50|NARRATOR|But this time, science was waiting for him. In Hong Kong in 1894, a
 L51|PLAGUE|He named me after himself?
 L51a|NARRATOR|In 1900 he even reached San Francisco. The governor of California insisted there was no plague at all, because it would be bad for business. There was. It took years, and a huge campaign against the city's rats, to get rid of him.
 L51aP|PLAGUE|Denial is my favorite disinfectant.
-L52|NARRATOR|A few years later, Paul-Louis Simond showed how rat fleas spread him.
+L52|NARRATOR|Meanwhile, in 1898, Paul-Louis Simond showed how rat fleas spread him.
 L53|NARRATOR|And in the 1940s, antibiotics arrived. For the first time in five thousand years, the plague could be cured.
 L54|NARRATOR|So where is he now? Still around. Every year there are cases, mostly in Madagascar and the Democratic Republic of the Congo, and even a handful in the American Southwest, where he lives in prairie dogs.
 L55|PLAGUE|I'm not gone. I'm semi-retired.
