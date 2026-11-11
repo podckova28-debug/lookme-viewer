@@ -1,0 +1,904 @@
+[
+ {
+  "id": "s00_01",
+  "who": "narrador",
+  "text": "En cinco segundos, Renata te va a hacer una pregunta.",
+  "p": 0
+ },
+ {
+  "id": "s00_02",
+  "who": "narrador",
+  "text": "Tú ya la escuchaste.",
+  "p": 0
+ },
+ {
+  "id": "s00_03",
+  "who": "narrador",
+  "text": "Sabes exactamente qué te va a decir.",
+  "p": 0
+ },
+ {
+  "id": "s00_04",
+  "who": "narrador",
+  "text": "Y aun así, estás a punto de arruinarlo.",
+  "p": 0
+ },
+ {
+  "id": "s00_05",
+  "who": "narrador",
+  "text": "Empecemos por el principio.",
+  "p": 1
+ },
+ {
+  "id": "s01_01",
+  "who": "narrador",
+  "text": "Imagina que puedes ver cinco segundos del futuro.",
+  "p": 0
+ },
+ {
+  "id": "s01_02",
+  "who": "narrador",
+  "text": "No cinco años. No cinco días. Cinco segundos.",
+  "p": 0
+ },
+ {
+  "id": "s01_03",
+  "who": "narrador",
+  "text": "Suena a poco.",
+  "p": 1
+ },
+ {
+  "id": "s01_04",
+  "who": "narrador",
+  "text": "Pero en cinco segundos puedes esquivar un balón, atrapar una taza… o decir justo lo que alguien quiere oír.",
+  "p": 0
+ },
+ {
+  "id": "s01_05",
+  "who": "narrador",
+  "text": "El problema es que también puedes decirlo antes de que te lo pregunten.",
+  "p": 1
+ },
+ {
+  "id": "s03_01",
+  "who": "narrador",
+  "text": "Todo empieza un miércoles cualquiera.",
+  "p": 0
+ },
+ {
+  "id": "s03_02",
+  "who": "narrador",
+  "text": "Abres los ojos y ves a tu gato Croqueta saltarte en la cara.",
+  "p": 0
+ },
+ {
+  "id": "s03_03",
+  "who": "narrador",
+  "text": "Pero Croqueta sigue dormido.",
+  "p": 0
+ },
+ {
+  "id": "s03_04",
+  "who": "narrador",
+  "text": "Lo que viste fue un fantasma azul: Croqueta, cinco segundos en el futuro.",
+  "p": 1
+ },
+ {
+  "id": "s03_05",
+  "who": "narrador",
+  "text": "Te haces a un lado.",
+  "p": 0
+ },
+ {
+  "id": "s03_06",
+  "who": "narrador",
+  "text": "Cinco segundos después, Croqueta salta… y aterriza en la almohada.",
+  "p": 0
+ },
+ {
+  "id": "s03_07",
+  "who": "narrador",
+  "text": "Te mira como si lo hubieras traicionado.",
+  "p": 0
+ },
+ {
+  "id": "s04_01",
+  "who": "narrador",
+  "text": "En la cocina, ves a tu mamá tirar su taza con el codo.",
+  "p": 0
+ },
+ {
+  "id": "s04_02",
+  "who": "narrador",
+  "text": "Ves la taza caer. Ves el café en el piso.",
+  "p": 0
+ },
+ {
+  "id": "s04_03",
+  "who": "narrador",
+  "text": "Y ves que todavía no ha pasado nada.",
+  "p": 0
+ },
+ {
+  "id": "s04_04",
+  "who": "narrador",
+  "text": "Estiras la mano… y atrapas la taza en el aire.",
+  "p": 1
+ },
+ {
+  "id": "s04_05",
+  "who": "mama",
+  "text": "¿Y tú cómo…?",
+  "p": 0
+ },
+ {
+  "id": "s04_06",
+  "who": "tu",
+  "text": "Reflejos, ma.",
+  "p": 0
+ },
+ {
+  "id": "s04_07",
+  "who": "narrador",
+  "text": "Regla número uno: ves y oyes todo cinco segundos antes de que pase.",
+  "p": 1
+ },
+ {
+  "id": "s04_08",
+  "who": "narrador",
+  "text": "Todo. Siempre. Y no se puede apagar.",
+  "p": 0
+ },
+ {
+  "id": "s05_01",
+  "who": "narrador",
+  "text": "En educación física juegan quemados.",
+  "p": 0
+ },
+ {
+  "id": "s05_02",
+  "who": "narrador",
+  "text": "Normalmente, eres el primero en salir.",
+  "p": 0
+ },
+ {
+  "id": "s05_03",
+  "who": "narrador",
+  "text": "Hoy ves cada balón cinco segundos antes de que lo lancen.",
+  "p": 0
+ },
+ {
+  "id": "s05_04",
+  "who": "narrador",
+  "text": "Te agachas. Saltas. Giras.",
+  "p": 1
+ },
+ {
+  "id": "s05_05",
+  "who": "narrador",
+  "text": "Esquivas cuarenta y tres balones seguidos.",
+  "p": 0
+ },
+ {
+  "id": "s05_06",
+  "who": "narrador",
+  "text": "Al final quedan dos: tú y Nacho.",
+  "p": 1
+ },
+ {
+  "id": "s05_07",
+  "who": "narrador",
+  "text": "Nacho tiene el balón. Pero no lo lanza.",
+  "p": 0
+ },
+ {
+  "id": "s05_08",
+  "who": "nacho",
+  "text": "¿Qué eres?",
+  "p": 0
+ },
+ {
+  "id": "s06_01",
+  "who": "narrador",
+  "text": "En el recreo, Nacho te reta a piedra, papel o tijera. El que pierde paga los tacos.",
+  "p": 0
+ },
+ {
+  "id": "s06_02",
+  "who": "narrador",
+  "text": "Ganas.",
+  "p": 0
+ },
+ {
+  "id": "s06_03",
+  "who": "narrador",
+  "text": "Ganas otra vez.",
+  "p": 0
+ },
+ {
+  "id": "s06_04",
+  "who": "narrador",
+  "text": "Ganas cincuenta y una veces seguidas.",
+  "p": 0
+ },
+ {
+  "id": "s06_05",
+  "who": "nacho",
+  "text": "Otra. La última. Ahora sí.",
+  "p": 0
+ },
+ {
+  "id": "s06_06",
+  "who": "narrador",
+  "text": "Esa semana, Nacho te debe treinta y siete tacos.",
+  "p": 1
+ },
+ {
+  "id": "s06_07",
+  "who": "narrador",
+  "text": "Todavía te los debe.",
+  "p": 0
+ },
+ {
+  "id": "s07_01",
+  "who": "narrador",
+  "text": "En clase, al profe Ramírez le encantan las preguntas sorpresa.",
+  "p": 0
+ },
+ {
+  "id": "s07_02",
+  "who": "narrador",
+  "text": "Para ti, ya no son sorpresa.",
+  "p": 0
+ },
+ {
+  "id": "s07_03",
+  "who": "tu",
+  "text": "Cuarenta y dos.",
+  "p": 1
+ },
+ {
+  "id": "s07_04",
+  "who": "narrador",
+  "text": "El profe todavía no había preguntado nada.",
+  "p": 0
+ },
+ {
+  "id": "s07_05",
+  "who": "profe",
+  "text": "A ver… ¿cuánto es seis por siete?",
+  "p": 0
+ },
+ {
+  "id": "s07_06",
+  "who": "narrador",
+  "text": "El profe Ramírez te mira. Luego saca una libreta.",
+  "p": 1
+ },
+ {
+  "id": "s07_07",
+  "who": "narrador",
+  "text": "Tiene una libreta solo para ti.",
+  "p": 0
+ },
+ {
+  "id": "s07_08",
+  "who": "narrador",
+  "text": "Ahora tiene dos.",
+  "p": 0
+ },
+ {
+  "id": "s08_01",
+  "who": "narrador",
+  "text": "En una semana te vuelves el héroe de los accidentes pequeños.",
+  "p": 0
+ },
+ {
+  "id": "s08_02",
+  "who": "narrador",
+  "text": "Atrapas un lápiz antes de que ruede.",
+  "p": 0
+ },
+ {
+  "id": "s08_03",
+  "who": "narrador",
+  "text": "Un vaso de jugo antes de que se voltee.",
+  "p": 0
+ },
+ {
+  "id": "s08_04",
+  "who": "narrador",
+  "text": "El celular del profe Ramírez, a diez centímetros del piso.",
+  "p": 0
+ },
+ {
+  "id": "s08_05",
+  "who": "profe",
+  "text": "Gracias… supongo.",
+  "p": 0
+ },
+ {
+  "id": "s08_06",
+  "who": "narrador",
+  "text": "Nadie sabe cómo lo haces.",
+  "p": 0
+ },
+ {
+  "id": "s09_01",
+  "who": "narrador",
+  "text": "Y claro, piensas en la lotería.",
+  "p": 0
+ },
+ {
+  "id": "s09_02",
+  "who": "narrador",
+  "text": "Esa noche ves el sorteo en la tele, y cada número te llega cinco segundos antes.",
+  "p": 0
+ },
+ {
+  "id": "s09_03",
+  "who": "narrador",
+  "text": "Siete. Doce. Veintiuno. Treinta y tres.",
+  "p": 0
+ },
+ {
+  "id": "s09_04",
+  "who": "narrador",
+  "text": "Aciertas todos.",
+  "p": 0
+ },
+ {
+  "id": "s09_05",
+  "who": "narrador",
+  "text": "Lástima que los boletos se compran el día anterior.",
+  "p": 1
+ },
+ {
+  "id": "s09_06",
+  "who": "tu",
+  "text": "Ah.",
+  "p": 0
+ },
+ {
+  "id": "s10_01",
+  "who": "narrador",
+  "text": "Pero hay un detalle que nadie te explicó.",
+  "p": 0
+ },
+ {
+  "id": "s10_02",
+  "who": "narrador",
+  "text": "Todo lo oyes dos veces: primero en el futuro… y luego otra vez, de verdad.",
+  "p": 0
+ },
+ {
+  "id": "s10_03",
+  "who": "tu",
+  "text": "Pizza.",
+  "p": 1
+ },
+ {
+  "id": "s10_04",
+  "who": "mama",
+  "text": "¿Qué?",
+  "p": 0
+ },
+ {
+  "id": "s10_05",
+  "who": "narrador",
+  "text": "Cinco segundos después:",
+  "p": 0
+ },
+ {
+  "id": "s10_06",
+  "who": "mama",
+  "text": "Mi amor, ¿qué quieres de cenar?",
+  "p": 0
+ },
+ {
+  "id": "s10_07",
+  "who": "tu",
+  "text": "…Pizza.",
+  "p": 0
+ },
+ {
+  "id": "s10_08",
+  "who": "narrador",
+  "text": "Tu mamá te mira como si estuvieras poseído.",
+  "p": 1
+ },
+ {
+  "id": "s10_09",
+  "who": "narrador",
+  "text": "Empiezas a contestar todo antes de tiempo.",
+  "p": 0
+ },
+ {
+  "id": "s10_10",
+  "who": "narrador",
+  "text": "Y la gente deja de preguntarte cosas.",
+  "p": 0
+ },
+ {
+  "id": "s11_01",
+  "who": "narrador",
+  "text": "El segundo problema: se acabaron las sorpresas.",
+  "p": 0
+ },
+ {
+  "id": "s11_02",
+  "who": "narrador",
+  "text": "En las películas, sabes el final cinco segundos antes.",
+  "p": 0
+ },
+ {
+  "id": "s11_03",
+  "who": "narrador",
+  "text": "Con los chistes de Nacho, te ríes antes del final.",
+  "p": 0
+ },
+ {
+  "id": "s11_04",
+  "who": "narrador",
+  "text": "Nacho deja de contarte chistes. Para Nacho, eso es como dejar de respirar.",
+  "p": 0
+ },
+ {
+  "id": "s11_05",
+  "who": "narrador",
+  "text": "Y el viernes es tu cumpleaños.",
+  "p": 1
+ },
+ {
+  "id": "s11_06",
+  "who": "narrador",
+  "text": "Abres la puerta y, cinco segundos antes, ves a todos saltar de detrás del sillón.",
+  "p": 0
+ },
+ {
+  "id": "s11_07",
+  "who": "narrador",
+  "text": "Tienes cinco segundos para ensayar tu cara de sorpresa.",
+  "p": 0
+ },
+ {
+  "id": "s11_08",
+  "who": "chicos",
+  "text": "¡Sorpresa!",
+  "p": 0,
+  "chorus": 3
+ },
+ {
+  "id": "s11_09",
+  "who": "tu",
+  "text": "¡Oh! ¡No! ¡Qué… sorpresa!",
+  "p": 0
+ },
+ {
+  "id": "s11_10",
+  "who": "narrador",
+  "text": "Es la peor cara de sorpresa de la historia.",
+  "p": 0
+ },
+ {
+  "id": "s11_11",
+  "who": "nacho",
+  "text": "Alguien te lo dijo, ¿verdad?",
+  "p": 0
+ },
+ {
+  "id": "s12_01",
+  "who": "narrador",
+  "text": "Y el tercer problema es más raro.",
+  "p": 0
+ },
+ {
+  "id": "s12_02",
+  "who": "narrador",
+  "text": "Vives cinco segundos adelante de todos.",
+  "p": 0
+ },
+ {
+  "id": "s12_03",
+  "who": "narrador",
+  "text": "Cuando todos se ríen, tú ya te reíste.",
+  "p": 0
+ },
+ {
+  "id": "s12_04",
+  "who": "narrador",
+  "text": "Cuando todos se asustan, tú ya te asustaste.",
+  "p": 0
+ },
+ {
+  "id": "s12_05",
+  "who": "narrador",
+  "text": "Estás en el mismo lugar que todos… pero nunca al mismo tiempo.",
+  "p": 0
+ },
+ {
+  "id": "s12_06",
+  "who": "narrador",
+  "text": "Así que vuelves a la banca del parque, con Pepe.",
+  "p": 1
+ },
+ {
+  "id": "s12_07",
+  "who": "narrador",
+  "text": "Y ahí notas algo.",
+  "p": 0
+ },
+ {
+  "id": "s12_08",
+  "who": "narrador",
+  "text": "Todo tiene un fantasma azul: la gente, los perros, las hojas que caen.",
+  "p": 0
+ },
+ {
+  "id": "s12_09",
+  "who": "narrador",
+  "text": "Todo, menos Pepe.",
+  "p": 0
+ },
+ {
+  "id": "s12_10",
+  "who": "narrador",
+  "text": "Pepe no tiene futuro.",
+  "p": 1
+ },
+ {
+  "id": "s12_11",
+  "who": "narrador",
+  "text": "O, por lo menos, no uno que tú puedas ver.",
+  "p": 0
+ },
+ {
+  "id": "s12_12",
+  "who": "tu",
+  "text": "Pepe… ¿qué eres?",
+  "p": 0
+ },
+ {
+  "id": "s12_13",
+  "who": "narrador",
+  "text": "Pepe no dice nada.",
+  "p": 0
+ },
+ {
+  "id": "s13_01",
+  "who": "narrador",
+  "text": "El lunes, en el pasillo, ves el futuro: Renata choca contigo y se le caen los libros.",
+  "p": 0
+ },
+ {
+  "id": "s13_02",
+  "who": "narrador",
+  "text": "Otra vez.",
+  "p": 0
+ },
+ {
+  "id": "s13_03",
+  "who": "narrador",
+  "text": "Así que te haces a un lado.",
+  "p": 1
+ },
+ {
+  "id": "s13_04",
+  "who": "narrador",
+  "text": "Y el futuro cambia: ahora Renata choca con Nacho.",
+  "p": 0
+ },
+ {
+  "id": "s13_05",
+  "who": "narrador",
+  "text": "Jalas a Nacho.",
+  "p": 0
+ },
+ {
+  "id": "s13_06",
+  "who": "narrador",
+  "text": "Ahora Renata choca con el profe Ramírez.",
+  "p": 0
+ },
+ {
+  "id": "s13_07",
+  "who": "narrador",
+  "text": "Eso no lo puedes permitir.",
+  "p": 0
+ },
+ {
+  "id": "s13_08",
+  "who": "narrador",
+  "text": "Te lanzas…",
+  "p": 1
+ },
+ {
+  "id": "s13_09",
+  "who": "narrador",
+  "text": "…y chocas tú con Renata. Los libros vuelan.",
+  "p": 0
+ },
+ {
+  "id": "s13_10",
+  "who": "valeria",
+  "text": "¿Tú otra vez?",
+  "p": 0
+ },
+ {
+  "id": "s13_11",
+  "who": "narrador",
+  "text": "Regla número dos: si cambias el futuro, ves uno nuevo. No uno mejor.",
+  "p": 1
+ },
+ {
+  "id": "s14_01",
+  "who": "narrador",
+  "text": "Y así llegamos al principio.",
+  "p": 0
+ },
+ {
+  "id": "s14_02",
+  "who": "narrador",
+  "text": "A la salida, Renata se acerca.",
+  "p": 0
+ },
+ {
+  "id": "s14_03",
+  "who": "narrador",
+  "text": "Y cinco segundos antes, la oyes:",
+  "p": 0
+ },
+ {
+  "id": "s14_04",
+  "who": "valeria",
+  "text": "¿Quieres ir conmigo a la feria de ciencias el sábado?",
+  "p": 0,
+  "fx": "futuro"
+ },
+ {
+  "id": "s14_05",
+  "who": "narrador",
+  "text": "Ya lo sabes. Ya lo escuchaste. Solo tienes que esperar cinco segundos.",
+  "p": 1
+ },
+ {
+  "id": "s14_06",
+  "who": "narrador",
+  "text": "Cinco segundos.",
+  "p": 0
+ },
+ {
+  "id": "s14_07",
+  "who": "narrador",
+  "text": "No aguantas.",
+  "p": 0
+ },
+ {
+  "id": "s14_08",
+  "who": "tu",
+  "text": "¡Sí! ¡Sí quiero ir a la feria!",
+  "p": 0
+ },
+ {
+  "id": "s14_09",
+  "who": "narrador",
+  "text": "Renata todavía no había dicho nada.",
+  "p": 1
+ },
+ {
+  "id": "s14_10",
+  "who": "valeria",
+  "text": "¿Cómo sabías lo que te iba a preguntar?",
+  "p": 0
+ },
+ {
+  "id": "s14_11",
+  "who": "narrador",
+  "text": "Y entonces ves el futuro: Renata dándose la vuelta… y yéndose.",
+  "p": 0
+ },
+ {
+  "id": "s15_01",
+  "who": "narrador",
+  "text": "Tienes cinco segundos para arreglarlo.",
+  "p": 0
+ },
+ {
+  "id": "s15_02",
+  "who": "narrador",
+  "text": "Y haces lo único que no habías hecho en todo el mes.",
+  "p": 0
+ },
+ {
+  "id": "s15_03",
+  "who": "narrador",
+  "text": "Cierras los ojos. Te tapas los oídos.",
+  "p": 1
+ },
+ {
+  "id": "s15_04",
+  "who": "narrador",
+  "text": "Y por primera vez, no sabes qué va a pasar.",
+  "p": 0
+ },
+ {
+  "id": "s15_05",
+  "who": "narrador",
+  "text": "Cinco. Cuatro. Tres. Dos. Uno.",
+  "p": 0
+ },
+ {
+  "id": "s15_06",
+  "who": "narrador",
+  "text": "Abres los ojos.",
+  "p": 1
+ },
+ {
+  "id": "s15_07",
+  "who": "narrador",
+  "text": "Renata sigue ahí.",
+  "p": 0
+ },
+ {
+  "id": "s15_08",
+  "who": "valeria",
+  "text": "Bueno… ¿quieres ir o no?",
+  "p": 0
+ },
+ {
+  "id": "s15_09",
+  "who": "tu",
+  "text": "¿A dónde?",
+  "p": 0
+ },
+ {
+  "id": "s15_10",
+  "who": "valeria",
+  "text": "A la feria de ciencias. El sábado. Conmigo.",
+  "p": 0
+ },
+ {
+  "id": "s15_11",
+  "who": "tu",
+  "text": "Sí. Sí quiero.",
+  "p": 0
+ },
+ {
+  "id": "s15_12",
+  "who": "narrador",
+  "text": "Y por primera vez en semanas, la respuesta llegó justo a tiempo.",
+  "p": 1
+ },
+ {
+  "id": "s15_13",
+  "who": "narrador",
+  "text": "Regla número tres: hay cosas que es mejor escuchar una sola vez.",
+  "p": 0
+ },
+ {
+  "id": "s16_01",
+  "who": "narrador",
+  "text": "Esa noche, vas a contarle todo a Pepe.",
+  "p": 0
+ },
+ {
+  "id": "s16_02",
+  "who": "narrador",
+  "text": "Lo de la feria. Lo de los ojos cerrados. Lo de los treinta y siete tacos.",
+  "p": 0
+ },
+ {
+  "id": "s16_03",
+  "who": "narrador",
+  "text": "Pepe escucha, como siempre.",
+  "p": 0
+ },
+ {
+  "id": "s16_04",
+  "who": "narrador",
+  "text": "Y entonces lo ves.",
+  "p": 1
+ },
+ {
+  "id": "s16_05",
+  "who": "narrador",
+  "text": "Por primera vez, Pepe tiene un fantasma azul.",
+  "p": 0
+ },
+ {
+  "id": "s16_06",
+  "who": "narrador",
+  "text": "El fantasma de Pepe te mira… y abre el pico.",
+  "p": 0
+ },
+ {
+  "id": "s16_07",
+  "who": "narrador",
+  "text": "En cinco segundos, Pepe va a hablar.",
+  "p": 1
+ },
+ {
+  "id": "s16_08",
+  "who": "narrador",
+  "text": "Cinco… cuatro… tres… dos…",
+  "p": 0
+ },
+ {
+  "id": "s17_01",
+  "who": "narrador",
+  "text": "¿Algo de esto es real? Más de lo que crees.",
+  "p": 0
+ },
+ {
+  "id": "s17_02",
+  "who": "narrador",
+  "text": "Uno. Nunca ves el presente.",
+  "p": 1
+ },
+ {
+  "id": "s17_03",
+  "who": "narrador",
+  "text": "A tu cerebro le toma alrededor de una décima de segundo entender lo que ven tus ojos. Para no quedarse atrás, adivina dónde van a estar las cosas.",
+  "p": 0
+ },
+ {
+  "id": "s17_04",
+  "who": "narrador",
+  "text": "Un penal tarda menos de medio segundo en llegar a la portería. Si el portero esperara a ver el balón, nunca llegaría: tiene que adivinar.",
+  "p": 0
+ },
+ {
+  "id": "s17_05",
+  "who": "narrador",
+  "text": "Dos. Algunas ciudades sí ven el futuro.",
+  "p": 1
+ },
+ {
+  "id": "s17_06",
+  "who": "narrador",
+  "text": "En la Ciudad de México, la alerta sísmica puede sonar hasta un minuto antes de que llegue el temblor: los sensores de la costa lo detectan, y la señal viaja más rápido que el sismo.",
+  "p": 0
+ },
+ {
+  "id": "s17_07",
+  "who": "narrador",
+  "text": "Tres. Cuando ves la luz del Sol, ves el pasado: esa luz salió hace unos ocho minutos.",
+  "p": 1
+ },
+ {
+  "id": "s17_08",
+  "who": "narrador",
+  "text": "Nadie puede ver el futuro. Pero todos vivimos un poquito en el pasado… adivinando lo que viene.",
+  "p": 1
+ },
+ {
+  "id": "s18_01",
+  "who": "narrador",
+  "text": "¿Y tú qué harías con cinco segundos de futuro?",
+  "p": 0
+ },
+ {
+  "id": "s18_02",
+  "who": "narrador",
+  "text": "Déjamelo en los comentarios.",
+  "p": 0
+ },
+ {
+  "id": "s18_03",
+  "who": "narrador",
+  "text": "Y si vuelves a ver el video, fíjate bien: Pepe nunca tuvo fantasma… hasta el final.",
+  "p": 0
+ },
+ {
+  "id": "s18_04",
+  "who": "narrador",
+  "text": "¿Qué dijo Pepe? Suscríbete para saberlo.",
+  "p": 0
+ },
+ {
+  "id": "s18_05",
+  "who": "narrador",
+  "text": "Pepe ya lo dijo. Hace cinco segundos.",
+  "p": 0
+ }
+]
