@@ -297,25 +297,25 @@
  ],
  "vo": [
   {
-   "file": "assets/plague/ep01/vo_temp/n1.wav",
-   "t": 0.8
+   "file": "assets/plague/ep01/vo_final/n1.wav",
+   "t": 1.2
   },
   {
-   "file": "assets/plague/ep01/vo_temp/n2.wav",
-   "t": 9.8
+   "file": "assets/plague/ep01/vo_final/n2.wav",
+   "t": 10.2
   },
   {
-   "file": "assets/plague/ep01/vo_temp/p1_vesper.wav",
-   "t": 21.4,
+   "file": "assets/plague/ep01/vo_final/p1.wav",
+   "t": 21.8,
    "gain": 1.05
   },
   {
-   "file": "assets/plague/ep01/vo_temp/n3.wav",
-   "t": 26.2
+   "file": "assets/plague/ep01/vo_final/n3.wav",
+   "t": 26.4
   },
   {
-   "file": "assets/plague/ep01/vo_temp/n4.wav",
-   "t": 35.3
+   "file": "assets/plague/ep01/vo_final/n4.wav",
+   "t": 35.4
   }
  ],
  "sfx": [
