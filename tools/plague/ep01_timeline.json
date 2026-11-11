@@ -2944,20 +2944,11 @@
   {
    "text": "BUBONIC",
    "x": 622,
-   "y": 252,
-   "size": 60,
-   "style": "ink",
-   "maxw": 320,
+   "y": 562,
+   "size": 46,
+   "style": "tag",
+   "maxw": 300,
    "t0": 89.419,
-   "t1": 92.17
-  },
-  {
-   "text": "the lumps",
-   "x": 622,
-   "y": 488,
-   "size": 38,
-   "style": "ink",
-   "t0": 89.719,
    "t1": 92.17
   },
   {
@@ -3005,39 +2996,21 @@
   {
    "text": "BUBONIC",
    "x": 622,
-   "y": 252,
-   "size": 60,
-   "style": "ink",
-   "maxw": 320,
-   "t0": 95.522,
-   "t1": 98.574
-  },
-  {
-   "text": "the lumps",
-   "x": 622,
-   "y": 488,
-   "size": 38,
-   "style": "ink",
+   "y": 562,
+   "size": 46,
+   "style": "tag",
+   "maxw": 300,
    "t0": 95.522,
    "t1": 98.574
   },
   {
    "text": "SEPTICEMIC",
    "x": 1020,
-   "y": 252,
-   "size": 60,
-   "style": "ink",
-   "maxw": 320,
+   "y": 562,
+   "size": 46,
+   "style": "tag",
+   "maxw": 300,
    "t0": 95.822,
-   "t1": 98.574
-  },
-  {
-   "text": "the blood",
-   "x": 1020,
-   "y": 488,
-   "size": 38,
-   "style": "ink",
-   "t0": 96.122,
    "t1": 98.574
   },
   {
@@ -3085,58 +3058,31 @@
   {
    "text": "BUBONIC",
    "x": 622,
-   "y": 252,
-   "size": 60,
-   "style": "ink",
-   "maxw": 320,
-   "t0": 98.724,
-   "t1": 101.776
-  },
-  {
-   "text": "the lumps",
-   "x": 622,
-   "y": 488,
-   "size": 38,
-   "style": "ink",
+   "y": 562,
+   "size": 46,
+   "style": "tag",
+   "maxw": 300,
    "t0": 98.724,
    "t1": 101.776
   },
   {
    "text": "SEPTICEMIC",
    "x": 1020,
-   "y": 252,
-   "size": 60,
-   "style": "ink",
-   "maxw": 320,
-   "t0": 98.724,
-   "t1": 101.776
-  },
-  {
-   "text": "the blood",
-   "x": 1020,
-   "y": 488,
-   "size": 38,
-   "style": "ink",
+   "y": 562,
+   "size": 46,
+   "style": "tag",
+   "maxw": 300,
    "t0": 98.724,
    "t1": 101.776
   },
   {
    "text": "PNEUMONIC",
    "x": 1434,
-   "y": 252,
-   "size": 60,
-   "style": "ink",
-   "maxw": 320,
+   "y": 562,
+   "size": 46,
+   "style": "tag",
+   "maxw": 300,
    "t0": 99.024,
-   "t1": 101.776
-  },
-  {
-   "text": "the lungs",
-   "x": 1434,
-   "y": 488,
-   "size": 38,
-   "style": "ink",
-   "t0": 99.324,
    "t1": 101.776
   },
   {

@@ -673,19 +673,11 @@
       {
        "text": "BUBONIC",
        "x": 622,
-       "y": 252,
-       "size": 60,
-       "style": "ink",
+       "y": 562,
+       "size": 46,
+       "style": "tag",
        "at": 0.3,
-       "maxw": 320
-      },
-      {
-       "text": "the lumps",
-       "x": 622,
-       "y": 488,
-       "size": 38,
-       "style": "ink",
-       "at": 0.6
+       "maxw": 300
       },
       {
        "style": "dim",
@@ -760,36 +752,20 @@
       {
        "text": "BUBONIC",
        "x": 622,
-       "y": 252,
-       "size": 60,
-       "style": "ink",
+       "y": 562,
+       "size": 46,
+       "style": "tag",
        "at": 0,
-       "maxw": 320
-      },
-      {
-       "text": "the lumps",
-       "x": 622,
-       "y": 488,
-       "size": 38,
-       "style": "ink",
-       "at": 0
+       "maxw": 300
       },
       {
        "text": "SEPTICEMIC",
        "x": 1020,
-       "y": 252,
-       "size": 60,
-       "style": "ink",
+       "y": 562,
+       "size": 46,
+       "style": "tag",
        "at": 0.3,
-       "maxw": 320
-      },
-      {
-       "text": "the blood",
-       "x": 1020,
-       "y": 488,
-       "size": 38,
-       "style": "ink",
-       "at": 0.6
+       "maxw": 300
       },
       {
        "style": "dim",
@@ -850,53 +826,29 @@
       {
        "text": "BUBONIC",
        "x": 622,
-       "y": 252,
-       "size": 60,
-       "style": "ink",
+       "y": 562,
+       "size": 46,
+       "style": "tag",
        "at": 0,
-       "maxw": 320
-      },
-      {
-       "text": "the lumps",
-       "x": 622,
-       "y": 488,
-       "size": 38,
-       "style": "ink",
-       "at": 0
+       "maxw": 300
       },
       {
        "text": "SEPTICEMIC",
        "x": 1020,
-       "y": 252,
-       "size": 60,
-       "style": "ink",
+       "y": 562,
+       "size": 46,
+       "style": "tag",
        "at": 0,
-       "maxw": 320
-      },
-      {
-       "text": "the blood",
-       "x": 1020,
-       "y": 488,
-       "size": 38,
-       "style": "ink",
-       "at": 0
+       "maxw": 300
       },
       {
        "text": "PNEUMONIC",
        "x": 1434,
-       "y": 252,
-       "size": 60,
-       "style": "ink",
+       "y": 562,
+       "size": 46,
+       "style": "tag",
        "at": 0.3,
-       "maxw": 320
-      },
-      {
-       "text": "the lungs",
-       "x": 1434,
-       "y": 488,
-       "size": 38,
-       "style": "ink",
-       "at": 0.6
+       "maxw": 300
       },
       {
        "style": "dim",

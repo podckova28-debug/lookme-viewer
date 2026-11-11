@@ -36,7 +36,7 @@ def MENU(n):   # menu board: words written into the panels one by one, the curre
     out = []
     for i in range(n + 1):
         cx = (PANEL[i][0] + PANEL[i][2]) // 2
-        out += [ink(MENU_W[i][0], cx, 252, 60, maxw=320, at=.3 if i == n else 0), ink(MENU_W[i][1], cx, 488, 38, at=.6 if i == n else 0)]
+        out += [{**ink(MENU_W[i][0], cx, 562, 46, maxw=300, at=.3 if i == n else 0), 'style': 'tag'}]
     return out + [dim(PANEL[i], fill=[0, 0, 0, 150]) for i in range(3) if i != n]
 STILL = [[.5, .5, 1.0], [.5, .5, 1.02]]   # near-static wide: keeps in-picture text aligned
 def label(t, x, y, size=64, **k): return {'text': t, 'x': x, 'y': y, 'size': size, 'at': .3, **k}

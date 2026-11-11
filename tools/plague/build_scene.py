@@ -54,6 +54,14 @@ def draw_item(it, k):
         col = tuple(it.get('color', INK)); sw = max(1, size // 34)
         d.text((x, y), txt, font=f, fill=col + (235,), anchor=anc, stroke_width=sw, stroke_fill=col + (235,))
         return L
+    if st == 'tag':   # paper label pinned in the picture: dark ink on a cream card with a thin dark border
+        px, py = int(size * .45), int(size * .22)
+        box = (bx[0] - px, bx[1] - py, bx[2] + px, bx[3] + py)
+        S = Image.new('RGBA', (W, H), (0, 0, 0, 0)); ImageDraw.Draw(S).rectangle((box[0] + 4, box[1] + 6, box[2] + 4, box[3] + 6), fill=(0, 0, 0, 140))
+        L = Image.alpha_composite(S.filter(ImageFilter.GaussianBlur(5)), L); d = ImageDraw.Draw(L)
+        d.rectangle(box, fill=(236, 224, 198, 255), outline=INK + (255,), width=max(2, size // 22))
+        d.text((x, y), txt, font=f, fill=INK + (255,), anchor=anc, stroke_width=max(1, size // 34), stroke_fill=INK + (255,))
+        return L
     if st == 'title':
         col = tuple(it.get('color', CREAM)); sw = max(1, size // 40)
         S = Image.new('RGBA', (W, H), (0, 0, 0, 0)); ImageDraw.Draw(S).text((x + 4, y + 6), txt, font=f, fill=(0, 0, 0, 220), anchor=anc, stroke_width=sw + 4, stroke_fill=(0, 0, 0, 220))
@@ -218,7 +226,19 @@ def still(t, path):
         img = cv2.cvtColor(np.array(Image.alpha_composite(Image.fromarray(cv2.cvtColor(img, cv2.COLOR_BGR2RGB)).convert('RGBA'), lay).convert('RGB')), cv2.COLOR_RGB2BGR)
     cv2.imwrite(path, finish(img, t))
 
-if __name__ == '__main__' and os.environ.get('STILLS'):   # STILLS="12.5,40" -> OUT_12.5.jpg ...: check text placement without a render
+if __name__ == '__main__' and os.environ.get('RANGE'):   # RANGE="86,104" -> re-render only that span (video only) for patching
+    a0, a1 = map(float, os.environ['RANGE'].split(','))
+    shots = spec['shots']; texts = spec.get('texts', [])
+    ff = subprocess.Popen(['ffmpeg', '-v', 'error', '-y', '-f', 'rawvideo', '-pix_fmt', 'bgr24', '-s', f'{W}x{H}', '-r', str(FPS), '-i', '-',
+                           '-c:v', 'libx264', '-crf', '17', '-preset', 'medium', '-pix_fmt', 'yuv420p', out], stdin=subprocess.PIPE)
+    for i in range(int(round(a0 * FPS)), int(round(a1 * FPS))):
+        t = i / FPS; sh = next((s for s in shots if s['t0'] <= t < s['t1']), shots[-1]); img = render_shot(sh, t)
+        lay = text_layer(texts, t)
+        if lay is not None:
+            img = cv2.cvtColor(np.array(Image.alpha_composite(Image.fromarray(cv2.cvtColor(img, cv2.COLOR_BGR2RGB)).convert('RGBA'), lay).convert('RGB')), cv2.COLOR_RGB2BGR)
+        ff.stdin.write(finish(img, t).tobytes())
+    ff.stdin.close(); ff.wait()
+elif __name__ == '__main__' and os.environ.get('STILLS'):   # STILLS="12.5,40" -> OUT_12.5.jpg ...: check text placement without a render
     for t in os.environ['STILLS'].split(','): still(float(t), f'{out}_{t}.jpg')
 elif __name__ == '__main__':
     tmp_v, tmp_a = out + '.v.mp4', out + '.a.wav'
