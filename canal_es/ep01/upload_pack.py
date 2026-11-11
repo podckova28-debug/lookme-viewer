@@ -5,8 +5,10 @@ CH = [('s00', 'La maceta'), ('s01', '¿Qué pasaría si…?'), ('s03', 'El prime
       ('s07', 'El bigote (y el monóculo)'), ('s08', 'La lluvia congelada'), ('s09', 'Los libros de Renata'), ('s10', 'El penal imposible'), ('s11', 'El precio: una cana'),
       ('s11b', 'La cena'), ('s12', 'Nada funciona'), ('s13', 'El cumpleaños de Nacho'), ('s14', 'Pepe'), ('s15', 'La maceta'), ('s16', 'No eres el único'), ('s17', 'Pepe nunca se puso gris'),
       ('s18', '¿Algo de esto es real?'), ('s19', 'Final')]
+# the short, neutral chapter list used in the description (CH stays as the full scene map)
+CH_SHORT = [('s00', 'Inicio'), ('s03', 'El primer aplauso'), ('s08', 'La lluvia'), ('s13', 'El cumpleaños'), ('s16', 'El final'), ('s18', '¿Algo de esto es real?')]
 def mmss(x): x = int(x); return f'{x // 60}:{x % 60:02d}'
-chap = '\n'.join(f"{mmss(T['scenes'][s]['start'])} {n}" for s, n in CH)
+chap = '\n'.join(f"{mmss(T['scenes'][s]['start'])} {n}" for s, n in CH_SHORT)
 md = f"""# Subida a YouTube · Episodio 1
 
 ## Título
@@ -17,26 +19,25 @@ Alternativa para prueba A/B: ¿Qué pasaría si pudieras detener el tiempo con u
 (vidIQ: 84 y 83 puntos; el título simple «¿Qué pasaría si pudieras detener el tiempo?» saca 81. Los tres empiezan con la búsqueda exacta, 29,7 mil al mes.)
 
 ## Miniatura
-- A (principal): `miniatura_A.jpg`: «¿ELLA TAMBIÉN?» (los dos en color en el mundo congelado)
-- B: `miniatura_B.jpg`: «1 APLAUSO»
-- C: `miniatura_C.jpg`: «¿ÉL TAMBIÉN?» (Pepe; para probar después del primer día)
+Estilo del canal: ilustración brillante, mundo congelado en gris azulado, los que se mueven en color con luz dorada; título de dos líneas (blanca + amarilla), un poco inclinado. Se compone con `../../marca/miniatura.py`; el arte sin texto está en `miniaturas_arte/`.
+- A (principal): `miniatura_A.jpg`: «¿ELLA TAMBIÉN?»: él en shock, Renata detrás chasqueando los dedos, el mundo congelado.
+- B: `miniatura_B.jpg`: «TODO SE CONGELÓ»: el aplauso, la onda dorada, la lluvia detenida.
+- C: `miniatura_C.jpg`: «SOLO YO ME MUEVO»: la maceta congelada sobre la cabeza de un peatón.
+- D (reserva): `miniatura_D.jpg`: «¿ELLA TAMBIÉN?», otra pose.
+
+YouTube Studio → Probar y comparar: subir A, B y C juntas; YouTube elige la ganadora por tiempo de visualización.
 
 ## Descripción
-¿Qué pasaría si pudieras detener el tiempo con un aplauso? Al principio es increíble: duermes ocho horas más, sacas diez en matemáticas y metes el gol imposible. Pero cada segundo detenido lo vives tú solo… y alguien más está dejando pistas en el mundo congelado.
-
-Al final: ¿algo de esto es real? Cronostasis, tu corazón que no se pausa y los relojes atómicos que demostraron que tu cabeza envejece más rápido que tus pies.
-
-¿Qué harías tú con el tiempo detenido? Déjalo en los comentarios.
-¿Viste a Renata parpadear al principio? ¿Y en cuántas escenas Pepe sigue en color? 🐦
+¿Qué pasaría si pudieras detener el tiempo con un aplauso? Una historia animada sobre lo que ganarías y lo que perderías. Al final, la ciencia real detrás de la idea.
 
 {chap}
 
-Historia de ficción animada. Personajes, guion y animación originales.
+Animación original.
 
-#quepasariasi #detenereltiempo #animacion
+#quepasariasi #animacion
 
 ## Etiquetas
-qué pasaría si, que pasaria si pudieras detener el tiempo, detener el tiempo, pudieras detener el tiempo, qué pasaría si animación, historias animadas, superpoderes en la vida real, qué harías si, animación en español, pepe la paloma, cronostasis, dilatación del tiempo, relojes atómicos
+qué pasaría si pudieras detener el tiempo, que pasaria si pudieras detener el tiempo, y si pudieras detener el tiempo, detener el tiempo, qué pasaría si, que pasaria si, historias animadas, animación en español, qué harías si, superpoderes en la vida real, ponle que, pepe la paloma, cronostasis, dilatación del tiempo, relojes atómicos
 
 ## Comentario fijado
 Pepe nunca se pone gris. ¿En cuántas escenas del mundo congelado lo encontraste? 🐦 Y la pregunta de verdad: ¿quién es Pepe? Las mejores teorías salen en el próximo episodio.

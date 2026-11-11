@@ -31,16 +31,7 @@
 ## 3. Описание канала (вставить как есть)
 
 ```
-¿Y si pudieras detener el tiempo con un aplauso? ¿Y si vieras cinco segundos del futuro? ¿Y si nadie pudiera mentir… excepto tú?
-
-En Ponle Que… cada historia empieza con una pregunta imposible y la seguimos hasta el final: lo que ganarías, lo que perderías y el giro que nadie ve venir.
-
-Animación original, personajes propios y, al final de cada episodio, «¿Algo de esto es real?»: la ciencia de verdad detrás de la historia.
-
-Y fíjate bien en Pepe, la paloma. Pepe siempre está en algún lugar… y Pepe nunca se pone gris.
-
-🕖 Una historia nueva cada día.
-💬 Déjanos en los comentarios el «¿qué pasaría si…?» que quieres ver.
+Historias animadas en español a partir de una pregunta: ¿qué pasaría si…? Cada episodio termina con la ciencia real detrás de la idea. Nuevo episodio cada día.
 ```
 
 ## 4. Ключевые слова канала (Настройки → Канал → Ключевые слова)
@@ -81,20 +72,16 @@ qué pasaría si, que pasaria si, y si pudieras, historias animadas, animación 
 - **Комментарии:** разрешить все, кроме потенциально недопустимых (на проверку).
 - **Метка «Изменённый или синтетический контент»:** не нужна: это мультфильм, а не реалистичное видео.
 - **Теги по умолчанию:** `qué pasaría si, que pasaria si, historias animadas, animación en español, ponle que`
-- **Шаблон описания** (первые строки меняются под серию):
+- **Шаблон описания** (коротко и нейтрально; первая строка меняется под серию):
 
 ```
-¿Qué pasaría si [pregunta]? [2–3 frases sobre la historia, sin revelar el giro].
+¿Qué pasaría si [pregunta]? Una historia animada sobre [1 frase, sin revelar el giro]. Al final, la ciencia real detrás de la idea.
 
-Al final: ¿algo de esto es real?
+[4–6 capítulos]
 
-¿Qué harías tú? Déjalo en los comentarios.
-¿En cuántas escenas encontraste a Pepe? 🐦
+Animación original.
 
-[capítulos]
-
-Historia de ficción animada. Personajes, guion y animación originales.
-#quepasariasi #ponleque #animacion
+#quepasariasi #animacion
 ```
 
 Готовое описание, главы, теги и закреплённый комментарий для эпизода 1 лежат в `../ep01/out/subida_youtube.md`.

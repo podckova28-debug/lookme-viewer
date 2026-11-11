@@ -17,37 +17,18 @@ Estilo del canal: ilustración brillante, mundo congelado en gris azulado, los q
 YouTube Studio → Probar y comparar: subir A, B y C juntas; YouTube elige la ganadora por tiempo de visualización.
 
 ## Descripción
-¿Qué pasaría si pudieras detener el tiempo con un aplauso? Al principio es increíble: duermes ocho horas más, sacas diez en matemáticas y metes el gol imposible. Pero cada segundo detenido lo vives tú solo… y alguien más está dejando pistas en el mundo congelado.
+¿Qué pasaría si pudieras detener el tiempo con un aplauso? Una historia animada sobre lo que ganarías y lo que perderías. Al final, la ciencia real detrás de la idea.
 
-Al final: ¿algo de esto es real? Cronostasis, tu corazón que no se pausa y los relojes atómicos que demostraron que tu cabeza envejece más rápido que tus pies.
-
-¿Qué harías tú con el tiempo detenido? Déjalo en los comentarios.
-¿Viste a Renata parpadear al principio? ¿Y en cuántas escenas Pepe sigue en color? 🐦
-
-0:00 La maceta
-0:15 ¿Qué pasaría si…?
+0:00 Inicio
 0:39 El primer aplauso
-0:56 Regla #1
-1:22 Ocho horas más de sueño
-1:38 El examen de matemáticas
-2:07 El bigote (y el monóculo)
-2:35 La lluvia congelada
-2:54 Los libros de Renata
-3:22 El penal imposible
-3:47 El precio: una cana
-4:17 La cena
-4:40 Nada funciona
-4:55 El cumpleaños de Nacho
-5:38 Pepe
-6:14 La maceta
-6:48 No eres el único
-7:50 Pepe nunca se puso gris
+2:35 La lluvia
+4:55 El cumpleaños
+6:48 El final
 8:19 ¿Algo de esto es real?
-9:14 Final
 
-Historia de ficción animada. Personajes, guion y animación originales.
+Animación original.
 
-#quepasariasi #detenereltiempo #animacion
+#quepasariasi #animacion
 
 ## Etiquetas
 qué pasaría si pudieras detener el tiempo, que pasaria si pudieras detener el tiempo, y si pudieras detener el tiempo, detener el tiempo, qué pasaría si, que pasaria si, historias animadas, animación en español, qué harías si, superpoderes en la vida real, ponle que, pepe la paloma, cronostasis, dilatación del tiempo, relojes atómicos
