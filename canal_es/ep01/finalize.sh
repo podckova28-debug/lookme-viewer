@@ -5,6 +5,7 @@ set -e
 VO=$(realpath "$1"); W=${2:-/tmp/claude-0/-home-user-lookme-viewer/1113b656-b6bf-5891-bb3b-6c7738b841c9/scratchpad/final}; mkdir -p $W
 PY=/tmp/claude-0/-home-user-lookme-viewer/1113b656-b6bf-5891-bb3b-6c7738b841c9/scratchpad/tts/venv/bin/python
 cd "$(dirname "$0")"
+[ -d ../anim3d/node_modules/three ] || (cd ../anim3d && npm install --no-audit --no-fund)   # three.js for the 3D shots
 $PY layout.py "$VO"
 ./render_all.sh $W/render
 node probe.js $W/probe.json 8

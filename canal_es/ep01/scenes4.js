@@ -33,11 +33,11 @@ SC.s11b = (X, t) => {
 
 /* ================================================================ 17. callback, then the twist: Pepe moves too */
 function pepeMontage(X, t, t0, t1) {   // 'en el mundo congelado, Pepe nunca se puso gris': frozen moments, Pepe circled in colour
-  const clips = [['s00', () => 1.6, [1700, 140]], ['s03', () => TIM.scenes.s03.L.s03_06[0] + .6, [1380, 535]],
+  const clips = [['s00', () => TIM.scenes.s00.L.s00_03[0] - .3, [1700, 140]], ['s03', () => TIM.scenes.s03.L.s03_06[0] + .6, [1380, 535]],
     ['s10', () => TIM.scenes.s10.L.s10_04[0] + 1.2, [1560, 245]], ['s14', () => TIM.scenes.s14.L.s14_06[0] + .3, [1060, 760]]];
   const n = clips.length, k = Math.min(n - 1, Math.floor((t - t0) / ((t1 - t0) / n))), u = ((t - t0) / ((t1 - t0) / n)) % 1;
-  const [sid, tt, [px, py]] = clips[k], keep = SID; SID = sid; SC[sid](X, tt()); const cam = window.__cam; SID = keep;
-  const [sx, sy] = worldToScreen(cam, px, py);
+  const [sid, tt, [px, py]] = clips[k], keep = SID; window.__pepe = null; SID = sid; SC[sid](X, tt()); const cam = window.__cam; SID = keep;
+  const [sx, sy] = window.__pepe || worldToScreen(cam, px, py);
   X.save(); X.strokeStyle = '#fde047'; X.lineWidth = 12; X.beginPath(); X.arc(sx, sy, 90 + 30 * (1 - outC(clamp(u * 3))), 0, 7); X.stroke(); X.restore();
   if (u < .12) { X.save(); X.globalAlpha = 1 - u / .12; X.fillStyle = '#ffffff'; X.fillRect(0, 0, W, H); X.restore(); }
   sticker(X, 'REBOBINA Y MIRA', 1, 70, 60, 70, '#ffffff');
@@ -136,7 +136,7 @@ SC.s19 = (X, t) => {
   if (t > Lt('s19_03') - .05 && t < Lt('s19_04') - .1) {   // inset: the blink from the cold open
     const a = R(t, Lt('s19_03') - .05, Lt('s19_03') + .3, back), keep = SID, LX = layer('INSET');
     const b0 = TIM.scenes.s00.L.s00_02[0] + TIM.scenes.s00.L.s00_02[1] * .55, loop = ((t - Lt('s19_03')) * .8) % 1;
-    SID = 's00'; SC.s00(LX, b0 - .15 + loop * .55); const c0 = window.__cam; SID = keep; const [fx, fy] = worldToScreen(c0, 1400, 520);
+    window.__focus = null; SID = 's00'; SC.s00(LX, b0 - .15 + loop * .55); const c0 = window.__cam; SID = keep; const [fx, fy] = window.__focus || worldToScreen(c0, 1400, 520);
     X.save(); X.translate(1300, 360); X.scale(a, a); shape(X, q => rrPath(q, -330, -195, 660, 390, 18), '#fde047', 8);
     X.drawImage(LX.canvas, fx - 300, fy - 170, 600, 338, -310, -175, 620, 350); X.restore();
     sticker(X, '¿VISTE EL PARPADEO?', a, 1010, 600, 56); }

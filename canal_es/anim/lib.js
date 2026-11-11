@@ -2,7 +2,8 @@
    Style: flat shapes, thin dark outline, round pale heads with dot eyes, tube limbs, mitten hands.
    Everything is drawn into a canvas context passed as `g`, so the same characters can go
    to the "world" layer (which turns gray-blue when time stops) or the "color" layer. */
-const W = 1920, H = 1080, OUT = '#1b1320', LW = 5;
+const VERT = typeof location !== 'undefined' && /[?&]vert=1/.test(location.search);   // 1080x1920 frames for native vertical Shorts (3D shots)
+const W = VERT ? 1080 : 1920, H = VERT ? 1920 : 1080, OUT = '#1b1320', LW = 5;
 let CUR_LOOK = {};   // per-location light: rim colour, grade tint (set by drawSet)
 const clamp = (v, a = 0, b = 1) => Math.max(a, Math.min(b, v));
 const io = t => { t = clamp(t); return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };

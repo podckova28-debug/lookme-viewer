@@ -17,7 +17,8 @@ SHORTS = [
     ('short1_penal', S('s10')['start'], S('s10')['start'] + S('s10')['dur'], '¿Y SI DETIENES EL TIEMPO\\NEN UN PENAL?'),
     ('short2_cumple', S('s13')['start'], Lt('s13', 's13_14') + 3.0, 'DETIENES EL TIEMPO\\N...Y TODOS APLAUDEN'),
     ('short3_giro', S('s16')['start'], Le('s16', 's16_07') + .6, '¿Y SI NO ERES EL ÚNICO\\NQUE DETIENE EL TIEMPO?'),
-    ('short4_maceta', S('s00')['start'], S('s00')['start'] + S('s00')['dur'], 'TODO SE CONGELÓ\\N...MENOS TÚ'),
+    ('short4_maceta', S('s00')['start'], S('s00')['start'] + S('s00')['dur'], 'TODO SE CONGELÓ\\N...MENOS TÚ', 's00'),
+    ('short7_lluvia', S('s08')['start'], Lt('s08', 's08_05') - .1, 'DETIENES LA LLUVIA\\N...Y CAMINAS ENTRE LAS GOTAS', 's08'),
     ('short5_ciencia', Lt('s18', 's18_05') - .4, Le('s18', 's18_08') + .8, 'TU CABEZA ES MÁS VIEJA\\NQUE TUS PIES'),
     ('short6_pepe', Lt('s17', 's17_05') - .3, S('s17')['start'] + S('s17')['dur'], 'NADIE SE MUEVE...\\NEXCEPTO LA PALOMA'),
 ]
@@ -37,7 +38,7 @@ Style: End,Bangers,80,&H00FFFFFF,&H000000FF,&H001C1CE0,&H00000000,0,0,0,0,100,10
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 """
-for name, a, b, hook in SHORTS:
+for name, a, b, hook, *vert in SHORTS:
     dur = b - a; ev = [f'Dialogue: 0,{ts(0)},{ts(dur)},Hook,,0,0,0,,{hook}']
     for sid in T['order']:
         for lid, (t, d, who) in S(sid)['L'].items():
@@ -46,12 +47,20 @@ for name, a, b, hook in SHORTS:
             txt = LINES[lid]['text'].replace('…', '...')
             if who != 'narrador': txt = NAMES.get(who, who.upper()) + ': ' + txt
             ev.append(f'Dialogue: 1,{ts(st)},{ts(min(en, dur))},Sub,,0,0,0,,{txt.upper()}')
-    ev.append(f'Dialogue: 2,{ts(dur - 2.2)},{ts(dur)},End,,0,0,0,,{{\\fad(200,0)}}VIDEO COMPLETO\\NEN EL CANAL')
+    endpos = '\\pos(540,620)' if vert else ''
+    ev.append(f'Dialogue: 2,{ts(dur - 2.2)},{ts(dur)},End,,0,0,0,,{{\\fad(200,0){endpos}}}VIDEO COMPLETO\\NEN EL CANAL')
     ass = os.path.join(OUT, name + '.ass'); open(ass, 'w', encoding='utf-8').write(HEAD + '\n'.join(ev) + '\n')
+    out = os.path.join(OUT, name + '.mp4')
+    if vert:   # 3D shots are rendered natively vertical (painted look, 1080x1920): no crop, no blurred bars
+        sid = vert[0]; vv = os.path.join(OUT, name + '_vert.mp4')
+        subprocess.run(['node', os.path.join(HERE, '..', 'anim', 'render.js'), os.path.join(HERE, f'ep01.html?scene={sid}&hyb=1&vert=1'), f'{dur:.3f}', vv, f'{a - S(sid)["start"]:.3f}'], check=True, cwd=HERE)
+        vf = f"[0:v]subtitles='{ass}':fontsdir='{FONTS}'[v]"
+        subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', vv, '-ss', f'{a:.3f}', '-t', f'{dur:.3f}', '-i', EP, '-filter_complex', vf, '-map', '[v]', '-map', '1:a',
+                        '-af', f'afade=t=in:d=0.15,afade=t=out:st={dur - .4:.2f}:d=0.4', '-c:v', 'libx264', '-crf', '20', '-preset', 'medium', '-c:a', 'aac', '-b:a', '160k', '-movflags', '+faststart', out], check=True)
+        print(name, round(dur, 1), 's (vertical 3D) ->', out); continue
     vf = ("[0:v]split[a][b];[a]scale=3414:1920,crop=1080:1920,boxblur=24:2,eq=brightness=-0.18[bg];"
           "[b]crop=1440:1080:240:0,scale=1080:810[fg];[bg][fg]overlay=0:540,"
           f"subtitles='{ass}':fontsdir='{FONTS}'[v]")
-    out = os.path.join(OUT, name + '.mp4')
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-ss', f'{a:.3f}', '-t', f'{dur:.3f}', '-i', EP, '-filter_complex', vf, '-map', '[v]', '-map', '0:a',
                     '-af', f'afade=t=in:d=0.15,afade=t=out:st={dur - .4:.2f}:d=0.4', '-c:v', 'libx264', '-crf', '20', '-preset', 'medium', '-c:a', 'aac', '-b:a', '160k', '-movflags', '+faststart', out], check=True)
     print(name, round(dur, 1), 's ->', out)

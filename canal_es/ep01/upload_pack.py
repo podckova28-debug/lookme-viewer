@@ -51,6 +51,7 @@ Pepe nunca se pone gris. ¿En cuántas escenas del mundo congelado lo encontrast
 4. `short4_maceta.mp4`: Todo se congeló… menos tú. #shorts #quepasariasi
 5. `short5_ciencia.mp4`: Tu cabeza es más vieja que tus pies (es real) #shorts #ciencia
 6. `short6_pepe.mp4`: Nadie se mueve… excepto la paloma 🐦 #shorts #quepasariasi
+7. `short7_lluvia.mp4`: Detienes la lluvia… y caminas entre las gotas 🌧️ #shorts #quepasariasi
 
 Duración total: {mmss(T['total'])} · voz: {T['vo']}
 """
