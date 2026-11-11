@@ -4,7 +4,9 @@
 <script src="../anim/lib.js"></script><script src="../anim/sets.js"></script><script src="../anim/cut/specs.js"></script><script src="../anim/cutout.js"></script>
 <script>
 /* Channel branding, drawn from the episode's own assets: marca.html?hyb=1&v=avatar|avatarB|banner|watermark|endcard
-   The look is the channel's signature: the world frozen in grey-blue, the one who moves in colour. */
+   The look is the channel's signature: the world frozen in grey-blue, the one who moves in colour.
+   avatar.png, avatar_alternativo.png and marca_de_agua.png are now painted illustrations (see canal_youtube.md);
+   the avatar/avatarB/watermark views below are the older code-drawn versions, kept as a fallback. */
 const NAME = 'PONLE QUE…', TAG = '¿Qué pasaría si…? Todo se congela… menos tú', SCHED = 'UNA HISTORIA NUEVA CADA DÍA';
 const V = new URLSearchParams(location.search).get('v') || 'avatar';
 const SIZE = { avatar: [800, 800], avatarB: [800, 800], banner: [2560, 1440], watermark: [150, 150], endcard: [1920, 1080] }[V];
