@@ -1,0 +1,153 @@
+id	role	sec	ratio	whisper
+s00_01	narrador	3.6	1.00	en cinco segundos, Renata te va a hacer una pregunta.
+s00_02	narrador	1.1	0.75	tú ya le escuchaste.
+s00_03	narrador	2.3	1.00	sabes exactamente qué te va a decir.
+s00_04	narrador	2.7	1.00	y aún así estás a punto de arruinarlo.
+s00_05	narrador	1.5	1.00	Empecemos por el principio.
+s01_01	narrador	2.9	0.88	Imagina que puedes ver 5 segundos del futuro.
+s01_02	narrador	3.5	0.62	No 5 años, no 5 días, 5 segundos.
+s01_03	narrador	0.9	1.00	Suena a poco.
+s01_04	narrador	6.3	1.00	Pero en cinco segundos puedes esquivar un balón, atrapar una taza o decir justo lo que alguien quiere oír.
+s01_05	narrador	4.0	1.00	El problema es que también puedes decirlo antes de que te lo pregunten.
+s03_01	narrador	1.9	1.00	Todo empieza un miércoles cualquiera.
+s03_02	narrador	3.6	0.92	Abres los ojos y ves a tu gato croquetas saltarte en la cara.
+s03_03	narrador	1.5	1.00	pero Croqueta sigue dormido.
+s03_04	narrador	4.1	0.92	Lo que viste fue un fantasma azul, croqueta, 5 segundos en el futuro.
+s03_05	narrador	1.1	1.00	te haces a un lado.
+s03_06	narrador	4.6	0.70	5 segundos después, croquetas alta y aterriza en la almohada.
+s03_07	narrador	1.9	1.00	te mira como si lo hubieras traicionado.
+s04_01	narrador	3.3	1.00	En la cocina, ves a tu mamá tirar su taza con el codo.
+s04_02	narrador	2.8	0.90	ves la tasa caer, ves el café en el piso.
+s04_03	narrador	2.3	1.00	y ves que todavía no ha pasado nada.
+s04_04	narrador	2.9	0.90	estiras la mano y atrapas la tasa en el aire.
+s04_05	mama	0.7	1.00	y tu como
+s04_06	tu	1.2	0.50	Reflejos, Maa
+s04_07	narrador	4.9	0.92	Regla número uno, ves y oyes todos cinco segundos antes de que pase.
+s04_08	narrador	2.4	1.00	todo, siempre y no se puede apagar.
+s05_01	narrador	2.7	1.00	en educación física, juegan quemados.
+s05_02	narrador	2.4	1.00	Normalmente eres el primero en salir.
+s05_03	narrador	3.0	0.91	Hoy ves cada balón 5 segundos antes de que lo lancen.
+s05_04	narrador	2.2	0.75	te agaches, saltas, giras.
+s05_05	narrador	2.4	0.60	esquivas 43 balones seguidos.
+s05_06	narrador	2.1	1.00	Al final quedan dos, tú y Nacho.
+s05_07	narrador	2.4	1.00	Nacho tiene el balón, pero no lo lanza.
+s05_08	nacho	0.7	1.00	que eres.
+s06_01	narrador	5.7	1.00	En el recreo, Nacho te reta a piedra, papel o tijera, el que pierde paga los tacos.
+s06_02	narrador	0.7	1.00	ganas.
+s06_03	narrador	1.2	1.00	ganas otra vez.
+s06_04	narrador	2.0	0.60	ganas 51 veces seguidas.
+s06_05	nacho	2.4	1.00	otra, la última, ahora sí
+s06_06	narrador	3.2	0.75	esa semana, Nacho te debe 37 tacos.
+s06_07	narrador	1.2	1.00	Todavía te los debe.
+s07_01	narrador	4.1	1.00	En clase. Al profe Ramírez le encantan las preguntas sorpresa.
+s07_02	narrador	2.1	1.00	para ti, ya no son sorpresa.
+s07_03	tu	1.0	0.00	42
+s07_04	narrador	2.1	1.00	El profe todavía no había preguntado nada.
+s07_05	profe	2.0	0.67	A ver, ¿cuánto es 6x7?
+s07_06	narrador	3.0	1.00	El profe Ramírez te mira. Luego saca una libreta.
+s07_07	narrador	1.6	1.00	tiene una libreta solo para ti.
+s07_08	narrador	1.0	1.00	Ahora tiene dos.
+s08_01	narrador	3.4	1.00	En una semana te vuelves el héroe de los accidentes pequeños.
+s08_02	narrador	2.2	1.00	Atrapas un lápiz antes de que ruede.
+s08_03	narrador	2.2	1.00	un vaso de jugo antes de que se voltee.
+s08_04	narrador	3.8	0.90	el celular del profe Ramírez a 10 centímetros del piso.
+s08_05	profe	1.1	1.00	Gracias supongo.
+s08_06	narrador	1.7	1.00	Nadie sabe cómo lo haces.
+s09_01	narrador	2.1	1.00	Y claro, piensas en la lotería.
+s09_02	narrador	4.8	0.90	Esa noche ves ensorteo en la tele y cada número te llega cinco segundos antes.
+s09_03	narrador	3.4	0.00	7-12-21-33
+s09_04	narrador	1.3	0.40	a ciertas todos.
+s09_05	narrador	2.7	1.00	lástima que los boletos se compran el día anterior.
+s09_06	tu	0.5	1.00	Ah
+s10_01	narrador	2.1	1.00	pero hay un detalle que nadie te explicó.
+s10_02	narrador	3.9	1.00	Todo lo oyes dos veces, primero en el futuro y luego otra vez de verdad.
+s10_03	tu	0.6	1.00	pizza.
+s10_04	mama	0.3	1.00	que
+s10_05	narrador	1.4	0.67	5 segundos después.
+s10_06	mama	1.6	1.00	Mi amor, ¿qué quieres de cenar?
+s10_07	tu	0.6	1.00	pizza.
+s10_08	narrador	2.2	1.00	tu mamá te mira como si estuvieras poseído.
+s10_09	narrador	2.2	1.00	empiezas a contestar todo antes de tiempo.
+s10_10	narrador	2.4	1.00	y la gente deja de preguntarte cosas.
+s11_01	narrador	2.6	1.00	El segundo problema se acabaron las sorpresas.
+s11_02	narrador	4.0	0.90	y alisté en las películas, sabes el final cinco segundos antes.
+s11_03	narrador	3.0	1.00	con los chistes de Nacho, te ríes antes del final.
+s11_04	narrador	4.2	0.89	Nacho deja de contar de chistes, para Nacho eso es como dejar de respirar.
+s11_05	narrador	2.0	1.00	y el viernes es tu cumpleaños.
+s11_06	narrador	5.1	1.00	abres la puerta y cinco segundos antes ves a todos saltar de detrás del sillón.
+s11_07	narrador	3.0	1.00	tienes cinco segundos para ensayar tu cara de sorpresa.
+s11_08_1	chicos	0.8	1.00	¡Sorpresa!
+s11_08_2	chicos	0.8	1.00	¡Sorpresa!
+s11_08_3	chicos	0.8	1.00	sorpresa.
+s11_09	tu	2.9	1.00	¡Oh, no! ¡Qué sorpresa!
+s11_10	narrador	2.3	1.00	es la peor cara de sorpresa de la historia.
+s11_11	nacho	1.2	1.00	alguien te lo dijo, ¿verdad?
+s12_01	narrador	2.0	1.00	y el tercer problema es más raro.
+s12_02	narrador	2.5	1.00	Vives cinco segundos adelante de todos.
+s12_03	narrador	2.4	1.00	Cuando todos se ríen, tú ya te reíste.
+s12_04	narrador	2.6	1.00	Cuando todos se asustan, tú ya te asustaste.
+s12_05	narrador	3.8	1.00	Estás en el mismo lugar que todos, pero nunca al mismo tiempo.
+s12_06	narrador	2.8	1.00	Así que vuelves a la banca del parque con Pepe.
+s12_07	narrador	1.1	1.00	y ahí notas algo.
+s12_08	narrador	4.3	1.00	Todo tiene un fantasma azul, la gente, los perros, las hojas que caen.
+s12_09	narrador	1.0	0.86	Y todo menos pepe.
+s12_10	narrador	1.2	1.00	Pepe no tiene futuro.
+s12_11	narrador	2.9	1.00	o por lo menos no uno que tú puedas ver.
+s12_12	tu	1.1	1.00	Pepe que eres
+s12_13	narrador	1.1	1.00	Pepe no dice nada.
+s13_01	narrador	6.3	1.00	El lunes en el pasillo, ves el futuro, Renata choca contigo y se le caen los libros.
+s13_02	narrador	0.7	1.00	otra vez.
+s13_03	narrador	1.4	1.00	Así que te haces a un lado.
+s13_04	narrador	3.2	1.00	y el futuro cambia. Ahora Renata choca con Nacho.
+s13_05	narrador	1.0	0.40	Jalas Anacho.
+s13_06	narrador	2.4	1.00	Ahora Renata choca con el profe Ramírez.
+s13_07	narrador	1.7	1.00	eso no lo puedes permitir.
+s13_08	narrador	1.2	0.80	o te lanzas.
+s13_09	narrador	2.6	0.93	Chocas tú con Renata. Los libros vuelan.
+s13_10	valeria	0.9	1.00	¿Tú otra vez?
+s13_11	narrador	5.5	1.00	Regla número dos, si cambias el futuro, ves uno nuevo, no uno mejor.
+s14_01	narrador	1.6	1.00	Y así llegamos al principio.
+s14_02	narrador	2.2	1.00	A la salida, Renata se acerca.
+s14_03	narrador	2.3	0.73	5 segundos antes, la oyes.
+s14_04	valeria	2.5	1.00	¿Quieres ir conmigo a la Feria de Ciencias el sábado?
+s14_05	narrador	4.2	0.92	Ya lo sabes, ya lo escuchaste, solo tienes que esperar 5 segundos.
+s14_06	narrador	1.1	0.50	5 segundos.
+s14_07	narrador	1.1	1.00	no aguantas.
+s14_08	tu	2.4	1.00	Sí, sí quiero ir a la feria.
+s14_09	narrador	2.2	1.00	Renata todavía no había dicho nada.
+s14_10	valeria	1.7	1.00	¿Cómo sabías lo que te iba a preguntar?
+s14_11	narrador	4.0	1.00	y entonces ves el futuro, Renata dándose la vuelta y yéndose.
+s15_01	narrador	2.2	1.00	Tienes cinco segundos para arreglarlo.
+s15_02	narrador	2.4	1.00	y haces lo único que no habías hecho en todo el mes.
+s15_03	narrador	2.5	1.00	Cierras los ojos, te tapas los oídos.
+s15_04	narrador	2.5	0.95	por primera vez no sabes qué va a pasar.
+s15_05	narrador	2.8	0.00	5, 4, 3, 2, 1.
+s15_06	narrador	1.0	1.00	Abres los ojos.
+s15_07	narrador	1.1	1.00	Renata sigue ahí.
+s15_08	valeria	1.4	1.00	Bueno, ¿Quieres ir o no?
+s15_09	tu	0.6	1.00	¿A dónde?
+s15_10	valeria	3.3	1.00	a la Feria de Ciencias, el sábado, conmigo.
+s15_11	tu	1.7	1.00	Sí, sí quiero.
+s15_12	narrador	3.4	1.00	Y por primera vez en semanas, la respuesta llegó justo a tiempo.
+s15_13	narrador	5.0	0.92	Regla número 3. Hay cosas que es mejor escuchar una sola vez.
+s16_01	narrador	2.3	1.00	esa noche vas a contarle todo a Pepe.
+s16_02	narrador	4.7	0.87	lo de la feria, lo de los ojos cerrados, lo de los 37 tacos.
+s16_03	narrador	1.4	1.00	Pepe escucha, como siempre.
+s16_04	narrador	1.3	1.00	y entonces lo ves.
+s16_05	narrador	2.8	1.00	Por primera vez, Pepe tiene un fantasma azul.
+s16_06	narrador	2.5	1.00	El fantasma de Pepe te mira y abre el pico.
+s16_07	narrador	2.2	0.86	en 5 segundos. Pepe va a hablar.
+s16_08	narrador	3.2	0.00	5, 4, 3, 2...
+s17_01	narrador	3.2	1.00	Algo de esto es real más de lo que crees.
+s17_02	narrador	2.1	1.00	Uno. Nunca ves el presente.
+s17_03	narrador	9.5	1.00	A tu cerebro le toma alrededor de una décima de segundo entender lo que ven tus ojos. Para no quedarse atrás, adivina dónde van a estar las cosas.
+s17_04	narrador	7.0	1.00	Un penal tarda menos de medio segundo en llegar a la portería. Si el portero esperara a ver el balón, nunca llegaría, tiene que adivinar.
+s17_05	narrador	2.5	0.86	2. ¿Algunas ciudades si ven el futuro?
+s17_06	narrador	10.6	1.00	En la Ciudad de México, la alerta sísmica puede sonar hasta un minuto antes de que llegue el temblor, los sensores de la costa lo detectan y la señal viaja más rápido que el sismo.
+s17_07	narrador	5.5	0.97	Cuando ves la luz del sol, ves el pasado, esa luz salió hace unos ocho minutos.
+s17_08	narrador	4.8	1.00	Nadie puede ver el futuro, pero todos vivimos un poquito en el pasado adivinando lo que viene.
+s18_01	narrador	2.2	0.89	y tú que harías con 5 segundos de futuro.
+s18_02	narrador	1.6	1.00	Déjamelo en los comentarios.
+s18_03	narrador	4.9	1.00	Y si vuelves a ver el vídeo, fíjate bien, Pepe nunca tuvo fantasma. Hasta el final.
+s18_04	narrador	2.4	1.00	¿Qué dijo Pepe? Suscríbete para saberlo.
+s18_05	narrador	2.7	0.86	Pepe ya lo dijo, hace 5 segundos.
