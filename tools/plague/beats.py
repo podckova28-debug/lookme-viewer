@@ -1,0 +1,37 @@
+"""Turn a list of beats (voice line + the shots that cover it) into a timeline json for build_scene.py.
+
+Each beat lasts as long as its voice line (or a fixed 'hold' for silent beats) plus a short gap, and its
+shots split that time evenly (or by 'w' weights). SFX and captions are given relative to their shot.
+This keeps cuts tight to the narration: no dead air between lines.
+
+usage: python3 tools/plague/beats.py tools/plague/cold_open_beats.json tools/plague/cold_open.json
+"""
+import sys, os, json, subprocess
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+src = json.load(open(sys.argv[1]))
+GAP, LEAD = src.get('gap', .3), src.get('lead', .15)
+dur = lambda f: float(subprocess.check_output(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', os.path.join(ROOT, f)]))
+out = {k: src[k] for k in ('base', 'fade_in') if k in src}; out.update(shots=[], texts=[], vo=[], sfx=list(src.get('sfx_global', [])))
+t = src.get('start', .4)
+for b in src['beats']:
+    if 'vo' in b:
+        d = dur(b['vo']); out['vo'].append({'file': b['vo'], 't': round(t + LEAD, 3), **({'gain': b['gain']} if 'gain' in b else {})})
+        length = LEAD + d + GAP + b.get('tail', 0)
+    else:
+        length = b['hold']
+    ws = [s.get('w', 1) for s in b['shots']]; acc = t
+    for s, w in zip(b['shots'], ws):
+        sl = length * w / sum(ws)
+        sh = {k: v for k, v in s.items() if k not in ('w', 'sfx', 'text')}; sh['t0'] = round(acc, 3); sh['t1'] = round(acc + sl, 3)
+        out['shots'].append(sh)
+        for e in s.get('sfx', []): out['sfx'].append({**{k: v for k, v in e.items() if k != 'at'}, 't': round(acc + e.get('at', 0), 3)})
+        for tx in ([s['text']] if isinstance(s.get('text'), dict) else s.get('text', [])):
+            out['texts'].append({**{k: v for k, v in tx.items() if k not in ('at', 'len')}, 't0': round(acc + tx.get('at', .2), 3), 't1': round(acc + tx.get('at', .2) + tx.get('len', sl - .3), 3)})
+        acc += sl
+    t += length
+out['duration'] = round(t, 3)
+out['shots'][-1]['fade_out'] = src.get('fade_out', 1.0)
+for e in out['sfx']:
+    if e.get('kind') in ('drone', 'wind') and e.get('args', {}).get('d') == 'ALL': e['args']['d'] = out['duration']
+json.dump(out, open(sys.argv[2], 'w'), indent=1)
+print('duration', out['duration'], 'shots', len(out['shots']))

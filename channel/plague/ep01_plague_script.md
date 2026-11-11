@@ -1,7 +1,7 @@
 # Ep 1 · The ENTIRE History of the Plague in 13 Minutes
 
 Обложка: `channel/art/plague_test/thumb_traveler_port.jpg` или `thumb_traveler_eras.jpg`.
-Персонаж: Чума — путешественница, вариант 4 из `channel/art/plague_test/plague_4_traveler.jpg`. Высокая, тощая, в рваном чёрно-буром плаще с капюшоном, серое лицо в мелких пятнах, крючковатый нос, широкая жуткая улыбка, бронзовая застёжка с крестом, кожаный чемодан с наклейками городов. В тексте — «she».
+Персонаж: Чума — путешественница, вариант 4 из `channel/art/plague_test/plague_4_traveler.jpg`. Высокий, тощий, в рваном чёрно-буром плаще с капюшоном, серое лицо в мелких пятнах, крючковатый нос, широкая жуткая улыбка, бронзовая застёжка с крестом, кожаный чемодан с наклейками городов. В тексте — «he» (мужской голос по решению от 11.11).
 Её крыса на плече — **Rattus** (полное имя Rattus rattus — это настоящее латинское название чёрной крысы). Молчаливый спутник, реагирует мимикой.
 
 ## Стиль
@@ -27,28 +27,28 @@
 **PLAGUE:** Europe! Finally. I've heard *so* much about you.
 
 [S03] Крупно: широкая жуткая улыбка из-под капюшона.
-**NARRATOR:** Meet the Plague. Over the next five years, she will kill somewhere between a third and half of everyone in Europe.
+**NARRATOR:** Meet the Plague. Over the next five years, he will kill somewhere between a third and half of everyone in Europe.
 
 [S04] Чума листает толстый дорожный альбом со старыми «фото» и наклейками: пещеры, Константинополь.
-**NARRATOR:** But this isn't her first trip. Not even close. This is the entire history of the plague: five thousand years, three pandemics, and one very bad houseguest, in thirteen minutes.
+**NARRATOR:** But this isn't his first trip. Not even close. This is the entire history of the plague: five thousand years, three pandemics, and one very bad houseguest, in thirteen minutes.
 
 [S05] Титульная карточка: THE PLAGUE · 3000 BC – 2026.
 
-## 0:40 · Who is she?
+## 0:40 · Who is he?
 
 [S06] Микроскоп. Под стеклом крошечная палочка-бактерия, у неё вдруг появляется капюшон. Перебивка: Чума в полный рост, такая же длинная и тощая.
-**NARRATOR:** So who is she, exactly? Under a microscope, the plague is a bacterium called *Yersinia pestis*. A tiny rod. Which explains the figure.
+**NARRATOR:** So who is he, exactly? Under a microscope, the plague is a bacterium called *Yersinia pestis*. A tiny rod. Which explains the figure.
 **PLAGUE:** I travel light.
 
 [S07] Схема-комикс: крыса → блоха → человек, стрелки.
-**NARRATOR:** She lives in rodents, mostly rats, and she travels by flea. A flea bites an infected rat, the bacteria block the flea's gut, and the starving flea starts biting everything it can find. Including you.
+**NARRATOR:** He lives in rodents, mostly rats, and he travels by flea. A flea bites an infected rat, the bacteria block the flea's gut, and the starving flea starts biting everything it can find. Including you.
 
 [S08] Крупно: крыса на плече Чумы. Подпись-табличка: «RATTUS RATTUS (yes, really)». На носу у крысы сидит блоха с почтальонской сумкой.
-**NARRATOR:** Her travel partner is the black rat, whose scientific name, and we are not making this up, is *Rattus rattus*.
+**NARRATOR:** His travel partner is the black rat, whose scientific name, and we are not making this up, is *Rattus rattus*.
 **PLAGUE:** Rattus handles transport. The fleas handle deliveries.
 
 [S09] Три «меню» на доске: BUBONIC / SEPTICEMIC / PNEUMONIC. Без натурализма, только значки.
-**NARRATOR:** Once inside, she comes in three flavors. Bubonic: it attacks the lymph nodes, which swell up into lumps called buboes. That's where the name comes from. Septicemic: it gets into the blood. And pneumonic: it gets into the lungs, and that version can spread from person to person with a cough.
+**NARRATOR:** Once inside, he comes in three flavors. Bubonic: it attacks the lymph nodes, which swell up into lumps called buboes. That's where the name comes from. Septicemic: it gets into the blood. And pneumonic: it gets into the lungs, and that version can spread from person to person with a cough.
 
 [S10] Чума гордо показывает три пальца.
 **NARRATOR:** Without treatment, the bubonic plague killed around half of the people it infected. The pneumonic plague killed almost all of them.
@@ -56,10 +56,10 @@
 ## 1:40 · Origins: the Stone Age
 
 [S11] Раскоп. Археолог кисточкой счищает землю с древнего зуба.
-**NARRATOR:** For a long time, everyone assumed her story began in the Middle Ages. Then scientists learned to read DNA from ancient skeletons.
+**NARRATOR:** For a long time, everyone assumed his story began in the Middle Ages. Then scientists learned to read DNA from ancient skeletons.
 
 [S12] Из древнего зуба вылезает маленькая сонная Чума в капюшоне, потягивается, крыса зевает.
-**NARRATOR:** And they found her inside the teeth of people who died about five thousand years ago, in the late Stone Age and the Bronze Age, from the Baltic all the way to Siberia.
+**NARRATOR:** And they found him inside the teeth of people who died about five thousand years ago, in the late Stone Age and the Bronze Age, from the Baltic all the way to Siberia.
 **PLAGUE:** Five thousand years, and nobody called?
 
 [S13] Деревня бронзового века со стикманами в шкурах; Чума с маленьким кожаным мешком вместо чемодана — «первая поездка».
@@ -69,10 +69,10 @@
 ## 2:40 · The Plague of Justinian, 541 AD
 
 [S14] Константинополь, купола, Святая София. Подпись: *Constantinople · 541 AD*.
-**NARRATOR:** Her first big headline came in 541 AD, in Constantinople, the capital of the Eastern Roman Empire.
+**NARRATOR:** His first big headline came in 541 AD, in Constantinople, the capital of the Eastern Roman Empire.
 
 [S15] Император Юстиниан над картой Средиземноморья двигает фигурки армий.
-**NARRATOR:** The emperor Justinian was busy trying to win back the old Roman Empire. Then grain ships arrived from Egypt. With grain. With rats. With fleas. And with her.
+**NARRATOR:** The emperor Justinian was busy trying to win back the old Roman Empire. Then grain ships arrived from Egypt. With grain. With rats. With fleas. And with him.
 
 [S16] Корабль с зерном; на мешках сидит Чума с чемоданом и машет рукой, крыса жуёт зерно.
 
@@ -83,7 +83,7 @@
 **NARRATOR:** Justinian survived. His dream of rebuilding Rome mostly didn't.
 
 [S19] Карта: волны вспышек по Средиземноморью, счётчик лет бежит от 541 до примерно 750.
-**NARRATOR:** For the next two hundred years, she kept coming back to the Mediterranean in waves. And then, she vanished. For about six hundred years.
+**NARRATOR:** For the next two hundred years, he kept coming back to the Mediterranean in waves. And then, he vanished. For about six hundred years.
 
 [S20] Чума пакует чемодан и вешает на дверь табличку «BACK IN 600 YEARS».
 **PLAGUE:** I needed some me-time.
@@ -91,7 +91,7 @@
 ## 4:10 · The Black Death, 1346–1353
 
 [S21] Карта Великого шёлкового пути, по ней пунктиром идут следы Чумы и маленькие следы крысы.
-**NARRATOR:** She spent it somewhere in Central Asia, getting ready for the comeback. In the 1340s she headed west along the Silk Road, with merchants, caravans and armies.
+**NARRATOR:** He spent it somewhere in Central Asia, getting ready for the comeback. In the 1340s he headed west along the Silk Road, with merchants, caravans and armies.
 
 [S22] Каффа в Крыму, стены, лагерь Золотой Орды. Подпись: *Caffa · 1346*.
 **NARRATOR:** In 1346, the army of the Golden Horde was besieging Caffa, a Genoese trading port in Crimea. The plague broke out among the besiegers.
@@ -103,7 +103,7 @@
 **NARRATOR:** Which brings us back to Messina. October 1347.
 
 [S25] Карта Европы; чёрный цвет расползается по ней по годам. Счётчик года.
-**NARRATOR:** From Sicily, she toured Europe faster than any king ever could. 1348: Italy, France, Spain and England. 1349: Germany, Scandinavia. By 1351, Russia.
+**NARRATOR:** From Sicily, he toured Europe faster than any king ever could. 1348: Italy, France, Spain and England. 1349: Germany, Scandinavia. By 1351, Russia.
 
 [S26] Чемодан Чумы весь в наклейках: MESSINA 1347 · FLORENCE 1348 · PARIS 1348 · LONDON 1348 · BERGEN 1349.
 **PLAGUE:** Every city. Sold out.
@@ -171,15 +171,15 @@
 
 [S42] Чума пожимает плечами.
 **PLAGUE:** You're welcome?
-**NARRATOR:** Nobody thanked her.
+**NARRATOR:** Nobody thanked him.
 
 ## 10:00 · London, 1665
 
 [S43] Таймлайн: вспышки каждые несколько десятилетий, 1350 → 1650.
-**NARRATOR:** But she never really left. For three hundred years, she kept coming back every few decades.
+**NARRATOR:** But he never really left. For three hundred years, he kept coming back every few decades.
 
 [S44] Лондон 1665 года, деревянные дома. Подпись: *London · 1665*.
-**NARRATOR:** Her last big show in England was London, 1665. The Great Plague killed around a hundred thousand people, close to a quarter of the city.
+**NARRATOR:** His last big show in England was London, 1665. The Great Plague killed around a hundred thousand people, close to a quarter of the city.
 
 [S45] Кембридж: ворота закрыты, табличка CLOSED. Юный Ньютон с сумкой уезжает.
 **NARRATOR:** Cambridge University shut down, and a young student named Isaac Newton went home to his family's farm.
@@ -204,29 +204,29 @@
 **PLAGUE:** I left on my own terms.
 
 [S48a] Марсель, 1720: корабль «Гран-Сент-Антуан» в порту; купцы спорят с карантинной службой, машут контрактами.
-**NARRATOR:** Western Europe's last big outbreak came in 1720, in Marseille. A merchant ship carrying her arrived, and the quarantine was cut short, reportedly so its valuable cargo could make it to a trade fair in time.
+**NARRATOR:** Western Europe's last big outbreak came in 1720, in Marseille. A merchant ship carrying him arrived, and the quarantine was cut short, reportedly so its valuable cargo could make it to a trade fair in time.
 
 [S48b] Карта Прованса; через горы строят длинную каменную стену.
-**NARRATOR:** Roughly half the city died. Authorities built a long wall of stone across the countryside to keep the plague in. After that, she mostly stopped visiting Western Europe.
+**NARRATOR:** Roughly half the city died. Authorities built a long wall of stone across the countryside to keep the plague in. After that, he mostly stopped visiting Western Europe.
 **PLAGUE:** They built me a *wall*. I've never felt so appreciated.
 
 ## 11:00 · The third pandemic
 
 [S49] Китай, середина 1800-х; карта, пароходы расходятся во все стороны.
-**NARRATOR:** Her last world tour began in China in the mid-1800s. By 1894 she reached Hong Kong, and from there steamships carried her to every inhabited continent. India alone lost more than ten million people.
+**NARRATOR:** His last world tour began in China in the mid-1800s. By 1894 he reached Hong Kong, and from there steamships carried him to every inhabited continent. India alone lost more than ten million people.
 
 [S50] Гонконг 1894 года; доктор Александр Йерсен у микроскопа в бамбуковой хижине-лаборатории.
-**NARRATOR:** But this time, science was waiting for her. In Hong Kong in 1894, a doctor named Alexandre Yersin found the culprit under his microscope. That's why she's called *Yersinia pestis*.
+**NARRATOR:** But this time, science was waiting for him. In Hong Kong in 1894, a doctor named Alexandre Yersin found the culprit under his microscope. That's why he's called *Yersinia pestis*.
 
 [S51] Чума смотрит на бейдж со своим научным именем.
 **PLAGUE:** He named me after *himself*?
 
 [S51a] Сан-Франциско 1900 года, трамваи; губернатор на трибуне машет руками «ничего нет!», за его спиной стоит Чума.
-**NARRATOR:** In 1900 she even reached San Francisco. The governor of California insisted there was no plague at all, because it would be bad for business. There was. It took years, and a huge campaign against the city's rats, to get rid of her.
+**NARRATOR:** In 1900 he even reached San Francisco. The governor of California insisted there was no plague at all, because it would be bad for business. There was. It took years, and a huge campaign against the city's rats, to get rid of him.
 **PLAGUE:** Denial is my favorite disinfectant.
 
 [S52] Лаборатория: Поль-Луи Симон с блохой под лупой (1898).
-**NARRATOR:** A few years later, Paul-Louis Simond showed how rat fleas spread her.
+**NARRATOR:** A few years later, Paul-Louis Simond showed how rat fleas spread him.
 
 [S53] 1940-е: стикман-учёная поднимает пробирку антибиотика; Чума пятится, прикрываясь чемоданом, крыса прячется в капюшон.
 **NARRATOR:** And in the 1940s, antibiotics arrived. For the first time in five thousand years, the plague could be cured.
@@ -234,7 +234,7 @@
 ## 12:00 · Today
 
 [S54] Глобус: несколько точек — Мадагаскар, Конго, юго-запад США.
-**NARRATOR:** So where is she now? Still around. Every year there are cases, mostly in Madagascar and the Democratic Republic of the Congo, and even a handful in the American Southwest, where she lives in prairie dogs.
+**NARRATOR:** So where is he now? Still around. Every year there are cases, mostly in Madagascar and the Democratic Republic of the Congo, and even a handful in the American Southwest, where he lives in prairie dogs.
 
 [S55] Чума в шезлонге у норы луговой собачки, чемодан с новой наклейкой «ARIZONA», табличка SEMI-RETIRED.
 **PLAGUE:** I'm not gone. I'm semi-retired.

@@ -14,7 +14,7 @@ from scipy.signal import butter, sosfilt, resample_poly
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 W, H, FPS, SR = 1920, 1080, 24, 48000
-FONT = os.path.join(ROOT, 'assets/fonts/Cinzel-VF.ttf')
+FONT = os.path.join(ROOT, 'assets/fonts/AbrilFatface.ttf')
 spec = json.load(open(sys.argv[1])); out = sys.argv[2]
 base = os.path.join(ROOT, spec['base'])
 TOTAL = spec['duration']
@@ -24,8 +24,8 @@ rng = np.random.default_rng(3)
 def ease(u): u = min(max(u, 0), 1); return u * u * (3 - 2 * u)
 
 # ---------------- picture ----------------
-def font(size, weight='Black'):
-    f = ImageFont.truetype(FONT, size); f.set_variation_by_name(weight); return f
+def font(size, weight=None):
+    return ImageFont.truetype(FONT, size)   # Abril Fatface: one heavy weight
 
 def text_layer(items, t):
     """items: [{text, x, y, size, t0, t1, color, anchor, weight, track}] -> RGBA overlay or None"""
