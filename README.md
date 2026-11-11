@@ -98,3 +98,12 @@ mkdir -p ~/.claude/youtube && cp .claude/youtube/voice.delo-zakryto.md ~/.claude
 - `reports/`, `research_notes/` и снимок `gastronom/` из чата «Михалыч» перенесены в `mikhalych/`.
 - `voice.md` канала «Дело закрыто» сохранён как `voice.delo-zakryto.md`.
 - `.gitignore` объединён из всех веток.
+
+## Изменения 11.11.2026
+- **What If заморожен** по решению пользователя. Вместо него — канал про историю болезней:
+  «The ENTIRE History of …», болезнь — персонаж-злодей, английский, 10–14 мин. Ветка та же
+  (`claude/compassionate-thompson-rzoaqf`, `tools/plague/`). Ep5 «Железный человек» и ep2 «Халк»
+  не выкладываются. Голоса: рассказчик George, Чума Lewis (`voices/`, Chatterbox MIT + Kokoro Apache-2.0).
+  План: банк из 3 эпизодов (Plague, Smallpox, Spanish Flu), выпуск 3 за 3–4 дня, дальше раз в 3 дня.
+- **Озвучка OmniVoice (CC-BY-NC) не для монетизации.** «Здоровье» и «Ситуации» переозвучены
+  (`health/vo_v3/`, `canal_es/ep01/vo_v3/`). Hardo ep10–15 выпускаются как есть по решению пользователя.
