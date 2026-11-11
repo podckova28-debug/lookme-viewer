@@ -1,7 +1,15 @@
 # Ep 1 · The ENTIRE History of the Plague in 13 Minutes
 
-Обложка: `channel/art/plague_test/thumb_plague_3000bc.jpg` («THE PLAGUE 3000 BC – 2026»).
-Персонаж: Чума, вариант 3 из `channel/art/plague_test/plague_3_shadow.jpg` (живая тень, янтарные глаза, золотая корона, красная мантия с лилиями, чёрный дым). В тексте — «she».
+Обложка: `channel/art/plague_test/thumb_traveler_port.jpg` или `thumb_traveler_eras.jpg`.
+Персонаж: Чума — путешественница, вариант 4 из `channel/art/plague_test/plague_4_traveler.jpg`. Высокая, тощая, в рваном чёрно-буром плаще с капюшоном, серое лицо в мелких пятнах, крючковатый нос, широкая жуткая улыбка, бронзовая застёжка с крестом, кожаный чемодан с наклейками городов. В тексте — «she».
+Её крыса на плече — **Rattus** (полное имя Rattus rattus — это настоящее латинское название чёрной крысы). Молчаливый спутник, реагирует мимикой.
+
+## Стиль
+
+- Люди — стикманы, как у Historiq и CEOzoned: белая круглая голова, точки-глаза, тело-палочка, простая одежда эпохи.
+- Чума — единственный «настоящий» персонаж, в упрощённой версии своего дизайна (капюшон, серое лицо, нос, крыса, чемодан). Она выделяется в каждом кадре.
+- Мир — приглушённый: серый, сепия, туман. Тёплые акценты — только огонь и фонари.
+- Монтаж быстрый, как у референсов: смена кадра каждые 2–3 секунды. Каждый блок `[S##]` ниже — это 2–4 быстрых кадра (общий план, деталь, реакция).
 
 Голоса: **NARRATOR** (рассказчик, спокойный, сухой юмор) и **PLAGUE** (сама Чума, самодовольная аристократка; короткие реплики, можно вторым голосом или пузырями с текстом).
 Тон: шутим над Чумой и над тем, как люди её лечили. Над погибшими не шутим. В двух местах тон серьёзный, они помечены ⚠.
@@ -15,28 +23,29 @@
 [S01] Ночь, море, двенадцать торговых галер входят в гавань. Подпись: *Messina, Sicily · October 1347*.
 **NARRATOR:** October, 1347. Twelve trading ships sail into the harbor of Messina, in Sicily. The sailors on board are sick. Many are already dead. And the most dangerous passenger on these ships never bought a ticket.
 
-[S02] По сходням спускается Чума с чемоданом. Дым стелется по причалу.
+[S02] По сходням спускается Чума с чемоданом, на плече крыса. Туман стелется по причалу; стикманы-матросы шарахаются.
 **PLAGUE:** Europe! Finally. I've heard *so* much about you.
 
-[S03] Крупно: ухмылка, янтарные глаза.
+[S03] Крупно: широкая жуткая улыбка из-под капюшона.
 **NARRATOR:** Meet the Plague. Over the next five years, she will kill somewhere between a third and half of everyone in Europe.
 
-[S04] Чума листает толстый альбом со старыми фото: пещеры, Константинополь.
+[S04] Чума листает толстый дорожный альбом со старыми «фото» и наклейками: пещеры, Константинополь.
 **NARRATOR:** But this isn't her first trip. Not even close. This is the entire history of the plague: five thousand years, three pandemics, and one very bad houseguest, in thirteen minutes.
 
 [S05] Титульная карточка: THE PLAGUE · 3000 BC – 2026.
 
 ## 0:40 · Who is she?
 
-[S06] Микроскоп. Под стеклом крошечная палочка-бактерия, у неё вдруг появляется корона.
+[S06] Микроскоп. Под стеклом крошечная палочка-бактерия, у неё вдруг появляется капюшон. Перебивка: Чума в полный рост, такая же длинная и тощая.
 **NARRATOR:** So who is she, exactly? Under a microscope, the plague is a bacterium called *Yersinia pestis*. A tiny rod. Which explains the figure.
-**PLAGUE:** I've been told it's slimming.
+**PLAGUE:** I travel light.
 
 [S07] Схема-комикс: крыса → блоха → человек, стрелки.
 **NARRATOR:** She lives in rodents, mostly rats, and she travels by flea. A flea bites an infected rat, the bacteria block the flea's gut, and the starving flea starts biting everything it can find. Including you.
 
-[S08] Чума верхом на крысе, как на коне; на плече блоха в почтальонской сумке.
-**PLAGUE:** Rats are my horses. Fleas are my couriers.
+[S08] Крупно: крыса на плече Чумы. Подпись-табличка: «RATTUS RATTUS (yes, really)». На носу у крысы сидит блоха с почтальонской сумкой.
+**NARRATOR:** Her travel partner is the black rat, whose scientific name, and we are not making this up, is *Rattus rattus*.
+**PLAGUE:** Rattus handles transport. The fleas handle deliveries.
 
 [S09] Три «меню» на доске: BUBONIC / SEPTICEMIC / PNEUMONIC. Без натурализма, только значки.
 **NARRATOR:** Once inside, she comes in three flavors. Bubonic: it attacks the lymph nodes, which swell up into lumps called buboes. That's where the name comes from. Septicemic: it gets into the blood. And pneumonic: it gets into the lungs, and that version can spread from person to person with a cough.
@@ -49,11 +58,11 @@
 [S11] Раскоп. Археолог кисточкой счищает землю с древнего зуба.
 **NARRATOR:** For a long time, everyone assumed her story began in the Middle Ages. Then scientists learned to read DNA from ancient skeletons.
 
-[S12] Из зуба вылезает маленькая сонная Чума и потягивается.
+[S12] Из древнего зуба вылезает маленькая сонная Чума в капюшоне, потягивается, крыса зевает.
 **NARRATOR:** And they found her inside the teeth of people who died about five thousand years ago, in the late Stone Age and the Bronze Age, from the Baltic all the way to Siberia.
 **PLAGUE:** Five thousand years, and nobody called?
 
-[S13] Деревня бронзового века; Чума ещё без мантии, «в простой одежде».
+[S13] Деревня бронзового века со стикманами в шкурах; Чума с маленьким кожаным мешком вместо чемодана — «первая поездка».
 **NARRATOR:** Those early versions probably couldn't travel by flea yet. That trick came later, as the bacterium evolved. Some researchers think the plague may have helped empty out parts of Stone Age Europe. Others aren't convinced.
 **PLAGUE:** Allegedly.
 
@@ -65,23 +74,23 @@
 [S15] Император Юстиниан над картой Средиземноморья двигает фигурки армий.
 **NARRATOR:** The emperor Justinian was busy trying to win back the old Roman Empire. Then grain ships arrived from Egypt. With grain. With rats. With fleas. And with her.
 
-[S16] Корабль с зерном; на мешках сидит Чума и машет рукой.
+[S16] Корабль с зерном; на мешках сидит Чума с чемоданом и машет рукой, крыса жуёт зерно.
 
 [S17] Летописец Прокопий пишет свиток, ужасается цифрам.
 **NARRATOR:** The historian Procopius wrote that at its worst, up to ten thousand people a day were dying in the city. Even the emperor himself caught it.
 
-[S18] Юстиниан в постели с градусником; Чума сидит на краю кровати и сверяется со списком.
+[S18] Стикман-Юстиниан в постели с короной на голове; Чума сидит на краю кровати и сверяется с маршрутным листом.
 **NARRATOR:** Justinian survived. His dream of rebuilding Rome mostly didn't.
 
 [S19] Карта: волны вспышек по Средиземноморью, счётчик лет бежит от 541 до примерно 750.
 **NARRATOR:** For the next two hundred years, she kept coming back to the Mediterranean in waves. And then, she vanished. For about six hundred years.
 
-[S20] Чума пакует чемодан, надевает тёмные очки.
+[S20] Чума пакует чемодан и вешает на дверь табличку «BACK IN 600 YEARS».
 **PLAGUE:** I needed some me-time.
 
 ## 4:10 · The Black Death, 1346–1353
 
-[S21] Карта Великого шёлкового пути, по нему тянется чёрный дым.
+[S21] Карта Великого шёлкового пути, по ней пунктиром идут следы Чумы и маленькие следы крысы.
 **NARRATOR:** She spent it somewhere in Central Asia, getting ready for the comeback. In the 1340s she headed west along the Silk Road, with merchants, caravans and armies.
 
 [S22] Каффа в Крыму, стены, лагерь Золотой Орды. Подпись: *Caffa · 1346*.
@@ -124,7 +133,7 @@
 [S30] Совет учёных в мантиях в Париже, огромная звёздная карта.
 **NARRATOR:** So how did people fight back? Mostly, badly. The top medical experts in Paris officially concluded that the cause was a conjunction of Saturn, Jupiter and Mars back in 1345.
 
-[S31] Чума врывается в кадр, возмущённая.
+[S31] Чума врывается в зал совета, возмущённая; крыса показывает на неё лапой.
 **PLAGUE:** Excuse me? *I* did the work.
 
 [S32] Горожане с букетами трав у носа, курильницы, кто-то обнюхивает воздух.
@@ -219,7 +228,7 @@
 [S52] Лаборатория: Поль-Луи Симон с блохой под лупой (1898).
 **NARRATOR:** A few years later, Paul-Louis Simond showed how rat fleas spread her.
 
-[S53] 1940-е: учёная поднимает пробирку антибиотика; Чума съёживается и уменьшается.
+[S53] 1940-е: стикман-учёная поднимает пробирку антибиотика; Чума пятится, прикрываясь чемоданом, крыса прячется в капюшон.
 **NARRATOR:** And in the 1940s, antibiotics arrived. For the first time in five thousand years, the plague could be cured.
 
 ## 12:00 · Today
@@ -227,13 +236,13 @@
 [S54] Глобус: несколько точек — Мадагаскар, Конго, юго-запад США.
 **NARRATOR:** So where is she now? Still around. Every year there are cases, mostly in Madagascar and the Democratic Republic of the Congo, and even a handful in the American Southwest, where she lives in prairie dogs.
 
-[S55] Чума в норке луговой собачки, с табличкой SEMI-RETIRED и кружкой.
+[S55] Чума в шезлонге у норы луговой собачки, чемодан с новой наклейкой «ARIZONA», табличка SEMI-RETIRED.
 **PLAGUE:** I'm not gone. I'm semi-retired.
 
 [S56] Аптечный пакет с таблетками.
 **NARRATOR:** But caught early, it's cured with a course of common antibiotics.
 
-[S57] Финальный монтаж: Каменный век → Константинополь → Мессина → Лондон → лаборатория.
+[S57] Финальный монтаж: Каменный век → Константинополь → Мессина → Лондон → лаборатория. Последний кадр — чемодан, весь в наклейках.
 **NARRATOR:** Five thousand years. Three pandemics. One of the deadliest diseases humanity has ever faced. Beaten, in the end, by a course of pills and a forty-day wait.
 
 [S58] Тизер: из колонки капает вода, в капле мелькает силуэт следующего персонажа.
@@ -265,7 +274,8 @@
 
 ## Производство
 
-- Сначала лист персонажа Чумы в 4–5 ракурсах. Все кадры с ней генерировать по нему как по образцу.
-- Около 160 кадров. Карты (S19, S21, S25, S43, S49, S54) и счётчики собрать кодом, без генерации. Картинок нужно примерно 130, это 33 кредита плюс переделки — около 40–45 кредитов.
-- Серьёзные места (S28–S29, S34): без Чумы, тише музыка, никакого натурализма.
-- В двух кадрах (S37 и обложка 1346) доктор с клювом показан «не в своём веке» — в S37 это шутка, а на обложке «1346–1353» это ошибка (см. примечание в ответе).
+- Сначала лист персонажа Чумы в упрощённом виде для кадров: 5–6 ракурсов, плюс крыса Rattus отдельно. Все кадры с ней генерировать по нему как по образцу.
+- Лист стикманов: 3–4 типажа (крестьянин, учёный, правитель, доктор), чтобы люди были одинаковыми во всём ролике.
+- Около 300 коротких кадров по 2–3 с. Примерно 200 генерируются, остальное собирается кодом из тех же картинок: наезды, детали, карты (S19, S21, S25, S43, S49, S54), счётчики, подписи. Около 50–70 кредитов с переделками.
+- Серьёзные места (S28–S29, S34, S46b): без Чумы, тише музыка, никакого натурализма.
+- Доктор с клювом появляется только в 1665 году и в шутке S37 «WRONG CENTURY».
