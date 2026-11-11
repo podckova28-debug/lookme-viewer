@@ -50,7 +50,7 @@ def draw_item(it, k):
     f = font(size, low)
     x, y, anc = it['x'], it['y'], it.get('anchor', 'mm')
     bx = d.textbbox((x, y), txt, font=f, anchor=anc)
-    if st == 'ink':
+    if st == 'ink' and it.get('force_ink'):   # dark ink kept only where explicitly asked; by default all text is light-on-shadow for legibility
         col = tuple(it.get('color', INK)); sw = max(1, size // 34)
         d.text((x, y), txt, font=f, fill=col + (235,), anchor=anc, stroke_width=sw, stroke_fill=col + (235,))
         return L

@@ -24,6 +24,7 @@ def WR(): return [[.53, .5, 1.04], [.47, .5, 1.04]]
 def C(x, y, z=1.3): z = 1 + (z - 1) * .4; return [[x, y, z], [x, y, z + .03]]              # close-up, kept mild: never crops much
 def O(): return [[.5, .5, 1.08], [.5, .5, 1.0]]
 STILL = [[.5, .5, 1.0], [.5, .5, 1.02]]
+ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII']; FRAME_X = [173, 438, 702, 967, 1229, 1493, 1757]   # centres of the 7 frames in c22a
 
 def sh(img, cam=None, prompt=None, refs='', text=None, sfx=None, w=1):
     s = {'img': img, 'cam': cam or W(), 'w': w}
@@ -80,7 +81,7 @@ K('L05', "Twenty litres. I do not do things by halves.",
 N('L06', "People could be healthy at breakfast and dead by dinner. Their skin turned grey-blue and wrinkled from losing so much water. The Victorians had a name for it: the blue death.",
   ch('c12a', W(), "A Victorian breakfast table in the morning: one stickman in a waistcoat eats toast happily, a cup of tea and a jug of water beside him."),
   sh('c12b', W(), "The same Victorian breakfast table at night: the chair is empty and pushed back, the candle burnt low, the toast untouched. No people. Somber."),
-  sh('c12c', C(.5, .5, 1.1), "A single blank, weathered paper poster pasted on a sooty brick wall under a gas lamp at night, its edges torn, a pale blue glow around it. Leave the poster completely blank.", text=ink('THE BLUE DEATH', 960, 300, 92)))
+  sh('c12c', STILL, "A single blank, weathered paper poster pasted on a sooty brick wall under a gas lamp at night, its edges torn, a pale blue glow around it. Leave the poster completely blank.", text=[label('THE BLUE', 1415, 480, 88), label('DEATH', 1415, 590, 88)]))
 N('L07', "Untreated, the worst cases killed around half of their victims. Today, with treatment, fewer than one in a hundred die. Hold that thought.",
   kg('c13a', C(.5, .45, 1.1), "King Cholera holds up a small set of brass weighing scales, smirking, one hand on his belly."),
   sh('c13b', C(.5, .5, 1.05), "Still life: a single glass of clean water and a small paper sachet on a simple wooden table by a window, morning light. Calm, hopeful."))
@@ -113,7 +114,7 @@ K('L15', "I'd been waiting centuries for decent transport.",
   kg('c21a', W(), "King Cholera sits on a crate on the deck of an East India Company sailing ship at sea, legs crossed, sipping from his tin cup like a passenger enjoying a cruise."))
 N('L16', "That was the first cholera pandemic. There would be seven.",
   sh('c22a', STILL, "Seven empty wooden picture frames hanging in a row on a dark wood-panelled wall, the first one slightly lit by a candle. No pictures in them.",
-     text=[ink('I', 260, 540, 90)]))
+     text=[label(r, x, 460, 76, at=.3 if k == 0 else 1.6 + .25 * k) for k, (r, x) in enumerate(zip(ROMAN, FRAME_X))]))
 
 # ---- 1830s: west
 N('L17', "The second one went west. Through Russia in 1830, and into Europe. In October 1831 he landed in the English port of Sunderland. Months later he was in London and Paris, and then across the Atlantic, in Quebec and New York.",
@@ -233,7 +234,7 @@ N('L49', "That's it. Today there are also cholera vaccines, and antibiotics for 
 
 # ---- today
 N('L50', "So, is he gone? Not even close. The seventh pandemic began in Indonesia in 1961, and it has never officially ended.",
-  sh('c22a', STILL, text=[ink('I', 260, 540, 90, at=0), ink('VII', 1660, 540, 90, at=.4)]),
+  sh('c22a', STILL, text=[label(r, x, 460, 76, at=0) for r, x in zip(ROMAN[:6], FRAME_X)] + [label('VII', FRAME_X[6], 460, 92, at=.4, pop=True, color=[240, 150, 60])]),
   sh('c56a', W(), "A tropical harbour in Sulawesi, Indonesia, 1961: wooden boats, stilt houses over the water, palm trees. People only as tiny distant figures.", text=cap('SULAWESI · 1961')))
 N('L51', "In 2010, after a huge earthquake, cholera reached Haiti, carried in by United Nations peacekeepers, and killed nearly ten thousand people. In Yemen, during the war, there were more than two and a half million suspected cases.",
   sh('c57a', W(), "Port-au-Prince in 2010 after the earthquake: damaged buildings, tents, hills behind, dusty light. People only as tiny distant figures.", text=cap('HAITI · 2010')),
