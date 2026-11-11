@@ -1,0 +1,17 @@
+<!doctype html><html><head><meta charset="utf-8">
+<style>@font-face{font-family:Bangers;src:url("../anim/fonts/Bangers-Regular.ttf")}@font-face{font-family:ComicNeue;src:url("../anim/fonts/ComicNeue-Bold.ttf")}html,body{margin:0;background:#000}canvas{display:block}</style></head>
+<body><canvas id="c" width="1920" height="1080"></canvas>
+<script type="importmap">{"imports":{"three":"../anim3d/node_modules/three/build/three.module.js"}}</script>
+<script src="../anim/lib.js"></script><script src="../anim/sets.js"></script><script src="timing.js"></script><script src="vo_env.js"></script>
+<script src="../anim/cut/specs.js"></script><script src="../anim/cutout.js"></script>
+<script src="../anim/episode.js"></script><script src="../anim/future.js"></script>
+<script src="scA.js"></script><script src="scB.js"></script><script src="scC.js"></script><script src="scenes3d.js"></script><script src="comic.js"></script>
+<script>
+const CV = document.getElementById('c'); CV.width = W; CV.height = H; const X = CV.getContext('2d');
+SID = new URLSearchParams(location.search).get('scene') || 's01';
+window.render = t => { X.setTransform(1,0,0,1,0,0); X.filter='none'; X.globalAlpha=1; (SC[SID] || SC.missing)(X, t);
+  for (const c of (COMIC[SID] || [])) { const t0 = c.t(); if (t >= t0 && t < t0 + 1 && window.__cam) { const [x, y] = worldToScreen(window.__cam, c.x, c.y); comicWord(X, c.w, x, y, t - t0, c.size || 96, c.col || '#fde047'); } } };
+const s3d = new Promise(ok => { const w = () => window.S3D_READY ? window.S3D_READY.then(ok) : setTimeout(w, 20); w(); });   // the 3D module loads after this script
+window.ready = Promise.all([document.fonts.load('70px Bangers'), document.fonts.load('70px ComicNeue'), window.CUT_READY || true, s3d]).then(() => true);
+</script><script type="module" src="../anim3d/stage3d.js"></script>
+</body></html>
