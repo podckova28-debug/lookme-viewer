@@ -52,3 +52,7 @@ TH2 th_secret 3 561598f5-9d34-4655-9c58-ee2ca530e92c (medium)
 TH3 th_bottle 1 0ebd1581-2311-45e9-af84-b4f190f2a048 (medium, «Ладно, верни нас классический стиль обложки и попробуй еще раз»)
 TH3 th_tap 2 c630540c-9824-401e-9aeb-11de6ecd816a (medium)
 TH3 th_scales 3 dc87fa7f-10b4-456e-9ba3-e21ded76b9ea (medium)
+THUMB5 ph_pour 3a1f75df-400e-45a7-9c73-a342bf94736b (обложка v5 — фото, без Михалыча; 1 кр)
+THUMB5 ph_nozzle b65bb7e3-8b9c-48e6-823e-de3580fa41ee
+THUMB5 ph_face f7587ff4-2814-4443-8a2e-ce9d3e05cb45
+THUMB5 ph_jar 772e205a-5be0-46a4-ae7e-4afa8c0897dc

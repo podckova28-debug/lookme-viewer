@@ -42,3 +42,7 @@ CLIP M_M3 — копия из ../immortal (бесплатно)
 THUMB th_vs a83d07cc-8e9a-4fe4-9fdc-a006b244c1a3 (база обложки, 1 кр)
 THUMB th_bin 13b9b7f2-82b5-4aa4-bc01-727dc73f6e35
 THUMB th_parts 18ca887e-e0d8-4f44-901d-77554e4872a3
+THUMB5 ph_vs 56cc506f-e526-48cf-9e9d-61d21a0bc8ee (обложка v5 — фото, без Михалыча; 1 кр)
+THUMB5 ph_rust 125d6e76-e42e-4dbc-894e-8abc71097d8b
+THUMB5 ph_grandpa df7cf3c7-0c8c-42c6-b0ce-3f7df31cd30d
+THUMB5 ph_bin c6881f6c-00c7-44c5-84bf-b83345390391
