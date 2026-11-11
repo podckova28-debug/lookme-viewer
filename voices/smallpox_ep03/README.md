@@ -11,8 +11,12 @@ Phipps, Nelmes, Balmis, Isabel Zendal, Rahima Banu, Ali Maow Maalin, vacca.
 Длинные реплики разбиты по предложениям (до 180 знаков), пауза 0,3 с.
 
 ## Whisper (`qa_whisper.tsv`)
-56 из 62 ≥ 0.9.
-Переозвучены (3 дубля, взят лучший): C04 «Blossom» звучало как «Brossum»; L22, L25, L26 — «variolation/variolated»
-произносилось как «va-RYE-oh-lated» (правило для «variola» задевало это слово), теперь «vair-ee-oh-LAY-tid».
+57 из 62 ≥ 0.9.
+Переозвучены (3–9 дублей, взят лучший):
+- C04: «Blossom» звучало как «Brossum».
+- L22: «variolation» (транскрипция vair-ee-oh-lat).
+- L25, L27b: «variolated» без подсказки, модель сама читает VAIR-ee-oh-lay-ted; whisper во всех дублях слышит одно и то же.
+- L26: «variolated» через написание `vairiolated`, «Onesimus» через `Ohnessimus` (oh-NESS-ih-mus). Подсказки с дефисами
+  и заглавными (`Oh-NESS-ih-mus`, `vairy-oh-lay-ted`) модель читает по буквам или дробит, их не использовать.
 Оставшиеся расхождения — цифры вместо слов (C02, L14, L27), «Ramses» → «Ram sees» (L10, так и задумано),
-«favourite» → «favorite» (L15), «Onesimus» whisper пишет раздельно (L26).
+«favourite» → «favorite» (L15).
