@@ -1,0 +1,64 @@
+C01|NARRATOR|London. The last night of August, 1854. In Soho, on Broad Street, people start getting sick. Not slowly. By morning, whole families are down.
+C02|NARRATOR|Within three days, a hundred and twenty-seven people are dead. The doctors blame the air. The smell. A bad cloud over the city.
+C03|CHOLERA|The smell! Honestly. I have never been so insulted.
+C04|NARRATOR|One doctor thinks they're wrong. He thinks the killer is hiding somewhere much closer. In the water pump on the corner.
+C05|CHOLERA|Clever man. I hate him already.
+L01|NARRATOR|So who is he? Under a microscope, cholera is a bacterium called Vibrio cholerae. It's shaped like a little comma, with a long whip for a tail. And it swims fast.
+L02|CHOLERA|Streamlined, darling. Streamlined.
+L03|NARRATOR|He doesn't need rats or fleas. He travels by water. A sick person sheds billions of bacteria. If that waste gets into a well, a river or a water pipe, the next person who takes a drink gets him too.
+L04|NARRATOR|Once inside, he makes a toxin that turns your gut into a pump. It pulls water out of the body and flushes it away. A patient can lose up to twenty litres of fluid in a single day.
+L05|CHOLERA|Twenty litres. I do not do things by halves.
+L06|NARRATOR|People could be healthy at breakfast and dead by dinner. Their skin turned grey-blue and wrinkled from losing so much water. The Victorians had a name for it: the blue death.
+L07|NARRATOR|Untreated, the worst cases killed around half of their victims. Today, with treatment, fewer than one in a hundred die. Hold that thought.
+L08|NARRATOR|But where did he come from? His home is the brackish water where rivers meet the sea, especially the great delta of the Ganges, in what is now India and Bangladesh. There, Vibrio bacteria live quietly on the shells of tiny crustaceans called copepods.
+L09|CHOLERA|Meet Pod. Pod is family.
+L10|NARRATOR|And here's the twist. Most Vibrio cholerae are pretty harmless. The killer kind got its weapon from a virus. A virus that infects bacteria slipped into one of them and carried in the genes for the cholera toxin. So the deadliest diarrhoea in history is, basically, a bacterium that caught a virus.
+L11|CHOLERA|We don't talk about how I got my powers. It's a sensitive subject.
+L12|NARRATOR|Nobody knows exactly when that happened. Ancient texts from India may describe a cholera-like illness, and Portuguese visitors in the 1500s wrote about a disease that could kill a man within hours. But for centuries, he mostly stayed home, in Bengal.
+L13|NARRATOR|Then, in 1817, everything changed. An outbreak started near the town of Jessore, in Bengal, and this time, it didn't stay put.
+L14|NARRATOR|The world was more connected than ever. Ships, armies and traders moved along the routes of the British Empire, and he rode along with them. Within a few years he reached Southeast Asia, China, Japan, the Persian Gulf and East Africa.
+L15|CHOLERA|I'd been waiting centuries for decent transport.
+L16|NARRATOR|That was the first cholera pandemic. There would be seven.
+L17|NARRATOR|The second one went west. Through Russia in 1830, and into Europe. In October 1831 he landed in the English port of Sunderland. Months later he was in London and Paris, and then across the Atlantic, in Quebec and New York.
+L18|NARRATOR|In Paris, around eighteen thousand people died in just a few months. In New York, so many people fled the city that whole streets went quiet.
+L19|NARRATOR|And people were terrified in a very specific way. In Britain and Russia, crowds rioted, convinced that doctors were poisoning the poor, or that hospitals were collecting bodies for dissection.
+L20|CHOLERA|I let them argue. It saves me time.
+L20b|NARRATOR|And he didn't care who you were. Former US president James K. Polk died of cholera in 1849, just three months after leaving office. The composer Tchaikovsky, officially, died of cholera in 1893, after drinking a glass of unboiled water.
+L20c|CHOLERA|Presidents. Composers. I'm not picky.
+L21|NARRATOR|So what did the experts think caused it? Bad air. The miasma theory said disease came from foul smells rising from rotting rubbish and filth.
+L22|NARRATOR|To be fair, Victorian London really did stink. Sewage ran into cesspits, and straight into the Thames. The same river that much of the city drank from.
+L23|CHOLERA|They blamed the smell. The smell! I am offended on a personal level.
+L24|NARRATOR|So cities scrubbed, burned tar and fumigated. None of it touched him. Because he wasn't in the air. He was in the cup.
+L25|NARRATOR|Enter John Snow. A London doctor, famous for something else entirely. He was one of the first experts in anaesthesia, and he gave chloroform to Queen Victoria when she gave birth.
+L26|NARRATOR|Snow didn't buy the bad-air idea. Cholera hit the gut, not the lungs, so he suspected people were swallowing it. In 1849 he published his theory. Almost nobody listened.
+L27|NARRATOR|Then came Broad Street. Snow went door to door, marked every death on a map, and noticed they clustered around one public water pump.
+L28|NARRATOR|The exceptions told the same story. Workers at a nearby brewery mostly drank beer, and stayed healthy. A workhouse down the street had its own well, and very few there died. And a widow who lived miles away, but liked the taste of the Broad Street water and had it delivered, died.
+L29|CHOLERA|She had excellent taste. In water, anyway.
+L30|NARRATOR|On the seventh of September, Snow showed his evidence to the local officials. The next day, they removed the handle from the pump.
+L31|CHOLERA|My pump. My beautiful pump.
+L32|NARRATOR|The outbreak was already fading by then, and the officials soon went back to blaming the air. Later, a local priest found the likely source: a baby's dirty nappies, washed into a cesspit just a few feet from the well.
+L33|NARRATOR|Snow died in 1858, before most people accepted that he was right.
+L34|NARRATOR|That same summer, the Thames smelled so bad that Parliament could barely work. The papers called it the Great Stink.
+L35|NARRATOR|Finally, the government paid for a huge new sewer system, designed by the engineer Joseph Bazalgette. Over a thousand miles of sewers, carrying London's waste away, downstream.
+L36|NARRATOR|And here's the irony. They built it to get rid of the smell. But by keeping sewage out of the drinking water, it did what all the fumigating never could. It cut him off.
+L37|CHOLERA|Defeated by plumbing. Do you know how humiliating that is?
+L38|NARRATOR|Across Europe, scientists were hunting for the actual culprit. In 1854, the same year as Broad Street, an Italian, Filippo Pacini, saw comma-shaped bacteria in the guts of cholera victims in Florence. Hardly anyone noticed.
+L39|NARRATOR|Thirty years later, the German scientist Robert Koch found them again, in Egypt and then in Calcutta. And this time, the world paid attention.
+L40|NARRATOR|Not everyone was convinced. In 1892, an old-school professor, Max von Pettenkofer, asked for a flask of live cholera bacteria, and drank it. To prove they were harmless.
+L41|CHOLERA|I respect the confidence.
+L42|NARRATOR|He got a nasty case of diarrhoea, and survived. Nobody is quite sure why. He was lucky. Others weren't.
+L43|NARRATOR|That same year, Hamburg was drinking unfiltered water from the river Elbe, and about eight and a half thousand people died. Next door, the town of Altona filtered its water. It was barely touched.
+L43b|NARRATOR|He also changed how countries work together. In 1851, European states met in Paris for the first International Sanitary Conference, mostly because of him. It was the start of international cooperation on health that, a century later, led to the World Health Organization.
+L43c|CHOLERA|I brought the nations together. You're welcome.
+L44|NARRATOR|Clean water stopped him from spreading. But for the people already sick, the problem was simple. The body was running dry.
+L45|NARRATOR|In the 1960s, researchers in Dhaka and Calcutta tested a treatment so simple it sounds like a joke. Clean water, a little salt and a little sugar, in the right amounts. Oral rehydration solution.
+L46|NARRATOR|In 1971, during Bangladesh's war of independence, cholera swept through the refugee camps. A doctor named Dilip Mahalanabis ran out of IV drips, and gave out this drink instead. In other camps, around thirty percent of cholera patients died. In his, under four percent.
+L47|NARRATOR|The medical journal The Lancet later called it potentially the most important medical advance of the twentieth century.
+L48|CHOLERA|Salt. Sugar. Water. That's it?
+L49|NARRATOR|That's it. Today there are also cholera vaccines, and antibiotics for severe cases.
+L50|NARRATOR|So, is he gone? Not even close. The seventh pandemic began in Indonesia in 1961, and it has never officially ended.
+L51|NARRATOR|In 2010, after a huge earthquake, cholera reached Haiti, carried in by United Nations peacekeepers, and killed nearly ten thousand people. In Yemen, during the war, there were more than two and a half million suspected cases.
+L52|NARRATOR|Today he still infects millions of people every year, and kills tens of thousands. Almost always in places without clean water.
+L53|CHOLERA|I don't need an empire. I just need one dirty well.
+L54|NARRATOR|Two hundred years. Seven pandemics. A killer that emptied whole neighbourhoods, beaten not by a miracle drug, but by pipes, filters, and a spoonful of salt and sugar.
+L55|NARRATOR|Next time: a killer that left its mark on the faces of emperors, and was beaten so completely it no longer exists in the wild.

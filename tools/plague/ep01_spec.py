@@ -30,13 +30,13 @@ def cap(t, **k): return {'text': t, 'x': 960, 'y': 985, 'size': 50, 'at': .3, **
 def stamp(t, **k): return {'text': t, 'x': 1380, 'y': 240, 'size': 96, 'style': 'stamp', 'pop': True, 'at': .5, **k}
 def ink(t, x, y, size=64, **k): return {'text': t, 'x': x, 'y': y, 'size': size, 'style': 'ink', 'at': .3, **k}   # written on paper in the frame
 def dim(rect, **k): return {'style': 'dim', 'rect': rect, 'text': '', 'size': 1, 'x': 0, 'y': 0, 'at': 0, **k}
-PANEL = [(330, 245, 742, 805), (772, 245, 1182, 805), (1213, 245, 1622, 805)]
+PANEL = [(444, 200, 800, 526), (840, 200, 1200, 526), (1244, 200, 1624, 526)]
 MENU_W = [('BUBONIC', 'the lumps'), ('SEPTICEMIC', 'the blood'), ('PNEUMONIC', 'the lungs')]
 def MENU(n):   # menu board: words written into the panels one by one, the current panel lit, the others dimmed
     out = []
     for i in range(n + 1):
         cx = (PANEL[i][0] + PANEL[i][2]) // 2
-        out += [ink(MENU_W[i][0], cx, 590, 76, maxw=340, at=.3 if i == n else 0), ink(MENU_W[i][1], cx, 670, 46, at=.6 if i == n else 0)]
+        out += [ink(MENU_W[i][0], cx, 252, 60, maxw=320, at=.3 if i == n else 0), ink(MENU_W[i][1], cx, 488, 38, at=.6 if i == n else 0)]
     return out + [dim(PANEL[i], fill=[0, 0, 0, 150]) for i in range(3) if i != n]
 STILL = [[.5, .5, 1.0], [.5, .5, 1.02]]   # near-static wide: keeps in-picture text aligned
 def label(t, x, y, size=64, **k): return {'text': t, 'x': x, 'y': y, 'size': size, 'at': .3, **k}
@@ -65,7 +65,7 @@ Pl('L08b', "Rattus handles transport. The fleas handle deliveries.",
   sh('f08c', W(), PLAGUE + " The Plague strides down a foggy cobbled road with his trunk; the rat rides on his shoulder; behind them several tiny fleas hop along carrying tiny mail satchels.", 'P'))
 N('L09', "Once inside, he comes in three flavors. Bubonic: it attacks the lymph nodes, which swell up into lumps called buboes. That's where the name comes from. Septicemic: it gets into the blood. And pneumonic: it gets into the lungs, and that version can spread from person to person with a cough.",
   sh('f09a', W(), "A dark wooden tavern menu board with three empty framed panels in a row, each panel with a simple icon: a small round lump, a drop, a pair of lungs. Candlelit. No words.",
-     text=[label('THE MENU', 960, 112, 60, len=99)]),
+     text=[label('THE MENU', 960, 105, 56, len=99)]),
   sh('f09a', STILL, text=MENU(0)),
   sh('f09b', W(), STICK + " A stickman medieval doctor points with a stick at a big anatomical chart of a stickman with small dots at the neck, armpits and groin. Simple, not medical-gory.", 'S'),
   sh('f09a', STILL, text=MENU(1)),
@@ -84,6 +84,12 @@ N('L12a', "And they found him inside the teeth of people who died about five tho
   sh('f12b', WL(), "An old parchment map of Europe and northern Asia drawn in ink, from the Baltic Sea to Siberia, with a few small dark dots scattered across the steppe. No words."))
 Pl('L12b', "Five thousand years, and nobody called?",
   sh('f12c', C(.5, .45, 1.15), PLAGUE + " The Plague brushes dust off his cloak, offended, looking at the viewer.", 'P'))
+N('L12c', "But where did he come from in the first place? His ancestor was a fairly harmless bug called Yersinia pseudotuberculosis. It lived in soil and water, and at worst it gave you a bad stomach ache. Then, over a handful of mutations, it picked up a few new genes, threw away a lot of old ones, and turned into something much worse.",
+  sh('f12d', W(), "A cute harmless little rod-shaped microbe with a sleepy friendly face, drawn like a small pale capsule with a tiny smile, lounging in a puddle of muddy water among pebbles and grass. Cartoon, gentle, muted colours."),
+  sh('f12e', WL(), "A comic diagram on aged parchment, left to right: a small friendly pale rod-shaped microbe, then an arrow with a few glowing little DNA strands flying into it and some old strands falling away, then the same rod now dark, wearing a tiny black hood with two small glowing white eyes. No words."),
+  sh('f12d', C(.5, .5, 1.3)))
+Pl('L12d', "Everyone starts somewhere.",
+  sh('f12f', C(.5, .45, 1.1), PLAGUE + " The Plague holds an old oval framed portrait of a cute harmless little pale rod-shaped microbe with a tiny bow tie, looking at it with a nostalgic, cruel smirk. He holds the frame with both hands. No trunk.", 'P'))
 N('L13a', "Those early versions probably couldn't travel by flea yet. That trick came later, as the bacterium evolved. Some researchers think the plague may have helped empty out parts of Stone Age Europe. Others aren't convinced.",
   sh('f13a', W(), STICK + " A Bronze Age village of round thatched huts on a misty river, stickmen in furs and simple tunics working, smoke from fires.", 'S'),
   sh('f13b', WL(), STICK + " " + PLAGUE + " Instead of the trunk the Plague carries a small leather sack, walking into the Bronze Age village of thatched huts; stickmen look at him curiously.", 'PS'),
