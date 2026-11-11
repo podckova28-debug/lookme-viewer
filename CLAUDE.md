@@ -14,3 +14,5 @@
 - Style: cream paper collage, B/W halftone, single crimson accent. No gore. Big on-screen cards.
 - Send previews as soon as they exist. Don't touch already-delivered videos unless asked.
 - Don't ask the user for approvals or confirmations for routine steps; just do the work.
+- Long videos: chapter cards only at 4–6 big sections (a card per chapter kills the pace). Full-screen stamps must
+  auto-fit (cure_project/anim.py Stamp wraps to 2 lines). After a render, check a frame of every stamp/list/callout.

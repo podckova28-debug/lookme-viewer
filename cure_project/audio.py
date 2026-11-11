@@ -22,7 +22,7 @@ run(["ffmpeg", "-v", "error", "-y", *inputs, "-filter_complex", ";".join(flt), "
 segs = tl["segs"]; t = 0; bounds = {}
 for name, d in segs:
     bounds[name] = t; t += d
-b2 = bounds["ch06"]; b3 = bounds["ch12"]
+b2 = bounds["ch08"]; b3 = bounds["ch12"]
 XF = 3.0
 flt = [
     f"[0:a]aresample=48000,aformat=channel_layouts=stereo,atrim=0:{b2 + XF:.3f},afade=t=in:d=2[m1]",

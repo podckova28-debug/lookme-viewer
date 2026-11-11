@@ -381,13 +381,26 @@ class Stamp:
     """Still with Ken Burns; the picture darkens and a big solid stamp card slams on (readable on any image)."""
     def __init__(self, sid, text, dur):
         self.dur = dur; self.base = R.ImgShot(sid, dur, "in"); self.text = text
-        f = R.font(240); tmp = ImageDraw.Draw(Image.new("RGB", (10, 10)))
-        sw = int(tmp.textlength(text, font=f)); bb = tmp.textbbox((0, 0), text, font=f)
-        th = bb[3] - bb[1]; w, h = sw + 160, th + 150
+        tmp = ImageDraw.Draw(Image.new("RGB", (10, 10))); MAXT = 1380
+        lines = [text]
+        if tmp.textlength(text, font=R.font(240)) > MAXT and " " in text:  # long stamp: two balanced lines
+            ws = text.split(); best = None
+            for i in range(1, len(ws)):
+                a, b = " ".join(ws[:i]), " ".join(ws[i:])
+                m = max(tmp.textlength(a, font=R.font(240)), tmp.textlength(b, font=R.font(240)))
+                if best is None or m < best[0]: best = (m, [a, b])
+            lines = best[1]
+        sz = 240
+        while sz > 90 and max(tmp.textlength(l, font=R.font(sz)) for l in lines) > MAXT: sz -= 10
+        f = R.font(sz); bbs = [tmp.textbbox((0, 0), l, font=f) for l in lines]
+        sw = int(max(tmp.textlength(l, font=f) for l in lines)); lh = max(b[3] - b[1] for b in bbs); gap = int(sz * 0.18)
+        th = lh * len(lines) + gap * (len(lines) - 1); w, h = sw + 160, th + 150
         st = Image.new("RGBA", (w, h), CREAM + (245,)); sd = ImageDraw.Draw(st)
         sd.rectangle((10, 10, w - 10, h - 10), outline=CRIMSON + (255,), width=20)
         sd.rectangle((34, 34, w - 34, h - 34), outline=CRIMSON + (255,), width=6)
-        sd.text((80, 75 - bb[1]), text, font=f, fill=CRIMSON + (255,))
+        for i, (l, b) in enumerate(zip(lines, bbs)):
+            lw = tmp.textlength(l, font=f)
+            sd.text(((w - lw) / 2, 75 - b[1] + i * (lh + gap)), l, font=f, fill=CRIMSON + (255,))
         st = st.rotate(-7, expand=True, resample=Image.BICUBIC)
         sh = Image.new("RGBA", (st.width + 80, st.height + 80), (0, 0, 0, 0))
         sh.paste((0, 0, 0, 150), (40, 40), st.split()[3])
