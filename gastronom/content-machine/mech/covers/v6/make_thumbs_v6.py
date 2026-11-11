@@ -180,6 +180,28 @@ def _():
     return v5.zhig_grandpa(os.path.join(S, 'disposable'))
 
 
+# ---------- «Ты — механик 90-х (и это вся твоя жизнь)» ----------
+@cover('mechanic90', 'tyres', 'Живое лицо: зарплата двумя покрышками (A2)')
+def _():
+    im = photo(B('m90_tyres'))
+    im, tb = tl(im, [('ЗАРПЛАТА', WHITE), ('ПОКРЫШКАМИ', YELLOW)], 575)
+    return put(im, plate('1994', RED, size=120, angle=-3), 30, tb.height + 22)
+
+@cover('mechanic90', 'split', 'Тот же гараж: 1994 и 2026 — «30 лет в гараже» (I02, Z4)')
+def _():
+    im = photo(B('m90_split'))
+    im = put(im, plate('1994', GREEN, size=96, angle=-3), 40, 26)
+    im = put(im, plate('2026', RED, size=96, angle=3), W // 2 + 40, 26)
+    im, tb = bl(im, [('30 ЛЕТ', YELLOW), ('В ГАРАЖЕ', WHITE)], 420)
+    return im
+
+@cover('mechanic90', 'hands', 'Один ключ в молодой и старой руке (I02: «не выпустишь из рук 30 лет»)')
+def _():
+    im = photo(B('m90_hands'))
+    im, tb = tl(im, [('МЕХАНИК 90-Х', WHITE)], 640)
+    return put(im, plate('ВСЯ ЖИЗНЬ', RED, size=84, angle=-3), 30, tb.height + 18)
+
+
 if __name__ == '__main__':
     out = os.path.join(HERE, 'out'); os.makedirs(out, exist_ok=True)
     vids = sys.argv[1:] or list(V)
