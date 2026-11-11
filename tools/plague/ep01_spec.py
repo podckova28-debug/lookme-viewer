@@ -10,14 +10,9 @@ A shot either reuses an existing frame or defines a new one to generate (prompt 
 import sys, json, os
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 P_SHEET, S_SHEET = '80552411-22ff-414f-8f40-9af41f66ebff', '93833ab4-ddb5-4cfe-8d32-66482b1f74a0'
-STYLE = ("Frame from a 2D animated history explainer, 16:9. No captions, no subtitles, no lettering unless explicitly asked. "
-         "Detailed hand-drawn illustration with clean black ink outlines, muted grey-sepia palette (charcoal, ash grey, fog white, dark brown); "
-         "warm accents only from fire, candles and lanterns. Cinematic, readable composition. Not gory: no blood, no corpses, no sores.")
-STICK = ("All people are STICKMEN exactly like the attached stickman sheet: big plain white round heads, dot eyes, simple line mouths and brows, "
-         "thin black stick limbs, simple period clothing.")
-PLAGUE = ("The Plague character must match the attached Plague sheet exactly: a tall thin figure in a long tattered black-brown hooded cloak, "
-          "face in the shadow of the hood with two small cold glowing white eyes, a hooked ash-grey nose and a thin cruel smile, ash-grey spotted bony hands, "
-          "a round bronze clasp, a black rat with red eyes on his shoulder, and (when mentioned) his battered leather travel trunk covered in old city stickers. Menacing, a bit theatrical.")
+STYLE = "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette; warm light only from fire, candles, lanterns. Not gory."
+STICK = "People = STICKMEN as on the attached stickman sheet (white round heads, dot eyes, stick limbs, simple period clothes)."
+PLAGUE = "The Plague exactly as on the attached sheet: tall thin figure, tattered black-brown hooded cloak, shadowed face, small glowing white eyes, hooked grey nose, thin cruel smile, grey spotted bony hands, bronze clasp, red-eyed black rat on his shoulder; his trunk = battered leather trunk with city stickers."
 
 def W(): return [[.5, .5, 1.0], [.5, .5, 1.05]]                      # wide, slow push
 def WL(): return [[.47, .5, 1.04], [.53, .5, 1.04]]                  # slow pan right
@@ -31,7 +26,7 @@ def sh(img, cam=None, prompt=None, refs='', text=None, sfx=None, w=1):
     if text: s['text'] = text
     if sfx: s['sfx'] = sfx
     return s
-def cap(t, **k): return {'text': t, 'x': 960, 'y': 975, 'size': 50, 'plate': True, 'at': .3, **k}
+def cap(t, **k): return {'text': t, 'x': 960, 'y': 975, 'size': 46, 'plate': True, 'at': .3, **k}
 def stamp(t, **k): return {'text': t, 'x': 1380, 'y': 230, 'size': 110, 'color': [196, 48, 36], 'pop': True, 'at': .5, **k}
 def label(t, x, y, size=64, **k): return {'text': t, 'x': x, 'y': y, 'size': size, 'at': .3, **k}
 
@@ -127,7 +122,7 @@ N('L25', "From Sicily, he toured Europe faster than any king ever could. 1348: I
   sh('f25a', C(.55, .4, 1.15), text=label('1349', 1650, 200, 120, len=99)),
   sh('f25a', W(), text=label('1351', 1650, 200, 120, len=99)))
 Pl('L26', "Every city. Sold out.",
-  sh('f26a', C(.5, .5, 1.05), PLAGUE + " Close-up of the Plague's battered leather travel trunk covered in old travel stickers that read exactly: \"MESSINA 1347\", \"FLORENCE 1348\", \"PARIS 1348\", \"LONDON 1348\", \"BERGEN 1349\". His bony hand rests on it.", 'P'))
+  sh('f26a', C(.47, .62, 1.45), PLAGUE + " Close-up of the Plague's battered leather travel trunk covered in old travel stickers that read exactly: \"MESSINA 1347\", \"FLORENCE 1348\", \"PARIS 1348\", \"LONDON 1348\", \"BERGEN 1349\". His bony hand rests on it.", 'P'))
 N('L27', "In Florence, the writer Giovanni Boccaccio described people who ate breakfast with their families in the morning, and that same night dined with their ancestors in the next world.",
   sh('f27a', WL(), "Florence in 1348: the great red dome of the cathedral above grey rooftops, the river Arno, overcast sky.", text=cap('FLORENCE · 1348')),
   sh('f27b', W(), STICK + " A stickman writer in a red medieval cap writing at a wooden desk by a window, quill and stacks of paper.", 'S'))
@@ -271,7 +266,7 @@ Pl('L55', "I'm not gone. I'm semi-retired.",
 N('L56', "But caught early, it's cured with a course of common antibiotics.",
   sh('f56a', C(.5, .5, 1.05), "A paper pharmacy bag on a counter with a small bottle of pills and a glass of water. Simple, clean."))
 N('L57', "Five thousand years. Three pandemics. One of the deadliest diseases humanity has ever faced. Beaten, in the end, by a course of pills and a forty-day wait.",
-  sh('f13a', W()), sh('f14a', W()), sh('co_01', W()), sh('f44a', W()), sh('f53a', W()), sh('f26a', O()))
+  sh('f13a', W()), sh('f14a', W()), sh('co_01', W()), sh('f44a', W()), sh('f53a', W()), sh('f26a', C(.47, .62, 1.45)))
 N('L58', "Next time: a killer that's been hiding in the water supply.",
   sh('f58a', C(.5, .5, 1.05), "An old cast-iron street water pump in a foggy Victorian street at night; a single drop of water falls from the spout, and inside the drop there is a tiny dark silhouette of a mysterious figure. Ominous."))
 HOLD(5.0, sh('f58a', O(), text=[label('NEXT TIME', 1380, 360, 110, pop=True, at=.2, len=4.6), label('SUBSCRIBE', 1380, 520, 70, color=[214, 180, 110], at=.8, len=4.0)]))

@@ -38,7 +38,7 @@ def text_layer(items, t):
         f = font(int(it['size'] * k), it.get('weight', 'Black'))
         L = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(L)
         col = tuple(it.get('color', [244, 238, 224]))
-        sw = max(3, it['size'] // 14)
+        sw = max(2, it['size'] // 26)
         d.text((it['x'], it['y']), it['text'], font=f, fill=col + (255,), anchor=it.get('anchor', 'mm'), stroke_width=sw, stroke_fill=(16, 12, 10, 255))
         if it.get('plate'):   # dark band behind small captions
             bx = d.textbbox((it['x'], it['y']), it['text'], font=f, anchor=it.get('anchor', 'mm'), stroke_width=sw)
