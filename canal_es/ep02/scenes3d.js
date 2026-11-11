@@ -16,7 +16,7 @@
       s.ren = s.char('ren', 'valeria');
       s.ghost = s.char('ghost', 'valeria', { shadow: false }).colored(1);
       s.pepe = s.card('pepe', 240, 200, (g, x, y, p) => drawPigeon(g, x, y, .6, p), { shadow: false, pad: 12 });
-      s.walkers = [['ex3', 8.3, -16, 1.1], ['ex5', 8.5, -1, -0.9]].map(([n, x, z, v]) => ({ card: s.char('w' + n, n), x, z, v }));
+      s.walkers = [['ex3', 8.3, -16, -0.6], ['ex5', 8.5, -1, 0.6]].map(([n, x, z, v]) => ({ card: s.char('w' + n, n), x, z, v }));
       return s; })(window.S3D));
   }
   // render the present (ghosts hidden), then the ghosts alone, and composite them as the hologram
@@ -46,8 +46,8 @@
       { t: Lt('s00_02') - .2, pos: [5.2, 1.5, -7.3], at: [X0, 1.5, HERO_Z], fov: 30 },
       { t: Lt('s00_02') - .15, cut: 1, pos: [2.2, 1.7, -5.0], at: [X0, 1.25, -6.8], fov: 40 },
       { t: Lt('s00_03') - .15, pos: [2.6, 2.0, -7.9], at: [X0, 1.25, -6.6], fov: 40 },
-      { t: Lt('s00_03') - .1, cut: 1, pos: [5.1, 1.6, -5.2], at: [X0, 1.55, GHOST_Z], fov: 32 },
-      { t: Lt('s00_04') - .15, pos: [5.0, 1.6, -5.6], at: [X0, 1.55, GHOST_Z], fov: 32 },
+      { t: Lt('s00_03') - .1, cut: 1, pos: [5.1, 1.65, -5.2], at: [X0, 1.72, GHOST_Z], fov: 38 },
+      { t: Lt('s00_04') - .15, pos: [5.0, 1.65, -5.6], at: [X0, 1.72, GHOST_Z], fov: 38 },
       { t: Lt('s00_04') - .1, cut: 1, pos: [5.3, 1.55, -7.0], at: [X0, 1.52, HERO_Z], fov: 32 },
       { t: rw - .05, pos: [5.8, 1.55, -7.5], at: [X0, 1.55, HERO_Z], fov: 28 },
       { t: rw, cut: 1, pos: [0.5, 4.2, 1.0], at: [X0 - .5, 1.2, -7.0], fov: 44 },
