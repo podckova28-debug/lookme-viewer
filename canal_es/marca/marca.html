@@ -1,0 +1,71 @@
+<!doctype html><html><head><meta charset="utf-8">
+<style>@font-face{font-family:Bangers;src:url("../anim/fonts/Bangers-Regular.ttf")}@font-face{font-family:ComicNeue;src:url("../anim/fonts/ComicNeue-Bold.ttf")}html,body{margin:0;background:#000}canvas{display:block}</style></head>
+<body><canvas id="c"></canvas>
+<script src="../anim/lib.js"></script><script src="../anim/sets.js"></script><script src="../anim/cut/specs.js"></script><script src="../anim/cutout.js"></script>
+<script>
+/* Channel branding, drawn from the episode's own assets: marca.html?hyb=1&v=avatar|avatarB|banner|watermark|endcard
+   The look is the channel's signature: the world frozen in grey-blue, the one who moves in colour. */
+const NAME = 'PONLE QUE…', TAG = '¿Qué pasaría si…? Todo se congela… menos tú', SCHED = 'UNA HISTORIA NUEVA CADA DÍA';
+const V = new URLSearchParams(location.search).get('v') || 'avatar';
+const SIZE = { avatar: [800, 800], avatarB: [800, 800], banner: [2560, 1440], watermark: [150, 150], endcard: [1920, 1080] }[V];
+const CV = document.getElementById('c'); CV.width = SIZE[0]; CV.height = SIZE[1]; const X = CV.getContext('2d');
+const S0 = .78, FROZEN = '#7f90ab';
+function frozenSky(g, w, h) { const gr = g.createRadialGradient(w / 2, h * .42, 0, w / 2, h / 2, Math.max(w, h) * .75); gr.addColorStop(0, '#a9b8d0'); gr.addColorStop(1, '#4f5d78'); g.fillStyle = gr; g.fillRect(0, 0, w, h); }
+function bead(g, x, y, r) { g.save(); g.translate(x, y); g.fillStyle = '#d6ecff'; g.strokeStyle = '#2d1b2e'; g.lineWidth = r * .22; g.beginPath(); g.ellipse(0, 0, r * .65, r, 0, 0, 7); g.fill(); g.stroke();
+  g.fillStyle = '#fff'; g.beginPath(); g.arc(-r * .25, -r * .45, r * .25, 0, 7); g.fill(); g.restore(); }
+function beads(g, w, h, n, seed, rmin, rmax, avoid) { const r = rnd(seed); for (let i = 0; i < n; i++) { const x = r() * w, y = r() * h, s = rmin + r() * (rmax - rmin); if (avoid && avoid(x, y)) continue; g.globalAlpha = .55 + .45 * (s - rmin) / (rmax - rmin + 1e-9); bead(g, x, y, s); } g.globalAlpha = 1; }
+function glow(g, x, y, r, col) { const gr = g.createRadialGradient(x, y, 0, x, y, r); gr.addColorStop(0, col); gr.addColorStop(1, 'rgba(0,0,0,0)'); g.fillStyle = gr; g.fillRect(x - r, y - r, 2 * r, 2 * r); }
+function ring(g, x, y, r, w, col, a = 1) { g.save(); g.globalAlpha = a; g.strokeStyle = col; g.lineWidth = w; g.beginPath(); g.arc(x, y, r, 0, 7); g.stroke(); g.restore(); }
+function bigText(g, s, x, y, size, fill, align = 'center', rot = 0) { g.save(); g.translate(x, y); g.rotate(rot); g.font = `${size}px Bangers`; g.textAlign = align; g.lineJoin = 'round';
+  g.strokeStyle = '#1b1320'; g.lineWidth = size * .2; g.strokeText(s, 0, 0); g.strokeStyle = '#ffffff'; g.lineWidth = size * .07; g.strokeText(s, 0, 0); g.fillStyle = fill; g.fillText(s, 0, 0); g.restore(); }
+// a character drawn into its own layer, then frozen (grey) or kept in colour
+function charLayer(w, h, fn, frozen) { const c = document.createElement('canvas'); c.width = w; c.height = h; const g = c.getContext('2d'); fn(g);
+  if (!frozen) return c; const d = document.createElement('canvas'); d.width = w; d.height = h; const q = d.getContext('2d'); q.filter = FROZEN_FILTER; q.drawImage(c, 0, 0); q.filter = 'none';
+  q.globalCompositeOperation = 'source-atop'; q.fillStyle = 'rgba(150,175,215,.45)'; q.fillRect(0, 0, w, h); return d; }
+function pepeFace(g, x, y, h) { const I = SPR.pepeFront, k = h / I.height; g.drawImage(I, x - I.width * k / 2, y - I.height * k / 2, I.width * k, I.height * k); }
+
+window.render = () => {
+  const [w, h] = SIZE; X.clearRect(0, 0, w, h);
+  if (V === 'avatar') {   // Pepe, the one who never turns grey
+    frozenSky(X, w, h); beads(X, w, h, 46, 7, 9, 22, (x, y) => Math.hypot(x - w / 2, y - h / 2) < 300);
+    glow(X, w / 2, h / 2, 360, 'rgba(253,224,71,.55)'); ring(X, w / 2, h / 2, 318, 22, '#fde047');
+    pepeFace(X, w / 2 + 4, h / 2 + 30, 560);
+  } else if (V === 'avatarB') {   // the hero clapping, the clap ripple around him
+    frozenSky(X, w, h); beads(X, w, h, 40, 9, 9, 20);
+    for (let i = 0; i < 3; i++) ring(X, w / 2, h * .72, 210 + i * 90, 14 - i * 3, '#ffffff', .85 - i * .22);
+    const p = { x: w / 2, y: h * 1.32, s: 1.28, t: 0, mouth: 1, open: .5, wide: .7, brow: .7, armsFront: 1, noShadow: 1 }; const G = charGeom(CAST.tu, p); [p.hL, p.hR] = POSE.clap(1, G);
+    drawChar(X, 'tu', p);
+  } else if (V === 'watermark') {   // small, high-contrast, transparent: Pepe in a yellow ring
+    X.fillStyle = '#fde047'; X.beginPath(); X.arc(75, 75, 72, 0, 7); X.fill(); X.fillStyle = '#5b6a88'; X.beginPath(); X.arc(75, 75, 62, 0, 7); X.fill();
+    X.save(); X.beginPath(); X.arc(75, 75, 62, 0, 7); X.clip(); pepeFace(X, 76, 84, 120); X.restore();
+  } else if (V === 'banner' || V === 'endcard') {
+    // the street from the episode, frozen; the hero, Renata, Nacho and Pepe in colour; the name in the safe area
+    const BG = SETS.street.bg; X.save(); X.filter = FROZEN_FILTER; X.drawImage(BG, 0, h * .5 - w * BG.height / BG.width * .5, w, w * BG.height / BG.width); X.restore();
+    X.save(); X.globalCompositeOperation = 'multiply'; X.fillStyle = 'rgba(170,195,230,1)'; X.fillRect(0, 0, w, h); X.restore();
+    X.save(); X.fillStyle = 'rgba(20,24,40,.28)'; X.fillRect(0, 0, w, h); X.restore();
+    const sc = w / 2560, cy = h / 2;   // safe area: 1546 x 423 centred
+    beads(X, w, h, 160, 3, 8 * sc, 20 * sc, (x, y) => Math.abs(x - w / 2) < 760 * sc && Math.abs(y - cy) < 200 * sc);
+    const L = (fn, frozen) => X.drawImage(charLayer(w, h, fn, frozen), 0, 0);
+    // characters stand outside the 1546-px safe area (desktop and TV show them, phones show only the name);
+    // their heads sit inside the 423-px strip that every device shows
+    const headY = (n, feet, s) => feet + s * (CAST[n].s || 1) * (charGeom(CAST[n], {}).top - 100);
+    const RX = 300 * sc, RF = cy + 760 * sc, RS = 1.4 * sc, HX = 2250 * sc, HF = cy + 780 * sc, HS = 1.45 * sc;
+    L(g => { drawChar(g, 'ex3', { x: 70 * sc, y: cy + 700 * sc, s: 1.2 * sc, still: 1, t: 0, walk: 1, phase: .8, look: [10, 0], noShadow: 1 });
+      drawChar(g, 'nacho', { x: 2500 * sc, y: cy + 760 * sc, s: 1.25 * sc, still: 1, t: 0, blink: 1, open: .9, rot: -.18, hL: [-60, -600], hR: [40, -600], noShadow: 1 }); }, true);
+    L(g => drawChar(g, 'valeria', { x: RX, y: RF, s: RS, t: 0, look: [16, 0], mouth: .8, lid: .4, brow: .3, hR: [170, -560], hL: [-40, -330], noShadow: 1 }), false);
+    L(g => drawPigeon(g, RX - 150 * sc, headY('valeria', RF, RS) + 190 * sc, .9 * sc, { tilt: -.15 }), false);
+    const hp = { x: HX, y: HF, s: HS, t: 0, mouth: 1, open: .5, wide: .6, brow: .6, armsFront: 1, noShadow: 1 }; const G = charGeom(CAST.tu, hp); [hp.hL, hp.hR] = POSE.clap(1, G);
+    for (let i = 0; i < 3; i++) ring(X, HX, HF + HS * (G.top + 150), (150 + i * 80) * sc, (12 - i * 3) * sc, '#ffffff', .8 - i * .22);
+    L(g => drawChar(g, 'tu', hp), false);
+    // name + tagline + schedule, all inside the safe area
+    bigText(X, NAME, w / 2, cy + 10 * sc, 240 * sc, '#fde047', 'center', -.02);
+    X.save(); X.font = `${66 * sc}px ComicNeue`; X.textAlign = 'center'; X.fillStyle = '#ffffff'; X.strokeStyle = 'rgba(20,14,32,.9)'; X.lineWidth = 14 * sc; X.lineJoin = 'round';
+    X.strokeText(TAG, w / 2, cy + 98 * sc); X.fillText(TAG, w / 2, cy + 98 * sc); X.restore();
+    const bw = 720 * sc, bh = 76 * sc; X.save(); X.fillStyle = '#e02424'; X.strokeStyle = '#1b1320'; X.lineWidth = 6 * sc; X.beginPath(); X.roundRect(w / 2 - bw / 2, cy + 128 * sc, bw, bh, 16 * sc); X.fill(); X.stroke();
+    X.font = `${54 * sc}px Bangers`; X.textAlign = 'center'; X.fillStyle = '#fff'; X.fillText(SCHED, w / 2, cy + 185 * sc); X.restore();
+    if (new URLSearchParams(location.search).has('guide')) { X.save(); X.strokeStyle = '#00ff88'; X.lineWidth = 4; X.strokeRect(w / 2 - 773 * sc, cy - 211.5 * sc, 1546 * sc, 423 * sc); X.strokeStyle = '#ff3355'; X.strokeRect(0, cy - 211.5 * sc, w, 423 * sc); X.restore(); }
+    if (V === 'endcard') { bigText(X, '¡SUSCRÍBETE!', w / 2, h * .2, 120, '#ffffff'); }
+  }
+};
+window.ready = Promise.all([document.fonts.load('70px Bangers'), document.fonts.load('70px ComicNeue'), window.CUT_READY || true]).then(() => true);
+</script></body></html>

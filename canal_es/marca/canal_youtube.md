@@ -1,0 +1,128 @@
+# Ponle Que… — всё для аккаунта YouTube
+
+Файлы лежат рядом: `avatar.png`, `avatar_alternativo.png`, `banner.jpg`, `marca_de_agua.png`, `trailer_canal.mp4`, `pantalla_final.png`.
+Всё нарисовано кодом из ассетов эпизода (`marca.html`), поэтому их легко поменять: текст, имя, расписание правятся в первых строках файла.
+
+---
+
+## 1. Название и адрес
+
+| Поле | Что ставить |
+|---|---|
+| **Название** | `Ponle Que…` |
+| **Handle (@адрес)** | `@ponleque`. Если занят, по порядку: `@ponlequetv`, `@ponleque.cuentos`, `@ponlequeanimado` |
+
+«Ponle que…» — разговорное «допустим…» в Мексике и почти всей Латинской Америке: так и начинается каждая история.
+Канала с таким названием в поиске не нашлось. Занят ли handle, YouTube покажет сам при вводе.
+
+## 2. Картинки
+
+| Где в YouTube Studio | Файл | Размер |
+|---|---|---|
+| Настройка канала → Брендинг → **Фото профиля** | `avatar.png` (голубь Пепе — единственный, кто не становится серым) | 800×800 |
+| запасной вариант аватара | `avatar_alternativo.png` (герой хлопает) | 800×800 |
+| Брендинг → **Баннер** | `banner.jpg` | 2560×1440; имя и подписи внутри безопасной зоны 1546×423, видны на телефоне |
+| Брендинг → **Водяной знак** | `marca_de_agua.png` | 150×150; показ: «Весь видеоролик» |
+
+## 3. Описание канала (вставить как есть)
+
+```
+¿Y si pudieras detener el tiempo con un aplauso? ¿Y si vieras cinco segundos del futuro? ¿Y si nadie pudiera mentir… excepto tú?
+
+En Ponle Que… cada historia empieza con una pregunta imposible y la seguimos hasta el final: lo que ganarías, lo que perderías y el giro que nadie ve venir.
+
+Animación original, personajes propios y, al final de cada episodio, «¿Algo de esto es real?»: la ciencia de verdad detrás de la historia.
+
+Y fíjate bien en Pepe, la paloma. Pepe siempre está en algún lugar… y Pepe nunca se pone gris.
+
+🕖 Una historia nueva cada día.
+💬 Déjanos en los comentarios el «¿qué pasaría si…?» que quieres ver.
+```
+
+## 4. Ключевые слова канала (Настройки → Канал → Ключевые слова)
+
+```
+qué pasaría si, que pasaria si, y si pudieras, historias animadas, animación en español, superpoderes, detener el tiempo, qué harías si, historias de qué pasaría si, ciencia explicada, curiosidades, animación original, pepe la paloma, ponle que
+```
+
+## 5. Основные настройки канала
+
+- **Страна проживания:** твоя реальная страна (от неё зависят выплаты и налоги, менять потом неудобно).
+- **Аудитория канала:** «Нет, этот канал не для детей». У нас подростковые истории, влюблённость, школа; если канал отметят как детский, отключатся комментарии и персонализированная реклама.
+- **Email для деловых запросов:** заведи отдельную почту для канала, не личную.
+- **Ссылки:** пока не нужны; когда будут соцсети, добавь в «Ссылки» и выбери одну для баннера.
+- Подтверди телефон (Настройки → Канал → Доступность функций): без этого нельзя ставить свои обложки и загружать видео длиннее 15 минут.
+- Включи двухэтапную аутентификацию в аккаунте Google: YouTube требует её для монетизации.
+
+## 6. Главная страница канала (Настройка канала → Макет)
+
+- **Трейлер для тех, кто не подписан:** `trailer_canal.mp4` (49 с: облёт застывшего горшка, дождь, «40 минут один», Рената, Пепе). Загрузи как обычное публичное видео с названием «Ponle Que… | Tráiler del canal».
+- **Видео для подписчиков:** эпизод 1.
+- **Разделы по порядку:** Shorts → «Episodios» → «¿Algo de esto es real?» → «El tiempo detenido».
+
+## 7. Плейлисты
+
+| Название | Описание |
+|---|---|
+| **Episodios** | Todas las historias de Ponle Que…, de la primera a la última. |
+| **El tiempo detenido** | Un aplauso detiene el mundo. Otro lo vuelve a encender. Y Renata chasquea los dedos… La historia completa. |
+| **¿Algo de esto es real?** | La ciencia de verdad detrás de cada historia, en menos de un minuto. |
+| **Shorts** | Los mejores momentos, en vertical. |
+
+## 8. Настройки загрузки по умолчанию (Настройки → Загрузка видео)
+
+- **Категория:** «Фильмы и анимация».
+- **Язык видео и названия:** испанский (Латинская Америка). Субтитры: загружать `subtitulos_es.srt` к каждому эпизоду.
+- **Лицензия:** стандартная лицензия YouTube.
+- **Комментарии:** разрешить все, кроме потенциально недопустимых (на проверку).
+- **Метка «Изменённый или синтетический контент»:** не нужна: это мультфильм, а не реалистичное видео.
+- **Теги по умолчанию:** `qué pasaría si, que pasaria si, historias animadas, animación en español, ponle que`
+- **Шаблон описания** (первые строки меняются под серию):
+
+```
+¿Qué pasaría si [pregunta]? [2–3 frases sobre la historia, sin revelar el giro].
+
+Al final: ¿algo de esto es real?
+
+¿Qué harías tú? Déjalo en los comentarios.
+¿En cuántas escenas encontraste a Pepe? 🐦
+
+[capítulos]
+
+Historia de ficción animada. Personajes, guion y animación originales.
+#quepasariasi #ponleque #animacion
+```
+
+Готовое описание, главы, теги и закреплённый комментарий для эпизода 1 лежат в `../ep01/out/subida_youtube.md`.
+
+## 9. Расписание
+
+Длинный эпизод каждый день в **19:00 UTC**: это 13:00 в Мехико, 14:00 в Боготе и Лиме, 16:00 в Буэнос-Айресе, 20:00 в Мадриде (зимой).
+Шортсы: 1–2 в день, утром (около 15:00 UTC) и вечером через 3–4 часа после эпизода. Первый шортс серии ведёт на эпизод (связанное видео).
+
+## 10. Первые посты
+
+**Закреплённый комментарий под эпизодом 1**
+```
+Pepe nunca se pone gris. ¿En cuántas escenas del mundo congelado lo encontraste? 🐦
+Y la pregunta de verdad: ¿quién es Pepe? Las mejores teorías salen en el próximo episodio.
+```
+
+**Пост в «Сообществе» после первой серии** (откроется после нескольких сотен подписчиков, раньше можно публиковать опрос в шортсах)
+```
+¿Qué pasaría si…? Elige la próxima historia 👇
+🔮 Ver 5 segundos del futuro
+🤥 Que nadie pueda mentir… excepto tú
+⚡ Reaccionar 10 veces más rápido
+🌙 No volver a dormir nunca
+```
+
+## 11. Порядок запуска (чек-лист)
+
+1. Создать канал от имени бренда (Аккаунт Google → YouTube → «Создать канал» → «Использовать название компании»): так канал можно передать или добавить менеджеров.
+2. Название, handle, аватар, баннер, водяной знак, описание, ключевые слова — разделы 1–4.
+3. Страна, «не для детей», телефон, двухэтапная аутентификация — раздел 5.
+4. Настройки загрузки по умолчанию — раздел 8.
+5. Загрузить эпизод 1 (обложка `miniatura_A.jpg`, субтитры, описание из `subida_youtube.md`) с публикацией по расписанию на 19:00 UTC.
+6. Загрузить трейлер, собрать главную страницу и плейлисты — разделы 6–7.
+7. Шортсы из `../ep01/out/` — по одному в день, начиная с `short4_maceta.mp4` (3D, вертикальный).
