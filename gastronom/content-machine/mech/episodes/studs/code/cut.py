@@ -236,8 +236,9 @@ def main():
     enc.stdin.close(); enc.wait()
     for x in srcs.values(): x.close()
     if seg: print('сегмент готов', seg, flush=True); return
+    # ограничитель после loudnorm: однопроходный loudnorm давал пик −0,6 dBTP (норма ниже −1)
     subprocess.run([FF, '-v', 'error', '-y', '-i', vid, '-i', wav, '-map', '0:v', '-map', '1:a', '-c:v', 'copy',
-                    '-af', 'loudnorm=I=-15:TP=-1.5:LRA=11', '-c:a', 'aac', '-b:a', '192k', '-ar', str(SR), '-movflags', '+faststart', '-shortest', out], check=True)
+                    '-af', 'loudnorm=I=-15:TP=-1.5:LRA=11,alimiter=limit=0.79:level=disabled', '-c:a', 'aac', '-b:a', '192k', '-ar', str(SR), '-movflags', '+faststart', '-shortest', out], check=True)
     print('готово:', out, round(b - a, 1), 'с')
 
 def loudnorm2(wav, I=-14, TP=-1.5, LRA=11):
