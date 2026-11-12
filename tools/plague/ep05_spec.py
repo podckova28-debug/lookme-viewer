@@ -12,7 +12,7 @@ S_SHEET = '84427fc9-09ce-40e6-b032-6f2700874458'   # channel/plague/sheets/stick
 STYLE = ("2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette "
          "with warm lantern amber light and small bright citrus-yellow accents. Not gory.")
 STICK = ("Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, "
-         "simple 18th-century sailor clothes (striped shirts, short jackets, kerchiefs, knitted caps; officers in tricorn hats). KEEP IT SIMPLE: only the few figures described, standing apart, "
+         "simple 18th-century sailor clothes; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes (striped shirts, short jackets, kerchiefs, knitted caps; officers in tricorn hats). KEEP IT SIMPLE: only the few figures described, standing apart, "
          "never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors.")
 KING = ("Scurvy exactly as on the attached sheet: a gaunt, sinister 18th-century sea captain in a tattered navy-blue sea coat with tarnished gold buttons and frayed gold epaulettes, "
         "a battered tricorn hat, long stringy grey hair, pale yellowish skin with bruise-like purple patches, sunken eyes and a wide grin with swollen purple gums and gaps of missing teeth; "
