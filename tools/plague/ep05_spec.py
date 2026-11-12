@@ -48,7 +48,7 @@ def HOLD(sec, *s): B.append((None, None, sec, list(s)))
 
 # ---- cold open: Anson, 1740
 N('C01', "September, 1740. Six British warships leave Portsmouth under Commodore George Anson, with nearly two thousand men aboard. Their mission: sail around South America and raid Spanish treasure ships.",
-  sh('c01a', WL(), "An 18th-century English harbour at dawn: six tall wooden warships with furled sails at anchor, rowing boats ferrying barrels, gulls, a grey sky. People only as tiny distant figures.", text=cap('PORTSMOUTH · SEPTEMBER 1740')),
+  sh('c01a', WL(), "An 18th-century English harbour at dawn: six tall wooden warships with furled sails at anchor, rowing boats ferrying barrels, gulls, a grey sky; the ships fly plain red ensigns (red flags with a small dark canton in the top corner), no Union Jacks. People only as tiny distant figures.", text=cap('PORTSMOUTH · SEPTEMBER 1740')),
   dg('d01a', "A sea chart of the Atlantic and South America with a dotted route from England down to the tip of South America, around Cape Horn and up the Pacific coast; six tiny ship icons on the route; a small treasure chest icon in the Pacific.", people=False, text=[cap('6 SHIPS  ·  NEARLY 2,000 MEN')]),
   ch('c01b', W(), "On the deck of an 18th-century warship: a stickman officer in a tricorn hat and blue coat stands at the rail with a telescope, a young stickman sailor coiling rope apart from him."))
 N('C02', "Rounding Cape Horn, the men begin to fall ill. Their gums swell. Old wounds open up again. Men who were injured decades ago feel their long-healed bones come apart.",
@@ -83,7 +83,7 @@ N('L06', "But about sixty million years ago, our early primate ancestors lost th
   sh('c08b', WL(), "An ancient tropical forest canopy at sunrise, full of fruit trees heavy with figs and berries, mist in the valleys. No people. A small primate sits on a branch eating fruit."),
   dg('d07a', "A long DNA strand drawn as a twisted ladder; one section of it is cracked and broken with a small jagged gap; beside it a little gear-shaped factory whose chimney has stopped smoking. No people.", people=False, text=[cap('ONE BROKEN GENE  ·  ABOUT 60 MILLION YEARS AGO')]))
 N('L07', "They lived in forests full of fruit, so it didn't matter. The broken gene was passed down to monkeys, to apes, and to us. Guinea pigs and some bats lost it too.",
-  dg('d08a', "A family tree drawn on aged paper: at the root a small primate in a fruit tree, branching upward to a monkey, an ape, and a simple stickman; a small separate branch to the side with a guinea pig and a bat. Every animal on the tree holds a piece of fruit.", text=[cap('MONKEYS  ·  APES  ·  US')]))
+  dg('d08a', "A family tree drawn on aged paper: at the root a small primate in a fruit tree, branching upward to a monkey, an ape, and a simple stickman; a small separate branch to the side with a guinea pig and a bat. Every animal on the tree holds a piece of fruit. Only the tree, its animals and the one stickman on it: no other people, no landscape, no ships around it.", text=[cap('MONKEYS  ·  APES  ·  US')]))
 K('L08', "Your ancestors traded a gene for a bowl of fruit. I've been waiting ever since.",
   kg('c09a', C(.5, .45, 1.1), "Scurvy sits on a sea chest in a dark ship's hold, tossing a single wrinkled old apple up and down in one hand, the lantern beside him."))
 N('L09', "The body only stores a few weeks' worth. After one to three months without fresh fruit or vegetables, he arrives.",
@@ -94,14 +94,14 @@ N('S01', "So what does he do to you? First, you just feel tired. Weak, gloomy, w
   dg('d10a', "Two numbered panels: (1) a lively stickman sailor climbing the rigging, (2) the same stickman weeks later slumped against the mast with drooping eyes, little pain lines around his knees and ankles, a small grey rain cloud over his head.", text=[label('WHAT HE DOES TO YOU', 960, 150, 72), cap('TIRED  ·  WEAK  ·  ACHING')]),
   ch('c10a', W(), "On deck: a stickman bosun in a jacket points angrily at a tired stickman sailor sitting on a barrel with a mop beside him; they stand well apart."))
 N('S02', "Then the spots. Tiny red and purple dots around the hairs on the legs, and big bruises from the slightest bump. Even the hairs themselves grow twisted, like corkscrews.",
-  dg('d11a', "A stickman sailor in rolled-up trousers with small red dots drawn on his stick shins and a purple bruise patch on his forearm; a magnifying circle beside him shows one tiny hair twisted like a corkscrew.", text=[cap('SPOTS  ·  BRUISES  ·  CORKSCREW HAIRS')]))
+  dg('d11a', "Just ONE single picture, not a sequence, no numbered stages: a stickman sailor in rolled-up trousers with small red dots drawn on his stick shins and a purple bruise patch on his forearm; a magnifying circle beside him shows one tiny hair twisted like a corkscrew.", text=[cap('SPOTS  ·  BRUISES  ·  CORKSCREW HAIRS')]))
 N('S03', "Then the gums. They swell, turn purple and spongy, and bleed at a touch. The teeth loosen, and some fall out. And the breath became famously foul.",
   dg('d12a', "A simple cartoon textbook diagram of a smiling mouth, drawn twice: (1) neat white teeth with healthy pink gums, (2) puffy purple swollen gums with one gap where a tooth is missing and a loose tooth tilted. Clean, simple, not realistic.", people=False, text=[cap('SWOLLEN GUMS  ·  LOOSE TEETH')]),
   ch('c10b', C(.5, .5, 1.05), "A stickman sailor holding a ship's biscuit sadly in one hand, unable to bite it, touching his cheek with the other hand; a small green stink cloud drawn near his mouth."))
 N('S04', "And then, the strangest part. Old scars open up again. Bones that healed years ago come apart at the old break. Without the glue, the body forgets its old repairs.",
-  dg('d13a', "Two panels: (1) a stickman arm with an old stitched scar line whose stitches are coming undone like a loosening seam, (2) an X-ray style drawing of a long bone with an old healed break line, the two halves pulling apart at that line.", text=[cap('OLD WOUNDS REOPEN  ·  OLD BREAKS COME APART')]))
+  dg('d13a', "Only two close-up panels side by side, no people or figures anywhere: (1) a close-up of a simple pale forearm with an old stitched scar line whose stitches are coming undone like a loosening seam, (2) an X-ray style drawing of a long bone with an old healed break line, the two halves pulling apart at that line.", people=False, text=[cap('OLD WOUNDS REOPEN  ·  OLD BREAKS COME APART')]))
 N('S05', "In the end, the victim bleeds inside, the heart gives out, and some died suddenly, just from being moved.",
-  ch('c10c', W(), "Below deck by lantern light: a ship's surgeon stickman kneels beside a hammock holding the wrist of a very pale sailor stickman lying in it, a worried young sailor stickman standing apart."),
+  ch('c10c', W(), "Below deck by lantern light: ONLY TWO figures, nobody else: a very pale sailor stickman lies in a canvas hammock with both arms under a blanket; a ship's surgeon stickman in a dark coat stands a step away from the hammock, holding a small brown medicine bottle in one hand, his other hand on his own hip, looking worried."),
   sh('c10d', C(.5, .5, 1.05), "An empty canvas hammock gently swaying below deck of an 18th-century ship, a lantern swinging, a folded jacket and a knitted cap left on a sea chest. Somber. No people."))
 K('S06', "Every scar you ever had, I give back. Free of charge.",
   kg('c11a', C(.5, .45, 1.1), "Scurvy bows like a polite shopkeeper behind a wooden counter in a ship's store room, holding out an empty open palm with one hand, the other hand holding his lantern."))
@@ -119,7 +119,7 @@ N('L12', "From the 1500s, ships began making voyages that lasted months. Sailors
   dg('d15a', "Three numbered items on aged paper: (1) a barrel of salt beef, (2) a hard square ship's biscuit with tiny weevils, (3) a barrel of beer; next to each a small empty glass gauge with no orange liquid. No people.", people=False, text=[cap('SALT BEEF  ·  BISCUIT  ·  BEER')]),
   ch('c13a', W(), "A ship's galley: a stickman cook in an apron bangs a hard biscuit on a table to knock weevils out, a big pot of salt beef boiling behind him."))
 N('L13', "By one estimate, between 1500 and 1800, he killed some two million sailors. More than storms, shipwrecks and enemy guns combined.",
-  dg('d16a', "A hand-drawn bar chart on aged paper: three short bars with small icons beneath them (a storm cloud, a broken ship, a cannon), and one enormous bar beside them with a small tricorn hat icon beneath it. No people.", people=False, text=[cap('ABOUT 2 MILLION SAILORS  ·  1500 TO 1800')]))
+  dg('d16a', "A hand-drawn bar chart on aged paper: three short bars with small icons beneath them (a storm cloud, a broken ship, a cannon), and one enormous bar beside them with a small tricorn hat icon beneath it. The chart fills the whole frame; nothing drawn above or around it: no pictures, no comic panels. No people.", people=False, text=[cap('ABOUT 2 MILLION SAILORS  ·  1500 TO 1800')]))
 K('L14', "Long voyage. No fresh food. My favourite kind of ship.",
   kg('c14a', C(.5, .45, 1.1), "Scurvy stands at the ship's wheel at sunset, steering with one hand, spyglass tucked under his other arm, smiling happily at the open sea."))
 N('L15', "In 1497, Vasco da Gama set out to sail around Africa to India. Off East Africa, his men's gums grew so swollen they could hardly eat. When local traders brought them oranges, many recovered.",
@@ -129,10 +129,10 @@ N('L15b', "But on the long way home, the oranges ran out. By the time he reached
   ch('c15b', W(), "On the deck of a caravel: a stickman sailor turns over an empty woven fruit basket, a second stickman sailor sits apart from him leaning on a barrel, looking weak."))
 N('L16', "In 1536, the French explorer Jacques Cartier was trapped by ice on the St. Lawrence River in Canada. Twenty-five of his men died. Then a local Iroquoian man named Domagaya showed them a cure: a tea made from the needles and bark of a tree.",
   sh('c16a', WL(), "Two small 16th-century French ships frozen into a white river in winter, snow-covered forest and hills around, smoke from a small hut on shore. People only as tiny distant figures.", text=cap('CANADA · WINTER 1536')),
-  ch('c16b', W(), "In a snowy forest: a stickman Iroquoian man in a fur cloak points to an evergreen cedar tree, while a stickman French explorer in a hat and cloak watches him, both standing apart."),
+  ch('c16b', W(), "In a snowy 1530s forest by a frozen river: a stickman Iroquoian man in a fur cloak and leather leggings, with no feather headdress, points to an evergreen white cedar tree with flat scaly fronds, while a stickman French explorer in 1530s clothes (a dark doublet, a short cape and a soft flat cap, NOT a tricorn) watches him, both standing apart."),
   dg('d18a', "Four numbered steps: (1) an evergreen cedar branch, (2) needles and strips of bark chopped on a board, (3) boiled in a pot over a fire, (4) a stickman sailor drinking a steaming cup and standing up straight again.", text=[cap('CEDAR TEA')]))
 N('L17', "Within days, the men were walking again. The cure had been found. And then it was forgotten. Again and again.",
-  sh('c16c', C(.5, .5, 1.05), "A wooden cup of steaming green-brown tea on a snowy wooden barrel by a campfire, pine needles floating in it. No people."))
+  sh('c16c', C(.5, .5, 1.05), "A wooden cup of steaming green-brown tea on a snowy wooden barrel by a campfire, pine needles floating in it, a small cedar twig beside it. No lantern, no lemon, no fruit, nothing modern. No people."))
 N('L17b', "In 1601, the English captain James Lancaster gave his crew three spoonfuls of lemon juice every morning. His men stayed healthy. The other ships in his fleet were so sick, his sailors had to help work them.",
   dg('d19a', "Four sailing ships at sea seen from the side: (1) the flagship with a small lemon flag and tiny healthy stickman sailors standing on deck, (2) (3) (4) three other ships with tiny stickman sailors lying down on deck; little arrows show sailors rowing from the flagship to help.", text=[cap('3 SPOONS OF LEMON JUICE A DAY')]),
   ch('c17a', W(), "On deck at morning: a stickman captain in a tricorn hat holds a big spoon and a bottle of yellow juice, a stickman sailor stands in front of him with his mouth open for a spoonful."))
@@ -141,8 +141,8 @@ K('L18', "Lemons. I hate lemons.",
 
 # ---- James Lind
 N('L19', "Then, in 1747, a Scottish naval surgeon named James Lind did something new. On board HMS Salisbury, he took twelve sailors with scurvy, and split them into six pairs.",
-  sh('c19a', W(), "An 18th-century Royal Navy warship at sea in calm weather, the Union flag flying. People only as tiny distant figures.", text=cap('HMS SALISBURY · 1747')),
-  ch('c19b', W(), "A ship's sick bay: a stickman naval surgeon in a dark coat and white wig holds a notebook and quill, standing in front of a row of hammocks."))
+  sh('c19a', W(), "An 18th-century Royal Navy warship at sea in calm weather, flying a large plain red ensign at the stern (a red flag with a small canton in the top corner), NOT a Union Jack. People only as tiny distant figures.", text=cap('HMS SALISBURY · 1747')),
+  ch('c19b', W(), "A ship's sick bay: ONLY ONE figure, nobody else: a stickman naval surgeon in a dark coat and white wig stands holding an open notebook in one hand and a single quill in the other, in front of a row of empty canvas hammocks."))
 N('L20', "Each pair got a different cure. Cider. Diluted sulfuric acid. Vinegar. Seawater. A spicy paste. And two oranges and a lemon every day.",
   dg('d20a', "Six numbered pairs of simple stickman sailors in hammocks in a row; under each pair one item: (1) a jug of cider, (2) a small dark glass bottle with drops, (3) a vinegar bottle, (4) a bucket of seawater, (5) a bowl of spicy paste, (6) two oranges and a lemon.", text=[cap('CIDER  ·  ACID  ·  VINEGAR  ·  SEAWATER  ·  PASTE  ·  CITRUS')]))
 N('L21', "The citrus pair recovered so fast that within six days, one of them was fit for duty again. It was one of the first controlled trials in medical history.",
@@ -167,14 +167,14 @@ N('L24b', "But Cook also praised malt and other remedies that did nothing. So it
 # ---- the Navy
 N('L25', "Finally, in 1795, pushed by the physician Gilbert Blane, the Royal Navy gave every sailor a daily ration of lemon juice. Within a few years, scurvy almost vanished from the fleet.",
   ch('c22a', W(), "On deck of a Royal Navy ship: a stickman sailor ladles lemon juice from a barrel into a tin cup held out by another stickman sailor standing apart; a lemon on the barrel."),
-  dg('d25a', "A hand-drawn line graph on aged paper of scurvy cases in naval hospitals by year: a high line in the 1780s that falls steeply after a small lemon icon marked at 1795, and stays near the bottom. No people.", people=False, text=[cap('ROYAL NAVY: LEMON JUICE FROM 1795')]))
+  dg('d25a', "A hand-drawn line graph on aged paper of scurvy cases in naval hospitals by year: a high line in the 1780s that falls steeply after a small lemon icon marked at 1795, and stays near the bottom. The graph fills the whole frame; nothing drawn above or around it: no pictures, no comic panels. No people.", people=False, text=[cap('ROYAL NAVY: LEMON JUICE FROM 1795')]))
 N('L26', "Healthy crews could now stay at sea for months, blockading the ports of France. Some historians think lemon juice helped Britain win the Napoleonic Wars.",
   dg('d26a', "A map of the coast of France on aged paper with a ring of small British warship icons patrolling offshore for months, a calendar showing many months crossed off, and a small lemon icon beside the fleet.", people=False, text=[cap('MONTHS AT SEA  ·  BLOCKADING FRANCE')]),
   sh('c22b', WR(), "A line of Royal Navy warships under full sail on a grey sea in 1805, cannon smoke drifting far away. People only as tiny distant figures."))
 N('L26b', "Later, the Navy switched to cheaper limes from its own colonies. That's how British sailors got the nickname Limeys. But limes have far less vitamin C than lemons.",
   dg('d27a', "Two fruits compared side by side: (1) a big yellow lemon with a tall glass gauge full of orange liquid, (2) a small green lime with a gauge only a quarter full. No people.", people=False, text=[cap('LEMON  ·  LIME')]))
 K('L27', "Cheap limes. Bless the accountants.",
-  kg('c23a', C(.5, .45, 1.1), "Scurvy raises a small green lime toward the viewer like a toast, delighted, in a dim ship's store room full of barrels."))
+  kg('c23a', C(.5, .45, 1.1), "Scurvy raises a small green lime toward the viewer like a toast with one hand, his other hand holding his lantern by its handle down at his side, delighted, in a dim ship's store room full of barrels. The spyglass is tucked in his belt."))
 
 # ---- the comeback
 N('L28', "And so he came back. In 1875, a British Arctic expedition sailed with lime juice, and still came down with scurvy. Doctors started to doubt citrus altogether.",
