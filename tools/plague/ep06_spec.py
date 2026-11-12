@@ -301,6 +301,6 @@ def beats():
         else: out['beats'].append({'hold': t, 'shots': sl})
     json.dump(out, open(os.path.join(ROOT, 'tools/plague/ep06_beats.json'), 'w'), indent=1); print(len(out['beats']), 'beats')
 
-MUSIC = [(0, 180, 'cholera_a.mp3'), (176, 340, 'plague_b.mp3'), (336, 470, 'cholera_b.mp3'), (466, 'ALL', 'plague_a.mp3')]   # re-set after the timeline
+MUSIC = [(0, 184, 'cholera_a.mp3'), (180, 280, 'plague_b.mp3'), (276, 430, 'cholera_b.mp3'), (426, 'ALL', 'plague_a.mp3')]   # open+who+origin | symptoms+ancient | 1800s+Pasteur | modern+aftermath+today
 
 {'lines': lines, 'frames': frames, 'beats': beats}[sys.argv[1]]()
