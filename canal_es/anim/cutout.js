@@ -18,7 +18,8 @@ const CUT_DIMS = {
   nacho:   { armW: 50, legW: 44, handR: 27, torsoW: 206, headDrop: 12, shoeW: 66 },
   valeria: { armW: 44, legW: 40, handR: 25, torsoW: 194, headDrop: 12, shoeW: 60 },
   profe:   { sh: 78, shy: 54, armW: 48, legW: 44, torsoW: 212, headDrop: 10, shoeW: 64 },
-  ex1: { headDrop: 8 }, ex2: { headDrop: 8, armW: 44, legW: 40 }, ex3: { headDrop: 16 }, ex4: { headDrop: 8, armW: 44, legW: 40 }, ex5: { headDrop: 8 }, ex6: { headDrop: 16 },
+  // bare: short sleeves; the row of upper.png where the sleeve ends (the arm below it is drawn as one seamless tube)
+  ex1: { headDrop: 8, bare: 211 }, ex2: { headDrop: 8, armW: 44, legW: 40, bare: 212 }, ex3: { headDrop: 16 }, ex4: { headDrop: 8, armW: 44, legW: 40, bare: 199 }, ex5: { headDrop: 8, bare: 204 }, ex6: { headDrop: 16 },
 };
 const CUT_FACE = { mama: { earrings: 0 } };   // features the painted head already has
 const CUT_BG = { kitchen: 'kitchen', kitchenNight: 'kitchenNight', hallway: 'hallway', bedroom: 'bedroom', classroom: 'classroom', street: 'street', streetRain: 'streetRain',
@@ -49,10 +50,10 @@ const CUT_READY = (async () => {
 
 /* ---------------------------------------------------------------- characters */
 /* image rows y0..y1 of part P land exactly on the bone a->b; w = drawn width of the part's body */
-function cutSeg(g, P, a, b, w, y0 = P.y0, y1 = P.y1) {
-  const dx = b[0] - a[0], dy = b[1] - a[1], L = Math.hypot(dx, dy) || 1, ky = L / (y1 - y0), kx = w / P.w, I = P.img;
+function cutSeg(g, P, a, b, w, y0 = P.y0, y1 = P.y1, rows = 0) {   // rows > 0: draw only the image rows 0..rows (same placement)
+  const dx = b[0] - a[0], dy = b[1] - a[1], L = Math.hypot(dx, dy) || 1, ky = L / (y1 - y0), kx = w / P.w, I = P.img, n = rows || I.height;
   g.save(); g.translate(a[0], a[1]); g.rotate(Math.atan2(dy, dx) - Math.PI / 2);
-  g.drawImage(I, -P.cx * kx, -y0 * ky, I.width * kx, I.height * ky); g.restore();
+  g.drawImage(I, 0, 0, I.width, n, -P.cx * kx, -y0 * ky, I.width * kx, n * ky); g.restore();
 }
 /* mitten at h, fingers pointing away from the elbow e, thumb towards the body (P.thumb: side of the thumb in the PNG) */
 function cutHand(g, P, e, h, r, squash) {
@@ -80,8 +81,15 @@ function drawCut(g, c, cname, p, G) {
   const arm = (sh, e, hf) => {
     let dx = hf[0] - e[0], dy = hf[1] - e[1]; const L = Math.hypot(dx, dy) || 1; dx /= L; dy /= L;
     const wr = [hf[0] - dx * D.handR * .55, hf[1] - dy * D.handR * .55];
-    g.save(); g.fillStyle = R.sleeve; g.strokeStyle = 'rgba(58,26,40,.95)'; g.lineWidth = 3.2; g.beginPath(); g.arc(e[0], e[1], D.armW * .47, 0, 7); g.fill(); g.stroke(); g.restore();   // elbow cap
-    cutSeg(g, R.upper, sh, e, D.armW); cutSeg(g, R.fore, e, wr, D.armW * .96);
+    if (D.bare) {   // bare arm: one outlined tube shoulder -> elbow -> wrist, so the elbow bends without a visible joint; the painted sleeve on top
+      const w = D.armW * .97, ow = D.armW * .065, u = .3, s0 = [sh[0] + (e[0] - sh[0]) * u, sh[1] + (e[1] - sh[1]) * u];   // starts under the sleeve
+      g.save(); g.lineJoin = 'round'; g.lineCap = 'round'; g.beginPath(); g.moveTo(s0[0], s0[1]); g.lineTo(e[0], e[1]); g.lineTo(wr[0], wr[1]);
+      g.strokeStyle = 'rgb(50,16,40)'; g.lineWidth = w; g.stroke(); g.strokeStyle = R.sleeve; g.lineWidth = w - 2 * ow; g.stroke(); g.restore();
+      cutSeg(g, R.upper, sh, e, D.armW, R.upper.y0, R.upper.y1, D.bare + 4);
+    } else {
+      g.save(); g.fillStyle = R.sleeve; g.strokeStyle = 'rgba(58,26,40,.95)'; g.lineWidth = 3.2; g.beginPath(); g.arc(e[0], e[1], D.armW * .47, 0, 7); g.fill(); g.stroke(); g.restore();   // elbow cap
+      cutSeg(g, R.upper, sh, e, D.armW); cutSeg(g, R.fore, e, wr, D.armW * .96);
+    }
     cutHand(g, p.fist ? R.fist : R.hand, e, hf, D.handR, A.squash);
   };
   const farArm = () => { arm(A.shL, A.eL, A.hLf); if (p.holdL) p.holdL(g, A.hLf[0], A.hLf[1]); };

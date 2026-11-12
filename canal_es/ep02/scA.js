@@ -144,7 +144,7 @@ function crossSticker(X, s, a, x, y, ok) { if (a <= 0) return; sticker(X, s, a, 
   if (!ok) { X.save(); X.globalAlpha = clamp(a); X.font = '70px Bangers'; const w = X.measureText(s).width + 40; X.strokeStyle = '#e02424'; X.lineWidth = 12; X.lineCap = 'round';
     X.beginPath(); X.moveTo(x - 6, y + 70); X.lineTo(x + w + 26, y + 6); X.stroke(); X.restore(); } }
 SC.s01 = (X, t) => {
-  const P = [['ex1', 120, 70, .62, 862], ['ex6', 1850, -75, .62, 862], ['ex4', 1300, 40, .55, 845]];
+  const P = [['ex1', -150, 62, .8, 952], ['ex6', 2070, -62, .8, 952], ['ex4', 1480, 36, .78, 942]];   // on the sidewalk (not up the wall), never crossing the hero
   const duck = Lm('s01_04', .2), catchT = Lm('s01_04', .5), say = Lm('s01_04', .78);
   const cam = shots(t, [], [
     { t: 0, cx: 960, cy: 540, z: 1.0, z2: 1.06, lock: 1 },
@@ -157,13 +157,12 @@ SC.s01 = (X, t) => {
   const st = stageF(cam); st.wld(g => drawSet(g, 'street'));
   st.col(g => drawPigeon(g, 1700, 560, .4, { flip: -1, peck: Math.max(0, Math.sin(t * 2.4)) * .6 }));
   const wl = t < Lt('s01_04') - .1;
-  if (wl) st.wld(g => { for (const [n, x0, v, s, y] of P) walker(g, n, x0, v, t, { s, y }); });
   // a ball for the dodge, a mug for the catch, a question for the answer
   const hp = { x: 900, y: FEET, s: S0, t, look: [10, 0], mouth: .2 };
   if (t > Lt('s01_03') && t < Lt('s01_04')) { const G = charGeom(CAST.tu, hp); [hp.hL, hp.hR] = POSE.shrug(R(t, Lt('s01_03'), Lt('s01_03') + .4, back) * .6, G); hp.mouth = -.2; hp.brow = .4; }
   const bu = (t - duck + .6) / 1.0;
   if (t > Lt('s01_04') - .1) {
-    st.wld(g => { drawChar(g, 'ex1', { x: 1650, y: FEET, s: S0, t, flip: -1, hR: t < duck - .6 ? [160, -560] : [220, -400], look: [-10, 0], mouth: .3 }); drawChar(g, 'ex2', { x: 1220, y: FEET, s: S0, t, flip: -1, look: [-12, 2], mouth: .1, hL: [-70, -330], hR: [70, -330] }); });
+    st.wld(g => { drawChar(g, 'ex1', { x: 1650, y: FEET, s: S0, t, flip: -1, hR: t < duck - .6 ? [160, -560] : [220, -400], look: [-10, 0], mouth: .3 }); drawChar(g, 'ex2', { x: 1220, y: FEET, s: S0, t, flip: -1, look: [-12, 2], mouth: .1 }); });
     if (bu > 0 && bu < 1) st.wld(g => propBall(g, mix(1560, 300, bu), 470 + Math.sin(bu * Math.PI) * -60, 34, bu * 8));
     if (t > duck - .25 && t < duck + .45) { hp.jump = -60 * bump(t, duck - .25, duck + .45); hp.slump = 3 * bump(t, duck - .25, duck + .45); hp.hy = 60 * bump(t, duck - .25, duck + .45); }
     const mu = R(t, catchT - .5, catchT);
@@ -172,12 +171,13 @@ SC.s01 = (X, t) => {
   }
   if (t > Lt('s01_05')) { hp.mouth = -.25; hp.sweat = 1; hp.brow = .7; }
   st.col(g => drawChar(g, 'tu', hp));
+  if (wl) st.wld(g => { for (const [n, x0, v, s, y] of P.slice().sort((a, b) => a[4] - b[4])) walker(g, n, x0, v, t, { s, y }); });   // closer than the hero: drawn after him
   // ghosts: walkers five 'seconds' ahead (a few steps), the ball arriving early, the question asked early
   const gw = vis(t, .4, Lt('s01_03') - .2) + vis(t, Le('s01_03') + .2, Lt('s01_04') - .3), gb = vis(t, Lt('s01_04') - .1, Lt('s01_05') + 2.5);
   if (gw > 0) st.fut(g => { for (const [n, x0, v, s, y] of P) walker(g, n, x0, v, t + 4.5, { s, y }); });
   if (gb > 0) st.fut(g => { const u = (t - duck + 1.8) / 1.0; if (u > 0 && u < 1) propBall(g, mix(1560, 300, u), 470 - Math.sin(u * Math.PI) * 60, 34, u * 8);
     if (t > Lt('s01_04') + .5 && t < catchT - .4) propMug(g, 1040, 760, 1.1, '#e07a8a');
-    if (t > catchT && t < Lt('s01_05') + 2) drawChar(g, 'ex2', { x: 1220, y: FEET, s: S0, t, flip: -1, look: [-12, 0], open: .3 + .4 * Math.abs(Math.sin(t * 8)), hL: [-70, -330], hR: [70, -480] }); });
+    if (t > catchT && t < Lt('s01_05') + 2) drawChar(g, 'ex2', { x: 1220, y: FEET, s: S0, t, flip: -1, look: [-12, 0], open: .3 + .4 * Math.abs(Math.sin(t * 8)), hR: [150, -470] }); });
   const ga = Math.max(gw, gb);
   st.col(g => futEyes(g, 'tu', hp, ga * .8));
   composeF(X, st, { ghost: ga, t, rim: .6 });

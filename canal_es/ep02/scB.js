@@ -1,4 +1,5 @@
 /* Ep02 scenes 6–11: rock-paper-scissors, the surprise question, small accidents, the lottery, dinner twice, no more surprises. */
+function standing(x, extra = {}) { return Object.assign({ x, y: FEET, s: S0 }, extra); }   // arms at rest: no floating 'desk' hands without a desk
 function seated(name, x, extra = {}) { return Object.assign({ x, y: FEET, s: S0, sit: 1, hL: [-62, -296], hR: [62, -296], armsFront: 1 }, extra); }
 /* rock / paper / scissors badge */
 function rps(g, x, y, k, s = 1, col = '#ffffff', label) { g.save(); g.translate(x, y); g.scale(s, s); circ(g, 0, 0, 58, col, 6);
@@ -71,7 +72,7 @@ SC.s07 = (X, t) => {
   ]);
   const st = stageF(cam); st.wld(g => { drawSet(g, 'classroom'); if (HYB) boardText(g, t > ask0 ? '6 × 7 = ?' : 'PREGUNTA SORPRESA', ''); teacherDesk(g, 1690); });
   st.col(g => drawPigeon(g, 260, 380, .38, { flip: 1, tilt: Math.sin(t * .8) * .12 }));
-  st.wld(g => { drawChar(g, 'ex2', seated('ex2', 380, { t, look: [6, 4], mouth: .1 })); drawChar(g, 'ex3', seated('ex3', 1180, { t, look: t > Lt('s07_03') ? [-16, 0] : [4, 4], mouth: t > Lt('s07_03') ? -.2 : .1, wide: t > Lt('s07_03') ? .4 : 0 })); });
+  st.wld(g => { drawChar(g, 'ex2', standing(380, { t, look: [6, 4], mouth: .1 })); drawChar(g, 'ex3', standing(1180, { t, look: t > Lt('s07_03') ? [-16, 0] : [4, 4], mouth: t > Lt('s07_03') ? -.2 : .1, wide: t > Lt('s07_03') ? .4 : 0 })); });
   // profe: at the board, back to the class, turns when you answer
   const facing = t > turn, pp = { x: 1500, y: FEET, s: S0, t, flip: facing ? -1 : 1, look: facing ? [-14, 4] : [16, -10], mouth: -.2, brow: .6, hR: [190, -560] };
   if (speaking(t, 's07_05')) { pp.open = talk(t, 's07_05'); pp.hR = [190, -560]; }
@@ -79,7 +80,7 @@ SC.s07 = (X, t) => {
   if (t > nb1) { pp.hR = [180, -420]; pp.holdR = (g, x, y) => notebook(g, x + 20, y - 40, .55, 'TÚ', -.1, pp.flip); }
   if (t > nb2) { pp.hL = [-180, -420]; pp.holdL = (g, x, y) => notebook(g, x - 20, y - 40, .55, 'TÚ 2', .1, pp.flip); }
   st.wld(g => drawChar(g, 'profe', pp));
-  const hp = seated('tu', 800, { t, mouth: .1, look: [10, 2] });
+  const hp = standing(800, { t, mouth: .1, look: [10, 2] });
   if (t > Lt('s07_02')) { hp.lid = .25; hp.mouth = .4; hp.brow = -.2; }
   if (t > Lt('s07_03') - .2 && t < Lt('s07_04') + .5) { hp.hR = [120, -640]; hp.open = talk(t, 's07_03'); }
   if (t > Lt('s07_06')) { hp.mouth = -.25; hp.sweat = 1; hp.lid = 0; hp.brow = .6; }
@@ -193,7 +194,7 @@ SC.s10 = (X, t) => {
     if (speaking(t, 's10_06')) { mp.open = talk(t, 's10_06'); mp.look = [-16, 0]; mp.mouth = .4; }
     if (t > Lt('s10_08') - .05) { mp.look = [-16, 0]; mp.wide = .7; mp.mouth = -.3; mp.brow = .9; const u = R(t, Lt('s10_08'), Lt('s10_08') + .4, back); mp.hR = [mix(140, 250, u), mix(-330, -480, u)]; mp.holdR = (g, x, y) => { for (const [c, w] of [['#3b2614', 20], ['#d9a94a', 11]]) { line(g, [[x, y - 110], [x, y + 50]], c, w); line(g, [[x - 42, y - 62], [x + 42, y - 62]], c, w); } }; }
     st.wld(g => drawChar(g, 'mama', mp));
-    const hp = seated('tu', 760, { t, look: [14, 0], mouth: .1 });
+    const hp = standing(760, { t, look: [14, 0], mouth: .1 });   // standing at the table, hands down by the edge (as in s09)
     if (speaking(t, 's10_03')) { hp.open = talk(t, 's10_03'); hp.mouth = .4; }
     if (speaking(t, 's10_07')) { hp.open = talk(t, 's10_07'); hp.lid = .3; }
     if (t > Lt('s10_08')) { hp.mouth = -.2; hp.sweat = 1; hp.brow = .5; }
@@ -233,7 +234,8 @@ function partyBannerFix(g) { g.save(); const gr = g.createLinearGradient(0, 100,
   for (const [x, y, c] of [[1440, 186, '#fde047'], [1540, 184, '#5ee7ff'], [1640, 160, '#e07a8a']]) { g.save(); g.translate(x, y + 26); g.fillStyle = c; g.strokeStyle = OUT; g.lineWidth = 4; g.beginPath();
     for (let i = 0; i < 10; i++) { const a = -Math.PI / 2 + i * Math.PI / 5, r = i % 2 ? 14 : 32; g.lineTo(Math.cos(a) * r, Math.sin(a) * r); } g.closePath(); g.fill(); g.stroke(); g.restore(); }
   g.restore(); }
-function sofa(g, x, y) { shape(g, q => rrPath(q, x - 330, y - 230, 660, 170, 40), '#4a5fa8', 7); shape(g, q => rrPath(q, x - 360, y - 110, 720, 120, 30), '#5a70b8', 7);
+function sofa(g, x, y) { for (const dx of [-320, 300]) shape(g, q => rrPath(q, x + dx - 10, y - 4, 30, 50, 6), '#2e2a3a', 5);   // legs down to the floor
+  shape(g, q => rrPath(q, x - 330, y - 230, 660, 170, 40), '#4a5fa8', 7); shape(g, q => rrPath(q, x - 360, y - 110, 720, 120, 30), '#5a70b8', 7);
   for (const dx of [-360, 330]) shape(g, q => rrPath(q, x + dx, y - 170, 40, 170, 18), '#3f528f', 6); }
 SC.s11 = (X, t) => {
   const door = Lt('s11_06') + .2, jump = Lt('s11_08') - .15, prac = Lt('s11_07');
@@ -281,9 +283,9 @@ SC.s11 = (X, t) => {
       if (!hidden) { const G = charGeom(CAST[n], p); [p.hL, p.hR] = POSE.stretch(up, G); }
       if (n === 'nacho' && speaking(t, 's11_11')) { p.open = talk(t, 's11_11'); p.mouth = .2; p.lid = .4; p.brow = .8; p.hL = p.hR = null; }
       if (n === 'nacho' && t > Lt('s11_10') && !speaking(t, 's11_11')) { p.mouth = 0; p.lid = .3; p.brow = .6; p.hL = p.hR = null; }
-      st.wld(g => drawChar(g, n, p)); }
+      st.wld(g => { if (hidden) { g.save(); g.beginPath(); g.rect(-5000, -5000, 10000, 5000 + 896); g.clip(); }   // crouched: nothing shows below the sofa
+        drawChar(g, n, p); if (hidden) g.restore(); }); }
     st.wld(g => sofa(g, 1590, 890));
-    if (t < Lt('s11_06')) st.wld(g => { text(g, 'VIERNES', 960, 260, 90, '#e02424', 'Bangers', 'center'); });
     hp = { x: t < door ? -200 : mix(260, 420, R(t, door, door + .8, io)), y: FEET, s: S0, t, walk: t > door && t < door + .8 ? 1 : 0, phase: walkPh(t * 80), look: [16, 0], mouth: .2 };
     if (t > prac && t < jump) { const k = Math.floor((t - prac) / .55) % 4; Object.assign(hp, [{ wide: .8, open: .8, brow: .9 }, { wide: .2, open: .3, brow: -.6, mouth: .9 }, { wide: 1, open: 1, brow: 1, hy: -10 }, { wide: .5, open: .6, brow: .4, rot: .1 }][k]); }
     if (t > Lt('s11_09') - .1 && t < Lt('s11_11')) { Object.assign(hp, { wide: .15, open: .35, brow: .2, mouth: 0, rot: 0 }); const G = charGeom(CAST.tu, hp); [hp.hL, hp.hR] = POSE.shrug(.4, G); }
@@ -294,6 +296,7 @@ SC.s11 = (X, t) => {
     st.col(g => futEyes(g, 'tu', hp, ga));
     composeF(X, st, { ghost: ga, t });
     if (t > jump && t < jump + 1.6) { const r = rnd(7); X.save(); for (let i = 0; i < 70; i++) { const u = (t - jump) * (.7 + r() * .6), x = r() * W, y = -40 + u * (500 + r() * 500); X.fillStyle = ['#fde047', '#e02424', '#5ee7ff', '#7ee38a'][i % 4]; X.fillRect(x + Math.sin(u * 6 + i) * 30, y, 14, 22); } X.restore(); }
+    if (t < Lt('s11_06')) sticker(X, 'VIERNES', 1, 70, 70, 62);   // a caption in the corner, not painted over the birthday banner
     if (t > Lt('s11_10') && t < Lt('s11_11')) sticker(X, 'ACTUACIÓN: 0/10', R(t, Lt('s11_10'), Lt('s11_10') + .25, back), 70, 70, 70, '#ffffff');
     futHUD(X, ga, hudN(t, door + .1, jump));
   }

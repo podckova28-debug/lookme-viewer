@@ -125,7 +125,7 @@ def frozen_pad(total):
             f = hz(m); y += (np.sin(2 * np.pi * f * tt) + .25 * np.sin(2 * np.pi * 2 * f * tt + .5)) * (1 / (k + 1.4))
         add(x, y * win * (.75 + .25 * np.sin(2 * np.pi * .12 * tt)), b * seg / SR)
     x = lp(x, 900, 4)
-    return x * .05 + lp(rng.standard_normal(L), 300) * .009
+    return x * .05   # no noise bed under the pad: after mastering it reads as hiss
 
 # ---------------------------------------------------------------- ep02 effects: the vision
 def vision():
@@ -171,17 +171,21 @@ fz = np.interp(tt, np.arange(n100) / 100.0, movavg(fr.astype(float), 15))
 pad = frozen_pad(TOTAL)[:N] * fz
 pad[int(cut * SR):int((sc('s16')['start'] + sc('s16')['dur']) * SR)] = 0   # the cut to black is silent
 ghs = np.interp(tt, np.arange(n100) / 100.0, movavg(gh, 20))
-shimmer = lp(hp(rng.standard_normal(N), 4000), 9000) * .012 * ghs   # a faint high air while the vision is on
+shimmer = np.zeros(N)   # (was a faint high noise while the vision is on: audible as hiss after mastering)
 
 # ---------------------------------------------------------------- ambience per scene
+# No broadband noise beds: the old street air / room tone (filtered white noise) came up as a constant hiss and rumble
+# once the mix was mastered to -14 LUFS. Outdoors gets a few soft synthetic bird chirps instead, indoors stays clean.
 amb = np.zeros(N)
-def room(d, lvl=.012): return lp(rng.standard_normal(int(d * SR)), 400) * lvl * 6
-for sid in T['order']:
-    s0, d = sc(sid)['start'], sc(sid)['dur']
-    if sid in ('s00', 's01', 's02', 's05', 's12', 's14', 's15'): t = secs(d); add(amb, hp(lp(rng.standard_normal(len(t)), 2500), 150) * .015, s0)
-    elif sid == 's16': t = secs(d); add(amb, hp(lp(rng.standard_normal(len(t)), 1800), 200) * .010, s0)
-    elif sid == 's17': pass
-    else: add(amb, room(d), s0)
+def chirp(f0=3200, d=.09):
+    t = secs(d); f = f0 * (1 + .25 * np.sin(np.pi * t / d)); return np.sin(2 * np.pi * np.cumsum(f) / SR) * np.sin(np.pi * t / d) ** 2 * .05
+r_amb = np.random.default_rng(11)
+for sid in ('s01', 's05', 's12', 's15'):
+    s0, d = sc(sid)['start'], sc(sid)['dur']; tb = s0 + 1.5
+    while tb < s0 + d - 1:
+        f0 = r_amb.uniform(2600, 3800)
+        for k in range(r_amb.integers(2, 4)): add(amb, chirp(f0 * r_amb.uniform(.95, 1.08)), tb + k * .13, r_amb.uniform(.5, 1))
+        tb += r_amb.uniform(2.5, 5.5)
 amb *= (1 - fz)
 
 # ---------------------------------------------------------------- effects timeline

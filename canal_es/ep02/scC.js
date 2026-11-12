@@ -7,6 +7,9 @@ function dog(g, x, y, s, ph = 0, flip = 1) { g.save(); g.translate(x, y); g.scal
   g.save(); g.translate(78, -96); ell(g, 0, 0, 40, 34, 0, '#d99a58'); ell(g, 34, 10, 22, 16, 0, '#d99a58'); circ(g, 52, 4, 7, OUT, 0); circ(g, 8, -8, 5, OUT, 0);
   ell(g, -18, -10, 14, 28, .4, '#8a5a2b'); g.restore(); g.restore(); }
 function leaf(g, x, y, r, c = '#e0913a') { g.save(); g.translate(x, y); g.rotate(r); shape(g, q => { q.moveTo(-18, 0); q.quadraticCurveTo(0, -14, 18, 0); q.quadraticCurveTo(0, 14, -18, 0); }, c, 3); g.restore(); }
+/* sitting on the park bench, seen from the front: the whole bench is drawn behind the sitter, hips on the seat, short
+   (foreshortened) legs dangling in front of it with the feet off the ground (no floor shadow), hands resting on the thighs */
+function benchSit(x, extra = {}) { return Object.assign({ x, y: 905, s: S0, sit: 1, noShadow: 1, hL: [-80, -125], hR: [80, -125], armsFront: 1 }, extra); }
 function dashRing(g, x, y, r, t, col = '#fde047') { g.save(); g.strokeStyle = col; g.lineWidth = 8; g.setLineDash([22, 16]); g.lineDashOffset = -t * 60; g.beginPath(); g.arc(x, y, r, 0, 7); g.stroke(); g.restore(); }
 
 /* ================================================================ 12. five seconds ahead of everyone; Pepe has no ghost */
@@ -46,21 +49,19 @@ SC.s12 = (X, t) => {
     if (t > laugh && t < laugh + 1.2) comicWord(X, '¡JA!', ...worldToScreen(cam, 800, 320), t - laugh, 70);
     if (t > laugh + lag && t < laugh + lag + 1.2) comicWord(X, '¡JAJAJA!', ...worldToScreen(cam, 1450, 300), t - laugh - lag, 70);
   } else {
-    st.wld(g => { drawSet(g, 'park'); bench(g, 0); });
-    // passers-by, a dog and falling leaves: each with its ghost a few steps ahead
+    // passers-by and a dog on the far cross path, behind the bench; each with its ghost a few steps ahead
     const P = [['ex1', 150, 70], ['ex6', 1900, -60]], dg = tt => 1800 - 120 * (tt - bench0);
-    const far = t < Lt('s12_09') - .1 || t > Lt('s12_12') - .1;
-    if (far) st.wld(g => { for (const [n, x0, v] of P) walker(g, n, x0, v, t - bench0, { s: .4, y: 720 }); dog(g, dg(t), 740, .4, t * 9, -1); });
+    const far = (cam.z || 1) < 1.45;   // the far path only in the wide shots (in the blurred close-ups a sharp passer-by reads as standing on the bench)
+    st.wld(g => { drawSet(g, 'park'); if (far) { for (const [n, x0, v] of P) walker(g, n, x0, v, t - bench0, { s: .4, y: 724 }); dog(g, dg(t), 738, .4, t * 9, -1); } bench(g, 0); bench(g, 1); });
     const L = [[700, 0], [1250, 2.1], [1500, 1.1], [420, 3.0]], leafAt = (tt, i) => { const [x, ph] = L[i], u = ((tt * .12 + ph * .3) % 1); return [x + Math.sin(u * 9 + i) * 40, -60 + u * 1100, u * 9]; };
     st.wld(g => { for (let i = 0; i < L.length; i++) leaf(g, ...leafAt(t, i)); });
-    const hp = { x: 900, y: 905, s: S0, t, sit: 1, look: [14, 6], mouth: .1, hL: [-40, -300], hR: [40, -300], armsFront: 1 };
+    const hp = benchSit(900, { t, look: [14, 6], mouth: .1 });
     if (t > Lt('s12_09')) { hp.look = [16, 12]; hp.wide = .4; hp.brow = .5; }
     if (speaking(t, 's12_12')) { hp.open = talk(t, 's12_12'); hp.brow = .7; }
     st.col(g => drawChar(g, 'tu', hp));
-    st.wld(g => bench(g, 1));
     st.col(g => drawPigeon(g, 1080, 792, .62, { flip: -1, front: t > Lt('s12_12'), tilt: t > Lt('s12_13') ? .25 * bump(t, Lt('s12_13') + .3, Lt('s12_13') + 1.4) : Math.sin(t * 1.1) * .06 }));
     ga = vis(t, Lt('s12_07') + .4, T().dur);
-    if (ga > 0) st.fut(g => { if (far) { for (const [n, x0, v] of P) walker(g, n, x0, v, t - bench0 + 4.5, { s: .4, y: 720 }); dog(g, dg(t + 3), 740, .4, t * 9, -1); } for (let i = 0; i < L.length; i++) leaf(g, ...leafAt(t + 3.5, i)); });
+    if (ga > 0) st.fut(g => { if (far) { for (const [n, x0, v] of P) walker(g, n, x0, v, t - bench0 + 4.5, { s: .4, y: 724 }); dog(g, dg(t + 3), 738, .4, t * 9, -1); } for (let i = 0; i < L.length; i++) leaf(g, ...leafAt(t + 3.5, i)); });
     st.col(g => futEyes(g, 'tu', hp, ga * .8));
     composeF(X, st, { ghost: ga, t, rim: .6 });
     if (t > Lt('s12_09') - .05) { const [px, py] = worldToScreen(cam, 1080, 740); X.save(); X.globalAlpha = R(t, Lt('s12_09'), Lt('s12_09') + .3); dashRing(X, px, py, 95 * cam.z, t); X.restore(); }
@@ -220,12 +221,11 @@ SC.s16 = (X, t) => {
     { t: Lt('s16_06') - .05, cx: 1140, cy: 660, z: 3.0, z2: 3.3, lock: 1 },
     { t: Lt('s16_07') - .05, cx: 1120, cy: 690, z: 2.4, z2: 2.8, lock: 1 },
   ]);
-  const st = stageF(cam); st.wld(g => { drawSet(g, 'parkNight'); bench(g, 0); });
-  const hp = { x: 900, y: 905, s: S0, t, sit: 1, look: [14, 6], mouth: .3, open: t < Lt('s16_03') ? Math.abs(Math.sin(t * 7)) * .4 : 0, hL: [-40, -300], hR: [40, -300], armsFront: 1 };
+  const st = stageF(cam); st.wld(g => { drawSet(g, 'parkNight'); bench(g, 0); bench(g, 1); });
+  const hp = benchSit(900, { t, look: [14, 6], mouth: .3, open: t < Lt('s16_03') ? Math.abs(Math.sin(t * 7)) * .4 : 0 });
   if (t > Lt('s16_04')) { hp.open = 0; hp.wide = .7; hp.mouth = -.1; hp.brow = .8; }
   if (t > Lt('s16_07')) { hp.sweat = 1; hp.wide = 1; }
   st.col(g => drawChar(g, 'tu', hp));
-  st.wld(g => bench(g, 1));
   st.col(g => drawPigeon(g, 1080, 792, .62, { flip: -1, tilt: Math.sin(t * 1.1) * .06 }));
   const ga = vis(t, g0, cut + 1, .6);
   if (ga > 0) st.fut(g => { const u = R(t, beak, beak + .4, back); drawPigeon(g, 1150, 780 - 20 * ga, .7, { flip: -1, front: t > Lt('s16_06'), tilt: -.15 * u });
@@ -291,10 +291,9 @@ SC.s17 = (X, t) => {
 SC.s18 = (X, t) => {
   const end = Le('s18_05') + .9;
   const cam = shots(t, [], [{ t: 0, cx: 1060, cy: 600, z: 1.25, z2: 1.35, lock: 1 }, { t: Lt('s18_05') - .1, cx: 1080, cy: 735, z: 3.6, z2: 3.8, lock: 1 }]);
-  const st = stageF(cam); st.wld(g => { drawSet(g, 'parkNight'); bench(g, 0); });
-  st.col(g => { drawChar(g, 'valeria', { x: 1240, y: 905, s: S0, t, sit: 1, look: [-14, 4], mouth: .6, hL: [-40, -300], hR: [40, -300], armsFront: 1 });
-    drawChar(g, 'tu', { x: 900, y: 905, s: S0, t, sit: 1, look: [14, 4], mouth: .4, blush: .5, hL: [-40, -300], hR: [40, -300], armsFront: 1 }); });
-  st.wld(g => bench(g, 1));
+  const st = stageF(cam); st.wld(g => { drawSet(g, 'parkNight'); bench(g, 0); bench(g, 1); });
+  st.col(g => { drawChar(g, 'valeria', benchSit(1230, { t, look: [-14, 4], mouth: .6 }));
+    drawChar(g, 'tu', benchSit(900, { t, look: [14, 4], mouth: .4, blush: .5, footSwing: Math.sin(t * 2.4) * 10 })); });
   st.col(g => drawPigeon(g, 1080, 792, .62, { flip: -1, front: 1, tilt: Math.sin(t * 1.3) * .08 }));
   composeF(X, st, { ghost: 0, t });
   if (t > Lt('s18_01') - .05 && t < Lt('s18_03') - .1) sticker(X, '¿QUÉ HARÍAS TÚ?', R(t, Lt('s18_01') - .05, Lt('s18_01') + .25, outC), 70, 60, 70);
