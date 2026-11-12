@@ -1,10 +1,10 @@
 # Эпизод 2 · The ENTIRE History of Cholera · пакет для загрузки
 
-Файл: `out/cholera_ep02.mp4` (1080p, 10:28). Обложка: `channel/plague/thumb_ep02.jpg` (1280×720), вторая для теста — `thumb_ep02_b.jpg`.
+Файл: `out/cholera_ep02.mp4` (1080p, 11:40). Обложка: `channel/plague/thumb_ep02.jpg` (1280×720), вторая для теста — `thumb_ep02_b.jpg`.
 
 ## Название
 ```
-The ENTIRE History of Cholera in 10 Minutes
+The ENTIRE History of Cholera in 12 Minutes
 ```
 Запасные:
 ```
@@ -18,20 +18,22 @@ The ENTIRE History of Cholera (Told by King Cholera Himself)
 ```
 London, August 1854. On Broad Street, people start dying by the dozen. The doctors blame the smell. One doctor blames the water pump on the corner.
 
-This is the entire history of cholera, told with a little help from King Cholera himself: a harmless sea bacterium that caught a virus, seven pandemics since 1817, riots, the miasma theory, John Snow and the Broad Street pump, the Great Stink and London's sewers, the man who drank cholera to prove a point, and the simplest life-saving treatment in medical history: salt, sugar and clean water.
+This is the entire history of cholera, told with a little help from King Cholera himself: a harmless sea bacterium that caught a virus, what he actually does to the body, seven pandemics since 1817, riots, the miasma theory, John Snow and the Broad Street pump, the Great Stink and London's sewers, the man who drank cholera to prove a point, and the simplest life-saving treatment in medical history: salt, sugar and clean water.
 
 CHAPTERS
 0:00 Broad Street, 1854
 0:42 Who is cholera?
-1:48 Where did he come from?
-2:48 1817: the first pandemic
-3:21 Europe and America
-4:22 The smell theory
-4:57 John Snow and the pump
-6:23 The Great Stink
-6:59 Finding the germ
-8:21 Salt, sugar and water
-9:23 Cholera today
+1:27 What he does to you
+2:30 Where did he come from?
+3:30 1817: the first pandemic
+4:03 Europe and America
+5:05 The smell theory
+5:39 John Snow and the pump
+7:05 The Great Stink
+7:41 Finding the germ
+9:03 Salt, sugar and water
+10:05 What he leaves behind
+10:35 Cholera today
 
 Sources are listed in the pinned comment.
 
