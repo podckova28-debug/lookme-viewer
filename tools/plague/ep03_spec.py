@@ -70,7 +70,7 @@ N('L04', "Around three in ten people who caught the classic form died. Survivors
   sh('c10a', STILL, "Ten small simple wooden figurines standing in a row on a dark wooden shelf, candle light. Symbolic still life.",
      text=[label('3 / 10', 960, 260, 110)]))
 K('L05', "I like to leave a little something to remember me by.",
-  kg('c11a', C(.5, .45, 1.1), "The Speckled Monster stands facing the viewer in a candlelit drawing room, full figure visible from head to knees. His RIGHT hand is raised and one finger touches his own speckled cheek; his LEFT arm hangs straight down at his side, the left hand visible by his coat pocket. Cold smile. Both arms clearly drawn from shoulder to hand, exactly two arms and two hands."))
+  kg('c11a', C(.5, .45, 1.1), "The Speckled Monster stands facing the viewer in a candlelit drawing room, full figure visible from head to knees. His RIGHT hand is raised to his face and the tip of his index finger lightly touches his own speckled cheek (a normal human hand with normal-length fingers, not long or bony); his LEFT arm hangs straight down at his side, the left hand visible by his coat pocket. Cold smile. Both arms clearly drawn from shoulder to hand, exactly two arms and two hands."))
 N('L06', "The English called him: the speckled monster.",
   sh('c12a', C(.5, .5, 1.05), "An 18th-century engraving-style printed broadsheet pinned to a wooden wall, showing a drawing of a tall dark silhouette in a big wig. Leave the broadsheet without words.",
      text=[label('THE SPECKLED MONSTER', 960, 900, 80)]))
