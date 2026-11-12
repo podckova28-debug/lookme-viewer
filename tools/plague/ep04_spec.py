@@ -274,6 +274,6 @@ def beats():
         else: out['beats'].append({'hold': t, 'shots': sl})
     json.dump(out, open(os.path.join(ROOT, 'tools/plague/ep04_beats.json'), 'w'), indent=1); print(len(out['beats']), 'beats')
 
-MUSIC = [(0, 'ALL', 'cholera_a.mp3')]   # re-split by chapter once the voice-over exists
+MUSIC = [(0, 162, 'cholera_a.mp3'), (158, 322, 'cholera_b.mp3'), (318, 468, 'cholera_a.mp3'), (464, 'ALL', 'cholera_b.mp3')]   # intro+symptoms | origin+name+waves | cities+India | aftermath+today
 
 {'lines': lines, 'frames': frames, 'beats': beats}[sys.argv[1]]()
