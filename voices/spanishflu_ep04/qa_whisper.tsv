@@ -1,0 +1,56 @@
+id	role	sec	ratio	whisper
+C01	NARRATOR	12.0	0.97	Kansas. The 4th of March, 1918. At an army training camp, a cook named Albert Gitchell reports to the infirmary with a fever, a sore throat and aching muscles.
+C02	NARRATOR	6.2	0.91	By lunchtime, more than 100 soldiers have the same symptoms, within weeks more than a thousand.
+C03	NARRATOR	9.3	1.00	Over the next two years, he will infect around a third of everyone on Earth and kill tens of millions, more people than the war that was raging at the same time.
+C04	FLU	1.8	1.00	Don't look so worried, it's just the flu.
+L01	NARRATOR	9.1	1.00	So who is he? A virus? Influenza A of a type called H1N1, tiny balls studded with two kinds of spikes.
+L02	NARRATOR	10.8	1.00	The H spikes work like a key that unlocks the cells lining your nose and lungs. The N spikes are scissors that cut the new copies loose, so they can go and infect the next cell.
+L03	FLU	2.4	1.00	a key and a pair of scissors. That's all I need.
+L04	NARRATOR	6.7	1.00	He spreads through coughs, sneezes, and hands. And you can pass him on a day before you even feel sick.
+S01	NARRATOR	11.1	1.00	So what does he do to you? Usually, it hits all at once. A sudden high fever, a pounding headache, aching muscles and total exhaustion. Most people get better in about a week.
+S02	NARRATOR	8.2	1.00	But in 1918, many cases went much further. The lungs filled with fluid and the patient began to drown from the inside.
+S03	NARRATOR	11.2	0.97	Starved of oxygen, the skin turned blue then deep purple. Doctors called it heliotrope cyanosis after the color of a flower. Some people were dead within a day of feeling the first symptom.
+S04	NARRATOR	10.9	1.00	And for many more, the flu opened the door to bacteria. They died a week or two later of pneumonia. In 1918, there were no antibiotics to stop it.
+S05	FLU	2.5	1.00	I don't always finish the job, I just leave the door open.
+L05	NARRATOR	10.7	0.93	And here's the strangest part. Flu usually kills the very young and the very old. This one also killed people in their 20s and 30s. Healthy, strong, young adults.
+L06	NARRATOR	13.2	1.00	Why? One idea is that strong immune systems overreacted and destroyed the lungs while fighting him. Another is that older people had met a similar flu decades earlier and still had some protection.
+L06b	NARRATOR	10.6	1.00	there had been flu pandemics before. In 1889, the so-called Russian flu swept the world by train and steamship. Anyone who'd lived through that may have been a little better prepared for him.
+L07	FLU	2.1	1.00	I like them young. They have so much energy.
+L08	NARRATOR	11.3	1.00	But where did he come from? Flu viruses live naturally in wild water birds, like ducks and geese. Every so often, one changes enough to jump into pigs or straight into people.
+L09	NARRATOR	13.4	0.97	The 1918 virus carried genes that looked like they came from birds. But where it first crossed into humans, nobody knows. Kansas is one suspect. A British army camp in France is another. So is northern China.
+L10	FLU	2.1	1.00	I'm a man of mystery. It's part of my charm.
+L11	NARRATOR	15.7	0.93	How do we know any of this? In 1997, a scientist named Johann Hultien traveled to a tiny village in Alaska where the flu had killed almost every adult in 1918. Bodies buried in the frozen ground still held traces of the virus.
+L11b	NARRATOR	7.0	0.86	In November 1918, in that one village, 72 of its 80 or so adults died within five days.
+L12	NARRATOR	11.1	1.00	Together with old army tissue samples, it let scientists read his genes. And in 2005, they rebuilt the 1918 virus inside a high-security lab.
+L12b	NARRATOR	12.7	1.00	bringing him back was controversial. In tests, the rebuilt virus was far deadlier to lab mice than an ordinary flu. It's kept locked away in a top security lab and studied to help prepare for the next pandemic.
+L13	FLU	2.7	0.92	80 years in the ice and they still wouldn't let me rest.
+L14	NARRATOR	14.9	1.00	So why Spanish? He wasn't Spanish. In 1918 the countries at war censored their newspapers so they wouldn't hurt morale. Spain was neutral and its press reported the outbreak freely. Even the Spanish king got sick.
+L15	NARRATOR	6.9	1.00	So the world assumed Spain was hit hardest, and the name stuck. In Spain, people called it the French flu.
+L16	FLU	3.1	1.00	I am not Spanish. I did not even start in Spain.
+L17	NARRATOR	12.2	1.00	He came in three waves, a mild one in the spring of 1918, then, that autumn, a far deadlier wave swept the world in a few months and a third wave in early 1919.
+L18	NARRATOR	13.8	1.00	The war helped him travel. Troopships packed with soldiers crossed the Atlantic and trains carried them across whole continents. Tens of thousands of American soldiers died of flu and pneumonia, almost as many as were killed in battle.
+L19	FLU	2.7	1.00	World War, best travel deal of the century.
+L19b	NARRATOR	11.3	1.00	Governments at war didn't want panic. Officials called it ordinary influenza and told people not to worry. Newspapers printed cheerful advice while the hospitals filled up.
+L19c	FLU	3.1	1.00	Just the flu, they said. I do love a good understatement.
+L20	NARRATOR	14.4	0.90	Cities tried to fight back, and how they did it made a huge difference. On the 28th of September 1918, Philadelphia went ahead with a giant parade to sell war bonds. Around 200,000 people packed the streets.
+L21	NARRATOR	8.5	0.91	Within three days, every hospital bed in the city was full. Within six weeks, more than 12,000 people in Philadelphia were dead.
+L21b	NARRATOR	10.5	0.94	Cities ran short of doctors, nurses, grave diggers, and even coffins. Schools and churches became hospitals, and volunteers stepped in where the professionals had fallen ill.
+L22	NARRATOR	9.2	1.00	St. Louis did the opposite. Its health commissioner closed schools, theatres, churches, and dance halls early. St. Louis suffered about half the death rate of Philadelphia.
+L23	FLU	2.2	1.00	St. Louis was no fun at all.
+L24	NARRATOR	10.3	1.00	people wore gauze masks. In San Francisco it became the law. Those who refused were fined, and in 1919 some formed an anti-mask league.
+L24a	NARRATOR	6.7	1.00	Across America, Red Cross volunteers sewed masks by the hundreds of thousands from layers of cotton gauze.
+L24b	NARRATOR	12.9	0.97	People also tried everything else – onions, garlic, camphor bags around the neck, whiskey, and some doctors prescribed huge doses of aspirin, which may have poisoned some of the very patients they were trying to save.
+L24c	FLU	2.6	1.00	Onions Against Me Adorable
+L25	NARRATOR	15.1	0.98	Isolation could work wonders. In 1918, a ship from New Zealand brought a flu to western Samoa, and about one in five people there died. Next door, the governor of American Samoa quarantined the islands. Not a single person died of flu.
+L26	FLU	2.5	0.83	A closed harbor, how terribly rude.
+L26b	NARRATOR	12.6	0.91	no country lost more people than India. As many as 12 million or more died there in just a few months. Among those who fell ill was a 49-year-old lawyer named Mahandas Gandhi. He survived.
+L27	NARRATOR	13.7	0.97	Nobody was too important. President Woodrow Wilson caught it in 1919 during the peace talks in Paris. A 16-year-old named Walt Disney survived it. The painter, Edvard Munch, drew himself recovering.
+L27b	NARRATOR	10.3	1.00	And then, by 1920, he faded. So many people had caught him and survived that he ran out of easy victims. Slowly, he turned into ordinary seasonal flu.
+A01	NARRATOR	12.7	1.00	And for those who survived, many were weak for weeks. Some had heart and lung problems for years, and children who were still in the womb during the pandemic grew up, on average, a little less healthy and a little poorer.
+A02	NARRATOR	9.2	1.00	And for the world, many countries set up their first health ministries, scientists began tracking flu around the globe, and they started building flu vaccines.
+A03	FLU	2.8	1.00	I made the world take flu seriously. You're welcome.
+L28	NARRATOR	8.7	1.00	So is he gone? Not quite. His descendants still circulate. The 2009 swine flu pandemic carried genes that came from him.
+L29	NARRATOR	9.1	1.00	Every year seasonal flu still kills hundreds of thousands of people worldwide. Twice a year experts pick which strains go into the next flu vaccine.
+L30	FLU	1.9	1.00	I never really left. I just changed my hat.
+L31	NARRATOR	10.4	0.96	two years, three waves, around 50 million lives, beaten not by a cure but by closed doors, quarantined harbours and the science he forced us to build.
+L32	NARRATOR	8.5	1.00	Next time, a killer that didn't need a germ at all. For centuries, it stalked sailors on long voyages and it was finally beaten by a lemon.
