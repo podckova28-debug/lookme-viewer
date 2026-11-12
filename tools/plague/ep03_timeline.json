@@ -5,30 +5,30 @@
   {
    "file": "assets/plague/music/plague_a.mp3",
    "t0": 0.0,
-   "t1": 163,
+   "t1": 212,
    "gain": 1.0,
    "fade_in": 2.0,
    "fade_out": 4.0
   },
   {
    "file": "assets/plague/music/plague_b.mp3",
-   "t0": 159.0,
-   "t1": 250,
+   "t0": 208.0,
+   "t1": 298,
    "gain": 1.0,
    "fade_in": 4.0,
    "fade_out": 4.0
   },
   {
    "file": "assets/plague/music/cholera_a.mp3",
-   "t0": 246.0,
-   "t1": 427,
+   "t0": 294.0,
+   "t1": 472,
    "gain": 1.0,
    "fade_in": 4.0,
    "fade_out": 4.0
   },
   {
    "file": "assets/plague/music/cholera_b.mp3",
-   "t0": 423.0,
+   "t0": 468.0,
    "t1": "ALL",
    "gain": 1.0,
    "fade_in": 4.0,
