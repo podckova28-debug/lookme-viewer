@@ -17,10 +17,13 @@ def opt(k, d=None): return sys.argv[sys.argv.index(k) + 1] if k in sys.argv else
 proj = os.path.abspath(opt('--project', '.'))
 files = [a for a in sys.argv[1:] if a.endswith('.json') and a != opt('--project')]
 cand = {}
+# забракованные по полной проверке (voiceqa) дубли: {"A5_q.wav": "лишний звук после текста", ...} — не выбирать
+rej = json.load(open(os.path.join(proj, 'qa_out', 'take_rejects.json'), encoding='utf-8')) if os.path.exists(os.path.join(proj, 'qa_out', 'take_rejects.json')) else {}
 for pat in files:
     for f in glob.glob(os.path.join(proj, pat)):
         for lid, v in json.load(open(f, encoding='utf-8')).items():
             if not os.path.exists(os.path.join(proj, 'vo_takes', v['take'])): continue   # дубль убран (устарел текст)
+            if v['take'] in rej: continue
             s = v['suspects']
             st = [x for x in s if x['kind'] == 'stress']
             score = sum(x['margin'] for x in st) + len(st) + 3 * sum(1 for x in s if x['kind'] == 'text') \

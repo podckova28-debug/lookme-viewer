@@ -36,7 +36,9 @@ def plan(x, rep):
                 k = j
             else: k += 1
         cur = (best[1] - best[0]) / 100 if best and best[1] - best[0] >= 2 else 0.0
-        if b['p'] == '': T = 0.05 if cur > 0.07 else None
+        # без знака трогаем только явную паузу: 60–100 мс тишины перед «п», «к», «т» — это смычка согласного,
+        # её сокращение съедает звук («круг по» → «крупа», 12 нояб)
+        if b['p'] == '': T = 0.05 if cur > 0.12 else None
         if T is None: continue
         if cur > T + 0.01:
             s0, s1 = best[0] * H, best[1] * H
@@ -45,12 +47,10 @@ def plan(x, rep):
             if b['p'] == ',': T = 0.10
             if best and cur > 0:
                 s0, s1 = best[0] * H, best[1] * H
-            else:  # тишины нет: вставляем в самой тихой точке у границы
-                w0, w1 = int((b['t1'] - 0.05) * 100), int((b['t2'] + 0.05) * 100)
-                w0, w1 = max(w0, 0), max(min(w1, n), max(w0, 0) + 1)
-                m = w0 + int(np.argmin(db[w0:w1])); s0 = s1 = m * H + H // 2
+            else:  # тишины нет — паузу не вставляем: «самая тихая точка» бывает внутри слова («Первый: шипы» → «шип шипы», 12 нояб)
+                continue
             ops.append((s0, s1 - s0, int(T * SR)))
-    ops = sorted(o for o in ops if start <= o[0] < end)
+    ops = sorted(set(o for o in ops if start <= o[0] < end))   # одна и та же тишина у соседних границ — правим один раз
     return start, end, ops
 
 def render(x, start, end, ops):
