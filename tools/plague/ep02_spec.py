@@ -139,7 +139,7 @@ K('L20c', "Presidents. Composers. I'm not picky.",
 
 # ---- miasma
 N('L21', "So what did the experts think caused it? Bad air. The miasma theory said disease came from foul smells rising from rotting rubbish and filth.",
-  ch('c27a', W(), "A Victorian lecture room: one stickman professor in a frock coat points with a cane at a big drawing of a green stinking cloud on a blackboard. No words on the board."),
+  ch('c27a', W(), "An empty Victorian lecture room with rows of empty benches. Only ONE figure in the whole picture: a stickman professor in a frock coat, standing at the front, pointing with a cane held in one hand at a big drawing of a green stinking cloud on a blackboard; his other hand rests on his hip. Nobody else. No words on the board."),
   sh('c27b', C(.5, .5, 1.1), "Cartoon: a pile of rotting rubbish in a Victorian alley with a wavy green smell rising from it, drawn as a ghostly cloud with a mean face.", text=stamp('MIASMA', x=1400, y=230)))
 N('L22', "To be fair, Victorian London really did stink. Sewage ran into cesspits, and straight into the Thames. The same river that much of the city drank from.",
   sh('c28a', WL(), "The river Thames in the 1850s seen from a bridge: brown murky water, sewage outflow pipes pouring into it, old wooden wharves, moored barges, factory chimneys, the dome of St Paul's in smog."),
@@ -169,7 +169,7 @@ N('L28', "The exceptions told the same story. Workers at a nearby brewery mostly
 K('L29', "She had excellent taste. In water, anyway.",
   kg('c35a', C(.5, .45, 1.1), "King Cholera alone in a dim parlour raises his tin cup in a toast with a wicked grin, as if at a wine tasting, pinky finger out."))
 N('L30', "On the seventh of September, Snow showed his evidence to the local officials. The next day, they removed the handle from the pump.",
-  ch('c36a', W(), "A Victorian parish meeting room: the stickman doctor John Snow stands at a table spreading out his map in front of three seated stickman officials who lean in."),
+  ch('c36a', W(), "A Victorian parish meeting room: the stickman doctor John Snow stands at one end of a long table, both hands flat on a big map spread out on it; two stickman officials in dark coats sit far apart on the other side, each with both hands resting on the table. Only these three figures."),
   ch('c36b', C(.5, .5, 1.1), "A stickman workman in a flat cap and waistcoat lifts the iron handle off a cast-iron public water pump in a foggy Soho street; a few steps away watches the stickman doctor John Snow in a dark frock coat and top hat.", text=cap('8 SEPTEMBER 1854')))
 K('L31', "My pump. My beautiful pump.",
   kg('c37a', C(.5, .45, 1.1), "King Cholera hugs the handle-less cast-iron water pump in the fog, weeping theatrically, water streaming off his hat."))
