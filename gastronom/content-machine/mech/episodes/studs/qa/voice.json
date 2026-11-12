@@ -1,0 +1,3607 @@
+{
+ "takes": {
+  "I01": {
+   "I01_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/I01_c.wav",
+    "heard": "Каждую осень в гараже один и тот же спор, шипы или липучка.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «один» в норме (2-й слог, нужно 2-й, запас 0.34)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (2-й слог, нужно 2-й, запас 0.29)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.976,
+    "dur": 4.44
+   },
+   "I01_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/I01_v.wav",
+    "heard": "Каждую осень в гараже один и тот же спор, шипы или лепучка.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «лепучка» вместо «липучка», акустика за сценарий (+0.36)",
+      "script": "липучка",
+      "heard": "лепучка",
+      "delta": 0.36,
+      "t": 3.37
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «один» в норме (1-й слог, нужно 2-й, запас 0.18)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (2-й слог, нужно 2-й, запас 0.61)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.96,
+    "dur": 5.32
+   },
+   "I01_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/I01_x.wav",
+    "heard": "Каждую осень в гараже один и тот же спор, шипы или липучка.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «один» в норме (2-й слог, нужно 2-й, запас 0.02)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (2-й слог, нужно 2-й, запас 0.64)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.971,
+    "dur": 4.52
+   }
+  },
+  "I02": {
+   "I02_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/I02_c.wav",
+    "heard": "Сосед Кости ездит на липучке и говорит, что шипы только гремят и портят асфальт.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Костя» в норме (1-й слог, нужно 1-й, запас 1.0)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (1-й слог, нужно 2-й, запас 0.26)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.937,
+    "dur": 5.84
+   },
+   "I02_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/I02_q.wav",
+    "heard": "Сосед Костя ездит на липучке и говорит, что шипы только гремят и портит асфальт.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «портит» вместо «портят», акустика за сценарий (+0.00)",
+      "script": "портят",
+      "heard": "портит",
+      "delta": 0.0,
+      "t": 4.11
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Костя» в норме (1-й слог, нужно 1-й, запас 0.62)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (1-й слог, нужно 2-й, запас 0.07)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.97,
+    "dur": 5.92
+   },
+   "I02_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/I02_v.wav",
+    "heard": "Сосед Костя ездит на липучке и говорит, что шипы только беремят и портят асфальт.",
+    "issues": [
+     {
+      "level": "fail",
+      "code": "text",
+      "msg": "звучит «беремят» вместо «гремят» (акустика +1.53)",
+      "script": "гремят",
+      "heard": "беремят",
+      "delta": 1.53,
+      "t": 3.25
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Костя» в норме (1-й слог, нужно 1-й, запас 0.69)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (1-й слог, нужно 2-й, запас 0.07)"
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.951,
+    "dur": 5.88
+   },
+   "I02_w.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/I02_w.wav",
+    "heard": "Сосед Кости едет на липучке и говорит, что шипы только гремят и портят асфальт.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «кости едет» вместо «костя ездит», акустика за сценарий (+0.16)",
+      "script": "костя ездит",
+      "heard": "кости едет",
+      "delta": 0.16,
+      "t": 0.32
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Костя» в норме (1-й слог, нужно 1-й, запас 0.68)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (1-й слог, нужно 2-й, запас 0.27)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.948,
+    "dur": 5.88
+   },
+   "I02_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/I02_x.wav",
+    "heard": "Сосед Кости ездит на липучке и говорит, что шипы только гремят и портит асфальт.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «портит» вместо «портят», акустика за сценарий (+0.00)",
+      "script": "портят",
+      "heard": "портит",
+      "delta": 0.0,
+      "t": 3.71
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Костя» в норме (1-й слог, нужно 1-й, запас 0.95)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (1-й слог, нужно 2-й, запас 0.17)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.94,
+    "dur": 5.52
+   },
+   "I02_y.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/I02_y.wav",
+    "heard": "Сосед Костя ездит на липучке и говорит, что шипы только гремят и портит асфальт.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «портит» вместо «портят», акустика за сценарий (-0.15)",
+      "script": "портят",
+      "heard": "портит",
+      "delta": -0.15,
+      "t": 3.85
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Костя» в норме (1-й слог, нужно 1-й, запас 0.69)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (1-й слог, нужно 2-й, запас 0.27)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.962,
+    "dur": 5.32
+   }
+  },
+  "I03": {
+   "I03_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/I03_c.wav",
+    "heard": "А я уже 30 зим езжу на шипах, сегодня спорим не на словах, а по замерам из свежих тестов.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «уже» в норме (1-й слог, нужно 2-й, запас 0.17)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипах» в норме (2-й слог, нужно 2-й, запас 0.35)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.959,
+    "dur": 6.24
+   },
+   "I03_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/I03_v.wav",
+    "heard": "А я уже 30 дим езжу на шипах. Сегодня спорим не на словах, а по замерам из свежих тестов.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «дим» вместо «зим», акустика за сценарий (-0.11)",
+      "script": "зим",
+      "heard": "дим",
+      "delta": -0.11,
+      "t": 0.56
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «уже» в норме (2-й слог, нужно 2-й, запас 0.41)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипах» в норме (2-й слог, нужно 2-й, запас 0.33)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.956,
+    "dur": 5.96
+   },
+   "I03_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/I03_x.wav",
+    "heard": "А я уже 30 дим ежу на шипах, сегодня спорим не на флавах, а по замерам из свежих тестов.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «дим ежу» вместо «зим езжу», акустика за сценарий (+0.08)",
+      "script": "зим езжу",
+      "heard": "дим ежу",
+      "delta": 0.08,
+      "t": 0.5
+     },
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «флавах» вместо «словах», акустика за сценарий (-2.66)",
+      "script": "словах",
+      "heard": "флавах",
+      "delta": -2.66,
+      "t": 2.73
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «уже» в норме (1-й слог, нужно 2-й, запас 0.34)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипах» в норме (2-й слог, нужно 2-й, запас 0.23)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.935,
+    "dur": 5.64
+   }
+  },
+  "I04": {
+   "I04_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/I04_c.wav",
+    "heard": "8 раундов, и в каждом решают цифры.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.918,
+    "dur": 3.04
+   },
+   "I04_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/I04_v.wav",
+    "heard": "8 раундов и в каждом решают цифры.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.866,
+    "dur": 3.88
+   },
+   "I04_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/I04_x.wav",
+    "heard": "Восемь раундов и в каждом решают цифры.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.882,
+    "dur": 3.08
+   }
+  },
+  "K1": {
+   "K1_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/K1_c.wav",
+    "heard": "Сначала о том, чем они отличаются.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.902,
+    "dur": 3.56
+   },
+   "K1_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/K1_v.wav",
+    "heard": "Сначала о том, чем они отличаются.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.979,
+    "dur": 2.56
+   },
+   "K1_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/K1_x.wav",
+    "heard": "Сначала о том, чем они отличаются.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.964,
+    "dur": 3.32
+   }
+  },
+  "K2": {
+   "K2_p.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/K2_p.wav",
+    "heard": "В протекторе шиповки сидят металлические шипы. На льду шипы впиваются в него, как когти.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (2-й слог, нужно 2-й, запас 0.21)"
+     },
+     {
+      "level": "fail",
+      "code": "stress",
+      "msg": "ударение «шипы» (омограф): слышно на 1-м слоге, нужно на 2-м (запас 0.52)",
+      "t": 3.49
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «когти» в норме (1-й слог, нужно 1-й, запас 0.52)"
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.964,
+    "dur": 6.04
+   },
+   "K2_r.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/K2_r.wav",
+    "heard": "В протекторе шиповки сидят металлические шипы. На льду шипы впиваются в него, как когти.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (2-й слог, нужно 2-й, запас 0.0)"
+     },
+     {
+      "level": "fail",
+      "code": "stress",
+      "msg": "ударение «шипы» (омограф): слышно на 1-м слоге, нужно на 2-м (запас 0.76)",
+      "t": 3.41
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «когти» в норме (1-й слог, нужно 1-й, запас 0.29)"
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.977,
+    "dur": 6.16
+   },
+   "K2_s.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/K2_s.wav",
+    "heard": "В протекторе шиповки сидят металлические шипы. На льду шипы впиваются в него, как когти.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (2-й слог, нужно 2-й, запас 0.39)"
+     },
+     {
+      "level": "fail",
+      "code": "stress",
+      "msg": "ударение «шипы» (омограф): слышно на 1-м слоге, нужно на 2-м (запас 0.51)",
+      "t": 3.69
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «когти» в норме (1-й слог, нужно 1-й, запас 0.31)"
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.973,
+    "dur": 6.48
+   },
+   "K2_u.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/K2_u.wav",
+    "heard": "В протекторе шиповки сидят металлические шипы. На льду шипы вприваются у него как когти.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «вприваются у» вместо «впиваются в», акустика за сценарий (-0.01)",
+      "script": "впиваются в",
+      "heard": "вприваются у",
+      "delta": -0.01,
+      "t": 3.57
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (2-й слог, нужно 2-й, запас 0.22)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (1-й слог, нужно 2-й, запас 0.15)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «когти» в норме (1-й слог, нужно 1-й, запас 0.41)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.933,
+    "dur": 6.28
+   }
+  },
+  "K3": {
+   "K3_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/K3_c.wav",
+    "heard": "У липучки шипов нет, резина мягче, а протектор изрезан тонкими прорезями, ламелями, они цепляются за скользкую дорогу, как плесоски.",
+    "issues": [
+     {
+      "level": "fail",
+      "code": "text",
+      "msg": "звучит «плесоски» вместо «присоски» (акустика +0.90)",
+      "script": "присоски",
+      "heard": "плесоски",
+      "delta": 0.9,
+      "t": 7.66
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипов» в норме (2-й слог, нужно 2-й, запас 0.06)"
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.974,
+    "dur": 9.28
+   },
+   "K3_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/K3_q.wav",
+    "heard": "У липучки шипов нет, резина мягче, а протектор изрезан тонкими прорезями, ламелями, они цепляются за скользкую дорогу, как присоски.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипов» в норме (2-й слог, нужно 2-й, запас 0.24)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.954,
+    "dur": 8.56
+   },
+   "K3_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/K3_v.wav",
+    "heard": "У липучки шипов нет, резина мягче, а протектор изрезан тонкими прорезями, ламелями. Они цепляются за скользкую дорогу, как присоски.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипов» в норме (2-й слог, нужно 2-й, запас 0.35)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.983,
+    "dur": 8.96
+   },
+   "K3_w.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/K3_w.wav",
+    "heard": "У липучки шипов нет. Резина мягче, а протектор изрезан тонкими прорезями ламелями. Они цепляются за скользкую дорогу как присоски.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипов» в норме (2-й слог, нужно 2-й, запас 0.35)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.948,
+    "dur": 8.4
+   },
+   "K3_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/K3_x.wav",
+    "heard": "У липучки шипов нет. Резина мягче, а протектор изрезан тонкими прорезями, ламелями. Они цепляются за скользкую дорогу как присоски.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипов» в норме (2-й слог, нужно 2-й, запас 0.2)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.963,
+    "dur": 8.16
+   },
+   "K3_y.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/K3_y.wav",
+    "heard": "У липучки шипов нет. Резина мягче, а протектор изрезан тонкими прорезями, ламелями. Они цепляются за скользкую дорогу как в присоске.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «в присоске» вместо «присоски», акустика за сценарий (-2.09)",
+      "script": "присоски",
+      "heard": "в присоске",
+      "delta": -2.09,
+      "t": 7.28
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипов» в норме (2-й слог, нужно 2-й, запас 0.24)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.935,
+    "dur": 8.88
+   }
+  },
+  "K4": {
+   "K4_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/K4_c.wav",
+    "heard": "И важно, липучка бывает двух видов, северная для льда и снега и европейская для слякоти и мокрого асфальта. Это разные шины.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «снега» в норме (2-й слог, нужно 1-й, запас 0.22)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.939,
+    "dur": 8.88
+   },
+   "K4_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/K4_v.wav",
+    "heard": "И важно! Липучка бывает двух видов. Северная, для льда и снега, и европейская, для слякоти и мокрого асфальта. Это разные шины.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «снега» в норме (2-й слог, нужно 1-й, запас 0.13)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.941,
+    "dur": 8.84
+   },
+   "K4_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/K4_x.wav",
+    "heard": "И важно, липучка бывает двух видов. Северная для льда и снега и европейская для слякоти и мокрого асфальта. Это разные шины.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «снега» в норме (1-й слог, нужно 1-й, запас 0.04)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.898,
+    "dur": 8.08
+   }
+  },
+  "A1": {
+   "A1_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/A1_c.wav",
+    "heard": "Раунд первый. Торможение на льду.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.906,
+    "dur": 2.6
+   },
+   "A1_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/A1_v.wav",
+    "heard": "Раунд первый, торможение на льду.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.882,
+    "dur": 3.56
+   },
+   "A1_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/A1_x.wav",
+    "heard": "Раунд первый. Торможение на льду.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.924,
+    "dur": 2.8
+   }
+  },
+  "A2": {
+   "A2_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/A2_c.wav",
+    "heard": "Финский журнал тормозил с 50 км в час на чистом ряду.",
+    "issues": [
+     {
+      "level": "fail",
+      "code": "text",
+      "msg": "звучит «ряду» вместо «льду» (акустика +1.08)",
+      "script": "льду",
+      "heard": "ряду",
+      "delta": 1.08,
+      "t": 3.31
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.912,
+    "dur": 5.16
+   },
+   "A2_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/A2_v.wav",
+    "heard": "Пинский журнал тормозил с 50 км в час на чистом леду.",
+    "issues": [
+     {
+      "level": "fail",
+      "code": "text",
+      "msg": "звучит «пинский» вместо «финский» (акустика +1.01)",
+      "script": "финский",
+      "heard": "пинский",
+      "delta": 1.01,
+      "t": 0.06
+     },
+     {
+      "level": "fail",
+      "code": "text",
+      "msg": "звучит «леду» вместо «льду» (акустика +0.74)",
+      "script": "льду",
+      "heard": "леду",
+      "delta": 0.74,
+      "t": 2.93
+     }
+    ],
+    "fails": 2,
+    "warns": 0,
+    "conf": 0.887,
+    "dur": 4.6
+   },
+   "A2_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/A2_x.wav",
+    "heard": "Финский журнал тормозил с 50 км в час на чистом сду.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «сду» вместо «льду», акустика за сценарий (+0.25)",
+      "script": "льду",
+      "heard": "сду",
+      "delta": 0.25,
+      "t": 3.29
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.879,
+    "dur": 5.08
+   }
+  },
+  "A3": {
+   "A3_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/A3_c.wav",
+    "heard": "Лучшая шиповка остановилась за 32 метра, лучшая липучка за 46.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «сорок» в норме (1-й слог, нужно 1-й, запас 0.59)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.968,
+    "dur": 5.52
+   },
+   "A3_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/A3_v.wav",
+    "heard": "Лучшая шиповка остановилась за 32 метра. Лучшая липучка за 46.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «сорок» в норме (1-й слог, нужно 1-й, запас 0.26)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.959,
+    "dur": 5.8
+   },
+   "A3_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/A3_x.wav",
+    "heard": "Лучшая шиповка остановилась за 32 метра. Лучшая липучка за 46.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «сорок» в норме (1-й слог, нужно 1-й, запас 0.37)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.966,
+    "dur": 5.56
+   }
+  },
+  "A4": {
+   "A4_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/A4_c.wav",
+    "heard": "Шипы короче почти на треть, и даже шестая из семи шиповок затормозила лучше самой лучшей липучки.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Шипы» в норме (1-й слог, нужно 2-й, запас 0.23)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «самой» в норме (1-й слог, нужно 1-й, запас 0.8)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.965,
+    "dur": 5.84
+   },
+   "A4_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/A4_q.wav",
+    "heard": "Шипы короче почти на треть, и даже шестая из семи шиповок затормозила лучше самой лучшей липучки.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Шипы» в норме (1-й слог, нужно 2-й, запас 0.12)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «самой» в норме (1-й слог, нужно 1-й, запас 0.66)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.971,
+    "dur": 7.4
+   },
+   "A4_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/A4_v.wav",
+    "heard": "Шипы короче почти на треть, и даже шестая из семи шиповок затормозила лучше самой лучшей липучки.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Шипы» в норме (1-й слог, нужно 2-й, запас 0.08)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «самой» в норме (1-й слог, нужно 1-й, запас 0.67)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.97,
+    "dur": 7.48
+   },
+   "A4_w.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/A4_w.wav",
+    "heard": "Шипы короче почти на треть, и даже шестая из семи шипов затормозила лучше самой лучшей липучки.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «шипов» вместо «шиповок», акустика за сценарий (+0.17)",
+      "script": "шиповок",
+      "heard": "шипов",
+      "delta": 0.17,
+      "t": 2.83
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Шипы» в норме (1-й слог, нужно 2-й, запас 0.33)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «самой» в норме (1-й слог, нужно 1-й, запас 0.67)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.961,
+    "dur": 6.24
+   },
+   "A4_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/A4_x.wav",
+    "heard": "Шипы короче почти на треть. И даже шестая из семи шиповок затормозила лучше самой лучшей ли кучки.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «ли кучки» вместо «липучки», акустика за сценарий (-0.20)",
+      "script": "липучки",
+      "heard": "ли кучки",
+      "delta": -0.2,
+      "t": 4.81
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Шипы» в норме (1-й слог, нужно 2-й, запас 0.35)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «самой» в норме (1-й слог, нужно 1-й, запас 0.6)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.932,
+    "dur": 6.6
+   },
+   "A4_y.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/A4_y.wav",
+    "heard": "Шипы короче почти на треть, и даже шестая из семи шиповок затормозила лучше самой лучшей липучки.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Шипы» в норме (1-й слог, нужно 2-й, запас 0.38)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «самой» в норме (1-й слог, нужно 1-й, запас 0.74)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.961,
+    "dur": 6.92
+   }
+  },
+  "A5": {
+   "A5_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/A5_c.wav",
+    "heard": "А европейской липучке на льду нужно почти вдвое больше пути, чем шиповке.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.926,
+    "dur": 4.68
+   },
+   "A5_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/A5_q.wav",
+    "heard": "А европейские липучки на льду нужно почти вдвое больше пути, чем шиповки.",
+    "issues": [
+     {
+      "level": "fail",
+      "code": "tail",
+      "msg": "лишний звук после текста: 0.7 с (текст кончился на 4.2 с из 5.4)",
+      "t": 4.22
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.956,
+    "dur": 5.36
+   },
+   "A5_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/A5_v.wav",
+    "heard": "О европейской липучке на льду нужно почти вдвое больше пути, чем шиповки.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.908,
+    "dur": 5.56
+   },
+   "A5_w.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/A5_w.wav",
+    "heard": "О европейской липучке на льду нужно почти вдвое больше пути, чем шиповки.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.909,
+    "dur": 4.68
+   },
+   "A5_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/A5_x.wav",
+    "heard": "О европейской липучке на льду нужно почти вдвое больше пути, чем шиповке.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.895,
+    "dur": 4.6
+   },
+   "A5_y.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/A5_y.wav",
+    "heard": "А европейской липучке на льду нужно почти вдвое больше пути, чем шиповке.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.956,
+    "dur": 4.4
+   }
+  },
+  "A6": {
+   "A6_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/A6_c.wav",
+    "heard": "Очко шипам. 1 -0.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипам» в норме (2-й слог, нужно 2-й, запас 0.18)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Один» в норме (2-й слог, нужно 2-й, запас 0.41)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.737,
+    "dur": 3.16
+   },
+   "A6_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/A6_v.wav",
+    "heard": "Очко ШИПАМ 1 .0",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипам» в норме (2-й слог, нужно 2-й, запас 0.11)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Один» в норме (2-й слог, нужно 2-й, запас 0.37)"
+     },
+     {
+      "level": "fail",
+      "code": "tail",
+      "msg": "лишний звук после текста: 0.8 с (текст кончился на 1.6 с из 3.0)",
+      "t": 1.61
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.673,
+    "dur": 3.04
+   },
+   "A6_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/A6_x.wav",
+    "heard": "Очко ШИПАМ. 1 -0.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипам» в норме (2-й слог, нужно 2-й, запас 0.23)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Один» в норме (2-й слог, нужно 2-й, запас 0.59)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.787,
+    "dur": 2.08
+   }
+  },
+  "B1": {
+   "B1_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/B1_c.wav",
+    "heard": "Раунд второй. Тронутся на льду.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.896,
+    "dur": 3.24
+   },
+   "B1_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/B1_v.wav",
+    "heard": "Раунд второй. Тронутся на льду.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.912,
+    "dur": 2.32
+   },
+   "B1_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/B1_x.wav",
+    "heard": "Раунд второй. Тронутся на льду.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.893,
+    "dur": 3.12
+   }
+  },
+  "B2": {
+   "B2_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/B2_c.wav",
+    "heard": "До 20 км в час шиповка разгоняется на 30 % быстрее, на горке во дворе это чувствуется сразу.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.914,
+    "dur": 8.4
+   },
+   "B2_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/B2_q.wav",
+    "heard": "До 20 км в час шиповка разгоняется на 30 % быстрее, на горке во дворе это чувствуется сразу.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.916,
+    "dur": 7.56
+   },
+   "B2_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/B2_v.wav",
+    "heard": "До 20 километров в час шиповка разгоняется на 30 % быстрее. На горке во дворе это чувствуется сразу.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.938,
+    "dur": 7.24
+   },
+   "B2_w.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/B2_w.wav",
+    "heard": "До 20 км в час. Шиповка разгоняется на 30 % быстрее. На горке во дворе это чувствуется сразу.",
+    "issues": [
+     {
+      "level": "fail",
+      "code": "break",
+      "msg": "разрыв фразы после «час»: ASR ставит «.», тишина 0.15 с",
+      "t": 1.88
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.9,
+    "dur": 8.44
+   },
+   "B2_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/B2_x.wav",
+    "heard": "До 20 километров час шиповка разгоняется на 30 % быстрее. На горке во дворе это чувствуется сразу.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.892,
+    "dur": 7.4
+   },
+   "B2_y.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/B2_y.wav",
+    "heard": "До 20 км в час шиповка разгоняется на 30 % быстрее. На ГОКе во дворе это чувствуется сразу.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «гоке» вместо «горке», акустика за сценарий (-0.77)",
+      "script": "горке",
+      "heard": "гоке",
+      "delta": -0.77,
+      "t": 4.69
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.902,
+    "dur": 7.68
+   }
+  },
+  "B3": {
+   "B3_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/B3_c.wav",
+    "heard": "Снова шипы. 2 .0.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (2-й слог, нужно 2-й, запас 0.16)"
+     },
+     {
+      "level": "fail",
+      "code": "tail",
+      "msg": "лишний звук после текста: 1.0 с (текст кончился на 1.7 с из 3.4)",
+      "t": 1.69
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.863,
+    "dur": 3.4
+   },
+   "B3_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/B3_v.wav",
+    "heard": "Снова шипы. 2 .0.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (2-й слог, нужно 2-й, запас 0.1)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.854,
+    "dur": 2.76
+   },
+   "B3_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/B3_x.wav",
+    "heard": "Снова шипы, два нори.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «нори» вместо «ноль», акустика за сценарий (-0.15)",
+      "script": "ноль",
+      "heard": "нори",
+      "delta": -0.15,
+      "t": 1.29
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (2-й слог, нужно 2-й, запас 0.17)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.89,
+    "dur": 2.2
+   }
+  },
+  "C1": {
+   "C1_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/C1_c.wav",
+    "heard": "Раунд третий. Укатанный снег.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.935,
+    "dur": 4.12
+   },
+   "C1_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/C1_v.wav",
+    "heard": "Раунд третий. Укатанный снег.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.913,
+    "dur": 3.6
+   },
+   "C1_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/C1_x.wav",
+    "heard": "Раунд третий. Укатанный снег.",
+    "issues": [
+     {
+      "level": "fail",
+      "code": "tail",
+      "msg": "лишний звук после текста: 0.9 с (текст кончился на 2.0 с из 3.6)",
+      "t": 1.95
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.931,
+    "dur": 3.56
+   }
+  },
+  "C2": {
+   "C2_p.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/C2_p.wav",
+    "heard": "Тут, считай, ничья. Разница в торможении около метра. То в одну, то в другую сторону.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.934,
+    "dur": 6.36
+   },
+   "C2_r.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/C2_r.wav",
+    "heard": "Тут, считай, ничья. Разница в торможении около метра то в одну, то в другую сторону.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.967,
+    "dur": 6.68
+   },
+   "C2_s.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/C2_s.wav",
+    "heard": "Тут, считай, ничья. Разница в торможении около метра то в одну, то в другую сторону.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.972,
+    "dur": 6.64
+   },
+   "C2_u.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/C2_u.wav",
+    "heard": "Тут, считай, ничья. Разница в торможении около метра то в одну, то в другую сторону.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.951,
+    "dur": 6.76
+   }
+  },
+  "C3": {
+   "C3_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/C3_c.wav",
+    "heard": "Ничья. На табло по -прежнему 2 -0.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.923,
+    "dur": 4.16
+   },
+   "C3_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/C3_v.wav",
+    "heard": "Ничья. На табло по -прежнему 2 -0.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.932,
+    "dur": 4.76
+   },
+   "C3_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/C3_x.wav",
+    "heard": "Ничья. На табло по -прежнему 2 -0.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.92,
+    "dur": 3.56
+   }
+  },
+  "D1": {
+   "D1_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/D1_c.wav",
+    "heard": "Раунд номер четыре. Мокрый асфальт. Костя уверен, что тут шипы скользят.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Костя» в норме (1-й слог, нужно 1-й, запас 0.57)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (1-й слог, нужно 2-й, запас 0.32)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.895,
+    "dur": 5.4
+   },
+   "D1_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/D1_q.wav",
+    "heard": "Раунд номер четыре. Мокрый асфальт. Костя уверен, что тут шипы скользят.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Костя» в норме (1-й слог, нужно 1-й, запас 0.59)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (1-й слог, нужно 2-й, запас 0.34)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.942,
+    "dur": 5.4
+   },
+   "D1_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/D1_v.wav",
+    "heard": "Раунд номер четыре, мокрый асфальт. Костя уверен, что тут шипы скользят.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Костя» в норме (1-й слог, нужно 1-й, запас 0.91)"
+     },
+     {
+      "level": "fail",
+      "code": "stress",
+      "msg": "ударение «шипы» (омограф): слышно на 1-м слоге, нужно на 2-м (запас 0.56)",
+      "t": 4.15
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.936,
+    "dur": 5.84
+   },
+   "D1_w.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/D1_w.wav",
+    "heard": "Раунд номер четыре, мокрый асфальт. Костя уверен, что тут шипы скользят.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Костя» в норме (1-й слог, нужно 1-й, запас 0.67)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (1-й слог, нужно 2-й, запас 0.37)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.945,
+    "dur": 5.32
+   },
+   "D1_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/D1_x.wav",
+    "heard": "Раунд номер четыре. Мокрый асфальт. Костя уверен, что тут шипы скользят.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Костя» в норме (1-й слог, нужно 1-й, запас 0.78)"
+     },
+     {
+      "level": "fail",
+      "code": "stress",
+      "msg": "ударение «шипы» (омограф): слышно на 1-м слоге, нужно на 2-м (запас 0.51)",
+      "t": 3.63
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.946,
+    "dur": 5.36
+   },
+   "D1_y.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/D1_y.wav",
+    "heard": "Раунд номер четыре. Мокрый асфальт. Костя уверен, что тут шипы скользят.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Костя» в норме (1-й слог, нужно 1-й, запас 0.64)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (1-й слог, нужно 2-й, запас 0.22)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.941,
+    "dur": 5.92
+   }
+  },
+  "D2": {
+   "D2_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/D2_c.wav",
+    "heard": "О замере говорят другое, хорошая шиповка на мокром асфальте не хуже северной липучки.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.92,
+    "dur": 5.68
+   },
+   "D2_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/D2_v.wav",
+    "heard": "А замеры говорят другое. Хорошая шиповка на мокром асфальте не хуже северной липучки.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.962,
+    "dur": 6.04
+   },
+   "D2_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/D2_x.wav",
+    "heard": "О замере говорят другое, хорошая шиповка на мокром асфальте не хуже северной липучки.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.919,
+    "dur": 6.04
+   }
+  },
+  "D3": {
+   "D3_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/D3_c.wav",
+    "heard": "Быстрее всех на мокром останавливается европейская липучка, но мы помним сколько ей нужно на льду.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.929,
+    "dur": 6.68
+   },
+   "D3_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/D3_v.wav",
+    "heard": "Быстрее всех на мокром останавливается европейская липучка. Но мы помним, сколько ей нужно на льду.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.97,
+    "dur": 6.92
+   },
+   "D3_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/D3_x.wav",
+    "heard": "Быстрее всех на мокром останавливается европейская лепучка, но мы помним сколько ей нужно на льду.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «лепучка» вместо «липучка», акустика за сценарий (-0.07)",
+      "script": "липучка",
+      "heard": "лепучка",
+      "delta": -0.07,
+      "t": 2.19
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.94,
+    "dur": 6.36
+   }
+  },
+  "D4": {
+   "D4_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/D4_c.wav",
+    "heard": "Между шипами и северной липучкой ничья.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипами» в норме (2-й слог, нужно 2-й, запас 0.43)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.952,
+    "dur": 2.88
+   },
+   "D4_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/D4_v.wav",
+    "heard": "Между шипами и северной липучкой ничья.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипами» в норме (2-й слог, нужно 2-й, запас 0.4)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.941,
+    "dur": 2.92
+   },
+   "D4_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/D4_x.wav",
+    "heard": "Между шипами и северной липучкой ничья.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипами» в норме (2-й слог, нужно 2-й, запас 0.25)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.929,
+    "dur": 3.64
+   }
+  },
+  "E1": {
+   "E1_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/E1_c.wav",
+    "heard": "Раунд пятый. Сухой асфальт.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.861,
+    "dur": 3.2
+   },
+   "E1_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/E1_v.wav",
+    "heard": "Раунд 5. Сухой асфальт.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.831,
+    "dur": 3.84
+   },
+   "E1_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/E1_x.wav",
+    "heard": "Раунд 5. Сухой асфальт.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.87,
+    "dur": 2.88
+   }
+  },
+  "E2": {
+   "E2_p.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/E2_p.wav",
+    "heard": "Вот тут шиповка тормозит длиннее, но всего на несколько процентов. С 80 километров в час выходит метр от силы полтора.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «выходит» в норме (2-й слог, нужно 2-й, запас 0.59)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.957,
+    "dur": 8.64
+   },
+   "E2_r.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/E2_r.wav",
+    "heard": "Вот тут шиповка тормозить длиннее, но всего на несколько процентов с 80 километров в час выходит метр от силы полтора.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «тормозить» вместо «тормозит», акустика за сценарий (+0.17)",
+      "script": "тормозит",
+      "heard": "тормозить",
+      "delta": 0.17,
+      "t": 0.48
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «выходит» в норме (2-й слог, нужно 2-й, запас 0.65)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.949,
+    "dur": 7.76
+   },
+   "E2_s.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/E2_s.wav",
+    "heard": "Вот тут шиповка тормозит длиннее, но всего на несколько процентов с 80 километров в час выходит метр от силы полтора.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «выходит» в норме (2-й слог, нужно 2-й, запас 0.61)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.936,
+    "dur": 8.48
+   },
+   "E2_u.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/E2_u.wav",
+    "heard": "Вот тут шиповка тормозит длиннее, но всего на несколько процентов с 80 км в час выходит метр от силы полтора.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «выходит» в норме (2-й слог, нужно 2-й, запас 0.4)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.915,
+    "dur": 8.36
+   }
+  },
+  "E3": {
+   "E3_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/E3_c.wav",
+    "heard": "Очко Кости. 2 -1.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «один» в норме (2-й слог, нужно 2-й, запас 0.15)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.822,
+    "dur": 3.52
+   },
+   "E3_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/E3_v.wav",
+    "heard": "Очко Кости. 2 -1.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «один» в норме (1-й слог, нужно 2-й, запас 0.11)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.83,
+    "dur": 3.28
+   },
+   "E3_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/E3_x.wav",
+    "heard": "Очко Кости. 2 -1.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «один» в норме (2-й слог, нужно 2-й, запас 0.13)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.821,
+    "dur": 3.0
+   }
+  },
+  "F1": {
+   "F1_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/F1_c.wav",
+    "heard": "Раунд шестой. Шум.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.926,
+    "dur": 1.92
+   },
+   "F1_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/F1_v.wav",
+    "heard": "Раунд шестой, шум.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.758,
+    "dur": 2.44
+   },
+   "F1_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/F1_x.wav",
+    "heard": "Раунд шестой. Шум.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.82,
+    "dur": 1.88
+   }
+  },
+  "F2": {
+   "F2_p.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/F2_p.wav",
+    "heard": "Шиповка громче на 4 с лишним децибела. В салоне такое слышно, особенно на трассе.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.965,
+    "dur": 6.16
+   },
+   "F2_r.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/F2_r.wav",
+    "heard": "Шиповка громче на 4 с лишним децибела. В салоне такое слышно, особенно на трассе.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.969,
+    "dur": 5.92
+   },
+   "F2_s.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/F2_s.wav",
+    "heard": "Шиповка громче на 4 с лишним децибела. В салоне такое слышно, особенно на трассе.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.967,
+    "dur": 6.08
+   },
+   "F2_u.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/F2_u.wav",
+    "heard": "Шиповка громче на 4 с лишним децибела. В салоне такое слышно, особенно на трассе.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.971,
+    "dur": 6.64
+   }
+  },
+  "F3": {
+   "F3_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/F3_c.wav",
+    "heard": "И колесо с шипами тяжелее почти на килограмм.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипами» в норме (2-й слог, нужно 2-й, запас 0.56)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.911,
+    "dur": 4.4
+   },
+   "F3_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/F3_v.wav",
+    "heard": "И колесо с шипами тяжелее почти на килограмм.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипами» в норме (2-й слог, нужно 2-й, запас 0.25)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.925,
+    "dur": 4.16
+   },
+   "F3_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/F3_x.wav",
+    "heard": "И колесо с шипами тяжелее почти на килограмм.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипами» в норме (2-й слог, нужно 2-й, запас 0.42)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.878,
+    "dur": 4.6
+   }
+  },
+  "F4": {
+   "F4_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/F4_c.wav",
+    "heard": "Очко репучки 2 .2",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «репучки» вместо «липучке», акустика за сценарий (-0.82)",
+      "script": "липучке",
+      "heard": "репучки",
+      "delta": -0.82,
+      "t": 0.08
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.751,
+    "dur": 2.16
+   },
+   "F4_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/F4_v.wav",
+    "heard": "Очко липучки? 2 -2.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.788,
+    "dur": 2.36
+   },
+   "F4_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/F4_x.wav",
+    "heard": "Очко липучки 2 .2",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.667,
+    "dur": 2.48
+   }
+  },
+  "G1": {
+   "G1_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/G1_c.wav",
+    "heard": "Раунд седьмой. Деньги.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «деньги» в норме (1-й слог, нужно 1-й, запас 0.31)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.965,
+    "dur": 2.0
+   },
+   "G1_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/G1_v.wav",
+    "heard": "Раунд седьмой Деньги.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «деньги» в норме (1-й слог, нужно 1-й, запас 0.56)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.828,
+    "dur": 2.12
+   },
+   "G1_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/G1_x.wav",
+    "heard": "Раунд седьмой. Деньги.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «деньги» в норме (1-й слог, нужно 1-й, запас 0.2)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.944,
+    "dur": 1.96
+   }
+  },
+  "G2": {
+   "G2_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/G2_c.wav",
+    "heard": "Шиповка обычно дороже на 7 -15%, для 16 -го радиуса это пара тысяч рублей на комплект.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «15%» вместо «пятнадцать процентов», акустика за сценарий (-40.53)",
+      "script": "пятнадцать процентов",
+      "heard": "15%",
+      "delta": -40.53,
+      "t": 1.88
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «пара» в норме (1-й слог, нужно 1-й, запас 0.66)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.888,
+    "dur": 7.72
+   },
+   "G2_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/G2_v.wav",
+    "heard": "Шиповка обычно дороже на 7 -15%, для 16 -го радиуса это пара тысяч рублей на комплект.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «15%» вместо «пятнадцать процентов», акустика за сценарий (-39.49)",
+      "script": "пятнадцать процентов",
+      "heard": "15%",
+      "delta": -39.49,
+      "t": 1.74
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «пара» в норме (1-й слог, нужно 1-й, запас 0.47)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.925,
+    "dur": 7.64
+   },
+   "G2_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/G2_x.wav",
+    "heard": "Шиповка обычно дороже на 7 -15%. Для 16 -го радиуса это пара тысяч рублей на комплект.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «15%» вместо «пятнадцать процентов», акустика за сценарий (-40.50)",
+      "script": "пятнадцать процентов",
+      "heard": "15%",
+      "delta": -40.5,
+      "t": 1.62
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «пара» в норме (1-й слог, нужно 1-й, запас 0.34)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.945,
+    "dur": 7.52
+   }
+  },
+  "G3": {
+   "G3_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/G3_c.wav",
+    "heard": "Расход на Шипах чуть выше, но разница небольшая. Электромобиль на Шипах проезжает на 10 -20 км меньше.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «км» вместо «километров», акустика за сценарий (-7.49)",
+      "script": "километров",
+      "heard": "км",
+      "delta": -7.49,
+      "t": 5.89
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипах» в норме (1-й слог, нужно 2-й, запас 0.11)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипах» в норме (2-й слог, нужно 2-й, запас 0.07)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.967,
+    "dur": 8.32
+   },
+   "G3_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/G3_v.wav",
+    "heard": "Расход на Шипах чуть выше, но разница небольшая, электромобиль на Шипах приезжает на 10 -20 километров меньше.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «приезжает» вместо «проезжает», акустика за сценарий (-0.45)",
+      "script": "проезжает",
+      "heard": "приезжает",
+      "delta": -0.45,
+      "t": 4.07
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипах» в норме (2-й слог, нужно 2-й, запас 0.16)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипах» в норме (1-й слог, нужно 2-й, запас 0.02)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.954,
+    "dur": 7.72
+   },
+   "G3_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/G3_x.wav",
+    "heard": "Расход на ШИПах чуть выше, но разница небольшая – электромобиль на ШИПах проезжает на 10 -20 км меньше.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «км» вместо «километров», акустика за сценарий (-7.65)",
+      "script": "километров",
+      "heard": "км",
+      "delta": -7.65,
+      "t": 5.73
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипах» в норме (1-й слог, нужно 2-й, запас 0.05)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипах» в норме (2-й слог, нужно 2-й, запас 0.54)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.906,
+    "dur": 7.8
+   }
+  },
+  "G4": {
+   "G4_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/G4_c.wav",
+    "heard": "Липучка дешевле – два -три в пользу кости.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Кости» в норме (1-й слог, нужно 1-й, запас 0.32)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.779,
+    "dur": 3.96
+   },
+   "G4_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/G4_v.wav",
+    "heard": "Липучка дешевле. 2 -3 в пользу кости.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Кости» в норме (1-й слог, нужно 1-й, запас 0.41)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.908,
+    "dur": 4.28
+   },
+   "G4_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/G4_x.wav",
+    "heard": "Лепучка дешевле. 2 -3 в пользу кости.",
+    "issues": [
+     {
+      "level": "fail",
+      "code": "text",
+      "msg": "звучит «лепучка» вместо «липучка» (акустика +0.60)",
+      "script": "липучка",
+      "heard": "лепучка",
+      "delta": 0.6,
+      "t": 0.06
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Кости» в норме (1-й слог, нужно 1-й, запас 0.62)"
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.942,
+    "dur": 4.32
+   }
+  },
+  "H1": {
+   "H1_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/H1_c.wav",
+    "heard": "Раунд восьмой. Температура.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.838,
+    "dur": 2.12
+   },
+   "H1_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/H1_v.wav",
+    "heard": "Раунд восьмой. Температура.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.886,
+    "dur": 2.24
+   },
+   "H1_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/H1_x.wav",
+    "heard": "Раунд восьмой. Температура.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.918,
+    "dur": 2.36
+   }
+  },
+  "H2": {
+   "H2_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/H2_c.wav",
+    "heard": "Больше всего шипы выручает около нуля, на мокром скользком льду.",
+    "issues": [
+     {
+      "level": "fail",
+      "code": "text",
+      "msg": "звучит «выручает» вместо «выручают» (акустика +0.65)",
+      "script": "выручают",
+      "heard": "выручает",
+      "delta": 0.65,
+      "t": 0.88
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (1-й слог, нужно 2-й, запас 0.08)"
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.958,
+    "dur": 5.36
+   },
+   "H2_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/H2_v.wav",
+    "heard": "Больше всего шипы выручают около нуля на мокром скользком льду.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (1-й слог, нужно 2-й, запас 0.04)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.966,
+    "dur": 4.84
+   },
+   "H2_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/H2_x.wav",
+    "heard": "Больше всего шипы выручают около нуля на мокром скользком льду.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (2-й слог, нужно 2-й, запас 0.31)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.966,
+    "dur": 5.16
+   }
+  },
+  "H3": {
+   "H3_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/H3_c.wav",
+    "heard": "А в сильный мороз ледяная корка твердеет, шипу труднее грыздца и разница сокращается.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «грыздца» вместо «вгрызться», акустика за сценарий (-2.11)",
+      "script": "вгрызться",
+      "heard": "грыздца",
+      "delta": -2.11,
+      "t": 3.03
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипу» в норме (1-й слог, нужно 2-й, запас 0.0)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.925,
+    "dur": 6.48
+   },
+   "H3_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/H3_v.wav",
+    "heard": "А в сильный мороз ледяная корка твердеет, шипу труднее вгрызться и разница сокращается.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипу» в норме (1-й слог, нужно 2-й, запас 0.44)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.93,
+    "dur": 6.4
+   },
+   "H3_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/H3_x.wav",
+    "heard": "А в сильный мороз ледяная корка твердеет, шипутами днеев грыздца и разница сокращается.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «шипутами днеев грыздца» вместо «шипу труднее вгрызться», акустика за сценарий (-0.58)",
+      "script": "шипу труднее вгрызться",
+      "heard": "шипутами днеев грыздца",
+      "delta": -0.58,
+      "t": 1.75
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипу» в норме (2-й слог, нужно 2-й, запас 0.05)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.876,
+    "dur": 6.0
+   }
+  },
+  "H4": {
+   "H4_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/H4_c.wav",
+    "heard": "В одном тесте при минус 13 в ледовом повороте шиповка проиграла с северным липучком. Мечья.",
+    "issues": [
+     {
+      "level": "fail",
+      "code": "text",
+      "msg": "звучит «липучком мечья» вместо «липучкам ничья» (акустика +0.98)",
+      "script": "липучкам ничья",
+      "heard": "липучком мечья",
+      "delta": 0.98,
+      "t": 4.03
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.925,
+    "dur": 6.44
+   },
+   "H4_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/H4_v.wav",
+    "heard": "В одном тесте при минус 13 в ледовом повороте шиповка проиграла северным липучком. Ничья.",
+    "issues": [
+     {
+      "level": "fail",
+      "code": "text",
+      "msg": "звучит «липучком» вместо «липучкам» (акустика +0.48)",
+      "script": "липучкам",
+      "heard": "липучком",
+      "delta": 0.48,
+      "t": 4.05
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.906,
+    "dur": 6.4
+   },
+   "H4_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/H4_x.wav",
+    "heard": "В одном тесте при минус 13 в ледовом повороте шиповка проиграла северным липучком. Ничья.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «липучком» вместо «липучкам», акустика за сценарий (+0.10)",
+      "script": "липучкам",
+      "heard": "липучком",
+      "delta": 0.1,
+      "t": 3.95
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.88,
+    "dur": 6.64
+   }
+  },
+  "L1": {
+   "L1_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/L1_c.wav",
+    "heard": "Теперь о законе, тут много путаницы.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.975,
+    "dur": 4.24
+   },
+   "L1_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/L1_v.wav",
+    "heard": "Теперь о законе, тут много путаницы.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.978,
+    "dur": 2.84
+   },
+   "L1_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/L1_x.wav",
+    "heard": "Теперь о законе. Тут много путаницы.",
+    "issues": [
+     {
+      "level": "fail",
+      "code": "tail",
+      "msg": "лишний звук после текста: 0.7 с (текст кончился на 2.2 с из 3.9)",
+      "t": 2.15
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.971,
+    "dur": 3.88
+   }
+  },
+  "L2": {
+   "L2_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/L2_c.wav",
+    "heard": "С декабря по февраль легковой машине нужны зимние шины на каждом колесе. А в июне, июле и августе запрещены именно шипы.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «нужны» в норме (1-й слог, нужно 2-й, запас 0.23)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (2-й слог, нужно 2-й, запас 0.1)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.972,
+    "dur": 8.36
+   },
+   "L2_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/L2_v.wav",
+    "heard": "С декабря по февраль легковой машине нужны зимние шины на каждом колесе, а в июне, июле и августе запрещены именно шипы.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «нужны» в норме (1-й слог, нужно 2-й, запас 0.19)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (2-й слог, нужно 2-й, запас 0.25)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.974,
+    "dur": 8.08
+   },
+   "L2_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/L2_x.wav",
+    "heard": "С декабря по февраль легковой машине нужны зимние шины на каждом колесе, а в июне, июле и августе запрещены именно шипы.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «нужны» в норме (2-й слог, нужно 2-й, запас 0.17)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (2-й слог, нужно 2-й, запас 0.12)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.972,
+    "dur": 8.56
+   }
+  },
+  "L3": {
+   "L3_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/L3_c.wav",
+    "heard": "Нарушение, предупреждение или 500 рублей.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.937,
+    "dur": 3.32
+   },
+   "L3_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/L3_v.wav",
+    "heard": "Нарушение, предупреждение или 500 рублей.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.931,
+    "dur": 4.44
+   },
+   "L3_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/L3_x.wav",
+    "heard": "Нарушение, предупреждение или 500 рублей.",
+    "issues": [
+     {
+      "level": "fail",
+      "code": "tail",
+      "msg": "лишний звук после текста: 1.6 с (текст кончился на 2.8 с из 4.8)",
+      "t": 2.75
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.945,
+    "dur": 4.84
+   }
+  },
+  "L4": {
+   "L4_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/L4_c.wav",
+    "heard": "Шипы старят только на четыре колеса сразу. По одной оси нельзя.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «старят» вместо «ставят», акустика за сценарий (+0.03)",
+      "script": "ставят",
+      "heard": "старят",
+      "delta": 0.03,
+      "t": 0.14
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Шипы» в норме (1-й слог, нужно 2-й, запас 0.2)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «колеса» в норме (3-й слог, нужно 3-й, запас 0.04)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «оси» в норме (2-й слог, нужно 2-й, запас 0.04)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.895,
+    "dur": 4.68
+   },
+   "L4_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/L4_v.wav",
+    "heard": "Шипы ставят только на 4 колеса сразу, по одной оси нельзя.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Шипы» в норме (1-й слог, нужно 2-й, запас 0.31)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «колеса» в норме (2-й слог, нужно 3-й, запас 0.07)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «оси» в норме (1-й слог, нужно 2-й, запас 0.38)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.929,
+    "dur": 4.6
+   },
+   "L4_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/L4_x.wav",
+    "heard": "Шипы ставят только на 4 колеса сразу, по одной оси нельзя.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Шипы» в норме (1-й слог, нужно 2-й, запас 0.13)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «колеса» в норме (2-й слог, нужно 3-й, запас 0.01)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «оси» в норме (1-й слог, нужно 2-й, запас 0.12)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.966,
+    "dur": 4.76
+   }
+  },
+  "L5": {
+   "L5_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/L5_c.wav",
+    "heard": "А наклейка с буквой шасс декабря 2018 года не обязательно, штрафа за это нет.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «шасс» вместо «ша с», акустика за сценарий (-0.11)",
+      "script": "ша с",
+      "heard": "шасс",
+      "delta": -0.11,
+      "t": 0.76
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «года» в норме (2-й слог, нужно 1-й, запас 0.04)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.818,
+    "dur": 6.16
+   },
+   "L5_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/L5_v.wav",
+    "heard": "А наклейка с буквой «Ш» с декабря 2018 года не обязательно, штрафа за это нет.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «ш» вместо «ша», акустика за сценарий (-1.59)",
+      "script": "ша",
+      "heard": "ш",
+      "delta": -1.59,
+      "t": 0.74
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «года» в норме (2-й слог, нужно 1-й, запас 0.04)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.874,
+    "dur": 6.4
+   },
+   "L5_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/L5_x.wav",
+    "heard": "А наклейка с буквой сейчас декабря 2018 года не обязательно, штрафа за это нет.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «сейчас» вместо «ша с», акустика за сценарий (-1.87)",
+      "script": "ша с",
+      "heard": "сейчас",
+      "delta": -1.87,
+      "t": 0.7
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «года» в норме (1-й слог, нужно 1-й, запас 0.83)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.824,
+    "dur": 5.44
+   }
+  },
+  "L6": {
+   "L6_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/L6_c.wav",
+    "heard": "И в новой шине не больше 60 шипов на метр окружности, для 16 -го радиуса это около 120 шипов.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипов» в норме (2-й слог, нужно 2-й, запас 0.26)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипов» в норме (2-й слог, нужно 2-й, запас 0.44)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.932,
+    "dur": 7.64
+   },
+   "L6_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/L6_q.wav",
+    "heard": "И в новой шине не больше 60 шипов на метр окружности, для 16 -го радиуса это около 120 шипов.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипов» в норме (2-й слог, нужно 2-й, запас 0.21)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипов» в норме (2-й слог, нужно 2-й, запас 0.08)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.954,
+    "dur": 7.44
+   },
+   "L6_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/L6_v.wav",
+    "heard": "И в новой шине не больше 60 шипов на метр окружности. Для 16 -го радиуса это около 120 шипов.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипов» в норме (2-й слог, нужно 2-й, запас 0.6)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипов» в норме (2-й слог, нужно 2-й, запас 0.45)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.954,
+    "dur": 7.84
+   },
+   "L6_w.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/L6_w.wav",
+    "heard": "И в новой шине не больше 60 шипов на метр окружности, для 16 -го радиуса это около 120 шипов.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипов» в норме (2-й слог, нужно 2-й, запас 0.01)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипов» в норме (1-й слог, нужно 2-й, запас 0.22)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.94,
+    "dur": 7.32
+   },
+   "L6_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/L6_x.wav",
+    "heard": "И в новой шине не больше 60 шипов на метр окружности, для 16 -го радиуса это около 120 шипов.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипов» в норме (2-й слог, нужно 2-й, запас 0.31)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипов» в норме (2-й слог, нужно 2-й, запас 0.21)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.944,
+    "dur": 7.64
+   },
+   "L6_y.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/L6_y.wav",
+    "heard": "И в новой шине не больше 60 шипов на метр окружности, для 16 -го радиуса это около 120 шипов.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипов» в норме (2-й слог, нужно 2-й, запас 0.55)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипов» в норме (2-й слог, нужно 2-й, запас 0.13)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.95,
+    "dur": 7.6
+   }
+  },
+  "M1": {
+   "M1_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/M1_c.wav",
+    "heard": "И три мифа напоследок.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.848,
+    "dur": 4.04
+   },
+   "M1_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/M1_v.wav",
+    "heard": "И три мифа напоследок.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.876,
+    "dur": 3.12
+   },
+   "M1_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/M1_x.wav",
+    "heard": "И три мифа напоследок.",
+    "issues": [
+     {
+      "level": "fail",
+      "code": "tail",
+      "msg": "лишний звук после текста: 1.0 с (текст кончился на 1.3 с из 4.3)",
+      "t": 1.35
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.871,
+    "dur": 4.28
+   }
+  },
+  "M2": {
+   "M2_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/M2_c.wav",
+    "heard": "Первые шипы портят дорогу. Это правда. В Норвегии бы считали, что машина на шипах за зиму поднимает около 20 килограммов асфальтовой пыли.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «бы считали» вместо «посчитали», акустика за сценарий (-1.14)",
+      "script": "посчитали",
+      "heard": "бы считали",
+      "delta": -1.14,
+      "t": 2.41
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (2-й слог, нужно 2-й, запас 0.06)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипах» в норме (2-й слог, нужно 2-й, запас 0.31)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «пыли» в норме (2-й слог, нужно 1-й, запас 0.01)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.934,
+    "dur": 7.76
+   },
+   "M2_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/M2_v.wav",
+    "heard": "Первый. Шипы портят дорогу. Это правда. В Норвегии посчитали, что машина на шипах за зиму поднимает около 20 килограммов асфальтовой пыли.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (1-й слог, нужно 2-й, запас 0.02)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипах» в норме (2-й слог, нужно 2-й, запас 0.53)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «пыли» в норме (1-й слог, нужно 1-й, запас 0.34)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.965,
+    "dur": 9.56
+   },
+   "M2_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/M2_x.wav",
+    "heard": "Первый – шипы портят дорогу. Это правда. В Норвегии посчитали, что машина на шипах за зиму поднимает около 20 килограммов асфальтовой пыли.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (2-й слог, нужно 2-й, запас 0.21)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипах» в норме (2-й слог, нужно 2-й, запас 0.25)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «пыли» в норме (1-й слог, нужно 1-й, запас 0.11)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.934,
+    "dur": 9.92
+   }
+  },
+  "M3": {
+   "M3_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/M3_c.wav",
+    "heard": "Поэтому в Германии шипы запрещены, а в крупных городах Норвегии за езду на них платят.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (1-й слог, нужно 2-й, запас 0.04)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.981,
+    "dur": 5.84
+   },
+   "M3_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/M3_v.wav",
+    "heard": "Поэтому в Германии шипы запрещены, а в крупных городах Норвегии за езду на них платят.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (1-й слог, нужно 2-й, запас 0.05)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.981,
+    "dur": 5.8
+   },
+   "M3_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/M3_x.wav",
+    "heard": "Поэтому в Германии шипы запрещены, а в крупных городах Норвегии за езду на них платят.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (2-й слог, нужно 2-й, запас 0.2)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.981,
+    "dur": 5.96
+   }
+  },
+  "M4": {
+   "M4_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/M4_c.wav",
+    "heard": "Второй миф. Шиповку не надо обкатывать. Надо. Первые 500 -700 километров без резких стартов и торможений и не быстрее 90.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.913,
+    "dur": 8.76
+   },
+   "M4_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/M4_v.wav",
+    "heard": "Второй миф. Шиповку не надо обкатывать. Надо. Первые 500 -700 километров без резких стартов и торможений и не быстрее 90.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.904,
+    "dur": 9.28
+   },
+   "M4_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/M4_x.wav",
+    "heard": "Второй миф. Шиповку не надо обкатывать. Надо. Первый 500, 700 километров без резких стартов и торможений и не быстрее 90.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.913,
+    "dur": 8.6
+   }
+  },
+  "M5": {
+   "M5_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/M5_c.wav",
+    "heard": "Третий. Переобуваться строго пеплю с семи. Это ориентир, а не закон физики. Главное успеть до первого льда и иния.",
+    "issues": [
+     {
+      "level": "fail",
+      "code": "text",
+      "msg": "звучит «пеплю с» вместо «при плюс» (акустика +1.39)",
+      "script": "при плюс",
+      "heard": "пеплю с",
+      "delta": 1.39,
+      "t": 1.24
+     },
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «иния» вместо «инея», акустика за сценарий (-0.35)",
+      "script": "инея",
+      "heard": "иния",
+      "delta": -0.35,
+      "t": 6.08
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.898,
+    "dur": 7.4
+   },
+   "M5_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/M5_v.wav",
+    "heard": "Третий. Переобуваться строго при плюс семи. Это ориентир, а не закон физики. Главное успеть до первого льда и иния.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «иния» вместо «инея», акустика за сценарий (-0.36)",
+      "script": "инея",
+      "heard": "иния",
+      "delta": -0.36,
+      "t": 6.76
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.917,
+    "dur": 8.12
+   },
+   "M5_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/M5_x.wav",
+    "heard": "Третий. Переобуваться строго при плюс семи. Это ориентир, а не закон физики. Главное успеть до первого льда и иния.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «иния» вместо «инея», акустика за сценарий (-1.97)",
+      "script": "инея",
+      "heard": "иния",
+      "delta": -1.97,
+      "t": 6.46
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.913,
+    "dur": 7.76
+   }
+  },
+  "Z1": {
+   "Z1_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/Z1_c.wav",
+    "heard": "Итак, по очкам выиграл Костя. 3 -2.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Костя» в норме (1-й слог, нужно 1-й, запас 0.13)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.924,
+    "dur": 3.32
+   },
+   "Z1_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/Z1_v.wav",
+    "heard": "Итак, по очкам выиграл Костя 3 -2.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Костя» в норме (1-й слог, нужно 1-й, запас 0.24)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.869,
+    "dur": 3.32
+   },
+   "Z1_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/Z1_x.wav",
+    "heard": "Итак, по очкам выиграл Костя, 3 -2.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Костя» в норме (1-й слог, нужно 1-й, запас 0.64)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.933,
+    "dur": 3.28
+   }
+  },
+  "Z2": {
+   "Z2_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/Z2_v.wav",
+    "heard": "Но очки тут ничего не решают. На сухом асфальте ты проиграешь метр, а на льду выиграешь 13.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.952,
+    "dur": 6.64
+   },
+   "Z2_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/Z2_x.wav",
+    "heard": "Но очки тут ничего не решают. На сухом асфальте ты проиграешь метр, а на льду выиграешь 13.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.944,
+    "dur": 6.52
+   }
+  },
+  "Z3": {
+   "Z3_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/Z3_c.wav",
+    "heard": "Поэтому правила Михалыча такое. Город, чистченые дороги, мало льда, северная липучка.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «чистченые» вместо «чищеные», акустика за сценарий (-2.01)",
+      "script": "чищеные",
+      "heard": "чистченые",
+      "delta": -2.01,
+      "t": 2.21
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Михалыча» в норме (2-й слог, нужно 2-й, запас 0.51)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «дороги» в норме (2-й слог, нужно 2-й, запас 0.4)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «мало» в норме (1-й слог, нужно 1-й, запас 0.74)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.903,
+    "dur": 5.88
+   },
+   "Z3_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/Z3_v.wav",
+    "heard": "Поэтому правило Михалыча такое, город, чищенные дороги, мало льда, северная липучка.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «чищенные» вместо «чищеные», акустика за сценарий (+0.21)",
+      "script": "чищеные",
+      "heard": "чищенные",
+      "delta": 0.21,
+      "t": 2.13
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Михалыча» в норме (2-й слог, нужно 2-й, запас 0.24)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «дороги» в норме (2-й слог, нужно 2-й, запас 0.48)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «мало» в норме (1-й слог, нужно 1-й, запас 0.79)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.904,
+    "dur": 6.68
+   },
+   "Z3_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/Z3_x.wav",
+    "heard": "Поэтому правила Михалыча такое, город, чищены дороги, мало льда, северная репучка.",
+    "issues": [
+     {
+      "level": "fail",
+      "code": "text",
+      "msg": "звучит «репучка» вместо «липучка» (акустика +0.50)",
+      "script": "липучка",
+      "heard": "репучка",
+      "delta": 0.5,
+      "t": 4.83
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Михалыча» в норме (2-й слог, нужно 2-й, запас 0.41)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «дороги» в норме (2-й слог, нужно 2-й, запас 0.56)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «мало» в норме (1-й слог, нужно 1-й, запас 0.78)"
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.891,
+    "dur": 6.76
+   }
+  },
+  "Z4": {
+   "Z4_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/Z4_c.wav",
+    "heard": "Трасса, частный сектор, загородные дороги и каток по утрам, шипы.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «дороги» в норме (2-й слог, нужно 2-й, запас 0.24)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «утрам» в норме (2-й слог, нужно 2-й, запас 0.44)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (1-й слог, нужно 2-й, запас 0.13)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.954,
+    "dur": 5.12
+   },
+   "Z4_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/Z4_v.wav",
+    "heard": "Трасса, частный сектор, загородные дороги и каток по утрам, шипы.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «дороги» в норме (2-й слог, нужно 2-й, запас 0.33)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «утрам» в норме (2-й слог, нужно 2-й, запас 0.17)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (2-й слог, нужно 2-й, запас 0.24)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.949,
+    "dur": 4.44
+   },
+   "Z4_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/Z4_x.wav",
+    "heard": "Трасса, частный сектор, загородные дороги и каток по утрам, шипы.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «дороги» в норме (2-й слог, нужно 2-й, запас 0.57)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «утрам» в норме (2-й слог, нужно 2-й, запас 0.41)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (1-й слог, нужно 2-й, запас 0.05)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.954,
+    "dur": 4.88
+   }
+  },
+  "Z5": {
+   "Z5_p.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/Z5_p.wav",
+    "heard": "А европейскую липучку бери. Только если да, у вас зимой толком не бывает.",
+    "issues": [
+     {
+      "level": "fail",
+      "code": "text",
+      "msg": "звучит «да» вместо «льда» (акустика +1.09)",
+      "script": "льда",
+      "heard": "да",
+      "delta": 1.09,
+      "t": 2.11
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.947,
+    "dur": 4.6
+   },
+   "Z5_r.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/Z5_r.wav",
+    "heard": "А европейскую липучку бери, только если льда у вас зимой толком не бывает.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.969,
+    "dur": 5.08
+   },
+   "Z5_s.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/Z5_s.wav",
+    "heard": "А европейскую липучку бери, только если льда у вас зимой током не бывает.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «током» вместо «толком», акустика за сценарий (+0.00)",
+      "script": "толком",
+      "heard": "током",
+      "delta": 0.0,
+      "t": 2.81
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.959,
+    "dur": 5.08
+   },
+   "Z5_u.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/Z5_u.wav",
+    "heard": "А европейскую репучку бери, только если льда у вас зимой током не бывает.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «репучку» вместо «липучку», акустика за сценарий (+0.44)",
+      "script": "липучку",
+      "heard": "репучку",
+      "delta": 0.44,
+      "t": 0.18
+     },
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «током» вместо «толком», акустика за сценарий (+0.44)",
+      "script": "толком",
+      "heard": "током",
+      "delta": 0.44,
+      "t": 2.93
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.955,
+    "dur": 5.16
+   }
+  },
+  "Z6": {
+   "Z6_p.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/Z6_p.wav",
+    "heard": "Кстати, в России так и выбирают, примерно две трети зимних шин берут с шипами.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипами» в норме (2-й слог, нужно 2-й, запас 0.37)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.938,
+    "dur": 5.88
+   },
+   "Z6_r.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/Z6_r.wav",
+    "heard": "Кстати, в России так и выбирают. Примерно две трети зимних шин берут с шипами.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипами» в норме (2-й слог, нужно 2-й, запас 0.17)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.928,
+    "dur": 5.12
+   },
+   "Z6_s.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/Z6_s.wav",
+    "heard": "Кстати, в России так и выбирают, примерно две трети зимних шин берут с шипами.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипами» в норме (2-й слог, нужно 2-й, запас 0.41)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.929,
+    "dur": 5.28
+   },
+   "Z6_u.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/Z6_u.wav",
+    "heard": "Кстати, в России так и выбирают. Примерно две трети зимних шин берут с шипами.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипами» в норме (2-й слог, нужно 2-й, запас 0.38)"
+     },
+     {
+      "level": "fail",
+      "code": "tail",
+      "msg": "лишний звук после текста: 0.6 с (текст кончился на 5.3 с из 6.3)",
+      "t": 5.32
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.962,
+    "dur": 6.28
+   }
+  },
+  "Z7": {
+   "Z7_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/Z7_c.wav",
+    "heard": "А у тебя зимой что, шипы или липучка? Пиши в комментариях, посмотрим кого больше.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (2-й слог, нужно 2-й, запас 0.08)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.974,
+    "dur": 5.68
+   },
+   "Z7_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/Z7_v.wav",
+    "heard": "А у тебя зимой что, шипы или липучка? Пиши в комментариях, посмотрим кого больше.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (1-й слог, нужно 2-й, запас 0.16)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.943,
+    "dur": 5.72
+   },
+   "Z7_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/Z7_x.wav",
+    "heard": "А у тебя зимой что шипы или липучка? Пиши в комментариях, посмотрим кого больше.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «шипы» в норме (2-й слог, нужно 2-й, запас 0.29)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.954,
+    "dur": 5.32
+   }
+  },
+  "Z8": {
+   "Z8_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/Z8_c.wav",
+    "heard": "Подписывайся на Гараж Михалыча, а мне пора переобуваться.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Михалыча» в норме (2-й слог, нужно 2-й, запас 0.07)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «пора» в норме (1-й слог, нужно 2-й, запас 0.3)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.951,
+    "dur": 4.28
+   },
+   "Z8_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/Z8_v.wav",
+    "heard": "Подписывайся на гараж Михалыча, а мне пора переобуваться.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Михалыча» в норме (2-й слог, нужно 2-й, запас 0.49)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «пора» в норме (1-й слог, нужно 2-й, запас 0.42)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.939,
+    "dur": 4.2
+   },
+   "Z8_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/studs/vo_takes/Z8_x.wav",
+    "heard": "Подписывайся на гараж Михалыча, а мне пора переобуваться.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Михалыча» в норме (2-й слог, нужно 2-й, запас 0.34)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «пора» в норме (1-й слог, нужно 2-й, запас 0.17)"
+     },
+     {
+      "level": "fail",
+      "code": "tail",
+      "msg": "лишний звук после текста: 0.6 с (текст кончился на 3.4 с из 4.6)",
+      "t": 3.43
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.957,
+    "dur": 4.64
+   }
+  }
+ },
+ "picks": {
+  "I01": "I01_c.wav",
+  "I02": "I02_q.wav",
+  "I03": "I03_c.wav",
+  "I04": "I04_c.wav",
+  "K1": "K1_c.wav",
+  "K3": "K3_q.wav",
+  "K4": "K4_c.wav",
+  "A1": "A1_c.wav",
+  "A2": "A2_x.wav",
+  "A3": "A3_v.wav",
+  "A4": "A4_q.wav",
+  "A5": "A5_w.wav",
+  "A6": "A6_c.wav",
+  "B1": "B1_c.wav",
+  "B2": "B2_y.wav",
+  "B3": "B3_v.wav",
+  "C1": "C1_c.wav",
+  "C3": "C3_c.wav",
+  "D1": "D1_y.wav",
+  "D2": "D2_v.wav",
+  "D3": "D3_c.wav",
+  "D4": "D4_c.wav",
+  "E1": "E1_c.wav",
+  "E3": "E3_c.wav",
+  "F1": "F1_c.wav",
+  "F3": "F3_v.wav",
+  "F4": "F4_c.wav",
+  "G1": "G1_c.wav",
+  "G2": "G2_c.wav",
+  "G3": "G3_c.wav",
+  "G4": "G4_c.wav",
+  "H1": "H1_c.wav",
+  "H2": "H2_v.wav",
+  "H3": "H3_c.wav",
+  "H4": "H4_x.wav",
+  "L1": "L1_c.wav",
+  "L2": "L2_v.wav",
+  "L3": "L3_c.wav",
+  "L4": "L4_c.wav",
+  "L5": "L5_c.wav",
+  "L6": "L6_q.wav",
+  "M1": "M1_c.wav",
+  "M2": "M2_x.wav",
+  "M3": "M3_c.wav",
+  "M4": "M4_c.wav",
+  "M5": "M5_x.wav",
+  "Z1": "Z1_c.wav",
+  "Z3": "Z3_c.wav",
+  "Z4": "Z4_c.wav",
+  "Z7": "Z7_c.wav",
+  "Z8": "Z8_c.wav",
+  "Z2": "Z2_v.wav",
+  "K2": "K2_u.wav",
+  "C2": "C2_p.wav",
+  "E2": "E2_u.wav",
+  "F2": "F2_p.wav",
+  "Z5": "Z5_r.wav",
+  "Z6": "Z6_r.wav"
+ },
+ "retake": {}
+}

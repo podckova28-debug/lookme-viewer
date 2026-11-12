@@ -20,6 +20,7 @@ cand = {}
 for pat in files:
     for f in glob.glob(os.path.join(proj, pat)):
         for lid, v in json.load(open(f, encoding='utf-8')).items():
+            if not os.path.exists(os.path.join(proj, 'vo_takes', v['take'])): continue   # дубль убран (устарел текст)
             s = v['suspects']
             st = [x for x in s if x['kind'] == 'stress']
             score = sum(x['margin'] for x in st) + len(st) + 3 * sum(1 for x in s if x['kind'] == 'text') \

@@ -73,13 +73,13 @@ def _chapter_parts(num, title, label=None):
     b, bp = shadow(down(block)); r, rp = shadow(down(bar))
     return b, bp, r, rp
 
-def chapter(fr, t, dur, num, title, label=None, right=False):
+def chapter(fr, t, dur, num, title, label=None, right=False, y=None):
     """right=True — карточка в правом верхнем углу (когда слева в кадре голова; renderqa меряет перекрытие голов)."""
     b, bp, r, rp = cached(('ch', num, title, label), lambda: _chapter_parts(num, title, label))
     k_in = out_cubic(t / SLOW); k_out = in_cubic((t - (dur - NORMAL)) / NORMAL)
     a = k_in * (1 - k_out); dy = -24 * k_out
     x_left = W - MX - (176 + 14 + r.width - 2 * rp) if right else MX
-    x0 = x_left - 60 * (1 - k_in) * (-1 if right else 1); y0 = MY + dy
+    x0 = x_left - 60 * (1 - k_in) * (-1 if right else 1); y0 = (MY if y is None else y) + dy   # y — верх карточки, если наверху головы
     fr.alpha_composite(with_alpha(b, a), (int(x0 - bp), int(y0 - bp)))
     # полоса проявляется «шторкой» слева направо с задержкой
     kb = out_cubic((t - 0.1) / SLOW)
@@ -234,7 +234,9 @@ def score(fr, t, dur, rows):
 def _panel(w, h, title, source):
     pn = Image.new('RGBA', (w * S, h * S), (0, 0, 0, 0)); d = ImageDraw.Draw(pn)
     d.rounded_rectangle((0, 0, w * S - 1, h * S - 1), 26 * S, fill=INK + (236,))
-    d.text((56 * S, 64 * S), title, font=font(OSW_B, 54), fill=CREAM, anchor='lm')
+    fs = 54   # длинный заголовок уменьшаем до ширины плашки (раньше «…(МЕНЬШЕ — ЛУЧШЕ)» обрезался)
+    while fs > 34 and d.textlength(title, font=font(OSW_B, fs)) > (w - 112) * S: fs -= 2
+    d.text((56 * S, 64 * S), title, font=font(OSW_B, fs), fill=CREAM, anchor='lm')
     d.rounded_rectangle((56 * S, 104 * S, 176 * S, 112 * S), 4 * S, fill=RED)
     if source: d.text((56 * S, (h - 40) * S), source, font=font(INT_SB, 24), fill=MUTED, anchor='lm')
     return shadow(down(pn), r=14, dy=10, a=120)
@@ -314,7 +316,7 @@ def stack(fr, t, dur, title, segs, source='', brace=None):
 
 def draw(fr, ov, t, dur):
     k = ov['type']
-    if k == 'chapter': chapter(fr, t, dur, ov['num'], ov['title'], ov.get('label'), ov.get('right', False))
+    if k == 'chapter': chapter(fr, t, dur, ov['num'], ov['title'], ov.get('label'), ov.get('right', False), ov.get('y'))
     elif k == 'chip': chip(fr, t, dur, ov['text'], ov.get('right', False))
     elif k == 'caption': caption(fr, t, dur, ov['text'])
     elif k == 'stamp': stamp(fr, t, dur, ov['text'], ov.get('sub'), ov.get('color', 'green'), ov.get('x', 1560), ov.get('y', 270))

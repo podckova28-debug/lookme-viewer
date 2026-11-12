@@ -1,0 +1,116 @@
+{
+ "render:chapter@G1:chapter@G1 174.5 с (план KG1): закрывает 32 % головы": {
+  "verdict": null,
+  "note": "",
+  "level": "review",
+  "image": "pack/face_chapter_G1_174.jpg"
+ },
+ "render:chip@E3:chip@E3 154.9 с (план KI2): закрывает 19 % головы": {
+  "verdict": "ok",
+  "note": "маленький счёт в углу задевает макушку Кости (волосы), лицо открыто",
+  "level": "review",
+  "image": "pack/face_chip_E3_155.jpg"
+ },
+ "render:chip@F4:chip@F4 172.2 с (план KI2): закрывает 19 % головы": {
+  "verdict": "ok",
+  "note": "маленький счёт в углу задевает макушку Кости (волосы), лицо открыто",
+  "level": "review",
+  "image": "pack/face_chip_F4_172.jpg"
+ },
+ "render:stamp@C3:stamp@C3 112.3 с (план KI1): закрывает 39 % головы": {
+  "verdict": null,
+  "note": "",
+  "level": "fail",
+  "image": "pack/face_stamp_C3_112.jpg"
+ },
+ "render:stamp@D4:stamp@D4 137.5 с (план KZ1): закрывает 22 % головы": {
+  "verdict": null,
+  "note": "",
+  "level": "review",
+  "image": "pack/face_stamp_D4_137.jpg"
+ },
+ "render:stamp@E3:stamp@E3 155.0 с (план KI2): закрывает 37 % головы": {
+  "verdict": null,
+  "note": "",
+  "level": "fail",
+  "image": "pack/face_stamp_E3_155.jpg"
+ },
+ "render:stamp@F4:stamp@F4 171.7 с (план KI2): закрывает 37 % головы": {
+  "verdict": null,
+  "note": "",
+  "level": "fail",
+  "image": "pack/face_stamp_F4_172.jpg"
+ },
+ "render:stamp@G4:stamp@G4 196.0 с (план KG1): закрывает 43 % головы": {
+  "verdict": null,
+  "note": "",
+  "level": "fail",
+  "image": "pack/face_stamp_G4_196.jpg"
+ },
+ "frame:KA3:в кадре mikhalych, хотя по плану без людей": {
+  "verdict": "ok",
+  "note": "испытатель с планшетом на льду — не Михалыч (шапка, оранжевая куртка), по плану человек есть",
+  "level": "review",
+  "image": "pack/frame_KA3.jpg"
+ },
+ "frame:KF1:рук 3 на 1 чел. — проверить лишнюю руку": {
+  "verdict": "ok",
+  "note": "«рука 3» — звуковые дуги шума; у Кости две руки на руле",
+  "level": "review",
+  "image": "pack/frame_KF1.jpg"
+ },
+ "frame:KG1:в кадре driver, а по плану mikhalych": {
+  "verdict": "waive",
+  "note": "«driver» — это сосед Костя: детектор его не знает. Михалыч в кадре, у каждого по две руки",
+  "level": "fail",
+  "image": "pack/frame_KG1.jpg"
+ },
+ "frame:KI1:в кадре driver, а по плану mikhalych": {
+  "verdict": "waive",
+  "note": "«driver» — это сосед Костя: детектор его не знает. Михалыч в кадре, у каждого по две руки",
+  "level": "fail",
+  "image": "pack/frame_KI1.jpg"
+ },
+ "frame:KI2:в кадре driver, хотя по плану без людей": {
+  "verdict": "ok",
+  "note": "это Костя, так задумано (затыкает уши от шипов)",
+  "level": "review",
+  "image": "pack/frame_KI2.jpg"
+ },
+ "frame:KL1:рук 3 на 1 чел. — проверить лишнюю руку": {
+  "verdict": "ok",
+  "note": "«рука 3» — дерево на картинке календаря; у Михалыча две руки",
+  "level": "review",
+  "image": "pack/frame_KL1.jpg"
+ },
+ "frame:KL2:в кадре mikhalych, хотя по плану без людей": {
+  "verdict": "ok",
+  "note": "молодой шиномонтажник без бороды, не Михалыч; по плану рабочий у подъёмника",
+  "level": "review",
+  "image": "pack/frame_KL2.jpg"
+ },
+ "frame:KL4:рук 3 на 1 чел. — проверить лишнюю руку": {
+  "verdict": "ok",
+  "note": "«рука 3» — красная тряпка; у Михалыча две руки",
+  "level": "review",
+  "image": "pack/frame_KL4.jpg"
+ },
+ "frame:KM2:рук 3 на 0 чел. — проверить лишнюю руку": {
+  "verdict": "ok",
+  "note": "людей нет, «руки» — печные трубы",
+  "level": "review",
+  "image": "pack/frame_KM2.jpg"
+ },
+ "frame:KZ1:в кадре driver, а по плану mikhalych": {
+  "verdict": "waive",
+  "note": "«driver» — это сосед Костя (рукопожатие), детектор его не знает. Михалыч в кадре, у каждого по две руки",
+  "level": "fail",
+  "image": "pack/frame_KZ1.jpg"
+ },
+ "clip:M_I4:полоса кадров — разбор по чек-листу": {
+  "verdict": "ok",
+  "note": "полоса 1/6 с проверена: ключ всё время в руке, предметы не пропадают, брака нет",
+  "level": "review",
+  "image": "pack/clip_M_I4.jpg"
+ }
+}

@@ -13,6 +13,7 @@ ROUNDS = [('A1', 'A6', 'ТОРМОЖЕНИЕ НА ЛЬДУ', 1), ('B1', 'B3', '�
           ('D1', 'D4', 'МОКРЫЙ АСФАЛЬТ', 4), ('E1', 'E3', 'СУХОЙ АСФАЛЬТ', 5), ('F1', 'F4', 'ШУМ', 6),
           ('G1', 'G4', 'ДЕНЬГИ', 7), ('H1', 'H4', 'ТЕМПЕРАТУРА', 8)]
 CH_RIGHT = set()
+CH_Y = {'G1': 1080 - 60 - 190}   # KG1: наверху головы Михалыча и Кости — карточку вниз, на ящик с инструментами
 for a, b, t, n in ROUNDS: PAUSE[a] = 1.2
 PAUSE.update({'K1': 0.8, 'L1': 1.3, 'M1': 1.3, 'Z1': 1.3, 'I04': 0.2})
 LINE_TEMPO = {}
@@ -85,14 +86,17 @@ FALLBACK = {'M_I4': 'KI4'}
 
 OVERLAYS = [dict(type='title', line='I01', at=0.6, lines=[('ШИПЫ', 120, gfx.CREAM), ('ИЛИ ЛИПУЧКА?', 96, gfx.OCHRE)])]
 for a, b, t, n in ROUNDS:
-    OVERLAYS.append(dict(type='chapter', line=a, at=0.3, dur=3.0, num=n, title=t, label='РАУНД', right=a in CH_RIGHT))
+    OVERLAYS.append(dict(type='chapter', line=a, at=0.3, dur=3.0, num=n, title=t, label='РАУНД', right=a in CH_RIGHT, y=CH_Y.get(a)))
 # текущий счёт в углу: от объявления раунда до следующего
 SCORE = [('A1', 'A5', '0 : 0'), ('A6', 'B2', '1 : 0'), ('B3', 'E2', '2 : 0'), ('E3', 'F3', '2 : 1'), ('F4', 'G3', '2 : 2'), ('G4', 'H4', '2 : 3')]
 for a, b, s in SCORE:
     OVERLAYS.append(dict(type='chip', line=a, at=3.6 if a in {r[0] for r in ROUNDS} else 0.2, to=b, text=f'ШИПЫ {s} ЛИПУЧКА', right=True))   # справа: слева карточка раунда
 STAMPS = [('A6', '1 : 0', 'blue'), ('B3', '2 : 0', 'blue'), ('C3', 'НИЧЬЯ', 'grey'), ('D4', 'НИЧЬЯ', 'grey'),
           ('E3', '2 : 1', 'ochre'), ('F4', '2 : 2', 'ochre'), ('G4', '2 : 3', 'ochre'), ('H4', 'НИЧЬЯ', 'grey')]
-for l, t, c in STAMPS: OVERLAYS.append(dict(type='stamp', line=l, at=0.5, text=t, color=c, x=1560, y=300))
+# места подобраны work/stampspot.py (детектор голов): штамп не закрывает ни одной головы
+STAMP_XY = {'A6': (1560, 270), 'B3': (1560, 270), 'C3': (1560, 820), 'D4': (1560, 820), 'E3': (400, 270), 'F4': (400, 270),
+            'G4': (1560, 820), 'H4': (1560, 270)}
+for l, t, c in STAMPS: OVERLAYS.append(dict(type='stamp', line=l, at=0.5, text=t, color=c, x=STAMP_XY[l][0], y=STAMP_XY[l][1]))
 CAPTIONS = [
  ('A4', 'Tekniikan Maailma, 2025: шестая из семи шиповок — 41,6 м, лучшая липучка — 45,6 м'),
  ('A5', 'Tyre Reviews, 2025/26, лёд 20→5 км/ч: шиповка 6,1 м, европейская липучка 11,6 м'),
