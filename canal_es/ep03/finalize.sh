@@ -10,16 +10,10 @@ cd "$(dirname "$0")"
 $PY voicefx.py "$VO" $W/vo_fx && VO=$W/vo_fx   # animal voice colour first, so the timing includes it
 $PY layout.py "$VO"
 ORDER=$(python3 -c "import json; print(' '.join(json.load(open('timing.json'))['order']))")
-# the probe (ghost opacity, cuts, events for the mix) runs scene by scene in its own browser while the renders go
-( for s in $ORDER; do SCENES=$s node probe.js $W/probe/$s.json 5 > $W/probe/$s.log 2>&1 || echo "probe failed $s"; done ) &
-PROBE=$!
+# ep03's mixer needs no probe (no frozen or ghost state to sample): just render
 ./render_all.sh $W/render
-wait $PROBE
-for s in $ORDER; do [ -s $W/render/$s.mp4 ] || { echo "render missing: $s"; exit 1; }; [ -s $W/probe/$s.json ] || { echo "probe missing: $s"; exit 1; }; done
-python3 -c "
-import json, glob; r = {}
-for f in glob.glob('$W/probe/s*.json'): r.update(json.load(open(f)))
-json.dump(r, open('$W/probe.json', 'w')); print('probe', len(r), 'scenes')"
+for s in $ORDER; do [ -s $W/render/$s.mp4 ] || { echo "render missing: $s"; exit 1; }; done
+echo '{}' > $W/probe.json
 $PY mix.py "$VO" $W/probe.json $W/mix.wav
 ./assemble.sh $W/render $W/mix.wav $W/ep03_final.mp4
 $PY shorts.py $W/ep03_final.mp4 $W/shorts

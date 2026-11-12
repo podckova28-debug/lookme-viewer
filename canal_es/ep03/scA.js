@@ -74,7 +74,7 @@ SC.s01 = (X, t) => {
     { t: Lt('s01_02') - .05, cx: 960, cy: 560, z: 1.12, z2: 1.18, lock: 1 },
     { t: Lt('s01_03') - .05, cx: 1180, cy: 700, z: 1.9, z2: 2.0, lock: 1 },
     { t: Lt('s01_04') - .05, cx: 900, cy: 520, z: 1.6, z2: 1.7, lock: 1 },
-    { t: Lt('s01_05') - .05, cx: 1450, cy: 420, z: 2.0, z2: 2.15, lock: 1 },
+    { t: Lt('s01_05') - .05, cx: 1180, cy: 470, z: 1.5, z2: 1.58, lock: 1 },   // the pigeon and your face in one shot
   ]);
   const st = stage(cam); st.wld(g => drawSet(g, 'street'));
   const walkEnd = Lt('s01_03') - .3, hx = mix(380, 900, R(t, 0, walkEnd, io)), hp = { x: hx, y: FEET, s: S0, t, walk: t < walkEnd ? 1 : 0, phase: walkPh(hx), look: [10, 0], mouth: .2 };
@@ -138,7 +138,7 @@ SC.s03 = (X, t) => {
     mCat = drawAnimal(g, 'croqueta', x, y + stomp * .4, .9, { head: 'bored', t, open: openOf(t, ['s03_03', 's03_05', 's03_07', 's03_08']), tilt: Math.sin(t * 1.3) * .05 - (lect ? .06 : 0), squash: stomp * .004 }); });
   compose2(X, st, { amt: 0 });
   if (t < Lt('s03_04')) zzz(X, ...worldToScreen(cam, 300, 560), t, 1 - R(t, Lt('s03_03'), Lt('s03_03') + .3));
-  for (const id of ['s03_03', 's03_05', 's03_07', 's03_08']) say(X, cam, t, id, mCat, { dx: 60, dy: -140 });
+  for (const id of ['s03_03', 's03_05', 's03_07', 's03_08']) say(X, cam, t, id, mCat, { r: 70, w: 500 });   // above the cat, narrow: never over your face
   if (t > plate && t < up) sticker(X, 'VACÍO', R(t, plate + .3, plate + .5, back), ...worldToScreen(cam, 1180, 760), 60, '#ffffff');
   if (t > Lt('s03_09') - .05) { const items = ['LA COMIDA: CARTÓN', 'TU MÚSICA: NO', 'TUS AMIGOS: TAMPOCO'];
     sticker(X, 'OPINIONES DE CROQUETA', R(t, Lt('s03_09'), Lt('s03_09') + .2, outC), 1040, 120, 56, '#ffd34d');
@@ -153,7 +153,7 @@ SC.s04 = (X, t) => {
     { t: Lt('s04_02') - .05, cx: 1420, cy: 780, z: 2.1, z2: 2.2, lock: 1 },
     { t: Lt('s04_03') - .05, cx: 780, cy: 560, z: 1.45, z2: 1.5, lock: 1 },
     { t: Lt('s04_04') - .05, cx: 900, cy: 480, z: 2.2, z2: 2.3, lock: 1 },
-    { t: Lt('s04_05') - .05, cx: 1300, cy: 700, z: 1.5, z2: 1.55, lock: 1 },
+    { t: Lt('s04_05') - .05, cx: 1300, cy: 600, z: 1.35, z2: 1.4, lock: 1 },
     { t: Lt('s04_06') - .05, cx: 1430, cy: 780, z: 2.5, z2: 2.6, lock: 1 },
     { t: Lt('s04_07') - .05, cx: 860, cy: 520, z: 1.7, z2: 1.75, lock: 1 },
     { t: rule, cx: 960, cy: 560, z: 1.0, lock: 1 },
@@ -221,7 +221,7 @@ SC.s05 = (X, t) => {
     st.col(g => drawChar(g, 'tu', standing(820, { t, look: [16, 4], mouth: -.1, brow: .4 })));
   }
   compose2(X, st, { amt: 0 });
-  say(X, cam, t, 's05_02', mA, { dx: -420, dy: -120 }); say(X, cam, t, 's05_03', mB, { dx: -40, dy: -150 });
+  say(X, cam, t, 's05_02', mA, { dx: -420, dy: -120 }); say(X, cam, t, 's05_03', mB, { dx: 1 });
   say(X, cam, t, 's05_06', mF, { dx: -560, dy: -110 }); say(X, cam, t, 's05_07', mF, { dx: -520, dy: -110 });
   if (t > Lt('s05_08') - .05) bigCounter(X, 'FIRULAIS VS. CARTERO:', t > Lt('s05_09') - .05 ? '0 – 2555' : '0 – …', R(t, Lt('s05_08'), Lt('s05_08') + .25, outC));
 };

@@ -22,7 +22,7 @@ SC.s06 = (X, t) => {
   st.wld(g => { drawChar(g, 'ex2', standing(380, { t, look: [6, 4], mouth: .1 })); drawChar(g, 'ex5', standing(560, { t, look: [8, 4], mouth: .1 })); });
   // profe: comes in with the graded papers
   if (t > exam) { const px = mix(1900, 1240, R(t, exam, exam + 1.4, io)), pp = { x: px, y: FEET, s: S0, t, flip: -1, walk: t < exam + 1.4 ? 1 : 0, phase: walkPh(px), look: [-14, 4], mouth: -.2, brow: .6 };
-    if (t > Lt('s06_08') - .2) { pp.hR = [160, -440]; pp.holdR = (g, x, y) => scorePaper(g, x - 10, y - 40, .9, -.1, '10/10'); }
+    if (t > Lt('s06_08') - .2) { pp.hR = [160, -440]; pp.holdR = (g, x, y) => { g.save(); g.translate(x - 10, y - 40); g.scale(pp.flip < 0 ? -1 : 1, 1); scorePaper(g, 0, 0, .9, -.1, '10/10'); g.restore(); }; }   // readable whichever way he faces
     if (speaking(t, 's06_08')) pp.open = talk(t, 's06_08');
     if (t > Le('s06_08')) { pp.lid = .45; pp.brow = .9; pp.mouth = -.3; }
     if (t > Lm('s06_09', .5)) { pp.flip = 1; pp.look = [16, 10]; }
@@ -67,7 +67,7 @@ SC.s07 = (X, t) => {
       wanted(g, 1440, 520, -.02, 'turtle', 'TORTUGA', t > Lm('s07_04', .75) ? (t - Lm('s07_04', .75)) : 0, t); });
     compose2(X, st, { amt: 0 });
     if (t < Lt('s07_02')) sticker(X, 'DETECTIVE DE MASCOTAS', R(t, .3, .6, back), 560, 60, 70);
-    if (t > Lm('s07_04', .45) && t < street) sticker(X, '2 AÑOS PERDIDA… EN SU JARDÍN', R(t, Lm('s07_04', .45), Lm('s07_04', .45) + .2, back), 980, 940, 52, '#ffffff');
+    if (t > Lm('s07_04', .45) && t < street) sticker(X, '2 AÑOS PERDIDA… EN SU JARDÍN', R(t, Lm('s07_04', .45), Lm('s07_04', .45) + .2, back), 1060, 975, 52, '#ffffff');
     return;
   }
   const cam = shots(t, [], [
@@ -114,11 +114,12 @@ SC.s08 = (X, t) => {
   // the gang on the path; they go quiet and scatter when you ask about Pepe
   const flee = Le('s08_07') + .2; let mG = null;
   st.col(g => GANG.forEach(([hue, br, sa], i) => { const u = R(t, flee + i * .1, flee + .9 + i * .1, inC), x = 1360 + i * 120 + u * 500, y = 960 + (i % 2) * 18 - u * 700;
-    const m = pigeonTalk(g, x, y, .85, { flip: t > Lt('s08_06') ? 1 : -1, tint: i ? [hue, br, sa] : null, peck: t < Lt('s08_06') ? Math.max(0, Math.sin(t * 2.6 + i)) * .6 : 0, tilt: t > Lt('s08_06') ? -.15 : 0, open: i === 1 ? openOf(t, ['s08_07']) : 0 }); if (i === 1) mG = m; }));
+    if (u > 0) { g.save(); g.translate(x, y); g.rotate(Math.sin(t * 30 + i * 2) * .3); g.scale(1, 1 - .15 * Math.abs(Math.sin(t * 30 + i * 2))); g.translate(-x, -y); }   // flapping off
+    const m = pigeonTalk(g, x, y, .85, { flip: t > Lt('s08_06') ? 1 : -1, tint: i ? [hue, br, sa] : null, peck: t < Lt('s08_06') ? Math.max(0, Math.sin(t * 2.6 + i)) * .6 : 0, tilt: t > Lt('s08_06') ? -.15 : 0, open: i === 1 ? openOf(t, ['s08_07']) : 0 }); if (u > 0) g.restore(); if (i === 1) mG = m; }));
   compose2(X, st, { amt: 0 });
   if (t > Lt('s08_02') - .05 && t < Lt('s08_03')) { [[300, 820, 'GUAU', '¡Hola!'], [1700, 900, 'RUU', '¡Hola!'], [520, 640, 'PÍO', '¡Hola!']].forEach(([x, y, s, w], i) => gag(X, cam, t, [x, y], Lt('s08_02') + i * .3, .7, s, w, { size: 36, w: 260 })); }
   if (t > Lm('s08_02', .5) && t < Lt('s08_03')) sticker(X, 'PEPE: …', R(t, Lm('s08_02', .55), Lm('s08_02', .55) + .2, back), 1250, 200, 64, '#ffffff');
-  if (t > Lt('s08_03') && t < offer) bubble(X, '¿?', ...worldToScreen(cam, 980, 380), R(t, Lt('s08_03'), Lt('s08_03') + .25, back), 60);
+  if (t > Lt('s08_03') && t < offer) bubble(X, '¿?', ...worldToScreen(cam, 980, 470), R(t, Lt('s08_03'), Lt('s08_03') + .25, back), 60);
   if (t > Lt('s08_05')) { const [px, py] = worldToScreen(cam, 1080, 735); X.save(); X.globalAlpha = R(t, Lt('s08_05'), Lt('s08_05') + .3) * (1 - R(t, Lt('s08_06') - .2, Lt('s08_06'))); X.strokeStyle = '#ffd34d'; X.lineWidth = 8; X.setLineDash([22, 16]); X.lineDashOffset = -t * 60; X.beginPath(); X.arc(px, py, 70 * cam.z, 0, 7); X.stroke(); X.restore(); }
   say(X, cam, t, 's08_07', mG, { dx: -1, r: 60 });
 };
@@ -137,7 +138,7 @@ SC.s09 = (X, t) => {
   ]);
   const st = stage(cam); st.wld(g => drawSet(g, 'street'));
   // passers-by stop and stare at the boy shouting at birds
-  if (t > Lt('s09_05') - .3) st.wld(g => { drawChar(g, 'ex1', standing(260, { t, look: [14, 4], mouth: -.2, wide: .5, brow: .5 })); drawChar(g, 'ex4', standing(1640, { t, flip: -1, look: [-14, 4], mouth: -.2, wide: .5 })); });
+  if (t > Lt('s09_05') - .3) st.wld(g => { drawChar(g, 'ex1', standing(260, { t, look: [14, 4], mouth: -.2, wide: .5, brow: .5 })); drawChar(g, 'ex4', standing(500, { t, look: [14, 4], mouth: -.2, wide: .5 })); });   // both on the left: Renata's path stays clear
   const hp = standing(860, { t, look: [14, 10], mouth: .4, hR: [140, -420], holdR: (g, x, y) => drawSpr(g, 'cookie', x + 10, y + 18, 50) });
   if (t > Lt('s09_03')) { hp.look = [16, 14]; hp.brow = .6; hp.mouth = -.2; }
   if (t > Lt('s09_04') - .1 && t < Lt('s09_05') + .5) { hp.hR = [120, -640]; hp.hL = [-170 + Math.sin(t * 16) * 30, -500]; hp.open = speaking(t, 's09_04') ? talk(t, 's09_04') : .3; hp.brow = .9; hp.jump = 10 * Math.abs(Math.sin(t * 8)); }
@@ -178,7 +179,6 @@ SC.s10 = (X, t) => {
   st.col(g => lyingHead(g, 300, 680, { sleep: 0, wide: t < sleepT ? .4 : 0, lid: t > sleepT ? .55 : 0, look: t > dogs && t < pillow ? [16, -10] : [6, -14], mouth: -.2, brow: .6 }));
   st.wld(g => bedFront(g, t > pillow && t < sleepT ? 2.3 : 1));   // blanket pulled over your head
   st.wld(g => drawSpr(g, 'catSleep', 1260, 940, 120));
-  st.wld(g => { g.save(); g.filter = 'brightness(.3) saturate(.4)'; drawSpr(g, 'dogBStand', 1180, 560, 56, { flip: 1 }); drawSpr(g, 'firuStand', 1420, 556, 70, { flip: -1 }); g.restore(); });   // the night dogs, far away through the window
   let mM = null;
   if (t < dogs) st.col(g => { const x = 380 + Math.sin(t * 2.3) * 60, y = 560 + Math.sin(t * 3.7) * 30; drawSpr(g, 'mosquito', x, y, 80, { flip: Math.cos(t * 2.3) > 0 ? -1 : 1, rot: Math.sin(t * 25) * .04 }); mM = [x - 10, y - 50]; });
   compose2(X, st, { amt: 0 });
@@ -187,7 +187,7 @@ SC.s10 = (X, t) => {
   X.save(); X.globalCompositeOperation = 'screen'; X.globalAlpha = .25; const [wx, wy] = worldToScreen(cam, 1320, 330); const gr = X.createRadialGradient(wx, wy, 20, wx, wy, 520 * cam.z); gr.addColorStop(0, 'rgba(150,170,255,1)'); gr.addColorStop(1, 'rgba(150,170,255,0)'); X.fillStyle = gr; X.fillRect(0, 0, W, H); X.restore();
   say(X, cam, t, 's10_02', mM, { dx: 1, r: 40 });
   // the dogs outside, through the window
-  say(X, cam, t, 's10_04', [1170, 520], { dx: -1, r: 40 }); say(X, cam, t, 's10_05', [1430, 515], { dx: 1, r: 40 }); say(X, cam, t, 's10_06', [1180, 520], { dx: 1, r: 40 });
+  say(X, cam, t, 's10_04', [1230, 430], { dx: -1, r: 30 }); say(X, cam, t, 's10_05', [1420, 450], { dx: 1, r: 30 }); say(X, cam, t, 's10_06', [1260, 400], { dx: 1, r: 30 });   // voices from the street, through the window
   if (t > Lt('s10_07') && t < sleepT) sticker(X, 'NADIE.', R(t, Lm('s10_07', .2), Lm('s10_07', .2) + .2, back), 1250, 120, 80, '#ffffff');
   if (t > sleepT) { bigCounter(X, 'TÚ:', '3 H', R(t, Lm('s10_08', .1), Lm('s10_08', .1) + .2, outC), 80, 70); bigCounter(X, 'CROQUETA:', '14 H', R(t, Lm('s10_08', .55), Lm('s10_08', .55) + .2, outC), 80, 200); }
   say(X, cam, t, 's10_09', [1280, 860], { dx: -1, r: 50 });

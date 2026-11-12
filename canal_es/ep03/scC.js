@@ -3,12 +3,17 @@ const CHANNEL_NAME = 'PONLE QUE…';
 function dashRing(X, x, y, r, t, col = '#ffd34d') { X.save(); X.strokeStyle = col; X.lineWidth = 8; X.setLineDash([22, 16]); X.lineDashOffset = -t * 60; X.beginPath(); X.arc(x, y, r, 0, 7); X.stroke(); X.restore(); }
 function leash(g, a, b) { g.save(); g.strokeStyle = '#e0457b'; g.lineWidth = 5; g.lineCap = 'round'; g.beginPath(); g.moveTo(a[0], a[1]); g.quadraticCurveTo((a[0] + b[0]) / 2, Math.max(a[1], b[1]) + 60, b[0], b[1]); g.stroke(); g.restore(); }
 /* a comic panel showing a little world (world coords 0..1920 x 0..1080 scaled into the box) */
-/* the camera that maps a panel's little world onto the screen (for bubbles drawn on top of a panel) */
-const panelCam = (x, y, w) => { const k = w / W; return { cx: (W / 2 - x) / k, cy: (H / 2 - y) / k, z: k }; };
-function panel(X, x, y, w, h, a, draw, rot = 0) { if (a <= 0) return; const s = .85 + .15 * back(a);
-  X.save(); X.setTransform(1, 0, 0, 1, 0, 0); X.globalAlpha = clamp(a); X.translate(x + w / 2, y + h / 2); X.rotate(rot); X.scale(s, s); X.translate(-w / 2, -h / 2);
-  X.fillStyle = '#ffffff'; X.fillRect(-12, -12, w + 24, h + 24); X.save(); X.beginPath(); X.rect(0, 0, w, h); X.clip(); X.scale(w / W, h / H); draw(X); X.restore();
-  X.lineWidth = 8; X.strokeStyle = '#141014'; X.strokeRect(-12, -12, w + 24, h + 24); X.restore(); }
+/* a 16:9 comic panel: the little world (view cx, cy, z) is drawn in its own layer, then placed at x, y, w wide.
+   Returns the camera that maps that world onto the screen, for bubbles drawn over the panel (the small tilt is ignored). */
+function panel(X, x, y, w, a, draw, rot = 0, v = { cx: W / 2, cy: H / 2, z: 1 }) { if (a <= 0) return null;
+  const P = layer('PANEL'), zc = window.__camz; window.__camz = 1;   // no depth-of-field blur inside a panel
+  P.setTransform(v.z, 0, 0, v.z, W / 2 - v.cx * v.z, H / 2 - v.cy * v.z); draw(P); P.setTransform(1, 0, 0, 1, 0, 0); window.__camz = zc;
+  const h = w * 9 / 16, s = .85 + .15 * back(a);
+  X.save(); X.setTransform(1, 0, 0, 1, 0, 0); X.filter = 'none'; X.globalCompositeOperation = 'source-over'; X.globalAlpha = clamp(a);
+  X.translate(x + w / 2, y + h / 2); X.rotate(rot); X.scale(s, s); X.translate(-w / 2, -h / 2);
+  X.fillStyle = '#ffffff'; X.fillRect(-12, -12, w + 24, h + 24); X.drawImage(P.canvas, 0, 0, W, H, 0, 0, w, h);
+  X.lineWidth = 8; X.strokeStyle = '#141014'; X.strokeRect(-12, -12, w + 24, h + 24); X.restore();
+  const k = v.z * w / W; return { cx: v.cx - (x + w / 2 - W / 2) / k, cy: v.cy - (y + h / 2 - H / 2) / k, z: k }; }
 /* the hero, fading in and out: tomorrow nobody will see you */
 function flickerAlpha(t, t0, k = 1) { if (t < t0) return 1; const u = t - t0; return 1 - k * (.55 + .45 * Math.sin(u * 23) * Math.sin(u * 7.1)) * R(t, t0, t0 + .3); }
 
@@ -26,7 +31,7 @@ SC.s11 = (X, t) => {
     s2.col(g => drawChar(g, 'tu', standing(560, { t, look: [16, 2], mouth: -.3, blush: 1, brow: .7, hR: [70, -640] })));
     compose2(X, s2, { amt: 0 });
     say(X, cam, t, 's11_06', mC, { dx: -1, r: 80 });
-    if (t > Le('s11_06')) comicWord(X, '¡¿3 VECES?!', ...worldToScreen(cam, 1100, 330), (t - Le('s11_06')) * .8, 80);
+    if (t > Le('s11_06')) comicWord(X, '¡¿3 VECES?!', ...worldToScreen(cam, 1100, 430), (t - Le('s11_06')) * .8, 80);
     ruleCard(X, 2, 'LOS ANIMALES NO MIENTEN.', 'Y NO GUARDAN SECRETOS.', R(t, rule, rule + .4, outC));
     return;
   }
@@ -34,21 +39,21 @@ SC.s11 = (X, t) => {
   compose2(X, st, { amt: 0 });
   X.save(); X.fillStyle = 'rgba(20,16,30,.55)'; X.fillRect(0, 0, W, H); X.restore();
   if (t < p1) { sticker(X, 'SECRETOS DEL BARRIO', R(t, Lt('s11_02'), Lt('s11_02') + .25, back), 620, 460, 84); return; }
-  // 1. doña Lupe talks to her plants (her dog tells you)
+  // three panels pile up like cards: 1. doña Lupe talks to her plants (her dog tells you)
   let m1 = null, m2 = null;
-  panel(X, 60, 120, 580, 760, R(t, p1, p1 + .3, outC), g => { drawSet(g, 'park');
-    drawSpr(g, 'plant', 1000, 940, 300); drawSpr(g, 'plant', 1300, 950, 220, { flip: -1 });
-    m1 = drawAnimal(g, 'dogB', 520, 1000, 1.1, { t, open: t < Lt('s11_04') ? Math.abs(Math.sin(t * 10)) * .6 : 0, tilt: .2 }); }, -.03);
-  if (t > p1 + .5 && m1) gag(X, panelCam(60, 120, 580), t, m1, p1 + .5, 1.6, 'GUAU', 'Les habla a sus plantas.', { size: 34, w: 300, r: 120 });
+  const c1 = panel(X, 70, 60, 1000, R(t, p1, p1 + .3, outC), g => { drawSet(g, 'park');
+    drawSpr(g, 'plant', 1020, 950, 340); drawSpr(g, 'plant', 1280, 960, 260, { flip: -1 });
+    m1 = drawAnimal(g, 'dogB', 620, 1010, 1.4, { t, open: t < Lt('s11_04') ? Math.abs(Math.sin(t * 10)) * .6 : 0, tilt: .2 }); }, -.03, { cx: 900, cy: 760, z: 1.55 });
+  if (c1 && t > p1 + .5 && t < p2) gag(X, c1, t, m1, p1 + .5, 1.6, 'GUAU', 'Les habla a sus plantas.', { size: 40, w: 380, r: 120, dx: 1 });
   // 2. profe Ramírez sings in the shower (his cat tells you)
-  panel(X, 670, 140, 580, 760, R(t, p2, p2 + .3, outC), g => { drawSet(g, 'bathroom');
-    drawChar(g, 'profe', { x: 960, y: FEET, s: S0, t, look: [0, -10], open: .3 + .5 * Math.abs(Math.sin(t * 5)), lid: 1, hR: [150, -620], hL: [-150, -620] }); notes(g, 1160, 300, t, 1);
-    g.save(); g.filter = 'grayscale(1) brightness(1.2)'; m2 = drawAnimal(g, 'croqueta', 520, 1000, 1.1, { head: 'wide', t, open: t < p3 ? Math.abs(Math.sin(t * 9)) * .6 : 0 }); g.restore(); }, .02);
-  if (t > p2 + .5 && m2) gag(X, panelCam(670, 140, 580), t, m2, p2 + .5, 1.6, 'MIAU', 'Canta en la regadera.', { size: 34, w: 300, r: 120 });
+  const c2 = panel(X, 470, 250, 1000, R(t, p2, p2 + .3, outC), g => { drawSet(g, 'bathroom');
+    drawChar(g, 'profe', { x: 960, y: FEET, s: S0, t, key: 'panel', look: [0, -10], open: .3 + .5 * Math.abs(Math.sin(t * 5)), lid: 1, hR: [150, -620], hL: [-150, -620] }); notes(g, 1160, 330, t, 1);
+    g.save(); g.filter = 'grayscale(1) brightness(1.2)'; m2 = drawAnimal(g, 'croqueta', 560, 990, 1.3, { head: 'wide', t, open: t < p3 ? Math.abs(Math.sin(t * 9)) * .6 : 0 }); g.restore(); }, .025, { cx: 820, cy: 640, z: 1.45 });
+  if (c2 && t > p2 + .5 && t < p3) gag(X, c2, t, m2, p2 + .5, 1.6, 'MIAU', 'Canta en la regadera.', { size: 40, w: 380, r: 120, dx: -1 });
   // 3. Croqueta tells the whole street what you say in your sleep
-  panel(X, 1280, 110, 580, 760, R(t, p3, p3 + .3, outC), g => { drawSet(g, 'street'); fence(g, 700, 1300, 960, 140);
+  panel(X, 850, 420, 1000, R(t, p3, p3 + .3, outC), g => { drawSet(g, 'street'); fence(g, 700, 1300, 960, 140);
     drawAnimal(g, 'croqueta', 1000, 830, 1.0, { head: 'bored', t, open: Math.abs(Math.sin(t * 8)) * .5 }); drawAnimal(g, 'dogA', 700, 1010, 1.0, { t, tilt: .2 }); drawAnimal(g, 'dogB', 1300, 1010, .95, { t, tilt: -.2 });
-    drawChar(g, 'tu', standing(380, { t, look: [16, 2], mouth: -.3, sweat: 1 })); }, -.02);
+    drawChar(g, 'tu', standing(380, { t, key: 'panel', look: [16, 2], mouth: -.3, sweat: 1 })); }, -.02, { cx: 900, cy: 720, z: 1.4 });
 };
 
 /* ================================================================ 12. Canela runs to you */
@@ -106,11 +111,11 @@ SC.s13 = (X, t) => {
   compose2(X, st, { amt: 0 });
   // memory panel: you, at night, telling Croqueta everything
   if (t < back0) { const a = R(t, .2, .6, outC) * (1 - R(t, back0 - .3, back0));
-    panel(X, 1040, 120, 760, 430, a, g => { drawSet(g, 'bedroom'); bedBack(g);
-      drawChar(g, 'tu', { x: 640, y: FEET, s: S0, t, look: [16, 12], open: Math.abs(Math.sin(t * 6)) * .5, blush: .7, hL: [-70, -380], hR: [80, -380] }); bedFront(g, .6);
+    panel(X, 1040, 110, 780, a, g => { drawSet(g, 'bedroom'); bedBack(g);
+      drawChar(g, 'tu', { x: 640, y: FEET, s: S0, t, key: 'panel', look: [16, 12], open: Math.abs(Math.sin(t * 6)) * .5, blush: .7, hL: [-70, -380], hR: [80, -380] }); bedFront(g, .6);
       drawAnimal(g, 'croqueta', 420, 716, .9, { head: 'wide', t, tilt: .15 });
       for (let i = 0; i < 4; i++) heartPop(g, 700 + i * 70, 330, loopU(t, i * .35, 1.4), 1.4);
-      nightTint(g, .6); }, .02);
+      nightTint(g, .6); }, .02, { cx: 760, cy: 600, z: 1.25 });
     if (t > Lt('s13_03')) { const a3 = R(t, Lt('s13_03'), Lt('s13_03') + .3, back) * (1 - R(t, back0 - .3, back0)); sticker(X, '¿Y SI LO SUPIERA TODO EL MUNDO?', a3, 980, 620, 54, '#ffffff'); } }
   say(X, cam, t, 's13_05', mC, { dx: 1, r: 80 });
   if (t > Lt('s13_04') && t < Lt('s13_05')) sticker(X, 'NO ME LO DIGAS', R(t, Lt('s13_04') + .3, Lt('s13_04') + .5, back), 90, 90, 70, '#ffffff');
@@ -181,7 +186,7 @@ SC.s15 = (X, t) => {
   let mP = null; st.col(g => { mP = pigeonTalk(g, 1080, 792, .62, { flip: -1, front: t > Lt('s15_04'), open: openOf(t, ['s15_06', 's15_08', 's15_10', 's15_12']), tilt: Math.sin(t * 1.1) * .04 }); });
   compose2(X, st, { amt: 0 });
   if (t > Lt('s15_02') && t < Lt('s15_03')) { const items = ['croqueta', 'hamster', 'canela']; items.forEach((k, i) => { const a0 = Lm('s15_02', .25 + i * .25); if (t > a0) { const a = R(t, a0, a0 + .25, back), [x, y] = [560 + i * 400, 200];
-      X.save(); X.globalAlpha = a; X.translate(x, y); X.scale(a, a); circ(X, 0, 0, 90, '#ffffff', 6); X.save(); X.beginPath(); X.arc(0, 0, 84, 0, 7); X.clip(); drawAnimal(X, k, 0, 150, k === 'hamster' ? 1.3 : .7, { t }); X.restore(); X.restore(); } }); }
+      X.save(); X.globalAlpha = a; X.translate(x, y); X.scale(a, a); circ(X, 0, 0, 90, '#ffffff', 6); X.save(); X.beginPath(); X.arc(0, 0, 84, 0, 7); X.clip(); const [ay, as] = { croqueta: [150, .7], hamster: [150, 1.3], canela: [178, 1.05] }[k]; drawAnimal(X, k, 0, ay, as, { t }); X.restore(); X.restore(); } }); }
   // Pepe's words: golden, no scramble needed: he speaks perfect Spanish
   for (const id of ['s15_06', 's15_08', 's15_10', 's15_12']) say(X, cam, t, id, mP, { dx: 1, r: 40, size: 64, w: 760 });
   if (t > beak - .3 && t < Lt('s15_06')) { const [px, py] = worldToScreen(cam, 1080, 735); dashRing(X, px, py, 70 * cam.z, t); }

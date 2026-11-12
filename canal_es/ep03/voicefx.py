@@ -7,7 +7,7 @@ import numpy as np, soundfile as sf
 from scipy.signal import resample_poly
 
 HERE = os.path.dirname(os.path.abspath(__file__)); SRC, DST = sys.argv[1], sys.argv[2]; os.makedirs(DST, exist_ok=True)
-RATE = {'bigotes': 1.22, 'mosquito': 1.30, 'canela': 1.12, 'pepe': .94}   # >1: faster and higher
+RATE = {'bigotes': 1.1, 'mosquito': 1.12}   # >1: faster and higher. The delivered voices are already pitched per animal; only the two smallest get a little more
 lines = json.load(open(os.path.join(HERE, 'vo_lines.json'), encoding='utf-8'))
 for l in lines:
     s, d = os.path.join(SRC, l['id'] + '.wav'), os.path.join(DST, l['id'] + '.wav'); r = RATE.get(l['who'])

@@ -91,9 +91,10 @@ function soundRings(X, sx, sy, k, t, flip = 1) { if (k <= 0) return; X.save(); X
    For the first .3 s it shows the animal's sound, then the letters scramble into the translated line, typed at the speed of the voice. */
 function talkBubble(X, cam, wx, wy, id, sound, o = {}) {
   const L = id ? T().L[id] : [o.t0, o.d]; if (!L) return; const t0 = L[0], d = L[1], t = o.t;   // id null: an unvoiced gag line (o.text, o.t0, o.d)
-  const a = R(t, t0 - .15, t0 + .1, outC) * (1 - R(t, t0 + d + (o.hold == null ? .7 : o.hold), t0 + d + (o.hold == null ? .7 : o.hold) + .25));
+  const hold = o.hold == null ? .3 : o.hold, a = R(t, t0 - .04, t0 + .12, outC) * (1 - R(t, t0 + d + hold, t0 + d + hold + .2));   // short pre-roll and hold: no bubble leaks into the neighbouring shot
   if (a <= 0) return;
-  const txt = o.text || (typeof VO_TEXT !== 'undefined' && VO_TEXT[id]) || id, [mx, my] = worldToScreen(cam, wx, wy);
+  const txt = o.text || (typeof VO_TEXT !== 'undefined' && VO_TEXT[id]) || id; let [mx, my] = worldToScreen(cam, wx, wy);
+  mx = clamp(mx, 90, W - 90); my = clamp(my, 260, H - 150);   // speaker off-screen: the bubble sits at that edge, tail pointing out
   const size = o.size || 54, maxW = o.w || 700;
   X.save(); X.setTransform(1, 0, 0, 1, 0, 0); X.font = `bold ${size}px ComicNeue`;
   const lines = wrapLines(X, txt, maxW), lw = Math.max(...lines.map(l => X.measureText(l).width)), lh = size * 1.12;
@@ -101,7 +102,7 @@ function talkBubble(X, cam, wx, wy, id, sound, o = {}) {
   const rr = (o.r || 110) * (cam.z || 1);   // speaker's head radius on screen: side bubbles sit beside the head, centred ones above it
   let bx, by; if (o.dx == null) { bx = mx - bw / 2; by = my - rr * 1.7 - bh; } else { bx = o.dx < 0 ? mx - rr * 1.15 - bw : mx + rr * 1.15; by = my - rr * .9 - bh * .6; }
   bx = clamp(bx, 30, W - bw - 30); by = clamp(by, 24, H - bh - 30);
-  const s = .85 + .15 * back(R(t, t0 - .15, t0 + .15)); X.translate(bx + bw / 2, by + bh / 2); X.scale(s, s); X.translate(-bw / 2, -bh / 2); X.globalAlpha = clamp(a);
+  const s = .85 + .15 * back(R(t, t0 - .04, t0 + .2)); X.translate(bx + bw / 2, by + bh / 2); X.scale(s, s); X.translate(-bw / 2, -bh / 2); X.globalAlpha = clamp(a);
   // tail toward the mouth
   const tx = clamp(mx - bx, 50, bw - 50), ty = bh, ex = tx + (mx - bx - tx) * .5, ey = ty + Math.max(30, ((my - by) - ty) * .5);   // a short tail aimed at the mouth
   X.beginPath(); X.moveTo(tx - 26, ty - 4); X.quadraticCurveTo(tx - 6, (ty + ey) / 2, ex, ey); X.quadraticCurveTo(tx + 10, (ty + ey) / 2, tx + 26, ty - 4); X.closePath();
