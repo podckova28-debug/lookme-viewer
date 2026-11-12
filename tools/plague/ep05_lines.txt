@@ -1,0 +1,59 @@
+C01|NARRATOR|September, 1740. Six British warships leave Portsmouth under Commodore George Anson, with nearly two thousand men aboard. Their mission: sail around South America and raid Spanish treasure ships.
+C02|NARRATOR|Rounding Cape Horn, the men begin to fall ill. Their gums swell. Old wounds open up again. Men who were injured decades ago feel their long-healed bones come apart.
+C03|NARRATOR|Almost four years later, Anson comes home with a fortune in Spanish silver. But well over a thousand of his men are dead. Only four were killed by the enemy.
+C04|SCURVY|The Spanish took four. I took the rest.
+L01|NARRATOR|So who is he? Scurvy isn't a germ. You can't catch him from anyone. He's what happens when your body runs out of one thing: vitamin C.
+L02|NARRATOR|Your body uses vitamin C to make collagen, the glue that holds you together. It's in your skin, your gums, your blood vessels and your bones. And it's constantly being worn out and rebuilt.
+L03|NARRATOR|Without vitamin C, the rebuilding stops. Slowly, the glue gives way, and you start to come apart.
+L04|SCURVY|No germs. No fever. I simply take away the glue.
+L05|NARRATOR|But where did he come from? Almost every animal makes its own vitamin C. Dogs, cats, goats, rats. They never get scurvy, whatever they eat.
+L06|NARRATOR|But about sixty million years ago, our early primate ancestors lost that ability. A single gene, the one that makes the last step of vitamin C, broke.
+L07|NARRATOR|They lived in forests full of fruit, so it didn't matter. The broken gene was passed down to monkeys, to apes, and to us. Guinea pigs and some bats lost it too.
+L08|SCURVY|Your ancestors traded a gene for a bowl of fruit. I've been waiting ever since.
+L09|NARRATOR|The body only stores a few weeks' worth. After one to three months without fresh fruit or vegetables, he arrives.
+S01|NARRATOR|So what does he do to you? First, you just feel tired. Weak, gloomy, with aching legs and joints. Officers often mistook it for laziness.
+S02|NARRATOR|Then the spots. Tiny red and purple dots around the hairs on the legs, and big bruises from the slightest bump. Even the hairs themselves grow twisted, like corkscrews.
+S03|NARRATOR|Then the gums. They swell, turn purple and spongy, and bleed at a touch. The teeth loosen, and some fall out. And the breath became famously foul.
+S04|NARRATOR|And then, the strangest part. Old scars open up again. Bones that healed years ago come apart at the old break. Without the glue, the body forgets its old repairs.
+S05|NARRATOR|In the end, the victim bleeds inside, the heart gives out, and some died suddenly, just from being moved.
+S06|SCURVY|Every scar you ever had, I give back. Free of charge.
+L10|NARRATOR|He's an old enemy. Ancient writers described soldiers with rotting gums and swollen legs. So did crusaders in the 1200s.
+L11|NARRATOR|But on land, he was rarely a monster. There was almost always something fresh to eat. It was the sea that gave him his kingdom.
+L12|NARRATOR|From the 1500s, ships began making voyages that lasted months. Sailors lived on salt beef, dry biscuit and beer. Almost no vitamin C at all.
+L13|NARRATOR|By one estimate, between 1500 and 1800, he killed some two million sailors. More than storms, shipwrecks and enemy guns combined.
+L14|SCURVY|Long voyage. No fresh food. My favourite kind of ship.
+L15|NARRATOR|In 1497, Vasco da Gama set out to sail around Africa to India. Off East Africa, his men's gums grew so swollen they could hardly eat. When local traders brought them oranges, many recovered.
+L15b|NARRATOR|But on the long way home, the oranges ran out. By the time he reached Portugal, more than half his crew were dead.
+L16|NARRATOR|In 1536, the French explorer Jacques Cartier was trapped by ice on the St. Lawrence River in Canada. Twenty-five of his men died. Then a local Iroquoian man named Domagaya showed them a cure: a tea made from the needles and bark of a tree.
+L17|NARRATOR|Within days, the men were walking again. The cure had been found. And then it was forgotten. Again and again.
+L17b|NARRATOR|In 1601, the English captain James Lancaster gave his crew three spoonfuls of lemon juice every morning. His men stayed healthy. The other ships in his fleet were so sick, his sailors had to help work them.
+L18|SCURVY|Lemons. I hate lemons.
+L19|NARRATOR|Then, in 1747, a Scottish naval surgeon named James Lind did something new. On board HMS Salisbury, he took twelve sailors with scurvy, and split them into six pairs.
+L20|NARRATOR|Each pair got a different cure. Cider. Diluted sulfuric acid. Vinegar. Seawater. A spicy paste. And two oranges and a lemon every day.
+L21|NARRATOR|The citrus pair recovered so fast that within six days, one of them was fit for duty again. It was one of the first controlled trials in medical history.
+L21b|NARRATOR|But Lind himself wasn't sure what it meant. He suggested boiling the juice down to store it, and boiling destroys vitamin C. The Navy took almost fifty years to act.
+L22|SCURVY|Fifty years of paperwork. I kept myself busy.
+L23|NARRATOR|Meanwhile, Captain James Cook sailed around the world, and lost almost no men to scurvy. He loaded his ships with sauerkraut, and stopped for fresh food wherever he could.
+L24|NARRATOR|When his sailors refused the sauerkraut, Cook had it served only at the officers' table. Within a week, the crew were demanding their share.
+L24b|NARRATOR|But Cook also praised malt and other remedies that did nothing. So it was hard to tell which of his tricks really worked.
+L25|NARRATOR|Finally, in 1795, pushed by the physician Gilbert Blane, the Royal Navy gave every sailor a daily ration of lemon juice. Within a few years, scurvy almost vanished from the fleet.
+L26|NARRATOR|Healthy crews could now stay at sea for months, blockading the ports of France. Some historians think lemon juice helped Britain win the Napoleonic Wars.
+L26b|NARRATOR|Later, the Navy switched to cheaper limes from its own colonies. That's how British sailors got the nickname Limeys. But limes have far less vitamin C than lemons.
+L27|SCURVY|Cheap limes. Bless the accountants.
+L28|NARRATOR|And so he came back. In 1875, a British Arctic expedition sailed with lime juice, and still came down with scurvy. Doctors started to doubt citrus altogether.
+L29|NARRATOR|New theories blamed tainted tinned meat, or a germ. On Robert Falcon Scott's first Antarctic expedition, in 1902, men fell ill with scurvy, and recovered on fresh seal meat.
+L29b|NARRATOR|On land, he struck whenever fresh food ran out. In the Irish famine of the 1840s, scurvy spread, because potatoes had been the poor's main source of vitamin C. He followed armies, sieges, gold rushes and prison camps.
+L30|SCURVY|When the food runs out, I'm always there.
+L31|NARRATOR|The breakthrough came by accident. In 1907, two Norwegian doctors, Axel Holst and Theodor Frølich, were feeding guinea pigs a diet of grain. The guinea pigs got scurvy.
+L32|NARRATOR|Like us, guinea pigs can't make their own vitamin C. At last, scientists had an animal they could test. Food by food, they could measure what kept scurvy away.
+L33|NARRATOR|In 1912, the biochemist Casimir Funk gave a name to a new idea: vitamins. Tiny substances in food that the body can't live without.
+L34|NARRATOR|And in the 1930s, the Hungarian scientist Albert Szent-Györgyi isolated the anti-scurvy substance, with help from the paprika peppers of his home town, Szeged. He won the Nobel Prize in 1937. It was named ascorbic acid. Literally: no scurvy.
+L35|SCURVY|They named it after me. No scurvy. How hurtful.
+A01|NARRATOR|And for the survivors? The good news: scurvy can be fully cured. With vitamin C, the bleeding stops and the gums heal within days. But lost teeth never grow back, and damage to joints can last.
+A02|NARRATOR|And for the world, he left something enormous: the idea of vitamins. Daily recommended amounts. Vitamins added to food. One of the first controlled trials. And a nickname for every British sailor.
+A03|SCURVY|No vaccine. No hospital. Just fruit. Humiliating.
+L36|NARRATOR|So is he gone? Not quite. Doctors still see him today, in people who eat almost no fruit or vegetables, in people who drink heavily, in old people living alone, and in crises where food aid has no fresh produce.
+L37|NARRATOR|And the cure hasn't changed. A single orange a day is more than enough to keep him away.
+L38|SCURVY|One orange. That's all it ever took. Don't tell anyone.
+L39|NARRATOR|Three centuries at sea. Some two million sailors. Beaten not by a drug, but by lemons, a guinea pig, and a handful of paprika.
+L40|NARRATOR|Next time: a killer that waits in the bite of an animal. Once his symptoms begin, he is almost always fatal. And the first person saved from him was a nine-year-old boy.
