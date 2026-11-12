@@ -52,6 +52,11 @@
   ]
  },
  {
+  "img": "d06a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. A hand-drawn explainer diagram in ink and muted watercolour on aged parchment, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs) where people appear, numbered stages as small circled digits with drawn arrows between them. No words, no letters, only circled digits. Not gory. Inside a large magnified circle: (1) one big brick-shaped virus with rounded corners, (2) next to it a much smaller round flu-like virus, (3) a small scale bar. No people. No people and no human figures anywhere in the picture.",
+  "refs": []
+ },
+ {
   "img": "c07a",
   "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. An old brass microscope on a cluttered desk lit by a candle, glass slides, notebooks. No people and no human figures anywhere in the picture.",
   "refs": []
@@ -157,8 +162,8 @@
   ]
  },
  {
-  "img": "c15a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple clothes of ordinary people of the period. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. An ancient city of mud-brick houses on a river plain with fields, palm trees and a ziggurat; three stickmen in simple tunics walk apart on a dusty road.",
+  "img": "d07a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple clothes of ordinary people of the period. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. A hand-drawn explainer diagram in ink and muted watercolour on aged parchment, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs) where people appear, numbered stages as small circled digits with drawn arrows between them. No words, no letters, only circled digits. Not gory. Two numbered panels: (1) a tiny village of three huts where a small red virus symbol fades away with nobody left to infect, (2) a big ancient walled city with many houses where the red virus symbol jumps from house to house along a chain of arrows.",
   "refs": [
    "84427fc9-09ce-40e6-b032-6f2700874458"
   ]
@@ -234,6 +239,11 @@
   "refs": []
  },
  {
+  "img": "d08a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. A hand-drawn explainer diagram in ink and muted watercolour on aged parchment, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs) where people appear, numbered stages as small circled digits with drawn arrows between them. No words, no letters, only circled digits. Not gory. A parchment map of the Caribbean, Mexico and the Andes with red arrows: (1) from the Caribbean islands, (2) to Tenochtitlan in central Mexico, (3) down to the Inca Andes; tiny ship icons at the start. No people. No people and no human figures anywhere in the picture.",
+  "refs": []
+ },
+ {
   "img": "c24a",
   "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. The great Aztec capital Tenochtitlan on its lake: white temple pyramids, causeways, canals and canoes, volcanoes behind, smoke rising, dusk. People only as tiny distant figures. Any people are tiny distant stickman silhouettes only.",
   "refs": []
@@ -258,6 +268,13 @@
  {
   "img": "c27a",
   "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple clothes of ordinary people of the period. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. A Chinese medicine shop in the 1600s: a stickman healer in a robe and cap holds a small silver tube and a tiny dish of powder; a stickman patient sits on a stool in front of him.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
+ },
+ {
+  "img": "d09a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple clothes of ordinary people of the period. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. A hand-drawn explainer diagram in ink and muted watercolour on aged parchment, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs) where people appear, numbered stages as small circled digits with drawn arrows between them. No words, no letters, only circled digits. Not gory. Four numbered steps: (1) dried scabs ground into powder in a small bowl, (2) a healer blowing the powder through a thin tube toward a stickman's nose, (3) the stickman mildly ill in bed with a few spots, (4) the same stickman healthy, holding a round glowing shield.",
   "refs": [
    "84427fc9-09ce-40e6-b032-6f2700874458"
   ]
@@ -348,6 +365,13 @@
   ]
  },
  {
+  "img": "d10a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple clothes of ordinary people of the period. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. A hand-drawn explainer diagram in ink and muted watercolour on aged parchment, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs) where people appear, numbered stages as small circled digits with drawn arrows between them. No words, no letters, only circled digits. Not gory. Four numbered steps: (1) a brown and white cow with a few small blisters on its udder, (2) a milkmaid stickman's hand with one blister, (3) a doctor scratching the fluid into a stickman boy's arm with a small lancet, (4) the boy standing safely behind a glowing shield while a shadowy speckled figure in a powdered wig stands outside it.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
+ },
+ {
   "img": "c34a",
   "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple clothes of ordinary people of the period. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. An 18th-century country doctor's study. Only two figures: a stickman boy sits on a chair facing the viewer with his shirt sleeve rolled up and BOTH hands resting on his knees; a stickman doctor in a dark coat and a short white wig stands beside him holding a small lancet in one hand, the other hand behind his back. A small jar on the table.",
   "refs": [
@@ -396,9 +420,11 @@
   ]
  },
  {
-  "img": "c40b",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. An old map of the Atlantic Ocean drawn in ink on parchment with a dotted route from Spain to the Caribbean, a small sailing ship drawn on the route. No words. No people and no human figures anywhere in the picture.",
-  "refs": []
+  "img": "d11a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple clothes of ordinary people of the period. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. A hand-drawn explainer diagram in ink and muted watercolour on aged parchment, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs) where people appear, numbered stages as small circled digits with drawn arrows between them. No words, no letters, only circled digits. Not gory. A cross-section of an old sailing ship at sea: inside, a row of small stickman boys sitting apart on benches, a glowing spark passing from one boy's arm to the next along curved arrows; below the ship a dotted line across the ocean from a small Spanish port to the Americas.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
  },
  {
   "img": "c41a",
@@ -415,8 +441,8 @@
   ]
  },
  {
-  "img": "c43a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. A 1960s world map on a wall with many red pins across Asia, Africa and South America, very few in Europe and North America. No people and no human figures anywhere in the picture.",
+  "img": "d12a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. A hand-drawn explainer diagram in ink and muted watercolour on aged parchment, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs) where people appear, numbered stages as small circled digits with drawn arrows between them. No words, no letters, only circled digits. Not gory. Two small world maps side by side with an arrow between them: (1) the world in 1967 with many red areas across Asia, Africa and South America, (2) the world in 1977 with only one small red spot in the Horn of Africa. No people. No people and no human figures anywhere in the picture.",
   "refs": []
  },
  {

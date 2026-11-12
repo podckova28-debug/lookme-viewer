@@ -62,6 +62,13 @@
   ]
  },
  {
+  "img": "d06a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple clothes of ordinary people of the period. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no kings, no plague doctors. A hand-drawn explainer diagram in ink and muted watercolour on aged parchment, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs) where people appear, numbered stages as small circled digits with drawn arrows between them. No words, no letters, only circled digits. Not gory. Scale comparison: (1) a single human hair drawn as a thick rope across the frame, (2) beside it a tiny comma-shaped bacterium with a whip tail, much smaller, (3) a little brass microscope icon.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
+ },
+ {
   "img": "c07a",
   "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. An old brass microscope on a cluttered Victorian desk lit by a gas lamp, glass slides, notebooks. No people and no human figures anywhere in the picture.",
   "refs": []
@@ -175,8 +182,8 @@
   "refs": []
  },
  {
-  "img": "c14b",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. An old parchment map lying flat on a desk: the Bay of Bengal and the Ganges delta drawn in ink with the river mouths highlighted, a brass compass beside it. No words. No people and no human figures anywhere in the picture.",
+  "img": "d07a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. A hand-drawn explainer diagram in ink and muted watercolour on aged parchment, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs) where people appear, numbered stages as small circled digits with drawn arrows between them. No words, no letters, only circled digits. Not gory. Three numbered panels: (1) a river delta with mangroves meeting the sea, (2) a magnified tiny shrimp-like copepod crustacean in green water, (3) a close-up of its shell with small comma-shaped bacteria clinging to it. No people. No people and no human figures anywhere in the picture.",
   "refs": []
  },
  {
@@ -192,8 +199,8 @@
   ]
  },
  {
-  "img": "c16a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. A cartoon on aged paper: a crowd of plain, harmless comma-shaped bacteria with sleepy friendly faces floating in water. No words. No people and no human figures anywhere in the picture.",
+  "img": "d08a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. A hand-drawn explainer diagram in ink and muted watercolour on aged parchment, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs) where people appear, numbered stages as small circled digits with drawn arrows between them. No words, no letters, only circled digits. Not gory. Three numbered stages: (1) a plain harmless comma-shaped bacterium with a friendly face, (2) a tiny spider-like bacteriophage virus landing on it and injecting a glowing strand of DNA, (3) the same bacterium now glowing green, wearing a tiny crown and releasing small toxin droplets. No people. No people and no human figures anywhere in the picture.",
   "refs": []
  },
  {
@@ -337,9 +344,11 @@
   ]
  },
  {
-  "img": "c27b",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. Cartoon: a pile of rotting rubbish in a Victorian alley with a wavy green smell rising from it, drawn as a ghostly cloud with a mean face. No people and no human figures anywhere in the picture.",
-  "refs": []
+  "img": "d09a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple clothes of ordinary people of the period. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no kings, no plague doctors. A hand-drawn explainer diagram in ink and muted watercolour on aged parchment, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs) where people appear, numbered stages as small circled digits with drawn arrows between them. No words, no letters, only circled digits. Not gory. Two panels side by side. Left panel (1): a stinking green cloud over a rubbish heap and a stickman pinching his nose, the whole panel crossed out with a big red X. Right panel (2): a cup of water with tiny comma-shaped germs in it and a stickman drinking from it, with a big green tick mark.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
  },
  {
   "img": "c28a",
@@ -418,9 +427,11 @@
   ]
  },
  {
-  "img": "c34b",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. A grim Victorian workhouse building with its own small private well in the courtyard, a bucket on the rim. No people. No people and no human figures anywhere in the picture.",
-  "refs": []
+  "img": "d10a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple clothes of ordinary people of the period. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no kings, no plague doctors. A hand-drawn explainer diagram in ink and muted watercolour on aged parchment, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs) where people appear, numbered stages as small circled digits with drawn arrows between them. No words, no letters, only circled digits. Not gory. A simple map of a few streets with a water pump in the centre and many small black bars around it. Three numbered round insets linked to the map by arrows: (1) a brewery with barrels and a stickman drinking from a tankard, a small shield beside him, (2) a workhouse with its own small well and a shield, (3) a pretty house on a distant hill with a water jug being delivered from the pump, a black ribbon on the door.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
  },
  {
   "img": "c34c",
@@ -561,8 +572,8 @@
   "refs": []
  },
  {
-  "img": "c49b",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. Technical cutaway diagram on aged paper of a Victorian sand-filter bed: layers of sand and gravel in a brick tank, murky water on top, clean water coming out of a pipe below. No words. No people and no human figures anywhere in the picture.",
+  "img": "d11a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. A hand-drawn explainer diagram in ink and muted watercolour on aged parchment, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs) where people appear, numbered stages as small circled digits with drawn arrows between them. No words, no letters, only circled digits. Not gory. Two small towns side by side on the banks of one river. Left town (1) pumps water straight from the river into its houses, with many small black crosses above the roofs. Right town (2) sends river water through a big sand filter tank first, with only one small cross above its roofs. No people. No people and no human figures anywhere in the picture.",
   "refs": []
  },
  {
@@ -583,6 +594,13 @@
   "img": "c50a",
   "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. A cracked dry riverbed under a hot sun, a single small puddle left, a dead branch. Empty landscape, symbolic. No people and no human figures anywhere in the picture.",
   "refs": []
+ },
+ {
+  "img": "d12a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple clothes of ordinary people of the period. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no kings, no plague doctors. A hand-drawn explainer diagram in ink and muted watercolour on aged parchment, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs) where people appear, numbered stages as small circled digits with drawn arrows between them. No words, no letters, only circled digits. Not gory. A recipe in five numbered steps: (1) a jug of clean water, (2) a pinch of salt, (3) a spoon of sugar, (4) a stirred glass, (5) a smiling stickman sitting up in bed drinking it.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
  },
  {
   "img": "c51a",
@@ -665,11 +683,9 @@
   "refs": []
  },
  {
-  "img": "c58a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple clothes of ordinary people of the period. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no kings, no plague doctors. A stickman girl carries a yellow plastic jerrycan of water along a dusty path toward a village, a muddy pond in the background.",
-  "refs": [
-   "84427fc9-09ce-40e6-b032-6f2700874458"
-  ]
+  "img": "d13a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. A hand-drawn explainer diagram in ink and muted watercolour on aged parchment, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs) where people appear, numbered stages as small circled digits with drawn arrows between them. No words, no letters, only circled digits. Not gory. A modern world map drawn on parchment with soft red highlighted regions in parts of Africa, South Asia, Yemen and Haiti, small water-drop icons over them, a small tap icon with a cross in one corner. No people. No people and no human figures anywhere in the picture.",
+  "refs": []
  },
  {
   "img": "c59a",
