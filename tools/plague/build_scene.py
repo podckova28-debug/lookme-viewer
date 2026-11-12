@@ -151,7 +151,7 @@ def finish(img, t):
 def picture(path):
     shots = spec['shots']; texts = spec.get('texts', [])
     ff = subprocess.Popen(['ffmpeg', '-v', 'error', '-y', '-f', 'rawvideo', '-pix_fmt', 'bgr24', '-s', f'{W}x{H}', '-r', str(FPS), '-i', '-',
-                           '-c:v', 'libx264', '-crf', '17', '-preset', 'medium', '-pix_fmt', 'yuv420p', path], stdin=subprocess.PIPE)
+                           '-c:v', 'libx264', '-crf', '19', '-preset', 'medium', '-pix_fmt', 'yuv420p', path], stdin=subprocess.PIPE)
     n = int(round(TOTAL * FPS))
     for i in range(n):
         t = i / FPS
@@ -251,7 +251,7 @@ if __name__ == '__main__' and os.environ.get('RANGE'):   # RANGE="86,104" -> re-
     a0, a1 = map(float, os.environ['RANGE'].split(','))
     shots = spec['shots']; texts = spec.get('texts', [])
     ff = subprocess.Popen(['ffmpeg', '-v', 'error', '-y', '-f', 'rawvideo', '-pix_fmt', 'bgr24', '-s', f'{W}x{H}', '-r', str(FPS), '-i', '-',
-                           '-c:v', 'libx264', '-crf', '17', '-preset', 'medium', '-pix_fmt', 'yuv420p', out], stdin=subprocess.PIPE)
+                           '-c:v', 'libx264', '-crf', '19', '-preset', 'medium', '-pix_fmt', 'yuv420p', out], stdin=subprocess.PIPE)
     for i in range(int(round(a0 * FPS)), int(round(a1 * FPS))):
         t = i / FPS; sh = next((s for s in shots if s['t0'] <= t < s['t1']), shots[-1]); img = render_shot(sh, t)
         lay = text_layer(texts, t)
