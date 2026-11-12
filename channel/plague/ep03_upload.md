@@ -1,10 +1,10 @@
 # Эпизод 3 · The ENTIRE History of Smallpox · пакет для загрузки
 
-Файл: `out/smallpox_ep03.mp4` (1080p, 10:27). Обложка: `channel/plague/thumb_ep03.jpg` (1280×720), вторая для теста — `thumb_ep03_b.jpg`.
+Файл: `out/smallpox_ep03_upload.mp4` (1080p, 11:54). Обложка: `channel/plague/thumb_ep03.jpg` (1280×720), вторая для теста — `thumb_ep03_b.jpg`.
 
 ## Название
 ```
-The ENTIRE History of Smallpox in 10 Minutes
+The ENTIRE History of Smallpox in 12 Minutes
 ```
 Запасные:
 ```
@@ -18,21 +18,23 @@ The ENTIRE History of Smallpox (Told by the Speckled Monster Himself)
 ```
 Geneva, May 1980. The world announces something it had never announced before: a disease is gone. Not cured. Not controlled. Gone.
 
-This is the entire history of smallpox, told with a little help from the Speckled Monster himself: a rodent virus that found humans, scarred pharaohs and kings, devastated the Americas, and was finally beaten by a milkmaid's blister, a cow called Blossom, twenty-two orphans on a ship and a worldwide hunt for every last case.
+This is the entire history of smallpox, told with a little help from the Speckled Monster himself: a rodent virus that found humans, what he actually did to the body, scarred pharaohs and kings, devastated the Americas, and was finally beaten by a milkmaid's blister, a cow called Blossom, twenty-two orphans on a ship and a worldwide hunt for every last case.
 
 CHAPTERS
 0:00 Geneva, 1980
 0:38 Who is smallpox?
-1:21 Where did he come from?
-2:41 The collector of crowns
-3:18 The Americas
-4:06 Variolation
-5:32 Washington, Mozart and Lincoln
-6:06 Jenner and the cow
-7:00 The orphans' voyage
-7:42 The global hunt
-8:43 The last cases
-9:37 Two freezers
+1:05 What he does to you
+2:12 Where did he come from?
+3:31 The collector of crowns
+4:09 The Americas
+4:57 Variolation
+6:23 Washington, Mozart and Lincoln
+6:57 Jenner and the cow
+7:51 The orphans' voyage
+8:32 The global hunt
+9:34 The last cases
+10:28 What he leaves behind
+11:04 Two freezers
 
 Sources are listed in the pinned comment.
 

@@ -1,6 +1,6 @@
 # Эпизод 2 · The ENTIRE History of Cholera · пакет для загрузки
 
-Файл: `out/cholera_ep02.mp4` (1080p, 11:40). Обложка: `channel/plague/thumb_ep02.jpg` (1280×720), вторая для теста — `thumb_ep02_b.jpg`.
+Файл: `out/cholera_ep02_upload.mp4` (1080p, 11:40). Обложка: `channel/plague/thumb_ep02.jpg` (1280×720), вторая для теста — `thumb_ep02_b.jpg`.
 
 ## Название
 ```
