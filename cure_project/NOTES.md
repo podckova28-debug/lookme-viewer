@@ -23,3 +23,8 @@ Sandbox root `/home/user/cw` (same pipeline as men_project: plan.py → render.p
 - Callout fixes: «ОУК-РИДЖ · 1960–70-е», ЛЁЗЕЛЬ И ШМУКЕР anchored earlier, dropped the 1 s «…ЧТОБЫ УПРАВЛЯТЬ».
 - HQ 348 MB: d2ol7oe51mr4n9…/6a1ad832-8621-4e0a-8d4f-dbde13698c57.mp4; web: …/e6979207-2b97-4233-b6cd-b720d3fb7e92.mp4.
   Page v25, update sent to «Мозг».
+
+## v3 (2026-11-12) — replaces v2
+- User: «Большой вопрос и маленький маньяка?» — the title card (copied from men_project) had a huge first line and a
+  tiny second line. Now both lines are big; the key word «МАНЬЯКА?» is the largest, in crimson. Only t00 re-rendered.
+- HQ: d2ol7oe51mr4n9…/67c77004-6238-4749-83c1-efe791867e80.mp4; web: …/824dcb31-d875-4237-80b8-eb5a03e199e4.mp4. Page v26.

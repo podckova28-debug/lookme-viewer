@@ -16,3 +16,5 @@
 - Don't ask the user for approvals or confirmations for routine steps; just do the work.
 - Long videos: chapter cards only at 4–6 big sections (a card per chapter kills the pace). Full-screen stamps must
   auto-fit (cure_project/anim.py Stamp wraps to 2 lines). After a render, check a frame of every stamp/list/callout.
+- Title card: the whole question must read as one phrase; never shrink part of the title to a subtitle size
+  (copied templates did this: «МОЖНО ЛИ ВЫЛЕЧИТЬ» huge, «МАНЬЯКА?» tiny). Check the title frame before delivery.
