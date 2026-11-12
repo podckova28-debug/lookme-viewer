@@ -64,3 +64,5 @@ REGEN KG1 9724eae4-068d-422d-9d4e-7f4eedb6a12d (такси 2010-х вместо 
 COVER toon_tyres ed16deed-f31b-4bed-bbb5-fb540f44182a (рисовка, gpt_image_2_5 medium 2k)
 COVER toon_photo c6caa6df-647d-4498-bc9a-5afbf0e111f8 (рисовка)
 COVER toon_split — из кадров KI1 и KZ4, без генерации
+COVER toon_young_face b77fd8a6-53a9-4596-a64a-b160aa74f015 (рисовка, портрет 3:4, для toon_split2)
+COVER toon_old_face e22eca9e-2e28-4246-b1a2-98800fa6fed9 (рисовка, портрет 3:4, для toon_split2)

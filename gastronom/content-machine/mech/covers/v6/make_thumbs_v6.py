@@ -236,6 +236,41 @@ def _():
     return im
 
 
+def _portrait(path, z=1.0, cy=0.45, cx=0.5):
+    """Половина 640×720 из вертикального портрета: ширина → 640·z, окно 640×720 с центром (cx, cy) в долях картинки."""
+    from PIL import ImageEnhance
+    im = Image.open(path).convert('RGB'); k = W // 2 * z / im.width
+    im = im.resize((int(im.width * k), int(im.height * k)), Image.LANCZOS)
+    x0 = int(min(max(cx * im.width - W // 4, 0), im.width - W // 2)); y0 = int(min(max(cy * im.height - H / 2, 0), im.height - H))
+    im = im.crop((x0, y0, x0 + W // 2, y0 + H))
+    return ImageEnhance.Contrast(ImageEnhance.Color(im).enhance(1.1)).enhance(1.06)
+
+def _split2(text, years_bottom=False):
+    from PIL import ImageDraw
+    im = Image.new('RGB', (W, H))
+    im.paste(_portrait(B('m90_toon_young_face'), **SPLIT2['young']), (0, 0))
+    im.paste(_portrait(B('m90_toon_old_face'), **SPLIT2['old']), (W // 2, 0))
+    d = ImageDraw.Draw(im); d.rectangle([W // 2 - 5, 0, W // 2 + 5, H], fill=WHITE)
+    p1 = plate('1994', GREEN, size=96, angle=-3); p2 = plate('2026', RED, size=96, angle=3)
+    if years_bottom:   # годы внизу слева каждой половины: правый нижний угол свободен под таймер
+        im = put(im, p1, 22, H - p1.height - 14); im = put(im, p2, W // 2 + 22, H - p2.height - 14)
+    else:
+        im = put(im, p1, 14, 12); im = put(im, p2, W - p2.width - 10, 12)
+    if text:
+        tb = text_block([(text, YELLOW)], 430); im = put(im, tb, (W - tb.width) // 2, H - tb.height - 4)
+    return im
+
+SPLIT2 = {'young': dict(z=1.0, cy=0.47), 'old': dict(z=1.0, cy=0.47)}
+
+@cover('mechanic90', 'toon_split2', 'Рисовка v2: лица крупно — бодрый молодой (1994, тёплый) и уставший Михалыч (2026, холодный), годы внизу')
+def _():
+    return _split2(None, years_bottom=True)
+
+@cover('mechanic90', 'toon_split2b', 'То же, годы вверху и «30 ЛЕТ» внизу по центру')
+def _():
+    return _split2('30 ЛЕТ')
+
+
 if __name__ == '__main__':
     out = os.path.join(HERE, 'out'); os.makedirs(out, exist_ok=True)
     vids = sys.argv[1:] or list(V)
