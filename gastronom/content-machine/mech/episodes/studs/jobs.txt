@@ -36,3 +36,5 @@ KF KZ4 31 7d2f7566-0b04-4e56-a410-237e2bcae6dd
 CLIP M_I4 0 50013b04-6979-4551-b9c2-053a824cec73 (от KI4, wan3_0 480p 5 с, гонг)
 COVER toon_duel f967285f-db92-4cd9-8df9-999189695baa (gpt_image_2_5 medium 2k)
 COVER toon_ice 2a51e605-d3b2-4927-940b-7d80311ed52d (gpt_image_2_5 medium 2k)
+COVER toon_duel_v2 9540c2bd-d203-41fc-9f7f-73b1f1f8972f (gpt_image_2_5 medium 2k, правка: убраны нижние кисти)
+COVER toon_ice_v2 c7dde8dc-3e40-46fd-89ee-98899908637c (gpt_image_2_5 medium 2k, правка: убрана третья рука Михалыча)
