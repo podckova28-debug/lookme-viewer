@@ -227,6 +227,46 @@ N('L40', "Next time: a killer that waits in the bite of an animal. Once his symp
   sh('c33a', C(.5, .5, 1.04), "A foggy 19th-century cobbled street at night under a full moon: the dark silhouette of a tall gentleman in a tailcoat with the head of a wolf stands under a gas lamp, a broken chain hanging from his collar. Ominous."))
 HOLD(5.0, sh('c33a', O(), text=[label('NEXT TIME', 1380, 360, 110, style='title', pop=True, at=.2, len=4.6), label('SUBSCRIBE', 1380, 500, 64, at=.8, len=4.0)]))
 
+# ---- extra cut-ins for faster cutting (inserted at position pos of the line's shot list; default = end)
+EXTRA = {
+  'L02': [(0, ch('c06b', W(), "On a sunny deck: a single strong healthy stickman sailor flexes one arm proudly, the other hand on his hip, sea and rigging behind him.")),
+          (None, ch('c06c', C(.5, .5, 1.05), "A single stickman sailor sits on a barrel splicing two ends of a thick rope together with his hands, a coil of rope at his feet."))],
+  'L07': [(None, sh('c08c', C(.5, .5, 1.05), "A guinea pig in a straw-lined wooden box nibbling a carrot, soft warm light. No people.")),
+          (None, sh('c08d', W(), "A fruit bat hanging from a tropical tree branch at dusk, eating a fig, a big orange moon behind. No people."))],
+  'L09': [(None, sh('c09b', C(.5, .5, 1.05), "A ship's log book open on a wooden table by lantern light, a hand-drawn calendar grid with many days crossed off, a quill. No readable words. No people."))],
+  'S02': [(None, ch('c10g', W(), "Below deck by lantern light: a single stickman sailor sits on a sea chest with one trouser leg rolled up, looking worriedly at small red dots on his stick shin."))],
+  'S04': [(0, ch('c10e', W(), "Below deck: a single old stickman sailor with a grey knitted cap sits on a sea chest, staring in surprise at an old scar on his forearm that has opened again into a thin red line.")),
+          (None, ch('c10f', W(), "A ship's sick bay: a stickman surgeon in a dark coat ties a cloth sling around the arm of a stickman sailor sitting on a stool; only these two figures, standing apart."))],
+  'L13': [(None, sh('c13b', W(), "A plank at the rail of an 18th-century ship with a canvas-wrapped bundle on it, a folded flag over it, grey sea and grey sky, somber. No people."))],
+  'L15': [(1, ch('c15c', W(), "A tropical shore in 1498: a stickman East African trader in a white robe and a stickman Portuguese sailor in a red cap stand apart on the sand, the trader holding out a woven basket of oranges with both hands."))],
+  'L16': [(2, ch('c16e', W(), "Inside a snowed-in wooden hut in 1536: a single sick stickman French sailor sits wrapped in a blanket by a small fire, shivering."))],
+  'L17': [(None, sh('c16d', WL(), "Spring thaw on a wide Canadian river: two small 16th-century French ships with sails being raised as the ice breaks up, green forest on the shore. People only as tiny distant figures."))],
+  'L17b': [(0, sh('c17b', WL(), "Four tall East India Company merchant ships of 1601 sailing in a line across a blue ocean, white sails, gulls. People only as tiny distant figures."))],
+  'L19': [(None, sh('c19h', C(.5, .5, 1.05), "A ship's sick bay below deck with twelve empty canvas hammocks hanging in two neat rows, a lantern, a small table with medicine bottles. No people."))],
+  'L20': [(None, sh('c19f', C(.5, .5, 1.05), "Still life on a ship's wooden table: a jug of cider, a small dark glass bottle, a vinegar bottle, a bucket of seawater, a bowl of brown spicy paste, and two oranges and a lemon. No people."))],
+  'L25': [(1, ch('c22c', W(), "An 18th-century Admiralty room: a stickman physician in a white wig hands a paper report to a stickman admiral in a bicorne hat and blue coat; only these two figures, standing apart."))],
+  'L26b': [(0, sh('c23b', WL(), "A Caribbean lime plantation by the sea in the 1850s: rows of small lime trees, a stone warehouse, barrels on a jetty, a sailing ship at anchor. People only as tiny distant figures.")),
+           (None, ch('c23c', W(), "On a London dock in the 1860s: two stickman British sailors in round hats and blue jackets stand apart, one holding up a small green lime and grinning, the other laughing."))],
+  'L28': [(None, sh('c24c', C(.5, .5, 1.05), "A wooden sledge in deep Arctic snow loaded with a small barrel and tins, a canvas tent behind, a pale low sun. No people."))],
+  'L29': [(None, sh('c25d', WR(), "A small sledge party crossing a vast white Antarctic ice plain under a grey sky, dogs pulling. People only as tiny distant figures."))],
+  'L29b': [(1, ch('c25c', W(), "A grey potato field in Ireland in the 1840s with blackened plants: a single thin stickman farmer in a flat cap holds up a rotten black potato, sad."))],
+  'L31': [(0, sh('c27e', WL(), "The harbour of Kristiania (Oslo) in winter 1907: snow on the roofs, steamships and sailing boats at the quay, a fortress on a hill. People only as tiny distant figures."))],
+  'L32': [(None, sh('c27c', C(.5, .5, 1.05), "A laboratory bench with a row of small dishes of food samples: grain, a cabbage leaf, a slice of lemon, a potato, dried peas, each with a blank label card. No people.")),
+          (None, ch('c27d', W(), "A 1910s laboratory: a single stickman scientist in a white coat weighs a cabbage leaf on a brass balance next to a guinea pig cage."))],
+  'L33': [(None, sh('c28d', C(.5, .5, 1.05), "A 1912 science book open on a desk under a lamp, with simple drawings of fruit, vegetables and grain and a small glass vial. No readable words. No people."))],
+  'L34': [(None, sh('c28e', W(), "A grand 1930s concert hall stage in Stockholm prepared for the Nobel ceremony: a single lectern, flowers, Swedish flags, rows of empty chairs. No people."))],
+  'A01': [(0, ch('c30c', W(), "Below deck by lantern light: a single pale stickman sailor in a hammock eats an orange slice, smiling weakly, orange peel on a barrel beside him.")),
+          (None, ch('c30d', W(), "On a sunny deck: a single happy stickman sailor climbs the rigging again, waving one hand, holding the rope with the other."))],
+  'A02': [(0, ch('c30e', W(), "A modern kitchen: a single stickman in a sweater reads the side of a cereal box, a glass of orange juice on the table.")),
+          (None, sh('c30f', C(.5, .5, 1.05), "A modern pharmacy shelf lined with bottles of vitamin C tablets and orange fizzy tablets, bright light. No readable words. No people."))],
+  'L36': [(None, ch('c31c', W(), "A modern doctor's office: a stickman doctor in a white coat holds up an orange and talks to an old stickman patient sitting on a chair; only these two figures, apart."))],
+  'L40': [(0, sh('c33b', W(), "A dark 19th-century French village lane at night under a full moon, cobblestones and shuttered houses, a stray dog's glowing eyes in the shadow of a doorway. No people."))],
+}
+for _k, (_i, _r, _t, _sh) in enumerate(B):
+    for _pos, _s in EXTRA.get(_i, []):
+        if _pos is None: _sh.append(_s)
+        else: _sh.insert(_pos, _s)
+
 def lines():
     for i, r, t, _ in B:
         if i: print(f"{i}|{r}|{t}")
@@ -261,6 +301,6 @@ def beats():
         else: out['beats'].append({'hold': t, 'shots': sl})
     json.dump(out, open(os.path.join(ROOT, 'tools/plague/ep05_beats.json'), 'w'), indent=1); print(len(out['beats']), 'beats')
 
-MUSIC = [(0, 170, 'plague_a.mp3'), (166, 330, 'plague_b.mp3'), (326, 480, 'plague_a.mp3'), (476, 'ALL', 'cholera_b.mp3')]   # set after the timeline: open+who | sail+Lind | navy+science | aftermath+today
+MUSIC = [(0, 207, 'plague_a.mp3'), (203, 385, 'plague_b.mp3'), (381, 532, 'cholera_a.mp3'), (528, 'ALL', 'cholera_b.mp3')]   # open+who+symptoms | age of sail+Lind | navy+comeback+science | aftermath+today
 
 {'lines': lines, 'frames': frames, 'beats': beats}[sys.argv[1]]()
