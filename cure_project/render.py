@@ -61,16 +61,18 @@ def chapter_card(num, title, t, dur):
 def title_card(t, dur):
     im = paper(); d = ImageDraw.Draw(im)
     a = ease(t / 0.6); b = ease((dur - t) / 0.5); k = min(a, b)
-    f0 = font(44); f1 = font(190); f2 = font(54)
-    s0 = "ДЕЛО ЗАКРЫТО"
-    d.text(((W - d.textlength(s0, font=f0)) / 2, 300), s0, font=f0, fill=CRIMSON)
-    s1 = "МОЖНО ЛИ ВЫЛЕЧИТЬ"
-    sc = 1.0 + 0.03 * (1 - a)
-    d.text(((W - d.textlength(s1, font=f1)) / 2, 370), s1, font=f1, fill=INK)
-    s2 = "МАНЬЯКА?"
-    d.text(((W - d.textlength(s2, font=f2)) / 2, 690), s2, font=f2, fill=INK)
-    lw = int(900 * ease((t - 0.4) / 0.8))
-    d.rectangle((W / 2 - lw / 2, 660, W / 2 + lw / 2, 668), fill=CRIMSON)
+    f0 = font(44); f1 = font(150); f2 = font(230)
+    s0, s1, s2 = "ДЕЛО ЗАКРЫТО", "МОЖНО ЛИ ВЫЛЕЧИТЬ", "МАНЬЯКА?"  # two equal parts of one question; the key word is biggest
+    b1 = d.textbbox((0, 0), s1, font=f1); b2 = d.textbbox((0, 0), s2, font=f2)
+    h1, h2 = b1[3] - b1[1], b2[3] - b2[1]; gap = 40
+    top = (H - (95 + h1 + gap + h2 + 70)) / 2
+    d.text(((W - d.textlength(s0, font=f0)) / 2, top), s0, font=f0, fill=CRIMSON)
+    y1 = top + 95
+    d.text(((W - d.textlength(s1, font=f1)) / 2, y1 - b1[1]), s1, font=f1, fill=INK)
+    y2 = y1 + h1 + gap
+    d.text(((W - d.textlength(s2, font=f2)) / 2, y2 - b2[1]), s2, font=f2, fill=CRIMSON)
+    lw = int(900 * ease((t - 0.4) / 0.8)); ly = y2 + h2 + 45
+    d.rectangle((W / 2 - lw / 2, ly, W / 2 + lw / 2, ly + 8), fill=INK)
     if k < 1: im = Image.blend(paper(), im, k)
     return im
 
