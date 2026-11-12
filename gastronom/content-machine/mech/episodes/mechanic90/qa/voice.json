@@ -1,0 +1,1209 @@
+{
+ "takes": {
+  "I01": {
+   "I01_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/I01_c.wav",
+    "heard": "Середина 90 -х. Тебе 18. В кармане корочка училища, а в руке ключ на 13.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.936,
+    "dur": 6.2
+   }
+  },
+  "I02": {
+   "I02_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/I02_c.wav",
+    "heard": "Ты пока не знаешь, что этот ключ ты не выпустишь из рук 30 лет.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.977,
+    "dur": 4.4
+   }
+  },
+  "I03": {
+   "I03_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/I03_c.wav",
+    "heard": "Ты механик девяностых, и это вся твоя жизнь.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.921,
+    "dur": 4.44
+   }
+  },
+  "A1": {
+   "A1_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/A1_c.wav",
+    "heard": "Твоя первая работа, бывшая автобаза на окраине. Половина боксов пустует, зарплату задерживают месяцами.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «месяцами» в норме (1-й слог, нужно 1-й, запас 0.66)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.982,
+    "dur": 7.04
+   }
+  },
+  "A7": {
+   "A7_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/A7_c.wav",
+    "heard": "Той же осенью доллар за несколько дней дорожает больше чем на треть.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.947,
+    "dur": 5.0
+   }
+  },
+  "A2": {
+   "A2_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/A2_c.wav",
+    "heard": "Иногда вместо денег тебе отдают запчастями. Однажды тебе выдали зарплату двумя покрышками.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.984,
+    "dur": 6.16
+   }
+  },
+  "A3": {
+   "A3_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/A3_c.wav",
+    "heard": "Чинишь ты в основном жигули и москвичи, и на марка тогда примерно у каждого десятого.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «и на марка» вместо «иномарка», акустика за сценарий (+0.19)",
+      "script": "иномарка",
+      "heard": "и на марка",
+      "delta": 0.19,
+      "t": 1.75
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Чинишь» в норме (1-й слог, нужно 1-й, запас 0.59)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «основном» в норме (3-й слог, нужно 3-й, запас 0.15)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.859,
+    "dur": 6.0
+   }
+  },
+  "A4": {
+   "A4_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/A4_c.wav",
+    "heard": "Карбюратор. Зажигание. Крестовины. Сцепление. Это твоя азбука.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.955,
+    "dur": 5.08
+   }
+  },
+  "A8": {
+   "A8_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/A8_c.wav",
+    "heard": "Родной карбюратор на классике называется Азон, а распредвал редко доживает до 100 тысяч километров.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «азон» вместо «озон», акустика за сценарий (-0.20)",
+      "script": "озон",
+      "heard": "азон",
+      "delta": -0.2,
+      "t": 1.75
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.912,
+    "dur": 6.4
+   }
+  },
+  "A5": {
+   "A5_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/A5_c.wav",
+    "heard": "Через месяц ты на слух отличаешь, у какой копейки стучит распредвал, а у какой клапаны.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «какой» в норме (2-й слог, нужно 2-й, запас 0.04)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «какой» в норме (2-й слог, нужно 2-й, запас 0.27)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.943,
+    "dur": 6.04
+   }
+  },
+  "A6": {
+   "A6_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/A6_c.wav",
+    "heard": "Инструмент у тебя свой, набор ключей ты собрал сам по одному и не одолживаешь никому.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «одолживаешь» вместо «одалживаешь», акустика за сценарий (+0.03)",
+      "script": "одалживаешь",
+      "heard": "одолживаешь",
+      "delta": 0.03,
+      "t": 4.09
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.959,
+    "dur": 6.12
+   }
+  },
+  "A9": {
+   "A9_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/A9_c.wav",
+    "heard": "Новые жигули седьмой модели в начале 95 -го продают больше, чем за 22 миллиона. Тех старых рублей.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.929,
+    "dur": 7.16
+   }
+  },
+  "B1": {
+   "B1_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/B1_c.wav",
+    "heard": "96 год. Ты снимаешь бокс в гаражном кооперативе и начинаешь работать на себя.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.935,
+    "dur": 6.12
+   }
+  },
+  "B2": {
+   "B2_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/B2_c.wav",
+    "heard": "Ямы нет. Ты копаешь яму сам, лопатой каждые выходные.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.926,
+    "dur": 5.0
+   }
+  },
+  "B3": {
+   "B3_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/B3_c.wav",
+    "heard": "Зимой в боксе так холодно, что гайки примерзают к пальцам. Греешься чайником и самодельным обогревателем.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.979,
+    "dur": 7.0
+   }
+  },
+  "B4": {
+   "B4_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/B4_c.wav",
+    "heard": "Клиенты приходят по сарафанному радио, один сосед советует другому, другой советует брату.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Один» в норме (2-й слог, нужно 2-й, запас 0.2)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.98,
+    "dur": 6.32
+   }
+  },
+  "B5": {
+   "B5_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/B5_c.wav",
+    "heard": "Время неспокойное, и ты быстро учишься главному правилу, сначала деньги на запчасти, потом работа.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «быстро» в норме (1-й слог, нужно 1-й, запас 0.38)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «деньги» в норме (1-й слог, нужно 1-й, запас 0.62)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «потом» в норме (2-й слог, нужно 2-й, запас 0.16)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.972,
+    "dur": 6.32
+   }
+  },
+  "B6": {
+   "B6_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/B6_c.wav",
+    "heard": "Капремонт мотора участника обходится в 300 или 400 долларов, а замена масла в два.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «масла» в норме (1-й слог, нужно 1-й, запас 0.49)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.916,
+    "dur": 6.24
+   }
+  },
+  "C1": {
+   "C1_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/C1_c.wav",
+    "heard": "А потом во двор заезжает первая иномарка, подержанная из Германии старше тебя.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «потом» в норме (2-й слог, нужно 2-й, запас 0.11)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.936,
+    "dur": 5.52
+   }
+  },
+  "C2": {
+   "C2_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/C2_c.wav",
+    "heard": "Ты открываешь капот и минут пять просто смотришь, тут ничего похожего на Жигули.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.915,
+    "dur": 5.04
+   }
+  },
+  "C3": {
+   "C3_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/C3_c.wav",
+    "heard": "Инструкции нет, запчастей в магазине нет, детали ищешь на авторынке и на разборках.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.981,
+    "dur": 6.36
+   }
+  },
+  "C4": {
+   "C4_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/C4_c.wav",
+    "heard": "А на Даннем Востоке ездят в основном на японских машинах, у которых руль справа, их везут морем через Владивосток.",
+    "issues": [
+     {
+      "level": "fail",
+      "code": "text",
+      "msg": "звучит «даннем» вместо «дальнем» (акустика +0.71)",
+      "script": "дальнем",
+      "heard": "даннем",
+      "delta": 0.71,
+      "t": 0.14
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «основном» в норме (2-й слог, нужно 3-й, запас 0.01)"
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.932,
+    "dur": 7.8
+   },
+   "C4_d.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/C4_d.wav",
+    "heard": "А на Дальнем Востоке ездят в основном на японских машинах, у которых руль справа, их везут морем через Владивосток.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «основном» в норме (2-й слог, нужно 3-й, запас 0.25)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.956,
+    "dur": 6.88
+   },
+   "C4_e.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/C4_e.wav",
+    "heard": "А на Дальнем Востоке ездят в основном на японских машинах, у которых руль справа. Их везут морем через Владивосток.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «основном» в норме (1-й слог, нужно 3-й, запас 0.03)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.967,
+    "dur": 7.08
+   }
+  },
+  "C5": {
+   "C5_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/C5_c.wav",
+    "heard": "Ты учишься по чужим ошибкам. Кто -то до тебя уже залил не то масло, перепутал провода, сломал.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «уже» в норме (1-й слог, нужно 2-й, запас 0.09)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «залил» в норме (2-й слог, нужно 2-й, запас 0.14)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «провода» в норме (3-й слог, нужно 3-й, запас 0.14)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.98,
+    "dur": 6.68
+   }
+  },
+  "C6": {
+   "C6_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/C6_c.wav",
+    "heard": "Зато клиент с иномаркой платит заметно больше, и ты впервые откладываешь деньги.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «деньги» в норме (1-й слог, нужно 1-й, запас 0.07)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.975,
+    "dur": 4.92
+   }
+  },
+  "D1": {
+   "D1_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/D1_c.wav",
+    "heard": "Август 98. Ты приходишь утром в гараж, а у всех одна новость – дефолт.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.889,
+    "dur": 6.4
+   }
+  },
+  "D2": {
+   "D2_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/D2_c.wav",
+    "heard": "За несколько недель доллар дорожает больше, чем втрое. Импортные запчасти резко дорожают следом.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.983,
+    "dur": 6.16
+   }
+  },
+  "D3": {
+   "D3_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/D3_c.wav",
+    "heard": "Новую машину купить многим теперь не на что. Старые чинят до последнего.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «чинят» в норме (1-й слог, нужно 1-й, запас 0.19)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.963,
+    "dur": 5.64
+   }
+  },
+  "D4": {
+   "D4_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/D4_c.wav",
+    "heard": "И для тебя это странное время. Работы становятся больше, а денег у людей меньше.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «становятся» вместо «становится», акустика за сценарий (-0.50)",
+      "script": "становится",
+      "heard": "становятся",
+      "delta": -0.5,
+      "t": 2.15
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.97,
+    "dur": 5.8
+   }
+  },
+  "D5": {
+   "D5_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/D5_c.wav",
+    "heard": "Ты учишься не менять, а перебирать. Восстановить старую деталь дешевле, чем купить новую.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.989,
+    "dur": 5.84
+   }
+  },
+  "E1": {
+   "E1_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/E1_c.wav",
+    "heard": "Нулевые. В страну приходят новые иномарки. И не из Германии подержанные, а прямо из салона.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Нулевые» в норме (3-й слог, нужно 3-й, запас 0.07)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.915,
+    "dur": 6.6
+   }
+  },
+  "E2": {
+   "E2_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/E2_c.wav",
+    "heard": "Под Петербургом начинают собирать Ford Focus. Через три года в Москве начнут собирать Лаган.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_latin",
+      "msg": "ASR латиницей: «ford focus» вместо «форд фокус»"
+     },
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «лаган» вместо «логан», акустика за сценарий (+0.00)",
+      "script": "логан",
+      "heard": "лаган",
+      "delta": 0.0,
+      "t": 4.88
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «года» в норме (1-й слог, нужно 1-й, запас 0.88)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.891,
+    "dur": 6.4
+   }
+  },
+  "E3": {
+   "E3_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/E3_c.wav",
+    "heard": "Люди массово берут машины в автокредит. Летом восьмого года так покупают почти каждую вторую новую.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Летом» в норме (1-й слог, нужно 1-й, запас 0.4)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «года» в норме (1-й слог, нужно 1-й, запас 0.87)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.978,
+    "dur": 6.48
+   }
+  },
+  "E4": {
+   "E4_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/E4_c.wav",
+    "heard": "В середине нулевых на новых жигулях вместо карбюратора ставит инжектор, и с ним приходит то, чего -то боялся электроника.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «ставит» вместо «ставят», акустика за сценарий (+0.00)",
+      "script": "ставят",
+      "heard": "ставит",
+      "delta": 0.0,
+      "t": 2.33
+     },
+     {
+      "level": "fail",
+      "code": "text",
+      "msg": "звучит «то» вместо «ты» (акустика +0.62)",
+      "script": "ты",
+      "heard": "то",
+      "delta": 0.62,
+      "t": 5.25
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «нулевых» в норме (3-й слог, нужно 3-й, запас 0.12)"
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.909,
+    "dur": 7.44
+   },
+   "E4_d.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/E4_d.wav",
+    "heard": "В середине нулевых на новых жигулях вместо карбюратора ставят инжектор, и с ним приходит то, чего ты боялся электроника.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «нулевых» в норме (3-й слог, нужно 3-й, запас 0.38)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.919,
+    "dur": 7.72
+   },
+   "E4_e.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/E4_e.wav",
+    "heard": "В середине нулевых на новых жигулях вместо карбюратора ставит инжектор и с ним приходит то, чего ты боялся электроника.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «ставит» вместо «ставят», акустика за сценарий (+0.00)",
+      "script": "ставят",
+      "heard": "ставит",
+      "delta": 0.0,
+      "t": 2.43
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «нулевых» в норме (3-й слог, нужно 3-й, запас 0.17)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.889,
+    "dur": 8.0
+   }
+  },
+  "E7": {
+   "E7_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/E7_c.wav",
+    "heard": "С апреля шестого года новые машины обязаны проходить норму евро -2. С карбюратором эту норму не пройти.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «года» в норме (1-й слог, нужно 1-й, запас 0.63)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.926,
+    "dur": 7.4
+   }
+  },
+  "E5": {
+   "E5_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/E5_c.wav",
+    "heard": "Ты покупаешь первый диагностический сканер, цена кусается, и ты полгода сомневаешься.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.98,
+    "dur": 5.48
+   }
+  },
+  "E6": {
+   "E6_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/E6_c.wav",
+    "heard": "Но через месяц ты уже не понимаешь, как работал без него.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «уже» в норме (1-й слог, нужно 2-й, запас 0.23)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.939,
+    "dur": 3.28
+   }
+  },
+  "F1": {
+   "F1_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/F1_c.wav",
+    "heard": "2009. Новый кризис. Продажи новых машин падают почти вдвое.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.95,
+    "dur": 5.04
+   }
+  },
+  "F2": {
+   "F2_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/F2_c.wav",
+    "heard": "Лесной 10 года запускают утилизацию. Скидка 50 тысяч рублей на новую машину российской сборки, если сдать старую.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «года» в норме (1-й слог, нужно 1-й, запас 0.53)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.874,
+    "dur": 7.52
+   }
+  },
+  "F4": {
+   "F4_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/F4_c.wav",
+    "heard": "По этой программе продают сагни тысяч машин и почти 8 из 10 оказываются ладами.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «сагни» вместо «сотни», акустика за сценарий (+0.44)",
+      "script": "сотни",
+      "heard": "сагни",
+      "delta": 0.44,
+      "t": 0.9
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Ладами» в норме (1-й слог, нужно 1-й, запас 0.58)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.864,
+    "dur": 5.8
+   }
+  },
+  "F3": {
+   "F3_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/F3_c.wav",
+    "heard": "И ты видишь, как на пресс уезжают копейки, которые ты чинил в 90 -х.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.951,
+    "dur": 4.96
+   }
+  },
+  "G1": {
+   "G1_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/G1_c.wav",
+    "heard": "Десятые. Солярис, Рио, Пола, Лаган. Твой двор забит одинаковыми седанами из такси.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «пола лаган» вместо «поло логан», акустика за сценарий (-0.07)",
+      "script": "поло логан",
+      "heard": "пола лаган",
+      "delta": -0.07,
+      "t": 1.75
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.957,
+    "dur": 6.96
+   }
+  },
+  "G2": {
+   "G2_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/G2_c.wav",
+    "heard": "Ремень, масло, колодки, стойки. Ты делаешь это закрытыми глазами.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.96,
+    "dur": 5.6
+   }
+  },
+  "G3": {
+   "G3_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/G3_c.wav",
+    "heard": "У тебя первый ученик. Ты учишь его так же, как учили тебя. Сначала слушай мотор, потом бери ключ.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «потом» в норме (2-й слог, нужно 2-й, запас 0.02)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.954,
+    "dur": 7.2
+   }
+  },
+  "G4": {
+   "G4_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/G4_c.wav",
+    "heard": "Конец 2014. За полтора месяца доллар дорожают в полтора раза и запчасти снова дорожают.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «дорожают» вместо «дорожает», акустика за сценарий (-0.00)",
+      "script": "дорожает",
+      "heard": "дорожают",
+      "delta": -0.0,
+      "t": 3.21
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «раза» в норме (1-й слог, нужно 1-й, запас 0.02)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.933,
+    "dur": 7.44
+   }
+  },
+  "G6": {
+   "G6_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/G6_c.wav",
+    "heard": "В 2015 году новых машин продают на треть меньше, а средняя цена вырастает на пятую часть.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «году» в норме (1-й слог, нужно 2-й, запас 0.33)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.965,
+    "dur": 6.08
+   }
+  },
+  "G5": {
+   "G5_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/G5_c.wav",
+    "heard": "Ты уже не удивляешься, ты просто заранее закупаешь ходовые детали на склад.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «уже» в норме (1-й слог, нужно 2-й, запас 0.08)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «ходовые» в норме (2-й слог, нужно 3-й, запас 0.06)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.979,
+    "dur": 5.48
+   }
+  },
+  "H1": {
+   "H1_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/H1_c.wav",
+    "heard": "Двадцатые. Сначала год, когда люди сидят по домам, а машины ржавеют во дворах.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.96,
+    "dur": 6.28
+   }
+  },
+  "H2": {
+   "H2_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/H2_c.wav",
+    "heard": "Потом 22 -й. Многие привычные марки уходят из России. Рынок новых машин падает больше чем вдвое.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Потом» в норме (2-й слог, нужно 2-й, запас 0.15)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.924,
+    "dur": 6.68
+   }
+  },
+  "H3": {
+   "H3_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/H3_c.wav",
+    "heard": "Оригинальные запчасти к осени дорожают в среднем на 70%, а некоторые приходится ждать месяцами.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «70%» вместо «семьдесят процентов», акустика за сценарий (-62.13)",
+      "script": "семьдесят процентов",
+      "heard": "70%",
+      "delta": -62.13,
+      "t": 2.83
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «осени» в норме (1-й слог, нужно 1-й, запас 0.84)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «месяцами» в норме (1-й слог, нужно 1-й, запас 0.66)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.968,
+    "dur": 7.04
+   }
+  },
+  "H4": {
+   "H4_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/H4_c.wav",
+    "heard": "Во двор заезжают китайские кроссоверы. К концу 23 года, это больше половины новых машин.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «года» в норме (1-й слог, нужно 1-й, запас 0.65)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.907,
+    "dur": 6.28
+   }
+  },
+  "H5": {
+   "H5_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/H5_c.wav",
+    "heard": "Ты снова открываешь капот и смотришь 5 минут, как тогда, с первой иномаркой. Только в руке теперь не ключ, а ноутбук.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.957,
+    "dur": 7.56
+   }
+  },
+  "Z1": {
+   "Z1_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/Z1_c.wav",
+    "heard": "Две тысячи двадцать шестой. Тебе пятьдесят. Борода седая, спина болит, руки в мазу те не отмываются.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «спина» в норме (1-й слог, нужно 2-й, запас 0.29)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «руки» в норме (1-й слог, нужно 1-й, запас 0.65)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.909,
+    "dur": 7.16
+   }
+  },
+  "Z2": {
+   "Z2_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/Z2_c.wav",
+    "heard": "Ты видел, как Zhiguli сменились иномарками. Иномарки китайцами, а карбюратор компьютером.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_latin",
+      "msg": "ASR латиницей: «zhiguli» вместо «жигули»"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.923,
+    "dur": 5.32
+   }
+  },
+  "Z7": {
+   "Z7_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/Z7_c.wav",
+    "heard": "Машин в стране теперь втрое больше, чем в 90 -х, а средние легковушки около 15 лет.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.94,
+    "dur": 6.56
+   }
+  },
+  "Z8": {
+   "Z8_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/Z8_c.wav",
+    "heard": "А автослесарям в объявлениях предлагают в среднем под 180 тысяч. Знал бы ты это тогда с покрышками вместо зарплаты.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.94,
+    "dur": 8.16
+   }
+  },
+  "Z3": {
+   "Z3_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/Z3_c.wav",
+    "heard": "Но одно не изменилось. Машина сама рассказывает, что с ней не так, если уметь слушать.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.98,
+    "dur": 5.68
+   }
+  },
+  "Z4": {
+   "Z4_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/Z4_c.wav",
+    "heard": "30 лет в гараже. Это была моя жизнь. Я Михалыч.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «была» в норме (2-й слог, нужно 2-й, запас 0.17)"
+     },
+     {
+      "level": "fail",
+      "code": "stress",
+      "msg": "ударение «моя» (омограф): слышно на 1-м слоге, нужно на 2-м (запас 0.52)",
+      "t": 1.93
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Михалыч» в норме (2-й слог, нужно 2-й, запас 0.72)"
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.95,
+    "dur": 4.48
+   },
+   "Z4_d.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/Z4_d.wav",
+    "heard": "30 лет в гараже. Это была моя жизнь. Я Михалыч.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «была» в норме (2-й слог, нужно 2-й, запас 0.17)"
+     },
+     {
+      "level": "fail",
+      "code": "stress",
+      "msg": "ударение «моя» (омограф): слышно на 1-м слоге, нужно на 2-м (запас 0.68)",
+      "t": 2.07
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Михалыч» в норме (2-й слог, нужно 2-й, запас 0.27)"
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.952,
+    "dur": 4.56
+   },
+   "Z4_e.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/Z4_e.wav",
+    "heard": "30 лет в гараже. Это была моя жизнь. Я Михалыч.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «была» в норме (1-й слог, нужно 2-й, запас 0.35)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «моя» в норме (1-й слог, нужно 2-й, запас 0.37)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Михалыч» в норме (2-й слог, нужно 2-й, запас 0.46)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.956,
+    "dur": 4.28
+   }
+  },
+  "Z5": {
+   "Z5_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/Z5_c.wav",
+    "heard": "А какая машина была у тебя первой и в каком году? Пиши в комментариях.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «какая» в норме (2-й слог, нужно 2-й, запас 0.12)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «была» в норме (2-й слог, нужно 2-й, запас 0.05)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «году» в норме (2-й слог, нужно 2-й, запас 0.12)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.972,
+    "dur": 4.68
+   }
+  },
+  "Z6": {
+   "Z6_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/mechanic90/vo_takes/Z6_c.wav",
+    "heard": "Подписывайся на гараж Михалыча. Следующим будет такси с 90 -х.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Михалыча» в норме (2-й слог, нужно 2-й, запас 0.69)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.89,
+    "dur": 5.4
+   }
+  }
+ },
+ "picks": {
+  "I01": "I01_c.wav",
+  "I02": "I02_c.wav",
+  "I03": "I03_c.wav",
+  "A1": "A1_c.wav",
+  "A7": "A7_c.wav",
+  "A2": "A2_c.wav",
+  "A3": "A3_c.wav",
+  "A4": "A4_c.wav",
+  "A8": "A8_c.wav",
+  "A5": "A5_c.wav",
+  "A6": "A6_c.wav",
+  "A9": "A9_c.wav",
+  "B1": "B1_c.wav",
+  "B2": "B2_c.wav",
+  "B3": "B3_c.wav",
+  "B4": "B4_c.wav",
+  "B5": "B5_c.wav",
+  "B6": "B6_c.wav",
+  "C1": "C1_c.wav",
+  "C2": "C2_c.wav",
+  "C3": "C3_c.wav",
+  "C4": "C4_e.wav",
+  "C5": "C5_c.wav",
+  "C6": "C6_c.wav",
+  "D1": "D1_c.wav",
+  "D2": "D2_c.wav",
+  "D3": "D3_c.wav",
+  "D4": "D4_c.wav",
+  "D5": "D5_c.wav",
+  "E1": "E1_c.wav",
+  "E2": "E2_c.wav",
+  "E3": "E3_c.wav",
+  "E4": "E4_d.wav",
+  "E7": "E7_c.wav",
+  "E5": "E5_c.wav",
+  "E6": "E6_c.wav",
+  "F1": "F1_c.wav",
+  "F2": "F2_c.wav",
+  "F4": "F4_c.wav",
+  "F3": "F3_c.wav",
+  "G1": "G1_c.wav",
+  "G2": "G2_c.wav",
+  "G3": "G3_c.wav",
+  "G4": "G4_c.wav",
+  "G6": "G6_c.wav",
+  "G5": "G5_c.wav",
+  "H1": "H1_c.wav",
+  "H2": "H2_c.wav",
+  "H3": "H3_c.wav",
+  "H4": "H4_c.wav",
+  "H5": "H5_c.wav",
+  "Z1": "Z1_c.wav",
+  "Z2": "Z2_c.wav",
+  "Z7": "Z7_c.wav",
+  "Z8": "Z8_c.wav",
+  "Z3": "Z3_c.wav",
+  "Z4": "Z4_e.wav",
+  "Z5": "Z5_c.wav",
+  "Z6": "Z6_c.wav"
+ },
+ "retake": {}
+}

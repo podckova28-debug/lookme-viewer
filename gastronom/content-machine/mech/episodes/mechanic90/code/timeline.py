@@ -48,7 +48,7 @@ SHOTS = {
  'C5': [('KC5', 1, 'in')],
  'C6': [('KC6', 1, 'in')],
  # 4 дефолт
- 'D1': [('KD1', 1, 'in')],
+ 'D1': [('KB1', 0.4, 'in'), ('KD1', 0.6, 'in')],   # карточка главы над утренним гаражом: на KD1 слева головы (renderqa, 12 нояб)
  'D2': [('KD2', 1, 'in')],
  'D3': [('KD3', 1, 'in')],
  'D4': [('KD4', 1, 'in')],
@@ -99,7 +99,7 @@ for m in MCLIPS:
 FALLBACK = {'M_I1': 'KI1', 'M_Z4': 'KZ4'}
 
 OVERLAYS = [dict(type='title', line='I03', at=0.3, lines=[('ТЫ — МЕХАНИК 90-Х', 110, gfx.CREAM), ('И ЭТО ВСЯ ТВОЯ ЖИЗНЬ', 84, gfx.OCHRE)])]
-CH_DUR = {'F1': 2.2}   # в F1 сразу график: карточка короче, график после неё
+CH_DUR = {'F1': 2.2, 'D1': 2.4}   # в F1 сразу график: карточка короче, график после неё
 for a, b, t, n, y in CHAPTERS:
     OVERLAYS.append(dict(type='chapter', line=a, at=0.4, dur=CH_DUR.get(a, 3.6), num=n, title=t, label=y, right=a in CH_RIGHT))
 # год в углу, пока идёт отрезок (после карточки главы)
@@ -108,8 +108,9 @@ YEARS = [('A1', 'A9', '1994–1995'), ('B1', 'B6', '1996–1997'), ('C1', 'C6', 
          ('G1', 'G3', '2011'), ('G4', 'G4', '2014'), ('G6', 'G5', '2015'), ('H1', 'H1', '2020'), ('H2', 'H3', '2022'),
          ('H4', 'H5', '2023'), ('Z1', 'Z3', '2026')]
 CH_FIRST = {a for a, *_ in CHAPTERS}
+CHIP_RIGHT = {'C1'}   # на KC1 слева голова героя (renderqa, 12 нояб)
 for a, b, y in YEARS:
-    OVERLAYS.append(dict(type='chip', line=a, at=(CH_DUR.get(a, 3.6) + 0.5) if a in CH_FIRST else 0.2, to=b, text=y))
+    OVERLAYS.append(dict(type='chip', line=a, at=(CH_DUR.get(a, 3.6) + 0.5) if a in CH_FIRST else 0.2, to=b, text=y, right=a in CHIP_RIGHT))
 CAPTIONS = [
  ('A3', 'Иномарка — примерно у каждого десятого: около 1,55 млн из 15,8 млн легковых (ГАИ на 01.01.1997, без «Запорожцев» и «Таврий»; расчёт)'),
  ('A8', 'На «классике» — карбюраторы «Озон» («За рулём» №2/1999); распредвал редко доживал до 100 тыс. км (Авто.ру Журнал)'),

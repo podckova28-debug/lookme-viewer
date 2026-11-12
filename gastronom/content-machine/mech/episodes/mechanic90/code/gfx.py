@@ -98,10 +98,10 @@ def _chip(text):
     d.text((40 * S, h / 2), text, font=f, fill=CREAM, anchor='lm')
     return down(im)
 
-def chip(fr, t, dur, text):
+def chip(fr, t, dur, text, right=False):
     im = cached(('chip', text), lambda: _chip(text))
     a = out_cubic(t / NORMAL) * (1 - in_cubic((t - (dur - NORMAL)) / NORMAL))
-    fr.alpha_composite(with_alpha(im, a * 0.95), (MX, MY))
+    fr.alpha_composite(with_alpha(im, a * 0.95), (W - MX - im.width if right else MX, MY))
 
 # ---------------- 3. Подпись-факт внизу слева ----------------
 def _caption(text):
@@ -315,7 +315,7 @@ def stack(fr, t, dur, title, segs, source='', brace=None):
 def draw(fr, ov, t, dur):
     k = ov['type']
     if k == 'chapter': chapter(fr, t, dur, ov['num'], ov['title'], ov.get('label'), ov.get('right', False))
-    elif k == 'chip': chip(fr, t, dur, ov['text'])
+    elif k == 'chip': chip(fr, t, dur, ov['text'], ov.get('right', False))
     elif k == 'caption': caption(fr, t, dur, ov['text'])
     elif k == 'stamp': stamp(fr, t, dur, ov['text'], ov.get('sub'), ov.get('color', 'green'), ov.get('x', 1560), ov.get('y', 270))
     elif k == 'title': title(fr, t, dur, ov['lines'], ov.get('y', 430))
