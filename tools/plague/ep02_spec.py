@@ -88,7 +88,7 @@ N('S03', "The body dries out from the inside. Painful cramps grip the legs. The 
   sh('s03a', STILL, "A symbolic diagram on aged paper: a simple outline of a human figure drawn like a glass water jug, nearly empty, with a few drops leaking out at the bottom. No words."),
   sh('s03b', C(.5, .5, 1.05), "Still life on a white plate: a plump fresh green grape next to a shrivelled raisin. Clean, simple, symbolic."))
 K('S04', "It's nothing personal. I simply need the water more than you do.",
-  kg('s04a', C(.5, .45, 1.1), "King Cholera stands by a well at night, filling his tin cup from a bucket, smiling politely at the viewer; his other hand rests on the well's edge."))
+  kg('s04a', C(.5, .45, 1.1), "King Cholera stands by a stone well at night, smiling politely at the viewer. His RIGHT hand holds his tin cup up as if to drink; his LEFT hand rests on his round belly. Exactly two hands, no hand on the well."))
 N('L06', "People could be healthy at breakfast and dead by dinner. Their skin turned grey-blue and wrinkled from losing so much water. The Victorians had a name for it: the blue death.",
   ch('c12a', W(), "A Victorian breakfast table in the morning: one stickman in a waistcoat eats toast happily, a cup of tea and a jug of water beside him."),
   sh('c12b', W(), "The same Victorian breakfast table at night: the chair is empty and pushed back, the candle burnt low, the toast untouched. No people. Somber."),
@@ -245,11 +245,11 @@ N('L49', "That's it. Today there are also cholera vaccines, and antibiotics for 
 
 # ---- consequences
 N('A01', "And for those who pulled through? Usually a full recovery within days, as long as they got enough fluids. But the immunity fades after a few years, so you could catch him again.",
-  ch('a01a', W(), "A sunny Victorian kitchen: a single recovered stickman sits at the table drinking a big glass of water, smiling weakly, a blanket over his shoulders.", text=label('WHAT HE LEAVES BEHIND', 960, 150, 72)))
+  ch('a01a', W(), "A sunny Victorian kitchen: a single recovered stickman sits at the table holding a big glass of water with BOTH hands, smiling weakly, a blanket over his shoulders. Both arms clearly come from his shoulders.", text=label('WHAT HE LEAVES BEHIND', 960, 150, 72)))
 N('A02', "For cities, the consequences were enormous. Fear of cholera gave us modern sewers, filtered drinking water, public health boards, and the first international health conferences. Every time you drink clean tap water, you're living in a world he forced us to build.",
   sh('a02a', C(.5, .5, 1.05), "A modern clean kitchen tap pouring a clear stream of water into a glass, bright daylight. Simple, hopeful, no people."))
 K('A03', "You're welcome. Again.",
-  kg('a03a', C(.5, .45, 1.1), "King Cholera stands in the rain under a modern streetlight, arms folded, sulking, glaring at a shiny drinking-water fountain."))
+  kg('a03a', C(.5, .45, 1.1), "King Cholera stands alone in the rain under a modern streetlight on an empty street, both hands in his coat pockets, sulking, glaring at a shiny public drinking-water fountain; his tin cup hangs on its chain from his waistcoat, nobody holding it. No other people."))
 
 # ---- today
 N('L50', "So, is he gone? Not even close. The seventh pandemic began in Indonesia in 1961, and it has never officially ended.",
