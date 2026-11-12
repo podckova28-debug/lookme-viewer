@@ -1,7 +1,7 @@
 [
  {
   "img": "c01a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. A Paris street in summer 1885 with Haussmann buildings, gas lamps and a horse cab outside the door of a stone laboratory building. People only as tiny distant figures. Any people are tiny distant stickman silhouettes only.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. A Paris street in summer 1885 with Haussmann buildings, gas lamps and a horse cab outside the door of a stone laboratory building. People only as tiny distant stickman silhouettes. Absolutely NO Eiffel Tower anywhere (it did not exist yet).",
   "refs": []
  },
  {
@@ -23,7 +23,7 @@
  },
  {
   "img": "d01a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Draw ONLY the diagram described below, filling the whole frame: no extra rows, no extra panels, no comic strips above or below it. A hand-drawn explainer diagram in ink and muted watercolour on aged paper, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs, each with exactly two arms) where people appear, numbered stages as small circled digits with drawn arrows. No words, no letters, no numbers on axes, only circled digits. Not gory. A simple hourglass with sand running out, next to a small cross; beside it a long empty row of small circles where not one is ticked. No people and no human figures anywhere in the picture.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Draw ONLY the diagram described below, filling the whole frame: no extra rows, no extra panels, no comic strips above or below it. A hand-drawn explainer diagram in ink and muted watercolour on aged paper, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs, each with exactly two arms) where people appear, numbered stages as small circled digits with drawn arrows. No words, no letters, no numbers on axes, only circled digits. Not gory. ONLY these three things side by side, nothing above or below them: (1) an hourglass with the sand running out, (2) a small plain cross, (3) a single row of ten empty circles, none of them ticked. No people and no human figures anywhere in the picture.",
   "refs": []
  },
  {
@@ -54,7 +54,7 @@
  },
  {
   "img": "c04a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Rabies exactly as on the attached sheet: a tall, wiry, predatory gentleman with the head of a lean grey wolf-dog, wild bristling fur, bloodshot yellow eyes and a little white froth at the corners of his toothy grin; a torn black Victorian tailcoat and waistcoat, a loose cravat, a broken leather dog collar with a short dangling chain around his neck. Exactly ONE of him, with exactly two arms and two hands with normal-length clawed fingers. Medium shot: Rabies leans in a dark Paris doorway at night under a gas lamp, grinning wolfishly at the viewer, one hand twirling the broken chain on his collar, the other in his pocket.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Rabies exactly as on the attached sheet: a tall, wiry, predatory gentleman with the head of a lean grey wolf-dog, wild bristling fur, bloodshot yellow eyes and a little white froth at the corners of his toothy grin; a torn black Victorian tailcoat and waistcoat, a loose cravat, a broken leather dog collar with a short dangling chain around his neck. Exactly ONE of him, with exactly two arms and two hands with normal-length clawed fingers. Medium shot: Rabies leans in a dark Paris doorway in 1885 under a gas lamp, grinning wolfishly at the viewer, one hand twirling the broken chain on his collar, the other in his pocket; a wet Haussmann-style street behind him. Absolutely NO Eiffel Tower anywhere (it did not exist yet).",
   "refs": [
    "613e7f6d-97c4-481b-b6cc-dbeee60a59a4"
   ]
@@ -68,7 +68,7 @@
  },
  {
   "img": "c06c",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. A brass 1880s microscope beside a modern electron microscope on a laboratory bench, soft light. No people. No people and no human figures anywhere in the picture.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. A brass 1880s microscope on a wooden Victorian laboratory bench beside glass flasks and an oil lamp, soft warm light. No people and no human figures anywhere in the picture.",
   "refs": []
  },
  {
@@ -95,10 +95,8 @@
  },
  {
   "img": "d04a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, dressed exactly as described for this scene and its era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. Draw ONLY the diagram described below, filling the whole frame: no extra rows, no extra panels, no comic strips above or below it. A hand-drawn explainer diagram in ink and muted watercolour on aged paper, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs, each with exactly two arms) where people appear, numbered stages as small circled digits with drawn arrows. No words, no letters, no numbers on axes, only circled digits. Not gory. A standing stickman with a small bite mark on his ankle; a glowing dotted line runs from the ankle up through his stick leg and spine to his round head, with three small circled digits along the path and a small calendar icon beside it.",
-  "refs": [
-   "84427fc9-09ce-40e6-b032-6f2700874458"
-  ]
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, thin black stick arms, stick legs and stick feet everywhere (no realistic skin, hands as small black mitts), dressed exactly as described. Only the figures described, standing apart; each has exactly two arms and two hands attached to its sleeves. Draw ONLY the diagram described below, filling the whole frame: no extra rows, no extra panels, no comic strips above or below it. A hand-drawn explainer diagram in ink and muted watercolour on aged paper, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs, each with exactly two arms) where people appear, numbered stages as small circled digits with drawn arrows. No words, no letters, no numbers on axes, only circled digits. Not gory. One single standing stickman with stick legs and stick feet and a tiny dot bite mark on his stick ankle; a glowing dotted line runs from the ankle up his stick leg and spine into his round head, with circled digits 1, 2, 3 along the path; a small calendar icon beside him. No magnifier circles, no anatomy.",
+  "refs": []
  },
  {
   "img": "c07a",
@@ -165,10 +163,8 @@
  },
  {
   "img": "d08a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, dressed exactly as described for this scene and its era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. Draw ONLY the diagram described below, filling the whole frame: no extra rows, no extra panels, no comic strips above or below it. A hand-drawn explainer diagram in ink and muted watercolour on aged paper, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs, each with exactly two arms) where people appear, numbered stages as small circled digits with drawn arrows. No words, no letters, no numbers on axes, only circled digits. Not gory. Two numbered panels: (1) a stickman in bed with a thermometer and wavy heat lines, (2) the same stickman scratching his ankle where small tingling zigzag lines appear around an old healed bite mark.",
-  "refs": [
-   "84427fc9-09ce-40e6-b032-6f2700874458"
-  ]
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, thin black stick arms, stick legs and stick feet everywhere (no realistic skin, hands as small black mitts), dressed exactly as described. Only the figures described, standing apart; each has exactly two arms and two hands attached to its sleeves. Draw ONLY the diagram described below, filling the whole frame: no extra rows, no extra panels, no comic strips above or below it. A hand-drawn explainer diagram in ink and muted watercolour on aged paper, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs, each with exactly two arms) where people appear, numbered stages as small circled digits with drawn arrows. No words, no letters, no numbers on axes, only circled digits. Not gory. Two numbered panels: (1) a stickman in a plain nightshirt lying in bed with a thermometer in his mouth and wavy heat lines above him, both arms on top of the blanket; (2) the same stickman sitting on a stool scratching his thin black stick ankle, where small zigzag tingling lines appear.",
+  "refs": []
  },
  {
   "img": "c11a",
@@ -179,10 +175,8 @@
  },
  {
   "img": "d09a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, dressed exactly as described for this scene and its era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. Draw ONLY the diagram described below, filling the whole frame: no extra rows, no extra panels, no comic strips above or below it. A hand-drawn explainer diagram in ink and muted watercolour on aged paper, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs, each with exactly two arms) where people appear, numbered stages as small circled digits with drawn arrows. No words, no letters, no numbers on axes, only circled digits. Not gory. A stickman's round head with the brain drawn inside it, tangled with dark scribbles and small lightning bolts; around the head, small drawings of floating eyes, shadows and twisting shapes.",
-  "refs": [
-   "84427fc9-09ce-40e6-b032-6f2700874458"
-  ]
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Draw ONLY the diagram described below, filling the whole frame: no extra rows, no extra panels, no comic strips above or below it. A hand-drawn explainer diagram in ink and muted watercolour on aged paper, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs, each with exactly two arms) where people appear, numbered stages as small circled digits with drawn arrows. No words, no letters, no numbers on axes, only circled digits. Not gory. ONE single large simple cartoon stickman head in the centre: a plain white circle with two wide dot eyes and a frightened wavy mouth; inside the circle a dark tangled storm cloud with small yellow lightning bolts; around the head a few small drawings of floating shadows and twisting shapes. No brain anatomy, no skull, no body, no other figures.",
+  "refs": []
  },
  {
   "img": "c11b",
@@ -272,10 +266,8 @@
  },
  {
   "img": "d14a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, dressed exactly as described for this scene and its era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. Draw ONLY the diagram described below, filling the whole frame: no extra rows, no extra panels, no comic strips above or below it. A hand-drawn explainer diagram in ink and muted watercolour on aged paper, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs, each with exactly two arms) where people appear, numbered stages as small circled digits with drawn arrows. No words, no letters, no numbers on axes, only circled digits. Not gory. Three numbered Roman remedies on aged paper: (1) a hot iron rod over a brazier, (2) a small bowl with a dark lump of liver, (3) a stickman being dunked into a pond by two other stickmen.",
-  "refs": [
-   "84427fc9-09ce-40e6-b032-6f2700874458"
-  ]
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, thin black stick arms, stick legs and stick feet everywhere (no realistic skin, hands as small black mitts), dressed exactly as described. Only the figures described, standing apart; each has exactly two arms and two hands attached to its sleeves. Draw ONLY the diagram described below, filling the whole frame: no extra rows, no extra panels, no comic strips above or below it. A hand-drawn explainer diagram in ink and muted watercolour on aged paper, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs, each with exactly two arms) where people appear, numbered stages as small circled digits with drawn arrows. No words, no letters, no numbers on axes, only circled digits. Not gory. Three numbered ancient Roman remedies; every figure is an ancient Roman in a plain white toga and sandals: (1) a hot iron rod glowing over a bronze brazier, (2) a small clay bowl with a dark lump of liver, (3) a stickman in a toga being lowered into a garden pond by two other stickmen in togas.",
+  "refs": []
  },
  {
   "img": "d15a",
@@ -337,10 +329,8 @@
  },
  {
   "img": "c18b",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, dressed exactly as described for this scene and its era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. An 1880s city street corner: a stickman policeman in a dark helmet and coat stands holding a long rope noose-pole, a stickman newspaper boy with a cap holds up a blank newspaper, both apart.",
-  "refs": [
-   "84427fc9-09ce-40e6-b032-6f2700874458"
-  ]
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, thin black stick arms, stick legs and stick feet everywhere (no realistic skin, hands as small black mitts), dressed exactly as described. Only the figures described, standing apart; each has exactly two arms and two hands attached to its sleeves. An 1880s London street corner: a stickman policeman in a tall dark Victorian police helmet and dark coat holds a dog-catcher's long wooden pole with a simple soft rope loop at its end; a stickman newspaper boy in a flat cap holds up a blank newspaper; both stand apart.",
+  "refs": []
  },
  {
   "img": "c18d",
@@ -393,10 +383,8 @@
  },
  {
   "img": "d21a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, dressed exactly as described for this scene and its era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. Draw ONLY the diagram described below, filling the whole frame: no extra rows, no extra panels, no comic strips above or below it. A hand-drawn explainer diagram in ink and muted watercolour on aged paper, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs, each with exactly two arms) where people appear, numbered stages as small circled digits with drawn arrows. No words, no letters, no numbers on axes, only circled digits. Not gory. A staircase diagram: a stickman climbs five numbered steps; on each step a syringe with a slightly bigger virus symbol, and on the top step the stickman holds a small round shield while a large virus bounces off it.",
-  "refs": [
-   "84427fc9-09ce-40e6-b032-6f2700874458"
-  ]
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, thin black stick arms, stick legs and stick feet everywhere (no realistic skin, hands as small black mitts), dressed exactly as described. Only the figures described, standing apart; each has exactly two arms and two hands attached to its sleeves. Draw ONLY the diagram described below, filling the whole frame: no extra rows, no extra panels, no comic strips above or below it. A hand-drawn explainer diagram in ink and muted watercolour on aged paper, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs, each with exactly two arms) where people appear, numbered stages as small circled digits with drawn arrows. No words, no letters, no numbers on axes, only circled digits. Not gory. A staircase of five numbered steps; ONE single stickman in a plain shirt and trousers climbs it; on each step a small glass syringe with a small bullet-shaped virus symbol that gets bigger step by step; on the top step the stickman holds a small round shield while a large bullet-shaped virus bounces off it.",
+  "refs": []
  },
  {
   "img": "c20b",
@@ -467,15 +455,13 @@
  },
  {
   "img": "c23a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. A grand red-brick and stone institute building in Paris in 1888 with a wrought-iron gate and a flag on the roof, trees around. People only as tiny distant figures. Any people are tiny distant stickman silhouettes only.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. A grand red-brick and stone institute building in Paris in 1888 with a wrought-iron gate and a French tricolour flag on the roof, trees around. People only as tiny distant stickman silhouettes. Absolutely NO Eiffel Tower anywhere (it did not exist yet).",
   "refs": []
  },
  {
   "img": "c23b",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, dressed exactly as described for this scene and its era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. A Paris railway platform in 1886: three stickman Russian peasants in fur hats and long coats with bandaged hands stand apart beside their bundles, looking tired and hopeful.",
-  "refs": [
-   "84427fc9-09ce-40e6-b032-6f2700874458"
-  ]
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, thin black stick arms, stick legs and stick feet everywhere (no realistic skin, hands as small black mitts), dressed exactly as described. Only the figures described, standing apart; each has exactly two arms and two hands attached to its sleeves. A Paris railway station of 1886 with an iron and glass roof and a steam train: three stickman Russian peasants in 1880s fur hats and long sheepskin coats, with bandaged hands, stand apart beside their cloth bundles, looking tired and hopeful. Absolutely NO Eiffel Tower anywhere (it did not exist yet).",
+  "refs": []
  },
  {
   "img": "c24a",
@@ -486,10 +472,8 @@
  },
  {
   "img": "c25a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, dressed exactly as described for this scene and its era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. A modern village vet clinic under a tree: a stickman vet in a white coat gives a small injection to a calm dog held by a stickman girl, both standing apart.",
-  "refs": [
-   "84427fc9-09ce-40e6-b032-6f2700874458"
-  ]
+  "prompt": "2D animated explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, bright clean modern colours, daylight. Everything is modern (2000s-2020s): no lanterns, no gas lamps, no oil lamps, nothing Victorian. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, thin black stick arms, stick legs and stick feet everywhere (no realistic skin, hands as small black mitts), dressed exactly as described. Only the figures described, standing apart; each has exactly two arms and two hands attached to its sleeves. A modern 2020s village vet clinic under a tree in a sunny rural town: a stickman vet in modern blue scrubs gives a small injection to a calm dog held by a stickman girl in a modern T-shirt and jeans; both stand apart.",
+  "refs": []
  },
  {
   "img": "d24a",
@@ -498,22 +482,18 @@
  },
  {
   "img": "c25c",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. A modern vaccination poster-board style still life: a cool box of vaccine vials, a stack of dog collars with tags and a clipboard on a table under a tree. No readable words. No people. No people and no human figures anywhere in the picture.",
+  "prompt": "2D animated explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, bright clean modern colours, daylight. Everything is modern (2000s-2020s): no lanterns, no gas lamps, no oil lamps, nothing Victorian. Not gory. A modern blue cool box of small vaccine vials, a stack of dog collars with round tags and a clipboard on a plastic table under a tree in a sunny modern village. No readable words. No people and no human figures anywhere in the picture.",
   "refs": []
  },
  {
   "img": "d25a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, dressed exactly as described for this scene and its era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. Draw ONLY the diagram described below, filling the whole frame: no extra rows, no extra panels, no comic strips above or below it. A hand-drawn explainer diagram in ink and muted watercolour on aged paper, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs, each with exactly two arms) where people appear, numbered stages as small circled digits with drawn arrows. No words, no letters, no numbers on axes, only circled digits. Not gory. Three numbered steps on aged paper: (1) a stickman washing a bitten hand under a running tap with soap and a small clock showing fifteen minutes, (2) a syringe of vaccine, (3) a second syringe with small Y-shaped antibody symbols.",
-  "refs": [
-   "84427fc9-09ce-40e6-b032-6f2700874458"
-  ]
+  "prompt": "2D animated explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, bright clean modern colours, daylight. Everything is modern (2000s-2020s): no lanterns, no gas lamps, no oil lamps, nothing Victorian. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, thin black stick arms, stick legs and stick feet everywhere (no realistic skin, hands as small black mitts), dressed exactly as described. Only the figures described, standing apart; each has exactly two arms and two hands attached to its sleeves. Draw ONLY the diagram described below, filling the whole frame: no extra rows, no extra panels, no comic strips above or below it. A hand-drawn explainer diagram in ink and muted watercolour on clean light paper, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs, each with exactly two arms) where people appear, numbered stages as small circled digits with drawn arrows. No words, no letters, no numbers on axes, only circled digits. Not gory. Three numbered steps with modern stickmen: (1) a stickman in a T-shirt washes his hand under a modern chrome tap with soap, a small clock showing fifteen minutes, (2) a modern plastic syringe of vaccine, (3) a second modern syringe with small Y-shaped antibody symbols.",
+  "refs": []
  },
  {
   "img": "c25b",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, dressed exactly as described for this scene and its era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. A modern clinic: a stickman nurse in blue scrubs washes the bitten hand of a stickman patient at a sink, a bar of soap beside them.",
-  "refs": [
-   "84427fc9-09ce-40e6-b032-6f2700874458"
-  ]
+  "prompt": "2D animated explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, bright clean modern colours, daylight. Everything is modern (2000s-2020s): no lanterns, no gas lamps, no oil lamps, nothing Victorian. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, thin black stick arms, stick legs and stick feet everywhere (no realistic skin, hands as small black mitts), dressed exactly as described. Only the figures described, standing apart; each has exactly two arms and two hands attached to its sleeves. A modern clinic treatment room: a stickman nurse in blue scrubs washes the hand of a stickman patient in a modern T-shirt and jeans at a modern sink with a soap dispenser; both stand apart.",
+  "refs": []
  },
  {
   "img": "c26a",
@@ -534,10 +514,8 @@
  },
  {
   "img": "d26a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, dressed exactly as described for this scene and its era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. Draw ONLY the diagram described below, filling the whole frame: no extra rows, no extra panels, no comic strips above or below it. A hand-drawn explainer diagram in ink and muted watercolour on aged paper, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs, each with exactly two arms) where people appear, numbered stages as small circled digits with drawn arrows. No words, no letters, no numbers on axes, only circled digits. Not gory. A row of many small simple stickman icons on aged paper, almost all grey with a tiny cross, and only one or two bright ones with a small star.",
-  "refs": [
-   "84427fc9-09ce-40e6-b032-6f2700874458"
-  ]
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Draw ONLY the diagram described below, filling the whole frame: no extra rows, no extra panels, no comic strips above or below it. A hand-drawn explainer diagram in ink and muted watercolour on aged paper, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs, each with exactly two arms) where people appear, numbered stages as small circled digits with drawn arrows. No words, no letters, no numbers on axes, only circled digits. Not gory. ONLY a neat grid of about forty small identical simple stickman icons (white round heads, stick bodies) filling the frame, all drawn in faded grey with a tiny cross above each, except two bright ones with a small gold star above them. Nothing else: no scenes, no rows of pictures.",
+  "refs": []
  },
  {
   "img": "c27a",
@@ -567,7 +545,7 @@
  },
  {
   "img": "c28a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. A modern rabies vaccine vial and a syringe on a clean steel tray in a bright laboratory, a small dog tag beside it. No people. No people and no human figures anywhere in the picture.",
+  "prompt": "2D animated explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, bright clean modern colours, daylight. Everything is modern (2000s-2020s): no lanterns, no gas lamps, no oil lamps, nothing Victorian. Not gory. A modern vaccine vial and a modern plastic syringe on a clean steel tray in a bright modern laboratory with white cabinets, a small round dog tag beside them. No people and no human figures anywhere in the picture.",
   "refs": []
  },
  {
@@ -579,7 +557,7 @@
  },
  {
   "img": "d29a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Draw ONLY the diagram described below, filling the whole frame: no extra rows, no extra panels, no comic strips above or below it. A hand-drawn explainer diagram in ink and muted watercolour on aged paper, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs, each with exactly two arms) where people appear, numbered stages as small circled digits with drawn arrows. No words, no letters, no numbers on axes, only circled digits. Not gory. A world map on aged paper with Asia and Africa shaded dark red, the Americas and Europe much lighter, and small stickman child icons over the dark regions. No people and no human figures anywhere in the picture.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Draw ONLY the diagram described below, filling the whole frame: no extra rows, no extra panels, no comic strips above or below it. A hand-drawn explainer diagram in ink and muted watercolour on aged paper, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs, each with exactly two arms) where people appear, numbered stages as small circled digits with drawn arrows. No words, no letters, no numbers on axes, only circled digits. Not gory. ONLY a simple world map filling the whole frame: Africa and South and Southeast Asia shaded dark red-brown; Europe, North America, South America and Australia pale; a few small stickman child icons over the dark regions. Nothing else, no extra rows or panels.",
   "refs": []
  },
  {
@@ -596,15 +574,13 @@
  },
  {
   "img": "d30a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Draw ONLY the diagram described below, filling the whole frame: no extra rows, no extra panels, no comic strips above or below it. A hand-drawn explainer diagram in ink and muted watercolour on aged paper, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs, each with exactly two arms) where people appear, numbered stages as small circled digits with drawn arrows. No words, no letters, no numbers on axes, only circled digits. Not gory. A simple downward line chart on aged paper falling toward zero, with a small dog icon with a vaccination tag at the end of the line and a small target symbol. No people and no human figures anywhere in the picture.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Draw ONLY the diagram described below, filling the whole frame: no extra rows, no extra panels, no comic strips above or below it. A hand-drawn explainer diagram in ink and muted watercolour on aged paper, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs, each with exactly two arms) where people appear, numbered stages as small circled digits with drawn arrows. No words, no letters, no numbers on axes, only circled digits. Not gory. ONLY one simple line chart filling the whole frame: a line that falls from high on the left to zero on the right, with a small dog icon wearing a round tag at the end of the line and a small target symbol. No axis numbers, no extra pictures, no rows of panels. No people.",
   "refs": []
  },
  {
   "img": "c29b",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, dressed exactly as described for this scene and its era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. A sunny modern village square: a stickman health worker in a vest gives a dog a vaccine while a stickman child holds the dog's lead, a small table with a cool box behind them.",
-  "refs": [
-   "84427fc9-09ce-40e6-b032-6f2700874458"
-  ]
+  "prompt": "2D animated explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, bright clean modern colours, daylight. Everything is modern (2000s-2020s): no lanterns, no gas lamps, no oil lamps, nothing Victorian. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, thin black stick arms, stick legs and stick feet everywhere (no realistic skin, hands as small black mitts), dressed exactly as described. Only the figures described, standing apart; each has exactly two arms and two hands attached to its sleeves. A sunny modern African village square with a concrete building and a parked motorbike: a stickman health worker in a modern hi-vis vest and cap gives a dog a vaccine while a stickman child in a T-shirt and shorts holds the dog's lead; a modern blue cool box on a plastic table behind them.",
+  "refs": []
  },
  {
   "img": "c30a",
@@ -613,7 +589,7 @@
  },
  {
   "img": "d31a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Draw ONLY the diagram described below, filling the whole frame: no extra rows, no extra panels, no comic strips above or below it. A hand-drawn explainer diagram in ink and muted watercolour on aged paper, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs, each with exactly two arms) where people appear, numbered stages as small circled digits with drawn arrows. No words, no letters, no numbers on axes, only circled digits. Not gory. A close-up comparison on aged paper: (1) a large dog bite drawn as two rows of marks, (2) a bat bite drawn as two tiny dots next to a coin for scale. No people and no human figures anywhere in the picture.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Draw ONLY the diagram described below, filling the whole frame: no extra rows, no extra panels, no comic strips above or below it. A hand-drawn explainer diagram in ink and muted watercolour on aged paper, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs, each with exactly two arms) where people appear, numbered stages as small circled digits with drawn arrows. No words, no letters, no numbers on axes, only circled digits. Not gory. Two side-by-side close-up squares on aged paper: (1) a plain beige square with two neat curved rows of small dark dots like a dog's bite pattern, (2) a plain beige square with just two tiny dark dots next to a small coin for scale. No blood, no wounds. No people.",
   "refs": []
  },
  {

@@ -236,6 +236,37 @@ for _k, (_i, _r, _t, _sh) in enumerate(B):
         if _pos is None: _sh.append(_s)
         else: _sh.insert(_pos, _s)
 
+# ---- QC fixes: explicit prompts without the stickman sheet (it pulls wrong-era costumes) and a modern style for modern scenes
+SN = ("Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, thin black stick arms, stick legs and stick feet everywhere (no realistic skin, hands as small black mitts), "
+      "dressed exactly as described. Only the figures described, standing apart; each has exactly two arms and two hands attached to its sleeves. ")
+MODERN = ("2D animated explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, bright clean modern colours, daylight. "
+          "Everything is modern (2000s-2020s): no lanterns, no gas lamps, no oil lamps, nothing Victorian. Not gory. ")
+NOEIF = " Absolutely NO Eiffel Tower anywhere (it did not exist yet)."
+FIX = {
+  'c04a': (STYLE + ' ' + KING + " Medium shot: Rabies leans in a dark Paris doorway in 1885 under a gas lamp, grinning wolfishly at the viewer, one hand twirling the broken chain on his collar, the other in his pocket; a wet Haussmann-style street behind him." + NOEIF, [K_SHEET]),
+  'c01a': (STYLE + " A Paris street in summer 1885 with Haussmann buildings, gas lamps and a horse cab outside the door of a stone laboratory building. People only as tiny distant stickman silhouettes." + NOEIF, []),
+  'c23a': (STYLE + " A grand red-brick and stone institute building in Paris in 1888 with a wrought-iron gate and a French tricolour flag on the roof, trees around. People only as tiny distant stickman silhouettes." + NOEIF, []),
+  'c23b': (STYLE + ' ' + SN + "A Paris railway station of 1886 with an iron and glass roof and a steam train: three stickman Russian peasants in 1880s fur hats and long sheepskin coats, with bandaged hands, stand apart beside their cloth bundles, looking tired and hopeful." + NOEIF, []),
+  'c18b': (STYLE + ' ' + SN + "An 1880s London street corner: a stickman policeman in a tall dark Victorian police helmet and dark coat holds a dog-catcher's long wooden pole with a simple soft rope loop at its end; a stickman newspaper boy in a flat cap holds up a blank newspaper; both stand apart.", []),
+  'd01a': (STYLE + ' ' + DIAG + "ONLY these three things side by side, nothing above or below them: (1) an hourglass with the sand running out, (2) a small plain cross, (3) a single row of ten empty circles, none of them ticked. No people and no human figures anywhere in the picture.", []),
+  'd04a': (STYLE + ' ' + SN + DIAG + "One single standing stickman with stick legs and stick feet and a tiny dot bite mark on his stick ankle; a glowing dotted line runs from the ankle up his stick leg and spine into his round head, with circled digits 1, 2, 3 along the path; a small calendar icon beside him. No magnifier circles, no anatomy.", []),
+  'd08a': (STYLE + ' ' + SN + DIAG + "Two numbered panels: (1) a stickman in a plain nightshirt lying in bed with a thermometer in his mouth and wavy heat lines above him, both arms on top of the blanket; (2) the same stickman sitting on a stool scratching his thin black stick ankle, where small zigzag tingling lines appear.", []),
+  'd09a': (STYLE + ' ' + DIAG + "ONE single large simple cartoon stickman head in the centre: a plain white circle with two wide dot eyes and a frightened wavy mouth; inside the circle a dark tangled storm cloud with small yellow lightning bolts; around the head a few small drawings of floating shadows and twisting shapes. No brain anatomy, no skull, no body, no other figures.", []),
+  'd14a': (STYLE + ' ' + SN + DIAG + "Three numbered ancient Roman remedies; every figure is an ancient Roman in a plain white toga and sandals: (1) a hot iron rod glowing over a bronze brazier, (2) a small clay bowl with a dark lump of liver, (3) a stickman in a toga being lowered into a garden pond by two other stickmen in togas.", []),
+  'd21a': (STYLE + ' ' + SN + DIAG + "A staircase of five numbered steps; ONE single stickman in a plain shirt and trousers climbs it; on each step a small glass syringe with a small bullet-shaped virus symbol that gets bigger step by step; on the top step the stickman holds a small round shield while a large bullet-shaped virus bounces off it.", []),
+  'd26a': (STYLE + ' ' + DIAG + "ONLY a neat grid of about forty small identical simple stickman icons (white round heads, stick bodies) filling the frame, all drawn in faded grey with a tiny cross above each, except two bright ones with a small gold star above them. Nothing else: no scenes, no rows of pictures.", []),
+  'd25a': (MODERN + SN + DIAG.replace('on aged paper', 'on clean light paper') + "Three numbered steps with modern stickmen: (1) a stickman in a T-shirt washes his hand under a modern chrome tap with soap, a small clock showing fifteen minutes, (2) a modern plastic syringe of vaccine, (3) a second modern syringe with small Y-shaped antibody symbols.", []),
+  'c25a': (MODERN + SN + "A modern 2020s village vet clinic under a tree in a sunny rural town: a stickman vet in modern blue scrubs gives a small injection to a calm dog held by a stickman girl in a modern T-shirt and jeans; both stand apart.", []),
+  'c25b': (MODERN + SN + "A modern clinic treatment room: a stickman nurse in blue scrubs washes the hand of a stickman patient in a modern T-shirt and jeans at a modern sink with a soap dispenser; both stand apart.", []),
+  'c29b': (MODERN + SN + "A sunny modern African village square with a concrete building and a parked motorbike: a stickman health worker in a modern hi-vis vest and cap gives a dog a vaccine while a stickman child in a T-shirt and shorts holds the dog's lead; a modern blue cool box on a plastic table behind them.", []),
+  'c25c': (MODERN + "A modern blue cool box of small vaccine vials, a stack of dog collars with round tags and a clipboard on a plastic table under a tree in a sunny modern village. No readable words. No people and no human figures anywhere in the picture.", []),
+  'c28a': (MODERN + "A modern vaccine vial and a modern plastic syringe on a clean steel tray in a bright modern laboratory with white cabinets, a small round dog tag beside them. No people and no human figures anywhere in the picture.", []),
+  'c06c': (STYLE + " A brass 1880s microscope on a wooden Victorian laboratory bench beside glass flasks and an oil lamp, soft warm light. No people and no human figures anywhere in the picture.", []),
+  'd29a': (STYLE + ' ' + DIAG + "ONLY a simple world map filling the whole frame: Africa and South and Southeast Asia shaded dark red-brown; Europe, North America, South America and Australia pale; a few small stickman child icons over the dark regions. Nothing else, no extra rows or panels.", []),
+  'd30a': (STYLE + ' ' + DIAG + "ONLY one simple line chart filling the whole frame: a line that falls from high on the left to zero on the right, with a small dog icon wearing a round tag at the end of the line and a small target symbol. No axis numbers, no extra pictures, no rows of panels. No people.", []),
+  'd31a': (STYLE + ' ' + DIAG + "Two side-by-side close-up squares on aged paper: (1) a plain beige square with two neat curved rows of small dark dots like a dog's bite pattern, (2) a plain beige square with just two tiny dark dots next to a small coin for scale. No blood, no wounds. No people.", []),
+}
+
 def lines():
     for i, r, t, _ in B:
         if i: print(f"{i}|{r}|{t}")
@@ -250,7 +281,7 @@ def frames():
                 if 'S' in s['refs']: refs.append(S_SHEET)
                 pr = s['prompt']
                 if not refs: pr += ' No people and no human figures anywhere in the picture.' if 'tiny distant' not in pr and 'silhouette' not in pr else ' Any people are tiny distant stickman silhouettes only.'
-                out.append({'img': s['img'], 'prompt': STYLE + ' ' + pr, 'refs': refs})
+                out.append({'img': s['img'], 'prompt': STYLE + ' ' + pr, 'refs': refs} if s['img'] not in FIX else {'img': s['img'], 'prompt': FIX[s['img']][0], 'refs': FIX[s['img']][1]})
     json.dump(out, open(os.path.join(ROOT, 'tools/plague/ep06_frames_todo.json'), 'w'), indent=1); print(len(out), 'frames')
 
 def beats():
