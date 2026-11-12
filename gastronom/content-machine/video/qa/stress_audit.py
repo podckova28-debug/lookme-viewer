@@ -16,11 +16,11 @@ import voiceqa as Q
 def opt(k, d=None): return sys.argv[sys.argv.index(k) + 1] if k in sys.argv else d
 
 proj = os.path.abspath(opt('--project', '.'))
-picks = json.load(open(os.path.join(proj, opt('--picks', 'qa_out/voice.json')), encoding='utf-8'))['picks']
-if '--take' in sys.argv: picks = {k: f"{k}_{opt('--take')}.wav" for k in picks}   # проверить конкретный дубль у всех реплик
+lines = Q.load_lines(os.path.join(proj, 'script.py'))
+if '--take' in sys.argv: picks = {k: f"{k}_{opt('--take')}.wav" for k, _ in lines}   # проверить конкретный дубль у всех реплик
+else: picks = json.load(open(os.path.join(proj, opt('--picks', 'qa_out/voice.json')), encoding='utf-8'))['picks']
 takes = os.path.join(proj, opt('--takes', 'vo_takes'))
 tg = {r['id']: r for r in json.load(open(os.path.join(proj, 'qa_out', 'textgate.json'), encoding='utf-8'))}
-lines = Q.load_lines(os.path.join(proj, 'script.py'))
 only = set(opt('--ids', '').split(',')) - {''}
 fix = {}
 sf = os.path.join(proj, 'stress.json')
@@ -33,7 +33,7 @@ out = {}
 for lid, text in lines:
     if only and lid not in only: continue
     f = picks.get(lid)
-    if not f: continue
+    if not f or not os.path.exists(os.path.join(takes, f)): continue
     stressed = tg[lid]['stressed']
     allw = {Q.norm(w) for w in re.findall(r'[\w-]+', text) if sum(1 for c in Q.norm(w) if c in Q.VOW) >= 2}
     r = Q.check_take(wm, ac, os.path.join(takes, f), text, allw, stressed, omo=(), stress=True)

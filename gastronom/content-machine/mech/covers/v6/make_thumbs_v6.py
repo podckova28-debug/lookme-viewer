@@ -271,6 +271,30 @@ def _():
     return _split2('30 ЛЕТ')
 
 
+# ---------- «Шипы или липучка» (рисовка: Михалыч за шипы, сосед Костя за липучку) ----------
+BLUE, OCHRE = (30, 110, 220), (232, 140, 20)
+
+@cover('studs', 'duel', 'Рисовка: Михалыч с шиповкой против Кости с липучкой — «ШИПЫ / ЛИПУЧКА» (спор всего ролика)')
+def _():
+    im = photo(B('studs_duel'), z=1.0, sat=1.06, con=1.04, vign=0.9)
+    p1 = plate('ШИПЫ', BLUE, size=104, angle=-3); p2 = plate('ЛИПУЧКА', OCHRE, size=104, angle=3)
+    im = put(im, p1, 26, H - p1.height - 22)
+    return put(im, p2, W // 2 + 30, H - p2.height - 22)       # правый нижний угол свободен под таймер
+
+@cover('studs', 'ice', 'Рисовка: на льду липучка Кости проезжает конус, Михалыч на шипах уже стоит — «+13 М» (A3: 32,3 против 45,6 м, TM25)')
+def _():
+    im = photo(B('studs_ice'), sat=1.06, con=1.04, vign=0.9)
+    im, tb = tl(im, [('ЛИПУЧКА НА ЛЬДУ', WHITE)], 640, y=14)       # вверху только небо: машина Михалыча слева под ним не закрыта
+    pl = plate('+13 М', RED, size=130, angle=-3)
+    return put(im, pl, 22, H - pl.height - 26)                          # левый низ: лёд и следы, правый низ свободен под таймер
+
+@cover('studs', 'noise', 'Рисовка: Костя зажимает уши от шиповки — «ШИПЫ ИЛИ ТИШИНА?» (KI2, раунд «Шум»)')
+def _():
+    im = photo(os.path.join(S, 'studs', 'kf', 'KI2.png'), sat=1.06, con=1.04, vign=0.9)
+    im, tb = tl(im, [('ШИПЫ', YELLOW), ('ИЛИ ТИШИНА?', WHITE)], 560)
+    return im
+
+
 if __name__ == '__main__':
     out = os.path.join(HERE, 'out'); os.makedirs(out, exist_ok=True)
     vids = sys.argv[1:] or list(V)
