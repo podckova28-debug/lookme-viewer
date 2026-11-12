@@ -96,7 +96,7 @@ SC.s01 = (X, t) => {
 
 /* ================================================================ 2. title card */
 SC.s02 = (X, t) => {
-  const cam = { cx: 960, cy: 560, z: 1.0 }, st = stage(cam); st.wld(g => drawSet(g, 'park'));
+  const cam = { cx: 960, cy: 540, z: 1.0 }, st = stage(cam); st.wld(g => drawSet(g, 'park'));
   st.col(g => { drawSpr(g, 'dogARun', mix(-200, 2100, t / 3.6), 1000, 170, { bob: -Math.abs(Math.sin(t * 12)) * 14 }); drawAnimal(g, 'croqueta', 1500, 980, .8, { head: 'bored', t });
     pigeonTalk(g, 420, 960, .8, { flip: 1, peck: Math.max(0, Math.sin(t * 3)) * .6 }); });
   compose2(X, st, { amt: 0 });
