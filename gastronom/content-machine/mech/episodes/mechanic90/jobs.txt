@@ -67,3 +67,5 @@ COVER toon_split — из кадров KI1 и KZ4, без генерации
 COVER toon_young_face b77fd8a6-53a9-4596-a64a-b160aa74f015 (рисовка, портрет 3:4, для toon_split2)
 COVER toon_old_face e22eca9e-2e28-4246-b1a2-98800fa6fed9 (рисовка, портрет 3:4, для toon_split2)
 REGEN CLIP M_I1 f9e70f50-6976-4c71-a304-7060b4eee9eb (старый a6ccda47: ключ улетал к лампочке и пропадал, 1,5–2,0 с)
+REGEN KD3 87472ed6-cd24-485b-b593-8089baedea88 (v3: без людей; v2 b48ae2b0 — руль и руки водителя на капоте, нашёл пользователь)
+REGEN KC1 00d55f4b-6c20-4a06-aaf3-6f557fcd2808 (в v1 из двери выглядывал нынешний Михалыч, 1997 год)
