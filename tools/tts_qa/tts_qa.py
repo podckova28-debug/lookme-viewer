@@ -7,6 +7,7 @@ Catches:
   * MISSING   - script words that are not spoken
   * EXTRA     - spoken words that are not in the script (inserted / hallucinated phrases)
   * REPEAT    - phrase spoken twice although the script says it once
+  * STRESS    - е/ё misread (whisper writes «ё» when heard): «набор черт» → «чёрт»; homographs FAIL
   * LOWCONF   - words recognised with very low confidence (mumbled)
   * PAUSE     - long silence inside the line (glitch / lost words)
   * CLIP      - clipping / distortion
@@ -237,6 +238,18 @@ def text_checks(script_text, words, dur):
             garbled_idx.update(widx)
             sev = 2 if (b2 - b1) >= 2 else 1
             issues.append({"type": "EXTRA", "t": t, "detail": f"extra words: «{h_txt}»", "sev": sev})
+    # е/ё stress errors: whisper writes «ё» when it hears it; «набор черт» read as «набор чёрт» passes the
+    # е-normalised comparison above. Homographs where ё changes the meaning FAIL, other ё are a WARN.
+    HOMO_E = {"черт", "черта", "черты", "все", "осел", "небо", "узнаем", "совершенный", "лен", "мел", "берет",
+              "поем", "слез", "пес", "передохнет", "вселенная", "надежнее", "истекший", "нем", "щеки"}
+    raw = lambda x: re.sub(r"[^а-яё]", "", x.lower())
+    s_raw = {raw(x) for x in script_text.split()}
+    for w in words:
+        h = raw(w["w"])
+        if "ё" in h and h not in s_raw and h.replace("ё", "е") in s_raw:
+            e = h.replace("ё", "е")
+            issues.append({"type": "STRESS", "t": round(w["s"], 2), "detail": f"script «{e}» read as «{h}»",
+                           "sev": 2 if e in HOMO_E else 1})
     # repeated phrase (3+ words) heard more often than in the script
     for n in (5, 4, 3):
         seen = {}
