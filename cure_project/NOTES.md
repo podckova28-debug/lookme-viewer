@@ -28,3 +28,9 @@ Sandbox root `/home/user/cw` (same pipeline as men_project: plan.py → render.p
 - User: «Большой вопрос и маленький маньяка?» — the title card (copied from men_project) had a huge first line and a
   tiny second line. Now both lines are big; the key word «МАНЬЯКА?» is the largest, in crimson. Only t00 re-rendered.
 - HQ: d2ol7oe51mr4n9…/67c77004-6238-4749-83c1-efe791867e80.mp4; web: …/824dcb31-d875-4237-80b8-eb5a03e199e4.mp4. Page v26.
+
+## v4 (2026-11-12) — replaces v3
+- User: «Набор чЁрт» — ch4 «набор черт» was read as «чёрт». Line rephrased to «особенности личности», take a of 4
+  (QA PASS, whisper hears no «чёрт»). Scanned all 16 lines for е→ё misreads: only this one.
+- tts_qa.py got a STRESS check (whisper writes ё when it hears it; homographs like черт/все FAIL).
+- HQ: d2ol7oe51mr4n9…/bec7d4ed-76b4-4b13-b0de-7d883969f258.mp4; web: …/4d258d30-73f7-4e46-a9e1-f09450ddc2a2.mp4. Page v27.
