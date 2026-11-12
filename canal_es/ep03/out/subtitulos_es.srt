@@ -99,449 +99,449 @@ TÚ: Ma… ¿te comiste mi chocolate?
 MAMÁ: ¿Qué? ¿Quién te dijo?
 
 26
-00:01:30,260 --> 00:01:31,312
+00:01:30,260 --> 00:01:31,639
 Miras a Croqueta.
 
 27
-00:01:32,092 --> 00:01:33,442
+00:01:32,419 --> 00:01:33,769
 CROQUETA: Yo no dije nada.
 
 28
-00:01:34,492 --> 00:01:36,147
+00:01:34,819 --> 00:01:36,474
 MAMÁ: ¿Estás hablando con el gato?
 
 29
-00:01:37,197 --> 00:01:41,772
+00:01:37,524 --> 00:01:42,099
 Regla número uno: entiendes a todos los animales, y ellos te entienden a ti.
 
 30
-00:01:41,852 --> 00:01:46,601
+00:01:42,179 --> 00:01:46,928
 Pero los demás solo oyen ladridos, maullidos… y a ti, platicando con un gato.
 
 31
-00:01:48,617 --> 00:01:51,720
+00:01:48,908 --> 00:01:52,011
 Camino a la escuela, descubres algo sobre los perros.
 
 32
-00:01:52,170 --> 00:01:54,007
+00:01:52,461 --> 00:01:54,298
 PERRO: ¡Hola! ¡Hola! ¡Hola!
 
 33
-00:01:54,287 --> 00:01:57,576
+00:01:54,578 --> 00:01:57,867
 PERRO: ¿Eres mi amigo? ¡Eres mi amigo! ¡Eres mi mejor amigo!
 
 34
-00:01:58,326 --> 00:02:03,996
+00:01:58,617 --> 00:02:04,287
 Todos los perros dicen lo mismo. Y todos los perros te quieren. De inmediato. Sin condiciones.
 
 35
-00:02:04,846 --> 00:02:06,480
+00:02:05,137 --> 00:02:06,771
 Bueno. Casi todos.
 
 36
-00:02:07,060 --> 00:02:09,759
+00:02:07,351 --> 00:02:10,050
 FIRULAIS: Ahí viene. El cartero. Todos los días viene.
 
 37
-00:02:10,139 --> 00:02:11,571
+00:02:10,430 --> 00:02:11,862
 FIRULAIS: Algún día lo voy a atrapar.
 
 38
-00:02:12,621 --> 00:02:17,362
+00:02:12,912 --> 00:02:17,653
 Firulais, el perro del vecino, lleva siete años en guerra con el cartero.
 
 39
-00:02:17,742 --> 00:02:18,783
+00:02:18,033 --> 00:02:19,074
 Va perdiendo.
 
 40
-00:02:21,075 --> 00:02:24,965
+00:02:21,367 --> 00:02:25,257
 En el salón vive el Señor Bigotes, el hámster de la clase.
 
 41
-00:02:25,715 --> 00:02:28,402
+00:02:26,007 --> 00:02:28,694
 SR. BIGOTES: Psst. Tú. El de los rizos. ¿Me oyes?
 
 42
-00:02:28,882 --> 00:02:33,555
+00:02:29,174 --> 00:02:33,847
 El Señor Bigotes vive en el escritorio del profe Ramírez. Lo ha visto todo.
 
 43
-00:02:34,305 --> 00:02:39,587
+00:02:34,597 --> 00:02:39,879
 SR. BIGOTES: El examen sorpresa de hoy. Pregunta uno: la B. Pregunta dos: la fotosíntesis.
 
 44
-00:02:39,967 --> 00:02:41,509
+00:02:40,259 --> 00:02:41,801
 TÚ: ¿Y tú cómo sabes?
 
 45
-00:02:41,789 --> 00:02:45,451
+00:02:42,081 --> 00:02:45,743
 SR. BIGOTES: Lo escribió anoche. Encima de mi jaula. Escribe muy fuerte.
 
 46
-00:02:46,401 --> 00:02:48,004
+00:02:46,693 --> 00:02:48,296
 Sacas diez de diez.
 
 47
-00:02:48,683 --> 00:02:50,810
+00:02:48,975 --> 00:02:51,102
 PROFE: Diez de diez. Usted.
 
 48
-00:02:51,390 --> 00:02:55,417
+00:02:51,682 --> 00:02:55,709
 El profe Ramírez te mira. Luego mira al Señor Bigotes.
 
 49
-00:02:56,197 --> 00:02:58,631
+00:02:56,489 --> 00:02:58,923
 El Señor Bigotes mira hacia otro lado.
 
 50
-00:03:01,242 --> 00:03:04,717
+00:03:01,533 --> 00:03:05,008
 En una semana te vuelves el detective de mascotas del barrio.
 
 51
-00:03:05,467 --> 00:03:07,409
+00:03:05,758 --> 00:03:07,700
 Encuentras un perico en un árbol.
 
 52
-00:03:08,089 --> 00:03:10,008
+00:03:08,380 --> 00:03:10,299
 Un gato atorado en un techo.
 
 53
-00:03:10,688 --> 00:03:15,008
+00:03:10,979 --> 00:03:15,299
 Y una tortuga que llevaba dos años perdida… en su propio jardín.
 
 54
-00:03:16,258 --> 00:03:20,083
+00:03:16,549 --> 00:03:20,374
 NACHO: Cien pesos por mascota. Yo soy tu representante.
 
 55
-00:03:20,563 --> 00:03:22,713
+00:03:20,854 --> 00:03:23,004
 Nacho cobra. Nacho no hace nada.
 
 56
-00:03:23,294 --> 00:03:26,303
+00:03:23,585 --> 00:03:26,594
 Nacho dice que eso se llama «negocios».
 
 57
-00:03:28,592 --> 00:03:29,876
+00:03:28,883 --> 00:03:30,167
 Y luego está Pepe.
 
 58
-00:03:30,356 --> 00:03:33,278
+00:03:30,647 --> 00:03:33,569
 Todos los animales del mundo te hablan. Pepe no.
 
 59
-00:03:34,128 --> 00:03:39,520
+00:03:34,419 --> 00:03:39,811
 Le haces preguntas. Le ofreces galletas. Le hablas despacio, como a un turista.
 
 60
-00:03:39,1000 --> 00:03:42,601
+00:03:40,291 --> 00:03:42,892
 TÚ: ¿Por qué… no… me… hablas?
 
 61
-00:03:43,551 --> 00:03:44,741
+00:03:43,842 --> 00:03:45,032
 Pepe solo te mira.
 
 62
-00:03:45,821 --> 00:03:48,671
+00:03:46,112 --> 00:03:48,962
 Hasta las otras palomas se ponen nerviosas.
 
 63
-00:03:49,421 --> 00:03:51,476
+00:03:49,712 --> 00:03:51,767
 PALOMAS: Nosotras no hablamos de Pepe.
 
 64
-00:03:53,992 --> 00:03:55,226
+00:03:54,283 --> 00:03:55,517
 Pero hay un problema.
 
 65
-00:03:55,306 --> 00:03:58,697
+00:03:55,597 --> 00:03:58,988
 Nadie más entiende a los animales. Solo te oyen a ti.
 
 66
-00:03:59,447 --> 00:04:04,362
+00:03:59,738 --> 00:04:04,653
 PALOMAS: Esa galleta es nuestra. Danos la galleta. Danos la galleta.
 
 67
-00:04:04,642 --> 00:04:07,861
+00:04:04,933 --> 00:04:08,152
 TÚ: ¡No! ¡Es mía! ¡Váyanse!
 
 68
-00:04:08,712 --> 00:04:12,493
+00:04:09,003 --> 00:04:12,784
 Para el resto del mundo, eres el chico que le grita a las palomas.
 
 69
-00:04:13,073 --> 00:04:16,096
+00:04:13,364 --> 00:04:16,387
 RENATA: ¿Estás… peleando con unas palomas?
 
 70
-00:04:16,576 --> 00:04:18,001
+00:04:16,867 --> 00:04:18,292
 TÚ: Ellas empezaron.
 
 71
-00:04:18,951 --> 00:04:22,592
+00:04:19,242 --> 00:04:22,883
 Renata se va. Despacio. Sin darte la espalda.
 
 72
-00:04:25,275 --> 00:04:28,819
+00:04:25,567 --> 00:04:29,111
 El segundo problema: los animales no se callan nunca.
 
 73
-00:04:29,569 --> 00:04:32,979
+00:04:29,861 --> 00:04:33,271
 MOSQUITO: Mmm. Tipo O positivo. Excelente cosecha.
 
 74
-00:04:34,029 --> 00:04:37,771
+00:04:34,321 --> 00:04:38,063
 Y ahora sabes por qué los perros ladran a las tres de la mañana.
 
 75
-00:04:38,521 --> 00:04:39,634
+00:04:38,813 --> 00:04:39,926
 PERROS: ¡¿Quién anda ahí?!
 
 76
-00:04:39,814 --> 00:04:40,549
+00:04:40,106 --> 00:04:40,841
 PERRO: ¡No sé!
 
 77
-00:04:40,729 --> 00:04:41,842
+00:04:41,021 --> 00:04:42,134
 PERROS: ¡¿Quién anda ahí?!
 
 78
-00:04:42,692 --> 00:04:45,404
+00:04:42,984 --> 00:04:45,696
 Nadie anda ahí. Nunca anda nadie ahí.
 
 79
-00:04:45,984 --> 00:04:49,079
+00:04:46,276 --> 00:04:49,371
 Duermes tres horas. Croqueta duerme catorce.
 
 80
-00:04:49,658 --> 00:04:52,415
+00:04:49,950 --> 00:04:52,707
 CROQUETA: Silencio. Estoy descansando.
 
 81
-00:04:54,700 --> 00:04:56,757
+00:04:54,992 --> 00:04:57,049
 Y el tercer problema es el peor.
 
 82
-00:04:56,837 --> 00:04:58,895
+00:04:57,129 --> 00:04:59,187
 Los animales no guardan secretos.
 
 83
-00:04:59,645 --> 00:05:03,503
+00:04:59,937 --> 00:05:03,795
 El perro de doña Lupe te cuenta que ella les habla a sus plantas.
 
 84
-00:05:04,183 --> 00:05:08,171
+00:05:04,475 --> 00:05:08,463
 El gato del profe Ramírez te cuenta que el profe canta en la regadera.
 
 85
-00:05:08,851 --> 00:05:12,152
+00:05:09,143 --> 00:05:12,444
 Y Croqueta le cuenta a todo el barrio lo que tú dices dormido.
 
 86
-00:05:13,001 --> 00:05:15,452
+00:05:13,293 --> 00:05:15,744
 CROQUETA: Dijo «Renata». Tres veces.
 
 87
-00:05:16,602 --> 00:05:21,551
+00:05:16,894 --> 00:05:21,843
 Regla número dos: los animales no mienten. Y no saben guardar un secreto.
 
 88
-00:05:23,550 --> 00:05:27,994
+00:05:23,842 --> 00:05:28,286
 El sábado, en el parque, Renata pasea a su perrita, Canela.
 
 89
-00:05:28,374 --> 00:05:30,312
+00:05:28,666 --> 00:05:30,604
 Canela te ve. Y viene corriendo.
 
 90
-00:05:31,362 --> 00:05:34,860
+00:05:31,654 --> 00:05:35,152
 CANELA: ¡Hola! ¡Tú eres el chico! ¡El chico del que habla Renata!
 
 91
-00:05:35,241 --> 00:05:36,991
+00:05:35,533 --> 00:05:37,283
 TÚ: ¿Renata… habla de mí?
 
 92
-00:05:37,371 --> 00:05:41,204
+00:05:37,663 --> 00:05:41,496
 CANELA: ¡Todo el tiempo! ¡Ayer le dijo al espejo que tú…!
 
 93
-00:05:42,154 --> 00:05:48,225
+00:05:42,446 --> 00:05:48,517
 Y aquí está: todo lo que Renata piensa de ti, en boca de una perrita que no sabe guardar secretos.
 
 94
-00:05:48,605 --> 00:05:50,009
+00:05:48,897 --> 00:05:50,301
 Solo tienes que escuchar.
 
 95
-00:05:52,325 --> 00:05:54,260
+00:05:52,617 --> 00:05:54,552
 Pero entonces piensas en Croqueta.
 
 96
-00:05:54,740 --> 00:05:58,705
+00:05:55,032 --> 00:05:58,997
 En todo lo que tú le cuentas a Croqueta. De noche. Cuando nadie te oye.
 
 97
-00:05:59,655 --> 00:06:03,854
+00:05:59,947 --> 00:06:04,146
 Y en cómo te sentirías si alguien lo supiera antes de que tú lo dijeras.
 
 98
-00:06:04,904 --> 00:06:07,502
+00:06:05,196 --> 00:06:07,794
 TÚ: Canela, espera. No me lo digas.
 
 99
-00:06:07,882 --> 00:06:09,759
+00:06:08,174 --> 00:06:10,051
 CANELA: ¿Por qué no? ¡Es lo mejor!
 
 100
-00:06:10,139 --> 00:06:12,295
+00:06:10,431 --> 00:06:12,587
 TÚ: Porque eso me lo tiene que decir ella.
 
 101
-00:06:14,283 --> 00:06:16,238
+00:06:14,575 --> 00:06:16,530
 Renata llega corriendo.
 
 102
-00:06:16,988 --> 00:06:20,008
+00:06:17,280 --> 00:06:20,300
 RENATA: Perdón, perdón. Se me escapó. ¿Te hizo algo?
 
 103
-00:06:20,388 --> 00:06:22,804
+00:06:20,680 --> 00:06:23,096
 TÚ: No. Solo… platicamos.
 
 104
-00:06:23,284 --> 00:06:24,155
+00:06:23,576 --> 00:06:24,447
 RENATA: ¿Platicaron?
 
 105
-00:06:25,205 --> 00:06:28,226
+00:06:25,497 --> 00:06:28,518
 Y por un segundo crees que lo arruinaste otra vez.
 
 106
-00:06:28,906 --> 00:06:32,250
+00:06:29,198 --> 00:06:32,542
 RENATA: Le caes bien. Y ella nunca se equivoca con la gente.
 
 107
-00:06:33,099 --> 00:06:35,295
+00:06:33,391 --> 00:06:35,587
 RENATA: ¿Quieres pasearla conmigo el próximo sábado?
 
 108
-00:06:35,875 --> 00:06:37,797
+00:06:36,167 --> 00:06:38,089
 TÚ: Sí. Sí quiero.
 
 109
-00:06:38,847 --> 00:06:42,655
+00:06:39,139 --> 00:06:42,947
 Regla número tres: hay cosas que tienes que escuchar de la persona.
 
 110
-00:06:43,034 --> 00:06:44,251
+00:06:43,326 --> 00:06:44,543
 No de su perro.
 
 111
-00:06:44,932 --> 00:06:46,828
+00:06:45,224 --> 00:06:47,120
 CANELA: ¡Yo sabía! ¡Yo sabía!
 
 112
-00:06:49,042 --> 00:06:52,067
+00:06:49,333 --> 00:06:52,358
 Esa noche vas a la banca del parque, con Pepe.
 
 113
-00:06:52,147 --> 00:06:58,392
+00:06:52,438 --> 00:06:58,683
 Le cuentas todo. Lo de Croqueta. Lo del Señor Bigotes. Lo de Canela.
 
 114
-00:06:59,241 --> 00:07:00,848
+00:06:59,532 --> 00:07:01,139
 Pepe escucha, como siempre.
 
 115
-00:07:01,728 --> 00:07:04,135
+00:07:02,019 --> 00:07:04,426
 TÚ: Ya sé. No me vas a contestar.
 
 116
-00:07:05,385 --> 00:07:07,409
+00:07:05,676 --> 00:07:07,700
 Y entonces Pepe abre el pico.
 
 117
-00:07:08,859 --> 00:07:09,591
+00:07:09,150 --> 00:07:09,882
 PEPE: ¿Te gustó?
 
 118
-00:07:10,371 --> 00:07:11,028
+00:07:10,662 --> 00:07:11,284
 TÚ: ¿…Qué?
 
 119
-00:07:11,607 --> 00:07:13,442
+00:07:11,863 --> 00:07:13,698
 PEPE: El poder. ¿Te gustó?
 
 120
-00:07:14,493 --> 00:07:18,250
+00:07:14,749 --> 00:07:18,506
 Pepe nunca habla. Y la primera vez que habla, hace preguntas.
 
 121
-00:07:18,830 --> 00:07:20,700
+00:07:19,086 --> 00:07:20,956
 PEPE: Mañana, nadie te va a ver.
 
 122
-00:07:21,949 --> 00:07:23,618
+00:07:22,205 --> 00:07:23,874
 TÚ: Espera… ¿tú fuiste?
 
 123
-00:07:24,969 --> 00:07:25,669
+00:07:25,225 --> 00:07:25,925
 PEPE: Ruu.
 
 124
-00:07:28,650 --> 00:07:32,034
+00:07:28,942 --> 00:07:32,326
 ¿Algo de esto es real? Más de lo que crees.
 
 125
-00:07:33,084 --> 00:07:36,478
+00:07:33,376 --> 00:07:36,770
 Uno. Los perritos de la pradera tienen palabras.
 
 126
-00:07:36,558 --> 00:07:43,707
+00:07:36,850 --> 00:07:43,999
 Su grito de alarma no solo dice «¡cuidado, un humano!». También dice qué tan alto es… y de qué color es su ropa.
 
 127
-00:07:44,387 --> 00:07:47,948
+00:07:44,679 --> 00:07:48,240
 Con esa sudadera amarilla, ya tendrían una palabra para ti.
 
 128
-00:07:49,198 --> 00:07:53,465
+00:07:49,490 --> 00:07:53,757
 Dos. Los gatos adultos casi no se maúllan entre ellos.
 
 129
-00:07:53,545 --> 00:07:59,526
+00:07:53,837 --> 00:07:59,818
 El maullido es, sobre todo, para los humanos. Cuando Croqueta maúlla, te está hablando a ti.
 
 130
-00:08:00,776 --> 00:08:04,933
+00:08:01,068 --> 00:08:05,225
 Tres. Las palomas pueden aprender a reconocer palabras escritas.
 
 131
-00:08:05,013 --> 00:08:10,221
+00:08:05,305 --> 00:08:10,513
 En un experimento, unas palomas aprendieron hasta cincuenta y ocho palabras en inglés.
 
 132
-00:08:11,271 --> 00:08:16,527
+00:08:11,563 --> 00:08:16,819
 Así que, por si acaso, cuidado con lo que escribes en los comentarios. Pepe sabe leer.
 
 133
-00:08:17,733 --> 00:08:19,778
+00:08:18,025 --> 00:08:20,070
 ¿Y tú qué le preguntarías a tu mascota?
 
 134
-00:08:19,858 --> 00:08:21,636
+00:08:20,150 --> 00:08:21,928
 Déjamelo en los comentarios.
 
 135
-00:08:22,086 --> 00:08:26,634
+00:08:22,378 --> 00:08:26,926
 Y fíjate bien: Pepe no dijo ni una palabra en todo el episodio… hasta el final.
 
 136
-00:08:27,114 --> 00:08:31,535
+00:08:27,406 --> 00:08:31,827
 Mañana, nadie te va a ver. Suscríbete para no perdértelo.
 
 137
-00:08:31,615 --> 00:08:32,590
+00:08:31,907 --> 00:08:32,882
 Pepe ya te vio.

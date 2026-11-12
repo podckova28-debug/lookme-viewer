@@ -35,9 +35,9 @@ YouTube Studio → «Проверить и сравнить»: загрузит�
 
 0:00 Inicio
 0:44 Croqueta
-1:47 Todos los perros
+1:48 Todos los perros
 3:53 Los problemas
-5:22 Canela
+5:23 Canela
 6:48 Pepe
 7:27 ¿Algo de esto es real?
 
@@ -128,9 +128,9 @@ What if you could talk to animals, and they could talk back? An animated story a
 
 0:00 Intro
 0:44 Croqueta
-1:47 Every dog
+1:48 Every dog
 3:53 The problems
-5:22 Canela
+5:23 Canela
 6:48 Pepe
 7:27 Is any of this real?
 
@@ -149,9 +149,9 @@ E se você pudesse falar com os animais, e eles com você? Uma história animada
 
 0:00 Início
 0:44 Croqueta
-1:47 Todos os cachorros
+1:48 Todos os cachorros
 3:53 Os problemas
-5:22 Canela
+5:23 Canela
 6:48 Pepe
 7:27 Algo disso é real?
 
