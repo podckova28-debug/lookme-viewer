@@ -202,6 +202,40 @@ def _():
     return put(im, plate('ВСЯ ЖИЗНЬ', RED, size=84, angle=-3), 30, tb.height + 18)
 
 
+# --- рисовка Михалыча (пользователь, 12 нояб: «И всё-таки дай обложку в рисовке Михалыча») ---
+def _half(path, cx, z=1.0):
+    """Половина обложки 640×720 из кадра 16:9: высота кадра → 720, окно 640 по центру cx (доля ширины)."""
+    from PIL import ImageEnhance
+    im = Image.open(path).convert('RGB'); k = H * z / im.height
+    im = im.resize((int(im.width * k), int(im.height * k)), Image.LANCZOS)
+    x0 = int(min(max(cx * im.width - W // 4, 0), im.width - W // 2)); y0 = (im.height - H) // 2
+    im = im.crop((x0, y0, x0 + W // 2, y0 + H))
+    return ImageEnhance.Contrast(ImageEnhance.Color(im).enhance(1.12)).enhance(1.06)
+
+@cover('mechanic90', 'toon_split', 'Рисовка: молодой в 1994 и Михалыч в 2026 — «30 лет в гараже» (кадры KI1 и KZ4, без генерации)')
+def _():
+    from PIL import ImageDraw
+    im = Image.new('RGB', (W, H))
+    im.paste(_half(B('m90_toon_young'), 0.68, 1.0), (0, 0)); im.paste(_half(B('m90_toon_old'), 0.52, 1.0), (W // 2, 0))
+    d = ImageDraw.Draw(im); d.rectangle([W // 2 - 5, 0, W // 2 + 5, H], fill=WHITE)
+    im = put(im, plate('1994', GREEN, size=84, angle=-3), 18, 18)
+    im = put(im, plate('2026', RED, size=84, angle=3), W // 2 + 18, 18)
+    im, tb = bl(im, [('30 ЛЕТ', YELLOW), ('В ГАРАЖЕ', WHITE)], 420)
+    return im
+
+@cover('mechanic90', 'toon_tyres', 'Рисовка: молодой Михалыч с двумя покрышками — «Зарплата покрышками» (A2)')
+def _():
+    im = photo(B('m90_toon_tyres'), sat=1.08, con=1.05, vign=0.85)
+    im, tb = tl(im, [('ЗАРПЛАТА', WHITE), ('ПОКРЫШКАМИ', YELLOW)], 560)
+    return put(im, plate('1994', RED, size=120, angle=-3), 30, tb.height + 22)
+
+@cover('mechanic90', 'toon_photo', 'Рисовка: Михалыч смотрит на своё фото в 18 лет — «Это вся моя жизнь» (Z4)')
+def _():
+    im = photo(B('m90_toon_photo'), sat=1.08, con=1.05, vign=0.85)
+    im, tb = tl(im, [('МЕХАНИК С 1994', YELLOW)], 620, y=8)
+    return im
+
+
 if __name__ == '__main__':
     out = os.path.join(HERE, 'out'); os.makedirs(out, exist_ok=True)
     vids = sys.argv[1:] or list(V)

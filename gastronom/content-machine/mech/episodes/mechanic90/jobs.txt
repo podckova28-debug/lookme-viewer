@@ -61,3 +61,6 @@ COVER tyres f3c895f8-3132-4096-9807-eb0712c21cde
 COVER split 7115f70f-e5ca-4f77-a65b-e4be84def2f7
 COVER hands e543add2-10e9-471d-a559-b2680652e6f0
 REGEN KG1 9724eae4-068d-422d-9d4e-7f4eedb6a12d (такси 2010-х вместо «Жигулей»)
+COVER toon_tyres ed16deed-f31b-4bed-bbb5-fb540f44182a (рисовка, gpt_image_2_5 medium 2k)
+COVER toon_photo c6caa6df-647d-4498-bc9a-5afbf0e111f8 (рисовка)
+COVER toon_split — из кадров KI1 и KZ4, без генерации
