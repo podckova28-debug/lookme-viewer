@@ -37,13 +37,15 @@ SC.s00 = (X, t) => {
     { t: Lt('s00_06') - .05, cx: 1080, cy: 700, z: 2.6, z2: 3.1, lock: 1 },
     { t: rw, cx: 960, cy: 540, z: 1.0, lock: 1 },
   ]);
-  const st = stage(cam); st.wld(g => { drawSet(g, 'park'); bench(g, 0); bench(g, 1); });
-  // the golden dog: zooms around, then sits in front of you begging for the ball
+  const sitT = Lt('s00_03') - .6, runIn = sitT - 1.2;
+  const st = stage(cam); st.wld(g => { drawSet(g, 'park');
+    if (tr < runIn) { const u = loopU(tr, 0, 4.4), x = -150 + 2250 * u; drawSpr(g, 'dogARun', x, 748, 92, { flip: -1, bob: -Math.abs(Math.sin(tr * 12)) * 8 }); }   // laps on the far path, behind everyone
+    bench(g, 0); bench(g, 1); });
+  // the golden dog: laps the far path, then runs in and sits in front of you, begging for the ball
   let mDog = null, mGang = null;
-  st.col(g => { const sitT = Lt('s00_03') - .6;
-    if (tr < sitT) { const u = loopU(tr, 0, 3.2), x = 200 + 1500 * u; drawSpr(g, 'dogARun', x, 1000, 170, { flip: 1, bob: -Math.abs(Math.sin(tr * 12)) * 14 }); }
-    else mDog = drawAnimal(g, 'dogA', 470, 1010, 1.0, { open: openOf(t, ['s00_03']), t, tilt: Math.sin(t * 3) * .08, bob: -Math.abs(Math.sin(t * 9)) * 6 });
-    drawAnimal(g, 'dogB', 260, 990, .7, { t, tilt: Math.sin(t * 2 + 1) * .1 }); });
+  st.col(g => { drawAnimal(g, 'dogB', 190, 945, .62, { t, tilt: Math.sin(t * 2 + 1) * .1 });
+    if (tr >= runIn && tr < sitT) { const u = R(tr, runIn, sitT, lin); drawSpr(g, 'dogARun', mix(-160, 470, u), mix(1040, 1010, u), 170, { flip: -1, bob: -Math.abs(Math.sin(tr * 12)) * 14 }); }
+    else if (tr >= sitT) mDog = drawAnimal(g, 'dogA', 470, 1010, 1.0, { open: openOf(t, ['s00_03']), t, tilt: Math.sin(t * 3) * .08, bob: -Math.abs(Math.sin(t * 9)) * 6 }); });
   // the gossip gang on the path, right
   st.col(g => { GANG.forEach(([hue, br, sa], i) => { const x = 1340 + i * 120, m = pigeonTalk(g, x, 960 + (i % 2) * 18, .85, { flip: -1, tint: i ? [hue, br, sa] : null, peck: i === 1 ? 0 : Math.max(0, Math.sin(t * 2.6 + i)) * .6, open: i === 1 ? openOf(t, ['s00_04']) : 0 }); if (i === 1) mGang = m; }); });
   const hp = benchSit(900, { t, look: [14, 6], mouth: .2 });
@@ -96,8 +98,8 @@ SC.s01 = (X, t) => {
 
 /* ================================================================ 2. title card */
 SC.s02 = (X, t) => {
-  const cam = { cx: 960, cy: 540, z: 1.0 }, st = stage(cam); st.wld(g => drawSet(g, 'park'));
-  st.col(g => { drawSpr(g, 'dogARun', mix(-200, 2100, t / 3.6), 1000, 170, { bob: -Math.abs(Math.sin(t * 12)) * 14 }); drawAnimal(g, 'croqueta', 1500, 980, .8, { head: 'bored', t });
+  const cam = { cx: 960, cy: 540, z: 1.0 }, st = stage(cam); st.wld(g => { drawSet(g, 'park'); drawSpr(g, 'dogARun', mix(-200, 2100, t / 3.6), 748, 92, { flip: -1, bob: -Math.abs(Math.sin(t * 12)) * 8 }); });
+  st.col(g => { drawAnimal(g, 'croqueta', 1500, 980, .8, { head: 'bored', t });
     pigeonTalk(g, 420, 960, .8, { flip: 1, peck: Math.max(0, Math.sin(t * 3)) * .6 }); });
   compose2(X, st, { amt: 0 });
   [[260, 700, 'GUAU'], [1640, 660, 'MIAU'], [380, 840, 'RUU']].forEach(([x, y, s], i) => { const a = R(t, .2 + i * .15, .5 + i * .15, back); if (a > 0) bubble(X, s, x, y - 120, a, 56); });
@@ -209,7 +211,7 @@ SC.s05 = (X, t) => {
     if (t > Lt('s05_04')) { const G = charGeom(CAST.tu, hp); hp.hL = [-110, G.top + 200]; hp.hR = [130, G.top + 230]; hp.mouth = 1; }
     st.col(g => drawChar(g, 'tu', hp));
     const arrive = Lt('s05_02') - .4;
-    st.col(g => { if (t < arrive) { drawSpr(g, 'dogARun', mix(1950, 1200, R(t, arrive - 1.6, arrive, lin)), 990, 170, { flip: 1, bob: -Math.abs(Math.sin(t * 12)) * 14 }); drawSpr(g, 'dogBStand', mix(2100, 1460, R(t, arrive - 1.2, arrive + .3, lin)), 995, 150, { flip: 1 }); }
+    st.col(g => { if (t < arrive) { drawSpr(g, 'dogARun', mix(1950, 1200, R(t, arrive - 1.6, arrive, lin)), 990, 170, { flip: 1, bob: -Math.abs(Math.sin(t * 12)) * 14 }); drawSpr(g, 'dogBStand', mix(2100, 1460, R(t, arrive - 1.2, arrive + .3, lin)), 995, 150, { flip: 1, bob: -Math.abs(Math.sin(t * 11)) * 10, rot: Math.sin(t * 11) * .04 }); }
       else { mA = drawAnimal(g, 'dogA', 1180, 1000, .95, { t, open: openOf(t, ['s05_02']), tilt: Math.sin(t * 4) * .1, bob: -Math.abs(Math.sin(t * 10)) * 5 });
         mB = drawAnimal(g, 'dogB', 1450, 1005, .9, { t, open: openOf(t, ['s05_03']), tilt: Math.sin(t * 5 + 1) * .12, bob: -Math.abs(Math.sin(t * 11)) * 6 }); } });
     st.col(g => { if (t > Lt('s05_04')) for (let i = 0; i < 6; i++) heartPop(g, [1150, 1210, 1420, 1480, 1300, 1000][i], 760 - (i % 2) * 40, loopU(t, Lt('s05_04') + i * .25, 1.5), .9); });
