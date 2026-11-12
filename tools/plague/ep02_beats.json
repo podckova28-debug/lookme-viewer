@@ -240,6 +240,29 @@
    "vo": "assets/plague/ep02/vo/L01.wav",
    "shots": [
     {
+     "img": "d06a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "SMALLER THAN THE WIDTH OF A HAIR",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
      "img": "c07a",
      "from": [
       0.5,
@@ -401,7 +424,7 @@
    "vo": "assets/plague/ep02/vo/S01.wav",
    "shots": [
     {
-     "img": "scheme_bg",
+     "img": "d01a",
      "from": [
       0.5,
       0.5,
@@ -418,103 +441,15 @@
        "text": "WHAT HE DOES TO YOU",
        "x": 960,
        "y": 150,
-       "size": 74,
-       "at": 0.1,
-       "persist": true,
-       "color": [
-        242,
-        232,
-        208
-       ],
-       "style": "title"
+       "size": 72,
+       "at": 0.3
       },
       {
-       "style": "line",
-       "pts": [
-        760,
-        205,
-        1160,
-        205
-       ],
-       "width": 3,
-       "color": [
-        150,
-        215,
-        120
-       ],
-       "text": "",
-       "size": 1,
-       "x": 0,
-       "y": 0,
-       "at": 0.1,
-       "persist": true
-      },
-      {
-       "style": "line",
-       "pts": [
-        200,
-        540,
-        1720,
-        540
-       ],
-       "width": 5,
-       "color": [
-        120,
-        98,
-        70
-       ],
-       "text": "",
-       "size": 1,
-       "x": 0,
-       "y": 0,
-       "at": 0.1,
-       "persist": true
-      },
-      {
-       "style": "dot",
-       "x": 260.0,
-       "y": 540,
-       "r": 20,
-       "color": [
-        150,
-        215,
-        120
-       ],
-       "text": "",
-       "size": 1,
-       "x0": 0,
-       "at": 1.2,
-       "persist": true
-      },
-      {
-       "text": "HOURS \u2013 5 DAYS",
-       "x": 260.0,
-       "y": 470,
-       "size": 44,
-       "at": 1.2,
-       "persist": true,
-       "color": [
-        150,
-        215,
-        120
-       ],
-       "style": "plate",
-       "maxw": 300
-      },
-      {
-       "text": "a bad drink",
-       "x": 260.0,
-       "y": 615,
-       "size": 36,
-       "at": 1.3499999999999999,
-       "persist": true,
-       "color": [
-        242,
-        232,
-        208
-       ],
-       "style": "plate",
-       "maxw": 320
+       "text": "A FEW HOURS TO 5 DAYS",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
       }
      ]
     }
@@ -524,7 +459,7 @@
    "vo": "assets/plague/ep02/vo/S02.wav",
    "shots": [
     {
-     "img": "scheme_bg",
+     "img": "d02a",
      "from": [
       0.5,
       0.5,
@@ -538,126 +473,11 @@
      "w": 1,
      "text": [
       {
-       "style": "dot",
-       "x": 726.6666666666667,
-       "y": 540,
-       "r": 20,
-       "color": [
-        150,
-        215,
-        120
-       ],
-       "text": "",
-       "size": 1,
-       "x0": 0,
-       "at": 0.4,
-       "persist": true
-      },
-      {
-       "text": "MOST PEOPLE",
-       "x": 726.6666666666667,
-       "y": 470,
-       "size": 44,
-       "at": 0.4,
-       "persist": true,
-       "color": [
-        150,
-        215,
-        120
-       ],
-       "style": "plate",
-       "maxw": 300
-      },
-      {
-       "text": "mild or nothing",
-       "x": 726.6666666666667,
-       "y": 615,
-       "size": 36,
-       "at": 0.55,
-       "persist": true,
-       "color": [
-        242,
-        232,
-        208
-       ],
-       "style": "plate",
-       "maxw": 320
-      },
-      {
-       "text": "still contagious",
-       "x": 726.6666666666667,
-       "y": 663,
-       "size": 36,
-       "at": 0.55,
-       "persist": true,
-       "color": [
-        242,
-        232,
-        208
-       ],
-       "style": "plate",
-       "maxw": 320
-      },
-      {
-       "style": "dot",
-       "x": 1193.3333333333335,
-       "y": 540,
-       "r": 20,
-       "color": [
-        150,
-        215,
-        120
-       ],
-       "text": "",
-       "size": 1,
-       "x0": 0,
-       "at": 4.6,
-       "persist": true
-      },
-      {
-       "text": "SEVERE CASES",
-       "x": 1193.3333333333335,
-       "y": 470,
-       "size": 44,
-       "at": 4.6,
-       "persist": true,
-       "color": [
-        150,
-        215,
-        120
-       ],
-       "style": "plate",
-       "maxw": 300
-      },
-      {
-       "text": "rice-water diarrhoea",
-       "x": 1193.3333333333335,
-       "y": 615,
-       "size": 36,
-       "at": 4.75,
-       "persist": true,
-       "color": [
-        242,
-        232,
-        208
-       ],
-       "style": "plate",
-       "maxw": 320
-      },
-      {
-       "text": "vomiting",
-       "x": 1193.3333333333335,
-       "y": 663,
-       "size": 36,
-       "at": 4.75,
-       "persist": true,
-       "color": [
-        242,
-        232,
-        208
-       ],
-       "style": "plate",
-       "maxw": 320
+       "text": "MOST: MILD OR NOTHING  \u00b7  SEVERE: RICE-WATER DIARRHOEA, VOMITING",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
       }
      ]
     }
@@ -667,7 +487,7 @@
    "vo": "assets/plague/ep02/vo/S03.wav",
    "shots": [
     {
-     "img": "scheme_bg",
+     "img": "d03a",
      "from": [
       0.5,
       0.5,
@@ -681,65 +501,11 @@
      "w": 1,
      "text": [
       {
-       "style": "dot",
-       "x": 1660.0,
-       "y": 540,
-       "r": 20,
-       "color": [
-        150,
-        215,
-        120
-       ],
-       "text": "",
-       "size": 1,
-       "x0": 0,
-       "at": 0.5,
-       "persist": true
-      },
-      {
-       "text": "WITHIN HOURS",
-       "x": 1660.0,
-       "y": 470,
-       "size": 44,
-       "at": 0.5,
-       "persist": true,
-       "color": [
-        150,
-        215,
-        120
-       ],
-       "style": "plate",
-       "maxw": 300
-      },
-      {
-       "text": "cramps \u00b7 sunken eyes",
-       "x": 1660.0,
-       "y": 615,
-       "size": 36,
-       "at": 0.65,
-       "persist": true,
-       "color": [
-        242,
-        232,
-        208
-       ],
-       "style": "plate",
-       "maxw": 320
-      },
-      {
-       "text": "weak pulse",
-       "x": 1660.0,
-       "y": 663,
-       "size": 36,
-       "at": 0.65,
-       "persist": true,
-       "color": [
-        242,
-        232,
-        208
-       ],
-       "style": "plate",
-       "maxw": 320
+       "text": "CRAMPS  \u00b7  SUNKEN EYES  \u00b7  WRINKLED SKIN  \u00b7  WEAK PULSE",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
       }
      ]
     }
@@ -879,7 +645,7 @@
      "w": 1
     },
     {
-     "img": "c14b",
+     "img": "d07a",
      "from": [
       0.5,
       0.5,
@@ -888,9 +654,18 @@
      "to": [
       0.5,
       0.5,
-      1.05
+      1.02
      ],
-     "w": 1
+     "w": 1,
+     "text": [
+      {
+       "text": "RIVER DELTA  \u00b7  COPEPOD  \u00b7  VIBRIO",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
     },
     {
      "img": "c14c",
@@ -932,7 +707,7 @@
    "vo": "assets/plague/ep02/vo/L10.wav",
    "shots": [
     {
-     "img": "c16a",
+     "img": "d08a",
      "from": [
       0.5,
       0.5,
@@ -941,9 +716,18 @@
      "to": [
       0.5,
       0.5,
-      1.05
+      1.02
      ],
-     "w": 1
+     "w": 1,
+     "text": [
+      {
+       "text": "BACTERIUM  +  VIRUS  =  CHOLERA TOXIN",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
     },
     {
      "img": "c16b",
@@ -1445,27 +1229,27 @@
      "w": 1
     },
     {
-     "img": "c27b",
+     "img": "d09a",
      "from": [
       0.5,
       0.5,
-      1.04
+      1.0
      ],
      "to": [
       0.5,
       0.5,
-      1.07
+      1.02
      ],
      "w": 1,
-     "text": {
-      "text": "MIASMA",
-      "x": 1400,
-      "y": 230,
-      "size": 96,
-      "style": "stamp",
-      "pop": true,
-      "at": 0.5
-     }
+     "text": [
+      {
+       "text": "WHAT THEY THOUGHT  vs  WHAT WAS TRUE",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
     }
    ]
   },
@@ -1703,7 +1487,7 @@
      "w": 1
     },
     {
-     "img": "c34b",
+     "img": "d10a",
      "from": [
       0.5,
       0.5,
@@ -1712,9 +1496,18 @@
      "to": [
       0.5,
       0.5,
-      1.05
+      1.02
      ],
-     "w": 1
+     "w": 1,
+     "text": [
+      {
+       "text": "BREWERY  \u00b7  WORKHOUSE  \u00b7  THE WIDOW ON THE HILL",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
     },
     {
      "img": "c34c",
@@ -2141,7 +1934,7 @@
      }
     },
     {
-     "img": "c49b",
+     "img": "d11a",
      "from": [
       0.5,
       0.5,
@@ -2150,9 +1943,18 @@
      "to": [
       0.5,
       0.5,
-      1.05
+      1.02
      ],
-     "w": 1
+     "w": 1,
+     "text": [
+      {
+       "text": "HAMBURG: UNFILTERED  \u00b7  ALTONA: FILTERED",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
     }
    ]
   },
@@ -2224,6 +2026,29 @@
   {
    "vo": "assets/plague/ep02/vo/L45.wav",
    "shots": [
+    {
+     "img": "d12a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "CLEAN WATER  +  SALT  +  SUGAR",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
     {
      "img": "c51a",
      "from": [
@@ -2407,7 +2232,7 @@
    "vo": "assets/plague/ep02/vo/A01.wav",
    "shots": [
     {
-     "img": "scheme_bg",
+     "img": "d04a",
      "from": [
       0.5,
       0.5,
@@ -2424,80 +2249,15 @@
        "text": "WHAT HE LEAVES BEHIND",
        "x": 960,
        "y": 150,
-       "size": 74,
-       "at": 0.1,
-       "persist": true,
-       "color": [
-        242,
-        232,
-        208
-       ],
-       "style": "title"
+       "size": 72,
+       "at": 0.3
       },
       {
-       "style": "line",
-       "pts": [
-        760,
-        205,
-        1160,
-        205
-       ],
-       "width": 3,
-       "color": [
-        150,
-        215,
-        120
-       ],
-       "text": "",
-       "size": 1,
-       "x": 0,
-       "y": 0,
-       "at": 0.1,
-       "persist": true
-      },
-      {
-       "text": "FOR THE SURVIVOR",
-       "x": 560,
-       "y": 300,
-       "size": 46,
-       "at": 1.4000000000000001,
-       "persist": true,
-       "color": [
-        150,
-        215,
-        120
-       ],
-       "style": "plate"
-      },
-      {
-       "text": "\u00b7  full recovery in days",
-       "x": 560,
-       "y": 400,
-       "size": 40,
-       "at": 1.6,
-       "persist": true,
-       "color": [
-        242,
-        232,
-        208
-       ],
-       "style": "plate",
-       "maxw": 700
-      },
-      {
-       "text": "\u00b7  immunity fades in a few years",
-       "x": 560,
-       "y": 478,
-       "size": 40,
-       "at": 5.0,
-       "persist": true,
-       "color": [
-        242,
-        232,
-        208
-       ],
-       "style": "plate",
-       "maxw": 700
+       "text": "RECOVERY IN DAYS  \u00b7  IMMUNITY FADES IN A FEW YEARS",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
       }
      ]
     }
@@ -2507,7 +2267,7 @@
    "vo": "assets/plague/ep02/vo/A02.wav",
    "shots": [
     {
-     "img": "scheme_bg",
+     "img": "d05a",
      "from": [
       0.5,
       0.5,
@@ -2521,78 +2281,11 @@
      "w": 1,
      "text": [
       {
-       "text": "FOR THE WORLD",
-       "x": 1360,
-       "y": 300,
-       "size": 46,
-       "at": 1.6,
-       "persist": true,
-       "color": [
-        150,
-        215,
-        120
-       ],
-       "style": "plate"
-      },
-      {
-       "text": "\u00b7  modern sewers",
-       "x": 1360,
-       "y": 400,
-       "size": 40,
-       "at": 1.8,
-       "persist": true,
-       "color": [
-        242,
-        232,
-        208
-       ],
-       "style": "plate",
-       "maxw": 700
-      },
-      {
-       "text": "\u00b7  filtered drinking water",
-       "x": 1360,
-       "y": 478,
-       "size": 40,
-       "at": 3.8,
-       "persist": true,
-       "color": [
-        242,
-        232,
-        208
-       ],
-       "style": "plate",
-       "maxw": 700
-      },
-      {
-       "text": "\u00b7  public health boards",
-       "x": 1360,
-       "y": 556,
-       "size": 40,
-       "at": 5.8,
-       "persist": true,
-       "color": [
-        242,
-        232,
-        208
-       ],
-       "style": "plate",
-       "maxw": 700
-      },
-      {
-       "text": "\u00b7  international health rules",
-       "x": 1360,
-       "y": 634,
-       "size": 40,
-       "at": 7.8,
-       "persist": true,
-       "color": [
-        242,
-        232,
-        208
-       ],
-       "style": "plate",
-       "maxw": 700
+       "text": "SEWERS  \u00b7  FILTERED WATER  \u00b7  PUBLIC HEALTH  \u00b7  INTERNATIONAL RULES",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
       }
      ]
     }
@@ -2766,7 +2459,7 @@
    "vo": "assets/plague/ep02/vo/L52.wav",
    "shots": [
     {
-     "img": "c58a",
+     "img": "d13a",
      "from": [
       0.5,
       0.5,
@@ -2775,9 +2468,18 @@
      "to": [
       0.5,
       0.5,
-      1.05
+      1.02
      ],
-     "w": 1
+     "w": 1,
+     "text": [
+      {
+       "text": "WHERE THERE IS NO CLEAN WATER",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
     }
    ]
   },

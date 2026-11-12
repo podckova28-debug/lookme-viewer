@@ -212,6 +212,29 @@
    "vo": "assets/plague/ep03/vo/L01.wav",
    "shots": [
     {
+     "img": "d06a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "ONE OF THE BIGGEST VIRUSES THAT INFECT HUMANS",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
      "img": "c07a",
      "from": [
       0.5,
@@ -298,7 +321,7 @@
    "vo": "assets/plague/ep03/vo/S01.wav",
    "shots": [
     {
-     "img": "scheme_bg",
+     "img": "d01a",
      "from": [
       0.5,
       0.5,
@@ -315,179 +338,15 @@
        "text": "WHAT HE DOES TO YOU",
        "x": 960,
        "y": 150,
-       "size": 74,
-       "at": 0.1,
-       "persist": true,
-       "color": [
-        242,
-        232,
-        208
-       ],
-       "style": "title"
+       "size": 72,
+       "at": 0.3
       },
       {
-       "style": "line",
-       "pts": [
-        760,
-        205,
-        1160,
-        205
-       ],
-       "width": 3,
-       "color": [
-        225,
-        120,
-        105
-       ],
-       "text": "",
-       "size": 1,
-       "x": 0,
-       "y": 0,
-       "at": 0.1,
-       "persist": true
-      },
-      {
-       "style": "line",
-       "pts": [
-        200,
-        540,
-        1720,
-        540
-       ],
-       "width": 5,
-       "color": [
-        120,
-        98,
-        70
-       ],
-       "text": "",
-       "size": 1,
-       "x": 0,
-       "y": 0,
-       "at": 0.1,
-       "persist": true
-      },
-      {
-       "style": "dot",
-       "x": 260.0,
-       "y": 540,
-       "r": 20,
-       "color": [
-        225,
-        120,
-        105
-       ],
-       "text": "",
-       "size": 1,
-       "x0": 0,
-       "at": 1.2,
-       "persist": true
-      },
-      {
-       "text": "\u2248 12 DAYS",
-       "x": 260.0,
-       "y": 470,
-       "size": 44,
-       "at": 1.2,
-       "persist": true,
-       "color": [
-        225,
-        120,
-        105
-       ],
-       "style": "plate",
-       "maxw": 300
-      },
-      {
-       "text": "no symptoms",
-       "x": 260.0,
-       "y": 615,
-       "size": 36,
-       "at": 1.3499999999999999,
-       "persist": true,
-       "color": [
-        242,
-        232,
-        208
-       ],
-       "style": "plate",
-       "maxw": 320
-      },
-      {
-       "text": "not contagious yet",
-       "x": 260.0,
-       "y": 663,
-       "size": 36,
-       "at": 1.3499999999999999,
-       "persist": true,
-       "color": [
-        242,
-        232,
-        208
-       ],
-       "style": "plate",
-       "maxw": 320
-      },
-      {
-       "style": "dot",
-       "x": 540.0,
-       "y": 540,
-       "r": 20,
-       "color": [
-        225,
-        120,
-        105
-       ],
-       "text": "",
-       "size": 1,
-       "x0": 0,
-       "at": 6.5,
-       "persist": true
-      },
-      {
-       "text": "2 \u2013 4 DAYS",
-       "x": 540.0,
-       "y": 470,
-       "size": 44,
-       "at": 6.5,
-       "persist": true,
-       "color": [
-        225,
-        120,
-        105
-       ],
-       "style": "plate",
-       "maxw": 300
-      },
-      {
-       "text": "fever \u00b7 headache",
-       "x": 540.0,
-       "y": 615,
-       "size": 36,
-       "at": 6.65,
-       "persist": true,
-       "color": [
-        242,
-        232,
-        208
-       ],
-       "style": "plate",
-       "maxw": 320
-      },
-      {
-       "text": "back pain",
-       "x": 540.0,
-       "y": 663,
-       "size": 36,
-       "at": 6.65,
-       "persist": true,
-       "color": [
-        242,
-        232,
-        208
-       ],
-       "style": "plate",
-       "maxw": 320
+       "text": "~12 DAYS: NOTHING  \u00b7  THEN FEVER, HEADACHE, BACK PAIN",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
       }
      ]
     }
@@ -497,7 +356,7 @@
    "vo": "assets/plague/ep03/vo/S02.wav",
    "shots": [
     {
-     "img": "scheme_bg",
+     "img": "d02a",
      "from": [
       0.5,
       0.5,
@@ -511,65 +370,11 @@
      "w": 1,
      "text": [
       {
-       "style": "dot",
-       "x": 820.0,
-       "y": 540,
-       "r": 20,
-       "color": [
-        225,
-        120,
-        105
-       ],
-       "text": "",
-       "size": 1,
-       "x0": 0,
-       "at": 0.5,
-       "persist": true
-      },
-      {
-       "text": "RASH",
-       "x": 820.0,
-       "y": 470,
-       "size": 44,
-       "at": 0.5,
-       "persist": true,
-       "color": [
-        225,
-        120,
-        105
-       ],
-       "style": "plate",
-       "maxw": 300
-      },
-      {
-       "text": "mouth \u2192 face",
-       "x": 820.0,
-       "y": 615,
-       "size": 36,
-       "at": 0.65,
-       "persist": true,
-       "color": [
-        242,
-        232,
-        208
-       ],
-       "style": "plate",
-       "maxw": 320
-      },
-      {
-       "text": "\u2192 arms & legs",
-       "x": 820.0,
-       "y": 663,
-       "size": 36,
-       "at": 0.65,
-       "persist": true,
-       "color": [
-        242,
-        232,
-        208
-       ],
-       "style": "plate",
-       "maxw": 320
+       "text": "MOUTH  \u00b7  FACE  \u00b7  ARMS AND LEGS  \u00b7  PALMS AND SOLES",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
       }
      ]
     }
@@ -579,7 +384,30 @@
    "vo": "assets/plague/ep03/vo/S03.wav",
    "shots": [
     {
-     "img": "scheme_bg",
+     "img": "d03a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.05
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "BLISTERS, THEN HARD PUSTULES, ALL AT THE SAME PACE",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "s03a",
      "from": [
       0.5,
       0.5,
@@ -593,65 +421,46 @@
      "w": 1,
      "text": [
       {
-       "style": "dot",
-       "x": 1100.0,
-       "y": 540,
-       "r": 20,
-       "color": [
-        225,
-        120,
-        105
-       ],
-       "text": "",
-       "size": 1,
-       "x0": 0,
-       "at": 0.5,
-       "persist": true
+       "text": "1",
+       "x": 330,
+       "y": 760,
+       "size": 50,
+       "at": 0.3
       },
       {
-       "text": "~ 1 WEEK",
-       "x": 1100.0,
-       "y": 470,
-       "size": 44,
-       "at": 0.5,
-       "persist": true,
-       "color": [
-        225,
-        120,
-        105
-       ],
-       "style": "plate",
-       "maxw": 300
+       "text": "2",
+       "x": 645,
+       "y": 760,
+       "size": 50,
+       "at": 0.6
       },
       {
-       "text": "blisters \u2192",
-       "x": 1100.0,
-       "y": 615,
-       "size": 36,
-       "at": 0.65,
-       "persist": true,
-       "color": [
-        242,
-        232,
-        208
-       ],
-       "style": "plate",
-       "maxw": 320
+       "text": "3",
+       "x": 960,
+       "y": 760,
+       "size": 50,
+       "at": 0.9
       },
       {
-       "text": "hard pustules",
-       "x": 1100.0,
-       "y": 663,
-       "size": 36,
-       "at": 0.65,
-       "persist": true,
-       "color": [
-        242,
-        232,
-        208
-       ],
-       "style": "plate",
-       "maxw": 320
+       "text": "4",
+       "x": 1275,
+       "y": 760,
+       "size": 50,
+       "at": 1.2
+      },
+      {
+       "text": "5",
+       "x": 1590,
+       "y": 760,
+       "size": 50,
+       "at": 1.5
+      },
+      {
+       "text": "SPOT  \u00b7  BUMP  \u00b7  BLISTER  \u00b7  PUSTULE  \u00b7  SCAB",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
       }
      ]
     }
@@ -661,7 +470,7 @@
    "vo": "assets/plague/ep03/vo/S04.wav",
    "shots": [
     {
-     "img": "scheme_bg",
+     "img": "d04a",
      "from": [
       0.5,
       0.5,
@@ -675,111 +484,11 @@
      "w": 1,
      "text": [
       {
-       "style": "dot",
-       "x": 1380.0,
-       "y": 540,
-       "r": 20,
-       "color": [
-        225,
-        120,
-        105
-       ],
-       "text": "",
-       "size": 1,
-       "x0": 0,
-       "at": 0.4,
-       "persist": true
-      },
-      {
-       "text": "~ 2 WEEKS",
-       "x": 1380.0,
-       "y": 470,
-       "size": 44,
-       "at": 0.4,
-       "persist": true,
-       "color": [
-        225,
-        120,
-        105
-       ],
-       "style": "plate",
-       "maxw": 300
-      },
-      {
-       "text": "scabs",
-       "x": 1380.0,
-       "y": 615,
-       "size": 36,
-       "at": 0.55,
-       "persist": true,
-       "color": [
-        242,
-        232,
-        208
-       ],
-       "style": "plate",
-       "maxw": 320
-      },
-      {
-       "style": "dot",
-       "x": 1660.0,
-       "y": 540,
-       "r": 20,
-       "color": [
-        225,
-        120,
-        105
-       ],
-       "text": "",
-       "size": 1,
-       "x0": 0,
-       "at": 3.6,
-       "persist": true
-      },
-      {
-       "text": "~ 3 WEEKS",
-       "x": 1660.0,
-       "y": 470,
-       "size": 44,
-       "at": 3.6,
-       "persist": true,
-       "color": [
-        225,
-        120,
-        105
-       ],
-       "style": "plate",
-       "maxw": 300
-      },
-      {
-       "text": "scabs fall off",
-       "x": 1660.0,
-       "y": 615,
-       "size": 36,
-       "at": 3.75,
-       "persist": true,
-       "color": [
-        242,
-        232,
-        208
-       ],
-       "style": "plate",
-       "maxw": 320
-      },
-      {
-       "text": "pitted scars",
-       "x": 1660.0,
-       "y": 663,
-       "size": 36,
-       "at": 3.75,
-       "persist": true,
-       "color": [
-        242,
-        232,
-        208
-       ],
-       "style": "plate",
-       "maxw": 320
+       "text": "SCABS AFTER ~2 WEEKS  \u00b7  CONTAGIOUS UNTIL THE LAST ONE FALLS",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
       }
      ]
     }
@@ -952,18 +661,27 @@
    "vo": "assets/plague/ep03/vo/L09.wav",
    "shots": [
     {
-     "img": "c15a",
+     "img": "d07a",
      "from": [
-      0.47,
       0.5,
-      1.04
+      0.5,
+      1.0
      ],
      "to": [
-      0.53,
       0.5,
-      1.04
+      0.5,
+      1.02
      ],
-     "w": 1
+     "w": 1,
+     "text": [
+      {
+       "text": "TOO FEW PEOPLE  \u00b7  ENOUGH PEOPLE",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
     }
    ]
   },
@@ -1221,6 +939,29 @@
    "vo": "assets/plague/ep03/vo/L18.wav",
    "shots": [
     {
+     "img": "d08a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "1518  \u00b7  1520  \u00b7  1520s",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
      "img": "c24a",
      "from": [
       0.5,
@@ -1324,6 +1065,29 @@
   {
    "vo": "assets/plague/ep03/vo/L22.wav",
    "shots": [
+    {
+     "img": "d09a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "VARIOLATION, STEP BY STEP",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
     {
      "img": "c28a",
      "from": [
@@ -1641,6 +1405,29 @@
    "vo": "assets/plague/ep03/vo/L29.wav",
    "shots": [
     {
+     "img": "d10a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "COW  \u00b7  MILKMAID  \u00b7  BOY  \u00b7  PROTECTED",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
      "img": "c34a",
      "from": [
       0.5,
@@ -1814,18 +1601,27 @@
      "w": 1
     },
     {
-     "img": "c40b",
+     "img": "d11a",
      "from": [
-      0.47,
       0.5,
-      1.04
+      0.5,
+      1.0
      ],
      "to": [
-      0.53,
       0.5,
-      1.04
+      0.5,
+      1.02
      ],
-     "w": 1
+     "w": 1,
+     "text": [
+      {
+       "text": "A LIVING CHAIN ACROSS THE ATLANTIC",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
     }
    ]
   },
@@ -1872,7 +1668,7 @@
    "vo": "assets/plague/ep03/vo/L38.wav",
    "shots": [
     {
-     "img": "c43a",
+     "img": "d12a",
      "from": [
       0.5,
       0.5,
@@ -1881,9 +1677,18 @@
      "to": [
       0.5,
       0.5,
-      1.05
+      1.02
      ],
-     "w": 1
+     "w": 1,
+     "text": [
+      {
+       "text": "1967  \u00b7  1977",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
     }
    ]
   },
@@ -2134,7 +1939,7 @@
    "vo": "assets/plague/ep03/vo/A01.wav",
    "shots": [
     {
-     "img": "scheme_bg",
+     "img": "d05a",
      "from": [
       0.5,
       0.5,
@@ -2151,95 +1956,15 @@
        "text": "WHAT HE LEAVES BEHIND",
        "x": 960,
        "y": 150,
-       "size": 74,
-       "at": 0.1,
-       "persist": true,
-       "color": [
-        242,
-        232,
-        208
-       ],
-       "style": "title"
+       "size": 72,
+       "at": 0.3
       },
       {
-       "style": "line",
-       "pts": [
-        760,
-        205,
-        1160,
-        205
-       ],
-       "width": 3,
-       "color": [
-        225,
-        120,
-        105
-       ],
-       "text": "",
-       "size": 1,
-       "x": 0,
-       "y": 0,
-       "at": 0.1,
-       "persist": true
-      },
-      {
-       "text": "FOR THE SURVIVOR",
-       "x": 560,
-       "y": 300,
-       "size": 46,
-       "at": 1.4000000000000001,
-       "persist": true,
-       "color": [
-        225,
-        120,
-        105
-       ],
-       "style": "plate"
-      },
-      {
-       "text": "\u00b7  deep pitted scars",
-       "x": 560,
-       "y": 400,
-       "size": 40,
-       "at": 1.6,
-       "persist": true,
-       "color": [
-        242,
-        232,
-        208
-       ],
-       "style": "plate",
-       "maxw": 700
-      },
-      {
-       "text": "\u00b7  sometimes blindness",
-       "x": 560,
-       "y": 478,
-       "size": 40,
-       "at": 3.6,
-       "persist": true,
-       "color": [
-        242,
-        232,
-        208
-       ],
-       "style": "plate",
-       "maxw": 700
-      },
-      {
-       "text": "\u00b7  immune for life",
-       "x": 560,
-       "y": 556,
-       "size": 40,
-       "at": 5.6,
-       "persist": true,
-       "color": [
-        242,
-        232,
-        208
-       ],
-       "style": "plate",
-       "maxw": 700
+       "text": "SCARS  \u00b7  SOMETIMES BLINDNESS  \u00b7  IMMUNE FOR LIFE",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
       }
      ]
     }
@@ -2249,77 +1974,48 @@
    "vo": "assets/plague/ep03/vo/A02.wav",
    "shots": [
     {
-     "img": "scheme_bg",
+     "img": "a02a",
      "from": [
+      0.47,
       0.5,
-      0.5,
-      1.0
+      1.04
      ],
      "to": [
+      0.53,
       0.5,
-      0.5,
-      1.02
+      1.04
      ],
      "w": 1,
      "text": [
       {
-       "text": "FOR THE WORLD",
-       "x": 1360,
-       "y": 300,
-       "size": 46,
-       "at": 2.8,
-       "persist": true,
-       "color": [
-        225,
-        120,
-        105
-       ],
-       "style": "plate"
-      },
+       "text": "EMPIRES IN THE AMERICAS",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "a02b",
+     "from": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.05
+     ],
+     "w": 1,
+     "text": [
       {
-       "text": "\u00b7  empires in the Americas",
-       "x": 1360,
-       "y": 400,
-       "size": 40,
-       "at": 3.0,
-       "persist": true,
-       "color": [
-        242,
-        232,
-        208
-       ],
-       "style": "plate",
-       "maxw": 700
-      },
-      {
-       "text": "\u00b7  the very first vaccine",
-       "x": 1360,
-       "y": 478,
-       "size": 40,
-       "at": 6.5,
-       "persist": true,
-       "color": [
-        242,
-        232,
-        208
-       ],
-       "style": "plate",
-       "maxw": 700
-      },
-      {
-       "text": "\u00b7  every vaccine since",
-       "x": 1360,
-       "y": 556,
-       "size": 40,
-       "at": 9.5,
-       "persist": true,
-       "color": [
-        242,
-        232,
-        208
-       ],
-       "style": "plate",
-       "maxw": 700
+       "text": "THE FIRST VACCINE, AND EVERY ONE SINCE",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
       }
      ]
     }
