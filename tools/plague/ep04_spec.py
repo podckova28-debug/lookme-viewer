@@ -68,7 +68,7 @@ HOLD(4.6, kg('c05a', O(), "Title shot: the Spanish Flu stands on the left third 
 # ---- who is he
 N('L01', "So who is he? A virus. Influenza A, of a type called H1N1. Tiny balls studded with two kinds of spikes.",
   sh('c06a', W(), "A 1918 laboratory bench with a brass microscope, glass test tubes and a notebook, lamp light. No people."),
-  dg('d02a', "A large magnified round virus particle covered in two kinds of spikes: (1) long club-shaped spikes, (2) short mushroom-shaped spikes; a tiny scale comparison with a pin head in the corner.", people=False, text=[cap('INFLUENZA A  ·  H1N1')]),
+  sh('d02a', [[.5, .33, 1.55], [.5, .33, 1.58]], "" + DIAG + "A large magnified round virus particle covered in two kinds of spikes: (1) long club-shaped spikes, (2) short mushroom-shaped spikes; a tiny scale comparison with a pin head in the corner.", text=[cap('INFLUENZA A  ·  H1N1')]),
   sh('c06b', C(.5, .5, 1.1), "Microscope view: a round bright field with many small spiky round virus particles; one in the centre wears a tiny straw boater hat. Cute but sinister."),
   dg('d02b', "Size comparison on aged paper: a big round cell like a fried egg, a small rod-shaped bacterium beside it, and a tiny spiky ball virus far smaller still, each marked with circled digits 1, 2, 3.", people=False))
 N('L02', "The H spikes work like a key that unlocks the cells lining your nose and lungs. The N spikes are scissors that cut the new copies loose, so they can go and infect the next cell.",
@@ -168,8 +168,7 @@ K('L19c', "Just the flu, they said. I do love a good understatement.",
 # ---- cities fight back
 N('L20', "Cities tried to fight back, and how they did it made a huge difference. On the twenty-eighth of September, 1918, Philadelphia went ahead with a giant parade to sell war bonds. Around two hundred thousand people packed the streets.",
   sh('c24a', W(), "Broad Street in Philadelphia in 1918 decorated with American flags and bunting for a parade, a marching band in the distance, City Hall tower. People only as tiny distant figures.", text=cap('PHILADELPHIA · 28 SEPTEMBER 1918')),
-  ch('c24b', W(), "Two stickman spectators in 1918 hats stand on a crowded pavement waving small flags, cheering at a parade going by."),
-  sh('c24c', W(), "Close-up of 1918 paper bunting and American flags fluttering on wires above a street, and a single brass tuba and a bass drum resting on the kerb in the sun. No people."))
+  ch('c24b', W(), "Two stickman spectators in 1918 hats stand on a crowded pavement waving small flags, cheering at a parade going by."))
 N('L21', "Within three days, every hospital bed in the city was full. Within six weeks, more than twelve thousand people in Philadelphia were dead.",
   sh('c25a', W(), "A 1918 hospital corridor lined with extra iron beds and stretchers along both walls, a single lamp, quiet and grim. No people close up."),
   dg('d18a', "A calendar page of three days with each day crossed out, next to a simple hospital icon with a red full sign drawn as a solid red bar across its door. No people.", people=False, text=[cap('3 DAYS LATER: NO BEDS LEFT')]))
@@ -229,7 +228,6 @@ N('L28', "So is he gone? Not quite. His descendants still circulate. The 2009 sw
   dg('d23a', "A family tree drawn on aged paper: at the top one spiky virus with a tiny boater hat labelled only with a circled 1, branching down through several generations of smaller spiky viruses to a modern one at the bottom with a tiny pig snout, circled 2.", people=False, text=[cap('1918  ·  2009')]),
   sh('c33a', W(), "A modern hospital corridor in 2009 with blue chairs and a hand sanitiser dispenser, clean and bright. No people."))
 N('L29', "Every year, seasonal flu still kills hundreds of thousands of people worldwide. Twice a year, experts pick which strains go into the next flu vaccine.",
-  ch('c34a', W(), "A modern clinic: a stickman nurse in blue scrubs gives a flu jab in the thin black stick arm of a stickman man in a T-shirt who is smiling; both are simple stickmen with thin black stick arms."),
   dg('d24a', "A calendar wheel of twelve months with two highlighted points opposite each other, and from each a small vaccine vial with arrows to a globe. No people.", people=False, text=[cap('A NEW VACCINE EVERY SEASON')]),
   ch('c34b', W(), "A modern laboratory: a single stickman scientist in a white coat and safety glasses looks at a rack of small sample tubes under bright light."))
 K('L30', "I never really left. I just changed my hat.",
@@ -258,7 +256,7 @@ def frames():
     json.dump(out, open(os.path.join(ROOT, 'tools/plague/ep04_frames_todo.json'), 'w'), indent=1); print(len(out), 'frames')
 
 def beats():
-    out = {'base': 'assets/plague/ep04/frames', 'fade_in': .8, 'start': 0.0, 'lead': .45, 'gap': .6, 'max_shot': 3.2,
+    out = {'base': 'assets/plague/ep04/frames', 'keep_zoom': ['d02a'], 'fade_in': .8, 'start': 0.0, 'lead': .45, 'gap': .6, 'max_shot': 3.2,
            'sfx_global': [{'kind': 'drone', 't': 0.0, 'args': {'d': 'ALL'}, 'gain': .9}, {'kind': 'wind', 't': 0.0, 'args': {'d': 'ALL'}, 'gain': .1}], 'beats': []}
     M = 'assets/plague/music/'
     out['music'] = [{'file': M + f, 't0': float(a0), 't1': a1, 'gain': 1.0, 'fade_in': 2.0 if a0 == 0 else 4.0, 'fade_out': 5.0 if a1 == 'ALL' else 4.0}
