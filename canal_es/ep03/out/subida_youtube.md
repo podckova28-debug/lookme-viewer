@@ -1,6 +1,6 @@
 # Эпизод 3 · всё для загрузки на YouTube
 
-Видео: `ep03_final.mp4` (1080p, 8:38). Всё, что вставляется в YouTube, лежит в блоках кода — копируй целиком.
+Видео: `ep03_final.mp4` (1080p, 8:39). Всё, что вставляется в YouTube, лежит в блоках кода — копируй целиком.
 Общие настройки канала (категория, язык, «не для детей», расписание) — в `../../marca/canal_youtube.md`, здесь только то, что касается этой серии.
 
 ## 1. Название
@@ -34,12 +34,12 @@ YouTube Studio → «Проверить и сравнить»: загрузит�
 ¿Qué pasaría si pudieras hablar con los animales, y ellos contigo? Una historia animada sobre lo que te contarían y lo que preferirías no saber. Al final, la ciencia real detrás de la idea.
 
 0:00 Inicio
-0:43 Croqueta
+0:44 Croqueta
 1:47 Todos los perros
-3:52 Los problemas
+3:53 Los problemas
 5:22 Canela
-6:47 Pepe
-7:26 ¿Algo de esto es real?
+6:48 Pepe
+7:27 ¿Algo de esto es real?
 
 Animación original.
 
@@ -71,18 +71,18 @@ qué pasaría si pudieras hablar con los animales, que pasaria si pudieras habla
 
 `subtitulos_es.srt` → Studio → Субтитры → Испанский → «Загрузить файл» → «С отметками времени».
 
-## 7. Конечная заставка (с 8:33 до 8:38, 5 секунд)
+## 7. Конечная заставка (с 8:34 до 8:39, 5 секунд)
 
 На тёмной заставке в центре уже есть «Ponle que… / Próximo episodio / Suscríbete»; края свободны.
 
 - **Слева:** «Видео» → эпизод 2 (или «Лучшее для зрителя»).
 - **Справа:** «Подписка».
 
-Старт ставь ровно на 8:33: раньше элементы закроют последнюю фразу «Pepe ya te vio».
+Старт ставь ровно на 8:34: раньше элементы закроют последнюю фразу «Pepe ya te vio».
 
 ## 8. Подсказка
 
-Одна, в 8:16 (история и наука закончились, начинается финал): видео → эпизод 2, текст подсказки:
+Одна, в 8:17 (история и наука закончились, начинается финал): видео → эпизод 2, текст подсказки:
 
 ```
 Episodio 2: ver el futuro
@@ -127,12 +127,12 @@ What if you could talk to animals?
 What if you could talk to animals, and they could talk back? An animated story about what they'd tell you, and what you'd rather not know. At the end, the real science behind the idea.
 
 0:00 Intro
-0:43 Croqueta
+0:44 Croqueta
 1:47 Every dog
-3:52 The problems
+3:53 The problems
 5:22 Canela
-6:47 Pepe
-7:26 Is any of this real?
+6:48 Pepe
+7:27 Is any of this real?
 
 Original animation.
 
@@ -148,12 +148,12 @@ E se você pudesse falar com os animais?
 E se você pudesse falar com os animais, e eles com você? Uma história animada sobre o que eles te contariam e o que você preferiria não saber. No final, a ciência real por trás da ideia.
 
 0:00 Início
-0:43 Croqueta
+0:44 Croqueta
 1:47 Todos os cachorros
-3:52 Os problemas
+3:53 Os problemas
 5:22 Canela
-6:47 Pepe
-7:26 Algo disso é real?
+6:48 Pepe
+7:27 Algo disso é real?
 
 Animação original.
 
@@ -161,4 +161,4 @@ Animação original.
 ```
 
 ---
-Длительность 8:38 · голос: vo_fx
+Длительность 8:39 · голос: vo_fx
