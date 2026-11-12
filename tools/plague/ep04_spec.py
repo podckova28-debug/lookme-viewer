@@ -16,7 +16,7 @@ STICK = ("Humans are simple STICKMEN in the style of the attached stickman sheet
 KING = ("The Spanish Flu exactly as on the attached sheet: a tall, lanky, charming young man in a long khaki-grey WWI army greatcoat worn open over a striped suit and waistcoat, "
         "a straw boater hat at a jaunty angle, a white gauze mask pulled down under his chin, pale feverish face with flushed red cheeks and a faint blue-violet tint on his lips "
         "and fingertips, bright too-friendly eyes and a wide charming grin; a white handkerchief and a slim walking cane. Exactly ONE of him, with exactly two arms and two hands.")
-DIAG = ("A hand-drawn explainer diagram in ink and muted watercolour on aged paper, clean and readable like an old textbook plate, simple stickman figures "
+DIAG = ("Draw ONLY the diagram described below, filling the whole frame: no extra rows, no extra panels, no comic strips above or below it. A hand-drawn explainer diagram in ink and muted watercolour on aged paper, clean and readable like an old textbook plate, simple stickman figures "
         "(plain white round head, dot eyes, stick limbs, each with exactly two arms) where people appear, numbered stages as small circled digits with drawn arrows. "
         "No words, no letters, only circled digits. Not gory. ")
 
@@ -82,8 +82,8 @@ N('L04', "He spreads through coughs, sneezes and hands. And you can pass him on 
 # ---- WHAT HE DOES TO YOU
 N('S01', "So what does he do to you? Usually, it hits all at once. A sudden high fever, a pounding headache, aching muscles and total exhaustion. Most people get better in about a week.",
   dg('d05a', "Two numbered panels: (1) a healthy stickman walking in the morning sun, (2) the same stickman by afternoon in bed with a thermometer, sweat drops, wavy heat lines and an ice bag on his head, holding his aching back.", text=[label('WHAT HE DOES TO YOU', 960, 150, 72), cap('FEVER  ·  HEADACHE  ·  ACHES  ·  EXHAUSTION')]),
-  ch('c09a', W(), "A 1918 bedroom: a single stickman in pyjamas sits up in bed sipping soup from a bowl, a calendar on the wall with a week crossed off, recovering, smiling weakly."),
-  sh('c09b', C(.5, .45, 1.1), STICK + " " + KING + " The Spanish Flu sits on the end of a sick stickman's bed, cheerfully fanning him with his straw boater hat; the stickman in the bed looks miserable under a blanket.", "KS"))
+  ch('c09a', W(), "A 1918 bedroom: a single stickman in pyjamas sits up in bed holding a soup bowl with BOTH hands in his lap, a calendar on the wall with a week crossed off, recovering, smiling weakly."),
+  sh('c09b', C(.5, .45, 1.1), STICK + " " + KING + " The Spanish Flu (with his own long pale face, NOT a stickman head, wearing his straw boater hat on his head) sits on the end of a sick stickman's bed, cheerfully fanning him with a folded newspaper held in one hand, the other hand on his cane; the stickman in the bed looks miserable under a blanket.", "KS"))
 N('S02', "But in 1918, many cases went much further. The lungs filled with fluid, and the patient began to drown from the inside.",
   dg('d06a', "Side-by-side diagram of two pairs of simple cartoon lungs: (1) healthy pink lungs full of air bubbles, (2) lungs half filled with blue fluid like water in a glass, with tiny bubbles struggling.", people=False, text=[cap('HEALTHY LUNGS  ·  LUNGS FILLED WITH FLUID')]),
   ch('c10b', W(), "A 1918 hospital ward: one stickman nurse in a white cap and apron stands beside a bed holding a basin, looking anxious; the patient's bed is behind a white screen."))
@@ -107,7 +107,7 @@ N('L06b', "There had been flu pandemics before. In 1889, the so-called Russian f
   dg('d10b', "A timeline on aged paper with two marked points: (1) an 1889 steam train and a small spiky virus, (2) a 1918 troopship and a bigger spiky virus; an old stickman stands under point 1 with a small faint shield he still carries at point 2.", text=[cap('1889  ·  1918')]),
   sh('c13b', WL(), "An 1889 railway station with a steam locomotive and wooden carriages under an iron roof, smoke and steam. People only as tiny distant figures."))
 K('L07', "I like them young. They have so much energy.",
-  kg('c13a', C(.5, .45, 1.1), "The Spanish Flu leans against a lamppost outside a dance hall at night, watching through the window with a hungry grin, tapping his cane in rhythm."))
+  kg('c13a', C(.5, .45, 1.1), "The Spanish Flu leans against a lamppost outside a dance hall at night, watching through a bright window in which only simple stickman couples are dancing, with a hungry grin, one hand on his cane, the other in his pocket."))
 
 # ---- origin
 N('L08', "But where did he come from? Flu viruses live naturally in wild water birds, like ducks and geese. Every so often, one changes enough to jump into pigs, or straight into people.",
@@ -145,7 +145,7 @@ N('L14', "So why Spanish? He wasn't Spanish. In 1918, the countries at war censo
 N('L15', "So the world assumed Spain was hit hardest, and the name stuck. In Spain, people called it the French flu.",
   dg('d15a', "A cartoon map of Western Europe: lots of countries covered with big black censor bars and padlocks, while Spain is open with a small loudspeaker on it and newspaper icons flying out of it. No words.", people=False, text=[cap('CENSORED  ·  CENSORED  ·  SPAIN: NOT CENSORED')]))
 K('L16', "I am NOT Spanish! I did not even start in Spain!",
-  kg('c20a', C(.5, .45, 1.1), "The Spanish Flu, outraged, waves his cane at a newspaper stand covered with blank newspapers, his face flushed, his boater hat bouncing."))
+  kg('c20a', C(.5, .45, 1.1), "On an empty street, nobody else around, the Spanish Flu, outraged, waves his cane at a newspaper stand covered with blank newspapers, his face flushed, his boater hat bouncing. No other people."))
 
 # ---- three waves
 N('L17', "He came in three waves. A mild one in the spring of 1918. Then, that autumn, a far deadlier wave swept the world in a few months. And a third wave in early 1919.",
@@ -155,21 +155,21 @@ N('L17', "He came in three waves. A mild one in the spring of 1918. Then, that a
 N('L18', "The war helped him travel. Troopships packed with soldiers crossed the Atlantic, and trains carried them across whole continents. Tens of thousands of American soldiers died of flu and pneumonia, almost as many as were killed in battle.",
   sh('c22a', W(), "A huge grey WWI troopship at a harbour pier with smoke from its funnels, gangways, crates, a grey Atlantic sky. People only as tiny distant figures."),
   dg('d17a', "A world map on aged paper with thick arrows of troopship routes across the Atlantic and railway lines across Europe, North America and India, small spiky virus icons riding along every arrow.", people=False, text=[cap('BY SHIP AND BY TRAIN')]),
-  ch('c22b', W(), "Below deck in a crowded 1918 troopship: three stickman soldiers in uniforms sit apart in narrow bunks, one coughing, a dim lamp swinging."),
+  ch('c22b', W(), "Below deck in a 1918 troopship: two stickman soldiers in uniforms sit in separate narrow bunks far apart, one coughing into his fist with his other hand on his knee, a dim lamp swinging."),
   sh('c22c', WL(), "A long 1918 troop train stopped at a country station at dusk, soldiers' rifles stacked against the carriages, steam rising. People only as tiny distant figures."))
 K('L19', "World war. Best travel deal of the century.",
   kg('c23a', W(), "The Spanish Flu lounges on a pile of soldiers' kit bags on the deck of a troopship at sea, hat tipped back, enjoying the sea breeze."))
 
 N('L19b', "Governments at war didn't want panic. Officials called it ordinary influenza and told people not to worry. Newspapers printed cheerful advice, while the hospitals filled up.",
   ch('c23b', W(), "A 1918 government office: a stickman official in a dark suit speaks confidently at a small podium with a smile, holding up a blank leaflet."),
-  dg('d17b', "A split image: (1) on the left a sunny newspaper front page with a big smiling sun drawing, (2) on the right the same day: a hospital with a long line of stretchers outside. No words.", text=[cap('WHAT THEY SAID  ·  WHAT WAS HAPPENING')]))
+  dg('d17b', "A split image: (1) on the left a sunny newspaper front page with a big smiling sun drawing, (2) on the right the same day: a hospital with a long line of empty stretchers outside. No people at all. No words.", people=False, text=[cap('WHAT THEY SAID  ·  WHAT WAS HAPPENING')]))
 K('L19c', "Just the flu, they said. I do love a good understatement.",
-  kg('c23c', C(.5, .45, 1.1), "The Spanish Flu reads a newspaper on a park bench, chuckling behind it, his cane leaning on the bench beside him."))
+  kg('c23c', C(.5, .45, 1.1), "In an empty park with nobody else around, the Spanish Flu reads a blank newspaper on a bench, chuckling behind it, his cane leaning on the bench beside him. No other people."))
 # ---- cities fight back
 N('L20', "Cities tried to fight back, and how they did it made a huge difference. On the twenty-eighth of September, 1918, Philadelphia went ahead with a giant parade to sell war bonds. Around two hundred thousand people packed the streets.",
   sh('c24a', W(), "Broad Street in Philadelphia in 1918 decorated with American flags and bunting for a parade, a marching band in the distance, City Hall tower. People only as tiny distant figures.", text=cap('PHILADELPHIA · 28 SEPTEMBER 1918')),
   ch('c24b', W(), "Two stickman spectators in 1918 hats stand on a crowded pavement waving small flags, cheering at a parade going by."),
-  sh('c24c', W(), "Paper bunting and flags fluttering above a crowded parade route in 1918, a brass band's tuba and drums glinting in the sun, seen from above. People only as tiny distant figures."))
+  sh('c24c', W(), "Close-up of 1918 paper bunting and American flags fluttering on wires above a street, and a single brass tuba and a bass drum resting on the kerb in the sun. No people."))
 N('L21', "Within three days, every hospital bed in the city was full. Within six weeks, more than twelve thousand people in Philadelphia were dead.",
   sh('c25a', W(), "A 1918 hospital corridor lined with extra iron beds and stretchers along both walls, a single lamp, quiet and grim. No people close up."),
   dg('d18a', "A calendar page of three days with each day crossed out, next to a simple hospital icon with a red full sign drawn as a solid red bar across its door. No people.", people=False, text=[cap('3 DAYS LATER: NO BEDS LEFT')]))
@@ -182,7 +182,7 @@ N('L22', "St. Louis did the opposite. Its health commissioner closed schools, th
   dg('d19a', "Two side-by-side hand-drawn graphs on aged paper: on the left a very tall sharp red spike (1), on the right a low, flat, gentle hill of the same width (2); a small parade drum icon under the left one and a small padlock icon under the right one.", people=False, text=[cap('PHILADELPHIA  ·  ST. LOUIS')]),
   ch('c26b', W(), "A 1918 health office: a stickman health commissioner in a suit and spectacles signs an order at his desk, a telephone and a map of the city behind him."))
 K('L23', "St. Louis was no fun at all.",
-  kg('c27a', C(.5, .45, 1.1), "The Spanish Flu stands alone in an empty closed street at dusk, looking at a padlocked theatre door, disappointed, hands in his greatcoat pockets."))
+  kg('c27a', C(.5, .45, 1.1), "The Spanish Flu stands alone in an empty closed street at dusk, looking at a padlocked theatre door, disappointed, one hand in his greatcoat pocket, the other hand leaning on his cane."))
 N('L24', "People wore gauze masks. In San Francisco, it became the law. Those who refused were fined, and in 1919, some formed an Anti-Mask League.",
   ch('c28a', W(), "A San Francisco street in 1918 with a cable car: two stickmen in hats wear white gauze face masks over their round heads, walking apart."),
   ch('c28b', W(), "A stickman policeman in a 1918 uniform writes a ticket for a stickman man in a bowler hat who is holding his gauze mask in his hand, arguing."))
@@ -229,7 +229,7 @@ N('L28', "So is he gone? Not quite. His descendants still circulate. The 2009 sw
   dg('d23a', "A family tree drawn on aged paper: at the top one spiky virus with a tiny boater hat labelled only with a circled 1, branching down through several generations of smaller spiky viruses to a modern one at the bottom with a tiny pig snout, circled 2.", people=False, text=[cap('1918  ·  2009')]),
   sh('c33a', W(), "A modern hospital corridor in 2009 with blue chairs and a hand sanitiser dispenser, clean and bright. No people."))
 N('L29', "Every year, seasonal flu still kills hundreds of thousands of people worldwide. Twice a year, experts pick which strains go into the next flu vaccine.",
-  ch('c34a', W(), "A modern clinic: a stickman nurse in blue scrubs gives a flu jab in the arm of a stickman man in a T-shirt who is smiling, both standing apart a little."),
+  ch('c34a', W(), "A modern clinic: a stickman nurse in blue scrubs gives a flu jab in the thin black stick arm of a stickman man in a T-shirt who is smiling; both are simple stickmen with thin black stick arms."),
   dg('d24a', "A calendar wheel of twelve months with two highlighted points opposite each other, and from each a small vaccine vial with arrows to a globe. No people.", people=False, text=[cap('A NEW VACCINE EVERY SEASON')]),
   ch('c34b', W(), "A modern laboratory: a single stickman scientist in a white coat and safety glasses looks at a rack of small sample tubes under bright light."))
 K('L30', "I never really left. I just changed my hat.",
