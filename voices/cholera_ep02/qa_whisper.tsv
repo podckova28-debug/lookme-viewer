@@ -63,3 +63,10 @@ L52|NARRATOR|8.3|1.00|Today, he still infects millions of people every year and 
 L53|CHOLERA|2.9|1.00|I don't need an empire, I just need one dirty well.
 L54|NARRATOR|11.1|0.91|200 years, seven pandemics, a killer that emptied whole neighborhoods, beaten not by a miracle drug, but by pipes, filters, and a spoonful of salt and sugar.
 L55|NARRATOR|8.0|1.00|Next time, a killer that left its mark on the faces of emperors and was beaten so completely, it no longer exists in the wild.
+S01	NARRATOR	6.8	1.00	So what does he actually do to you? It starts fast, anywhere from a few hours to a few days after a bad drink.
+S02	NARRATOR	13.5	0.95	Most people who catch him barely notice, but they still spread him for days. For the unlucky ones, it begins with sudden, endless, watery diarrhea, so pale that doctors call it rice water. Then the vomiting starts.
+S03	NARRATOR	13.7	0.98	The body dries out from the inside. Painful cramps grit the legs. The eyes sink into the skull. The skin on the fingers wrinkles as if you'd been in the bath too long. The blood thickens and the pulse grows weak.
+S04	CHOLERA	3.8	1.00	It's nothing personal. I simply need the water more than you do.
+A01	NARRATOR	10.4	0.97	And for those who pulled through, usually a full recovery within days, as long as they got enough fluids. But the immunity fades after a few years, so you could catch them again.
+A02	NARRATOR	15.2	1.00	For cities, the consequences were enormous. Fear of cholera gave us modern sewers, filtered drinking water, public health boards, and the first international health conferences. Every time you drink clean tap water, you're living in a world he forced us to build.
+A03	CHOLERA	1.4	1.00	You're welcome, again.

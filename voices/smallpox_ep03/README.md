@@ -20,3 +20,7 @@ Phipps, Nelmes, Balmis, Isabel Zendal, Rahima Banu, Ali Maow Maalin, vacca.
   и заглавными (`Oh-NESS-ih-mus`, `vairy-oh-lay-ted`) модель читает по буквам или дробит, их не использовать.
 Оставшиеся расхождения — цифры вместо слов (C02, L14, L27), «Ramses» → «Ram sees» (L10, так и задумано),
 «favourite» → «favorite» (L15).
+
+## Рубрики «Симптомы» и «Последствия» (дозапись)
+S01–S05, A01–A03 (тексты из `tools/plague/ep03_lines.txt` ветки сценариста). Голоса и настройки те же; S05 и A03 — SMALLPOX.
+Whisper: все 8 ≥ 0.92 (S03: «pustules» записано как «postules», S01: число цифрами), строки добавлены в конец `qa_whisper.tsv`.

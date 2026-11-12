@@ -15,3 +15,7 @@ CHOLERA — C4_fable_wet: `voices/refs/role_cholera_fable.wav` (bm_fable +1,5 п
 L20c «Presidents. Composers.», L23 «I am offended».
 Оставшиеся расхождения — цифры вместо слов (C02, L05, L43, L51) и L02: whisper не слышит «-d» в первом «Streamlined»
 (влажный эффект + британское произношение), второе слово распознано верно.
+
+## Рубрики «Симптомы» и «Последствия» (дозапись)
+S01–S04, A01–A03 (тексты из `tools/plague/ep02_lines.txt` ветки сценариста). Голоса и настройки те же; S04 и A03 — CHOLERA с wet-эффектом, сухие версии в `_dry/`.
+Whisper: все 7 ≥ 0.95, строки добавлены в конец `qa_whisper.tsv`.
