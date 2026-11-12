@@ -25,7 +25,7 @@ s04_01|narrador|2.6|1.00|En la cocina, tu mamá prepara el desayuno.
 s04_02|croqueta|3.8|1.00|Por cierto, tu mamá se comió tu chocolate, el que escondiste.
 s04_03|tu|2.2|1.00|Ma... ¿te comiste mi chocolate?
 s04_04|mama|1.1|0.86|¿Quién te dijo?
-s04_05|narrador|0.9|0.33|Mire esa croqueta.
+s04_05|narrador|1.2|1.00|Miras a Croqueta.
 s04_06|croqueta|1.1|1.00|Yo no dije nada.
 s04_07|mama|1.5|1.00|¿Estás hablando con el gato?
 s04_08|narrador|4.4|0.90|es la número uno, entiendes a todos los animales y ellos te entienden a ti.
@@ -125,7 +125,7 @@ s15_03|narrador|1.4|1.00|Pepe escucha, como siempre.
 s15_04|tu|2.2|1.00|Ya sé, no me vas a contestar.
 s15_05|narrador|1.8|1.00|y entonces Pepe abre el pico.
 s15_06|pepe|0.5|1.00|¿Te gustó?
-s15_07|tu|0.5|0.00|¿Ok?
+s15_07|tu|0.4|1.00|¿Qué?
 s15_08|pepe|1.6|1.00|¿El poder te gustó?
 s15_09|narrador|3.6|1.00|Pepe nunca habla y la primera vez que habla hace preguntas.
 s15_10|pepe|1.7|1.00|Mañana nadie te va a ver.
