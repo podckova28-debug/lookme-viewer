@@ -81,6 +81,49 @@
   "refs": []
  },
  {
+  "img": "s01a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple clothes of ordinary people of the period. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. An 18th-century cottage bedroom: a single stickman lies in bed with a cold cloth on his forehead; on the wall hangs a calendar with many days crossed out in a row.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
+ },
+ {
+  "img": "s01b",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple clothes of ordinary people of the period. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. A single stickman in a nightshirt stands bent over, both hands pressed to his lower back, wincing, in a candlelit room.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
+ },
+ {
+  "img": "s02a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. An old medical illustration on aged parchment: a simple front-view outline of a human figure with small red dots drawn on the face, the arms, the hands and the legs, and only a few on the body. Clean, schematic, not gory. No words. No people and no human figures anywhere in the picture.",
+  "refs": []
+ },
+ {
+  "img": "s03a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. A clean schematic diagram on aged parchment: five simple circles in a row, left to right, showing stages: a small flat red dot, a raised bump, a clear blister, a firm round pustule, and a dark dry crust. Simple, abstract, not gory. No words. No people and no human figures anywhere in the picture.",
+  "refs": []
+ },
+ {
+  "img": "s03b",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. Still life: a few small green peas lying on a white linen cloth next to an old brass magnifying glass, candle light. Simple and symbolic. No people and no human figures anywhere in the picture.",
+  "refs": []
+ },
+ {
+  "img": "s04a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple clothes of ordinary people of the period. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. A 18th-century cottage doorway in daylight: a single recovering stickman, pale, steps outside leaning on a walking stick, a few small dark marks on his round white face, squinting at the sun.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
+ },
+ {
+  "img": "s05a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. The Speckled Monster exactly as on the attached sheet: a tall, straight-backed 18th-century nobleman with a big full-bottomed powdered white periwig of tight curls to the shoulders, a long pale powdered face covered with raised red speckles and pockmark scars, two small black beauty patches, cold narrow pale eyes and a thin cruel sneer; a dark plum-black velvet coat with tarnished gold embroidery, lace jabot, a gold lorgnette on a chain. Exactly ONE Speckled Monster, with exactly two arms and two hands. Haughty and evil. The Speckled Monster sits at an ornate desk writing slowly with a quill in a leather ledger, an hourglass beside him, his other hand resting flat on the desk.",
+  "refs": [
+   "3ab41c2f-b46e-4a4c-abc5-c37ae21cf2e4"
+  ]
+ },
+ {
   "img": "c10a",
   "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. Ten small simple wooden figurines standing in a row on a dark wooden shelf, candle light. Symbolic still life. No people and no human figures anywhere in the picture.",
   "refs": []
@@ -442,6 +485,30 @@
  {
   "img": "c52a",
   "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. The Speckled Monster exactly as on the attached sheet: a tall, straight-backed 18th-century nobleman with a big full-bottomed powdered white periwig of tight curls to the shoulders, a long pale powdered face covered with raised red speckles and pockmark scars, two small black beauty patches, cold narrow pale eyes and a thin cruel sneer; a dark plum-black velvet coat with tarnished gold embroidery, lace jabot, a gold lorgnette on a chain. Exactly ONE Speckled Monster, with exactly two arms and two hands. Haughty and evil. The Speckled Monster sits stiffly in a gilded armchair in an empty dusty palace hall with sheets over the furniture, sipping tea from a fine china cup, pretending not to care.",
+  "refs": [
+   "3ab41c2f-b46e-4a4c-abc5-c37ae21cf2e4"
+  ]
+ },
+ {
+  "img": "a01a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple clothes of ordinary people of the period. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. An 18th-century sickroom: a stickman nurse in an apron with a few small dark marks on her round white face calmly brings a bowl of soup to a stickman patient lying in bed.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
+ },
+ {
+  "img": "a02a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. An old parchment map of the Atlantic with the Americas on the left and Europe on the right, small sailing ships crossing, dark ink shadows spreading over the Americas. No words. No people and no human figures anywhere in the picture.",
+  "refs": []
+ },
+ {
+  "img": "a02b",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. A modern laboratory shelf with rows of small vaccine vials glowing softly under clean light. No people. No people and no human figures anywhere in the picture.",
+  "refs": []
+ },
+ {
+  "img": "a03a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-sepia palette with deep crimson accents; warm light only from candles, lanterns, fire. Not gory, no visible sores close up. The Speckled Monster exactly as on the attached sheet: a tall, straight-backed 18th-century nobleman with a big full-bottomed powdered white periwig of tight curls to the shoulders, a long pale powdered face covered with raised red speckles and pockmark scars, two small black beauty patches, cold narrow pale eyes and a thin cruel sneer; a dark plum-black velvet coat with tarnished gold embroidery, lace jabot, a gold lorgnette on a chain. Exactly ONE Speckled Monster, with exactly two arms and two hands. Haughty and evil. The Speckled Monster bows with exaggerated sarcasm, one hand on his chest, the other sweeping aside, in a candlelit palace hall.",
   "refs": [
    "3ab41c2f-b46e-4a4c-abc5-c37ae21cf2e4"
   ]

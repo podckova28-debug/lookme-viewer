@@ -113,6 +113,42 @@
   ]
  },
  {
+  "img": "s01a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple clothes of ordinary people of the period. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no kings, no plague doctors. A Victorian kitchen: a single stickman drinks a cup of water by the window; on the wall a big clock. Calm, ordinary morning.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
+ },
+ {
+  "img": "s02a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. Still life on a wooden table: a bowl of cloudy, milky rice water next to a spoon and a few grains of rice. Simple, symbolic, not gross. No people and no human figures anywhere in the picture.",
+  "refs": []
+ },
+ {
+  "img": "s02b",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple clothes of ordinary people of the period. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no kings, no plague doctors. Night in a Victorian back yard: a single stickman in a nightshirt hurries toward a little wooden outhouse holding a candle, a comic look of panic. Not gross.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
+ },
+ {
+  "img": "s03a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. A symbolic diagram on aged paper: a simple outline of a human figure drawn like a glass water jug, nearly empty, with a few drops leaking out at the bottom. No words. No people and no human figures anywhere in the picture.",
+  "refs": []
+ },
+ {
+  "img": "s03b",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. Still life on a white plate: a plump fresh green grape next to a shrivelled raisin. Clean, simple, symbolic. No people and no human figures anywhere in the picture.",
+  "refs": []
+ },
+ {
+  "img": "s04a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. King Cholera exactly as on the attached sheet: a stout pot-bellied Victorian gentleman in a soaking-wet dark teal frock coat, brown waistcoat and cravat, a battered black top hat with a tarnished tin crown around it, clammy grey-blue skin, glowing pale-green eyes, a wide toothy grin; water drips from him constantly; a dented tin cup on a chain, and a small glass jar with a tiny shrimp-like copepod pet hanging from his watch chain. Exactly ONE King Cholera, with exactly two arms and two hands. King Cholera stands by a well at night, filling his tin cup from a bucket, smiling politely at the viewer; his other hand rests on the well's edge.",
+  "refs": [
+   "578aebc8-20b7-4c82-930c-c1cc9e4e1b59"
+  ]
+ },
+ {
   "img": "c12a",
   "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple clothes of ordinary people of the period. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no kings, no plague doctors. A Victorian breakfast table in the morning: one stickman in a waistcoat eats toast happily, a cup of tea and a jug of water beside him.",
   "refs": [
@@ -601,6 +637,25 @@
   "img": "c55a",
   "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. A small vaccine vial and a strip of pills beside a glass of water on a clean clinic table. Simple, clean. No people and no human figures anywhere in the picture.",
   "refs": []
+ },
+ {
+  "img": "a01a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple clothes of ordinary people of the period. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no kings, no plague doctors. A sunny Victorian kitchen: a single recovered stickman sits at the table drinking a big glass of water, smiling weakly, a blanket over his shoulders.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
+ },
+ {
+  "img": "a02a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. A modern clean kitchen tap pouring a clear stream of water into a glass, bright daylight. Simple, hopeful, no people. No people and no human figures anywhere in the picture.",
+  "refs": []
+ },
+ {
+  "img": "a03a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. King Cholera exactly as on the attached sheet: a stout pot-bellied Victorian gentleman in a soaking-wet dark teal frock coat, brown waistcoat and cravat, a battered black top hat with a tarnished tin crown around it, clammy grey-blue skin, glowing pale-green eyes, a wide toothy grin; water drips from him constantly; a dented tin cup on a chain, and a small glass jar with a tiny shrimp-like copepod pet hanging from his watch chain. Exactly ONE King Cholera, with exactly two arms and two hands. King Cholera stands in the rain under a modern streetlight, arms folded, sulking, glaring at a shiny drinking-water fountain.",
+  "refs": [
+   "578aebc8-20b7-4c82-930c-c1cc9e4e1b59"
+  ]
  },
  {
   "img": "c56a",

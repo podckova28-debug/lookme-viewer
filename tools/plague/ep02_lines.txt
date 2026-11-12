@@ -8,6 +8,10 @@ L02|CHOLERA|Streamlined, darling. Streamlined.
 L03|NARRATOR|He doesn't need rats or fleas. He travels by water. A sick person sheds billions of bacteria. If that waste gets into a well, a river or a water pipe, the next person who takes a drink gets him too.
 L04|NARRATOR|Once inside, he makes a toxin that turns your gut into a pump. It pulls water out of the body and flushes it away. A patient can lose up to twenty litres of fluid in a single day.
 L05|CHOLERA|Twenty litres. I do not do things by halves.
+S01|NARRATOR|So what does he actually do to you? It starts fast. Anywhere from a few hours to a few days after a bad drink.
+S02|NARRATOR|Most people who catch him barely notice, but they still spread him for days. For the unlucky ones, it begins with sudden, endless watery diarrhoea, so pale that doctors called it rice water. Then the vomiting starts.
+S03|NARRATOR|The body dries out from the inside. Painful cramps grip the legs. The eyes sink into the skull. The skin on the fingers wrinkles, as if you'd been in the bath too long. The blood thickens, and the pulse grows weak.
+S04|CHOLERA|It's nothing personal. I simply need the water more than you do.
 L06|NARRATOR|People could be healthy at breakfast and dead by dinner. Their skin turned grey-blue and wrinkled from losing so much water. The Victorians had a name for it: the blue death.
 L07|NARRATOR|Untreated, the worst cases killed around half of their victims. Today, with treatment, fewer than one in a hundred die. Hold that thought.
 L08|NARRATOR|But where did he come from? His home is the brackish water where rivers meet the sea, especially the great delta of the Ganges, in what is now India and Bangladesh. There, Vibrio bacteria live quietly on the shells of tiny crustaceans called copepods.
@@ -56,6 +60,9 @@ L46|NARRATOR|In 1971, during Bangladesh's war of independence, cholera swept thr
 L47|NARRATOR|The medical journal The Lancet later called it potentially the most important medical advance of the twentieth century.
 L48|CHOLERA|Salt. Sugar. Water. That's it?
 L49|NARRATOR|That's it. Today there are also cholera vaccines, and antibiotics for severe cases.
+A01|NARRATOR|And for those who pulled through? Usually a full recovery within days, as long as they got enough fluids. But the immunity fades after a few years, so you could catch him again.
+A02|NARRATOR|For cities, the consequences were enormous. Fear of cholera gave us modern sewers, filtered drinking water, public health boards, and the first international health conferences. Every time you drink clean tap water, you're living in a world he forced us to build.
+A03|CHOLERA|You're welcome. Again.
 L50|NARRATOR|So, is he gone? Not even close. The seventh pandemic began in Indonesia in 1961, and it has never officially ended.
 L51|NARRATOR|In 2010, after a huge earthquake, cholera reached Haiti, carried in by United Nations peacekeepers, and killed nearly ten thousand people. In Yemen, during the war, there were more than two and a half million suspected cases.
 L52|NARRATOR|Today he still infects millions of people every year, and kills tens of thousands. Almost always in places without clean water.

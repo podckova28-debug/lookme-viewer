@@ -66,6 +66,20 @@ K('L02', "I'm not big. I'm important.",
 N('L03', "He spread from person to person, through the air, and on clothes and bedding. About two weeks after catching him came a high fever, and then a rash that turned into hard, painful blisters, all over the face and body.",
   ch('c09a', W(), "A simple 18th-century cottage room: one stickman lies in bed under a blanket with a cold cloth on his forehead and small red dots on his white round face; a candle and a jug on a stool."),
   sh('c09b', W(), "A pile of folded linen sheets and a blanket on a wooden chair by a window, with a faint sinister reddish haze around them. Symbolic still life."))
+# ---- symptoms
+N('S01', "Here's how it went. For about twelve days after catching him: nothing at all. You weren't even contagious yet. Then came a high fever, a pounding headache, and terrible pain in the back.",
+  ch('s01a', W(), "An 18th-century cottage bedroom: a single stickman lies in bed with a cold cloth on his forehead; on the wall hangs a calendar with many days crossed out in a row.", text=label('WHAT HE DOES TO YOU', 960, 150, 72)),
+  ch('s01b', C(.5, .5, 1.05), "A single stickman in a nightshirt stands bent over, both hands pressed to his lower back, wincing, in a candlelit room."))
+N('S02', "A few days later, red spots appeared in the mouth and on the tongue. Then on the face, the arms and the legs. Even on the palms of the hands and the soles of the feet.",
+  sh('s02a', STILL, "An old medical illustration on aged parchment: a simple front-view outline of a human figure with small red dots drawn on the face, the arms, the hands and the legs, and only a few on the body. Clean, schematic, not gory. No words."))
+N('S03', "The spots swelled into bumps, then into blisters, then into hard, deep pustules that felt like little peas stuck under the skin. And unlike chickenpox, they all grew at the same pace.",
+  sh('s03a', STILL, "A clean schematic diagram on aged parchment: five simple circles in a row, left to right, showing stages: a small flat red dot, a raised bump, a clear blister, a firm round pustule, and a dark dry crust. Simple, abstract, not gory. No words.",
+     text=[label('1', 330, 760, 50), label('2', 645, 760, 50, at=.6), label('3', 960, 760, 50, at=.9), label('4', 1275, 760, 50, at=1.2), label('5', 1590, 760, 50, at=1.5)]),
+  sh('s03b', C(.5, .5, 1.05), "Still life: a few small green peas lying on a white linen cloth next to an old brass magnifying glass, candle light. Simple and symbolic."))
+N('S04', "After about two weeks, they crusted over into scabs, and the scabs fell off, leaving pitted scars. Until the very last scab was gone, you could still pass him on.",
+  ch('s04a', W(), "A 18th-century cottage doorway in daylight: a single recovering stickman, pale, steps outside leaning on a walking stick, a few small dark marks on his round white face, squinting at the sun."))
+K('S05', "I take my time. Quality work always does.",
+  kg('s05a', C(.5, .45, 1.1), "The Speckled Monster sits at an ornate desk writing slowly with a quill in a leather ledger, an hourglass beside him, his other hand resting flat on the desk."))
 N('L04', "Around three in ten people who caught the classic form died. Survivors were often left with deep scars, and some went blind.",
   sh('c10a', STILL, "Ten small simple wooden figurines standing in a row on a dark wooden shelf, candle light. Symbolic still life.",
      text=[label('3 / 10', 960, 260, 110)]))
@@ -195,6 +209,15 @@ N('L47', "And on the eighth of May, 1980, the world declared smallpox eradicated
   sh('c02a', C(.5, .5, 1.1), text=stamp('ERADICATED', x=1380, y=240, size=96)))
 K('L48', "Eradicated. Such a strong word. I prefer: retired.",
   kg('c52a', C(.5, .45, 1.1), "The Speckled Monster sits stiffly in a gilded armchair in an empty dusty palace hall with sheets over the furniture, sipping tea from a fine china cup, pretending not to care."))
+
+# ---- consequences
+N('A01', "And for those who survived? Most were left with deep, pitted scars, especially on the face. Some went blind. But they were also immune for life, so survivors were often the ones who nursed the next wave of the sick.",
+  ch('a01a', W(), "An 18th-century sickroom: a stickman nurse in an apron with a few small dark marks on her round white face calmly brings a bowl of soup to a stickman patient lying in bed.", text=label('WHAT HE LEAVES BEHIND', 960, 150, 72)))
+N('A02', "And for the world? He changed it twice. By emptying the Americas, he helped European empires take over two continents. And by forcing people to fight back, he gave us the very first vaccine, and the idea behind every vaccine since.",
+  sh('a02a', WL(), "An old parchment map of the Atlantic with the Americas on the left and Europe on the right, small sailing ships crossing, dark ink shadows spreading over the Americas. No words."),
+  sh('a02b', C(.5, .5, 1.05), "A modern laboratory shelf with rows of small vaccine vials glowing softly under clean light. No people."))
+K('A03', "Every vaccine you've ever had? You can thank me. And that cow.",
+  kg('a03a', C(.5, .45, 1.1), "The Speckled Monster bows with exaggerated sarcasm, one hand on his chest, the other sweeping aside, in a candlelit palace hall."))
 
 # ---- today
 N('L49', "So is he really gone? Almost. Officially, live samples of the virus are kept in just two laboratories, one in the United States and one in Russia.",

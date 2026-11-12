@@ -78,6 +78,17 @@ N('L04', "Once inside, he makes a toxin that turns your gut into a pump. It pull
   sh('c10b', C(.5, .5, 1.1), "A row of twenty large glass water bottles lined up on a wooden floor, lit by a candle. Symbolic, still life.", text=ink('20 L', 1500, 220, 120)))
 K('L05', "Twenty litres. I do not do things by halves.",
   kg('c11a', C(.5, .45, 1.1), "King Cholera holds up his tin cup triumphantly like a trophy, water splashing from it, grinning."))
+# ---- symptoms
+N('S01', "So what does he actually do to you? It starts fast. Anywhere from a few hours to a few days after a bad drink.",
+  ch('s01a', W(), "A Victorian kitchen: a single stickman drinks a cup of water by the window; on the wall a big clock. Calm, ordinary morning.", text=label('WHAT HE DOES TO YOU', 960, 150, 72)))
+N('S02', "Most people who catch him barely notice, but they still spread him for days. For the unlucky ones, it begins with sudden, endless watery diarrhoea, so pale that doctors called it rice water. Then the vomiting starts.",
+  sh('s02a', C(.5, .5, 1.05), "Still life on a wooden table: a bowl of cloudy, milky rice water next to a spoon and a few grains of rice. Simple, symbolic, not gross."),
+  ch('s02b', W(), "Night in a Victorian back yard: a single stickman in a nightshirt hurries toward a little wooden outhouse holding a candle, a comic look of panic. Not gross."))
+N('S03', "The body dries out from the inside. Painful cramps grip the legs. The eyes sink into the skull. The skin on the fingers wrinkles, as if you'd been in the bath too long. The blood thickens, and the pulse grows weak.",
+  sh('s03a', STILL, "A symbolic diagram on aged paper: a simple outline of a human figure drawn like a glass water jug, nearly empty, with a few drops leaking out at the bottom. No words."),
+  sh('s03b', C(.5, .5, 1.05), "Still life on a white plate: a plump fresh green grape next to a shrivelled raisin. Clean, simple, symbolic."))
+K('S04', "It's nothing personal. I simply need the water more than you do.",
+  kg('s04a', C(.5, .45, 1.1), "King Cholera stands by a well at night, filling his tin cup from a bucket, smiling politely at the viewer; his other hand rests on the well's edge."))
 N('L06', "People could be healthy at breakfast and dead by dinner. Their skin turned grey-blue and wrinkled from losing so much water. The Victorians had a name for it: the blue death.",
   ch('c12a', W(), "A Victorian breakfast table in the morning: one stickman in a waistcoat eats toast happily, a cup of tea and a jug of water beside him."),
   sh('c12b', W(), "The same Victorian breakfast table at night: the chair is empty and pushed back, the candle burnt low, the toast untouched. No people. Somber."),
@@ -231,6 +242,14 @@ K('L48', "Salt. Sugar. Water. That's it?",
   kg('c54a', C(.5, .45, 1.1), "King Cholera stares in disbelief at a small glass of rehydration drink on a table in front of him, his crown tilted, mouth open."))
 N('L49', "That's it. Today there are also cholera vaccines, and antibiotics for severe cases.",
   sh('c55a', C(.5, .5, 1.05), "A small vaccine vial and a strip of pills beside a glass of water on a clean clinic table. Simple, clean."))
+
+# ---- consequences
+N('A01', "And for those who pulled through? Usually a full recovery within days, as long as they got enough fluids. But the immunity fades after a few years, so you could catch him again.",
+  ch('a01a', W(), "A sunny Victorian kitchen: a single recovered stickman sits at the table drinking a big glass of water, smiling weakly, a blanket over his shoulders.", text=label('WHAT HE LEAVES BEHIND', 960, 150, 72)))
+N('A02', "For cities, the consequences were enormous. Fear of cholera gave us modern sewers, filtered drinking water, public health boards, and the first international health conferences. Every time you drink clean tap water, you're living in a world he forced us to build.",
+  sh('a02a', C(.5, .5, 1.05), "A modern clean kitchen tap pouring a clear stream of water into a glass, bright daylight. Simple, hopeful, no people."))
+K('A03', "You're welcome. Again.",
+  kg('a03a', C(.5, .45, 1.1), "King Cholera stands in the rain under a modern streetlight, arms folded, sulking, glaring at a shiny drinking-water fountain."))
 
 # ---- today
 N('L50', "So, is he gone? Not even close. The seventh pandemic began in Indonesia in 1961, and it has never officially ended.",
