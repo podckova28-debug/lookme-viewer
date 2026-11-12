@@ -1,0 +1,137 @@
+s00_01|narrador|En este parque hay doce perros y cuarenta palomas.
+s00_02|narrador|Y tú entiendes todo lo que dicen.
+s00_03|perro1|¡Pelota! ¿Pelota? ¡¿Pelota?!
+s00_04|palomas|Mírenlo. Ahí está otra vez. El de los rizos.
+s00_05|narrador|Todos los animales del mundo te hablan.
+s00_06|narrador|Todos… menos uno.
+s00_07|narrador|Empecemos por el principio.
+s01_01|narrador|Imagina que puedes hablar con los animales.
+s01_02|narrador|Con todos. Perros, gatos, pájaros. Hasta con los mosquitos.
+s01_03|narrador|Y no solo los entiendes: ellos también te entienden a ti.
+s01_04|narrador|Suena como el mejor poder del mundo.
+s01_05|narrador|Hasta que descubres lo que los animales piensan de verdad.
+s03_01|narrador|Todo empieza un jueves, a las cinco de la mañana.
+s03_02|narrador|Croqueta te pisa la cara, como todos los días.
+s03_03|croqueta|Humano. Humano. Humano.
+s03_04|narrador|Pero hoy, por primera vez, entiendes lo que dice.
+s03_05|croqueta|El plato. Está. Vacío.
+s03_06|tu|¿Croqueta? ¿Tú… hablas?
+s03_07|croqueta|Yo siempre hablo. Tú eres el que nunca escucha.
+s03_08|croqueta|Y esa comida sabe a cartón. Llevo cuatro años diciéndotelo.
+s03_09|narrador|Resulta que Croqueta tiene opiniones. Muchas.
+s04_01|narrador|En la cocina, tu mamá prepara el desayuno.
+s04_02|croqueta|Por cierto: tu mamá se comió tu chocolate. El que escondiste.
+s04_03|tu|Ma… ¿te comiste mi chocolate?
+s04_04|mama|¿Qué? ¿Quién te dijo?
+s04_05|narrador|Miras a Croqueta.
+s04_06|croqueta|Yo no dije nada.
+s04_07|mama|¿Estás hablando con el gato?
+s04_08|narrador|Regla número uno: entiendes a todos los animales, y ellos te entienden a ti.
+s04_09|narrador|Pero los demás solo oyen ladridos, maullidos… y a ti, platicando con un gato.
+s05_01|narrador|Camino a la escuela, descubres algo sobre los perros.
+s05_02|perro1|¡Hola! ¡Hola! ¡Hola!
+s05_03|perro2|¿Eres mi amigo? ¡Eres mi amigo! ¡Eres mi mejor amigo!
+s05_04|narrador|Todos los perros dicen lo mismo. Y todos los perros te quieren. De inmediato. Sin condiciones.
+s05_05|narrador|Bueno. Casi todos.
+s05_06|firulais|Ahí viene. El cartero. Todos los días viene.
+s05_07|firulais|Algún día lo voy a atrapar.
+s05_08|narrador|Firulais, el perro del vecino, lleva siete años en guerra con el cartero.
+s05_09|narrador|Va perdiendo.
+s06_01|narrador|En el salón vive el Señor Bigotes, el hámster de la clase.
+s06_02|bigotes|Psst. Tú. El de los rizos. ¿Me oyes?
+s06_03|narrador|El Señor Bigotes vive en el escritorio del profe Ramírez. Lo ha visto todo.
+s06_04|bigotes|El examen sorpresa de hoy. Pregunta uno: la B. Pregunta dos: la fotosíntesis.
+s06_05|tu|¿Y tú cómo sabes?
+s06_06|bigotes|Lo escribió anoche. Encima de mi jaula. Escribe muy fuerte.
+s06_07|narrador|Sacas diez de diez.
+s06_08|profe|Diez de diez. Usted.
+s06_09|narrador|El profe Ramírez te mira. Luego mira al Señor Bigotes.
+s06_10|narrador|El Señor Bigotes mira hacia otro lado.
+s07_01|narrador|En una semana te vuelves el detective de mascotas del barrio.
+s07_02|narrador|Encuentras un perico en un árbol.
+s07_03|narrador|Un gato atorado en un techo.
+s07_04|narrador|Y una tortuga que llevaba dos años perdida… en su propio jardín.
+s07_05|nacho|Cien pesos por mascota. Yo soy tu representante.
+s07_06|narrador|Nacho cobra. Nacho no hace nada.
+s07_07|narrador|Nacho dice que eso se llama «negocios».
+s08_01|narrador|Y luego está Pepe.
+s08_02|narrador|Todos los animales del mundo te hablan. Pepe no.
+s08_03|narrador|Le haces preguntas. Le ofreces galletas. Le hablas despacio, como a un turista.
+s08_04|tu|¿Por qué… no… me… hablas?
+s08_05|narrador|Pepe solo te mira.
+s08_06|narrador|Hasta las otras palomas se ponen nerviosas.
+s08_07|palomas|Nosotras no hablamos de Pepe.
+s09_01|narrador|Pero hay un problema.
+s09_02|narrador|Nadie más entiende a los animales. Solo te oyen a ti.
+s09_03|palomas|Esa galleta es nuestra. Danos la galleta. Danos la galleta.
+s09_04|tu|¡No! ¡Es mía! ¡Váyanse!
+s09_05|narrador|Para el resto del mundo, eres el chico que le grita a las palomas.
+s09_06|valeria|¿Estás… peleando con unas palomas?
+s09_07|tu|Ellas empezaron.
+s09_08|narrador|Renata se va. Despacio. Sin darte la espalda.
+s10_01|narrador|El segundo problema: los animales no se callan nunca.
+s10_02|mosquito|Mmm. Tipo O positivo. Excelente cosecha.
+s10_03|narrador|Y ahora sabes por qué los perros ladran a las tres de la mañana.
+s10_04|perros|¡¿Quién anda ahí?!
+s10_05|perro2|¡No sé!
+s10_06|perros|¡¿Quién anda ahí?!
+s10_07|narrador|Nadie anda ahí. Nunca anda nadie ahí.
+s10_08|narrador|Duermes tres horas. Croqueta duerme catorce.
+s10_09|croqueta|Silencio. Estoy descansando.
+s11_01|narrador|Y el tercer problema es el peor.
+s11_02|narrador|Los animales no guardan secretos.
+s11_03|narrador|El perro de doña Lupe te cuenta que ella les habla a sus plantas.
+s11_04|narrador|El gato del profe Ramírez te cuenta que el profe canta en la regadera.
+s11_05|narrador|Y Croqueta le cuenta a todo el barrio lo que tú dices dormido.
+s11_06|croqueta|Dijo «Renata». Tres veces.
+s11_07|narrador|Regla número dos: los animales no mienten. Y no saben guardar un secreto.
+s12_01|narrador|El sábado, en el parque, Renata pasea a su perrita, Canela.
+s12_02|narrador|Canela te ve. Y viene corriendo.
+s12_03|canela|¡Hola! ¡Tú eres el chico! ¡El chico del que habla Renata!
+s12_04|tu|¿Renata… habla de mí?
+s12_05|canela|¡Todo el tiempo! ¡Ayer le dijo al espejo que tú…!
+s12_06|narrador|Y aquí está: todo lo que Renata piensa de ti, en boca de una perrita que no sabe guardar secretos.
+s12_07|narrador|Solo tienes que escuchar.
+s13_01|narrador|Pero entonces piensas en Croqueta.
+s13_02|narrador|En todo lo que tú le cuentas a Croqueta. De noche. Cuando nadie te oye.
+s13_03|narrador|Y en cómo te sentirías si alguien lo supiera antes de que tú lo dijeras.
+s13_04|tu|Canela, espera. No me lo digas.
+s13_05|canela|¿Por qué no? ¡Es lo mejor!
+s13_06|tu|Porque eso me lo tiene que decir ella.
+s14_01|narrador|Renata llega corriendo.
+s14_02|valeria|Perdón, perdón. Se me escapó. ¿Te hizo algo?
+s14_03|tu|No. Solo… platicamos.
+s14_04|valeria|¿Platicaron?
+s14_05|narrador|Y por un segundo crees que lo arruinaste otra vez.
+s14_06|valeria|Le caes bien. Y ella nunca se equivoca con la gente.
+s14_07|valeria|¿Quieres pasearla conmigo el próximo sábado?
+s14_08|tu|Sí. Sí quiero.
+s14_09|narrador|Regla número tres: hay cosas que tienes que escuchar de la persona.
+s14_10|narrador|No de su perro.
+s14_11|canela|¡Yo sabía! ¡Yo sabía!
+s15_01|narrador|Esa noche vas a la banca del parque, con Pepe.
+s15_02|narrador|Le cuentas todo. Lo de Croqueta. Lo del Señor Bigotes. Lo de Canela.
+s15_03|narrador|Pepe escucha, como siempre.
+s15_04|tu|Ya sé. No me vas a contestar.
+s15_05|narrador|Y entonces Pepe abre el pico.
+s15_06|pepe|¿Te gustó?
+s15_07|tu|¿…Qué?
+s15_08|pepe|El poder. ¿Te gustó?
+s15_09|narrador|Pepe nunca habla. Y la primera vez que habla, hace preguntas.
+s15_10|pepe|Mañana, nadie te va a ver.
+s15_11|tu|Espera… ¿tú fuiste?
+s15_12|pepe|Ruu.
+s16_01|narrador|¿Algo de esto es real? Más de lo que crees.
+s16_02|narrador|Uno. Los perritos de la pradera tienen palabras.
+s16_03|narrador|Su grito de alarma no solo dice «¡cuidado, un humano!». También dice qué tan alto es… y de qué color es su ropa.
+s16_04|narrador|Con esa sudadera amarilla, ya tendrían una palabra para ti.
+s16_05|narrador|Dos. Los gatos adultos casi no se maúllan entre ellos.
+s16_06|narrador|El maullido es, sobre todo, para los humanos. Cuando Croqueta maúlla, te está hablando a ti.
+s16_07|narrador|Tres. Las palomas pueden aprender a reconocer palabras escritas.
+s16_08|narrador|En un experimento, unas palomas aprendieron hasta cincuenta y ocho palabras en inglés.
+s16_09|narrador|Así que, por si acaso, cuidado con lo que escribes en los comentarios. Pepe sabe leer.
+s17_01|narrador|¿Y tú qué le preguntarías a tu mascota?
+s17_02|narrador|Déjamelo en los comentarios.
+s17_03|narrador|Y fíjate bien: Pepe no dijo ni una palabra en todo el episodio… hasta el final.
+s17_04|narrador|Mañana, nadie te va a ver. Suscríbete para no perdértelo.
+s17_05|narrador|Pepe ya te vio.
