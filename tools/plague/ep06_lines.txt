@@ -1,0 +1,50 @@
+C01|NARRATOR|Paris. The sixth of July, 1885. A mother arrives at the laboratory of Louis Pasteur with her nine-year-old son, Joseph Meister. Two days earlier, a mad dog bit him fourteen times.
+C02|NARRATOR|Everyone knew what came next. Once the symptoms began, nobody survived. Not ever.
+C03|NARRATOR|Pasteur was not even a medical doctor. He had an experimental treatment that had only ever been tried on dogs. And he had to decide that night.
+C04|RABIES|Fourteen bites. A child. And a chemist with a syringe. I liked my chances.
+L01|NARRATOR|So who is he? Rabies is a virus. Under a powerful microscope, he looks like a tiny bullet. His family is called Lyssavirus, after Lyssa, the Greek spirit of rage and madness.
+L02|NARRATOR|He lives in the saliva of an infected animal. A bite pushes him into the wound. Dogs cause almost every human case in the world. But foxes, raccoons, jackals, monkeys and bats can carry him too.
+L03|NARRATOR|Then, he travels. Not through the blood, but along the nerves, slowly crawling toward the brain. That can take weeks, months, or sometimes more than a year. And all that time, you feel fine.
+L04|NARRATOR|When he finally reaches the brain, it's too late. He multiplies there, and spreads back out to the salivary glands, ready for the next bite.
+L05|RABIES|I take the scenic route. Through your nerves. No hurry.
+L06|NARRATOR|But where did he come from? His closest relatives are viruses that live in bats. Most scientists think rabies began in bats, long ago, and then jumped into meat-eating animals like dogs and foxes.
+L07|NARRATOR|Once he got into dogs, he had the perfect home. Dogs live right next to people. They have for at least fifteen thousand years.
+L08|RABIES|Man's best friend. And mine.
+S01|NARRATOR|So what does he do to you? It starts like flu. Fever, a headache, tiredness. And a strange tingling or itching at the place you were bitten, sometimes months after the bite had healed.
+S02|NARRATOR|Then he takes over the brain. Most victims become restless, confused and terrified. They hallucinate, lash out, and can't sleep.
+S03|NARRATOR|And then the strangest symptom of all. The victim is desperately thirsty, but the moment they try to drink, their throat clamps shut in a painful spasm. Soon even the sight of water sets it off. The old name for rabies was hydrophobia: fear of water.
+S04|NARRATOR|Because they can't swallow, saliva builds up in the mouth. That's the frothing that people remember. And it's full of the virus.
+S05|NARRATOR|Some people have the quieter form. A slow paralysis creeps up from the bitten limb. Either way, it ends in a coma, and death, usually within a week or two.
+S06|RABIES|Angry hosts bite. Biting spreads me. I am a very good designer.
+L09|NARRATOR|He is one of the oldest diseases we know. Around four thousand years ago, the Laws of Eshnunna in Mesopotamia said: if a mad dog bites a man and he dies, the owner must pay two-thirds of a mina of silver.
+L10|NARRATOR|The Greeks and Romans knew him well. The Roman writer Celsus advised burning the wound with a hot iron. Others prescribed the liver of the mad dog, or throwing the patient into a pond.
+L11|NARRATOR|That's where a famous phrase comes from. For a dog bite, people put a hair of the very dog that bit you into the wound. Today, hair of the dog means a drink to cure a hangover.
+L12|RABIES|A hot poker, a dog's liver, and a pond. My favourite century.
+L13|NARRATOR|In the Middle Ages, people prayed to Saint Hubert, the patron saint of hunters. At his shrines, priests burned bite wounds with a red-hot iron key, called a Saint Hubert's key.
+L14|NARRATOR|Some historians think rabies helped inspire the legends of werewolves and vampires. Biting, rage, sleeplessness, fear of water and mirrors, wandering at night. It all sounds a little familiar.
+L15|RABIES|Werewolves, vampires. People always make me sound more glamorous than I am.
+L16|NARRATOR|By the 1800s, cities were full of stray dogs, and rabies panics swept Europe and America. Mad dog scares filled the newspapers. Police shot strays in the street.
+L17|NARRATOR|Britain fought back with muzzles and quarantine. Every dog had to wear a muzzle, and imported pets were locked up for six months. By 1902, rabies was gone from Britain.
+L18|NARRATOR|But nobody had a cure. Then came Louis Pasteur. He had already shown that germs cause disease, and made a vaccine for anthrax in sheep. Now he turned to rabies.
+L19|NARRATOR|He couldn't see the rabies virus. It was far too small for his microscopes. So he grew it in the spinal cords of rabbits, and dried the cords in glass flasks. The longer they dried, the weaker the virus became.
+L20|NARRATOR|His plan: start with the weakest virus, then give stronger and stronger doses, to train the body to fight before the real virus reached the brain.
+L21|RABIES|Dried rabbit spine. That's what he planned to stab me with.
+L22|NARRATOR|On the evening of the sixth of July, Joseph got his first injection. Over ten days, he got thirteen. Each one stronger than the last.
+L23|NARRATOR|Then they waited. Days, then weeks. Joseph never got sick. He went home to Alsace a healthy boy. Years later, he came back to work as the caretaker at the Pasteur Institute.
+L24|NARRATOR|Months later, a fifteen-year-old shepherd named Jean-Baptiste Jupille was badly bitten while fighting off a rabid dog to protect younger children. Pasteur treated him too, and he lived.
+L25|NARRATOR|Soon people came from all over the world. In 1886, nineteen Russians bitten by a rabid wolf travelled all the way to Paris. Most of them survived. Donations poured in, and in 1888 the Pasteur Institute opened.
+L26|RABIES|One little boy. And suddenly, I'm the villain everyone has a cure for.
+L27|NARRATOR|The vaccine got better, and safer. And the real breakthrough was vaccinating dogs. Where dogs are vaccinated, human rabies almost disappears.
+L28|NARRATOR|Today, if you're bitten, the treatment works almost every time, as long as you get it before symptoms start. Wash the wound for fifteen minutes with soap and water, then get the vaccine, and an antibody injection.
+L29|NARRATOR|And then, in 2004, something nobody had seen before. A fifteen-year-old girl in Wisconsin, Jeanna Giese, was bitten by a bat and developed rabies. Doctors put her in a coma to protect her brain. She survived.
+L30|NARRATOR|It was a miracle, but a rare one. The same approach has failed in most other patients. Once he reaches the brain, he still almost always wins.
+L31|RABIES|One girl beat me. One. I still have nightmares about that hospital.
+A01|NARRATOR|And for those who survive? Survivors are so rare that each one is studied by doctors around the world. Most are left with serious brain damage. A lucky few recover almost completely.
+A02|NARRATOR|For the world, he left behind the first vaccine ever made in a laboratory for people, a network of Pasteur Institutes on five continents, and dog vaccination laws in country after country.
+A03|RABIES|He took a disease that couldn't be cured, and made it something you can prevent with two injections. Rude.
+L32|NARRATOR|So is he gone? Far from it. Rabies still kills around fifty-nine thousand people every year, mostly in Asia and Africa. About four in ten of them are children.
+L33|NARRATOR|Almost all of those deaths could be prevented. The world has set a goal: zero human deaths from dog rabies by 2030.
+L34|NARRATOR|In the Americas, dog rabies is almost gone. There, most human cases now come from bats. Their bites are so small, people sometimes don't even notice them.
+L35|RABIES|I've made some new friends. They fly.
+L36|NARRATOR|Four thousand years. Tens of millions of lives. Beaten not by a cure, but by a nine-year-old boy, a chemist, and a needle for every dog.
+L37|NARRATOR|Next time: a killer once thought to be beautiful. Poets died of her. Painters made her fashionable. She was the white plague.
