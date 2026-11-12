@@ -113,33 +113,25 @@
   ]
  },
  {
-  "img": "s01a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple clothes of ordinary people of the period. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no kings, no plague doctors. A Victorian kitchen: a single stickman drinks a cup of water by the window; on the wall a big clock. Calm, ordinary morning.",
+  "img": "d01a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple clothes of ordinary people of the period. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no kings, no plague doctors. A hand-drawn explainer diagram in ink and muted watercolour on aged parchment, clean and readable like an old medical textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs), numbered stages with small drawn arrows between them. No words, no letters; numbers 1-4 only as small circled digits. Not gory. Left to right: (1) a tin cup of murky water, arrow, (2) a small clock and a little calendar showing a few days, arrow, (3) a single stickman holding his stomach, worried.",
   "refs": [
    "84427fc9-09ce-40e6-b032-6f2700874458"
   ]
  },
  {
-  "img": "s02a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. Still life on a wooden table: a bowl of cloudy, milky rice water next to a spoon and a few grains of rice. Simple, symbolic, not gross. No people and no human figures anywhere in the picture.",
-  "refs": []
- },
- {
-  "img": "s02b",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple clothes of ordinary people of the period. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no kings, no plague doctors. Night in a Victorian back yard: a single stickman in a nightshirt hurries toward a little wooden outhouse holding a candle, a comic look of panic. Not gross.",
+  "img": "d02a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple clothes of ordinary people of the period. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no kings, no plague doctors. A hand-drawn explainer illustration in ink and muted watercolour on aged parchment, cartoon stickman style, not gory, split in two panels. Left panel (1): three stickmen standing apart, smiling and feeling fine, tiny comma-shaped germs floating off them toward a well. Right panel (2): one stickman clearly sick, pale grey face, holding his stomach and bent over a bucket, beside him a bowl of milky white rice water. No words",
   "refs": [
    "84427fc9-09ce-40e6-b032-6f2700874458"
   ]
  },
  {
-  "img": "s03a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. A symbolic diagram on aged paper: a simple outline of a human figure drawn like a glass water jug, nearly empty, with a few drops leaking out at the bottom. No words. No people and no human figures anywhere in the picture.",
-  "refs": []
- },
- {
-  "img": "s03b",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. Still life on a white plate: a plump fresh green grape next to a shrivelled raisin. Clean, simple, symbolic. No people and no human figures anywhere in the picture.",
-  "refs": []
+  "img": "d03a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple clothes of ordinary people of the period. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no kings, no plague doctors. A hand-drawn explainer illustration in ink and muted watercolour, clean like an old medical textbook plate, cartoon stickman style, not gory. A large sick stickman sits on the edge of a bed, CLEARLY showing the symptoms on his body: his round head has a grey-blue tint, dark sunken circles around his eyes, a dry cracked mouth; his fingers are wrinkled like after a long bath (shown in a small round magnified inset); zigzag cramp lines on his calves while he grabs one leg; sweat drops; a big empty water jug tipped over beside him. Numbered circled digits 1-4 next to the eyes, the fingers, the legs and the jug. No words",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
  },
  {
   "img": "s04a",
@@ -639,15 +631,15 @@
   "refs": []
  },
  {
-  "img": "a01a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple clothes of ordinary people of the period. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no kings, no plague doctors. A sunny Victorian kitchen: a single recovered stickman sits at the table holding a big glass of water with BOTH hands, smiling weakly, a blanket over his shoulders. Both arms clearly come from his shoulders.",
+  "img": "d04a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple clothes of ordinary people of the period. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no kings, no plague doctors. A hand-drawn explainer diagram in ink and muted watercolour on aged parchment, clean and readable like an old medical textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs), numbered stages with small drawn arrows between them. No words, no letters; numbers 1-4 only as small circled digits. Not gory. Left to right: (1) a stickman lying weak in bed drinking from a cup, arrow, (2) the same stickman standing up healthy and smiling, holding a small round shield, arrow, (3) a calendar with a few years crossed off and the little shield cracked and fading.",
   "refs": [
    "84427fc9-09ce-40e6-b032-6f2700874458"
   ]
  },
  {
-  "img": "a02a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. A modern clean kitchen tap pouring a clear stream of water into a glass, bright daylight. Simple, hopeful, no people. No people and no human figures anywhere in the picture.",
+  "img": "d05a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-teal-sepia palette; warm light only from gas lamps, candles, lanterns. Not gory. A hand-drawn explainer diagram in ink and muted watercolour on aged parchment, clean and readable like an old medical textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs), numbered stages with small drawn arrows between them. No words, no letters; numbers 1-4 only as small circled digits. Not gory. A cutaway diagram of a Victorian city: above ground a street with a clean water tap and a small public-health office building; below ground a big brick sewer tunnel and a separate clean water pipe passing through a sand filter tank; in a corner a small globe with a few ships around it. No people. No people and no human figures anywhere in the picture.",
   "refs": []
  },
  {

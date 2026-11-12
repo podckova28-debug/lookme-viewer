@@ -5,6 +5,7 @@
   python3 tools/plague/ep03_spec.py beats   -> tools/plague/ep03_beats.json (for beats.py)
 """
 import sys, json, os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); import schemes as SC
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 K_SHEET = '3ab41c2f-b46e-4a4c-abc5-c37ae21cf2e4'   # channel/plague/sheets/smallpox_turn_c.jpg
 S_SHEET = '84427fc9-09ce-40e6-b032-6f2700874458'   # channel/plague/sheets/stickmen_common.jpg
@@ -35,6 +36,8 @@ def stamp(t, **k): return {'text': t, 'x': 1380, 'y': 240, 'size': 96, 'style': 
 def ch(img, cam, p, **k): return sh(img, cam, STICK + ' ' + p, 'S', **k)
 def kg(img, cam, p, stick=False, **k): return sh(img, cam, (STICK + ' ' if stick else '') + KING + ' ' + p, 'K' + ('S' if stick else ''), **k)
 
+SN = [('~12 DAYS', ['no symptoms', 'not contagious yet']), ('2-4 DAYS', ['fever, headache', 'back pain']),
+      ('RASH', ['mouth, then face,', 'arms and legs']), ('~1 WEEK', ['blisters, then', 'hard pustules']), ('~2 WEEKS', ['scabs']), ('~3 WEEKS', ['scabs fall off', 'pitted scars'])]   # symptoms timeline nodes
 B = []
 def N(i, t, *s): B.append((i, 'NARRATOR', t, list(s)))
 def K(i, t, *s): B.append((i, 'SMALLPOX', t, list(s)))
@@ -68,16 +71,14 @@ N('L03', "He spread from person to person, through the air, and on clothes and b
   sh('c09b', W(), "A pile of folded linen sheets and a blanket on a wooden chair by a window, with a faint sinister reddish haze around them. Symbolic still life."))
 # ---- symptoms
 N('S01', "Here's how it went. For about twelve days after catching him: nothing at all. You weren't even contagious yet. Then came a high fever, a pounding headache, and terrible pain in the back.",
-  ch('s01a', W(), "An 18th-century cottage bedroom: a single stickman lies in bed with a cold cloth on his forehead; on the wall hangs a calendar with many days crossed out in a row.", text=label('WHAT HE DOES TO YOU', 960, 150, 72)),
-  ch('s01b', C(.5, .5, 1.05), "A single stickman in a nightshirt stands bent over, both hands pressed to his lower back, wincing, in a candlelit room."))
+  ch('d01a', STILL, "A hand-drawn explainer illustration in ink and muted watercolour, cartoon stickman style, not gory. Left (1): a wall calendar with about twelve days crossed off, a calm stickman next to it. Arrow. Right (2): the same stickman clearly ill in bed: flushed red cheeks on his round white face, a thermometer in his mouth, sweat drops, wavy heat lines above his head, one hand pressed to his aching lower back. Circled digits 1 and 2 only, no words", text=[label('WHAT HE DOES TO YOU', 960, 150, 72), cap('~12 DAYS: NOTHING  ·  THEN FEVER, HEADACHE, BACK PAIN')]))
 N('S02', "A few days later, red spots appeared in the mouth and on the tongue. Then on the face, the arms and the legs. Even on the palms of the hands and the soles of the feet.",
-  ch('s02a', W(), "A single stickman in a nightshirt sits on the edge of a bed in a candlelit cottage room, looking in dismay at small red dots on his white stick hands; a few small red dots on his round white face too. Cartoon, simple, not gory."))
+  ch('d02a', STILL, "A hand-drawn explainer illustration in ink and muted watercolour, cartoon stickman style, not gory. One large stickman stands in the centre, CLEARLY covered in small raised red spots: many spots on his round white face, on his stick arms and legs, fewer on his body; small round magnified insets show (1) his open mouth with red spots on the tongue, (2) his hand palm with red spots, (3) the sole of his foot with red spots. He looks at his hands in dismay. Circled digits 1-3 only, no words", text=[cap('MOUTH  ·  FACE  ·  ARMS AND LEGS  ·  PALMS AND SOLES')]))
 N('S03', "The spots swelled into bumps, then into blisters, then into hard, deep pustules that felt like little peas stuck under the skin. And unlike chickenpox, they all grew at the same pace.",
-  sh('s03a', STILL, "A clean schematic diagram on aged parchment: five simple circles in a row, left to right, showing stages: a small flat red dot, a raised bump, a clear blister, a firm round pustule, and a dark dry crust. Simple, abstract, not gory. No words.",
-     text=[label('1', 330, 760, 50), label('2', 645, 760, 50, at=.6), label('3', 960, 760, 50, at=.9), label('4', 1275, 760, 50, at=1.2), label('5', 1590, 760, 50, at=1.5)]),
-  sh('s03b', C(.5, .5, 1.05), "Still life: a few small green peas lying on a white linen cloth next to an old brass magnifying glass, candle light. Simple and symbolic."))
+  ch('d03a', W(), "A hand-drawn cartoon illustration, stickman style, not gory: close portrait of a sick stickman in bed whose round white face and stick hands are CLEARLY covered in many small raised cream-coloured bumps with red rims, like peas under the skin; he looks miserable, a wet cloth on his forehead, candle light.", text=[cap('BLISTERS, THEN HARD PUSTULES, ALL AT THE SAME PACE')]),
+  sh('s03a', STILL, text=[label('1', 330, 760, 50), label('2', 645, 760, 50, at=.6), label('3', 960, 760, 50, at=.9), label('4', 1275, 760, 50, at=1.2), label('5', 1590, 760, 50, at=1.5), cap('SPOT  ·  BUMP  ·  BLISTER  ·  PUSTULE  ·  SCAB')]))
 N('S04', "After about two weeks, they crusted over into scabs, and the scabs fell off, leaving pitted scars. Until the very last scab was gone, you could still pass him on.",
-  ch('s04a', W(), "A 18th-century cottage doorway in daylight: a single recovering stickman, pale, steps outside leaning on a walking stick, a few small dark marks on his round white face, squinting at the sun."))
+  ch('d04a', STILL, "A hand-drawn explainer illustration in ink and muted watercolour, cartoon stickman style, not gory. Three portraits of the same stickman's round white face in a row with arrows between: (1) face covered in small dark crusts, (2) the crusts flaking off and falling like little flakes, (3) the face healed but left with small pitted round marks. A little calendar under them showing about three weeks. Circled digits 1-3 only, no words", text=[cap('SCABS AFTER ~2 WEEKS  ·  CONTAGIOUS UNTIL THE LAST ONE FALLS')]))
 K('S05', "I take my time. Quality work always does.",
   kg('s05a', C(.5, .45, 1.1), "The Speckled Monster sits at an ornate desk writing slowly with a quill in a leather ledger, an hourglass beside him, his other hand resting flat on the desk."))
 N('L04', "Around three in ten people who caught the classic form died. Survivors were often left with deep scars, and some went blind.",
@@ -212,10 +213,9 @@ K('L48', "Eradicated. Such a strong word. I prefer: retired.",
 
 # ---- consequences
 N('A01', "And for those who survived? Most were left with deep, pitted scars, especially on the face. Some went blind. But they were also immune for life, so survivors were often the ones who nursed the next wave of the sick.",
-  ch('a01a', W(), "An 18th-century sickroom: a stickman nurse in an apron with a few small dark marks on her round white face calmly brings a bowl of soup to a stickman patient lying in bed.", text=label('WHAT HE LEAVES BEHIND', 960, 150, 72)))
+  ch('d05a', STILL, "A hand-drawn explainer illustration in ink and muted watercolour, cartoon stickman style, not gory, three panels: (1) a stickman's round white face with many small pitted round scars, (2) a stickman with one cloudy white eye walking with a cane, (3) a healthy stickman nurse with a few scars on her face calmly caring for a patient in bed, a small glowing shield symbol above her head. Circled digits 1-3 only, no words", text=[label('WHAT HE LEAVES BEHIND', 960, 150, 72), cap('SCARS  ·  SOMETIMES BLINDNESS  ·  IMMUNE FOR LIFE')]))
 N('A02', "And for the world? He changed it twice. By emptying the Americas, he helped European empires take over two continents. And by forcing people to fight back, he gave us the very first vaccine, and the idea behind every vaccine since.",
-  sh('a02a', WL(), "An old parchment map of the Atlantic with the Americas on the left and Europe on the right, small sailing ships crossing, dark ink shadows spreading over the Americas. No words."),
-  sh('a02b', C(.5, .5, 1.05), "A modern laboratory shelf with rows of small vaccine vials glowing softly under clean light. No people."))
+  sh('a02a', WL(), text=[cap('EMPIRES IN THE AMERICAS')]), sh('a02b', C(.5, .5, 1.05), text=[cap('THE FIRST VACCINE, AND EVERY ONE SINCE')]))
 K('A03', "Every vaccine you've ever had? You can thank me. And that cow.",
   kg('a03a', C(.5, .45, 1.1), "The Speckled Monster bows with exaggerated sarcasm, one hand on his chest, the other sweeping aside, in a candlelit palace hall."))
 

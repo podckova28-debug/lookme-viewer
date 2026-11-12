@@ -42,6 +42,13 @@ def draw_item(it, k):
        dim   - darkened soft rectangle (to spotlight one part of the picture)"""
     L = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(L)
     st = it.get('style', 'plate')
+    if st == 'line':   # scheme line: {'pts': [x0, y0, x1, y1], 'width', 'color'}
+        d.line(it['pts'], fill=tuple(it.get('color', CREAM)) + (255,), width=it.get('width', 6))
+        return L
+    if st == 'dot':    # scheme node: filled circle with an outline ring
+        x, y, r = it['x'], it['y'], it.get('r', 22) * k; col = tuple(it.get('color', CREAM))
+        d.ellipse((x - r - 6, y - r - 6, x + r + 6, y + r + 6), fill=(20, 15, 12, 255)); d.ellipse((x - r, y - r, x + r, y + r), fill=col + (255,))
+        return L
     if st == 'dim':
         d.rounded_rectangle(it['rect'], 24, fill=tuple(it.get('fill', (0, 0, 0, 120))))
         return L.filter(ImageFilter.GaussianBlur(10))
@@ -61,6 +68,9 @@ def draw_item(it, k):
         L = Image.alpha_composite(S.filter(ImageFilter.GaussianBlur(5)), L); d = ImageDraw.Draw(L)
         d.rectangle(box, fill=(236, 224, 198, 255), outline=INK + (255,), width=max(2, size // 22))
         d.text((x, y), txt, font=f, fill=INK + (255,), anchor=anc, stroke_width=max(1, size // 34), stroke_fill=INK + (255,))
+        return L
+    if st == 'num':    # small dark number inside a scheme node
+        d.text((x, y), txt, font=f, fill=tuple(it.get('color', (24, 18, 14))) + (255,), anchor='mm')
         return L
     if st == 'title':
         col = tuple(it.get('color', CREAM)); sw = max(1, size // 40)

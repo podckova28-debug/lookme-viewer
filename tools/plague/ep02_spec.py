@@ -7,6 +7,7 @@ Same format as ep01_spec.py: every beat = one line (id, role, text) + the shots 
   python3 tools/plague/ep02_spec.py beats   -> tools/plague/ep02_beats.json (for beats.py)
 """
 import sys, json, os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); import schemes as SC
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 K_SHEET = '578aebc8-20b7-4c82-930c-c1cc9e4e1b59'   # channel/plague/sheets/cholera_turn.jpg
 S_SHEET = '84427fc9-09ce-40e6-b032-6f2700874458'   # channel/plague/sheets/stickmen_common.jpg
@@ -39,6 +40,8 @@ def ink(t, x, y, size=64, **k): return {'text': t, 'x': x, 'y': y, 'size': size,
 def ch(img, cam, p, **k): return sh(img, cam, STICK + ' ' + p, 'S', **k)            # stickman scene
 def kg(img, cam, p, stick=False, **k): return sh(img, cam, (STICK + ' ' if stick else '') + KING + ' ' + p, 'K' + ('S' if stick else ''), **k)
 
+CN = [('HOURS TO 5 DAYS', ['after a bad drink']), ('MOST PEOPLE', ['mild or nothing', 'still contagious']),
+      ('SEVERE CASES', ['rice-water diarrhoea', 'vomiting']), ('WITHIN HOURS', ['cramps, sunken eyes', 'weak pulse'])]   # symptoms timeline nodes
 B = []
 def N(i, t, *s): B.append((i, 'NARRATOR', t, list(s)))
 def K(i, t, *s): B.append((i, 'CHOLERA', t, list(s)))
@@ -80,13 +83,11 @@ K('L05', "Twenty litres. I do not do things by halves.",
   kg('c11a', C(.5, .45, 1.1), "King Cholera holds up his tin cup triumphantly like a trophy, water splashing from it, grinning."))
 # ---- symptoms
 N('S01', "So what does he actually do to you? It starts fast. Anywhere from a few hours to a few days after a bad drink.",
-  ch('s01a', W(), "A Victorian kitchen: a single stickman drinks a cup of water by the window; on the wall a big clock. Calm, ordinary morning.", text=label('WHAT HE DOES TO YOU', 960, 150, 72)))
+  ch('d01a', STILL, "A hand-drawn explainer diagram in ink and muted watercolour on aged parchment, clean and readable like an old medical textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs), numbered stages with small drawn arrows between them. No words, no letters; numbers 1-4 only as small circled digits. Not gory. Left to right: (1) a tin cup of murky water, arrow, (2) a small clock and a little calendar showing a few days, arrow, (3) a single stickman holding his stomach, worried.", text=[label('WHAT HE DOES TO YOU', 960, 150, 72), cap('A FEW HOURS TO 5 DAYS')]))
 N('S02', "Most people who catch him barely notice, but they still spread him for days. For the unlucky ones, it begins with sudden, endless watery diarrhoea, so pale that doctors called it rice water. Then the vomiting starts.",
-  sh('s02a', C(.5, .5, 1.05), "Still life on a wooden table: a bowl of cloudy, milky rice water next to a spoon and a few grains of rice. Simple, symbolic, not gross."),
-  ch('s02b', W(), "Night in a Victorian back yard: a single stickman in a nightshirt hurries toward a little wooden outhouse holding a candle, a comic look of panic. Not gross."))
+  ch('d02a', STILL, "A hand-drawn explainer illustration in ink and muted watercolour on aged parchment, cartoon stickman style, not gory, split in two panels. Left panel (1): three stickmen standing apart, smiling and feeling fine, tiny comma-shaped germs floating off them toward a well. Right panel (2): one stickman clearly sick, pale grey face, holding his stomach and bent over a bucket, beside him a bowl of milky white rice water. No words", text=[cap('MOST: MILD OR NOTHING  ·  SEVERE: RICE-WATER DIARRHOEA, VOMITING')]))
 N('S03', "The body dries out from the inside. Painful cramps grip the legs. The eyes sink into the skull. The skin on the fingers wrinkles, as if you'd been in the bath too long. The blood thickens, and the pulse grows weak.",
-  sh('s03a', STILL, "A symbolic diagram on aged paper: a simple outline of a human figure drawn like a glass water jug, nearly empty, with a few drops leaking out at the bottom. No words."),
-  sh('s03b', C(.5, .5, 1.05), "Still life on a white plate: a plump fresh green grape next to a shrivelled raisin. Clean, simple, symbolic."))
+  ch('d03a', STILL, "A hand-drawn explainer illustration in ink and muted watercolour, clean like an old medical textbook plate, cartoon stickman style, not gory. A large sick stickman sits on the edge of a bed, CLEARLY showing the symptoms on his body: his round head has a grey-blue tint, dark sunken circles around his eyes, a dry cracked mouth; his fingers are wrinkled like after a long bath (shown in a small round magnified inset); zigzag cramp lines on his calves while he grabs one leg; sweat drops; a big empty water jug tipped over beside him. Numbered circled digits 1-4 next to the eyes, the fingers, the legs and the jug. No words", text=[cap('CRAMPS  ·  SUNKEN EYES  ·  WRINKLED SKIN  ·  WEAK PULSE')]))
 K('S04', "It's nothing personal. I simply need the water more than you do.",
   kg('s04a', C(.5, .45, 1.1), "King Cholera stands by a stone well at night, smiling politely at the viewer. His RIGHT hand holds his tin cup up as if to drink; his LEFT hand rests on his round belly. Exactly two hands, no hand on the well."))
 N('L06', "People could be healthy at breakfast and dead by dinner. Their skin turned grey-blue and wrinkled from losing so much water. The Victorians had a name for it: the blue death.",
@@ -245,9 +246,9 @@ N('L49', "That's it. Today there are also cholera vaccines, and antibiotics for 
 
 # ---- consequences
 N('A01', "And for those who pulled through? Usually a full recovery within days, as long as they got enough fluids. But the immunity fades after a few years, so you could catch him again.",
-  ch('a01a', W(), "A sunny Victorian kitchen: a single recovered stickman sits at the table holding a big glass of water with BOTH hands, smiling weakly, a blanket over his shoulders. Both arms clearly come from his shoulders.", text=label('WHAT HE LEAVES BEHIND', 960, 150, 72)))
+  ch('d04a', STILL, "A hand-drawn explainer diagram in ink and muted watercolour on aged parchment, clean and readable like an old medical textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs), numbered stages with small drawn arrows between them. No words, no letters; numbers 1-4 only as small circled digits. Not gory. Left to right: (1) a stickman lying weak in bed drinking from a cup, arrow, (2) the same stickman standing up healthy and smiling, holding a small round shield, arrow, (3) a calendar with a few years crossed off and the little shield cracked and fading.", text=[label('WHAT HE LEAVES BEHIND', 960, 150, 72), cap('RECOVERY IN DAYS  ·  IMMUNITY FADES IN A FEW YEARS')]))
 N('A02', "For cities, the consequences were enormous. Fear of cholera gave us modern sewers, filtered drinking water, public health boards, and the first international health conferences. Every time you drink clean tap water, you're living in a world he forced us to build.",
-  sh('a02a', C(.5, .5, 1.05), "A modern clean kitchen tap pouring a clear stream of water into a glass, bright daylight. Simple, hopeful, no people."))
+  sh('d05a', STILL, "A hand-drawn explainer diagram in ink and muted watercolour on aged parchment, clean and readable like an old medical textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs), numbered stages with small drawn arrows between them. No words, no letters; numbers 1-4 only as small circled digits. Not gory. A cutaway diagram of a Victorian city: above ground a street with a clean water tap and a small public-health office building; below ground a big brick sewer tunnel and a separate clean water pipe passing through a sand filter tank; in a corner a small globe with a few ships around it. No people.", text=[cap('SEWERS  ·  FILTERED WATER  ·  PUBLIC HEALTH  ·  INTERNATIONAL RULES')]))
 K('A03', "You're welcome. Again.",
   kg('a03a', C(.5, .45, 1.1), "King Cholera stands alone in the rain under a modern streetlight on an empty street, both hands in his coat pockets, sulking, glaring at a shiny public drinking-water fountain; his tin cup hangs on its chain from his waistcoat, nobody holding it. No other people."))
 
