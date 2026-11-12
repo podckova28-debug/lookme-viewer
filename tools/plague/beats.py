@@ -28,7 +28,7 @@ for b in src['beats']:
         sh = {k: v for k, v in s.items() if k not in ('w', 'sfx', 'text')}
         if sh['img'] not in KEEP:   # cap camera zoom: frames are composed wide, deep crops cut characters
             sh['from'] = sh['from'][:2] + [min(sh['from'][2], ZMAX)]; sh['to'] = sh['to'][:2] + [min(sh['to'][2], ZMAX + .03)]
-        n = max(1, int(sl / MAXS + .35)) if not s.get('text') else 1        # long shot -> wide + 1-2 detail cuts of the same frame
+        n = 1   # one continuous shot per frame: no detail cuts of the same picture (user: no repeated frames back to back)
         for k in range(n):
             part = dict(sh); a0 = acc + sl * k / n; a1 = acc + sl * (k + 1) / n
             if k > 0:
@@ -40,6 +40,16 @@ for b in src['beats']:
             out['texts'].append({**{k: v for k, v in tx.items() if k not in ('at', 'len')}, 't0': round(acc + tx.get('at', .2), 3), 't1': round(acc + tx.get('at', .2) + min(tx.get('len', 99), sl - tx.get('at', .2) - .15), 3)})
         acc += sl
     t += length
+# merge back-to-back shots of the same picture into one continuous slow move
+merged = []
+for sh in out['shots']:
+    if merged and merged[-1]['img'] == sh['img'] and abs(merged[-1]['t1'] - sh['t0']) < 1e-3 and not sh.get('fade_out'):
+        merged[-1]['t1'] = sh['t1']; merged[-1]['to'] = sh['to']
+    else: merged.append(sh)
+for sh in merged:   # long holds get a gentle push proportional to their length, never a crop
+    d = sh['t1'] - sh['t0']; z0 = sh['from'][2]
+    if d > 6 and abs(sh['to'][2] - z0) < .1 and sh['img'] not in KEEP: sh['to'] = sh['to'][:2] + [min(ZMAX + .03, max(sh['to'][2], z0 + .012 * d))]
+out['shots'] = merged
 out['duration'] = round(t, 3)
 out['shots'][-1]['fade_out'] = src.get('fade_out', 1.0)
 for e in out['sfx']:
