@@ -122,7 +122,7 @@ K('L12', "A hot poker, a dog's liver, and a pond. My favourite century.",
 # ---- Middle Ages to 1800s
 N('L13', "In the Middle Ages, people prayed to Saint Hubert, the patron saint of hunters. At his shrines, priests burned bite wounds with a red-hot iron key, called a Saint Hubert's key.",
   sc('c16a', "A medieval stone chapel in a forest with a small statue of a hunter saint with a stag above the door, candles burning. No people.", WR()),
-  dg('d16a', "Three numbered steps: (1) an iron key with a cross-shaped end, (2) the key heated red in a fire, (3) the key pressed near a bandaged bite on a stickman's arm while he winces.", text=[cap('SAINT HUBERT\'S KEY')]))
+  dg('d16a', "Three numbered steps: (1) an ornate old iron key with a cross-shaped end, (2) the same key glowing orange in a small brazier of coals, (3) the key resting on a stone chapel altar beside a candle and a small carved stag.", people=False, text=[cap('SAINT HUBERT\'S KEY')]))
 N('L14', "Some historians think rabies helped inspire the legends of werewolves and vampires. Biting, rage, sleeplessness, fear of water and mirrors, wandering at night. It all sounds a little familiar.",
   sc('c16b', "A medieval village at night under a full moon, thatched houses, a dark forest edge, a single lit window. A wolf howls on a hill far away. No people.", WL()),
   dg('d17a', "Side-by-side comparison: (1) a simple cartoon werewolf silhouette howling at the moon, (2) a simple cartoon vampire silhouette with a cape avoiding a mirror; between them a small virus symbol with arrows pointing to both.", people=False, text=[cap('WEREWOLVES?  ·  VAMPIRES?')]))
