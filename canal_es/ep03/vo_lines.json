@@ -1,0 +1,824 @@
+[
+ {
+  "id": "s00_01",
+  "who": "narrador",
+  "text": "En este parque hay doce perros y cuarenta palomas.",
+  "p": 0
+ },
+ {
+  "id": "s00_02",
+  "who": "narrador",
+  "text": "Y tú entiendes todo lo que dicen.",
+  "p": 0
+ },
+ {
+  "id": "s00_03",
+  "who": "perro1",
+  "text": "¡Pelota! ¿Pelota? ¡¿Pelota?!",
+  "p": 0
+ },
+ {
+  "id": "s00_04",
+  "who": "palomas",
+  "text": "Mírenlo. Ahí está otra vez. El de los rizos.",
+  "p": 0
+ },
+ {
+  "id": "s00_05",
+  "who": "narrador",
+  "text": "Todos los animales del mundo te hablan.",
+  "p": 1
+ },
+ {
+  "id": "s00_06",
+  "who": "narrador",
+  "text": "Todos… menos uno.",
+  "p": 0
+ },
+ {
+  "id": "s00_07",
+  "who": "narrador",
+  "text": "Empecemos por el principio.",
+  "p": 1
+ },
+ {
+  "id": "s01_01",
+  "who": "narrador",
+  "text": "Imagina que puedes hablar con los animales.",
+  "p": 0
+ },
+ {
+  "id": "s01_02",
+  "who": "narrador",
+  "text": "Con todos. Perros, gatos, pájaros. Hasta con los mosquitos.",
+  "p": 0
+ },
+ {
+  "id": "s01_03",
+  "who": "narrador",
+  "text": "Y no solo los entiendes: ellos también te entienden a ti.",
+  "p": 1
+ },
+ {
+  "id": "s01_04",
+  "who": "narrador",
+  "text": "Suena como el mejor poder del mundo.",
+  "p": 0
+ },
+ {
+  "id": "s01_05",
+  "who": "narrador",
+  "text": "Hasta que descubres lo que los animales piensan de verdad.",
+  "p": 1
+ },
+ {
+  "id": "s03_01",
+  "who": "narrador",
+  "text": "Todo empieza un jueves, a las cinco de la mañana.",
+  "p": 0
+ },
+ {
+  "id": "s03_02",
+  "who": "narrador",
+  "text": "Croqueta te pisa la cara, como todos los días.",
+  "p": 0
+ },
+ {
+  "id": "s03_03",
+  "who": "croqueta",
+  "text": "Humano. Humano. Humano.",
+  "p": 1
+ },
+ {
+  "id": "s03_04",
+  "who": "narrador",
+  "text": "Pero hoy, por primera vez, entiendes lo que dice.",
+  "p": 0
+ },
+ {
+  "id": "s03_05",
+  "who": "croqueta",
+  "text": "El plato. Está. Vacío.",
+  "p": 0
+ },
+ {
+  "id": "s03_06",
+  "who": "tu",
+  "text": "¿Croqueta? ¿Tú… hablas?",
+  "p": 1
+ },
+ {
+  "id": "s03_07",
+  "who": "croqueta",
+  "text": "Yo siempre hablo. Tú eres el que nunca escucha.",
+  "p": 0
+ },
+ {
+  "id": "s03_08",
+  "who": "croqueta",
+  "text": "Y esa comida sabe a cartón. Llevo cuatro años diciéndotelo.",
+  "p": 0
+ },
+ {
+  "id": "s03_09",
+  "who": "narrador",
+  "text": "Resulta que Croqueta tiene opiniones. Muchas.",
+  "p": 1
+ },
+ {
+  "id": "s04_01",
+  "who": "narrador",
+  "text": "En la cocina, tu mamá prepara el desayuno.",
+  "p": 0
+ },
+ {
+  "id": "s04_02",
+  "who": "croqueta",
+  "text": "Por cierto: tu mamá se comió tu chocolate. El que escondiste.",
+  "p": 0
+ },
+ {
+  "id": "s04_03",
+  "who": "tu",
+  "text": "Ma… ¿te comiste mi chocolate?",
+  "p": 1
+ },
+ {
+  "id": "s04_04",
+  "who": "mama",
+  "text": "¿Qué? ¿Quién te dijo?",
+  "p": 0
+ },
+ {
+  "id": "s04_05",
+  "who": "narrador",
+  "text": "Miras a Croqueta.",
+  "p": 0
+ },
+ {
+  "id": "s04_06",
+  "who": "croqueta",
+  "text": "Yo no dije nada.",
+  "p": 0
+ },
+ {
+  "id": "s04_07",
+  "who": "mama",
+  "text": "¿Estás hablando con el gato?",
+  "p": 1
+ },
+ {
+  "id": "s04_08",
+  "who": "narrador",
+  "text": "Regla número uno: entiendes a todos los animales, y ellos te entienden a ti.",
+  "p": 1
+ },
+ {
+  "id": "s04_09",
+  "who": "narrador",
+  "text": "Pero los demás solo oyen ladridos, maullidos… y a ti, platicando con un gato.",
+  "p": 0
+ },
+ {
+  "id": "s05_01",
+  "who": "narrador",
+  "text": "Camino a la escuela, descubres algo sobre los perros.",
+  "p": 0
+ },
+ {
+  "id": "s05_02",
+  "who": "perro1",
+  "text": "¡Hola! ¡Hola! ¡Hola!",
+  "p": 1
+ },
+ {
+  "id": "s05_03",
+  "who": "perro2",
+  "text": "¿Eres mi amigo? ¡Eres mi amigo! ¡Eres mi mejor amigo!",
+  "p": 0
+ },
+ {
+  "id": "s05_04",
+  "who": "narrador",
+  "text": "Todos los perros dicen lo mismo. Y todos los perros te quieren. De inmediato. Sin condiciones.",
+  "p": 1
+ },
+ {
+  "id": "s05_05",
+  "who": "narrador",
+  "text": "Bueno. Casi todos.",
+  "p": 1
+ },
+ {
+  "id": "s05_06",
+  "who": "firulais",
+  "text": "Ahí viene. El cartero. Todos los días viene.",
+  "p": 0
+ },
+ {
+  "id": "s05_07",
+  "who": "firulais",
+  "text": "Algún día lo voy a atrapar.",
+  "p": 0
+ },
+ {
+  "id": "s05_08",
+  "who": "narrador",
+  "text": "Firulais, el perro del vecino, lleva siete años en guerra con el cartero.",
+  "p": 1
+ },
+ {
+  "id": "s05_09",
+  "who": "narrador",
+  "text": "Va perdiendo.",
+  "p": 0
+ },
+ {
+  "id": "s06_01",
+  "who": "narrador",
+  "text": "En el salón vive el Señor Bigotes, el hámster de la clase.",
+  "p": 0
+ },
+ {
+  "id": "s06_02",
+  "who": "bigotes",
+  "text": "Psst. Tú. El de los rizos. ¿Me oyes?",
+  "p": 1
+ },
+ {
+  "id": "s06_03",
+  "who": "narrador",
+  "text": "El Señor Bigotes vive en el escritorio del profe Ramírez. Lo ha visto todo.",
+  "p": 0
+ },
+ {
+  "id": "s06_04",
+  "who": "bigotes",
+  "text": "El examen sorpresa de hoy. Pregunta uno: la B. Pregunta dos: la fotosíntesis.",
+  "p": 1
+ },
+ {
+  "id": "s06_05",
+  "who": "tu",
+  "text": "¿Y tú cómo sabes?",
+  "p": 0
+ },
+ {
+  "id": "s06_06",
+  "who": "bigotes",
+  "text": "Lo escribió anoche. Encima de mi jaula. Escribe muy fuerte.",
+  "p": 0
+ },
+ {
+  "id": "s06_07",
+  "who": "narrador",
+  "text": "Sacas diez de diez.",
+  "p": 1
+ },
+ {
+  "id": "s06_08",
+  "who": "profe",
+  "text": "Diez de diez. Usted.",
+  "p": 0
+ },
+ {
+  "id": "s06_09",
+  "who": "narrador",
+  "text": "El profe Ramírez te mira. Luego mira al Señor Bigotes.",
+  "p": 0
+ },
+ {
+  "id": "s06_10",
+  "who": "narrador",
+  "text": "El Señor Bigotes mira hacia otro lado.",
+  "p": 0
+ },
+ {
+  "id": "s07_01",
+  "who": "narrador",
+  "text": "En una semana te vuelves el detective de mascotas del barrio.",
+  "p": 0
+ },
+ {
+  "id": "s07_02",
+  "who": "narrador",
+  "text": "Encuentras un perico en un árbol.",
+  "p": 1
+ },
+ {
+  "id": "s07_03",
+  "who": "narrador",
+  "text": "Un gato atorado en un techo.",
+  "p": 0
+ },
+ {
+  "id": "s07_04",
+  "who": "narrador",
+  "text": "Y una tortuga que llevaba dos años perdida… en su propio jardín.",
+  "p": 0
+ },
+ {
+  "id": "s07_05",
+  "who": "nacho",
+  "text": "Cien pesos por mascota. Yo soy tu representante.",
+  "p": 1
+ },
+ {
+  "id": "s07_06",
+  "who": "narrador",
+  "text": "Nacho cobra. Nacho no hace nada.",
+  "p": 0
+ },
+ {
+  "id": "s07_07",
+  "who": "narrador",
+  "text": "Nacho dice que eso se llama «negocios».",
+  "p": 0
+ },
+ {
+  "id": "s08_01",
+  "who": "narrador",
+  "text": "Y luego está Pepe.",
+  "p": 0
+ },
+ {
+  "id": "s08_02",
+  "who": "narrador",
+  "text": "Todos los animales del mundo te hablan. Pepe no.",
+  "p": 0
+ },
+ {
+  "id": "s08_03",
+  "who": "narrador",
+  "text": "Le haces preguntas. Le ofreces galletas. Le hablas despacio, como a un turista.",
+  "p": 1
+ },
+ {
+  "id": "s08_04",
+  "who": "tu",
+  "text": "¿Por qué… no… me… hablas?",
+  "p": 0
+ },
+ {
+  "id": "s08_05",
+  "who": "narrador",
+  "text": "Pepe solo te mira.",
+  "p": 1
+ },
+ {
+  "id": "s08_06",
+  "who": "narrador",
+  "text": "Hasta las otras palomas se ponen nerviosas.",
+  "p": 0
+ },
+ {
+  "id": "s08_07",
+  "who": "palomas",
+  "text": "Nosotras no hablamos de Pepe.",
+  "p": 1
+ },
+ {
+  "id": "s09_01",
+  "who": "narrador",
+  "text": "Pero hay un problema.",
+  "p": 0
+ },
+ {
+  "id": "s09_02",
+  "who": "narrador",
+  "text": "Nadie más entiende a los animales. Solo te oyen a ti.",
+  "p": 0
+ },
+ {
+  "id": "s09_03",
+  "who": "palomas",
+  "text": "Esa galleta es nuestra. Danos la galleta. Danos la galleta.",
+  "p": 1
+ },
+ {
+  "id": "s09_04",
+  "who": "tu",
+  "text": "¡No! ¡Es mía! ¡Váyanse!",
+  "p": 0
+ },
+ {
+  "id": "s09_05",
+  "who": "narrador",
+  "text": "Para el resto del mundo, eres el chico que le grita a las palomas.",
+  "p": 1
+ },
+ {
+  "id": "s09_06",
+  "who": "valeria",
+  "text": "¿Estás… peleando con unas palomas?",
+  "p": 0
+ },
+ {
+  "id": "s09_07",
+  "who": "tu",
+  "text": "Ellas empezaron.",
+  "p": 0
+ },
+ {
+  "id": "s09_08",
+  "who": "narrador",
+  "text": "Renata se va. Despacio. Sin darte la espalda.",
+  "p": 1
+ },
+ {
+  "id": "s10_01",
+  "who": "narrador",
+  "text": "El segundo problema: los animales no se callan nunca.",
+  "p": 0
+ },
+ {
+  "id": "s10_02",
+  "who": "mosquito",
+  "text": "Mmm. Tipo O positivo. Excelente cosecha.",
+  "p": 1
+ },
+ {
+  "id": "s10_03",
+  "who": "narrador",
+  "text": "Y ahora sabes por qué los perros ladran a las tres de la mañana.",
+  "p": 1
+ },
+ {
+  "id": "s10_04",
+  "who": "perros",
+  "text": "¡¿Quién anda ahí?!",
+  "p": 1
+ },
+ {
+  "id": "s10_05",
+  "who": "perro2",
+  "text": "¡No sé!",
+  "p": 0
+ },
+ {
+  "id": "s10_06",
+  "who": "perros",
+  "text": "¡¿Quién anda ahí?!",
+  "p": 0
+ },
+ {
+  "id": "s10_07",
+  "who": "narrador",
+  "text": "Nadie anda ahí. Nunca anda nadie ahí.",
+  "p": 1
+ },
+ {
+  "id": "s10_08",
+  "who": "narrador",
+  "text": "Duermes tres horas. Croqueta duerme catorce.",
+  "p": 0
+ },
+ {
+  "id": "s10_09",
+  "who": "croqueta",
+  "text": "Silencio. Estoy descansando.",
+  "p": 0
+ },
+ {
+  "id": "s11_01",
+  "who": "narrador",
+  "text": "Y el tercer problema es el peor.",
+  "p": 0
+ },
+ {
+  "id": "s11_02",
+  "who": "narrador",
+  "text": "Los animales no guardan secretos.",
+  "p": 0
+ },
+ {
+  "id": "s11_03",
+  "who": "narrador",
+  "text": "El perro de doña Lupe te cuenta que ella les habla a sus plantas.",
+  "p": 1
+ },
+ {
+  "id": "s11_04",
+  "who": "narrador",
+  "text": "El gato del profe Ramírez te cuenta que el profe canta en la regadera.",
+  "p": 0
+ },
+ {
+  "id": "s11_05",
+  "who": "narrador",
+  "text": "Y Croqueta le cuenta a todo el barrio lo que tú dices dormido.",
+  "p": 0
+ },
+ {
+  "id": "s11_06",
+  "who": "croqueta",
+  "text": "Dijo «Renata». Tres veces.",
+  "p": 1
+ },
+ {
+  "id": "s11_07",
+  "who": "narrador",
+  "text": "Regla número dos: los animales no mienten. Y no saben guardar un secreto.",
+  "p": 1
+ },
+ {
+  "id": "s12_01",
+  "who": "narrador",
+  "text": "El sábado, en el parque, Renata pasea a su perrita, Canela.",
+  "p": 0
+ },
+ {
+  "id": "s12_02",
+  "who": "narrador",
+  "text": "Canela te ve. Y viene corriendo.",
+  "p": 0
+ },
+ {
+  "id": "s12_03",
+  "who": "canela",
+  "text": "¡Hola! ¡Tú eres el chico! ¡El chico del que habla Renata!",
+  "p": 1
+ },
+ {
+  "id": "s12_04",
+  "who": "tu",
+  "text": "¿Renata… habla de mí?",
+  "p": 0
+ },
+ {
+  "id": "s12_05",
+  "who": "canela",
+  "text": "¡Todo el tiempo! ¡Ayer le dijo al espejo que tú…!",
+  "p": 0
+ },
+ {
+  "id": "s12_06",
+  "who": "narrador",
+  "text": "Y aquí está: todo lo que Renata piensa de ti, en boca de una perrita que no sabe guardar secretos.",
+  "p": 1
+ },
+ {
+  "id": "s12_07",
+  "who": "narrador",
+  "text": "Solo tienes que escuchar.",
+  "p": 0
+ },
+ {
+  "id": "s13_01",
+  "who": "narrador",
+  "text": "Pero entonces piensas en Croqueta.",
+  "p": 0
+ },
+ {
+  "id": "s13_02",
+  "who": "narrador",
+  "text": "En todo lo que tú le cuentas a Croqueta. De noche. Cuando nadie te oye.",
+  "p": 0
+ },
+ {
+  "id": "s13_03",
+  "who": "narrador",
+  "text": "Y en cómo te sentirías si alguien lo supiera antes de que tú lo dijeras.",
+  "p": 1
+ },
+ {
+  "id": "s13_04",
+  "who": "tu",
+  "text": "Canela, espera. No me lo digas.",
+  "p": 1
+ },
+ {
+  "id": "s13_05",
+  "who": "canela",
+  "text": "¿Por qué no? ¡Es lo mejor!",
+  "p": 0
+ },
+ {
+  "id": "s13_06",
+  "who": "tu",
+  "text": "Porque eso me lo tiene que decir ella.",
+  "p": 0
+ },
+ {
+  "id": "s14_01",
+  "who": "narrador",
+  "text": "Renata llega corriendo.",
+  "p": 0
+ },
+ {
+  "id": "s14_02",
+  "who": "valeria",
+  "text": "Perdón, perdón. Se me escapó. ¿Te hizo algo?",
+  "p": 1
+ },
+ {
+  "id": "s14_03",
+  "who": "tu",
+  "text": "No. Solo… platicamos.",
+  "p": 0
+ },
+ {
+  "id": "s14_04",
+  "who": "valeria",
+  "text": "¿Platicaron?",
+  "p": 0
+ },
+ {
+  "id": "s14_05",
+  "who": "narrador",
+  "text": "Y por un segundo crees que lo arruinaste otra vez.",
+  "p": 1
+ },
+ {
+  "id": "s14_06",
+  "who": "valeria",
+  "text": "Le caes bien. Y ella nunca se equivoca con la gente.",
+  "p": 0
+ },
+ {
+  "id": "s14_07",
+  "who": "valeria",
+  "text": "¿Quieres pasearla conmigo el próximo sábado?",
+  "p": 1
+ },
+ {
+  "id": "s14_08",
+  "who": "tu",
+  "text": "Sí. Sí quiero.",
+  "p": 0
+ },
+ {
+  "id": "s14_09",
+  "who": "narrador",
+  "text": "Regla número tres: hay cosas que tienes que escuchar de la persona.",
+  "p": 1
+ },
+ {
+  "id": "s14_10",
+  "who": "narrador",
+  "text": "No de su perro.",
+  "p": 0
+ },
+ {
+  "id": "s14_11",
+  "who": "canela",
+  "text": "¡Yo sabía! ¡Yo sabía!",
+  "p": 0
+ },
+ {
+  "id": "s15_01",
+  "who": "narrador",
+  "text": "Esa noche vas a la banca del parque, con Pepe.",
+  "p": 0
+ },
+ {
+  "id": "s15_02",
+  "who": "narrador",
+  "text": "Le cuentas todo. Lo de Croqueta. Lo del Señor Bigotes. Lo de Canela.",
+  "p": 0
+ },
+ {
+  "id": "s15_03",
+  "who": "narrador",
+  "text": "Pepe escucha, como siempre.",
+  "p": 1
+ },
+ {
+  "id": "s15_04",
+  "who": "tu",
+  "text": "Ya sé. No me vas a contestar.",
+  "p": 0
+ },
+ {
+  "id": "s15_05",
+  "who": "narrador",
+  "text": "Y entonces Pepe abre el pico.",
+  "p": 1
+ },
+ {
+  "id": "s15_06",
+  "who": "pepe",
+  "text": "¿Te gustó?",
+  "p": 1
+ },
+ {
+  "id": "s15_07",
+  "who": "tu",
+  "text": "¿…Qué?",
+  "p": 0
+ },
+ {
+  "id": "s15_08",
+  "who": "pepe",
+  "text": "El poder. ¿Te gustó?",
+  "p": 0
+ },
+ {
+  "id": "s15_09",
+  "who": "narrador",
+  "text": "Pepe nunca habla. Y la primera vez que habla, hace preguntas.",
+  "p": 1
+ },
+ {
+  "id": "s15_10",
+  "who": "pepe",
+  "text": "Mañana, nadie te va a ver.",
+  "p": 0
+ },
+ {
+  "id": "s15_11",
+  "who": "tu",
+  "text": "Espera… ¿tú fuiste?",
+  "p": 1
+ },
+ {
+  "id": "s15_12",
+  "who": "pepe",
+  "text": "Ruu.",
+  "p": 1
+ },
+ {
+  "id": "s16_01",
+  "who": "narrador",
+  "text": "¿Algo de esto es real? Más de lo que crees.",
+  "p": 0
+ },
+ {
+  "id": "s16_02",
+  "who": "narrador",
+  "text": "Uno. Los perritos de la pradera tienen palabras.",
+  "p": 1
+ },
+ {
+  "id": "s16_03",
+  "who": "narrador",
+  "text": "Su grito de alarma no solo dice «¡cuidado, un humano!». También dice qué tan alto es… y de qué color es su ropa.",
+  "p": 0
+ },
+ {
+  "id": "s16_04",
+  "who": "narrador",
+  "text": "Con esa sudadera amarilla, ya tendrían una palabra para ti.",
+  "p": 0
+ },
+ {
+  "id": "s16_05",
+  "who": "narrador",
+  "text": "Dos. Los gatos adultos casi no se maúllan entre ellos.",
+  "p": 1
+ },
+ {
+  "id": "s16_06",
+  "who": "narrador",
+  "text": "El maullido es, sobre todo, para los humanos. Cuando Croqueta maúlla, te está hablando a ti.",
+  "p": 0
+ },
+ {
+  "id": "s16_07",
+  "who": "narrador",
+  "text": "Tres. Las palomas pueden aprender a reconocer palabras escritas.",
+  "p": 1
+ },
+ {
+  "id": "s16_08",
+  "who": "narrador",
+  "text": "En un experimento, unas palomas aprendieron hasta cincuenta y ocho palabras en inglés.",
+  "p": 0
+ },
+ {
+  "id": "s16_09",
+  "who": "narrador",
+  "text": "Así que, por si acaso, cuidado con lo que escribes en los comentarios. Pepe sabe leer.",
+  "p": 1
+ },
+ {
+  "id": "s17_01",
+  "who": "narrador",
+  "text": "¿Y tú qué le preguntarías a tu mascota?",
+  "p": 0
+ },
+ {
+  "id": "s17_02",
+  "who": "narrador",
+  "text": "Déjamelo en los comentarios.",
+  "p": 0
+ },
+ {
+  "id": "s17_03",
+  "who": "narrador",
+  "text": "Y fíjate bien: Pepe no dijo ni una palabra en todo el episodio… hasta el final.",
+  "p": 1
+ },
+ {
+  "id": "s17_04",
+  "who": "narrador",
+  "text": "Mañana, nadie te va a ver. Suscríbete para no perdértelo.",
+  "p": 0
+ },
+ {
+  "id": "s17_05",
+  "who": "narrador",
+  "text": "Pepe ya te vio.",
+  "p": 0
+ }
+]
