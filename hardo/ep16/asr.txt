@@ -1,0 +1,27 @@
+01 0.939 | 
+02 1.0 | 
+03 0.907 | 10. The Lighthouse  2010. The Lighthouse Keeper  For centuries, quesars lived on rocks in the sea, keeping the lamp burning every night,  so ships wouldn't crash. On some rock stations, the only way off was a boat, and only when  the weather allowed.
+04 0.871 | Then machines took over. Britain's Last Keepers left North Foreland Lighthouse in 1998.  And America's Last Official Keeper at Boston Light retired at the end of 2023.
+05 0.951 | 
+06 0.963 | 
+07 0.897 | Number 8. The Fire Lookout  You live in a tiny glass cabin on top of a mountain all summer watching the forest for smoke.  In 1956, the writer Jack Kerouac did this job for 63 days on Desolation Peak in Washington State.
+08 0.952 | 
+09 0.899 | 7. The Sheep Herder  In the American West, herders follow huge flocks-focks across mountains and desert for  months. Home is a small sheep wagon. The company is a horse and a couple of dogs.
+10 1.0 | 
+11 0.83 | 6. The Long-Haul Truck Driver  This might surprise you, because it's a huge job.  America has about 2.2 million heavy truck drivers.
+12 1.0 | 
+13 0.844 | Number 5. The Island Weather Observer.  Guf Island sits in the middle of the South Atlantic,  more than 2,000 kilometers from the nearest continent.  South Africa runs a weather station there.
+14 0.969 | 
+15 0.914 | 4. The Saturation Diver  These divers repair pipelines deep under the sea.  Instead of going up and down every day,  they live under pressure in a sealed steel chamber for up to 28 days.
+16 1.0 | 
+17 0.943 | 
+18 0.964 | 
+19 0.894 | 2. The South Pole Winter Crew Every February, the last plane leaves the  Amundsen-Scott South Pole station. Around 40 people stay behind.
+20 0.952 | 
+21 0.872 | 1. The Winter Crew at Concordia  It's a French and Italian station, high on the Antarctic ice.  About a dozen people live there.  No plane can reach them, and the nearest humans are 600 kilometers away.
+22 0.978 | 
+23 0.923 | and a bonus from history.  The Apollo command module pilot.  In 1969, while two astronauts walked on the moon,  Michael Collins circled above it, alone.
+24 0.967 | 
+25 1.0 | 
+26 1.0 | 
+27 0.966 | 

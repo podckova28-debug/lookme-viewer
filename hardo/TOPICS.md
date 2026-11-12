@@ -10,6 +10,7 @@ Ideas the owner asked to keep for future episodes. Newest first.
 - Ep9 warehouse worker — script ready in `ep9/`, not produced yet.
 
 ## Done
+- ep16 The Loneliest Jobs on Earth (countdown + bonus; lighthouse keeper … Concordia, bonus Apollo command module pilot)
 - ep15 10 Jobs AI Can't Replace (countdown; angle: who is impossible to replace — hands, messy places, trust; Microsoft 2025 + BLS 2024-34 + WEF 2025)
 - ep11 The Weirdest Jobs in the World (listicle)
 - ep14 The Worst Jobs in History (countdown listicle + bonus, like ep11; vidIQ: "worst jobs in history" listicles 620K–1.5M views)

@@ -149,3 +149,17 @@ Prompt rule: every scene prompt names only the hero, the one object the line is 
 - OmniVoice mangles short rhetorical openers ("So which jobs are most exposed?" → "So switched…") and reads "AI" as "a" in "jobs AI can't" — always ASR-check; write "A.I." in the voice text, the SRT writer turns it back into "AI".
 - When a crowd frame keeps a smeared hand after an edit, drop the shot instead of spending more credits; reuse an already-checked frame to keep cut length ≤ ~4 s.
 - Higgsfield credits on this account are also being used by something else (ep14/ep15: ~23–180 credits gone between my own calls). Check the balance before a big batch.
+
+## Added for ep16
+- Shot weights in a block must sum to 1. When a frame is dropped and a block keeps three stills, set each to 1/3:
+  with 0.25 each the block ran 25% short and the video ended 15 s before the narration (assemble printed video 416.9 vs audio 431.6).
+  Always read the "video … audio … final" line after a build; they must match within 0.2 s.
+- The cook style reference (49f55c6b…) leaks into scenes that name a character only by role: F26 asked for "the station doctor"
+  and got the cook in an apron. For a redraw, pass only the cast sheet and describe the outfit in full.
+- Group shots of the whole cast (11 people waving) came back with three hands on several people. For an outro lineup,
+  compose it from the two cast sheets in code instead of generating it.
+- A prompt that only says "if shown" still lets the model put the hero into a scene about someone else (F418: the submariner
+  drawn as the mother writing to herself). Say explicitly who is in the shot and that the hero is not.
+- Thumbnails: the owner wants the house style kept but with more saturation and sharpness (vibrance 0.40, contrast 1.10,
+  local contrast, unsharp mask; white background kept white), and a heavy condensed title (Anton) with white outline and a
+  red-on-yellow bar word. vidIQ's own version of ep14 B had a typo (TOLETS) — never let a tool write thumbnail text.
