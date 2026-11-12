@@ -270,7 +270,7 @@ def parallel(shots, total, N, out):
     with open(P('work/segs.txt'), 'w') as f:
         for i in range(N): f.write(f"file 'seg{i}.mp4'\n")
     subprocess.run([FF, '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', P('work/segs.txt'), '-i', P('work/mix.wav'),
-                    '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-af', loudnorm2(P('work/mix.wav')), '-c:a', 'aac', '-b:a', '192k',
+                    '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-af', loudnorm2(P('work/mix.wav')) + ',alimiter=limit=0.79:level=disabled', '-c:a', 'aac', '-b:a', '192k',
                     '-ar', str(SR), '-movflags', '+faststart', '-shortest', out], check=True)
     print('готово:', out, round(total, 1), 'с')
 

@@ -133,7 +133,7 @@ OVERLAYS += [
       ('Мокрый асфальт', 'ШИПЫ'), ('Сухой асфальт', 'ЛИПУЧКА'), ('Шум', 'ЛИПУЧКА'), ('Деньги', 'ЛИПУЧКА'), ('Температура', 'НИЧЬЯ')]),
  dict(type='title', line='L1', at=0.3, lines=[('ЗАКОН', 120, gfx.CREAM), ('ЧТО ОБЯЗАТЕЛЬНО', 84, gfx.OCHRE)]),
  dict(type='title', line='M1', at=0.3, lines=[('ТРИ МИФА', 120, gfx.CREAM)]),
- dict(type='title', line='Z8', at=0.3, lines=[('ГАРАЖ МИХАЛЫЧА', 110, gfx.CREAM), ('ПОДПИШИСЬ', 84, gfx.OCHRE)]),
+ dict(type='title', line='Z8', at=0.3, y=740, lines=[('ГАРАЖ МИХАЛЫЧА', 110, gfx.CREAM), ('ПОДПИШИСЬ', 84, gfx.OCHRE)]),   # KZ4: лицо в центре — титр вниз
 ]
 TAILX = {l: 1.2 for l in ('A3', 'B2', 'D2', 'E2', 'G2')}
 TAILX.update({'Z1': 2.5, 'Z8': 1.0})

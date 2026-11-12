@@ -1,4 +1,98 @@
 {
+ "C2": {
+  "C2_b.wav": [
+   "stress:меньше(2/1)"
+  ],
+  "C2_c.wav": [
+   "stress:почти(1/2)"
+  ],
+  "C2_d.wav": [
+   "asr_only:"
+  ],
+  "C2_e.wav": [],
+  "C2_f.wav": [],
+  "C2_g.wav": [
+   "asr_only:"
+  ],
+  "C2_n.wav": [],
+  "C2_p.wav": [],
+  "C2_q.wav": [
+   "stress:почти(1/2)",
+   "stress:около(2/1)"
+  ],
+  "C2_r.wav": [],
+  "C2_s.wav": [
+   "stress:около(2/1)"
+  ],
+  "C2_t.wav": [],
+  "C2_u.wav": [],
+  "C2_v.wav": [
+   "stress:почти(1/2)"
+  ],
+  "C2_w.wav": [
+   "stress:почти(1/2)"
+  ],
+  "C2_x.wav": [
+   "stress:почти(1/2)"
+  ],
+  "C2_y.wav": [
+   "stress:почти(1/2)"
+  ],
+  "C2_z.wav": []
+ },
+ "H4": {
+  "H4_b.wav": [],
+  "H4_c.wav": [
+   "text:"
+  ],
+  "H4_d.wav": [],
+  "H4_e.wav": [
+   "asr_only:",
+   "asr_only:",
+   "stress:половиной(2/3)"
+  ],
+  "H4_f.wav": [
+   "asr_only:",
+   "stress:половиной(1/3)"
+  ],
+  "H4_n.wav": [],
+  "H4_t.wav": [
+   "asr_only:"
+  ],
+  "H4_v.wav": [
+   "text:"
+  ],
+  "H4_x.wav": [
+   "asr_only:"
+  ],
+  "H4_z.wav": [
+   "text:"
+  ]
+ },
+ "L4": {
+  "L4_b.wav": [],
+  "L4_c.wav": [
+   "asr_only:"
+  ],
+  "L4_d.wav": [
+   "asr_only:"
+  ],
+  "L4_e.wav": [
+   "stress:Шипы(1/2)",
+   "stress:оси(1/2)"
+  ],
+  "L4_f.wav": [],
+  "L4_n.wav": [],
+  "L4_t.wav": [
+   "stress:оси(1/2)"
+  ],
+  "L4_v.wav": [
+   "stress:Шипы(1/2)",
+   "stress:оси(1/2)"
+  ],
+  "L4_x.wav": [],
+  "L4_z.wav": []
+ },
  "I01": {
   "I01_c.wav": [],
   "I01_v.wav": [
@@ -56,6 +150,12 @@
   "K2_c.wav": [
    "stress:они(1/2)"
   ],
+  "K2_d.wav": [],
+  "K2_e.wav": [],
+  "K2_f.wav": [
+   "text:"
+  ],
+  "K2_g.wav": [],
   "K2_p.wav": [
    "stress:шипы(1/2)"
   ],
@@ -239,33 +339,6 @@
   "C1_v.wav": [],
   "C1_x.wav": []
  },
- "C2": {
-  "C2_c.wav": [
-   "stress:почти(1/2)"
-  ],
-  "C2_p.wav": [],
-  "C2_q.wav": [
-   "stress:почти(1/2)",
-   "stress:около(2/1)"
-  ],
-  "C2_r.wav": [],
-  "C2_s.wav": [
-   "stress:около(2/1)"
-  ],
-  "C2_u.wav": [],
-  "C2_v.wav": [
-   "stress:почти(1/2)"
-  ],
-  "C2_w.wav": [
-   "stress:почти(1/2)"
-  ],
-  "C2_x.wav": [
-   "stress:почти(1/2)"
-  ],
-  "C2_y.wav": [
-   "stress:почти(1/2)"
-  ]
- },
  "C3": {
   "C3_c.wav": [],
   "C3_v.wav": [
@@ -297,11 +370,32 @@
   "D2_c.wav": [
    "stress:асфальте(1/2)"
   ],
+  "D2_d.wav": [],
+  "D2_e.wav": [
+   "asr_only:"
+  ],
+  "D2_f.wav": [
+   "stress:тормозной(2/3)"
+  ],
+  "D2_g.wav": [],
   "D2_v.wav": [],
   "D2_x.wav": []
  },
  "D3": {
   "D3_c.wav": [],
+  "D3_d.wav": [
+   "stress:тормозит(2/3)"
+  ],
+  "D3_e.wav": [
+   "asr_only:",
+   "stress:тормозит(2/3)"
+  ],
+  "D3_f.wav": [
+   "stress:тормозит(2/3)"
+  ],
+  "D3_g.wav": [
+   "asr_only:"
+  ],
   "D3_v.wav": [
    "stress:европейская(2/3)"
   ],
@@ -311,6 +405,11 @@
  },
  "D4": {
   "D4_c.wav": [],
+  "D4_d.wav": [],
+  "D4_e.wav": [],
+  "D4_f.wav": [
+   "stress:обошли(2/3)"
+  ],
   "D4_v.wav": [],
   "D4_x.wav": []
  },
@@ -325,6 +424,28 @@
    "stress:это(2/1)",
    "stress:силы(2/1)"
   ],
+  "E2_d.wav": [
+   "stress:тормозит(2/3)",
+   "stress:всего(1/2)",
+   "stress:это(2/1)",
+   "stress:меньше(2/1)"
+  ],
+  "E2_e.wav": [
+   "asr_only:",
+   "stress:тормозит(2/3)",
+   "stress:это(2/1)"
+  ],
+  "E2_f.wav": [
+   "asr_only:",
+   "stress:тормозит(2/3)",
+   "stress:это(2/1)"
+  ],
+  "E2_h.wav": [],
+  "E2_j.wav": [
+   "stress:меньше(2/1)"
+  ],
+  "E2_k.wav": [],
+  "E2_m.wav": [],
   "E2_p.wav": [
    "stress:восьмидесяти(1/2)"
   ],
@@ -360,6 +481,9 @@
  },
  "E3": {
   "E3_c.wav": [],
+  "E3_d.wav": [],
+  "E3_e.wav": [],
+  "E3_f.wav": [],
   "E3_v.wav": [],
   "E3_x.wav": []
  },
@@ -373,6 +497,9 @@
    "stress:почти(1/2)",
    "stress:это(2/1)"
   ],
+  "F2_d.wav": [],
+  "F2_e.wav": [],
+  "F2_f.wav": [],
   "F2_p.wav": [],
   "F2_q.wav": [
    "asr_only:",
@@ -414,6 +541,11 @@
   "F4_c.wav": [
    "asr_only:"
   ],
+  "F4_d.wav": [],
+  "F4_e.wav": [
+   "asr_only:"
+  ],
+  "F4_f.wav": [],
   "F4_v.wav": [],
   "F4_x.wav": []
  },
@@ -438,6 +570,15 @@
   "G3_c.wav": [
    "asr_only:"
   ],
+  "G3_d.wav": [
+   "asr_only:",
+   "stress:электромобиль(4/5)",
+   "stress:хода(1/2)"
+  ],
+  "G3_e.wav": [],
+  "G3_f.wav": [
+   "asr_only:"
+  ],
   "G3_v.wav": [
    "asr_only:"
   ],
@@ -448,6 +589,14 @@
  },
  "G4": {
   "G4_c.wav": [],
+  "G4_d.wav": [
+   "asr_only:",
+   "asr_only:"
+  ],
+  "G4_e.wav": [],
+  "G4_f.wav": [
+   "asr_only:"
+  ],
   "G4_v.wav": [],
   "G4_x.wav": [
    "text:"
@@ -477,17 +626,6 @@
    "asr_only:"
   ]
  },
- "H4": {
-  "H4_c.wav": [
-   "text:"
-  ],
-  "H4_v.wav": [
-   "text:"
-  ],
-  "H4_x.wav": [
-   "asr_only:"
-  ]
- },
  "L1": {
   "L1_c.wav": [],
   "L1_v.wav": [],
@@ -509,16 +647,6 @@
   "L3_v.wav": [],
   "L3_x.wav": []
  },
- "L4": {
-  "L4_c.wav": [
-   "asr_only:"
-  ],
-  "L4_v.wav": [
-   "stress:Шипы(1/2)",
-   "stress:оси(1/2)"
-  ],
-  "L4_x.wav": []
- },
  "L5": {
   "L5_c.wav": [
    "asr_only:"
@@ -537,6 +665,13 @@
   "L6_c.wav": [
    "stress:это(2/1)"
   ],
+  "L6_d.wav": [
+   "stress:шестидесяти(1/2)"
+  ],
+  "L6_e.wav": [
+   "stress:двадцати(1/3)"
+  ],
+  "L6_f.wav": [],
   "L6_q.wav": [],
   "L6_v.wav": [
    "stress:это(2/1)"
@@ -558,6 +693,15 @@
   "M2_c.wav": [
    "asr_only:",
    "stress:Это(2/1)"
+  ],
+  "M2_d.wav": [],
+  "M2_e.wav": [
+   "stress:Это(2/1)"
+  ],
+  "M2_f.wav": [
+   "stress:Это(2/1)",
+   "stress:проезжать(1/3)",
+   "stress:двадцати(1/3)"
   ],
   "M2_v.wav": [
    "stress:Это(2/1)"
@@ -591,6 +735,19 @@
  },
  "Z1": {
   "Z1_c.wav": [],
+  "Z1_d.wav": [
+   "text:"
+  ],
+  "Z1_e.wav": [
+   "stress:ничья(1/2)"
+  ],
+  "Z1_f.wav": [
+   "text:"
+  ],
+  "Z1_h.wav": [],
+  "Z1_j.wav": [],
+  "Z1_k.wav": [],
+  "Z1_m.wav": [],
   "Z1_v.wav": [],
   "Z1_x.wav": []
  },
@@ -649,6 +806,29 @@
   "Z6_c.wav": [
    "stress:продают(2/3)"
   ],
+  "Z6_d.wav": [
+   "stress:шипы(1/2)",
+   "stress:зимних(2/1)"
+  ],
+  "Z6_e.wav": [
+   "stress:шипы(1/2)"
+  ],
+  "Z6_f.wav": [
+   "asr_only:",
+   "stress:шипы(1/2)"
+  ],
+  "Z6_h.wav": [
+   "text:",
+   "stress:берут(1/2)"
+  ],
+  "Z6_j.wav": [],
+  "Z6_k.wav": [
+   "stress:берут(1/2)"
+  ],
+  "Z6_m.wav": [
+   "stress:России(1/2)",
+   "stress:берут(1/2)"
+  ],
   "Z6_p.wav": [
    "stress:примерно(1/2)",
    "stress:берут(1/2)"
@@ -692,6 +872,11 @@
   "Z8_x.wav": []
  },
  "Z2": {
+  "Z2_d.wav": [],
+  "Z2_e.wav": [
+   "stress:очки(1/2)"
+  ],
+  "Z2_f.wav": [],
   "Z2_v.wav": [],
   "Z2_x.wav": []
  }
