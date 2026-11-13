@@ -9,8 +9,11 @@
    composeI(X, st, { inv: 1, t });
    voiceBubble(X, cam, t, id, [wx, wy])        // a line spoken by nobody you can see: dashed bubble, words typed with the voice */
 const INV_COL = '#8ff3ff';
-function stageI(cam) { const st = stage(cam), I = layer('I'); camApply(I, cam); st.I = I;
-  st.inv = fn => fn(I);
+/* a canvas wiped by resetting its size, not by clearRect: on long renders Chrome sometimes hands drawImage() the previous frame of a
+   canvas that was only cleared (the hero stayed on screen, frozen, after he left the shot) — a resized canvas gets a new bitmap */
+const wipe = c => { c.width = c.width; return c.getContext('2d'); };
+function stageI(cam) { const st = stage(cam), I = wipe(layer('I').canvas); camApply(I, cam); st.I = I; st.invN = 0;
+  st.inv = fn => { st.invN++; fn(I); };
   st.fg = fn => { fn(st.A); I.save(); I.globalCompositeOperation = 'destination-out'; fn(I); I.restore(); };   // world things in front of the hero
   return st; }
 /* a prop held by the invisible hero: drawn into the world layer with the hand's transform, so it stays visible */
@@ -23,9 +26,9 @@ function glassFX(X, I, a, t) {
   const src = X.canvas, w2 = W / 2, h2 = H / 2;
   if (!INV_H) INV_H = { s: hcv(), e: hcv(), g: hcv() };
   // half-resolution copy of the silhouette: the rim and the ghost are soft anyway, so they are built at half size
-  const hs = INV_H.s.getContext('2d'); hs.clearRect(0, 0, w2, h2); hs.drawImage(I.canvas, 0, 0, w2, h2);
+  const hs = wipe(INV_H.s); hs.drawImage(I.canvas, 0, 0, w2, h2);
   // 1. refraction (full resolution): the frame behind him, shifted and slightly magnified, seen only inside his silhouette
-  const Rf = layer('Ir'), k = 1.015, ox = Math.sin(t * 1.7) * 2.5 + 3, oy = Math.cos(t * 1.3) * 2;   // a small shift: straight edges behind him (bench slats) bend, they don't split in two
+  const Rf = wipe(layer('Ir').canvas), k = 1.015, ox = Math.sin(t * 1.7) * 2.5 + 3, oy = Math.cos(t * 1.3) * 2;   // a small shift: straight edges behind him (bench slats) bend, they don't split in two
   Rf.drawImage(src, -W * (k - 1) / 2 + ox, -H * (k - 1) / 2 + oy, W * k, H * k);
   Rf.globalCompositeOperation = 'destination-in'; Rf.drawImage(I.canvas, 0, 0); Rf.globalCompositeOperation = 'source-over';
   Rf.globalCompositeOperation = 'source-atop'; Rf.fillStyle = 'rgba(160,235,255,.16)'; Rf.fillRect(0, 0, W, H);
@@ -34,19 +37,19 @@ function glassFX(X, I, a, t) {
   Rf.fillStyle = sw; Rf.fillRect(0, 0, W, H); Rf.globalCompositeOperation = 'source-over';
   X.save(); X.setTransform(1, 0, 0, 1, 0, 0); X.globalAlpha = clamp(a); X.drawImage(Rf.canvas, 0, 0); X.restore();
   // 2. pale ghost of the drawing: the face and folds stay readable for the viewer
-  const gg = INV_H.g.getContext('2d'); gg.clearRect(0, 0, w2, h2); gg.filter = 'grayscale(1) brightness(1.75) contrast(1.25)'; gg.drawImage(INV_H.s, 0, 0); gg.filter = 'none';
+  const gg = wipe(INV_H.g); gg.filter = 'grayscale(1) brightness(1.75) contrast(1.25)'; gg.drawImage(INV_H.s, 0, 0); gg.filter = 'none';
   gg.globalCompositeOperation = 'source-atop'; gg.fillStyle = 'rgba(150,235,255,.35)'; gg.fillRect(0, 0, w2, h2); gg.globalCompositeOperation = 'source-over';
   X.save(); X.setTransform(1, 0, 0, 1, 0, 0); X.imageSmoothingEnabled = true; X.globalAlpha = .26 * clamp(a); X.drawImage(INV_H.g, 0, 0, W, H);
   X.globalCompositeOperation = 'multiply'; X.globalAlpha = .1 * clamp(a); X.drawImage(INV_H.g, 0, 0, W, H); X.restore();
   // 3. rim: silhouette dilated by ~3 px minus the silhouette, in cyan, plus a low-res glow
-  const E = INV_H.e.getContext('2d'); E.clearRect(0, 0, w2, h2);
+  const E = wipe(INV_H.e);
   for (const [dx, dy] of [[-1.5, 0], [1.5, 0], [0, -1.5], [0, 1.5], [-1, -1], [1, -1], [-1, 1], [1, 1]]) E.drawImage(INV_H.s, dx, dy);
   E.globalCompositeOperation = 'source-in'; E.fillStyle = INV_COL; E.fillRect(0, 0, w2, h2);
   E.globalCompositeOperation = 'destination-out'; E.drawImage(INV_H.s, 0, 0); E.globalCompositeOperation = 'source-over';
   if (!INV_SM) INV_SM = [0, 1].map(() => { const c = document.createElement('canvas'); c.width = W / 4; c.height = H / 4; return c; });
-  const s0 = INV_SM[0].getContext('2d'), s1 = INV_SM[1].getContext('2d');
-  s0.clearRect(0, 0, W / 4, H / 4); s0.drawImage(INV_H.e, 0, 0, W / 4, H / 4);
-  s1.clearRect(0, 0, W / 4, H / 4); s1.filter = 'blur(3px)'; s1.drawImage(INV_SM[0], 0, 0); s1.filter = 'none';
+  const s0 = wipe(INV_SM[0]), s1 = wipe(INV_SM[1]);
+  s0.drawImage(INV_H.e, 0, 0, W / 4, H / 4);
+  s1.filter = 'blur(3px)'; s1.drawImage(INV_SM[0], 0, 0); s1.filter = 'none';
   const fl = .88 + .12 * Math.sin(t * 5.3) * Math.sin(t * 2.1);
   X.save(); X.setTransform(1, 0, 0, 1, 0, 0); X.imageSmoothingEnabled = true; X.globalCompositeOperation = 'screen'; X.globalAlpha = .85 * clamp(a) * fl; X.drawImage(INV_SM[1], 0, 0, W, H);
   X.globalCompositeOperation = 'source-over'; X.globalAlpha = .95 * clamp(a) * fl; X.drawImage(INV_H.e, 0, 0, W, H); X.restore();
@@ -55,8 +58,9 @@ function composeI(X, st, o = {}) {
   const inv = o.inv == null ? 1 : clamp(o.inv), t = o.t || 0;
   X.setTransform(1, 0, 0, 1, 0, 0); X.filter = 'none'; X.globalAlpha = 1; X.globalCompositeOperation = 'source-over';
   X.drawImage(st.A.canvas, 0, 0);
-  if (inv < 1) { X.save(); X.globalAlpha = 1 - inv; X.drawImage(st.I.canvas, 0, 0); X.restore(); }
-  glassFX(X, st.I, inv, t);
+  if (st.invN) {   // the hero was drawn this frame (an empty layer is skipped: nothing to bend, no rim)
+    if (inv < 1) { X.save(); X.globalAlpha = 1 - inv; X.drawImage(st.I.canvas, 0, 0); X.restore(); }
+    glassFX(X, st.I, inv, t); }
   if (CUR_LOOK.grade) { X.save(); X.globalCompositeOperation = 'multiply'; X.fillStyle = CUR_LOOK.grade; X.fillRect(0, 0, W, H); X.restore(); }
   if (!VIG) { VIG = document.createElement('canvas'); VIG.width = W; VIG.height = H; const v = VIG.getContext('2d'), gr = v.createRadialGradient(W / 2, H * .46, H * .35, W / 2, H / 2, H * 1.05);
     gr.addColorStop(0, 'rgba(10,6,20,0)'); gr.addColorStop(1, 'rgba(10,6,20,.42)'); v.fillStyle = gr; v.fillRect(0, 0, W, H); }
