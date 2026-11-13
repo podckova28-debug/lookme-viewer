@@ -30,12 +30,12 @@ CHAPTERS
 3:56 The romantic disease
 4:39 The vampire panic
 5:03 Robert Koch
-5:42 Sanatoriums
+5:43 Sanatoriums
 6:07 BCG
-6:33 Streptomycin
-7:14 She comes back
-7:49 What she leaves behind
-8:21 She isn't finished yet
+6:34 Streptomycin
+7:15 She comes back
+7:50 What she leaves behind
+8:22 She isn't finished yet
 
 Sources are listed in the pinned comment.
 

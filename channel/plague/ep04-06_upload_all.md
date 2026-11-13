@@ -4,9 +4,9 @@
 
 | Выпуск | Видео | Обложка (тест A) | Обложка (тест B) |
 |---|---|---|---|
-| 4. Испанка | `spanishflu_ep04_upload.mp4` · 9:04 | `thumb_ep04_scene_bedtime.jpg` | `thumb_ep04.jpg` |
+| 4. Испанка | `spanishflu_ep04_upload.mp4` · 9:05 | `thumb_ep04_scene_bedtime.jpg` | `thumb_ep04.jpg` |
 | 5. Цинга | `scurvy_ep05_upload.mp4` · 10:23 | `thumb_ep05_scene_lemon.jpg` | `thumb_ep05.jpg` |
-| 6. Бешенство | `rabies_ep06_upload.mp4` · 8:38 | `thumb_ep06_scene_bed.jpg` | `thumb_ep06.jpg` |
+| 6. Бешенство | `rabies_ep06_upload.mp4` · 8:37 | `thumb_ep06_scene_bed.jpg` | `thumb_ep06.jpg` |
 
 Обе обложки ставить в «Тестирование и сравнение».
 
@@ -14,7 +14,7 @@
 
 ## Эпизод 4 · The ENTIRE History of the Spanish Flu · пакет для загрузки
 
-Файл: `out/spanishflu_ep04_upload.mp4` (1080p, 9:04). Обложки для теста: `thumb_ep04_scene_bedtime.jpg` и `thumb_ep04.jpg`.
+Файл: `out/spanishflu_ep04_upload.mp4` (1080p, 9:05). Обложки для теста: `thumb_ep04_scene_bedtime.jpg` и `thumb_ep04.jpg`.
 
 ### Название
 ```
@@ -36,23 +36,23 @@ This is the entire history of the 1918 influenza pandemic, told with a little he
 
 CHAPTERS
 0:00 Kansas, 1918
-0:38 Who is he?
-1:11 What he does to you
-2:00 Why the young?
-2:41 Where did he come from?
-3:11 The frozen grave
-4:05 Why "Spanish"?
-4:33 Three waves
-5:05 "Nothing to worry about"
-5:22 Philadelphia's parade
-5:58 St. Louis closes its doors
-6:11 Masks and miracle cures
-6:48 The two Samoas
-7:07 India and the world
-7:21 Presidents and survivors
-7:47 What he leaves behind
-8:15 Is he gone?
-8:38 Two years, three waves
+0:39 Who is he?
+1:12 What he does to you
+2:02 Why the young?
+2:42 Where did he come from?
+3:12 The frozen grave
+4:07 Why "Spanish"?
+4:35 Three waves
+5:07 "Nothing to worry about"
+5:23 Philadelphia's parade
+5:59 St. Louis closes its doors
+6:13 Masks and miracle cures
+6:49 The two Samoas
+7:09 India and the world
+7:23 Presidents and survivors
+7:49 What he leaves behind
+8:17 Is he gone?
+8:40 Two years, three waves
 
 Sources are listed in the pinned comment.
 
@@ -113,24 +113,24 @@ This is the entire history of scurvy, told with a little help from the old sea c
 
 CHAPTERS
 0:00 Anson's voyage, 1740
-0:45 Who is scurvy?
+0:46 Who is scurvy?
 1:21 Where did he come from?
-2:09 What he does to you
-3:09 An old enemy
-3:27 The age of sail
-3:55 Vasco da Gama
+2:10 What he does to you
+3:10 An old enemy
+3:28 The age of sail
+3:56 Vasco da Gama
 4:18 Cartier and the cedar tea
-4:44 Lemon juice, 1601
-5:02 James Lind's experiment
-5:55 Captain Cook's sauerkraut
-6:24 The Navy's lemons
+4:45 Lemon juice, 1601
+5:03 James Lind's experiment
+5:56 Captain Cook's sauerkraut
+6:25 The Navy's lemons
 6:48 Limes and "Limeys"
 7:05 He comes back
-7:50 Guinea pigs and vitamins
-8:26 Paprika and the Nobel Prize
-8:51 What he leaves behind
-9:28 Scurvy today
-9:55 Three centuries at sea
+7:51 Guinea pigs and vitamins
+8:27 Paprika and the Nobel Prize
+8:52 What he leaves behind
+9:29 Scurvy today
+9:56 Three centuries at sea
 
 Sources are listed in the pinned comment.
 
@@ -169,7 +169,7 @@ What's the strangest cure you've heard of? 👇
 
 ## Эпизод 6 · The ENTIRE History of Rabies · пакет для загрузки
 
-Файл: `out/rabies_ep06_upload.mp4` (1080p, 8:38). Обложки для теста: `thumb_ep06_scene_bed.jpg` и `thumb_ep06.jpg`.
+Файл: `out/rabies_ep06_upload.mp4` (1080p, 8:37). Обложки для теста: `thumb_ep06_scene_bed.jpg` и `thumb_ep06.jpg`.
 
 ### Название
 ```
@@ -192,17 +192,17 @@ This is the entire history of rabies, told with a little help from the wolf-head
 CHAPTERS
 0:00 Paris, 1885
 0:40 Who is rabies?
-1:35 Where did he come from?
+1:34 Where did he come from?
 1:59 What he does to you
-3:03 Four thousand years of mad dogs
-3:46 Saint Hubert, werewolves and vampires
-4:15 Muzzles and panic
+3:02 Four thousand years of mad dogs
+3:45 Saint Hubert, werewolves and vampires
+4:14 Muzzles and panic
 4:38 Louis Pasteur
 5:18 Joseph Meister
-6:14 Vaccinating the dogs
-6:38 The girl who survived
+6:13 Vaccinating the dogs
+6:37 The girl who survived
 7:08 What he leaves behind
-7:40 Rabies today
+7:39 Rabies today
 8:14 Four thousand years
 
 Sources are listed in the pinned comment.

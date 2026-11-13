@@ -1,6 +1,6 @@
 # Эпизод 4 · The ENTIRE History of the Spanish Flu · пакет для загрузки
 
-Файл: `out/spanishflu_ep04_upload.mp4` (1080p, 9:04). Обложка: `channel/plague/thumb_ep04.jpg` (1280×720), вторая для теста — `thumb_ep04_b.jpg`.
+Файл: `out/spanishflu_ep04_upload.mp4` (1080p, 9:05). Обложка: `channel/plague/thumb_ep04.jpg` (1280×720), вторая для теста — `thumb_ep04_b.jpg`.
 
 ## Название
 ```
@@ -22,23 +22,23 @@ This is the entire history of the 1918 influenza pandemic, told with a little he
 
 CHAPTERS
 0:00 Kansas, 1918
-0:38 Who is he?
-1:11 What he does to you
-2:00 Why the young?
-2:41 Where did he come from?
-3:11 The frozen grave
-4:05 Why "Spanish"?
-4:33 Three waves
-5:05 "Nothing to worry about"
-5:22 Philadelphia's parade
-5:58 St. Louis closes its doors
-6:11 Masks and miracle cures
-6:48 The two Samoas
-7:07 India and the world
-7:21 Presidents and survivors
-7:47 What he leaves behind
-8:15 Is he gone?
-8:38 Two years, three waves
+0:39 Who is he?
+1:12 What he does to you
+2:02 Why the young?
+2:42 Where did he come from?
+3:12 The frozen grave
+4:07 Why "Spanish"?
+4:35 Three waves
+5:07 "Nothing to worry about"
+5:23 Philadelphia's parade
+5:59 St. Louis closes its doors
+6:13 Masks and miracle cures
+6:49 The two Samoas
+7:09 India and the world
+7:23 Presidents and survivors
+7:49 What he leaves behind
+8:17 Is he gone?
+8:40 Two years, three waves
 
 Sources are listed in the pinned comment.
 

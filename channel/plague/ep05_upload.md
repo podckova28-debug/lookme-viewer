@@ -22,24 +22,24 @@ This is the entire history of scurvy, told with a little help from the old sea c
 
 CHAPTERS
 0:00 Anson's voyage, 1740
-0:45 Who is scurvy?
+0:46 Who is scurvy?
 1:21 Where did he come from?
-2:09 What he does to you
-3:09 An old enemy
-3:27 The age of sail
-3:55 Vasco da Gama
+2:10 What he does to you
+3:10 An old enemy
+3:28 The age of sail
+3:56 Vasco da Gama
 4:18 Cartier and the cedar tea
-4:44 Lemon juice, 1601
-5:02 James Lind's experiment
-5:55 Captain Cook's sauerkraut
-6:24 The Navy's lemons
+4:45 Lemon juice, 1601
+5:03 James Lind's experiment
+5:56 Captain Cook's sauerkraut
+6:25 The Navy's lemons
 6:48 Limes and "Limeys"
 7:05 He comes back
-7:50 Guinea pigs and vitamins
-8:26 Paprika and the Nobel Prize
-8:51 What he leaves behind
-9:28 Scurvy today
-9:55 Three centuries at sea
+7:51 Guinea pigs and vitamins
+8:27 Paprika and the Nobel Prize
+8:52 What he leaves behind
+9:29 Scurvy today
+9:56 Three centuries at sea
 
 Sources are listed in the pinned comment.
 

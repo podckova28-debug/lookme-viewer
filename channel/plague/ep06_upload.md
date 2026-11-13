@@ -1,6 +1,6 @@
 # Эпизод 6 · The ENTIRE History of Rabies · пакет для загрузки
 
-Файл: `out/rabies_ep06_upload.mp4` (1080p, 8:38). Обложка: `channel/plague/thumb_ep06.jpg` (1280×720), вторая для теста — `thumb_ep06_b.jpg`.
+Файл: `out/rabies_ep06_upload.mp4` (1080p, 8:37). Обложка: `channel/plague/thumb_ep06.jpg` (1280×720), вторая для теста — `thumb_ep06_b.jpg`.
 
 ## Название
 ```
@@ -23,17 +23,17 @@ This is the entire history of rabies, told with a little help from the wolf-head
 CHAPTERS
 0:00 Paris, 1885
 0:40 Who is rabies?
-1:35 Where did he come from?
+1:34 Where did he come from?
 1:59 What he does to you
-3:03 Four thousand years of mad dogs
-3:46 Saint Hubert, werewolves and vampires
-4:15 Muzzles and panic
+3:02 Four thousand years of mad dogs
+3:45 Saint Hubert, werewolves and vampires
+4:14 Muzzles and panic
 4:38 Louis Pasteur
 5:18 Joseph Meister
-6:14 Vaccinating the dogs
-6:38 The girl who survived
+6:13 Vaccinating the dogs
+6:37 The girl who survived
 7:08 What he leaves behind
-7:40 Rabies today
+7:39 Rabies today
 8:14 Four thousand years
 
 Sources are listed in the pinned comment.
