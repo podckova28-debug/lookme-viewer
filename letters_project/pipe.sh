@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /home/user/cw
+cd /home/user/lw
 bash runall.sh
 [ -s out/mix.m4a ] || python3 audio.py > out/audio.log 2>&1
 python3 -c "

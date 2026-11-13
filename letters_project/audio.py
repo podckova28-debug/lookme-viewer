@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # Build narration track, music bed with ducking, final mix and an .srt for YouTube.
 import json, subprocess, re
-ROOT = "/home/user/cw"
+ROOT = "/home/user/lw"
 tl = json.load(open(f"{ROOT}/spec/timeline.json"))
 script = json.load(open(f"{ROOT}/script.json"))
 total = tl["total"]
@@ -22,7 +22,7 @@ run(["ffmpeg", "-v", "error", "-y", *inputs, "-filter_complex", ";".join(flt), "
 segs = tl["segs"]; t = 0; bounds = {}
 for name, d in segs:
     bounds[name] = t; t += d
-b2 = bounds["ch08"]; b3 = bounds["ch12"]
+b2 = bounds["ch07"]; b3 = bounds["ch13"]
 XF = 3.0
 flt = [
     f"[0:a]aresample=48000,aformat=channel_layouts=stereo,atrim=0:{b2 + XF:.3f},afade=t=in:d=2[m1]",
@@ -73,5 +73,5 @@ for ch in script["chapters"]:
         b = ws[min(nw - 1, round(i1 * nw / ns))] if (ws and i1 < ns) else durs[n]
         if b <= a: b = a + 1.2
         out.append(f"{k}\n{fmt(st0 + a)} --> {fmt(st0 + b - 0.05)}\n{' '.join(c)}\n"); k += 1
-open(f"{ROOT}/out/cure.srt", "w").write("\n".join(out))
+open(f"{ROOT}/out/letters.srt", "w").write("\n".join(out))
 print("AUDIO_OK", total)

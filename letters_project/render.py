@@ -5,7 +5,7 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 W, H, FPS = 1920, 1080, 30
-ROOT = os.environ.get("PC_ROOT", "/home/user/cw")
+ROOT = os.environ.get("PC_ROOT", "/home/user/lw")
 FONT = os.environ.get("PC_FONT", "/home/user/tools/fonts/Oswald.ttf")
 CREAM = (238, 229, 210)
 INK = (24, 22, 20)
@@ -62,7 +62,9 @@ def title_card(t, dur):
     im = paper(); d = ImageDraw.Draw(im)
     a = ease(t / 0.6); b = ease((dur - t) / 0.5); k = min(a, b)
     f0 = font(44); f1 = font(150); f2 = font(230)
-    s0, s1, s2 = "ДЕЛО ЗАКРЫТО", "МОЖНО ЛИ ВЫЛЕЧИТЬ", "МАНЬЯКА?"  # two equal parts of one question; the key word is biggest
+    s0, s1, s2 = "ДЕЛО ЗАКРЫТО", "ПОЧЕМУ ЖЕНЩИНЫ ПИШУТ", "МАНЬЯКАМ ПИСЬМА?"  # one question in two big lines
+    while d.textlength(s1, font=f1) > 1640: f1 = font(f1.size - 6)
+    while d.textlength(s2, font=f2) > 1700: f2 = font(f2.size - 6)
     b1 = d.textbbox((0, 0), s1, font=f1); b2 = d.textbbox((0, 0), s2, font=f2)
     h1, h2 = b1[3] - b1[1], b2[3] - b2[1]; gap = 40
     top = (H - (95 + h1 + gap + h2 + 70)) / 2
