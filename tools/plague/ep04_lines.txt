@@ -1,4 +1,4 @@
-C01|NARRATOR|Kansas. The fourth of March, 1918. At an army training camp, a cook named Albert Gitchell reports to the infirmary with a fever, a sore throat and aching muscles.
+C01|NARRATOR|The cook can barely stand. His head is pounding, his throat is burning, and every muscle in his body aches. It's the fourth of March, 1918, at an army camp in Kansas, and Albert Gitchell has just stumbled into the infirmary.
 C02|NARRATOR|By lunchtime, more than a hundred soldiers have the same symptoms. Within weeks, more than a thousand.
 C03|NARRATOR|Over the next two years, he will infect around a third of everyone on Earth, and kill tens of millions. More people than the war that was raging at the same time.
 C04|FLU|Don't look so worried. It's just the flu.

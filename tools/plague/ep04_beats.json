@@ -3,6 +3,7 @@
  "keep_zoom": [
   "d02a"
  ],
+ "static": true,
  "fade_in": 0.8,
  "start": 0.0,
  "lead": 0.45,
@@ -31,27 +32,6 @@
    "vo": "assets/plague/ep04/vo/C01.wav",
    "shots": [
     {
-     "img": "c01a",
-     "from": [
-      0.48,
-      0.5,
-      1.03
-     ],
-     "to": [
-      0.52,
-      0.5,
-      1.03
-     ],
-     "w": 1,
-     "text": {
-      "text": "CAMP FUNSTON, KANSAS \u00b7 MARCH 1918",
-      "x": 960,
-      "y": 985,
-      "size": 50,
-      "at": 0.3
-     }
-    },
-    {
      "img": "c01b",
      "from": [
       0.5,
@@ -77,7 +57,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Albert Gitchell, army cook",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "c01d",
@@ -92,6 +79,27 @@
       1.0375
      ],
      "w": 1
+    },
+    {
+     "img": "c01a",
+     "from": [
+      0.48,
+      0.5,
+      1.03
+     ],
+     "to": [
+      0.52,
+      0.5,
+      1.03
+     ],
+     "w": 1,
+     "text": {
+      "text": "Camp Funston, Kansas \u2014 March 1918",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -110,7 +118,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Over 100 sick by lunchtime",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "c02b",
@@ -138,7 +153,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Over 1,000 within weeks",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -160,7 +182,7 @@
      "w": 1,
      "text": [
       {
-       "text": "1 IN 3 INFECTED  \u00b7  MORE DEATHS THAN THE WAR",
+       "text": "One in three people infected",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -180,7 +202,14 @@
       0.5,
       1.03
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Deadlier than the war itself",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "c03b",
@@ -302,7 +331,7 @@
      "w": 1,
      "text": [
       {
-       "text": "INFLUENZA A  \u00b7  H1N1",
+       "text": "Influenza A, type H1N1",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -358,7 +387,7 @@
      "w": 1,
      "text": [
       {
-       "text": "H: THE KEY  \u00b7  N: THE SCISSORS",
+       "text": "H is the key, N is the scissors",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -406,7 +435,7 @@
      "w": 1,
      "text": [
       {
-       "text": "COUGHS  \u00b7  HANDS  \u00b7  BEFORE SYMPTOMS",
+       "text": "Contagious a day before symptoms",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -462,14 +491,14 @@
      "w": 1,
      "text": [
       {
-       "text": "WHAT HE DOES TO YOU",
+       "text": "What he does to you",
        "x": 960,
        "y": 150,
        "size": 72,
        "at": 0.3
       },
       {
-       "text": "FEVER  \u00b7  HEADACHE  \u00b7  ACHES  \u00b7  EXHAUSTION",
+       "text": "Fever, headache, aching muscles",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -489,7 +518,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Most recover in about a week",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "c09b",
@@ -525,7 +561,7 @@
      "w": 1,
      "text": [
       {
-       "text": "HEALTHY LUNGS  \u00b7  LUNGS FILLED WITH FLUID",
+       "text": "Lungs filling with fluid",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -567,7 +603,7 @@
      "w": 1,
      "text": [
       {
-       "text": "HELIOTROPE CYANOSIS",
+       "text": "Heliotrope cyanosis",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -601,7 +637,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Dead within a day",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -623,7 +666,7 @@
      "w": 1,
      "text": [
       {
-       "text": "THEN CAME THE BACTERIA",
+       "text": "Then came the bacteria",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -671,7 +714,7 @@
      "w": 1,
      "text": [
       {
-       "text": "BABIES  \u00b7  YOUNG ADULTS  \u00b7  THE ELDERLY",
+       "text": "It also killed people aged 20 to 40",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -691,7 +734,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Healthy, strong, young adults",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "c12b",
@@ -727,7 +777,7 @@
      "w": 1,
      "text": [
       {
-       "text": "AN IMMUNE OVERREACTION?  \u00b7  OLD PROTECTION?",
+       "text": "An immune system overreaction?",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -755,7 +805,7 @@
      "w": 1,
      "text": [
       {
-       "text": "1889  \u00b7  1918",
+       "text": "The Russian flu of 1889",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -775,7 +825,14 @@
       0.5,
       1.03
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "By train and steamship",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -814,7 +871,14 @@
       0.5,
       1.03
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "It starts in wild water birds",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "d11a",
@@ -831,7 +895,7 @@
      "w": 1,
      "text": [
       {
-       "text": "BIRDS  \u00b7  PIGS  \u00b7  PEOPLE",
+       "text": "From birds to pigs to people",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -873,7 +937,7 @@
      "w": 1,
      "text": [
       {
-       "text": "KANSAS?  \u00b7  FRANCE?  \u00b7  CHINA?",
+       "text": "Where did he start? Nobody knows",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -893,7 +957,14 @@
       0.5,
       1.03
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "A British army camp in France",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "c15b",
@@ -907,7 +978,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Northern China, 1917",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -948,7 +1026,7 @@
      ],
      "w": 1,
      "text": {
-      "text": "BREVIG MISSION, ALASKA",
+      "text": "Brevig Mission, Alaska \u2014 1997",
       "x": 960,
       "y": 985,
       "size": 50,
@@ -967,7 +1045,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Johan Hultin",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "d13a",
@@ -984,7 +1069,7 @@
      "w": 1,
      "text": [
       {
-       "text": "FROZEN FOR 80 YEARS",
+       "text": "Frozen for almost 80 years",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1026,7 +1111,7 @@
      "w": 1,
      "text": [
       {
-       "text": "72 OF ABOUT 80 ADULTS  \u00b7  5 DAYS",
+       "text": "72 of about 80 adults, dead in five days",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1054,7 +1139,7 @@
      "w": 1,
      "text": [
       {
-       "text": "1997  \u00b7  2005: THE VIRUS REBUILT",
+       "text": "2005: the 1918 virus, rebuilt",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1079,7 +1164,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Locked away in a top-security lab",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "d14b",
@@ -1096,7 +1188,7 @@
      "w": 1,
      "text": [
       {
-       "text": "ORDINARY FLU  \u00b7  THE 1918 FLU",
+       "text": "Far deadlier than ordinary flu",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1141,7 +1233,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Wartime censorship",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "c19b",
@@ -1157,7 +1256,7 @@
      ],
      "w": 1,
      "text": {
-      "text": "MADRID \u00b7 MAY 1918",
+      "text": "Madrid, May 1918",
       "x": 960,
       "y": 985,
       "size": 50,
@@ -1176,7 +1275,14 @@
       0.5,
       1.0375
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Even the King of Spain",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "c19d",
@@ -1226,7 +1332,7 @@
      "w": 1,
      "text": [
       {
-       "text": "CENSORED  \u00b7  CENSORED  \u00b7  SPAIN: NOT CENSORED",
+       "text": "Only Spain reported it freely",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1274,7 +1380,7 @@
      "w": 1,
      "text": [
       {
-       "text": "SPRING 1918  \u00b7  AUTUMN 1918  \u00b7  WINTER 1919",
+       "text": "Three waves, from 1918 to 1919",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1294,7 +1400,14 @@
       0.5,
       1.03
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Autumn 1918: the deadly wave",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "c21b",
@@ -1327,7 +1440,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Troopships across the Atlantic",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "d17a",
@@ -1344,7 +1464,7 @@
      "w": 1,
      "text": [
       {
-       "text": "BY SHIP AND BY TRAIN",
+       "text": "By ship and by train",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1417,7 +1537,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Officially, just ordinary influenza",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "d17b",
@@ -1434,7 +1561,7 @@
      "w": 1,
      "text": [
       {
-       "text": "WHAT THEY SAID  \u00b7  WHAT WAS HAPPENING",
+       "text": "Meanwhile, the hospitals filled up",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1481,7 +1608,7 @@
      ],
      "w": 1,
      "text": {
-      "text": "PHILADELPHIA \u00b7 28 SEPTEMBER 1918",
+      "text": "Philadelphia \u2014 28 September 1918",
       "x": 960,
       "y": 985,
       "size": 50,
@@ -1500,7 +1627,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "About 200,000 people",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -1519,7 +1653,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Within three days, every bed full",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "d18a",
@@ -1536,7 +1677,7 @@
      "w": 1,
      "text": [
       {
-       "text": "3 DAYS LATER: NO BEDS LEFT",
+       "text": "Over 12,000 dead in six weeks",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1575,7 +1716,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Volunteers stepped in",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "d18b",
@@ -1592,7 +1740,7 @@
      "w": 1,
      "text": [
       {
-       "text": "NOT ENOUGH DOCTORS  \u00b7  GRAVEDIGGERS  \u00b7  COFFINS",
+       "text": "Not enough doctors, not even coffins",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1617,7 +1765,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "St. Louis, October 1918",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "d19a",
@@ -1634,7 +1789,7 @@
      "w": 1,
      "text": [
       {
-       "text": "PHILADELPHIA  \u00b7  ST. LOUIS",
+       "text": "Half the death rate of Philadelphia",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1693,7 +1848,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "San Francisco: masks by law",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "c28b",
@@ -1707,7 +1869,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Refuse a mask, pay a fine",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -1726,7 +1895,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Red Cross volunteers",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "d19c",
@@ -1743,7 +1919,7 @@
      "w": 1,
      "text": [
       {
-       "text": "GAUZE, FOLDED, STITCHED, TIED",
+       "text": "Layers of cotton gauze",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1768,7 +1944,14 @@
       0.5,
       1.0375
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Folk remedies of 1918",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "d19b",
@@ -1785,7 +1968,7 @@
      "w": 1,
      "text": [
       {
-       "text": "THE ASPIRIN PROBLEM",
+       "text": "The aspirin problem",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1833,7 +2016,7 @@
      "w": 1,
      "text": [
       {
-       "text": "WESTERN SAMOA: 1 IN 5  \u00b7  AMERICAN SAMOA: ZERO",
+       "text": "Western Samoa: one in five died",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1853,7 +2036,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "American Samoa: not one flu death",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "c29b",
@@ -1908,7 +2098,7 @@
      ],
      "w": 1,
      "text": {
-      "text": "BOMBAY \u00b7 1918",
+      "text": "Bombay, 1918",
       "x": 960,
       "y": 985,
       "size": 50,
@@ -1930,7 +2120,7 @@
      "w": 1,
      "text": [
       {
-       "text": "INDIA: THE HARDEST HIT",
+       "text": "India: 12 million or more dead",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1952,7 +2142,7 @@
      ],
      "w": 1,
      "text": {
-      "text": "MOHANDAS GANDHI \u00b7 1918",
+      "text": "Mohandas Gandhi, aged 49",
       "x": 960,
       "y": 985,
       "size": 50,
@@ -1978,7 +2168,7 @@
      ],
      "w": 1,
      "text": {
-      "text": "WOODROW WILSON \u00b7 PARIS 1919",
+      "text": "Woodrow Wilson, Paris 1919",
       "x": 960,
       "y": 985,
       "size": 50,
@@ -1999,7 +2189,7 @@
      ],
      "w": 1,
      "text": {
-      "text": "WALT DISNEY \u00b7 16",
+      "text": "Walt Disney, aged 16",
       "x": 960,
       "y": 985,
       "size": 50,
@@ -2020,7 +2210,7 @@
      ],
      "w": 1,
      "text": {
-      "text": "EDVARD MUNCH",
+      "text": "Edvard Munch",
       "x": 960,
       "y": 985,
       "size": 50,
@@ -2061,7 +2251,7 @@
      "w": 1,
      "text": [
       {
-       "text": "1918  \u00b7  1919  \u00b7  1920",
+       "text": "By 1920, he ran out of victims",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -2081,7 +2271,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "1920: life goes on",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -2103,14 +2300,14 @@
      "w": 1,
      "text": [
       {
-       "text": "WHAT HE LEAVES BEHIND",
+       "text": "What he leaves behind",
        "x": 960,
        "y": 150,
        "size": 72,
        "at": 0.3
       },
       {
-       "text": "WEAK FOR WEEKS  \u00b7  HEART AND LUNGS  \u00b7  THE NEXT GENERATION",
+       "text": "Even the unborn were affected",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -2130,7 +2327,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Weak for weeks",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -2152,7 +2356,7 @@
      "w": 1,
      "text": [
       {
-       "text": "HEALTH MINISTRIES  \u00b7  GLOBAL FLU WATCH  \u00b7  VACCINES",
+       "text": "The first health ministries",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -2172,7 +2376,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Ministry of Health, London 1919",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -2214,7 +2425,7 @@
      "w": 1,
      "text": [
       {
-       "text": "1918  \u00b7  2009",
+       "text": "From 1918 to the 2009 swine flu",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -2256,7 +2467,7 @@
      "w": 1,
      "text": [
       {
-       "text": "A NEW VACCINE EVERY SEASON",
+       "text": "A new flu vaccine every season",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -2315,7 +2526,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Around 50 million lives",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "c24a",
