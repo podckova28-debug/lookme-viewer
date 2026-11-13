@@ -18,6 +18,10 @@ const LOOK = {
   park:       { rim: 'rgba(255,234,190,.9)', grade: '#fff5e4', lights: [[1750, 60, 1300, 'rgba(255,238,195,.34)']] },
   parkNight:  { rim: 'rgba(255,226,150,.9)', grade: '#e4e6ff', lights: [[1420, 360, 700, 'rgba(255,226,150,.38)'], [1600, 180, 420, 'rgba(230,235,255,.18)']] },
   bathroom:   { rim: 'rgba(245,252,255,.9)', grade: '#f3fbff', lights: [[960, 40, 850, 'rgba(255,255,240,.34)']] },
+  super:      { rim: 'rgba(255,230,180,.9)', grade: '#fff3e0' },
+  cafeteria:  { rim: 'rgba(255,238,200,.9)', grade: '#fff6e8' },
+  cine:       { rim: 'rgba(170,200,255,.85)', grade: '#dfe6ff' },
+  salaMaestros: { rim: 'rgba(255,226,180,.9)', grade: '#fff0dd' },
 };
 function buildSet(k) {
   const pi = INK, pw = INK_W; INK = 'rgba(40,30,58,.62)'; INK_W = .55;   // thin, tinted lines: backgrounds recede, characters pop

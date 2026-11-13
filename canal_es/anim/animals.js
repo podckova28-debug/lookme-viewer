@@ -48,7 +48,7 @@ function drawAnimal(g, kind, x, y, s, p = {}) {
 function animalMouthAt(kind, x, y, s, p = {}) { const A = ANIMALS[kind], B = ANI[A.body], k = A.k * s, H = ANI[A.heads[p.head] || Object.values(A.heads)[0]];
   if (!B || !H) return [x, y - 200 * s]; const bh = B.height * k, hw = H.width * k, hh = H.height * k, ny = -bh + A.neck[1] * k;
   return [x + (p.flip || 1) * (A.mouth[0] - A.sock[0]) * hw, y + ny + (A.mouth[1] - A.sock[1]) * hh]; }
-function drawSpr(g, name, x, y, h, p = {}) { const I = ANI[name]; if (!I) return; const w = I.width / I.height * h;
+function drawSpr(g, name, x, y, h, p = {}) { const I = ANI[name] || (typeof SPR !== "undefined" && SPR[name]); if (!I) return; const w = I.width / I.height * h;
   g.save(); g.translate(x, y + (p.bob || 0)); g.rotate(p.rot || 0); g.scale(p.flip || 1, 1); if (p.alpha != null) g.globalAlpha *= p.alpha;
   g.drawImage(I, -w / 2, -h, w, h); g.restore(); }
 

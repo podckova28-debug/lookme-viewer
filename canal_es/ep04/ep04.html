@@ -1,0 +1,15 @@
+<!doctype html><html><head><meta charset="utf-8">
+<style>@font-face{font-family:Bangers;src:url("../anim/fonts/Bangers-Regular.ttf")}@font-face{font-family:ComicNeue;src:url("../anim/fonts/ComicNeue-Bold.ttf")}html,body{margin:0;background:#000}canvas{display:block}</style></head>
+<body><canvas id="c" width="1920" height="1080"></canvas>
+<script src="../anim/lib.js"></script><script src="../anim/sets.js"></script><script src="timing.js"></script><script src="vo_env.js"></script><script src="vo_text.js"></script>
+<script src="../anim/cut/specs.js"></script><script src="../anim/cutout.js"></script><script src="../anim/animals.js"></script>
+<script src="../anim/episode.js"></script><script src="../anim/invis.js"></script>
+<script src="scA.js"></script><script src="scB.js"></script><script src="scC.js"></script><script src="comic.js"></script>
+<script>
+const CV = document.getElementById('c'); CV.width = W; CV.height = H; const X = CV.getContext('2d');
+SID = new URLSearchParams(location.search).get('scene') || 's01';
+window.render = t => { X.setTransform(1,0,0,1,0,0); X.filter='none'; X.globalAlpha=1; (SC[SID] || SC.missing)(X, t);
+  for (const c of (COMIC[SID] || [])) { const t0 = c.t(); if (t >= t0 && t < t0 + 1 && window.__cam) { const [x, y] = worldToScreen(window.__cam, c.x, c.y); comicWord(X, c.w, x, y, t - t0, c.size || 96, c.col || '#fde047'); } } };
+window.ready = Promise.all([document.fonts.load('70px Bangers'), document.fonts.load('bold 70px ComicNeue'), window.CUT_READY || true, ANI_READY]).then(() => true);
+</script>
+</body></html>
