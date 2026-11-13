@@ -18,3 +18,6 @@ L17 «La Boheme» → «Labelhem», L27 «Mountain air» слито в «mountai
 C04, L22 и L17 теперь распознаются верно (L17: «La Bohème»). L27 во всех дублях whisper пишет «mountaineer» — это слияние на стыке слов, на слух проверить.
 
 Итог: 46 из 51 ≥ 0.9. Остальные: цифры вместо слов (L13, L14 «90,000», L17), L28 Calmette/Guerin whisper пишет «Kelmet»/«Guiron» — близко к kal-MET / gay-RAN.
+
+## Новое холодное открытие (сценарий 042f9fd)
+Переозвучены C01: NARRATOR George, exaggeration 0.55 (живее и напряжённее), 2–3 дубля, выбран лучший по whisper (см. qa_whisper.tsv). Прежние версии заменены.

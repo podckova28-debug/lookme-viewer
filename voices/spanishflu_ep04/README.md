@@ -15,3 +15,6 @@ Brevig → Breevig, Mohandas Gandhi → Mohundas Gahndee, Munch → Moonk. Helio
 53 из 55 ≥ 0.9.
 Переозвучены (3 дубля, взят лучший): L20 «war bonds» звучало как «war bombs»; L24c (FLU) терялось первое слово «Onions».
 Оставшиеся расхождения — цифры вместо слов (L11b) и «harbour» → «harbor» (L26).
+
+## Новое холодное открытие (сценарий 042f9fd)
+Переозвучены C01: NARRATOR George, exaggeration 0.55 (живее и напряжённее), 2–3 дубля, выбран лучший по whisper (см. qa_whisper.tsv). Прежние версии заменены.

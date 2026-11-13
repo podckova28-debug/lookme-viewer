@@ -16,3 +16,6 @@ HMS Salisbury → «H M S Salisbury», Theodor Frølich → Tayodor Frolik, Casi
 55 из 59 ≥ 0.9, переозвучка не понадобилась.
 Расхождения: цифры вместо слов (C01, L22), «treasure ships» слитно (C01), «pair» → «pear» (L20, омофон),
 L34 «Szent-Györgyi» whisper пишет как «St. Georgie» — это и есть SENT JUR-jee, «Szeged» → «Seged».
+
+## Новое холодное открытие (сценарий 042f9fd)
+Переозвучены C01, C02, C03: NARRATOR George, exaggeration 0.55 (живее и напряжённее), 2–3 дубля, выбран лучший по whisper (см. qa_whisper.tsv). Прежние версии заменены.
