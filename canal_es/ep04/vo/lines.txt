@@ -1,0 +1,137 @@
+s00_01|narrador|Sábado, cinco de la tarde. Tienes una cita con Renata.
+s00_02|narrador|Bueno, un paseo. Con su perrita. Pero tú le dices cita.
+s00_03|narrador|Renata ya llegó. Tú también: estás parado justo enfrente de ella.
+s00_04|valeria|¿Dónde está? Dijo que a las cinco…
+s00_05|narrador|El problema es que ella no te puede ver.
+s00_06|narrador|Nadie te puede ver.
+s00_07|narrador|Empecemos por el principio.
+s01_01|narrador|Imagina que eres invisible.
+s01_02|narrador|Nadie te ve. Ni tu mamá, ni las cámaras, ni el espejo.
+s01_03|narrador|Y sí, la ropa también. No preguntes cómo. Es un poder, no un manual.
+s01_04|narrador|Puedes entrar a donde quieras. Hacer lo que quieras. Nadie se va a enterar.
+s01_05|narrador|Suena como el mejor poder del mundo.
+s01_06|narrador|Hasta que descubres que, si nadie te ve… nadie te ve.
+s03_01|narrador|Todo empieza un lunes. Te levantas, vas al baño, te lavas la cara…
+s03_02|narrador|…y en el espejo no hay nadie.
+s03_03|tu|¿Eh?
+s03_04|narrador|Mueves la mano. Nada. Sacas la lengua. Nada.
+s03_05|narrador|Y te acuerdas de lo que te dijo Pepe anoche: «Mañana, nadie te va a ver».
+s03_06|narrador|Pepe no estaba bromeando.
+s03_07|narrador|Croqueta entra al baño, camina directo hacia ti… y choca con tu pierna.
+s03_08|narrador|Mira hacia arriba, a la nada. Ofendido. Como si fuera tu culpa. Y técnicamente, lo es.
+s04_01|mama|¡A desayunar!
+s04_02|narrador|Te sientas a la mesa. Tu mamá deja el plato enfrente de una silla vacía.
+s04_03|mama|¿Y este niño? ¡Ya se fue sin desayunar otra vez!
+s04_04|narrador|Agarras un pan tostado. Y el pan tostado se queda flotando en el aire.
+s04_05|narrador|Tu mamá se voltea. El pan ya no está. Solo quedan migajas.
+s04_06|narrador|Y Croqueta, que pasaba por ahí.
+s04_07|mama|¡Croqueta!
+s04_08|narrador|Regla número uno: nadie te ve, pero sí te pueden oír.
+s04_09|narrador|Y todo lo que agarras… flota.
+s05_01|narrador|Camino a la escuela, se te ocurre una idea.
+s05_02|narrador|Nacho te debe treinta y siete tacos. Desde hace dos semanas.
+s05_03|tu|Naaacho… Soy tu conciencia…
+s05_04|nacho|¿Q-quién dijo eso?
+s05_05|tu|Tu conciencia. Y estoy muy decepcionada de ti.
+s05_06|tu|Págale los tacos al de los rizos.
+s05_07|nacho|¡Sí! ¡Sí, conciencia! ¡Hoy mismo!
+s05_08|narrador|Esa tarde encuentras treinta y siete tacos en tu casillero.
+s05_09|narrador|Con una nota que dice: «Perdón».
+s06_01|profe|Pase de lista. ¿El joven de los rizos?
+s06_02|tu|¡Presente!
+s06_03|narrador|El profe Ramírez mira tu banca. Está vacía.
+s06_04|narrador|Luego mira al Señor Bigotes.
+s06_05|profe|Sé que eres tú.
+s06_06|narrador|El Señor Bigotes no dice nada. Ya no le entiendes, pero se nota que está ofendido.
+s06_07|narrador|Y por fin puedes leer la libreta secreta del profe Ramírez. La que es solo sobre ti.
+s06_08|narrador|Lunes: «sospechoso». Martes: «muy sospechoso». Miércoles: «el hámster también».
+s07_01|narrador|En una semana descubres todo lo que puede hacer un invisible.
+s07_02|narrador|Entras al cine sin boleto. Te sientas en el mejor lugar.
+s07_03|narrador|Alguien se sienta encima de ti.
+s07_04|narrador|Te llevas la última torta de la cafetería. Nadie entiende por qué la torta se va volando.
+s07_05|narrador|Ahora la escuela tiene una leyenda: la torta fantasma.
+s07_06|narrador|Y entras a la sala de maestros. El lugar más secreto de la escuela.
+s07_07|narrador|Están viendo una telenovela. Y el profe Ramírez está llorando.
+s08_01|narrador|Pero hay algo raro.
+s08_02|narrador|Nadie te ve. Ni la gente, ni los perros, ni las cámaras.
+s08_03|narrador|Y aun así, cada vez que pasas por el parque, Pepe voltea.
+s08_04|narrador|Te sigue con la mirada. Como si nada.
+s08_05|tu|¿Tú… me ves?
+s08_06|pepe|Ruu.
+s08_07|narrador|Pepe no da entrevistas.
+s09_01|narrador|Problema número uno: las máquinas tampoco te ven.
+s09_02|narrador|La puerta automática del súper no se abre.
+s09_03|narrador|Esperas. Y esperas. Hasta que llega una señora, y entras pegadito detrás de ella.
+s09_04|narrador|Tu teléfono no reconoce tu cara.
+s09_05|tu|Soy yo. Soy yo. ¡Que soy yo!
+s09_06|narrador|«Rostro no detectado».
+s09_07|narrador|Y la llave del lavabo de la escuela, la del sensor, tampoco funciona.
+s09_08|narrador|Llevas tres días sin lavarte las manos.
+s09_09|narrador|Regla número dos: las máquinas tampoco te ven. Ni puertas, ni cámaras, ni tu propio teléfono.
+s10_01|narrador|Problema número dos: la gente choca contigo. Todo el tiempo.
+s10_02|narrador|En el pasillo. En la escalera. En la fila de la cafetería.
+s10_03|nacho|¡Perdón! … ¿Perdón a quién?
+s10_04|narrador|Nadie se hace a un lado para dejarte pasar. Para todos, ahí no hay nadie.
+s10_05|narrador|Aprendes a caminar pegado a la pared. Como un ninja. Un ninja muy cansado.
+s11_01|narrador|Problema número tres. El más raro.
+s11_02|narrador|Para el miércoles, ya nadie te espera.
+s11_03|nacho|¿Y el de los rizos?
+s11_04|valeria|No ha venido en toda la semana…
+s11_05|nacho|Seguro está enfermo. ¿Te vas a comer eso?
+s11_06|narrador|Estás ahí. A medio metro. Y nadie te ve.
+s11_07|narrador|Tu mamá te habla toda la semana a través de la puerta de tu cuarto.
+s11_08|narrador|Cree que es la adolescencia.
+s11_09|narrador|Ser invisible es muy divertido… los primeros dos días.
+s12_01|narrador|Y llega el sábado.
+s12_02|narrador|El paseo con Renata. Se lo prometiste.
+s12_03|narrador|Sigues siendo invisible. Vas de todos modos.
+s12_04|narrador|Renata está en la banca con Canela. Mira su teléfono.
+s12_05|valeria|Dijo que a las cinco…
+s12_06|narrador|Podrías hablarle. Pero una voz que sale de la nada no es la mejor forma de empezar una cita.
+s12_07|narrador|Entonces Canela te huele.
+s12_08|narrador|Corre hacia ti, mueve la cola y se sienta a tus pies. Mirando a la nada.
+s12_09|valeria|¿Canela? ¿Qué ves?
+s13_01|narrador|Renata guarda el teléfono.
+s13_02|valeria|Bueno. Se le olvidó.
+s13_03|narrador|Y ahí entiendes algo.
+s13_04|narrador|Si no dices nada, para ella no viniste.
+s13_05|narrador|Da igual que estés aquí. Si nadie lo sabe, es como no estar.
+s13_06|tu|Renata… Estoy aquí.
+s13_07|valeria|¡Aaah!
+s13_08|tu|¡No te asustes! Soy yo. Es una historia larga. Con una paloma.
+s14_01|valeria|¿…Rizos?
+s14_02|narrador|Renata estira la mano. Despacio. Hacia la nada.
+s14_03|narrador|Y tú la tomas.
+s14_04|valeria|Okay. Esto es muy raro.
+s14_05|valeria|Pero viniste.
+s14_06|narrador|Pasean una hora: Renata, Canela… y una correa que flota sola.
+s14_07|narrador|La gente ve a una chica que platica sola con una correa voladora. A ella no le importa.
+s14_08|narrador|Regla número tres: si nadie te puede ver, tienes que decir que estás ahí.
+s14_09|narrador|Si no, es como si no hubieras venido.
+s14_10|narrador|Y justo cuando se mete el sol… vuelves a aparecer.
+s14_11|narrador|De la mano de Renata. Enfrente de todo el parque.
+s14_12|valeria|…Hola.
+s14_13|tu|…Hola.
+s15_01|narrador|Esa noche, le cuentas todo a Pepe.
+s15_02|narrador|La torta fantasma. La telenovela del profe. Renata.
+s15_03|tu|Toda la semana nadie me vio. Solo tú.
+s15_04|tu|¿Cómo es que tú sí me veías?
+s15_05|pepe|Yo siempre te he visto.
+s15_06|narrador|Pepe abre las alas.
+s15_07|pepe|Mañana vas a ser el más listo del mundo.
+s15_08|pepe|No te va a gustar.
+s15_09|narrador|Y Pepe se va volando.
+s15_10|narrador|O desaparece. Con Pepe, es difícil saberlo.
+s16_01|narrador|¿Algo de esto es real?
+s16_02|narrador|Uno. En dos mil seis, en la Universidad Duke, construyeron la primera capa de invisibilidad.
+s16_03|narrador|Desviaba las microondas alrededor de un pequeño cilindro de cobre, como el agua alrededor de una piedra.
+s16_04|narrador|Pero con la luz no funcionaba. Así que, por ahora, solo eres invisible si eres un cilindro… y nadie te mira con los ojos.
+s16_05|narrador|Dos. La rana de cristal vive desde el sur de México hasta Sudamérica.
+s16_06|narrador|Cuando duerme, esconde casi todos sus glóbulos rojos en el hígado. Sin sangre roja a la vista, la luz casi la atraviesa.
+s16_07|narrador|Tres. Un humano invisible de verdad… estaría ciego.
+s16_08|narrador|Para ver, tus ojos tienen que atrapar la luz. Si la luz te atraviesa, no atrapan nada.
+s16_09|narrador|Así que si alguien te dice que es invisible, pregúntale cómo te está viendo.
+s17_01|narrador|¿Y tú? ¿Qué harías si fueras invisible un día?
+s17_02|narrador|Escríbelo en los comentarios. Pepe los lee. Eso ya lo sabemos.
+s17_03|narrador|La próxima vez, vas a ser el más listo del mundo.
+s17_04|narrador|Pepe dice que no te va a gustar.
