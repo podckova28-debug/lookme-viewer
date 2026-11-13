@@ -11,12 +11,12 @@
  },
  {
   "img": "c01c",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-blue, bone-white and sepia palette with warm candle amber and small cold blue accents. Not gory. Rows of empty wooden chairs in a wood-panelled library, a long table with a dozen brass microscopes lined up under a lamp. No people and no human figures anywhere in the picture.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-blue, bone-white and sepia palette with warm candle amber and small cold blue accents. Not gory. Rows of empty wooden chairs in a wood-panelled library, a long table with a dozen brass microscopes lined up, lit by oil lamps. Lighting only from oil lamps and candles: no electric bulbs, no electric lamps. No people and no human figures anywhere in the picture.",
   "refs": []
  },
  {
   "img": "c01d",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-blue, bone-white and sepia palette with warm candle amber and small cold blue accents. Not gory. A rack of small glass test tubes and a stack of handwritten notebooks on a wooden desk under a green lamp. No people and no human figures anywhere in the picture.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-blue, bone-white and sepia palette with warm candle amber and small cold blue accents. Not gory. A rack of small glass test tubes and a stack of handwritten notebooks on a wooden desk lit by a brass oil lamp with a glass chimney. Lighting only from oil lamps and candles: no electric bulbs, no electric lamps. No people and no human figures anywhere in the picture.",
   "refs": []
  },
  {
@@ -26,7 +26,7 @@
  },
  {
   "img": "c02a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-blue, bone-white and sepia palette with warm candle amber and small cold blue accents. Not gory. A single brass microscope on a table under a lamp, a glass slide with tiny purple-stained rods beside it, everything else in shadow. No people and no human figures anywhere in the picture.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-blue, bone-white and sepia palette with warm candle amber and small cold blue accents. Not gory. A single brass microscope on a table lit by a brass oil lamp, a glass slide with tiny purple-stained rods beside it, everything else in shadow. Lighting only from oil lamps and candles: no electric bulbs, no electric lamps. No people and no human figures anywhere in the picture.",
   "refs": []
  },
  {
@@ -55,7 +55,7 @@
  },
  {
   "img": "d03a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-blue, bone-white and sepia palette with warm candle amber and small cold blue accents. Not gory. Draw ONLY the diagram described below, filling the whole frame, as ONE single picture: no extra rows, no extra panels, no comic strips above or below it. A hand-drawn explainer diagram in ink and muted watercolour on aged paper, clean and readable like an old textbook plate, numbered stages as small circled digits with drawn arrows. No words, no letters, no numbers on axes, only circled digits. Not gory. A large magnified rod-shaped bacterium in cross-section, showing a thick waxy outer coat drawn like layers of candle wax (1), and the inside of the cell (2); beside it a round red blood cell (3) for scale. No people and no human figures anywhere in the picture.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-blue, bone-white and sepia palette with warm candle amber and small cold blue accents. Not gory. Draw ONLY the diagram described below, filling the whole frame, as ONE single picture: no extra rows, no extra panels, no comic strips above or below it. A hand-drawn explainer diagram in ink and muted watercolour on aged paper, clean and readable like an old textbook plate, numbered stages as small circled digits with drawn arrows. No words, no letters, no numbers on axes, only circled digits. Not gory. A smooth simple rod-shaped bacterium like a short capsule with NO tails, NO hairs and NO flagella, shown in cross-section with a thick waxy outer coat drawn like layers of candle wax (1) and the inside (2); beside it a much LARGER round red blood cell (3), about three times longer than the bacterium. No people and no human figures anywhere in the picture.",
   "refs": []
  },
  {
@@ -80,7 +80,7 @@
  },
  {
   "img": "c07a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-blue, bone-white and sepia palette with warm candle amber and small cold blue accents. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and stick legs, small black mitten hands, dressed exactly as described for this scene and era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. Only the few figures described, standing apart, never overlapping; each has exactly two arms and two hands attached to its sleeves; hands are empty unless an object is described; nothing floating; no flags. A crowded 1880s tenement room: a stickman man in a waistcoat coughs into his sleeve while a stickman woman in a long dress sits apart sewing by the window.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-blue, bone-white and sepia palette with warm candle amber and small cold blue accents. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and stick legs, small black mitten hands, dressed exactly as described for this scene and era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. Only the few figures described, standing apart, never overlapping; each has exactly two arms and two hands attached to its sleeves; hands are empty unless an object is described; nothing floating; no flags. A crowded 1880s tenement room: a stickman man in a waistcoat with thin black stick arms coughs into the crook of his own elbow, while a stickman woman in a long dress sits apart sewing by the window.",
   "refs": []
  },
  {
@@ -206,7 +206,7 @@
  },
  {
   "img": "d14a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-blue, bone-white and sepia palette with warm candle amber and small cold blue accents. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and stick legs, small black mitten hands, dressed exactly as described for this scene and era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. Only the few figures described, standing apart, never overlapping; each has exactly two arms and two hands attached to its sleeves; hands are empty unless an object is described; nothing floating; no flags. Draw ONLY the diagram described below, filling the whole frame, as ONE single picture: no extra rows, no extra panels, no comic strips above or below it. A hand-drawn explainer diagram in ink and muted watercolour on aged paper, clean and readable like an old textbook plate, numbered stages as small circled digits with drawn arrows. No words, no letters, no numbers on axes, only circled digits. Not gory. Ten simple stickman icons in a single row: five drawn faded grey with a tiny cross above, five bright.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-blue, bone-white and sepia palette with warm candle amber and small cold blue accents. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and stick legs, small black mitten hands, dressed exactly as described for this scene and era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. Only the few figures described, standing apart, never overlapping; each has exactly two arms and two hands attached to its sleeves; hands are empty unless an object is described; nothing floating; no flags. Draw ONLY the diagram described below, filling the whole frame, as ONE single picture: no extra rows, no extra panels, no comic strips above or below it. A hand-drawn explainer diagram in ink and muted watercolour on aged paper, clean and readable like an old textbook plate, numbered stages as small circled digits with drawn arrows. No words, no letters, no numbers on axes, only circled digits. Not gory. ONLY ten simple stickman icons standing in a single row across the middle of the page: five drawn faded grey with a tiny cross above, five bright. Nothing else on the page, no pictures above or below.",
   "refs": []
  },
  {
@@ -238,7 +238,7 @@
  },
  {
   "img": "c15a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-blue, bone-white and sepia palette with warm candle amber and small cold blue accents. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and stick legs, small black mitten hands, dressed exactly as described for this scene and era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. Only the few figures described, standing apart, never overlapping; each has exactly two arms and two hands attached to its sleeves; hands are empty unless an object is described; nothing floating; no flags. A medieval throne room: a stickman king with a small gold crown and a red robe gently touches the cheek of a kneeling stickman peasant in a brown tunic; only these two figures.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-blue, bone-white and sepia palette with warm candle amber and small cold blue accents. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and stick legs, small black mitten hands, dressed exactly as described for this scene and era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. Only the few figures described, standing apart, never overlapping; each has exactly two arms and two hands attached to its sleeves; hands are empty unless an object is described; nothing floating; no flags. A medieval throne room: a stickman king with a small gold crown and a red robe gently touches the cheek of a kneeling stickman peasant in a brown tunic whose two small black mitten hands are pressed together in prayer at his chest; only these two figures, each with exactly two arms and two visible hands.",
   "refs": []
  },
  {
@@ -248,7 +248,7 @@
  },
  {
   "img": "c15c",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-blue, bone-white and sepia palette with warm candle amber and small cold blue accents. Not gory. A small medieval gold coin with a ship design on a red ribbon, lying on a velvet cushion. No people and no human figures anywhere in the picture.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-blue, bone-white and sepia palette with warm candle amber and small cold blue accents. Not gory. A small medieval gold coin with an angel design on a red ribbon, lying on a red velvet cushion, a plain stone wall behind. No flags, no banners, no pennants anywhere. No people and no human figures anywhere in the picture.",
   "refs": []
  },
  {
@@ -359,7 +359,7 @@
  },
  {
   "img": "c22b",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-blue, bone-white and sepia palette with warm candle amber and small cold blue accents. Not gory. A grand 1880s lecture library seen from the doorway, lamps glowing, a long table of microscopes, the chairs now empty. No people and no human figures anywhere in the picture.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-blue, bone-white and sepia palette with warm candle amber and small cold blue accents. Not gory. A grand 1880s lecture library seen from the doorway, oil lamps glowing, a long table of microscopes, the chairs now empty. Lighting only from oil lamps and candles: no electric bulbs, no electric lamps. No people and no human figures anywhere in the picture.",
   "refs": []
  },
  {
@@ -428,12 +428,12 @@
  },
  {
   "img": "c26b",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, the same muted grey-blue, bone-white and sepia palette, soft natural daylight. The setting is modern (2000s-2020s): no lanterns, no gas lamps, no candles, nothing Victorian. Not gory.Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and stick legs, small black mitten hands, dressed exactly as described for this scene and era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. Only the few figures described, standing apart, never overlapping; each has exactly two arms and two hands attached to its sleeves; hands are empty unless an object is described; nothing floating; no flags. A modern clinic: a stickman nurse in blue scrubs gives a tiny vaccine injection to a baby held by a stickman mother in a cardigan; only these three figures.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, the same muted grey-blue, bone-white and sepia palette, soft natural daylight. The setting is modern (2000s-2020s): no lanterns, no gas lamps, no candles, nothing Victorian. Not gory.Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and stick legs, small black mitten hands, dressed exactly as described for this scene and era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. Only the few figures described, standing apart, never overlapping; each has exactly two arms and two hands attached to its sleeves; hands are empty unless an object is described; nothing floating; no flags. A modern clinic: a stickman nurse in blue scrubs holds a tiny syringe in one hand next to the upper arm of a baby, her other hand resting on her own hip; a stickman mother in a cardigan holds the baby in both arms; only these three figures, each nurse and mother with exactly two arms coming out of the shoulders, normal length.",
   "refs": []
  },
  {
   "img": "c27a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-blue, bone-white and sepia palette with warm candle amber and small cold blue accents. Not gory. A 1940s American university laboratory with soil samples in glass jars, petri dishes and a window onto a farm field. No people and no human figures anywhere in the picture.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-blue, bone-white and sepia palette with warm candle amber and small cold blue accents. Not gory. A 1940s American university laboratory with soil samples in glass jars, petri dishes and a window onto a farm field. No flags, no banners, no pennants anywhere. No people and no human figures anywhere in the picture.",
   "refs": []
  },
  {
@@ -495,12 +495,12 @@
  },
  {
   "img": "d28a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-blue, bone-white and sepia palette with warm candle amber and small cold blue accents. Not gory. Draw ONLY the diagram described below, filling the whole frame, as ONE single picture: no extra rows, no extra panels, no comic strips above or below it. A hand-drawn explainer diagram in ink and muted watercolour on aged paper, clean and readable like an old textbook plate, numbered stages as small circled digits with drawn arrows. No words, no letters, no numbers on axes, only circled digits. Not gory. A simple world map with South Asia, Southeast Asia and Africa shaded dark, other regions pale. No people and no human figures anywhere in the picture.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-blue, bone-white and sepia palette with warm candle amber and small cold blue accents. Not gory. Draw ONLY the diagram described below, filling the whole frame, as ONE single picture: no extra rows, no extra panels, no comic strips above or below it. A hand-drawn explainer diagram in ink and muted watercolour on aged paper, clean and readable like an old textbook plate, numbered stages as small circled digits with drawn arrows. No words, no letters, no numbers on axes, only circled digits. Not gory. ONLY a simple world map filling the whole page: South Asia, Southeast Asia and Africa shaded dark, other regions pale. Nothing else, no pictures, no rows of panels, no ships. No people and no human figures anywhere in the picture.",
   "refs": []
  },
  {
   "img": "c30a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, the same muted grey-blue, bone-white and sepia palette, soft natural daylight. The setting is modern (2000s-2020s): no lanterns, no gas lamps, no candles, nothing Victorian. Not gory.Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and stick legs, small black mitten hands, dressed exactly as described for this scene and era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. Only the few figures described, standing apart, never overlapping; each has exactly two arms and two hands attached to its sleeves; hands are empty unless an object is described; nothing floating; no flags. A busy modern clinic waiting room in South Asia: two stickman patients in everyday clothes and cloth face masks sit apart on plastic chairs.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, the same muted grey-blue, bone-white and sepia palette, soft natural daylight. The setting is modern (2000s-2020s): no lanterns, no gas lamps, no candles, nothing Victorian. Not gory.Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and stick legs, small black mitten hands, dressed exactly as described for this scene and era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. Only the few figures described, standing apart, never overlapping; each has exactly two arms and two hands attached to its sleeves; hands are empty unless an object is described; nothing floating; no flags. A busy modern clinic waiting room in South Asia: ONLY two stickman patients in everyday clothes and cloth face masks sit apart on plastic chairs, hands in their laps; nobody else in the room, no staff, no other patients.",
   "refs": []
  },
  {
@@ -510,7 +510,7 @@
  },
  {
   "img": "d29a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-blue, bone-white and sepia palette with warm candle amber and small cold blue accents. Not gory. Draw ONLY the diagram described below, filling the whole frame, as ONE single picture: no extra rows, no extra panels, no comic strips above or below it. A hand-drawn explainer diagram in ink and muted watercolour on aged paper, clean and readable like an old textbook plate, numbered stages as small circled digits with drawn arrows. No words, no letters, no numbers on axes, only circled digits. Not gory. A simple calendar of six months with a small pill on each month and a green tick at the end. No people and no human figures anywhere in the picture.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted grey-blue, bone-white and sepia palette with warm candle amber and small cold blue accents. Not gory. Draw ONLY the diagram described below, filling the whole frame, as ONE single picture: no extra rows, no extra panels, no comic strips above or below it. A hand-drawn explainer diagram in ink and muted watercolour on aged paper, clean and readable like an old textbook plate, numbered stages as small circled digits with drawn arrows. No words, no letters, no numbers on axes, only circled digits. Not gory. ONLY a single row of six simple blank calendar sheets across the page, each with one small white pill drawn on it, and a big green tick at the end. Nothing above or below, no other pictures, no digits. No people and no human figures anywhere in the picture.",
   "refs": []
  },
  {

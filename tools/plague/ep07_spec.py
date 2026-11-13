@@ -55,10 +55,10 @@ def HOLD(sec, *s): B.append((None, None, sec, list(s)))
 N('C01', "Berlin. The twenty-fourth of March, 1882. In a small library packed with Germany's top scientists, a quiet country doctor named Robert Koch stands up to speak.",
   sc('c01a', "A Berlin street in 1882 at dusk with grand stone buildings, gas lamps and a horse-drawn tram, light snow.", WL(), distant=True, text=cap('BERLIN · 24 MARCH 1882')),
   ch('c01b', W(), "A wood-panelled 1880s lecture library with bookshelves: a single stickman scientist with small round glasses and a dark frock coat stands at a table covered with microscopes and glass slides, both hands resting on the table."),
-  sc('c01c', "Rows of empty wooden chairs in a wood-panelled library, a long table with a dozen brass microscopes lined up under a lamp.", C(.5, .5, 1.05)))
+  sc('c01c', "Rows of empty wooden chairs in a wood-panelled library, a long table with a dozen brass microscopes lined up, lit by oil lamps. Lighting only from oil lamps and candles: no electric bulbs, no electric lamps.", C(.5, .5, 1.05)))
 N('C02', "He has found the killer that, in his time, was causing one in seven deaths across Europe and America. When he sits down, nobody claps. The room is completely silent.",
   dg('d01a', "Seven simple coffin icons in a single row; one of them is drawn darker and marked with a small cough cloud symbol above it.", text=[cap('1 IN 7 DEATHS')]),
-  sc('c02a', "A single brass microscope on a table under a lamp, a glass slide with tiny purple-stained rods beside it, everything else in shadow.", C(.5, .5, 1.05)))
+  sc('c02a', "A single brass microscope on a table lit by a brass oil lamp, a glass slide with tiny purple-stained rods beside it, everything else in shadow. Lighting only from oil lamps and candles: no electric bulbs, no electric lamps.", C(.5, .5, 1.05)))
 N('C03', "The killer had been called consumption, phthisis, the white plague. People had blamed bad air, bad blood, a weak character. Even vampires.",
   dg('d02a', "Four small numbered icons side by side: (1) a swirling cloud of bad air, (2) a drop of blood, (3) a wilting flower, (4) a vampire silhouette with a cape.", text=[cap('BAD AIR? BAD BLOOD? WEAKNESS? VAMPIRES?')]),
   sc('c03a', "A dim Victorian sickroom with an empty iron bed, a basin and a jug, a white handkerchief on the pillow, a candle burning low.", C(.5, .5, 1.05)))
@@ -70,13 +70,13 @@ HOLD(4.6, kg('c05a', O(), "Title shot: the White Lady stands on the left third o
 
 # ---- who is she
 N('L01', "So who is she? A bacterium. Mycobacterium tuberculosis. A tiny rod, wrapped in a thick, waxy coat that protects her from almost everything the body throws at her.",
-  dg('d03a', "A large magnified rod-shaped bacterium in cross-section, showing a thick waxy outer coat drawn like layers of candle wax (1), and the inside of the cell (2); beside it a round red blood cell (3) for scale."),
+  dg('d03a', "A smooth simple rod-shaped bacterium like a short capsule with NO tails, NO hairs and NO flagella, shown in cross-section with a thick waxy outer coat drawn like layers of candle wax (1) and the inside (2); beside it a much LARGER round red blood cell (3), about three times longer than the bacterium."),
   sc('c06a', "A microscope view: a round bright field with many small purple-red rod-shaped bacteria, some lying in little clumps.", C(.5, .5, 1.05)))
 N('L02', "And she is slow. Most bacteria divide every twenty minutes. She takes about a day. She is in no hurry at all.",
   dg('d04a', "Two clocks side by side: (1) a clock with many small rod bacteria multiplying around it quickly, (2) a clock with a single slow bacterium sitting beside a snail.", text=[cap('MOST BACTERIA: 20 MINUTES  ·  TB: ABOUT A DAY')]))
 N('L03', "She travels through the air. When a sick person coughs, sneezes or even sings, tiny droplets float in the room for hours. Breathing in just a few bacteria can be enough.",
   dg('d05a', "Three numbered panels: (1) a stickman coughing a small cloud of tiny dots into a room, (2) the dots floating in the air near a window for a long time, (3) a second stickman breathing in a few dots.", people=True, text=[cap('THROUGH THE AIR')]),
-  ch('c07a', W(), "A crowded 1880s tenement room: a stickman man in a waistcoat coughs into his sleeve while a stickman woman in a long dress sits apart sewing by the window."))
+  ch('c07a', W(), "A crowded 1880s tenement room: a stickman man in a waistcoat with thin black stick arms coughs into the crook of his own elbow, while a stickman woman in a long dress sits apart sewing by the window."))
 K('L04', "A cough, a breath, a crowded room. That's all I need.",
   kg('c08a', C(.5, .45, 1.1), "The White Lady stands in a dim, empty Victorian tenement stairwell, gently breathing out a faint pale mist, smiling."))
 N('L05', "But here's the strange part. Most people who catch her never get sick. The body walls her inside tiny knots called tubercles. That's where the name comes from. She can sleep there for years. Today, about a quarter of all humans carry her.",
@@ -110,7 +110,7 @@ N('S03', "In the lungs, she carves out holes. Patients began to cough up blood, 
 N('S04', "She doesn't stop at the lungs. She can attack the bones, the kidneys, the brain, and the glands of the neck, which swell into lumps. That form had its own name: scrofula.",
   dg('d13a', "A standing stickman outline with four small numbered magnifier circles pointing to: (1) the lungs, (2) the spine, (3) the neck glands with a small swelling, (4) the head.", people=True, text=[cap('LUNGS  ·  BONES  ·  NECK  ·  BRAIN')]))
 N('S05', "Without treatment, about half of those who fall sick with her eventually die. It can take years.",
-  dg('d14a', "Ten simple stickman icons in a single row: five drawn faded grey with a tiny cross above, five bright.", people=True, text=[cap('WITHOUT TREATMENT: ABOUT HALF DIE')]),
+  dg('d14a', "ONLY ten simple stickman icons standing in a single row across the middle of the page: five drawn faded grey with a tiny cross above, five bright. Nothing else on the page, no pictures above or below.", people=True, text=[cap('WITHOUT TREATMENT: ABOUT HALF DIE')]),
   sc('c12d', "An empty rocking chair by a window in a dim Victorian room, a shawl draped over it, a candle, rain on the glass.", C(.5, .5, 1.05)))
 K('S06', "I don't rush. I take my time. Years, sometimes.",
   kg('c13a', C(.5, .45, 1.1), "The White Lady winds a large antique pocket watch slowly, holding it up to her candle, smiling softly."))
@@ -120,7 +120,7 @@ N('L11', "The ancient Greeks called her phthisis, the wasting. Hippocrates wrote
   ch('c14a', W(), "An ancient Greek courtyard with white columns: a stickman physician in a white Greek chiton stands apart from a stickman patient lying on a couch, the physician turning away and raising one hand."),
   sc('c14b', "An ancient Greek temple of healing on a hill at sunset with white columns and olive trees.", WL(), distant=True))
 N('L12', "In the Middle Ages, scrofula was called the King's Evil, because people believed the touch of a king could cure it. English and French kings touched thousands of sick people in great ceremonies.",
-  ch('c15a', W(), "A medieval throne room: a stickman king with a small gold crown and a red robe gently touches the cheek of a kneeling stickman peasant in a brown tunic; only these two figures."),
+  ch('c15a', W(), "A medieval throne room: a stickman king with a small gold crown and a red robe gently touches the cheek of a kneeling stickman peasant in a brown tunic whose two small black mitten hands are pressed together in prayer at his chest; only these two figures, each with exactly two arms and two visible hands."),
   dg('d15a', "Three numbered steps: (1) a kneeling stickman, (2) a crowned stickman hand touching his cheek, (3) a small gold coin on a ribbon given as a keepsake.", people=True, text=[cap('THE ROYAL TOUCH')]))
 N('L13', "King Charles the Second of England is said to have touched around ninety thousand people. It didn't help, but it was very popular.",
   ch('c15b', W(), "A grand 1670s palace hall: a stickman king with a long black curly wig, a gold crown and a velvet robe sits on a throne, raising one hand in blessing, looking slightly bored; only this one figure.", text=cap('CHARLES II')),
@@ -152,7 +152,7 @@ N('L21', "Then came Robert Koch. Using new dyes, he stained lung tissue and foun
   dg('d19a', "Four numbered steps: (1) a glass slide with a drop of stain, (2) under a microscope, small purple rods appear, (3) a small glass dish with bacteria growing, (4) a guinea pig in a cage.", text=[cap('STAIN  ·  SEE  ·  GROW  ·  PROVE')]),
   ch('c22a', W(), "An 1880s laboratory: a single stickman scientist with small round glasses and a dark frock coat looks through a brass microscope, one hand adjusting it."))
 N('L22', "His talk that day changed medicine. The twenty-fourth of March is now World Tuberculosis Day. Koch won the Nobel Prize in 1905.",
-  sc('c22b', "A grand 1880s lecture library seen from the doorway, lamps glowing, a long table of microscopes, the chairs now empty.", WR()),
+  sc('c22b', "A grand 1880s lecture library seen from the doorway, oil lamps glowing, a long table of microscopes, the chairs now empty. Lighting only from oil lamps and candles: no electric bulbs, no electric lamps.", WR()),
   dg('d20a', "A calendar page with one day circled, next to a simple gold medal on a ribbon.", text=[cap('24 MARCH: WORLD TB DAY')]))
 N('L23', "But knowing the cause didn't give a cure. Koch's own remedy, tuberculin, was a failure as a treatment. It later became a useful skin test, to find out who carries her.",
   dg('d21a', "Two numbered panels: (1) a small glass vial with a cross over it, (2) a forearm with a tiny injection point and a small round red bump next to a ruler.", text=[cap('NOT A CURE  ·  BUT A TEST')]))
@@ -174,9 +174,9 @@ N('L28', "In 1921, two French scientists, Albert Calmette and Camille Guerin, ma
   ch('c26a', W(), "A 1910s laboratory at the Pasteur Institute: two stickman scientists in white coats stand apart at a bench with rows of small glass flasks, one holding up a flask."),
   dg('d23a', "A long row of small glass flasks connected by arrows, numbered (1) at the start and (2) at the end, with a calendar showing thirteen years and a small cow icon at the start.", text=[cap('230 TIMES  ·  13 YEARS  ·  BCG')]))
 N('L29', "BCG protects young children well, and it is still given to millions of babies today. But it doesn't protect adults very well. They needed a cure.",
-  ch('c26b', W(), modern=True, p="A modern clinic: a stickman nurse in blue scrubs gives a tiny vaccine injection to a baby held by a stickman mother in a cardigan; only these three figures."))
+  ch('c26b', W(), modern=True, p="A modern clinic: a stickman nurse in blue scrubs holds a tiny syringe in one hand next to the upper arm of a baby, her other hand resting on her own hip; a stickman mother in a cardigan holds the baby in both arms; only these three figures, each nurse and mother with exactly two arms coming out of the shoulders, normal length."))
 N('L30', "In 1943, in a lab in New Jersey, a young student, Albert Schatz, working under Selman Waksman, discovered streptomycin, an antibiotic found in soil bacteria. It was the first drug that could kill her.",
-  sc('c27a', "A 1940s American university laboratory with soil samples in glass jars, petri dishes and a window onto a farm field.", C(.5, .5, 1.05), text=cap('NEW JERSEY · 1943')),
+  sc('c27a', "A 1940s American university laboratory with soil samples in glass jars, petri dishes and a window onto a farm field. No flags, no banners, no pennants anywhere.", C(.5, .5, 1.05), text=cap('NEW JERSEY · 1943')),
   ch('c27b', W(), "A 1940s basement laboratory: a single young stickman student in a white coat holds up a petri dish to the light, smiling."),
   dg('d24a', "Three numbered steps: (1) a scoop of farm soil, (2) a petri dish with a clear ring around a mould colony, (3) a small medicine bottle.", text=[cap('SOIL  ·  BACTERIA  ·  STREPTOMYCIN')]))
 N('L31', "Waksman alone won the Nobel Prize, and Schatz spent years fighting for credit. More drugs followed. Taken together, for months, they could finally cure her.",
@@ -192,10 +192,10 @@ K('L33', "Pills. Little pills. Do you know how humiliating that is?",
 N('L34', "But she came back. In the 1980s and 90s, HIV weakened millions of immune systems, and she woke up in them. And when patients stopped their pills too early, she learned to survive the drugs.",
   dg('d27a', "Two numbered panels: (1) a sleeping bacterium inside a weakened round shield with cracks, waking up, (2) a bacterium with a small armour plate bouncing pills away.", text=[cap('WEAKENED DEFENCES  ·  DRUG RESISTANCE')]))
 N('L35', "Today, she is once again the world's deadliest infectious disease. More than ten million people fall ill every year, and over a million die, mostly in Asia and Africa.",
-  dg('d28a', "A simple world map with South Asia, Southeast Asia and Africa shaded dark, other regions pale.", text=[cap('10 MILLION SICK  ·  OVER 1 MILLION DEATHS A YEAR')]),
-  ch('c30a', W(), modern=True, p="A busy modern clinic waiting room in South Asia: two stickman patients in everyday clothes and cloth face masks sit apart on plastic chairs."))
+  dg('d28a', "ONLY a simple world map filling the whole page: South Asia, Southeast Asia and Africa shaded dark, other regions pale. Nothing else, no pictures, no rows of panels, no ships.", text=[cap('10 MILLION SICK  ·  OVER 1 MILLION DEATHS A YEAR')]),
+  ch('c30a', W(), modern=True, p="A busy modern clinic waiting room in South Asia: ONLY two stickman patients in everyday clothes and cloth face masks sit apart on plastic chairs, hands in their laps; nobody else in the room, no staff, no other patients."))
 N('L36', "And yet, almost everyone can be cured, with a six-month course of cheap pills. The problem is not the medicine. It's getting it to the people who need it.",
-  dg('d29a', "A simple calendar of six months with a small pill on each month and a green tick at the end.", text=[cap('6 MONTHS OF PILLS  ·  CURED')]),
+  dg('d29a', "ONLY a single row of six simple blank calendar sheets across the page, each with one small white pill drawn on it, and a big green tick at the end. Nothing above or below, no other pictures, no digits.", text=[cap('6 MONTHS OF PILLS  ·  CURED')]),
   ch('c30b', W(), modern=True, p="A modern rural health worker in a vest walks along a dirt village road carrying a small medical bag, waving to a stickman family outside a house; the health worker and two family members, standing apart."))
 
 # ---- WHAT SHE LEAVES BEHIND
@@ -216,7 +216,7 @@ HOLD(5.0, sh('c33a', O(), text=[label('NEXT TIME', 1380, 360, 110, style='title'
 
 # ---- extra cut-ins for faster cutting (pos None = end)
 EXTRA = {
-  'C01': [(None, sc('c01d', "A rack of small glass test tubes and a stack of handwritten notebooks on a wooden desk under a green lamp.", C(.5, .5, 1.05)))],
+  'C01': [(None, sc('c01d', "A rack of small glass test tubes and a stack of handwritten notebooks on a wooden desk lit by a brass oil lamp with a glass chimney. Lighting only from oil lamps and candles: no electric bulbs, no electric lamps.", C(.5, .5, 1.05)))],
   'L01': [(None, sc('c06b', "A single candle melting in a dark room, thick layers of white wax dripping down, a metaphor for a waxy coat.", C(.5, .5, 1.05)))],
   'L03': [(None, sc('c07b', "Sunbeams through a dusty window in a dark crowded Victorian room, specks floating in the light.", C(.5, .5, 1.05)))],
   'L05': [(None, ch('c07c', W(), "A busy 1880s factory floor: two stickman workers in caps stand apart at a loom, both looking perfectly healthy."))],
@@ -225,7 +225,7 @@ EXTRA = {
   'S03': [(None, sc('c12f', "A white lace handkerchief lying on a dark wooden table beside a candle, three small red spots on it.", C(.5, .5, 1.05)))],
   'S04': [(None, ch('c12g', W(), "A Victorian doctor's room: a stickman doctor in a frock coat gently examines the neck of a stickman child sitting on a stool; only these two."))],
   'L11': [(None, sc('c14c', "An ancient Greek scroll and a clay oil lamp on a marble table, olive branches.", C(.5, .5, 1.05)))],
-  'L12': [(None, sc('c15c', "A small medieval gold coin with a ship design on a red ribbon, lying on a velvet cushion.", C(.5, .5, 1.05)))],
+  'L12': [(None, sc('c15c', "A small medieval gold coin with an angel design on a red ribbon, lying on a red velvet cushion, a plain stone wall behind. No flags, no banners, no pennants anywhere.", C(.5, .5, 1.05)))],
   'L15': [(None, ch('c17c', W(), "A damp 1850s basement room: a single stickman mother in a shawl sits by a tiny window, rocking a cradle, mould on the walls."))],
   'L17': [(None, sc('c18d', "A small writing desk with an inkwell, a quill and a pile of poems, a vase of white lilies, soft window light.", C(.5, .5, 1.05)))],
   'L19': [(None, sc('c20c', "An old wooden farmhouse in snowy Rhode Island at night, one lit window, smoke from the chimney.", WR()))],
