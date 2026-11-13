@@ -52,6 +52,8 @@ New episode every week.
 president, white house, day in the life, oval office, presidential daily brief, secret service, why it's so hard, animated explainer, what it's really like
 
 ## Thumbnails
+C (new): thumb_C_costs_2_7_years_1280x720.jpg — "THIS JOB COSTS 2.7 YEARS" (BMJ 2015: elected leaders lived about 2.7 years less than the runners-up)
+D (new): thumb_D_lunch_11_minutes_1280x720.jpg — "LUNCH: 11 MINUTES"
 A: thumb_A_all_night_1280x720.jpg — "He's been out there all night."
 B: thumb_B_eleven_minutes_1280x720.jpg — "Lunch: 11 minutes."
 
