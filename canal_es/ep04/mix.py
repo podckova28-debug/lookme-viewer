@@ -137,6 +137,10 @@ def beep(f=880, d=.12): t = secs(d); return np.sign(np.sin(2 * np.pi * f * t)) *
 def fail(): out = np.zeros(int(.5 * SR)); add(out, beep(330, .14), 0); add(out, beep(262, .2), .17); return out
 def crunch(): t = secs(.09); return bp(rng.standard_normal(len(t)), 1200, 6000) * env(len(t), .001, .03) * .6
 def clink(): x = ding(2637) * .35; add(x, snap() * .3, 0); return x
+def cash(): x = ding(2093) * .6; add(x, ding(2637) * .4, 0); return x
+def flutter(d=.6):
+    t = secs(d); am = (np.sin(2 * np.pi * 14 * t) > 0).astype(float) * .7 + .3
+    return bp(rng.standard_normal(len(t)), 600, 3500) * am * np.sin(np.pi * t / d) * .35
 def sniff(): t = secs(.16); return bp(rng.standard_normal(len(t)), 2000, 7000) * np.sin(np.pi * t / .16) * .25
 def knock(): x = thud() * .8; return lp(x, 900)
 def scream(d=.9):
