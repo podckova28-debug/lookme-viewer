@@ -163,6 +163,8 @@ const restHand = (s, G) => [s * G.rest[0], G.hipY + G.rest[1]];   // a little el
    so gestures accelerate, overshoot a little and settle instead of snapping between poses.
    Sequential rendering (render.js) integrates it; a jump in time or a frozen character snaps. */
 const ARMS = {};
+/* a second copy of a character drawn in the same frame (ep02's future ghost) tags its springs, or the two copies drag each other's arms */
+let ARM_TAG = '';
 function armSpring(key, target, t, still, stiff = 1) {
   let s = ARMS[key];
   if (!s || still || !(t > s.t) || t - s.t > .25) { ARMS[key] = { x: target[0], y: target[1], vx: 0, vy: 0, t }; return target.slice(); }
@@ -186,7 +188,7 @@ function solveArms(c, cname, p, G, shx, shy) {
   let hL = p.hL || [restHand(-1, G)[0] - swing * .35 + iL[0], restHand(-1, G)[1] + Math.abs(swing) * .12 + iL[1]];
   let hR = p.hR || [restHand(1, G)[0] + swing * .35 + iR[0], restHand(1, G)[1] + Math.abs(swing) * .12 + iR[1]];
   const clapT = Math.abs(hR[0] - hL[0]) < 60 && Math.abs(hR[1] - hL[1]) < 60;   // hands meeting: stiffer spring, no pass-through
-  const akey = (typeof SID !== 'undefined' ? SID : '') + ':' + (typeof cname === 'string' ? cname : 'x') + (p.key || '');
+  const akey = (typeof SID !== 'undefined' ? SID : '') + ':' + (typeof cname === 'string' ? cname : 'x') + (p.key || '') + ARM_TAG;
   if (p.t != null && !p.noSpring) { hL = armSpring(akey + 'L', hL, tt, p.still, clapT ? 1.8 : 1); hR = armSpring(akey + 'R', hR, tt, p.still, clapT ? 1.8 : 1); }
   const rH = p.handCol ? 23 : 19;
   if (clapT && hR[0] - hL[0] < 2 * rH * .8) { const m = (hL[0] + hR[0]) / 2; hL = [m - rH * .8, hL[1]]; hR = [m + rH * .8, hR[1]]; }

@@ -6,7 +6,7 @@
    composeF(X, st, { ghost: 1, t });           // ghost: 0..1 opacity of the vision
    futHUD(X, a, secondsLeft);                   // optional countdown ring */
 const FUT_COL = '#5ee7ff', FUT_DEEP = '#0b7fa8';
-function stageF(cam) { const st = stage(cam), F = layer('F'); camApply(F, cam); st.F = F; st.fut = fn => fn(F); return st; }
+function stageF(cam) { const st = stage(cam), F = layer('F'); camApply(F, cam); st.F = F; st.fut = fn => { ARM_TAG = '~fut'; try { fn(F); } finally { ARM_TAG = ''; } }; return st; }
 
 let FUT_SCAN = null;
 function futScanlines() { if (FUT_SCAN) return FUT_SCAN; FUT_SCAN = document.createElement('canvas'); FUT_SCAN.width = W; FUT_SCAN.height = H;
@@ -15,6 +15,9 @@ function futScanlines() { if (FUT_SCAN) return FUT_SCAN; FUT_SCAN = document.cre
 /* the ghost layer as a hologram: cyan body that keeps a little of the drawing's colour, a soft glow, scanlines, a little flicker.
    Everything heavy happens at 1/6 resolution (the glow) or without canvas filters, so a frame stays cheap. */
 const FUT_Q = 6; let FUT_SMALL = null;
+/* a fresh bitmap every frame (resize): on long renders Chrome can hand drawImage() an old recycled frame of a small buffer that
+   was only cleared, so a ghost that had already left stayed on screen (same bug as invis.js) */
+const futWipe = c => { c.width = c.width; return c.getContext('2d'); };
 function ghostFX(X, F, a, t = 0) {
   if (a <= 0) return;
   const flick = .9 + .1 * Math.sin(t * 37) * Math.sin(t * 13.3), k = clamp(a) * flick;
@@ -22,9 +25,9 @@ function ghostFX(X, F, a, t = 0) {
   Gt.drawImage(F.canvas, 0, 0); Gt.globalCompositeOperation = 'source-atop'; Gt.fillStyle = 'rgba(94,231,255,.74)'; Gt.fillRect(0, 0, W, H);
   Gt.globalCompositeOperation = 'destination-out'; Gt.drawImage(futScanlines(), 0, 0); Gt.globalCompositeOperation = 'source-over';
   if (!FUT_SMALL) { FUT_SMALL = [0, 1].map(() => { const c = document.createElement('canvas'); c.width = W / FUT_Q; c.height = H / FUT_Q; return c; }); }
-  const s0 = FUT_SMALL[0].getContext('2d'), s1 = FUT_SMALL[1].getContext('2d'), w = W / FUT_Q, h = H / FUT_Q;
-  s0.clearRect(0, 0, w, h); s0.drawImage(F.canvas, 0, 0, w, h); s0.globalCompositeOperation = 'source-in'; s0.fillStyle = FUT_COL; s0.fillRect(0, 0, w, h); s0.globalCompositeOperation = 'source-over';
-  s1.clearRect(0, 0, w, h); s1.filter = 'blur(3px)'; s1.drawImage(FUT_SMALL[0], 0, 0); s1.filter = 'none';
+  const s0 = futWipe(FUT_SMALL[0]), s1 = futWipe(FUT_SMALL[1]), w = W / FUT_Q, h = H / FUT_Q;
+  s0.drawImage(F.canvas, 0, 0, w, h); s0.globalCompositeOperation = 'source-in'; s0.fillStyle = FUT_COL; s0.fillRect(0, 0, w, h); s0.globalCompositeOperation = 'source-over';
+  s1.filter = 'blur(3px)'; s1.drawImage(FUT_SMALL[0], 0, 0); s1.filter = 'none';
   X.save(); X.setTransform(1, 0, 0, 1, 0, 0); X.imageSmoothingEnabled = true;
   X.globalCompositeOperation = 'screen'; X.globalAlpha = .7 * k; X.drawImage(FUT_SMALL[1], 0, 0, W, H);
   X.globalAlpha = .3 * k; X.drawImage(FUT_SMALL[0], 0, 0, W, H);

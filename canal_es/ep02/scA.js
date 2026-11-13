@@ -191,7 +191,7 @@ SC.s01 = (X, t) => {
 
 /* ================================================================ 2. title card */
 SC.s02 = (X, t) => {
-  const cam = { cx: 960, cy: 560, z: 1.0 }, st = stageF(cam); st.wld(g => drawSet(g, 'street'));
+  const cam = { cx: 960, cy: 540, z: 1.0 }   // at zoom 1 any other cy shows the bare canvas past the painting's edge, st = stageF(cam); st.wld(g => drawSet(g, 'street'));
   const P = [['ex3', 300, 90], ['ex2', 1700, -80], ['nacho', 900, 60], ['ex5', 1300, -70]];
   st.wld(g => { for (const [n, x0, v] of P) walker(g, n, x0, v, t); });
   st.fut(g => { for (const [n, x0, v] of P) walker(g, n, x0, v, t + 3.2); });
