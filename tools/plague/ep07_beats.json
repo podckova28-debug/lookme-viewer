@@ -1,6 +1,7 @@
 {
  "base": "assets/plague/ep07/frames",
  "keep_zoom": [],
+ "static": true,
  "fade_in": 0.8,
  "start": 0.0,
  "lead": 0.45,
@@ -28,27 +29,6 @@
   {
    "vo": "assets/plague/ep07/vo/C01.wav",
    "shots": [
-    {
-     "img": "c01a",
-     "from": [
-      0.48,
-      0.5,
-      1.03
-     ],
-     "to": [
-      0.52,
-      0.5,
-      1.03
-     ],
-     "w": 1,
-     "text": {
-      "text": "BERLIN \u00b7 24 MARCH 1882",
-      "x": 960,
-      "y": 985,
-      "size": 50,
-      "at": 0.3
-     }
-    },
     {
      "img": "c01b",
      "from": [
@@ -89,7 +69,35 @@
       0.5,
       1.0375
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Robert Koch",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "c01a",
+     "from": [
+      0.48,
+      0.5,
+      1.03
+     ],
+     "to": [
+      0.52,
+      0.5,
+      1.03
+     ],
+     "w": 1,
+     "text": {
+      "text": "Berlin \u2014 24 March 1882",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -111,7 +119,7 @@
      "w": 1,
      "text": [
       {
-       "text": "1 IN 7 DEATHS",
+       "text": "One in seven deaths",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -131,13 +139,41 @@
       0.5,
       1.0375
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Nobody claps",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
   {
    "vo": "assets/plague/ep07/vo/C03.wav",
    "shots": [
+    {
+     "img": "c03a",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "They called it the white plague",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
     {
      "img": "d02a",
      "from": [
@@ -153,27 +189,13 @@
      "w": 1,
      "text": [
       {
-       "text": "BAD AIR? BAD BLOOD? WEAKNESS? VAMPIRES?",
+       "text": "Blamed on bad air, even vampires",
        "x": 960,
        "y": 985,
        "size": 50,
        "at": 0.3
       }
      ]
-    },
-    {
-     "img": "c03a",
-     "from": [
-      0.5,
-      0.5,
-      1.0175
-     ],
-     "to": [
-      0.5,
-      0.5,
-      1.0375
-     ],
-     "w": 1
     }
    ]
   },
@@ -284,13 +306,13 @@
      "img": "c06b",
      "from": [
       0.5,
-      0.5,
-      1.0175
+      0.45,
+      1.0350000000000001
      ],
      "to": [
       0.5,
-      0.5,
-      1.0375
+      0.45,
+      1.0550000000000002
      ],
      "w": 1
     }
@@ -314,7 +336,7 @@
      "w": 1,
      "text": [
       {
-       "text": "MOST BACTERIA: 20 MINUTES  \u00b7  TB: ABOUT A DAY",
+       "text": "Most bacteria: 20 minutes. She takes a day",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -342,7 +364,7 @@
      "w": 1,
      "text": [
       {
-       "text": "THROUGH THE AIR",
+       "text": "She travels through the air",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -362,7 +384,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "One cough in a crowded room",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "c07b",
@@ -418,7 +447,7 @@
      "w": 1,
      "text": [
       {
-       "text": "TUBERCLES: SHE SLEEPS FOR YEARS",
+       "text": "Walled up in tubercles, she sleeps for years",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -441,7 +470,7 @@
      "w": 1,
      "text": [
       {
-       "text": "ABOUT 1 IN 4 PEOPLE CARRY HER",
+       "text": "About one in four people carry her",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -461,7 +490,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Most carriers never get sick",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -503,7 +539,7 @@
      "w": 1,
      "text": [
       {
-       "text": "OUT OF AFRICA?",
+       "text": "Out of Africa?",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -523,7 +559,14 @@
       0.5,
       1.03
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Tens of thousands of years ago",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "c10d",
@@ -537,7 +580,14 @@
       0.5,
       1.0375
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Long before cities",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -556,7 +606,14 @@
       0.5,
       1.0375
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "The mummies of ancient Egypt",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "d09a",
@@ -573,7 +630,7 @@
      "w": 1,
      "text": [
       {
-       "text": "TB OF THE SPINE",
+       "text": "Tuberculosis of the spine",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -598,7 +655,14 @@
       0.5,
       1.03
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "The first crowded towns",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -640,14 +704,14 @@
      "w": 1,
      "text": [
       {
-       "text": "WHAT SHE DOES TO YOU",
+       "text": "What She Does to You",
        "x": 960,
        "y": 150,
        "size": 72,
        "at": 0.3
       },
       {
-       "text": "A COUGH FOR WEEKS  \u00b7  TIREDNESS  \u00b7  FEVER",
+       "text": "A cough that won't go away",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -681,7 +745,14 @@
       0.5,
       1.0375
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "A fever every evening",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -703,7 +774,7 @@
      "w": 1,
      "text": [
       {
-       "text": "CONSUMPTION: IT CONSUMED YOU",
+       "text": "Consumption: it consumed you",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -723,7 +794,14 @@
       0.5,
       1.0375
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Night sweats",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -745,7 +823,7 @@
      "w": 1,
      "text": [
       {
-       "text": "HOLES IN THE LUNGS",
+       "text": "She carves holes in the lungs",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -765,7 +843,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Often the first sign",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "c12f",
@@ -801,7 +886,7 @@
      "w": 1,
      "text": [
       {
-       "text": "LUNGS  \u00b7  BONES  \u00b7  NECK  \u00b7  BRAIN",
+       "text": "Not just the lungs",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -821,7 +906,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Scrofula",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -843,7 +935,7 @@
      "w": 1,
      "text": [
       {
-       "text": "WITHOUT TREATMENT: ABOUT HALF DIE",
+       "text": "Untreated, about half die",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -902,7 +994,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Ancient Greece: phthisis, \"the wasting\"",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "c14b",
@@ -916,7 +1015,14 @@
       0.5,
       1.03
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Hippocrates",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "c14c",
@@ -949,7 +1055,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "The King's Evil",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "d15a",
@@ -966,7 +1079,7 @@
      "w": 1,
      "text": [
       {
-       "text": "THE ROYAL TOUCH",
+       "text": "The royal touch",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1007,7 +1120,7 @@
      ],
      "w": 1,
      "text": {
-      "text": "CHARLES II",
+      "text": "King Charles II of England",
       "x": 960,
       "y": 985,
       "size": 50,
@@ -1029,7 +1142,7 @@
      "w": 1,
      "text": [
       {
-       "text": "ABOUT 90,000 TOUCHES",
+       "text": "About 90,000 people touched",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1074,7 +1187,14 @@
       0.5,
       1.03
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "The factory towns of the 1800s",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "d17a",
@@ -1091,7 +1211,7 @@
      "w": 1,
      "text": [
       {
-       "text": "1 IN 4 DEATHS IN PARTS OF EUROPE",
+       "text": "One in four deaths in parts of Europe",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1111,7 +1231,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Damp rooms, no fresh air",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -1130,7 +1257,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Pale was beautiful",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "d18a",
@@ -1147,7 +1281,7 @@
      "w": 1,
      "text": [
       {
-       "text": "THE CONSUMPTIVE LOOK",
+       "text": "The consumptive look",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1174,7 +1308,7 @@
      ],
      "w": 1,
      "text": {
-      "text": "JOHN KEATS \u00b7 1821",
+      "text": "John Keats, dead at 25",
       "x": 960,
       "y": 985,
       "size": 50,
@@ -1195,7 +1329,7 @@
      ],
      "w": 1,
      "text": {
-      "text": "FREDERIC CHOPIN \u00b7 1849",
+      "text": "Fr\u00e9d\u00e9ric Chopin \u2014 1849",
       "x": 960,
       "y": 985,
       "size": 50,
@@ -1214,7 +1348,14 @@
       0.5,
       1.0375
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "La Traviata",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "c18d",
@@ -1269,7 +1410,7 @@
      ],
      "w": 1,
      "text": {
-      "text": "RHODE ISLAND \u00b7 1892",
+      "text": "Rhode Island \u2014 1892",
       "x": 960,
       "y": 985,
       "size": 50,
@@ -1288,7 +1429,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "They dug up Mercy Brown",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "c20c",
@@ -1302,7 +1450,14 @@
       0.5,
       1.03
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "He died anyway",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -1344,7 +1499,7 @@
      "w": 1,
      "text": [
       {
-       "text": "STAIN  \u00b7  SEE  \u00b7  GROW  \u00b7  PROVE",
+       "text": "From a stain to proof",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1397,7 +1552,14 @@
       0.5,
       1.03
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Nobel Prize, 1905",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "d20a",
@@ -1414,7 +1576,7 @@
      "w": 1,
      "text": [
       {
-       "text": "24 MARCH: WORLD TB DAY",
+       "text": "24 March is now World TB Day",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1442,7 +1604,7 @@
      "w": 1,
      "text": [
       {
-       "text": "NOT A CURE  \u00b7  BUT A TEST",
+       "text": "Not a cure, but a test",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1489,7 +1651,7 @@
      ],
      "w": 1,
      "text": {
-      "text": "DAVOS, SWITZERLAND",
+      "text": "Davos, Switzerland",
       "x": 960,
       "y": 985,
       "size": 50,
@@ -1508,7 +1670,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "For months, even years",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "d22a",
@@ -1525,7 +1694,7 @@
      "w": 1,
      "text": [
       {
-       "text": "REST  \u00b7  FOOD  \u00b7  FRESH AIR",
+       "text": "The prescription: fresh air",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1564,7 +1733,14 @@
       0.5,
       1.0375
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Many never came home",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -1603,7 +1779,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Calmette and Gu\u00e9rin, 1921",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "d23a",
@@ -1620,7 +1803,7 @@
      "w": 1,
      "text": [
       {
-       "text": "230 TIMES  \u00b7  13 YEARS  \u00b7  BCG",
+       "text": "Grown 230 times over 13 years",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1659,7 +1842,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Still given to millions of babies",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -1680,7 +1870,7 @@
      ],
      "w": 1,
      "text": {
-      "text": "NEW JERSEY \u00b7 1943",
+      "text": "New Jersey \u2014 1943",
       "x": 960,
       "y": 985,
       "size": 50,
@@ -1699,7 +1889,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Albert Schatz",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "d24a",
@@ -1716,7 +1913,7 @@
      "w": 1,
      "text": [
       {
-       "text": "SOIL  \u00b7  BACTERIA  \u00b7  STREPTOMYCIN",
+       "text": "A cure from the soil",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1758,7 +1955,7 @@
      "w": 1,
      "text": [
       {
-       "text": "SEVERAL DRUGS  \u00b7  MONTHS  \u00b7  CURED",
+       "text": "Several drugs, taken for months",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1778,7 +1975,14 @@
       0.5,
       1.03
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Finally, a cure",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -1800,7 +2004,7 @@
      "w": 1,
      "text": [
       {
-       "text": "CASES FALL",
+       "text": "Cases fall, year after year",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1820,7 +2024,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "X-rays for whole towns",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "c28c",
@@ -1876,7 +2087,7 @@
      "w": 1,
      "text": [
       {
-       "text": "WEAKENED DEFENCES  \u00b7  DRUG RESISTANCE",
+       "text": "She learned to survive the drugs",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1896,7 +2107,14 @@
       0.5,
       1.0375
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Stopping the pills too early",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -1918,7 +2136,7 @@
      "w": 1,
      "text": [
       {
-       "text": "10 MILLION SICK  \u00b7  OVER 1 MILLION DEATHS A YEAR",
+       "text": "Over 10 million fall ill every year",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1938,7 +2156,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Mostly in Asia and Africa",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "c30d",
@@ -1952,7 +2177,14 @@
       0.5,
       1.03
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Over a million die every year",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -1974,7 +2206,7 @@
      "w": 1,
      "text": [
       {
-       "text": "6 MONTHS OF PILLS  \u00b7  CURED",
+       "text": "Six months of cheap pills",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1994,7 +2226,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "The hard part: reaching people",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -2016,14 +2255,14 @@
      "w": 1,
      "text": [
       {
-       "text": "WHAT SHE LEAVES BEHIND",
+       "text": "What She Leaves Behind",
        "x": 960,
        "y": 150,
        "size": 72,
        "at": 0.3
       },
       {
-       "text": "SCARRED LUNGS  \u00b7  SHE CAN WAKE AGAIN",
+       "text": "She can wake again",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -2043,7 +2282,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Short of breath for life",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -2062,7 +2308,14 @@
       0.5,
       1.03
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "White walls, big windows, sunlight",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "d31a",
@@ -2079,7 +2332,7 @@
      "w": 1,
      "text": [
       {
-       "text": "ARCHITECTURE  \u00b7  CONTACT TRACING  \u00b7  SCREENING",
+       "text": "She left more than graves",
        "x": 960,
        "y": 985,
        "size": 50,

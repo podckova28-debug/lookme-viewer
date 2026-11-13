@@ -1,4 +1,4 @@
-C01|NARRATOR|Berlin. The twenty-fourth of March, 1882. In a small library packed with Germany's top scientists, a quiet country doctor named Robert Koch stands up to speak.
+C01|NARRATOR|A quiet country doctor stands up to speak, and Germany's top scientists, packed into a small library, stare back at him. Robert Koch. Berlin, the twenty-fourth of March, 1882.
 C02|NARRATOR|He has found the killer that, in his time, was causing one in seven deaths across Europe and America. When he sits down, nobody claps. The room is completely silent.
 C03|NARRATOR|The killer had been called consumption, phthisis, the white plague. People had blamed bad air, bad blood, a weak character. Even vampires.
 C04|TB|Vampires. How flattering. They never guessed it was me.
