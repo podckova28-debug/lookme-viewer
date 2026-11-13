@@ -1,6 +1,6 @@
-C01|NARRATOR|September, 1740. Six British warships leave Portsmouth under Commodore George Anson, with nearly two thousand men aboard. Their mission: sail around South America and raid Spanish treasure ships.
-C02|NARRATOR|Rounding Cape Horn, the men begin to fall ill. Their gums swell. Old wounds open up again. Men who were injured decades ago feel their long-healed bones come apart.
-C03|NARRATOR|Almost four years later, Anson comes home with a fortune in Spanish silver. But well over a thousand of his men are dead. Only four were killed by the enemy.
+C01|NARRATOR|Your gums are swollen and bleeding. A wound that healed long ago has split open, and a bone you broke decades back is coming apart. It's 1741, off Cape Horn, and men all around you are falling ill.
+C02|NARRATOR|You left Portsmouth in September 1740: nearly two thousand men on six British warships under Commodore George Anson. The mission: sail around South America and raid Spanish treasure ships.
+C03|NARRATOR|Almost four years later, Anson sails home with a fortune in Spanish silver. But well over a thousand of his men are dead. Only four were killed by the enemy.
 C04|SCURVY|The Spanish took four. I took the rest.
 L01|NARRATOR|So who is he? Scurvy isn't a germ. You can't catch him from anyone. He's what happens when your body runs out of one thing: vitamin C.
 L02|NARRATOR|Your body uses vitamin C to make collagen, the glue that holds you together. It's in your skin, your gums, your blood vessels and your bones. And it's constantly being worn out and rebuilt.

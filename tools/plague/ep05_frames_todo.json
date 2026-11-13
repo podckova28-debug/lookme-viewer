@@ -1,27 +1,5 @@
 [
  {
-  "img": "c01a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. An 18th-century English harbour at dawn: six tall wooden warships with furled sails at anchor, rowing boats ferrying barrels, gulls, a grey sky; the ships fly plain red ensigns (red flags with a small dark canton in the top corner), no Union Jacks. People only as tiny distant figures. Any people are tiny distant stickman silhouettes only.",
-  "refs": []
- },
- {
-  "img": "d01a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Draw ONLY the diagram described below, filling the whole frame: no extra rows, no extra panels, no comic strips above or below it. A hand-drawn explainer diagram in ink and muted watercolour on aged paper, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs, each with exactly two arms) where people appear, numbered stages as small circled digits with drawn arrows. No words, no letters, only circled digits. Not gory. A sea chart of the Atlantic and South America with a dotted route from England down to the tip of South America, around Cape Horn and up the Pacific coast; six tiny ship icons on the route; a small treasure chest icon in the Pacific. No people and no human figures anywhere in the picture.",
-  "refs": []
- },
- {
-  "img": "c01b",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple 18th-century sailor clothes; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes (striped shirts, short jackets, kerchiefs, knitted caps; officers in tricorn hats). KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. On the deck of an 18th-century warship: a stickman officer in a tricorn hat and blue coat stands at the rail with a telescope, a young stickman sailor coiling rope apart from him.",
-  "refs": [
-   "84427fc9-09ce-40e6-b032-6f2700874458"
-  ]
- },
- {
-  "img": "c02a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. An 18th-century warship battling huge grey waves and sleet near Cape Horn, sails torn, dark storm clouds, rocky coast far away. People only as tiny distant figures. Any people are tiny distant stickman silhouettes only.",
-  "refs": []
- },
- {
   "img": "c02b",
   "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple 18th-century sailor clothes; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes (striped shirts, short jackets, kerchiefs, knitted caps; officers in tricorn hats). KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. Below deck of an 18th-century warship by lantern light: two pale stickman sailors lie in separate canvas hammocks far apart, looking weak and miserable, a bucket on the floor.",
   "refs": [
@@ -36,9 +14,37 @@
   ]
  },
  {
-  "img": "c03a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. A single battered wooden warship with patched sails arriving in a calm English harbour in summer, chests of silver being lowered onto the quay. People only as tiny distant figures. Any people are tiny distant stickman silhouettes only.",
+  "img": "c02a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple 18th-century sailor clothes; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes (striped shirts, short jackets, kerchiefs, knitted caps; officers in tricorn hats). KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. On the open deck of an 18th-century warship rounding Cape Horn in a storm, huge grey waves and sleet, torn sails above, dark storm clouds: two stickman sailors in knitted caps and short jackets stand apart; one hauls on a rope with both hands, the other leans weakly against the mast with one hand pressed to his mouth. At most three figures; each hand is empty unless one object is named for it; no flags anywhere; no readable text.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
+ },
+ {
+  "img": "c01a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple 18th-century sailor clothes; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes (striped shirts, short jackets, kerchiefs, knitted caps; officers in tricorn hats). KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. An 18th-century English harbour at dawn, tall wooden warships with furled sails at anchor behind, gulls, a grey sky: on the stone quay, a stickman sailor in a striped shirt and knitted cap rolls a barrel toward a rowing boat, while a second stickman sailor in a short jacket walks apart from him with a canvas sea bag over his shoulder. At most three figures; each hand is empty unless one object is named for it; no flags anywhere; no readable text.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
+ },
+ {
+  "img": "c01b",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple 18th-century sailor clothes; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes (striped shirts, short jackets, kerchiefs, knitted caps; officers in tricorn hats). KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. On the deck of an 18th-century warship: a stickman officer in a tricorn hat and blue coat stands at the rail with a telescope, a young stickman sailor coiling rope apart from him.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
+ },
+ {
+  "img": "d01a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Draw ONLY the diagram described below, filling the whole frame: no extra rows, no extra panels, no comic strips above or below it. A hand-drawn explainer diagram in ink and muted watercolour on aged paper, clean and readable like an old textbook plate, simple stickman figures (plain white round head, dot eyes, stick limbs, each with exactly two arms) where people appear, numbered stages as small circled digits with drawn arrows. No words, no letters, only circled digits. Not gory. A sea chart of the Atlantic and South America with a dotted route from England down to the tip of South America, around Cape Horn and up the Pacific coast; six tiny ship icons on the route; a small treasure chest icon in the Pacific. No people and no human figures anywhere in the picture.",
   "refs": []
+ },
+ {
+  "img": "c03a",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple 18th-century sailor clothes; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes (striped shirts, short jackets, kerchiefs, knitted caps; officers in tricorn hats). KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. A calm English quay in summer, a single battered wooden warship with patched sails moored behind: a stickman officer in a tricorn hat and blue coat stands beside an open chest of silver coins on the quay, looking down at it without joy; a thin stickman sailor in a ragged shirt stands apart from him, leaning on a wooden crutch. At most three figures; each hand is empty unless one object is named for it; no flags anywhere; no readable text.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
  },
  {
   "img": "d02a",
@@ -66,8 +72,10 @@
  },
  {
   "img": "c06a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Still life on a ship's wooden table by lantern light: a hard ship's biscuit, a lump of salt beef, a tin mug of beer; in the shadow at the edge a single bright orange. No people. No people and no human figures anywhere in the picture.",
-  "refs": []
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple 18th-century sailor clothes; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes (striped shirts, short jackets, kerchiefs, knitted caps; officers in tricorn hats). KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. Below deck by lantern light at a ship's wooden mess table: a single stickman sailor in a striped shirt tries to bite a hard ship's biscuit he holds in one hand, a lump of salt beef and a tin mug of beer on the table in front of him; at the far edge of the table, out of his sight in the shadow, a single bright orange. At most three figures; each hand is empty unless one object is named for it; no flags anywhere; no readable text.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
  },
  {
   "img": "c06b",
@@ -109,13 +117,17 @@
  },
  {
   "img": "c08a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. A ship's dog and a cat lying side by side on a coil of rope on a sunny deck, healthy and lazy, sea behind. No people. No people and no human figures anywhere in the picture.",
-  "refs": []
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple 18th-century sailor clothes; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes (striped shirts, short jackets, kerchiefs, knitted caps; officers in tricorn hats). KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. On a sunny ship's deck, sea behind: a single stickman sailor in a striped shirt sits on a coil of rope and scratches the head of a healthy ship's dog with one hand, his other hand resting on his knee; a fat ship's cat sleeps on a barrel nearby. At most three figures; each hand is empty unless one object is named for it; no flags anywhere; no readable text.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
  },
  {
   "img": "c08b",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. An ancient tropical forest canopy at sunrise, full of fruit trees heavy with figs and berries, mist in the valleys. No people. A small primate sits on a branch eating fruit. No people and no human figures anywhere in the picture.",
-  "refs": []
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Scurvy exactly as on the attached sheet: a gaunt, sinister 18th-century sea captain in a tattered navy-blue sea coat with tarnished gold buttons and frayed gold epaulettes, a battered tricorn hat, long stringy grey hair, pale yellowish skin with bruise-like purple patches, sunken eyes and a wide grin with swollen purple gums and gaps of missing teeth; he holds AT MOST ONE object (only the one described below), his other hand empty and clearly attached to its own arm. Exactly ONE of him, with exactly two arms and two hands with normal-length fingers. An ancient tropical forest at sunrise, sixty million years ago, full of fruit trees heavy with figs and berries, mist in the valleys: Scurvy stands half-hidden behind a giant fern, holding up his ship's lantern in one hand, grinning as he watches a small furry primate eating fruit on a branch. No ships, no buildings. No other people.",
+  "refs": [
+   "75832aec-491a-45f6-9047-f3877d22af70"
+  ]
  },
  {
   "img": "d07a",
@@ -131,12 +143,12 @@
  },
  {
   "img": "c08c",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. A guinea pig in a straw-lined wooden box nibbling a carrot, soft warm light. No people. No people and no human figures anywhere in the picture.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, the same muted sea-blue, slate-grey and sepia palette as the rest of the series, soft natural daylight. The setting is modern (2000s-2020s): no lanterns, no oil lamps, no candles, nothing historical. Not gory.Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and stick legs, small black mitten hands, dressed exactly as described for this scene and era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. Only the few figures described (at most three), standing apart, never overlapping; each has exactly two arms and two hands attached to its sleeves; hands are empty unless an object is described; nothing floating; no flags; no readable text. A cosy modern living room: a single stickman girl in a T-shirt and jeans kneels beside a straw-lined wooden hutch and holds out a carrot to a guinea pig, which nibbles it.",
   "refs": []
  },
  {
   "img": "c08d",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. A fruit bat hanging from a tropical tree branch at dusk, eating a fig, a big orange moon behind. No people. No people and no human figures anywhere in the picture.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and stick legs, small black mitten hands, dressed exactly as described for this scene and era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. Only the few figures described (at most three), standing apart, never overlapping; each has exactly two arms and two hands attached to its sleeves; hands are empty unless an object is described; nothing floating; no flags; no readable text. A tropical village garden at dusk, a big orange moon behind: a single stickman boy in a plain modern T-shirt and shorts stands under a fig tree pointing up with one hand at a fruit bat hanging from a branch and eating a fig, his other hand at his side.",
   "refs": []
  },
  {
@@ -224,8 +236,10 @@
  },
  {
   "img": "c10d",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. An empty canvas hammock gently swaying below deck of an 18th-century ship, a lantern swinging, a folded jacket and a knitted cap left on a sea chest. Somber. No people. No people and no human figures anywhere in the picture.",
-  "refs": []
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple 18th-century sailor clothes; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes (striped shirts, short jackets, kerchiefs, knitted caps; officers in tricorn hats). KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. Below deck of an 18th-century ship by the light of a swinging lantern: a single stickman sailor in a knitted cap stands with his head bowed beside an empty canvas hammock, holding a folded jacket in both hands; a sea chest beside him. Somber. At most three figures; each hand is empty unless one object is named for it; no flags anywhere; no readable text.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
  },
  {
   "img": "c11a",
@@ -241,18 +255,20 @@
  },
  {
   "img": "c12a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. A medieval crusader army camp in the desert at sunset with tents and banners, horses tethered. People only as tiny distant figures. Any people are tiny distant stickman silhouettes only.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and stick legs, small black mitten hands, dressed exactly as described for this scene and era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. Only the few figures described (at most three), standing apart, never overlapping; each has exactly two arms and two hands attached to its sleeves; hands are empty unless an object is described; nothing floating; no flags; no readable text. A medieval crusader army camp in the desert at sunset, tents and tethered horses behind, no banners: a single stickman crusader in a chainmail tunic and a plain white surcoat with a red cross sits on a rock outside his tent, holding his swollen leg with both hands, wincing; his round helmet lies on the sand beside him.",
   "refs": []
  },
  {
   "img": "c12b",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. A medieval village vegetable garden in summer with cabbages, onions and an apple tree, a wooden fence and a cottage. No people. No people and no human figures anywhere in the picture.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and stick legs, small black mitten hands, dressed exactly as described for this scene and era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. Only the few figures described (at most three), standing apart, never overlapping; each has exactly two arms and two hands attached to its sleeves; hands are empty unless an object is described; nothing floating; no flags; no readable text. A medieval village vegetable garden in summer with cabbages, onions and an apple tree, a wooden fence and a thatched cottage: a stickman peasant woman in a long brown dress and a white headscarf pulls up a cabbage with both hands, while a stickman peasant boy in a short belted tunic stands apart under the tree, picking an apple.",
   "refs": []
  },
  {
   "img": "c12c",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. An endless empty grey ocean with a single small sailing ship on the horizon under a huge sky. No people. No people and no human figures anywhere in the picture.",
-  "refs": []
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Scurvy exactly as on the attached sheet: a gaunt, sinister 18th-century sea captain in a tattered navy-blue sea coat with tarnished gold buttons and frayed gold epaulettes, a battered tricorn hat, long stringy grey hair, pale yellowish skin with bruise-like purple patches, sunken eyes and a wide grin with swollen purple gums and gaps of missing teeth; he holds AT MOST ONE object (only the one described below), his other hand empty and clearly attached to its own arm. Exactly ONE of him, with exactly two arms and two hands with normal-length fingers. Scurvy stands alone at the bow of a small wooden sailing ship on an endless empty grey ocean under a huge sky, both arms spread wide with nothing in his hands, like a king surveying his kingdom, grinning. No other people.",
+  "refs": [
+   "75832aec-491a-45f6-9047-f3877d22af70"
+  ]
  },
  {
   "img": "d15a",
@@ -273,8 +289,10 @@
  },
  {
   "img": "c13b",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. A plank at the rail of an 18th-century ship with a canvas-wrapped bundle on it, no flag, a single sprig of rosemary on it, grey sea and grey sky, somber. No people. No people and no human figures anywhere in the picture.",
-  "refs": []
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple 18th-century sailor clothes; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes (striped shirts, short jackets, kerchiefs, knitted caps; officers in tricorn hats). KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. At the rail of an 18th-century ship under a grey sky, grey sea: a canvas-wrapped bundle lies on a plank with a single sprig of rosemary on it; two stickman sailors in knitted caps stand apart beside it with heads bowed, one holding his cap in his hand. Somber. At most three figures; each hand is empty unless one object is named for it; no flags anywhere; no readable text.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
  },
  {
   "img": "c14a",
@@ -297,7 +315,7 @@
  },
  {
   "img": "c15a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. A tropical East African harbour in 1498 with Portuguese caravels at anchor, palm trees, a small dhow with baskets of oranges approaching. People only as tiny distant figures. Any people are tiny distant stickman silhouettes only.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and stick legs, small black mitten hands, dressed exactly as described for this scene and era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. Only the few figures described (at most three), standing apart, never overlapping; each has exactly two arms and two hands attached to its sleeves; hands are empty unless an object is described; nothing floating; no flags; no readable text. A tropical East African beach in 1498, palm trees, Portuguese caravels at anchor in the harbour behind: two stickman Portuguese sailors in loose linen shirts, baggy knee-length breeches and red woollen caps (no coats) stand apart on the sand; one bites happily into a peeled orange he holds in one hand, the other, still weak, leans with both hands on a wooden oar stuck upright in the sand.",
   "refs": []
  },
  {
@@ -309,7 +327,7 @@
  },
  {
   "img": "c16a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Two small 16th-century French ships frozen into a white river in winter, snow-covered forest and hills around, smoke from a small hut on shore. People only as tiny distant figures. Any people are tiny distant stickman silhouettes only.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and stick legs, small black mitten hands, dressed exactly as described for this scene and era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. Only the few figures described (at most three), standing apart, never overlapping; each has exactly two arms and two hands attached to its sleeves; hands are empty unless an object is described; nothing floating; no flags; no readable text. Two small 16th-century French ships frozen into a white river in winter, snow-covered forest and hills around: on the ice in front of the ships, a stickman French sailor in a dark 1530s doublet, woollen hose, a short cloak and a soft flat cap (NOT a tricorn) trudges through the snow dragging a bundle of firewood by a rope, while a second stickman sailor in the same clothes sits slumped on a wooden crate apart from him, too weak to stand.",
   "refs": []
  },
  {
@@ -340,12 +358,12 @@
  },
  {
   "img": "c16d",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Spring thaw on a wide Canadian river: two small 16th-century French ships with sails being raised as the ice breaks up, green forest on the shore. People only as tiny distant figures. Any people are tiny distant stickman silhouettes only.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and stick legs, small black mitten hands, dressed exactly as described for this scene and era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. Only the few figures described (at most three), standing apart, never overlapping; each has exactly two arms and two hands attached to its sleeves; hands are empty unless an object is described; nothing floating; no flags; no readable text. Spring thaw on a wide Canadian river in 1536, the ice breaking up, green forest on the shore: on the deck of a small 16th-century French ship, a recovered stickman French sailor in a dark doublet, woollen hose and a soft flat cap hauls on a rope with both hands to raise a sail, while a second sailor in the same clothes stands apart at the rail, waving one hand toward the shore.",
   "refs": []
  },
  {
   "img": "c17b",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Four tall English merchant galleons of 1601 sailing in a line across a blue ocean, white sails; the only flags are plain white flags with a red St George's cross; no other flags, no letters or monograms. Gulls. People only as tiny distant figures. Any people are tiny distant stickman silhouettes only.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and stick legs, small black mitten hands, dressed exactly as described for this scene and era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. Only the few figures described (at most three), standing apart, never overlapping; each has exactly two arms and two hands attached to its sleeves; hands are empty unless an object is described; nothing floating; no flags; no readable text. On the deck of an English merchant galleon in 1601, three more galleons with white sails sailing in a line behind on a blue ocean, gulls: a single stickman English captain in a dark 1600s doublet, a white ruff collar, puffed breeches and a tall black hat stands at the rail looking toward the other ships through a long brass telescope held in both hands.",
   "refs": []
  },
  {
@@ -371,8 +389,10 @@
  },
  {
   "img": "c19a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. An 18th-century Royal Navy warship at sea in calm weather, flying a large plain red ensign at the stern (a red flag with a small canton in the top corner), NOT a Union Jack. People only as tiny distant figures. Any people are tiny distant stickman silhouettes only.",
-  "refs": []
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple 18th-century sailor clothes; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes (striped shirts, short jackets, kerchiefs, knitted caps; officers in tricorn hats). KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. On the open deck of an 18th-century Royal Navy warship at sea in calm weather, sails set: a stickman naval surgeon in a dark coat and white wig walks along the deck carrying a small leather medical bag, passing a weak stickman sailor in a striped shirt who sits apart from him against the mast. At most three figures; each hand is empty unless one object is named for it; no flags anywhere; no readable text.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
  },
  {
   "img": "c19b",
@@ -383,8 +403,10 @@
  },
  {
   "img": "c19h",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. A ship's sick bay below deck with twelve empty canvas hammocks hanging in two neat rows, a lantern, a small table with medicine bottles. No people. No people and no human figures anywhere in the picture.",
-  "refs": []
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple 18th-century sailor clothes; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes (striped shirts, short jackets, kerchiefs, knitted caps; officers in tricorn hats). KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. A ship's sick bay below deck by lantern light, canvas hammocks hanging in a neat row: two pale sick stickman sailors lie in separate hammocks with empty hammocks between them, while a stickman naval surgeon in a dark coat and white wig stands apart, counting them with one raised finger, his other hand at his side. At most three figures; each hand is empty unless one object is named for it; no flags anywhere; no readable text.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
  },
  {
   "img": "d20a",
@@ -419,7 +441,7 @@
  },
  {
   "img": "c19d",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. An 18th-century Admiralty office desk piled with stacks of papers and dusty files tied with ribbon, a quill and a candle, a clock on the wall. No people. No people and no human figures anywhere in the picture.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and stick legs, small black mitten hands, dressed exactly as described for this scene and era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. Only the few figures described (at most three), standing apart, never overlapping; each has exactly two arms and two hands attached to its sleeves; hands are empty unless an object is described; nothing floating; no flags; no readable text. An 18th-century Admiralty office lit by a candle, a clock on the wall: a single stickman clerk in a grey powdered wig, a brown frock coat and a waistcoat sits asleep at a desk piled high with stacks of papers and dusty files tied with ribbon, his head propped on one hand, his other hand resting on the papers.",
   "refs": []
  },
  {
@@ -431,8 +453,10 @@
  },
  {
   "img": "c21a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. HMS Endeavour, a small three-masted ship, anchored in a turquoise Pacific bay with palm trees and green mountains. People only as tiny distant figures. Any people are tiny distant stickman silhouettes only.",
-  "refs": []
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple 18th-century sailor clothes; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes (striped shirts, short jackets, kerchiefs, knitted caps; officers in tricorn hats). KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. HMS Endeavour, a small three-masted ship, anchored in a turquoise Pacific bay with palm trees and green mountains behind: on the beach, a stickman captain in a tricorn hat and blue naval coat points toward the trees, while a stickman sailor in a striped shirt stands apart from him carrying a big bunch of green bananas over his shoulder. At most three figures; each hand is empty unless one object is named for it; no flags anywhere; no readable text.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
  },
  {
   "img": "d23a",
@@ -484,12 +508,14 @@
  },
  {
   "img": "c22b",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. A line of Royal Navy warships under full sail on a grey sea in 1805, cannon smoke drifting far away. People only as tiny distant figures. Any people are tiny distant stickman silhouettes only.",
-  "refs": []
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, simple 18th-century sailor clothes; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes (striped shirts, short jackets, kerchiefs, knitted caps; officers in tricorn hats). KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. On the deck of a Royal Navy warship on blockade duty in 1805, a grey sea with other warships far away: a healthy stickman sailor in a striped shirt and knitted cap stands by a cannon holding a long wooden rammer, while a stickman officer in a bicorne hat and blue coat stands apart from him at the rail, looking out to sea with both hands on the rail. At most three figures; each hand is empty unless one object is named for it; no flags anywhere; no readable text.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
  },
  {
   "img": "c23b",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. A Caribbean lime plantation by the sea in the 1850s: rows of small lime trees, a stone warehouse, barrels on a jetty, a sailing ship at anchor. People only as tiny distant figures. Any people are tiny distant stickman silhouettes only.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and stick legs, small black mitten hands, dressed exactly as described for this scene and era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. Only the few figures described (at most three), standing apart, never overlapping; each has exactly two arms and two hands attached to its sleeves; hands are empty unless an object is described; nothing floating; no flags; no readable text. A Caribbean lime plantation by the sea in the 1850s, rows of small lime trees, a stone warehouse, barrels on a jetty, a sailing ship at anchor: a single stickman plantation worker in a loose white shirt, a straw hat and rolled-up trousers carries a big woven basket of green limes on his shoulder toward the barrels.",
   "refs": []
  },
  {
@@ -513,7 +539,7 @@
  },
  {
   "img": "c24a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Two 19th-century wooden expedition ships frozen into Arctic sea ice under a pale sky, snow drifts, a small sledge on the ice. People only as tiny distant figures. Any people are tiny distant stickman silhouettes only.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and stick legs, small black mitten hands, dressed exactly as described for this scene and era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. Only the few figures described (at most three), standing apart, never overlapping; each has exactly two arms and two hands attached to its sleeves; hands are empty unless an object is described; nothing floating; no flags; no readable text. Two 19th-century wooden expedition ships frozen into Arctic sea ice under a pale sky, snow drifts: on the ice in front of them, a stickman British sailor in an 1870s thick wool coat, a knitted balaclava and mittens pulls a small wooden sledge by a rope, while a second sailor in the same clothes sits apart on a snow drift, holding his swollen knee with both hands.",
   "refs": []
  },
  {
@@ -525,7 +551,7 @@
  },
  {
   "img": "c24c",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. A wooden sledge in deep Arctic snow loaded with a small barrel and tins, a canvas tent behind, a pale low sun. No people. No people and no human figures anywhere in the picture.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and stick legs, small black mitten hands, dressed exactly as described for this scene and era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. Only the few figures described (at most three), standing apart, never overlapping; each has exactly two arms and two hands attached to its sleeves; hands are empty unless an object is described; nothing floating; no flags; no readable text. Inside a canvas tent on the Arctic ice in 1875, lit by a small oil stove: a sick stickman British sailor in a thick wool coat and knitted balaclava lies under a blanket on a sleeping bag, while a second sailor in the same clothes kneels apart from him, offering him a tin cup.",
   "refs": []
  },
  {
@@ -535,12 +561,12 @@
  },
  {
   "img": "c25a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. A wooden expedition hut and a three-masted ship in Antarctic ice under a low sun, seals lying on the ice nearby. People only as tiny distant figures. Any people are tiny distant stickman silhouettes only.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and stick legs, small black mitten hands, dressed exactly as described for this scene and era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. Only the few figures described (at most three), standing apart, never overlapping; each has exactly two arms and two hands attached to its sleeves; hands are empty unless an object is described; nothing floating; no flags; no readable text. A wooden expedition hut and a three-masted ship in Antarctic ice under a low sun, seals lying on the ice far behind: a stickman polar explorer in a 1900s woollen balaclava, a heavy canvas windproof jacket and fur mittens walks toward the hut carrying a slab of seal meat over his shoulder.",
   "refs": []
  },
  {
   "img": "c25d",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. A small sledge party crossing a vast white Antarctic ice plain under a grey sky, dogs pulling. People only as tiny distant figures. Any people are tiny distant stickman silhouettes only.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and stick legs, small black mitten hands, dressed exactly as described for this scene and era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. Only the few figures described (at most three), standing apart, never overlapping; each has exactly two arms and two hands attached to its sleeves; hands are empty unless an object is described; nothing floating; no flags; no readable text. A vast white Antarctic ice plain under a grey sky in 1902: two stickman explorers in 1900s canvas windproofs, woollen balaclavas and snow goggles walk apart beside a heavy wooden sledge pulled by a team of dogs, one of them limping and leaning on a ski pole.",
   "refs": []
  },
  {
@@ -557,7 +583,7 @@
  },
  {
   "img": "c25b",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. A gold-rush camp of the 1850s in the mountains: canvas tents, sluice boxes, piles of tins and sacks of flour, no vegetables anywhere. People only as tiny distant figures. Any people are tiny distant stickman silhouettes only.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and stick legs, small black mitten hands, dressed exactly as described for this scene and era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. Only the few figures described (at most three), standing apart, never overlapping; each has exactly two arms and two hands attached to its sleeves; hands are empty unless an object is described; nothing floating; no flags; no readable text. A gold-rush camp of the 1850s in the mountains, canvas tents, sluice boxes, piles of tins and sacks of flour, no vegetables anywhere: a single thin stickman gold miner in a red flannel shirt, braces, a battered felt hat and boots sits on a flour sack outside his tent, holding his aching knee with both hands; a pickaxe leans against the tent beside him.",
   "refs": []
  },
  {
@@ -569,7 +595,7 @@
  },
  {
   "img": "c27e",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. The harbour of Kristiania (Oslo) in winter 1907: snow on the roofs, steamships and sailing boats at the quay, a fortress on a hill. People only as tiny distant figures. Any people are tiny distant stickman silhouettes only.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and stick legs, small black mitten hands, dressed exactly as described for this scene and era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. Only the few figures described (at most three), standing apart, never overlapping; each has exactly two arms and two hands attached to its sleeves; hands are empty unless an object is described; nothing floating; no flags; no readable text. The harbour of Kristiania (Oslo) in winter 1907, snow on the roofs, steamships and sailing boats at the quay, a fortress on a hill: a single stickman doctor in a long dark 1900s overcoat, a bowler hat and a scarf walks along the snowy quay carrying a small wooden cage with a guinea pig in it.",
   "refs": []
  },
  {
@@ -581,7 +607,7 @@
  },
  {
   "img": "c27b",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Close view of a wooden cage with two small guinea pigs eating grain from a dish, a label card on the cage with no readable words, lab glassware behind. No people. No people and no human figures anywhere in the picture.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and stick legs, small black mitten hands, dressed exactly as described for this scene and era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. Only the few figures described (at most three), standing apart, never overlapping; each has exactly two arms and two hands attached to its sleeves; hands are empty unless an object is described; nothing floating; no flags; no readable text. A 1900s laboratory bench, lab glassware behind: a single stickman doctor in a white coat and spectacles pours grain from a small metal scoop into a dish inside an open wooden cage, where two small guinea pigs eat; a blank label card on the cage.",
   "refs": []
  },
  {
@@ -615,7 +641,7 @@
  },
  {
   "img": "c28b",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. A sunny field of red paprika peppers in Hungary with strings of drying red peppers hanging on a farmhouse wall. No people. No people and no human figures anywhere in the picture.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and stick legs, small black mitten hands, dressed exactly as described for this scene and era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. Only the few figures described (at most three), standing apart, never overlapping; each has exactly two arms and two hands attached to its sleeves; hands are empty unless an object is described; nothing floating; no flags; no readable text. A sunny field of red paprika peppers near Szeged, Hungary, in the 1930s, strings of drying red peppers hanging on a whitewashed farmhouse wall: a single stickman Hungarian farm woman in a long full skirt, an apron and a headscarf picks red peppers into a wicker basket hanging on her arm.",
   "refs": []
  },
  {
@@ -632,7 +658,7 @@
  },
  {
   "img": "c28e",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. A grand 1930s concert hall stage in Stockholm prepared for the Nobel ceremony: a single lectern, flowers, Swedish flags, rows of empty chairs. No people. No people and no human figures anywhere in the picture.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and stick legs, small black mitten hands, dressed exactly as described for this scene and era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. Only the few figures described (at most three), standing apart, never overlapping; each has exactly two arms and two hands attached to its sleeves; hands are empty unless an object is described; nothing floating; no flags; no readable text. A grand 1930s concert hall stage in Stockholm at the Nobel ceremony, flowers and rows of chairs, no flags: a single stickman scientist in a black tailcoat and a white bow tie stands by a lectern holding up a small gold medal in one hand, smiling, his other hand at his side.",
   "refs": []
  },
  {
@@ -677,7 +703,7 @@
  },
  {
   "img": "c30f",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. A modern pharmacy shelf lined with bottles of vitamin C tablets and orange fizzy tablets, bright light. No readable words. No people. No people and no human figures anywhere in the picture.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, the same muted sea-blue, slate-grey and sepia palette as the rest of the series, soft natural daylight. The setting is modern (2000s-2020s): no lanterns, no oil lamps, no candles, nothing historical. Not gory.Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and stick legs, small black mitten hands, dressed exactly as described for this scene and era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. Only the few figures described (at most three), standing apart, never overlapping; each has exactly two arms and two hands attached to its sleeves; hands are empty unless an object is described; nothing floating; no flags; no readable text. A bright modern pharmacy, shelves of vitamin bottles behind with no readable words: a stickman pharmacist in a white coat hands a small bottle of vitamin C tablets across the counter to a stickman customer in a modern rain jacket; they stand apart on either side of the counter.",
   "refs": []
  },
  {
@@ -696,7 +722,7 @@
  },
  {
   "img": "c31a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. A modern hospital clinic room with a desk, a computer and a bowl of oranges on the windowsill, bright and clean. No people. No people and no human figures anywhere in the picture.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, the same muted sea-blue, slate-grey and sepia palette as the rest of the series, soft natural daylight. The setting is modern (2000s-2020s): no lanterns, no oil lamps, no candles, nothing historical. Not gory.Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and stick legs, small black mitten hands, dressed exactly as described for this scene and era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. Only the few figures described (at most three), standing apart, never overlapping; each has exactly two arms and two hands attached to its sleeves; hands are empty unless an object is described; nothing floating; no flags; no readable text. A small, untidy modern flat with a TV: a single stickman young man in a grey hoodie and jeans sits on a sofa eating instant noodles from a paper cup, empty fast-food boxes and cans on the coffee table, no fruit or vegetables anywhere.",
   "refs": []
  },
  {
@@ -713,7 +739,7 @@
  },
  {
   "img": "c31b",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. A wooden kitchen table in morning sunlight with a bowl of oranges, lemons and a halved orange on a plate. No people. No people and no human figures anywhere in the picture.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, the same muted sea-blue, slate-grey and sepia palette as the rest of the series, soft natural daylight. The setting is modern (2000s-2020s): no lanterns, no oil lamps, no candles, nothing historical. Not gory.Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and stick legs, small black mitten hands, dressed exactly as described for this scene and era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. Only the few figures described (at most three), standing apart, never overlapping; each has exactly two arms and two hands attached to its sleeves; hands are empty unless an object is described; nothing floating; no flags; no readable text. A bright modern kitchen in morning sunlight: a single stickman woman in a sweater and jeans stands at the table peeling an orange with both hands, a bowl of oranges and lemons on the table beside her.",
   "refs": []
  },
  {
@@ -725,7 +751,7 @@
  },
  {
   "img": "c33b",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. A dark 19th-century French village lane at night under a full moon, cobblestones and shuttered houses, a stray dog's glowing eyes in the shadow of a doorway. No people. No people and no human figures anywhere in the picture.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted sea-blue, slate-grey and sepia palette with warm lantern amber light and small bright citrus-yellow accents. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and stick legs, small black mitten hands, dressed exactly as described for this scene and era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. Only the few figures described (at most three), standing apart, never overlapping; each has exactly two arms and two hands attached to its sleeves; hands are empty unless an object is described; nothing floating; no flags; no readable text. A dark 19th-century French village lane at night under a full moon, cobblestones and shuttered houses: a small stickman boy in an 1880s cap, a short jacket and knee breeches walks home alone with a loaf of bread under one arm, not noticing a stray dog's glowing eyes in the shadow of a doorway behind him.",
   "refs": []
  },
  {

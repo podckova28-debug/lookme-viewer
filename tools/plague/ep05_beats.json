@@ -1,6 +1,7 @@
 {
  "base": "assets/plague/ep05/frames",
  "keep_zoom": [],
+ "static": true,
  "fade_in": 0.8,
  "start": 0.0,
  "lead": 0.45,
@@ -29,83 +30,6 @@
    "vo": "assets/plague/ep05/vo/C01.wav",
    "shots": [
     {
-     "img": "c01a",
-     "from": [
-      0.48,
-      0.5,
-      1.03
-     ],
-     "to": [
-      0.52,
-      0.5,
-      1.03
-     ],
-     "w": 1,
-     "text": {
-      "text": "PORTSMOUTH \u00b7 SEPTEMBER 1740",
-      "x": 960,
-      "y": 985,
-      "size": 50,
-      "at": 0.3
-     }
-    },
-    {
-     "img": "d01a",
-     "from": [
-      0.5,
-      0.5,
-      1.0
-     ],
-     "to": [
-      0.5,
-      0.5,
-      1.02
-     ],
-     "w": 1,
-     "text": [
-      {
-       "text": "6 SHIPS  \u00b7  NEARLY 2,000 MEN",
-       "x": 960,
-       "y": 985,
-       "size": 50,
-       "at": 0.3
-      }
-     ]
-    },
-    {
-     "img": "c01b",
-     "from": [
-      0.5,
-      0.5,
-      1.0
-     ],
-     "to": [
-      0.5,
-      0.5,
-      1.04
-     ],
-     "w": 1
-    }
-   ]
-  },
-  {
-   "vo": "assets/plague/ep05/vo/C02.wav",
-   "shots": [
-    {
-     "img": "c02a",
-     "from": [
-      0.52,
-      0.5,
-      1.03
-     ],
-     "to": [
-      0.48,
-      0.5,
-      1.03
-     ],
-     "w": 1
-    },
-    {
      "img": "c02b",
      "from": [
       0.5,
@@ -132,6 +56,97 @@
       1.0375
      ],
      "w": 1
+    },
+    {
+     "img": "c02a",
+     "from": [
+      0.52,
+      0.5,
+      1.03
+     ],
+     "to": [
+      0.48,
+      0.5,
+      1.03
+     ],
+     "w": 1,
+     "text": {
+      "text": "Rounding Cape Horn, 1741",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep05/vo/C02.wav",
+   "shots": [
+    {
+     "img": "c01a",
+     "from": [
+      0.48,
+      0.5,
+      1.03
+     ],
+     "to": [
+      0.52,
+      0.5,
+      1.03
+     ],
+     "w": 1,
+     "text": {
+      "text": "Portsmouth, September 1740",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "c01b",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": {
+      "text": "Commodore George Anson",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "d01a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Six ships and nearly 2,000 men",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
     }
    ]
   },
@@ -150,7 +165,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Home again, summer 1744",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "d02a",
@@ -167,7 +189,7 @@
      "w": 1,
      "text": [
       {
-       "text": "KILLED BY THE ENEMY: 4  \u00b7  DEAD OF DISEASE: OVER 1,000",
+       "text": "Four killed in battle, over a thousand by disease",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -267,7 +289,7 @@
      "w": 1,
      "text": [
       {
-       "text": "NOT A GERM  \u00b7  A MISSING VITAMIN",
+       "text": "Not a germ, but a missing vitamin",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -323,7 +345,7 @@
      "w": 1,
      "text": [
       {
-       "text": "COLLAGEN: THE BODY'S GLUE",
+       "text": "Collagen, the body's glue",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -365,7 +387,7 @@
      "w": 1,
      "text": [
       {
-       "text": "WITH VITAMIN C  \u00b7  WITHOUT",
+       "text": "With vitamin C, and without it",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -413,7 +435,7 @@
      "w": 1,
      "text": [
       {
-       "text": "THEY MAKE THEIR OWN",
+       "text": "They make their own vitamin C",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -452,7 +474,14 @@
       0.5,
       1.03
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "About 60 million years ago",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "d07a",
@@ -469,7 +498,7 @@
      "w": 1,
      "text": [
       {
-       "text": "ONE BROKEN GENE  \u00b7  ABOUT 60 MILLION YEARS AGO",
+       "text": "One broken gene",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -497,7 +526,7 @@
      "w": 1,
      "text": [
       {
-       "text": "MONKEYS  \u00b7  APES  \u00b7  US",
+       "text": "Passed down all the way to us",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -517,7 +546,14 @@
       0.5,
       1.0375
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Guinea pigs lost it too",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "c08d",
@@ -573,7 +609,7 @@
      "w": 1,
      "text": [
       {
-       "text": "1 TO 3 MONTHS WITHOUT FRESH FOOD",
+       "text": "One to three months without fresh food",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -615,14 +651,14 @@
      "w": 1,
      "text": [
       {
-       "text": "WHAT HE DOES TO YOU",
+       "text": "What he does to you",
        "x": 960,
        "y": 150,
        "size": 72,
        "at": 0.3
       },
       {
-       "text": "TIRED  \u00b7  WEAK  \u00b7  ACHING",
+       "text": "First, you just feel tired",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -642,7 +678,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Often mistaken for laziness",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -664,7 +707,7 @@
      "w": 1,
      "text": [
       {
-       "text": "SPOTS  \u00b7  BRUISES  \u00b7  CORKSCREW HAIRS",
+       "text": "Even the hairs grow like corkscrews",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -706,7 +749,7 @@
      "w": 1,
      "text": [
       {
-       "text": "SWOLLEN GUMS  \u00b7  LOOSE TEETH",
+       "text": "Swollen gums, loose teeth",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -762,7 +805,7 @@
      "w": 1,
      "text": [
       {
-       "text": "OLD WOUNDS REOPEN  \u00b7  OLD BREAKS COME APART",
+       "text": "Old wounds open up again",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -857,7 +900,7 @@
      "w": 1,
      "text": [
       {
-       "text": "ROME  \u00b7  THE CRUSADES  \u00b7  THE AGE OF SAIL",
+       "text": "An enemy since ancient times",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -877,7 +920,14 @@
       0.5,
       1.03
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Crusaders, the 1200s",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -932,7 +982,7 @@
      "w": 1,
      "text": [
       {
-       "text": "SALT BEEF  \u00b7  BISCUIT  \u00b7  BEER",
+       "text": "Salt beef, dry biscuit and beer",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -974,7 +1024,7 @@
      "w": 1,
      "text": [
       {
-       "text": "ABOUT 2 MILLION SAILORS  \u00b7  1500 TO 1800",
+       "text": "Some two million sailors, 1500 to 1800",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1036,7 +1086,7 @@
      "w": 1,
      "text": [
       {
-       "text": "VASCO DA GAMA  \u00b7  1497",
+       "text": "Vasco da Gama, 1497",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1070,7 +1120,14 @@
       0.5,
       1.03
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "East Africa, 1498",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -1089,7 +1146,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "More than half the crew died",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -1110,7 +1174,7 @@
      ],
      "w": 1,
      "text": {
-      "text": "CANADA \u00b7 WINTER 1536",
+      "text": "Jacques Cartier's ships, Canada, winter 1536",
       "x": 960,
       "y": 985,
       "size": 50,
@@ -1129,7 +1193,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Domagaya shows them the cure",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "c16e",
@@ -1160,7 +1231,7 @@
      "w": 1,
      "text": [
       {
-       "text": "CEDAR TEA",
+       "text": "A tea of cedar needles and bark",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1218,7 +1289,14 @@
       0.5,
       1.03
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Captain James Lancaster, 1601",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "d19a",
@@ -1235,7 +1313,7 @@
      "w": 1,
      "text": [
       {
-       "text": "3 SPOONS OF LEMON JUICE A DAY",
+       "text": "Three spoonfuls of lemon juice every morning",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1296,7 +1374,7 @@
      ],
      "w": 1,
      "text": {
-      "text": "HMS SALISBURY \u00b7 1747",
+      "text": "HMS Salisbury, 1747",
       "x": 960,
       "y": 985,
       "size": 50,
@@ -1315,7 +1393,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "James Lind, naval surgeon",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "c19h",
@@ -1329,7 +1414,14 @@
       0.5,
       1.0375
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Twelve sailors, split into six pairs",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -1351,7 +1443,7 @@
      "w": 1,
      "text": [
       {
-       "text": "CIDER  \u00b7  ACID  \u00b7  VINEGAR  \u00b7  SEAWATER  \u00b7  PASTE  \u00b7  CITRUS",
+       "text": "Six pairs, six different cures",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1393,7 +1485,7 @@
      "w": 1,
      "text": [
       {
-       "text": "DAY 6: THE CITRUS PAIR IS BACK ON DUTY",
+       "text": "Day six: the citrus pair is back on duty",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1413,7 +1505,14 @@
       0.5,
       1.0375
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "One of the first controlled trials in medicine",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -1435,7 +1534,7 @@
      "w": 1,
      "text": [
       {
-       "text": "BOILED JUICE: MOST OF THE VITAMIN C GONE",
+       "text": "Boiling destroys most of the vitamin C",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1455,7 +1554,14 @@
       0.5,
       1.0375
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Almost fifty years of waiting",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -1496,7 +1602,7 @@
      ],
      "w": 1,
      "text": {
-      "text": "CAPTAIN COOK \u00b7 1768",
+      "text": "Captain James Cook, 1768",
       "x": 960,
       "y": 985,
       "size": 50,
@@ -1518,7 +1624,7 @@
      "w": 1,
      "text": [
       {
-       "text": "SAUERKRAUT  \u00b7  FRESH FOOD AT EVERY STOP",
+       "text": "Sauerkraut, and fresh food at every stop",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1546,7 +1652,7 @@
      "w": 1,
      "text": [
       {
-       "text": "THE SAUERKRAUT TRICK",
+       "text": "The sauerkraut trick",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1635,7 +1741,7 @@
      "w": 1,
      "text": [
       {
-       "text": "ROYAL NAVY: LEMON JUICE FROM 1795",
+       "text": "Lemon juice for every sailor from 1795",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1663,7 +1769,7 @@
      "w": 1,
      "text": [
       {
-       "text": "MONTHS AT SEA  \u00b7  BLOCKADING FRANCE",
+       "text": "Months at sea off the coast of France",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1683,7 +1789,14 @@
       0.5,
       1.03
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "The Napoleonic Wars",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -1702,7 +1815,14 @@
       0.5,
       1.03
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Cheaper limes from the colonies",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "d27a",
@@ -1719,7 +1839,7 @@
      "w": 1,
      "text": [
       {
-       "text": "LEMON  \u00b7  LIME",
+       "text": "Limes have far less vitamin C",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1739,7 +1859,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "The Limeys",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -1780,7 +1907,7 @@
      ],
      "w": 1,
      "text": {
-      "text": "THE ARCTIC \u00b7 1875",
+      "text": "The Arctic, 1875",
       "x": 960,
       "y": 985,
       "size": 50,
@@ -1835,7 +1962,7 @@
      "w": 1,
      "text": [
       {
-       "text": "BAD TINNED MEAT?  \u00b7  A GERM?",
+       "text": "Bad tinned meat? A germ?",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1857,7 +1984,7 @@
      ],
      "w": 1,
      "text": {
-      "text": "ANTARCTICA \u00b7 1902",
+      "text": "Antarctica, 1902",
       "x": 960,
       "y": 985,
       "size": 50,
@@ -1876,7 +2003,14 @@
       0.5,
       1.03
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Robert Falcon Scott's first expedition",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -1898,7 +2032,7 @@
      "w": 1,
      "text": [
       {
-       "text": "POTATOES: THE POOR'S VITAMIN C",
+       "text": "Potatoes, the poor's vitamin C",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1932,7 +2066,14 @@
       0.5,
       1.03
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "A gold-rush camp, the 1850s",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -1971,7 +2112,14 @@
       0.5,
       1.03
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Kristiania (Oslo), 1907",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "c27a",
@@ -1987,7 +2135,7 @@
      ],
      "w": 1,
      "text": {
-      "text": "OSLO \u00b7 1907",
+      "text": "Axel Holst and Theodor Fr\u00f8lich",
       "x": 960,
       "y": 985,
       "size": 50,
@@ -2028,7 +2176,7 @@
      "w": 1,
      "text": [
       {
-       "text": "FOOD BY FOOD",
+       "text": "Testing food by food",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -2081,7 +2229,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Casimir Funk, 1912",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "c28d",
@@ -2116,7 +2271,7 @@
      ],
      "w": 1,
      "text": {
-      "text": "SZEGED, HUNGARY",
+      "text": "Szeged, Hungary",
       "x": 960,
       "y": 985,
       "size": 50,
@@ -2138,7 +2293,7 @@
      "w": 1,
      "text": [
       {
-       "text": "PAPRIKA  \u00b7  CRYSTALS  \u00b7  ASCORBIC ACID",
+       "text": "Ascorbic acid: literally, no scurvy",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -2158,7 +2313,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Albert Szent-Gy\u00f6rgyi",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "c28e",
@@ -2172,7 +2334,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Nobel Prize, 1937",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -2228,14 +2397,14 @@
      "w": 1,
      "text": [
       {
-       "text": "WHAT HE LEAVES BEHIND",
+       "text": "What he leaves behind",
        "x": 960,
        "y": 150,
        "size": 72,
        "at": 0.3
       },
       {
-       "text": "CURED IN DAYS  \u00b7  LOST TEETH STAY LOST",
+       "text": "Cured in days, but lost teeth stay lost",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -2291,7 +2460,7 @@
      "w": 1,
      "text": [
       {
-       "text": "VITAMINS  \u00b7  FORTIFIED FOOD  \u00b7  CLINICAL TRIALS",
+       "text": "The idea of vitamins",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -2353,7 +2522,7 @@
      "w": 1,
      "text": [
       {
-       "text": "POOR DIETS  \u00b7  LIVING ALONE  \u00b7  CRISES",
+       "text": "Doctors still see him today",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -2409,7 +2578,7 @@
      "w": 1,
      "text": [
       {
-       "text": "ONE ORANGE A DAY IS ENOUGH",
+       "text": "One orange a day is enough",
        "x": 960,
        "y": 985,
        "size": 50,
