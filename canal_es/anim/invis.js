@@ -25,7 +25,7 @@ function glassFX(X, I, a, t) {
   // half-resolution copy of the silhouette: the rim and the ghost are soft anyway, so they are built at half size
   const hs = INV_H.s.getContext('2d'); hs.clearRect(0, 0, w2, h2); hs.drawImage(I.canvas, 0, 0, w2, h2);
   // 1. refraction (full resolution): the frame behind him, shifted and slightly magnified, seen only inside his silhouette
-  const Rf = layer('Ir'), k = 1.035, ox = Math.sin(t * 1.7) * 5 + 7, oy = Math.cos(t * 1.3) * 4;
+  const Rf = layer('Ir'), k = 1.015, ox = Math.sin(t * 1.7) * 2.5 + 3, oy = Math.cos(t * 1.3) * 2;   // a small shift: straight edges behind him (bench slats) bend, they don't split in two
   Rf.drawImage(src, -W * (k - 1) / 2 + ox, -H * (k - 1) / 2 + oy, W * k, H * k);
   Rf.globalCompositeOperation = 'destination-in'; Rf.drawImage(I.canvas, 0, 0); Rf.globalCompositeOperation = 'source-over';
   Rf.globalCompositeOperation = 'source-atop'; Rf.fillStyle = 'rgba(160,235,255,.16)'; Rf.fillRect(0, 0, W, H);

@@ -121,9 +121,10 @@ SC.s08 = (X, t) => {
     { t: Lt('s08_06') - .05, cx: 1080, cy: 740, z: 3.2, z2: 3.4, lock: 1 },
     { t: Lt('s08_07') - .05, cx: 1000, cy: 600, z: 1.5, z2: 1.55, lock: 1 },
   ]);
-  const st = stageI(cam); st.wld(g => { drawSet(g, 'park'); bench(g, 0); bench(g, 1); });
-  st.wld(g => { walker(g, 'ex6', 2100, -190, t, { look: [-10, 2], mouth: .3 }); walker(g, 'ex1', -200, 110, t, { look: [10, 4], mouth: .1, s: .62, y: 840 });
-    drawSpr(g, 'dogARun', mix(-200, 2100, loopU(t, 0, 7)), 760, 80, { flip: -1, bob: -Math.abs(Math.sin(t * 12)) * 6 }); });
+  // the far path (a walker, a dog) goes behind the bench; the near walker passes in front of it
+  const st = stageI(cam); st.wld(g => { drawSet(g, 'park'); walker(g, 'ex1', -200, 110, t, { look: [10, 4], mouth: .1, s: .62, y: 840 });
+    drawSpr(g, 'dogARun', mix(-200, 2100, loopU(t, 0, 7)), 760, 80, { flip: -1, bob: -Math.abs(Math.sin(t * 12)) * 6 }); bench(g, 0); bench(g, 1); });
+  st.wld(g => walker(g, 'ex6', 2100, -190, t, { look: [-10, 2], mouth: .3 }));
   const hx = t < crouch ? (t < Lm('s08_04', .5) ? mix(300, 1320, R(t, 0, Lm('s08_04', .5), io)) : mix(1320, 840, R(t, Lm('s08_04', .5), crouch, io))) : 840;
   const hp = ghost({ x: hx, y: FEET, s: S0, t, walk: t < crouch ? 1 : 0, phase: walkPh(hx), flip: t > Lm('s08_04', .5) && t < crouch ? -1 : 1, look: [10, 4], mouth: .2 });
   if (t > pass) { hp.look = [16, 10]; hp.brow = .5; }

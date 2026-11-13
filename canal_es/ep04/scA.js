@@ -6,6 +6,8 @@ const CHANNEL_NAME = 'PONLE QUE…';
 const vis = (t, a, b, fi = .25, fo = .3) => R(t, a, a + fi) * (1 - R(t, b, b + fo));
 const loopU = (t, t0, P) => (((t - t0) % P) + P) % P / P;
 function standing(x, extra = {}) { return Object.assign({ x, y: FEET, s: S0 }, extra); }
+/* where the invisible hero stands in the park: beside the bench, never in front of it (through the glass the slats would look broken) */
+const HX_PARK = 430;
 function benchSit(x, extra = {}) { return Object.assign({ x, y: 905, s: S0, sit: 1, noShadow: 1, hL: [-80, -125], hR: [80, -125], armsFront: 1 }, extra); }
 function walker(g, n, x0, v, tt, extra = {}) { const x = x0 + v * tt; drawChar(g, n, Object.assign({ x, y: FEET, s: S0, t: tt, walk: 1, phase: walkPh(x), flip: v < 0 ? -1 : 1 }, extra)); return x; }
 /* the invisible hero: no shadow (nothing there to cast it) */
@@ -42,8 +44,8 @@ function panel(X, x, y, w, a, draw, rot = 0, v = { cx: W / 2, cy: H / 2, z: 1 })
   X.lineWidth = 8; X.strokeStyle = '#141014'; X.strokeRect(-12, -12, w + 24, h + 24); X.restore();
   const k = v.z * w / W; return { cx: v.cx - (x + w / 2 - W / 2) / k, cy: v.cy - (y + h / 2 - H / 2) / k, z: k }; }
 /* the park with Renata waiting on the bench (s00 and s12–s14) */
-function parkRenata(st, t, rp, cp) { st.wld(g => { drawSet(g, 'park'); bench(g, 0); });
-  st.wld(g => drawChar(g, 'valeria', rp)); st.wld(g => bench(g, 1));
+function parkRenata(st, t, rp, cp) { st.wld(g => { drawSet(g, 'park'); bench(g, 0); bench(g, 1); });   // the whole bench behind her: hips on the seat, legs in front
+  st.wld(g => drawChar(g, 'valeria', rp));
   let m = null; st.wld(g => { m = drawAnimal(g, 'canela', cp.x, cp.y, cp.s || .9, Object.assign({ t }, cp)); }); return m; }
 function phoneHold(g, x, y) { drawSpr(g, 'phone', x + 6, y + 30, 70, { rot: -.15 }); }
 
@@ -55,7 +57,7 @@ SC.s00 = (X, t) => {
     { t: Lt('s00_02') - .05, cx: 1180, cy: 640, z: 1.9, z2: 2.0, lock: 1 },
     { t: Lt('s00_03') - .05, cx: 940, cy: 560, z: 1.25, z2: 1.32, lock: 1 },
     { t: Lt('s00_04') - .05, cx: 1080, cy: 520, z: 2.4, z2: 2.55, lock: 1 },
-    { t: Lt('s00_05') - .05, cx: 680, cy: 520, z: 2.3, z2: 2.45, lock: 1 },
+    { t: Lt('s00_05') - .05, cx: 480, cy: 520, z: 2.3, z2: 2.45, lock: 1 },
     { t: Lt('s00_06') - .05, cx: 960, cy: 540, z: 1.15, z2: 1.0, lock: 1 },
     { t: rw, cx: 960, cy: 540, z: 1.0, lock: 1 },
   ]);
@@ -64,15 +66,15 @@ SC.s00 = (X, t) => {
   if (speaking(t, 's00_04')) { rp.open = talk(t, 's00_04'); rp.look = [-10, -4]; rp.brow = .6; rp.hR = [60, -300]; }
   if (t > Le('s00_04')) { rp.look = [4, 18]; rp.mouth = -.25; rp.brow = .7; }
   parkRenata(st, t, rp, { x: 1330, y: 1000, s: .85, tilt: Math.sin(t * 1.6) * .06 });
-  st.wld(g => pepeWatch(g, 1560, 760, .5, 640, t));   // on the grass: looking straight at you
-  const hp = ghost(standing(640, { t, y: 1010, s: .84, look: [14, 8], mouth: .3, blush: .6, hL: [-60, -330], hR: [60, -330] }));
+  st.wld(g => pepeWatch(g, 1560, 760, .5, HX_PARK, t));   // on the grass: looking straight at you
+  const hp = ghost(standing(HX_PARK, { t, y: 1010, s: .84, look: [14, 8], mouth: .3, blush: .6, hL: [-60, -330], hR: [60, -330] }));
   if (t > Lt('s00_04')) { hp.look = [16, 4]; hp.mouth = -.1; hp.brow = .5; }
   if (t > Lt('s00_05')) { hp.mouth = -.3; hp.brow = .8; hp.blush = 0; hp.hL = null; hp.hR = null; hp.slump = .6; }
   if (t > Lt('s00_03') + .6 && t < Lt('s00_04')) { const G = charGeom(CAST.tu, hp); [hp.hL, hp.hR] = POSE.wave(t, G); hp.mouth = .6; }   // waves; she doesn't see
   st.inv(g => drawChar(g, 'tu', hp));
   composeI(X, st, { inv: 1, t });
   sticker(X, 'SÁBADO · 5:00 PM', vis(t, .3, Lt('s00_02') - .2), 70, 70, 64);
-  if (t > Lt('s00_03') + .2 && t < Lt('s00_05')) { const [x, y] = worldToScreen(cam, 640, 330); X.save(); X.globalAlpha = vis(t, Lt('s00_03') + .2, Lt('s00_05') - .3); text(X, '↓ TÚ', x, y, 64, INV_COL, 'Bangers', 'center', OUT, 10); X.restore(); }
+  if (t > Lt('s00_03') + .2 && t < Lt('s00_05')) { const [x, y] = worldToScreen(cam, HX_PARK, 330); X.save(); X.globalAlpha = vis(t, Lt('s00_03') + .2, Lt('s00_05') - .3); text(X, '↓ TÚ', x, y, 64, INV_COL, 'Bangers', 'center', OUT, 10); X.restore(); }
   if (t > rw) rewindFX(X, R(t, rw, rw + .2), t);
 };
 
@@ -110,8 +112,8 @@ SC.s01 = (X, t) => {
 /* ================================================================ 2. title card */
 SC.s02 = (X, t) => {
   const cam = { cx: 960, cy: 540, z: 1.0 }, st = stageI(cam); st.wld(g => { drawSet(g, 'park'); bench(g, 0); bench(g, 1); });
-  st.wld(g => pepeWatch(g, 1500, 800, .55, 700, t));
-  const hp = ghost(standing(700, { t, look: [10, 6], mouth: .6 })); const G = charGeom(CAST.tu, hp); [hp.hL, hp.hR] = POSE.wave(t, G);
+  st.wld(g => pepeWatch(g, 1500, 800, .55, HX_PARK, t));
+  const hp = ghost(standing(HX_PARK, { t, look: [10, 6], mouth: .6 })); const G = charGeom(CAST.tu, hp); [hp.hL, hp.hR] = POSE.wave(t, G);
   st.inv(g => drawChar(g, 'tu', hp));
   composeI(X, st, { inv: 1, t });
   titleCard(X, '¿QUÉ PASARÍA SI', 'FUERAS INVISIBLE?', R(t, .3, .8, outC), t);

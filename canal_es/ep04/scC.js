@@ -5,6 +5,7 @@ function sunsetTint(X, a) { if (a <= 0) return; X.save(); X.setTransform(1, 0, 0
 /* Renata on the bench: phone in the right hand, Canela's leash in the left */
 function renataSit(t, extra = {}) { return benchSit(1080, Object.assign({ t, look: [6, 18], mouth: -.1, brow: .3, hR: [60, -300], holdR: phoneHold, hL: [-90, -200] }, extra)); }
 const RENATA_S = S0 * (CAST.valeria.s || 1);
+const DOG_AT = 590;   // Canela sits at your feet (you stand at HX_PARK, beside the bench)
 function canelaAt(g, t, x, y, s, extra = {}) { return drawAnimal(g, 'canela', x, y, s, Object.assign({ t }, extra)); }
 
 /* ================================================================ 12. Saturday: you came. She can't see you. Canela can smell you. */
@@ -13,10 +14,10 @@ SC.s12 = (X, t) => {
   const cam = shots(t, [], [
     { t: 0, cx: 960, cy: 540, z: 1.0, z2: 1.04, lock: 1 },
     { t: Lt('s12_04') - .05, cx: 1120, cy: 600, z: 2.0, z2: 2.1, lock: 1 },
-    { t: Lt('s12_06') - .05, cx: 700, cy: 520, z: 2.0, z2: 2.15, lock: 1 },
+    { t: Lt('s12_06') - .05, cx: 500, cy: 520, z: 2.0, z2: 2.15, lock: 1 },
     { t: sniff, cx: 1320, cy: 860, z: 2.6, z2: 2.75, lock: 1 },
     { t: run, cx: 960, cy: 600, z: 1.15, z2: 1.2, lock: 1 },
-    { t: sit + .2, cx: 720, cy: 820, z: 2.1, z2: 2.2, lock: 1 },
+    { t: sit + .2, cx: 540, cy: 820, z: 2.1, z2: 2.2, lock: 1 },
     { t: Lt('s12_09') - .05, cx: 1080, cy: 540, z: 2.2, z2: 2.3, lock: 1 },
   ]);
   const st = stageI(cam);
@@ -26,16 +27,16 @@ SC.s12 = (X, t) => {
   if (speaking(t, 's12_09')) { rp.open = talk(t, 's12_09'); rp.look = [-16, 14]; rp.brow = .2; rp.mouth = .3; }
   // Canela: sitting, then sniffing the air, then running to your feet
   let cpos = [1330, 1000, .85], cx = 1330;
-  st.wld(g => { drawSet(g, 'park'); bench(g, 0); });
-  st.wld(g => drawChar(g, 'valeria', rp)); st.wld(g => bench(g, 1));
-  st.wld(g => pepeWatch(g, 1560, 760, .5, 640, t));
+  st.wld(g => { drawSet(g, 'park'); bench(g, 0); bench(g, 1); });
+  st.wld(g => drawChar(g, 'valeria', rp));
+  st.wld(g => pepeWatch(g, 1560, 760, .5, HX_PARK, t));
   if (t < run) st.wld(g => canelaAt(g, t, 1330, 1000, .85, { tilt: t > sniff ? -.3 + Math.sin(t * 9) * .08 : Math.sin(t * 1.6) * .06, bob: t > sniff ? -Math.abs(Math.sin(t * 9)) * 4 : 0 }));
-  else if (t < sit) { const u = R(t, run, sit, lin); cx = mix(1330, 760, u); st.wld(g => drawSpr(g, 'canelaRun', cx, 1020, 120, { flip: 1, bob: -Math.abs(Math.sin(t * 13)) * 12 })); }
-  else { cx = 760; st.wld(g => canelaAt(g, t, 760, 1050, .9, { tilt: -.35 + Math.sin(t * 2) * .05, bob: -Math.abs(Math.sin(t * 8)) * 4 })); }
+  else if (t < sit) { const u = R(t, run, sit, lin); cx = mix(1330, DOG_AT, u); st.wld(g => drawSpr(g, 'canelaRun', cx, 1020, 120, { flip: 1, bob: -Math.abs(Math.sin(t * 13)) * 12 })); }
+  else { cx = DOG_AT; st.wld(g => canelaAt(g, t, DOG_AT, 1050, .9, { tilt: -.35 + Math.sin(t * 2) * .05, bob: -Math.abs(Math.sin(t * 8)) * 4 })); }
   // the leash from her left hand to the collar
   st.wld(g => { const h = handPt('valeria', rp, -1); leash(g, h, [cx + (t < run ? -20 : 0), t < sit && t > run ? 960 : 900], t > run ? 10 : 70); });
   // you: walk in and stop right in front of her; almost speak; don't
-  const hx = mix(-150, 640, R(t, Lt('s12_03') - .8, arrive, io)), walking = t < arrive && t > Lt('s12_03') - .8;
+  const hx = mix(-150, HX_PARK, R(t, Lt('s12_03') - .8, arrive, io)), walking = t < arrive && t > Lt('s12_03') - .8;
   const hp = ghost({ x: hx, y: 1010, s: .84, t, walk: walking ? 1 : 0, phase: walkPh(hx), look: [14, 8], mouth: .3, blush: .4 });
   if (t > Lt('s12_06') && t < sniff) { const u = R(t, Lt('s12_06'), Lm('s12_06', .4), io) * (1 - R(t, Lm('s12_06', .7), Le('s12_06'), io)); hp.hR = [mix(80, 150, u), mix(-200, -470, u)]; hp.open = u * .6; hp.brow = .6; }
   if (t > sit) { hp.look = [-4, 20]; hp.mouth = .6; hp.wide = .4; }
@@ -44,7 +45,7 @@ SC.s12 = (X, t) => {
   composeI(X, st, { inv: 1, t });
   sticker(X, 'SÁBADO · 5:00 PM', vis(t, .2, Lt('s12_03') - .2), 70, 70, 64);
   if (t > sniff + .2 && t < run) comicWord(X, 'SNIFF SNIFF', ...worldToScreen(cam, 1300, 760), t - sniff - .2, 64, '#ffffff', 1.4);
-  if (t > sit + .3 && t < Lt('s12_09')) for (let i = 0; i < 3; i++) heartPop(X, ...worldToScreen(cam, 720 + i * 50, 840), loopU(t, sit + i * .3, 1.2), 1.2);
+  if (t > sit + .3 && t < Lt('s12_09')) for (let i = 0; i < 3; i++) heartPop(X, ...worldToScreen(cam, DOG_AT - 40 + i * 50, 840), loopU(t, sit + i * .3, 1.2), 1.2);
 };
 
 /* ================================================================ 13. «Bueno. Se le olvidó.» — «Renata… Estoy aquí.» */
@@ -52,10 +53,10 @@ SC.s13 = (X, t) => {
   const jump = Lt('s13_07') - .05;
   const cam = shots(t, [], [
     { t: 0, cx: 1080, cy: 540, z: 2.0, z2: 2.1, lock: 1 },
-    { t: Lt('s13_03') - .05, cx: 680, cy: 520, z: 1.9, z2: 2.4, lock: 1 },
-    { t: Lt('s13_06') - .05, cx: 860, cy: 560, z: 1.35, z2: 1.42, lock: 1 },
-    { t: jump, cx: 900, cy: 520, z: 1.3, z2: 1.25, lock: 1, shake: 1 },
-    { t: Lt('s13_08') - .05, cx: 700, cy: 520, z: 2.0, z2: 2.1, lock: 1 },
+    { t: Lt('s13_03') - .05, cx: 480, cy: 520, z: 1.9, z2: 2.4, lock: 1 },
+    { t: Lt('s13_06') - .05, cx: 760, cy: 560, z: 1.35, z2: 1.42, lock: 1 },
+    { t: jump, cx: 780, cy: 520, z: 1.3, z2: 1.25, lock: 1, shake: 1 },
+    { t: Lt('s13_08') - .05, cx: 500, cy: 520, z: 2.0, z2: 2.1, lock: 1 },
   ]);
   const st = stageI(cam);
   let rp = renataSit(t);
@@ -64,9 +65,9 @@ SC.s13 = (X, t) => {
   if (t > Le('s13_02')) { rp.mouth = -.3; rp.brow = .8; rp.look = [-2, 20]; rp.slump = .5; }
   if (t > jump) { rp = { x: 1040, y: FEET, s: S0, t, flip: -1, look: [-16, 4], wide: 1, brow: 1, mouth: -.5, hL: [-60, -500], hR: [60, -500], jump: Math.max(0, Math.sin(clamp((t - jump) / .45) * Math.PI)) * 90 };
     if (speaking(t, 's13_07')) rp.open = 1; }
-  st.wld(g => { drawSet(g, 'park'); bench(g, 0); }); st.wld(g => drawChar(g, 'valeria', rp)); st.wld(g => bench(g, 1));
-  st.wld(g => canelaAt(g, t, 760, 1050, .9, { tilt: -.35 + Math.sin(t * 2) * .05 }));
-  const hp = ghost({ x: 640, y: 1010, s: .84, t, look: [16, 6], mouth: -.2, brow: .6 });
+  st.wld(g => { drawSet(g, 'park'); bench(g, 0); bench(g, 1); }); st.wld(g => drawChar(g, 'valeria', rp));
+  st.wld(g => canelaAt(g, t, DOG_AT, 1050, .9, { tilt: -.35 + Math.sin(t * 2) * .05 }));
+  const hp = ghost({ x: HX_PARK, y: 1010, s: .84, t, look: [16, 6], mouth: -.2, brow: .6 });
   if (t > Lt('s13_03')) { hp.look = [6, 4]; hp.brow = .3; hp.mouth = -.1; }
   if (t > Lt('s13_05')) { hp.look = [16, 4]; hp.brow = -.2; hp.mouth = .1; }
   if (speaking(t, 's13_06')) { hp.open = talk(t, 's13_06') * .7; hp.blush = .6; }
@@ -85,16 +86,16 @@ SC.s13 = (X, t) => {
 SC.s14 = (X, t) => {
   const reach = Lt('s14_02'), take = Lt('s14_03') + .2, walk0 = Lt('s14_06') - .1, rule = Lt('s14_08') - .2, sun = Lt('s14_10') - .1, appear = Lm('s14_10', .55);
   const cam = shots(t, [], [
-    { t: 0, cx: 1040, cy: 520, z: 2.1, z2: 2.2, lock: 1 },
-    { t: reach - .05, cx: 860, cy: 600, z: 1.5, z2: 1.6, lock: 1 },
-    { t: Lt('s14_03') - .05, cx: 870, cy: 690, z: 3.0, z2: 3.2, lock: 1 },
-    { t: Lt('s14_04') - .05, cx: 1040, cy: 520, z: 2.1, z2: 2.2, lock: 1 },
+    { t: 0, cx: 790, cy: 520, z: 2.1, z2: 2.2, lock: 1 },
+    { t: reach - .05, cx: 610, cy: 600, z: 1.5, z2: 1.6, lock: 1 },
+    { t: Lt('s14_03') - .05, cx: 620, cy: 690, z: 3.0, z2: 3.2, lock: 1 },
+    { t: Lt('s14_04') - .05, cx: 790, cy: 520, z: 2.1, z2: 2.2, lock: 1 },
     { t: walk0, cx: 960, cy: 560, z: 1.05, z2: 1.1, lock: 1 },
     { t: rule, cx: 960, cy: 540, z: 1.0, lock: 1 },
-    { t: sun, cx: 880, cy: 560, z: 1.45, z2: 1.55, lock: 1 },
+    { t: sun, cx: 640, cy: 560, z: 1.45, z2: 1.55, lock: 1 },
     { t: Lt('s14_11') - .05, cx: 960, cy: 540, z: 1.0, z2: 1.04, lock: 1 },
-    { t: Lt('s14_12') - .05, cx: 1040, cy: 520, z: 2.3, z2: 2.4, lock: 1 },
-    { t: Lt('s14_13') - .05, cx: 720, cy: 510, z: 2.3, z2: 2.4, lock: 1 },
+    { t: Lt('s14_12') - .05, cx: 790, cy: 520, z: 2.3, z2: 2.4, lock: 1 },
+    { t: Lt('s14_13') - .05, cx: 470, cy: 510, z: 2.3, z2: 2.4, lock: 1 },
   ]);
   const st = stageI(cam); st.wld(g => { drawSet(g, 'park'); bench(g, 0); bench(g, 1); });
   const walking = t > walk0 && t < rule, wu = R(t, walk0, rule - .3, lin), base = mix(-300, 1500, wu);
@@ -108,8 +109,8 @@ SC.s14 = (X, t) => {
     // passers-by stop and stare at the girl talking to a flying leash
     st.wld(g => { drawChar(g, 'ex4', standing(1480, { t, flip: -1, look: [-16, 6], mouth: -.3, wide: .8, brow: .9, s: .62, y: 840 })); drawChar(g, 'ex6', standing(1640, { t, flip: -1, look: [-16, 4], mouth: -.4, wide: .6, s: .62, y: 840 })); });
   } else {
-    rp = { x: 1040, y: FEET, s: S0, t, flip: -1, look: [-16, 4], mouth: .1, brow: .5 };
-    hp = ghost({ x: 700, y: 1010, s: .84, t, look: [16, 6], mouth: .2, brow: .4 });
+    rp = { x: 790, y: FEET, s: S0, t, flip: -1, look: [-16, 4], mouth: .1, brow: .5 };
+    hp = ghost({ x: HX_PARK + 20, y: 1010, s: .84, t, look: [16, 6], mouth: .2, brow: .4 });
     if (speaking(t, 's14_01')) { rp.open = talk(t, 's14_01') * .6; rp.brow = .8; rp.wide = .3; }
     const u = R(t, reach, take, io);
     if (t > reach) { rp.hR = [mix(80, 224, u), mix(-200, -317, u)]; rp.wide = .4; }
@@ -120,9 +121,9 @@ SC.s14 = (X, t) => {
     if (t > Lt('s14_11')) { rp.wide = .6; hp.wide = .6; hp.sweat = 1; }
     if (speaking(t, 's14_12')) rp.open = talk(t, 's14_12') * .5;
     if (speaking(t, 's14_13')) hp.open = talk(t, 's14_13') * .5;
-    cxy = [880, 1050];
+    cxy = [630, 1050];
     st.wld(g => canelaAt(g, t, cxy[0], cxy[1], .9, { tilt: t > take ? Math.sin(t * 3) * .1 : -.35, bob: t > Lt('s14_11') ? -Math.abs(Math.sin(t * 9)) * 30 : 0 }));
-    if (t > Lt('s14_11')) st.wld(g => { drawChar(g, 'ex4', standing(1500, { t, flip: -1, look: [-16, 6], mouth: -.4, wide: 1, brow: 1, s: .62, y: 840 })); drawChar(g, 'ex1', standing(240, { t, look: [16, 6], mouth: -.4, wide: 1, brow: 1, s: .62, y: 840 }));
+    if (t > Lt('s14_11') && (cam.z || 1) < 1.45) st.wld(g => {   // the far path only in wide shots: in a blurred close-up a sharp passer-by reads as standing next to you drawChar(g, 'ex4', standing(1500, { t, flip: -1, look: [-16, 6], mouth: -.4, wide: 1, brow: 1, s: .62, y: 840 })); drawChar(g, 'ex1', standing(240, { t, look: [16, 6], mouth: -.4, wide: 1, brow: 1, s: .62, y: 840 }));
       drawChar(g, 'ex6', standing(1720, { t, flip: -1, look: [-16, 4], mouth: .8, wide: .6, s: .62, y: 840 })); });
   }
   st.wld(g => drawChar(g, 'valeria', rp));
@@ -131,7 +132,7 @@ SC.s14 = (X, t) => {
   composeI(X, st, { inv, t });
   sunsetTint(X, R(t, sun, sun + 1.2));
   if (t > appear - .6 && t < appear + 1.2) { const [x, y] = worldToScreen(cam, hp.x, hp.y - 260 * hp.s); invSparkle(X, x, y, 330 * cam.z * hp.s, R(t, appear - .6, appear + 1.2, lin)); }
-  if (t > take && t < take + .9) comicWord(X, '♥', ...worldToScreen(cam, 870, 600), t - take, 90, '#ff5d7a', .9);
+  if (t > take && t < take + .9) comicWord(X, '♥', ...worldToScreen(cam, 620, 600), t - take, 90, '#ff5d7a', .9);
   if (walking && t > Lt('s14_07')) comicWord(X, '¿?', ...worldToScreen(cam, 1600, 300), t - Lt('s14_07'), 90, '#fde047', 1.2);
   if (t > Lt('s14_11') + .2 && t < Lt('s14_12')) for (const [wx, wy] of [[240, 420], [1500, 420], [1720, 420]]) comicWord(X, '¡!', ...worldToScreen(cam, wx, wy), t - Lt('s14_11') - .2, 70, '#ffffff', 1.0);
   ruleCard(X, 3, 'SI NADIE TE PUEDE VER,', t > Lm('s14_08', .5) ? 'DI QUE ESTÁS AHÍ.' : '', R(t, rule, rule + .4, outC) * (1 - R(t, sun - .3, sun)));
