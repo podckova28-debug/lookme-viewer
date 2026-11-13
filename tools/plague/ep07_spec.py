@@ -19,7 +19,7 @@ SN = ("Humans are simple STICKMEN: plain white round head, two dot eyes, no nose
       "hands are empty unless an object is described; nothing floating; no flags.")
 KING = ("Tuberculosis exactly as on the attached sheet, 'the White Lady': a ghostly, gaunt, emaciated Victorian woman with waxy grey-white skin, hollow cheeks with red feverish blotches, "
         "sunken dark-ringed glittering eyes, pale bluish lips, long unkempt dark hair, a tattered white high-collared Victorian nightgown and a grey knitted shawl; "
-        "she often holds a lace handkerchief with a few small red spots, or a brass candle-holder. Exactly ONE of her, with exactly two arms and two hands with normal-length fingers.")
+        "she holds AT MOST ONE object at a time (either a brass candle-holder OR a lace handkerchief, never both), her other hand empty and clearly attached to its own arm. Exactly ONE of her, with exactly two arms and two hands with normal-length fingers.")
 DIAG = ("Draw ONLY the diagram described below, filling the whole frame, as ONE single picture: no extra rows, no extra panels, no comic strips above or below it. "
         "A hand-drawn explainer diagram in ink and muted watercolour on aged paper, clean and readable like an old textbook plate, "
         "numbered stages as small circled digits with drawn arrows. No words, no letters, no numbers on axes, only circled digits. Not gory. ")
@@ -63,8 +63,8 @@ N('C03', "The killer had been called consumption, phthisis, the white plague. Pe
   dg('d02a', "Four small numbered icons side by side: (1) a swirling cloud of bad air, (2) a drop of blood, (3) a wilting flower, (4) a vampire silhouette with a cape.", text=[cap('BAD AIR? BAD BLOOD? WEAKNESS? VAMPIRES?')]),
   sc('c03a', "A dim Victorian sickroom with an empty iron bed, a basin and a jug, a white handkerchief on the pillow, a candle burning low.", C(.5, .5, 1.05)))
 K('C04', "Vampires. How flattering. They never guessed it was me.",
-  kg('c04a', C(.5, .45, 1.1), "Medium shot: the White Lady stands in a dark Victorian corridor holding a brass candle-holder, smiling faintly at the viewer, her other hand pressing a lace handkerchief to her lips."))
-HOLD(4.6, kg('c05a', O(), "Title shot: the White Lady stands on the left third of the frame in a misty moonlit Victorian cemetery among white stone crosses, holding a candle; dark empty mist on the right side.")
+  kg('c04a', C(.5, .45, 1.1), "Medium shot: the White Lady stands in a dark Victorian corridor holding a brass candle-holder in one hand, smiling faintly at the viewer, her other hand resting on the wall."))
+HOLD(4.6, kg('c05a', O(), "Title shot: the White Lady stands on the left third of the frame in a misty moonlit Victorian cemetery among white stone crosses, holding a candle in one hand, her other arm hanging at her side; dark empty mist on the right side.")
      | {'text': [label('TUBERCULOSIS', 1300, 330, 120, style='title', pop=True, at=.15, len=4.2), label('THE WHITE PLAGUE', 1300, 460, 72, style='title', color=[190, 205, 230], at=.5, len=3.9)],
         'sfx': [{'kind': 'boom', 'at': .1, 'gain': .8}]})
 
@@ -78,7 +78,7 @@ N('L03', "She travels through the air. When a sick person coughs, sneezes or eve
   dg('d05a', "Three numbered panels: (1) a stickman coughing a small cloud of tiny dots into a room, (2) the dots floating in the air near a window for a long time, (3) a second stickman breathing in a few dots.", people=True, text=[cap('THROUGH THE AIR')]),
   ch('c07a', W(), "A crowded 1880s tenement room: a stickman man in a waistcoat with thin black stick arms coughs into the crook of his own elbow, while a stickman woman in a long dress sits apart sewing by the window."))
 K('L04', "A cough, a breath, a crowded room. That's all I need.",
-  kg('c08a', C(.5, .45, 1.1), "The White Lady stands in a dim, empty Victorian tenement stairwell, gently breathing out a faint pale mist, smiling."))
+  kg('c08a', C(.5, .45, 1.1), "The White Lady stands in a dim, empty Victorian tenement stairwell, gently breathing out a faint pale mist, smiling, both hands holding her shawl closed at her chest."))
 N('L05', "But here's the strange part. Most people who catch her never get sick. The body walls her inside tiny knots called tubercles. That's where the name comes from. She can sleep there for years. Today, about a quarter of all humans carry her.",
   dg('d06a', "Three numbered steps inside a simple lung outline: (1) a few rod bacteria arrive, (2) round defender cells surround them, (3) a hard round knot like a little stone wall with the bacteria sleeping inside it.", text=[cap('TUBERCLES: SHE SLEEPS FOR YEARS')]),
   dg('d07a', "Four simple stickman icons in a row; one of them has a small sleeping bacterium drawn inside its chest.", people=True, text=[cap('ABOUT 1 IN 4 PEOPLE CARRY HER')]))
@@ -145,7 +145,7 @@ N('L19', "In New England in the 1890s, families who lost several members to her 
   sc('c20a', "A small snowy New England graveyard in 1892 at dusk, a wooden fence, a little stone crypt, bare trees.", WL(), text=cap('RHODE ISLAND · 1892')),
   ch('c20b', W(), "A snowy graveyard at night: two stickman farmers in heavy winter coats and hats stand apart by a lantern on the ground, holding shovels, looking grim."))
 K('L20', "A vampire. They called me a vampire. I've been called worse.",
-  kg('c21a', C(.5, .45, 1.1), "The White Lady sits on a snowy gravestone at night, laughing quietly behind her lace handkerchief."))
+  kg('c21a', C(.5, .45, 1.1), "The White Lady sits on a snowy gravestone at night, laughing quietly, both hands resting on her knees."))
 
 # ---- Koch
 N('L21', "Then came Robert Koch. Using new dyes, he stained lung tissue and found the bacteria hiding inside. He grew them, put them into animals, and proved that they caused the disease.",
@@ -167,7 +167,7 @@ N('L25', "So doctors prescribed rest, good food, and fresh air. Sanatoriums open
 N('L26', "It helped some people, and it kept the sick away from their families. But many never came home.",
   sc('c24c', "An empty wooden reclining chair on a snowy sanatorium balcony at dusk, a folded blanket on it, mountains in the distance.", C(.5, .5, 1.05)))
 K('L27', "Mountain air. Very pleasant. I came along for the view.",
-  kg('c25a', C(.5, .45, 1.1), "The White Lady lounges on a reclining chair on an empty snowy sanatorium balcony, wrapped in a blanket, enjoying the mountain view."))
+  kg('c25a', C(.5, .45, 1.1), "The White Lady lounges on a reclining chair on an empty snowy sanatorium balcony, wrapped in a blanket, both hands holding a teacup, enjoying the mountain view."))
 
 # ---- vaccine and cure
 N('L28', "In 1921, two French scientists, Albert Calmette and Camille Guerin, made a vaccine called BCG. They weakened a cattle form of the bacteria by growing it over and over, two hundred and thirty times, for thirteen years.",
@@ -205,7 +205,7 @@ N('A02', "For the world, she left more than graves. Sanatoriums inspired modern 
   sc('c31a', "A white 1930s modernist building with flat roofs, long horizontal balconies, huge windows and sunlight, pine trees.", WL()),
   dg('d31a', "Three numbered icons: (1) a white modernist building with balconies, (2) a chain of connected stickman icons for contact tracing, (3) a chest X-ray image.", people=True, text=[cap('ARCHITECTURE  ·  CONTACT TRACING  ·  SCREENING')]))
 K('A03', "They built whole buildings just to get away from me. I'm almost touched.",
-  kg('c32a', C(.5, .45, 1.1), "The White Lady stands in a bright, empty white modernist sanatorium hall full of sunlight, looking up at the tall windows."))
+  kg('c32a', C(.5, .45, 1.1), "The White Lady stands in a bright, empty white modernist sanatorium hall full of sunlight, looking up at the tall windows, both hands clasped in front of her."))
 
 # ---- ending
 N('L37', "Thousands of years. A billion lives, by some estimates. Not beaten by kings, poets or mountain air, but by a dye, a soil bacterium, and six months of pills. And she isn't finished yet.",
