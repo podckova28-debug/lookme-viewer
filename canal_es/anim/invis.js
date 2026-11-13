@@ -9,10 +9,12 @@
    composeI(X, st, { inv: 1, t });
    voiceBubble(X, cam, t, id, [wx, wy])        // a line spoken by nobody you can see: dashed bubble, words typed with the voice */
 const INV_COL = '#8ff3ff';
-/* a canvas wiped by resetting its size, not by clearRect: on long renders Chrome sometimes hands drawImage() the previous frame of a
-   canvas that was only cleared (the hero stayed on screen, frozen, after he left the shot) — a resized canvas gets a new bitmap */
+/* On long renders Chrome sometimes hands drawImage() a recycled old frame of a canvas whose clear was never carried out because
+   nothing visible was drawn into it afterwards (the hero off screen, or not drawn at all): he stayed frozen in the shot after he
+   had left it. So the hero layer gets a new bitmap every frame (resize) plus one all-but-transparent pixel that makes the clear real. */
 const wipe = c => { c.width = c.width; return c.getContext('2d'); };
-function stageI(cam) { const st = stage(cam), I = wipe(layer('I').canvas); camApply(I, cam); st.I = I; st.invN = 0;
+function stageI(cam) { const st = stage(cam), I = wipe(layer('I').canvas); I.save(); I.fillStyle = 'rgba(0,0,0,0.004)'; I.fillRect(0, 0, 1, 1); I.restore();
+  camApply(I, cam); st.I = I; st.invN = 0;
   st.inv = fn => { st.invN++; fn(I); };
   st.fg = fn => { fn(st.A); I.save(); I.globalCompositeOperation = 'destination-out'; fn(I); I.restore(); };   // world things in front of the hero
   return st; }

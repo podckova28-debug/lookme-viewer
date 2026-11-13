@@ -377,7 +377,10 @@ function speedLines(g, cx, cy, a, t) { if (a <= 0) return; g.save(); g.globalAlp
 
 /* ---------------------------------------------------------------- layers, camera and the time-stop look */
 const LAY = {};
-function layer(name) { if (!LAY[name]) { const c = document.createElement('canvas'); c.width = W; c.height = H; LAY[name] = c; } const g = LAY[name].getContext('2d'); g.setTransform(1, 0, 0, 1, 0, 0); g.clearRect(0, 0, W, H); return g; }
+/* a cleared layer always gets one all-but-transparent pixel: a layer that stays empty after clearRect can otherwise be read by
+   drawImage() as an old recycled frame on long renders (see invis.js) */
+function layer(name) { if (!LAY[name]) { const c = document.createElement('canvas'); c.width = W; c.height = H; LAY[name] = c; } const g = LAY[name].getContext('2d'); g.setTransform(1, 0, 0, 1, 0, 0); g.clearRect(0, 0, W, H);
+  g.save(); g.fillStyle = 'rgba(0,0,0,0.004)'; g.fillRect(0, 0, 1, 1); g.restore(); return g; }
 /* shot: {cx,cy,z} world point at screen center, zoom; shake optional */
 function camApply(g, cam) { const z = cam.z || 1; g.setTransform(z, 0, 0, z, W / 2 - cam.cx * z + (cam.sx || 0), H / 2 - cam.cy * z + (cam.sy || 0)); }
 function worldToScreen(cam, x, y) { const z = cam.z || 1; return [W / 2 + (x - cam.cx) * z + (cam.sx || 0), H / 2 + (y - cam.cy) * z + (cam.sy || 0)]; }
