@@ -223,7 +223,7 @@ SC.s10 = (X, t) => {
   if (t > b2 - 1.5 && t < ninja) { const nx = t < b2 ? hx + (b2 - t) * 220 + 10 : hx - (t - b2) * 90 - 40, np = { x: nx, y: FEET, s: S0, t, walk: t < b2 || t > Lt('s10_04') ? 1 : 0, phase: walkPh(nx), flip: -1, look: [-10, 4], mouth: .2 };
     if (speaking(t, 's10_03')) { np.open = talk(t, 's10_03'); np.flip = 1; np.look = [14, -4]; np.brow = .6; np.wide = t > Lm('s10_03', .5) ? .8 : 0; }
     st.wld(g => drawChar(g, 'nacho', np)); }
-  if (t > ninja) st.wld(g => { for (let i = 0; i < 3; i++) { const x = 2400 - ((t - ninja) * 260 + i * 520) % 2600; drawChar(g, ['ex2', 'ex6', 'ex1'][i], { x, y: FEET + 30, s: S0 * 1.05, t, walk: 1, phase: walkPh(x), flip: -1, look: [-10, 4], mouth: .2 }); } });
+  if (t > ninja) st.fg(g => { for (let i = 0; i < 3; i++) { const x = 2400 - ((t - ninja) * 260 + i * 520) % 2600; drawChar(g, ['ex2', 'ex6', 'ex1'][i], { x, y: FEET + 30, s: S0 * 1.05, t, walk: 1, phase: walkPh(x), flip: -1, look: [-10, 4], mouth: .2 }); } });
   composeI(X, st, { inv: 1, t });
   for (const b of bump) if (t > b && t < b + .7) comicWord(X, '¡PUM!', ...worldToScreen(cam, hx + 60, 360), t - b, 84);
   if (t > ninja + .3) sticker(X, 'MODO NINJA (MUY CANSADO)', R(t, ninja + .3, ninja + .55, back), 70, 70, 64);

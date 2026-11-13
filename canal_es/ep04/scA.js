@@ -96,10 +96,10 @@ SC.s01 = (X, t) => {
   let jump = 0; if (t > Lt('s01_04') && t < Lt('s01_06')) { jump = Math.abs(Math.sin((t - Lt('s01_04')) * 5)) * 60; hp.mouth = 1; hp.brow = -.3; const G = charGeom(CAST.tu, hp); [hp.hL, hp.hR] = POSE.stretch(1, G); }
   hp.jump = jump;
   if (t > Lt('s01_06')) { hp.jump = 0; hp.mouth = -.2; hp.brow = .6; hp.hL = null; const G = charGeom(CAST.tu, hp); hp.hR = POSE.wave(t, G)[1]; hp.look = [16, 4]; }
-  // passers-by: they walk right through the space you are in
-  st.wld(g => { walker(g, 'ex2', 2100, -150, t, { look: [-10, 4] }); walker(g, 'ex5', -300, 120, Math.max(0, t - 6), { look: [10, 4] }); });
-  if (t > Lt('s01_06')) st.wld(g => walker(g, 'ex3', 1700, -170, t - Lt('s01_06'), { look: [-12, 6], mouth: .2 }));
   st.inv(g => drawChar(g, 'tu', hp));
+  // passers-by walk past right in front of you, as if the spot were empty (drawn in front, so the glass never bends their faces)
+  st.fg(g => { walker(g, 'ex2', 2100, -150, t, { look: [-10, 4] }); walker(g, 'ex5', -300, 120, Math.max(0, t - 6), { look: [10, 4] }); });
+  if (t > Lt('s01_06')) st.fg(g => walker(g, 'ex3', 1700, -170, t - Lt('s01_06'), { look: [-12, 6], mouth: .2 }));
   composeI(X, st, { inv: 1, t });
   [['TU MAMÁ', .02], ['LAS CÁMARAS', .3], ['EL ESPEJO', .62]].forEach(([s, f], i) => crossSticker(X, s, vis(t, Lm('s01_02', f), Lt('s01_03') - .1, .12), 90, 90 + i * 112));
   if (t > Lt('s01_03') + .5) sticker(X, 'LA ROPA TAMBIÉN', vis(t, Lt('s01_03') + .5, Lt('s01_04') - .1, .15), 90, 90, 64, '#ffffff');
