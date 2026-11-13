@@ -1,0 +1,51 @@
+C01|NARRATOR|11.3|0.94|Berlin. The 24th of March, 1882. In a small library packed with Germany's top scientists, a quiet country doctor named Robert Koch stands up to speak.
+C02|NARRATOR|11.4|1.00|He has found the killer that, in his time, was causing one in seven deaths across Europe and America. When he sits down, nobody claps. The room is completely silent.
+C03|NARRATOR|9.1|0.95|The killer had been called consumption thysis, the white plague. People had blamed bad air, bad blood, a weak character, even vampires.
+C04|TB|3.9|1.00|Vampires. How flattering. They never guessed it was me.
+L01|NARRATOR|12.3|1.00|So who is she? A bacterium. Mycobacterium tuberculosis. A tiny rod wrapped in a thick waxy coat that protects her from almost everything the body throws at her.
+L02|NARRATOR|7.5|0.95|and she is slow. Most bacteria divide every 20 minutes. She takes about a day, she is in no hurry at all.
+L03|NARRATOR|11.0|1.00|She travels through the air. When a sick person coughs, sneezes, or even sings, tiny droplets float in the room for hours. Breathing in just a few bacteria can be enough.
+L04|TB|4.1|1.00|a cough, a breath, a crowded room, that's all I need.
+L05|NARRATOR|15.8|1.00|But here's the strange part. Most people who catch her never get sick. The body walls her inside tiny knots called tubercles. That's where the name comes from. She can sleep there for years. Today, about a quarter of all humans carry her.
+L06|TB|2.6|1.00|I can wait years if I have to.
+L07|NARRATOR|15.1|0.98|But where did she come from? She is ancient. Some scientists think her family traveled with our ancestors out of Africa, tens of thousands of years ago. Others think she is younger. Either way, she has been with us since long before cities.
+L08|NARRATOR|8.4|0.92|we find her in 9,000-year-old skeletons, and in the spines of Egyptian mummies bent by a form of tuberculosis that attacks the bones.
+L09|NARRATOR|5.4|1.00|Then, people began living in crowded towns and cities, and she found the perfect home.
+L10|TB|4.0|1.00|Villages were dull, cities now, cities I loved.
+S01|NARRATOR|8.9|1.00|So what does she do to you? When she wakes up it starts slowly, a cough that won't go away for weeks, tiredness, a fever that comes back every evening.
+S02|NARRATOR|9.6|1.00|Then the night sweats, soaking the sheets. And she eats away at your body. Patients grew thinner and thinner. That's why it was called consumption. It consumed you.
+S03|NARRATOR|11.5|0.96|In the lungs, she carves out holes. Patients began to cough up blood, often just a few red spots on a white anchor chief. For many, it was the first sign that this was serious.
+S04|NARRATOR|10.4|1.00|She doesn't stop at the lungs. She can attack the bones, the kidneys, the brain, and the glands of the neck, which swell into lumps. That form had its own name, scrofula.
+S05|NARRATOR|5.9|1.00|without treatment, about half of those who fall sick with her eventually die. It can take years.
+S06|TB|3.6|1.00|I don't rush. I take my time, years sometimes.
+L11|NARRATOR|12.8|0.97|The ancient Greeks called her Thysis, the wasting. Hippocrates wrote that she was the most widespread disease of his time and warned doctors not to visit late cases to protect their reputation.
+L12|NARRATOR|11.2|1.00|In the Middle Ages, scrofula was called the king's evil, because people believed the touch of a king could cure it. English and French kings touched thousands of sick people in great ceremonies.
+L13|NARRATOR|6.7|0.84|King Charles II of England is said to have touched around 90,000 people. It didn't help, but it was very popular.
+L14|TB|3.9|0.82|90,000 royal touches, and not one of them bothered me.
+L15|NARRATOR|10.0|1.00|By the 1800s, she was everywhere. In parts of Europe, she caused about one in four deaths. Crowded factory towns, damp housing, no fresh air.
+L16|NARRATOR|12.2|1.00|And yet, she became fashionable. A pale face, thin body, bright eyes, and flushed cheeks were seen as beautiful. Women powdered their faces white and wore tight corsets to look consumptive.
+L17|NARRATOR|13.0|0.88|Poets and artists seemed to die of her. John Keats at 25, Frederick Chopin, the Bronte sisters, operas like La Traviata and La Bohème ended with a beautiful heroine dying of consumption.
+L18|TB|3.8|1.00|I was the most romantic way to die. Artists adored me.
+L19|NARRATOR|16.7|1.00|In New England in the 1890s, families who lost several members to her became convinced the dead were feeding on the living. In 1892, the family of Mercy Brown dug up her body, burned her heart, and fed the ashes to her sick brother. He died anyway.
+L20|TB|5.2|1.00|a vampire. They called me a vampire. I've been called worse.
+L21|NARRATOR|10.5|1.00|Then came Robert Koch. Using new dyes, he stained lung tissue and found the bacteria hiding inside. He grew them, put them into animals, and proved that they caused the disease.
+L22|NARRATOR|10.0|0.93|His talk that day changed medicine. The 24th of March is now World Tuberculosis Day. Koch won the Nobel Prize in 1905.
+L23|NARRATOR|10.7|0.97|but knowing the cause didn't give a cure. Cox's own remedy, tuberculin, was a failure as a treatment. It later became a useful skin test to find out who carries her.
+L24|TB|3.9|1.00|They knew my name at last. They just couldn't do anything about it.
+L25|NARRATOR|12.3|1.00|So doctors prescribed rest, good food and fresh air. Sanatoriums opened in the mountains and by the sea. Patients lay wrapped in blankets on open balconies, even in the snow for months or years.
+L26|NARRATOR|5.3|1.00|It helped some people and it kept the sick away from their families, but many never came home.
+L27|TB|3.9|0.84|mountaineer. Very pleasant. I came along for the view.
+L28|NARRATOR|14.9|0.85|In 1921, two French scientists, Albert Kelmet and Camille Guiron, made a vaccine called BCG. They weakened a cattle form of the bacteria by growing it over and over 230 times for 13 years.
+L29|NARRATOR|9.3|1.00|BCG protects young children well and it is still given to millions of babies today, but it doesn't protect adults very well, they needed a cure.
+L30|NARRATOR|14.1|0.97|In 1943, in a lab in New Jersey, a young student, Albert Schatz, working under Selman Waxman, discovered Streptomycin, an antibiotic found in soil bacteria. It was the first drug that could kill her.
+L31|NARRATOR|9.4|0.92|Waxman alone won the Nobel Prize, and Shat spent years fighting for credit. More drugs followed. Taken together for months, they could finally cure her.
+L32|NARRATOR|9.0|1.00|Mass X-ray vans toured towns and cities, sanatoriums emptied and closed, in rich countries cases fell year after year.
+L33|TB|4.5|1.00|pills, little pills. Do you know how humiliating that is?
+L34|NARRATOR|12.3|0.99|but she came back. In the 1980s and 90s, HIV have weakened millions of immune systems and she woke up in them. And when patients stopped their pills too early, she learned to survive the drugs.
+L35|NARRATOR|10.9|0.97|Today, she is once again the world's deadliest infectious disease. More than 10 million people fall ill every year and over a million die, mostly in Asia and Africa.
+L36|NARRATOR|8.8|1.00|And yet, almost everyone can be cured with a six-month course of cheap pills. The problem is not the medicine, it's getting it to the people who need it.
+A01|NARRATOR|9.4|1.00|And for those who survive, many are left with scarred lungs, short of breath for life. Some carry her quietly and she can wake again when they are old or ill.
+A02|NARRATOR|15.1|1.00|For the world, she left more than graves. Sanatoriums inspired modern architecture, white walls, big windows, balconies and sunlight, the idea of tracing contacts and screening whole populations, and World Tuberculosis Day.
+A03|TB|4.1|1.00|They built whole buildings just to get away from me. I'm almost touched.
+L37|NARRATOR|12.6|1.00|thousands of years, a billion lives by some estimates, not beaten by kings, poets, or mountain air, but by a dye, a soil bacterium, and six months of pills. And she isn't finished yet.
+L38|NARRATOR|7.4|1.00|Next time, a killer that rides on the wings of a mosquito. It may have killed more people than any other disease in history.
