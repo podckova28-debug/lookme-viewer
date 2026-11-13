@@ -1,6 +1,6 @@
 # Эпизод 4 · всё для загрузки на YouTube
 
-Видео: `ep04_final.mp4` (1080p, 8:48). Всё, что вставляется в YouTube, лежит в блоках кода — копируй целиком.
+Видео: `ep04_final.mp4` (1080p, 9:04). Всё, что вставляется в YouTube, лежит в блоках кода — копируй целиком.
 Общие настройки канала (категория, язык, «не для детей», расписание) — в `../../marca/canal_youtube.md`, здесь только то, что касается этой серии.
 
 ## 1. Название
@@ -34,12 +34,12 @@ YouTube Studio → «Проверить и сравнить»: загрузит�
 ¿Qué pasaría si un día despertaras y nadie pudiera verte? Ni tu mamá, ni las cámaras, ni el espejo. Una historia animada sobre lo divertido que es ser invisible… y lo que pasa cuando nadie te ve. Al final, la ciencia real detrás de la idea.
 
 0:00 Inicio
-0:52 El espejo
-1:58 La conciencia de Nacho
-3:53 Los problemas
-5:24 El sábado
-7:01 Pepe
-7:36 ¿Algo de esto es real?
+0:55 El espejo
+2:00 La conciencia de Nacho
+4:00 Los problemas
+5:34 El sábado
+7:18 Pepe
+7:51 ¿Algo de esto es real?
 
 Animación original.
 
@@ -71,18 +71,18 @@ qué pasaría si fueras invisible, que pasaria si fueras invisible, y si fueras 
 
 `subtitulos_es.srt` → Studio → Субтитры → Испанский → «Загрузить файл» → «С отметками времени».
 
-## 7. Конечная заставка (с 8:43 до 8:48, 5 секунд)
+## 7. Конечная заставка (с 8:59 до 9:04, 5 секунд)
 
 На тёмной заставке в центре уже есть «Ponle que… / Próximo episodio / Suscríbete»; края свободны.
 
 - **Слева:** «Видео» → эпизод 3 (или «Лучшее для зрителя»).
 - **Справа:** «Подписка».
 
-Старт ставь ровно на 8:43: раньше элементы закроют последнюю фразу «Pepe dice que no te va a gustar».
+Старт ставь ровно на 8:59: раньше элементы закроют последнюю фразу «Pepe dice que no te va a gustar».
 
 ## 8. Подсказка
 
-Одна, в 8:29 (история и наука закончились, начинается финал): видео → эпизод 3, текст подсказки:
+Одна, в 8:45 (история и наука закончились, начинается финал): видео → эпизод 3, текст подсказки:
 
 ```
 Episodio 3: hablar con los animales
@@ -128,12 +128,12 @@ What if you were invisible?
 What if you woke up one day and nobody could see you? Not your mom, not the cameras, not the mirror. An animated story about how fun it is to be invisible… and what happens when nobody sees you. At the end, the real science behind the idea.
 
 0:00 Intro
-0:52 The mirror
-1:58 Nacho's conscience
-3:53 The problems
-5:24 Saturday
-7:01 Pepe
-7:36 Is any of this real?
+0:55 The mirror
+2:00 Nacho's conscience
+4:00 The problems
+5:34 Saturday
+7:18 Pepe
+7:51 Is any of this real?
 
 Original animation.
 
@@ -149,12 +149,12 @@ E se você fosse invisível?
 E se um dia você acordasse e ninguém pudesse te ver? Nem sua mãe, nem as câmeras, nem o espelho. Uma história animada sobre como é divertido ser invisível… e o que acontece quando ninguém te vê. No final, a ciência real por trás da ideia.
 
 0:00 Início
-0:52 O espelho
-1:58 A consciência do Nacho
-3:53 Os problemas
-5:24 O sábado
-7:01 Pepe
-7:36 Algo disso é real?
+0:55 O espelho
+2:00 A consciência do Nacho
+4:00 Os problemas
+5:34 O sábado
+7:18 Pepe
+7:51 Algo disso é real?
 
 Animação original.
 
@@ -162,4 +162,4 @@ Animação original.
 ```
 
 ---
-Длительность 8:48 · голос: vo_kokoro
+Длительность 9:04 · голос: vo_mozg
