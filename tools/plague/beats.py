@@ -50,6 +50,8 @@ for sh in merged:   # long holds get a gentle push proportional to their length,
     d = sh['t1'] - sh['t0']; z0 = sh['from'][2]
     if d > 6 and abs(sh['to'][2] - z0) < .1 and sh['img'] not in KEEP: sh['to'] = sh['to'][:2] + [min(ZMAX + .03, max(sh['to'][2], z0 + .012 * d))]
 out['shots'] = merged
+if src.get('static'):   # no camera moves at all (user: the slow zoom annoys viewers)
+    for sh in merged: sh['from'] = [.5, .5, 1.0]; sh['to'] = [.5, .5, 1.0]
 for tx in out['texts']:   # persist: keep the item on screen until its (merged) shot ends - used by scheme blocks
     if tx.pop('persist', False):
         sh = next((m for m in merged if m['t0'] - 1e-3 <= tx['t0'] < m['t1']), None)

@@ -257,7 +257,7 @@ def frames():
     json.dump(out, open(os.path.join(ROOT, 'tools/plague/ep07_frames_todo.json'), 'w'), indent=1); print(len(out), 'frames')
 
 def beats():
-    out = {'base': 'assets/plague/ep07/frames', 'keep_zoom': [], 'fade_in': .8, 'start': 0.0, 'lead': .45, 'gap': .6, 'max_shot': 3.2,
+    out = {'base': 'assets/plague/ep07/frames', 'keep_zoom': [], 'static': True, 'fade_in': .8, 'start': 0.0, 'lead': .45, 'gap': .6, 'max_shot': 3.2,
            'sfx_global': [{'kind': 'drone', 't': 0.0, 'args': {'d': 'ALL'}, 'gain': .9}, {'kind': 'wind', 't': 0.0, 'args': {'d': 'ALL'}, 'gain': .12}], 'beats': []}
     M = 'assets/plague/music/'
     out['music'] = [{'file': M + f, 't0': float(a0), 't1': a1, 'gain': 1.0, 'fade_in': 2.0 if a0 == 0 else 4.0, 'fade_out': 5.0 if a1 == 'ALL' else 4.0}

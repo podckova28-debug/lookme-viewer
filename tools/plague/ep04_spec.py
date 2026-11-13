@@ -46,11 +46,11 @@ def K(i, t, *s): B.append((i, 'FLU', t, list(s)))
 def HOLD(sec, *s): B.append((None, None, sec, list(s)))
 
 # ---- cold open: Kansas, March 1918
-N('C01', "Kansas. The fourth of March, 1918. At an army training camp, a cook named Albert Gitchell reports to the infirmary with a fever, a sore throat and aching muscles.",
-  sh('c01a', WL(), "A huge WWI army training camp on the flat Kansas prairie at dawn in 1918: rows of wooden barracks, a water tower, smoke from chimneys, frost on the ground. People only as tiny distant figures.", text=cap('CAMP FUNSTON, KANSAS · MARCH 1918')),
+N('C01', "The cook can barely stand. His head is pounding, his throat is burning, and every muscle in his body aches. It's the fourth of March, 1918, at an army camp in Kansas, and Albert Gitchell has just stumbled into the infirmary.",
   ch('c01b', W(), "A 1918 army camp kitchen: a single stickman army cook in a white apron and cap stands by a big steaming pot, wiping his forehead, looking feverish."),
   ch('c01c', W(), "A 1918 army infirmary: the stickman cook sits on the edge of an iron bed while a stickman army nurse in a white uniform and cap holds a thermometer up to the light."),
-  sh('c01d', C(.5, .5, 1.05), "A 1918 army sick-call book lying open on a wooden desk with an ink pen, a mug of coffee steaming beside it, morning light. No readable words. No people."))
+  sh('c01d', C(.5, .5, 1.05), "A 1918 army sick-call book lying open on a wooden desk with an ink pen, a mug of coffee steaming beside it, morning light. No readable words. No people."),
+  sh('c01a', WL(), "A huge WWI army training camp on the flat Kansas prairie at dawn in 1918: rows of wooden barracks, a water tower, smoke from chimneys, frost on the ground. People only as tiny distant figures.", text=cap('CAMP FUNSTON, KANSAS · MARCH 1918')))
 N('C02', "By lunchtime, more than a hundred soldiers have the same symptoms. Within weeks, more than a thousand.",
   sh('c02a', W(), "A long 1918 army infirmary ward with many rows of iron beds with white sheets, seen down the length of the room, lamps, quiet. No people close up; beds look occupied only as blanket shapes."),
   sh('c02b', C(.5, .5, 1.1), "A wall clock in an army infirmary showing noon, next to a clipboard hanging on a nail with a long list of ticks. No people."),
@@ -256,7 +256,7 @@ def frames():
     json.dump(out, open(os.path.join(ROOT, 'tools/plague/ep04_frames_todo.json'), 'w'), indent=1); print(len(out), 'frames')
 
 def beats():
-    out = {'base': 'assets/plague/ep04/frames', 'keep_zoom': ['d02a'], 'fade_in': .8, 'start': 0.0, 'lead': .45, 'gap': .6, 'max_shot': 3.2,
+    out = {'base': 'assets/plague/ep04/frames', 'keep_zoom': ['d02a'], 'static': True, 'fade_in': .8, 'start': 0.0, 'lead': .45, 'gap': .6, 'max_shot': 3.2,
            'sfx_global': [{'kind': 'drone', 't': 0.0, 'args': {'d': 'ALL'}, 'gain': .9}, {'kind': 'wind', 't': 0.0, 'args': {'d': 'ALL'}, 'gain': .1}], 'beats': []}
     M = 'assets/plague/music/'
     out['music'] = [{'file': M + f, 't0': float(a0), 't1': a1, 'gain': 1.0, 'fade_in': 2.0 if a0 == 0 else 4.0, 'fade_out': 5.0 if a1 == 'ALL' else 4.0}
