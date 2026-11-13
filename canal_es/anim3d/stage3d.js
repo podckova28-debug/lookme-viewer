@@ -67,7 +67,7 @@ export class Stage {
     return (this.cards[key] = card);
   }
   // character card: drawChar with the episode's scale; frozen characters (p.still) are drawn once
-  char(key, cname, opt = {}) { return this.card(key, opt.w || 760, opt.h || 980, (g, x, y, p) => drawChar(g, cname, Object.assign({ x, y, s: S0, noShadow: 1 }, p)), Object.assign({ k: 2 }, opt)); }
+  char(key, cname, opt = {}) { return this.card(key, opt.w || 760, opt.h || 980, (g, x, y, p) => drawChar(g, cname, Object.assign({ x, y, s: S0, noShadow: 1, key: '@' + key }, p)), Object.assign({ k: 2 }, opt)); }   // own arm springs per card: two cards of one character (Renata and her ghost) must not drag each other's arms
   // two passes: everything in colour into A; then only the coloured things, occluded by the world's depth, into M
   render(A, M) {
     const gl = renderer(), sc = this.scene, cam = this.cam;
