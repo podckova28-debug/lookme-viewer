@@ -1,5 +1,5 @@
-C01|NARRATOR|Paris. The sixth of July, 1885. A mother arrives at the laboratory of Louis Pasteur with her nine-year-old son, Joseph Meister. Two days earlier, a mad dog bit him fourteen times.
-C02|NARRATOR|Everyone knew what came next. Once the symptoms began, nobody survived. Not ever.
+C01|NARRATOR|A mother clutches her nine-year-old son, Joseph Meister, bleeding from fourteen bites of a mad dog. Two days later, on the sixth of July, 1885, she brings him to Louis Pasteur's laboratory in Paris.
+C02|NARRATOR|She knew what came next. Once the symptoms began, nobody survived. Not ever.
 C03|NARRATOR|Pasteur was not even a medical doctor. He had an experimental treatment that had only ever been tried on dogs. And he had to decide that night.
 C04|RABIES|Fourteen bites. A child. And a chemist with a syringe. I liked my chances.
 L01|NARRATOR|So who is he? Rabies is a virus. Under a powerful microscope, he looks like a tiny bullet. His family is called Lyssavirus, after Lyssa, the Greek spirit of rage and madness.

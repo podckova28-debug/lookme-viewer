@@ -1,7 +1,14 @@
 [
  {
+  "img": "c01c",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, dressed exactly as described for this scene and its era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. A village lane in Alsace in July 1885: a desperate stickman mother in a long dark Alsatian dress and a bonnet kneels on the ground and hugs her small stickman son, who wears a cap, a short jacket and short trousers, his arm and leg wrapped in white bandages; an overturned basket of bread lies beside them and a dog runs away far down the lane. Only these two figures. Not gory, no blood.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
+ },
+ {
   "img": "c01a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. A Paris street in summer 1885 with Haussmann buildings, gas lamps and a horse cab outside the door of a stone laboratory building. People only as tiny distant stickman silhouettes. Absolutely NO Eiffel Tower anywhere (it did not exist yet).",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, thin black stick arms, stick legs and stick feet everywhere (no realistic skin, hands as small black mitts), dressed exactly as described. Only the figures described, standing apart; each has exactly two arms and two hands attached to its sleeves. A Paris street in summer 1885 with Haussmann buildings, gas lamps and a horse cab: a stickman mother in a long dark 1880s Alsatian dress and a bonnet hurries along the pavement, leading her small stickman son in a cap, a short jacket and short trousers, with a bandaged arm, by the hand toward the door of a stone laboratory building. Only these two figures; no other people. Absolutely NO Eiffel Tower anywhere (it did not exist yet).",
   "refs": []
  },
  {
@@ -12,14 +19,11 @@
   ]
  },
  {
-  "img": "c01c",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. A dark village lane in Alsace at dusk, a broken wooden fence, an overturned basket of bread on the ground, a bakery shop sign without words. No people. No people and no human figures anywhere in the picture.",
-  "refs": []
- },
- {
   "img": "c02a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. A small empty child's bed in a dim 1880s room lit by a single candle, a wooden toy horse on the floor, rain on the window. Somber. No people. No people and no human figures anywhere in the picture.",
-  "refs": []
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, dressed exactly as described for this scene and its era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. A dim 1885 bedroom lit by a single candle, rain on the window: a stickman mother in a long dark Alsatian dress and a bonnet sits on a chair beside a small bed and holds the hand of her small stickman son, who lies under the blanket with a bandaged arm; both look frightened; a wooden toy horse on the floor. Only these two figures.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
  },
  {
   "img": "d01a",
@@ -49,8 +53,10 @@
  },
  {
   "img": "c03c",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. A grandfather clock in a dim laboratory corridor showing midnight, a lit oil lamp on a side table. No people. No people and no human figures anywhere in the picture.",
-  "refs": []
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, dressed exactly as described for this scene and its era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. A dim 1885 laboratory corridor at midnight beside a tall grandfather clock: a single stickman chemist with a short grey beard drawn as a simple line, a black skullcap and a black frock coat paces past the clock with both hands clasped behind his back; a lit oil lamp on a side table.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
  },
  {
   "img": "c04a",
@@ -68,7 +74,7 @@
  },
  {
   "img": "c06c",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. A brass 1880s microscope on a wooden Victorian laboratory bench beside glass flasks and an oil lamp, soft warm light. No people and no human figures anywhere in the picture.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, the same muted slate-blue, grey and sepia palette as the rest of the series, soft natural daylight. The setting is modern (2000s-2020s): no lanterns, no gas lamps, no oil lamps, nothing Victorian. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, thin black stick arms, stick legs and stick feet everywhere (no realistic skin, hands as small black mitts), dressed exactly as described. Only the figures described, standing apart; each has exactly two arms and two hands attached to its sleeves. A modern virology laboratory with white cabinets: a single stickman scientist in a white lab coat sits at a modern electron microscope, pointing with one hand at a computer screen that shows one tiny bullet-shaped virus. No readable words.",
   "refs": []
  },
  {
@@ -90,8 +96,10 @@
  },
  {
   "img": "c06b",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. A thin stray dog with bristling fur standing in a dark alley at night, drool at its mouth, staring with glassy eyes. Not gory. No people. No people and no human figures anywhere in the picture.",
-  "refs": []
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, dressed exactly as described for this scene and its era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. A dark 1880s back alley at night under a gas lamp: a thin stray dog with bristling fur and a little drool at its mouth snarls, and a single stickman man in a flat cap, a waistcoat and rolled shirtsleeves backs away from it with both empty hands raised. Not gory.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
  },
  {
   "img": "d04a",
@@ -107,8 +115,10 @@
  },
  {
   "img": "c07b",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. A wall calendar in a cosy 1880s kitchen with many days crossed off in pencil, a cup of coffee on the table below. No people. No people and no human figures anywhere in the picture.",
-  "refs": []
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, dressed exactly as described for this scene and its era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. A cosy 1880s kitchen: a single cheerful stickman man in shirtsleeves and a waistcoat crosses off another day with one pencil on a wall calendar full of crossed-off days, a cup of coffee on the table below.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
  },
  {
   "img": "d05a",
@@ -131,7 +141,7 @@
  },
  {
   "img": "c09a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. A huge dark cave entrance at dusk with a cloud of bats streaming out into a purple sky over a forest. No people. No people and no human figures anywhere in the picture.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, the same muted slate-blue, grey and sepia palette as the rest of the series, soft natural daylight. The setting is modern (2000s-2020s): no lanterns, no gas lamps, no oil lamps, nothing Victorian. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, thin black stick arms, stick legs and stick feet everywhere (no realistic skin, hands as small black mitts), dressed exactly as described. Only the figures described, standing apart; each has exactly two arms and two hands attached to its sleeves. A huge dark cave entrance in a forest at dusk with a cloud of bats streaming out into a purple sky: a single stickman bat scientist in a modern field jacket, cargo trousers and a head torch stands at the cave mouth looking up at the bats, holding one small notebook.",
   "refs": []
  },
  {
@@ -141,12 +151,14 @@
  },
  {
   "img": "c09c",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. A single fruit bat hanging upside down from a branch at night, its eyes glinting, a big moon behind. No people. No people and no human figures anywhere in the picture.",
-  "refs": []
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Rabies exactly as on the attached sheet: a tall, wiry, predatory gentleman with the head of a lean grey wolf-dog, wild bristling fur, bloodshot yellow eyes and a little white froth at the corners of his toothy grin; a torn black Victorian tailcoat and waistcoat, a loose cravat, a broken leather dog collar with a short dangling chain around his neck. Exactly ONE of him, with exactly two arms and two hands with normal-length clawed fingers. Rabies kneels at the edge of a moonlit forest, a fruit bat hanging upside down from the branch just above his shoulder; he holds out one empty clawed hand toward a curious red fox that sniffs it, grinning at the viewer.",
+  "refs": [
+   "613e7f6d-97c4-481b-b6cc-dbeee60a59a4"
+  ]
  },
  {
   "img": "c09b",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. A prehistoric campfire at night outside a hide tent, a wolf-like dog lying by the fire, stars above. People only as tiny distant figures. Any people are tiny distant stickman silhouettes only.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, thin black stick arms, stick legs and stick feet everywhere (no realistic skin, hands as small black mitts), dressed exactly as described. Only the figures described, standing apart; each has exactly two arms and two hands attached to its sleeves. A prehistoric campfire at night outside a hide tent under the stars: two stickmen in simple Stone Age animal-hide tunics sit apart by the fire; one holds out a bone in one hand to a wolf-like dog lying beside him, the other warms both empty hands at the flames.",
   "refs": []
  },
  {
@@ -187,8 +199,10 @@
  },
  {
   "img": "c11e",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. A bedroom wall at night with a frightening shadow shaped like a wolf cast by a flickering candle, a crooked picture frame. No people. No people and no human figures anywhere in the picture.",
-  "refs": []
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, dressed exactly as described for this scene and its era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. A dim 19th-century bedroom at night lit by a flickering candle: a wild-eyed stickman patient in a long white nightshirt lashes out with one arm, and a stickman man in a waistcoat steps back from him with both empty hands raised; they stand apart; a wolf-shaped shadow on the wall.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
  },
  {
   "img": "d10a",
@@ -206,8 +220,10 @@
  },
  {
   "img": "c11f",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. A full glass jug of water and a cup on a bedside table lit by a candle, drops of water on the table, ominous. No people. No people and no human figures anywhere in the picture.",
-  "refs": []
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, dressed exactly as described for this scene and its era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. A 19th-century sickroom lit by a candle: a stickman woman in a long dress and a white apron pours water from one jug into a cup on the bedside table, while the stickman patient in a nightshirt sitting up in bed turns his head away in terror, covering his eyes with one hand; they are apart.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
  },
  {
   "img": "d11a",
@@ -230,8 +246,10 @@
  },
  {
   "img": "c11d",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. An empty 19th-century hospital bed with a crumpled blanket and an untouched cup of water on a stool, a single candle, morning light through a window. Somber. No people. No people and no human figures anywhere in the picture.",
-  "refs": []
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, dressed exactly as described for this scene and its era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. A 19th-century hospital ward in grey morning light: a stickman patient lies still in bed under a blanket with his eyes closed, and a stickman doctor in a black frock coat stands apart beside the bed with his head bowed, holding his top hat in one hand; an untouched cup of water on a stool. Somber, not gory.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
  },
  {
   "img": "c12a",
@@ -254,7 +272,7 @@
  },
  {
   "img": "c13b",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. A sunny ancient Mesopotamian town with mud-brick houses and a ziggurat, a dog lying in the shade of a palm. People only as tiny distant figures. Any people are tiny distant stickman silhouettes only.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, thin black stick arms, stick legs and stick feet everywhere (no realistic skin, hands as small black mitts), dressed exactly as described. Only the figures described, standing apart; each has exactly two arms and two hands attached to its sleeves. A sunny ancient Mesopotamian street of mud-brick houses with a ziggurat in the distance and a palm tree: a stickman in a long fringed wool robe backs away from a snarling dog, while a stickman dog owner in a plain knee-length wool tunic holds the dog's rope leash; the two men stand apart.",
   "refs": []
  },
  {
@@ -278,7 +296,7 @@
  },
  {
   "img": "c14b",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. A cosy old English pub interior with wooden beams, a fireplace, pewter mugs on the bar and a sleeping dog by the hearth. No people. No people and no human figures anywhere in the picture.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, the same muted slate-blue, grey and sepia palette as the rest of the series, soft natural daylight. The setting is modern (2000s-2020s): no lanterns, no gas lamps, no oil lamps, nothing Victorian. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, thin black stick arms, stick legs and stick feet everywhere (no realistic skin, hands as small black mitts), dressed exactly as described. Only the figures described, standing apart; each has exactly two arms and two hands attached to its sleeves. A cosy modern pub with old wooden beams and a fireplace: a single tired stickman in a modern jumper and jeans sits slumped on a bar stool, resting his head on one hand, a pint glass on the bar in front of him; a dog sleeps by the hearth.",
   "refs": []
  },
  {
@@ -290,7 +308,7 @@
  },
  {
   "img": "c16a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. A medieval stone chapel in a forest with a small statue of a hunter saint with a stag above the door, candles burning. No people. No people and no human figures anywhere in the picture.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, thin black stick arms, stick legs and stick feet everywhere (no realistic skin, hands as small black mitts), dressed exactly as described. Only the figures described, standing apart; each has exactly two arms and two hands attached to its sleeves. A small medieval stone chapel in a forest with a statue of a hunter saint with a stag above the door, candles burning: a single stickman medieval peasant in a plain brown wool tunic, hood and leggings, with one arm in a white bandage, kneels and prays at the chapel door.",
   "refs": []
  },
  {
@@ -307,7 +325,7 @@
  },
  {
   "img": "c16b",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. A medieval village at night under a full moon, thatched houses, a dark forest edge, a single lit window. A wolf howls on a hill far away. No people. No people and no human figures anywhere in the picture.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, thin black stick arms, stick legs and stick feet everywhere (no realistic skin, hands as small black mitts), dressed exactly as described. Only the figures described, standing apart; each has exactly two arms and two hands attached to its sleeves. A medieval village at night under a full moon, thatched houses and a dark forest edge: a single frightened stickman villager in a plain wool tunic and hood stands in his doorway holding up one lantern, staring at a wolf howling on a distant hill.",
   "refs": []
  },
  {
@@ -324,8 +342,10 @@
  },
  {
   "img": "c18a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. A crowded 1880s city street with horse carts and gas lamps; a few stray dogs roam between the carts. People only as tiny distant figures. Any people are tiny distant stickman silhouettes only.",
-  "refs": []
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, dressed exactly as described for this scene and its era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. A busy 1880s city street with gas lamps and a horse cart: a stickman mother in a long Victorian dress and a bonnet pulls her small stickman son in a cap and short trousers away by the hand from three snarling stray dogs at the kerb. Only these two figures.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
  },
  {
   "img": "c18b",
@@ -334,8 +354,10 @@
  },
  {
   "img": "c18d",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. A pile of 1880s newspapers on a kiosk counter with a big drawing of a snarling dog on the front page and no readable words. No people. No people and no human figures anywhere in the picture.",
-  "refs": []
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, dressed exactly as described for this scene and its era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. An 1880s street news kiosk: a single stickman gentleman in a bowler hat and an overcoat holds up one open newspaper with a big drawing of a snarling dog on the front page and no readable words, looking alarmed.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
  },
  {
   "img": "d18a",
@@ -351,8 +373,10 @@
  },
  {
   "img": "c18e",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. A row of clean Victorian quarantine kennels with dogs resting inside, a brick wall and a gate, morning light. No people. No people and no human figures anywhere in the picture.",
-  "refs": []
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, dressed exactly as described for this scene and its era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. A row of clean Victorian quarantine kennels with dogs resting inside, a brick wall and a gate, morning light: a single stickman kennel keeper in a flat cap and a long brown work coat carries one bowl of food toward the kennels.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
  },
  {
   "img": "c19a",
@@ -368,8 +392,10 @@
  },
  {
   "img": "c19c",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. A green meadow with a flock of healthy sheep in 1881 and a small wooden pen, a French farmhouse behind. No people. No people and no human figures anywhere in the picture.",
-  "refs": []
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, dressed exactly as described for this scene and its era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. A green French meadow in 1881 with a small wooden pen and a farmhouse behind: a stickman vet in a black frock coat and a bowler hat gives a sheep an injection with one small syringe, while a stickman shepherd in a blue smock and a flat cap holds the sheep steady; the two men stand apart on either side of the sheep.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
  },
  {
   "img": "d20a",
@@ -378,8 +404,10 @@
  },
  {
   "img": "c19b",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. A laboratory shelf in 1885 with a row of tall glass flasks with cotton stoppers, lit by a lamp, a rabbit hutch below. No people. No people and no human figures anywhere in the picture.",
-  "refs": []
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, dressed exactly as described for this scene and its era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. An 1885 laboratory lit by a lamp: a single stickman lab assistant in a long apron places one tall glass flask with a cotton stopper on a shelf of identical flasks, each holding a thin pale dried strip; a rabbit hutch with white rabbits below.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
  },
  {
   "img": "d21a",
@@ -419,8 +447,10 @@
  },
  {
   "img": "c21b",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. A sunny Alsace village in summer with half-timbered houses, flower boxes and a church tower. People only as tiny distant figures. Any people are tiny distant stickman silhouettes only.",
-  "refs": []
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Humans are simple STICKMEN in the style of the attached stickman sheet: plain white round head, two dot eyes, no nose, no beard, thin black stick arms and legs, dressed exactly as described for this scene and its era; anyone wearing glasses has his two dot eyes INSIDE the lenses and no other eyes. KEEP IT SIMPLE: only the few figures described, standing apart, never overlapping; each figure has exactly two arms and two hands, clearly attached to its own sleeves; nothing floating. No crowds, no ghost figures, no plague doctors. A sunny Alsace village lane in summer with half-timbered houses, flower boxes and a church tower: a healthy small stickman boy in a cap and short trousers runs ahead happily, and his stickman mother in a long dark Alsatian dress and a bonnet follows a few steps behind, smiling. Only these two figures.",
+  "refs": [
+   "84427fc9-09ce-40e6-b032-6f2700874458"
+  ]
  },
  {
   "img": "c21c",
@@ -455,7 +485,7 @@
  },
  {
   "img": "c23a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. A grand red-brick and stone institute building in Paris in 1888 with a wrought-iron gate and a French tricolour flag on the roof, trees around. People only as tiny distant stickman silhouettes. Absolutely NO Eiffel Tower anywhere (it did not exist yet).",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, thin black stick arms, stick legs and stick feet everywhere (no realistic skin, hands as small black mitts), dressed exactly as described. Only the figures described, standing apart; each has exactly two arms and two hands attached to its sleeves. A grand red-brick and stone institute building in Paris in 1888 with a wrought-iron gate and trees around, no flags: at the open gate, a stickman chemist with a short grey beard drawn as a simple line, a black skullcap and a black 1880s frock coat welcomes a stickman mother in a shawl and a long 1880s dress who holds the hand of her small stickman child in a cap. Only these three figures, standing apart. Absolutely NO Eiffel Tower anywhere (it did not exist yet).",
   "refs": []
  },
  {
@@ -482,7 +512,7 @@
  },
  {
   "img": "c25c",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, the same muted slate-blue, grey and sepia palette as the rest of the series, soft natural daylight. The setting is modern (2000s-2020s): no lanterns, no gas lamps, no oil lamps, nothing Victorian. Not gory. A modern blue cool box of small vaccine vials, a stack of dog collars with round tags and a clipboard on a plastic table under a tree in a sunny modern village. No readable words. No people and no human figures anywhere in the picture.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, the same muted slate-blue, grey and sepia palette as the rest of the series, soft natural daylight. The setting is modern (2000s-2020s): no lanterns, no gas lamps, no oil lamps, nothing Victorian. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, thin black stick arms, stick legs and stick feet everywhere (no realistic skin, hands as small black mitts), dressed exactly as described. Only the figures described, standing apart; each has exactly two arms and two hands attached to its sleeves. A peaceful sunny modern village street with concrete houses: a stickman mother in a modern T-shirt and jeans and her small stickman child in a T-shirt and shorts walk side by side, apart, smiling; the child holds the lead of a happy dog wearing a collar with a round vaccination tag. No readable words.",
   "refs": []
  },
  {
@@ -497,7 +527,7 @@
  },
  {
   "img": "c26a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. A small brick church in Wisconsin in autumn with a single bat flying near the bell tower at dusk. No people. No people and no human figures anywhere in the picture.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, the same muted slate-blue, grey and sepia palette as the rest of the series, soft natural daylight. The setting is modern (2000s-2020s): no lanterns, no gas lamps, no oil lamps, nothing Victorian. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, thin black stick arms, stick legs and stick feet everywhere (no realistic skin, hands as small black mitts), dressed exactly as described. Only the figures described, standing apart; each has exactly two arms and two hands attached to its sleeves. Outside a small brick church in Wisconsin in autumn at dusk: a teenage stickman girl with a ponytail in a 2000s hoodie and jeans holds out one hand toward a small bat fluttering just above her fingers.",
   "refs": []
  },
  {
@@ -509,7 +539,7 @@
  },
  {
   "img": "c26c",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. A modern hospital intensive care room at night with monitors glowing beside an empty bed, soft blue light. No people. No people and no human figures anywhere in the picture.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, the same muted slate-blue, grey and sepia palette as the rest of the series, soft natural daylight. The setting is modern (2000s-2020s): no lanterns, no gas lamps, no oil lamps, nothing Victorian. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, thin black stick arms, stick legs and stick feet everywhere (no realistic skin, hands as small black mitts), dressed exactly as described. Only the figures described, standing apart; each has exactly two arms and two hands attached to its sleeves. A bright modern hospital room by day: a teenage stickman girl with a ponytail in a hospital gown sits up in bed, smiling weakly, while a stickman doctor in a white coat stands apart beside the bed giving a thumbs-up with one hand.",
   "refs": []
  },
  {
@@ -569,7 +599,7 @@
  },
  {
   "img": "c29c",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. A busy rural Asian village street at dusk with stray dogs sleeping by a shop, a motorbike, washing lines. People only as tiny distant figures. Any people are tiny distant stickman silhouettes only.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, the same muted slate-blue, grey and sepia palette as the rest of the series, soft natural daylight. The setting is modern (2000s-2020s): no lanterns, no gas lamps, no oil lamps, nothing Victorian. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, thin black stick arms, stick legs and stick feet everywhere (no realistic skin, hands as small black mitts), dressed exactly as described. Only the figures described, standing apart; each has exactly two arms and two hands attached to its sleeves. A dusty rural village street in South Asia at dusk with small shops and a parked motorbike: a stickman mother in a sari hurries her small stickman son in a school uniform, with a bandaged leg, by the hand toward a small modern clinic; a stray dog lies by a shop. Only these two figures.",
   "refs": []
  },
  {
@@ -584,7 +614,7 @@
  },
  {
   "img": "c30a",
-  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted night-blue, slate-grey and sepia palette with warm gaslight amber and small sickly-yellow accents. Not gory. A modern North American attic at night with a small bat hanging from a wooden beam, moonlight through a small window. No people. No people and no human figures anywhere in the picture.",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, the same muted slate-blue, grey and sepia palette as the rest of the series, soft natural daylight. The setting is modern (2000s-2020s): no lanterns, no gas lamps, no oil lamps, nothing Victorian. Not gory. Humans are simple STICKMEN: plain white round head, two dot eyes, no nose, thin black stick arms, stick legs and stick feet everywhere (no realistic skin, hands as small black mitts), dressed exactly as described. Only the figures described, standing apart; each has exactly two arms and two hands attached to its sleeves. A modern North American attic bedroom at night with wooden beams and moonlight through a small window: a single stickman in modern pyjamas sleeps peacefully in bed, while a small bat hangs from the beam right above him.",
   "refs": []
  },
  {

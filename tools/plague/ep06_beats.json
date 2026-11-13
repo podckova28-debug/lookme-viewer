@@ -1,6 +1,7 @@
 {
  "base": "assets/plague/ep06/frames",
  "keep_zoom": [],
+ "static": true,
  "fade_in": 0.8,
  "start": 0.0,
  "lead": 0.45,
@@ -29,6 +30,27 @@
    "vo": "assets/plague/ep06/vo/C01.wav",
    "shots": [
     {
+     "img": "c01c",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "Fourteen bites from a mad dog",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
      "img": "c01a",
      "from": [
       0.48,
@@ -42,7 +64,7 @@
      ],
      "w": 1,
      "text": {
-      "text": "PARIS \u00b7 6 JULY 1885",
+      "text": "Paris \u2014 6 July 1885",
       "x": 960,
       "y": 985,
       "size": 50,
@@ -61,21 +83,14 @@
       0.5,
       1.04
      ],
-     "w": 1
-    },
-    {
-     "img": "c01c",
-     "from": [
-      0.5,
-      0.5,
-      1.0175
-     ],
-     "to": [
-      0.5,
-      0.5,
-      1.0375
-     ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Joseph Meister, nine years old",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -111,7 +126,7 @@
      "w": 1,
      "text": [
       {
-       "text": "ONCE SYMPTOMS BEGIN: ALMOST ALWAYS FATAL",
+       "text": "Once symptoms begin, almost no one survives",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -150,7 +165,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Louis Pasteur \u2014 a chemist, not a doctor",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "c03b",
@@ -164,7 +186,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Only ever tried on dogs",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "c03c",
@@ -178,7 +207,14 @@
       0.5,
       1.0375
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "One night to decide",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -269,7 +305,14 @@
       0.5,
       1.0375
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Shaped like a tiny bullet",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "d02a",
@@ -286,7 +329,7 @@
      "w": 1,
      "text": [
       {
-       "text": "THE RABIES VIRUS",
+       "text": "The rabies virus",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -308,7 +351,7 @@
      ],
      "w": 1,
      "text": {
-      "text": "LYSSA: RAGE AND MADNESS",
+      "text": "Lyssa, the Greek spirit of rage",
       "x": 960,
       "y": 985,
       "size": 50,
@@ -335,7 +378,7 @@
      "w": 1,
      "text": [
       {
-       "text": "DOGS: ALMOST EVERY HUMAN CASE",
+       "text": "Dogs cause almost every human case",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -355,7 +398,14 @@
       0.5,
       1.0375
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "It lives in the saliva",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -377,7 +427,7 @@
      "w": 1,
      "text": [
       {
-       "text": "ALONG THE NERVES  \u00b7  WEEKS TO MONTHS",
+       "text": "Crawling along the nerves to the brain",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -397,7 +447,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "And all that time, you feel fine",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "c07b",
@@ -411,7 +468,14 @@
       0.5,
       1.0375
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Sometimes more than a year",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -433,7 +497,7 @@
      "w": 1,
      "text": [
       {
-       "text": "BRAIN  \u00b7  THEN SALIVA",
+       "text": "From the brain to the saliva",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -492,7 +556,14 @@
       0.5,
       1.03
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Scientists think it began in bats",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "d06a",
@@ -509,7 +580,7 @@
      "w": 1,
      "text": [
       {
-       "text": "BATS FIRST  \u00b7  THEN DOGS AND FOXES",
+       "text": "Then it jumped to dogs and foxes",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -548,7 +619,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "At least 15,000 years together",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "d07a",
@@ -565,7 +643,7 @@
      "w": 1,
      "text": [
       {
-       "text": "15,000 YEARS OF DOGS",
+       "text": "From wild wolf to family dog",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -620,7 +698,7 @@
        "at": 0.3
       },
       {
-       "text": "FEVER  \u00b7  HEADACHE  \u00b7  TINGLING AT THE BITE",
+       "text": "It starts like flu",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -640,7 +718,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "A tingling at the old bite",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -662,7 +747,7 @@
      "w": 1,
      "text": [
       {
-       "text": "CONFUSION  \u00b7  TERROR  \u00b7  HALLUCINATIONS",
+       "text": "Confusion and terror",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -696,7 +781,14 @@
       0.5,
       1.0375
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Lashing out, unable to sleep",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -718,7 +810,7 @@
      "w": 1,
      "text": [
       {
-       "text": "HYDROPHOBIA: FEAR OF WATER",
+       "text": "Hydrophobia \u2014 fear of water",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -752,7 +844,14 @@
       0.5,
       1.0375
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Even the sight of water",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -774,7 +873,7 @@
      "w": 1,
      "text": [
       {
-       "text": "NO SWALLOWING  \u00b7  SALIVA FULL OF VIRUS",
+       "text": "Saliva full of the virus",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -816,7 +915,7 @@
      "w": 1,
      "text": [
       {
-       "text": "THE QUIET FORM: PARALYSIS",
+       "text": "The quieter form: slow paralysis",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -836,7 +935,14 @@
       0.5,
       1.0375
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Death within a week or two",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -877,7 +983,7 @@
      ],
      "w": 1,
      "text": {
-      "text": "THE LAWS OF ESHNUNNA \u00b7 ABOUT 1800 BC",
+      "text": "The Laws of Eshnunna \u2014 about 1800 BC",
       "x": 960,
       "y": 985,
       "size": 50,
@@ -899,7 +1005,7 @@
      "w": 1,
      "text": [
       {
-       "text": "A MAD DOG  \u00b7  A BITE  \u00b7  A FINE IN SILVER",
+       "text": "Two-thirds of a mina of silver",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -919,7 +1025,14 @@
       0.5,
       1.03
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "If the man dies, the owner pays",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -938,7 +1051,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Celsus: burn the wound",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "d14a",
@@ -955,7 +1075,7 @@
      "w": 1,
      "text": [
       {
-       "text": "A HOT IRON  \u00b7  THE DOG'S LIVER  \u00b7  THE POND",
+       "text": "A hot iron, or the mad dog's liver",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -983,7 +1103,7 @@
      "w": 1,
      "text": [
       {
-       "text": "\"THE HAIR OF THE DOG THAT BIT YOU\"",
+       "text": "\"The hair of the dog that bit you\"",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1003,7 +1123,14 @@
       0.5,
       1.03
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Today: a hangover cure",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -1042,7 +1169,14 @@
       0.5,
       1.03
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Saint Hubert, patron saint of hunters",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "d16a",
@@ -1059,7 +1193,7 @@
      "w": 1,
      "text": [
       {
-       "text": "SAINT HUBERT'S KEY",
+       "text": "Saint Hubert's key",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1115,7 +1249,7 @@
      "w": 1,
      "text": [
       {
-       "text": "WEREWOLVES?  \u00b7  VAMPIRES?",
+       "text": "Werewolves and vampires?",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1160,7 +1294,14 @@
       0.5,
       1.03
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Panic across Europe and America",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "c18b",
@@ -1174,7 +1315,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Police hunted strays in the street",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "c18d",
@@ -1188,7 +1336,14 @@
       0.5,
       1.0375
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Mad dog scares filled the papers",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -1210,7 +1365,7 @@
      "w": 1,
      "text": [
       {
-       "text": "MUZZLES  \u00b7  QUARANTINE  \u00b7  GONE BY 1902",
+       "text": "Gone from Britain by 1902",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1244,7 +1399,14 @@
       0.5,
       1.03
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Six months in quarantine",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -1265,7 +1427,7 @@
      ],
      "w": 1,
      "text": {
-      "text": "LOUIS PASTEUR",
+      "text": "Louis Pasteur",
       "x": 960,
       "y": 985,
       "size": 50,
@@ -1287,7 +1449,7 @@
      "w": 1,
      "text": [
       {
-       "text": "GERMS  \u00b7  ANTHRAX  \u00b7  RABIES?",
+       "text": "Next target: rabies",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1307,7 +1469,14 @@
       0.5,
       1.03
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Anthrax vaccine for sheep, 1881",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -1329,7 +1498,7 @@
      "w": 1,
      "text": [
       {
-       "text": "THE LONGER IT DRIES, THE WEAKER HE GETS",
+       "text": "The longer it dries, the weaker he gets",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1349,7 +1518,14 @@
       0.5,
       1.0375
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Grown in rabbits, dried in flasks",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -1371,7 +1547,7 @@
      "w": 1,
      "text": [
       {
-       "text": "WEAK  \u00b7  STRONGER  \u00b7  STRONGEST",
+       "text": "Weak first, then stronger and stronger",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1430,7 +1606,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "The evening of 6 July 1885",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "d22a",
@@ -1447,7 +1630,7 @@
      "w": 1,
      "text": [
       {
-       "text": "13 INJECTIONS IN 10 DAYS",
+       "text": "13 injections in 10 days",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1486,7 +1669,14 @@
       0.5,
       1.03
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Home to Alsace, healthy",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "c21c",
@@ -1500,7 +1690,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Later, caretaker of the Pasteur Institute",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -1519,7 +1716,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Jean-Baptiste Jupille, age 15",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "c22b",
@@ -1569,7 +1773,7 @@
      "w": 1,
      "text": [
       {
-       "text": "SMOLENSK TO PARIS \u00b7 1886",
+       "text": "From Smolensk to Paris \u2014 1886",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1591,7 +1795,7 @@
      ],
      "w": 1,
      "text": {
-      "text": "THE PASTEUR INSTITUTE \u00b7 1888",
+      "text": "The Pasteur Institute \u2014 1888",
       "x": 960,
       "y": 985,
       "size": 50,
@@ -1610,7 +1814,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Nineteen Russians bitten by a wolf",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -1666,7 +1877,7 @@
      "w": 1,
      "text": [
       {
-       "text": "VACCINATE THE DOGS  \u00b7  PROTECT THE PEOPLE",
+       "text": "Vaccinate the dogs, save the people",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1708,7 +1919,7 @@
      "w": 1,
      "text": [
       {
-       "text": "WASH  \u00b7  VACCINE  \u00b7  ANTIBODIES",
+       "text": "Wash the wound for fifteen minutes",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1728,7 +1939,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Treat it before symptoms start",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -1749,7 +1967,7 @@
      ],
      "w": 1,
      "text": {
-      "text": "WISCONSIN \u00b7 2004",
+      "text": "Wisconsin \u2014 2004",
       "x": 960,
       "y": 985,
       "size": 50,
@@ -1768,7 +1986,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Jeanna Giese, age 15",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "c26c",
@@ -1782,7 +2007,14 @@
       0.5,
       1.0375
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "She survived",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -1804,7 +2036,7 @@
      "w": 1,
      "text": [
       {
-       "text": "A FEW SURVIVORS  \u00b7  ALMOST ALL ARE LOST",
+       "text": "A handful of survivors",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1859,7 +2091,7 @@
        "at": 0.3
       },
       {
-       "text": "FEW SURVIVORS  \u00b7  MOSTLY BRAIN DAMAGE",
+       "text": "Most survivors have brain damage",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1879,7 +2111,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "A lucky few recover",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -1901,7 +2140,7 @@
      "w": 1,
      "text": [
       {
-       "text": "LAB VACCINES  \u00b7  PASTEUR INSTITUTES  \u00b7  DOG LAWS",
+       "text": "Pasteur Institutes on five continents",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1921,7 +2160,14 @@
       0.5,
       1.0375
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "The first lab-made vaccine for people",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -1963,7 +2209,7 @@
      "w": 1,
      "text": [
       {
-       "text": "ABOUT 59,000 DEATHS A YEAR",
+       "text": "About 59,000 deaths a year",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1983,7 +2229,14 @@
       0.5,
       1.04
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Four in ten are children",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "c29c",
@@ -1997,7 +2250,14 @@
       0.5,
       1.03
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "Mostly in Asia and Africa",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     }
    ]
   },
@@ -2019,7 +2279,7 @@
      "w": 1,
      "text": [
       {
-       "text": "ZERO BY 2030",
+       "text": "Zero deaths by 2030",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -2058,7 +2318,14 @@
       0.5,
       1.0375
      ],
-     "w": 1
+     "w": 1,
+     "text": {
+      "text": "In the Americas, mostly bats",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
     },
     {
      "img": "d31a",
@@ -2075,7 +2342,7 @@
      "w": 1,
      "text": [
       {
-       "text": "A DOG BITE  \u00b7  A BAT BITE",
+       "text": "A bat bite: two tiny dots",
        "x": 960,
        "y": 985,
        "size": 50,
