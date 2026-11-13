@@ -4,7 +4,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter
 F = 'assets/fonts/Cinzel.ttf'
 W = (246, 236, 214)
 
-def make(src, out, name, years, col, shift=90, s1=104, s2=58):
+def make(src, out, name, years, col, shift=0, s1=104, s2=58):
     art = Image.open(src).convert('RGB').resize((1280, 720), Image.LANCZOS)
     im = Image.new('RGB', (1280, 720))
     if shift:
