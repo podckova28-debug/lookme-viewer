@@ -1,0 +1,824 @@
+[
+{
+"id": "s00_01",
+"who": "narrador",
+"text": "Sábado, cinco de la tarde. Tienes una cita con Renata.",
+"p": 0
+},
+{
+"id": "s00_02",
+"who": "narrador",
+"text": "Bueno, un paseo. Con su perrita. Pero tú le dices cita.",
+"p": 0
+},
+{
+"id": "s00_03",
+"who": "narrador",
+"text": "Renata ya llegó. Tú también: estás parado justo enfrente de ella.",
+"p": 1
+},
+{
+"id": "s00_04",
+"who": "valeria",
+"text": "¿Dónde está? Dijo que a las cinco…",
+"p": 1
+},
+{
+"id": "s00_05",
+"who": "narrador",
+"text": "El problema es que ella no te puede ver.",
+"p": 1
+},
+{
+"id": "s00_06",
+"who": "narrador",
+"text": "Nadie te puede ver.",
+"p": 0
+},
+{
+"id": "s00_07",
+"who": "narrador",
+"text": "Empecemos por el principio.",
+"p": 1
+},
+{
+"id": "s01_01",
+"who": "narrador",
+"text": "Imagina que eres invisible.",
+"p": 0
+},
+{
+"id": "s01_02",
+"who": "narrador",
+"text": "Nadie te ve. Ni tu mamá, ni las cámaras, ni el espejo.",
+"p": 0
+},
+{
+"id": "s01_03",
+"who": "narrador",
+"text": "Y sí, la ropa también. No preguntes cómo. Es un poder, no un manual.",
+"p": 1
+},
+{
+"id": "s01_04",
+"who": "narrador",
+"text": "Puedes entrar a donde quieras. Hacer lo que quieras. Nadie se va a enterar.",
+"p": 1
+},
+{
+"id": "s01_05",
+"who": "narrador",
+"text": "Suena como el mejor poder del mundo.",
+"p": 0
+},
+{
+"id": "s01_06",
+"who": "narrador",
+"text": "Hasta que descubres que, si nadie te ve… nadie te ve.",
+"p": 1
+},
+{
+"id": "s03_01",
+"who": "narrador",
+"text": "Todo empieza un lunes. Te levantas, vas al baño, te lavas la cara…",
+"p": 0
+},
+{
+"id": "s03_02",
+"who": "narrador",
+"text": "…y en el espejo no hay nadie.",
+"p": 0
+},
+{
+"id": "s03_03",
+"who": "tu",
+"text": "¿Eh?",
+"p": 1
+},
+{
+"id": "s03_04",
+"who": "narrador",
+"text": "Mueves la mano. Nada. Sacas la lengua. Nada.",
+"p": 1
+},
+{
+"id": "s03_05",
+"who": "narrador",
+"text": "Y te acuerdas de lo que te dijo Pepe anoche: «Mañana, nadie te va a ver».",
+"p": 1
+},
+{
+"id": "s03_06",
+"who": "narrador",
+"text": "Pepe no estaba bromeando.",
+"p": 0
+},
+{
+"id": "s03_07",
+"who": "narrador",
+"text": "Croqueta entra al baño, camina directo hacia ti… y choca con tu pierna.",
+"p": 1
+},
+{
+"id": "s03_08",
+"who": "narrador",
+"text": "Mira hacia arriba, a la nada. Ofendido. Como si fuera tu culpa. Y técnicamente, lo es.",
+"p": 0
+},
+{
+"id": "s04_01",
+"who": "mama",
+"text": "¡A desayunar!",
+"p": 0
+},
+{
+"id": "s04_02",
+"who": "narrador",
+"text": "Te sientas a la mesa. Tu mamá deja el plato enfrente de una silla vacía.",
+"p": 1
+},
+{
+"id": "s04_03",
+"who": "mama",
+"text": "¿Y este niño? ¡Ya se fue sin desayunar otra vez!",
+"p": 0
+},
+{
+"id": "s04_04",
+"who": "narrador",
+"text": "Agarras un pan tostado. Y el pan tostado se queda flotando en el aire.",
+"p": 1
+},
+{
+"id": "s04_05",
+"who": "narrador",
+"text": "Tu mamá se voltea. El pan ya no está. Solo quedan migajas.",
+"p": 0
+},
+{
+"id": "s04_06",
+"who": "narrador",
+"text": "Y Croqueta, que pasaba por ahí.",
+"p": 0
+},
+{
+"id": "s04_07",
+"who": "mama",
+"text": "¡Croqueta!",
+"p": 1
+},
+{
+"id": "s04_08",
+"who": "narrador",
+"text": "Regla número uno: nadie te ve, pero sí te pueden oír.",
+"p": 1
+},
+{
+"id": "s04_09",
+"who": "narrador",
+"text": "Y todo lo que agarras… flota.",
+"p": 0
+},
+{
+"id": "s05_01",
+"who": "narrador",
+"text": "Camino a la escuela, se te ocurre una idea.",
+"p": 0
+},
+{
+"id": "s05_02",
+"who": "narrador",
+"text": "Nacho te debe treinta y siete tacos. Desde hace dos semanas.",
+"p": 0
+},
+{
+"id": "s05_03",
+"who": "tu",
+"text": "Naaacho… Soy tu conciencia…",
+"p": 1
+},
+{
+"id": "s05_04",
+"who": "nacho",
+"text": "¿Q-quién dijo eso?",
+"p": 0
+},
+{
+"id": "s05_05",
+"who": "tu",
+"text": "Tu conciencia. Y estoy muy decepcionada de ti.",
+"p": 0
+},
+{
+"id": "s05_06",
+"who": "tu",
+"text": "Págale los tacos al de los rizos.",
+"p": 0
+},
+{
+"id": "s05_07",
+"who": "nacho",
+"text": "¡Sí! ¡Sí, conciencia! ¡Hoy mismo!",
+"p": 1
+},
+{
+"id": "s05_08",
+"who": "narrador",
+"text": "Esa tarde encuentras treinta y siete tacos en tu casillero.",
+"p": 1
+},
+{
+"id": "s05_09",
+"who": "narrador",
+"text": "Con una nota que dice: «Perdón».",
+"p": 0
+},
+{
+"id": "s06_01",
+"who": "profe",
+"text": "Pase de lista. ¿El joven de los rizos?",
+"p": 0
+},
+{
+"id": "s06_02",
+"who": "tu",
+"text": "¡Presente!",
+"p": 0
+},
+{
+"id": "s06_03",
+"who": "narrador",
+"text": "El profe Ramírez mira tu banca. Está vacía.",
+"p": 1
+},
+{
+"id": "s06_04",
+"who": "narrador",
+"text": "Luego mira al Señor Bigotes.",
+"p": 0
+},
+{
+"id": "s06_05",
+"who": "profe",
+"text": "Sé que eres tú.",
+"p": 1
+},
+{
+"id": "s06_06",
+"who": "narrador",
+"text": "El Señor Bigotes no dice nada. Ya no le entiendes, pero se nota que está ofendido.",
+"p": 1
+},
+{
+"id": "s06_07",
+"who": "narrador",
+"text": "Y por fin puedes leer la libreta secreta del profe Ramírez. La que es solo sobre ti.",
+"p": 1
+},
+{
+"id": "s06_08",
+"who": "narrador",
+"text": "Lunes: «sospechoso». Martes: «muy sospechoso». Miércoles: «el hámster también».",
+"p": 0
+},
+{
+"id": "s07_01",
+"who": "narrador",
+"text": "En una semana descubres todo lo que puede hacer un invisible.",
+"p": 0
+},
+{
+"id": "s07_02",
+"who": "narrador",
+"text": "Entras al cine sin boleto. Te sientas en el mejor lugar.",
+"p": 1
+},
+{
+"id": "s07_03",
+"who": "narrador",
+"text": "Alguien se sienta encima de ti.",
+"p": 0
+},
+{
+"id": "s07_04",
+"who": "narrador",
+"text": "Te llevas la última torta de la cafetería. Nadie entiende por qué la torta se va volando.",
+"p": 1
+},
+{
+"id": "s07_05",
+"who": "narrador",
+"text": "Ahora la escuela tiene una leyenda: la torta fantasma.",
+"p": 0
+},
+{
+"id": "s07_06",
+"who": "narrador",
+"text": "Y entras a la sala de maestros. El lugar más secreto de la escuela.",
+"p": 1
+},
+{
+"id": "s07_07",
+"who": "narrador",
+"text": "Están viendo una telenovela. Y el profe Ramírez está llorando.",
+"p": 0
+},
+{
+"id": "s08_01",
+"who": "narrador",
+"text": "Pero hay algo raro.",
+"p": 0
+},
+{
+"id": "s08_02",
+"who": "narrador",
+"text": "Nadie te ve. Ni la gente, ni los perros, ni las cámaras.",
+"p": 0
+},
+{
+"id": "s08_03",
+"who": "narrador",
+"text": "Y aun así, cada vez que pasas por el parque, Pepe voltea.",
+"p": 1
+},
+{
+"id": "s08_04",
+"who": "narrador",
+"text": "Te sigue con la mirada. Como si nada.",
+"p": 0
+},
+{
+"id": "s08_05",
+"who": "tu",
+"text": "¿Tú… me ves?",
+"p": 1
+},
+{
+"id": "s08_06",
+"who": "pepe",
+"text": "Ruu.",
+"p": 0
+},
+{
+"id": "s08_07",
+"who": "narrador",
+"text": "Pepe no da entrevistas.",
+"p": 1
+},
+{
+"id": "s09_01",
+"who": "narrador",
+"text": "Problema número uno: las máquinas tampoco te ven.",
+"p": 0
+},
+{
+"id": "s09_02",
+"who": "narrador",
+"text": "La puerta automática del súper no se abre.",
+"p": 1
+},
+{
+"id": "s09_03",
+"who": "narrador",
+"text": "Esperas. Y esperas. Hasta que llega una señora, y entras pegadito detrás de ella.",
+"p": 0
+},
+{
+"id": "s09_04",
+"who": "narrador",
+"text": "Tu teléfono no reconoce tu cara.",
+"p": 1
+},
+{
+"id": "s09_05",
+"who": "tu",
+"text": "Soy yo. Soy yo. ¡Que soy yo!",
+"p": 0
+},
+{
+"id": "s09_06",
+"who": "narrador",
+"text": "«Rostro no detectado».",
+"p": 0
+},
+{
+"id": "s09_07",
+"who": "narrador",
+"text": "Y la llave del lavabo de la escuela, la del sensor, tampoco funciona.",
+"p": 1
+},
+{
+"id": "s09_08",
+"who": "narrador",
+"text": "Llevas tres días sin lavarte las manos.",
+"p": 0
+},
+{
+"id": "s09_09",
+"who": "narrador",
+"text": "Regla número dos: las máquinas tampoco te ven. Ni puertas, ni cámaras, ni tu propio teléfono.",
+"p": 1
+},
+{
+"id": "s10_01",
+"who": "narrador",
+"text": "Problema número dos: la gente choca contigo. Todo el tiempo.",
+"p": 0
+},
+{
+"id": "s10_02",
+"who": "narrador",
+"text": "En el pasillo. En la escalera. En la fila de la cafetería.",
+"p": 1
+},
+{
+"id": "s10_03",
+"who": "nacho",
+"text": "¡Perdón! … ¿Perdón a quién?",
+"p": 1
+},
+{
+"id": "s10_04",
+"who": "narrador",
+"text": "Nadie se hace a un lado para dejarte pasar. Para todos, ahí no hay nadie.",
+"p": 1
+},
+{
+"id": "s10_05",
+"who": "narrador",
+"text": "Aprendes a caminar pegado a la pared. Como un ninja. Un ninja muy cansado.",
+"p": 1
+},
+{
+"id": "s11_01",
+"who": "narrador",
+"text": "Problema número tres. El más raro.",
+"p": 0
+},
+{
+"id": "s11_02",
+"who": "narrador",
+"text": "Para el miércoles, ya nadie te espera.",
+"p": 1
+},
+{
+"id": "s11_03",
+"who": "nacho",
+"text": "¿Y el de los rizos?",
+"p": 1
+},
+{
+"id": "s11_04",
+"who": "valeria",
+"text": "No ha venido en toda la semana…",
+"p": 0
+},
+{
+"id": "s11_05",
+"who": "nacho",
+"text": "Seguro está enfermo. ¿Te vas a comer eso?",
+"p": 0
+},
+{
+"id": "s11_06",
+"who": "narrador",
+"text": "Estás ahí. A medio metro. Y nadie te ve.",
+"p": 1
+},
+{
+"id": "s11_07",
+"who": "narrador",
+"text": "Tu mamá te habla toda la semana a través de la puerta de tu cuarto.",
+"p": 1
+},
+{
+"id": "s11_08",
+"who": "narrador",
+"text": "Cree que es la adolescencia.",
+"p": 0
+},
+{
+"id": "s11_09",
+"who": "narrador",
+"text": "Ser invisible es muy divertido… los primeros dos días.",
+"p": 1
+},
+{
+"id": "s12_01",
+"who": "narrador",
+"text": "Y llega el sábado.",
+"p": 0
+},
+{
+"id": "s12_02",
+"who": "narrador",
+"text": "El paseo con Renata. Se lo prometiste.",
+"p": 0
+},
+{
+"id": "s12_03",
+"who": "narrador",
+"text": "Sigues siendo invisible. Vas de todos modos.",
+"p": 1
+},
+{
+"id": "s12_04",
+"who": "narrador",
+"text": "Renata está en la banca con Canela. Mira su teléfono.",
+"p": 1
+},
+{
+"id": "s12_05",
+"who": "valeria",
+"text": "Dijo que a las cinco…",
+"p": 0
+},
+{
+"id": "s12_06",
+"who": "narrador",
+"text": "Podrías hablarle. Pero una voz que sale de la nada no es la mejor forma de empezar una cita.",
+"p": 1
+},
+{
+"id": "s12_07",
+"who": "narrador",
+"text": "Entonces Canela te huele.",
+"p": 1
+},
+{
+"id": "s12_08",
+"who": "narrador",
+"text": "Corre hacia ti, mueve la cola y se sienta a tus pies. Mirando a la nada.",
+"p": 0
+},
+{
+"id": "s12_09",
+"who": "valeria",
+"text": "¿Canela? ¿Qué ves?",
+"p": 1
+},
+{
+"id": "s13_01",
+"who": "narrador",
+"text": "Renata guarda el teléfono.",
+"p": 0
+},
+{
+"id": "s13_02",
+"who": "valeria",
+"text": "Bueno. Se le olvidó.",
+"p": 0
+},
+{
+"id": "s13_03",
+"who": "narrador",
+"text": "Y ahí entiendes algo.",
+"p": 1
+},
+{
+"id": "s13_04",
+"who": "narrador",
+"text": "Si no dices nada, para ella no viniste.",
+"p": 0
+},
+{
+"id": "s13_05",
+"who": "narrador",
+"text": "Da igual que estés aquí. Si nadie lo sabe, es como no estar.",
+"p": 0
+},
+{
+"id": "s13_06",
+"who": "tu",
+"text": "Renata… Estoy aquí.",
+"p": 1
+},
+{
+"id": "s13_07",
+"who": "valeria",
+"text": "¡Aaah!",
+"p": 1
+},
+{
+"id": "s13_08",
+"who": "tu",
+"text": "¡No te asustes! Soy yo. Es una historia larga. Con una paloma.",
+"p": 0
+},
+{
+"id": "s14_01",
+"who": "valeria",
+"text": "¿…Rizos?",
+"p": 0
+},
+{
+"id": "s14_02",
+"who": "narrador",
+"text": "Renata estira la mano. Despacio. Hacia la nada.",
+"p": 1
+},
+{
+"id": "s14_03",
+"who": "narrador",
+"text": "Y tú la tomas.",
+"p": 0
+},
+{
+"id": "s14_04",
+"who": "valeria",
+"text": "Okay. Esto es muy raro.",
+"p": 1
+},
+{
+"id": "s14_05",
+"who": "valeria",
+"text": "Pero viniste.",
+"p": 0
+},
+{
+"id": "s14_06",
+"who": "narrador",
+"text": "Pasean una hora: Renata, Canela… y una correa que flota sola.",
+"p": 1
+},
+{
+"id": "s14_07",
+"who": "narrador",
+"text": "La gente ve a una chica que platica sola con una correa voladora. A ella no le importa.",
+"p": 0
+},
+{
+"id": "s14_08",
+"who": "narrador",
+"text": "Regla número tres: si nadie te puede ver, tienes que decir que estás ahí.",
+"p": 1
+},
+{
+"id": "s14_09",
+"who": "narrador",
+"text": "Si no, es como si no hubieras venido.",
+"p": 0
+},
+{
+"id": "s14_10",
+"who": "narrador",
+"text": "Y justo cuando se mete el sol… vuelves a aparecer.",
+"p": 1
+},
+{
+"id": "s14_11",
+"who": "narrador",
+"text": "De la mano de Renata. Enfrente de todo el parque.",
+"p": 0
+},
+{
+"id": "s14_12",
+"who": "valeria",
+"text": "…Hola.",
+"p": 1
+},
+{
+"id": "s14_13",
+"who": "tu",
+"text": "…Hola.",
+"p": 0
+},
+{
+"id": "s15_01",
+"who": "narrador",
+"text": "Esa noche, le cuentas todo a Pepe.",
+"p": 0
+},
+{
+"id": "s15_02",
+"who": "narrador",
+"text": "La torta fantasma. La telenovela del profe. Renata.",
+"p": 0
+},
+{
+"id": "s15_03",
+"who": "tu",
+"text": "Toda la semana nadie me vio. Solo tú.",
+"p": 1
+},
+{
+"id": "s15_04",
+"who": "tu",
+"text": "¿Cómo es que tú sí me veías?",
+"p": 0
+},
+{
+"id": "s15_05",
+"who": "pepe",
+"text": "Yo siempre te he visto.",
+"p": 1
+},
+{
+"id": "s15_06",
+"who": "narrador",
+"text": "Pepe abre las alas.",
+"p": 1
+},
+{
+"id": "s15_07",
+"who": "pepe",
+"text": "Mañana vas a ser el más listo del mundo.",
+"p": 0
+},
+{
+"id": "s15_08",
+"who": "pepe",
+"text": "No te va a gustar.",
+"p": 1
+},
+{
+"id": "s15_09",
+"who": "narrador",
+"text": "Y Pepe se va volando.",
+"p": 1
+},
+{
+"id": "s15_10",
+"who": "narrador",
+"text": "O desaparece. Con Pepe, es difícil saberlo.",
+"p": 0
+},
+{
+"id": "s16_01",
+"who": "narrador",
+"text": "¿Algo de esto es real?",
+"p": 0
+},
+{
+"id": "s16_02",
+"who": "narrador",
+"text": "Uno. En dos mil seis, en la Universidad Duke, construyeron la primera capa de invisibilidad.",
+"p": 1
+},
+{
+"id": "s16_03",
+"who": "narrador",
+"text": "Desviaba las microondas alrededor de un pequeño cilindro de cobre, como el agua alrededor de una piedra.",
+"p": 0
+},
+{
+"id": "s16_04",
+"who": "narrador",
+"text": "Pero con la luz no funcionaba. Así que, por ahora, solo eres invisible si eres un cilindro… y nadie te mira con los ojos.",
+"p": 0
+},
+{
+"id": "s16_05",
+"who": "narrador",
+"text": "Dos. La rana de cristal vive desde el sur de México hasta Sudamérica.",
+"p": 1
+},
+{
+"id": "s16_06",
+"who": "narrador",
+"text": "Cuando duerme, esconde casi todos sus glóbulos rojos en el hígado. Sin sangre roja a la vista, la luz casi la atraviesa.",
+"p": 0
+},
+{
+"id": "s16_07",
+"who": "narrador",
+"text": "Tres. Un humano invisible de verdad… estaría ciego.",
+"p": 1
+},
+{
+"id": "s16_08",
+"who": "narrador",
+"text": "Para ver, tus ojos tienen que atrapar la luz. Si la luz te atraviesa, no atrapan nada.",
+"p": 0
+},
+{
+"id": "s16_09",
+"who": "narrador",
+"text": "Así que si alguien te dice que es invisible, pregúntale cómo te está viendo.",
+"p": 1
+},
+{
+"id": "s17_01",
+"who": "narrador",
+"text": "¿Y tú? ¿Qué harías si fueras invisible un día?",
+"p": 0
+},
+{
+"id": "s17_02",
+"who": "narrador",
+"text": "Escríbelo en los comentarios. Pepe los lee. Eso ya lo sabemos.",
+"p": 0
+},
+{
+"id": "s17_03",
+"who": "narrador",
+"text": "La próxima vez, vas a ser el más listo del mundo.",
+"p": 1
+},
+{
+"id": "s17_04",
+"who": "narrador",
+"text": "Pepe dice que no te va a gustar.",
+"p": 0
+}
+]
