@@ -1,0 +1,51 @@
+C01|NARRATOR|Berlin. The twenty-fourth of March, 1882. In a small library packed with Germany's top scientists, a quiet country doctor named Robert Koch stands up to speak.
+C02|NARRATOR|He has found the killer that, in his time, was causing one in seven deaths across Europe and America. When he sits down, nobody claps. The room is completely silent.
+C03|NARRATOR|The killer had been called consumption, phthisis, the white plague. People had blamed bad air, bad blood, a weak character. Even vampires.
+C04|TB|Vampires. How flattering. They never guessed it was me.
+L01|NARRATOR|So who is she? A bacterium. Mycobacterium tuberculosis. A tiny rod, wrapped in a thick, waxy coat that protects her from almost everything the body throws at her.
+L02|NARRATOR|And she is slow. Most bacteria divide every twenty minutes. She takes about a day. She is in no hurry at all.
+L03|NARRATOR|She travels through the air. When a sick person coughs, sneezes or even sings, tiny droplets float in the room for hours. Breathing in just a few bacteria can be enough.
+L04|TB|A cough, a breath, a crowded room. That's all I need.
+L05|NARRATOR|But here's the strange part. Most people who catch her never get sick. The body walls her inside tiny knots called tubercles. That's where the name comes from. She can sleep there for years. Today, about a quarter of all humans carry her.
+L06|TB|I can wait. Years, if I have to.
+L07|NARRATOR|But where did she come from? She is ancient. Some scientists think her family travelled with our ancestors out of Africa tens of thousands of years ago. Others think she is younger. Either way, she has been with us since long before cities.
+L08|NARRATOR|We find her in nine-thousand-year-old skeletons, and in the spines of Egyptian mummies, bent by a form of tuberculosis that attacks the bones.
+L09|NARRATOR|Then, people began living in crowded towns and cities, and she found the perfect home.
+L10|TB|Villages were dull. Cities, now cities I loved.
+S01|NARRATOR|So what does she do to you? When she wakes up, it starts slowly. A cough that won't go away for weeks. Tiredness. A fever that comes back every evening.
+S02|NARRATOR|Then the night sweats, soaking the sheets. And she eats away at your body. Patients grew thinner and thinner. That's why it was called consumption. It consumed you.
+S03|NARRATOR|In the lungs, she carves out holes. Patients began to cough up blood, often just a few red spots on a white handkerchief. For many, it was the first sign that this was serious.
+S04|NARRATOR|She doesn't stop at the lungs. She can attack the bones, the kidneys, the brain, and the glands of the neck, which swell into lumps. That form had its own name: scrofula.
+S05|NARRATOR|Without treatment, about half of those who fall sick with her eventually die. It can take years.
+S06|TB|I don't rush. I take my time. Years, sometimes.
+L11|NARRATOR|The ancient Greeks called her phthisis, the wasting. Hippocrates wrote that she was the most widespread disease of his time, and warned doctors not to visit late cases, to protect their reputation.
+L12|NARRATOR|In the Middle Ages, scrofula was called the King's Evil, because people believed the touch of a king could cure it. English and French kings touched thousands of sick people in great ceremonies.
+L13|NARRATOR|King Charles the Second of England is said to have touched around ninety thousand people. It didn't help, but it was very popular.
+L14|TB|Ninety thousand royal touches. And not one of them bothered me.
+L15|NARRATOR|By the 1800s, she was everywhere. In parts of Europe, she caused about one in four deaths. Crowded factory towns, damp housing, no fresh air.
+L16|NARRATOR|And yet, she became fashionable. A pale face, thin body, bright eyes and flushed cheeks were seen as beautiful. Women powdered their faces white and wore tight corsets to look consumptive.
+L17|NARRATOR|Poets and artists seemed to die of her. John Keats at twenty-five. Frederic Chopin. The Bronte sisters. Operas like La Traviata and La Boheme ended with a beautiful heroine dying of consumption.
+L18|TB|I was the most romantic way to die. Artists adored me.
+L19|NARRATOR|In New England in the 1890s, families who lost several members to her became convinced the dead were feeding on the living. In 1892, the family of Mercy Brown dug up her body, burned her heart, and fed the ashes to her sick brother. He died anyway.
+L20|TB|A vampire. They called me a vampire. I've been called worse.
+L21|NARRATOR|Then came Robert Koch. Using new dyes, he stained lung tissue and found the bacteria hiding inside. He grew them, put them into animals, and proved that they caused the disease.
+L22|NARRATOR|His talk that day changed medicine. The twenty-fourth of March is now World Tuberculosis Day. Koch won the Nobel Prize in 1905.
+L23|NARRATOR|But knowing the cause didn't give a cure. Koch's own remedy, tuberculin, was a failure as a treatment. It later became a useful skin test, to find out who carries her.
+L24|TB|They knew my name at last. They just couldn't do anything about it.
+L25|NARRATOR|So doctors prescribed rest, good food, and fresh air. Sanatoriums opened in the mountains and by the sea. Patients lay wrapped in blankets on open balconies, even in the snow, for months or years.
+L26|NARRATOR|It helped some people, and it kept the sick away from their families. But many never came home.
+L27|TB|Mountain air. Very pleasant. I came along for the view.
+L28|NARRATOR|In 1921, two French scientists, Albert Calmette and Camille Guerin, made a vaccine called BCG. They weakened a cattle form of the bacteria by growing it over and over, two hundred and thirty times, for thirteen years.
+L29|NARRATOR|BCG protects young children well, and it is still given to millions of babies today. But it doesn't protect adults very well. They needed a cure.
+L30|NARRATOR|In 1943, in a lab in New Jersey, a young student, Albert Schatz, working under Selman Waksman, discovered streptomycin, an antibiotic found in soil bacteria. It was the first drug that could kill her.
+L31|NARRATOR|Waksman alone won the Nobel Prize, and Schatz spent years fighting for credit. More drugs followed. Taken together, for months, they could finally cure her.
+L32|NARRATOR|Mass X-ray vans toured towns and cities. Sanatoriums emptied, and closed. In rich countries, cases fell year after year.
+L33|TB|Pills. Little pills. Do you know how humiliating that is?
+L34|NARRATOR|But she came back. In the 1980s and 90s, HIV weakened millions of immune systems, and she woke up in them. And when patients stopped their pills too early, she learned to survive the drugs.
+L35|NARRATOR|Today, she is once again the world's deadliest infectious disease. More than ten million people fall ill every year, and over a million die, mostly in Asia and Africa.
+L36|NARRATOR|And yet, almost everyone can be cured, with a six-month course of cheap pills. The problem is not the medicine. It's getting it to the people who need it.
+A01|NARRATOR|And for those who survive? Many are left with scarred lungs, short of breath for life. Some carry her quietly, and she can wake again when they are old or ill.
+A02|NARRATOR|For the world, she left more than graves. Sanatoriums inspired modern architecture: white walls, big windows, balconies and sunlight. The idea of tracing contacts and screening whole populations. And World Tuberculosis Day.
+A03|TB|They built whole buildings just to get away from me. I'm almost touched.
+L37|NARRATOR|Thousands of years. A billion lives, by some estimates. Not beaten by kings, poets or mountain air, but by a dye, a soil bacterium, and six months of pills. And she isn't finished yet.
+L38|NARRATOR|Next time: a killer that rides on the wings of a mosquito. It may have killed more people than any other disease in history.
