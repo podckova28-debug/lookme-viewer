@@ -215,7 +215,7 @@ SC.s09 = (X, t) => {
     { t: 0, cx: 960, cy: 540, z: 1.0, z2: 1.05, lock: 1 },
     { t: fix, cx: 860, cy: 560, z: 1.5, z2: 1.55, lock: 1 },
     { t: nach, cx: 1100, cy: 520, z: 1.6, z2: 1.7, lock: 1 },
-    { t: wide, cx: 960, cy: 540, z: 1.0, z2: .98, lock: 1 },
+    { t: wide, cx: 960, cy: 540, z: 1.0, z2: 1.03, lock: 1 },
   ]);
   const st = stage(cam), k3 = (t - fix) / Ld('s09_03');
   st.wld(g => drawSet(g, 'street'));
