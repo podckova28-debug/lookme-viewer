@@ -1,0 +1,134 @@
+s00_01|narrador|Viernes, tres de la tarde. Acabas de resolver un problema que nadie había podido resolver en trescientos años.
+s00_02|narrador|El profe Ramírez está llorando. Otra vez.
+s00_03|narrador|Y justo entonces, Renata te hace una pregunta.
+s00_04|valeria|Oye… ¿tienes algo que hacer el sábado?
+s00_05|narrador|Es la pregunta más fácil del mundo.
+s00_06|narrador|Y tu cerebro, el más listo del planeta… no tiene ni idea de qué contestar.
+s00_07|narrador|Empecemos por el principio.
+s01_01|narrador|Imagina que tienes quinientos de IQ.
+s01_02|narrador|Una persona normal tiene cien. A Einstein, dicen, le calculan ciento sesenta.
+s01_03|narrador|Tú tienes quinientos. Todo se vuelve un problema de matemáticas… y ya sabes la respuesta.
+s01_04|narrador|Cuánto va a tardar el semáforo. Cuántas palomas hay en el cable. Dónde va a caer esa hoja.
+s01_05|narrador|Suena como el mejor poder del mundo.
+s01_06|narrador|Hasta que descubres que hay cosas que no se pueden calcular.
+s03_01|narrador|Todo empieza un lunes. Abres los ojos… y ya estás pensando.
+s03_02|narrador|Sabes que la alarma va a sonar en tres segundos. La apagas en dos.
+s03_03|narrador|Miras a Croqueta, y tu cerebro te da un reporte completo.
+s03_04|narrador|Cuatro kilos trescientos. Ochenta y siete por ciento dormido. Trece por ciento planeando algo.
+s03_05|tu|¿Qué… qué me pasa?
+s03_06|narrador|Y te acuerdas de Pepe: «Mañana vas a ser el más listo del mundo. No te va a gustar».
+s03_07|narrador|Por ahora, te gusta bastante.
+s04_01|mama|¡Ay, no! ¡Otra vez la tostadora!
+s04_02|narrador|La tostadora lleva tres meses descompuesta. Tu mamá le pega, como si eso la arreglara.
+s04_03|narrador|La miras dos segundos. Con una cuchara y un clip, la arreglas.
+s04_04|narrador|Y de paso calculas el tiempo exacto para el pan perfecto: dos minutos, catorce segundos.
+s04_05|mama|¿Y desde cuándo sabes arreglar cosas?
+s04_06|tu|Desde hace como… diez minutos.
+s04_07|narrador|Regla número uno: lo sabes todo. Matemáticas, física, mecánica, cocina.
+s04_08|narrador|Y lo que no sabes, lo aprendes en lo que tardas en leerlo.
+s04_09|narrador|Lo único que sigues sin entender es a Croqueta. Pero eso no lo entiende nadie.
+s05_01|narrador|Camino a la escuela, pasas con Nacho por la taquería de don Chuy.
+s05_02|narrador|Hay un concurso: adivina cuántos frijoles hay en el frasco y gana tacos gratis por un año.
+s05_03|nacho|¡Yo digo que un millón!
+s05_04|narrador|Tú miras el frasco. Calculas el volumen, el tamaño de un frijol y los huecos entre ellos.
+s05_05|tu|Mil trescientos cuarenta y dos.
+s05_06|narrador|Don Chuy los cuenta. Tarda toda la mañana.
+s05_07|narrador|Son mil trescientos cuarenta y dos.
+s05_08|nacho|Hermano. Desde hoy eres mi mejor amigo. Más que antes.
+s06_01|profe|Examen sorpresa. Tienen cincuenta minutos.
+s06_02|narrador|Terminas en cuatro segundos.
+s06_03|narrador|Luego ves que el profe escribió mal una fórmula. Y se lo dices.
+s06_04|tu|Profe, ahí le falta un signo.
+s06_05|narrador|El profe Ramírez mira el pizarrón. Mira su libro. Te mira a ti.
+s06_06|profe|…Gracias.
+s06_07|narrador|En el recreo, le pones un motorcito a la rueda del Señor Bigotes.
+s06_08|narrador|Ahora el hámster le da luz al salón.
+s06_09|narrador|La libreta secreta del profe tiene una página nueva.
+s06_10|narrador|Lunes: «sabe más que yo». Martes: «sabe mucho más que yo». Miércoles: «el hámster da luz. No pregunten».
+s07_01|narrador|En una semana, descubres todo lo que puede hacer un genio.
+s07_02|narrador|Aprendes japonés en una tarde. Ahora ves anime sin subtítulos.
+s07_03|narrador|Le ganas al ajedrez a la computadora de la biblioteca en cuatro movimientos. Se apaga sola.
+s07_04|narrador|En educación física, calculas cada penal. Cien de cien. El portero pide cambio de escuela.
+s07_05|narrador|Y armas el cubo de Rubik con los ojos cerrados. Mientras se cae.
+s08_01|narrador|Pero hay algo raro.
+s08_02|narrador|Puedes calcularlo todo: el clima, el tráfico, dónde cae una hoja.
+s08_03|narrador|Todo, menos a Pepe.
+s08_04|narrador|Lo miras, y tu cerebro solo dice: «datos insuficientes».
+s08_05|narrador|Lo intentas otra vez. Le cuentas las plumas. Nada.
+s08_06|tu|Pepe… ¿qué eres?
+s08_07|pepe|Ruu.
+s08_08|narrador|Por primera vez en la semana, no sabes algo. Y no te gusta nada.
+s09_01|narrador|Problema número uno: la gente se entera.
+s09_02|narrador|Para el martes, eres el soporte técnico de todo el barrio.
+s09_03|narrador|Arreglas el internet de doña Lupe, la tele del vecino y el celular de tu abuela. Tres veces.
+s09_04|narrador|Y Nacho te trae su tarea. La de todo el semestre.
+s09_05|nacho|Es que tú te tardas un segundo, ¿no?
+s09_06|narrador|Cuando eres el más listo del mundo, los problemas de todos se vuelven tu problema.
+s10_01|narrador|Problema número dos: no puedes dejar de corregir a la gente.
+s10_02|nacho|Ayer en el partido había como mil personas.
+s10_03|tu|Ochenta y tres.
+s10_04|valeria|Qué bonito está el cielo hoy, ¿no?
+s10_05|tu|Técnicamente, el cielo no es azul. La luz se dispersa en el aire, y…
+s10_06|narrador|Renata se va a la mitad de la explicación.
+s10_07|narrador|Para el jueves, ya nadie platica contigo. A nadie le gusta hablar con alguien que siempre tiene razón.
+s10_08|narrador|Regla número dos: tener la razón y caer bien son dos cosas muy distintas.
+s11_01|narrador|Problema número tres. El peor.
+s11_02|narrador|Tu cerebro no se apaga. Nunca.
+s11_03|narrador|Para escoger una camisa, calculas cuarenta combinaciones. Media hora.
+s11_04|narrador|En la cafetería, la señora te pregunta si quieres torta o quesadilla.
+s11_05|narrador|Analizas el precio, las calorías, la fila, y lo que eso dice de ti como persona.
+s11_06|nacho|¡Ya, hermano! ¡La de jamón!
+s11_07|narrador|Mientras más listo eres, más te tardas en decidir las cosas fáciles.
+s12_01|narrador|Y llega el viernes.
+s12_02|narrador|El profe Ramírez te trae el problema más difícil que conoce. Trescientos años sin resolver.
+s12_03|narrador|Lo resuelves en la orilla del cuaderno.
+s12_04|profe|Esto es… lo más bonito que he visto en mi vida.
+s12_05|narrador|Y justo entonces, Renata se asoma a la puerta.
+s12_06|valeria|Oye… ¿tienes algo que hacer el sábado?
+s12_07|narrador|Y tu cerebro, por primera vez, se traba.
+s12_08|narrador|¿Es una invitación? Cincuenta y uno por ciento. ¿Quiere que le ayudes con la tarea? Cuarenta y nueve.
+s12_09|narrador|Si dices que sí y era tarea, quedas mal. Si dices que no y era invitación, peor.
+s12_10|narrador|Cuatro mil escenarios. Ninguna respuesta.
+s12_11|valeria|¿…Hola?
+s13_01|narrador|Y ahí entiendes algo.
+s13_02|narrador|Puedes calcular el clima, el tráfico y cuántos frijoles hay en un frasco.
+s13_03|narrador|Pero no lo que piensa otra persona.
+s13_04|narrador|Eso no se calcula. Eso se pregunta.
+s13_05|tu|No sé. ¿Por qué? ¿Qué quieres hacer?
+s13_06|narrador|Es la primera vez en la semana que dices «no sé».
+s13_07|valeria|Quería invitarte al cine. Pero si estás ocupado…
+s13_08|tu|¡No! No estoy ocupado. Sí quiero.
+s13_09|valeria|…Okay. Mañana a las cinco.
+s13_10|narrador|Regla número tres: a veces, lo más inteligente que puedes decir es «no sé».
+s13_11|narrador|Y luego, preguntar.
+s14_01|narrador|El sábado van al cine.
+s14_02|narrador|A los tres minutos ya sabes cómo termina la película. Quién es el malo, y por qué el perro estaba raro.
+s14_03|narrador|No dices nada.
+s14_04|narrador|Es lo más difícil de toda la semana. Más que el problema de trescientos años.
+s14_05|valeria|¿Te sorprendió el final?
+s14_06|tu|Muchísimo.
+s14_07|valeria|Mentiroso.
+s14_08|narrador|Pero se ríe. Y eso no lo calculaste.
+s15_01|narrador|Esa noche, vas a ver a Pepe. Con una teoría.
+s15_02|tu|Ya lo calculé, Pepe. En el tiempo detenido, tú te movías. No tenías futuro. Y cuando nadie me veía, tú sí.
+s15_03|tu|Desde que te conocí, me pasan cosas raras.
+s15_04|tu|Eres tú, ¿verdad? Tú me das los poderes.
+s15_05|pepe|Calculaste bien.
+s15_06|tu|Pero… ¿por qué?
+s15_07|pepe|Para ver qué haces con ellos.
+s15_08|narrador|Pepe abre las alas.
+s15_09|pepe|Mañana, nada te va a doler.
+s15_10|pepe|Ni siquiera lo que debería.
+s15_11|narrador|Y Pepe se va volando.
+s15_12|narrador|Con quinientos de IQ, tardas toda la noche en darte cuenta de que no te explicó nada.
+s16_01|narrador|¿Algo de esto es real?
+s16_02|narrador|Uno. El IQ está hecho para que el promedio sea cien. Con ciento sesenta, ya eres uno entre treinta mil.
+s16_03|narrador|¿Quinientos? No alcanzan todas las personas que han existido para encontrar a una así.
+s16_04|narrador|Dos. Tu cerebro pesa el dos por ciento de tu cuerpo, pero gasta como el veinte por ciento de tu energía.
+s16_05|narrador|Y no, pensar mucho no saca humo de la cabeza. Eso fue para la animación.
+s16_06|narrador|Tres. No hay registro de que Einstein hiciera una prueba de IQ. Ese ciento sesenta es un cálculo de internet.
+s16_07|narrador|Y ninguna prueba de IQ mide si sabes preguntar.
+s17_01|narrador|¿Y tú? ¿Qué harías con quinientos de IQ?
+s17_02|narrador|Escríbelo en los comentarios. Pepe los lee. Y ahora, también los corrige.
+s17_03|narrador|La próxima vez, nada te va a doler.
+s17_04|narrador|Pepe dice que ese es el problema.
