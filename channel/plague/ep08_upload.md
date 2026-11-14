@@ -1,10 +1,10 @@
 # Эпизод 8 · The ENTIRE History of Malaria · пакет для загрузки
 
-Файл: `out/malaria_ep08_upload.mp4` (1080p, DURATION). Обложки: основная `thumb_ep08_scene_net.jpg` (граф поднимает москитную сетку), для «Тест и сравнение» — `thumb_ep08_scene_chills.jpg` (граф укрывает солдата в ознобе).
+Файл: `out/malaria_ep08_upload.mp4` (1080p, 9:49). Обложки: основная `thumb_ep08_scene_net.jpg` (граф поднимает москитную сетку), для «Тест и сравнение» — `thumb_ep08_scene_chills.jpg` (граф укрывает солдата в ознобе).
 
 ## Название
 ```
-The ENTIRE History of Malaria in 9 Minutes
+The ENTIRE History of Malaria in 10 Minutes
 ```
 Запасные:
 ```
@@ -21,7 +21,21 @@ A young soldier is shaking so hard his teeth rattle. It's 35 degrees outside and
 This is the entire history of malaria, told with a little help from the Marsh Count himself: the single-celled parasite that hides in your liver and bursts your red blood cells, the female mosquito that carries him, how he probably jumped to us from gorillas, the gene he left in our DNA, Roman fever goddesses and "bad air", Jesuit's bark and quinine, the real story behind the gin and tonic, Laveran, Ross and Grassi, the Panama Canal, DDT and the dream of eradication, Tu Youyou's 1,600-year-old recipe, and the nets and vaccines fighting him today.
 
 CHAPTERS
-CHAPTERS_HERE
+0:00 Secunderabad, 1897
+0:49 Who is malaria?
+1:49 Where did he come from?
+2:37 What he does to you
+3:32 Fevers of the ancient world
+3:58 "Bad air"
+4:25 The bitter bark
+4:58 Gin and tonic
+5:27 Laveran, Ross and Grassi
+6:03 The Panama Canal
+6:33 DDT and the dream of eradication
+7:14 Tu Youyou and artemisinin
+8:02 What he leaves behind
+8:42 Malaria today
+9:22 Still waiting at dusk
 
 Sources are listed in the pinned comment.
 
