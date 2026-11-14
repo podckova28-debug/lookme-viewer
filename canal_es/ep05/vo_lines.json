@@ -1,0 +1,812 @@
+[
+ {
+  "id": "s00_01",
+  "who": "narrador",
+  "text": "Viernes, tres de la tarde. Acabas de resolver un problema que nadie había podido resolver en trescientos años.",
+  "p": 0
+ },
+ {
+  "id": "s00_02",
+  "who": "narrador",
+  "text": "El profe Ramírez está llorando. Otra vez.",
+  "p": 0
+ },
+ {
+  "id": "s00_03",
+  "who": "narrador",
+  "text": "Y justo entonces, Renata te hace una pregunta.",
+  "p": 1
+ },
+ {
+  "id": "s00_04",
+  "who": "valeria",
+  "text": "Oye… ¿tienes algo que hacer el sábado?",
+  "p": 1
+ },
+ {
+  "id": "s00_05",
+  "who": "narrador",
+  "text": "Es la pregunta más fácil del mundo.",
+  "p": 1
+ },
+ {
+  "id": "s00_06",
+  "who": "narrador",
+  "text": "Y tu cerebro, el más listo del planeta… no tiene ni idea de qué contestar.",
+  "p": 0
+ },
+ {
+  "id": "s00_07",
+  "who": "narrador",
+  "text": "Empecemos por el principio.",
+  "p": 1
+ },
+ {
+  "id": "s01_01",
+  "who": "narrador",
+  "text": "Imagina que tienes quinientos de IQ.",
+  "p": 0,
+  "say": "Imagina que tienes quinientos de aikiú."
+ },
+ {
+  "id": "s01_02",
+  "who": "narrador",
+  "text": "Una persona normal tiene cien. A Einstein, dicen, le calculan ciento sesenta.",
+  "p": 0
+ },
+ {
+  "id": "s01_03",
+  "who": "narrador",
+  "text": "Tú tienes quinientos. Todo se vuelve un problema de matemáticas… y ya sabes la respuesta.",
+  "p": 1
+ },
+ {
+  "id": "s01_04",
+  "who": "narrador",
+  "text": "Cuánto va a tardar el semáforo. Cuántas palomas hay en el cable. Dónde va a caer esa hoja.",
+  "p": 1
+ },
+ {
+  "id": "s01_05",
+  "who": "narrador",
+  "text": "Suena como el mejor poder del mundo.",
+  "p": 1
+ },
+ {
+  "id": "s01_06",
+  "who": "narrador",
+  "text": "Hasta que descubres que hay cosas que no se pueden calcular.",
+  "p": 0
+ },
+ {
+  "id": "s03_01",
+  "who": "narrador",
+  "text": "Todo empieza un lunes. Abres los ojos… y ya estás pensando.",
+  "p": 0
+ },
+ {
+  "id": "s03_02",
+  "who": "narrador",
+  "text": "Sabes que la alarma va a sonar en tres segundos. La apagas en dos.",
+  "p": 0
+ },
+ {
+  "id": "s03_03",
+  "who": "narrador",
+  "text": "Miras a Croqueta, y tu cerebro te da un reporte completo.",
+  "p": 1
+ },
+ {
+  "id": "s03_04",
+  "who": "narrador",
+  "text": "Cuatro kilos trescientos. Ochenta y siete por ciento dormido. Trece por ciento planeando algo.",
+  "p": 0
+ },
+ {
+  "id": "s03_05",
+  "who": "tu",
+  "text": "¿Qué… qué me pasa?",
+  "p": 1
+ },
+ {
+  "id": "s03_06",
+  "who": "narrador",
+  "text": "Y te acuerdas de Pepe: «Mañana vas a ser el más listo del mundo. No te va a gustar».",
+  "p": 1
+ },
+ {
+  "id": "s03_07",
+  "who": "narrador",
+  "text": "Por ahora, te gusta bastante.",
+  "p": 0
+ },
+ {
+  "id": "s04_01",
+  "who": "mama",
+  "text": "¡Ay, no! ¡Otra vez la tostadora!",
+  "p": 0
+ },
+ {
+  "id": "s04_02",
+  "who": "narrador",
+  "text": "La tostadora lleva tres meses descompuesta. Tu mamá le pega, como si eso la arreglara.",
+  "p": 1
+ },
+ {
+  "id": "s04_03",
+  "who": "narrador",
+  "text": "La miras dos segundos. Con una cuchara y un clip, la arreglas.",
+  "p": 1
+ },
+ {
+  "id": "s04_04",
+  "who": "narrador",
+  "text": "Y de paso calculas el tiempo exacto para el pan perfecto: dos minutos, catorce segundos.",
+  "p": 0
+ },
+ {
+  "id": "s04_05",
+  "who": "mama",
+  "text": "¿Y desde cuándo sabes arreglar cosas?",
+  "p": 1
+ },
+ {
+  "id": "s04_06",
+  "who": "tu",
+  "text": "Desde hace como… diez minutos.",
+  "p": 0
+ },
+ {
+  "id": "s04_07",
+  "who": "narrador",
+  "text": "Regla número uno: lo sabes todo. Matemáticas, física, mecánica, cocina.",
+  "p": 1
+ },
+ {
+  "id": "s04_08",
+  "who": "narrador",
+  "text": "Y lo que no sabes, lo aprendes en lo que tardas en leerlo.",
+  "p": 0
+ },
+ {
+  "id": "s04_09",
+  "who": "narrador",
+  "text": "Lo único que sigues sin entender es a Croqueta. Pero eso no lo entiende nadie.",
+  "p": 1
+ },
+ {
+  "id": "s05_01",
+  "who": "narrador",
+  "text": "Camino a la escuela, pasas con Nacho por la taquería de don Chuy.",
+  "p": 0
+ },
+ {
+  "id": "s05_02",
+  "who": "narrador",
+  "text": "Hay un concurso: adivina cuántos frijoles hay en el frasco y gana tacos gratis por un año.",
+  "p": 0
+ },
+ {
+  "id": "s05_03",
+  "who": "nacho",
+  "text": "¡Yo digo que un millón!",
+  "p": 1
+ },
+ {
+  "id": "s05_04",
+  "who": "narrador",
+  "text": "Tú miras el frasco. Calculas el volumen, el tamaño de un frijol y los huecos entre ellos.",
+  "p": 1
+ },
+ {
+  "id": "s05_05",
+  "who": "tu",
+  "text": "Mil trescientos cuarenta y dos.",
+  "p": 0
+ },
+ {
+  "id": "s05_06",
+  "who": "narrador",
+  "text": "Don Chuy los cuenta. Tarda toda la mañana.",
+  "p": 1
+ },
+ {
+  "id": "s05_07",
+  "who": "narrador",
+  "text": "Son mil trescientos cuarenta y dos.",
+  "p": 0
+ },
+ {
+  "id": "s05_08",
+  "who": "nacho",
+  "text": "Hermano. Desde hoy eres mi mejor amigo. Más que antes.",
+  "p": 1
+ },
+ {
+  "id": "s06_01",
+  "who": "profe",
+  "text": "Examen sorpresa. Tienen cincuenta minutos.",
+  "p": 0
+ },
+ {
+  "id": "s06_02",
+  "who": "narrador",
+  "text": "Terminas en cuatro segundos.",
+  "p": 1
+ },
+ {
+  "id": "s06_03",
+  "who": "narrador",
+  "text": "Luego ves que el profe escribió mal una fórmula. Y se lo dices.",
+  "p": 0
+ },
+ {
+  "id": "s06_04",
+  "who": "tu",
+  "text": "Profe, ahí le falta un signo.",
+  "p": 1
+ },
+ {
+  "id": "s06_05",
+  "who": "narrador",
+  "text": "El profe Ramírez mira el pizarrón. Mira su libro. Te mira a ti.",
+  "p": 1
+ },
+ {
+  "id": "s06_06",
+  "who": "profe",
+  "text": "…Gracias.",
+  "p": 0
+ },
+ {
+  "id": "s06_07",
+  "who": "narrador",
+  "text": "En el recreo, le pones un motorcito a la rueda del Señor Bigotes.",
+  "p": 1
+ },
+ {
+  "id": "s06_08",
+  "who": "narrador",
+  "text": "Ahora el hámster le da luz al salón.",
+  "p": 0
+ },
+ {
+  "id": "s06_09",
+  "who": "narrador",
+  "text": "La libreta secreta del profe tiene una página nueva.",
+  "p": 1
+ },
+ {
+  "id": "s06_10",
+  "who": "narrador",
+  "text": "Lunes: «sabe más que yo». Martes: «sabe mucho más que yo». Miércoles: «el hámster da luz. No pregunten».",
+  "p": 0
+ },
+ {
+  "id": "s07_01",
+  "who": "narrador",
+  "text": "En una semana, descubres todo lo que puede hacer un genio.",
+  "p": 0
+ },
+ {
+  "id": "s07_02",
+  "who": "narrador",
+  "text": "Aprendes japonés en una tarde. Ahora ves anime sin subtítulos.",
+  "p": 1
+ },
+ {
+  "id": "s07_03",
+  "who": "narrador",
+  "text": "Le ganas al ajedrez a la computadora de la biblioteca en cuatro movimientos. Se apaga sola.",
+  "p": 1
+ },
+ {
+  "id": "s07_04",
+  "who": "narrador",
+  "text": "En educación física, calculas cada penal. Cien de cien. El portero pide cambio de escuela.",
+  "p": 1
+ },
+ {
+  "id": "s07_05",
+  "who": "narrador",
+  "text": "Y armas el cubo de Rubik con los ojos cerrados. Mientras se cae.",
+  "p": 1
+ },
+ {
+  "id": "s08_01",
+  "who": "narrador",
+  "text": "Pero hay algo raro.",
+  "p": 0
+ },
+ {
+  "id": "s08_02",
+  "who": "narrador",
+  "text": "Puedes calcularlo todo: el clima, el tráfico, dónde cae una hoja.",
+  "p": 0
+ },
+ {
+  "id": "s08_03",
+  "who": "narrador",
+  "text": "Todo, menos a Pepe.",
+  "p": 1
+ },
+ {
+  "id": "s08_04",
+  "who": "narrador",
+  "text": "Lo miras, y tu cerebro solo dice: «datos insuficientes».",
+  "p": 1
+ },
+ {
+  "id": "s08_05",
+  "who": "narrador",
+  "text": "Lo intentas otra vez. Le cuentas las plumas. Nada.",
+  "p": 0
+ },
+ {
+  "id": "s08_06",
+  "who": "tu",
+  "text": "Pepe… ¿qué eres?",
+  "p": 1
+ },
+ {
+  "id": "s08_07",
+  "who": "pepe",
+  "text": "Ruu.",
+  "p": 0
+ },
+ {
+  "id": "s08_08",
+  "who": "narrador",
+  "text": "Por primera vez en la semana, no sabes algo. Y no te gusta nada.",
+  "p": 1
+ },
+ {
+  "id": "s09_01",
+  "who": "narrador",
+  "text": "Problema número uno: la gente se entera.",
+  "p": 0
+ },
+ {
+  "id": "s09_02",
+  "who": "narrador",
+  "text": "Para el martes, eres el soporte técnico de todo el barrio.",
+  "p": 1
+ },
+ {
+  "id": "s09_03",
+  "who": "narrador",
+  "text": "Arreglas el internet de doña Lupe, la tele del vecino y el celular de tu abuela. Tres veces.",
+  "p": 0
+ },
+ {
+  "id": "s09_04",
+  "who": "narrador",
+  "text": "Y Nacho te trae su tarea. La de todo el semestre.",
+  "p": 1
+ },
+ {
+  "id": "s09_05",
+  "who": "nacho",
+  "text": "Es que tú te tardas un segundo, ¿no?",
+  "p": 1
+ },
+ {
+  "id": "s09_06",
+  "who": "narrador",
+  "text": "Cuando eres el más listo del mundo, los problemas de todos se vuelven tu problema.",
+  "p": 1
+ },
+ {
+  "id": "s10_01",
+  "who": "narrador",
+  "text": "Problema número dos: no puedes dejar de corregir a la gente.",
+  "p": 0
+ },
+ {
+  "id": "s10_02",
+  "who": "nacho",
+  "text": "Ayer en el partido había como mil personas.",
+  "p": 1
+ },
+ {
+  "id": "s10_03",
+  "who": "tu",
+  "text": "Ochenta y tres.",
+  "p": 0
+ },
+ {
+  "id": "s10_04",
+  "who": "valeria",
+  "text": "Qué bonito está el cielo hoy, ¿no?",
+  "p": 1
+ },
+ {
+  "id": "s10_05",
+  "who": "tu",
+  "text": "Técnicamente, el cielo no es azul. La luz se dispersa en el aire, y…",
+  "p": 0
+ },
+ {
+  "id": "s10_06",
+  "who": "narrador",
+  "text": "Renata se va a la mitad de la explicación.",
+  "p": 1
+ },
+ {
+  "id": "s10_07",
+  "who": "narrador",
+  "text": "Para el jueves, ya nadie platica contigo. A nadie le gusta hablar con alguien que siempre tiene razón.",
+  "p": 1
+ },
+ {
+  "id": "s10_08",
+  "who": "narrador",
+  "text": "Regla número dos: tener la razón y caer bien son dos cosas muy distintas.",
+  "p": 1
+ },
+ {
+  "id": "s11_01",
+  "who": "narrador",
+  "text": "Problema número tres. El peor.",
+  "p": 0
+ },
+ {
+  "id": "s11_02",
+  "who": "narrador",
+  "text": "Tu cerebro no se apaga. Nunca.",
+  "p": 0
+ },
+ {
+  "id": "s11_03",
+  "who": "narrador",
+  "text": "Para escoger una camisa, calculas cuarenta combinaciones. Media hora.",
+  "p": 1
+ },
+ {
+  "id": "s11_04",
+  "who": "narrador",
+  "text": "En la cafetería, la señora te pregunta si quieres torta o quesadilla.",
+  "p": 1
+ },
+ {
+  "id": "s11_05",
+  "who": "narrador",
+  "text": "Analizas el precio, las calorías, la fila, y lo que eso dice de ti como persona.",
+  "p": 0
+ },
+ {
+  "id": "s11_06",
+  "who": "nacho",
+  "text": "¡Ya, hermano! ¡La de jamón!",
+  "p": 1
+ },
+ {
+  "id": "s11_07",
+  "who": "narrador",
+  "text": "Mientras más listo eres, más te tardas en decidir las cosas fáciles.",
+  "p": 1
+ },
+ {
+  "id": "s12_01",
+  "who": "narrador",
+  "text": "Y llega el viernes.",
+  "p": 0
+ },
+ {
+  "id": "s12_02",
+  "who": "narrador",
+  "text": "El profe Ramírez te trae el problema más difícil que conoce. Trescientos años sin resolver.",
+  "p": 0
+ },
+ {
+  "id": "s12_03",
+  "who": "narrador",
+  "text": "Lo resuelves en la orilla del cuaderno.",
+  "p": 1
+ },
+ {
+  "id": "s12_04",
+  "who": "profe",
+  "text": "Esto es… lo más bonito que he visto en mi vida.",
+  "p": 1
+ },
+ {
+  "id": "s12_05",
+  "who": "narrador",
+  "text": "Y justo entonces, Renata se asoma a la puerta.",
+  "p": 1
+ },
+ {
+  "id": "s12_06",
+  "who": "valeria",
+  "text": "Oye… ¿tienes algo que hacer el sábado?",
+  "p": 0
+ },
+ {
+  "id": "s12_07",
+  "who": "narrador",
+  "text": "Y tu cerebro, por primera vez, se traba.",
+  "p": 1
+ },
+ {
+  "id": "s12_08",
+  "who": "narrador",
+  "text": "¿Es una invitación? Cincuenta y uno por ciento. ¿Quiere que le ayudes con la tarea? Cuarenta y nueve.",
+  "p": 0
+ },
+ {
+  "id": "s12_09",
+  "who": "narrador",
+  "text": "Si dices que sí y era tarea, quedas mal. Si dices que no y era invitación, peor.",
+  "p": 1
+ },
+ {
+  "id": "s12_10",
+  "who": "narrador",
+  "text": "Cuatro mil escenarios. Ninguna respuesta.",
+  "p": 0
+ },
+ {
+  "id": "s12_11",
+  "who": "valeria",
+  "text": "¿…Hola?",
+  "p": 1
+ },
+ {
+  "id": "s13_01",
+  "who": "narrador",
+  "text": "Y ahí entiendes algo.",
+  "p": 0
+ },
+ {
+  "id": "s13_02",
+  "who": "narrador",
+  "text": "Puedes calcular el clima, el tráfico y cuántos frijoles hay en un frasco.",
+  "p": 0
+ },
+ {
+  "id": "s13_03",
+  "who": "narrador",
+  "text": "Pero no lo que piensa otra persona.",
+  "p": 0
+ },
+ {
+  "id": "s13_04",
+  "who": "narrador",
+  "text": "Eso no se calcula. Eso se pregunta.",
+  "p": 1
+ },
+ {
+  "id": "s13_05",
+  "who": "tu",
+  "text": "No sé. ¿Por qué? ¿Qué quieres hacer?",
+  "p": 1
+ },
+ {
+  "id": "s13_06",
+  "who": "narrador",
+  "text": "Es la primera vez en la semana que dices «no sé».",
+  "p": 1
+ },
+ {
+  "id": "s13_07",
+  "who": "valeria",
+  "text": "Quería invitarte al cine. Pero si estás ocupado…",
+  "p": 1
+ },
+ {
+  "id": "s13_08",
+  "who": "tu",
+  "text": "¡No! No estoy ocupado. Sí quiero.",
+  "p": 0
+ },
+ {
+  "id": "s13_09",
+  "who": "valeria",
+  "text": "…Okay. Mañana a las cinco.",
+  "p": 1
+ },
+ {
+  "id": "s13_10",
+  "who": "narrador",
+  "text": "Regla número tres: a veces, lo más inteligente que puedes decir es «no sé».",
+  "p": 1
+ },
+ {
+  "id": "s13_11",
+  "who": "narrador",
+  "text": "Y luego, preguntar.",
+  "p": 0
+ },
+ {
+  "id": "s14_01",
+  "who": "narrador",
+  "text": "El sábado van al cine.",
+  "p": 0
+ },
+ {
+  "id": "s14_02",
+  "who": "narrador",
+  "text": "A los tres minutos ya sabes cómo termina la película. Quién es el malo, y por qué el perro estaba raro.",
+  "p": 0
+ },
+ {
+  "id": "s14_03",
+  "who": "narrador",
+  "text": "No dices nada.",
+  "p": 1
+ },
+ {
+  "id": "s14_04",
+  "who": "narrador",
+  "text": "Es lo más difícil de toda la semana. Más que el problema de trescientos años.",
+  "p": 0
+ },
+ {
+  "id": "s14_05",
+  "who": "valeria",
+  "text": "¿Te sorprendió el final?",
+  "p": 1
+ },
+ {
+  "id": "s14_06",
+  "who": "tu",
+  "text": "Muchísimo.",
+  "p": 0
+ },
+ {
+  "id": "s14_07",
+  "who": "valeria",
+  "text": "Mentiroso.",
+  "p": 1
+ },
+ {
+  "id": "s14_08",
+  "who": "narrador",
+  "text": "Pero se ríe. Y eso no lo calculaste.",
+  "p": 1
+ },
+ {
+  "id": "s15_01",
+  "who": "narrador",
+  "text": "Esa noche, vas a ver a Pepe. Con una teoría.",
+  "p": 0
+ },
+ {
+  "id": "s15_02",
+  "who": "tu",
+  "text": "Ya lo calculé, Pepe. En el tiempo detenido, tú te movías. No tenías futuro. Y cuando nadie me veía, tú sí.",
+  "p": 1
+ },
+ {
+  "id": "s15_03",
+  "who": "tu",
+  "text": "Desde que te conocí, me pasan cosas raras.",
+  "p": 0
+ },
+ {
+  "id": "s15_04",
+  "who": "tu",
+  "text": "Eres tú, ¿verdad? Tú me das los poderes.",
+  "p": 1
+ },
+ {
+  "id": "s15_05",
+  "who": "pepe",
+  "text": "Calculaste bien.",
+  "p": 1
+ },
+ {
+  "id": "s15_06",
+  "who": "tu",
+  "text": "Pero… ¿por qué?",
+  "p": 1
+ },
+ {
+  "id": "s15_07",
+  "who": "pepe",
+  "text": "Para ver qué haces con ellos.",
+  "p": 1
+ },
+ {
+  "id": "s15_08",
+  "who": "narrador",
+  "text": "Pepe abre las alas.",
+  "p": 1
+ },
+ {
+  "id": "s15_09",
+  "who": "pepe",
+  "text": "Mañana, nada te va a doler.",
+  "p": 0
+ },
+ {
+  "id": "s15_10",
+  "who": "pepe",
+  "text": "Ni siquiera lo que debería.",
+  "p": 1
+ },
+ {
+  "id": "s15_11",
+  "who": "narrador",
+  "text": "Y Pepe se va volando.",
+  "p": 1
+ },
+ {
+  "id": "s15_12",
+  "who": "narrador",
+  "text": "Con quinientos de IQ, tardas toda la noche en darte cuenta de que no te explicó nada.",
+  "p": 0,
+  "say": "Con quinientos de aikiú, tardas toda la noche en darte cuenta de que no te explicó nada."
+ },
+ {
+  "id": "s16_01",
+  "who": "narrador",
+  "text": "¿Algo de esto es real?",
+  "p": 0
+ },
+ {
+  "id": "s16_02",
+  "who": "narrador",
+  "text": "Uno. El IQ está hecho para que el promedio sea cien. Con ciento sesenta, ya eres uno entre treinta mil.",
+  "p": 1,
+  "say": "Uno. El aikiú está hecho para que el promedio sea cien. Con ciento sesenta, ya eres uno entre treinta mil."
+ },
+ {
+  "id": "s16_03",
+  "who": "narrador",
+  "text": "¿Quinientos? No alcanzan todas las personas que han existido para encontrar a una así.",
+  "p": 0
+ },
+ {
+  "id": "s16_04",
+  "who": "narrador",
+  "text": "Dos. Tu cerebro pesa el dos por ciento de tu cuerpo, pero gasta como el veinte por ciento de tu energía.",
+  "p": 1
+ },
+ {
+  "id": "s16_05",
+  "who": "narrador",
+  "text": "Y no, pensar mucho no saca humo de la cabeza. Eso fue para la animación.",
+  "p": 0
+ },
+ {
+  "id": "s16_06",
+  "who": "narrador",
+  "text": "Tres. No hay registro de que Einstein hiciera una prueba de IQ. Ese ciento sesenta es un cálculo de internet.",
+  "p": 1,
+  "say": "Tres. No hay registro de que Einstein hiciera una prueba de aikiú. Ese ciento sesenta es un cálculo de internet."
+ },
+ {
+  "id": "s16_07",
+  "who": "narrador",
+  "text": "Y ninguna prueba de IQ mide si sabes preguntar.",
+  "p": 0,
+  "say": "Y ninguna prueba de aikiú mide si sabes preguntar."
+ },
+ {
+  "id": "s17_01",
+  "who": "narrador",
+  "text": "¿Y tú? ¿Qué harías con quinientos de IQ?",
+  "p": 0,
+  "say": "¿Y tú? ¿Qué harías con quinientos de aikiú?"
+ },
+ {
+  "id": "s17_02",
+  "who": "narrador",
+  "text": "Escríbelo en los comentarios. Pepe los lee. Y ahora, también los corrige.",
+  "p": 0
+ },
+ {
+  "id": "s17_03",
+  "who": "narrador",
+  "text": "La próxima vez, nada te va a doler.",
+  "p": 1
+ },
+ {
+  "id": "s17_04",
+  "who": "narrador",
+  "text": "Pepe dice que ese es el problema.",
+  "p": 0
+ }
+]
