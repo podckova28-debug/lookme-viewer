@@ -1,6 +1,6 @@
 # Эпизод 9 · The ENTIRE History of Leprosy · пакет для загрузки
 
-Файл: `out/leprosy_ep09_upload.mp4` (1080p, DURATION). Обложки: основная `thumb_ep09_scene_road.jpg` (монах ведёт прокажённого с трещоткой мимо городских ворот), для «Тест и сравнение» — `thumb_ep09_scene_damien.jpg` (монах льёт кипяток Дамиану).
+Файл: `out/leprosy_ep09_upload.mp4` (1080p, 9:00). Обложки: основная `thumb_ep09_scene_road.jpg` (монах ведёт прокажённого с трещоткой мимо городских ворот), для «Тест и сравнение» — `thumb_ep09_scene_damien.jpg` (монах льёт кипяток Дамиану).
 
 ## Название
 ```
@@ -21,7 +21,21 @@ A priest lowers his feet into a basin of scalding water and feels absolutely not
 This is the entire history of leprosy, told with a little help from the Grey Friar himself: the slowest bacterium we know, why 95% of people are immune, why he loves cold hands and feet, the myth about fingers falling off, Sushruta's chaulmoogra oil, medieval lazar houses, bells and clappers, the leper king Baldwin IV, Gerhard Hansen's discovery in Norway, the exiles of Kalaupapa, Alice Ball's forgotten breakthrough, the Miracle at Carville, and the three cheap pills that finally beat him.
 
 CHAPTERS
-CHAPTERS_HERE
+0:00 Molokai, 1884
+0:43 Who is leprosy?
+1:56 Where did he come from?
+2:37 What he does to you
+3:37 The ancient world
+4:08 Lazar houses and bells
+4:45 The leper king
+5:02 He fades from Europe
+5:21 Hansen and the germ
+6:04 Kalaupapa
+6:37 Alice Ball
+7:04 The Miracle at Carville
+7:38 What he leaves behind
+8:10 Leprosy today
+8:34 Four thousand years
 
 Sources are listed in the pinned comment.
 
