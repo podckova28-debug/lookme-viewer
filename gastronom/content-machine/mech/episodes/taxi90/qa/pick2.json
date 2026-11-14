@@ -1,0 +1,316 @@
+{
+ "I01": [
+  "I01_c.wav",
+  "I01_q.wav",
+  "I01_v.wav"
+ ],
+ "I02": [
+  "I02_y.wav",
+  "I02_c.wav",
+  "I02_v.wav",
+  "I02_x.wav",
+  "I02_q.wav"
+ ],
+ "I03": [
+  "I03_y.wav",
+  "I03_c.wav",
+  "I03_q.wav",
+  "I03_v.wav",
+  "I03_x.wav"
+ ],
+ "A1": [
+  "A1_c.wav",
+  "A1_v.wav",
+  "A1_x.wav"
+ ],
+ "A2": [
+  "A2_c.wav",
+  "A2_q.wav",
+  "A2_x.wav",
+  "A2_y.wav",
+  "A2_v.wav"
+ ],
+ "A3": [
+  "A3_q.wav",
+  "A3_y.wav",
+  "A3_c.wav",
+  "A3_x.wav"
+ ],
+ "A4": [
+  "A4_c.wav",
+  "A4_q.wav",
+  "A4_v.wav"
+ ],
+ "A5": [
+  "A5_c.wav",
+  "A5_q.wav",
+  "A5_v.wav"
+ ],
+ "A6": [
+  "A6_c.wav",
+  "A6_q.wav",
+  "A6_v.wav"
+ ],
+ "A7": [
+  "A7_x.wav",
+  "A7_y.wav",
+  "A7_v.wav",
+  "A7_c.wav",
+  "A7_q.wav"
+ ],
+ "A8": [
+  "A8_c.wav",
+  "A8_v.wav",
+  "A8_x.wav",
+  "A8_y.wav"
+ ],
+ "B1": [
+  "B1_c.wav",
+  "B1_v.wav",
+  "B1_x.wav",
+  "B1_y.wav",
+  "B1_q.wav"
+ ],
+ "B2": [
+  "B2_x.wav",
+  "B2_y.wav",
+  "B2_q.wav",
+  "B2_c.wav",
+  "B2_v.wav"
+ ],
+ "B3": [
+  "B3_c.wav",
+  "B3_v.wav",
+  "B3_q.wav"
+ ],
+ "B4": [
+  "B4_c.wav",
+  "B4_q.wav",
+  "B4_v.wav"
+ ],
+ "B5": [
+  "B5_c.wav",
+  "B5_q.wav",
+  "B5_v.wav"
+ ],
+ "B6": [
+  "B6_q.wav",
+  "B6_v.wav",
+  "B6_c.wav"
+ ],
+ "C1": [
+  "C1_c.wav",
+  "C1_q.wav",
+  "C1_v.wav"
+ ],
+ "C2": [
+  "C2_v.wav",
+  "C2_q.wav",
+  "C2_c.wav"
+ ],
+ "C3": [
+  "C3_y.wav",
+  "C3_q.wav",
+  "C3_c.wav",
+  "C3_v.wav",
+  "C3_x.wav"
+ ],
+ "C4": [
+  "C4_c.wav",
+  "C4_q.wav",
+  "C4_v.wav"
+ ],
+ "C5": [
+  "C5_q.wav",
+  "C5_c.wav",
+  "C5_v.wav"
+ ],
+ "C6": [
+  "C6_c.wav",
+  "C6_v.wav",
+  "C6_q.wav"
+ ],
+ "D1": [
+  "D1_c.wav",
+  "D1_v.wav",
+  "D1_q.wav"
+ ],
+ "D2": [
+  "D2_c.wav",
+  "D2_q.wav",
+  "D2_v.wav"
+ ],
+ "D3": [
+  "D3_c.wav",
+  "D3_v.wav",
+  "D3_y.wav",
+  "D3_x.wav",
+  "D3_q.wav"
+ ],
+ "D4": [
+  "D4_c.wav",
+  "D4_q.wav",
+  "D4_v.wav"
+ ],
+ "D5": [
+  "D5_c.wav",
+  "D5_q.wav",
+  "D5_v.wav"
+ ],
+ "E1": [
+  "E1_v.wav",
+  "E1_c.wav",
+  "E1_x.wav",
+  "E1_y.wav",
+  "E1_q.wav"
+ ],
+ "E2": [
+  "E2_c.wav",
+  "E2_q.wav",
+  "E2_v.wav"
+ ],
+ "E3": [
+  "E3_c.wav",
+  "E3_q.wav",
+  "E3_v.wav"
+ ],
+ "E4": [
+  "E4_c.wav",
+  "E4_q.wav",
+  "E4_v.wav"
+ ],
+ "E5": [
+  "E5_y.wav",
+  "E5_q.wav",
+  "E5_x.wav",
+  "E5_v.wav",
+  "E5_c.wav"
+ ],
+ "E6": [
+  "E6_c.wav",
+  "E6_q.wav",
+  "E6_v.wav"
+ ],
+ "F1": [
+  "F1_v.wav",
+  "F1_c.wav",
+  "F1_q.wav"
+ ],
+ "F2": [
+  "F2_x.wav",
+  "F2_q.wav",
+  "F2_y.wav",
+  "F2_c.wav",
+  "F2_v.wav"
+ ],
+ "F3": [
+  "F3_c.wav",
+  "F3_q.wav",
+  "F3_v.wav"
+ ],
+ "F4": [
+  "F4_q.wav",
+  "F4_c.wav",
+  "F4_y.wav",
+  "F4_x.wav",
+  "F4_v.wav"
+ ],
+ "F5": [
+  "F5_q.wav",
+  "F5_v.wav",
+  "F5_x.wav",
+  "F5_y.wav",
+  "F5_c.wav"
+ ],
+ "F6": [
+  "F6_x.wav",
+  "F6_y.wav",
+  "F6_v.wav",
+  "F6_c.wav",
+  "F6_q.wav"
+ ],
+ "G1": [
+  "G1_x.wav",
+  "G1_q.wav",
+  "G1_c.wav"
+ ],
+ "G2": [
+  "G2_v.wav",
+  "G2_q.wav",
+  "G2_c.wav",
+  "G2_x.wav"
+ ],
+ "G3": [
+  "G3_c.wav",
+  "G3_q.wav",
+  "G3_v.wav"
+ ],
+ "G4": [
+  "G4_q.wav",
+  "G4_v.wav",
+  "G4_c.wav"
+ ],
+ "G5": [
+  "G5_y.wav",
+  "G5_x.wav",
+  "G5_c.wav",
+  "G5_v.wav",
+  "G5_q.wav"
+ ],
+ "Z1": [
+  "Z1_c.wav",
+  "Z1_v.wav",
+  "Z1_q.wav"
+ ],
+ "Z2": [
+  "Z2_c.wav",
+  "Z2_x.wav",
+  "Z2_q.wav",
+  "Z2_v.wav",
+  "Z2_y.wav"
+ ],
+ "Z3": [
+  "Z3_q.wav",
+  "Z3_y.wav",
+  "Z3_x.wav",
+  "Z3_v.wav",
+  "Z3_c.wav"
+ ],
+ "Z4": [
+  "Z4_x.wav",
+  "Z4_c.wav",
+  "Z4_v.wav",
+  "Z4_y.wav"
+ ],
+ "Z5": [
+  "Z5_x.wav",
+  "Z5_q.wav",
+  "Z5_v.wav",
+  "Z5_c.wav",
+  "Z5_y.wav"
+ ],
+ "Z6": [
+  "Z6_y.wav",
+  "Z6_v.wav",
+  "Z6_c.wav",
+  "Z6_q.wav",
+  "Z6_x.wav"
+ ],
+ "Z7": [
+  "Z7_v.wav",
+  "Z7_c.wav",
+  "Z7_q.wav",
+  "Z7_x.wav",
+  "Z7_y.wav"
+ ],
+ "Z8": [
+  "Z8_v.wav",
+  "Z8_c.wav",
+  "Z8_q.wav"
+ ],
+ "Z9": [
+  "Z9_c.wav",
+  "Z9_q.wav",
+  "Z9_v.wav"
+ ]
+}

@@ -1,0 +1,2050 @@
+{
+ "takes": {
+  "I01": {
+   "I01_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/I01_c.wav",
+    "heard": "92 год, тебе 28. Завод, где ты работал, встал.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.908,
+    "dur": 5.4
+   },
+   "I01_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/I01_q.wav",
+    "heard": "92 -й год, тебе 28, завод, где ты работал, стал.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «стал» вместо «встал», акустика за сценарий (-0.85)",
+      "script": "встал",
+      "heard": "стал",
+      "delta": -0.85,
+      "t": 3.55
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.902,
+    "dur": 5.28
+   }
+  },
+  "I02": {
+   "I02_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/I02_c.wav",
+    "heard": "Зато у тебя есть отцовская копейка и права. И ты выезжаешь на дорогу.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «права» в норме (2-й слог, нужно 2-й, запас 0.18)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.976,
+    "dur": 5.16
+   },
+   "I02_y.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/I02_y.wav",
+    "heard": "Зато у тебя есть отцовская копейка и права, и ты выезжаешь на дорогу.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «права» в норме (2-й слог, нужно 2-й, запас 0.08)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.981,
+    "dur": 4.68
+   }
+  },
+  "I03": {
+   "I03_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/I03_c.wav",
+    "heard": "Ты таксист девяностых, и в этом вся твоя жизнь.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.942,
+    "dur": 4.84
+   },
+   "I03_y.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/I03_y.wav",
+    "heard": "Ты таксист девяностых, и в этом вся твоя жизнь.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.944,
+    "dur": 4.48
+   }
+  },
+  "A1": {
+   "A1_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/A1_c.wav",
+    "heard": "Год назад в Москве был 21 таксопарк и около 16 тысяч машин такси.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «один» в норме (2-й слог, нужно 2-й, запас 0.22)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.94,
+    "dur": 6.04
+   },
+   "A1_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/A1_v.wav",
+    "heard": "Год назад в Москве был 21 таксопарк и около 16 тысяч машин такси.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «один» в норме (2-й слог, нужно 2-й, запас 0.01)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.953,
+    "dur": 5.68
+   }
+  },
+  "A2": {
+   "A2_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/A2_c.wav",
+    "heard": "Их распродали на аукционы за копейки по 200 -300 рублей за машину.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «аукционы» вместо «аукционах», акустика за сценарий (-0.30)",
+      "script": "аукционах",
+      "heard": "аукционы",
+      "delta": -0.3,
+      "t": 0.84
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.936,
+    "dur": 5.12
+   },
+   "A2_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/A2_q.wav",
+    "heard": "Их распродали на аукционах за копейки по 200 -300 рублей за машину.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.956,
+    "dur": 5.36
+   },
+   "A2_cur.wav (после обработки)": {
+    "file": "vo_alt2/A2_cur.wav",
+    "heard": "Их распродали на аукционы за копейки по 200 -300 рублей за машину.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «аукционы» вместо «аукционах», акустика за сценарий (-0.88)",
+      "script": "аукционах",
+      "heard": "аукционы",
+      "delta": -0.88,
+      "t": 0.78
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.941,
+    "dur": 5.06
+   },
+   "A2_q.wav (после обработки)": {
+    "file": "vo_alt2/A2_q.wav",
+    "heard": "Их распродали на аукционах за копейки по 200 -300 рублей за машину.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.948,
+    "dur": 5.37
+   },
+   "A2_x.wav (после обработки)": {
+    "file": "vo_alt2/A2_x.wav",
+    "heard": "Их распродали на аукционах за копейки по 200 -300 рублей за машину.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.929,
+    "dur": 4.86
+   },
+   "A2_y.wav (после обработки)": {
+    "file": "vo_alt2/A2_y.wav",
+    "heard": "Их распродали на аукционах за копейки по 200 -300 рублей за машину.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.955,
+    "dur": 5.46
+   }
+  },
+  "A3": {
+   "A3_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/A3_q.wav",
+    "heard": "Такси почти исчезли с улиц. Людей теперь возят частники. Такие, как ты.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.962,
+    "dur": 4.72
+   },
+   "A3_y.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/A3_y.wav",
+    "heard": "Такси почти исчезли с улиц. Людей теперь возят частники, такие как ты.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.958,
+    "dur": 5.16
+   }
+  },
+  "A4": {
+   "A4_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/A4_c.wav",
+    "heard": "Со второго января цены отпустили, и деньги дешевеют каждый месяц.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «цены» в норме (1-й слог, нужно 1-й, запас 0.29)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «деньги» в норме (1-й слог, нужно 1-й, запас 0.74)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.94,
+    "dur": 5.32
+   },
+   "A4_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/A4_q.wav",
+    "heard": "Со 2 января цены отпустили и деньги дешевеют каждый месяц.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «цены» в норме (1-й слог, нужно 1-й, запас 0.6)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «деньги» в норме (1-й слог, нужно 1-й, запас 0.92)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.906,
+    "dur": 4.16
+   }
+  },
+  "A5": {
+   "A5_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/A5_c.wav",
+    "heard": "Работа простая. Человек на обочине поднимает руку. Ты останавливаешься.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.989,
+    "dur": 5.6
+   },
+   "A5_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/A5_q.wav",
+    "heard": "Работа простая. Человек на обочине поднимает руку. Ты останавливаешься.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.987,
+    "dur": 5.28
+   }
+  },
+  "A6": {
+   "A6_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/A6_c.wav",
+    "heard": "Он называет адрес, и вы сразу договариваетесь о цене. Не сошлись, и ты просто уезжаешь.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.954,
+    "dur": 6.8
+   },
+   "A6_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/A6_q.wav",
+    "heard": "Он называет адрес, и вы сразу договариваетесь о цене. Не сошлись, и ты просто уезжаешь.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.959,
+    "dur": 6.92
+   }
+  },
+  "A7": {
+   "A7_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/A7_x.wav",
+    "heard": "Таксометра нет. В советском такси километр стоил 20 копеек, а теперь цену называешь ты.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.969,
+    "dur": 6.2
+   },
+   "A7_y.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/A7_y.wav",
+    "heard": "Таксометра нет. В советском такси километр стоил 20 копеек. А теперь цены называешь ты.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.942,
+    "dur": 6.56
+   }
+  },
+  "A8": {
+   "A8_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/A8_c.wav",
+    "heard": "Пассажира ты учишься оценивать с первого взгляда. Так советует даже автомобильный журнал.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.971,
+    "dur": 6.0
+   },
+   "A8_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/A8_v.wav",
+    "heard": "Пассажира ты учишься оценивать с первого взгляда. Так советует даже автомобильный журнал.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.969,
+    "dur": 6.4
+   }
+  },
+  "B1": {
+   "B1_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/B1_c.wav",
+    "heard": "Середина 90 -х. Короткая поездка. Участника обходится в одну. 2000 рублей.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.879,
+    "dur": 5.76
+   },
+   "B1_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/B1_v.wav",
+    "heard": "Середина 90 -х. Короткая поездка участника обходится в 1 -2 тысячи рублей.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.859,
+    "dur": 5.84
+   }
+  },
+  "B2": {
+   "B2_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/B2_x.wav",
+    "heard": "Да, окраины уже от 25 тысяч, примерно 12 долларов.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «уже» в норме (2-й слог, нужно 2-й, запас 0.05)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.835,
+    "dur": 4.2
+   },
+   "B2_y.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/B2_y.wav",
+    "heard": "До окраины уже 25 тысяч, примерно 12 долларов.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «уже» в норме (2-й слог, нужно 2-й, запас 0.12)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.796,
+    "dur": 5.36
+   }
+  },
+  "B3": {
+   "B3_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/B3_c.wav",
+    "heard": "А средняя зарплата в Москве около трети миллиона. Поездка на окраину съедает около 8%.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «8%» вместо «восьми процентов», акустика за сценарий (-51.36)",
+      "script": "восьми процентов",
+      "heard": "8%",
+      "delta": -51.36,
+      "t": 5.11
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.907,
+    "dur": 6.92
+   },
+   "B3_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/B3_v.wav",
+    "heard": "А средняя зарплата в Москве около трети миллиона. Поездка на окраину съедает около 8%.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «8%» вместо «восьми процентов», акустика за сценарий (-50.36)",
+      "script": "восьми процентов",
+      "heard": "8%",
+      "delta": -50.36,
+      "t": 4.99
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.888,
+    "dur": 6.92
+   }
+  },
+  "B4": {
+   "B4_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/B4_c.wav",
+    "heard": "Зато бензин копеечный. Литр 92 по официальной цене около 500 рублей меньше 20 центов.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.92,
+    "dur": 7.16
+   },
+   "B4_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/B4_q.wav",
+    "heard": "Зато бензин копеечный. Литр 92 по официальной цене около 500 рублей. Меньше 20 центов.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.932,
+    "dur": 7.64
+   }
+  },
+  "B5": {
+   "B5_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/B5_c.wav",
+    "heard": "Главная машина такси Техлет Волга. В 95 -м город покупает для парков около тысячи москвичей и волк.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «волк» вместо «волг», акустика за сценарий (+0.00)",
+      "script": "волг",
+      "heard": "волк",
+      "delta": 0.0,
+      "t": 6.12
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «парков» в норме (1-й слог, нужно 1-й, запас 0.28)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.912,
+    "dur": 7.32
+   },
+   "B5_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/B5_q.wav",
+    "heard": "Главная машина – такси Техлет Волга. В 95 -м город покупает для парков около тысячи москвичей и волк.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «волк» вместо «волг», акустика за сценарий (-0.01)",
+      "script": "волг",
+      "heard": "волк",
+      "delta": -0.01,
+      "t": 6.56
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «парков» в норме (1-й слог, нужно 1-й, запас 0.57)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.887,
+    "dur": 7.84
+   }
+  },
+  "B6": {
+   "B6_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/B6_q.wav",
+    "heard": "Городское такси заказывают по телефону, а тебя по старинке ловят рукой.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.98,
+    "dur": 5.2
+   },
+   "B6_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/B6_v.wav",
+    "heard": "Городской от такси заказывают по телефону, а тебя по старинке ловят рукой.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «городской от» вместо «городское», акустика за сценарий (-1.92)",
+      "script": "городское",
+      "heard": "городской от",
+      "delta": -1.92,
+      "t": 0.1
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.926,
+    "dur": 5.48
+   }
+  },
+  "C1": {
+   "C1_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/C1_c.wav",
+    "heard": "С первого января 98 тысяча старых рублей превращается в один новый.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «один» в норме (2-й слог, нужно 2-й, запас 0.15)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.884,
+    "dur": 5.76
+   },
+   "C1_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/C1_q.wav",
+    "heard": "С 1 января 98 тысяча старых рублей превращается в один новый.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «один» в норме (2-й слог, нужно 2-й, запас 0.39)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.912,
+    "dur": 5.04
+   }
+  },
+  "C2": {
+   "C2_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/C2_q.wav",
+    "heard": "А в августе дефолт. К новому году доллар дорожает с 6 рублей до 20 с лишним.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «году» в норме (1-й слог, нужно 1-й, запас 0.62)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.905,
+    "dur": 5.88
+   },
+   "C2_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/C2_v.wav",
+    "heard": "А в августе — дефолт. К новому году доллар дорожает с 6 рублей до 20 с лишним.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «году» в норме (1-й слог, нужно 1-й, запас 0.42)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.894,
+    "dur": 6.16
+   }
+  },
+  "C3": {
+   "C3_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/C3_q.wav",
+    "heard": "Твои цены в рублях почти не растут. Пассажиров меньше, а таких же частников больше.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «цены» в норме (1-й слог, нужно 1-й, запас 0.94)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.977,
+    "dur": 5.52
+   },
+   "C3_y.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/C3_y.wav",
+    "heard": "Твои цены в рублях почти не растут, пассажиров меньше, а таких же частников больше.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «цены» в норме (1-й слог, нужно 1-й, запас 0.88)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.987,
+    "dur": 5.8
+   }
+  },
+  "C4": {
+   "C4_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/C4_c.wav",
+    "heard": "За день ты проезжаешь около 150 километров и привозишь домой рублей 200.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.934,
+    "dur": 5.48
+   },
+   "C4_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/C4_q.wav",
+    "heard": "За день ты проезжаешь около 150 километров и привозишь домой рублей 200.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.918,
+    "dur": 5.44
+   },
+   "C4_q.wav (после обработки)": {
+    "file": "vo_alt/C4_q.wav",
+    "heard": "За день ты проезжаешь около 150 километров и привозишь домой рублей 200.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.942,
+    "dur": 5.37
+   },
+   "C4_v.wav (после обработки)": {
+    "file": "vo_alt/C4_v.wav",
+    "heard": "За день ты проезжаешь около 150 километров и привозишь домой рублей 200.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.954,
+    "dur": 5.74
+   }
+  },
+  "C5": {
+   "C5_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/C5_c.wav",
+    "heard": "Правило торга простое. Проси 3 рубля за километр, сходись на двух.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.919,
+    "dur": 4.96
+   },
+   "C5_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/C5_q.wav",
+    "heard": "Правило торга простое. Проси 3 рубля за километр, сходись на двух.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.917,
+    "dur": 5.44
+   }
+  },
+  "C6": {
+   "C6_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/C6_c.wav",
+    "heard": "А ночью, говорят опытные, выезжать невыгодно.",
+    "issues": [
+     {
+      "level": "fail",
+      "code": "tail",
+      "msg": "лишний звук после текста: 0.7 с (текст кончился на 2.7 с из 3.9)",
+      "t": 2.67
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.94,
+    "dur": 3.92
+   },
+   "C6_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/C6_v.wav",
+    "heard": "А ночью, говорят опытные, выезжать невыгодно.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.924,
+    "dur": 4.68
+   }
+  },
+  "D1": {
+   "D1_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/D1_c.wav",
+    "heard": "Двухтысячные, ты устраиваешься в диспетчерскую службу.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.974,
+    "dur": 3.92
+   },
+   "D1_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/D1_v.wav",
+    "heard": "Дог тысячный, ты устраиваешься в диспетчерскую службу.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «дог тысячный» вместо «двухтысячные», акустика за сценарий (-0.21)",
+      "script": "двухтысячные",
+      "heard": "дог тысячный",
+      "delta": -0.21,
+      "t": 0.08
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.842,
+    "dur": 4.28
+   }
+  },
+  "D2": {
+   "D2_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/D2_c.wav",
+    "heard": "Диспетчер принимает заказ по телефону и сообщает тебе по рации.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.991,
+    "dur": 5.08
+   },
+   "D2_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/D2_q.wav",
+    "heard": "Диспетчер принимает заказ по телефону и сообщает тебе по рации.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.99,
+    "dur": 4.12
+   }
+  },
+  "D3": {
+   "D3_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/D3_c.wav",
+    "heard": "За каждый заказ ты платишь диспетчерам доллар или два.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.932,
+    "dur": 4.52
+   },
+   "D3_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/D3_v.wav",
+    "heard": "За каждый заказ ты платишь диспетчерам доллар или два.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.903,
+    "dur": 4.24
+   },
+   "D3_v.wav (после обработки)": {
+    "file": "vo_alt/D3_v.wav",
+    "heard": "За каждый заказ ты платишь диспетчерам доллар или два.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.9,
+    "dur": 3.27
+   },
+   "D3_x.wav (после обработки)": {
+    "file": "vo_alt/D3_x.wav",
+    "heard": "За каждый заказ ты платишь диспетчерам доллар или два.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.925,
+    "dur": 4.13
+   },
+   "D3_y.wav (после обработки)": {
+    "file": "vo_alt/D3_y.wav",
+    "heard": "За каждый заказ ты платишь диспетчерам доллар или два.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.937,
+    "dur": 4.17
+   }
+  },
+  "D4": {
+   "D4_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/D4_c.wav",
+    "heard": "По всей Москве заказывают 5 -7 тысяч машин в день.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.912,
+    "dur": 3.88
+   },
+   "D4_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/D4_q.wav",
+    "heard": "По всей Москве заказывают 5 -7 тысяч машин в день.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.882,
+    "dur": 3.52
+   }
+  },
+  "D5": {
+   "D5_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/D5_c.wav",
+    "heard": "А на дорогах появляются иномарки российской сборки. Через несколько лет ты пересаживаешься на такую же, в автокредит.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.972,
+    "dur": 7.2
+   },
+   "D5_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/D5_q.wav",
+    "heard": "А на дорогах появляются иномарки российской сборки. Через несколько лет ты пересаживаешься на такую же, в автокредит.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.975,
+    "dur": 7.24
+   }
+  },
+  "E1": {
+   "E1_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/E1_c.wav",
+    "heard": "Январь 2011 года. В Москве 9000 легальных такси и около 40000 без разрешений.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «года» в норме (1-й слог, нужно 1-й, запас 0.2)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «сорока» в норме (3-й слог, нужно 3-й, запас 0.16)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.914,
+    "dur": 7.08
+   },
+   "E1_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/E1_v.wav",
+    "heard": "Январь 2011 года. В Москве 9 тысяч легальных такси и около 40 тысяч без разрешений.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «года» в норме (1-й слог, нужно 1-й, запас 0.11)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «сорока» в норме (2-й слог, нужно 3-й, запас 0.19)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.908,
+    "dur": 7.56
+   }
+  },
+  "E2": {
+   "E2_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/E2_c.wav",
+    "heard": "Ты тоже без разрешения.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.906,
+    "dur": 3.2
+   },
+   "E2_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/E2_q.wav",
+    "heard": "Ты тоже без разрешения.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.916,
+    "dur": 3.84
+   }
+  },
+  "E3": {
+   "E3_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/E3_c.wav",
+    "heard": "С 1 сентября у такси должны быть разрешение, шашечки на боках и оранжевый фонарь на крыше.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.946,
+    "dur": 6.72
+   },
+   "E3_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/E3_q.wav",
+    "heard": "С 1 сентября у такси должны быть разрешение, шашечки на боках и оранжевый фонайт на крыше.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «фонайт» вместо «фонарь», акустика за сценарий (-1.28)",
+      "script": "фонарь",
+      "heard": "фонайт",
+      "delta": -1.28,
+      "t": 3.77
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.934,
+    "dur": 6.08
+   }
+  },
+  "E4": {
+   "E4_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/E4_c.wav",
+    "heard": "Без шашечек или фонаря штраф три тысячи рублей. Не выдал чек, плати тысячу.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.899,
+    "dur": 6.0
+   },
+   "E4_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/E4_q.wav",
+    "heard": "Без шашечек или фонаря штраф 3000 рублей. Не выдал чек. Плати 1000.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.913,
+    "dur": 6.08
+   }
+  },
+  "E5": {
+   "E5_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/E5_q.wav",
+    "heard": "Ты оформляешь разрешение и клеишь шашечки. Впервые ты таксист по закону.",
+    "issues": [
+     {
+      "level": "fail",
+      "code": "tail",
+      "msg": "лишний звук после текста: 0.6 с (текст кончился на 4.5 с из 5.8)",
+      "t": 4.48
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.97,
+    "dur": 5.8
+   },
+   "E5_y.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/E5_y.wav",
+    "heard": "Ты оформляешь разрешение и клеишь шашечки. Впервые ты таксист по закону.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.978,
+    "dur": 5.76
+   }
+  },
+  "E6": {
+   "E6_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/E6_c.wav",
+    "heard": "А с июля 2013 года в Москве разрешение дают только машинам лимонного цвета.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «года» в норме (1-й слог, нужно 1-й, запас 0.74)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «цвета» в норме (1-й слог, нужно 1-й, запас 0.26)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.939,
+    "dur": 5.24
+   },
+   "E6_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/E6_q.wav",
+    "heard": "А с июля 2013 года в Москве разрешение дают только машинам лимонного цвета.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «года» в норме (1-й слог, нужно 1-й, запас 0.38)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «цвета» в норме (1-й слог, нужно 1-й, запас 0.57)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.944,
+    "dur": 5.68
+   }
+  },
+  "F1": {
+   "F1_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/F1_c.wav",
+    "heard": "Осенью 2011 года такси появляется прямо в телефоне. Приложение Яндекс .Такси.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «года» в норме (1-й слог, нужно 1-й, запас 0.79)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.92,
+    "dur": 5.52
+   },
+   "F1_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/F1_v.wav",
+    "heard": "Осенью 2011 года такси появляется прямо в телефоне. Приложение Яндекс .Такси",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «года» в норме (1-й слог, нужно 1-й, запас 0.54)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.936,
+    "dur": 6.28
+   }
+  },
+  "F2": {
+   "F2_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/F2_q.wav",
+    "heard": "В 2012 году машину ждут в среднем больше 20 минут, а в 2013 в Москву приходит Uber.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_latin",
+      "msg": "ASR латиницей: «uber» вместо «убер»"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «году» в норме (1-й слог, нужно 2-й, запас 0.28)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Убер» в норме (1-й слог, нужно 1-й, запас 0.35)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.918,
+    "dur": 6.76
+   },
+   "F2_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/F2_x.wav",
+    "heard": "В 2012 году машину ждут в среднем больше 20 минут, а в 2013 году в Москву приходит Uber.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_latin",
+      "msg": "ASR латиницей: «uber» вместо «убер»"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «году» в норме (1-й слог, нужно 2-й, запас 0.17)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Убер» в норме (1-й слог, нужно 1-й, запас 0.45)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.927,
+    "dur": 6.16
+   }
+  },
+  "F3": {
+   "F3_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/F3_c.wav",
+    "heard": "Теперь заказ сам находит тебя, а навигатор знает дорогу лучше тебя.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.979,
+    "dur": 5.2
+   },
+   "F3_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/F3_q.wav",
+    "heard": "Теперь заказ сам находит тебя, а навигатор знает дорогу лучше тебя.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.978,
+    "dur": 5.36
+   }
+  },
+  "F4": {
+   "F4_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/F4_c.wav",
+    "heard": "В 2018 году Яндекс и Uber объединяют сервисы.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_latin",
+      "msg": "ASR латиницей: «uber» вместо «убер»"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «году» в норме (1-й слог, нужно 2-й, запас 0.27)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Убер» в норме (1-й слог, нужно 1-й, запас 0.46)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.888,
+    "dur": 4.56
+   },
+   "F4_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/F4_q.wav",
+    "heard": "В 2018 году Яндекс и Uber объединяют сервисы.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_latin",
+      "msg": "ASR латиницей: «uber» вместо «убер»"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «году» в норме (1-й слог, нужно 2-й, запас 0.22)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Убер» в норме (1-й слог, нужно 1-й, запас 0.25)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.907,
+    "dur": 4.64
+   }
+  },
+  "F5": {
+   "F5_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/F5_q.wav",
+    "heard": "К 2022 году в Москве 99 заказов из 100 идут через приложение.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «приложение» вместо «приложения», акустика за сценарий (-0.37)",
+      "script": "приложения",
+      "heard": "приложение",
+      "delta": -0.37,
+      "t": 3.89
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «году» в норме (1-й слог, нужно 1-й, запас 0.66)"
+     },
+     {
+      "level": "fail",
+      "code": "tail",
+      "msg": "лишний звук после текста: 0.5 с (текст кончился на 4.7 с из 5.9)",
+      "t": 4.74
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.933,
+    "dur": 5.88
+   },
+   "F5_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/F5_v.wav",
+    "heard": "В 2022 году в Москве 99 заказов из 100 идут через приложение.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «приложение» вместо «приложения», акустика за сценарий (-0.23)",
+      "script": "приложения",
+      "heard": "приложение",
+      "delta": -0.23,
+      "t": 4.23
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «году» в норме (1-й слог, нужно 1-й, запас 0.7)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.893,
+    "dur": 6.12
+   }
+  },
+  "F6": {
+   "F6_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/F6_x.wav",
+    "heard": "Руку на обочине почти никто не поднимает.",
+    "issues": [
+     {
+      "level": "fail",
+      "code": "tail",
+      "msg": "лишний звук после текста: 0.7 с (текст кончился на 2.5 с из 4.4)",
+      "t": 2.51
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.99,
+    "dur": 4.36
+   },
+   "F6_y.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/F6_y.wav",
+    "heard": "Руку на обочине почти никто не поднимает.",
+    "issues": [
+     {
+      "level": "fail",
+      "code": "tail",
+      "msg": "лишний звук после текста: 1.0 с (текст кончился на 2.4 с из 4.4)",
+      "t": 2.41
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.988,
+    "dur": 4.44
+   },
+   "F6_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/F6_c.wav",
+    "heard": "Руку на обочине почти никто не поднимает.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.988,
+    "dur": 3.92
+   },
+   "F6_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/F6_q.wav",
+    "heard": "Руку на обочине почти никто не поднимает.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.984,
+    "dur": 3.88
+   },
+   "F6_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/F6_v.wav",
+    "heard": "Руку на обочине почти никто не поднимает.",
+    "issues": [
+     {
+      "level": "fail",
+      "code": "tail",
+      "msg": "лишний звук после текста: 0.8 с (текст кончился на 2.3 с из 4.0)",
+      "t": 2.31
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.988,
+    "dur": 4.0
+   }
+  },
+  "G1": {
+   "G1_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/G1_q.wav",
+    "heard": "Весна 20го. Город сидит по домам. В первые дни самоизоляции такси теряет больше половины пассажиров.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «20го» вместо «двадцатого», акустика за сценарий (-9.39)",
+      "script": "двадцатого",
+      "heard": "20го",
+      "delta": -9.39,
+      "t": 0.08
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.951,
+    "dur": 7.32
+   },
+   "G1_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/G1_x.wav",
+    "heard": "Весна 20 -го, город сидит по домам, в первые дни самоизоляции такси теряет больше половины пассажиров.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.94,
+    "dur": 6.84
+   },
+   "G1_c.wav (после обработки)": {
+    "file": "vo_alt2/G1_c.wav",
+    "heard": "Весна двадцатого. Город сидит по домам. В первые дни самоизоляции такси теряет больше половины пассажиров.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.976,
+    "dur": 6.91
+   },
+   "G1_cur.wav (после обработки)": {
+    "file": "vo_alt2/G1_cur.wav",
+    "heard": "Весна двадцатого. Город сидит по домам. В первые дни самоизоляции такси теряет больше половины пассажиров.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.972,
+    "dur": 6.89
+   },
+   "G1_q.wav (после обработки)": {
+    "file": "vo_alt2/G1_q.wav",
+    "heard": "Весна 20го. Город сидит по домам. Первые дни самоизоляции такси теряет больше половины пассажиров.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «20го» вместо «двадцатого», акустика за сценарий (-9.86)",
+      "script": "двадцатого",
+      "heard": "20го",
+      "delta": -9.86,
+      "t": 0.02
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.925,
+    "dur": 7.11
+   }
+  },
+  "G2": {
+   "G2_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/G2_q.wav",
+    "heard": "С сентября 23 -го можно брать заказы на своей машине как самозанятый, если ты в региональном реестре.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.939,
+    "dur": 6.72
+   },
+   "G2_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/G2_v.wav",
+    "heard": "С сентября 23 -го можно брать заказы на своей машине как самозанятый, если ты в региональном реестре.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.956,
+    "dur": 6.68
+   }
+  },
+  "G3": {
+   "G3_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/G3_c.wav",
+    "heard": "По правилам смена не больше 10 часов, плюс 2 часа, только чтобы закончить заказ.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «часа» в норме (2-й слог, нужно 2-й, запас 0.39)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.926,
+    "dur": 5.72
+   },
+   "G3_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/G3_q.wav",
+    "heard": "По правилам смена не больше 10 часов, плюс 2 часа только чтобы закончить заказ.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «часа» в норме (2-й слог, нужно 2-й, запас 0.22)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.821,
+    "dur": 6.64
+   }
+  },
+  "G4": {
+   "G4_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/G4_q.wav",
+    "heard": "А с марта 26 -го новые машины в такси вносят только из российского реестра, старые ездят дальше.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.938,
+    "dur": 6.68
+   },
+   "G4_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/G4_v.wav",
+    "heard": "А с марта 26 -го новой машины в такси вносят только из российского реестра, старые ездят дальше.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.93,
+    "dur": 6.64
+   }
+  },
+  "G5": {
+   "G5_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/G5_x.wav",
+    "heard": "Тебе самозанятому на своей машине дали отсрочку до 33 -го года.",
+    "issues": [
+     {
+      "level": "fail",
+      "code": "stress",
+      "msg": "ударение «самозанятому»: слышно на 2-м слоге, нужно на 3-м (запас 0.22)",
+      "t": 0.7
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «дали» в норме (1-й слог, нужно 1-й, запас 0.53)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «года» в норме (1-й слог, нужно 1-й, запас 0.03)"
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.902,
+    "dur": 5.44
+   },
+   "G5_y.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/G5_y.wav",
+    "heard": "Тебе, самозанятому на своей машине, дали отсрочку до 33 года.",
+    "issues": [
+     {
+      "level": "fail",
+      "code": "stress",
+      "msg": "ударение «самозанятому»: слышно на 2-м слоге, нужно на 3-м (запас 0.28)",
+      "t": 0.68
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «дали» в норме (1-й слог, нужно 1-й, запас 0.47)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «года» в норме (1-й слог, нужно 1-й, запас 0.35)"
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.931,
+    "dur": 5.4
+   },
+   "G5_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/G5_c.wav",
+    "heard": "Тебе, самозанятому на своей машине, дали отсрочку до 33 года.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «самозанятому» в норме (3-й слог, нужно 3-й, запас 0.02)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «дали» в норме (1-й слог, нужно 1-й, запас 0.44)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «года» в норме (1-й слог, нужно 1-й, запас 0.09)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.928,
+    "dur": 5.52
+   },
+   "G5_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/G5_q.wav",
+    "heard": "Тебе самозанятому на своей машине дали отсрочку до 33 года.",
+    "issues": [
+     {
+      "level": "fail",
+      "code": "stress",
+      "msg": "ударение «самозанятому»: слышно на 2-м слоге, нужно на 3-м (запас 0.4)",
+      "t": 0.9
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «дали» в норме (1-й слог, нужно 1-й, запас 0.45)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «года» в норме (2-й слог, нужно 1-й, запас 0.11)"
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.906,
+    "dur": 5.72
+   },
+   "G5_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/G5_v.wav",
+    "heard": "Тебе, самозанятому на своей машине, дали отсрочку до 33 года.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «самозанятому» в норме (4-й слог, нужно 3-й, запас 0.05)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «дали» в норме (1-й слог, нужно 1-й, запас 0.25)"
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «года» в норме (1-й слог, нужно 1-й, запас 0.33)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.948,
+    "dur": 4.64
+   }
+  },
+  "Z1": {
+   "Z1_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/Z1_c.wav",
+    "heard": "2026. Тебе 62. Усы седые, спина болит.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «спина» в норме (2-й слог, нужно 2-й, запас 0.1)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.935,
+    "dur": 5.72
+   },
+   "Z1_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/Z1_v.wav",
+    "heard": "2026 Тебе 62 Усы седые, спина болит.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «спина» в норме (2-й слог, нужно 2-й, запас 0.21)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.893,
+    "dur": 5.28
+   }
+  },
+  "Z2": {
+   "Z2_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/Z2_c.wav",
+    "heard": "В Москве больше 80 и 8 тысяч такси. Почти в 10 раз больше, чем легальных в 2011 году.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «году» в норме (2-й слог, нужно 2-й, запас 0.12)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.916,
+    "dur": 6.8
+   },
+   "Z2_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/Z2_x.wav",
+    "heard": "В Москве больше 88 тысяч такси, почти в 10 раз больше, чем легальных в 2011 году.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «году» в норме (1-й слог, нужно 2-й, запас 0.11)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.923,
+    "dur": 6.72
+   }
+  },
+  "Z3": {
+   "Z3_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/Z3_q.wav",
+    "heard": "Машину подают в среднем за 4 минуты, а километр по России в среднем около 48 рублей.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «сорока» в норме (2-й слог, нужно 3-й, запас 0.0)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.972,
+    "dur": 6.16
+   },
+   "Z3_y.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/Z3_y.wav",
+    "heard": "Машину подают в среднем за 4 минуты, а километр по России в среднем около 48 рублей.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «сорока» в норме (3-й слог, нужно 3-й, запас 0.37)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.966,
+    "dur": 5.84
+   }
+  },
+  "Z4": {
+   "Z4_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/Z4_c.wav",
+    "heard": "Ты видел, как рука на обочине сменилась рацией, рация телефоном, а торг ценой в приложении.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.938,
+    "dur": 6.16
+   },
+   "Z4_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/Z4_x.wav",
+    "heard": "Ты видел, как рука на обочине сменилась рацией? Рация – телефоном, а торг ценой в приложении.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.878,
+    "dur": 6.96
+   }
+  },
+  "Z5": {
+   "Z5_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/Z5_q.wav",
+    "heard": "Но одно не изменилось. Человек садится в машину, говорит адрес, и ты отвозишь его домой.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.981,
+    "dur": 6.4
+   },
+   "Z5_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/Z5_x.wav",
+    "heard": "Но одно не изменилось — человек садится в машину, говорит адрес, и ты отвозишь его домой.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.936,
+    "dur": 6.16
+   }
+  },
+  "Z6": {
+   "Z6_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/Z6_v.wav",
+    "heard": "34 года в такси, вот она, вся твоя жизнь.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «года» в норме (1-й слог, нужно 1-й, запас 1.25)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.96,
+    "dur": 4.32
+   },
+   "Z6_y.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/Z6_y.wav",
+    "heard": "34 года в такси, вот она, вся твоя жизнь.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «года» в норме (1-й слог, нужно 1-й, запас 0.87)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.968,
+    "dur": 4.0
+   }
+  },
+  "Z7": {
+   "Z7_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/Z7_c.wav",
+    "heard": "Очинился ты всегда у меня. Я Михалыч.",
+    "issues": [
+     {
+      "level": "fail",
+      "code": "text",
+      "msg": "звучит «очинился» вместо «а чинился» (акустика +1.87)",
+      "script": "а чинился",
+      "heard": "очинился",
+      "delta": 1.87,
+      "t": 0.06
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Михалыч» в норме (2-й слог, нужно 2-й, запас 0.38)"
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.95,
+    "dur": 3.0
+   },
+   "Z7_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/Z7_v.wav",
+    "heard": "Очинился ты всегда у меня. Я Михалыч.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «очинился» вместо «а чинился», акустика за сценарий (+0.38)",
+      "script": "а чинился",
+      "heard": "очинился",
+      "delta": 0.38,
+      "t": 0.06
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Михалыч» в норме (2-й слог, нужно 2-й, запас 0.63)"
+     },
+     {
+      "level": "fail",
+      "code": "tail",
+      "msg": "лишний звук после текста: 0.8 с (текст кончился на 2.4 с из 4.0)",
+      "t": 2.35
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.958,
+    "dur": 4.0
+   },
+   "Z7_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/Z7_q.wav",
+    "heard": "Очинился ты всегда у меня. Я Михалыч.",
+    "issues": [
+     {
+      "level": "fail",
+      "code": "text",
+      "msg": "звучит «очинился» вместо «а чинился» (акустика +0.78)",
+      "script": "а чинился",
+      "heard": "очинился",
+      "delta": 0.78,
+      "t": 0.06
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Михалыч» в норме (2-й слог, нужно 2-й, запас 0.32)"
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.969,
+    "dur": 3.0
+   },
+   "Z7_x.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/Z7_x.wav",
+    "heard": "Очинился ты всегда у меня. Я Михалыч.",
+    "issues": [
+     {
+      "level": "fail",
+      "code": "text",
+      "msg": "звучит «очинился» вместо «а чинился» (акустика +1.62)",
+      "script": "а чинился",
+      "heard": "очинился",
+      "delta": 1.62,
+      "t": 0.08
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Михалыч» в норме (2-й слог, нужно 2-й, запас 0.69)"
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.968,
+    "dur": 3.44
+   },
+   "Z7_y.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/Z7_y.wav",
+    "heard": "Очинился ты всегда у меня, я Михалыч.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «очинился» вместо «а чинился», акустика за сценарий (+0.07)",
+      "script": "а чинился",
+      "heard": "очинился",
+      "delta": 0.07,
+      "t": 0.06
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Михалыч» в норме (2-й слог, нужно 2-й, запас 0.98)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.919,
+    "dur": 3.92
+   },
+   "Z7_t.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/Z7_t.wav",
+    "heard": "Очинился ты всегда у меня. Я Михалыч.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «очинился» вместо «а чинился», акустика за сценарий (+0.40)",
+      "script": "а чинился",
+      "heard": "очинился",
+      "delta": 0.4,
+      "t": 0.06
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Михалыч» в норме (2-й слог, нужно 2-й, запас 0.75)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.953,
+    "dur": 2.92
+   },
+   "Z7_y.wav (после обработки)": {
+    "file": "vo_alt/Z7_y.wav",
+    "heard": "Очинился ты всегда у меня. Я Михалыч.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "asr_only",
+      "msg": "ASR: «очинился» вместо «а чинился», акустика за сценарий (-0.67)",
+      "script": "а чинился",
+      "heard": "очинился",
+      "delta": -0.67,
+      "t": 0.02
+     },
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Михалыч» в норме (2-й слог, нужно 2-й, запас 0.81)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.948,
+    "dur": 3.87
+   },
+   "Z7_s24.wav": {
+    "file": "vo_cand4/Z7_s24.wav",
+    "heard": "А чинился ты всегда у меня. Я Михалыч.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Михалыч» в норме (2-й слог, нужно 2-й, запас 0.3)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.871,
+    "dur": 2.84
+   }
+  },
+  "Z8": {
+   "Z8_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/Z8_c.wav",
+    "heard": "А ты помнишь, как ловил машину рукой и сколько платил? Пиши в комментариях.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.976,
+    "dur": 4.96
+   },
+   "Z8_v.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/Z8_v.wav",
+    "heard": "А ты помнишь, как ловил машину рукой и сколько платил? Пиши в комментариях.",
+    "issues": [],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.968,
+    "dur": 5.0
+   }
+  },
+  "Z9": {
+   "Z9_c.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/Z9_c.wav",
+    "heard": "Подписывайся на Гараж Михалыча. Следующим будет дальнобойщик 90 -х.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Михалыча» в норме (2-й слог, нужно 2-й, запас 0.23)"
+     }
+    ],
+    "fails": 0,
+    "warns": 0,
+    "conf": 0.915,
+    "dur": 5.76
+   },
+   "Z9_q.wav": {
+    "file": "/tmp/claude-0/-home-user-lookme-viewer/8420a68c-a72b-5ef9-9faf-653836f3526a/scratchpad/taxi90/vo_takes/Z9_q.wav",
+    "heard": "Подписывайся на Гараж Михалыча. Следующим будет дальнобойщик 90 -х.",
+    "issues": [
+     {
+      "level": "info",
+      "code": "stress_ok",
+      "msg": "ударение «Михалыча» в норме (2-й слог, нужно 2-й, запас 0.04)"
+     },
+     {
+      "level": "fail",
+      "code": "tail",
+      "msg": "лишний звук после текста: 0.5 с (текст кончился на 4.2 с из 5.2)",
+      "t": 4.22
+     }
+    ],
+    "fails": 1,
+    "warns": 0,
+    "conf": 0.912,
+    "dur": 5.24
+   }
+  }
+ },
+ "picks": {
+  "I01": "I01_c.wav",
+  "I02": "I02_y.wav",
+  "I03": "I03_y.wav",
+  "A1": "A1_c.wav",
+  "A2": "A2_x.wav",
+  "A3": "A3_q.wav",
+  "A4": "A4_c.wav",
+  "A5": "A5_c.wav",
+  "A6": "A6_c.wav",
+  "A7": "A7_x.wav",
+  "A8": "A8_c.wav",
+  "B1": "B1_c.wav",
+  "B2": "B2_x.wav",
+  "B3": "B3_c.wav",
+  "B4": "B4_c.wav",
+  "B5": "B5_c.wav",
+  "B6": "B6_q.wav",
+  "C1": "C1_c.wav",
+  "C2": "C2_v.wav",
+  "C3": "C3_y.wav",
+  "C4": "C4_q.wav",
+  "C5": "C5_q.wav",
+  "C6": "C6_v.wav",
+  "D1": "D1_c.wav",
+  "D2": "D2_c.wav",
+  "D3": "D3_v.wav",
+  "D4": "D4_c.wav",
+  "D5": "D5_c.wav",
+  "E1": "E1_v.wav",
+  "E2": "E2_c.wav",
+  "E3": "E3_c.wav",
+  "E4": "E4_c.wav",
+  "E5": "E5_y.wav",
+  "E6": "E6_c.wav",
+  "F1": "F1_v.wav",
+  "F2": "F2_x.wav",
+  "F3": "F3_c.wav",
+  "F4": "F4_q.wav",
+  "F5": "F5_v.wav",
+  "F6": "F6_c.wav",
+  "G1": "G1_x.wav",
+  "G2": "G2_v.wav",
+  "G3": "G3_c.wav",
+  "G4": "G4_q.wav",
+  "G5": "G5_c.wav",
+  "Z1": "Z1_c.wav",
+  "Z2": "Z2_c.wav",
+  "Z3": "Z3_q.wav",
+  "Z4": "Z4_x.wav",
+  "Z5": "Z5_x.wav",
+  "Z6": "Z6_y.wav",
+  "Z7": "Z7_s24.wav",
+  "Z8": "Z8_v.wav",
+  "Z9": "Z9_c.wav"
+ },
+ "retake": {}
+}
