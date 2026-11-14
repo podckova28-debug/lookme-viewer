@@ -1,0 +1,56 @@
+C01|NARRATOR|A young soldier is shaking so hard his teeth rattle. It's thirty-five degrees outside. He's buried under three blankets, and he's freezing. In a few hours, he'll be burning with fever. And in two days, it will all happen again.
+C02|NARRATOR|Nobody knows what causes it. In a hot little lab nearby, an army doctor named Ronald Ross has spent two years cutting open mosquitoes, looking for the answer. Secunderabad, India. August, 1897.
+C03|NARRATOR|On the twentieth of August, in the stomach of one mosquito, he finally sees them. Tiny round cells that shouldn't be there. The killer had been hitching a ride all along.
+C04|MALARIA|Took them long enough. I've been flying for millions of years.
+L01|NARRATOR|So who is he? Not a virus. Not a bacterium. Malaria is a parasite: a tiny single-celled creature called Plasmodium. And he can't travel on his own.
+L02|NARRATOR|He needs a ride: a mosquito called Anopheles. And only the females bite. They need blood to make their eggs.
+L03|NARRATOR|When she bites, he slips into your blood and goes straight to the liver. There he hides and multiplies, quietly, for a week or two.
+L04|MALARIA|These wings are just for show. The real work is done by my air force.
+L05|NARRATOR|Then thousands of new parasites burst out of the liver and invade your red blood cells. Inside each cell he multiplies again, until it bursts, and the new ones invade more cells. Over and over.
+L06|NARRATOR|And when another mosquito bites you, she drinks him up with your blood, and carries him to the next person.
+L07|MALARIA|Human, mosquito, human. A beautiful little arrangement, don't you think?
+L08|NARRATOR|But where did he come from? Malaria parasites are ancient. They infect birds, lizards, monkeys and apes. The deadliest kind in humans, Plasmodium falciparum, most likely jumped to us from gorillas in Africa.
+L09|NARRATOR|When people began to farm, clearing forests and digging ponds and ditches, the mosquitoes followed. He spread across Africa, then into Asia and Europe.
+L10|NARRATOR|We have found his DNA in Egyptian mummies, including the boy pharaoh, Tutankhamun.
+L11|NARRATOR|He killed for so long that he changed our DNA. In parts of Africa, the gene for sickle-cell disease survived, because one copy of it protects against him.
+L12|MALARIA|I didn't just kill humans. I rewrote them.
+S01|NARRATOR|So what does he do to you? It begins with the cold. You shiver so hard your teeth chatter, under blankets, in the heat.
+S02|NARRATOR|Then the hot stage. A fever of forty degrees, a pounding headache, vomiting. Then come the sweats, soaking everything. And a few hours later, you feel almost fine.
+S03|NARRATOR|Until it starts again. Every second or third day, as a new wave of blood cells bursts. The Romans had names for these fevers: tertian and quartan.
+S04|NARRATOR|He destroys so many red blood cells that you turn pale and weak. Your spleen swells. And the deadliest kind can clog the tiny blood vessels of the brain. Coma. Death.
+S05|NARRATOR|Children under five suffer the most. Their bodies haven't yet learned to fight back.
+S06|MALARIA|Cold. Hot. Wet. Repeat. I do love a good routine.
+L13|NARRATOR|People have described his fevers for thousands of years. Ancient Chinese and Indian texts, and the Greek doctor Hippocrates, wrote about regular fevers and swollen spleens. And they all noticed something: it was worse near marshes.
+L14|NARRATOR|Ancient Rome was surrounded by marshes, and he loved it there. The Romans even built temples to Febris, the goddess of fever, and prayed for her mercy.
+L15|NARRATOR|Centuries later, Italians blamed the foul air that rose from the swamps at night. Mala aria. Bad air. That's where his name comes from.
+L16|MALARIA|Bad air. They named me after a smell. How rude.
+L17|NARRATOR|He may have killed Alexander the Great at thirty-two. He killed popes and crusaders, and the poet Dante. Whole armies marching into his marshes simply melted away.
+L18|NARRATOR|Then, in the 1600s, Jesuit missionaries in Peru learned of a bitter bark from the cinchona tree. Ground into powder and mixed with wine, it stopped the fevers.
+L19|NARRATOR|In Europe, it was called Jesuit's bark. Some Protestants refused to take a Catholic cure. Legend says Oliver Cromwell was one of them, and he died of a fever in 1658.
+L20|NARRATOR|In 1820, two French chemists, Pelletier and Caventou, pulled the active ingredient out of the bark: quinine.
+L21|NARRATOR|Quinine was so bitter that British officers in India mixed it with soda and sugar into tonic water, then added gin to help it go down. That, the story goes, is how the gin and tonic was born.
+L22|MALARIA|They fought me with cocktails. I have never been so insulted.
+L23|NARRATOR|Quinine let European armies push deep into West Africa, a coast they had called the white man's grave. The bark that saved lives also helped build empires.
+L24|NARRATOR|But what was he? In 1880, in Algeria, a French army doctor, Alphonse Laveran, looked at the blood of a feverish soldier and saw tiny creatures wriggling inside the red cells. Hardly anyone believed him.
+L25|NARRATOR|Then Ross found him inside the mosquito, and proved the whole cycle in birds. In Italy, a team led by Giovanni Battista Grassi proved it in humans. The two men fought bitterly over the credit. Ross won the Nobel Prize in 1902.
+L26|MALARIA|Two great scientists fighting over who discovered me. I was flattered.
+L27|NARRATOR|Meanwhile in Panama, the French were trying to dig a canal. Malaria and yellow fever killed around twenty thousand workers, and the French gave up.
+L28|NARRATOR|When the Americans tried again in 1904, a doctor named William Gorgas went after the mosquitoes. He drained swamps, poured oil on ponds, and put screens on every window. The canal opened in 1914.
+L29|MALARIA|Panama was one of my finest projects. Until that Gorgas fellow ruined it.
+L30|NARRATOR|After the Second World War came a new weapon: DDT. In 1955, the World Health Organization set out to wipe malaria off the planet. Teams sprayed the walls of millions of homes.
+L31|NARRATOR|He vanished from the United States, from Europe, from much of Asia. Sri Lanka got down to just seventeen cases in a whole year.
+L32|NARRATOR|But the mosquitoes became resistant to DDT, the money ran out, and the spraying stopped. Within a few years, Sri Lanka was back to half a million cases. In 1969, the dream of eradication was abandoned.
+L33|MALARIA|They thought they'd won. I just took a little holiday.
+L34|NARRATOR|Worse, the parasite was learning to survive the drugs. During the Vietnam War, he was killing soldiers on both sides. So in 1967, China launched a secret project to find a new cure.
+L35|NARRATOR|A scientist named Tu Youyou searched through more than two thousand old recipes. In a book written sixteen hundred years ago, she found one for fevers: soak sweet wormwood in cold water, and drink the juice.
+L36|NARRATOR|Cold water, not boiling. That was the clue: heat destroyed the medicine. In 1972, her team isolated artemisinin. It has saved millions of lives, and in 2015, Tu Youyou won the Nobel Prize.
+L37|MALARIA|Beaten by a weed. A common little weed!
+A01|NARRATOR|And for those who survive? People who catch him again and again build up some protection, but it fades if they move away. Some kinds hide in the liver and wake up months or even years later. And children who survive can be left with anaemia and damage to the brain.
+A02|NARRATOR|For the world, he left more than graves. The sickle-cell gene. Quinine and tonic water. The Panama Canal. Screens on our windows and nets over our beds. And the twentieth of August: World Mosquito Day, in honour of Ronald Ross.
+A03|MALARIA|Every net, every screen, every bitter drink. That's my portrait, really.
+T01|NARRATOR|Today, he still infects about two hundred and fifty million people a year, and kills around six hundred thousand. Most of them are children under five, in Africa.
+T02|NARRATOR|But we are fighting back. Bed nets treated with insecticide have saved millions of lives. A rapid test takes about fifteen minutes. And in 2021, the first malaria vaccine was recommended, with a second following in 2023.
+T03|NARRATOR|Some scientists are even changing the genes of mosquitoes, so they can no longer carry him.
+T04|MALARIA|Vaccines. Nets. Gene editing. They really are taking this personally.
+L38|NARRATOR|Some say he has killed more people than anything else in history. That's hard to prove. But for thousands of years, he decided who could live near the water. And he is still here, waiting at dusk.
+L39|NARRATOR|Next time: the oldest stigma in history. A disease so feared that its victims had to ring a bell wherever they walked.

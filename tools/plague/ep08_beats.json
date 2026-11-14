@@ -1,0 +1,2603 @@
+{
+ "base": "assets/plague/ep08/frames",
+ "keep_zoom": [],
+ "static": true,
+ "fade_in": 0.8,
+ "start": 0.0,
+ "lead": 0.45,
+ "gap": 0.6,
+ "max_shot": 3.2,
+ "sfx_global": [
+  {
+   "kind": "drone",
+   "t": 0.0,
+   "args": {
+    "d": "ALL"
+   },
+   "gain": 0.9
+  },
+  {
+   "kind": "wind",
+   "t": 0.0,
+   "args": {
+    "d": "ALL"
+   },
+   "gain": 0.12
+  }
+ ],
+ "beats": [
+  {
+   "vo": "assets/plague/ep08/vo/C01.wav",
+   "shots": [
+    {
+     "img": "c01a",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "It's 35 degrees, and he's freezing",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "c01b",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": {
+      "text": "Then the fever",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "c01c",
+     "from": [
+      0.52,
+      0.5,
+      1.03
+     ],
+     "to": [
+      0.48,
+      0.5,
+      1.03
+     ],
+     "w": 1,
+     "text": {
+      "text": "And in two days, again",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/C02.wav",
+   "shots": [
+    {
+     "img": "c02a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": {
+      "text": "Ronald Ross",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "c02c",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "Two years of mosquitoes",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "c02b",
+     "from": [
+      0.48,
+      0.5,
+      1.03
+     ],
+     "to": [
+      0.52,
+      0.5,
+      1.03
+     ],
+     "w": 1,
+     "text": {
+      "text": "Secunderabad, India \u2014 August 1897",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/C03.wav",
+   "shots": [
+    {
+     "img": "d01a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Inside a mosquito's stomach",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "c03a",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "20 August 1897",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/C04.wav",
+   "gain": 1.05,
+   "shots": [
+    {
+     "img": "c04a",
+     "from": [
+      0.5,
+      0.45,
+      1.0350000000000001
+     ],
+     "to": [
+      0.5,
+      0.45,
+      1.0550000000000002
+     ],
+     "w": 1
+    }
+   ]
+  },
+  {
+   "hold": 4.6,
+   "shots": [
+    {
+     "img": "c05a",
+     "from": [
+      0.5,
+      0.5,
+      1.05
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "MALARIA",
+       "x": 1300,
+       "y": 330,
+       "size": 130,
+       "at": 0.15,
+       "style": "title",
+       "pop": true,
+       "len": 4.2
+      },
+      {
+       "text": "THE MARSH FEVER",
+       "x": 1300,
+       "y": 470,
+       "size": 72,
+       "at": 0.5,
+       "style": "title",
+       "color": [
+        214,
+        200,
+        120
+       ],
+       "len": 3.9
+      }
+     ],
+     "sfx": [
+      {
+       "kind": "boom",
+       "at": 0.1,
+       "gain": 0.8
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L01.wav",
+   "shots": [
+    {
+     "img": "d02a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1
+    },
+    {
+     "img": "c06a",
+     "from": [
+      0.5,
+      0.45,
+      1.0350000000000001
+     ],
+     "to": [
+      0.5,
+      0.45,
+      1.0550000000000002
+     ],
+     "w": 1,
+     "text": {
+      "text": "Plasmodium, a single-celled parasite",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L02.wav",
+   "shots": [
+    {
+     "img": "d03a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Only the females bite",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "c07a",
+     "from": [
+      0.48,
+      0.5,
+      1.03
+     ],
+     "to": [
+      0.52,
+      0.5,
+      1.03
+     ],
+     "w": 1,
+     "text": {
+      "text": "She bites at dusk and at night",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L03.wav",
+   "shots": [
+    {
+     "img": "d04a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "First, he hides in the liver",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "c07b",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "A week or two of silence",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L04.wav",
+   "gain": 1.05,
+   "shots": [
+    {
+     "img": "c08a",
+     "from": [
+      0.5,
+      0.45,
+      1.0350000000000001
+     ],
+     "to": [
+      0.5,
+      0.45,
+      1.0550000000000002
+     ],
+     "w": 1
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L05.wav",
+   "shots": [
+    {
+     "img": "d05a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Into the blood cells, over and over",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "d06a",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "What a doctor sees under the microscope",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L06.wav",
+   "shots": [
+    {
+     "img": "d07a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Human, mosquito, human",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "c09a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": {
+      "text": "Every bite passes him on",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L07.wav",
+   "gain": 1.05,
+   "shots": [
+    {
+     "img": "c10a",
+     "from": [
+      0.5,
+      0.45,
+      1.0350000000000001
+     ],
+     "to": [
+      0.5,
+      0.45,
+      1.0550000000000002
+     ],
+     "w": 1
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L08.wav",
+   "shots": [
+    {
+     "img": "d08a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Most likely from gorillas",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "c11a",
+     "from": [
+      0.48,
+      0.5,
+      1.03
+     ],
+     "to": [
+      0.52,
+      0.5,
+      1.03
+     ],
+     "w": 1,
+     "text": {
+      "text": "Africa, long before history",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "c11d",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": {
+      "text": "Traced back through gorilla parasites",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L09.wav",
+   "shots": [
+    {
+     "img": "c11b",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": {
+      "text": "Farms meant still water",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "d09a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Out of Africa",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L10.wav",
+   "shots": [
+    {
+     "img": "c11c",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "Even Tutankhamun had him",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L11.wav",
+   "shots": [
+    {
+     "img": "d10a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "The sickle-cell gene: a shield",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "c12b",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": {
+      "text": "One copy protects",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L12.wav",
+   "gain": 1.05,
+   "shots": [
+    {
+     "img": "c12a",
+     "from": [
+      0.5,
+      0.45,
+      1.0350000000000001
+     ],
+     "to": [
+      0.5,
+      0.45,
+      1.0550000000000002
+     ],
+     "w": 1
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/S01.wav",
+   "shots": [
+    {
+     "img": "d11a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "What He Does to You",
+       "x": 960,
+       "y": 150,
+       "size": 72,
+       "at": 0.3
+      },
+      {
+       "text": "First, the chills",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "c13a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": {
+      "text": "Shaking in the heat",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/S02.wav",
+   "shots": [
+    {
+     "img": "d12a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Cold, then hot, then soaked in sweat",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "c13b",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "Then the sweats",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/S03.wav",
+   "shots": [
+    {
+     "img": "d13a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Every second or third day",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "c13e",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": {
+      "text": "Tertian and quartan fevers",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/S04.wav",
+   "shots": [
+    {
+     "img": "d14a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Pale, weak, a swollen spleen",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "c13c",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "When he reaches the brain",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/S05.wav",
+   "shots": [
+    {
+     "img": "c13d",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": {
+      "text": "Children suffer the most",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/S06.wav",
+   "gain": 1.05,
+   "shots": [
+    {
+     "img": "c14a",
+     "from": [
+      0.5,
+      0.45,
+      1.0350000000000001
+     ],
+     "to": [
+      0.5,
+      0.45,
+      1.0550000000000002
+     ],
+     "w": 1
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L13.wav",
+   "shots": [
+    {
+     "img": "c15a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": {
+      "text": "Ancient China",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "c15b",
+     "from": [
+      0.48,
+      0.5,
+      1.03
+     ],
+     "to": [
+      0.52,
+      0.5,
+      1.03
+     ],
+     "w": 1,
+     "text": {
+      "text": "Worse near the marshes",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L14.wav",
+   "shots": [
+    {
+     "img": "c16a",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "A temple to Febris, goddess of fever",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "c16b",
+     "from": [
+      0.52,
+      0.5,
+      1.03
+     ],
+     "to": [
+      0.48,
+      0.5,
+      1.03
+     ],
+     "w": 1,
+     "text": {
+      "text": "The marshes around Rome",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L15.wav",
+   "shots": [
+    {
+     "img": "c16c",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "Mal'aria: bad air",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L16.wav",
+   "gain": 1.05,
+   "shots": [
+    {
+     "img": "c17a",
+     "from": [
+      0.5,
+      0.45,
+      1.0350000000000001
+     ],
+     "to": [
+      0.5,
+      0.45,
+      1.0550000000000002
+     ],
+     "w": 1
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L17.wav",
+   "shots": [
+    {
+     "img": "c18a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": {
+      "text": "Alexander the Great, perhaps",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "c18b",
+     "from": [
+      0.48,
+      0.5,
+      1.03
+     ],
+     "to": [
+      0.52,
+      0.5,
+      1.03
+     ],
+     "w": 1,
+     "text": {
+      "text": "Dante, 1321",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "c18c",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "Armies melted away",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L18.wav",
+   "shots": [
+    {
+     "img": "c19a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": {
+      "text": "Peru, 1600s",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "d16a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Bark, powder, wine",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "c19c",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "The cinchona tree",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L19.wav",
+   "shots": [
+    {
+     "img": "c19b",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "Oliver Cromwell, 1658",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L20.wav",
+   "shots": [
+    {
+     "img": "c20a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": {
+      "text": "Quinine, 1820",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L21.wav",
+   "shots": [
+    {
+     "img": "c20b",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "The gin and tonic",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "d17a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Medicine you could drink",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "c20c",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L22.wav",
+   "gain": 1.05,
+   "shots": [
+    {
+     "img": "c21a",
+     "from": [
+      0.5,
+      0.45,
+      1.0350000000000001
+     ],
+     "to": [
+      0.5,
+      0.45,
+      1.0550000000000002
+     ],
+     "w": 1
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L23.wav",
+   "shots": [
+    {
+     "img": "c22a",
+     "from": [
+      0.48,
+      0.5,
+      1.03
+     ],
+     "to": [
+      0.52,
+      0.5,
+      1.03
+     ],
+     "w": 1,
+     "text": {
+      "text": "The white man's grave",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L24.wav",
+   "shots": [
+    {
+     "img": "c23a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": {
+      "text": "Alphonse Laveran \u2014 Algeria, 1880",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "d18a",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "Creatures inside the blood",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "c23b",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "Hardly anyone believed him",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L25.wav",
+   "shots": [
+    {
+     "img": "d19a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Ross proved it in birds",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "c24a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": {
+      "text": "Giovanni Battista Grassi, Rome",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "c24b",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "A bitter fight for the credit",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L26.wav",
+   "gain": 1.05,
+   "shots": [
+    {
+     "img": "c25a",
+     "from": [
+      0.5,
+      0.45,
+      1.0350000000000001
+     ],
+     "to": [
+      0.5,
+      0.45,
+      1.0550000000000002
+     ],
+     "w": 1
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L27.wav",
+   "shots": [
+    {
+     "img": "c26a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": {
+      "text": "Panama, 1880s",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "d20a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "About 20,000 dead",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "c26d",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "Malaria and yellow fever",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L28.wav",
+   "shots": [
+    {
+     "img": "c26b",
+     "from": [
+      0.48,
+      0.5,
+      1.03
+     ],
+     "to": [
+      0.52,
+      0.5,
+      1.03
+     ],
+     "w": 1,
+     "text": {
+      "text": "William Gorgas",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "d21a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Drain, oil, screen",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "c26c",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": {
+      "text": "Opened in 1914",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L29.wav",
+   "gain": 1.05,
+   "shots": [
+    {
+     "img": "c27a",
+     "from": [
+      0.5,
+      0.45,
+      1.0350000000000001
+     ],
+     "to": [
+      0.5,
+      0.45,
+      1.0550000000000002
+     ],
+     "w": 1
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L30.wav",
+   "shots": [
+    {
+     "img": "c28a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": {
+      "text": "Millions of homes sprayed",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "d22a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "The plan: wipe him out",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "c28c",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "DDT, 1955",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L31.wav",
+   "shots": [
+    {
+     "img": "d23a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Sri Lanka, 1963: just 17 cases",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L32.wav",
+   "shots": [
+    {
+     "img": "d24a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Back to half a million cases",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "c28b",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "The spraying stopped",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L33.wav",
+   "gain": 1.05,
+   "shots": [
+    {
+     "img": "c29a",
+     "from": [
+      0.5,
+      0.45,
+      1.0350000000000001
+     ],
+     "to": [
+      0.5,
+      0.45,
+      1.0550000000000002
+     ],
+     "w": 1
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L34.wav",
+   "shots": [
+    {
+     "img": "c30a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": {
+      "text": "Vietnam, 1960s",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "c30b",
+     "from": [
+      0.48,
+      0.5,
+      1.03
+     ],
+     "to": [
+      0.52,
+      0.5,
+      1.03
+     ],
+     "w": 1,
+     "text": {
+      "text": "Project 523",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L35.wav",
+   "shots": [
+    {
+     "img": "c31a",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "Tu Youyou",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "d25a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "A 1,600-year-old recipe",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "c31d",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "Sweet wormwood",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L36.wav",
+   "shots": [
+    {
+     "img": "c31b",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": {
+      "text": "Artemisinin, 1972",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "c31c",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "Nobel Prize, 2015",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L37.wav",
+   "gain": 1.05,
+   "shots": [
+    {
+     "img": "c32a",
+     "from": [
+      0.5,
+      0.45,
+      1.0350000000000001
+     ],
+     "to": [
+      0.5,
+      0.45,
+      1.0550000000000002
+     ],
+     "w": 1
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/A01.wav",
+   "shots": [
+    {
+     "img": "d26a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "What He Leaves Behind",
+       "x": 960,
+       "y": 150,
+       "size": 72,
+       "at": 0.3
+      },
+      {
+       "text": "He can wake up years later",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "c33a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": {
+      "text": "Back again, years later",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/A02.wav",
+   "shots": [
+    {
+     "img": "d27a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "He left more than graves",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "c33b",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "Nets over our beds",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/A03.wav",
+   "gain": 1.05,
+   "shots": [
+    {
+     "img": "c34a",
+     "from": [
+      0.5,
+      0.45,
+      1.0350000000000001
+     ],
+     "to": [
+      0.5,
+      0.45,
+      1.0550000000000002
+     ],
+     "w": 1
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/T01.wav",
+   "shots": [
+    {
+     "img": "d28a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "About 600,000 deaths a year",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "c35a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": {
+      "text": "Most are children under five",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "c35e",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/T02.wav",
+   "shots": [
+    {
+     "img": "c35b",
+     "from": [
+      0.48,
+      0.5,
+      1.03
+     ],
+     "to": [
+      0.52,
+      0.5,
+      1.03
+     ],
+     "w": 1,
+     "text": {
+      "text": "Bed nets have saved millions",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "c35c",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "The first malaria vaccine, 2021",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "c35f",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "A test in fifteen minutes",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/T03.wav",
+   "shots": [
+    {
+     "img": "c35d",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": {
+      "text": "Mosquitoes that can't carry him",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/T04.wav",
+   "gain": 1.05,
+   "shots": [
+    {
+     "img": "c36a",
+     "from": [
+      0.5,
+      0.45,
+      1.0350000000000001
+     ],
+     "to": [
+      0.5,
+      0.45,
+      1.0550000000000002
+     ],
+     "w": 1
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L38.wav",
+   "shots": [
+    {
+     "img": "c03a",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1
+    },
+    {
+     "img": "d16a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1
+    },
+    {
+     "img": "c26b",
+     "from": [
+      0.48,
+      0.5,
+      1.03
+     ],
+     "to": [
+      0.52,
+      0.5,
+      1.03
+     ],
+     "w": 1
+    },
+    {
+     "img": "c31a",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1
+    },
+    {
+     "img": "c37a",
+     "from": [
+      0.5,
+      0.45,
+      1.0350000000000001
+     ],
+     "to": [
+      0.5,
+      0.45,
+      1.0550000000000002
+     ],
+     "w": 1
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep08/vo/L39.wav",
+   "shots": [
+    {
+     "img": "c38a",
+     "from": [
+      0.5,
+      0.5,
+      1.014
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.034
+     ],
+     "w": 1
+    }
+   ]
+  },
+  {
+   "hold": 5.0,
+   "shots": [
+    {
+     "img": "c38a",
+     "from": [
+      0.5,
+      0.5,
+      1.05
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "NEXT TIME",
+       "x": 1380,
+       "y": 360,
+       "size": 110,
+       "at": 0.2,
+       "style": "title",
+       "pop": true,
+       "len": 4.6
+      },
+      {
+       "text": "SUBSCRIBE",
+       "x": 1380,
+       "y": 500,
+       "size": 64,
+       "at": 0.8,
+       "len": 4.0
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "music": [
+  {
+   "file": "assets/plague/music/cholera_a.mp3",
+   "t0": 0.0,
+   "t1": 190,
+   "gain": 1.0,
+   "fade_in": 2.0,
+   "fade_out": 4.0
+  },
+  {
+   "file": "assets/plague/music/plague_a.mp3",
+   "t0": 186.0,
+   "t1": 330,
+   "gain": 1.0,
+   "fade_in": 4.0,
+   "fade_out": 4.0
+  },
+  {
+   "file": "assets/plague/music/plague_b.mp3",
+   "t0": 326.0,
+   "t1": 470,
+   "gain": 1.0,
+   "fade_in": 4.0,
+   "fade_out": 4.0
+  },
+  {
+   "file": "assets/plague/music/cholera_b.mp3",
+   "t0": 466.0,
+   "t1": "ALL",
+   "gain": 1.0,
+   "fade_in": 4.0,
+   "fade_out": 5.0
+  }
+ ]
+}
