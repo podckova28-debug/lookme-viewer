@@ -7,7 +7,7 @@ from the start: static camera, a person in trouble in the first second, characte
 """
 import sys, json, os
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-K_SHEET = '2bf7277c-1c10-4575-a3c3-12509028c349'   # channel/plague/sheets/malaria_a.jpg (the Marsh Count), Higgsfield job id
+K_SHEET = 'e059fb2c-82c5-4843-b690-a6ff18340477'   # channel/plague/sheets/malaria_a.jpg (the Marsh Count), Higgsfield upload
 STYLE = ("2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, muted swamp-green, ochre and sepia palette "
          "with sickly yellow accents and warm lamp light. Not gory.")
 MODERN = ("2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, the same muted green, ochre and sepia palette, "
