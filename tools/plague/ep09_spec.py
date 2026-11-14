@@ -173,7 +173,7 @@ K('L28', "He stayed with them to the end. I'll admit it. That one, I respected."
 
 # ---- Alice Ball and the cure
 N('L29', "For centuries, the best treatment was still chaulmoogra oil. Swallowed, it made people sick. Injected, it formed painful lumps. Then, in 1915, a twenty-three-year-old chemist in Hawaii, Alice Ball, found a way to make it injectable.",
-  ch('c27a', W(), "A 1915 university chemistry laboratory in Honolulu with wooden benches, glass flasks and a window onto palm trees: a young stickwoman chemist with short dark curly hair, in a long 1910s skirt, a white blouse and a white lab apron, holds up a small glass flask of golden oil to the window light with one hand, her other hand resting on the bench.", text=cap('Alice Ball, 1915')),
+  ch('c27a', W(), "A 1915 university chemistry laboratory in Honolulu with wooden benches, glass flasks and a window onto palm trees: a young stickwoman chemist with short dark curly hair, in a long 1910s skirt, a white blouse and a white lab apron, holds up a small glass flask of golden oil to the window light with her right hand; her left arm hangs straight down at her side, its hand empty by her skirt. Exactly two arms and two hands on her, both attached to her shoulders; nothing lying on the bench except glassware: no gloves, no extra hands.", text=cap('Alice Ball, 1915')),
   dg('d21a', "Three numbered steps in one row: (1) a bottle of thick golden oil, (2) a glass flask over a small flame with an arrow, (3) a small glass syringe.", text=[cap('Oil you could inject')]))
 N('L30', "She died the next year, at just twenty-four. A university president published her work under his own name. Her credit was only restored decades later.",
   ch('c27b', C(.5, .5, 1.05), "A 1910s university office with a big wooden desk: a stickman man in a dark three-piece suit sits at the desk, writing his signature on the cover page of a thick report with a fountain pen held in one hand, his other hand holding the page flat; a framed diploma on the wall.", text=cap('Someone else took the credit')))
@@ -188,7 +188,7 @@ K('L33', "Three pills. Four thousand years, and they beat me with three pills.",
 
 # ---- WHAT HE LEAVES BEHIND
 N('A01', "And for those who are cured? The bacteria are gone, but nerve damage stays. Many people live with numb hands and feet, and must check them for injuries every single day.",
-  dg('d23a', "Three numbered panels in one row: (1) a stickman sitting on a stool looking at the sole of his own foot, (2) a pair of thick protective sandals, (3) a small hand mirror.", people=True, text=[label('What He Leaves Behind', 960, 150, 72), cap('Checking for injuries every day')]),
+  dg('d23a', "Three numbered objects in one row and NO people: (1) a simple bare foot outline seen from below with a small magnifying glass over its sole, (2) a pair of thick protective sandals, (3) a small hand mirror.", text=[label('What He Leaves Behind', 960, 150, 72), cap('Checking for injuries every day')]),
   ch('c30a', W(), "A bright modern courtyard in India: an elderly stickman man in a white kurta and thick protective sandals sits on a plastic chair, holding a small hand mirror under the sole of his raised foot with one hand to check it, his other hand on his knee.", modern=True, text=cap('Numb hands and feet')))
 N('A02', "For the world, he left a word. 'Leper' came to mean an outcast. Japan only abolished its isolation law in 1996. And in India, leprosy was grounds for divorce until 2019.",
   ch('c30b', C(.5, .5, 1.05), "A quiet Japanese sanatorium on a small island by the sea, a low wooden building with a veranda and pine trees: an elderly stickman man in a grey cardigan and slippers stands alone on the veranda, looking out at the sea, both hands resting on the wooden railing.", modern=True, text=cap('Japan ended isolation only in 1996')),
@@ -210,7 +210,7 @@ N('L34', "Four thousand years. Kings, priests and whole nations treated the sick
   sh('c03a', C(.5, .5, 1.05)), sh('c17c', W()), sh('c22c', W()), sh('c28c', C(.5, .5, 1.05)),
   kg('c34a', C(.5, .45, 1.1), "The Grey Friar walks away slowly along a misty grey road at dusk, seen from behind in profile, his hood up, the small brass bell swinging at his rope belt, both hands hidden in his sleeves."))
 N('L35', "Next time: a summer terror that emptied the swimming pools, and locked children inside iron lungs.",
-  ch('c35a', C(.5, .5, 1.04), "A dark 1950s hospital ward at night, ominous, lit by one lamp: on the left third of the frame a big metal cylindrical iron lung machine on legs, with a small stickman child's head resting on a pillow at its open end, eyes looking up; nobody else; the right side of the frame is dark empty shadow."))
+  ch('c35a', C(.5, .5, 1.04), "A dark 1950s hospital ward at night, ominous, lit by one lamp: on the left third of the frame a big metal cylindrical iron lung machine on legs, with the head of a small stickman child resting on a pillow at its open end: a plain white round head with exactly TWO small dot eyes and nothing else on the face, looking up; nobody else; the right side of the frame is dark empty shadow."))
 HOLD(5.0, sh('c35a', O(), text=[label('NEXT TIME', 1380, 360, 110, style='title', pop=True, at=.2, len=4.6), label('SUBSCRIBE', 1380, 500, 64, at=.8, len=4.0)]))
 
 # ---- extra cut-ins for faster cutting (pos None = end)
