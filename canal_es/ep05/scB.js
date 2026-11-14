@@ -235,7 +235,7 @@ SC.s09 = (X, t) => {
     const fixed = t > fix ? Math.floor(clamp(k3) * 6) : 0; for (let i = 0; i < fixed; i++) router(g, 580 + i * 20, 700 - i * 4, .5);
     if (t > Lm('s09_03', .6)) { const ring = Math.sin(t * 30) * .08; propPhone(g, 920, 690, .5, 60, ring); } });
   const np = standing(1060, { t, flip: -1, look: [-14, 0], mouth: .6, brow: -.4, hL: [-70, -300], hR: [70, -300] });
-  if (t > nach) { const u = R(t, nach, nach + 1.0); np.x = mix(1400, 1060, u); np.walk = u < 1 ? 1 : 0; np.phase = walkPh(np.x); np.hR = [110, -330]; np.hL = [-110, -330]; np.armsFront = 1; np.holdR = (g, x, y) => notebookStack(g, x - 70, y + 10, 18, Math.sin(t * 3) * .5);
+  if (t > nach) { const u = R(t, nach, nach + 1.0); np.x = mix(1400, 1060, u); np.walk = u < 1 ? 1 : 0; np.phase = walkPh(np.x); np.hR = [110, -330]; np.hL = [-110, -330]; np.armsFront = 1; np.holdR = (g, x, y) => notebookStack(g, x - 60, y + 60, 9, Math.sin(t * 3) * .5);
     if (speaking(t, 's09_05')) { np.open = talk(t, 's09_05'); } if (t < wide) st.wld(g => drawChar(g, 'nacho', np)); }
   const gm = geniusState(t, [[fix + .1, nach - .2]], cam, headPt('tu', hp, 60));
   genius(X, st, gm, t, [
