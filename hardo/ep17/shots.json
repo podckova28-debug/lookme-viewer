@@ -1,0 +1,264 @@
+{
+ "D": {
+  "WW": [
+   "c66a8707-f3b5-4f14-b31c-e2ce3ab18c4d",
+   "the wastewater plant operator from the reference sheet (Latina woman in her forties, dark low ponytail, dark blue coveralls, white hard hat, rubber boots, small yellow gas detector)"
+  ],
+  "IW": [
+   "c66a8707-f3b5-4f14-b31c-e2ce3ab18c4d",
+   "the ironworker from the reference sheet (tall white man, red beard, orange hard hat, grey t-shirt, jeans, full-body safety harness)"
+  ],
+  "DR": [
+   "c66a8707-f3b5-4f14-b31c-e2ce3ab18c4d",
+   "the drill operator from the reference sheet (Black man in his forties, short beard, red coveralls, white hard hat, safety glasses)"
+  ],
+  "RB": [
+   "c66a8707-f3b5-4f14-b31c-e2ce3ab18c4d",
+   "the roof bolter from the reference sheet (white woman, black miner's helmet with headlamp, navy coveralls with reflective silver stripes)"
+  ],
+  "LE": [
+   "c66a8707-f3b5-4f14-b31c-e2ce3ab18c4d",
+   "the locomotive engineer from the reference sheet (Native American man in his fifties, grey hair, blue denim shirt, dark cap)"
+  ],
+  "SC": [
+   "55222f09-9e69-4412-86f4-78b7901e652c",
+   "the ship captain from the reference sheet (Filipino woman in her fifties, short grey-black hair, navy blue jacket over a white shirt, binoculars)"
+  ],
+  "LW": [
+   "55222f09-9e69-4412-86f4-78b7901e652c",
+   "the power line worker from the reference sheet (Black woman in her thirties, braids under a white hard hat, bright yellow high-visibility jacket, climbing harness, orange insulated gloves)"
+  ],
+  "EM": [
+   "55222f09-9e69-4412-86f4-78b7901e652c",
+   "the elevator mechanic from the reference sheet (South Asian man in his thirties, short black hair, grey work shirt, tool belt, flashlight)"
+  ],
+  "NR": [
+   "55222f09-9e69-4412-86f4-78b7901e652c",
+   "the reactor operator from the reference sheet (white man in his forties, glasses, light blue shirt with rolled sleeves, blank white badge on a lanyard)"
+  ],
+  "AT": [
+   "55222f09-9e69-4412-86f4-78b7901e652c",
+   "the air traffic controller from the reference sheet (East Asian woman in her forties, short bob, burgundy cardigan, headset with microphone)"
+  ]
+ },
+ "S": {
+  "1": [
+   null,
+   "a plain white space",
+   "A tall stack of dollar-like green banknotes with no printing on them, next to a hard hat and a pair of dirty work gloves. No people, no text, no numbers, no symbols.",
+   "Close-up of a hand holding out a blank white job contract with a pen. Only the hand and sleeve visible.",
+   "A long empty line of chairs in a job interview waiting room, all empty. No people.",
+   "A help-wanted style empty clipboard pinned to a corkboard, blank paper, no text. No people."
+  ],
+  "2": [
+   null,
+   "a plain white space",
+   "Ten small figures of different workers standing in a row seen from far away, each with a different work outfit and helmet; simple, small, evenly spaced on white.",
+   "Close-up of a simple bar chart drawn in thin line with two bars, one short grey and one about three times taller green. No text, no numbers.",
+   "A simple balance scale with a bag of money on one side and a hard hat on the other, perfectly balanced. No text, no symbols on the bag.",
+   "A worried young person in a hoodie scrolling a phone at a kitchen table, looking at job ads (screen shows only grey blocks)."
+  ],
+  "3": [
+   "WW",
+   "a water treatment plant with round open tanks and walkways, fading to white",
+   "She walks along a metal walkway between big round treatment tanks of murky brown water, checking a valve.",
+   "Close-up of a toilet flushing with a swirl of water. No people.",
+   "A glass of clear water held up against the light in her gloved hand, the treatment tanks behind.",
+   "Far view: a water treatment plant with round tanks next to a river, seen from above."
+  ],
+  "4": [
+   "WW",
+   "the treatment plant at night with lamps, fading to white",
+   "She wrinkles her nose at a bubbling tank, holding her yellow gas detector out in front of her, wavy smell lines rising.",
+   "Close-up of a small yellow handheld gas detector with a blinking red light. No text, no numbers.",
+   "The treatment plant at night, bright lamps on, a crescent moon above; the night shown only as a dark band at the top, the rest white.",
+   "Close-up of her rubber boots on a wet metal grating floor."
+  ],
+  "5": [
+   "IW",
+   "a skyscraper steel frame under construction high above a city, fading to white",
+   "He walks along a narrow steel beam high above the city, harness lanyard clipped to a cable, city streets far below.",
+   "Close-up of his gloved hands tightening a big bolt on a steel beam with a spud wrench.",
+   "Looking straight down from a steel beam to tiny cars and streets far below. His boots at the edge of the frame.",
+   "Far view: a skyscraper steel skeleton with a tower crane, tiny workers on the top beams."
+  ],
+  "6": [
+   "IW",
+   "the top of a steel frame building, fading to white",
+   "He sits on a steel beam high up, eating a sandwich, harness clipped on, the city below.",
+   "Close-up of the harness clip hooked onto a steel safety cable.",
+   "Strong wind blowing his shirt and a loose tarp; he holds onto a column and waits, other beams empty.",
+   "Close-up of a thin layer of ice and frost on a steel beam. No people."
+  ],
+  "7": [
+   "DR",
+   "a tall oil drilling rig on flat land and an offshore platform at sea, fading to white",
+   "He stands at the controls of a drilling rig floor, the big drill pipe going down into the ground, steam and mud around.",
+   "Cutaway of the ground showing a long thin drill pipe going deep down through rock layers to a pocket of oil. No people.",
+   "An offshore oil platform standing in the open sea with a supply boat nearby. No people visible up close.",
+   "Close-up of his gloved hands on a big brake lever, mud splashes on the gloves."
+  ],
+  "8": [
+   "DR",
+   "an offshore platform deck, fading to white",
+   "He works on the rig deck in heavy rain and wind, waves crashing below, his red coveralls soaked.",
+   "Close-up of a small bunk room on the platform with a narrow bed and a photo of a family on the wall (simple faces). No people.",
+   "A helicopter landing on the platform helideck, workers waiting with bags.",
+   "Close-up of a wall calendar with many days crossed off in red, no numbers, no text, just a grid of boxes."
+  ],
+  "9": [
+   "RB",
+   "an underground mine tunnel lit by headlamps, fading to white",
+   "She operates a roof bolting machine in a low mine tunnel, the drill pushing a long steel bolt into the rock ceiling, her headlamp shining.",
+   "Close-up of a long steel roof bolt with a square plate, lying on the rock floor. No people.",
+   "Cutaway of a mine tunnel with rows of bolts holding up the rock ceiling, small figure working at the end.",
+   "Close-up of her face lit by the headlamp, dust on her cheeks, looking up at the ceiling."
+  ],
+  "10": [
+   "RB",
+   "a dark mine tunnel, fading to white",
+   "Cutaway of a mountain showing a tiny tunnel deep inside, a small figure with a headlamp in it, the huge mountain on top.",
+   "Close-up of dust floating in the beam of a headlamp. No people.",
+   "She rides a small mine cart on rails into a dark tunnel entrance in a hillside.",
+   "Close-up of her helmet headlamp shining a cone of light into darkness."
+  ],
+  "11": [
+   "LE",
+   "a long freight train on open prairie, fading to white",
+   "He sits in the cab of a freight locomotive, one hand on the throttle, looking at the tracks ahead through the window.",
+   "Far view: a very long freight train with dozens of colourful cars snaking across the prairie. No people visible.",
+   "Close-up of the locomotive control stand with simple levers and round gauges. No text, no numbers.",
+   "Close-up of the front of a big diesel locomotive with its headlight on. No text, no logos."
+  ],
+  "12": [
+   "LE",
+   "a railway yard at night, fading to white",
+   "He climbs into the locomotive cab at night under yard lights, carrying his bag, yawning.",
+   "Close-up of a phone on a table with a call screen showing only a phone icon. No text.",
+   "He sits alone in a small motel room on the edge of the bed, still in his work shirt, a train visible through the window.",
+   "A freight train passing a small house at night, one warm window lit. No people visible."
+  ],
+  "13": [
+   "SC",
+   "the bridge of a cargo ship with a wide window over the sea, fading to white",
+   "She stands on the bridge of a cargo ship holding the wheel, looking ahead at the open sea through the wide window.",
+   "Far view: a large cargo ship stacked with colourful containers on a wide calm sea. No people visible.",
+   "A long river barge pushed by a small tugboat on a wide river.",
+   "Close-up of her looking through binoculars at the horizon."
+  ],
+  "14": [
+   "SC",
+   "a ship bridge in a storm, fading to white",
+   "A cargo ship climbing a huge wave in a storm, spray flying, dark clouds as a band at the top, the rest light.",
+   "Close-up of her cabin desk with a small framed photo of a family (simple faces) and a cup of tea.",
+   "She stands on the deck at sunset, alone, looking at the horizon, ropes and containers around.",
+   "Close-up of a wall calendar grid with many boxes crossed off. No numbers, no text."
+  ],
+  "15": [
+   "LW",
+   "a street with fallen branches and power poles after a storm, fading to white",
+   "She climbs a wooden power pole after a storm, rain dripping, a utility bucket truck below.",
+   "Close-up of a window of a dark house with a candle on the sill. No people.",
+   "A line of white utility bucket trucks driving down a wet road at dawn. No text, no logos.",
+   "A broken power line hanging down next to a fallen tree on a wet street. No people."
+  ],
+  "16": [
+   "LW",
+   "power line towers on a hill, fading to white",
+   "She works in a bucket high in the air next to big high-voltage wires, wearing thick orange insulated gloves.",
+   "Close-up of her orange insulated gloves holding a long yellow insulated hot stick tool.",
+   "She sleeps sitting up in the cab of a utility truck, hard hat on her lap, rain outside.",
+   "Far view: tall steel transmission towers marching across hills, a tiny worker on one tower."
+  ],
+  "17": [
+   "EM",
+   "the inside of an elevator shaft with cables and rails, fading to white",
+   "He stands on top of an elevator car inside the shaft, holding his flashlight up at the cables and rails above.",
+   "Close-up of thick steel elevator cables running over a big pulley in a machine room. No people.",
+   "Cutaway of a tall building showing the elevator shaft and a small figure on top of the car.",
+   "He crouches in a cramped machine room working on a motor with a wrench."
+  ],
+  "18": [
+   "EM",
+   "a building lobby with elevator doors, fading to white",
+   "Two worried office workers waving from inside a stuck elevator with doors slightly open; he pries the doors with a tool from outside.",
+   "Close-up of a phone ringing on a nightstand at night beside a bed. No text.",
+   "He drives a small van through a city at night. No text or logos on the van.",
+   "Close-up of the elevator call buttons, one glowing. No text, no numbers, simple arrows."
+  ],
+  "19": [
+   "NR",
+   "a nuclear plant control room with many panels, fading to white",
+   "He sits at the control desk of a nuclear plant control room, watching a wall of panels with lights and gauges.",
+   "Far view: a nuclear power plant with two big cooling towers releasing white steam by a river. No people.",
+   "Close-up of a control panel with rows of lights and a big round gauge. No text, no numbers.",
+   "Close-up of his hand resting near a large knob on the panel."
+  ],
+  "20": [
+   "NR",
+   "the control room at night, fading to white",
+   "He rubs his tired eyes at the control desk late at night, a cup of coffee beside him, panels glowing.",
+   "Close-up of a security turnstile and a fence with a camera on a pole. No people, no text.",
+   "He drives home at sunrise, yawning at the wheel.",
+   "Close-up of his eyes behind glasses, focused, reflecting small panel lights."
+  ],
+  "21": [
+   "AT",
+   "an air traffic control tower cab with big windows over a runway, fading to white",
+   "She sits at the radar screen in the control tower, headset on, planes visible through the big windows.",
+   "Close-up of a radar screen with many small plane dots and short lines, no text, no numbers.",
+   "Far view: an airport with a tall control tower and several planes on the runway and in the sky.",
+   "Two planes in the sky with a dotted line between them showing safe distance."
+  ],
+  "22": [
+   "AT",
+   "the control tower cab, fading to white",
+   "She speaks into her headset microphone with intense focus, one hand on the screen, a forgotten coffee cup beside her.",
+   "Close-up of a simple bar chart with two bars, a short grey bar and a green bar almost three times taller. No text, no numbers.",
+   "Close-up of her forehead with a single bead of sweat, eyes locked on the screen.",
+   "She stands at the tower window holding a small cake with one candle at a retirement farewell, two colleagues clapping."
+  ],
+  "23": [
+   "AT",
+   "the control tower cab, fading to white",
+   "Rows of control tower desks with several empty chairs; she works alone covering two screens at once.",
+   "Close-up of a wall calendar with six of seven days marked as work days with red ticks. No text, no numbers.",
+   "She leans back exhausted in her chair at the end of a long shift, headset around her neck.",
+   "Close-up of a coffee machine pouring a cup, several empty cups beside it. No people."
+  ],
+  "24": [
+   null,
+   "a white space",
+   "A grid of six small icons in thin line: a ladder high up, a dark tunnel, a lightning bolt, a nose with smell lines, a moon, and a suitcase. No text.",
+   "Close-up of a balance scale with a bag of money on one side and a small house with a heart on the other. No text, no symbols.",
+   "The ironworker from the reference sheet high on a beam and the roof bolter from the reference sheet deep in a tunnel, shown in a split image top and bottom.",
+   "The power line worker from the reference sheet on a pole in the rain."
+  ],
+  "25": [
+   null,
+   "a training workshop, fading to white",
+   "A trainee in a hard hat practising climbing a short training pole while an instructor watches, in a training yard.",
+   "Close-up of a graduation cap crossed out next to a hard hat with a green tick. No text.",
+   "The elevator mechanic from the reference sheet teaching a young apprentice how to use a wrench in a machine room.",
+   "The air traffic controller from the reference sheet calmly guiding planes, calm face."
+  ],
+  "26": [
+   null,
+   "a white space",
+   "A young person standing at a fork in a road, one path leads to a desk office, the other to a construction site with a crane.",
+   "Close-up of two simple signposts pointing different ways, with small icons only: a dollar coin and a small heart. No text.",
+   "The locomotive engineer from the reference sheet coming home and hugging his grandchild at the door.",
+   "The ship captain from the reference sheet smiling on deck at sunrise, proud."
+  ],
+  "27": [
+   null,
+   "a white space",
+   "All ten workers from both reference sheets standing in one row, smiling. Each holds only their usual item.",
+   "Close-up of a smartphone screen with simple empty speech bubbles, no text. No people.",
+   "A big round red button with a white triangle and a small yellow bell, on white. No text, no logos.",
+   "A simple drawing of a factory office with a desk and an old computer fading away into dots. No people, no text."
+  ]
+ },
+ "C1": "c66a8707-f3b5-4f14-b31c-e2ce3ab18c4d",
+ "C2": "55222f09-9e69-4412-86f4-78b7901e652c"
+}

@@ -17,7 +17,8 @@ E=[ # n, dir, mp4 name, cloudfront id, thumbs, note
  (13,'ep13','Why_Its_So_Hard_To_Be_An_Underwater_Welder','c573262d-77e0-47ae-9a13-2e30a8a30dd9',['thumb_A_welding_underwater','thumb_B_28_days','thumb_C_pulls_you_in'],''),
  (14,'ep14','The_Worst_Jobs_In_History','38850a93-b92b-4bff-8755-09bfc82229d2',['thumb_A_paid_to_get_bitten','thumb_B_toilets_new1','thumb_B_toilets_new2','thumb_B_toilets_new3','thumb_C_kings_toilet_guy'],'Обложка B: три новых варианта «TOILETS. By HAND.», выбери один.'),
  (15,'ep15','10_Jobs_AI_Cant_Replace','3ce03fa3-1b37-4f20-aab6-73d044158e99',['thumb_A_ai_cant_do_his_job','thumb_B_robots_still_cant','thumb_C_10_jobs_ai_cant_replace'],''),
- (16,'ep16','The_Loneliest_Jobs_On_Earth','a8b30d6c-d0e9-4bca-9aa6-0f9e533be3a1',['thumb_A_cut_off_8_months','thumb_B_paid_to_count_penguins','thumb_C_28_days_in_a_can'],'Новый.'),
+ (17,'ep17','Jobs_That_Pay_Insanely_Well','95516264-d51a-41a1-9105-9fcc535882c0',['thumb_B_110k_to_stand_here','thumb_A_148k_nobody_wants','thumb_C_95k_to_touch_this'],'Новый. Главная обложка: B ($110,000).'),
+ (16,'ep16','The_Loneliest_Jobs_On_Earth','a8b30d6c-d0e9-4bca-9aa6-0f9e533be3a1',['thumb_A_cut_off_8_months','thumb_B_paid_to_count_penguins','thumb_C_28_days_in_a_can'],''),
 ]
 def dur(f): return float(subprocess.run(['ffprobe','-v','error','-show_entries','format=duration','-of','csv=p=0',f],capture_output=True,text=True).stdout)
 def meta(n,d):

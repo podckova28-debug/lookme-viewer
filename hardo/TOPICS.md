@@ -10,6 +10,7 @@ Ideas the owner asked to keep for future episodes. Newest first.
 - Ep9 warehouse worker — script ready in `ep9/`, not produced yet.
 
 ## Done
+- ep17 Jobs That Pay Insanely Well (But Nobody Wants Them) (countdown by BLS median pay, May 2025)
 - ep16 The Loneliest Jobs on Earth (countdown + bonus; lighthouse keeper … Concordia, bonus Apollo command module pilot)
 - ep15 10 Jobs AI Can't Replace (countdown; angle: who is impossible to replace — hands, messy places, trust; Microsoft 2025 + BLS 2024-34 + WEF 2025)
 - ep11 The Weirdest Jobs in the World (listicle)

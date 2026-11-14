@@ -163,3 +163,8 @@ Prompt rule: every scene prompt names only the hero, the one object the line is 
 - Thumbnails: the owner wants the house style kept but with more saturation and sharpness (vibrance 0.40, contrast 1.10,
   local contrast, unsharp mask; white background kept white), and a heavy condensed title (Anton) with white outline and a
   red-on-yellow bar word. vidIQ's own version of ep14 B had a typo (TOLETS) — never let a tool write thumbnail text.
+
+## Added for ep17
+- OmniVoice garbles the phrase "The catch:" at the start of a sentence after a number ("The Ketchch", "The c***"). Use "The downside:" instead.
+- ASR scores of 0.80–0.90 on blocks full of money figures are usually just digits vs. words ("$148,000" vs "a hundred and forty-eight thousand"); read the transcript, don't re-voice on the score alone.
+- Blind QA again caught a hand that belongs to nobody (F25, fingers on the far side of a pole). Small extra hands can be patched by copying a clean strip of the same object over them.

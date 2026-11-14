@@ -1,0 +1,27 @@
+01 0.814 | Some jobs pay close to $150,000 a year and they still can't find an...  Why? Because of what you have to do to earn it.
+02 0.933 | 
+03 0.941 | 
+04 0.912 | The median pay is about $60,000 a year.  The catch, the smell, the noise, dangerous gases, and a plant that never stops.  Nights, weekends and holidays included.
+05 0.878 | 9. The Ironworker  These are the people who walk on narrow steel beams, sometimes 50 stories up, bolting skyscrapers  together.
+06 0.892 | Median pay, around $63,000.  They wear their harnesses, but a fall from that height can still be deadly.  And when it's icy or very windy, the work has to stop.
+07 0.945 | 
+08 0.896 | Median pay about $68,000.  The Ketchch. Offshore and remote crews can be away for weeks at a time, working long shifts seven days a week, in the noise and in any weather.
+09 0.954 | 
+10 0.889 | They earn around $75,000 a year.  In the dark, in the dust, far below the surface with the whole mountain sitting on top of  them.
+11 0.923 | 6. The Locomotive Engineer  They drive freight trains, some of them more than a mile long, across the country.
+12 0.896 | Medium pay, about $81,000. But trains run day and night.  Schedules can be irregular, long routes keep you away from home,  and the best shifts go to whoever has the most seniority.
+13 0.919 | 5. The Ship Captain Captains and mates steer barges, tankers,  and cargo ships across lakes, rivers, and oceans.
+14 0.9 | Median pay about $92,000. The catch? Weeks or even months away from home, working seven days a week on board, in any weather the sea decides to send.
+15 1.0 | 
+16 0.918 | Median pay about 95,000.  They climb poles and towers next to high voltage lines.  And after a big storm, they can work long hours, many days in a row.
+17 0.949 | 
+18 0.873 | Median pay. Almost $110,000 a year.  Many are on call around the clock because, when an elevator gets stuck, someone has to come right now.
+19 0.93 | 
+20 0.857 | Median pay about 123,000.  The c*** rotating day and night shifts that wreck your sleep, heavy security,  and a job where you must stay fully alert every single minute.
+21 0.939 | 
+22 0.806 | Median pay about $148,000.  That's almost three times the typical American job.  But the concentrations never stops, and the stress is so high that controllers must retire at 56.
+23 0.852 | And right now there aren't enough of them.  Reports put America about 3,000 controls short.  And many work 10-hour days, six days a week.
+24 1.0 | 
+25 1.0 | 
+26 1.0 | 
+27 0.969 | 
