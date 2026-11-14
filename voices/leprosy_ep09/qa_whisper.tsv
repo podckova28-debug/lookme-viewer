@@ -1,0 +1,51 @@
+C01|NARRATOR|8.6|1.00|A priest lowers his feet into a basin of water, it's scalding hot, steam is rising off it, and he feels absolutely nothing.
+C02|NARRATOR|14.8|0.93|His name is Father Damien. For 11 years, he has lived among the outcasts of Kalapapa, a strip of land in Hawaii cut off by sea cliffs where people with one disease were sent and never allowed to leave. Molokie, December 1884.
+C03|NARRATOR|6.4|0.76|Now he knows. At his next sermon, he no longer says, you lepers. He says, we lepers.
+C04|LEPROSY|5.1|0.92|11 years among my patients. Did he really think I wouldn't notice him?
+L01|NARRATOR|17.2|0.95|So who is he? A bacterium, mycobacterium lepre, a close cousin of tuberculosis. In 1873, a Norwegian doctor, Gerhard Armoe Hansen, spotted him under the microscope. He was one of the very first germs ever linked to a human disease.
+L02|NARRATOR|10.5|0.91|and he is slow, incredibly slow. He divides only about once every two weeks and after 150 years, scientists still can't grow him in a lab dish.
+L03|NARRATOR|10.1|1.00|He loves the cold. He settles in the coolest parts of the body, the skin, the nose, the ears, the hands and feet, and above all, the nerves.
+L04|LEPROSY|3.9|1.00|Warm hearts don't interest me. I prefer cold hands.
+L05|NARRATOR|12.3|0.94|Strangely, he is one of the hardest diseases to catch. He spreads through droplets from the nose and mouth, usually after months of close contact, and about 95% of people are naturally immune.
+L06|NARRATOR|7.4|0.94|but he is patient. After infection, he can wait five years, sometimes 20, before the first sign appears.
+L07|LEPROSY|4.3|0.92|20 years? That's nothing. I have all the time in the world.
+L08|NARRATOR|13.9|0.93|Where did he come from? His family is ancient. He may have started in East Africa or the Near East and traveled with humans for tens of thousands of years. The oldest known case is a skeleton from India, about 4,000 years old.
+L09|NARRATOR|6.8|1.00|Along the way, he threw away almost half of his own genes. He can no longer survive on his own. He needs us.
+L10|NARRATOR|11.5|1.00|and he has a few other friends. In the Southern United States, nine banded armadillos carry him and can pass him to people. In Britain, even some red squirrels have him.
+L11|LEPROSY|4.3|1.00|Armadillos Squirrels, I'm not fussy about my company.
+S01|NARRATOR|10.1|1.00|So what does he do to you? It starts quietly, a pale or reddish patch on the skin. It doesn't itch, it doesn't hurt. And if you touch it, you can barely feel it.
+S02|NARRATOR|9.0|1.00|because he attacks the nerves. Slowly the hands and feet go numb. You can grab a hot pot and not notice. You can walk all day with a stone in your shoe.
+S03|NARRATOR|13.5|1.00|Those unnoticed injuries get infected again and again. Over many years, fingers and toes can become shortened. They don't simply fall off. That's a myth. The damage comes from wounds that no one could feel.
+S04|NARRATOR|9.3|1.00|The nerves of the face can fail too. The eyes can't blink properly and slowly go blind. In the worst form, the skin of the face thickens into lumps.
+S05|NARRATOR|6.9|1.00|He almost never kills you directly, what he takes is feeling, and then very often, your place among other people.
+S06|LEPROSY|5.1|1.00|I rarely kill anyone. I simply make sure nobody wants to touch you.
+L12|NARRATOR|10.6|0.97|People have known him for thousands of years. In ancient India, the surgeon Sushruta described the disease and treated it with oil pressed from the seeds of the Cholmugra tree.
+L13|NARRATOR|11.0|0.95|In the Bible, the Hebrew word Sarah Art was translated as leprosy. It probably covered many different skin conditions, but the name stuck and so did the fear.
+L14|LEPROSY|5.7|1.00|They gave my name to every rash in the world. I took it as a compliment.
+L15|NARRATOR|8.6|1.00|In medieval Europe, he was everywhere. Thousands of leper houses, named Lazar houses after Saint Lazarus, were built just outside the towns.
+L16|NARRATOR|11.8|1.00|In some places, a person diagnosed was led into church for a ceremony like a funeral. Afterwards, they had to wear special clothes and gloves and carry a bell or a wooden clapper to warn people they were coming.
+L17|NARRATOR|7.2|1.00|They couldn't enter the market, touch the food or drink from a shared well. They were still alive but treated as if they had already died.
+L18|LEPROSY|5.6|0.92|ring the bell, everybody moves away. That bell was my favorite invention.
+L19|NARRATOR|16.2|0.87|He even reached a throne. Baldwin IV of Jerusalem was a boy when his tutor noticed he felt no pain when the other boys pinched his arm. He became king at 13. At 16 he defeated Saladin at the Battle of Monsiza. He died at 23.
+L20|NARRATOR|12.9|1.00|Then, after the 1300s, he slowly faded from most of Europe. Nobody knows exactly why. Perhaps the plague killed the weakest. Perhaps tuberculosis, his cousin, gave people some protection.
+L21|LEPROSY|3.9|1.00|I didn't leave Europe. I was crowded out by my own family.
+L22|NARRATOR|11.9|1.00|But in the 1800s, he was still common in Western Norway. Norway created the world's first national register of patients. And in the port of Bergen, a young doctor went hunting for the cause.
+L23|NARRATOR|10.3|0.96|In 1873, Hansen saw tiny rods inside his patient's tissue. Many doctors still believed the disease was hereditary. Hansen proved it was caused by a germ.
+L24|NARRATOR|11.1|1.00|but he went too far. In 1879, to prove the disease was contagious, he tried to infect a patient's eye without her consent. She took him to court and he lost his hospital post.
+L25|LEPROSY|4.9|1.00|Even the man who discovered me had a dark side. I liked him immediately.
+L26|NARRATOR|15.2|0.91|Meanwhile in Hawaii, the disease spread fast. From 1866, the kingdom began sending patients to Kalopapa. Families were torn apart at the docks over a century. About 8,000 people were sent there.
+L27|NARRATOR|10.6|0.94|That's where Father Damien came in 1873. He built houses, a church and coffins. He died there in 1889 at 49. Today, he is a saint.
+L28|LEPROSY|4.9|1.00|He stayed with them to the end, I'll admit it, that one I respected.
+L29|NARRATOR|15.7|0.94|For centuries the best treatment was still Cholmugra oil. Swallowed, it made people sick. Injected, it formed painful lumps. Then in 1915, a 23-year-old chemist in Hawaii, Alice Ball, found a way to make it injectable.
+L30|NARRATOR|8.9|0.94|She died the next year, at just 24. A university president published her work under his own name. Her credit was only restored decades later.
+L31|NARRATOR|14.3|0.81|The real cure came from Carvel, Louisiana, America's leprosy hospital. In 1941, Dr. Guy Fuzz Hai tried a new sulfur drug called promen. Patients began to get better. They called it the miracle at Carvel.
+L32|NARRATOR|11.9|0.97|Then came Dapsoni, a cheap pill, but he learned to resist it. So in 1981, the World Health Organization combined three drugs. Since then, millions of people have been cured.
+L33|LEPROSY|4.4|0.83|three pills, 4,000 years, and they beat me with three pills.
+A01|NARRATOR|10.7|1.00|and for those who are cured. The bacteria are gone, but nerve damage stays. Many people live with numb hands and feet and must check them for injuries every single day.
+A02|NARRATOR|13.4|0.97|For the world, he left a word. Lepper came to mean an outcast. Japan only abolished its isolation law in 1996. And in India, leprosy was grounds for divorce until 2019.
+A03|LEPROSY|4.5|1.00|Medicine cured me. Your fear of me, that's much harder to cure.
+T01|NARRATOR|8.2|0.89|Today, around 200,000 new cases are found every year, more than half are in India and many in Brazil and Indonesia.
+T02|NARRATOR|7.8|1.00|treatment is free. And if he's found early, there's no damage at all. His strongest allies today are shame and silence.
+T03|LEPROSY|5.7|1.00|hide me and I win, show me to a doctor and I lose. It really is that simple.
+L34|NARRATOR|11.8|0.94|4,000 years. Kings, priests, and whole nations treated the sick as if they were already dead. In the end, he was beaten by three cheap pills, and by people who refused to look away.
+L35|NARRATOR|6.1|1.00|Next time, a summer terror that emptied the swimming pools and locked children inside iron lungs.
