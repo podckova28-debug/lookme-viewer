@@ -1,0 +1,51 @@
+C01|NARRATOR|A priest lowers his feet into a basin of water. It's scalding hot. Steam is rising off it. And he feels absolutely nothing.
+C02|NARRATOR|His name is Father Damien. For eleven years, he has lived among the outcasts of Kalaupapa, a strip of land in Hawaii cut off by sea cliffs, where people with one disease were sent and never allowed to leave. Molokai, December 1884.
+C03|NARRATOR|Now he knows. At his next sermon, he no longer says 'you lepers'. He says, 'we lepers'.
+C04|LEPROSY|Eleven years among my patients. Did he really think I wouldn't notice him?
+L01|NARRATOR|So who is he? A bacterium. Mycobacterium leprae, a close cousin of tuberculosis. In 1873, a Norwegian doctor, Gerhard Armauer Hansen, spotted him under the microscope. He was one of the very first germs ever linked to a human disease.
+L02|NARRATOR|And he is slow. Incredibly slow. He divides only about once every two weeks. And after a hundred and fifty years, scientists still can't grow him in a lab dish.
+L03|NARRATOR|He loves the cold. He settles in the coolest parts of the body: the skin, the nose, the ears, the hands and feet. And above all, the nerves.
+L04|LEPROSY|Warm hearts don't interest me. I prefer cold hands.
+L05|NARRATOR|Strangely, he is one of the hardest diseases to catch. He spreads through droplets from the nose and mouth, usually after months of close contact. And about ninety-five percent of people are naturally immune.
+L06|NARRATOR|But he is patient. After infection, he can wait five years, sometimes twenty, before the first sign appears.
+L07|LEPROSY|Twenty years? That's nothing. I have all the time in the world.
+L08|NARRATOR|Where did he come from? His family is ancient. He may have started in East Africa or the Near East, and travelled with humans for tens of thousands of years. The oldest known case is a skeleton from India, about four thousand years old.
+L09|NARRATOR|Along the way, he threw away almost half of his own genes. He can no longer survive on his own. He needs us.
+L10|NARRATOR|And he has a few other friends. In the southern United States, nine-banded armadillos carry him, and can pass him to people. In Britain, even some red squirrels have him.
+L11|LEPROSY|Armadillos. Squirrels. I'm not fussy about my company.
+S01|NARRATOR|So what does he do to you? It starts quietly. A pale or reddish patch on the skin. It doesn't itch. It doesn't hurt. And if you touch it, you can barely feel it.
+S02|NARRATOR|Because he attacks the nerves. Slowly, the hands and feet go numb. You can grab a hot pot and not notice. You can walk all day with a stone in your shoe.
+S03|NARRATOR|Those unnoticed injuries get infected, again and again. Over many years, fingers and toes can become shortened. They don't simply fall off. That's a myth. The damage comes from wounds that no one could feel.
+S04|NARRATOR|The nerves of the face can fail too. The eyes can't blink properly and slowly go blind. In the worst form, the skin of the face thickens into lumps.
+S05|NARRATOR|He almost never kills you directly. What he takes is feeling. And then, very often, your place among other people.
+S06|LEPROSY|I rarely kill anyone. I simply make sure nobody wants to touch you.
+L12|NARRATOR|People have known him for thousands of years. In ancient India, the surgeon Sushruta described the disease and treated it with oil pressed from the seeds of the chaulmoogra tree.
+L13|NARRATOR|In the Bible, the Hebrew word 'tzaraat' was translated as leprosy. It probably covered many different skin conditions. But the name stuck, and so did the fear.
+L14|LEPROSY|They gave my name to every rash in the world. I took it as a compliment.
+L15|NARRATOR|In medieval Europe, he was everywhere. Thousands of leper houses, named lazar houses after Saint Lazarus, were built just outside the towns.
+L16|NARRATOR|In some places, a person diagnosed was led into church for a ceremony like a funeral. Afterwards, they had to wear special clothes and gloves, and carry a bell or a wooden clapper to warn people they were coming.
+L17|NARRATOR|They couldn't enter the market, touch the food, or drink from a shared well. They were still alive, but treated as if they had already died.
+L18|LEPROSY|Ring the bell, everybody moves away. That bell was my favourite invention.
+L19|NARRATOR|He even reached a throne. Baldwin the Fourth of Jerusalem was a boy when his tutor noticed he felt no pain when the other boys pinched his arm. He became king at thirteen. At sixteen, he defeated Saladin at the Battle of Montgisard. He died at twenty-three.
+L20|NARRATOR|Then, after the 1300s, he slowly faded from most of Europe. Nobody knows exactly why. Perhaps the plague killed the weakest. Perhaps tuberculosis, his cousin, gave people some protection.
+L21|LEPROSY|I didn't leave Europe. I was crowded out by my own family.
+L22|NARRATOR|But in the 1800s, he was still common in western Norway. Norway created the world's first national register of patients. And in the port of Bergen, a young doctor went hunting for the cause.
+L23|NARRATOR|In 1873, Hansen saw tiny rods inside his patients' tissue. Many doctors still believed the disease was hereditary. Hansen proved it was caused by a germ.
+L24|NARRATOR|But he went too far. In 1879, to prove the disease was contagious, he tried to infect a patient's eye without her consent. She took him to court, and he lost his hospital post.
+L25|LEPROSY|Even the man who discovered me had a dark side. I liked him immediately.
+L26|NARRATOR|Meanwhile in Hawaii, the disease spread fast. From 1866, the kingdom began sending patients to Kalaupapa. Families were torn apart at the docks. Over a century, about eight thousand people were sent there.
+L27|NARRATOR|That's where Father Damien came, in 1873. He built houses, a church, and coffins. He died there in 1889, at forty-nine. Today, he is a saint.
+L28|LEPROSY|He stayed with them to the end. I'll admit it. That one, I respected.
+L29|NARRATOR|For centuries, the best treatment was still chaulmoogra oil. Swallowed, it made people sick. Injected, it formed painful lumps. Then, in 1915, a twenty-three-year-old chemist in Hawaii, Alice Ball, found a way to make it injectable.
+L30|NARRATOR|She died the next year, at just twenty-four. A university president published her work under his own name. Her credit was only restored decades later.
+L31|NARRATOR|The real cure came from Carville, Louisiana, America's leprosy hospital. In 1941, Doctor Guy Faget tried a new sulfa drug called Promin. Patients began to get better. They called it the Miracle at Carville.
+L32|NARRATOR|Then came dapsone, a cheap pill. But he learned to resist it. So in 1981, the World Health Organization combined three drugs. Since then, millions of people have been cured.
+L33|LEPROSY|Three pills. Four thousand years, and they beat me with three pills.
+A01|NARRATOR|And for those who are cured? The bacteria are gone, but nerve damage stays. Many people live with numb hands and feet, and must check them for injuries every single day.
+A02|NARRATOR|For the world, he left a word. 'Leper' came to mean an outcast. Japan only abolished its isolation law in 1996. And in India, leprosy was grounds for divorce until 2019.
+A03|LEPROSY|Medicine cured me. Your fear of me? That's much harder to cure.
+T01|NARRATOR|Today, around two hundred thousand new cases are found every year. More than half are in India, and many in Brazil and Indonesia.
+T02|NARRATOR|Treatment is free. And if he's found early, there's no damage at all. His strongest allies today are shame and silence.
+T03|LEPROSY|Hide me, and I win. Show me to a doctor, and I lose. It really is that simple.
+L34|NARRATOR|Four thousand years. Kings, priests and whole nations treated the sick as if they were already dead. In the end, he was beaten by three cheap pills, and by people who refused to look away.
+L35|NARRATOR|Next time: a summer terror that emptied the swimming pools, and locked children inside iron lungs.
