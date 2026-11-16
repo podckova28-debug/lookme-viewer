@@ -104,6 +104,7 @@ for m in MCLIPS:
     CLIPS[m] = dict(file=f'clips/ai/{m}.mp4' if os.path.exists(f'{_D}/clips/ai/{m}.mp4') else f'clips/{m}.mp4')
 FALLBACK = {'M_I1': 'KI1', 'M_A1': 'KA1', 'M_B1': 'KB1', 'M_D1': 'KD1', 'M_E2': 'KE2', 'M_G1': 'KG1', 'M_H1': 'KH1',
             'M_J1': 'KJ1', 'M_K1': 'KK1', 'M_M3': 'KM3'}
+CLIPS['M_J1']['ss'] = 1.7   # 16.11: на 1,25–1,6 с брызги «съедают» бампер и колесо (смазанное пятно) — начало клипа пропускаем
 
 OVERLAYS = [dict(type='title', line='I03', at=0.6, lines=[('10 МАШИН,', 110, gfx.CREAM), ('КОТОРЫЕ НЕ УБИТЬ', 92, gfx.OCHRE)])]
 for a, b, t, n in CHAPTERS:
