@@ -1,6 +1,6 @@
 # Эпизод 4 · The ENTIRE History of the Spanish Flu · пакет для загрузки
 
-Файл: `out/spanishflu_ep04_upload.mp4` (1080p, 9:05). Обложка: `channel/plague/thumb_ep04.jpg` (1280×720), вторая для теста — `thumb_ep04_b.jpg`.
+Файл: `out/spanishflu_ep04_upload.mp4` (1080p, 9:05). Обложки: основная `thumb_ep04_scene_bedtime.jpg`, для «Тест и сравнение» — `thumb_ep04_scene_tram.jpg`.
 
 ## Название
 ```
@@ -69,6 +69,8 @@ Would your town have closed its doors or held the parade? 👇
 
 ## Настройки
 - Аудитория: «Не для детей». Категория: Education. Язык: английский.
-- Конечная заставка: «Подписаться» + «Оспа» (или последнее видео).
+- Конечная заставка (последние 20 с, на кадре NEXT TIME / SUBSCRIBE): «Подписаться» + «Последнее видео».
 - Плейлист «The ENTIRE History of…».
-- Обложки: основная `thumb_ep04.jpg`, для теста `thumb_ep04_b.jpg`.
+- Обложки: основная `thumb_ep04_scene_bedtime.jpg`, в «Тест и сравнение» добавить `thumb_ep04_scene_tram.jpg`.
+- Главы включатся автоматически по таймкодам в описании.
+- После публикации: закрепить комментарий с источниками; добавить ролик в плейлист.
