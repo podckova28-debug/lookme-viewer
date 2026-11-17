@@ -1,6 +1,6 @@
 # Эпизод 5 · The ENTIRE History of Scurvy · пакет для загрузки
 
-Файл: `out/scurvy_ep05_upload.mp4` (1080p, 10:23). Обложки (новая схема, тест): `thumb_ep05_v2_lemon.jpg`, `thumb_ep05_v2_sailor.jpg`, `thumb_ep05_v2_ship.jpg`; старая — `thumb_ep05_scene_lemon.jpg`.
+Файл: `out/scurvy_ep05_upload.mp4` (1080p, 10:23). Обложка: `thumb_ep05_scene_lemon.jpg` (фирменный формат канала).
 
 ## Название
 ```
@@ -72,4 +72,4 @@ What's the strangest cure you've heard of? 👇
 - Аудитория: «Не для детей». Категория: Education. Язык: английский.
 - Конечная заставка (последние 20 с): «Подписаться» + «Испанка».
 - Плейлист «The ENTIRE History of…».
-- Обложки: в «Тест и сравнение» поставить три новые: `thumb_ep05_v2_lemon.jpg`, `thumb_ep05_v2_sailor.jpg`, `thumb_ep05_v2_ship.jpg`.
+- Обложка: `thumb_ep05_scene_lemon.jpg`.
