@@ -219,8 +219,9 @@ SC.s05 = (X, t) => {
   if (t > Lt('s05_05')) { hp.look = [-16, 0]; hp.mouth = .4; hp.brow = .2; hp.wide = .3; }
   if (t > win) { const G = charGeom(CAST.tu, hp); [hp.hL, hp.hR] = POSE.stretch(1, G); hp.mouth = 1; hp.y = 650 - Math.abs(Math.sin(t * 7)) * 40; hp.blink = 1; }
   say(hp, t, ['s05_05']);
+  if (t > win) st.wld(g => ['ex1', 'ex2', 'ex4', 'ex6'].forEach((n, i) => { const p = { x: [1380, 1470, 1710, 1800][i], y: 640, s: .38, t: t + i, look: [0, -8], mouth: .8, open: .6 }; const G = charGeom(CAST[n], p); [p.hL, p.hR] = POSE.stretch(1, G); p.jump = Math.abs(Math.sin(t * 8 + i)) * 40; drawChar(g, n, p); }));   // behind you: you're the one they cheer
+  if (t > win) hp.y = 690 - Math.abs(Math.sin(t * 7)) * 50;
   st.wld(g => drawHero(g, hp, { bump: t > s2 ? .5 : 0 }));
-  if (t > win) st.wld(g => ['ex1', 'ex2', 'ex4', 'ex6'].forEach((n, i) => { const p = { x: [1380, 1470, 1710, 1800][i], y: 690, s: .42, t: t + i, look: [0, -8], mouth: .8, open: .6 }; const G = charGeom(CAST[n], p); [p.hL, p.hR] = POSE.stretch(1, G); p.jump = Math.abs(Math.sin(t * 8 + i)) * 40; drawChar(g, n, p); }));
   st.wld(g => goal(g, 1));
   const np = standing(560, { t, s: .7, y: 880, look: [16, -2], mouth: .6, brow: .6, wide: .6 });
   if (t > Lt('s05_04') - .1) { const G = charGeom(CAST.nacho, np); [np.hL, np.hR] = [[-120, G.top - 40], [120, G.top - 40]]; np.wide = 1; }
