@@ -145,6 +145,16 @@ SC.s08 = (X, t) => {
 };
 
 /* ================================================================ 9. problem 1: a twisted ankle since Monday */
+/* the doctor's stethoscope, in the character's own coordinates (p.onBody): tubing round the neck, earpieces on one side, chest piece on the other */
+function stethoscope(g, G) {
+  const y = G.top, tubeC = '#323846';
+  const branch = pts => { g.save(); g.lineCap = 'round'; g.lineJoin = 'round'; g.beginPath(); g.moveTo(...pts[0]); g.bezierCurveTo(...pts[1], ...pts[2], ...pts[3]);
+    g.strokeStyle = INK; g.lineWidth = 13; g.stroke(); g.strokeStyle = tubeC; g.lineWidth = 8; g.stroke(); g.restore(); };
+  branch([[-44, y + 4], [-52, y + 40], [-40, y + 78], [-26, y + 100]]);
+  branch([[44, y + 4], [52, y + 50], [40, y + 110], [32, y + 140]]);
+  for (const dx of [-8, 8]) { g.save(); g.lineCap = 'round'; g.strokeStyle = '#c9ced6'; g.lineWidth = 5; g.beginPath(); g.moveTo(-26, y + 100); g.lineTo(-26 + dx, y + 116); g.stroke(); g.restore(); circ(g, -26 + dx, y + 118, 5, '#323846', 2); }
+  circ(g, 32, y + 156, 17, '#d7dbe2', 3); circ(g, 32, y + 156, 9, '#aab1bc', 0);
+}
 function xray(g, x, y, a) { if (a <= 0) return; g.save(); g.globalAlpha = clamp(a); shape(g, q => rrPath(q, x - 120, y - 100, 240, 210, 8), '#1a2233', 0);
   g.strokeStyle = 'rgba(220,235,255,.9)'; g.lineWidth = 16; g.lineCap = 'round'; g.beginPath(); g.moveTo(x - 20, y - 90); g.lineTo(x - 10, y + 30); g.stroke();
   g.beginPath(); g.moveTo(x - 30, y + 50); g.quadraticCurveTo(x + 40, y + 40, x + 90, y + 70); g.stroke(); g.lineWidth = 10; for (let i = 0; i < 4; i++) { g.beginPath(); g.moveTo(x + 50 + i * 12, y + 60); g.lineTo(x + 70 + i * 12, y + 90); g.stroke(); }
@@ -168,8 +178,9 @@ SC.s09 = (X, t) => {
   }
   const cam = shots(t, [], [{ t: 0, cx: 900, cy: 520, z: 1.3, z2: 1.35, lock: 1 }, { t: Lm('s09_05', .45), cx: 640, cy: 380, z: 2.4, z2: 2.5, lock: 1 }, { t: Lt('s09_06') - .05, cx: 1000, cy: 560, z: 1.3, z2: 1.35, lock: 1 }]);
   const st = stage(cam); st.wld(g => { drawSet(g, 'clinica'); xray(g, 630, 360, R(t, Lm('s09_05', .4), Lm('s09_05', .4) + .4)); });
-  const dp = standing(900, { t, look: [-14, -8], mouth: -.2, brow: .5, hR: [-160, -520], lid: .2 });
-  st.wld(g => { drawChar(g, 'ex4', dp); const h = headInfo('ex4', dp); shape(g, q => rrPath(q, h.x - h.r * .2, h.y + h.r * 1.1, h.r * .4, h.r * 1.2, 6), '#f4f8fb', 3); });
+  const dp = standing(900, { t, look: [-14, -8], mouth: -.2, brow: .5, lid: .2, onBody: stethoscope });
+  { const G = charGeom(CAST.ex4, dp); dp.hR = [24, G.top - 6]; }   // thinking: near hand under the chin, elbow down
+  st.wld(g => drawChar(g, 'ex4', dp));
   const hp = { x: 1400, y: 790, s: S0, sit: 1, noShadow: 1, t, look: [-14, -2], mouth: .4, hL: [-70, -170], hR: [70, -170], lean: .38, footSwing: Math.sin(t * 2.6) * 14 };
   st.wld(g => drawHero(g, hp, { bump: .8, cheek: 1, ankle: 1 }));
   compose2(X, st, { amt: 0 });

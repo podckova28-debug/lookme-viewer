@@ -106,6 +106,7 @@ function drawCut(g, c, cname, p, G) {
   cutHeadImg(g, R, r);
   face(g, c, r, Object.assign({ blink: p.blink != null ? p.blink : (p.still ? 0 : autoBlink(tt, c.seed)) }, p));
   g.restore();
+  if (p.onBody) p.onBody(g, G);   // worn on the chest: over torso and head, under the near arm
   if (p.armsFront) farArm();
   arm(A.shR, A.eR, A.hRf); if (p.holdR) p.holdR(g, A.hRf[0], A.hRf[1]);
   g.restore();

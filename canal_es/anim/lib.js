@@ -253,6 +253,7 @@ function drawChar(g, cname, p) {
   const tt = p.t || 0, live = !p.still && p.t != null, headIdle = live && p.rot == null ? Math.sin(tt * .8 + c.seed) * .025 : 0;
   const tail = p.tailSwing != null ? p.tailSwing : (live ? Math.sin(ph * 2) * .18 * walk + Math.sin(tt * 1.6 + c.seed) * .05 : 0);
   drawHead(g, c, hx, hy, (p.rot || 0) + headIdle, Object.assign({ blink: p.blink != null ? p.blink : (p.still ? 0 : autoBlink(p.t || 0, c.seed)) }, p, { rim: p.rim !== undefined ? p.rim : CUR_LOOK.rim, tailSwing: tail }));
+  if (p.onBody) p.onBody(g, G);   // things worn on the chest (stethoscope, badge): over torso and head, under the near arm
   // far arm in front (for clapping, typing) and near arm
   if (p.armsFront) farArm();
   tube(g, [shR, eR, hRf], c.sleeve || c.top, 36); tubeHi(g, [shR, eR, hRf], c.sleeve || c.top, 36); if (c.stripe) tube(g, [mix2(shR, eR, .2), eR, mix2(eR, hRf, .8)], c.stripe, 6, 0);
