@@ -1,0 +1,728 @@
+[
+ {
+  "id": "s00_01",
+  "who": "narrador",
+  "text": "Viernes en la noche. Tienes un chichón del tamaño de un huevo, el tobillo morado y una curita en cada dedo.",
+  "p": 0
+ },
+ {
+  "id": "s00_02",
+  "who": "narrador",
+  "text": "Tu mamá ya no sabe dónde ponerte la siguiente.",
+  "p": 0
+ },
+ {
+  "id": "s00_03",
+  "who": "mama",
+  "text": "¿Y no te duele nada?",
+  "p": 1
+ },
+ {
+  "id": "s00_04",
+  "who": "tu",
+  "text": "Nada. Estoy perfecto.",
+  "p": 0
+ },
+ {
+  "id": "s00_05",
+  "who": "narrador",
+  "text": "Y ese es justo el problema.",
+  "p": 1
+ },
+ {
+  "id": "s00_06",
+  "who": "narrador",
+  "text": "Porque hoy te pasó algo que sí debería dolerte. Y tampoco lo sientes.",
+  "p": 0
+ },
+ {
+  "id": "s00_07",
+  "who": "narrador",
+  "text": "Empecemos por el principio.",
+  "p": 1
+ },
+ {
+  "id": "s01_01",
+  "who": "narrador",
+  "text": "Imagina que no puedes sentir dolor.",
+  "p": 0
+ },
+ {
+  "id": "s01_02",
+  "who": "narrador",
+  "text": "Ni golpes, ni quemaduras, ni el dedo chiquito contra la pata de la cama.",
+  "p": 0
+ },
+ {
+  "id": "s01_03",
+  "who": "narrador",
+  "text": "Sientes cuando algo te toca. Sientes el frío y las cosquillas. Pero nada te duele.",
+  "p": 1
+ },
+ {
+  "id": "s01_04",
+  "who": "narrador",
+  "text": "Suena como el mejor poder del mundo.",
+  "p": 1
+ },
+ {
+  "id": "s01_05",
+  "who": "narrador",
+  "text": "Hasta que descubres para qué sirve el dolor.",
+  "p": 0
+ },
+ {
+  "id": "s03_01",
+  "who": "narrador",
+  "text": "Todo empieza un lunes. Te levantas, caminas al baño… y te pegas con la pata de la cama.",
+  "p": 0
+ },
+ {
+  "id": "s03_02",
+  "who": "narrador",
+  "text": "El dedo chiquito. El peor golpe que existe.",
+  "p": 0
+ },
+ {
+  "id": "s03_03",
+  "who": "tu",
+  "text": "…¿Eh?",
+  "p": 1
+ },
+ {
+  "id": "s03_04",
+  "who": "narrador",
+  "text": "Nada. Ni un poquito.",
+  "p": 1
+ },
+ {
+  "id": "s03_05",
+  "who": "narrador",
+  "text": "Luego pisas una pieza de juguete. Descalzo. Nada.",
+  "p": 0
+ },
+ {
+  "id": "s03_06",
+  "who": "narrador",
+  "text": "Y te acuerdas de Pepe: «Mañana, nada te va a doler. Ni siquiera lo que debería».",
+  "p": 1
+ },
+ {
+  "id": "s03_07",
+  "who": "narrador",
+  "text": "Lo primero, ya lo entendiste. Lo segundo, todavía no.",
+  "p": 0
+ },
+ {
+  "id": "s04_01",
+  "who": "mama",
+  "text": "¡No toques esa salsa! Es la de tu abuela.",
+  "p": 0
+ },
+ {
+  "id": "s04_02",
+  "who": "narrador",
+  "text": "La salsa de tu abuela se sirve con gotero. Un gotero alcanza para tres familias.",
+  "p": 1
+ },
+ {
+  "id": "s04_03",
+  "who": "narrador",
+  "text": "Te comes una cucharada. Entera.",
+  "p": 1
+ },
+ {
+  "id": "s04_04",
+  "who": "tu",
+  "text": "Mmm. Está rica.",
+  "p": 0
+ },
+ {
+  "id": "s04_05",
+  "who": "narrador",
+  "text": "Tu mamá se pone pálida. Croqueta sale de la cocina.",
+  "p": 1
+ },
+ {
+  "id": "s04_06",
+  "who": "mama",
+  "text": "¿Cómo que rica? ¡Te va a salir humo por las orejas!",
+  "p": 0
+ },
+ {
+  "id": "s04_07",
+  "who": "narrador",
+  "text": "Regla número uno: no te duele nada. Ni golpes, ni chile, ni nada.",
+  "p": 1
+ },
+ {
+  "id": "s04_08",
+  "who": "narrador",
+  "text": "Pero tu cuerpo sí se lastima. Solo que ya no te avisa.",
+  "p": 0
+ },
+ {
+  "id": "s05_01",
+  "who": "narrador",
+  "text": "En educación física juegan futbol. Te toca de portero.",
+  "p": 0
+ },
+ {
+  "id": "s05_02",
+  "who": "narrador",
+  "text": "El primer balón te pega en la cara. Lo atajas.",
+  "p": 1
+ },
+ {
+  "id": "s05_03",
+  "who": "narrador",
+  "text": "El segundo, también con la cara. También lo atajas.",
+  "p": 0
+ },
+ {
+  "id": "s05_04",
+  "who": "nacho",
+  "text": "¡Hermano! ¿No te dolió?",
+  "p": 1
+ },
+ {
+  "id": "s05_05",
+  "who": "tu",
+  "text": "¿Qué cosa?",
+  "p": 0
+ },
+ {
+  "id": "s05_06",
+  "who": "narrador",
+  "text": "Al final del partido atajaste catorce balones. Doce con la cara.",
+  "p": 1
+ },
+ {
+  "id": "s05_07",
+  "who": "narrador",
+  "text": "Ganan uno a cero. Te cargan en hombros.",
+  "p": 0
+ },
+ {
+  "id": "s06_01",
+  "who": "narrador",
+  "text": "El martes, el profe Ramírez te pasa al pizarrón.",
+  "p": 0
+ },
+ {
+  "id": "s06_02",
+  "who": "narrador",
+  "text": "Te tropiezas con su mochila. Te pegas en la rodilla, en el codo, y en la frente con el borrador.",
+  "p": 0
+ },
+ {
+  "id": "s06_03",
+  "who": "narrador",
+  "text": "Contestas el problema como si nada.",
+  "p": 1
+ },
+ {
+  "id": "s06_04",
+  "who": "profe",
+  "text": "¿Estás… bien?",
+  "p": 1
+ },
+ {
+  "id": "s06_05",
+  "who": "tu",
+  "text": "Perfecto, profe.",
+  "p": 0
+ },
+ {
+  "id": "s06_06",
+  "who": "narrador",
+  "text": "Esa noche, la libreta secreta del profe tiene una página nueva.",
+  "p": 1
+ },
+ {
+  "id": "s06_07",
+  "who": "narrador",
+  "text": "Martes: «Se cayó tres veces. Sonrió tres veces». Miércoles: «Ya me da miedo».",
+  "p": 0
+ },
+ {
+  "id": "s07_01",
+  "who": "narrador",
+  "text": "En una semana, descubres todo lo que se puede hacer sin dolor.",
+  "p": 0
+ },
+ {
+  "id": "s07_02",
+  "who": "narrador",
+  "text": "Vas al dentista. Te arreglan una muela sin anestesia. El dentista suda más que tú.",
+  "p": 1
+ },
+ {
+  "id": "s07_03",
+  "who": "narrador",
+  "text": "Croqueta te muerde. Tú lo acaricias. Croqueta se va a pensar en su vida.",
+  "p": 1
+ },
+ {
+  "id": "s07_04",
+  "who": "narrador",
+  "text": "Te resbalas en el pasillo recién trapeado. Te levantas y haces una reverencia. La gente aplaude.",
+  "p": 1
+ },
+ {
+  "id": "s07_05",
+  "who": "narrador",
+  "text": "Y Nacho deja de preguntarte si te dolió. Ya sabe la respuesta.",
+  "p": 1
+ },
+ {
+  "id": "s08_01",
+  "who": "narrador",
+  "text": "Esa tarde, buscas a Pepe en el parque.",
+  "p": 0
+ },
+ {
+  "id": "s08_02",
+  "who": "tu",
+  "text": "Ya sé que fuiste tú. ¿Para qué sirve esto?",
+  "p": 1
+ },
+ {
+  "id": "s08_03",
+  "who": "narrador",
+  "text": "Pepe no contesta. Te picotea la mano. Fuerte.",
+  "p": 1
+ },
+ {
+  "id": "s08_04",
+  "who": "narrador",
+  "text": "No sientes nada.",
+  "p": 0
+ },
+ {
+  "id": "s08_05",
+  "who": "narrador",
+  "text": "Pepe te mira como diciendo: «Exacto».",
+  "p": 1
+ },
+ {
+  "id": "s08_06",
+  "who": "tu",
+  "text": "…¿Exacto qué?",
+  "p": 1
+ },
+ {
+  "id": "s08_07",
+  "who": "pepe",
+  "text": "Ruu.",
+  "p": 0
+ },
+ {
+  "id": "s09_01",
+  "who": "narrador",
+  "text": "Problema número uno: te lastimas y no te das cuenta.",
+  "p": 0
+ },
+ {
+  "id": "s09_02",
+  "who": "narrador",
+  "text": "El miércoles, tu mamá nota que caminas raro.",
+  "p": 1
+ },
+ {
+  "id": "s09_03",
+  "who": "mama",
+  "text": "¿Por qué cojeas?",
+  "p": 1
+ },
+ {
+  "id": "s09_04",
+  "who": "tu",
+  "text": "¿Cojeo?",
+  "p": 0
+ },
+ {
+  "id": "s09_05",
+  "who": "narrador",
+  "text": "La doctora te revisa. Tienes el tobillo torcido. Desde el lunes.",
+  "p": 1
+ },
+ {
+  "id": "s09_06",
+  "who": "narrador",
+  "text": "Llevas tres días corriendo con él. Ahora está peor.",
+  "p": 0
+ },
+ {
+  "id": "s09_07",
+  "who": "narrador",
+  "text": "Regla número dos: el dolor es una alarma. Y la tuya está apagada.",
+  "p": 1
+ },
+ {
+  "id": "s10_01",
+  "who": "narrador",
+  "text": "Problema número dos: ya no sabes cuánto duele un golpe.",
+  "p": 0
+ },
+ {
+  "id": "s10_02",
+  "who": "narrador",
+  "text": "Le das a Nacho una palmada en la espalda. Como siempre.",
+  "p": 1
+ },
+ {
+  "id": "s10_03",
+  "who": "nacho",
+  "text": "¡Aaay! ¡Hermano!",
+  "p": 1
+ },
+ {
+  "id": "s10_04",
+  "who": "narrador",
+  "text": "Le chocas la mano a Renata. Ella se sopla los dedos cinco minutos.",
+  "p": 1
+ },
+ {
+  "id": "s10_05",
+  "who": "narrador",
+  "text": "Si no sabes lo que duele, no sabes cuándo estás lastimando a alguien.",
+  "p": 1
+ },
+ {
+  "id": "s10_06",
+  "who": "narrador",
+  "text": "Para el jueves, todos te saludan de lejos.",
+  "p": 0
+ },
+ {
+  "id": "s11_01",
+  "who": "narrador",
+  "text": "Problema número tres. El más raro.",
+  "p": 0
+ },
+ {
+  "id": "s11_02",
+  "who": "narrador",
+  "text": "Tampoco te duelen las cosas de adentro.",
+  "p": 0
+ },
+ {
+  "id": "s11_03",
+  "who": "narrador",
+  "text": "Sacas un cinco en el examen. Nada.",
+  "p": 1
+ },
+ {
+  "id": "s11_04",
+  "who": "narrador",
+  "text": "Nacho te cuenta que no lo escogieron para el equipo. Está triste.",
+  "p": 1
+ },
+ {
+  "id": "s11_05",
+  "who": "tu",
+  "text": "Bueno… no es para tanto.",
+  "p": 1
+ },
+ {
+  "id": "s11_06",
+  "who": "nacho",
+  "text": "Para ti nada es para tanto.",
+  "p": 1
+ },
+ {
+  "id": "s11_07",
+  "who": "narrador",
+  "text": "Y se va. Y eso tampoco te duele. Debería.",
+  "p": 1
+ },
+ {
+  "id": "s12_01",
+  "who": "narrador",
+  "text": "Y llega el viernes.",
+  "p": 0
+ },
+ {
+  "id": "s12_02",
+  "who": "narrador",
+  "text": "Renata te espera a la salida. Se ve rara.",
+  "p": 0
+ },
+ {
+  "id": "s12_03",
+  "who": "valeria",
+  "text": "Mañana me voy un mes a Oaxaca. Con mi abuela.",
+  "p": 1
+ },
+ {
+  "id": "s12_04",
+  "who": "valeria",
+  "text": "El camión sale a las siete.",
+  "p": 0
+ },
+ {
+  "id": "s12_05",
+  "who": "narrador",
+  "text": "Un mes. Sin Renata. Sin paseos con Canela.",
+  "p": 1
+ },
+ {
+  "id": "s12_06",
+  "who": "narrador",
+  "text": "Esperas sentir algo. Lo que sea.",
+  "p": 0
+ },
+ {
+  "id": "s12_07",
+  "who": "tu",
+  "text": "Ah. Okay.",
+  "p": 1
+ },
+ {
+  "id": "s12_08",
+  "who": "valeria",
+  "text": "¿…Okay? ¿Nada más?",
+  "p": 1
+ },
+ {
+  "id": "s12_09",
+  "who": "narrador",
+  "text": "Renata se va. Y tú te quedas ahí, sin sentir nada.",
+  "p": 1
+ },
+ {
+  "id": "s12_10",
+  "who": "narrador",
+  "text": "Justo lo que dijo Pepe. «Ni siquiera lo que debería».",
+  "p": 0
+ },
+ {
+  "id": "s13_01",
+  "who": "narrador",
+  "text": "Esa noche, tu mamá te pone la última curita.",
+  "p": 0
+ },
+ {
+  "id": "s13_02",
+  "who": "narrador",
+  "text": "Y ahí entiendes algo.",
+  "p": 0
+ },
+ {
+  "id": "s13_03",
+  "who": "narrador",
+  "text": "El dolor no es el enemigo. El dolor es el aviso.",
+  "p": 1
+ },
+ {
+  "id": "s13_04",
+  "who": "narrador",
+  "text": "El tobillo te avisaba que pararas. La salsa, que era demasiado.",
+  "p": 1
+ },
+ {
+  "id": "s13_05",
+  "who": "narrador",
+  "text": "Y lo de Renata te avisaba que te importa.",
+  "p": 0
+ },
+ {
+  "id": "s13_06",
+  "who": "narrador",
+  "text": "No lo sientes. Pero ahora sabes que está ahí.",
+  "p": 1
+ },
+ {
+  "id": "s13_07",
+  "who": "narrador",
+  "text": "Regla número tres: si algo debería dolerte, es porque te importa. Y eso hay que decirlo.",
+  "p": 1
+ },
+ {
+  "id": "s14_01",
+  "who": "narrador",
+  "text": "Sábado, seis cincuenta y cinco de la mañana. Llegas a la parada del camión. Cojeando.",
+  "p": 0
+ },
+ {
+  "id": "s14_02",
+  "who": "valeria",
+  "text": "¿Qué haces aquí?",
+  "p": 1
+ },
+ {
+  "id": "s14_03",
+  "who": "tu",
+  "text": "No sé explicarlo. No me duele. Pero sé que debería.",
+  "p": 1
+ },
+ {
+  "id": "s14_04",
+  "who": "tu",
+  "text": "Te voy a extrañar.",
+  "p": 0
+ },
+ {
+  "id": "s14_05",
+  "who": "narrador",
+  "text": "Renata se queda callada. Luego sonríe.",
+  "p": 1
+ },
+ {
+  "id": "s14_06",
+  "who": "valeria",
+  "text": "Yo también. Cuida ese tobillo, Rizos.",
+  "p": 1
+ },
+ {
+  "id": "s14_07",
+  "who": "narrador",
+  "text": "El camión se va. Y justo cuando da la vuelta en la esquina… se te acaba el poder.",
+  "p": 1
+ },
+ {
+  "id": "s14_08",
+  "who": "narrador",
+  "text": "Todo el dolor de la semana llega al mismo tiempo. El dedo, el tobillo, los catorce balones, la salsa de tu abuela.",
+  "p": 1
+ },
+ {
+  "id": "s14_09",
+  "who": "tu",
+  "text": "¡Aaaaay!",
+  "p": 1
+ },
+ {
+  "id": "s14_10",
+  "who": "narrador",
+  "text": "Y también lo otro. El que no es en ninguna parte del cuerpo.",
+  "p": 1
+ },
+ {
+  "id": "s14_11",
+  "who": "narrador",
+  "text": "Duele. Pero esta vez, sabes por qué.",
+  "p": 1
+ },
+ {
+  "id": "s15_01",
+  "who": "narrador",
+  "text": "Esa noche, vas a ver a Pepe. Con hielo en el tobillo.",
+  "p": 0
+ },
+ {
+  "id": "s15_02",
+  "who": "tu",
+  "text": "Ya entendí. El dolor sirve para algo.",
+  "p": 1
+ },
+ {
+  "id": "s15_03",
+  "who": "pepe",
+  "text": "Para saber qué te importa.",
+  "p": 1
+ },
+ {
+  "id": "s15_04",
+  "who": "tu",
+  "text": "¿Y ahora qué me toca?",
+  "p": 1
+ },
+ {
+  "id": "s15_05",
+  "who": "narrador",
+  "text": "Pepe abre las alas.",
+  "p": 1
+ },
+ {
+  "id": "s15_06",
+  "who": "pepe",
+  "text": "Mañana vas a tener todo el dinero del mundo.",
+  "p": 0
+ },
+ {
+  "id": "s15_07",
+  "who": "pepe",
+  "text": "Y no te va a alcanzar.",
+  "p": 1
+ },
+ {
+  "id": "s15_08",
+  "who": "narrador",
+  "text": "Y Pepe se va volando.",
+  "p": 1
+ },
+ {
+  "id": "s15_09",
+  "who": "narrador",
+  "text": "Tú te quedas con el hielo en el tobillo, preguntándote cómo puede no alcanzar todo el dinero del mundo.",
+  "p": 0
+ },
+ {
+  "id": "s16_01",
+  "who": "narrador",
+  "text": "¿Algo de esto es real?",
+  "p": 0
+ },
+ {
+  "id": "s16_02",
+  "who": "narrador",
+  "text": "Uno. Hay personas que nacen sin sentir dolor. Es muy raro, y muchas veces viene de un cambio en un solo gen.",
+  "p": 1
+ },
+ {
+  "id": "s16_03",
+  "who": "narrador",
+  "text": "No es un superpoder: se lastiman sin darse cuenta, y tienen que revisarse el cuerpo con mucho cuidado.",
+  "p": 0
+ },
+ {
+  "id": "s16_04",
+  "who": "narrador",
+  "text": "Dos. El chile no quema de verdad. La capsaicina engaña a los sensores de calor de tu boca, y tu cerebro cree que hay fuego.",
+  "p": 1
+ },
+ {
+  "id": "s16_05",
+  "who": "narrador",
+  "text": "Al científico que descubrió ese sensor le dieron el Premio Nobel en dos mil veintiuno.",
+  "p": 0
+ },
+ {
+  "id": "s16_06",
+  "who": "narrador",
+  "text": "Tres. Cuando alguien te rechaza, se activan zonas del cerebro que también trabajan cuando algo te duele.",
+  "p": 1
+ },
+ {
+  "id": "s16_07",
+  "who": "narrador",
+  "text": "Por eso decimos que algo «duele», aunque nadie te haya tocado.",
+  "p": 0
+ },
+ {
+  "id": "s17_01",
+  "who": "narrador",
+  "text": "¿Y tú? ¿Qué harías si no pudieras sentir dolor un día?",
+  "p": 0
+ },
+ {
+  "id": "s17_02",
+  "who": "narrador",
+  "text": "Escríbelo en los comentarios. Pepe los lee. Todos. Hasta los que duelen.",
+  "p": 0
+ },
+ {
+  "id": "s17_03",
+  "who": "narrador",
+  "text": "La próxima vez, vas a tener todo el dinero del mundo.",
+  "p": 1
+ },
+ {
+  "id": "s17_04",
+  "who": "narrador",
+  "text": "Pepe dice que no te va a alcanzar.",
+  "p": 0
+ }
+]
