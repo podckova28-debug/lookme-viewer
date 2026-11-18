@@ -24,7 +24,7 @@ const CUT_DIMS = {
 const CUT_FACE = { mama: { earrings: 0 } };   // features the painted head already has
 const CUT_BG = { kitchen: 'kitchen', kitchenNight: 'kitchenNight', hallway: 'hallway', bedroom: 'bedroom', classroom: 'classroom', street: 'street', streetRain: 'streetRain',
   field: 'field', party: 'party', park: 'park', parkNight: 'parkNight', bathroom: 'bathroom',
-  super: 'super', cafeteria: 'cafeteria', cine: 'cine', salaMaestros: 'salaMaestros' };
+  super: 'super', cafeteria: 'cafeteria', cine: 'cine', salaMaestros: 'salaMaestros', clinica: 'clinica' };
 const CUT_PROPS = ['bed', 'blanket', 'nightstand', 'kitchenTable', 'teacherDesk', 'bench', 'goal', 'partyTable', 'pepeBody', 'pepeHead', 'pepeFront', 'catSit', 'catJump', 'flowerPot',
   'toast', 'torta', 'phone', 'glassFrog', 'tacos', 'popcorn', 'tissues', 'notebook'];
 

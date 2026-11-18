@@ -22,6 +22,7 @@ const LOOK = {
   cafeteria:  { rim: 'rgba(255,238,200,.9)', grade: '#fff6e8' },
   cine:       { rim: 'rgba(170,200,255,.85)', grade: '#dfe6ff' },
   salaMaestros: { rim: 'rgba(255,226,180,.9)', grade: '#fff0dd' },
+  clinica:    { rim: 'rgba(240,255,245,.9)', grade: '#f6fff8' },
 };
 function buildSet(k) {
   const pi = INK, pw = INK_W; INK = 'rgba(40,30,58,.62)'; INK_W = .55;   // thin, tinted lines: backgrounds recede, characters pop
