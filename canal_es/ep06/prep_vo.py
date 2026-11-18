@@ -27,4 +27,20 @@ for l in lines:
     elif os.path.exists(src): shutil.copy(src, os.path.join(DST, i + '.wav'))
     else: missing.append(i)
 if missing: sys.exit('missing lines: ' + ' '.join(missing))
+
+# Onset fixes for the delivered takes (Мозг, commit 1e18e24): the voice starts some words on R with an extra tap that
+# is heard as «Dr…» («Drenata», «Draid la número uno»). Each fix keeps the file length, so the timing does not move,
+# and runs only on the exact take it was made for (sample count); a re-recorded line is left as it comes.
+def fix(i, n, f):
+    p = os.path.join(DST, i + '.wav'); x, sr = sf.read(p)
+    if len(x) != n: print('fix skipped (new take):', i); return
+    sf.write(p, f(x, sr).astype(np.float32), sr, subtype='PCM_16'); print('fixed', i)
+def ramp(n, x): r = np.linspace(0, 1, n); return r[:, None] if x.ndim > 1 else r
+def drop_tap(x, sr):                     # s12_02: silence the first tap of the trill (20–80 ms), fade into the rest
+    y = x.copy(); a, b, f = int(.02 * sr), int(.08 * sr), int(.008 * sr); y[:b] = 0; y[b:b + f] *= ramp(f, y); return y
+def regla(x, sr):                        # s04_07: «Re» of the clean «Regla» in s09_07, cut inside the closure of the g
+    a, _ = sf.read(os.path.join(DST, 's09_07.wav')); c, f = int(.28 * sr), int(.01 * sr); y = x.copy(); r = ramp(f, y)
+    y[:c - f] = a[:c - f]; y[c - f:c] = a[c - f:c] * (1 - r) + x[c - f:c] * r; return y
+fix('s12_02', 56811, drop_tap)
+fix('s04_07', 122525, regla)
 print(len(lines), 'lines ready in', DST)
