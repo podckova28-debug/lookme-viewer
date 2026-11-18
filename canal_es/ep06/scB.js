@@ -39,8 +39,8 @@ SC.s06 = (X, t) => {
   else { const x = t < trip ? mix(860, 1000, R(t, go, trip, lin)) : t < up ? 1030 : mix(1030, 1080, R(t, up, up + .6, lin)); hp = standing(x, { t, look: [10, 0], mouth: .3, walk: t < trip ? 1 : 0, phase: walkPh(x) });
     if (t > trip && t < up) { const f = R(t, trip, trip + .25, outC); hp.lean = .9 * f; hp.y = FEET + 40 * f; hp.hL = [-160, -260]; hp.hR = [160, -260]; hp.look = [4, 20]; hp.mouth = .2; }
     if (t > up) { hp.look = [-14, -6]; hp.mouth = .6; hp.brow = -.3; }
-    if (t > Lt('s06_03')) { hp.hR = [-160, -560]; hp.look = [-16, -14]; hp.flip = 1; }
-    if (t > Lt('s06_04')) { hp.hR = null; hp.look = [16, 4]; hp.mouth = .8; } }
+    if (t > Lt('s06_03')) { const G = charGeom(CAST.tu, hp); hp.hL = [-205, G.top - 110]; hp.look = [-16, -14]; hp.flip = 1; }   // far arm up to the board, on its own side
+    if (t > Lt('s06_04')) { hp.hL = null; hp.look = [16, 4]; hp.mouth = .8; } }
   say(hp, t, ['s06_05']);
   st.wld(g => drawHero(g, hp, { bump: t > head + .2 ? .7 : 0 }));
   if (t < go) st.wld(g => desk(g, 860, FEET, .8));
