@@ -180,7 +180,7 @@ SC.s04 = (X, t) => {
   if (t > Lt('s04_02') - .1) { mp.hR = null; mp.look = [-16, 4]; }
   if (t > eat) { mp.wide = .8; mp.mouth = .6; mp.brow = .9; mp.look = [-16, 0]; mp.open = .7; }
   if (t > pale) { mp.sweat = 1; }
-  if (t > Lt('s04_06') - .1) { mp.open = 0; const G = charGeom(CAST.mama, mp); [mp.hL, mp.hR] = [[-110, G.top + 40], [110, G.top + 40]]; }
+  if (t > Lt('s04_06') - .1) { mp.open = 0; const G = charGeom(CAST.mama, mp); [mp.hL, mp.hR] = [[-170, G.top - 5], [170, G.top - 5]]; }   // hands up in alarm: elbows down and out, forearms showing
   say(mp, t, ['s04_01', 's04_06']);
   st.wld(g => drawChar(g, 'mama', mp));
   const hp = standing(820, { t, look: [14, 8], mouth: .3, brow: -.2 });
