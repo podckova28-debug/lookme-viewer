@@ -1,0 +1,382 @@
+[
+{
+"index": 0,
+"img": "c01a",
+"out": "assets/plague/ep10/frames/c01a.jpg"
+},
+{
+"index": 1,
+"img": "c01b",
+"out": "assets/plague/ep10/frames/c01b.jpg"
+},
+{
+"index": 2,
+"img": "c01c",
+"out": "assets/plague/ep10/frames/c01c.jpg"
+},
+{
+"index": 3,
+"img": "c02a",
+"out": "assets/plague/ep10/frames/c02a.jpg"
+},
+{
+"index": 4,
+"img": "d01a",
+"out": "assets/plague/ep10/frames/d01a.jpg"
+},
+{
+"index": 5,
+"img": "c03a",
+"out": "assets/plague/ep10/frames/c03a.jpg"
+},
+{
+"index": 6,
+"img": "c03b",
+"out": "assets/plague/ep10/frames/c03b.jpg"
+},
+{
+"index": 7,
+"img": "c04a",
+"out": "assets/plague/ep10/frames/c04a.jpg"
+},
+{
+"index": 8,
+"img": "c05a",
+"out": "assets/plague/ep10/frames/c05a.jpg"
+},
+{
+"index": 9,
+"img": "d02a",
+"out": "assets/plague/ep10/frames/d02a.jpg"
+},
+{
+"index": 10,
+"img": "c06a",
+"out": "assets/plague/ep10/frames/c06a.jpg"
+},
+{
+"index": 11,
+"img": "d03a",
+"out": "assets/plague/ep10/frames/d03a.jpg"
+},
+{
+"index": 12,
+"img": "c07a",
+"out": "assets/plague/ep10/frames/c07a.jpg"
+},
+{
+"index": 13,
+"img": "c07b",
+"out": "assets/plague/ep10/frames/c07b.jpg"
+},
+{
+"index": 14,
+"img": "d04a",
+"out": "assets/plague/ep10/frames/d04a.jpg"
+},
+{
+"index": 15,
+"img": "d05a",
+"out": "assets/plague/ep10/frames/d05a.jpg"
+},
+{
+"index": 16,
+"img": "c08a",
+"out": "assets/plague/ep10/frames/c08a.jpg"
+},
+{
+"index": 17,
+"img": "d06a",
+"out": "assets/plague/ep10/frames/d06a.jpg"
+},
+{
+"index": 18,
+"img": "c08b",
+"out": "assets/plague/ep10/frames/c08b.jpg"
+},
+{
+"index": 19,
+"img": "c09a",
+"out": "assets/plague/ep10/frames/c09a.jpg"
+},
+{
+"index": 20,
+"img": "d07a",
+"out": "assets/plague/ep10/frames/d07a.jpg"
+},
+{
+"index": 21,
+"img": "c10a",
+"out": "assets/plague/ep10/frames/c10a.jpg"
+},
+{
+"index": 22,
+"img": "c10b",
+"out": "assets/plague/ep10/frames/c10b.jpg"
+},
+{
+"index": 23,
+"img": "d08a",
+"out": "assets/plague/ep10/frames/d08a.jpg"
+},
+{
+"index": 24,
+"img": "c11a",
+"out": "assets/plague/ep10/frames/c11a.jpg"
+},
+{
+"index": 25,
+"img": "d09a",
+"out": "assets/plague/ep10/frames/d09a.jpg"
+},
+{
+"index": 26,
+"img": "c12a",
+"out": "assets/plague/ep10/frames/c12a.jpg"
+},
+{
+"index": 27,
+"img": "c12b",
+"out": "assets/plague/ep10/frames/c12b.jpg"
+},
+{
+"index": 28,
+"img": "d10a",
+"out": "assets/plague/ep10/frames/d10a.jpg"
+},
+{
+"index": 29,
+"img": "d11a",
+"out": "assets/plague/ep10/frames/d11a.jpg"
+},
+{
+"index": 30,
+"img": "c12d",
+"out": "assets/plague/ep10/frames/c12d.jpg"
+},
+{
+"index": 31,
+"img": "c12c",
+"out": "assets/plague/ep10/frames/c12c.jpg"
+},
+{
+"index": 32,
+"img": "c13a",
+"out": "assets/plague/ep10/frames/c13a.jpg"
+},
+{
+"index": 33,
+"img": "c14a",
+"out": "assets/plague/ep10/frames/c14a.jpg"
+},
+{
+"index": 34,
+"img": "c14b",
+"out": "assets/plague/ep10/frames/c14b.jpg"
+},
+{
+"index": 35,
+"img": "c15a",
+"out": "assets/plague/ep10/frames/c15a.jpg"
+},
+{
+"index": 36,
+"img": "d12a",
+"out": "assets/plague/ep10/frames/d12a.jpg"
+},
+{
+"index": 37,
+"img": "c15b",
+"out": "assets/plague/ep10/frames/c15b.jpg"
+},
+{
+"index": 38,
+"img": "c16a",
+"out": "assets/plague/ep10/frames/c16a.jpg"
+},
+{
+"index": 39,
+"img": "c17a",
+"out": "assets/plague/ep10/frames/c17a.jpg"
+},
+{
+"index": 40,
+"img": "c17b",
+"out": "assets/plague/ep10/frames/c17b.jpg"
+},
+{
+"index": 41,
+"img": "c18a",
+"out": "assets/plague/ep10/frames/c18a.jpg"
+},
+{
+"index": 42,
+"img": "c18b",
+"out": "assets/plague/ep10/frames/c18b.jpg"
+},
+{
+"index": 43,
+"img": "c18c",
+"out": "assets/plague/ep10/frames/c18c.jpg"
+},
+{
+"index": 44,
+"img": "c19a",
+"out": "assets/plague/ep10/frames/c19a.jpg"
+},
+{
+"index": 45,
+"img": "c20a",
+"out": "assets/plague/ep10/frames/c20a.jpg"
+},
+{
+"index": 46,
+"img": "d13a",
+"out": "assets/plague/ep10/frames/d13a.jpg"
+},
+{
+"index": 47,
+"img": "c20c",
+"out": "assets/plague/ep10/frames/c20c.jpg"
+},
+{
+"index": 48,
+"img": "c20b",
+"out": "assets/plague/ep10/frames/c20b.jpg"
+},
+{
+"index": 49,
+"img": "c21a",
+"out": "assets/plague/ep10/frames/c21a.jpg"
+},
+{
+"index": 50,
+"img": "c22a",
+"out": "assets/plague/ep10/frames/c22a.jpg"
+},
+{
+"index": 51,
+"img": "d14a",
+"out": "assets/plague/ep10/frames/d14a.jpg"
+},
+{
+"index": 52,
+"img": "c22b",
+"out": "assets/plague/ep10/frames/c22b.jpg"
+},
+{
+"index": 53,
+"img": "c22c",
+"out": "assets/plague/ep10/frames/c22c.jpg"
+},
+{
+"index": 54,
+"img": "c23a",
+"out": "assets/plague/ep10/frames/c23a.jpg"
+},
+{
+"index": 55,
+"img": "c23b",
+"out": "assets/plague/ep10/frames/c23b.jpg"
+},
+{
+"index": 56,
+"img": "c24a",
+"out": "assets/plague/ep10/frames/c24a.jpg"
+},
+{
+"index": 57,
+"img": "c24b",
+"out": "assets/plague/ep10/frames/c24b.jpg"
+},
+{
+"index": 58,
+"img": "c25a",
+"out": "assets/plague/ep10/frames/c25a.jpg"
+},
+{
+"index": 59,
+"img": "d15a",
+"out": "assets/plague/ep10/frames/d15a.jpg"
+},
+{
+"index": 60,
+"img": "c25b",
+"out": "assets/plague/ep10/frames/c25b.jpg"
+},
+{
+"index": 61,
+"img": "c26a",
+"out": "assets/plague/ep10/frames/c26a.jpg"
+},
+{
+"index": 62,
+"img": "d16a",
+"out": "assets/plague/ep10/frames/d16a.jpg"
+},
+{
+"index": 63,
+"img": "d17a",
+"out": "assets/plague/ep10/frames/d17a.jpg"
+},
+{
+"index": 64,
+"img": "c27a",
+"out": "assets/plague/ep10/frames/c27a.jpg"
+},
+{
+"index": 65,
+"img": "d18a",
+"out": "assets/plague/ep10/frames/d18a.jpg"
+},
+{
+"index": 66,
+"img": "c28a",
+"out": "assets/plague/ep10/frames/c28a.jpg"
+},
+{
+"index": 67,
+"img": "d19a",
+"out": "assets/plague/ep10/frames/d19a.jpg"
+},
+{
+"index": 68,
+"img": "c29a",
+"out": "assets/plague/ep10/frames/c29a.jpg"
+},
+{
+"index": 69,
+"img": "d20a",
+"out": "assets/plague/ep10/frames/d20a.jpg"
+},
+{
+"index": 70,
+"img": "c30a",
+"out": "assets/plague/ep10/frames/c30a.jpg"
+},
+{
+"index": 71,
+"img": "c30c",
+"out": "assets/plague/ep10/frames/c30c.jpg"
+},
+{
+"index": 72,
+"img": "c30b",
+"out": "assets/plague/ep10/frames/c30b.jpg"
+},
+{
+"index": 73,
+"img": "c31a",
+"out": "assets/plague/ep10/frames/c31a.jpg"
+},
+{
+"index": 74,
+"img": "c32a",
+"out": "assets/plague/ep10/frames/c32a.jpg"
+},
+{
+"index": 75,
+"img": "c33a",
+"out": "assets/plague/ep10/frames/c33a.jpg"
+}
+]

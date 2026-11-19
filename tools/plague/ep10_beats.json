@@ -1,0 +1,1982 @@
+{
+ "base": "assets/plague/ep10/frames",
+ "keep_zoom": [],
+ "static": true,
+ "fade_in": 0.8,
+ "start": 0.0,
+ "lead": 0.45,
+ "gap": 0.6,
+ "max_shot": 3.2,
+ "sfx_global": [
+  {
+   "kind": "drone",
+   "t": 0.0,
+   "args": {
+    "d": "ALL"
+   },
+   "gain": 0.9
+  },
+  {
+   "kind": "wind",
+   "t": 0.0,
+   "args": {
+    "d": "ALL"
+   },
+   "gain": 0.12
+  }
+ ],
+ "beats": [
+  {
+   "vo": "assets/plague/ep10/vo/C01.wav",
+   "shots": [
+    {
+     "img": "c01a",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "Summer, 1952",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "c01b",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": {
+      "text": "By morning, he can't move his legs",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "c01c",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "By evening, he can't breathe",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/C02.wav",
+   "shots": [
+    {
+     "img": "c02a",
+     "from": [
+      0.48,
+      0.5,
+      1.03
+     ],
+     "to": [
+      0.52,
+      0.5,
+      1.03
+     ],
+     "w": 1,
+     "text": {
+      "text": "Row after row of iron lungs",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "d01a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "1952: nearly 58,000 cases",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/C03.wav",
+   "shots": [
+    {
+     "img": "c03a",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "The pools closed",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "c03b",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": {
+      "text": "Children kept inside",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/C04.wav",
+   "gain": 1.05,
+   "shots": [
+    {
+     "img": "c04a",
+     "from": [
+      0.5,
+      0.45,
+      1.0350000000000001
+     ],
+     "to": [
+      0.5,
+      0.45,
+      1.0550000000000002
+     ],
+     "w": 1
+    }
+   ]
+  },
+  {
+   "hold": 4.6,
+   "shots": [
+    {
+     "img": "c05a",
+     "from": [
+      0.5,
+      0.5,
+      1.05
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "POLIO",
+       "x": 1300,
+       "y": 330,
+       "size": 140,
+       "at": 0.15,
+       "style": "title",
+       "pop": true,
+       "len": 4.2
+      },
+      {
+       "text": "THE SUMMER PLAGUE",
+       "x": 1300,
+       "y": 470,
+       "size": 72,
+       "at": 0.5,
+       "style": "title",
+       "color": [
+        120,
+        200,
+        210
+       ],
+       "len": 3.9
+      }
+     ],
+     "sfx": [
+      {
+       "kind": "boom",
+       "at": 0.1,
+       "gain": 0.8
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/L01.wav",
+   "shots": [
+    {
+     "img": "d02a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1
+    },
+    {
+     "img": "c06a",
+     "from": [
+      0.5,
+      0.45,
+      1.0350000000000001
+     ],
+     "to": [
+      0.5,
+      0.45,
+      1.0550000000000002
+     ],
+     "w": 1,
+     "text": {
+      "text": "Poliovirus",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/L02.wav",
+   "shots": [
+    {
+     "img": "d03a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Water, hands, mouth",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "c07a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": {
+      "text": "Most people never notice him",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "c07b",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "A summer swim",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/L03.wav",
+   "shots": [
+    {
+     "img": "d04a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "About 1 in 200 is paralysed",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "d05a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Into the spinal cord",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/L04.wav",
+   "gain": 1.05,
+   "shots": [
+    {
+     "img": "c08a",
+     "from": [
+      0.5,
+      0.45,
+      1.0350000000000001
+     ],
+     "to": [
+      0.5,
+      0.45,
+      1.0550000000000002
+     ],
+     "w": 1
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/L05.wav",
+   "shots": [
+    {
+     "img": "d06a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "The nerves die, the muscles go limp",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "c08b",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "The legs go limp",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/L06.wav",
+   "shots": [
+    {
+     "img": "c09a",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "Egypt, about 1400 BC",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "d07a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "A withered leg",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/L07.wav",
+   "shots": [
+    {
+     "img": "c10a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": {
+      "text": "Babies caught him early",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "c10b",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "Mild, and immune for life",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/L08.wav",
+   "shots": [
+    {
+     "img": "d08a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "A disease of cleanliness",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/L09.wav",
+   "gain": 1.05,
+   "shots": [
+    {
+     "img": "c11a",
+     "from": [
+      0.5,
+      0.45,
+      1.0350000000000001
+     ],
+     "to": [
+      0.5,
+      0.45,
+      1.0550000000000002
+     ],
+     "w": 1
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/S01.wav",
+   "shots": [
+    {
+     "img": "d09a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "What He Does to You",
+       "x": 960,
+       "y": 150,
+       "size": 72,
+       "at": 0.3
+      },
+      {
+       "text": "It starts like summer flu",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "c12a",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "A stiff neck",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/S02.wav",
+   "shots": [
+    {
+     "img": "c12b",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": {
+      "text": "A leg won't hold him up",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "d10a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Often just one side",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/S03.wav",
+   "shots": [
+    {
+     "img": "d11a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "The breathing muscles stop",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "c12d",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "The only view: a mirror",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/S04.wav",
+   "shots": [
+    {
+     "img": "c12c",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": {
+      "text": "Leg braces and crutches",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/S05.wav",
+   "gain": 1.05,
+   "shots": [
+    {
+     "img": "c13a",
+     "from": [
+      0.5,
+      0.45,
+      1.0350000000000001
+     ],
+     "to": [
+      0.5,
+      0.45,
+      1.0550000000000002
+     ],
+     "w": 1
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/L10.wav",
+   "shots": [
+    {
+     "img": "c14a",
+     "from": [
+      0.48,
+      0.5,
+      1.03
+     ],
+     "to": [
+      0.52,
+      0.5,
+      1.03
+     ],
+     "w": 1,
+     "text": {
+      "text": "Vermont, 1894",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/L11.wav",
+   "shots": [
+    {
+     "img": "c14b",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "Karl Landsteiner, 1908",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/L12.wav",
+   "shots": [
+    {
+     "img": "c15a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": {
+      "text": "New York, 1916",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "d12a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "More than 2,000 deaths in the city",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "c15b",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "Families fled the city",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/L13.wav",
+   "gain": 1.05,
+   "shots": [
+    {
+     "img": "c16a",
+     "from": [
+      0.5,
+      0.45,
+      1.0350000000000001
+     ],
+     "to": [
+      0.5,
+      0.45,
+      1.0550000000000002
+     ],
+     "w": 1
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/L14.wav",
+   "shots": [
+    {
+     "img": "c17a",
+     "from": [
+      0.48,
+      0.5,
+      1.03
+     ],
+     "to": [
+      0.52,
+      0.5,
+      1.03
+     ],
+     "w": 1,
+     "text": {
+      "text": "Franklin D. Roosevelt, 1921",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "c17b",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "His legs never worked again",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/L15.wav",
+   "shots": [
+    {
+     "img": "c18a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": {
+      "text": "The March of Dimes, 1938",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "c18b",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "Millions of dimes",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "c18c",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "Send a dime",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/L16.wav",
+   "gain": 1.05,
+   "shots": [
+    {
+     "img": "c19a",
+     "from": [
+      0.5,
+      0.45,
+      1.0350000000000001
+     ],
+     "to": [
+      0.5,
+      0.45,
+      1.0550000000000002
+     ],
+     "w": 1
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/L17.wav",
+   "shots": [
+    {
+     "img": "c20a",
+     "from": [
+      0.48,
+      0.5,
+      1.03
+     ],
+     "to": [
+      0.52,
+      0.5,
+      1.03
+     ],
+     "w": 1,
+     "text": {
+      "text": "The iron lung, 1928",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "d13a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "It breathed for you",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "c20c",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "About the price of a house",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/L18.wav",
+   "shots": [
+    {
+     "img": "c20b",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "Paul Alexander: 70 years in an iron lung",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/L19.wav",
+   "shots": [
+    {
+     "img": "c21a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": {
+      "text": "Sister Elizabeth Kenny",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/L20.wav",
+   "shots": [
+    {
+     "img": "c22a",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "Jonas Salk",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "d14a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "A vaccine from killed virus",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/L21.wav",
+   "shots": [
+    {
+     "img": "c22b",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": {
+      "text": "1.8 million Polio Pioneers",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "c22c",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "Polio Pioneers",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/L22.wav",
+   "shots": [
+    {
+     "img": "c23a",
+     "from": [
+      0.48,
+      0.5,
+      1.03
+     ],
+     "to": [
+      0.52,
+      0.5,
+      1.03
+     ],
+     "w": 1,
+     "text": {
+      "text": "12 April 1955",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "c23b",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "\"Could you patent the sun?\"",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/L23.wav",
+   "gain": 1.05,
+   "shots": [
+    {
+     "img": "c24a",
+     "from": [
+      0.5,
+      0.45,
+      1.0350000000000001
+     ],
+     "to": [
+      0.5,
+      0.45,
+      1.0550000000000002
+     ],
+     "w": 1
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/L24.wav",
+   "shots": [
+    {
+     "img": "c24b",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": {
+      "text": "The Cutter incident, 1955",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/L25.wav",
+   "shots": [
+    {
+     "img": "c25a",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "A sugar cube, 1959",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "d15a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Injection or sugar cube",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "c25b",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": {
+      "text": "Sugar Cube Sundays",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/L26.wav",
+   "shots": [
+    {
+     "img": "c26a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": {
+      "text": "Door to door, village to village",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "d16a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "1988: 350,000 cases a year",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/L27.wav",
+   "shots": [
+    {
+     "img": "d17a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Down more than 99%",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/L28.wav",
+   "gain": 1.05,
+   "shots": [
+    {
+     "img": "c27a",
+     "from": [
+      0.5,
+      0.45,
+      1.0350000000000001
+     ],
+     "to": [
+      0.5,
+      0.45,
+      1.0550000000000002
+     ],
+     "w": 1
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/A01.wav",
+   "shots": [
+    {
+     "img": "d18a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "What He Leaves Behind",
+       "x": 960,
+       "y": 150,
+       "size": 72,
+       "at": 0.3
+      },
+      {
+       "text": "Post-polio syndrome",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/A02.wav",
+   "shots": [
+    {
+     "img": "c28a",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "Copenhagen, 1952: the first intensive care",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "d19a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "He left more than braces",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/A03.wav",
+   "gain": 1.05,
+   "shots": [
+    {
+     "img": "c29a",
+     "from": [
+      0.5,
+      0.45,
+      1.0350000000000001
+     ],
+     "to": [
+      0.5,
+      0.45,
+      1.0550000000000002
+     ],
+     "w": 1
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/T01.wav",
+   "shots": [
+    {
+     "img": "d20a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Only two countries left",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "c30a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": {
+      "text": "Two drops in the mouth",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    },
+    {
+     "img": "c30c",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "Found in the sewage",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/T02.wav",
+   "shots": [
+    {
+     "img": "c30b",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": {
+      "text": "Closer than ever",
+      "x": 960,
+      "y": 985,
+      "size": 50,
+      "at": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/T03.wav",
+   "gain": 1.05,
+   "shots": [
+    {
+     "img": "c31a",
+     "from": [
+      0.5,
+      0.45,
+      1.0350000000000001
+     ],
+     "to": [
+      0.5,
+      0.45,
+      1.0550000000000002
+     ],
+     "w": 1
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/L29.wav",
+   "shots": [
+    {
+     "img": "c01c",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1
+    },
+    {
+     "img": "c18b",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1
+    },
+    {
+     "img": "c23a",
+     "from": [
+      0.48,
+      0.5,
+      1.03
+     ],
+     "to": [
+      0.52,
+      0.5,
+      1.03
+     ],
+     "w": 1
+    },
+    {
+     "img": "c26a",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1
+    },
+    {
+     "img": "c32a",
+     "from": [
+      0.5,
+      0.45,
+      1.0350000000000001
+     ],
+     "to": [
+      0.5,
+      0.45,
+      1.0550000000000002
+     ],
+     "w": 1
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/ep10/vo/L30.wav",
+   "shots": [
+    {
+     "img": "c33a",
+     "from": [
+      0.5,
+      0.5,
+      1.014
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.034
+     ],
+     "w": 1
+    }
+   ]
+  },
+  {
+   "hold": 5.0,
+   "shots": [
+    {
+     "img": "c33a",
+     "from": [
+      0.5,
+      0.5,
+      1.05
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "NEXT TIME",
+       "x": 1380,
+       "y": 360,
+       "size": 110,
+       "at": 0.2,
+       "style": "title",
+       "pop": true,
+       "len": 4.6
+      },
+      {
+       "text": "SUBSCRIBE",
+       "x": 1380,
+       "y": 500,
+       "size": 64,
+       "at": 0.8,
+       "len": 4.0
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "music": [
+  {
+   "file": "assets/plague/music/cholera_a.mp3",
+   "t0": 0.0,
+   "t1": 190,
+   "gain": 1.0,
+   "fade_in": 2.0,
+   "fade_out": 4.0
+  },
+  {
+   "file": "assets/plague/music/plague_b.mp3",
+   "t0": 186.0,
+   "t1": 340,
+   "gain": 1.0,
+   "fade_in": 4.0,
+   "fade_out": 4.0
+  },
+  {
+   "file": "assets/plague/music/cholera_b.mp3",
+   "t0": 336.0,
+   "t1": 470,
+   "gain": 1.0,
+   "fade_in": 4.0,
+   "fade_out": 4.0
+  },
+  {
+   "file": "assets/plague/music/plague_a.mp3",
+   "t0": 466.0,
+   "t1": "ALL",
+   "gain": 1.0,
+   "fade_in": 4.0,
+   "fade_out": 5.0
+  }
+ ]
+}

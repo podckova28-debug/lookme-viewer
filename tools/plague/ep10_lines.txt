@@ -1,0 +1,45 @@
+C01|NARRATOR|A boy comes home from the town swimming pool with a headache. By the next morning, he can't move his legs. By evening, he can't breathe on his own.
+C02|NARRATOR|He's put inside a giant metal tube that breathes for him. Around him, row after row of children in the same machines. That summer, nearly fifty-eight thousand Americans caught the same disease.
+C03|NARRATOR|Parents closed the pools, the cinemas and the summer camps. They kept their children inside. And every summer, they waited to see whose child would be next.
+C04|POLIO|Every summer, the same lovely game. Who gets to swim, and who stays home?
+L01|NARRATOR|So who is he? A virus. Poliovirus. One of the smallest viruses we know: a tiny ball of genetic code, so small that a million of them would fit across the head of a pin.
+L02|NARRATOR|He travels through dirty water and dirty hands. You swallow him, and he settles in your gut. Most of the time, nothing happens at all.
+L03|NARRATOR|About three in four people infected never feel sick. Most others get a mild fever, like the flu. But in about one in two hundred, he slips out of the gut, into the nerves of the spine.
+L04|POLIO|Hundreds of easy little visits, and nobody suspects a thing. Then, once in a while, I stay.
+L05|NARRATOR|There, he destroys the nerve cells that move your muscles. The muscles they controlled go limp, usually in the legs. If he reaches the nerves for breathing, the chest stops moving.
+L06|NARRATOR|Where did he come from? He's ancient. A carved stone from Egypt, about three and a half thousand years old, shows a priest with one thin, withered leg, leaning on a staff.
+L07|NARRATOR|For thousands of years, nearly every baby caught him in dirty water, while still protected by their mother's antibodies. The infection was mild, and it made them immune for life.
+L08|NARRATOR|Then, in the late eighteen hundreds, came clean water, sewers and soap. Babies stopped catching him. They met him later, as older children, without protection. And that's when the epidemics began.
+L09|POLIO|You cleaned up your cities. How thoughtful. I'd never had such a lovely summer.
+S01|NARRATOR|So what does he do to you? It starts like summer flu: a fever, a sore throat, a headache, an aching back and a stiff neck.
+S02|NARRATOR|Then, within days, some patients feel their muscles weaken. A leg won't hold them up. An arm won't lift. The paralysis comes fast, and it's often lopsided.
+S03|NARRATOR|When he attacks the nerves of the chest, you can no longer breathe. Without help, you suffocate.
+S04|NARRATOR|About one in ten of the paralysed died. Many survivors walked again. But many spent their lives in leg braces, on crutches, or in wheelchairs.
+S05|POLIO|Fever, aches, a stiff neck. Who would worry? That's the beauty of it.
+L10|NARRATOR|In 1894, in Vermont, the first big American outbreak paralysed one hundred and thirty-two people, most of them children. Doctors had no idea what it was.
+L11|NARRATOR|In 1908, in Vienna, Karl Landsteiner showed that it was caused by something too small to see, passing it to monkeys. He had found a virus.
+L12|NARRATOR|In 1916, he hit New York. More than two thousand people died there, most of them children. Families fled the city, and houses with a sick child were marked with a warning sign.
+L13|POLIO|New York in 1916. My first really big city. I was a sensation.
+L14|NARRATOR|In 1921, he caught a rising politician: Franklin Delano Roosevelt, thirty-nine years old. After a swim on holiday, his legs stopped working. They never worked again.
+L15|NARRATOR|He became President, and hid his wheelchair from the public. But in 1938, he founded a charity to fight polio. A comedian suggested a name: the March of Dimes. Americans mailed millions of dimes straight to the White House.
+L16|POLIO|A President against me. And millions of children with their pocket money. I didn't see that coming.
+L17|NARRATOR|Meanwhile, in 1928, two Harvard engineers built a machine to breathe for the paralysed: the iron lung. It changed the air pressure around the body, pulling air in and out of the lungs.
+L18|NARRATOR|One boy, Paul Alexander, was put into an iron lung in 1952. He learned to breathe on his own for a few hours a day, became a lawyer, and wrote a book with a pen held in his mouth. He lived in his iron lung for seventy years.
+L19|NARRATOR|An Australian nurse, Sister Elizabeth Kenny, fought doctors who put paralysed limbs in rigid casts. She used hot wet packs and gentle exercise instead. Patients got moving again.
+L20|NARRATOR|Then came Jonas Salk. In Pittsburgh, he grew the virus, killed it with formaldehyde, and made a vaccine from the dead virus. He tested it on himself and his own family.
+L21|NARRATOR|In 1954, the biggest medical trial in history: about one point eight million children, the Polio Pioneers. They lined up at their schools for injections and lollipops.
+L22|NARRATOR|On the twelfth of April 1955, the results were announced: the vaccine was safe and effective. Church bells rang across America. Asked who owned the patent, Salk said: 'Could you patent the sun?'
+L23|POLIO|Dead viruses. They beat me with my own dead. That's just bad manners.
+L24|NARRATOR|But weeks later, disaster. One company, Cutter, had shipped batches with live virus. Thousands of children got sick, about two hundred were paralysed, and ten died. It changed how vaccines are made and checked forever.
+L25|NARRATOR|Then Albert Sabin made a vaccine from a living but weakened virus, given by mouth on a sugar cube. In 1959, the Soviet Union tested it on millions of children. It was cheap, easy, and it spread protection to others.
+L26|NARRATOR|In 1988, he was still paralysing about three hundred and fifty thousand children a year, in a hundred and twenty-five countries. The world launched a campaign to wipe him out. Rotary clubs, health workers and volunteers carried vaccine to every village.
+L27|NARRATOR|It worked. Cases fell by more than ninety-nine percent. Two of his three types are gone forever.
+L28|POLIO|Three of me there used to be. Now there's only one left. I'm feeling rather lonely.
+A01|NARRATOR|And for survivors? Decades later, many feel new weakness, pain and exhaustion: post-polio syndrome. The nerves that took over the work are finally wearing out.
+A02|NARRATOR|For the world, he left a lot. Intensive care was born in Copenhagen in 1952, when students took turns squeezing air into paralysed patients by hand. Polio survivors helped launch the disability rights movement. And the idea of vaccinating the whole world.
+A03|POLIO|Intensive care units. Ramps. Vaccines for the whole planet. I really was terribly influential.
+T01|NARRATOR|Today, the wild virus survives in just two countries: Pakistan and Afghanistan. A few dozen to about a hundred children a year. And where vaccination slips, he sneaks back, as he did in New York in 2022.
+T02|NARRATOR|Two drops of vaccine. That's all it takes. We are closer than ever to wiping him off the planet, only the second human disease after smallpox.
+T03|POLIO|Two drops. That's all you need to finish me. So why haven't you yet?
+L29|NARRATOR|Thousands of years. He crippled pharaohs' priests, a President, and millions of children. He was beaten by a dead virus, a sugar cube and two drops. And he isn't quite gone yet.
+L30|NARRATOR|Next time: a killer carried by lice. It followed armies for centuries, and it destroyed Napoleon's march on Moscow.
