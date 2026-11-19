@@ -1,10 +1,10 @@
 # Эпизод 10 · The ENTIRE History of Polio · пакет для загрузки
 
-Файл: `out/polio_ep10_upload.mp4` (1080p, DURATION). Обложки (все три в «Тест и сравнение»): `thumb_ep10_poster_beware.jpg`, `thumb_ep10_poster_wanted.jpg`, `thumb_ep10_scene_pool.jpg`.
+Файл: `out/polio_ep10_upload.mp4` (1080p, 8:15). Обложки (все три в «Тест и сравнение»): `thumb_ep10_poster_beware.jpg`, `thumb_ep10_poster_wanted.jpg`, `thumb_ep10_scene_pool.jpg`.
 
 ## Название
 ```
-The ENTIRE History of Polio in 9 Minutes
+The ENTIRE History of Polio in 8 Minutes
 ```
 Запасные:
 ```
@@ -21,7 +21,19 @@ Summer, 1952. A boy comes home from the town pool with a headache. By morning he
 This is the entire history of polio, told with a little help from Mr. Summer himself: the tiny virus that hides in your gut, why only one in two hundred are paralysed, the Egyptian priest with a withered leg, why clean water made polio worse, the 1916 New York epidemic, Franklin Roosevelt and the March of Dimes, the iron lung and Paul Alexander's seventy years inside one, Sister Kenny, Jonas Salk and the Polio Pioneers, "Could you patent the sun?", the Cutter disaster, Sabin's sugar cubes, the birth of intensive care, and the last two countries where polio still hides.
 
 CHAPTERS
-CHAPTERS_HERE
+0:00 Summer, 1952
+0:43 Who is polio?
+1:36 Where did he come from?
+2:18 What he does to you
+2:59 The first epidemics
+3:40 Roosevelt and the March of Dimes
+4:15 The iron lung
+4:58 Jonas Salk
+5:41 The Cutter disaster
+5:56 Sabin and the sugar cube
+6:41 What he leaves behind
+7:17 Polio today
+7:47 Almost gone
 
 Sources are listed in the pinned comment.
 
