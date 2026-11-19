@@ -1,6 +1,6 @@
 # Эпизод 6 · The ENTIRE History of Rabies · пакет для загрузки
 
-Файл: `out/rabies_ep06_upload.mp4` (1080p, 8:37). Обложка: `channel/plague/thumb_ep06.jpg` (1280×720), вторая для теста — `thumb_ep06_b.jpg`.
+Файл: `out/rabies_ep06_upload.mp4` (1080p, 8:37). Обложки (тест стилей): `style_tests/rabies_1_poster.jpg`, `style_tests/rabies_4_split.jpg`, фирменная `thumb_ep06_scene_bed.jpg`.
 
 ## Название
 ```
@@ -65,6 +65,6 @@ If you're ever bitten: wash the wound for 15 minutes and see a doctor the same d
 
 ## Настройки
 - Аудитория: «Не для детей». Категория: Education. Язык: английский.
-- Конечная заставка: «Подписаться» + «Цинга» (или последнее видео).
+- Конечная заставка (последние 20 с): «Подписаться» + «Цинга».
 - Плейлист «The ENTIRE History of…».
-- Обложки: основная `thumb_ep06.jpg`, для теста `thumb_ep06_b.jpg`.
+- Обложки: все три в «Тест и сравнение»: `style_tests/rabies_1_poster.jpg`, `style_tests/rabies_4_split.jpg`, `thumb_ep06_scene_bed.jpg`.
