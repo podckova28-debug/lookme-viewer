@@ -10,8 +10,8 @@ L05|NARRATOR|Where did he come from? Rickettsia bacteria are ancient. They have 
 L06|NARRATOR|His name comes from the Greek word typhos: smoke, or haze. Because his victims fall into a foggy daze. And no, he's not typhoid. Different germ, different disease. Same confusing name.
 L07|TYPHUS|Typhus. Typhoid. People mix us up all the time. Honestly, it's insulting.
 S01|NARRATOR|So what does he do to you? About two weeks after the bite: a sudden high fever, a crushing headache, and pain in every muscle.
-S02|NARRATOR|A few days later, a rash appears on the chest and spreads outward, often everywhere except the face, palms and soles.
-S03|NARRATOR|Then comes the haze. Patients become confused, delirious, staring into nothing. In the old days, up to four in ten died, often from failing hearts or brains.
+S02|NARRATOR|A few days later, a rash appears on the chest and spreads outward, usually everywhere except the face, palms and soles.
+S03|NARRATOR|Then comes the haze. Patients become confused, delirious, staring into nothing. In the old days, up to four in ten died, many from failing hearts or brains.
 S04|NARRATOR|And even if you survive, he can hide in your body for years, and wake up again when you're old. Doctors call it Brill-Zinsser disease.
 S05|TYPHUS|Fever, rash, a lovely fog in the head. And then, when you least expect it, I come back.
 L08|NARRATOR|His first clear appearance in history: Spain, 1489. During the siege of Granada, the Spanish army lost about three thousand men in battle, and around seventeen thousand to a strange new fever.
