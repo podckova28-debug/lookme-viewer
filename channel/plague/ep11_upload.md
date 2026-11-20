@@ -1,10 +1,10 @@
 # Эпизод 11 · The ENTIRE History of Typhus · пакет для загрузки
 
-Файл: `out/typhus_ep11_upload.mp4` (1080p, DURATION). Обложки («Тест и сравнение»): `thumb_typhus/2_beatnapoleon.jpg`, `thumb_typhus/3_dontscratch.jpg`, `thumb_typhus/5_sucks_beatnapoleon.jpg` (ещё варианты в той же папке).
+Файл: `out/typhus_ep11_upload.mp4` (1080p, 7:40). Обложки («Тест и сравнение»): `thumb_typhus/2_beatnapoleon.jpg`, `thumb_typhus/3_dontscratch.jpg`, `thumb_typhus/5_sucks_beatnapoleon.jpg` (ещё варианты в той же папке).
 
 ## Название
 ```
-The ENTIRE History of Typhus in MINUTES Minutes
+The ENTIRE History of Typhus in 7 Minutes
 ```
 Запасные:
 ```
@@ -21,7 +21,22 @@ December 1812. A soldier of the greatest army on Earth can't stop scratching. Un
 This is the entire history of typhus, told with a little help from General Louse himself: the helpless bacterium that needs a partner, how the body louse spreads it, why typhus is not typhoid, the siege of Granada, the Black Assize of 1577, Napoleon's retreat from Moscow, Ireland's coffin ships and Grosse Île, Charles Nicolle and the bath at the hospital door, Ricketts and Prowazek, Serbia 1915 and Lenin's war on the louse, Rudolf Weigl and his lice feeders, DDT in Naples, and where typhus still waits today.
 
 CHAPTERS
-CHAPTERS_HERE
+0:00 Winter, 1812
+0:46 Who is typhus?
+1:29 Where did he come from?
+2:06 What he does to you
+2:49 Granada, 1489
+3:12 Jail fever and the Black Assize
+3:31 Napoleon's war
+4:00 The coffin ships
+4:24 Charles Nicolle and the louse
+5:04 World War I and Lenin
+5:23 Weigl's lice feeders
+5:49 DDT in Naples
+6:05 Antibiotics
+6:19 What he leaves behind
+6:49 Typhus today
+7:09 The tiny insect that decided wars
 
 Sources are listed in the pinned comment.
 
