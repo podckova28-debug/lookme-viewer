@@ -1,6 +1,6 @@
 # Эпизод 10 · The ENTIRE History of Polio · пакет для загрузки
 
-Файл: `out/polio_ep10_upload.mp4` (1080p, 8:15). Обложки (все три в «Тест и сравнение»): `thumb_ep10_poster_beware.jpg`, `thumb_ep10_poster_wanted.jpg`, `thumb_ep10_scene_pool.jpg`.
+Файл: `out/polio_ep10_upload.mp4` (1080p, 8:15). Обложки («Тест и сравнение»): `thumb_polio_sucks/2_vacation.jpg`, `thumb_polio_sucks/4_swimmingonce.jpg`, `thumb_polio_dark/2_lastswim.jpg`.
 
 ## Название
 ```
