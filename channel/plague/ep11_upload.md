@@ -1,6 +1,6 @@
 # Эпизод 11 · The ENTIRE History of Typhus · пакет для загрузки
 
-Файл: `out/typhus_ep11_upload.mp4` (1080p, 7:40). Обложки («Тест и сравнение»): `thumb_typhus/2_beatnapoleon.jpg`, `thumb_typhus/3_dontscratch.jpg`, `thumb_typhus/5_sucks_beatnapoleon.jpg` (ещё варианты в той же папке).
+Файл: `out/typhus_ep11_upload.mp4` (1080p, 7:39). Обложки («Тест и сравнение»): `thumb_typhus/2_beatnapoleon.jpg`, `thumb_typhus/3_dontscratch.jpg`, `thumb_typhus/5_sucks_beatnapoleon.jpg` (ещё варианты в той же папке).
 
 ## Название
 ```
