@@ -231,6 +231,6 @@ def beats():
         else: out['beats'].append({'hold': t, 'shots': sl})
     json.dump(out, open(os.path.join(ROOT, 'tools/plague/ep11_beats.json'), 'w'), indent=1); print(len(out['beats']), 'beats')
 
-MUSIC = [(0, 200, 'plague_a.mp3'), (196, 350, 'plague_b.mp3'), (346, 480, 'cholera_a.mp3'), (476, 'ALL', 'cholera_b.mp3')]   # open+who+origin+symptoms | wars+Napoleon+famine | Nicolle+WWI+Weigl | DDT+aftermath+today
+MUSIC = [(0, 172, 'plague_a.mp3'), (168, 268, 'plague_b.mp3'), (264, 352, 'cholera_a.mp3'), (348, 'ALL', 'cholera_b.mp3')]   # open+who+origin+symptoms | wars+Napoleon+famine | Nicolle+WWI+Weigl | DDT+aftermath+today
 
 {'lines': lines, 'frames': frames, 'beats': beats}[sys.argv[1]]()
