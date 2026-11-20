@@ -25,16 +25,16 @@ CHAPTERS
 0:46 Who is typhus?
 1:29 Where did he come from?
 2:06 What he does to you
-2:49 Granada, 1489
+2:48 Granada, 1489
 3:12 Jail fever and the Black Assize
 3:31 Napoleon's war
 4:00 The coffin ships
-4:24 Charles Nicolle and the louse
-5:04 World War I and Lenin
-5:23 Weigl's lice feeders
-5:49 DDT in Naples
-6:05 Antibiotics
-6:19 What he leaves behind
+4:23 Charles Nicolle and the louse
+5:03 World War I and Lenin
+5:22 Weigl's lice feeders
+5:48 DDT in Naples
+6:04 Antibiotics
+6:18 What he leaves behind
 6:49 Typhus today
 7:09 The tiny insect that decided wars
 
