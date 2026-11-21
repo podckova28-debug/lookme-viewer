@@ -1,0 +1,27 @@
+01 0.896 | In 2024, more than 5,000 Americans went to work and never came home.  But the risk is not spread evenly.  In some jobs opposite, it's more than 30 times higher than average.
+02 0.825 | Here are the 10 most dangerous jobs in America ranked by real death rates from the US Bureau of Labor Statistics.  For the average worker, the rate is 3.3 deaths per 100,000.  Keep that number in mind.
+03 0.902 | Number 10. Grounds maintenance workers. That's landscapers, gardeners, and the people who  climb and cut trees. Their rate? About 21 deaths per hundred thousand.
+04 0.947 | 
+05 0.824 | Number 9. The truck driver.  The rate is about 26 per 100,000.  But this job has something no other job on this list has.
+06 0.951 | 
+07 0.952 | 
+08 0.851 | Their rate, about 36 per 100,000.  Underground, the dangers are heavy machines in tight tunnels, falling rock, and very few ways out.
+09 0.943 | 
+10 0.852 | And that's part of the problem.  New workers are still learning where the danger is.  Their rate is almost 36 per 100,000, more than 10 times the average.
+11 0.927 | 6. The Pilot  This one surprises people because flying on an airliner is one of the safest ways to travel.
+12 0.899 | Most of the risk is in small planes, crop dusters, bush pilots, air taxis and small cargo flights, often in bad weather and remote places.  The rate for pilots about 37 per 100,000.
+13 0.914 | 5. The Garbage Collector  You see them every week, and probably never think of it as dangerous.
+14 0.954 | 
+15 0.927 | 4. The Ironworker  They build the steel skeletons of bridges and skyscrapers,  walking on narrow beams high above the ground.
+16 0.857 | Their rate? About 38 per 100,000. They wear harnesses, but one slip, one gust of wind,  one loose beam can still be fatal.
+17 0.945 | 
+18 0.816 | The rate jumps here, almost 49 per 100,000. That's about 15 times the average job.  And the main killer is simple. Falls.
+19 0.936 | 
+20 0.873 | Their rate is about 89 per 100,000.  When something goes wrong out there, a boat can sink fast, and the nearest rescue can  be hours away.
+21 0.919 | 1. The Logger  They cut down huge trees in steep forests, often far from any road or hospital.
+22 0.95 | 
+23 1.0 | 
+24 1.0 | 
+25 0.86 | and notice what is not on the list.  Firefighters face real danger,  but their death rate is about 4 per 100,000.  Police and other protective jobs come in around 8.5.  The deadliest jobs are often the ones we barely notice.
+26 1.0 | 
+27 0.968 | 

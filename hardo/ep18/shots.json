@@ -1,0 +1,264 @@
+{
+ "D": {
+  "LG": [
+   "cad0cd67-5b1d-492c-ad2a-732cfcaa39a5",
+   "the logger from the reference sheet (tall white man, big brown beard, orange hard hat with mesh face shield, red plaid flannel shirt, orange chainsaw chaps)"
+  ],
+  "FS": [
+   "cad0cd67-5b1d-492c-ad2a-732cfcaa39a5",
+   "the fisherman from the reference sheet (Alaska Native man, short black hair, bright orange rubber overalls and jacket, knit cap)"
+  ],
+  "RF": [
+   "cad0cd67-5b1d-492c-ad2a-732cfcaa39a5",
+   "the roofer from the reference sheet (young Latino man, white t-shirt, tan cap backwards, knee pads, tool belt)"
+  ],
+  "IW": [
+   "cad0cd67-5b1d-492c-ad2a-732cfcaa39a5",
+   "the ironworker from the reference sheet (Black woman, white hard hat, navy work shirt, yellow full-body harness)"
+  ],
+  "GC": [
+   "cad0cd67-5b1d-492c-ad2a-732cfcaa39a5",
+   "the garbage collector from the reference sheet (white man in his fifties, grey stubble, fluorescent green high-visibility shirt, work gloves)"
+  ],
+  "PI": [
+   "356246ca-911c-4f82-a4e3-1980ebf51908",
+   "the pilot from the reference sheet (white woman in her forties, short grey hair, brown leather jacket, headset)"
+  ],
+  "CH": [
+   "356246ca-911c-4f82-a4e3-1980ebf51908",
+   "the construction helper from the reference sheet (young East Asian man, yellow hard hat, orange high-visibility vest over a grey hoodie)"
+  ],
+  "MN": [
+   "356246ca-911c-4f82-a4e3-1980ebf51908",
+   "the miner from the reference sheet (South Asian man, black helmet with headlamp, dark grey coveralls with reflective stripes)"
+  ],
+  "TD": [
+   "356246ca-911c-4f82-a4e3-1980ebf51908",
+   "the truck driver from the reference sheet (bald Black man, short black beard, navy cap, red flannel shirt)"
+  ],
+  "TT": [
+   "356246ca-911c-4f82-a4e3-1980ebf51908",
+   "the tree trimmer from the reference sheet (Latina woman, dark braid, white climbing helmet, green long-sleeve shirt, climbing harness)"
+  ]
+ },
+ "S": {
+  "1": [
+   null,
+   "a quiet suburban street at dawn, fading to white",
+   "A single empty pair of work boots and a hard hat left by a front door at dawn. No people.",
+   "Close-up of a simple bar chart drawn in thin line: one very short grey bar and one bar about thirty times taller in red. No text, no numbers.",
+   "A row of ten small simple work icons in thin line: a chainsaw, a fishing boat, a roof, a steel beam, a garbage truck, a small plane, a hard hat, a mining helmet, a truck, a tree. No text.",
+   "A worker's lunchbox and thermos on a kitchen table at dawn. No people."
+  ],
+  "2": [
+   null,
+   "a plain white space",
+   "Ten small figures of different workers standing in a row far away, each in different work gear with helmets; simple, evenly spaced on white.",
+   "Close-up of an open notebook with a simple hand-drawn ranking list of ten lines, only wavy scribbles, no readable text.",
+   "A simple thermometer-like danger gauge drawn in thin line, green at the bottom and red at the top, the needle low in the green. No text, no numbers.",
+   "A desk office worker typing on a laptop, relaxed, coffee beside him."
+  ],
+  "3": [
+   "TT",
+   "a suburban garden with tall trees, fading to white",
+   "She hangs from ropes high in a tall tree, cutting a branch with a small handsaw, harness clipped to the trunk.",
+   "Close-up of her gloved hand gripping a climbing rope and carabiner.",
+   "A landscaper on a ride-on lawn mower on a big green lawn, seen from a distance.",
+   "Looking up the trunk of a very tall tree from below, the climber tiny near the top."
+  ],
+  "4": [
+   "TT",
+   "a garden with tall trees, fading to white",
+   "A large cut branch swinging down on a rope as she leans back in her harness high in the tree.",
+   "Close-up of an orange chainsaw resting on a tree branch high up. No people.",
+   "A wood chipper machine next to a pile of branches in a garden. No people.",
+   "She looks down from high in the tree, concentrating, holding the rope."
+  ],
+  "5": [
+   "TD",
+   "a long highway through flat land, fading to white",
+   "He drives a big blue semi truck at night on a long highway, headlights on.",
+   "Close-up of his hands on a big steering wheel, dashboard lights glowing.",
+   "Far view: a semi truck on a winding mountain highway in rain.",
+   "He rubs his tired eyes at the wheel, coffee cup in the cup holder."
+  ],
+  "6": [
+   "TD",
+   "a truck stop at night, fading to white",
+   "Many semi trucks in a long line on a busy highway at dusk, seen from above. No people visible.",
+   "Close-up of a coffee cup and a paper map on a truck dashboard at night. No text.",
+   "He sits alone eating in his truck cab at a truck stop at night.",
+   "Far view: a single truck on an empty highway under a starry sky."
+  ],
+  "7": [
+   "MN",
+   "an underground mine tunnel lit by lamps, fading to white",
+   "He drives a huge continuous mining machine with a spinning cutting drum into a coal wall in a low tunnel, headlamp shining.",
+   "Close-up of the spinning cutting drum with teeth biting into black coal, dust flying. No people.",
+   "Cutaway of the ground showing a narrow tunnel deep below a hill, a tiny machine inside.",
+   "Close-up of his dusty face lit by the headlamp, eyes focused."
+  ],
+  "8": [
+   "MN",
+   "a narrow mine tunnel, fading to white",
+   "He squeezes past a huge machine in a very narrow tunnel, rock ceiling just above his helmet.",
+   "Close-up of loose rocks and dust falling from a tunnel ceiling. No people.",
+   "A small emergency exit sign shape (no text, only an arrow icon) far down a long dark tunnel. No people.",
+   "Wooden and steel supports holding up a low tunnel ceiling. No people."
+  ],
+  "9": [
+   "CH",
+   "a building site with a half-built house frame, fading to white",
+   "He carries a heavy stack of wooden boards on his shoulder across a busy building site.",
+   "Close-up of his gloved hands holding a ladder steady at its base.",
+   "He sweeps debris on an upper floor of a building under construction, no railing at the edge.",
+   "A skilled carpenter showing him how to use a nail gun safely."
+  ],
+  "10": [
+   "CH",
+   "a construction site, fading to white",
+   "He looks around nervously on his first day at a busy building site, other workers and machines around him.",
+   "Close-up of a brand new clean hard hat next to an old scratched one. No people.",
+   "A forklift moving a pallet past him on the site, he steps back just in time.",
+   "Close-up of a safety briefing: a supervisor's hand pointing at a simple drawn site map, no text."
+  ],
+  "11": [
+   "PI",
+   "a small airfield with a grass runway, fading to white",
+   "She stands next to a small single-engine bush plane with big tyres on a gravel airstrip, holding a headset.",
+   "Far view: a big passenger airliner flying calmly high in a clear sky. No people visible.",
+   "Close-up of a small plane cockpit with simple round gauges. No text, no numbers.",
+   "A small plane parked by a lake with forested mountains around."
+  ],
+  "12": [
+   "PI",
+   "mountains and low clouds, fading to white",
+   "A small bush plane flying low between steep mountains in grey clouds and rain.",
+   "A small yellow crop duster plane flying very low over a green field, spraying.",
+   "She flies the small plane, looking out at bad weather, focused, hands on the yoke.",
+   "Far view: a tiny plane landing on a short gravel strip in a remote valley."
+  ],
+  "13": [
+   "GC",
+   "a suburban street at early morning with bins on the curb, fading to white",
+   "He hangs on the back step of a green garbage truck as it drives down a street in the early morning.",
+   "Close-up of a row of garbage bins on a curb at dawn. No people.",
+   "He lifts a bin and empties it into the truck, the street still dark.",
+   "Far view: a garbage truck with flashing lights on a street at dawn."
+  ],
+  "14": [
+   "GC",
+   "a busy road at dawn, fading to white",
+   "He walks behind the garbage truck while a car passes very close to him on the road.",
+   "Close-up of the truck's big hydraulic compactor at the back. No people.",
+   "Car headlights in the dark early morning next to the garbage truck. No people visible.",
+   "Close-up of his reflective vest stripes shining in car headlights."
+  ],
+  "15": [
+   "IW",
+   "a steel bridge or skyscraper frame high above a city, fading to white",
+   "She walks along a narrow steel beam high above a city, harness clipped to a cable.",
+   "Close-up of her gloved hands guiding a hanging steel beam into place.",
+   "A tall steel bridge under construction over a river, tiny workers on top.",
+   "Looking down from a steel beam to tiny streets far below, her boots at the edge."
+  ],
+  "16": [
+   "IW",
+   "the top of a steel frame building, fading to white",
+   "Wind blowing hard as she holds onto a steel column, her harness lanyard clipped on.",
+   "Close-up of a harness clip on a steel safety cable.",
+   "A steel beam swinging slightly on a crane hook above her.",
+   "She sits on a beam taking a short break, the city far below."
+  ],
+  "17": [
+   "RF",
+   "a suburban house roof, fading to white",
+   "He kneels on a steep roof nailing shingles, sun beating down, a heavy bundle of shingles on his shoulder.",
+   "Close-up of his knee pads and boots on steep roof shingles.",
+   "A ladder leaning against the edge of a high roof. No people.",
+   "Far view: a small figure working on the steep roof of a tall house."
+  ],
+  "18": [
+   "RF",
+   "a roof under construction, fading to white",
+   "He slips slightly near the edge of a steep roof and grabs a safety rope, a harness clipped to a roof anchor.",
+   "Close-up of a roof anchor and safety rope. No people.",
+   "A simple pie chart in thin line with one big red slice. No text, no numbers.",
+   "Heat waves rising from dark roof shingles in the sun. No people."
+  ],
+  "19": [
+   "FS",
+   "a fishing boat at sea with big waves, fading to white",
+   "He hauls a heavy net on the deck of a small fishing boat as waves crash over the side.",
+   "Far view: a small fishing boat climbing a huge grey wave in a storm, dark clouds as a band at the top.",
+   "Close-up of his rubber gloves pulling a thick wet rope.",
+   "A stack of heavy steel crab pots on a wet icy deck. No people."
+  ],
+  "20": [
+   "FS",
+   "stormy open sea, fading to white",
+   "A small fishing boat alone on a dark stormy sea, far from any land.",
+   "Close-up of a bright orange survival suit and life ring hanging on a cabin wall. No people.",
+   "A rescue helicopter flying far away over the sea. No people visible up close.",
+   "He holds the boat rail tightly, soaked by spray, looking at a huge wave."
+  ],
+  "21": [
+   "LG",
+   "a steep forested mountainside, fading to white",
+   "He cuts into a huge tree with his chainsaw on a steep forest slope, sawdust flying.",
+   "Far view: a steep mountain covered in tall pine trees, a logging road far below.",
+   "Close-up of his chainsaw biting into a thick trunk.",
+   "Huge cut logs stacked beside a logging truck on a dirt road. No people."
+  ],
+  "22": [
+   "LG",
+   "a forest clearing on a slope, fading to white",
+   "A giant tree falling in the forest while he runs back to safety, looking over his shoulder.",
+   "Close-up of a heavy log starting to roll down a steep slope. No people.",
+   "A bar chart with ten bars of different heights, the last bar much taller and red. No text, no numbers.",
+   "He stands among freshly cut stumps, catching his breath."
+  ],
+  "23": [
+   "LG",
+   "a quiet forest, fading to white",
+   "He stands alone looking up at a giant tree, chainsaw in hand, calm and serious.",
+   "Close-up of the base of a huge tree with a cut wedge in it. No people.",
+   "Far view: a tiny logger next to an enormous tree in a misty forest.",
+   "Close-up of his hand on the tree bark."
+  ],
+  "24": [
+   null,
+   "a white space",
+   "A row of six small icons in thin line: a ladder high up, a big machine gear, a truck, a wave, a falling tree, a road sign showing a long distance arrow. No text.",
+   "The roofer from the reference sheet on a roof and the fisherman from the reference sheet on a boat, split image top and bottom.",
+   "The logger from the reference sheet and the miner from the reference sheet standing side by side.",
+   "A simple map with a tiny worker far from a small hospital icon, a long dotted line between them. No text."
+  ],
+  "25": [
+   null,
+   "a white space",
+   "A firefighter in turnout gear and a police officer standing next to each other, calm, on white. No badges, no text, no logos.",
+   "A simple bar chart in thin line: two short bars on the left and much taller red bars on the right. No text, no numbers.",
+   "The garbage collector from the reference sheet waving from his truck to a child at a window.",
+   "The tree trimmer from the reference sheet coiling her rope after work."
+  ],
+  "26": [
+   null,
+   "a white space",
+   "A close-up of a safety harness, a hard hat and a life jacket laid out together on white. No people.",
+   "The roofer from the reference sheet clipping his harness to a roof anchor, smiling.",
+   "The truck driver from the reference sheet arriving home and hugging his daughter at the door.",
+   "A worker high up a tree, seen from the window of a calm office, a person watching from the desk."
+  ],
+  "27": [
+   null,
+   "a white space",
+   "All ten workers from both reference sheets standing in one row, smiling. Each holds only their usual item.",
+   "Close-up of a smartphone screen with simple empty speech bubbles. No people, no text.",
+   "A big round red button with a white triangle and a small yellow bell, on white. No text, no logos.",
+   "An old office desk with a typewriter and a fax machine fading away into dots. No people, no text."
+  ]
+ },
+ "C1": "cad0cd67-5b1d-492c-ad2a-732cfcaa39a5",
+ "C2": "356246ca-911c-4f82-a4e3-1980ebf51908"
+}
