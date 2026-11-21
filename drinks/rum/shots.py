@@ -82,7 +82,7 @@ SHOTS = [
  (7,3,"angry American colonists shouting at a posted notice titled 'SUGAR ACT'",""),
  (7,4,"John Adams, an older 18th-century American statesman, writing a letter at a desk with a quill","molasses = independence"),
  (7,6,"young George Washington in 1758 standing proudly beside a long table of rum barrels and punch bowls while voters line up",""),
- (7,8,"a huge steel storage tank in a 1919 city harbour, rivets popping, cracks appearing",""),
+ (7,9,"a huge steel storage tank in a 1919 city harbour, rivets popping, cracks appearing",""),
  (7,10,"a giant wave of black molasses rolling down an old Boston street, people running away, a horse cart tipping; no injuries shown",""),
  (7,12,"an old brick Boston street on a hot day with wavy sweet-smell lines, stick-figure 'you' sniffing the air","still sweet"),
  (7,13,"1920s police officers smashing barrels of liquor with axes, a 'PROHIBITION' poster on the wall",""),
@@ -112,3 +112,18 @@ def prompt(i):
     return STYLE + d + "." + note
 if __name__ == "__main__":
     print(len(SHOTS))
+
+# Extra cues that reuse an existing frame (free callbacks) or point at frames 102+ (added for pace).
+EXTRA = {
+ (3,3): 6, (3,4): 37,                 # cheap / strong
+ (4,2): 4,                            # half a pint a day
+ (4,11): 55,                          # vitamin C from a rum cocktail
+ (4,18): 4,                           # and that daily ration?
+ (5,11): 102,                         # his name on a bottle
+ (6,5): 22,                           # "comes back, as promised"
+ (6,7): 20, (6,8): 24, (6,9): 72, (6,10): 74,   # triangle cycle
+ (7,2): 103,                          # Sugar Act
+ (7,7): 104,                          # he won
+ (7,8): 24,                           # molasses had one more surprise
+ (8,13): 6, (8,14): 37, (8,15): 42,   # cheap / strong / never spoiled
+}

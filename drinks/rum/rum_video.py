@@ -1,6 +1,6 @@
 import glob, os, sys, subprocess, json, numpy as np, soundfile as sf
 sys.path.insert(0, "/home/user/lookme-viewer/drinks/rum")
-from shots import SHOTS
+from shots import SHOTS, EXTRA
 
 SR = 24000
 OUT = "/home/user/lookme-viewer/drinks/rum"
@@ -14,6 +14,9 @@ SPEED = 1.07      # narration tempo-up, pitch preserved
 # part -> {sentence_index: frame_number}; a frame lasts until the next cue
 CUES = {p: {} for p in range(9)}
 for k, (p, l, d, n) in enumerate(SHOTS, 1):
+    CUES[p][l] = k
+for (p, l), k in EXTRA.items():
+    assert l not in CUES[p], (p, l)
     CUES[p][l] = k
 
 # 1) build narration track and timeline
