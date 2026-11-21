@@ -240,6 +240,6 @@ def beats():
     json.dump(out, open(os.path.join(ROOT, 'tools/plague/ep12_beats.json'), 'w'), indent=1); print(len(out['beats']), 'beats')
 
 # Set after the voice-over exists, from the real chapter boundaries.
-MUSIC = [(0, 170, 'plague_a.mp3'), (166, 270, 'plague_b.mp3'), (266, 360, 'cholera_a.mp3'), (356, 'ALL', 'cholera_b.mp3')]
+MUSIC = [(0, 172, 'plague_a.mp3'), (168, 264, 'plague_b.mp3'), (260, 334, 'cholera_a.mp3'), (330, 'ALL', 'cholera_b.mp3')]   # open..symptoms | Philadelphia+Haiti | South+Finlay+Reed | Gorgas..end
 
 {'lines': lines, 'frames': frames, 'beats': beats}[sys.argv[1]]()

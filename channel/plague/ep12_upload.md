@@ -1,6 +1,6 @@
 # Эпизод 12 · The ENTIRE History of Yellow Fever · пакет для загрузки
 
-Файл: `out/yellowfever_ep12_upload.mp4` (1080p, длина — после сборки). Обложки — после сборки, в `thumb_yellowfever/`.
+Файл: `out/yellowfever_ep12_upload.mp4` (1080p, 7:46). Обложки («Тест и сравнение»): `thumb_yellowfever/1_sucks_louisiana.jpg`, `thumb_yellowfever/3_turnsyouyellow.jpg`, `thumb_yellowfever/4_bittenonpurpose.jpg` (ещё вариант в той же папке).
 
 ## Название
 ```
@@ -21,7 +21,19 @@ Havana, 1900. An army doctor rolls up his sleeve and lets a mosquito bite him on
 This is the entire history of yellow fever, told with a little help from Yellow Jack himself: the tiny virus that rides inside the Aedes aegypti mosquito, how it crossed the Atlantic in the water barrels of slave ships, what it does to the liver, Philadelphia in 1793, Richard Allen and Absalom Jones, the Haitian Revolution and Napoleon's lost army, the Louisiana Purchase, Memphis in 1878, Carlos Finlay, Walter Reed's volunteers, Clara Maass, William Gorgas and the Panama Canal, Max Theiler's vaccine, and where yellow fever still waits today.
 
 CHAPTERS
-(таймкоды — после сборки)
+0:00 Havana, 1900
+0:43 Who is yellow fever?
+1:21 Where did he come from?
+2:01 What he does to you
+2:48 Philadelphia, 1793
+3:34 Haiti and Napoleon
+4:20 The American South
+4:47 Carlos Finlay and Walter Reed
+5:29 Gorgas and the Panama Canal
+6:02 The vaccine
+6:20 What he leaves behind
+6:44 Yellow fever today
+7:15 The mosquito that redrew the map
 
 Sources are listed in the pinned comment.
 
