@@ -184,3 +184,7 @@ Prompt rule: every scene prompt names only the hero, the one object the line is 
   only tiny labels. Keep the smallest size at 0.72x.
 - Pace: the owner found the free voice at 0.85 too slow ("муторно"). ep18 is played at tempo 1.12 with 0.25 s between blocks
   (plan "tempo" 1.12, "gap" 0.25; assemble_ep.py and qa_check.py both read "gap" from the plan). Use this as the default.
+- Shots must change on the word they illustrate, not at equal shares of the block: at the faster pace the owner saw the picture
+  run ahead of / behind the voice. ep18 `sync.py`: Whisper word timestamps (words.json) + a cue word per shot -> shares in
+  plan_wish.json; labels sit on the shot where their fact is spoken (`place_sync.py`). Close-ups with no room get a soft
+  white band at the top or bottom (`band.py`) instead of moving the label to another shot. Do this for every episode.

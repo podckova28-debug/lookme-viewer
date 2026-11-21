@@ -43,4 +43,4 @@ C: thumb_C_10_deadliest_jobs_1280x720.jpg — "10 DEADLIEST JOBS ranked by real 
 
 ## Voice
 Narration: free OmniVoice clone of the channel narrator (speed 0.85, played 1.12x, 0.25 s between blocks); every block checked with speech recognition (block 1 re-voiced).
-1080p (faster read, 5:06): https://d2ol7oe51mr4n9.cloudfront.net/user_35NOdNk1NKtyC7RbzyCbNu39KlI/c8d3cabf-bff5-473f-babd-8d5be53cf00d.mp4
+1080p (v3, shots cut on the spoken word, 5:06): https://d2ol7oe51mr4n9.cloudfront.net/user_35NOdNk1NKtyC7RbzyCbNu39KlI/960e7ffb-a0db-4dad-a147-2813c3a02fd1.mp4

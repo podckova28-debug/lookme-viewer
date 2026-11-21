@@ -1,23 +1,23 @@
 # QA report: Most_Dangerous_Jobs_in_America.mp4
 
-Duration 306.5s, 153 sampled frames, 26 checks, 0 FAIL
+Duration 306.4s, 153 sampled frames, 26 checks, 0 FAIL
 
 | Check | Status | Detail |
 |---|---|---|
 | 1080p30 | PASS | 1920x1080 @ 30/1 |
 | audio track present | PASS | aac |
-| video/audio length match | PASS | video 306.43s audio 306.50s |
+| video/audio length match | PASS | video 306.43s audio 306.43s |
 | all voice blocks present | PASS | 27/27 |
-| narration fits the cut (no clipped ending) | PASS | planned 306.4s, final 306.5s |
+| narration fits the cut (no clipped ending) | PASS | planned 306.4s, final 306.4s |
 | srt cues cover every block (>= blocks; ep14+ splits paragraphs into short cues) | PASS | 104 cues / 27 blocks |
-| srt inside video duration | PASS | last cue ends 306.14s, video 306.50s |
+| srt inside video duration | PASS | last cue ends 306.13s, video 306.43s |
 | srt no overlaps | PASS | 0 overlaps |
 | srt text == script | PASS | 0 differ |
 | animated clips present and long enough | PASS | 0 clips; ok |
 | white-background rule (mean luminance >= 120 on all samples) | PASS | 0 dark samples of 153 |
 | no frozen video (>=6s without any motion) | PASS | 0 frozen samples |
-| no pure black frames | PASS | min luminance 132 |
-| hand-written labels inside safe area | PASS | 103 labels ok |
+| no pure black frames | PASS | min luminance 135 |
+| hand-written labels inside safe area | PASS | 106 labels ok |
 | labels do not cover drawing (ink under text < 6%) | PASS | ok |
 | arrows point at something (ink near tip) | PASS | ok |
 | arrows start outside their text and are not stubs | PASS | ok |
