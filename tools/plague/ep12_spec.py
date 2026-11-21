@@ -191,7 +191,7 @@ K('T03', "Every flower pot. Every old tyre full of rain. I'm still waiting.",
 N('L28', "For three hundred years, he decided the fate of cities, colonies and empires. He was beaten by a Cuban doctor nobody believed, volunteers who rolled up their sleeves, and a lid on a water barrel. But he's still out there, in the forest, waiting for a gap.",
   sh('c01a', C(.5, .5, 1.05)), sh('c19c', W()), sh('c25a', C(.5, .5, 1.05)), sh('c27a', W()),
   kg('c37a', C(.5, .45, 1.1), "Yellow Jack walks away along a misty jungle path at dusk, seen from behind in profile, his canary-yellow tailcoat swinging, his gloved hands clasped behind his back, a mosquito on his hat brim."))
-N('L29', "Next time: the most contagious disease known to medicine. He killed a king of Hawaii, wiped out a third of Fiji, and he's making a comeback.",
+N('L29', "Next time: the most contagious disease known to medicine. He killed a king of Hawaii, devastated Fiji, and he's making a comeback.",
   ch('c38a', C(.5, .5, 1.04), "A dark 1875 tropical Fijian village at night by the sea with thatched houses and palm trees, ominous: on the left third of the frame a single stickman man in a simple wrapped sulu cloth sits weakly against a wooden post, his round head covered in small red spots; the right side of the frame is dark empty misty sky."))
 HOLD(5.0, sh('c38a', O(), text=[label('NEXT TIME', 1380, 360, 110, style='title', pop=True, at=.2, len=4.6), label('SUBSCRIBE', 1380, 500, 64, at=.8, len=4.0)]))
 

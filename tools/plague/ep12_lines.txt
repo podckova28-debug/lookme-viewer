@@ -41,4 +41,4 @@ T01|NARRATOR|Today, he hasn't gone. He still lives in the forests of Africa and 
 T02|NARRATOR|And his mosquito, Aedes aegypti, now lives in cities across the warm parts of the world. The same mosquito carries dengue and Zika.
 T03|YELLOWJACK|Every flower pot. Every old tyre full of rain. I'm still waiting.
 L28|NARRATOR|For three hundred years, he decided the fate of cities, colonies and empires. He was beaten by a Cuban doctor nobody believed, volunteers who rolled up their sleeves, and a lid on a water barrel. But he's still out there, in the forest, waiting for a gap.
-L29|NARRATOR|Next time: the most contagious disease known to medicine. He killed a king of Hawaii, wiped out a third of Fiji, and he's making a comeback.
+L29|NARRATOR|Next time: the most contagious disease known to medicine. He killed a king of Hawaii, devastated Fiji, and he's making a comeback.
