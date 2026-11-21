@@ -1,10 +1,10 @@
 # Эпизод 13 · The ENTIRE History of Measles · пакет для загрузки
 
-Файл: `out/measles_ep13_upload.mp4` (1080p, 6:48). Обложки («Тест и сравнение»): `thumb_measles/1_sucks_9outof10.jpg`, `thumb_measles/3_mostcontagious.jpg`, `thumb_measles/4_hesback.jpg` (ещё вариант в той же папке).
+Файл: `out/measles_ep13_upload.mp4` (1080p, 6:03). Обложки («Тест и сравнение»): `thumb_measles/1_sucks_9outof10.jpg`, `thumb_measles/3_mostcontagious.jpg`, `thumb_measles/4_hesback.jpg` (ещё вариант в той же папке).
 
 ## Название
 ```
-The ENTIRE History of Measles in 7 Minutes
+The ENTIRE History of Measles in 6 Minutes
 ```
 Запасные:
 ```
@@ -22,18 +22,18 @@ This is the entire history of measles, told with a little help from the Red Jest
 
 CHAPTERS
 0:00 England, 1962
-0:38 Who is measles?
-1:06 Where did he come from?
-1:44 What he does to you
-2:35 Across the Atlantic
-2:50 A king and queen in London
-3:09 The Faroe Islands, 1846
-3:46 Fiji, 1875
-4:05 The vaccine
-4:43 Roald Dahl's letter
-5:02 What he leaves behind
-5:34 Why he came back
-6:17 Every time we forget
+0:34 Who is measles?
+0:58 Where did he come from?
+1:32 What he does to you
+2:17 Across the Atlantic
+2:30 A king and queen in London
+2:47 The Faroe Islands, 1846
+3:20 Fiji, 1875
+3:37 The vaccine
+4:11 Roald Dahl's letter
+4:27 What he leaves behind
+4:56 Why he came back
+5:34 Every time we forget
 
 Sources are listed in the pinned comment.
 

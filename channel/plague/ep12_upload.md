@@ -1,6 +1,6 @@
 # Эпизод 12 · The ENTIRE History of Yellow Fever · пакет для загрузки
 
-Файл: `out/yellowfever_ep12_upload.mp4` (1080p, 7:46). Обложки («Тест и сравнение»): `thumb_yellowfever/1_sucks_louisiana.jpg`, `thumb_yellowfever/3_turnsyouyellow.jpg`, `thumb_yellowfever/4_bittenonpurpose.jpg` (ещё вариант в той же папке).
+Файл: `out/yellowfever_ep12_upload.mp4` (1080p, 6:54). Обложки («Тест и сравнение»): `thumb_yellowfever/1_sucks_louisiana.jpg`, `thumb_yellowfever/3_turnsyouyellow.jpg`, `thumb_yellowfever/4_bittenonpurpose.jpg` (ещё вариант в той же папке).
 
 ## Название
 ```
@@ -22,18 +22,18 @@ This is the entire history of yellow fever, told with a little help from Yellow 
 
 CHAPTERS
 0:00 Havana, 1900
-0:43 Who is yellow fever?
-1:21 Where did he come from?
-2:01 What he does to you
-2:48 Philadelphia, 1793
-3:34 Haiti and Napoleon
-4:20 The American South
-4:47 Carlos Finlay and Walter Reed
-5:29 Gorgas and the Panama Canal
-6:02 The vaccine
-6:20 What he leaves behind
-6:44 Yellow fever today
-7:15 The mosquito that redrew the map
+0:38 Who is yellow fever?
+1:11 Where did he come from?
+1:47 What he does to you
+2:28 Philadelphia, 1793
+3:09 Haiti and Napoleon
+3:50 The American South
+4:14 Carlos Finlay and Walter Reed
+4:51 Gorgas and the Panama Canal
+5:21 The vaccine
+5:36 What he leaves behind
+5:58 Yellow fever today
+6:25 The mosquito that redrew the map
 
 Sources are listed in the pinned comment.
 

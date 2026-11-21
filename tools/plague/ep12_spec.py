@@ -223,7 +223,7 @@ def frames():
     json.dump(out, open(os.path.join(ROOT, 'tools/plague/ep12_frames_todo.json'), 'w'), indent=1); print(len(out), 'frames')
 
 def beats():
-    out = {'base': 'assets/plague/ep12/frames', 'keep_zoom': [], 'static': True, 'fade_in': .8, 'start': 0.0, 'lead': .45, 'gap': .6, 'max_shot': 3.2,
+    out = {'base': 'assets/plague/ep12/frames', 'keep_zoom': [], 'static': True, 'fade_in': .8, 'start': 0.0, 'lead': .35, 'gap': .35, 'max_shot': 2.6,
            'sfx_global': [{'kind': 'drone', 't': 0.0, 'args': {'d': 'ALL'}, 'gain': .9}, {'kind': 'wind', 't': 0.0, 'args': {'d': 'ALL'}, 'gain': .12}], 'beats': []}
     M = 'assets/plague/music/'
     out['music'] = [{'file': M + f, 't0': float(a0), 't1': a1, 'gain': 1.0, 'fade_in': 2.0 if a0 == 0 else 4.0, 'fade_out': 5.0 if a1 == 'ALL' else 4.0}
@@ -235,11 +235,11 @@ def beats():
             if 'text' in s: d['text'] = s['text']
             if 'sfx' in s: d['sfx'] = s['sfx']
             sl.append(d)
-        if i: out['beats'].append({'vo': f'assets/plague/ep12/vo/{i}.wav', **({'gain': 1.05} if r == 'YELLOWJACK' else {}), 'shots': sl})
+        if i: out['beats'].append({'vo': f'assets/plague/ep12/vo_fast/{i}.wav', **({'gain': 1.05} if r == 'YELLOWJACK' else {}), 'shots': sl})
         else: out['beats'].append({'hold': t, 'shots': sl})
     json.dump(out, open(os.path.join(ROOT, 'tools/plague/ep12_beats.json'), 'w'), indent=1); print(len(out['beats']), 'beats')
 
 # Set after the voice-over exists, from the real chapter boundaries.
-MUSIC = [(0, 172, 'plague_a.mp3'), (168, 264, 'plague_b.mp3'), (260, 334, 'cholera_a.mp3'), (330, 'ALL', 'cholera_b.mp3')]   # open..symptoms | Philadelphia+Haiti | South+Finlay+Reed | Gorgas..end
+MUSIC = [(0, 152, 'plague_a.mp3'), (148, 234, 'plague_b.mp3'), (230, 295, 'cholera_a.mp3'), (291, 'ALL', 'cholera_b.mp3')]   # open..symptoms | Philadelphia+Haiti | South+Finlay+Reed | Gorgas..end
 
 {'lines': lines, 'frames': frames, 'beats': beats}[sys.argv[1]]()
