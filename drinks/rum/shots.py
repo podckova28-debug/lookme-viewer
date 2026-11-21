@@ -37,7 +37,7 @@ SHOTS = [
  (2,13,"a 17th-century gentleman visitor writing in a leather journal with a quill, face disgusted","hot, hellish and terrible"),
  (2,14,"a crude old bottle with a paper label 'KILL-DEVIL', a tiny cartoon devil running away from it in panic",""),
  (2,15,"two 17th-century sailors brawling in a tavern, stools flying","rumbullion = brawl?"),
- (2,17,"handwritten word 'RUMBULLION' with the letters 'BULLION' crossed out in black marker, leaving 'RUM' circled",""),
+ (2,16,"handwritten word 'RUMBULLION' with the letters 'BULLION' crossed out in black marker, leaving 'RUM' circled",""),
  (3,0,"stick-figure 'you' coughing out flames after a sip from a tin cup",""),
  (3,1,"a dented copper pot with cloudy liquid and a small skull drawn on it","could poison you"),
  (3,2,"three wooden barrels in a row stencilled 1, 2, 3","three advantages"),
