@@ -1,0 +1,19 @@
+Эп. 28 «Нужно ли зимой включать кондиционер, чтобы окна не потели?» (21 нояб 2026). Кадры gpt_image_2_5 medium 2k 9:16 (1 кр).
+Референсы: двор 08996e99 (3141600e больше не находится — 404), Михалыч 87ee183f.
+KF k1_hook d36bb8e2-c644-41e5-a8c1-aed0cc2cd80b
+KF k2_button 5e7e2703-e489-4628-b394-c39647d93bb8
+KF k3_evap c244e8bf-57bf-4ace-8d07-bfbdb6c25da2
+KF k4_clear c7c0ddbb-51ff-4fa1-abde-43311c1a06de
+KF k5_btnfrost 041b06b6-a3fb-436d-b2d3-87566b246de8
+KF k6_comp bbe3c388-164e-405a-9aa1-25255afdf42e
+KF k7_heater 9e0e4ed7-d567-41c7-9882-f283af9303bb
+KF k8_recirc f552a277-da7f-4c0a-a261-a0191083b553
+KF k9_breath 549cb911-e94c-44ed-b7d4-b35c16e4aa40
+CLIP c1_hook 19740ee2-6e75-47d2-a4c7-322b33161025 (wan3_0 480p 9:16, 5 с)
+CLIP c2_button 2be89184-86dc-4708-8909-f22f647609e1 (3 с)
+CLIP c3_evap 7d9bd5bf-e256-445c-ace6-13b7405466ae (4 с)
+CLIP c4_clear c68908e7-754d-4f33-8f5c-7b14e3dbfe87 (5 с)
+CLIP c6_comp 8741a818-1695-4a2c-b61f-9e07051865cb (4 с)
+CLIP c7_heater 31a7a4eb-e03b-4da1-af5c-972d66751d11 (4 с)
+CLIP c8_recirc 75667c71-2670-48ae-90ef-ae8a1fc77aff (3 с)
+CLIP c9_breath 993f485b-9ff4-42a6-942f-782d75fbb1dc (4 с)
