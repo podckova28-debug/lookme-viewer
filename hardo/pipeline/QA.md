@@ -168,3 +168,17 @@ Prompt rule: every scene prompt names only the hero, the one object the line is 
 - OmniVoice garbles the phrase "The catch:" at the start of a sentence after a number ("The Ketchch", "The c***"). Use "The downside:" instead.
 - ASR scores of 0.80–0.90 on blocks full of money figures are usually just digits vs. words ("$148,000" vs "a hundred and forty-eight thousand"); read the transcript, don't re-voice on the score alone.
 - Blind QA again caught a hand that belongs to nobody (F25, fingers on the far side of a pole). Small extra hands can be patched by copying a clean strip of the same object over them.
+
+## Added for ep18
+- Thumbnails: the owner changed their mind back — keep OUR thin-line drawing and `thumb_bold.py` (PatrickHand, black/red text,
+  yellow highlight bar) on a real episode frame with white space on one side. Do not use the crisp/saturated vidIQ-like look.
+- Extras inherit the darkness of the wide shot they reference: a black F24 (icons "on a white space" came back on black) made
+  F224 and F424 dark too. Regenerate the wide on PURE WHITE first ("no glow, no vignette"), and reference the cast sheets
+  instead of the dark wide.
+- Night/mine/storm frames: a radial fade to white at the edges (keep the centre) lifts mean luminance to 135+ without
+  washing out the subject (ep18 `lighten.py`).
+- The safety filter flagged "many semi trucks in a long line on a busy highway at dusk" as nsfw; a calmer wording passed.
+- Frames shrunk onto a white canvas to make room for a label (F227, F427) leave faint seams of the off-white source
+  background: set near-white pixels (min channel >= 236) to pure white.
+- Labels: let `find()` treat very pale fog (min channel 212–228) as free space; otherwise wide shots with a soft fade get
+  only tiny labels. Keep the smallest size at 0.72x.
