@@ -13,7 +13,7 @@ p = subprocess.Popen(['ffmpeg', '-v', 'error', '-y', '-f', 'rawvideo', '-pix_fmt
                       '-c:v', 'libx264', '-crf', '15', '-preset', 'medium', '-pix_fmt', 'yuv420p', 'clips/c4_clear.mp4'], stdin=subprocess.PIPE)
 for i in range(int(DUR * FPS)):
     t = i / FPS
-    k = min(1.0, max(0.0, (t - 0.25) / 3.0)); k = k * k * (3 - 2 * k)
+    k = min(1.0, max(0.0, (t - 0.1) / 1.9)); k = k * k * (3 - 2 * k)   # план F04 ≈2,3 с: стекло чистое к 2,0 с
     edge = DASH * H - k * (DASH * H + 160) + 28 * np.sin(xx / 140 + t * 2.2)       # волнистая кромка поднимается
     m = np.clip((yy - edge) / 130.0, 0, 1)                                            # 1 — уже чисто (ниже кромки)
     f = glass * (1 - m)
