@@ -18,17 +18,17 @@ Sources:
 
 Chapters
 0:00 30 times more dangerous
-0:31 #10 Grounds maintenance workers
-0:57 #9 Truck driver
-1:24 #8 Underground mining machine operator
-1:45 #7 Construction helper
-2:11 #6 Pilot
-2:37 #5 Garbage collector
-3:00 #4 Ironworker
-3:25 #3 Roofer
-3:50 #2 Commercial fisherman
-4:12 #1 Logger
-4:46 What they have in common
+0:28 #10 Grounds maintenance workers
+0:50 #9 Truck driver
+1:14 #8 Underground mining machine operator
+1:33 #7 Construction helper
+1:56 #6 Pilot
+2:19 #5 Garbage collector
+2:39 #4 Ironworker
+3:01 #3 Roofer
+3:23 #2 Commercial fisherman
+3:43 #1 Logger
+4:13 What they have in common
 
 ## Tags
 most dangerous jobs, deadliest jobs in america, dangerous jobs, most dangerous jobs in the world, logger, commercial fishing, roofer, ironworker, garbage collector, bush pilot, truck driver, coal miner, tree trimmer, workplace deaths, bureau of labor statistics, blue collar jobs, skilled trades, animated explainer
@@ -42,5 +42,5 @@ B: thumb_B_would_you_do_this_1280x720.jpg — "Would you do THIS for a living?" 
 C: thumb_C_10_deadliest_jobs_1280x720.jpg — "10 DEADLIEST JOBS ranked by real data" (ironworker)
 
 ## Voice
-Narration: free OmniVoice clone of the channel narrator (speed 0.85); every block checked with speech recognition (block 1 re-voiced).
-1080p: https://d2ol7oe51mr4n9.cloudfront.net/user_35NOdNk1NKtyC7RbzyCbNu39KlI/4f4f0961-d284-42c5-baf0-f6e20f66eb50.mp4
+Narration: free OmniVoice clone of the channel narrator (speed 0.85, played 1.12x, 0.25 s between blocks); every block checked with speech recognition (block 1 re-voiced).
+1080p (faster read, 5:06): https://d2ol7oe51mr4n9.cloudfront.net/user_35NOdNk1NKtyC7RbzyCbNu39KlI/c8d3cabf-bff5-473f-babd-8d5be53cf00d.mp4

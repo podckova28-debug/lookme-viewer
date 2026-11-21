@@ -182,3 +182,5 @@ Prompt rule: every scene prompt names only the hero, the one object the line is 
   background: set near-white pixels (min channel >= 236) to pure white.
 - Labels: let `find()` treat very pale fog (min channel 212–228) as free space; otherwise wide shots with a soft fade get
   only tiny labels. Keep the smallest size at 0.72x.
+- Pace: the owner found the free voice at 0.85 too slow ("муторно"). ep18 is played at tempo 1.12 with 0.25 s between blocks
+  (plan "tempo" 1.12, "gap" 0.25; assemble_ep.py and qa_check.py both read "gap" from the plan). Use this as the default.

@@ -1,465 +1,465 @@
 1
-00:00:00,250 --> 00:00:05,444
+00:00:00,250 --> 00:00:04,856
 In 2024, more than five thousand Americans
 went to work and never came home.
 
 2
-00:00:05,484 --> 00:00:09,616
+00:00:04,896 --> 00:00:08,581
 But the risk is not spread evenly.
 
 3
-00:00:09,656 --> 00:00:14,010
+00:00:08,621 --> 00:00:12,509
 In some jobs, it's more than thirty times
 higher than average.
 
 4
-00:00:14,660 --> 00:00:18,210
+00:00:13,009 --> 00:00:16,169
 Here are the ten most dangerous jobs in
 America,
 
 5
-00:00:18,250 --> 00:00:20,644
+00:00:16,209 --> 00:00:18,321
 ranked by real death rates from the U.S.
 
 6
-00:00:20,684 --> 00:00:23,222
+00:00:18,361 --> 00:00:21,513
 Bureau of Labor Statistics.
 
 7
-00:00:23,262 --> 00:00:25,443
+00:00:21,553 --> 00:00:22,606
 For the average worker,
 
 8
-00:00:25,483 --> 00:00:29,707
+00:00:22,646 --> 00:00:26,413
 the rate is three point three deaths per
 hundred thousand.
 
 9
-00:00:29,747 --> 00:00:31,190
+00:00:26,453 --> 00:00:27,741
 Keep that number in mind.
 
 10
-00:00:31,840 --> 00:00:33,072
+00:00:28,241 --> 00:00:29,310
 Number ten.
 
 11
-00:00:33,112 --> 00:00:35,212
+00:00:29,350 --> 00:00:31,221
 Grounds maintenance workers.
 
 12
-00:00:35,252 --> 00:00:41,341
+00:00:31,261 --> 00:00:36,693
 That's landscapers, gardeners, and the
 people who climb and cut trees.
 
 13
-00:00:41,381 --> 00:00:45,100
+00:00:36,733 --> 00:00:40,054
 Their rate: about twenty-one deaths per
 hundred thousand.
 
 14
-00:00:45,750 --> 00:00:48,308
+00:00:40,554 --> 00:00:42,807
 The danger isn't the lawn mower.
 
 15
-00:00:48,348 --> 00:00:49,154
+00:00:42,847 --> 00:00:43,562
 It's the tree.
 
 16
-00:00:49,194 --> 00:00:52,873
+00:00:43,602 --> 00:00:46,892
 Climbers fall, cut branches swing the
 wrong way,
 
 17
-00:00:52,913 --> 00:00:56,800
+00:00:46,932 --> 00:00:50,393
 and a chainsaw high up leaves no room for
 mistakes.
 
 18
-00:00:57,450 --> 00:00:58,776
+00:00:50,893 --> 00:00:52,046
 Number nine.
 
 19
-00:00:58,816 --> 00:00:59,623
+00:00:52,086 --> 00:00:53,713
 The truck driver.
 
 20
-00:00:59,663 --> 00:01:03,440
+00:00:53,753 --> 00:00:57,022
 The rate is about twenty-six per hundred
 thousand.
 
 21
-00:01:03,480 --> 00:01:07,830
+00:00:57,062 --> 00:01:00,134
 But this job has something no other job on
 this list has.
 
 22
-00:01:08,480 --> 00:01:14,839
+00:01:00,634 --> 00:01:06,280
 More truck drivers die at work than people
 in any other single job.
 
 23
-00:01:14,879 --> 00:01:19,555
+00:01:06,320 --> 00:01:10,491
 Almost eight hundred heavy truck drivers
 in 2024.
 
 24
-00:01:19,595 --> 00:01:23,810
+00:01:10,531 --> 00:01:14,295
 Long hours, tired drivers, and every day
 on the highway.
 
 25
-00:01:24,460 --> 00:01:25,788
+00:01:14,795 --> 00:01:15,949
 Number eight.
 
 26
-00:01:25,828 --> 00:01:29,006
+00:01:15,989 --> 00:01:18,822
 The underground mining machine operator.
 
 27
-00:01:29,046 --> 00:01:34,130
+00:01:18,862 --> 00:01:23,402
 They drive the huge machines that cut coal
 and rock deep below the surface.
 
 28
-00:01:34,780 --> 00:01:38,643
+00:01:23,902 --> 00:01:27,320
 Their rate: about thirty-six per hundred
 thousand.
 
 29
-00:01:38,683 --> 00:01:43,397
+00:01:27,360 --> 00:01:31,564
 Underground, the dangers are heavy
 machines in tight tunnels, falling rock,
 
 30
-00:01:43,437 --> 00:01:44,980
+00:01:31,605 --> 00:01:32,982
 and very few ways out.
 
 31
-00:01:45,630 --> 00:01:46,782
+00:01:33,482 --> 00:01:34,480
 Number seven.
 
 32
-00:01:46,822 --> 00:01:49,154
+00:01:34,520 --> 00:01:36,598
 The construction helper.
 
 33
-00:01:49,194 --> 00:01:53,145
+00:01:36,638 --> 00:01:41,070
 They carry, lift, hold and clean up for
 the skilled trades.
 
 34
-00:01:53,185 --> 00:01:57,120
+00:01:41,110 --> 00:01:43,714
 Often it's someone's first job on a
 building site.
 
 35
-00:01:57,770 --> 00:02:00,195
+00:01:44,214 --> 00:01:46,370
 And that's part of the problem.
 
 36
-00:02:00,235 --> 00:02:04,251
+00:01:46,410 --> 00:01:50,787
 New workers are still learning where the
 danger is.
 
 37
-00:02:04,291 --> 00:02:08,934
+00:01:50,827 --> 00:01:54,151
 Their rate is almost thirty-six per
 hundred thousand,
 
 38
-00:02:08,974 --> 00:02:11,050
+00:01:54,191 --> 00:01:56,045
 more than ten times the average.
 
 39
-00:02:11,700 --> 00:02:12,866
+00:01:56,545 --> 00:01:57,555
 Number six.
 
 40
-00:02:12,906 --> 00:02:13,299
+00:01:57,595 --> 00:01:58,813
 The pilot.
 
 41
-00:02:13,339 --> 00:02:15,328
+00:01:58,853 --> 00:01:59,769
 This one surprises people,
 
 42
-00:02:15,368 --> 00:02:20,520
+00:01:59,809 --> 00:02:04,393
 because flying on an airliner is one of
 the safest ways to travel.
 
 43
-00:02:21,170 --> 00:02:26,295
+00:02:04,893 --> 00:02:09,438
 Most of the risk is in small planes: crop
 dusters, bush pilots,
 
 44
-00:02:26,335 --> 00:02:32,613
+00:02:09,478 --> 00:02:15,079
 air taxis and small cargo flights, often
 in bad weather and remote places.
 
 45
-00:02:32,653 --> 00:02:37,020
+00:02:15,119 --> 00:02:19,018
 The rate for pilots: about thirty-seven
 per hundred thousand.
 
 46
-00:02:37,670 --> 00:02:38,603
+00:02:19,518 --> 00:02:20,320
 Number five.
 
 47
-00:02:38,643 --> 00:02:39,596
+00:02:20,360 --> 00:02:21,207
 The garbage collector.
 
 48
-00:02:39,636 --> 00:02:45,760
+00:02:21,247 --> 00:02:26,714
 You see them every week, and probably
 never think of it as dangerous.
 
 49
-00:02:46,410 --> 00:02:50,099
+00:02:27,214 --> 00:02:30,477
 But their rate is about thirty-seven per
 hundred thousand.
 
 50
-00:02:50,139 --> 00:02:55,453
+00:02:30,517 --> 00:02:35,257
 They work on the road, early in the
 morning, often in the dark,
 
 51
-00:02:55,493 --> 00:03:00,170
+00:02:35,297 --> 00:02:39,473
 right next to passing traffic and their
 own heavy truck.
 
 52
-00:03:00,820 --> 00:03:02,173
+00:02:39,973 --> 00:02:41,150
 Number four.
 
 53
-00:03:02,213 --> 00:03:03,031
+00:02:41,190 --> 00:02:42,756
 The ironworker.
 
 54
-00:03:03,071 --> 00:03:08,701
+00:02:42,796 --> 00:02:46,978
 They build the steel skeletons of bridges
 and skyscrapers,
 
 55
-00:03:08,741 --> 00:03:11,740
+00:02:47,018 --> 00:02:49,696
 walking on narrow beams high above the
 ground.
 
 56
-00:03:12,390 --> 00:03:17,470
+00:02:50,196 --> 00:02:54,701
 Their rate: about thirty-eight per hundred
 thousand.
 
 57
-00:03:17,510 --> 00:03:23,179
+00:02:54,741 --> 00:02:59,798
 They wear harnesses, but one slip, one
 gust of wind, one loose beam,
 
 58
-00:03:23,219 --> 00:03:24,480
+00:02:59,838 --> 00:03:00,964
 can still be fatal.
 
 59
-00:03:25,130 --> 00:03:25,953
+00:03:01,464 --> 00:03:02,168
 Number three.
 
 60
-00:03:25,993 --> 00:03:27,442
+00:03:02,208 --> 00:03:03,498
 The roofer.
 
 61
-00:03:27,482 --> 00:03:33,519
+00:03:03,538 --> 00:03:08,923
 Every house needs a roof, and someone has
 to stand on it, on a slope,
 
 62
-00:03:33,559 --> 00:03:36,820
+00:03:08,963 --> 00:03:11,875
 in the sun or the wind, carrying heavy
 bundles.
 
 63
-00:03:37,470 --> 00:03:42,618
+00:03:12,375 --> 00:03:16,940
 The rate jumps here: almost forty-nine per
 hundred thousand.
 
 64
-00:03:42,658 --> 00:03:46,362
+00:03:16,980 --> 00:03:20,283
 That's about fifteen times the average
 job.
 
 65
-00:03:46,402 --> 00:03:48,700
+00:03:20,323 --> 00:03:22,370
 And the main killer is simple.
 
 66
-00:03:48,740 --> 00:03:49,660
+00:03:22,410 --> 00:03:23,232
 Falls.
 
 67
-00:03:50,310 --> 00:03:51,098
+00:03:23,732 --> 00:03:24,430
 Number two.
 
 68
-00:03:51,138 --> 00:03:53,359
+00:03:24,470 --> 00:03:26,423
 The commercial fisherman.
 
 69
-00:03:53,399 --> 00:03:56,624
+00:03:26,463 --> 00:03:29,339
 Out at sea, far from help, in cold water,
 
 70
-00:03:56,664 --> 00:03:59,950
+00:03:29,379 --> 00:03:32,312
 with heavy gear and a deck that never
 stops moving.
 
 71
-00:04:00,600 --> 00:04:04,768
+00:03:32,812 --> 00:03:36,503
 Their rate is about eighty-nine per
 hundred thousand.
 
 72
-00:04:04,808 --> 00:04:09,062
+00:03:36,543 --> 00:03:40,337
 When something goes wrong out there, a
 boat can sink fast,
 
 73
-00:04:09,102 --> 00:04:11,850
+00:03:40,377 --> 00:03:42,830
 and the nearest rescue can be hours away.
 
 74
-00:04:12,500 --> 00:04:13,249
+00:03:43,330 --> 00:03:45,037
 Number one.
 
 75
-00:04:13,289 --> 00:04:14,446
+00:03:45,077 --> 00:03:45,011
 The logger.
 
 76
-00:04:14,486 --> 00:04:18,563
+00:03:45,051 --> 00:03:48,712
 They cut down huge trees in steep forests,
 
 77
-00:04:18,603 --> 00:04:21,290
+00:03:48,752 --> 00:03:51,152
 often far from any road or hospital.
 
 78
-00:04:21,940 --> 00:04:26,789
+00:03:51,652 --> 00:03:55,970
 Their rate: about one hundred ten deaths
 per hundred thousand.
 
 79
-00:04:26,829 --> 00:04:31,370
+00:03:56,010 --> 00:04:00,040
 That's more than thirty times the average
 worker.
 
 80
-00:04:31,410 --> 00:04:35,858
+00:04:00,080 --> 00:04:04,048
 And most of those deaths come from the
 same thing: a falling tree,
 
 81
-00:04:35,898 --> 00:04:38,580
+00:04:04,088 --> 00:04:06,482
 or a log that rolls the wrong way.
 
 82
-00:04:39,230 --> 00:04:40,909
+00:04:06,982 --> 00:04:08,450
 Think about that.
 
 83
-00:04:40,949 --> 00:04:45,460
+00:04:08,490 --> 00:04:12,518
 A job where the most dangerous moment is
 the very thing you came to do.
 
 84
-00:04:46,110 --> 00:04:48,458
+00:04:13,018 --> 00:04:16,363
 So what do these jobs have in common?
 
 85
-00:04:48,498 --> 00:04:49,891
+00:04:16,403 --> 00:04:16,330
 Heights.
 
 86
-00:04:49,931 --> 00:04:51,132
+00:04:16,370 --> 00:04:17,471
 Heavy machines.
 
 87
-00:04:51,172 --> 00:04:52,433
+00:04:17,511 --> 00:04:18,633
 Moving vehicles.
 
 88
-00:04:52,473 --> 00:04:53,240
+00:04:18,673 --> 00:04:19,352
 Water.
 
 89
-00:04:53,280 --> 00:04:54,682
+00:04:19,392 --> 00:04:20,640
 Falling trees.
 
 90
-00:04:54,722 --> 00:04:57,320
+00:04:20,680 --> 00:04:23,000
 And very often, working far from help.
 
 91
-00:04:57,970 --> 00:05:00,793
+00:04:23,500 --> 00:04:25,989
 And notice what is not on the list.
 
 92
-00:05:00,833 --> 00:05:02,394
+00:04:26,029 --> 00:04:27,419
 Firefighters face real danger,
 
 93
-00:05:02,434 --> 00:05:07,550
+00:04:27,459 --> 00:04:32,855
 but their death rate is about four per
 hundred thousand.
 
 94
-00:05:07,590 --> 00:05:13,556
+00:04:32,895 --> 00:04:37,385
 Police and other protective jobs come in
 around eight and a half.
 
 95
-00:05:13,596 --> 00:05:17,130
+00:04:37,425 --> 00:04:40,580
 The deadliest jobs are often the ones we
 barely notice.
 
 96
-00:05:17,780 --> 00:05:20,201
+00:04:41,080 --> 00:04:43,211
 The good news: safety rules,
 
 97
-00:05:20,241 --> 00:05:24,571
+00:04:43,251 --> 00:04:47,113
 harnesses and better equipment have saved
 many lives.
 
 98
-00:05:24,611 --> 00:05:29,423
+00:04:47,153 --> 00:04:51,445
 But next time you see someone on a roof,
 on a garbage truck, or up a tree,
 
 99
-00:05:29,463 --> 00:05:30,757
+00:04:51,485 --> 00:04:52,636
 remember.
 
 100
-00:05:30,797 --> 00:05:33,460
+00:04:52,676 --> 00:04:55,054
 Their workday is a lot riskier than yours.
 
 101
-00:05:34,110 --> 00:05:36,816
+00:04:55,554 --> 00:04:57,939
 Which of these jobs would you never do?
 
 102
-00:05:36,856 --> 00:05:38,542
+00:04:57,979 --> 00:04:59,480
 Tell us in the comments.
 
 103
-00:05:38,582 --> 00:05:41,655
+00:04:59,520 --> 00:05:02,259
 And if you liked this, subscribe.
 
 104
-00:05:41,695 --> 00:05:46,050
+00:05:02,299 --> 00:05:06,137
 Next time: the jobs that might disappear
 in the next ten years.
 

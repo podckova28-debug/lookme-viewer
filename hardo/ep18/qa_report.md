@@ -1,20 +1,20 @@
 # QA report: Most_Dangerous_Jobs_in_America.mp4
 
-Duration 346.5s, 173 sampled frames, 26 checks, 0 FAIL
+Duration 306.5s, 153 sampled frames, 26 checks, 0 FAIL
 
 | Check | Status | Detail |
 |---|---|---|
 | 1080p30 | PASS | 1920x1080 @ 30/1 |
 | audio track present | PASS | aac |
-| video/audio length match | PASS | video 346.50s audio 346.50s |
+| video/audio length match | PASS | video 306.43s audio 306.50s |
 | all voice blocks present | PASS | 27/27 |
-| narration fits the cut (no clipped ending) | PASS | planned 346.4s, final 346.5s |
+| narration fits the cut (no clipped ending) | PASS | planned 306.4s, final 306.5s |
 | srt cues cover every block (>= blocks; ep14+ splits paragraphs into short cues) | PASS | 104 cues / 27 blocks |
-| srt inside video duration | PASS | last cue ends 346.05s, video 346.50s |
+| srt inside video duration | PASS | last cue ends 306.14s, video 306.50s |
 | srt no overlaps | PASS | 0 overlaps |
 | srt text == script | PASS | 0 differ |
 | animated clips present and long enough | PASS | 0 clips; ok |
-| white-background rule (mean luminance >= 120 on all samples) | PASS | 0 dark samples of 173 |
+| white-background rule (mean luminance >= 120 on all samples) | PASS | 0 dark samples of 153 |
 | no frozen video (>=6s without any motion) | PASS | 0 frozen samples |
 | no pure black frames | PASS | min luminance 132 |
 | hand-written labels inside safe area | PASS | 103 labels ok |
@@ -26,7 +26,7 @@ Duration 346.5s, 173 sampled frames, 26 checks, 0 FAIL
 | clip anomaly hints (morph / phantom / multiplication) | PASS | none |
 | clocks agree with the script | PASS | all readable clocks match |
 | isolated black marks (possible baked-in arrows/symbols) | WARN | F125: 1 at [(0.35, 0.24, 0.35, 0.75)] | F127: 2 at [(0.29, 0.44, 0.6, 0.44), (0.29, 0.75, 0.61, 0.75)] |
-| loudness around -16 LUFS | PASS | -16.1 LUFS |
+| loudness around -16 LUFS | PASS | -16.2 LUFS |
 | no silence gaps > 2.5s | PASS | 0 gaps |
 | thumbnails 1280x720 jpg < 2MB | PASS | 3 thumbnails |
 | mp4 faststart (moov first) | PASS |  |

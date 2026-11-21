@@ -1,6 +1,6 @@
 {
  "char_ref": "frames/cast1.png",
- "tempo": 1.0,
+ "tempo": 1.12,
  "blocks": [
   [
    [
@@ -2414,5 +2414,6 @@
     88
    ]
   ]
- }
+ },
+ "gap": 0.25
 }
