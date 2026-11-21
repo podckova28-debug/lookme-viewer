@@ -1,0 +1,44 @@
+C01|NARRATOR|Havana, August 1900. An American army doctor, James Carroll, rolls up his sleeve. A colleague holds a small glass tube against his arm. Inside is a mosquito that has just fed on a yellow fever patient.
+C02|NARRATOR|Days later, Carroll is burning with fever, and the whites of his eyes are turning yellow. He survives. His colleague, Jesse Lazear, is bitten too. He does not.
+C03|NARRATOR|For three centuries, this fever terrorised the Americas. It emptied cities, wrecked an emperor's plans, and turned its victims yellow.
+C04|YELLOWJACK|Sailors called me Yellow Jack. I always liked that name.
+L01|NARRATOR|So who is he? A virus. Tiny, even next to a bacterium. And he can't travel on his own. He rides inside one particular mosquito: Aedes aegypti, the one with white stripes on its legs.
+L02|NARRATOR|Only the female bites. She drinks infected blood, the virus multiplies inside her, and about a week later, every bite she gives passes him on.
+L03|NARRATOR|She bites in the daytime, and lays her eggs in clean, still water: barrels, buckets, flower pots, anything that holds rain.
+L04|YELLOWJACK|Give me one forgotten bucket of rainwater, and I'll give you an epidemic.
+L05|NARRATOR|Where did he come from? The forests of Africa. There, he passed between monkeys and forest mosquitoes, and from time to time, he jumped to people.
+L06|NARRATOR|Then came the Atlantic slave trade. Ships carried enslaved Africans to the Americas, and in the ships' water barrels, the mosquito came too. The first clear epidemics hit Barbados and Yucatán in the sixteen-forties.
+L07|NARRATOR|The Spanish called him vómito negro: black vomit. English sailors called him Yellow Jack, perhaps after the yellow flag ships raised when they had fever on board.
+L08|YELLOWJACK|Black vomit, Yellow Jack. I prefer the second one. It has style.
+S01|NARRATOR|So what does he do to you? Three to six days after the bite: sudden fever, chills, a pounding headache and a terrible backache. For most people, that's it. After a few days, they get better.
+S02|NARRATOR|But for about fifteen in every hundred, after a day of feeling better, the fever comes back. Much worse.
+S03|NARRATOR|Now he attacks the liver. The skin and eyes turn yellow. Patients bleed from the gums and the stomach, and vomit dark, old blood: the black vomit. Half of them die within about ten days.
+S04|NARRATOR|But those who survive are immune for life. And that one fact shaped who lived and who died for centuries.
+S05|YELLOWJACK|First I let you think it's over. Then I come back for the second act. I do love a dramatic return.
+L09|NARRATOR|Port cities were his favourite stage. In seventeen ninety-three, he arrived in Philadelphia, then the capital of the United States. In about three months, some five thousand people died. Roughly one in ten.
+L10|NARRATOR|Twenty thousand people fled, among them President Washington and his government. Doctor Benjamin Rush bled his patients, which only made them weaker.
+L11|NARRATOR|Rush believed Black people could not catch the fever, and asked the Free African Society for help. Richard Allen, Absalom Jones and many other Black Philadelphians nursed the sick and buried the dead. The belief was wrong. Many of them died too.
+L12|YELLOWJACK|Vinegar, bonfires, cannon smoke. They tried everything. Except looking in the water barrel.
+L13|NARRATOR|Then, Haiti. In eighteen-oh-two, Napoleon sent a large army to retake the French colony of Saint-Domingue, where enslaved people had risen up and won their freedom.
+L14|NARRATOR|The Haitian army, led by Toussaint Louverture and later Jean-Jacques Dessalines, fought back and waited for the rainy season. Yellow fever tore through the French. Tens of thousands died, including their commander, General Leclerc.
+L15|NARRATOR|In eighteen-oh-four, Haiti declared independence, the first nation born from a successful uprising of enslaved people. And Napoleon, his American plans in ruins, had already sold Louisiana to the United States.
+L16|YELLOWJACK|One nation freed, half a continent sold. Not bad for a mosquito.
+L17|NARRATOR|In the eighteen hundreds, he struck the American South again and again. In eighteen seventy-eight, an epidemic swept up the Mississippi River. In Memphis alone, more than five thousand people died, and most of the city fled.
+L18|NARRATOR|Nobody knew how he spread. Doctors blamed bad air from swamps and rotting rubbish, or the clothes and bedding of the sick. Cities burned tar barrels in the streets to clean the air.
+L19|NARRATOR|In eighteen eighty-one, a Cuban doctor, Carlos Finlay, said: it's the mosquito. For twenty years, almost nobody believed him.
+L20|NARRATOR|Then, in nineteen hundred, the US Army sent Walter Reed and a commission to Havana. Volunteers slept for weeks in a closed hut full of the soiled sheets and clothes of yellow fever patients. None of them got sick.
+L21|NARRATOR|Volunteers bitten by infected mosquitoes did get sick. The mosquito was the answer. A year later, an American nurse, Clara Maass, volunteered for the same kind of experiment. She died at twenty-five. Finlay had been right all along.
+L22|YELLOWJACK|They let my mosquitoes bite them. On purpose! Who does that?
+L23|NARRATOR|Once they knew, the fight was simple. William Gorgas and his teams emptied, covered or oiled every barrel and puddle in Havana. Within months, yellow fever was gone from the city.
+L24|NARRATOR|In Panama, the French had tried to dig a canal in the eighteen-eighties. Around twenty thousand workers died, many of yellow fever and malaria. The Americans brought in Gorgas, cleared out the mosquitoes, and in nineteen fourteen, the canal opened.
+L25|YELLOWJACK|Screens, oil, and lids on barrels. That's how they beat me? Lids!
+L26|NARRATOR|Then, in nineteen thirty-seven, Max Theiler created a vaccine called seventeen D. One shot protects for life. He won the Nobel Prize for it.
+L27|NARRATOR|Travellers to some countries still have to prove they've had it, with a vaccination certificate printed on a yellow card.
+A01|NARRATOR|For survivors, he leaves weeks of exhaustion, and then lifelong immunity. He never comes back for them.
+A02|NARRATOR|For the world, he left a free Haiti, the Louisiana Purchase, the Panama Canal, and a new rule of public health: to stop a disease, stop the insect that carries it.
+A03|YELLOWJACK|A country, a canal, half a continent. Admit it. I'm all over your maps.
+T01|NARRATOR|Today, he hasn't gone. He still lives in the forests of Africa and South America, among monkeys and mosquitoes. Every year, tens of thousands of people still die, most of them in Africa, even though one shot would protect them.
+T02|NARRATOR|And his mosquito, Aedes aegypti, now lives in cities across the warm parts of the world. The same mosquito carries dengue and Zika.
+T03|YELLOWJACK|Every flower pot. Every old tyre full of rain. I'm still waiting.
+L28|NARRATOR|For three hundred years, he decided the fate of cities, colonies and empires. He was beaten by a Cuban doctor nobody believed, volunteers who rolled up their sleeves, and a lid on a water barrel. But he's still out there, in the forest, waiting for a gap.
+L29|NARRATOR|Next time: the most contagious disease known to medicine. He helped topple an empire in the Americas, and he's making a comeback.
