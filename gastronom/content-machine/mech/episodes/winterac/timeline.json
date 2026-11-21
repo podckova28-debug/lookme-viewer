@@ -182,15 +182,14 @@
     {
      "clip": "clips/c2_button.mp4",
      "cut": true,
-     "to": 1.877,
      "w": 1.73,
-     "speed": 0.799
+     "speed": 1.0
     },
     {
      "img": "kf/k2_button.png",
      "move": "in",
      "focus": [
-      0.55,
+      0.5,
       0.4
      ],
      "amount": 0.08,
@@ -728,8 +727,8 @@
      "img": "kf/k8_recirc.png",
      "move": "in",
      "focus": [
-      0.6,
-      0.35
+      0.45,
+      0.3
      ],
      "amount": 0.12,
      "cut": true,
@@ -738,9 +737,9 @@
     {
      "clip": "clips/c8_recirc.mp4",
      "cut": true,
-     "to": 1.661,
+     "to": 1.5,
      "w": 1.51,
-     "speed": 0.963
+     "speed": 0.62
     }
    ],
    "words": [

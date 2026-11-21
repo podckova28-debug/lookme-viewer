@@ -17,3 +17,14 @@ CLIP c6_comp 8741a818-1695-4a2c-b61f-9e07051865cb (4 с)
 CLIP c7_heater 31a7a4eb-e03b-4da1-af5c-972d66751d11 (4 с)
 CLIP c8_recirc 75667c71-2670-48ae-90ef-ae8a1fc77aff (3 с)
 CLIP c9_breath 993f485b-9ff4-42a6-942f-782d75fbb1dc (4 с)
+# fix mutations (6 пальцев k8, два карандаша k1, сомнительная рука k2)
+k1v2a 49a19ef6-7210-4e85-a3e1-f9c7f0c8362f
+k1v2b 63c9417b-398b-4cf3-b39e-0848d5529e34
+k2v2a 7f544b14-735c-4a47-ba1d-7dc81cfc04d5
+k2v2b 2e233274-2072-4b90-b441-02d3aff3b847
+k8v2a d6aaf92e-8527-4d28-a424-055c504ba594
+k8v2b 531117f3-c014-4fcd-8ec6-f674ecb4d70d
+# выбраны: k1=k1v2b, k2=k2v2b, k8=k8v2a
+c1v2_hook e04bb48c-3ee7-4cde-af42-a0703d9172a4 (5 с)
+c2v2_button 4a620934-78c8-4ec1-8b6e-40237abcb883 (3 с)
+c8v2_recirc 274006f4-cd46-45ea-ab35-102d1fbfcb0d (3 с)
