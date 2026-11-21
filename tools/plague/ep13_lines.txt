@@ -1,0 +1,36 @@
+C01|NARRATOR|England, November 1962. Seven-year-old Olivia has measles. Her father, the writer Roald Dahl, sits on her bed, teaching her to make little animals out of coloured pipe cleaners.
+C02|NARRATOR|Then her fingers stop working. Within an hour she is unconscious. Within twelve hours, she is dead. The measles had reached her brain.
+C03|NARRATOR|For thousands of years, almost every child on Earth caught him. Most got better. Millions didn't.
+C04|MEASLES|Everyone gets the measles. That's what they used to say. I loved that.
+L01|NARRATOR|So who is he? A virus. And the most contagious disease known to medicine. He floats in tiny droplets when you cough, sneeze or just breathe, and he can hang in the air of a room for up to two hours after you've left.
+L02|NARRATOR|If you're not immune and you share a room with him, your chance of catching him is about nine in ten.
+L03|MEASLES|A cough, a sneeze, a breath. I'm not fussy. Nine out of ten, every time.
+L04|NARRATOR|Where did he come from? From cattle. His closest relative was rinderpest, a cattle plague. Scientists think the two split apart around two and a half thousand years ago.
+L05|NARRATOR|And he needs big crowds. He burns through a village in weeks and then has no one left to infect. To keep going, he needs a city of at least a quarter of a million people, with new babies born all the time.
+L06|NARRATOR|Around the year nine hundred, the Persian doctor al-Razi became one of the first to describe him clearly, and to tell him apart from smallpox.
+L07|MEASLES|I started out on cows. Then I found something much better. Cities. Full of children.
+S01|NARRATOR|So what does he do to you? About ten to fourteen days after you breathe him in: a high fever, a cough, a runny nose, and red, watery eyes.
+S02|NARRATOR|Then tiny white spots appear inside the cheeks. And a few days later, the rash: red blotches that start on the face, then spread down the body.
+S03|NARRATOR|Most children recover in a week or two. But he can also cause ear infections, blindness, and pneumonia, the most common cause of death. And in about one case in a thousand, he attacks the brain.
+S04|NARRATOR|And there's something scientists only discovered recently. He wipes your immune memory. The protection you built against other germs can be partly erased, leaving you open to them again for years.
+S05|MEASLES|Fever, spots, a little cough. And when I leave, I take your memories with me. Your immune memories, that is.
+L08|NARRATOR|When Europeans crossed the Atlantic, he came with them, together with smallpox. People in the Americas had never met either of them. In Mexico, in fifteen thirty-one, so many died of measles that it was remembered as the small leprosy.
+L09|NARRATOR|In eighteen twenty-four, the young king of Hawaii, Kamehameha the Second, sailed to London with his queen, Kamāmalu. They hoped to meet King George. Instead, they caught measles. Both died in London.
+L10|MEASLES|A king and a queen. Royalty. I do have excellent taste.
+L11|NARRATOR|In eighteen forty-six, measles reached the Faroe Islands, in the North Atlantic, for the first time in sixty-five years. Of about eight thousand people, more than six thousand caught it.
+L12|NARRATOR|Denmark sent a young doctor, Peter Panum. He travelled from village to village and tracked every case. He worked out that measles appears about two weeks after exposure. And he noticed something remarkable: the old people who'd had measles back in seventeen eighty-one didn't catch it again.
+L13|MEASLES|Sixty-five years I was away. They remembered me. That's the one thing I can't stand.
+L14|NARRATOR|Then Fiji, eighteen seventy-five. The Fijian king Cakobau returned from Sydney on a British warship. On board, his son had measles. Crowds came to welcome them home. Within months, tens of thousands of Fijians were dead, perhaps a quarter of the population.
+L15|NARRATOR|For most of history, measles was just a part of childhood. In the United States alone, before the vaccine, three to four million people caught it every year, and four to five hundred died.
+L16|NARRATOR|In nineteen fifty-four, in Boston, the scientists John Enders and Thomas Peebles took a sample from a sick thirteen-year-old boy, David Edmonston, and managed to grow the virus in the lab.
+L17|NARRATOR|His virus, weakened step by step, became the first measles vaccine in nineteen sixty-three. A better one by Maurice Hilleman followed. Then, the combined MMR shot. Cases collapsed.
+L18|NARRATOR|Twenty-four years after Olivia died, Roald Dahl wrote an open letter begging parents to vaccinate their children. He had already dedicated one of his most famous books, The BFG, to her.
+L19|MEASLES|Two little shots. That's all it takes to shut me out. It's humiliating.
+A01|NARRATOR|For survivors, he leaves lifelong immunity to measles, but a weakened defence against other germs for years. And very rarely, seven to ten years later, a deadly brain disease called SSPE.
+A02|NARRATOR|For the world, he left the idea of herd immunity. If about ninety-five in a hundred people are immune, he can't find enough victims, and even those who can't be vaccinated, like tiny babies, are protected.
+A03|MEASLES|Ninety-five in a hundred. Leave me one gap, just one, and I'll find it.
+T01|NARRATOR|In two thousand, the United States declared measles eliminated. But two years earlier, in nineteen ninety-eight, a fraudulent study had claimed the MMR vaccine was linked to autism. It was retracted, and its author lost his licence, but the fear spread. Vaccination rates fell. And he came back.
+T02|NARRATOR|Today, measles still infects millions every year. In twenty twenty-four, around ninety-five thousand people died, most of them children under five. And since the year two thousand, the vaccine has saved almost sixty million lives.
+T03|MEASLES|Every time you forget me, I come back. And you always forget.
+L20|NARRATOR|For thousands of years, he was a part of growing up, a disease almost every child caught and too many never survived. He was beaten by a doctor on a windswept island, a sick boy in Boston, and two small shots. But every time we forget him, he comes back.
+L21|NARRATOR|Next time: the strangling angel of children. He was stopped in Alaska by a team of sled dogs racing through a blizzard.
