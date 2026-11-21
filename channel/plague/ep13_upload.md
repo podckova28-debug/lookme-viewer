@@ -1,6 +1,6 @@
 # Эпизод 13 · The ENTIRE History of Measles · пакет для загрузки
 
-Файл: `out/measles_ep13_upload.mp4` (1080p, длина — после сборки). Обложки («Тест и сравнение»): `thumb_measles/1_sucks_9outof10.jpg`, `thumb_measles/3_mostcontagious.jpg`, `thumb_measles/4_hesback.jpg` (ещё вариант в той же папке).
+Файл: `out/measles_ep13_upload.mp4` (1080p, 6:48). Обложки («Тест и сравнение»): `thumb_measles/1_sucks_9outof10.jpg`, `thumb_measles/3_mostcontagious.jpg`, `thumb_measles/4_hesback.jpg` (ещё вариант в той же папке).
 
 ## Название
 ```
@@ -21,7 +21,19 @@ England, 1962. Seven-year-old Olivia Dahl has measles. Her father, the writer Ro
 This is the entire history of measles, told with a little help from the Red Jester himself: the most contagious disease known to medicine, how he split from a cattle plague about 2,500 years ago, why he needs big cities, al-Razi, what he does to your body and your immune memory, the Americas, the king and queen of Hawaii who died in London, Peter Panum on the Faroe Islands, Fiji in 1875, John Enders, Thomas Peebles and David Edmonston, Maurice Hilleman and the MMR vaccine, Roald Dahl's letter, herd immunity, and why measles keeps coming back.
 
 CHAPTERS
-(таймкоды — после сборки)
+0:00 England, 1962
+0:38 Who is measles?
+1:06 Where did he come from?
+1:44 What he does to you
+2:35 Across the Atlantic
+2:50 A king and queen in London
+3:09 The Faroe Islands, 1846
+3:46 Fiji, 1875
+4:05 The vaccine
+4:43 Roald Dahl's letter
+5:02 What he leaves behind
+5:34 Why he came back
+6:17 Every time we forget
 
 Sources are listed in the pinned comment.
 
