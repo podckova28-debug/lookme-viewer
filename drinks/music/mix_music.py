@@ -19,9 +19,9 @@ else:
     fc = fc.rstrip(";")
 subprocess.run(["ffmpeg","-v","error","-y",*inputs,"-filter_complex",fc,"-map","[bed]","-ar","48000","-ac","2",tmp],check=True)
 fc = (f"[1:a]aresample=48000,loudnorm=I=-16:TP=-1.5:LRA=11,aformat=channel_layouts=stereo,asplit=2[v][key];"
-      f"[2:a]atrim=0:{T+1.5:.2f},loudnorm=I=-36:TP=-20,afade=t=in:d=1.5,afade=t=out:st={T-1.5:.2f}:d=3[m];"
+      f"[2:a]atrim=0:{T+1.5:.2f},volume=-23dB,afade=t=in:d=1.5,afade=t=out:st={T-1.5:.2f}:d=3[m];"
       f"[m][key]sidechaincompress=threshold=0.03:ratio=4:attack=30:release=500:makeup=1[md];"
-      f"[v][md]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.89[a]")
+      f"[v][md]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.89,apad[a]")
 subprocess.run(["ffmpeg","-v","error","-y","-i",video,"-i",narr,"-i",tmp,"-filter_complex",fc,
-                "-map","0:v","-map","[a]","-c:v","copy","-c:a","aac","-b:a","192k","-shortest","-movflags","+faststart",out],check=True)
+                "-map","0:v","-map","[a]","-c:v","copy","-c:a","aac","-b:a","192k","-t",f"{dur(video):.3f}","-movflags","+faststart",out],check=True)
 print("MIX DONE", out, round(T,1), "s, music copies", n)
