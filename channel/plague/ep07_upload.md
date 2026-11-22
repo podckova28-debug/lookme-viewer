@@ -1,6 +1,6 @@
 # Эпизод 7 · The ENTIRE History of Tuberculosis · пакет для загрузки
 
-Файл: `out/tb_ep07_upload.mp4` (1080p, 7:49). Обложки для теста: `thumb_ep07_scene.jpg` и `thumb_ep07.jpg`.
+Файл: `out/tb_ep07_upload.mp4` (1080p, 7:48). Обложки для теста: `thumb_ep07_scene.jpg` и `thumb_ep07.jpg`.
 
 Выходит четвёртым на канале (после Чумы, Холеры и Оспы), раньше Испанки, Цинги и Бешенства. В ролике нет ссылок на другие серии; концовка анонсирует Малярию.
 
@@ -27,15 +27,15 @@ CHAPTERS
 0:40 Who is she?
 1:32 Where did she come from?
 2:05 What she does to you
-2:55 The wasting disease
+2:54 The wasting disease
 3:07 The King's Evil
 3:29 The romantic disease
 4:07 The vampire panic
-4:29 Robert Koch
+4:28 Robert Koch
 5:03 Sanatoriums
 5:25 BCG
 5:48 Streptomycin
-6:25 She comes back
+6:24 She comes back
 6:56 What she leaves behind
 7:24 She isn't finished yet
 
