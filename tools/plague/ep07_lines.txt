@@ -14,7 +14,7 @@ L09|NARRATOR|Then, people began living in crowded towns and cities, and she foun
 L10|TB|Villages were dull. Cities, now cities I loved.
 S01|NARRATOR|So what does she do to you? When she wakes up, it starts slowly. A cough that won't go away for weeks. Tiredness. A fever that comes back every evening.
 S02|NARRATOR|Then the night sweats, soaking the sheets. And she eats away at your body. Patients grew thinner and thinner. That's why it was called consumption. It consumed you.
-S03|NARRATOR|In the lungs, she carves out holes. Patients began to cough up blood, often just a few red spots on a white handkerchief. For many, it was the first sign that this was serious.
+S03|NARRATOR|In the lungs, she carves out holes. Patients began to cough up blood, sometimes just a few red spots on a white handkerchief. For many, it was the first sign that this was serious.
 S04|NARRATOR|She doesn't stop at the lungs. She can attack the bones, the kidneys, the brain, and the glands of the neck, which swell into lumps. That form had its own name: scrofula.
 S05|NARRATOR|Without treatment, about half of those who fall sick with her eventually die. It can take years.
 S06|TB|I don't rush. I take my time. Years, sometimes.
