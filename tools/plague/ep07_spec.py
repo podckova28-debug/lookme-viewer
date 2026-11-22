@@ -258,7 +258,7 @@ def frames():
     json.dump(out, open(os.path.join(ROOT, 'tools/plague/ep07_frames_todo.json'), 'w'), indent=1); print(len(out), 'frames')
 
 def beats():
-    out = {'base': 'assets/plague/ep07/frames', 'keep_zoom': [], 'static': True, 'fade_in': .8, 'start': 0.0, 'lead': .45, 'gap': .6, 'max_shot': 3.2,
+    out = {'base': 'assets/plague/ep07/frames', 'keep_zoom': [], 'static': True, 'fade_in': .8, 'start': 0.0, 'lead': .35, 'gap': .35, 'max_shot': 2.6,
            'sfx_global': [{'kind': 'drone', 't': 0.0, 'args': {'d': 'ALL'}, 'gain': .9}, {'kind': 'wind', 't': 0.0, 'args': {'d': 'ALL'}, 'gain': .12}], 'beats': []}
     M = 'assets/plague/music/'
     out['music'] = [{'file': M + f, 't0': float(a0), 't1': a1, 'gain': 1.0, 'fade_in': 2.0 if a0 == 0 else 4.0, 'fade_out': 5.0 if a1 == 'ALL' else 4.0}
@@ -270,10 +270,10 @@ def beats():
             if 'text' in s: d['text'] = s['text']
             if 'sfx' in s: d['sfx'] = s['sfx']
             sl.append(d)
-        if i: out['beats'].append({'vo': f'assets/plague/ep07/vo/{i}.wav', **({'gain': 1.05} if r == 'TB' else {}), 'shots': sl})
+        if i: out['beats'].append({'vo': f'assets/plague/ep07/vo_fast/{i}.wav', **({'gain': 1.05} if r == 'TB' else {}), 'shots': sl})
         else: out['beats'].append({'hold': t, 'shots': sl})
     json.dump(out, open(os.path.join(ROOT, 'tools/plague/ep07_beats.json'), 'w'), indent=1); print(len(out['beats']), 'beats')
 
-MUSIC = [(0, 200, 'plague_a.mp3'), (196, 345, 'plague_b.mp3'), (341, 438, 'cholera_a.mp3'), (434, 'ALL', 'cholera_b.mp3')]   # open+who+origin+symptoms | history+romance+Koch | sanatoria+cure | comeback+aftermath
+MUSIC = [(0, 179, 'plague_a.mp3'), (175, 307, 'plague_b.mp3'), (303, 389, 'cholera_a.mp3'), (385, 'ALL', 'cholera_b.mp3')]   # open+who+origin+symptoms | history+romance+Koch | sanatoria+cure | comeback+aftermath
 
 {'lines': lines, 'frames': frames, 'beats': beats}[sys.argv[1]]()

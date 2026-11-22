@@ -4,9 +4,9 @@
  "static": true,
  "fade_in": 0.8,
  "start": 0.0,
- "lead": 0.45,
- "gap": 0.6,
- "max_shot": 3.2,
+ "lead": 0.35,
+ "gap": 0.35,
+ "max_shot": 2.6,
  "sfx_global": [
   {
    "kind": "drone",
@@ -27,7 +27,7 @@
  ],
  "beats": [
   {
-   "vo": "assets/plague/ep07/vo/C01.wav",
+   "vo": "assets/plague/ep07/vo_fast/C01.wav",
    "shots": [
     {
      "img": "c01b",
@@ -102,7 +102,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/C02.wav",
+   "vo": "assets/plague/ep07/vo_fast/C02.wav",
    "shots": [
     {
      "img": "d01a",
@@ -151,7 +151,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/C03.wav",
+   "vo": "assets/plague/ep07/vo_fast/C03.wav",
    "shots": [
     {
      "img": "c03a",
@@ -200,7 +200,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/C04.wav",
+   "vo": "assets/plague/ep07/vo_fast/C04.wav",
    "gain": 1.05,
    "shots": [
     {
@@ -272,7 +272,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/L01.wav",
+   "vo": "assets/plague/ep07/vo_fast/L01.wav",
    "shots": [
     {
      "img": "d03a",
@@ -319,7 +319,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/L02.wav",
+   "vo": "assets/plague/ep07/vo_fast/L02.wav",
    "shots": [
     {
      "img": "d04a",
@@ -347,7 +347,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/L03.wav",
+   "vo": "assets/plague/ep07/vo_fast/L03.wav",
    "shots": [
     {
      "img": "d05a",
@@ -410,7 +410,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/L04.wav",
+   "vo": "assets/plague/ep07/vo_fast/L04.wav",
    "gain": 1.05,
    "shots": [
     {
@@ -430,7 +430,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/L05.wav",
+   "vo": "assets/plague/ep07/vo_fast/L05.wav",
    "shots": [
     {
      "img": "d06a",
@@ -502,7 +502,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/L06.wav",
+   "vo": "assets/plague/ep07/vo_fast/L06.wav",
    "gain": 1.05,
    "shots": [
     {
@@ -522,7 +522,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/L07.wav",
+   "vo": "assets/plague/ep07/vo_fast/L07.wav",
    "shots": [
     {
      "img": "d08a",
@@ -592,7 +592,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/L08.wav",
+   "vo": "assets/plague/ep07/vo_fast/L08.wav",
    "shots": [
     {
      "img": "c10b",
@@ -641,7 +641,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/L09.wav",
+   "vo": "assets/plague/ep07/vo_fast/L09.wav",
    "shots": [
     {
      "img": "c10c",
@@ -667,7 +667,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/L10.wav",
+   "vo": "assets/plague/ep07/vo_fast/L10.wav",
    "gain": 1.05,
    "shots": [
     {
@@ -687,7 +687,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/S01.wav",
+   "vo": "assets/plague/ep07/vo_fast/S01.wav",
    "shots": [
     {
      "img": "d10a",
@@ -757,7 +757,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/S02.wav",
+   "vo": "assets/plague/ep07/vo_fast/S02.wav",
    "shots": [
     {
      "img": "d11a",
@@ -806,7 +806,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/S03.wav",
+   "vo": "assets/plague/ep07/vo_fast/S03.wav",
    "shots": [
     {
      "img": "d12a",
@@ -869,7 +869,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/S04.wav",
+   "vo": "assets/plague/ep07/vo_fast/S04.wav",
    "shots": [
     {
      "img": "d13a",
@@ -918,7 +918,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/S05.wav",
+   "vo": "assets/plague/ep07/vo_fast/S05.wav",
    "shots": [
     {
      "img": "d14a",
@@ -960,7 +960,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/S06.wav",
+   "vo": "assets/plague/ep07/vo_fast/S06.wav",
    "gain": 1.05,
    "shots": [
     {
@@ -980,7 +980,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/L11.wav",
+   "vo": "assets/plague/ep07/vo_fast/L11.wav",
    "shots": [
     {
      "img": "c14a",
@@ -1041,7 +1041,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/L12.wav",
+   "vo": "assets/plague/ep07/vo_fast/L12.wav",
    "shots": [
     {
      "img": "c15a",
@@ -1104,7 +1104,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/L13.wav",
+   "vo": "assets/plague/ep07/vo_fast/L13.wav",
    "shots": [
     {
      "img": "c15b",
@@ -1153,7 +1153,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/L14.wav",
+   "vo": "assets/plague/ep07/vo_fast/L14.wav",
    "gain": 1.05,
    "shots": [
     {
@@ -1173,7 +1173,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/L15.wav",
+   "vo": "assets/plague/ep07/vo_fast/L15.wav",
    "shots": [
     {
      "img": "c17a",
@@ -1243,7 +1243,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/L16.wav",
+   "vo": "assets/plague/ep07/vo_fast/L16.wav",
    "shots": [
     {
      "img": "c17b",
@@ -1292,7 +1292,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/L17.wav",
+   "vo": "assets/plague/ep07/vo_fast/L17.wav",
    "shots": [
     {
      "img": "c18a",
@@ -1374,7 +1374,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/L18.wav",
+   "vo": "assets/plague/ep07/vo_fast/L18.wav",
    "gain": 1.05,
    "shots": [
     {
@@ -1394,7 +1394,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/L19.wav",
+   "vo": "assets/plague/ep07/vo_fast/L19.wav",
    "shots": [
     {
      "img": "c20a",
@@ -1462,7 +1462,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/L20.wav",
+   "vo": "assets/plague/ep07/vo_fast/L20.wav",
    "gain": 1.05,
    "shots": [
     {
@@ -1482,7 +1482,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/L21.wav",
+   "vo": "assets/plague/ep07/vo_fast/L21.wav",
    "shots": [
     {
      "img": "d19a",
@@ -1538,7 +1538,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/L22.wav",
+   "vo": "assets/plague/ep07/vo_fast/L22.wav",
    "shots": [
     {
      "img": "c22b",
@@ -1587,7 +1587,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/L23.wav",
+   "vo": "assets/plague/ep07/vo_fast/L23.wav",
    "shots": [
     {
      "img": "d21a",
@@ -1615,7 +1615,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/L24.wav",
+   "vo": "assets/plague/ep07/vo_fast/L24.wav",
    "gain": 1.05,
    "shots": [
     {
@@ -1635,7 +1635,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/L25.wav",
+   "vo": "assets/plague/ep07/vo_fast/L25.wav",
    "shots": [
     {
      "img": "c24a",
@@ -1719,7 +1719,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/L26.wav",
+   "vo": "assets/plague/ep07/vo_fast/L26.wav",
    "shots": [
     {
      "img": "c24c",
@@ -1745,7 +1745,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/L27.wav",
+   "vo": "assets/plague/ep07/vo_fast/L27.wav",
    "gain": 1.05,
    "shots": [
     {
@@ -1765,7 +1765,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/L28.wav",
+   "vo": "assets/plague/ep07/vo_fast/L28.wav",
    "shots": [
     {
      "img": "c26a",
@@ -1828,7 +1828,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/L29.wav",
+   "vo": "assets/plague/ep07/vo_fast/L29.wav",
    "shots": [
     {
      "img": "c26b",
@@ -1854,7 +1854,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/L30.wav",
+   "vo": "assets/plague/ep07/vo_fast/L30.wav",
    "shots": [
     {
      "img": "c27a",
@@ -1938,7 +1938,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/L31.wav",
+   "vo": "assets/plague/ep07/vo_fast/L31.wav",
    "shots": [
     {
      "img": "d25a",
@@ -1987,7 +1987,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/L32.wav",
+   "vo": "assets/plague/ep07/vo_fast/L32.wav",
    "shots": [
     {
      "img": "d26a",
@@ -2050,7 +2050,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/L33.wav",
+   "vo": "assets/plague/ep07/vo_fast/L33.wav",
    "gain": 1.05,
    "shots": [
     {
@@ -2070,7 +2070,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/L34.wav",
+   "vo": "assets/plague/ep07/vo_fast/L34.wav",
    "shots": [
     {
      "img": "d27a",
@@ -2119,7 +2119,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/L35.wav",
+   "vo": "assets/plague/ep07/vo_fast/L35.wav",
    "shots": [
     {
      "img": "d28a",
@@ -2189,7 +2189,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/L36.wav",
+   "vo": "assets/plague/ep07/vo_fast/L36.wav",
    "shots": [
     {
      "img": "d29a",
@@ -2238,7 +2238,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/A01.wav",
+   "vo": "assets/plague/ep07/vo_fast/A01.wav",
    "shots": [
     {
      "img": "d30a",
@@ -2294,7 +2294,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/A02.wav",
+   "vo": "assets/plague/ep07/vo_fast/A02.wav",
    "shots": [
     {
      "img": "c31a",
@@ -2343,7 +2343,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/A03.wav",
+   "vo": "assets/plague/ep07/vo_fast/A03.wav",
    "gain": 1.05,
    "shots": [
     {
@@ -2363,7 +2363,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/L37.wav",
+   "vo": "assets/plague/ep07/vo_fast/L37.wav",
    "shots": [
     {
      "img": "c01b",
@@ -2438,7 +2438,7 @@
    ]
   },
   {
-   "vo": "assets/plague/ep07/vo/L38.wav",
+   "vo": "assets/plague/ep07/vo_fast/L38.wav",
    "shots": [
     {
      "img": "c33a",
@@ -2500,30 +2500,30 @@
   {
    "file": "assets/plague/music/plague_a.mp3",
    "t0": 0.0,
-   "t1": 200,
+   "t1": 179,
    "gain": 1.0,
    "fade_in": 2.0,
    "fade_out": 4.0
   },
   {
    "file": "assets/plague/music/plague_b.mp3",
-   "t0": 196.0,
-   "t1": 345,
+   "t0": 175.0,
+   "t1": 307,
    "gain": 1.0,
    "fade_in": 4.0,
    "fade_out": 4.0
   },
   {
    "file": "assets/plague/music/cholera_a.mp3",
-   "t0": 341.0,
-   "t1": 438,
+   "t0": 303.0,
+   "t1": 389,
    "gain": 1.0,
    "fade_in": 4.0,
    "fade_out": 4.0
   },
   {
    "file": "assets/plague/music/cholera_b.mp3",
-   "t0": 434.0,
+   "t0": 385.0,
    "t1": "ALL",
    "gain": 1.0,
    "fade_in": 4.0,

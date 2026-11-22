@@ -1,12 +1,12 @@
 # Эпизод 7 · The ENTIRE History of Tuberculosis · пакет для загрузки
 
-Файл: `out/tb_ep07_upload.mp4` (1080p, 8:49). Обложки для теста: `thumb_ep07_scene.jpg` и `thumb_ep07.jpg`.
+Файл: `out/tb_ep07_upload.mp4` (1080p, 7:49). Обложки для теста: `thumb_ep07_scene.jpg` и `thumb_ep07.jpg`.
 
 Выходит четвёртым на канале (после Чумы, Холеры и Оспы), раньше Испанки, Цинги и Бешенства. В ролике нет ссылок на другие серии; концовка анонсирует Малярию.
 
 ## Название
 ```
-The ENTIRE History of Tuberculosis in 9 Minutes
+The ENTIRE History of Tuberculosis in 8 Minutes
 ```
 Запасные:
 ```
@@ -24,20 +24,20 @@ This is the entire history of tuberculosis, told with a little help from the Whi
 
 CHAPTERS
 0:00 Berlin, 1882
-0:44 Who is she?
-1:44 Where did she come from?
-2:21 What she does to you
-3:17 The wasting disease
-3:31 The King's Evil
-3:56 The romantic disease
-4:39 The vampire panic
-5:03 Robert Koch
-5:43 Sanatoriums
-6:07 BCG
-6:34 Streptomycin
-7:15 She comes back
-7:50 What she leaves behind
-8:22 She isn't finished yet
+0:40 Who is she?
+1:32 Where did she come from?
+2:05 What she does to you
+2:55 The wasting disease
+3:07 The King's Evil
+3:29 The romantic disease
+4:07 The vampire panic
+4:29 Robert Koch
+5:03 Sanatoriums
+5:25 BCG
+5:48 Streptomycin
+6:25 She comes back
+6:56 What she leaves behind
+7:24 She isn't finished yet
 
 Sources are listed in the pinned comment.
 
