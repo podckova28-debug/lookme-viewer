@@ -21,3 +21,5 @@ C04, L22 и L17 теперь распознаются верно (L17: «La Boh�
 
 ## Новое холодное открытие (сценарий 042f9fd)
 Переозвучены C01: NARRATOR George, exaggeration 0.55 (живее и напряжённее), 2–3 дубля, выбран лучший по whisper (см. qa_whisper.tsv). Прежние версии заменены.
+
+S03 перезаписана (без «often»): NARRATOR George, те же настройки (exaggeration 0.45, cfg 0.5, temperature 0.7, seed 0); 3 дубля, выбран seed 0, whisper 1.00.
