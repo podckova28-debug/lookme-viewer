@@ -1,0 +1,5 @@
+rumM_p2|4|Some planters fed it to animals.
+rumM_p4|8|And the watered down rum, became grog.
+rumM_p6|4|Rum, was money.
+rumM_p8|10|Sailors still call it Black Tot Day.
+rumM_p7|17|One smuggler, Bill McCoy, was famous for never watering his rum, down.

@@ -5,11 +5,11 @@ from shots import SHOTS, EXTRA
 SR = 24000
 OUT = "/home/user/lookme-viewer/drinks/rum"
 FR = OUT + "/frames"
-WORK = "health_out/rum_video"
+WORK = "health_out/rum_videoM"
 os.makedirs(WORK, exist_ok=True)
 GAP_SENT = 0.22   # pause between sentences (faster pace than mead)
 GAP_PART = 0.5    # pause between parts
-SPEED = 1.07      # narration tempo-up, pitch preserved
+SPEED = float(os.environ.get("SPEED", "1.0"))
 
 # part -> {sentence_index: frame_number}; a frame lasts until the next cue
 CUES = {p: {} for p in range(9)}
@@ -22,7 +22,7 @@ for (p, l), k in EXTRA.items():
 # 1) build narration track and timeline
 audio, t, timeline = [], 0.0, []
 for p in range(9):
-    fs = sorted(glob.glob(f"health_out/rum_p{p}/l*_s0.wav"))
+    fs = sorted(glob.glob(f"health_out/rumM_p{p}/l*_s0.wav"))
     for i, f in enumerate(fs):
         if i in CUES[p]:
             timeline.append((t, CUES[p][i]))
@@ -68,7 +68,7 @@ with open(f"{WORK}/segs.txt", "w") as fh:
         fh.write(f"file '{os.path.abspath(s)}'\n")
 
 # 3) concat video + narration (loudness-normalised), 1080p30 H.264 + AAC
-final = OUT + "/rum_v1_1080p.mp4"
+final = OUT + "/rum_v2_1080p.mp4"
 subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", f"{WORK}/segs.txt",
                 "-i", f"{WORK}/narration.wav",
                 "-af", "loudnorm=I=-16:TP=-1.5:LRA=11,aresample=48000",
