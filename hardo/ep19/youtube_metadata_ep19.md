@@ -37,10 +37,10 @@ jobs that will disappear, disappearing jobs, jobs that will disappear by 2035, d
 Which of these did you think had already disappeared? I honestly thought switchboard operators were gone in the 90s. Tell me yours below.
 
 ## Thumbnails
-A (main): thumb_A_2025_vs_2035_gone_1280x720.jpg — split: crowded typing pool "2025" | empty office "2035", "GONE?"
-B: thumb_B_gone_stamp_1280x720.jpg — typist with a red rubber stamp "GONE by 2035", "1 in 3 typists"
-C: thumb_C_her_job_vanishing_1280x720.jpg — typist closing her typewriter, "Her job is VANISHING" + arrow
-(v1 thumbnails rejected by the owner as not catchy: text-only on a calm frame.)
+A (main): thumb_A_gone_by_2035_dissolve_1280x720.jpg — typist dissolving into particles on navy, "GONE by 2035"
+B: thumb_B_disappearing_jobs_1280x720.jpg — four workers on yellow, the right two dissolving, "DISAPPEARING JOBS"
+C: thumb_C_is_your_job_next_1280x720.jpg — data entry clerk dissolving on red, "IS YOUR JOB NEXT?"
+(v1 text-on-frame and v2 split/stamp/arrow thumbnails were rejected by the owner: pale, calm, blend into YouTube's white UI.)
 
 ## Voice
 Narration: free OmniVoice clone (speed 0.85, played 1.12x, 0.25 s between blocks), shots cut on the spoken word; every block checked with speech recognition (blocks 4 and 16 re-voiced).
