@@ -7,7 +7,10 @@ from PIL import Image
 H = "/home/user/lookme-viewer/history"
 sys.path.insert(0, H); sys.path.insert(0, H + "/rasputin")
 from shots import S
-from chapter_card import card
+import chapter_card
+from chapter_card import card, draw_text, _cover
+from captions import CAP
+if os.environ.get('FONT'): chapter_card.FONT = H + '/fonts/' + os.environ['FONT']
 
 SR = 24000
 FR = H + "/rasputin/frames"
@@ -54,6 +57,7 @@ cuts = []
 for k, (p, l, frac, refs, desc) in enumerate(S, 1):
     s0, d = lines[(p, l)]
     cuts.append((s0 + frac * d, f"{FR}/f{k:03d}.png", k))
+CAP_Y = float(os.environ.get("CAP_Y", "0.13"))
 for (tc, p) in cards:
     first = next(k for k, s in enumerate(S, 1) if s[0] == p)
     out = f"{WORK}/img/card_{p}.jpg"; card(f"{FR}/f{first:03d}.png", TITLES[p], out)
@@ -77,14 +81,13 @@ total /= SPEED
 cuts = [(a / SPEED, b, c) for a, b, c in cuts]
 
 # 4) frames -> 1920x1080 jpgs (cover + centre crop), concat-demuxer list with durations
-def prep(src):
-    out = f"{WORK}/img/{os.path.basename(src).rsplit('.', 1)[0]}.jpg"
+def prep(src, tag=None):
     if src.startswith(WORK): return src
+    out = f"{WORK}/img/{os.path.basename(src).rsplit('.', 1)[0]}.jpg"
     if not os.path.exists(out):
-        im = Image.open(src).convert("RGB"); sc = max(1920 / im.width, 1080 / im.height)
-        im = im.resize((round(im.width * sc), round(im.height * sc)), Image.LANCZOS)
-        l, tp = (im.width - 1920) // 2, (im.height - 1080) // 2
-        im.crop((l, tp, l + 1920, tp + 1080)).save(out, quality=93)
+        im = _cover(src, 1920, 1080)
+        if isinstance(tag, int) and tag in CAP: draw_text(im, CAP[tag], 104, 1080 * CAP_Y, maxw=.9)
+        im.convert("RGB").save(out, quality=93)
     return out
 FPS = 30
 with open(f"{WORK}/list.txt", "w") as fh:
@@ -92,8 +95,8 @@ with open(f"{WORK}/list.txt", "w") as fh:
     for k, (st, src, tag) in enumerate(cuts):
         end = cuts[k + 1][0] if k + 1 < len(cuts) else total
         nf = round(end * FPS) - acc; acc += nf
-        fh.write(f"file '{os.path.abspath(prep(src))}'\nduration {nf / FPS:.6f}\n")
-    fh.write(f"file '{os.path.abspath(prep(cuts[-1][1]))}'\n")
+        fh.write(f"file '{os.path.abspath(prep(src, tag))}'\nduration {nf / FPS:.6f}\n")
+    fh.write(f"file '{os.path.abspath(prep(cuts[-1][1], cuts[-1][2]))}'\n")
 json.dump({"total": total, "cuts": [(round(a, 2), str(c)) for a, b, c in cuts]}, open(f"{WORK}/timeline.json", "w"), indent=0)
 subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", f"{WORK}/list.txt",
                 "-vf", f"fps={FPS},format=yuv420p", "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-tune", "stillimage",
