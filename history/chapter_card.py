@@ -1,34 +1,47 @@
-# Chapter title card in the reference style (Archive in Minutes): ALL CAPS comic block lettering (Luckiest Guy, Apache 2.0),
-# yellow fill, thick black outline, soft offset drop shadow, red marker/brush stroke under the text, over the dimmed chapter frame.
+# On-screen text in the reference style (Archive in Minutes): ALL CAPS, white fill, black outline, soft drop shadow,
+# hand-drawn red brush stroke under the words, over the undimmed illustration.
+#   card()    - chapter title, large, centred
+#   caption() - key fact (name / date / number), top centre, smaller
 import sys, random
-from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageEnhance
-FONT = "/home/user/lookme-viewer/history/fonts/LuckiestGuy-Regular.ttf"
-def card(bg, text, out, W=1920, H=1080, fill=(255, 214, 0)):
-    text = text.upper()
+from PIL import Image, ImageDraw, ImageFont, ImageFilter
+FONTS = "/home/user/lookme-viewer/history/fonts/"
+FONT = FONTS + "Bangers-Regular.ttf"
+RED = (229, 57, 53)
+
+def _cover(bg, W, H):
     im = Image.open(bg).convert("RGB")
     sc = max(W / im.width, H / im.height); im = im.resize((round(im.width * sc), round(im.height * sc)), Image.LANCZOS)
-    l, t = (im.width - W) // 2, (im.height - H) // 2; im = im.crop((l, t, l + W, t + H))
-    im = ImageEnhance.Brightness(im.filter(ImageFilter.GaussianBlur(3))).enhance(0.62).convert("RGBA")
-    size = 165
+    l, t = (im.width - W) // 2, (im.height - H) // 2
+    return im.crop((l, t, l + W, t + H)).convert("RGBA")
+
+def draw_text(im, text, size, cy, font=None, fill=(255, 255, 255), stroke=None, brush=True, maxw=0.88):
+    font = font or FONT; W, H = im.size; text = text.upper()
     while True:
-        f = ImageFont.truetype(FONT, size)
-        x0, y0, x1, y1 = ImageDraw.Draw(im).textbbox((0, 0), text, font=f, stroke_width=12)
-        if x1 - x0 <= W * 0.86 or size < 90: break
-        size -= 5
-    tw, th = x1 - x0, y1 - y0
-    x, y = (W - tw) // 2 - x0, int(H * 0.36) - y0
-    # red brush stroke behind the lower part of the letters
-    random.seed(len(text)); brush = Image.new("RGBA", (W, H)); bd = ImageDraw.Draw(brush)
-    bx0, bx1, by = x + x0 - 40, x + x1 + 40, y + y1 - 8
-    for i in range(26):
-        o = random.randint(-16, 16)
-        bd.line([(bx0 + random.randint(0, 35), by + o), (bx1 - random.randint(0, 35), by + o + random.randint(-6, 6))],
-                fill=(205, 30, 35, 245), width=16)
-    im.alpha_composite(brush.filter(ImageFilter.GaussianBlur(0.8)))
-    # soft offset drop shadow
-    sh = Image.new("RGBA", (W, H)); ImageDraw.Draw(sh).text((x + 10, y + 12), text, font=f, fill=(0, 0, 0, 170), stroke_width=12, stroke_fill=(0, 0, 0, 170))
-    im.alpha_composite(sh.filter(ImageFilter.GaussianBlur(6)))
-    ImageDraw.Draw(im).text((x, y), text, font=f, fill=fill, stroke_width=12, stroke_fill=(0, 0, 0))
-    im.convert("RGB").save(out, quality=92)
+        f = ImageFont.truetype(font, size); st = stroke or max(4, size // 14)
+        x0, y0, x1, y1 = ImageDraw.Draw(im).textbbox((0, 0), text, font=f, stroke_width=st)
+        if x1 - x0 <= W * maxw or size < 40: break
+        size -= 4
+    x, y = (W - (x1 - x0)) // 2 - x0, int(cy - (y1 - y0) / 2) - y0
+    if brush:   # ragged red marker stroke under the words, slightly tilted
+        random.seed(text); b = Image.new("RGBA", im.size); bd = ImageDraw.Draw(b)
+        bx0, bx1, by = x + x0 - size * .15, x + x1 + size * .15, y + y1 + size * .02
+        tilt = random.uniform(-1, 1) * size * .06; wd = max(6, size // 9)
+        for i in range(24):
+            o = random.uniform(-1, 1) * wd * .9
+            bd.line([(bx0 + random.uniform(0, size * .2), by + o - tilt), (bx1 - random.uniform(0, size * .2), by + o + tilt)],
+                    fill=RED + (240,), width=wd)
+        im.alpha_composite(b.filter(ImageFilter.GaussianBlur(0.8)))
+    sh = Image.new("RGBA", im.size); off = max(4, size // 18)
+    ImageDraw.Draw(sh).text((x + off, y + off), text, font=f, fill=(0, 0, 0, 160), stroke_width=st, stroke_fill=(0, 0, 0, 160))
+    im.alpha_composite(sh.filter(ImageFilter.GaussianBlur(max(3, size // 30))))
+    ImageDraw.Draw(im).text((x, y), text, font=f, fill=fill, stroke_width=st, stroke_fill=(0, 0, 0))
+    return im
+
+def card(bg, text, out, W=1920, H=1080, font=None):
+    im = _cover(bg, W, H); draw_text(im, text, 190, H * .42, font=font, maxw=.86); im.convert("RGB").save(out, quality=92)
+
+def caption(bg, text, out, W=1920, H=1080, font=None):
+    im = _cover(bg, W, H); draw_text(im, text, 110, H * .13, font=font, maxw=.9); im.convert("RGB").save(out, quality=92)
+
 if __name__ == "__main__":
     card(sys.argv[1], sys.argv[2], sys.argv[3])
