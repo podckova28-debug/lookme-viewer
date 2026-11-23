@@ -53,7 +53,8 @@ for k, (start, frame) in enumerate(timeline):
     fd = min(0.12, dur / 4)
     vf = (f"scale=1920:1080:force_original_aspect_ratio=decrease,pad=1920:1080:(ow-iw)/2:(oh-ih)/2:white,"
           f"fps={FPS},fade=t=in:st=0:d={fd:.2f}:color=white,format=yuv420p")
-    anim = f"{FR}/anim/f{frame:02d}.mp4"
+    anim = f"{FR}/anim_up/f{frame:02d}.mp4"
+    if not os.path.exists(anim): anim = f"{FR}/anim/f{frame:02d}.mp4"
     if os.path.exists(anim) and frame not in used_anim:
         used_anim.add(frame)
         avf = (f"scale=1920:1080:force_original_aspect_ratio=decrease,pad=1920:1080:(ow-iw)/2:(oh-ih)/2:white,"
