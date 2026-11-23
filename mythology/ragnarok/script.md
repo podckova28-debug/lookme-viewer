@@ -46,4 +46,5 @@ Out of the water, the earth rises again, green and new. Fields grow without bein
 ## Sources
 - Snorri Sturluson, Prose Edda, Gylfaginning ch. 49–53 (Baldur, Loki bound, Fimbulwinter, Ragnarök duels, rebirth)
 - Poetic Edda: Völuspá (the seeress's prophecy), Vafþrúðnismál (Lif and Lifthrasir), Hávamál 138–141 (Odin on Yggdrasil)
+- Narration says "Frey" (common English form of Freyr) so it is not confused with the goddess Freya.
 - Notes: Snorri says Hrym steers Naglfar and Loki brings Hel's people; Völuspá has Vidar stab Fenrir to the heart, Snorri has him tear the jaws. We follow Snorri.
