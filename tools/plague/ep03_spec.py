@@ -216,7 +216,7 @@ K('L48', "Eradicated. Such a strong word. I prefer: retired.",
   kg('c52a', C(.5, .45, 1.1), "The Speckled Monster sits stiffly in a gilded armchair in an empty dusty palace hall with sheets over the furniture, sipping tea from a fine china cup, pretending not to care."))
 
 # ---- consequences
-N('A01', "And for those who survived? Most were left with deep, pitted scars, especially on the face. Some went blind. But they were also immune for life, so survivors were often the ones who nursed the next wave of the sick.",
+N('A01', "And for those who survived? Most were left with deep, pitted scars, especially on the face. Some went blind. But they were also immune for life, so survivors were usually the ones who nursed the next wave of the sick.",
   ch('d05a', STILL, "A hand-drawn explainer illustration in ink and muted watercolour, cartoon stickman style, not gory, three panels: (1) a stickman's round white face with many small pitted round scars, (2) a stickman with one cloudy white eye walking with a cane, (3) a healthy stickman nurse with a few scars on her face calmly caring for a patient in bed, a small glowing shield symbol above her head. Circled digits 1-3 only, no words", text=[label('WHAT HE LEAVES BEHIND', 960, 150, 72), cap('SCARS  ·  SOMETIMES BLINDNESS  ·  IMMUNE FOR LIFE')]))
 N('A02', "And for the world? He changed it twice. By emptying the Americas, he helped European empires take over two continents. And by forcing people to fight back, he gave us the very first vaccine, and the idea behind every vaccine since.",
   sh('a02a', WL(), text=[cap('EMPIRES IN THE AMERICAS')]), sh('a02b', C(.5, .5, 1.05), text=[cap('THE FIRST VACCINE, AND EVERY ONE SINCE')]))

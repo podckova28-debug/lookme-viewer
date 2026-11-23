@@ -60,7 +60,7 @@ L45|NARRATOR|In October 1977, a hospital cook in Somalia, Ali Maow Maalin, caugh
 L46|NARRATOR|There was one more death. In 1978, a medical photographer, Janet Parker, caught smallpox from a laboratory in Birmingham, in England, and died. She was the last person known to die of smallpox.
 L47|NARRATOR|And on the eighth of May, 1980, the world declared smallpox eradicated. The only human disease ever wiped out.
 L48|SMALLPOX|Eradicated. Such a strong word. I prefer: retired.
-A01|NARRATOR|And for those who survived? Most were left with deep, pitted scars, especially on the face. Some went blind. But they were also immune for life, so survivors were often the ones who nursed the next wave of the sick.
+A01|NARRATOR|And for those who survived? Most were left with deep, pitted scars, especially on the face. Some went blind. But they were also immune for life, so survivors were usually the ones who nursed the next wave of the sick.
 A02|NARRATOR|And for the world? He changed it twice. By emptying the Americas, he helped European empires take over two continents. And by forcing people to fight back, he gave us the very first vaccine, and the idea behind every vaccine since.
 A03|SMALLPOX|Every vaccine you've ever had? You can thank me. And that cow.
 L49|NARRATOR|So is he really gone? Almost. Officially, live samples of the virus are kept in just two laboratories, one in the United States and one in Russia.
