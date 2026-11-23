@@ -1,12 +1,12 @@
 {
- "F01": "F01_q.wav",
- "F02": "F02_v.wav",
- "F03": "F03_q.wav",
- "F04": "F04_c.wav",
- "F05": "F05_c.wav",
- "F06": "F06_v.wav",
- "F07": "F07_c.wav",
- "F08": "F08_c.wav",
- "F09": "F09_q.wav",
- "F10": "F10_q.wav"
+ "F01": "F01_g.wav",
+ "F02": "F02_f.wav",
+ "F03": "F03_a.wav",
+ "F04": "F04_a.wav",
+ "F05": "F05_a.wav",
+ "F06": "F06_e.wav",
+ "F07": "F07_e.wav",
+ "F08": "F08_e.wav",
+ "F09": "F09_a.wav",
+ "F10": "F10_g.wav"
 }

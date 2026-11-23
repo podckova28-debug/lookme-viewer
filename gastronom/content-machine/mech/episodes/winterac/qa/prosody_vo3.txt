@@ -1,0 +1,10 @@
+F01.wav                        4.4s f0   109  std 4.70 st  range 13.54 st  dB± 6.2
+F02.wav                        5.3s f0   118  std 3.89 st  range 10.72 st  dB± 6.1
+F03.wav                        4.9s f0   101  std 4.66 st  range 11.80 st  dB± 5.6
+F04.wav                        3.7s f0   104  std 5.46 st  range 14.60 st  dB± 7.0
+F05.wav                        4.8s f0   114  std 3.70 st  range  9.20 st  dB± 6.4
+F06.wav                        5.7s f0   127  std 3.83 st  range  9.77 st  dB± 6.8
+F07.wav                        5.0s f0    91  std 4.70 st  range 11.15 st  dB± 6.3
+F08.wav                        4.3s f0   114  std 4.90 st  range 13.46 st  dB± 6.2
+F09.wav                        4.7s f0   129  std 5.52 st  range 14.25 st  dB± 5.7
+F10.wav                        4.1s f0   123  std 5.13 st  range 15.48 st  dB± 6.6
