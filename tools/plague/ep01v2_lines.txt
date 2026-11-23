@@ -1,0 +1,4 @@
+C01|NARRATOR|October 1347. Twelve ships drift into the harbour of Messina, in Sicily. Many of the sailors on board are dead. The rest are burning with fever, covered in strange swellings. Within days, the city orders the ships out of the harbour. It's too late.
+C03|NARRATOR|Within five years, he will kill up to half of everyone in Europe. And he'll keep coming back for centuries. A pope will hide between two giant fires. A whole village will lock itself in to stop him. And a young Isaac Newton will get the best year of his life out of it.
+C04|NARRATOR|This is the entire history of the plague: five thousand years, three pandemics, and one very bad houseguest. And the strangest part? He's still here.
+C05|PLAGUE|Miss me?
