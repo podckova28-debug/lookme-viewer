@@ -198,3 +198,5 @@ Prompt rule: every scene prompt names only the hero, the one object the line is 
   Say "PURE WHITE background, no vignette, no glow" in every outro extra. A smoky background around figures can be cleaned
   by flood-filling the background from the borders on a dilated edge mask and blending it to white.
 - Higgsfield credits ran out at the end of ep19 (monthly plan): check the balance before starting an episode.
+- Thumbnails: the owner found calm "frame + 3 lines of text" thumbnails not catchy (ep19 v1). Use a visual idea instead:
+  a before/after split with years, a red rubber stamp over the hero, or an emotional moment + arrow + 2–3 words.
