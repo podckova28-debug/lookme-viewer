@@ -254,7 +254,7 @@ def frames():
     json.dump(out, open(os.path.join(ROOT, 'tools/plague/ep03_frames_todo.json'), 'w'), indent=1); print(len(out), 'frames')
 
 def beats():
-    out = {'base': 'assets/plague/ep03/frames', 'fade_in': .8, 'start': 0.0, 'lead': .45, 'gap': .6, 'max_shot': 3.2,
+    out = {'base': 'assets/plague/ep03/frames', 'fade_in': .8, 'start': 0.0, 'lead': .35, 'gap': .35, 'max_shot': 2.6,
            'sfx_global': [{'kind': 'drone', 't': 0.0, 'args': {'d': 'ALL'}, 'gain': .9}, {'kind': 'wind', 't': 0.0, 'args': {'d': 'ALL'}, 'gain': .1}], 'beats': []}
     M = 'assets/plague/music/'   # shared library: plague_* for ancient/early modern chapters, cholera_* for 18th c. onward
     out['music'] = [{'file': M + f, 't0': float(a0), 't1': a1, 'gain': 1.0, 'fade_in': 2.0 if a0 == 0 else 4.0, 'fade_out': 5.0 if a1 == 'ALL' else 4.0}
@@ -266,10 +266,10 @@ def beats():
             if 'text' in s: d['text'] = s['text']
             if 'sfx' in s: d['sfx'] = s['sfx']
             sl.append(d)
-        if i: out['beats'].append({'vo': f'assets/plague/ep03/vo/{i}.wav', **({'gain': 1.05} if r == 'SMALLPOX' else {}), 'shots': sl})
+        if i: out['beats'].append({'vo': f'assets/plague/ep03/vo_fast/{i}.wav', **({'gain': 1.05} if r == 'SMALLPOX' else {}), 'shots': sl})
         else: out['beats'].append({'hold': t, 'shots': sl})
     json.dump(out, open(os.path.join(ROOT, 'tools/plague/ep03_beats.json'), 'w'), indent=1); print(len(out['beats']), 'beats')
 
-MUSIC = [(0, 212, 'plague_a.mp3'), (208, 298, 'plague_b.mp3'), (294, 472, 'cholera_a.mp3'), (468, 'ALL', 'cholera_b.mp3')]   # origins | crowns+Americas | variolation+Jenner | Balmis+eradication
+MUSIC = [(0, 188, 'plague_a.mp3'), (184, 264, 'plague_b.mp3'), (260, 418, 'cholera_a.mp3'), (414, 'ALL', 'cholera_b.mp3')]   # origins | crowns+Americas | variolation+Jenner | Balmis+eradication
 
 {'lines': lines, 'frames': frames, 'beats': beats}[sys.argv[1]]()

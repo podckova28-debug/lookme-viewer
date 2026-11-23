@@ -1,10 +1,10 @@
 # Эпизод 3 · The ENTIRE History of Smallpox · пакет для загрузки
 
-Файл: `out/smallpox_ep03_upload.mp4` (1080p, 11:54). Обложка: `channel/plague/thumb_ep03.jpg` (1280×720), вторая для теста — `thumb_ep03_b.jpg`.
+Файл: `out/smallpox_ep03_upload.mp4` (1080p, 10:32). Обложка: `channel/plague/thumb_ep03.jpg` (1280×720), вторая для теста — `thumb_ep03_b.jpg`.
 
 ## Название
 ```
-The ENTIRE History of Smallpox in 12 Minutes
+The ENTIRE History of Smallpox in 10 Minutes
 ```
 Запасные:
 ```
@@ -22,19 +22,19 @@ This is the entire history of smallpox, told with a little help from the Speckle
 
 CHAPTERS
 0:00 Geneva, 1980
-0:38 Who is smallpox?
-1:05 What he does to you
-2:12 Where did he come from?
-3:31 The collector of crowns
-4:09 The Americas
-4:57 Variolation
-6:23 Washington, Mozart and Lincoln
-6:57 Jenner and the cow
-7:51 The orphans' voyage
-8:32 The global hunt
-9:34 The last cases
-10:28 What he leaves behind
-11:04 Two freezers
+0:33 Who is smallpox?
+0:57 What he does to you
+1:56 Where did he come from?
+3:07 The collector of crowns
+3:40 The Americas
+4:23 Variolation
+5:39 Washington, Mozart and Lincoln
+6:09 Jenner and the cow
+6:57 The orphans' voyage
+7:33 The global hunt
+8:27 The last cases
+9:16 What he leaves behind
+9:48 Two freezers
 
 Sources are listed in the pinned comment.
 
