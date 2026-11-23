@@ -1,0 +1,27 @@
+01 0.946 | 
+02 0.923 | Here are 10 jobs that are disappearing fastest, ranked by the official projections of the  US Bureau of Labor statistics.  Not overnight.  But year by year, there will be fewer of them.
+03 0.75 | 10. The Sewing Machine Operator  About 117,000 Americans still sew clothes, bags, and furniture covers in factories.
+04 0.808 | By 2035, that number is expected to drop by about 15%.  Most clothing is now made overseas, and machines handle more of the seems.
+05 0.833 | Number 9. The Camera Repairer. There are fewer than 2,000 of them left in the whole country.
+06 0.873 | and they are expected to shrink by 15.5%.  Most photos are now taken on phones  and when a camera breaks, people usually just replace it.
+07 0.927 | 8. The File Clerk  Their job is to keep paper records in order, so anyone can find the right folder.
+08 0.912 | But paper is moving into computers.  A search box finds, in one second, what used to take a clerk 10 minutes.  Expected change, almost 16% fewer file clerks.
+09 0.914 | 7. The Carpet Installer This one is a surprise, because people still  buy homes and renovate them.
+10 0.939 | 
+11 0.914 | 6. The Print Binding Worker  They fold, stitch, glue and trim pages into books, magazines and catalogs.
+12 0.8 | Fewer things are printed today and modern binding machines need fewer hands.  Expected drop 17.5%.
+13 0.97 | 
+14 1.0 | 
+15 0.941 | 
+16 0.878 | This more of this work is now done by machines, including printers that print the molds directly.  Expected drop? 23%.
+17 0.919 | 3. The Data Entry Keyer  They type information from forms, invoices and records into computers all day long.
+18 0.909 | Today, scanners and software read most of those forms automatically.  That's why a quarter of these jobs are expected to disappear.  About 34,000 of them.
+19 0.914 | 2. The switchboard operator.  They answer calls and connect each caller to the right person or department.
+20 0.82 | Now an automated menu does that.  Press 1 for sales, press 2 for support.  Switchboard jobs are expected to fall by 26%  and classic telephone operators by almost 28%.
+21 0.923 | 1. The word processor and typist. Their whole job is typing up letters, reports and documents  for other people.
+22 0.931 | 
+23 0.519 | From about 40,000 typists today to about 26,000 in 2035.
+24 1.0 | 
+25 1.0 | 
+26 1.0 | 
+27 1.0 | 

@@ -10,6 +10,7 @@ Ideas the owner asked to keep for future episodes. Newest first.
 - Ep9 warehouse worker — script ready in `ep9/`, not produced yet.
 
 ## Done
+- ep19 10 Jobs That Are Disappearing the Fastest (Next 10 Years) (countdown by BLS 2025-35 projected % decline)
 - ep18 The Most Dangerous Jobs in America (Ranked by Real Death Rates) (countdown by BLS CFOI 2024 fatal injury rates per 100,000)
 - ep17 Jobs That Pay Insanely Well (But Nobody Wants Them) (countdown by BLS median pay, May 2025)
 - ep16 The Loneliest Jobs on Earth (countdown + bonus; lighthouse keeper … Concordia, bonus Apollo command module pilot)

@@ -1,0 +1,417 @@
+1
+00:00:00,250 --> 00:00:01,567
+By twenty thirty-five,
+
+2
+00:00:01,607 --> 00:00:06,499
+America is expected to have almost six
+million more jobs than today.
+
+3
+00:00:06,539 --> 00:00:09,065
+But some jobs are going the other way.
+
+4
+00:00:09,105 --> 00:00:09,267
+Fast.
+
+5
+00:00:09,307 --> 00:00:13,393
+A few could lose a third of their workers
+in just ten years.
+
+6
+00:00:13,893 --> 00:00:17,459
+Here are ten jobs that are disappearing
+fastest,
+
+7
+00:00:17,499 --> 00:00:20,544
+ranked by the official projections of the
+U.S.
+
+8
+00:00:20,584 --> 00:00:21,772
+Bureau of Labor Statistics.
+
+9
+00:00:21,812 --> 00:00:23,265
+Not overnight.
+
+10
+00:00:23,305 --> 00:00:26,777
+But year by year, there will be fewer of
+them.
+
+11
+00:00:27,277 --> 00:00:28,479
+Number ten.
+
+12
+00:00:28,519 --> 00:00:30,665
+The sewing machine operator.
+
+13
+00:00:30,705 --> 00:00:34,720
+About a hundred and seventeen thousand
+Americans still sew clothes,
+
+14
+00:00:34,760 --> 00:00:37,705
+bags and furniture covers in factories.
+
+15
+00:00:38,205 --> 00:00:39,924
+By twenty thirty-five,
+
+16
+00:00:39,964 --> 00:00:42,934
+that number is expected to drop by about
+fifteen percent.
+
+17
+00:00:42,974 --> 00:00:46,908
+Most clothing is now made overseas,
+
+18
+00:00:46,948 --> 00:00:49,545
+and machines handle more of the simple
+seams.
+
+19
+00:00:50,045 --> 00:00:51,143
+Number nine.
+
+20
+00:00:51,183 --> 00:00:51,953
+The camera repairer.
+
+21
+00:00:51,993 --> 00:00:55,777
+There are fewer than two thousand of them
+left in the whole country.
+
+22
+00:00:56,277 --> 00:01:01,101
+And they are expected to shrink by fifteen
+and a half percent.
+
+23
+00:01:01,141 --> 00:01:03,655
+Most photos are now taken on phones.
+
+24
+00:01:03,695 --> 00:01:07,107
+And when a camera breaks, people usually
+just replace it.
+
+25
+00:01:07,607 --> 00:01:08,624
+Number eight.
+
+26
+00:01:08,664 --> 00:01:10,260
+The file clerk.
+
+27
+00:01:10,300 --> 00:01:12,904
+Their job is to keep paper records in
+order,
+
+28
+00:01:12,944 --> 00:01:15,232
+so anyone can find the right folder.
+
+29
+00:01:15,732 --> 00:01:18,471
+But paper is moving into computers.
+
+30
+00:01:18,511 --> 00:01:23,668
+A search box finds in one second what used
+to take a clerk ten minutes.
+
+31
+00:01:23,708 --> 00:01:27,848
+Expected change: almost sixteen percent
+fewer file clerks.
+
+32
+00:01:28,348 --> 00:01:29,153
+Number seven.
+
+33
+00:01:29,193 --> 00:01:31,538
+The carpet installer.
+
+34
+00:01:31,578 --> 00:01:35,732
+This one is a surprise, because people
+still buy homes and renovate them.
+
+35
+00:01:36,232 --> 00:01:39,583
+The difference is the floor itself.
+
+36
+00:01:39,623 --> 00:01:45,309
+Many homeowners now choose wood, tile or
+vinyl instead of wall-to-wall carpet.
+
+37
+00:01:45,349 --> 00:01:48,107
+Expected drop: about sixteen percent.
+
+38
+00:01:48,607 --> 00:01:49,346
+Number six.
+
+39
+00:01:49,386 --> 00:01:51,811
+The print binding worker.
+
+40
+00:01:51,851 --> 00:01:57,196
+They fold, stitch, glue and trim pages
+into books, magazines and catalogs.
+
+41
+00:01:57,696 --> 00:02:03,279
+Fewer things are printed today, and modern
+binding machines need fewer hands.
+
+42
+00:02:03,319 --> 00:02:06,062
+Expected drop: seventeen and a half
+percent.
+
+43
+00:02:06,562 --> 00:02:07,377
+Number five.
+
+44
+00:02:07,417 --> 00:02:08,871
+The telemarketer.
+
+45
+00:02:08,911 --> 00:02:13,071
+The person who calls you at dinner time to
+sell you something.
+
+46
+00:02:13,571 --> 00:02:16,592
+Most people no longer answer unknown
+numbers,
+
+47
+00:02:16,632 --> 00:02:20,820
+and many sales calls are now made by
+automated systems.
+
+48
+00:02:20,860 --> 00:02:24,482
+About one in five telemarketing jobs is
+expected to vanish.
+
+49
+00:02:24,982 --> 00:02:25,786
+Number four.
+
+50
+00:02:25,826 --> 00:02:27,079
+The foundry mold maker.
+
+51
+00:02:27,119 --> 00:02:32,968
+They shape the sand molds that hot liquid
+metal is poured into,
+
+52
+00:02:33,008 --> 00:02:35,821
+to make engine parts, pipes and machine
+pieces.
+
+53
+00:02:36,321 --> 00:02:38,980
+More of this work is now done by machines,
+
+54
+00:02:39,020 --> 00:02:42,229
+including printers that print the molds
+directly.
+
+55
+00:02:42,269 --> 00:02:44,839
+Expected drop: twenty-three percent.
+
+56
+00:02:45,339 --> 00:02:46,528
+Number three.
+
+57
+00:02:46,568 --> 00:02:48,392
+The data entry keyer.
+
+58
+00:02:48,432 --> 00:02:53,069
+They type information from forms, invoices
+and records into computers,
+
+59
+00:02:53,109 --> 00:02:53,929
+all day long.
+
+60
+00:02:54,429 --> 00:02:59,157
+Today, scanners and software read most of
+those forms automatically.
+
+61
+00:02:59,197 --> 00:03:03,238
+That's why a quarter of these jobs are
+expected to disappear.
+
+62
+00:03:03,278 --> 00:03:04,911
+About thirty-four thousand of them.
+
+63
+00:03:05,411 --> 00:03:06,580
+Number two.
+
+64
+00:03:06,620 --> 00:03:08,237
+The switchboard operator.
+
+65
+00:03:08,277 --> 00:03:12,357
+They answer calls and connect each caller
+to the right person or department.
+
+66
+00:03:12,857 --> 00:03:15,884
+Now an automated menu does that.
+
+67
+00:03:15,924 --> 00:03:18,100
+Press one for sales, press two for
+support.
+
+68
+00:03:18,140 --> 00:03:22,913
+Switchboard jobs are expected to fall by
+twenty-six percent,
+
+69
+00:03:22,953 --> 00:03:26,241
+and classic telephone operators by almost
+twenty-eight.
+
+70
+00:03:26,741 --> 00:03:27,562
+Number one.
+
+71
+00:03:27,602 --> 00:03:29,834
+The word processor and typist.
+
+72
+00:03:29,874 --> 00:03:35,759
+Their whole job is typing up letters,
+reports and documents for other people.
+
+73
+00:03:36,259 --> 00:03:39,858
+But today almost everyone types their own
+emails and documents,
+
+74
+00:03:39,898 --> 00:03:42,106
+and voice typing does the rest.
+
+75
+00:03:42,146 --> 00:03:45,798
+Expected drop: more than thirty-four
+percent.
+
+76
+00:03:45,838 --> 00:03:47,741
+That's one in every three jobs.
+
+77
+00:03:48,241 --> 00:03:50,847
+From about forty thousand typists today,
+
+78
+00:03:50,887 --> 00:03:54,286
+to about twenty-six thousand in twenty
+thirty-five.
+
+79
+00:03:54,786 --> 00:03:57,130
+So what do these jobs have in common?
+
+80
+00:03:57,170 --> 00:04:02,178
+Most of them repeat one task all day:
+typing, filing, connecting calls,
+
+81
+00:04:02,218 --> 00:04:04,197
+sewing the same seam.
+
+82
+00:04:04,237 --> 00:04:08,205
+And a repeated task is exactly what
+machines and software do best.
+
+83
+00:04:08,705 --> 00:04:10,906
+But notice what is not happening.
+
+84
+00:04:10,946 --> 00:04:13,475
+These jobs are not vanishing overnight.
+
+85
+00:04:13,515 --> 00:04:18,489
+Tens of thousands of people still do them
+today.
+
+86
+00:04:18,529 --> 00:04:22,698
+And their skills, like precision, patience
+and dealing with people,
+
+87
+00:04:22,738 --> 00:04:24,545
+carry over to new jobs.
+
+88
+00:04:25,045 --> 00:04:29,525
+So if your job is on this list, it's not a
+reason to panic.
+
+89
+00:04:29,565 --> 00:04:33,902
+It's a reason to learn the next skill a
+little earlier than everyone else.
+
+90
+00:04:34,402 --> 00:04:38,667
+Which of these jobs did you think had
+already disappeared?
+
+91
+00:04:38,707 --> 00:04:39,488
+Tell us in the comments.
+
+92
+00:04:39,528 --> 00:04:42,351
+And if you liked this, subscribe.
+
+93
+00:04:42,391 --> 00:04:45,530
+Next time: the new jobs that will appear
+in the next ten years.
+

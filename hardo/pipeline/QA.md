@@ -188,3 +188,13 @@ Prompt rule: every scene prompt names only the hero, the one object the line is 
   run ahead of / behind the voice. ep18 `sync.py`: Whisper word timestamps (words.json) + a cue word per shot -> shares in
   plan_wish.json; labels sit on the shot where their fact is spoken (`place_sync.py`). Close-ups with no room get a soft
   white band at the top or bottom (`band.py`) instead of moving the label to another shot. Do this for every episode.
+
+## Added for ep19
+- Owner: single-job episodes confuse the algorithm for now; make multi-job countdowns.
+- Background people still turn into cast members whenever a cast sheet is a reference (F22 coworkers, F210 floor layers,
+  F212 tablet reader, F413 family, F08 box carriers). For any shot whose people are NOT the hero, pass only the style ref
+  and describe the extras in full (hair, clothes) so they cannot match the sheet.
+- Extras that reference a stand-in id for the outro (cast sheet) can come back on black/smoky backgrounds (F127, F227).
+  Say "PURE WHITE background, no vignette, no glow" in every outro extra. A smoky background around figures can be cleaned
+  by flood-filling the background from the borders on a dilated edge mask and blending it to white.
+- Higgsfield credits ran out at the end of ep19 (monthly plan): check the balance before starting an episode.
