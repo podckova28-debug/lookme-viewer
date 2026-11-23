@@ -11,7 +11,7 @@ S02|NARRATOR|A few days later, red spots appeared in the mouth and on the tongue
 S03|NARRATOR|The spots swelled into bumps, then into blisters, then into hard, deep pustules that felt like little peas stuck under the skin. And unlike chickenpox, they all grew at the same pace.
 S04|NARRATOR|After about two weeks, they crusted over into scabs, and the scabs fell off, leaving pitted scars. Until the very last scab was gone, you could still pass him on.
 S05|SMALLPOX|I take my time. Quality work always does.
-L04|NARRATOR|Around three in ten people who caught the classic form died. Survivors were often left with deep scars, and some went blind.
+L04|NARRATOR|Around three in ten people who caught the classic form died. Many survivors were left with deep scars, and some went blind.
 L05|SMALLPOX|I like to leave a little something to remember me by.
 L06|NARRATOR|The English called him: the speckled monster.
 L07|NARRATOR|But where did he come from? His closest living relatives are poxviruses of animals: one found in African gerbils, and camelpox. So scientists think smallpox began as a virus of rodents that jumped into humans, probably somewhere in Africa or Asia, and adapted to us so well that it stopped needing animals at all.

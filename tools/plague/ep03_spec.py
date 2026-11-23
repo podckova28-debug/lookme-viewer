@@ -82,7 +82,7 @@ N('S04', "After about two weeks, they crusted over into scabs, and the scabs fel
   ch('d04a', STILL, "A hand-drawn explainer illustration in ink and muted watercolour, cartoon stickman style, not gory. Three portraits of the same stickman's round white face in a row with arrows between: (1) face covered in small dark crusts, (2) the crusts flaking off and falling like little flakes, (3) the face healed but left with small pitted round marks. A little calendar under them showing about three weeks. Circled digits 1-3 only, no words", text=[cap('SCABS AFTER ~2 WEEKS  ·  CONTAGIOUS UNTIL THE LAST ONE FALLS')]))
 K('S05', "I take my time. Quality work always does.",
   kg('s05a', C(.5, .45, 1.1), "The Speckled Monster sits at an ornate desk writing slowly with a quill in a leather ledger, an hourglass beside him, his other hand resting flat on the desk."))
-N('L04', "Around three in ten people who caught the classic form died. Survivors were often left with deep scars, and some went blind.",
+N('L04', "Around three in ten people who caught the classic form died. Many survivors were left with deep scars, and some went blind.",
   sh('c10a', STILL, "Ten small simple wooden figurines standing in a row on a dark wooden shelf, candle light. Symbolic still life.",
      text=[label('3 / 10', 960, 260, 110)]))
 K('L05', "I like to leave a little something to remember me by.",
