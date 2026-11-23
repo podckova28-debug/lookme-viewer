@@ -124,7 +124,7 @@ N('L54', [D16, img('L54', 1)]); N('L55', v1('L55'), role='PLAGUE'); N('L56', v1(
 N('L57', [dict(x) if x['img'] != 'f44a' else S('g44a') for x in v1('L57')]); N('L58', v1('L58'))
 HOLD(5.0, [dict([b for b in V1['beats'] if 'hold' in b][-1]['shots'][0])])
 
-MUSIC = [(0, 178, 'plague_a.mp3'), (174, 352, 'plague_b.mp3'), (348, 'ALL', 'plague_a.mp3')]
+MUSIC = [(0, 226, 'plague_a.mp3'), (222, 412, 'plague_b.mp3'), (408, 'ALL', 'plague_a.mp3')]
 
 def frames():
     out = [{'img': k, 'prompt': v, 'refs': []} for k, v in NEW.items()]
