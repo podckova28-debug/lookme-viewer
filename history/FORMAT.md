@@ -35,3 +35,9 @@ GPT Image 2.6, quality high, 16:9, две их обложки как image_refer
 Промпт: «clean editorial comic style, even medium-weight black outlines, flat muted colours, minimal cel shading, no dramatic lighting,
 pale light-blue sky, calm simple background; title: huge heavy black slab-serif letters with a thin white outline top right, years below
 in bold condensed serif, small black circle emblem». Без референса модель рисует слишком «живописно» и контрастно (v1 отклонён).
+
+## Надписи в нашем видео (утверждено)
+- Шрифт Bebas Neue, всё заглавными, белая заливка, чёрная обводка, мягкая тень, неровная красная полоса снизу, вверху по центру.
+- Титры глав тем же стилем, крупно по центру, картинка не затемняется.
+- Подписи с фактами (имена, даты, числа) почти на каждом кадре, 1–4 слова.
+- Без разделителей-точек «·» и прочих «ИИшных» значков; если нужно два факта — запятая или «AND».
