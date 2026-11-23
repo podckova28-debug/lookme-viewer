@@ -24,3 +24,5 @@ Phipps, Nelmes, Balmis, Isabel Zendal, Rahima Banu, Ali Maow Maalin, vacca.
 ## Рубрики «Симптомы» и «Последствия» (дозапись)
 S01–S05, A01–A03 (тексты из `tools/plague/ep03_lines.txt` ветки сценариста). Голоса и настройки те же; S05 и A03 — SMALLPOX.
 Whisper: все 8 ≥ 0.92 (S03: «pustules» записано как «postules», S01: число цифрами), строки добавлены в конец `qa_whisper.tsv`.
+
+L04 и A01 перезаписаны без «often» (NARRATOR George, те же настройки, seed 0), whisper 1.00 у обеих.
