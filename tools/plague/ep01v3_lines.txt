@@ -1,0 +1,12 @@
+S01|NARRATOR|So what does he actually do to you? Two to seven days after the flea bite: a sudden fever, chills, a pounding headache and crushing weakness.
+S02|NARRATOR|Then the lymph nodes closest to the bite swell into a bubo: a hard, painful lump in the groin, the armpit or the neck, sometimes as big as an egg.
+S03|NARRATOR|If he gets into the blood, the skin can bleed underneath and darken, and fingers, toes and the tip of the nose can turn black and die.
+S04|NARRATOR|And if he reaches the lungs, every cough passes him straight to the next person. No rats needed. Untreated, that form kills almost everyone within days.
+SP1|PLAGUE|Lumps, fever, black fingertips. I like to leave a signature.
+J01|NARRATOR|That was the first plague pandemic. It came back in waves for two hundred years and may have killed millions around the Mediterranean, although historians still argue about how many.
+B01|NARRATOR|Churchyards filled up, so towns dug huge pits for the dead. In Siena, one chronicler wrote that no bells rang for the funerals anymore. There were simply too many.
+T01|NARRATOR|To be fair, a Japanese scientist, Kitasato Shibasaburō, was hunting him in the same city at the same time. But Yersin's description was the one that held up.
+T02|NARRATOR|This third pandemic killed more than twelve million people. The World Health Organization only declared it over in 1959.
+A01|NARRATOR|For survivors, he left scars where the buboes had been, and sometimes missing fingers or toes.
+A02|NARRATOR|For the world, he left quarantine, plague hospitals, city health boards, and weekly lists of the dead, some of the first public health statistics in history.
+A03|PLAGUE|Half of your public health system was built to keep me out. I'm flattered.
