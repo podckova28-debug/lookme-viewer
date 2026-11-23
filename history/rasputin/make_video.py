@@ -8,8 +8,9 @@ H = "/home/user/lookme-viewer/history"
 sys.path.insert(0, H); sys.path.insert(0, H + "/rasputin")
 from shots import S
 import chapter_card
-from chapter_card import card, draw_text, _cover
+from chapter_card import card, draw_text, _cover, best_spot
 from captions import CAP
+from captions import POS
 if os.environ.get('FONT'): chapter_card.FONT = H + '/fonts/' + os.environ['FONT']
 
 SR = 24000
@@ -86,7 +87,9 @@ def prep(src, tag=None):
     out = f"{WORK}/img/{os.path.basename(src).rsplit('.', 1)[0]}.jpg"
     if not os.path.exists(out):
         im = _cover(src, 1920, 1080)
-        if isinstance(tag, int) and tag in CAP: draw_text(im, CAP[tag], 104, 1080 * CAP_Y, maxw=.9)
+        if isinstance(tag, int) and tag in CAP:
+            cx, cy, sz = POS.get(tag) or best_spot(im, CAP[tag])
+            draw_text(im, CAP[tag], sz, cy, maxw=.9, cx=cx)
         im.convert("RGB").save(out, quality=93)
     return out
 FPS = 30

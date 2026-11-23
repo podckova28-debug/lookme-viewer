@@ -28,3 +28,6 @@ CAP = {
  137: "\"THE MAD MONK\"", 138: "BONEY M, 1978", 139: "MILLIONS KNOW HIS NAME", 140: "BARELY LITERATE",
  141: "NO OFFICE, NO ARMY, NO LAW", 143: "THE POISON FAILED",
 }
+
+# manual caption placement overrides: shot -> (cx, cy, size) in 1920x1080 pixels
+POS = {30: (1560, 960, 104)}
