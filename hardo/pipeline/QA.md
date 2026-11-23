@@ -201,6 +201,7 @@ Prompt rule: every scene prompt names only the hero, the one object the line is 
 - Thumbnails: the owner found calm "frame + 3 lines of text" thumbnails not catchy (ep19 v1). Use a visual idea instead:
   a before/after split with years, a red rubber stamp over the hero, or an emotional moment + arrow + 2–3 words.
 - ep19 v2 (split / stamp / arrow on frames) was rejected too: at phone size every thumbnail from a frame is pale beige on
-  white and blends into YouTube's white UI. What finally worked: a cast-sheet figure cut out (flood-fill alpha) and shown
-  big (head to knees) on a solid saturated background (navy / yellow / red), the metaphor drawn (the worker dissolving
-  into particles, pipeline/thumb_dissolve.py) and 1–3 huge words with a thick outline. Check thumbnails at 320x180.
+  white and blends into YouTube's white UI. The saturated "worker dissolving" set (pipeline/thumb_dissolve.py)
+  was rejected as well: the owner wants the channel style kept (episode frame + thumb_bold, like ep15/ep18). Within that
+  style pick a frame where something is happening (the last worker among covered machines, an idle typist among people
+  typing) and write a short hook question or number, 2–3 lines. Check thumbnails at 320x180.
