@@ -1,0 +1,145 @@
+"""Plague ep01, v3 (retention rework 2: rubrics, three pandemics, clean frames): new cold open with open loops, cut digressions, 13 new explainer diagrams, fast pacing.
+Reuses the v1 frames and voice-over (tools/plague/ep01_beats.json, assets/plague/ep01/vo_full), sped up 1.1x into vo_fast/.
+
+  python3 tools/plague/ep01v2_spec.py frames  -> tools/plague/ep01v2_frames_todo.json (new diagrams only)
+  python3 tools/plague/ep01v2_spec.py beats   -> tools/plague/ep01v2_beats.json
+"""
+import sys, json, os
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+V1 = json.load(open(os.path.join(ROOT, 'tools/plague/ep01_beats.json')))
+COLD = json.load(open(os.path.join(ROOT, 'tools/plague/cold_open_beats.json')))
+SHOTS = {}
+for b in V1['beats']:
+    if 'vo' in b: SHOTS[os.path.basename(b['vo'])[:-4]] = b['shots']
+def v1(i): return [dict(s) for s in SHOTS[i]]
+def img(i, idx): return dict(SHOTS[i][idx])
+
+STYLE = ("2D animated history explainer frame, 16:9, no text. Hand-drawn ink illustration, clean black outlines, fine cross-hatching, "
+         "muted grey-sepia palette with warm candle light accents. Not gory.")
+DIAG = ("Draw ONLY the diagram described below, filling the whole frame, as ONE single picture: no extra rows, no extra panels, no comic strips above or below it. "
+        "A hand-drawn explainer diagram in ink and muted watercolour on aged parchment, clean and readable like an old textbook plate, "
+        "numbered stages as small circled digits with drawn arrows. No words, no letters, no numbers on axes, only circled digits. Not gory. ")
+SN = ("Any human figure is a simple STICKMAN: plain white round head, two dot eyes, no nose, thin black stick arms and legs, small black mitten hands; "
+      "each has exactly two arms and two hands. ")
+NOPEOPLE = ' No people and no human figures anywhere in the picture.'
+STILL = [[.5, .5, 1.0], [.5, .5, 1.02]]
+def cap(t, **k): return {'text': t, 'x': 960, 'y': 985, 'size': 50, 'at': .3, **k}
+NEW = {}
+def dg(name, p, people=False, text=None):
+    NEW[name] = STYLE + ' ' + (SN if people else '') + DIAG + p + ('' if people else NOPEOPLE)
+    s = {'img': name, 'from': STILL[0], 'to': STILL[1], 'w': 1}
+    if text: s['text'] = [cap(text)]
+    return s
+
+D01 = dg('d01', "A scale comparison: one single human hair drawn as a thick vertical column on the left (1), a grain of dust drawn smaller (2), and a tiny rod-shaped bacterium drawn as a minute dark capsule (3) under a big magnifying glass.", text='About 1/50 the width of a hair')
+D02 = dg('d02', "Four numbered steps in one row: (1) a cartoon flea drinking from a black rat, (2) a cut-away view of the flea's gut packed with a dark clump of tiny rods blocking it, (3) the hungry flea with a grumbling stomach jumping, (4) the flea biting a bare stick arm again and again with small motion lines.", people=True, text="A blocked flea bites everything")
+D03 = dg('d03', "A simple standing stickman outline front view with three numbered magnifier circles: (1) a swollen lump in the armpit, (2) a drop of blood with tiny dark rods in it, (3) a pair of lungs with a small cough cloud.", people=True, text='Lumps, blood, lungs')
+D04 = dg('d04', "ONLY two rows of ten identical plain stickman icons, one row above the other: in the top row (1) five icons are faded grey and five are normal; in the bottom row (2) nine icons are faded grey and one is normal. Nothing else on the page.", people=True, text='Bubonic: about half. Pneumonic: almost all')
+D05 = dg('d05', "Three numbered steps in one row: (1) an ancient human jaw bone with one tooth highlighted, (2) a tiny drill taking a sample from inside the tooth, (3) a twisted DNA strand with a tiny rod-shaped bacterium beside it.", text='His DNA, hidden in ancient teeth')
+D06 = dg('d06', "ONLY one long horizontal timeline drawn as a thin ink line across the whole page, with three numbered wave-shaped humps rising from it far apart: (1) a medium hump on the left with a tiny domed church icon above it, (2) a huge tall hump in the middle with a tiny sailing ship icon above it, (3) a medium hump on the right with a tiny steamship icon above it. No numbers, no years.", text='Three pandemics')
+D07 = dg('d07', "A simple old map of the Black Sea and the Mediterranean: a walled port on the Crimean coast (1), dotted arrows with small sailing galley icons going through the narrow strait past a domed city (2) and on across the sea to the island of Sicily (3).", text='Caffa to Messina, 1347')
+D08 = dg('d08', "ONLY a single row of ten identical plain stickman icons standing side by side across the page: the first three are faded solid grey, the next three are drawn with dotted grey outlines, the last four are drawn normally in black ink. Nothing else on the page.", people=True, text='Between 3 and 6 in every 10 Europeans')
+D09 = dg('d09', "Four numbered panels in one row: (1) three planets lined up in the sky, crossed out with a red X, (2) a cloud of wavy green bad-smell fumes, crossed out with a red X, (3) a knotted whip, crossed out with a red X, (4) a black rat with a flea on it, marked with a green tick.", text='They blamed everything but the rats')
+D11 = dg('d11', "A sailing ship anchored alone out in a harbour bay (1), and beside it a simple wall calendar page with many small boxes all crossed off one by one (2), with an arrow from the calendar to a gangplank finally lowered onto the quay (3).", text='Wait 40 days before coming ashore')
+D12 = dg('d12', "Two numbered panels in one row: (1) before: many small stickman workers in a field and one tiny coin above each of them, (2) after: only a few stickman workers in the same field and a big stack of coins above each of them.", people=True, text='Fewer workers, higher wages')
+D15 = dg('d15', "Three numbered steps in one row: (1) a small glass medicine bottle of pills, (2) tiny rod-shaped bacteria cracking and breaking apart, (3) a simple shield with a green tick.", text='Cured with antibiotics')
+D16 = dg('d16', "ONLY a simple world map filling the whole page with a few small red dots: on the island of Madagascar, in central Africa, and in the south-western United States. Nothing else.", text='Still here: Madagascar, Congo, the American West')
+
+B = []
+def N(i, shots, role='NARRATOR', vo=None): B.append({'id': i, 'role': role, 'vo': vo, 'shots': shots})
+def HOLD(sec, shots): B.append({'hold': sec, 'shots': shots})
+def S(name, cam=None, text=None):
+    c = cam or [[.5, .5, 1.0], [.5, .5, 1.04]]
+    s = {'img': name, 'from': c[0], 'to': c[1], 'w': 1}
+    if text: s['text'] = [cap(text)] if isinstance(text, str) else text
+    return s
+CL = [[.5, .5, 1.06], [.5, .5, 1.1]]
+def V3(i): return f'assets/plague/ep01/vo_v3/{i}.wav'
+
+# ---- new cold open: person in trouble first, then open loops (pope, Eyam, Newton), then "he's still here"
+N('C01', [S('co_02', CL, 'Messina, Sicily · October 1347'), S('co_01'), S('co_03', CL), S('co_12')], vo='assets/plague/ep01/vo_v2/C01.wav')
+N('C02', [S('co_06'), S('co_09')], role='PLAGUE', vo='assets/plague/ep01/vo_fast/p1_m.wav')
+N('C03', [S('co_07', CL, 'Up to half of Europe'), S('f27g', None, 'A pope between two fires'), S('f46c', None, 'A village that locked itself in'), S('f46b', None, 'Isaac Newton')], vo='assets/plague/ep01/vo_v2/C03.wav')
+N('C04', [D06, S('co_10')], vo='assets/plague/ep01/vo_v2/C04.wav')
+N('C05', [S('co_08', CL)], role='PLAGUE', vo='assets/plague/ep01/vo_v2/C05.wav')
+title = [b for b in COLD['beats'] if 'hold' in b][-1]
+HOLD(3.6, [dict(title['shots'][0])])
+
+# ---- who is he
+N('L06a', [img('L06a', 0), img('L06a', 1), D01, img('L06a', 2)])
+N('L06b', v1('L06b'), role='PLAGUE')
+N('L07', [img('L07', 0), img('L07', 1), D02, img('L07', 3)])
+N('L08a', v1('L08a')); N('L08b', v1('L08b'), role='PLAGUE')
+N('L09', [img('L09', 0), img('L09', 2), img('L09', 5), D03])
+N('L10', [img('L10', 0), D04, S('g10b')])
+# ---- WHAT HE DOES TO YOU (new rubric)
+N('S01', [S('g_s01', STILL, [cap('Fever, chills, headache'), {'text': 'What He Does to You', 'x': 960, 'y': 150, 'size': 72, 'at': .3}]), S('g_s01b', None, '2 to 7 days after the bite')], vo=V3('S01'))
+N('S02', [S('g_s02', STILL, 'Buboes: neck, armpit, groin')], vo=V3('S02'))
+N('S03', [S('g_s03', STILL, 'Black fingertips')], vo=V3('S03'))
+N('S04', [S('g_s04', STILL, 'Pneumonic: no rats needed'), S('f09d')], vo=V3('S04'))
+N('SP1', [S('g_sp', CL)], role='PLAGUE', vo=V3('SP1'))
+# ---- origin
+N('L11', [S('g11a', None, 'Ancient skeletons')])
+N('L12a', [S('g11b'), D05, img('L12a', 0)])
+N('L12b', v1('L12b'), role='PLAGUE')
+# ---- Justinian
+N('L14', v1('L14') + [D06])
+N('L15', [S('g15a', None, 'Emperor Justinian'), img('L15', 1), img('L15', 2), img('L15', 3)])
+N('L17', [S('g17b', None, 'Up to 10,000 a day'), S('g17a', CL, 'The emperor caught it')])
+N('L18', [S('g18a')])
+N('J01', [S('g19a', STILL, 'The first pandemic, 541–750'), D06], vo=V3('J01'))
+N('L19', [img('L19', 1)]); N('L20', v1('L20'), role='PLAGUE')
+# ---- Black Death
+N('L21', [img('L21', 0), S('g21b', None, 'The Silk Road, 1340s')]); N('L22', v1('L22'))
+N('L23', [img('L23', 0), img('L23', 1), D07, img('L23', 2)])
+N('L24', v1('L24')); N('L25', v1('L25')[:2]); N('L26', v1('L26'), role='PLAGUE')
+N('L27', [S('g27a', None, 'Florence, 1348'), img('L27', 1)])
+N('L28', [S('g28a'), D08, S('g28d')])
+N('B01', [S('g28a', CL, 'Pits instead of graves'), S('g28b', None, 'No bells for the dead')], vo=V3('B01'))
+HOLD(2.0, [S('g28d', STILL)])
+# ---- how people fought back (pope payoff right after "bad air")
+N('L30', [S('g30a', None, 'Paris, 1348'), img('L30', 1)]); N('L31', [S('g31a')], role='PLAGUE'); N('L32', [img('L32', 0), S('g32b', None, 'Fighting bad air')])
+N('L27b', v1('L27b')); N('L27bP', v1('L27bP'), role='PLAGUE')
+N('L33', v1('L33') + [D09])
+N('L34', v1('L34')); N('L35', [img('L35', 0), S('g35b', None, '30 days at anchor')])
+N('L36', [img('L36', 0), D11, S('g36b', None, 'Quaranta giorni: 40 days')]); N('L36P', v1('L36P'), role='PLAGUE')
+N('L37', v1('L37')); N('L38', v1('L38'), role='PLAGUE')
+# ---- after
+N('L39', [S('g39a', None, 'Too few hands'), D12, S('g39c')])
+N('L41', [S('g41a', None, "The Peasants' Revolt, 1381"), img('L41', 1)]); N('L42a', v1('L42a'), role='PLAGUE'); N('L42b', [S('g42b')])
+N('A01', [S('g_a01', STILL, [cap('Scars and lost fingers'), {'text': 'What He Leaves Behind', 'x': 960, 'y': 150, 'size': 72, 'at': .3}])], vo=V3('A01'))
+N('A02', [S('g_a02', STILL, 'Quarantine, hospitals, health boards'), S('g_a02b', None, 'Weekly lists of the dead')], vo=V3('A02'))
+N('A03', [S('g_a03', CL)], role='PLAGUE', vo=V3('A03'))
+# ---- London 1665: Newton and Eyam payoffs
+N('L43', [S('g43a', STILL, 'Back every few decades')]); N('L44', [S('g44a', None, 'London, 1665'), img('L44', 1)]); N('L45', v1('L45')); N('L46', [S('g46a'), img('L46', 1)])
+N('L46a', [S('g46d', None, 'Eyam, 1665'), S('g46e'), S('g46f', None, 'Food left at the boundary stone'), img('L46a', 4)]); N('L46b', v1('L46b')); N('L47', [img('L47', 0)]); N('L48', v1('L48'), role='PLAGUE')
+# ---- third pandemic
+N('L49', v1('L49')); N('L50', v1('L50')); N('L51', v1('L51'), role='PLAGUE')
+N('T01', [S('g_t01', None, 'Kitasato Shibasaburō')], vo=V3('T01'))
+N('L51a', [img('L51a', 0), img('L51a', 2)]); N('L51aP', [img('L42a', 0)], role='PLAGUE'); N('L52', v1('L52'))
+N('T02', [S('g_t02', STILL, 'The third pandemic: over 12 million dead')], vo=V3('T02'))
+N('L53', [img('L53', 0), D15, img('L53', 1)])
+# ---- today
+N('L54', [D16, img('L54', 1)]); N('L55', v1('L55'), role='PLAGUE'); N('L56', v1('L56'))
+N('L57', [dict(x) if x['img'] != 'f44a' else S('g44a') for x in v1('L57')]); N('L58', v1('L58'))
+HOLD(5.0, [dict([b for b in V1['beats'] if 'hold' in b][-1]['shots'][0])])
+
+MUSIC = [(0, 178, 'plague_a.mp3'), (174, 352, 'plague_b.mp3'), (348, 'ALL', 'plague_a.mp3')]
+
+def frames():
+    out = [{'img': k, 'prompt': v, 'refs': []} for k, v in NEW.items()]
+    json.dump(out, open(os.path.join(ROOT, 'tools/plague/ep01v2_frames_todo.json'), 'w'), indent=1); print(len(out), 'frames')
+
+def beats():
+    out = {'base': 'assets/plague/ep01/frames', 'keep_zoom': ['f26a'], 'static': True, 'fade_in': .8, 'start': 0.0, 'lead': .35, 'gap': .35, 'max_shot': 2.6,
+           'sfx_global': COLD['sfx_global'], 'beats': []}
+    M = 'assets/plague/music/'
+    out['music'] = [{'file': M + f, 't0': float(a0), 't1': a1, 'gain': 1.0, 'fade_in': 2.0 if a0 == 0 else 4.0, 'fade_out': 5.0 if a1 == 'ALL' else 4.0}
+                    for a0, a1, f in MUSIC]
+    for b in B:
+        if 'hold' in b: out['beats'].append({'hold': b['hold'], 'shots': b['shots']}); continue
+        vo = b['vo'] or f"assets/plague/ep01/vo_fast/{b['id']}.wav"
+        out['beats'].append({'vo': vo, **({'gain': 1.05} if b['role'] == 'PLAGUE' else {}), 'shots': b['shots']})
+    json.dump(out, open(os.path.join(ROOT, 'tools/plague/ep01v3_beats.json'), 'w'), indent=1); print(len(out['beats']), 'beats')
+
+{'frames': frames, 'beats': beats}[sys.argv[1]]()
