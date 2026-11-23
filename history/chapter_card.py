@@ -5,7 +5,7 @@
 import sys, random
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 FONTS = "/home/user/lookme-viewer/history/fonts/"
-FONT = FONTS + "Bangers-Regular.ttf"
+FONT = FONTS + "BebasNeue-Regular.ttf"
 RED = (229, 57, 53)
 
 def _cover(bg, W, H):
