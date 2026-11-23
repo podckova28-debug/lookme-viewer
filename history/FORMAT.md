@@ -29,3 +29,9 @@
 ## Обложка
 - Один персонаж слева с «говорящим» предметом, место за ним, светлое небо; справа сверху огромное название жирным шрифтом с засечками,
   под ним годы «1925 – 1945», маленькая эмблема.
+
+## Как получить их рисовку (проверено на «Иллюминатах», v2)
+GPT Image 2.6, quality high, 16:9, две их обложки как image_references (только стиль и раскладка, не содержание).
+Промпт: «clean editorial comic style, even medium-weight black outlines, flat muted colours, minimal cel shading, no dramatic lighting,
+pale light-blue sky, calm simple background; title: huge heavy black slab-serif letters with a thin white outline top right, years below
+in bold condensed serif, small black circle emblem». Без референса модель рисует слишком «живописно» и контрастно (v1 отклонён).
