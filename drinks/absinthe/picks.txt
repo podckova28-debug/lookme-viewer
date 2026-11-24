@@ -1,0 +1,11 @@
+# part line seed — takes chosen after whisper check (s0 = first take)
+1 6 3
+3 2 1
+3 12 1
+3 13 9
+3 14 1
+4 1 1
+4 7 2
+5 3 3
+6 3 2
+7 2 3
