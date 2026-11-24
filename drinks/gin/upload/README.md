@@ -1,8 +1,8 @@
 # The Entire History of GIN — пакет для загрузки на YouTube
 
-- Видео: `The_Entire_History_of_Gin_1080p.mp4` — 1080p, мужской голос (как у кофе, абсента и рома), фоновая музыка, медленный наезд/отъезд на каждом кадре.
+- Видео: `The_Entire_History_of_Gin_1080p.mp4` — 1080p, 5:42, 85 МБ, −15 LUFS, мужской голос (как у кофе, абсента и рома), фоновая музыка, медленный наезд/отъезд на каждом кадре.
 - Обложка: `thumbnail_1280x720.jpg` («nearly destroyed LONDON», бутылка с горящим Лондоном). Другие варианты — в `../thumbs/` (в т. ч. крупное GIN).
-- Внутри ролика: отсылка к ролику про кофе (лондонские кофейни, 0:XX) и к абсенту; в конце — затравка на ром.
+- Внутри ролика: отсылка к ролику про кофе (лондонские кофейни, 1:54) и к абсенту; в конце — затравка на ром.
 
 ## Название
 The Entire History of GIN (The Drink That Nearly Destroyed London)
@@ -13,7 +13,15 @@ London, 1736. Over a cellar door in St Giles hangs a sign: drunk for a penny, de
 How did a Dutch medicine become the drink that nearly destroyed London, and then the gin and tonic? This is the whole story: juniper doctors and "Dutch courage", William of Orange and the free-for-all of distilling, the Gin Craze and Mother's Ruin, the case that shocked the city, the Gin Act that only two people obeyed, the cat that sold gin through a window, Hogarth's Gin Lane, London Dry, quinine and the gin and tonic, Navy Strength, bathtub gin and the cocktail age.
 
 In this video:
-TIMECODES
+0:00 Drunk for a penny
+0:33 A Dutch medicine and Dutch courage
+1:15 William of Orange and free distilling
+1:50 The Gin Craze
+2:29 The case that shocked London
+2:56 The Gin Act and the gin-selling cat
+3:39 Hogarth's Gin Lane
+4:13 London Dry, the gin and tonic and Navy Strength
+5:05 From the gutter to the cocktail bar
 
 Watch next: Coffee — the drink kings tried to ban (London's coffeehouses).
 Also on the channel: Absinthe — the drink that drove Paris mad? Rum — from trash to the drink of pirates and navies.
