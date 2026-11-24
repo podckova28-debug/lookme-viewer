@@ -1,0 +1,34 @@
+C01|NARRATOR|14.0|1.00|London, August 1854. It's a hot morning in Soho. You're thirsty so you walk to the pump on Broad Street like everyone else and fill your cup. The water is cold and a little cloudy. You drink the whole thing.
+C02|CHOLERA|0.6|1.00|Cheers!
+C03|NARRATOR|4.2|1.00|By tomorrow night you could be dead. This is what happens if you catch cholera.
+H01|NARRATOR|12.4|0.92|What you just swallowed is a bacterium, Vibri-O-Cola-I, a tiny comma with a whip for a tail. Your stomach acid kills most of them, but you drank a whole cup and some make it through.
+H02|NARRATOR|8.0|1.00|They swim down to your small intestine, dig into its lining and settle in. You feel completely fine. You go back to work.
+H03|CHOLERA|1.9|1.00|Don't mind me, I'm just moving in.
+H04|NARRATOR|8.3|1.00|Sometimes it takes days, for you it takes about one. Overnight the bacteria multiply into billions and release a toxin.
+H05|NARRATOR|8.0|1.00|The toxin flips a switch in the cells of your gut. Instead of absorbing water, they start pumping it out along with salt straight into your intestine.
+H06|NARRATOR|11.9|0.94|In the morning, it hits you all at once. Sudden, violent diarrhea. Pale and watery with little white flecks. Doctors call it rice water stool. You can lose a liter of fluid an hour. (re-recorded, seed 1)
+H07|NARRATOR|3.7|1.00|Then the vomiting starts. You can't keep a single sip of water down.
+H08|CHOLERA|2.5|1.00|Most diseases take weeks. I'm on a schedule.
+H09|NARRATOR|7.0|1.00|By the afternoon, you've lost so much water and salt that your muscles seize up. Painful cramps in your legs, your stomach, your hands.
+H10|NARRATOR|8.0|0.92|Your eyes sink into your skull. The skin on your fingers wrinkles like you've been in the bath for hours. Your voice becomes a horse whisperer.
+H11|NARRATOR|8.0|0.96|Your blood gets thick and dark and your skin turns gray and blue. Victorian Londoners had a name for it, The Blue Death.
+H12|NARRATOR|4.5|1.00|Your landlady sends for a doctor. It's 1854, so here's your treatment.
+H13|NARRATOR|9.4|1.00|He might bleed you to remove the bad blood, give you Calomel, which is mercury, to clear out your bowels, opium for the cramps and brandy for strength.
+H14|NARRATOR|6.5|1.00|Every single one of these makes it worse. You're dying because you're losing fluid and the doctor is taking even more.
+H15|CHOLERA|4.5|0.92|leading a man who's drying out. Honestly, your doctors were my best assistants.
+H16|NARRATOR|6.0|1.00|Your kidneys shut down. Your heart struggles with too little blood. The pulse at your wrist almost vanishes.
+H17|NARRATOR|6.4|1.00|untreated, around half of people with severe cholera die, some within hours of the first symptoms.
+H18|NARRATOR|7.4|1.00|and all this time you're pouring out billions of fresh bacteria. If any of it reaches the water supply, the next person drinks you.
+H19|NARRATOR|10.2|0.89|That's exactly what happened at Broad Street. A baby's nappies were washed into a cesspit right beside the pump. In 10 days, more than 500 people in the neighborhood died.
+H20|NARRATOR|8.3|1.00|But let's say you're lucky and you survive, you'll be weak for weeks and the next people in your street might owe their lives to a doctor named John Snow.
+H21|NARRATOR|8.3|0.96|Snow mapped every death and saw them clustered around the pump. On the 8th of September, he persuaded the council to take off its handle.
+H22|NARRATOR|5.0|1.00|The workers at the brewery on Broad Street drank beer, not water, not one of them died.
+H23|CHOLERA|2.0|1.00|they took away my handle. Rude.
+T01|NARRATOR|2.5|1.00|Now, same cup of water, but today.
+T02|NARRATOR|9.6|1.00|The cure turned out to be ridiculously simple. Put back what you lose. Clean water, a little salt and a little sugar by mouth or through a drip if you can't drink.
+T03|NARRATOR|8.6|0.90|with it, fewer than one in 100 cholera patients die. The Lancet called it potentially the most important medical advance of the 20th century.
+T04|NARRATOR|3.4|1.00|Add antibiotics and you're back on your feet in a few days.
+T05|NARRATOR|11.9|1.00|But cholera hasn't gone, every year millions still catch it, wherever the water is dirty after wars, floods and earthquakes, tens of thousands still die for lack of clean water, salt and sugar.
+T06|CHOLERA|2.8|1.00|I don't need a pump anymore, just one broken pipe.
+E01|NARRATOR|9.3|1.00|So, if you ever find yourself in Soho in 1854 and someone offers you a nice cold cup from the Broad Street pump, say no thanks, have a beer.
+E02|NARRATOR|3.1|1.00|Next time, what happens if you're bitten by a rabid dog?
