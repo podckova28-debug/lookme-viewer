@@ -1,0 +1,34 @@
+C01|NARRATOR|London, August 1854. It's a hot morning in Soho. You're thirsty, so you walk to the pump on Broad Street, like everyone else, and fill your cup. The water is cold, and a little cloudy. You drink the whole thing.
+C02|CHOLERA|Cheers.
+C03|NARRATOR|By tomorrow night, you could be dead. This is what happens if you catch cholera.
+H01|NARRATOR|What you just swallowed is a bacterium: Vibrio cholerae. A tiny comma with a whip for a tail. Your stomach acid kills most of them. But you drank a whole cup, and some make it through.
+H02|NARRATOR|They swim down to your small intestine, dig into its lining, and settle in. You feel completely fine. You go back to work.
+H03|CHOLERA|Don't mind me. I'm just moving in.
+H04|NARRATOR|Sometimes it takes days. For you, it takes about one. Overnight, the bacteria multiply into billions, and release a toxin.
+H05|NARRATOR|The toxin flips a switch in the cells of your gut. Instead of absorbing water, they start pumping it out, along with salt, straight into your intestine.
+H06|NARRATOR|In the morning, it hits you all at once. Sudden, violent diarrhoea. Pale and watery, with little white flecks. Doctors call it rice-water stool. You can lose a litre of fluid an hour.
+H07|NARRATOR|Then the vomiting starts. You can't keep a single sip of water down.
+H08|CHOLERA|Most diseases take weeks. I'm on a schedule.
+H09|NARRATOR|By the afternoon, you've lost so much water and salt that your muscles seize up. Painful cramps in your legs, your stomach, your hands.
+H10|NARRATOR|Your eyes sink into your skull. The skin on your fingers wrinkles, like you've been in the bath for hours. Your voice becomes a hoarse whisper.
+H11|NARRATOR|Your blood gets thick and dark, and your skin turns grey and blue. Victorian Londoners had a name for it: the blue death.
+H12|NARRATOR|Your landlady sends for a doctor. It's 1854, so here's your treatment.
+H13|NARRATOR|He might bleed you, to remove the bad blood. Give you calomel, which is mercury, to clear out your bowels. Opium for the cramps, and brandy for strength.
+H14|NARRATOR|Every single one of these makes it worse. You're dying because you're losing fluid, and the doctor is taking even more.
+H15|CHOLERA|Bleeding a man who's drying out. Honestly, your doctors were my best assistants.
+H16|NARRATOR|Your kidneys shut down. Your heart struggles with too little blood. The pulse at your wrist almost vanishes.
+H17|NARRATOR|Untreated, around half of people with severe cholera die. Some within hours of the first symptoms.
+H18|NARRATOR|And all this time, you're pouring out billions of fresh bacteria. If any of it reaches the water supply, the next person drinks you.
+H19|NARRATOR|That's exactly what happened at Broad Street. A baby's nappies were washed into a cesspit right beside the pump. In ten days, more than five hundred people in the neighbourhood died.
+H20|NARRATOR|But let's say you're lucky, and you survive. You'll be weak for weeks. And the next people in your street might owe their lives to a doctor named John Snow.
+H21|NARRATOR|Snow mapped every death and saw them clustered around the pump. On the eighth of September, he persuaded the council to take off its handle.
+H22|NARRATOR|The workers at the brewery on Broad Street drank beer, not water. Not one of them died.
+H23|CHOLERA|They took away my handle. Rude.
+T01|NARRATOR|Now. Same cup of water, but today.
+T02|NARRATOR|The cure turned out to be ridiculously simple: put back what you lose. Clean water, a little salt and a little sugar, by mouth, or through a drip if you can't drink.
+T03|NARRATOR|With it, fewer than one in a hundred cholera patients die. The Lancet called it potentially the most important medical advance of the twentieth century.
+T04|NARRATOR|Add antibiotics, and you're back on your feet in a few days.
+T05|NARRATOR|But cholera hasn't gone. Every year, millions still catch it, wherever the water is dirty: after wars, floods and earthquakes. Tens of thousands still die, for lack of clean water, salt and sugar.
+T06|CHOLERA|I don't need a pump anymore. Just one broken pipe.
+E01|NARRATOR|So, if you ever find yourself in Soho in 1854, and someone offers you a nice cold cup from the Broad Street pump: say no thanks. Have a beer.
+E02|NARRATOR|Next time: what happens if you're bitten by a rabid dog?

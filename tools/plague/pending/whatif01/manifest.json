@@ -1,0 +1,267 @@
+[
+{
+"index": 0,
+"img": "a01",
+"out": "assets/plague/whatif01/frames/a01.jpg"
+},
+{
+"index": 1,
+"img": "a02",
+"out": "assets/plague/whatif01/frames/a02.jpg"
+},
+{
+"index": 2,
+"img": "a03",
+"out": "assets/plague/whatif01/frames/a03.jpg"
+},
+{
+"index": 3,
+"img": "a04",
+"out": "assets/plague/whatif01/frames/a04.jpg"
+},
+{
+"index": 4,
+"img": "a05",
+"out": "assets/plague/whatif01/frames/a05.jpg"
+},
+{
+"index": 5,
+"img": "d01",
+"out": "assets/plague/whatif01/frames/d01.jpg"
+},
+{
+"index": 6,
+"img": "a06",
+"out": "assets/plague/whatif01/frames/a06.jpg"
+},
+{
+"index": 7,
+"img": "a07",
+"out": "assets/plague/whatif01/frames/a07.jpg"
+},
+{
+"index": 8,
+"img": "a08",
+"out": "assets/plague/whatif01/frames/a08.jpg"
+},
+{
+"index": 9,
+"img": "d02",
+"out": "assets/plague/whatif01/frames/d02.jpg"
+},
+{
+"index": 10,
+"img": "a29",
+"out": "assets/plague/whatif01/frames/a29.jpg"
+},
+{
+"index": 11,
+"img": "d03",
+"out": "assets/plague/whatif01/frames/d03.jpg"
+},
+{
+"index": 12,
+"img": "a09",
+"out": "assets/plague/whatif01/frames/a09.jpg"
+},
+{
+"index": 13,
+"img": "d04",
+"out": "assets/plague/whatif01/frames/d04.jpg"
+},
+{
+"index": 14,
+"img": "a10",
+"out": "assets/plague/whatif01/frames/a10.jpg"
+},
+{
+"index": 15,
+"img": "a30",
+"out": "assets/plague/whatif01/frames/a30.jpg"
+},
+{
+"index": 16,
+"img": "a11",
+"out": "assets/plague/whatif01/frames/a11.jpg"
+},
+{
+"index": 17,
+"img": "d05",
+"out": "assets/plague/whatif01/frames/d05.jpg"
+},
+{
+"index": 18,
+"img": "a12",
+"out": "assets/plague/whatif01/frames/a12.jpg"
+},
+{
+"index": 19,
+"img": "d06",
+"out": "assets/plague/whatif01/frames/d06.jpg"
+},
+{
+"index": 20,
+"img": "a31",
+"out": "assets/plague/whatif01/frames/a31.jpg"
+},
+{
+"index": 21,
+"img": "a13",
+"out": "assets/plague/whatif01/frames/a13.jpg"
+},
+{
+"index": 22,
+"img": "a14",
+"out": "assets/plague/whatif01/frames/a14.jpg"
+},
+{
+"index": 23,
+"img": "d07",
+"out": "assets/plague/whatif01/frames/d07.jpg"
+},
+{
+"index": 24,
+"img": "a32",
+"out": "assets/plague/whatif01/frames/a32.jpg"
+},
+{
+"index": 25,
+"img": "a15",
+"out": "assets/plague/whatif01/frames/a15.jpg"
+},
+{
+"index": 26,
+"img": "d08",
+"out": "assets/plague/whatif01/frames/d08.jpg"
+},
+{
+"index": 27,
+"img": "a16",
+"out": "assets/plague/whatif01/frames/a16.jpg"
+},
+{
+"index": 28,
+"img": "d09",
+"out": "assets/plague/whatif01/frames/d09.jpg"
+},
+{
+"index": 29,
+"img": "a33",
+"out": "assets/plague/whatif01/frames/a33.jpg"
+},
+{
+"index": 30,
+"img": "d10",
+"out": "assets/plague/whatif01/frames/d10.jpg"
+},
+{
+"index": 31,
+"img": "d11",
+"out": "assets/plague/whatif01/frames/d11.jpg"
+},
+{
+"index": 32,
+"img": "a34",
+"out": "assets/plague/whatif01/frames/a34.jpg"
+},
+{
+"index": 33,
+"img": "a17",
+"out": "assets/plague/whatif01/frames/a17.jpg"
+},
+{
+"index": 34,
+"img": "a35",
+"out": "assets/plague/whatif01/frames/a35.jpg"
+},
+{
+"index": 35,
+"img": "d12",
+"out": "assets/plague/whatif01/frames/d12.jpg"
+},
+{
+"index": 36,
+"img": "a18",
+"out": "assets/plague/whatif01/frames/a18.jpg"
+},
+{
+"index": 37,
+"img": "a19",
+"out": "assets/plague/whatif01/frames/a19.jpg"
+},
+{
+"index": 38,
+"img": "a36",
+"out": "assets/plague/whatif01/frames/a36.jpg"
+},
+{
+"index": 39,
+"img": "a20",
+"out": "assets/plague/whatif01/frames/a20.jpg"
+},
+{
+"index": 40,
+"img": "a21",
+"out": "assets/plague/whatif01/frames/a21.jpg"
+},
+{
+"index": 41,
+"img": "a22",
+"out": "assets/plague/whatif01/frames/a22.jpg"
+},
+{
+"index": 42,
+"img": "d13",
+"out": "assets/plague/whatif01/frames/d13.jpg"
+},
+{
+"index": 43,
+"img": "a37",
+"out": "assets/plague/whatif01/frames/a37.jpg"
+},
+{
+"index": 44,
+"img": "a23",
+"out": "assets/plague/whatif01/frames/a23.jpg"
+},
+{
+"index": 45,
+"img": "d14",
+"out": "assets/plague/whatif01/frames/d14.jpg"
+},
+{
+"index": 46,
+"img": "a24",
+"out": "assets/plague/whatif01/frames/a24.jpg"
+},
+{
+"index": 47,
+"img": "d15",
+"out": "assets/plague/whatif01/frames/d15.jpg"
+},
+{
+"index": 48,
+"img": "a38",
+"out": "assets/plague/whatif01/frames/a38.jpg"
+},
+{
+"index": 49,
+"img": "a25",
+"out": "assets/plague/whatif01/frames/a25.jpg"
+},
+{
+"index": 50,
+"img": "a26",
+"out": "assets/plague/whatif01/frames/a26.jpg"
+},
+{
+"index": 51,
+"img": "a27",
+"out": "assets/plague/whatif01/frames/a27.jpg"
+},
+{
+"index": 52,
+"img": "a28",
+"out": "assets/plague/whatif01/frames/a28.jpg"
+}
+]
