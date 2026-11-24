@@ -1,0 +1,6 @@
+# part line seed — takes chosen after whisper check
+0 8 1
+2 10 3
+5 6 1
+5 12 1
+6 1 2
