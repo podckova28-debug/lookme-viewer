@@ -1,10 +1,10 @@
 # The ENTIRE History of Absinthe — пакет для загрузки на YouTube
 
 - Видео: `The_ENTIRE_History_of_Absinthe_1080p.mp4` — 1080p, 6:38, мужской голос (как у рома), фоновая музыка, медленный наезд/отъезд на каждом кадре.
-- Обложка: `thumbnail_1280x720.jpg` — крупное ABSINTHE + «banned for 95 years». Прежняя обложка и другие варианты — в `../thumbs/`.
+- Обложка: `thumbnail_1280x720.jpg` (вариант 2: «the drink that drove Paris MAD?»). Другие варианты — в `../thumbs/`.
 
 ## Название
-The ENTIRE History of Absinthe (The Drink That Drove Paris Mad?)
+The Entire History of ABSINTHE (The Drink That Drove Paris Mad?)
 
 ## Описание
 Paris, 1890, five o'clock: the green hour. Half the city is dripping ice water over sugar into glasses of bright green liquid. France drinks 36 million litres of it a year. Within 25 years it will be banned almost everywhere, accused of making people mad, blind and violent.

@@ -1,10 +1,10 @@
 # The ENTIRE History of Mead — пакет для загрузки на YouTube
 
 - Видео: `The_ENTIRE_History_of_Mead_1080p.mp4` — 1080p, 5:27, мужской голос, фоновая музыка.
-- Обложка: `thumbnail_1280x720.jpg` — крупное MEAD + «the oldest drink» (исходник `thumbnail.png`). Прежняя обложка — `../thumbs/thumb_prev_upload_1280x720.jpg`.
+- Обложка: `thumbnail.png` (рог с медовухой, «the FIRST alcohol?»). Другие варианты — в `../thumbs/`.
 
 ## Название
-The ENTIRE History of Mead (The Drink Older Than History)
+The Entire History of MEAD (The Drink Older Than History)
 
 ## Описание
 You're a Viking. Your king hands you a horn of mead in front of the whole hall. Congratulations — you now owe him your life.

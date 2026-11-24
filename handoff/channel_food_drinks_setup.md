@@ -35,6 +35,10 @@ food history, history of food, drink history, history of drinks, history of alco
 
 ## План выкладки
 1. Абсент — `drinks/absinthe/upload/` (первый).
-2. Ром — через 2–3 дня, название: `The ENTIRE History of Rum: The Drink of Pirates and Navies`.
+2. Ром — через 2–3 дня, название: `The Entire History of RUM (The Drink of Pirates and Navies)`.
 3. Медовуха — `drinks/mead/upload/`.
 4. Кофе — делается (`drinks/coffee/`).
+
+## Формат названий роликов
+`The Entire History of НАПИТОК (крючок)` — название продукта заглавными, остальное обычным регистром.
+Кофе: `The Entire History of COFFEE (The Drink Kings Tried to Ban)`.
