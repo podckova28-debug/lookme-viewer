@@ -292,38 +292,6 @@
    "vo": "assets/plague/whatif01/vo_fast/H04.wav",
    "shots": [
     {
-     "img": "d02",
-     "from": [
-      0.5,
-      0.5,
-      1.0
-     ],
-     "to": [
-      0.5,
-      0.5,
-      1.02
-     ],
-     "w": 1,
-     "text": [
-      {
-       "text": "Billions, overnight",
-       "x": 960,
-       "y": 985,
-       "size": 50,
-       "at": 0.3
-      },
-      {
-       "text": "HOUR 20",
-       "x": 1640,
-       "y": 110,
-       "size": 72,
-       "style": "title",
-       "pop": true,
-       "at": 0.1
-      }
-     ]
-    },
-    {
      "img": "a29",
      "from": [
       0.5,
@@ -346,6 +314,38 @@
       },
       {
        "text": "HOUR 12",
+       "x": 1640,
+       "y": 110,
+       "size": 72,
+       "style": "title",
+       "pop": true,
+       "at": 0.1
+      }
+     ]
+    },
+    {
+     "img": "d02",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Billions, overnight",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      },
+      {
+       "text": "HOUR 20",
        "x": 1640,
        "y": 110,
        "size": 72,
@@ -696,6 +696,29 @@
    "vo": "assets/plague/whatif01/vo_fast/H13.wav",
    "shots": [
     {
+     "img": "a15",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Bleeding the patient",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
      "img": "d07",
      "from": [
       0.5,
@@ -734,29 +757,6 @@
      "text": [
       {
        "text": "Brandy for strength",
-       "x": 960,
-       "y": 985,
-       "size": 50,
-       "at": 0.3
-      }
-     ]
-    },
-    {
-     "img": "a15",
-     "from": [
-      0.5,
-      0.5,
-      1.0175
-     ],
-     "to": [
-      0.5,
-      0.5,
-      1.0375
-     ],
-     "w": 1,
-     "text": [
-      {
-       "text": "Bleeding the patient",
        "x": 960,
        "y": 985,
        "size": 50,
@@ -1068,29 +1068,6 @@
    "vo": "assets/plague/whatif01/vo_fast/H21.wav",
    "shots": [
     {
-     "img": "a19",
-     "from": [
-      0.5,
-      0.5,
-      1.0
-     ],
-     "to": [
-      0.5,
-      0.5,
-      1.04
-     ],
-     "w": 1,
-     "text": [
-      {
-       "text": "John Snow, 8 September 1854",
-       "x": 960,
-       "y": 985,
-       "size": 50,
-       "at": 0.3
-      }
-     ]
-    },
-    {
      "img": "a36",
      "from": [
       0.5,
@@ -1106,6 +1083,29 @@
      "text": [
       {
        "text": "Mapping every death",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "a19",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "John Snow, 8 September 1854",
        "x": 960,
        "y": 985,
        "size": 50,

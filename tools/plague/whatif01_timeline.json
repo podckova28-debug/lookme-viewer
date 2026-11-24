@@ -164,7 +164,7 @@
    "t1": 45.168
   },
   {
-   "img": "d02",
+   "img": "a29",
    "from": [
     0.5,
     0.5,
@@ -179,7 +179,7 @@
    "t1": 49.307
   },
   {
-   "img": "a29",
+   "img": "d02",
    "from": [
     0.5,
     0.5,
@@ -374,7 +374,7 @@
    "t1": 107.882
   },
   {
-   "img": "d07",
+   "img": "a15",
    "from": [
     0.5,
     0.5,
@@ -389,7 +389,7 @@
    "t1": 110.976
   },
   {
-   "img": "a32",
+   "img": "d07",
    "from": [
     0.5,
     0.5,
@@ -404,7 +404,7 @@
    "t1": 114.071
   },
   {
-   "img": "a15",
+   "img": "a32",
    "from": [
     0.5,
     0.5,
@@ -584,7 +584,7 @@
    "t1": 166.952
   },
   {
-   "img": "a19",
+   "img": "a36",
    "from": [
     0.5,
     0.5,
@@ -599,7 +599,7 @@
    "t1": 171.068
   },
   {
-   "img": "a36",
+   "img": "a19",
    "from": [
     0.5,
     0.5,
@@ -929,7 +929,7 @@
    "t1": 42.618
   },
   {
-   "text": "Billions, overnight",
+   "text": "Still fine at dinner",
    "x": 960,
    "y": 985,
    "size": 50,
@@ -937,7 +937,7 @@
    "t1": 49.157
   },
   {
-   "text": "HOUR 20",
+   "text": "HOUR 12",
    "x": 1640,
    "y": 110,
    "size": 72,
@@ -947,7 +947,7 @@
    "t1": 49.157
   },
   {
-   "text": "Still fine at dinner",
+   "text": "Billions, overnight",
    "x": 960,
    "y": 985,
    "size": 50,
@@ -955,7 +955,7 @@
    "t1": 53.297
   },
   {
-   "text": "HOUR 12",
+   "text": "HOUR 20",
    "x": 1640,
    "y": 110,
    "size": 72,
@@ -1083,7 +1083,7 @@
    "t1": 107.732
   },
   {
-   "text": "Bleeding, mercury, opium, brandy",
+   "text": "Bleeding the patient",
    "x": 960,
    "y": 985,
    "size": 50,
@@ -1091,7 +1091,7 @@
    "t1": 110.826
   },
   {
-   "text": "Brandy for strength",
+   "text": "Bleeding, mercury, opium, brandy",
    "x": 960,
    "y": 985,
    "size": 50,
@@ -1099,7 +1099,7 @@
    "t1": 113.921
   },
   {
-   "text": "Bleeding the patient",
+   "text": "Brandy for strength",
    "x": 960,
    "y": 985,
    "size": 50,
@@ -1207,7 +1207,7 @@
    "t1": 166.802
   },
   {
-   "text": "John Snow, 8 September 1854",
+   "text": "Mapping every death",
    "x": 960,
    "y": 985,
    "size": 50,
@@ -1215,7 +1215,7 @@
    "t1": 170.918
   },
   {
-   "text": "Mapping every death",
+   "text": "John Snow, 8 September 1854",
    "x": 960,
    "y": 985,
    "size": 50,

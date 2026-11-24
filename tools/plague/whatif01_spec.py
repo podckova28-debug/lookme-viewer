@@ -167,6 +167,12 @@ EXTRA = {
 }
 for _i, _r, _t, _sh in B:
     if _i in EXTRA: _sh.insert(1, EXTRA[_i])
+# shot order must follow the narration
+ORDER = {'H04': ['a29', 'd02'], 'H13': ['a15', 'd07', 'a32'], 'H21': ['a36', 'a19']}
+for _n, (_i, _r, _t, _sh) in enumerate(B):
+    if _i in ORDER:
+        _by = {x['img']: x for x in _sh}
+        B[_n] = (_i, _r, _t, [_by[k] for k in ORDER[_i]] + [x for x in _sh if x['img'] not in ORDER[_i]])
 
 def lines():
     for i, r, t, _ in B:
