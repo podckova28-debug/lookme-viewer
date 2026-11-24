@@ -7,7 +7,8 @@
 (Не брать «Tasting History» — это чужой крупный канал.)
 
 ## Аватар
-`handoff/avatars/food_1_glass.png` (основной) или `handoff/avatars/food_2_fork_glass.png`.
+В стиле обложек (новые): `handoff/avatars/food_3_style.png` (рекомендую — человечек с абсентом, кофе и ромом), `food_4_style.png` (бокал-слои), `food_5_style.png` (человечек с чашкой). Превью в круге: `food_style_preview.jpg`.
+Старые: `food_1_glass.png`, `food_2_fork_glass.png`.
 
 ## Описание канала
 ```
