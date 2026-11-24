@@ -22,7 +22,6 @@ In this video:
 5:17 Pastis and La Bleue
 5:51 The comeback
 
-Previous episodes: Mead — the drink older than history; Rum — from trash to empire.
 Next episode: Coffee — the drink that kings and sultans tried to ban.
 
 Sources: Barnaby Conrad III, Absinthe: History in a Bottle (1988); Jad Adams, Hideous Absinthe (2004); Valentin Magnan, studies on absinthism (1860s–1870s); Lachenmeier et al., "Chemical composition of vintage preban absinthe", J. Agric. Food Chem. (2008); Swiss Federal Constitution, art. 32ter (1908–2005); French law of 16 March 1915 and its repeal (2011).
@@ -37,5 +36,5 @@ absinthe, history of absinthe, absinthe history, green fairy, la fee verte, absi
 - Язык видео: английский. Аудитория: не для детей (речь об алкоголе).
 - Раскрытие ИИ (Altered or synthetic content): ДА — голос и картинки созданы ИИ.
 - Возрастное ограничение не нужно: история напитка без пропаганды; убийство 1905 года рассказано без подробностей.
-- Конечная заставка: подписка + видео про ром; позже — про кофе.
+- Конечная заставка: на первом ролике нового канала — только «Подписаться» и «Последнее видео»; когда выйдут следующие — ставить их.
 - Закреплённый комментарий: «Would you try absinthe? Next up: coffee, the drink sultans tried to ban.»
