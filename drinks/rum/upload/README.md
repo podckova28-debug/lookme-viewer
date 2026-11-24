@@ -1,7 +1,7 @@
 # The ENTIRE History of Rum — пакет для загрузки на YouTube
 
 - Видео: `The_ENTIRE_History_of_Rum_1080p.mp4` — 1080p, 7:27, мужской голос, фоновая музыка.
-- Обложка: `thumbnail_1280x720.jpg` (бутылка рома, «made from TRASH»), исходник `thumbnail.png`. Другие варианты — в `../thumbs/`.
+- Обложка: `thumbnail_1280x720.jpg` — крупное RUM + «made from trash», исходник `thumbnail.png`. Прежняя обложка и другие варианты — в `../thumbs/`.
 
 ## Название
 The ENTIRE History of Rum (From Trash to Empire)
