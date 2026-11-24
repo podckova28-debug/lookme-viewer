@@ -1,7 +1,7 @@
 # The ENTIRE Life of Rasputin — пакет для загрузки на YouTube
 
 - Видео: `The_ENTIRE_Life_of_Rasputin_1080p.mp4` — 1080p, 10:17, мужской голос (Echo), музыка, шумы, титры глав и подписи (Bebas Neue).
-- Обложка: `thumbnail_1280x720.jpg` (пирожные и вино). Другие варианты — в `../thumbs/`.
+- Обложка: `thumbnail_1280x720.jpg` (пирожные и вино, в круге у названия — православный крест). Другие варианты — в `../thumbs/`.
 
 ## Название
 The ENTIRE Life of Rasputin in 10 Minutes
