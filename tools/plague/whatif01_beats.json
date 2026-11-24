@@ -1,0 +1,1540 @@
+{
+ "base": "assets/plague/whatif01/frames",
+ "keep_zoom": [],
+ "static": true,
+ "fade_in": 0.8,
+ "start": 0.0,
+ "lead": 0.35,
+ "gap": 0.35,
+ "max_shot": 2.6,
+ "sfx_global": [
+  {
+   "kind": "drone",
+   "t": 0.0,
+   "args": {
+    "d": "ALL"
+   },
+   "gain": 0.9
+  }
+ ],
+ "beats": [
+  {
+   "vo": "assets/plague/whatif01/vo_fast/C01.wav",
+   "shots": [
+    {
+     "img": "a01",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "London, August 1854",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      },
+      {
+       "text": "8:00 AM",
+       "x": 1640,
+       "y": 110,
+       "size": 72,
+       "style": "title",
+       "pop": true,
+       "at": 0.1
+      }
+     ]
+    },
+    {
+     "img": "a02",
+     "from": [
+      0.5,
+      0.45,
+      1.07
+     ],
+     "to": [
+      0.5,
+      0.45,
+      1.09
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "A little cloudy",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/whatif01/vo_fast/C02.wav",
+   "gain": 1.05,
+   "shots": [
+    {
+     "img": "a03",
+     "from": [
+      0.5,
+      0.45,
+      1.0350000000000001
+     ],
+     "to": [
+      0.5,
+      0.45,
+      1.0550000000000002
+     ],
+     "w": 1
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/whatif01/vo_fast/C03.wav",
+   "shots": [
+    {
+     "img": "a04",
+     "from": [
+      0.5,
+      0.5,
+      1.05
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Tomorrow night",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "hold": 3.6,
+   "shots": [
+    {
+     "img": "a05",
+     "from": [
+      0.5,
+      0.5,
+      1.05
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "WHAT HAPPENS IF",
+       "x": 1300,
+       "y": 300,
+       "size": 84,
+       "style": "title",
+       "pop": true,
+       "at": 0.15,
+       "len": 3.3
+      },
+      {
+       "text": "YOU CATCH CHOLERA",
+       "x": 1300,
+       "y": 420,
+       "size": 96,
+       "style": "title",
+       "color": [
+        150,
+        220,
+        170
+       ],
+       "at": 0.4,
+       "len": 3.1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/whatif01/vo_fast/H01.wav",
+   "shots": [
+    {
+     "img": "d01",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Vibrio cholerae",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      },
+      {
+       "text": "HOUR 0",
+       "x": 1640,
+       "y": 110,
+       "size": 72,
+       "style": "title",
+       "pop": true,
+       "at": 0.1
+      }
+     ]
+    },
+    {
+     "img": "a06",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "A comma with a whip",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/whatif01/vo_fast/H02.wav",
+   "shots": [
+    {
+     "img": "a07",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "You feel fine",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      },
+      {
+       "text": "HOUR 2",
+       "x": 1640,
+       "y": 110,
+       "size": 72,
+       "style": "title",
+       "pop": true,
+       "at": 0.1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/whatif01/vo_fast/H03.wav",
+   "gain": 1.05,
+   "shots": [
+    {
+     "img": "a08",
+     "from": [
+      0.5,
+      0.45,
+      1.0350000000000001
+     ],
+     "to": [
+      0.5,
+      0.45,
+      1.0550000000000002
+     ],
+     "w": 1
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/whatif01/vo_fast/H04.wav",
+   "shots": [
+    {
+     "img": "d02",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Billions, overnight",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      },
+      {
+       "text": "HOUR 20",
+       "x": 1640,
+       "y": 110,
+       "size": 72,
+       "style": "title",
+       "pop": true,
+       "at": 0.1
+      }
+     ]
+    },
+    {
+     "img": "a29",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Still fine at dinner",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      },
+      {
+       "text": "HOUR 12",
+       "x": 1640,
+       "y": 110,
+       "size": 72,
+       "style": "title",
+       "pop": true,
+       "at": 0.1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/whatif01/vo_fast/H05.wav",
+   "shots": [
+    {
+     "img": "d03",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "The pump runs backwards",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/whatif01/vo_fast/H06.wav",
+   "shots": [
+    {
+     "img": "a09",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "It hits all at once",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      },
+      {
+       "text": "HOUR 24",
+       "x": 1640,
+       "y": 110,
+       "size": 72,
+       "style": "title",
+       "pop": true,
+       "at": 0.1
+      }
+     ]
+    },
+    {
+     "img": "d04",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Up to a litre an hour",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/whatif01/vo_fast/H07.wav",
+   "shots": [
+    {
+     "img": "a10",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "You can't keep water down",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "a30",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "More water from the same pump",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/whatif01/vo_fast/H08.wav",
+   "gain": 1.05,
+   "shots": [
+    {
+     "img": "a11",
+     "from": [
+      0.5,
+      0.45,
+      1.0350000000000001
+     ],
+     "to": [
+      0.5,
+      0.45,
+      1.0550000000000002
+     ],
+     "w": 1
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/whatif01/vo_fast/H09.wav",
+   "shots": [
+    {
+     "img": "d05",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Cramps",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      },
+      {
+       "text": "HOUR 28",
+       "x": 1640,
+       "y": 110,
+       "size": 72,
+       "style": "title",
+       "pop": true,
+       "at": 0.1
+      }
+     ]
+    },
+    {
+     "img": "a12",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Cramps everywhere",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/whatif01/vo_fast/H10.wav",
+   "shots": [
+    {
+     "img": "d06",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Sunken eyes, wrinkled hands",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "a31",
+     "from": [
+      0.5,
+      0.45,
+      1.0525
+     ],
+     "to": [
+      0.5,
+      0.45,
+      1.0725
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "A hoarse whisper",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/whatif01/vo_fast/H11.wav",
+   "shots": [
+    {
+     "img": "a13",
+     "from": [
+      0.5,
+      0.45,
+      1.0525
+     ],
+     "to": [
+      0.5,
+      0.45,
+      1.0725
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "The blue death",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      },
+      {
+       "text": "HOUR 30",
+       "x": 1640,
+       "y": 110,
+       "size": 72,
+       "style": "title",
+       "pop": true,
+       "at": 0.1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/whatif01/vo_fast/H12.wav",
+   "shots": [
+    {
+     "img": "a14",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "The doctor arrives",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/whatif01/vo_fast/H13.wav",
+   "shots": [
+    {
+     "img": "d07",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Bleeding, mercury, opium, brandy",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "a32",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Brandy for strength",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "a15",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Bleeding the patient",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/whatif01/vo_fast/H14.wav",
+   "shots": [
+    {
+     "img": "d08",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Making it worse",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/whatif01/vo_fast/H15.wav",
+   "gain": 1.05,
+   "shots": [
+    {
+     "img": "a16",
+     "from": [
+      0.5,
+      0.45,
+      1.0350000000000001
+     ],
+     "to": [
+      0.5,
+      0.45,
+      1.0550000000000002
+     ],
+     "w": 1
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/whatif01/vo_fast/H16.wav",
+   "shots": [
+    {
+     "img": "d09",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Kidneys, heart, pulse",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      },
+      {
+       "text": "HOUR 36",
+       "x": 1640,
+       "y": 110,
+       "size": 72,
+       "style": "title",
+       "pop": true,
+       "at": 0.1
+      }
+     ]
+    },
+    {
+     "img": "a33",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "A pulse you can barely feel",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/whatif01/vo_fast/H17.wav",
+   "shots": [
+    {
+     "img": "d10",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Severe and untreated: about half die",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/whatif01/vo_fast/H18.wav",
+   "shots": [
+    {
+     "img": "d11",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "The next person drinks you",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "a34",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Into the cesspit",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/whatif01/vo_fast/H19.wav",
+   "shots": [
+    {
+     "img": "a17",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "A cesspit beside the pump",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "a35",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Broad Street, September 1854",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "d12",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "500 dead in 10 days",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/whatif01/vo_fast/H20.wav",
+   "shots": [
+    {
+     "img": "a18",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "You survive",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      },
+      {
+       "text": "DAY 3",
+       "x": 1640,
+       "y": 110,
+       "size": 72,
+       "style": "title",
+       "pop": true,
+       "at": 0.1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/whatif01/vo_fast/H21.wav",
+   "shots": [
+    {
+     "img": "a19",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "John Snow, 8 September 1854",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "a36",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Mapping every death",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/whatif01/vo_fast/H22.wav",
+   "shots": [
+    {
+     "img": "a20",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "The brewery workers drank beer",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/whatif01/vo_fast/H23.wav",
+   "gain": 1.05,
+   "shots": [
+    {
+     "img": "a21",
+     "from": [
+      0.5,
+      0.45,
+      1.0350000000000001
+     ],
+     "to": [
+      0.5,
+      0.45,
+      1.0550000000000002
+     ],
+     "w": 1
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/whatif01/vo_fast/T01.wav",
+   "shots": [
+    {
+     "img": "a22",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Same cup, today",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      },
+      {
+       "text": "2026",
+       "x": 1640,
+       "y": 110,
+       "size": 72,
+       "style": "title",
+       "pop": true,
+       "at": 0.1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/whatif01/vo_fast/T02.wav",
+   "shots": [
+    {
+     "img": "d13",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Water, salt, sugar",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "a37",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1
+    },
+    {
+     "img": "a23",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Oral rehydration",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/whatif01/vo_fast/T03.wav",
+   "shots": [
+    {
+     "img": "d14",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "From 1 in 2 to under 1 in 100",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/whatif01/vo_fast/T04.wav",
+   "shots": [
+    {
+     "img": "a24",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Back on your feet",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      },
+      {
+       "text": "DAY 3",
+       "x": 1640,
+       "y": 110,
+       "size": 72,
+       "style": "title",
+       "pop": true,
+       "at": 0.1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/whatif01/vo_fast/T05.wav",
+   "shots": [
+    {
+     "img": "d15",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.02
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Still millions of cases a year",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "a38",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Boil it first",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "img": "a25",
+     "from": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.04
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "Clean water saves lives",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/whatif01/vo_fast/T06.wav",
+   "gain": 1.05,
+   "shots": [
+    {
+     "img": "a26",
+     "from": [
+      0.5,
+      0.45,
+      1.0350000000000001
+     ],
+     "to": [
+      0.5,
+      0.45,
+      1.0550000000000002
+     ],
+     "w": 1
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/whatif01/vo_fast/E01.wav",
+   "shots": [
+    {
+     "img": "a27",
+     "from": [
+      0.5,
+      0.5,
+      1.0175
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0375
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "No thanks",
+       "x": 960,
+       "y": 985,
+       "size": 50,
+       "at": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "vo": "assets/plague/whatif01/vo_fast/E02.wav",
+   "shots": [
+    {
+     "img": "a28",
+     "from": [
+      0.5,
+      0.5,
+      1.014
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.034
+     ],
+     "w": 1
+    }
+   ]
+  },
+  {
+   "hold": 5.0,
+   "shots": [
+    {
+     "img": "a28",
+     "from": [
+      0.5,
+      0.5,
+      1.05
+     ],
+     "to": [
+      0.5,
+      0.5,
+      1.0
+     ],
+     "w": 1,
+     "text": [
+      {
+       "text": "NEXT TIME",
+       "x": 1380,
+       "y": 360,
+       "size": 110,
+       "style": "title",
+       "pop": true,
+       "at": 0.2,
+       "len": 4.6
+      },
+      {
+       "text": "SUBSCRIBE",
+       "x": 1380,
+       "y": 500,
+       "size": 64,
+       "at": 0.8,
+       "len": 4.0
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "music": [
+  {
+   "file": "assets/plague/music/cholera_a.mp3",
+   "t0": 0.0,
+   "t1": 120,
+   "gain": 1.0,
+   "fade_in": 2.0,
+   "fade_out": 4.0
+  },
+  {
+   "file": "assets/plague/music/cholera_b.mp3",
+   "t0": 116.0,
+   "t1": 236,
+   "gain": 1.0,
+   "fade_in": 4.0,
+   "fade_out": 4.0
+  },
+  {
+   "file": "assets/plague/music/cholera_a.mp3",
+   "t0": 232.0,
+   "t1": "ALL",
+   "gain": 1.0,
+   "fade_in": 4.0,
+   "fade_out": 5.0
+  }
+ ]
+}
