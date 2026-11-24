@@ -15,8 +15,9 @@ MODERN = ("2D animated history explainer frame, 16:9, no text. Hand-drawn ink il
 SN = ("Humans are simple STICKMEN: plain white round head, two dot eyes, simple expressive mouth and eyebrows, no nose, no beard, thin black stick arms and stick legs, "
       "small solid BLACK mitten hands with no fingers; never white hands, never skin-coloured or thick human arms. "
       "Only the figures described, standing apart, never overlapping; each has exactly two arms and two hands; hands are empty unless an object is described; "
+      "every arm is one smooth line from the shoulder to the hand, never bending back on itself, never doubled; no bare skin-coloured limbs anywhere; "
       "no flags, no banners; no readable text.")
-YOU = ("YOU, the hero: a stickman with a plain white round head, a flat grey cloth cap, a white shirt with rolled-up sleeves, a brown waistcoat and dark grey trousers")
+YOU = ("YOU, the hero: a stickman with a plain white round head, a flat grey cloth cap, a brown waistcoat over a plain white shirt with LONG sleeves that reach all the way down to the wrists (sleeves NOT rolled up, no bare forearms, no cuffs at the elbows), a small solid black mitten hand at the end of each sleeve, and dark grey trousers")
 YOU_MOD = ("YOU, the hero, in the present day: a stickman with a plain white round head, a grey baseball cap, a white T-shirt and blue jeans")
 KING = ("King Cholera exactly as on the attached sheet: a stout pot-bellied Victorian gentleman in a soaking-wet dark teal frock coat, brown waistcoat and cravat, a battered black "
         "top hat with a tarnished tin crown around it, clammy grey-blue skin, glowing pale-green eyes, a wide toothy grin; water drips from him constantly; a dented tin cup on a chain. "
@@ -123,7 +124,7 @@ N('H20', "But let's say you're lucky, and you survive. You'll be weak for weeks.
 N('H21', "Snow mapped every death and saw them clustered around the pump. On the eighth of September, he persuaded the council to take off its handle.",
   ch('a19', W(), f"Daylight on {SOHO}: a stickman doctor with short dark side whiskers drawn as simple lines, a dark 1850s frock coat and no hat, holds the long iron pump handle he has just removed in both black mitten hands, while a stickman parish official in a top hat stands apart, watching.", text=cap('John Snow, 8 September 1854')))
 N('H22', "The workers at the brewery on Broad Street drank beer, not water. Not one of them died.",
-  ch('a20', C(.5, .5, 1.05), f"Inside an 1854 London brewery with big wooden vats: two stickman brewery workers in leather aprons and caps stand apart, each raising a tankard of beer in one black mitten hand, cheerful and healthy.", text=cap('The brewery workers drank beer')))
+  ch('a20', C(.5, .5, 1.05), f"Inside an 1854 London brewery with big wooden vats and small high windows showing only grey sky (no towers, no clock tower): two stickman brewery workers in leather aprons and caps stand apart, each raising a tankard of beer in one black mitten hand, cheerful and healthy.", text=cap('The brewery workers drank beer')))
 K('H23', "They took away my handle. Rude.",
   kg('a21', C(.5, .45, 1.1), "King Cholera stands beside a water pump with no handle in a foggy Soho street, staring at the empty slot where the handle used to be, his arms crossed, sulking."))
 
@@ -132,14 +133,14 @@ N('T01', "Now. Same cup of water, but today.",
   ch('a22', W(), f"A modern small town street after a flood, with a water tank and puddles: {YOU_MOD} drinks from a plastic cup held in one black mitten hand, sunny daylight.", modern=True, text=[cap('Same cup, today'), clock('2026')]))
 N('T02', "The cure turned out to be ridiculously simple: put back what you lose. Clean water, a little salt and a little sugar, by mouth, or through a drip if you can't drink.",
   dg('d13', "Three numbered steps in one row: (1) a glass of clean water, (2) a small spoon of salt and a small spoon of sugar pouring in, (3) the glass with a green tick and a happy simple stickman head beside it.", people=True, text=[cap('Water, salt, sugar')]),
-  ch('a23', C(.5, .5, 1.05), f"A bright modern clinic tent: {YOU_MOD} sits on a cot drinking from a cup held in one black mitten hand, with an IV drip bag on a stand beside him, while a stickman nurse in blue scrubs stands apart, checking a clipboard.", modern=True, text=cap('Oral rehydration')))
+  ch('a23', C(.5, .5, 1.05), f"A bright modern clinic tent: {YOU_MOD} sits on a cot drinking from a cup held in one black mitten hand, his other thin black stick arm resting on his knee with a thin IV tube taped to it (no bandage, no skin), an IV drip bag on a stand beside him, while a stickman nurse in blue scrubs stands apart, checking a clipboard.", modern=True, text=cap('Oral rehydration')))
 N('T03', "With it, fewer than one in a hundred cholera patients die. The Lancet called it potentially the most important medical advance of the twentieth century.",
   dg('d14', "ONLY two rows of ten identical plain stickman icons, one above the other: top row (1) five faded grey and five normal; bottom row (2) all ten normal in black ink with one tiny faded corner on the last one.", people=True, text=[cap('From 1 in 2 to under 1 in 100')]))
 N('T04', "Add antibiotics, and you're back on your feet in a few days.",
   ch('a24', W(), f"A sunny modern street: {YOU_MOD} walks out of a small clinic smiling, waving goodbye with one black mitten hand to a stickman nurse in blue scrubs in the doorway.", modern=True, text=[cap('Back on your feet'), clock('DAY 3')]))
 N('T05', "But cholera hasn't gone. Every year, millions still catch it, wherever the water is dirty: after wars, floods and earthquakes. Tens of thousands still die, for lack of clean water, salt and sugar.",
   dg('d15', "ONLY a simple world map filling the whole page with small green dots clustered in parts of Africa, South Asia, the Middle East and Haiti. Nothing else.", text=[cap('Still millions of cases a year')]),
-  ch('a25', W(), "A modern refugee camp with white tents after a flood: a stickman aid worker in a blue vest hands a sealed jerrycan of clean water to a stickman woman in a bright headscarf, who takes it with both black mitten hands; they stand a step apart.", modern=True, text=cap('Clean water saves lives')))
+  ch('a25', W(), "A modern refugee camp with white tents after a flood: a stickman aid worker in a blue vest holds a sealed jerrycan of clean water out with both his black mitten hands toward a stickman woman in a bright headscarf, who reaches for its handle with one black mitten hand, her other arm at her side; they stand a step apart. The aid worker has exactly two arms, the woman exactly two arms.", modern=True, text=cap('Clean water saves lives')))
 K('T06', "I don't need a pump anymore. Just one broken pipe.",
   kg('a26', C(.5, .45, 1.1), "King Cholera crouches beside a cracked modern water pipe leaking into a muddy puddle at dusk, dipping his tin cup into the puddle with one hand and grinning at the viewer, his other hand on his knee."))
 
@@ -147,7 +148,7 @@ K('T06', "I don't need a pump anymore. Just one broken pipe.",
 N('E01', "So, if you ever find yourself in Soho in 1854, and someone offers you a nice cold cup from the Broad Street pump: say no thanks. Have a beer.",
   ch('a27', C(.5, .5, 1.05), f"Bright morning on {SOHO}: {YOU} stands next to the pump, holding up one black mitten hand to politely refuse a cup, and holding a tankard of beer in the other, grinning.", text=cap('No thanks')))
 N('E02', "Next time: what happens if you're bitten by a rabid dog?",
-  ch('a28', C(.5, .5, 1.04), "A dark 1880s French village lane at night, ominous: on the left third of the frame a single stickman boy in a smock looks down in fear at his ankle, while far behind him a shadowy dog with glowing eyes slinks away; the right side of the frame is dark empty misty sky."))
+  ch('a28', C(.5, .5, 1.04), "A dark 1880s French village lane at night, ominous: on the left third of the frame a single stickman boy in a long smock and dark trousers (thin black stick legs, no bare skin) looks down in fear at a small red mark on his trouser leg, while far behind him a shadowy dog with glowing eyes slinks away; the right side of the frame is dark empty misty sky."))
 HOLD(5.0, sh('a28', O(), text=[{'text': 'NEXT TIME', 'x': 1380, 'y': 360, 'size': 110, 'style': 'title', 'pop': True, 'at': .2, 'len': 4.6},
                               {'text': 'SUBSCRIBE', 'x': 1380, 'y': 500, 'size': 64, 'at': .8, 'len': 4.0}]))
 
