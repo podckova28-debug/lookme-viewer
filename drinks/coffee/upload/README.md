@@ -1,6 +1,6 @@
 # The Entire History of COFFEE — пакет для загрузки на YouTube
 
-- Видео: `The_Entire_History_of_Coffee_1080p.mp4` — 1080p, мужской голос (как у абсента и рома), фоновая музыка, медленный наезд/отъезд на каждом кадре.
+- Видео: `The_Entire_History_of_Coffee_1080p.mp4` — 1080p, 6:17, 95 МБ, −15 LUFS, мужской голос (как у абсента и рома), фоновая музыка, медленный наезд/отъезд на каждом кадре.
 - Обложка: `thumbnail_1280x720.jpg` («BANNED by a SULTAN», османская чашка и сабля). Другие варианты — в `../thumbs/` (в т. ч. с крупным COFFEE).
 
 ## Название
@@ -12,9 +12,17 @@ Istanbul, 1633, late at night. A coffeehouse full of smoke, talk and tiny cups o
 Today the world drinks around two billion cups a day. So why did sultans, kings and priests keep trying to ban it? This is the whole story: the dancing goats of Ethiopia, the Sufi monks of Yemen, the coffee burned in the streets of Mecca, the port of Mocha and the seven smuggled seeds, the pope who "baptised" coffee, London's penny universities and the birth of Lloyd's, a king's ban that lasted eleven days, Prussia's coffee sniffers, the dark history of the plantations, Civil War rations, espresso, instant coffee, and what caffeine really does to your brain.
 
 In this video:
-TIMECODES
+0:00 Istanbul, 1633
+0:36 Goats, monks and qahwa
+1:11 Coffeehouses and the first bans
+1:55 Mocha and the seven seeds
+2:26 Europe, the Pope and the penny universities
+3:14 Petitions, kings and coffee sniffers
+4:02 The dark side: plantations and slavery
+4:58 Armies, espresso and instant coffee
+5:39 Your brain on caffeine
 
-Previous episode: Absinthe — the drink that drove Paris mad?
+Also on the channel: Absinthe — the drink that drove Paris mad?
 Next episode: Gin — the drink that nearly destroyed London.
 
 Sources: Mark Pendergrast, Uncommon Grounds (rev. 2010); Ralph S. Hattox, Coffee and Coffeehouses: The Origins of a Social Beverage in the Medieval Near East (1985); Markman Ellis, The Coffee-House: A Cultural History (2004); Antoine Faustus Nairon, De saluberrima potione cahue (1671); The Women's Petition Against Coffee (1674); Charles II, A Proclamation for the Suppression of Coffee-Houses (1675); Jon Grinspan, "How Coffee Fueled the Civil War", The New York Times (2014).
