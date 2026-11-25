@@ -1,6 +1,6 @@
 # What If #2: What Happens If You Catch the Black Death in 1348? Пакет для загрузки
 
-- Видео: `whatif02_plague.mp4` (1920×1080, 6:42, до 100 МБ).
+- Видео: `whatif02_plague.mp4` (1920×1080, 6:42, 98,7 МБ).
 - Обложки 1280×720 для «Тест и сравнение»: главная `thumb_1_6daysleft.jpg`; для теста ещё `thumb_2_yourenext.jpg`, `thumb_3_deadbysunday.jpg` (шрифт как у холеры). Другие сюжеты без комиксного шрифта — в `alt_thumbs/`.
 - Раскрытие ИИ (Altered or synthetic content) = ДА.
 
