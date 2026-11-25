@@ -1,6 +1,8 @@
 # QC genghis — stage frames
 
 ## Автоматические проверки
+- ❌ shot 60: 'Temujin' appears without '(as in the sheet)' — face will drift
+- ❌ shot 60: 'Jamukha' appears without '(as in the sheet)' — face will drift
 - ✅ storyboard: 144 shots linted
 - ✅ frames: review sheets written to /home/user/lookme-viewer/history/genghis/qc/frames_*.jpg
 
