@@ -11,7 +11,7 @@ S = [
  ("c00",3,.55,"close-up of a tall white paper cap lying on a wooden table, written on it in black gothic letters exactly 'HERETIC RELAPSED APOSTATE IDOLATER'"),
  ("c00",4,0,"Joan age 19 (as in the sheet, short dark hair, grey dress) looking up, eyes calm and wet, grey sky behind, head and shoulders"),
  ("c00",5,0,"an English soldier in a red surcoat kneeling and tying two small sticks together into a rough little wooden cross with a strip of cloth"),
- ("c00",5,.6,"close-up of a girl's hands holding a small rough wooden cross made of two sticks against her chest"),
+ ("c00",5,.6,"Joan age 19 (as in the sheet, short dark hair, long grey dress) holding a small rough wooden cross made of two sticks against her chest with both hands, grey sky, from the chest up"),
  ("c00",6,0,"Joan age 17 (as in the sheet) in armour on a white horse with a white banner leading charging French soldiers toward a fortress, pale sky"),
  ("c00",6,.6,"a cathedral interior, a young king kneeling as a gold crown is placed on his head, a girl in armour with a white banner beside the altar"),
  ("c00",7,0,"King Charles (as in the sheet) sitting alone on a throne in an empty hall, looking away, a letter dropped on the floor"),
@@ -25,7 +25,7 @@ S = [
  ("c01",4,0,"an old parchment map of France with the north and Paris coloured red for England, Burgundy coloured red-orange, the south blue for the French"),
  ("c01",5,0,"medieval nobles signing a treaty on parchment at a long table in a cathedral hall in 1420, red wax seals, a small crown on a cushion"),
  ("c01",5,.6,"a young sad prince in blue velvet staring out of a castle window, a crown on a table behind him out of reach"),
- ("c01",6,0,"soldiers on horseback raiding a medieval village, peasants running with bundles and cattle, smoke rising from barns far away"),
+ ("c01",6,0,"Burgundian soldiers on horseback with red diagonal cross (saltire) banners raiding a medieval village, peasants running with bundles and cattle, smoke rising from barns far away, no fleurs-de-lis"),
  ("c01",6,.6,"a peasant family with a cart and cows fleeing along a road at dusk, a girl looking back over her shoulder"),
  ("c01",7,0,"Joan age 13 (as in the sheet) standing in her father's vegetable garden at noon, looking up in awe at a bright soft light in the sky beside the church"),
  ("c01",8,0,"a stained-glass window showing the archangel Michael with sword and scales, and two female saints with a wheel and a cross"),
@@ -48,7 +48,7 @@ S = [
  ("c03",0,0,"a great hall in the castle of Chinon at night, lit by torches and a huge fireplace, hundreds of richly dressed courtiers"),
  ("c03",1,0,"King Charles (as in the sheet) as the young Dauphin sitting nervously, counting a few coins from a small purse, worried face"),
  ("c03",2,0,"King Charles (as in the sheet) standing hidden among courtiers in plain clothes, while another richly dressed man sits on the throne"),
- ("c03",3,0,"Joan age 17 (as in the sheet) in a man's dark tunic kneeling before King Charles (as in the sheet) in the middle of a crowd of astonished courtiers"),
+ ("c03",3,0,"Joan age 17 (as in the sheet, short dark hair) in a man's dark tunic kneeling before King Charles (as in the sheet) dressed in plain clothes, in the middle of a crowd of astonished French courtiers, no bishop, no knights in red"),
  ("c03",4,0,"Joan age 17 (as in the sheet) whispering to King Charles (as in the sheet) in a window alcove, the courtiers far away"),
  ("c03",5,0,"close-up of King Charles (as in the sheet), eyes wide, slowly nodding"),
  ("c03",7,0,"the town of Poitiers in 1429, a hall where a group of churchmen in black and white robes sit at a long table questioning a girl in a dark tunic"),
@@ -64,7 +64,7 @@ S = [
  ("c04",3,0,"a white banner being sewn by women, painted with Christ holding the globe between two angels, with the words exactly 'JHESUS MARIA'"),
  ("c04",4,0,"a small stone church at Fierbois, a priest kneeling behind the altar and lifting an old rusty sword marked with five small crosses on the blade, candlelight"),
  ("c04",5,0,"a scribe writing a letter on parchment while Joan age 17 (as in the sheet) dictates, pointing a finger, in a tent"),
- ("c04",6,0,"close-up of a girl's hand guiding a scribe's hand to draw a simple cross at the bottom of a letter"),
+ ("c04",6,0,"close-up of a scribe's hand with a quill drawing a small cross at the bottom of a parchment letter, a steel armoured gauntlet resting on the table beside it"),
  ("c04",7,0,"an English commander in armour in a war tent reading a letter, his officers looking over his shoulder"),
  ("c04",8,0,"Joan age 17 (as in the sheet) in armour on a white horse entering the gate of Orleans at night, a huge crowd with torches cheering, the white banner above"),
  ("c04",9,0,"English soldiers laughing around a campfire, one waving a crumpled letter"),
@@ -97,7 +97,7 @@ S = [
  ("c06",4,0,"French cavalry charging across an open field at Patay into surprised English archers who are still planting their stakes, June sun"),
  ("c06",5,0,"John Talbot (as in the sheet) on foot surrounded by French knights, lowering his sword, captured"),
  ("c06",6,0,"a long French army column marching north through wheat fields, townspeople opening a town gate and holding out keys"),
- ("c06",7,0,"inside Reims cathedral at the coronation of 1429, King Charles (as in the sheet) kneeling in royal blue robes with fleurs-de-lis as an archbishop places a gold crown on his head, nobles around"),
+ ("c06",7,0,"inside Reims cathedral at the coronation of 1429, King Charles (as in the sheet) kneeling in royal blue robes with fleurs-de-lis as a thin grey-haired archbishop in a white mitre places a gold crown on his head, French nobles in blue around, no English soldiers"),
  ("c06",8,0,"Joan age 17 (as in the sheet) in armour standing near the altar of the cathedral holding her white banner, coloured light from the stained glass"),
  ("c06",9,0,"close-up of the white banner in the cathedral, torn at the edges and stained by battle"),
  ("c06",10,0,"an old parchment map of France: the blue French area now much bigger, red arrows pushed back"),
@@ -110,7 +110,7 @@ S = [
  ("c07",3,.65,"Joan age 17 (as in the sheet) sitting on the ground by the moat holding her thigh, a soldier kneeling beside her, no blood"),
  ("c07",4,0,"dusk over the walls of Paris, Joan age 17 (as in the sheet) still sitting by the moat, refusing the hand of a captain"),
  ("c07",5,0,"a French army packing up tents and marching away from Paris in the rain"),
- ("c07",6,0,"King Charles (as in the sheet) handing a parchment with a big wax seal to Joan age 17 (as in the sheet), who kneels, courtiers smiling politely"),
+ ("c07",6,0,"King Charles (as in the sheet) handing a parchment with a big wax seal to Joan age 17 (as in the sheet), who kneels, French courtiers in blue and green smiling politely, no bishop, no knights in red"),
  ("c07",7,0,"Joan age 17 (as in the sheet) in a fine dress at a royal court banquet, looking out of the window at the snow, restless"),
  ("c07",8,0,"Joan age 17 (as in the sheet) in armour standing on a town wall in spring, eyes closed, listening, a soft light behind her"),
  ("c07",9,0,"a dark storm cloud over a green spring field, a small white banner on a hill"),
@@ -119,7 +119,7 @@ S = [
  ("c08",1,0,"French riders turning back in confusion as many Burgundian soldiers attack from the sides"),
  ("c08",2,0,"the drawbridge gate of Compiegne being raised and closed, soldiers outside reaching for it"),
  ("c08",3,0,"an archer pulling a rider in armour with short dark hair and a red cloak off her horse by the cloak, Burgundian soldiers around, no blood"),
- ("c08",4,0,"Joan age 17 (as in the sheet) without her helmet, surrounded by Burgundian soldiers with spears, hands bound"),
+ ("c08",4,0,"Joan age 17 (as in the sheet) in armour without her helmet, standing calmly in a Burgundian camp, Burgundian knights around her holding her banner, a castle in the distance"),
  ("c08",5,0,"King Charles (as in the sheet) at a table covered in gold coins, turning his face away from a messenger"),
  ("c08",6,0,"the tall square stone tower of the castle of Beaurevoir at night under the moon"),
  ("c08",6,.6,"a small figure in a grey tunic dropping from the top window of a very tall stone tower at night, seen from far below"),
@@ -161,7 +161,7 @@ S = [
  ("c10",13,0,"an empty market square at dawn, a tall wooden post in the middle, seen from far away, grey sky"),
  # c11 — the river
  ("c11",0,0,"English soldiers leading Joan age 19 (as in the sheet) in a long grey dress through a huge silent crowd in the old market square of Rouen"),
- ("c11",1,0,"a priest holding up a large processional crucifix high above the crowd, looking toward the scaffold"),
+ ("c11",1,0,"a priest in a white surplice holding up a large processional crucifix high above a silent crowd in a market square, looking ahead, grey sky, no gallows, no rope"),
  ("c11",2,0,"the crowd in the square seen from behind, many people with heads bowed and hands to their faces, grey smoke rising far away above the rooftops"),
  ("c11",3,0,"a small boat on the river Seine at Rouen at dusk, a man emptying an urn into the water from a bridge, seen from far away"),
  ("c11",4,0,"an English official in dark clothes walking away from the square, head down, shaken"),
@@ -189,6 +189,7 @@ def request(i):
         if hit and REFS[k]:
             medias.append({"role": "image_references", "value": REFS[k]})
             char += f"{', '.join(hit)} must look exactly like the matching figure in {SHEET[k]}. "
+            if k == "K": char += f"Only {', '.join(hit)} from that lineup sheet may appear; do not add the other men of the sheet. "
     suffix = "Any words or numbers written in the scene must be exactly as given." if re.search(r"'[A-Z0-9][^']*'", desc) else "No text, no captions, no title."
     return {"index": i, "params": {"model": "gpt_image_2_6", "aspect_ratio": "16:9", "use_unlim": False, "medias": medias,
                                    "prompt": STYLE + char + "No gore, no blood, no fire. SCENE (16:9): " + desc + ". " + suffix}}
