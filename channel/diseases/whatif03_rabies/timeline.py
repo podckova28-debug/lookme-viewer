@@ -35,6 +35,7 @@ PLAN = [
  ('S04', ['s04a'], {'day': 'Symptoms: day 3'}),
  ('S05', ['h17a', 's05b'], {'notes': {'h17a': [N('water', 330, 300, 340, 425)]}}),
  ('S06', ['s06a', 'h17b'], {'cap': 'Even the sound of water'}),
+ ('S06B', ['h06x1', 'h06x2'], {'cap': 'Why water hurts', 'notes': {'h06x1': [N('brain stem: infected', 1480, 300, 1030, 420), N('throat: locks shut', 1480, 760, 1110, 750)]}}),
  ('S07', ['s07a'], {'big': 'Hydrophobia', 'bigy': 250, 'notes': {'s07a': [N('just a cup', 470, 800, 245, 640)]}}),
  ('H19', ['h19a'], {}),
  ('S09', ['h18a', 's09b'], {'cap': 'Even a breeze'}),

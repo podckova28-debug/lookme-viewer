@@ -49,3 +49,4 @@ S10|NARRATOR|You can't swallow your own spit, so you drool and spit all day. And
 S11|NARRATOR|Here's the cruellest part. Between the attacks, you're completely clear. You understand exactly what's happening to you.
 S12|NARRATOR|Day five. The fear fades, because the paralysis begins. It starts in the bitten arm, and spreads. Your legs stop working. Then your face.
 S13|NARRATOR|Then a coma, and then your breathing stops. About a week from the first symptom, it's over. In eighteen eighty-five, nobody survived.
+S06B|NARRATOR|Why? The virus has reached the part of your brain stem that runs swallowing, and it's damaged it. Now the swallowing reflex is on a hair trigger. Every attempt to swallow fires a violent cramp through your throat and chest. And your brain learns fast: water means pain.

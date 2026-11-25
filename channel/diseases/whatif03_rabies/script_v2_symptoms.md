@@ -22,6 +22,9 @@
 **S06 N:** And next time, it gets worse. Just seeing the cup sets off the spasm. Even the sound of water being poured.
 [Мама наливает воду из кувшина у стола, герой в другом конце комнаты закрывает уши и отворачивается]
 
+**S06B N:** Why? The virus has reached the part of your brain stem that runs swallowing, and it's damaged it. Now the swallowing reflex is on a hair trigger. Every attempt to swallow fires a violent cramp through your throat and chest. And your brain learns fast: water means pain.
+[Схема: ствол мозга воспалён, вирусы, нервы к горлу, горло сжато спазмом. Схема: кружка → спазм → в мыслях кружка зачёркнута]
+
 **S07 N:** Doctors called it hydrophobia, fear of water. You're dying of thirst, and you're terrified of a cup.
 [Крупная надпись HYDROPHOBIA. Кружка на столе, герой забился в угол кровати]
 
@@ -50,3 +53,5 @@
 Факты: WHO и CDC — продромальная стадия (покалывание, жжение, зуд в месте укуса; лихорадка);
 буйная форма (возбуждение, бессонница, гидрофобия, аэрофобия, слюнотечение); ясные промежутки между приступами;
 затем паралич, начинающийся с укушенной конечности, кома, смерть от остановки дыхания/сердца, обычно в течение ~7 дней.
+
+- Гидрофобия: энцефалит поражает ствол мозга (ядра, управляющие глотанием); рефлекс глотания становится сверхвозбудимым — болезненные спазмы глотки, гортани и диафрагмы; затем спазм вызывает уже вид/звук воды (CDC, WHO, Hemachudha et al., Lancet Neurol 2013).
