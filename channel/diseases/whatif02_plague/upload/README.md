@@ -1,6 +1,6 @@
 # What If #2: What Happens If You Catch the Black Death in 1348? Пакет для загрузки
 
-- Видео: `whatif02_plague.mp4` (1920×1080, 6:42, 98,7 МБ).
+- Видео: `whatif02_plague.mp4` (1920×1080, 4:37).
 - Обложки 1280×720 для «Тест и сравнение»: главная `thumb_1_6daysleft.jpg`; для теста ещё `thumb_2_yourenext.jpg`, `thumb_3_deadbysunday.jpg` (шрифт как у холеры). Другие сюжеты без комиксного шрифта — в `alt_thumbs/`.
 - Раскрытие ИИ (Altered or synthetic content) = ДА.
 
@@ -24,14 +24,14 @@ Day by day: what the plague bacteria do inside you, the fever, the bubo the size
 
 CHAPTERS
 0:00 A peach and a flea
-0:25 Day 0: what bit you
-1:00 Days 1-2: nothing happens
-1:30 Day 3: the fever
-1:57 Day 4: the bubo
-2:27 Day 5: your 1348 doctor
-4:02 Day 6: three paths
-4:53 Day 8: you survive
-5:40 The same bite, today
+0:23 Day 0: what bit you
+0:43 Days 1-2: nothing happens
+1:00 Day 3: the fever
+1:19 Day 4: the bubo
+1:35 Day 5: your 1348 doctor
+2:40 Day 6: three paths
+3:26 Day 8: you survive
+4:00 The same bite, today
 
 Sources are listed in the pinned comment. This video is history, not medical advice.
 
