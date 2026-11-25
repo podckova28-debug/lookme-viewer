@@ -51,6 +51,7 @@ if video:
 
 # gaps between shots (the renderer must never invent a frame) and texts fighting for the same spot
 sh_ = spec['shots']
+if sh_[0]['t0'] > .01: fails.append(f'GAP: nothing on screen 0-{sh_[0]["t0"]:.2f}s at the start')
 for a, b in zip(sh_, sh_[1:]):
     if b['t0'] - a['t1'] > .01: fails.append(f'GAP: nothing on screen {a["t1"]:.2f}-{b["t0"]:.2f}s (between {a["img"]} and {b["img"]})')
 CENTER = [x for x in spec.get('texts', []) if x['style'] in ('big', 'cap', 'strike')]

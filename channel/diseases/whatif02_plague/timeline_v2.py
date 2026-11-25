@@ -101,6 +101,7 @@ for i, frames, tx in PLAN:
         sfx.append({'kind': 'page', 't': round(st0, 3), 'gain': .6})
     t = t1
     if i == 'C04': t += 1.2; shots[-1]['t1'] = round(t, 3)   # hold the title on the last cold-open frame
+shots[0]['t0'] = 0.0
 for a, b in zip(shots, shots[1:]): a['t1'] = b['t0']   # no holes: the previous frame covers section pauses
 shots[-1]['t1'] = round(t + 1.2, 3); shots[-1]['fade_out'] = 1.0; TOTAL = round(t + 1.2, 3)
 mt = lambda i: round(marks[i], 2)
