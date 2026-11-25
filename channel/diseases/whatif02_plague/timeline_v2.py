@@ -85,7 +85,9 @@ for i, frames, tx in PLAN:
         bt = t0 + d * .5; texts.append({'style': 'big', 'text': tx['big'], 't0': bt, 't1': min(bt + 1.8, t1), 'pop': True})
     if 'bigat' in tx:
         f, txt = tx['bigat']; a, b = starts[f]; texts.append({'style': 'big', 'text': txt, 't0': a + .1, 't1': b, 'pop': True})
-    if 'title' in tx: texts.append({'style': 'cap', 'text': tx['title'], 'y': 540, 'size': 96, 'maxw': 1700, 't0': starts[frames[-1]][0] + .2, 't1': t1 + 1.2, 'pop': True})
+    if 'title' in tx:
+        big_end = max([x['t1'] for x in texts if x['style'] == 'big' and x['t0'] >= t0] or [0])
+        texts.append({'style': 'cap', 'text': tx['title'], 'y': 540, 'size': 96, 'maxw': 1700, 't0': max(starts[frames[-1]][0] + .2, big_end + .15), 't1': t1 + 1.2, 'pop': True})
     for f, notes in tx.get('notes', {}).items():
         a, b = starts[f]
         for nn in notes: texts.append({'style': 'note', 't0': a + .25, 't1': b, **nn})
@@ -99,6 +101,7 @@ for i, frames, tx in PLAN:
         sfx.append({'kind': 'page', 't': round(st0, 3), 'gain': .6})
     t = t1
     if i == 'C04': t += 1.2; shots[-1]['t1'] = round(t, 3)   # hold the title on the last cold-open frame
+for a, b in zip(shots, shots[1:]): a['t1'] = b['t0']   # no holes: the previous frame covers section pauses
 shots[-1]['t1'] = round(t + 1.2, 3); shots[-1]['fade_out'] = 1.0; TOTAL = round(t + 1.2, 3)
 mt = lambda i: round(marks[i], 2)
 G = .55   # music quieter than before

@@ -49,6 +49,18 @@ if video:
     if abs(dv - da) > .1: fails.append(f'SYNC: final file video {dv:.2f}s vs audio {da:.2f}s')
     notes.append(f'final file: video {dv:.2f}s, audio {da:.2f}s')
 
+# gaps between shots (the renderer must never invent a frame) and texts fighting for the same spot
+sh_ = spec['shots']
+for a, b in zip(sh_, sh_[1:]):
+    if b['t0'] - a['t1'] > .01: fails.append(f'GAP: nothing on screen {a["t1"]:.2f}-{b["t0"]:.2f}s (between {a["img"]} and {b["img"]})')
+CENTER = [x for x in spec.get('texts', []) if x['style'] in ('big', 'cap', 'strike')]
+for i, a in enumerate(CENTER):
+    for b in CENTER[i + 1:]:
+        if a['style'] == 'strike' or b['style'] == 'strike': continue
+        ya, yb = a.get('y', 950 if a['style'] == 'cap' else 500), b.get('y', 950 if b['style'] == 'cap' else 500)
+        if min(a['t1'], b['t1']) - max(a['t0'], b['t0']) > .05 and abs(ya - yb) < 320:
+            fails.append(f'TEXT: "{a["text"]}" and "{b["text"]}" are on screen together at the same place ({max(a["t0"], b["t0"]):.2f}s)')
+
 # ---------- 2. place consistency ----------
 # a) ORB + RANSAC: is it the same place and camera at all?  (same room 120-400 inliers, another place ~15)
 # b) furniture zones: after aligning the frame to the master, compare edge maps inside zones where the furniture is

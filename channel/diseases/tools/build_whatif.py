@@ -242,7 +242,10 @@ def picture(path):
     n = int(round(TOTAL * FPS))
     for i in range(n):
         t = i / FPS
-        sh = next((s for s in shots if s['t0'] <= t < s['t1']), shots[-1])
+        sh = next((s for s in shots if s['t0'] <= t < s['t1']), None)
+        if sh is None:
+            if t >= shots[-1]['t0']: sh = shots[-1]
+            else: raise SystemExit(f'no shot covers t={t:.2f}s - fix the timeline (gap between shots)')
         img = render_shot(sh, t)
         fo = sh.get('fade_out')
         if fo and t > sh['t1'] - fo: img = (img * max(0, (sh['t1'] - t) / fo)).astype(np.uint8)
