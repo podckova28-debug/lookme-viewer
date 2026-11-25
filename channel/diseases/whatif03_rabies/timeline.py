@@ -19,7 +19,7 @@ PLAN = [
  ('H02', ['h02a', 'm_diag'], {'cap': 'A few centimetres a day'}),
  ('H03', ['h03a'], {'after': ('h03b', 'K03', 'd0')}),
  ('H04', ['h04a', 'h04b'], {'cap': 'Step 1: a red-hot key', 'notes': {'h04a': [N("St Hubert's key", 300, 800, 325, 480)]}}),
- ('H05', ['h05a', 'h05b', 'h05c'], {'cap': '(this one might actually help)', 'notes': {'h05b': [N('the virus, waiting', 1000, 110, 1430, 370), N('nerve: still empty', 1560, 880, 1560, 600)]}}),
+ ('H05', ['h05a', 'h05b', 'h05c'], {'cap': '(this one might actually help)', 'notes': {'h05b': [N('the virus, waiting', 300, 150, 740, 590), N('nerve: still empty', 1560, 880, 1560, 600)]}}),
  ('H06', ['h06a', 'h06b'], {'cap': 'Step 2: hair of the dog', 'strike': True, 'notes': {'h06b': [N('Actual dog hair', 1650, 640, 1150, 480)]}}),
  ('H07', ['h07a'], {}),
  ('H08', ['h08a', 'h08b', 'h08c'], {'day': 'Weeks 1-6'}),
