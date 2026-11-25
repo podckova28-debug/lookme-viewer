@@ -19,7 +19,7 @@ SHOTS = [
  (0,14,BOARD+"under GIN many chalk tally marks, under PARLIAMENT nothing","spoiler"),
  (0,15,12,""),(0,16,13,""),
  # p1
- (1,0,14,""),(1,1,15,""),(1,2,16,""),
+ (1,0,"a 17th-century Dutch town with a canal, gabled brick houses, a small bridge and a windmill; a street scene with no people","Holland"),(1,1,15,""),(1,2,16,""),
  (1,3,"a 17th-century plague doctor in a long black coat and bird-beak mask standing alone, holding one small glass of genever in one hand and shrugging with the other hand","didn't work"),
  (1,4,18,""),
  (1,5,"three cheerful 17th-century Dutch townspeople standing in a queue at a wooden apothecary counter, each holding out one empty small cup, all pretending to cough, a bottle of genever on the counter","more medicine, please"),
@@ -43,7 +43,7 @@ SHOTS = [
  (3,13,BOARD+"under GIN the number 1, under PARLIAMENT the number 0","score"),
  (3,14,54,""),
  # p4 (serious)
- (4,0,55,""),(4,1,56,""),(4,2,57,""),(4,3,58,""),(4,4,60,""),(4,5,61,""),(4,6,62,""),(4,7,64,""),
+ (4,0,55,""),(4,1,56,""),(4,2,57,""),(4,3,"SERIOUS|close-up of one plain worn silver coin and four plain worn copper coins lying in a row on a dark worn wooden shop counter, lit by a single candle; the coins have blank worn faces with no portraits, no lettering and no cartoon faces; objects only, no people, no hands","1s 4d"),(4,4,60,""),(4,5,61,""),(4,6,62,""),(4,7,64,""),
  # p5
  (5,0,67,""),(5,1,68,""),(5,2,69,""),
  (5,3,"an 18th-century clerk's wooden desk with an open, completely empty ledger, a quill in an inkwell with a cobweb on it; objects only, no people","how many?"),
@@ -58,7 +58,7 @@ SHOTS = [
  # p6
  (6,0,81,""),(6,1,82,""),(6,2,83,""),
  (6,3,"in 18th-century engraving style, a boarded-up crumbling pawnbroker's shop with three balls hanging above the door and cobwebs on the window; objects only, no people","business: terrible"),
- (6,4,84,""),(6,5,85,""),(6,6,86,""),(6,7,87,""),
+ (6,4,"in 18th-century engraving style, a London street of crumbling ruined houses with two gin shop signs, empty except for one stray thin dog; objects only, no people","Gin Lane"),(6,5,85,""),(6,6,86,""),(6,7,87,""),
  (6,8,"a giant wooden mallet labelled 'MORAL' smashing down onto a small wooden table, dust and splinters flying, cartoon impact lines; objects only, no people, no hands","subtle?"),
  (6,9,88,""),(6,10,89,""),(6,11,92,""),(6,12,93,""),
  (6,13,BOARD+"under GIN the number 2, under PARLIAMENT the number 1 with a small chalk star next to it","finally!"),
@@ -76,16 +76,20 @@ SHOTS = [
  # p8
  (8,0,115,""),(8,1,116,""),(8,2,117,""),
  (8,3,"a stylish modern gin bottle with a price tag reading '£40', next to a small pile of straw crossed out with a red X; objects only, no people","straw not included"),
- (8,4,118,""),(8,5,119,""),(8,6,120,""),(8,7,121,""),
+ (8,4,YOU+"standing alone in an empty muddy 1730s St Giles street of crooked timber houses, scratching his head with one hand, puzzled; no other people","so?"),(8,5,119,""),(8,6,120,""),(8,7,121,""),
  (8,8,BOARD+"under GIN the number 2, under PARLIAMENT the number 1, and at the bottom a small chalk drawing of the London skyline with a smiley face","final score"),
  (8,9,122,""),(8,10,123,""),(8,11,124,""),
  (8,12,"a heap of black sticky molasses barrels and cut sugar cane scraps with a few cartoon flies, next to a small wooden sailing warship and a sailing ship with a plain black flag; objects only, no people","trash → navy & pirates"),
  (8,13,125,""),
 ]
 NEG = " Anatomically correct people: every person has exactly two arms, two hands and five fingers per hand; no extra or floating limbs."
+SERIOUS = ("White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour in sombre pewter grey and dark brown; "
+           "serious, quiet, realistic mood, no cartoon elements; cut out on white with a little white space around it. ")
 def prompt(i):
     p,l,d,n = SHOTS[i-1]
     assert isinstance(d,str)
+    if d.startswith("SERIOUS|"):
+        return SERIOUS + d[8:].capitalize() + "." + (f" Handwritten marker note + arrow: '{n}'." if n else "") + " No other text."
     note = f" Handwritten marker note + arrow: '{n}'." if n else " No other text."
     people = not ("no people" in d)
     if "stick figure" in d: note += " The stick figure is the only character."
