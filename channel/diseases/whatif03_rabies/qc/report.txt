@@ -1,5 +1,6 @@
 QC timeline.json
 shots 84, unique frames 84, lines 47, 318.0s
+final file: video 317.96s, audio 317.96s
 all automatic checks passed
 
 Now look at the sheets in /home/user/lookme-viewer/channel/diseases/whatif03_rabies/qc at full size:
