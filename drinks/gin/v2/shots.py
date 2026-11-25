@@ -1,14 +1,16 @@
 # Gin v2 (mead/ketchup formula). frame -> (part, line, desc, note). desc = int -> reuse frame N of the v1 gin video.
 # Running gag: the tavern chalkboard score "GIN vs PARLIAMENT". Callbacks: the straw, the Dutch doctors.
 STYLE = ("White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, juniper blue-green and pewter grey accents, "
-         "playful humorous cartoon tone; cut out on white, lots of white space, the whole drawing well inside the frame with wide empty margins. ")
-YOU = "one simple white round-headed stick figure with dot eyes, exactly two arms and two legs, wearing a small black tricorn hat, "
+         "playful humorous cartoon tone; large close-up composition: the subject is big and fills most of the frame, rich fine detail, textures and expressive faces; "
+         "cut out on white with a little white space around it. ")
+YOU = ("one simple hand-drawn stick figure: thin black ink line body, arms and legs, a round white head with dot eyes and an expressive mouth, "
+       "simple outlined hands, exactly two arms and two legs, wearing a small black tricorn hat, ")
 BOARD = ("an old dark green wooden tavern chalkboard on a wooden easel, written on it in white chalk two columns headed 'GIN' and 'PARLIAMENT', "
          "a short chalk line under the headings; objects only, no people, no hands; ")
 SHOTS = [
  # p0
  (0,0,1,""),(0,1,2,""),(0,2,3,""),(0,3,4,""),(0,4,5,""),(0,5,6,""),
- (0,6,YOU+"lying flat on his back on a pile of clean straw on a cellar floor, legs sticking up in the air, dizzy spirals above his head, a small empty pewter cup beside him","legs: off"),
+ (0,6,YOU+"with a clear straight line torso connecting head to hips, lying flat on his back on a pile of clean straw on a cellar floor, legs sticking up in the air, dizzy spirals above his head, a small empty pewter cup beside him","legs: off"),
  (0,7,"a pile of clean straw with a small fluffy pillow on top and a little folded towel, like a hotel bed, next to a tiny wooden sign with five painted stars; objects only, no people","customer service"),
  (0,8,8,""),(0,9,9,""),(0,10,11,""),
  (0,11,"one 18th-century member of Parliament in a white powdered wig and long dark coat, standing alone, slamming one rolled paper scroll down on a wooden table, determined face","again"),
@@ -26,7 +28,7 @@ SHOTS = [
  (1,12,24,""),(1,13,25,""),(1,14,26,""),
  # p2
  (2,0,27,""),(2,1,28,""),(2,2,30,""),(2,3,31,""),
- (2,4,"an 18th-century paper document with the word 'LICENCE' crossed out with a big red X, next to a small copper pot still; objects only, no people","no licence"),
+ (2,4,"an old paper document with no dates and no other words, only the word 'LICENCE' crossed out with a big red X, next to a small copper pot still; objects only, no people","no licence"),
  (2,5,"a 1690s Englishman in a nightcap and shirtsleeves standing alone next to a small rattling copper still, reading a book that is upside down, confused","no training"),
  (2,6,"a small copper still in a wooden shed bursting comically in a puff of grey smoke, its cork flying off; a 1690s man standing next to it with soot on his face and his hair standing up, arms at his sides","no idea"),
  (2,7,32,""),(2,8,33,""),(2,9,34,""),(2,10,35,""),(2,11,36,""),(2,12,37,""),(2,13,40,""),(2,14,41,""),
