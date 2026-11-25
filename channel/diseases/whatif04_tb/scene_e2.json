@@ -1,0 +1,191 @@
+{
+ "r": [
+  {
+   "index": 0,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every building, tree, gravestone and piece of furniture; do not redraw them. All people are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small black mitten hands. Medium-wide shot, every person fully visible from head to feet. Anatomy check: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs. No text, no readable writing. Not gory. Winter day. In front of the farmhouse, the hero from the SECOND reference image (same stickman, brown wool flat cap, grey wool jacket, knitted scarf, dark trousers, boots) stands in the snow, bent forward, coughing into his fist, cough lines by his mouth. Nobody else.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "bfeed136-c728-4172-b3b5-b65beb4e8bc5",
+      "role": "image_references"
+     },
+     {
+      "value": "3dec3e2d-0327-4ff9-a120-8e94644eabe0",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 1,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every building, tree, gravestone and piece of furniture; do not redraw them. All people are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small black mitten hands. Medium-wide shot, every person fully visible from head to feet. Anatomy check: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs. No text, no readable writing. Not gory. Winter day. At the wooden fence on the left, three village neighbours (stickmen in dark coats and hats, one woman in a bonnet) stand close together whispering behind their hands and pointing at the farmhouse. the hero from the SECOND reference image (same stickman, brown wool flat cap, grey wool jacket, knitted scarf, dark trousers, boots) stands far away by the porch, small, looking at them.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "bfeed136-c728-4172-b3b5-b65beb4e8bc5",
+      "role": "image_references"
+     },
+     {
+      "value": "3dec3e2d-0327-4ff9-a120-8e94644eabe0",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 2,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every building, tree, gravestone and piece of furniture; do not redraw them. All people are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small black mitten hands. Medium-wide shot, every person fully visible from head to feet. Anatomy check: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs. No text, no readable writing. Not gory. Night: the room is dark blue, lit only by the oil lamp. the hero from the SECOND reference image (same stickman, brown wool flat cap, grey wool jacket, knitted scarf, dark trousers, boots) sits at the table wrapped in a blanket, coughing. Outside the dark window, the faint pale silhouette of a woman's face presses against the glass. Spooky but not gory.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "705a70f2-7d21-4449-a39d-3190e8fd402a",
+      "role": "image_references"
+     },
+     {
+      "value": "3dec3e2d-0327-4ff9-a120-8e94644eabe0",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 3,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every building, tree, gravestone and piece of furniture; do not redraw them. All people are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small black mitten hands. Medium-wide shot, every person fully visible from head to feet. Anatomy check: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs. No text, no readable writing. Not gory. Grey winter dusk. his father, a taller stickman with a black wide-brimmed hat and a long dark wool coat leads a group of four village men (stickmen in dark coats and hats) marching into the cemetery in a line, carrying shovels and lanterns, determined faces.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "c8e18df6-27cd-42d3-b9f8-259bc3b8440f",
+      "role": "image_references"
+     },
+     {
+      "value": "3dec3e2d-0327-4ff9-a120-8e94644eabe0",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 4,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every building, tree, gravestone and piece of furniture; do not redraw them. All people are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small black mitten hands. Medium-wide shot, every person fully visible from head to feet. Anatomy check: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs. No text, no readable writing. Not gory. The wooden door of the stone crypt is open, dark inside. The village men (stickmen in dark coats and hats, holding shovels and lanterns) stand in front of it and recoil in horror, one points into the crypt, shock lines around their heads. Not gory, nothing visible inside.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "c8e18df6-27cd-42d3-b9f8-259bc3b8440f",
+      "role": "image_references"
+     },
+     {
+      "value": "3dec3e2d-0327-4ff9-a120-8e94644eabe0",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 5,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every building, tree, gravestone and piece of furniture; do not redraw them. All people are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small black mitten hands. Medium-wide shot, every person fully visible from head to feet. Anatomy check: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs. No text, no readable writing. Not gory. Grey winter dusk. On a big flat rock among the gravestones a small fire burns; in the flames lies a simple red cartoon heart shape (a symbol, not anatomical). The village men stand around it in a circle, solemn, hats off held in their hands.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "c8e18df6-27cd-42d3-b9f8-259bc3b8440f",
+      "role": "image_references"
+     },
+     {
+      "value": "3dec3e2d-0327-4ff9-a120-8e94644eabe0",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 6,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every building, tree, gravestone and piece of furniture; do not redraw them. All people are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small black mitten hands. Medium-wide shot, every person fully visible from head to feet. Anatomy check: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs. No text, no readable writing. Not gory. Day. his father, a taller stickman with a black wide-brimmed hat and a long dark wool coat stands by the table and hands a tin cup of murky grey drink to the hero from the SECOND reference image (same stickman, brown wool flat cap, grey wool jacket, knitted scarf, dark trousers, boots), who sits at the table and looks down into the cup with a deeply doubtful face.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "705a70f2-7d21-4449-a39d-3190e8fd402a",
+      "role": "image_references"
+     },
+     {
+      "value": "3dec3e2d-0327-4ff9-a120-8e94644eabe0",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 7,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "2D animated history explainer frame, 16:9, no text. Same ink-and-cross-hatching drawing style and muted sepia palette as the reference. A Berlin laboratory, 1882: a wooden bench with glass flasks, test tubes in a rack and a brass microscope. Robert Koch as a simple stickman (plain white round head with no hair, small round wire spectacles, a short neat grey beard drawn on the lower face, dark frock coat) bends over the microscope, one eye at the eyepiece, one hand on the focus knob, the other hand resting on the bench. A small round inset circle in the corner shows what he sees: pink-stained thin rod-shaped bacteria. Exactly one person, two arms, two hands. Not gory.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "557f5d94-d7bb-494f-bfa1-5a92bfffb8b5",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 8,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same cemetery, drawing style, palette and camera. Add one figure: Tuberculosis as 'the White Lady' exactly as on the SECOND reference sheet (gaunt ghostly Victorian woman, waxy grey-white skin, red feverish blotches, dark-ringed eyes, long dark hair, tattered off-white nightgown, grey knitted shawl), standing between the gravestones in the middle, holding a lit candle in a brass holder, smiling at the viewer with amusement, her other hand raised in a little wave. Exactly one figure, two arms, two hands. No text.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "c8e18df6-27cd-42d3-b9f8-259bc3b8440f",
+      "role": "image_references"
+     },
+     {
+      "value": "1de80806-b140-40d9-8e0b-9a3a526ecee8",
+      "role": "image_references"
+     }
+    ]
+   }
+  }
+ ],
+ "ids": [
+  "e2a",
+  "e2b",
+  "e2b2",
+  "e2c",
+  "e2d",
+  "e2e",
+  "e2e2",
+  "e2f",
+  "e2g"
+ ]
+}
