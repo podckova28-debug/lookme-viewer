@@ -59,6 +59,7 @@ def draw_item(it, k):
         return L
     if st == 'card':   # YOUR BODY status card: rows [label, value, fraction 0..1, [r,g,b]], mood line
         x, y, cw = it.get('x', W - 640), it.get('y', 70), 580; rows = it['rows']; ch = 130 + 100 * len(rows) + 90
+        if it.get('dim'): L = Image.alpha_composite(L, Image.new('RGBA', (W, H), (0, 0, 0, 110)))   # focus on the card
         S = Image.new('RGBA', (W, H), (0, 0, 0, 0)); ImageDraw.Draw(S).rounded_rectangle((x + 6, y + 10, x + cw + 6, y + ch + 10), 30, fill=(0, 0, 0, 120))
         L = Image.alpha_composite(S.filter(ImageFilter.GaussianBlur(10)), L); d = ImageDraw.Draw(L)
         d.rounded_rectangle((x, y, x + cw, y + ch), 30, fill=(22, 17, 15, 225))
@@ -102,7 +103,9 @@ def draw_item(it, k):
         L = Image.alpha_composite(S.filter(ImageFilter.GaussianBlur(4)), L); d = ImageDraw.Draw(L)
         d.line(pts, fill=ink, width=17, joint='curve')                     # dark outline
         for px, py in (pts[0],): d.ellipse((px - 8, py - 8, px + 8, py + 8), fill=ink)
-        if p_ >= 1: d.polygon(head, fill=ink, outline=ink, width=9)
+        cxh, cyh = sum(q[0] for q in head) / 3, sum(q[1] for q in head) / 3   # outlined tip: dark triangle 1.5x bigger behind the white one
+        head_out = [(cxh + (q[0] - cxh) * 1.5, cyh + (q[1] - cyh) * 1.5) for q in head]
+        if p_ >= 1: d.polygon(head_out, fill=ink)
         d.line(pts, fill=white, width=8, joint='curve')                    # white core
         for px, py in (pts[0],): d.ellipse((px - 4, py - 4, px + 4, py + 4), fill=white)
         if p_ >= 1: d.polygon(head, fill=white)

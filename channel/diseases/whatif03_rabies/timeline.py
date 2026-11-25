@@ -8,7 +8,7 @@ def dur(i):
     w = wave.open(os.path.join(REPO, VO, i + '.wav')); return w.getnframes() / w.getframerate()
 
 N = lambda text, x, y, tx=None, ty=None, **k: dict(text=text, x=x, y=y, **({'tx': tx, 'ty': ty} if tx is not None else {}), **k)
-# line, frames, texts. 'after' = (frame, seconds, card): a silent status-card shot after the line
+# line, frames, texts. 'after' = (frame, line, card): a status-card shot after the line, the narrator reads the card
 PLAN = [
  ('C01', ['m_street', 'c01b', 'c01c'], {'cap': 'France, November 1885', 'notes': {'c01c': [N('Drooling', 380, 170, 860, 440), N('(not a good sign)', 380, 245, size=46)]}}),
  ('C02', ['c02a'], {}),
@@ -17,7 +17,7 @@ PLAN = [
          'notes': {'c02b': [N('2 bites', 1480, 260, 950, 520)]}}),
  ('H01', ['h01b', 'h01c'], {'day': 'Day 0'}),
  ('H02', ['h02a', 'm_diag'], {'cap': 'A few centimetres a day'}),
- ('H03', ['h03a'], {'after': ('h03b', 3.8, 'd0')}),
+ ('H03', ['h03a'], {'after': ('h03b', 'K03', 'd0')}),
  ('H04', ['h04a', 'h04b'], {'cap': 'Step 1: a red-hot key', 'notes': {'h04a': [N("St Hubert's key", 300, 800, 325, 480)]}}),
  ('H05', ['h05a'], {'cap': '(this one might actually help)'}),
  ('H06', ['h06a', 'h06b'], {'cap': 'Step 2: hair of the dog', 'strike': True, 'notes': {'h06b': [N('Actual dog hair', 430, 620, 1100, 800)]}}),
@@ -32,7 +32,7 @@ PLAN = [
  ('H15', ['h15a', 'h15b'], {'day': 'Week 6', 'card': 'w6', 'notes': {'h15a': [N('It itches', 640, 880, 1225, 655)]}}),
  ('H16', ['h16a', 'h16b'], {'day': 'Symptoms: day 2'}),
  ('H17', ['h17a', 'h17b'], {'notes': {'h17a': [N('Water', 330, 300, 340, 425)]}}),
- ('H18', ['h18a'], {'day': 'Symptoms: day 3', 'cap': 'Hydrophobia: fear of water', 'after': ('h18b', 3.8, 's3')}),
+ ('H18', ['h18a'], {'day': 'Symptoms: day 3', 'cap': 'Hydrophobia: fear of water', 'after': ('h18b', 'K18', 's3')}),
  ('H19', ['h19a'], {}),
  ('H20', ['h20a'], {'notes': {'h20a': [N('The virus', 1660, 170, 1305, 395), N('(ready for a ride)', 1660, 240, size=46)]}}),
  ('H21', ['h21z', 'h21a'], {}),
@@ -60,7 +60,7 @@ CARDS = {
 CROP = {'t04a': [.56, .45, 1.6]}   # static crop on the first and only use: hides two stray stickmen at the map edges
 CROP_OK = {'t04a'}   # NO zoomed re-use of a frame: the user hates jump zooms (qc.py fails on them)
 SECTION = {'H01', 'H04', 'H08', 'H11', 'H15', 'H22', 'T01', 'E01'}
-CARD_MIN, CARD_X = 3.6, 60   # cards on the left: the hero is on the right in the room
+CARD_MIN = 3.6   # cards sit in the centre over a dimmed frame and the narrator reads them
 
 shots, texts, vo, sfx, marks = [], [], [], [], {}
 def shot(f, a, b):
@@ -68,7 +68,8 @@ def shot(f, a, b):
     shots.append({'img': f, 'from': [c[0], c[1], c[2] + .025], 'to': c, 'settle': .3, 't0': round(a, 3), 't1': round(b, 3), **({'crop_ok': True} if f in CROP_OK else {})})
 def card(name, a, b):
     rows, mood = CARDS[name]
-    texts.append({'style': 'card', 'x': CARD_X, 'y': 190, 'rows': [list(r[:3]) + [list(r[3])] for r in rows], 'mood': mood, 't0': a + .1, 't1': b, 'pop': True})
+    ch = 130 + 100 * len(rows) + 90
+    texts.append({'style': 'card', 'x': 440, 'y': (1080 - ch) // 2, 'dim': True, 'rows': [list(r[:3]) + [list(r[3])] for r in rows], 'mood': mood, 't0': a + .1, 't1': b, 'pop': True})
     sfx.append({'kind': 'shutter', 't': round(a + .1, 3), 'gain': .3})
 t = 0.3
 for i, frames, tx in PLAN:
@@ -101,7 +102,7 @@ for i, frames, tx in PLAN:
         sfx.append({'kind': 'page', 't': round(st0, 3), 'gain': .6})
     t = t1
     if 'after' in tx:
-        f, s, c = tx['after']; shot(f, t, t + s); card(c, t, t + s); t += s
+        f, k, c = tx['after']; s = dur(k) + .45; vo.append({'file': f'{VO}/{k}.wav', 't': round(t + .03, 3)}); shot(f, t, t + s); card(c, t, t + s); t += s
     if 'day' in tx: texts.append({'style': 'day', 'text': tx['day'], 't0': t0, 't1': t + (2.0 if i != 'T01' else 0), 'pop': True})
     if i == 'C04': t += 1.6; shots[-1]['t1'] = round(t, 3)   # hold the title on the last cold-open frame
 shots[0]['t0'] = 0.0

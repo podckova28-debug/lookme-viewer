@@ -54,6 +54,10 @@ sh_ = spec['shots']
 if sh_[0]['t0'] > .01: fails.append(f'GAP: nothing on screen 0-{sh_[0]["t0"]:.2f}s at the start')
 for a, b in zip(sh_, sh_[1:]):
     if b['t0'] - a['t1'] > .01: fails.append(f'GAP: nothing on screen {a["t1"]:.2f}-{b["t0"]:.2f}s (between {a["img"]} and {b["img"]})')
+# every frame is used once only (user rule: never reuse a frame)
+from collections import Counter
+for img_, n_ in Counter(x['img'] for x in sh_).items():
+    if n_ > 1: fails.append(f'REUSE: {img_} is used {n_} times; every frame must appear once')
 # jump zooms: the same picture twice in a row, or a zoomed crop (the user hates both)
 for a, b in zip(sh_, sh_[1:]):
     if a['img'] == b['img'] and a.get('to') != b.get('to'): fails.append(f'ZOOM: {a["img"]} cuts to a zoomed copy of itself at {b["t0"]:.2f}s')

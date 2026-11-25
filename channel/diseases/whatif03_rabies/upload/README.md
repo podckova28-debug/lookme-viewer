@@ -25,12 +25,12 @@ What the rabies virus does inside you, week by week, what your village would hav
 CHAPTERS
 0:00 A loaf of bread and a bad dog
 0:24 Day 0: what bit you
-0:46 Village medicine
-1:07 The quiet weeks
-1:29 The choice
-1:53 If you stay home
-2:40 If you take the train
-3:15 The same bite, today
+0:48 Village medicine
+1:10 The quiet weeks
+1:32 The choice
+1:56 If you stay home
+2:47 If you take the train
+3:22 The same bite, today
 
 Sources are listed in the pinned comment. This video is history, not medical advice. If an animal bites you, wash the wound and see a doctor.
 

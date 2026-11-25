@@ -35,3 +35,5 @@ T03|NARRATOR|Started in time, it works almost every time.
 T04|NARRATOR|And still, rabies kills about fifty-nine thousand people every year, mostly children bitten by dogs in Asia and Africa, far from a clinic.
 T05|RABIES|I'm still here. Waiting for someone to skip the doctor.
 E01|NARRATOR|So, would you have got on that train in eighteen eighty-five? Tell me in the comments.
+K03|NARRATOR|Day zero. Two holes in your arm. No fever. The virus is still sitting in your arm. Mood: annoyed.
+K18|NARRATOR|Day three of symptoms. Huge thirst, but you can't swallow. Fear: maximum. The virus is everywhere. Mood: terrified.
