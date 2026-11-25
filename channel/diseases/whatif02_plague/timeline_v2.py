@@ -10,9 +10,9 @@ def dur(i):
 N = lambda text, x, y, tx=None, ty=None, **k: dict(text=text, x=x, y=y, **({'tx': tx, 'ty': ty} if tx is not None else {}), **k)
 # line, frames, texts; 'notes' = {frame: [note, ...]}; 'card' goes on the LAST frame of the line
 PLAN = [
- ('C01', ['s_market', 'c01b', 'c01c'], {'cap': 'Florence, June 1348', 'notes': {'c01c': [N('Flea', 860, 560, 530, 780)]}}),
- ('C02', ['c02a'], {'notes': {'c02a': [N('Flea', 360, 250, 690, 420)]}}),
- ('C03', ['s_plague_stall'], {}),
+ ('C01', ['s_market', 'c01b', 'c01c'], {'cap': 'Florence, June 1348', 'notes': {'c01c': [N('Flea', 420, 480, 640, 700)]}}),
+ ('C02', ['c02a'], {'notes': {'c02a': [N('Flea', 330, 330, 680, 480)]}}),
+ ('C03', ['s_plague_stall'], {'notes': {'s_plague_stall': [N('The Plague', 300, 470, 640, 280), N('(yes, the disease itself)', 300, 540, size=46)]}}),
  ('C04', ['c04b', 'c04c'], {'big': '50/50', 'title': 'What happens if you catch the Black Death'}),
  ('H01', ['h01a', 'h01c'], {'day': 'Day 0', 'notes': {'h01a': [N('Blocked gut', 1050, 140, 800, 330)]}}),
  ('H02', ['h02a', 'h02c'], {'cap': 'It spits them into you'}),
@@ -23,7 +23,7 @@ PLAN = [
  ('H11', ['h11a', 'h11b'], {}),
  ('H13', ['h13b', 'h13a'], {'card': 'd3'}),
  ('H14', ['room_d4', 'h14d'], {'day': 'Day 4', 'notes': {'room_d4': [N('Egg-sized', 380, 560, 720, 790)]}}),
- ('H15', ['h15a', 'h15d'], {'cap': 'Bubo'}),
+ ('H15', ['h15a', 'h15c'], {'cap': 'Bubo'}),
  ('H18', ['h18b', 'h18c'], {'day': 'Day 5'}),
  ('H19', ['h19b', 'h19c'], {'cap': 'The best test of 1348'}),
  ('H20', ['h20a', 'h20c', 'h20d'], {'cap': 'Diagnosis: bad air'}),
@@ -59,6 +59,7 @@ CARDS = {
  'd8':  ([('FEVER', '38°C', .45, (230, 120, 40)), ('PULSE', '95', .5, (230, 60, 60)), ('BUBO', 'DRAINED', .3, (170, 90, 160)), ('ENERGY', '25%', .25, (90, 190, 90))], 'ALIVE?!'),
  'd30': ([('FEVER', '36.8°C', .1, (230, 120, 40)), ('PULSE', '72', .35, (230, 60, 60)), ('BUBO', 'GONE', 0, (170, 90, 160)), ('ENERGY', '80%', .8, (90, 190, 90))], 'NEVER AGAIN'),
 }
+CROP = {'s_plague_stall': [.67, .42, 1.5], 'h33a': [.64, .45, 1.45]}   # crop out the dome / the hero who is in bed that day
 SECTION = {'H01', 'H06', 'H10', 'H14', 'H18', 'H29', 'H35', 'T01', 'E01'}
 CARD_MIN = 3.6   # a status card stays long enough to read
 
@@ -75,7 +76,7 @@ for i, frames, tx in PLAN:
         lens = [seg / n] * n
     tt = t0; starts = {}
     for k, (f, ln) in enumerate(zip(frames, lens)):
-        sh = {'img': f, 'from': [.5, .5, 1.025], 'to': [.5, .5, 1.0], 'settle': .3, 't0': round(tt, 3), 't1': round(tt + ln, 3)}
+        c = CROP.get(f, [.5, .5, 1.0]); sh = {'img': f, 'from': [c[0], c[1], c[2] + .025], 'to': c, 'settle': .3, 't0': round(tt, 3), 't1': round(tt + ln, 3)}
         shots.append(sh); starts[f] = (tt, tt + ln); tt += ln
     t1 = t0 + seg
     if 'cap' in tx: texts.append({'style': 'cap', 'text': tx['cap'], 't0': t0 + .15, 't1': t1 - .05, 'maxw': 1500, 'pop': True})
