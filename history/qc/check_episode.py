@@ -27,7 +27,7 @@ S = sh.S
 # words that describe a person who is probably a named recurring character -> must be tied to a character sheet
 GENERIC = r"\b(king|queen|prince|princess|dauphin|emperor|tsar|bishop|cardinal|pope|girl|young woman|maiden|heroine|rider in armour|the hero)\b"
 names = [n for v in getattr(sh, "WHO", {}).values() for n in v]
-for k, (p, l, f, d) in enumerate(S, 1):
+for k, (p, l, f, d, *_) in enumerate(S, 1):
     has_sheet = "sheet" in d
     if re.search(GENERIC, d, re.I) and not has_sheet:
         warns.append(f"shot {k}: generic person ('{re.search(GENERIC, d, re.I).group(0)}') without a character sheet — name the character or confirm it is an extra")
@@ -37,7 +37,7 @@ for k, (p, l, f, d) in enumerate(S, 1):
 # named people that recur in 2+ shots must be on a sheet (WHO) or have an anchor frame (ANCHOR)
 known = set(names) | set(getattr(sh, "ANCHOR", {}).keys()) | set(getattr(sh, "NOT_PEOPLE", []))  # NOT_PEOPLE: places, peoples, titles listed in shots.py
 cnt = {}
-for k, (p, l, f, d) in enumerate(S, 1):
+for k, (p, l, f, d, *_) in enumerate(S, 1):
     for n in set(re.findall(r"\b[A-Z][a-z]+(?: [A-Z][a-z]+)?\b", d)):
         cnt.setdefault(n, []).append(k)
 STOP = {"Use", "SCENE", "No", "The", "Mongol", "Mongols", "Mongolian", "Chinese", "English", "French", "Persian", "Central Asian"}
@@ -55,7 +55,7 @@ for a0, b0, who, need in (cont or []):
             if miss: fails.append(f"shot {k}: {who} must have {miss} here (continuity plan {a0}-{b0})")
 # every narration line has a shot
 vo = {os.path.basename(f)[:-4]: [x for x in open(f) if x.strip()] for f in glob.glob(os.path.join(EP, "vo", "c*.txt"))}
-covered = {(p, l) for p, l, f, d in S}
+covered = {(p, l) for p, l, f, d, *_ in S}
 for p, lines in sorted(vo.items()):
     miss = [i for i in range(len(lines)) if (p, i) not in covered]
     if len(miss) > 2: warns.append(f"{p}: lines {miss} have no own shot (long holds)")
