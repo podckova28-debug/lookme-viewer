@@ -38,6 +38,7 @@ biography, biography documentary, biographies, life story, biography of famous p
 Обложки `history/musashi/thumbs/` (рекомендую №3 «HE WON WITH AN OAR» или №2 «60 DUELS / 0 DEFEATS»).
 
 ## Конвейер
+- **Перед любой отправкой пользователю — проверка `history/qc/` (README там): скрипт на трёх этапах + личный просмотр каждого листа кадров и склеек.**
 - Кадры: Higgsfield **gpt_image_2_5, variant flare, quality low = 0,25 кредита** (gpt_image_2_6 стоит 0,75, не использовать) 16:9, комикс-стиль по двум референсам стиля 5d5f0d40-6d72-4644-b3e1-0f824c81becb и
   8e1e1260-e11b-4083-a4d6-5f15a0a4008c + листы персонажей (Мусаси: 3b8f7699-…, 65ea223f-…; Распутин: 1a4d1ac5-…, 589dd8e5-…).
   `shots.py` → партии по 12 → `frames/jobs.txt`/`urls.txt` → `dl.sh`. Проверять листами: лишние конечности, анахронизмы
