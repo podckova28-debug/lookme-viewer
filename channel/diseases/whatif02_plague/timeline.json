@@ -2819,14 +2819,11 @@
    "pop": true
   },
   {
-   "style": "xstamp",
-   "text": "Doctor's advice: NOPE",
-   "t0": 187.85845833333335,
-   "t1": 189.25845833333335,
-   "x": 1480,
-   "y": 790,
-   "size": 80,
-   "pop": true
+   "style": "strike",
+   "text": "Step 1: bloodletting",
+   "maxw": 1500,
+   "t0": 184.91497500000003,
+   "t1": 189.15845833333336
   },
   {
    "style": "cap",
@@ -2837,14 +2834,11 @@
    "pop": true
   },
   {
-   "style": "xstamp",
-   "text": "Doctor's advice: NOPE",
-   "t0": 198.9855,
-   "t1": 200.3855,
-   "x": 1480,
-   "y": 790,
-   "size": 80,
-   "pop": true
+   "style": "strike",
+   "text": "Step 2: theriac",
+   "maxw": 1500,
+   "t0": 195.75468333333336,
+   "t1": 200.2855
   },
   {
    "style": "cap",
@@ -2855,14 +2849,11 @@
    "pop": true
   },
   {
-   "style": "xstamp",
-   "text": "Doctor's advice: NOPE",
-   "t0": 204.86854166666666,
-   "t1": 206.26854166666666,
-   "x": 1480,
-   "y": 790,
-   "size": 80,
-   "pop": true
+   "style": "strike",
+   "text": "Step 3: no baths",
+   "maxw": 1500,
+   "t0": 203.73532500000002,
+   "t1": 206.16854166666667
   },
   {
    "style": "cap",
@@ -2873,14 +2864,11 @@
    "pop": true
   },
   {
-   "style": "xstamp",
-   "text": "Doctor's advice: NOPE",
-   "t0": 216.45125,
-   "t1": 217.85125,
-   "x": 1480,
-   "y": 790,
-   "size": 80,
-   "pop": true
+   "style": "strike",
+   "text": "Step 4: two fires",
+   "maxw": 1500,
+   "t0": 213.03816666666665,
+   "t1": 217.75125
   },
   {
    "style": "cap",
@@ -2891,14 +2879,11 @@
    "pop": true
   },
   {
-   "style": "xstamp",
-   "text": "Doctor's advice: NOPE",
-   "t0": 224.83195833333332,
-   "t1": 226.23195833333332,
-   "x": 1480,
-   "y": 790,
-   "size": 80,
-   "pop": true
+   "style": "strike",
+   "text": "Step 5: smell flowers",
+   "maxw": 1500,
+   "t0": 222.69967499999998,
+   "t1": 226.13195833333333
   },
   {
    "style": "cap",
@@ -3117,7 +3102,7 @@
   },
   {
    "style": "cap",
-   "text": "~7 cases a year in the US",
+   "text": "7 cases a year in the US",
    "t0": 345.55454166666675,
    "t1": 361.5146250000001,
    "maxw": 1500,
@@ -3470,9 +3455,9 @@
    "gain": 0.25
   },
   {
-   "kind": "shutter",
-   "t": 187.858,
-   "gain": 0.6
+   "kind": "page",
+   "t": 184.915,
+   "gain": 0.7
   },
   {
    "kind": "page",
@@ -3480,9 +3465,9 @@
    "gain": 0.25
   },
   {
-   "kind": "shutter",
-   "t": 198.986,
-   "gain": 0.6
+   "kind": "page",
+   "t": 195.755,
+   "gain": 0.7
   },
   {
    "kind": "page",
@@ -3490,9 +3475,9 @@
    "gain": 0.25
   },
   {
-   "kind": "shutter",
-   "t": 204.869,
-   "gain": 0.6
+   "kind": "page",
+   "t": 203.735,
+   "gain": 0.7
   },
   {
    "kind": "page",
@@ -3500,9 +3485,9 @@
    "gain": 0.25
   },
   {
-   "kind": "shutter",
-   "t": 216.451,
-   "gain": 0.6
+   "kind": "page",
+   "t": 213.038,
+   "gain": 0.7
   },
   {
    "kind": "page",
@@ -3510,9 +3495,9 @@
    "gain": 0.25
   },
   {
-   "kind": "shutter",
-   "t": 224.832,
-   "gain": 0.6
+   "kind": "page",
+   "t": 222.7,
+   "gain": 0.7
   },
   {
    "kind": "page",

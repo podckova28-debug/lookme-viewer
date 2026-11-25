@@ -35,11 +35,11 @@ PLAN = [
  ('H19', ['t05', 'h19b'], {'cap': 'The best test of 1348'}),
  ('H20', ['h20a', 'h20b'], {'cap': 'Diagnosis: bad air'}),
  ('H21', ['h21a'], {}),
- ('H22', ['h22a', 'h22b'], {'cap': 'Step 1: bloodletting', 'stamp': "Doctor's advice: NOPE"}),
- ('H23', ['h23a', 'h23b'], {'cap': 'Step 2: theriac', 'stamp': "Doctor's advice: NOPE"}),
- ('H24', ['h24a', 'h24b'], {'cap': 'Step 3: no baths', 'stamp': "Doctor's advice: NOPE"}),
- ('H25', ['t06', 'h25b'], {'cap': 'Step 4: two fires', 'stamp': "Doctor's advice: NOPE"}),
- ('H26', ['h26a', 'h26b'], {'cap': 'Step 5: smell flowers', 'stamp': "Doctor's advice: NOPE"}),
+ ('H22', ['h22a', 'h22b'], {'cap': 'Step 1: bloodletting', 'stamp': True}),
+ ('H23', ['h23a', 'h23b'], {'cap': 'Step 2: theriac', 'stamp': True}),
+ ('H24', ['h24a', 'h24b'], {'cap': 'Step 3: no baths', 'stamp': True}),
+ ('H25', ['t06', 'h25b'], {'cap': 'Step 4: two fires', 'stamp': True}),
+ ('H26', ['h26a', 'h26b'], {'cap': 'Step 5: smell flowers', 'stamp': True}),
  ('H27', ['h27a', 'h27b'], {'cap': 'Gentile da Foligno, died June 1348'}),
  ('H28', ['h28a'], {}),
  ('H29', ['h29a'], {'day': 'Day 6'}),
@@ -55,7 +55,7 @@ PLAN = [
  ('H39', ['h39a', 'h39b', 'h39c'], {'big': '1 in 2'}),
  ('H40', ['h40a', 'h40b'], {'cap': 'They called it the great mortality', 'card': 'd30'}),
  ('T01', ['t01a'], {'day': 'Today'}),
- ('T02', ['t02a', 't02b'], {'cap': '~7 cases a year in the US'}),
+ ('T02', ['t02a', 't02b'], {'cap': '7 cases a year in the US'}),
  ('T03', ['t03a', 't03b'], {}),
  ('T04', ['t07'], {'cap': 'Antibiotics, 10-14 days'}),
  ('T05', ['t05a'], {}),
@@ -107,8 +107,9 @@ for i, frames, tx in PLAN:
         texts.append({'style': 'card', 'rows': [list(r[:3]) + [list(r[3])] for r in rows], 'mood': mood, 't0': ct, 't1': t1, 'pop': True})
         sfx.append({'kind': 'shutter', 't': round(ct, 3), 'gain': .35})
     if 'stamp' in tx:
-        texts.append({'style': 'xstamp', 'text': tx['stamp'], 't0': t1 - 1.4, 't1': t1, 'x': 1480, 'y': 790, 'size': 80, 'pop': True})
-        sfx.append({'kind': 'shutter', 't': round(t1 - 1.4, 3), 'gain': .6})
+        st0 = t0 + max(1.2, d * .6)   # cross the treatment out a little after it is named
+        texts.append({'style': 'strike', 'text': tx['cap'], 'maxw': 1500, 't0': st0, 't1': t1 - .1})
+        sfx.append({'kind': 'page', 't': round(st0, 3), 'gain': .7})
     t = t1
     if i == 'C04': t += 1.6; shots[-1]['t1'] = round(t, 3)   # hold the title on the last cold-open frame
 shots[-1]['t1'] = round(t + 1.5, 3); TOTAL = round(t + 1.5, 3)

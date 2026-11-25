@@ -74,6 +74,17 @@ def draw_item(it, k):
         while font(fs).getlength('MOOD: ' + mood) > cw - 68 and fs > 30: fs -= 2
         d.text((x + 34, yy + 10), 'MOOD:', font=font(fs), fill=(236, 226, 206, 255)); d.text((x + 34 + font(fs).getlength('MOOD: '), yy + 10), mood, font=font(fs), fill=(255, 255, 255, 255))
         return L
+    if st == 'strike':   # hand-drawn red marker line crossing out a caption; k = drawing progress 0..1
+        txt = it['text'].upper(); size = it.get('size', 92); f = font(size)
+        while it.get('maxw') and size > 20 and f.getlength(txt) > it['maxw']: size -= 2; f = font(size)
+        x, y = it.get('x', W / 2), it.get('y', 950); bx = d.textbbox((x, y), txt, font=f, anchor='mm')
+        rr = np.random.default_rng(abs(hash(txt + 's')) % 2 ** 32)
+        x0, x1 = bx[0] - 24, bx[2] + 24; ya, yb = (bx[1] + bx[3]) / 2 + 10, (bx[1] + bx[3]) / 2 - 8
+        n = 30; m = max(2, int(n * min(1, k)))
+        pts = [(x0 + (x1 - x0) * i / n, ya + (yb - ya) * i / n + rr.uniform(-3, 3)) for i in range(m + 1)]
+        d.line(pts, fill=(20, 14, 12, 160), width=max(14, size // 6) + 6, joint='curve')
+        d.line(pts, fill=(214, 28, 34, 255), width=max(14, size // 6), joint='curve')
+        return L
     if st == 'xstamp':   # red rubber stamp in Bebas, e.g. DOCTOR'S ADVICE ✗
         txt = it['text'].upper(); size = int(it.get('size', 90) * k); f = font(size)
         tw = int(f.getlength(txt)); T = Image.new('RGBA', (tw + size * 2, int(size * 2.1)), (0, 0, 0, 0)); td = ImageDraw.Draw(T)
@@ -144,6 +155,7 @@ def text_layer(items, t):
         if a <= 0: continue
         if lay is None: lay = Image.new('RGBA', (W, H), (0, 0, 0, 0))
         k = 1 + .25 * (1 - ease(min(1, (t - it['t0']) / .45))) if it.get('pop') else 1
+        if it.get('style') == 'strike': k = round(min(1, (t - it['t0']) / .35), 2)
         key = (id(it), round(k, 3))
         L = _lc.get(key)
         if L is None:
