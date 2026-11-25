@@ -1,7 +1,7 @@
 QC timeline.json
 shots 84, unique frames 84, lines 47, 318.0s
-final file: video 317.96s, audio 317.96s
-all automatic checks passed
+FAIL REVIEW: no bible.json (characters, locations, era bans) for this episode
+FAIL REVIEW: 84 frame(s) not reviewed by eye (or changed since): m_street c01b c01c c02a m_rabies c02b c04a c04b h01b h01c h02a m_diag h03a h03b h04a h04b h05a h05b h05c h06a h06b h07a h08a h08b h08c h09a h10a h10b h11a h11b - run review.py todo
 
 Now look at the sheets in /home/user/lookme-viewer/channel/diseases/whatif03_rabies/qc at full size:
  place_*.jpg  - same furniture/window/camera as MASTER; red tiles first

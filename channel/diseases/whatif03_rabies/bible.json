@@ -1,0 +1,30 @@
+{
+ "era": "Jura village, France, November 1885 (sections H, S); Paris 1885 (H22-H27); present day 2020s (T01-T05)",
+ "characters": {
+  "hero": "bald stickman; outdoors: flat dark-grey cloth cap, faded blue work smock, brown trousers; at home sick: long off-white nightshirt; today: dark-grey baseball cap, blue jacket, jeans",
+  "mum": "stickman, plain black dress, white linen bonnet covering the head (no hair)",
+  "priest": "stickman, long black cassock, round black wide-brimmed hat",
+  "pasteur": "stickman, no beard, black frock coat, small black skullcap",
+  "assistant": "stickman in a white apron (Pasteur's lab)",
+  "meister": "small boy stickman, sailor shirt (1885); grown-up caretaker in dark uniform and cap at the Institute gate",
+  "meister_mum": "stickman woman, white bonnet covering the head",
+  "rabies": "the villain: wolf-dog head, yellow eyes, a little froth, broken collar with chain, ragged dark frock coat",
+  "dog": "the neighbour's brown dog (cold open only)",
+  "nurse": "today: stickman nurse in blue scrubs and a blue scrub cap",
+  "extras": "villagers, patients, passengers: stickmen in period clothes, no hair"
+ },
+ "locations": {
+  "street": "Jura lane: stone houses, wooden farm gate, snowy pines",
+  "gate": "the same farm gate (Rabies scenes)",
+  "room": "hero's bedroom: table with candle and jug on the left, window with snowy pines at the back, bed with brown blanket on the right, wooden chair",
+  "lab": "Pasteur's lab 1885: benches, flasks, microscope, rabbit cages, window with grey sky only",
+  "train": "1885 third-class carriage / Paris station",
+  "institute": "Pasteur Institute gate 1890s",
+  "modern": "2020s street, bathroom, clinic, alley, rural road",
+  "map": "world map"
+ },
+ "banned": {
+  "1885": ["electric light", "street lamps", "cars", "phones", "Eiffel Tower (built 1889)", "modern clothes", "hair on stickmen", "readable text"],
+  "2020s": ["readable text", "graffiti", "hair on stickmen"]
+ }
+}

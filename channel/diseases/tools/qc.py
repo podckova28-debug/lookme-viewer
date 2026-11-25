@@ -132,6 +132,19 @@ ts = sorted({round(x['t0'] + .7, 2) for x in spec.get('texts', []) if x['style']
 tool = os.path.join(HERE, 'build_whatif.py')
 subprocess.run([sys.executable, tool, tl_path, os.path.join(out, 'text')], env={**os.environ, 'STILLS': ','.join(map(str, ts))}, check=True)
 
+# ---------- manual review gate (review.py) ----------
+# every frame on screen and the final video must have an 'ok' verdict recorded for the CURRENT file (sha1)
+sys.path.insert(0, HERE); import review as RV
+_ep = os.path.dirname(os.path.abspath(tl_path)); _rvp = os.path.join(_ep, 'review.json')
+_rv = json.load(open(_rvp)) if os.path.exists(_rvp) else {'frames': {}, 'video': {}}
+if not os.path.exists(os.path.join(_ep, 'bible.json')): fails.append('REVIEW: no bible.json (characters, locations, era bans) for this episode')
+_bad = []
+for f_, _t in seq:
+    r_ = _rv['frames'].get(f_)
+    if not r_ or r_['verdict'] != 'ok' or r_['sha'] != RV.sha(os.path.join(base, f_ + '.jpg')): _bad.append(f_)
+if _bad: fails.append(f'REVIEW: {len(_bad)} frame(s) not reviewed by eye (or changed since): {" ".join(_bad[:30])} - run review.py todo')
+if video and (_rv.get('video', {}).get('sha') != RV.sha(video)): fails.append('REVIEW: the final video was not watched as a viewer - run review.py video, then video_ok')
+
 # ---------- report ----------
 rep = ['QC ' + os.path.basename(tl_path), f'shots {len(spec["shots"])}, unique frames {len(seq)}, lines {len(vo)}, {spec["duration"]:.1f}s'] + notes
 rep += ['FAIL ' + f for f in fails] or ['all automatic checks passed']
