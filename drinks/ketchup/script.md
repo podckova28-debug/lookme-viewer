@@ -72,7 +72,7 @@ The tomato has entered the chat.
 And within twenty years, Americans would decide it could cure almost anything.
 
 === p4 ===
-In the eighteen thirties, a doctor named John Cook Bennett announced that tomatoes could treat indigestion, diarrhoea, and even liver problems.
+In the eighteen thirties, a doctor named John Cook Bennett announced that tomatoes could treat indigestion, stomach trouble, and even liver problems.
 America went tomato crazy.
 Businessmen started selling tomato pills.
 Dr Miles' Compound Extract of Tomato.
