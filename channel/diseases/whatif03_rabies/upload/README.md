@@ -1,6 +1,6 @@
 # What If #3: What Happens If You Get Rabies in 1885? Пакет для загрузки
 
-- Видео: `whatif03_rabies.mp4` (1920×1080, 5:02).
+- Видео: `whatif03_rabies.mp4` (1920×1080, 5:04).
 - Обложки 1280×720 для «Тест и сравнение»: главная `thumb_1_trainordie.jpg`; для теста ещё `thumb_2_afraidofwater.jpg`, `thumb_3_savedbyarabbit.jpg` (шрифт как у холеры).
 - Раскрытие ИИ (Altered or synthetic content) = ДА.
 
@@ -25,12 +25,12 @@ What the rabies virus does inside you, week by week, what your village would hav
 CHAPTERS
 0:00 A loaf of bread and a bad dog
 0:24 Day 0: what bit you
-0:48 Village medicine
-1:20 The quiet weeks
-1:42 The choice
-2:06 If you stay home
-3:56 If you take the train
-4:31 The same bite, today
+0:49 Village medicine
+1:21 The quiet weeks
+1:43 The choice
+2:07 If you stay home
+3:58 If you take the train
+4:33 The same bite, today
 
 Sources are listed in the pinned comment. This video is history, not medical advice. If an animal bites you, wash the wound and see a doctor.
 

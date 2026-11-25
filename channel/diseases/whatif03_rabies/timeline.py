@@ -81,7 +81,7 @@ def card(name, a, b):
 t = 0.3
 for i, frames, tx in PLAN:
     if i in SECTION: t += .35
-    d = dur(i); seg = d + (.15 if i[0] != 'E' else .4); t0 = t; marks[i] = t0
+    d = dur(i); seg = max(2.2, d + (.15 if i[0] != 'E' else .4)); t0 = t; marks[i] = t0   # a short villain quip still gets time on screen
     vo.append({'file': f'{VO}/{i}.wav', 't': round(t0 + .03, 3)})
     n = len(frames)
     if 'card' in tx and n > 1:
