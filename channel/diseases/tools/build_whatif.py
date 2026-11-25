@@ -220,9 +220,59 @@ class Frame:
             cls.cache[name] = cv2.resize(im, None, fx=s, fy=s, interpolation=cv2.INTER_LANCZOS4)
         return cls.cache[name]
 
+SPRITES = {}
+def sprite(name):
+    if name not in SPRITES:
+        p = os.path.join(ROOT, spec.get('sprite_base', ''), name + '.png')
+        a = cv2.imread(p, cv2.IMREAD_UNCHANGED); SPRITES[name] = a
+    return SPRITES[name]
+
+def actor_pose(ac, lt):
+    """cut-out animation of one actor at local time lt (seconds since the shot started). returns (sprite, x, y, h, alpha, rot)"""
+    seq = ac.get('poses', [[0, ac['sprite']]])   # [[t, sprite], ...] pose changes
+    name = [p for tt, p in seq if tt <= lt][-1] if any(tt <= lt for tt, _ in seq) else seq[0][1]
+    x0, x1 = ac['x'], ac.get('to_x', ac['x']); mt = ac.get('move', [0, 0])
+    u = ease((lt - mt[0]) / (mt[1] - mt[0])) if mt[1] > mt[0] else 1
+    x = x0 + (x1 - x0) * u; y = ac['y']; h = ac['h']; rot = 0
+    moving = mt[0] <= lt <= mt[1] and x1 != x0
+    if moving: y -= abs(math.sin(lt * 9)) * h * .018; rot = math.sin(lt * 9) * 1.2          # walking bob
+    for c0, c1 in ac.get('cough', []):                                                       # cough: short jerks forward
+        if c0 <= lt <= c1: k = (lt - c0) * 7; y += abs(math.sin(k * math.pi)) * h * .012; rot += math.sin(k * math.pi) * 2.5
+    if not moving: h *= 1 + math.sin(lt * 2.2 + ac.get('phase', 0)) * .006                   # breathing
+    fi, fo = ac.get('fade_in'), ac.get('fade_out')
+    al = 1.0
+    if fi: al = min(al, max(0, (lt - fi[0]) / max(.01, fi[1] - fi[0])))
+    if fo: al = min(al, max(0, 1 - (lt - fo[0]) / max(.01, fo[1] - fo[0])))
+    if ac.get('t0') is not None and lt < ac['t0']: al = 0
+    return name, x, y, h, al, rot
+
+def composite_actors(im, sh, t):
+    """draw the shot's actors onto the 2x background (feet centre at x, y in 1920x1080 coords, h = height)"""
+    out = im.copy(); S = im.shape[1] / W
+    for ac in sh.get('actors', []):
+        name, x, y, h, al, rot = actor_pose(ac, t - sh['t0'])
+        if al <= 0: continue
+        sp = sprite(name); hh = int(h * S); ww = int(sp.shape[1] * hh / sp.shape[0])
+        if ac.get('flip'): sp = sp[:, ::-1]
+        s = cv2.resize(sp, (ww, hh), interpolation=cv2.INTER_AREA)
+        if rot:
+            M = cv2.getRotationMatrix2D((ww / 2, hh), rot, 1.0); s = cv2.warpAffine(s, M, (ww, hh), borderValue=(0, 0, 0, 0))
+        X, Y = int(x * S - ww / 2), int(y * S - hh)
+        # contact shadow
+        if ac.get('shadow', True):
+            cy_ = int(y * S)
+            sh_ = np.zeros(out.shape[:2], np.float32); cv2.ellipse(sh_, (int(x * S), cy_), (int(ww * .42), max(2, int(hh * .025))), 0, 0, 360, 1.0, -1)
+            sh_ = cv2.GaussianBlur(sh_, (0, 0), hh * .02) * .4 * al; out = (out * (1 - sh_[..., None])).astype(np.uint8)
+        x0, y0 = max(0, X), max(0, Y); x1, y1 = min(out.shape[1], X + ww), min(out.shape[0], Y + hh)
+        if x1 <= x0 or y1 <= y0: continue
+        crop = s[y0 - Y:y1 - Y, x0 - X:x1 - X].astype(np.float32); a = crop[..., 3:4] / 255 * al
+        out[y0:y1, x0:x1] = (out[y0:y1, x0:x1] * (1 - a) + crop[..., :3] * a).astype(np.uint8)
+    return out
+
 def render_shot(sh, t):
     """camera = rectangle (cx, cy, zoom) interpolated from 'from' to 'to'; coords are 0..1 of the image"""
     im = Frame.get(sh['img']); ih, iw = im.shape[:2]
+    if sh.get('actors'): im = composite_actors(im, sh, t)
     if sh.get('settle'): u = ease((t - sh['t0']) / sh['settle'])   # quick snap after the cut, then still
     else: u = ease((t - sh['t0']) / (sh['t1'] - sh['t0'])) if sh.get('ease', True) else (t - sh['t0']) / (sh['t1'] - sh['t0'])
     a, b = sh.get('from', [.5, .5, 1.0]), sh.get('to', [.5, .5, 1.06])
