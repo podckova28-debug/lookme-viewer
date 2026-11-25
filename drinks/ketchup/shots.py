@@ -1,24 +1,24 @@
 # frame -> (part, line index, prompt, note). One shot per script line. Mead formula: gag frames, running gag
 # "tomato waiting" (a stick figure holding a tomato, waiting backstage), callbacks to the fish jar.
-STYLE = ("White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, tomato red and mustard yellow accents, "
-         "playful humorous tone; cut out on white, lots of white space. ")
+STYLE = ("White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, warm brick red and mustard yellow accents, "
+         "playful humorous cartoon tone; cut out on white, lots of white space. ")
 WAIT = "a second white round-headed stick figure with dot eyes holding a big red tomato, "
 SHOTS = [
  # p0 — sailor meets kay-chap
  (0,0,"stick-figure 'you' in a 1690s sailor's knitted cap and striped shirt standing on the deck of a wooden sailing ship, looking excited","you"),
- (0,1,"a 1690s wooden sailing ship arriving at a tropical Southeast Asian harbour with palm trees, wooden stilt houses and junk boats","1690"),
+ (0,1,"a 1690s wooden sailing ship arriving at a tropical Southeast Asian harbour with palm trees, wooden stilt houses and junk boats, no flags","1690"),
  (0,2,"a smiling Southeast Asian merchant in simple 17th-century clothes handing a small brown clay jar to stick-figure 'you' in a sailor's cap",""),
- (0,3,"stick-figure 'you' in a sailor's cap sniffing the open clay jar, wavy smell lines rising",""),
- (0,4,"stick-figure 'you' recoiling from the jar, eyes squeezed shut, a cartoon fish skeleton drawn in the smell cloud","fish?"),
- (0,5,"a cartoon fish peeking out of the clay jar and waving","yes."),
- (0,6,"a cross-section of the clay jar showing layers of small fish and salt bubbling, labelled like a science diagram","fermented"),
- (0,7,"the merchant proudly holding up the jar like a trophy, a little ceremonial sparkle around it",""),
- (0,8,"the clay jar with a big hand-lettered label 'KÊ-TSIAP'","kay-chap"),
+ (0,3,"stick-figure 'you' in a sailor's cap sniffing an open plain brown clay jar of dark fish sauce, wavy green smell lines rising",""),
+ (0,4,"stick-figure 'you' in a sailor's cap recoiling from a plain brown clay jar, eyes squeezed shut, a cartoon fish skeleton drawn in the green smell cloud","fish?"),
+ (0,5,"a cartoon fish peeking out of a plain brown clay jar and waving, nothing else in the picture","yes."),
+ (0,6,"a simple cross-section of a plain clay jar showing layers of small fish and salt bubbling, like a simple science diagram, no people","fermented"),
+ (0,7,"a smiling 17th-century Southeast Asian merchant in a simple sarong and headcloth proudly holding up a plain brown clay jar like a trophy, sparkles around it",""),
+ (0,8,"a plain brown clay jar with a paper label hand-lettered 'KÊ-TSIAP' and a small fish doodle, no people","kay-chap"),
  (0,9,"stick-figure 'you' in a sailor's cap with a party hat and confetti, holding the fishy jar, forced smile",""),
- (0,10,"a modern red ketchup squeeze bottle and the old brown clay jar shaking hands like long-lost relatives","meet ketchup"),
- (0,11,"a red tomato crossed out with a big red X","no tomatoes"),
- (0,12,"a sugar cube crossed out with a big red X","no sugar"),
- (0,13,"a glass ketchup bottle crossed out with a big red X","no bottle"),
+ (0,10,"a cartoon modern red ketchup squeeze bottle and a cartoon plain brown clay fish-sauce jar with a fish drawn on it shaking hands like long-lost relatives","meet ketchup"),
+ (0,11,"a single red tomato crossed out with a big red X, no people","no tomatoes"),
+ (0,12,"a single sugar cube crossed out with a big red X, no people","no sugar"),
+ (0,13,"a single glass ketchup bottle crossed out with a big red X, no people","no bottle"),
  (0,14,"a gigantic mountain of red ketchup bottles towering over a tiny modern city skyline","100s of millions / year"),
  (0,15,"a paper tray of french fries with a swirl of ketchup on the left, the fishy clay jar on the right, a dotted arrow between them","fish → fries?"),
  (0,16,WAIT+"standing in the wings of a theatre stage behind a curtain, tapping his foot, waiting for his cue","waiting..."),
@@ -32,14 +32,14 @@ SHOTS = [
  (1,3,"a bowl of plain white rice with a few drops of dark sauce on it, sparkles and happy little stars around the bowl","flavour!"),
  (1,4,"an old scroll with the words of the sauce in hand-drawn lettering 'kê-tsiap', a little fish doodle beside it","kay-chap"),
  (1,5,"17th-century British and Dutch traders in big hats and coats grinning and hugging clay jars on a dock",""),
- (1,6,"a clay jar on a ship's deck with a calendar of a long voyage behind it and a thumbs-up drawn next to it","doesn't go bad"),
+ (1,6,"a clay jar on a ship's deck with a calendar of a long voyage behind it and a big green tick mark next to it","doesn't go bad"),
  (1,7,"a sad bowl of grey ship's biscuit and salt meat, then the same bowl glowing after a splash of dark sauce","before / after"),
  (1,8,"a 17th-century sailing ship sailing away towards England with a mountain of clay jars on its deck",""),
  (1,9,"a 17th-century English kitchen, a confused cook in an apron staring at an empty jar",""),
  (1,10,"three 17th-century English cooks in aprons scratching their heads around a big empty jar with question marks floating above","no recipe"),
  # p2 — English improvisation
  (2,0,"an 18th-century English cook in a mob cap rolling up her sleeves with a determined face, a kitchen full of random ingredients",""),
- (2,1,"the same cook throwing random ingredients into a pot: mushrooms, walnuts, an oyster, a lemon, flying through the air","improvise!"),
+ (2,1,"an 18th-century English cook in a mob cap gleefully tossing random ingredients into a big pot: mushrooms, walnuts, an oyster and a lemon flying through the air","improvise!"),
  (2,2,"an open 1727 cookbook with a recipe page, no readable text, anchovies, shallots, a vinegar bottle and a wine bottle beside it","1727"),
  (2,3,"a cartoon oyster in a tiny chef's hat diving into a pot",""),
  (2,4,"walnuts in a mortar and pestle with a sauce bottle beside it",""),
@@ -58,7 +58,7 @@ SHOTS = [
  (3,2,"a botanical family tree of the nightshade family: tomato, potato, and a dark deadly nightshade plant with a skull label","nightshade family"),
  (3,3,"a tomato with two labels on strings, one with a heart and one with a skull","love apple? poison apple?"),
  (3,4,"a 17th-century nobleman looking queasy at a pewter plate with tomato slices, little wavy lines coming off the plate","the pewter story"),
- (3,5,"the pewter plate picture with a red 'PROBABLY LEGEND' stamp across it",""),
+ (3,5,"a framed old drawing of a pewter plate with tomato slices, with a big red rubber stamp 'PROBABLY LEGEND' across it",""),
  (3,6,"a tomato wearing a tiny 'WANTED' poster around its neck, sad face",""),
  (3,7,"an 1812 Philadelphia scientist in a high collar and tailcoat writing at a desk with a quill, a bowl of tomatoes beside him","1812 James Mease"),
  (3,8,"a recipe card with a drawing of a tomato and a bottle, no readable text",""),
@@ -70,13 +70,13 @@ SHOTS = [
  (4,1,"a crowd of 1830s Americans in top hats and bonnets cheering and waving tomatoes in a town square","tomato crazy"),
  (4,2,"an 1830s travelling salesman on a wagon shouting and holding up a small box of pills, a crowd below",""),
  (4,3,"an 1830s medicine box labelled 'Extract of Tomato' with a tomato drawing and decorative border","tomato pills"),
- (4,4,"the pill box with arrows to a long list of ailments drawn as tiny icons: stomach, liver, head, cough","cures everything!"),
+ (4,4,"an 1830s pill box labelled 'Extract of Tomato' with arrows to a long list of ailments drawn as tiny icons: stomach, liver, head, cough","cures everything!"),
  (4,5,"a tiny pill under a giant magnifying glass, a scientist squinting",""),
  (4,6,"a cut-away of a pill showing almost no red inside, a tiny tomato looking lonely in the corner","barely any tomato"),
  (4,7,"a row of 1830s outhouses with long queues of people in top hats waiting outside","laxatives"),
  (4,8,"a stick-figure 'you' in an 1830s top hat sprinting towards an outhouse","it worked... sort of"),
- (4,9,"the pill box with a red ink 'NOT AS ADVERTISED' stamp",""),
- (4,10,"the pill salesman's wagon falling apart, pills spilling on the road","1850s: collapse"),
+ (4,9,"an 1830s pill box labelled 'Extract of Tomato' with a big red ink 'NOT AS ADVERTISED' stamp across it",""),
+ (4,10,"an 1830s travelling medicine salesman's wooden wagon falling apart on a dirt road, wheels coming off, pill boxes spilling everywhere","1850s: collapse"),
  (4,11,"a tomato wearing a tiny crown on a podium, famous at last",""),
  (4,12,"a sinister-looking dirty ketchup barrel in a dark factory, ominous storm cloud above","it gets worse"),
  # p5 — gross factory ketchup, Poison Squad
@@ -84,38 +84,38 @@ SHOTS = [
  (5,1,"a factory worker in 1890s clothes holding his nose next to a bubbling vat","disgusting"),
  (5,2,"a pile of tomato skins and cores being shovelled into a vat, a 'LEFTOVERS' sign",""),
  (5,3,"a ketchup barrel with flies buzzing around it and a calendar with only three days",""),
- (5,4,"a chemist in an 1890s apron pouring a bright chemical and a red dye into the vat",""),
+ (5,4,"a chemist in an 1890s apron pouring a bright chemical and a red dye into a big ketchup vat",""),
  (5,5,"an old ketchup bottle with a fuzzy cartoon mould creature waving from inside","mould!"),
  (5,6,"an old ketchup bottle under an X-ray showing a button, a nail and a tiny boot inside","???"),
  (5,7,"Harvey Wiley, a bearded 1900s government chemist in a three-piece suit, frowning at a ketchup bottle in a laboratory","Harvey Wiley"),
  (5,8,"a laboratory notebook and a scale, beakers labelled with chemical formulas, no people",""),
  (5,9,"a long dinner table of young men in 1900s suits and napkins eating meals while a chemist takes notes behind them",""),
- (5,10,"a 1900s newspaper front page with a big headline 'THE POISON SQUAD' and a drawing of the diners","Poison Squad"),
- (5,11,"one of the diners giving a nervous thumbs-up with a forced smile, sweat drop","real!"),
+ (5,10,"a 1900s newspaper front page with a big headline 'THE POISON SQUAD' and a drawing of young men at a dinner table","Poison Squad"),
+ (5,11,"a young 1900s man in a suit with a napkin tucked in his collar sitting at a dinner table, nervous forced smile, a sweat drop, both hands resting on the table beside his plate","real!"),
  (5,12,"a big glass ketchup bottle with a love-heart drawn around it",""),
  # p6 — Heinz
  (6,0,"Henry John Heinz, a 19th-century American businessman with a beard and a black suit, standing proudly","H. J. Heinz"),
  (6,1,"a row of clear glass jars of white horseradish on a 19th-century shop counter, sparkling clean","clear glass"),
  (6,2,"an 1876 factory sign being painted with a tomato on it, workers carrying crates of tomatoes","1876"),
- (6,3,"a gambler's poker chip with a tomato on it being pushed onto a table",""),
+ (6,3,"a single poker chip with a tomato painted on it sitting on a green card table, no hands, no people",""),
  (6,4,"a bottle of chemical preservative crossed out with a red X","no preservatives"),
  (6,5,"ripe red tomatoes, a big vinegar bottle and a sugar sack piled together","tomatoes + vinegar + sugar"),
  (6,6,"a ketchup bottle with one half drawn as a sour lemon face and one half as a sweet candy face","sweet & sour"),
  (6,7,"a sparkling clean octagonal glass ketchup bottle in the spotlight, glowing red","see-through"),
  (6,8,"a 1906 government document with a big seal, a food inspector in a bowler hat holding a clipboard","1906"),
- (6,9,"the Heinz-style businessman calmly sipping tea while competitors panic behind him",""),
+ (6,9,"a calm bearded 1900s businessman in a black suit sipping tea while panicking rival factory owners run around behind him waving papers",""),
  (6,10,"a vintage advertising sign with the big number 57 and decorative flourishes",""),
  (6,11,"the number 57 in giant 3D letters with a spotlight","57 varieties"),
  (6,12,"an accountant counting a long row of jars on shelves, 58, 59, 60, scratching his head",""),
  (6,13,"a long shelf of over sixty different jars and bottles, an arrow pointing at the end","60+"),
- (6,14,"the businessman shrugging and smiling next to a big number 57","he liked it"),
+ (6,14,"a bearded 1900s businessman in a black suit shrugging and smiling next to a big number 57","he liked it"),
  # p7 — the bottle, vegetable
  (7,0,"a classic glass ketchup bottle standing alone on a diner table",""),
- (7,1,"the glass ketchup bottle under a spotlight like a celebrity",""),
+ (7,1,"a classic glass ketchup bottle under a stage spotlight like a celebrity, little sparkles",""),
  (7,2,"stick-figure 'you' holding a glass ketchup bottle upside down over a plate of fries, waiting, nothing coming out","nothing"),
  (7,3,"a scientific diagram of ketchup particles, tangled when still and lined up when pushed","weird liquid"),
  (7,4,"ketchup in a glass bottle drawn as a solid red block with a 'STOP' sign",""),
- (7,5,"ketchup suddenly whooshing out like a waterfall with speed lines",""),
+ (7,5,"ketchup suddenly whooshing out of a glass bottle like a waterfall with speed lines",""),
  (7,6,"stick-figure 'you' shaking the ketchup bottle furiously, then a giant red splat covering the plate and his shirt","shake... splat"),
  (7,7,"a close-up of the neck of a glass ketchup bottle with the number 57 embossed on it, little cartoon tap-tap motion lines around the 57, no hands","tap the 57"),
  (7,8,"a 1981 school cafeteria tray with a burger, fries and a tiny cup of ketchup labelled with a carrot icon","1981"),
@@ -126,10 +126,10 @@ SHOTS = [
  (8,0,"a world map with little ketchup bottles on every continent",""),
  (8,1,"three plates in a row: fries with ketchup, rice with ketchup, and pasta with ketchup with a horrified Italian chef behind it",""),
  (8,2,"a bottle of yellow-orange banana ketchup with a banana leaning on it, Philippine jeepney in the background","banana ketchup"),
- (8,3,"callback: the old brown clay jar of fermented fish from the beginning, with the cartoon fish waving again","remember?"),
+ (8,3,"a plain brown clay jar of fermented fish sauce with a cartoon fish peeking out and waving","remember?"),
  (8,4,"a modern bottle of dark Indonesian soy sauce labelled kecap next to a bowl of fried rice","kecap"),
- (8,5,"a tomato crossed out with a red X, next to the soy sauce bottle","still no tomatoes"),
- (8,6,WAIT+"now an old man with a long white beard, still waiting in the theatre wings, holding a very wrinkly tomato","400 years later"),
+ (8,5,"a tomato crossed out with a red X, next to a bottle of dark Indonesian soy sauce","still no tomatoes"),
+ (8,6,"a white round-headed stick figure with dot eyes and a very long white beard, now very old, still waiting in the theatre wings beside a red curtain, holding a very wrinkly tomato","400 years later"),
  (8,7,"a timeline ribbon: fish jar, mushroom basket, pill box, dirty barrel, modern ketchup bottle","fish → ketchup"),
  (8,8,"stick-figure 'you' in a sailor's cap holding a tiny tomato pill and a glass of water, suspicious","would you?"),
  (8,9,"stick-figure 'you' pointing down at an empty speech bubble",""),
@@ -143,7 +143,9 @@ def prompt(i):
     if "stick figure" in d or "stick-figure" in d:
         note += " Stick figures = simple white round-headed stick figure with dot eyes, exactly two arms and two legs."
     else: note += " No stick figures; all people drawn realistically."
-    return STYLE + d + "." + note + NEG
+    extra = " Only what is described: do not add extra people or objects."
+    if p <= 2 and "tomato" not in d.lower(): extra += " Absolutely no tomatoes anywhere in the picture."
+    return STYLE + d + "." + note + extra + NEG
 EXTRA = {}
 if __name__ == "__main__":
     print(len(SHOTS))
