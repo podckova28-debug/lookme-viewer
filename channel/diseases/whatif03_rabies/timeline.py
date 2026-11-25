@@ -19,7 +19,7 @@ PLAN = [
  ('H02', ['h02a', 'm_diag'], {'cap': 'A few centimetres a day'}),
  ('H03', ['h03a'], {'after': ('h03b', 'K03', 'd0')}),
  ('H04', ['h04a', 'h04b'], {'cap': 'Step 1: a red-hot key', 'notes': {'h04a': [N("St Hubert's key", 300, 800, 325, 480)]}}),
- ('H05', ['h05a'], {'cap': '(this one might actually help)'}),
+ ('H05', ['h05a', 'h05b', 'h05c'], {'cap': '(this one might actually help)', 'notes': {'h05b': [N('the virus, waiting', 1000, 110, 1430, 370), N('nerve: still empty', 1560, 880, 1560, 600)]}}),
  ('H06', ['h06a', 'h06b'], {'cap': 'Step 2: hair of the dog', 'strike': True, 'notes': {'h06b': [N('Actual dog hair', 1650, 640, 1150, 480)]}}),
  ('H07', ['h07a'], {}),
  ('H08', ['h08a', 'h08b', 'h08c'], {'day': 'Weeks 1-6'}),
@@ -29,13 +29,19 @@ PLAN = [
  ('H12', ['h12a', 'h12b'], {'cap': '14 bites. 10 days of shots.', 'notes': {'h12a': [N('Louis Pasteur', 420, 110, 760, 230), N('(a chemist, not a doctor)', 420, 180, size=46), N('Joseph Meister, 9', 1150, 120, 1165, 380)]}}),
  ('H13', ['h13a', 'h13b'], {'cap': 'Paris or home?'}),
  ('H14', ['h14a'], {}),
- ('H15', ['h15a', 'h15b'], {'day': 'Week 6', 'card': 'w6', 'notes': {'h15a': [N('It itches', 640, 880, 1225, 655)]}}),
- ('H16', ['h16a', 'h16b'], {'day': 'Symptoms: day 2'}),
- ('H17', ['h17a', 'h17b'], {'notes': {'h17a': [N('Water', 330, 300, 340, 425)]}}),
- ('H18', ['h18a'], {'day': 'Symptoms: day 3', 'cap': 'Hydrophobia: fear of water', 'after': ('h18b', 'K18', 's3')}),
+ ('S01', ['h15a', 's01b'], {'day': 'Week 6', 'notes': {'h15a': [N('it burns', 640, 880, 1225, 655)]}}),
+ ('S02', ['s02a', 'h15b'], {'cap': 'Looks like the flu', 'card': 'w6'}),
+ ('S03', ['h16a', 'h16b'], {'day': 'Symptoms: day 2'}),
+ ('S04', ['s04a'], {'day': 'Symptoms: day 3'}),
+ ('S05', ['h17a', 's05b'], {'notes': {'h17a': [N('water', 330, 300, 340, 425)]}}),
+ ('S06', ['s06a', 'h17b'], {'cap': 'Even the sound of water'}),
+ ('S07', ['s07a'], {'big': 'Hydrophobia', 'bigy': 250, 'notes': {'s07a': [N('just a cup', 470, 800, 245, 640)]}}),
  ('H19', ['h19a'], {}),
- ('H20', ['h20a'], {'notes': {'h20a': [N('The virus', 1660, 170, 1305, 395), N('(ready for a ride)', 1660, 240, size=46)]}}),
- ('H21', ['h21z', 'h21a'], {}),
+ ('S09', ['h18a', 's09b'], {'cap': 'Even a breeze'}),
+ ('S10', ['h20a', 's10b'], {'notes': {'h20a': [N('the virus', 1700, 600, 1348, 572)]}, 'after': ('h18b', 'K18', 's3')}),
+ ('S11', ['s11a'], {'cap': 'Clear between the attacks'}),
+ ('S12', ['s12a', 's12b'], {'day': 'Symptoms: day 5', 'cap': 'Paralysis', 'notes': {'s12a': [N('the bitten arm goes first', 800, 700, 1262, 850)]}}),
+ ('S13', ['h21z', 'h21a'], {}),
  ('H22', ['h22a'], {'day': 'The other path: Paris'}),
  ('H23', ['h23a', 'h23b', 'h23c'], {'cap': 'Every day, for 10 days', 'notes': {'h23c': [N('Dried 14 days', 360, 120, 270, 310), N('Dried 1 day', 1560, 120, 1650, 310)]}}),
  ('H24', ['h24a', 'h24b'], {'notes': {'h24a': [N('Your immune system', 1450, 980, 1378, 600)]}}),
@@ -59,7 +65,7 @@ CARDS = {
 }
 CROP = {'t04a': [.56, .45, 1.6]}   # static crop on the first and only use: hides two stray stickmen at the map edges
 CROP_OK = {'t04a'}   # NO zoomed re-use of a frame: the user hates jump zooms (qc.py fails on them)
-SECTION = {'H01', 'H04', 'H08', 'H11', 'H15', 'H22', 'T01', 'E01'}
+SECTION = {'H01', 'H04', 'H08', 'H11', 'S01', 'H22', 'T01', 'E01'}
 CARD_MIN = 3.6   # cards sit in the centre over a dimmed frame and the narrator reads them
 
 shots, texts, vo, sfx, marks = [], [], [], [], {}
@@ -85,9 +91,9 @@ for i, frames, tx in PLAN:
     for f, ln in zip(frames, lens):
         shot(f, tt, tt + ln); starts[f] = (tt, tt + ln); tt += ln
     t1 = t0 + seg
-    if 'cap' in tx: texts.append({'style': 'cap', 'text': tx['cap'], 't0': t0 + .15, 't1': t1 - .05, 'maxw': 1500, 'pop': True})
+    if 'cap' in tx: texts.append({'style': 'cap', 'text': tx['cap'], 't0': t0 + .15, 't1': (starts[frames[-1]][0] if 'card' in tx else t1 - .05), 'maxw': 1500, 'pop': True})   # no caption under a status card
     if 'big' in tx:
-        bt = t0 + d * .5; texts.append({'style': 'big', 'text': tx['big'], 't0': bt, 't1': min(bt + 1.8, t1), 'pop': True})
+        bt = t0 + d * .5; texts.append({'style': 'big', 'text': tx['big'], 't0': bt, 't1': min(bt + 1.8, t1), 'pop': True, **({'y': tx['bigy']} if 'bigy' in tx else {})})
     if 'title' in tx:
         big_end = max([x['t1'] for x in texts if x['style'] == 'big' and x['t0'] >= t0] or [0])
         texts.append({'style': 'cap', 'text': tx['title'], 'y': 540, 'size': 96, 'maxw': 1700, 't0': max(starts[frames[-1]][0] + .2, big_end + .15), 't1': t1 + 1.6, 'pop': True})
@@ -113,8 +119,8 @@ shots[-1]['t1'] = round(t + 1.2, 3); shots[-1]['fade_out'] = 1.0; TOTAL = round(
 mt = lambda i: round(marks[i], 2)
 G = .55
 music = [
- {'file': 'channel/diseases/music/cholera_a.mp3', 't0': 0, 't1': mt('H15') + 1, 'gain': G, 'fade_in': 1.5, 'fade_out': 3},
- {'file': 'channel/diseases/music/cholera_b.mp3', 't0': mt('H15') - 1, 't1': mt('T01') + 1, 'gain': G, 'fade_in': 3, 'fade_out': 3},
+ {'file': 'channel/diseases/music/cholera_a.mp3', 't0': 0, 't1': mt('S01') + 1, 'gain': G, 'fade_in': 1.5, 'fade_out': 3},
+ {'file': 'channel/diseases/music/cholera_b.mp3', 't0': mt('S01') - 1, 't1': mt('T01') + 1, 'gain': G, 'fade_in': 3, 'fade_out': 3},
  {'file': 'channel/diseases/music/cholera_a.mp3', 't0': mt('T01') - 1, 't1': 'ALL', 'gain': G, 'fade_in': 3, 'fade_out': 3},
 ]
 spec = {'base': 'channel/diseases/whatif03_rabies/frames', 'fade_in': .3, 'music': music, 'shots': shots, 'texts': texts, 'vo': vo, 'sfx': sfx, 'duration': TOTAL}

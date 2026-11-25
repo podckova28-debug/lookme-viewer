@@ -36,7 +36,8 @@
 **H04 N:** Your village knows exactly what to do. The priest heats an iron key, blessed in honour of Saint Hubert, and burns the bite with it.
 [ЭКРАН] Кухня дома: священник с раскалённым ключом, герой зажмурился. Стрелка «ST HUBERT'S KEY».
 
-**H05 N:** To be fair, burning the wound is the one part that might actually help, if it's done fast enough.
+**H05 N:** And to be fair, this one might actually help. For the first few days, the virus just sits in the muscle around the bite, before it finds a nerve. Burn that flesh away fast enough, and you burn the virus with it. Real doctors did the same, with acid. The blessing is optional.
+[ЭКРАН] Схема: вирусы в мышце у укуса, нерв ещё пуст, ключ выжигает. Священник бинтует руку.
 
 **H06 N:** Then someone suggests the oldest remedy of all: put a hair of the dog that bit you on the wound. Yes, that's where the phrase comes from.
 [ЭКРАН] Бабушка прикладывает шерстинку к руке, собака смотрит с подозрением. Стрелка «THE HAIR OF THE DOG».
@@ -120,6 +121,7 @@
 - Вирус в слюне, попадает с укусом, идёт по нервам к ЦНС, не по крови; скорость центростремительного продвижения — сантиметры в сутки: WHO, CDC (Rabies, clinical overview).
 - Инкубация обычно 1–3 месяца, бывает от недели до года: WHO.
 - Первые симптомы: лихорадка, покалывание/зуд/жжение в месте укуса; затем возбуждение, бессонница, гидрофобия и аэрофобия (спазм глотки), слюнотечение, спутанность, паралич; смерть обычно в течение ~7 дней; с появлением симптомов почти всегда смертельно: WHO, CDC.
+- Прижигание: до Пастера стандартное лечение укуса (Майстеру местный врач прижёг раны карболовой кислотой); вирус первые дни размножается в мышце у места укуса, прежде чем войти в нерв (CDC, WHO).
 - Ключ святого Губерта (clé de saint Hubert): раскалённым ключом прижигали укус — народное средство Франции и Бельгии.
 - «Hair of the dog that bit you» — от поверья, что шерсть бешеной собаки лечит укус.
 - Жозеф Майстер, 9 лет, Эльзас, укушен 14 раз 4 июля 1885; 13 прививок за 10 дней (подкожно в живот), выжил; позже сторож Института Пастера. Пастер — химик, не врач.

@@ -1,0 +1,210 @@
+{
+ "r": [
+  {
+   "index": 0,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. the hero (same stickman as in the reference: flat dark-grey cloth cap, loose faded blue work smock, brown trousers) stands alone in the middle of the lane with BOTH arms hanging straight down by his sides, worried face, looking toward the dog that runs away in the far distance down the lane. The loaf of bread lies on the ground at his feet. He holds nothing. Medium shot, every person fully visible from head to feet. Anatomy check: every person has exactly ONE head, TWO thin black stick arms coming from the shoulders, TWO black mitten hands at the ends of those arms, TWO legs. No extra limbs. People do not touch each other unless stated.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "499e9dc8-cee6-4e93-a559-9fb7c886c373",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 1,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. Day: the hero (same bald stickman as in the reference, long off-white nightshirt) sits on the edge of the bed and scratches his left forearm hard with his right hand, grimacing; small scratch lines and two red scars on the forearm; little motion marks around the scratching hand. Medium shot, every person fully visible from head to feet. Anatomy check: every person has exactly ONE head, TWO thin black stick arms coming from the shoulders, TWO black mitten hands at the ends of those arms, TWO legs. No extra limbs. People do not touch each other unless stated.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "a2273ac4-c44e-440c-82a5-e60dc1e39d31",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 2,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. Day: the hero (same bald stickman as in the reference, long off-white nightshirt) sits on the edge of the bed hunched over and shivering, arms wrapped around himself, pale and tired; his mother, a stickman in a plain black dress and a white linen bonnet stands next to him and rests one hand on his forehead to feel the fever, her other arm by her side. Medium shot, every person fully visible from head to feet. Anatomy check: every person has exactly ONE head, TWO thin black stick arms coming from the shoulders, TWO black mitten hands at the ends of those arms, TWO legs. No extra limbs. People do not touch each other unless stated.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "a2273ac4-c44e-440c-82a5-e60dc1e39d31",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 3,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. Day: his mother, a stickman in a plain black dress and a white linen bonnet stands in the middle of the room and holds out a tin cup of water toward the hero with both hands; the hero (same bald stickman as in the reference, long off-white nightshirt) sits on the edge of the bed and reaches toward the cup with one hand, thirsty, hopeful face. Medium shot, every person fully visible from head to feet. Anatomy check: every person has exactly ONE head, TWO thin black stick arms coming from the shoulders, TWO black mitten hands at the ends of those arms, TWO legs. No extra limbs. People do not touch each other unless stated.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "a2273ac4-c44e-440c-82a5-e60dc1e39d31",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 4,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. Day: the hero (same bald stickman as in the reference, long off-white nightshirt) sits on the edge of the bed, both hands clutching his own throat, mouth open, eyes squeezed in pain; the tin cup lies dropped on the floor at his feet with spilled water; drawn spasm lines around his neck. Nobody else in the room. Medium shot, every person fully visible from head to feet. Anatomy check: every person has exactly ONE head, TWO thin black stick arms coming from the shoulders, TWO black mitten hands at the ends of those arms, TWO legs. No extra limbs. People do not touch each other unless stated.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "a2273ac4-c44e-440c-82a5-e60dc1e39d31",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 5,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. Day: his mother, a stickman in a plain black dress and a white linen bonnet stands at the table on the left and pours water from the jug into the tin cup; on the right, the hero (same bald stickman as in the reference, long off-white nightshirt) sits on the bed turned away from her, covering both of his ears with his hands, eyes shut tight, frightened. Medium shot, every person fully visible from head to feet. Anatomy check: every person has exactly ONE head, TWO thin black stick arms coming from the shoulders, TWO black mitten hands at the ends of those arms, TWO legs. No extra limbs. People do not touch each other unless stated.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "a2273ac4-c44e-440c-82a5-e60dc1e39d31",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 6,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. Day: the hero (same bald stickman as in the reference, long off-white nightshirt) cowers in the far corner of the bed with his knees pulled up and his back against the wall, staring in terror at the tin cup standing alone on the table across the room. Nobody else in the room. Medium shot, every person fully visible from head to feet. Anatomy check: every person has exactly ONE head, TWO thin black stick arms coming from the shoulders, TWO black mitten hands at the ends of those arms, TWO legs. No extra limbs. People do not touch each other unless stated.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "a2273ac4-c44e-440c-82a5-e60dc1e39d31",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 7,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. Day: the window is open and wind lines blow into the room; the hero (same bald stickman as in the reference, long off-white nightshirt) lies in the bed and pulls the brown blanket up over his whole face to hide from the breeze; only the top of his round head shows. Nobody else in the room. Medium shot, every person fully visible from head to feet. Anatomy check: every person has exactly ONE head, TWO thin black stick arms coming from the shoulders, TWO black mitten hands at the ends of those arms, TWO legs. No extra limbs. People do not touch each other unless stated.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "a2273ac4-c44e-440c-82a5-e60dc1e39d31",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 8,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. Day: the hero (same bald stickman as in the reference, long off-white nightshirt) sits on the edge of the bed and spits into a small tin basin that he holds in both hands on his lap; a drop of drool on his chin; his mother, a stickman in a plain black dress and a white linen bonnet stands a step away watching, worried, her hands clasped. Medium shot, every person fully visible from head to feet. Anatomy check: every person has exactly ONE head, TWO thin black stick arms coming from the shoulders, TWO black mitten hands at the ends of those arms, TWO legs. No extra limbs. People do not touch each other unless stated.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "a2273ac4-c44e-440c-82a5-e60dc1e39d31",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 9,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. Day, quiet and sad: the hero (same bald stickman as in the reference, long off-white nightshirt) sits calmly on the edge of the bed, looking at the snowy window with a sad, clear, thoughtful face; his mother, a stickman in a plain black dress and a white linen bonnet sits beside him on the bed and holds his hand. Medium shot, every person fully visible from head to feet. Anatomy check: every person has exactly ONE head, TWO thin black stick arms coming from the shoulders, TWO black mitten hands at the ends of those arms, TWO legs. No extra limbs. People do not touch each other unless stated.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "a2273ac4-c44e-440c-82a5-e60dc1e39d31",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 10,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. Day: the hero (same bald stickman as in the reference, long off-white nightshirt) lies flat on his back on the bed under the brown blanket, motionless, his left arm hanging limp over the side of the bed down toward the floor, eyes half open, unable to move. Medium shot, every person fully visible from head to feet. Anatomy check: every person has exactly ONE head, TWO thin black stick arms coming from the shoulders, TWO black mitten hands at the ends of those arms, TWO legs. No extra limbs. People do not touch each other unless stated.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "a2273ac4-c44e-440c-82a5-e60dc1e39d31",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 11,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. Day: the hero (same bald stickman as in the reference, long off-white nightshirt) lies flat on his back in the bed, motionless, eyes half closed; his mother, a stickman in a plain black dress and a white linen bonnet stands beside the bed and lifts his limp left arm by the wrist with both hands, her face worried; his arm hangs slack. Medium shot, every person fully visible from head to feet. Anatomy check: every person has exactly ONE head, TWO thin black stick arms coming from the shoulders, TWO black mitten hands at the ends of those arms, TWO legs. No extra limbs. People do not touch each other unless stated.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "a2273ac4-c44e-440c-82a5-e60dc1e39d31",
+      "role": "image_references"
+     }
+    ]
+   }
+  }
+ ],
+ "ids": [
+  "c04a",
+  "s01b",
+  "s02a",
+  "s04a",
+  "s05b",
+  "s06a",
+  "s07a",
+  "s09b",
+  "s10b",
+  "s11a",
+  "s12a",
+  "s12b"
+ ]
+}

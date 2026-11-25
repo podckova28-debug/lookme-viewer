@@ -6,7 +6,7 @@ H01|NARRATOR|Rabies is a virus shaped like a tiny bullet. It lives in the dog's 
 H02|NARRATOR|It doesn't go into your blood. It does something sneakier. It climbs into your nerves, and starts crawling toward your brain, a few centimeters a day.
 H03|RABIES|I'm in no hurry. You'll come to me.
 H04|NARRATOR|Your village knows exactly what to do. The priest heats an iron key, blessed in honor of Saint Hoo-bear, and burns the bite with it.
-H05|NARRATOR|To be fair, burning the wound is the one part that might actually help, if it's done fast enough.
+H05|NARRATOR|And to be fair, this one might actually help. For the first few days, the virus just sits in the muscle around the bite, before it finds a nerve. Burn that flesh away fast enough, and you burn the virus with it. Real doctors did the same, with acid. The blessing is optional.
 H06|NARRATOR|Then someone suggests the oldest remedy of all: put a hair of the dog that bit you on the wound. Yes, that's where the phrase comes from.
 H07|RABIES|The hair of the dog. I love that one.
 H08|NARRATOR|Then, nothing. Weeks go by. The bite heals into two little scars. You feel completely fine. For most people, this quiet part lasts one to three months.
@@ -37,3 +37,15 @@ T05|RABIES|I'm still here. Waiting for someone to skip the doctor.
 E01|NARRATOR|So, would you have got on that train in eighteen eighty-five? Tell me in the comments.
 K03|NARRATOR|Day zero. Two holes in your arm. No fever. The virus is still sitting in your arm. Mood: annoyed.
 K18|NARRATOR|Day three of symptoms. Huge thirst, but you can't swallow. Fear: maximum. The virus is everywhere. Mood: terrified.
+S01|NARRATOR|Let's see what happens if you stay home. Six weeks after the bite, the old scars start to tingle. Then they burn, and itch, like something is crawling under the skin.
+S02|NARRATOR|Then a fever, a headache, and you feel tired all the time. It looks like the flu. It isn't.
+S03|NARRATOR|Day two. You can't sleep. Every creak of the floor makes your heart jump. You're anxious, and you don't know why.
+S04|NARRATOR|Then comes the weirdest symptom of all. You're desperately thirsty. Your mother brings you a cup of water.
+S05|NARRATOR|You lift it to your lips, and your throat slams shut. A violent, painful spasm. You can't swallow a single drop.
+S06|NARRATOR|And next time, it gets worse. Just seeing the cup sets off the spasm. Even the sound of water being poured.
+S07|NARRATOR|Doctors called it hydrophobia, fear of water. You're dying of thirst, and you're terrified of a cup.
+S09|NARRATOR|Then a breeze through the window, and the same spasm hits again. You can't stand air on your face.
+S10|NARRATOR|You can't swallow your own spit, so you drool and spit all day. And the virus is in that saliva, ready for its next ride.
+S11|NARRATOR|Here's the cruellest part. Between the attacks, you're completely clear. You understand exactly what's happening to you.
+S12|NARRATOR|Day five. The fear fades, because the paralysis begins. It starts in the bitten arm, and spreads. Your legs stop working. Then your face.
+S13|NARRATOR|Then a coma, and then your breathing stops. About a week from the first symptom, it's over. In eighteen eighty-five, nobody survived.

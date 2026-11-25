@@ -33,6 +33,47 @@ def font(size, lower=False):
 
 INK, CREAM, GOLD, RED = (50, 32, 20), (242, 232, 208), (184, 146, 84), (176, 38, 28)
 
+HAND = os.path.join(ROOT, 'channel/diseases/fonts/CaveatBrush-Regular.ttf')
+CHALK, HALO = (246, 240, 224, 255), (0, 0, 0, 170)
+def _stroke(d, pts, wmax, col, taper=.35):
+    n = len(pts)
+    for i, (x, y) in enumerate(pts):
+        u = i / max(1, n - 1); w = wmax * (taper + (1 - taper) * math.sin(math.pi * min(1, u * 1.1)) ** .6)
+        d.ellipse((x - w / 2, y - w / 2, x + w / 2, y + w / 2), fill=col)
+def _path(sx, sy, ex, ey, bend, seed, wob, n=120):
+    rr = np.random.default_rng(seed); mx, my = (sx + ex) / 2 - bend * (ey - sy), (sy + ey) / 2 + bend * (ex - sx)
+    ph = rr.uniform(0, 6.28, 2); ln = math.hypot(ex - sx, ey - sy) or 1; nx, ny = -(ey - sy) / ln, (ex - sx) / ln; out = []
+    for i in range(n + 1):
+        u = i / n; x = (1 - u) ** 2 * sx + 2 * (1 - u) * u * mx + u * u * ex; y = (1 - u) ** 2 * sy + 2 * (1 - u) * u * my + u * u * ey
+        j = wob * math.sin(math.pi * u) * (math.sin(u * 7 + ph[0]) + .5 * math.sin(u * 17 + ph[1])); out.append((x + nx * j, y + ny * j))
+    return out
+def chalk_note(it, k, S=2):
+    """label (+ optional arrow to tx, ty) drawn like a white brush on the picture; soft dark halo, no hard outline"""
+    txt = it['text']; size = int(it.get('size', 70) * 1.12); f = ImageFont.truetype(HAND, size * S)
+    x, y = it['x'], it['y']; seed = abs(hash(txt)) % 1000
+    tmp = ImageDraw.Draw(Image.new('RGBA', (8, 8))); bb = [v / S for v in tmp.textbbox((x * S, y * S), txt, font=f, anchor='mm')]
+    P, heads = [], []
+    if 'tx' in it:
+        tx, ty = it['tx'], it['ty']; dx, dy = tx - x, ty - y
+        if abs(dx) > abs(dy) * .8: sx, sy = (bb[2] + 14 if dx > 0 else bb[0] - 14), y + size * .08
+        else: sx, sy = x + (bb[2] - bb[0]) * (.25 if dx > 0 else -.25), (bb[3] + 12 if dy > 0 else bb[1] - 12)
+        ln = math.hypot(tx - sx, ty - sy) or 1; ex, ey = tx - (tx - sx) / ln * 16, ty - (ty - sy) / ln * 16
+        P = _path(sx, sy, ex, ey, it.get('bend', .22), seed, 2.5)
+        m = max(2, int(len(P) * min(1, k))); P = P[:m]
+        if k >= 1:
+            ang = math.atan2(P[-1][1] - P[-6][1], P[-1][0] - P[-6][0])
+            heads = [_path(P[-1][0], P[-1][1], P[-1][0] - 34 * math.cos(ang + s * .5), P[-1][1] - 34 * math.sin(ang + s * .5), .05, seed + i, 1, 20) for i, s in enumerate((1, -1))]
+    xs = [bb[0], bb[2]] + [p[0] for p in P]; ys = [bb[1], bb[3]] + [p[1] for p in P]
+    X0, Y0 = int(max(0, min(xs) - 60)), int(max(0, min(ys) - 60)); X1, Y1 = int(min(W, max(xs) + 60)), int(min(H, max(ys) + 60))
+    big = Image.new('RGBA', ((X1 - X0) * S, (Y1 - Y0) * S), (0, 0, 0, 0)); g = big.copy(); gd, d = ImageDraw.Draw(g), ImageDraw.Draw(big)
+    sc = lambda q: [((a - X0) * S, (b - Y0) * S) for a, b in q]; lx, ly = (x - X0) * S, (y - Y0) * S
+    if P: _stroke(gd, sc(P), 19 * S, HALO); [_stroke(gd, sc(h), 17 * S, HALO, .5) for h in heads]
+    gd.text((lx, ly), txt, font=f, anchor='mm', fill=HALO, stroke_width=8 * S, stroke_fill=HALO)
+    big = Image.alpha_composite(g.filter(ImageFilter.GaussianBlur(6 * S)), big); d = ImageDraw.Draw(big)
+    if P: _stroke(d, sc(P), 9 * S, CHALK); [_stroke(d, sc(h), 8 * S, CHALK, .45) for h in heads]
+    d.text((lx, ly), txt, font=f, anchor='mm', fill=CHALK)
+    out = Image.new('RGBA', (W, H), (0, 0, 0, 0)); out.paste(big.resize((X1 - X0, Y1 - Y0), Image.LANCZOS), (X0, Y0)); return out
+
 def draw_item(it, k):
     """one text/box item -> full-frame RGBA layer. styles:
        ink   - dark ink printed onto a paper surface in the picture (menu panels, book pages, decrees, maps)
@@ -75,42 +116,8 @@ def draw_item(it, k):
         while font(fs).getlength('MOOD: ' + mood) > cw - 68 and fs > 30: fs -= 2
         d.text((x + 34, yy + 10), 'MOOD:', font=font(fs), fill=(236, 226, 206, 255)); d.text((x + 34 + font(fs).getlength('MOOD: '), yy + 10), mood, font=font(fs), fill=(255, 255, 255, 255))
         return L
-    if st == 'note':   # annotation: Bebas label + hand-drawn arrow to a point (tx, ty); k = arrow drawing progress
-        txt = it['text'].upper(); size = it.get('size', 70); f = font(size)
-        x, y = it['x'], it['y']
-        if 'tx' not in it:   # plain label, no arrow
-            S = Image.new('RGBA', (W, H), (0, 0, 0, 0)); ImageDraw.Draw(S).text((x + 3, y + 4), txt, font=f, anchor='mm', fill=(0, 0, 0, 220), stroke_width=max(6, size // 9), stroke_fill=(0, 0, 0, 220))
-            L = Image.alpha_composite(S.filter(ImageFilter.GaussianBlur(3)), L); d = ImageDraw.Draw(L)
-            d.text((x, y), txt, font=f, anchor='mm', fill=(255, 255, 255, 255), stroke_width=max(2, size // 30), stroke_fill=(15, 10, 8, 255)); return L
-        tx, ty = it['tx'], it['ty']
-        bb = d.textbbox((x, y), txt, font=f, anchor='mm'); pad = 16
-        # start where the straight line from the label centre to the target leaves the (padded) label box
-        dx, dy = tx - x, ty - y; hw, hh = (bb[2] - bb[0]) / 2 + pad, (bb[3] - bb[1]) / 2 + pad
-        sc = min(hw / abs(dx) if dx else 1e9, hh / abs(dy) if dy else 1e9); sx, sy = x + dx * sc, y + dy * sc
-        # stop a little short of the target so the tip does not cover the detail
-        ln = math.hypot(tx - sx, ty - sy) or 1; ex, ey = tx - (tx - sx) / ln * 14, ty - (ty - sy) / ln * 14
-        bend = it.get('bend', 0.12)   # gentle bow; sign flips the side
-        mx, my = (sx + ex) / 2 - bend * (ey - sy), (sy + ey) / 2 + bend * (ex - sx)
-        n = 40; p_ = min(1, k); m = max(2, int(n * p_))
-        pts = [((1 - u) ** 2 * sx + 2 * (1 - u) * u * mx + u * u * ex, (1 - u) ** 2 * sy + 2 * (1 - u) * u * my + u * u * ey) for u in [i / n for i in range(m + 1)]]
-        ang = math.atan2(ey - my, ex - mx)   # tangent at the end of the curve
-        hx, hy = ex + 8 * math.cos(ang), ey + 8 * math.sin(ang)
-        head = [(hx, hy), (hx - 34 * math.cos(ang - .42), hy - 34 * math.sin(ang - .42)), (hx - 34 * math.cos(ang + .42), hy - 34 * math.sin(ang + .42))]
-        ink, white = (12, 9, 7, 255), (255, 255, 255, 255)
-        S = Image.new('RGBA', (W, H), (0, 0, 0, 0)); sd = ImageDraw.Draw(S)   # soft drop shadow
-        sd.line([(px + 3, py + 4) for px, py in pts], fill=(0, 0, 0, 150), width=18, joint='curve')
-        sd.text((x + 3, y + 4), txt, font=f, anchor='mm', fill=(0, 0, 0, 150), stroke_width=max(6, size // 9), stroke_fill=(0, 0, 0, 150))
-        L = Image.alpha_composite(S.filter(ImageFilter.GaussianBlur(4)), L); d = ImageDraw.Draw(L)
-        d.line(pts, fill=ink, width=17, joint='curve')                     # dark outline
-        for px, py in (pts[0],): d.ellipse((px - 8, py - 8, px + 8, py + 8), fill=ink)
-        cxh, cyh = sum(q[0] for q in head) / 3, sum(q[1] for q in head) / 3   # outlined tip: dark triangle 1.5x bigger behind the white one
-        head_out = [(cxh + (q[0] - cxh) * 1.5, cyh + (q[1] - cyh) * 1.5) for q in head]
-        if p_ >= 1: d.polygon(head_out, fill=ink)
-        d.line(pts, fill=white, width=8, joint='curve')                    # white core
-        for px, py in (pts[0],): d.ellipse((px - 4, py - 4, px + 4, py + 4), fill=white)
-        if p_ >= 1: d.polygon(head, fill=white)
-        d.text((x, y), txt, font=f, anchor='mm', fill=white, stroke_width=max(3, size // 22), stroke_fill=ink)
-        return L
+    if st == 'note':   # hand-drawn annotation (user's choice "white brush"): Caveat Brush label + wobbly tapered cream stroke
+        return chalk_note(it, k)
     if st == 'strike':   # hand-drawn red marker line crossing out a caption; k = drawing progress 0..1
         txt = it['text'].upper(); size = it.get('size', 92); f = font(size)
         while it.get('maxw') and size > 20 and f.getlength(txt) > it['maxw']: size -= 2; f = font(size)

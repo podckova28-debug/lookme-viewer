@@ -1,7 +1,99 @@
 {
- "room": {"master": "m_room", "zones": {"table": [0, 396, 216, 540], "window": [300, 132, 504, 300], "bedfoot": [600, 380, 900, 540], "chair": [860, 330, 960, 540]},
-          "frames": ["h03b","h04a","h04b","h05a","h06a","h08b","h08c","h11a","h13a","h15a","h15b","h16a","h16b","h17a","h17b","h18a","h18b","h20a","h21a","h27a","h11b","h13b","h21z"], "approved": ["h08c", "h16a", "h21a"]},
- "street": {"master": "m_street", "frames": ["c02a", "c04a", "h08a"]},
- "gate": {"master": "m_rabies", "frames": ["h07a", "h14a", "h19a"]},
- "lab": {"master": "h12a", "frames": ["h23a", "h23b", "h25a"]}
+ "room": {
+  "master": "m_room",
+  "zones": {
+   "table": [
+    0,
+    396,
+    216,
+    540
+   ],
+   "window": [
+    300,
+    132,
+    504,
+    300
+   ],
+   "bedfoot": [
+    600,
+    380,
+    900,
+    540
+   ],
+   "chair": [
+    860,
+    330,
+    960,
+    540
+   ]
+  },
+  "frames": [
+   "h03b",
+   "h04a",
+   "h04b",
+   "h05a",
+   "h06a",
+   "h08b",
+   "h08c",
+   "h11a",
+   "h13a",
+   "h15a",
+   "h15b",
+   "h16a",
+   "h16b",
+   "h17a",
+   "h17b",
+   "h18a",
+   "h18b",
+   "h20a",
+   "h21a",
+   "h27a",
+   "h11b",
+   "h13b",
+   "h21z",
+   "s01b",
+   "s02a",
+   "s04a",
+   "s05b",
+   "s06a",
+   "s07a",
+   "s09b",
+   "s10b",
+   "s11a",
+   "s12a",
+   "s12b"
+  ],
+  "approved": [
+   "h08c",
+   "h16a",
+   "h21a",
+   "s04a",
+   "s07a",
+   "s11a"
+  ]
+ },
+ "street": {
+  "master": "m_street",
+  "frames": [
+   "c02a",
+   "c04a",
+   "h08a"
+  ]
+ },
+ "gate": {
+  "master": "m_rabies",
+  "frames": [
+   "h07a",
+   "h14a",
+   "h19a"
+  ]
+ },
+ "lab": {
+  "master": "h12a",
+  "frames": [
+   "h23a",
+   "h23b",
+   "h25a"
+  ]
+ }
 }
