@@ -40,3 +40,6 @@ history of medicine, disease history, black death, plague, bubonic plague, pande
 ## Состояние
 - Пилот What If (холера): голоса готовы и переданы чату болезней; дальше — кадры и монтаж там.
 - Следующие What If: rabies (анонсирован в E02 пилота), plague, smallpox, scurvy, malaria.
+
+## Проверка перед рендером
+Обязательно: `channel/diseases/tools/QC.md` и `qc.py` (синхронизация, одно место — одна обстановка, листы для ручного просмотра).
