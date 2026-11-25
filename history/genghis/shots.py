@@ -70,7 +70,7 @@ S = [
  ("c05",0,0,f"{T16} speaking to a group of warriors around a fire"),
  ("c05",1,0,f"{TO} pointing to a column of his Kereit horsemen"),
  ("c05",2,0,f"{JA} riding up with his own warriors, smiling at {T16}"),
- ("c05",3,0,f"two Mongol boys of eleven, bareheaded, one with long black braids (young Jamukha), one with reddish-brown hair (young Temujin), exchanging small knucklebones on the frozen Onon River, snow"),
+ ("c05",3,0,f"two Mongol boys of eleven, bareheaded, one with long black braids, one with reddish-brown hair, exchanging small knucklebones on the frozen Onon River, snow"),
  ("c05",4,0,"a night attack: Mongol horsemen charging into a Merkit camp, tents and fleeing people in the dark, seen from far away, no blood"),
  ("c05",5,0,f"{T16} on horseback in the dark among fleeing people calling out, {BO} running toward his horse with outstretched arms"),
  ("c05",6,0,f"{BO} holding a newborn baby boy in a felt tent, {T16} beside her"),
