@@ -111,7 +111,7 @@ for i, frames, tx in PLAN:
     t = t1
     if 'after' in tx:
         f, k, c = tx['after']; s = dur(k) + .45; vo.append({'file': f'{VO}/{k}.wav', 't': round(t + .03, 3)}); shot(f, t, t + s); card(c, t, t + s); t += s
-    if 'day' in tx: texts.append({'style': 'day', 'text': tx['day'], 't0': t0, 't1': t + (2.0 if i != 'T01' else 0), 'pop': True})
+    if 'day' in tx: texts.append({'style': 'day', 'text': tx['day'], 't0': t0, 't1': t + (2.0 if i not in ('T01', 'S12') else 0), 'pop': True})   # no day label over the next diagram
     if i == 'C04': t += 1.6; shots[-1]['t1'] = round(t, 3)   # hold the title on the last cold-open frame
 shots[0]['t0'] = 0.0
 DAYS = sorted([x for x in texts if x['style'] == 'day'], key=lambda x: x['t0'])
