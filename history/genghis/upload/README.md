@@ -1,6 +1,6 @@
 # The ENTIRE Life of Genghis Khan — пакет для загрузки на YouTube
 
-- Видео: `The_ENTIRE_Life_of_Genghis_Khan_1080p.mp4` — 1080p; мужской голос (Kokoro am_echo через Chatterbox), ускорен в 1,1 раза; тихая музыка на фоне, без шумовых эффектов; титры глав и подписи (Bebas Neue).
+- Видео: `The_ENTIRE_Life_of_Genghis_Khan_1080p.mp4` — 1080p; мужской голос (Kokoro am_echo через Chatterbox), ускорен в 1,1 раза; 10:42, 99 МБ; тихая музыка на фоне, без шумовых эффектов; титры глав и подписи (Bebas Neue).
 - Обложка: `thumbnail_1280x720.jpg` — в стиле Распутина и Жанны: хан слева, конница, «GENGHIS KHAN», «1162 – 1227», чёрный круг со стрелой.
 
 ## Название
@@ -12,7 +12,18 @@ Mongolia, around 1177. A teenage boy lies in a freezing river with a wooden coll
 
 This is the entire life of Genghis Khan: the abandoned boy who survived the steppe, the blood brother who became his greatest enemy, the caravan that started a war, the search for the medicine of immortality, and the grave that has never been found.
 
-CHAPTERS_PLACEHOLDER
+0:00 The boy in the river
+0:38 The Blood Clot
+1:31 The Fish
+2:20 The Cangue
+3:13 The Sable Coat
+4:03 The Knucklebone
+5:01 The Muddy Water
+5:58 The White Banner
+6:48 The Wall
+7:49 The Caravan
+8:59 The Elixir
+9:42 The Grave
 
 Sources: The Secret History of the Mongols (13th c., trans. Igor de Rachewiltz); Rashid al-Din, Jami al-Tawarikh; Juvayni, History of the World Conqueror; Li Zhichang, Travels to the West of Qiu Changchun; Paul Ratchnevsky, Genghis Khan: His Life and Legacy (1991); Jack Weatherford, Genghis Khan and the Making of the Modern World (2004); Frank McLynn, Genghis Khan (2015); Zerjal et al., The Genetic Legacy of the Mongols (2003).
 Legends and uncertain details (the blood clot, the funeral, the cause of death, the numbers at Merv) are marked as such in the video.
