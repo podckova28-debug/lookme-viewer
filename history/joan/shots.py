@@ -13,7 +13,7 @@ S = [
  ("c00",5,0,"an English soldier in a red surcoat kneeling and tying two small sticks together into a rough little wooden cross with a strip of cloth"),
  ("c00",5,.6,"Joan age 19 (as in the sheet, short dark hair, long grey dress) holding a small rough wooden cross made of two sticks against her chest with both hands, grey sky, from the chest up"),
  ("c00",6,0,"Joan age 17 (as in the sheet) in armour on a white horse with a white banner leading charging French soldiers toward a fortress, pale sky"),
- ("c00",6,.6,"a cathedral interior, a young king kneeling as a gold crown is placed on his head, Joan age 17 (as in the sheet, short dark bob hair) in armour with a white banner beside the altar"),
+ ("c00",6,.6,"a cathedral interior, King Charles (as in the sheet) kneeling in blue fleur-de-lis robes as a grey-haired archbishop places a gold crown on his head, Joan age 17 (as in the sheet, short dark bob hair) in armour with a white banner beside the altar"),
  ("c00",7,0,"King Charles (as in the sheet) sitting alone on a throne in an empty hall, looking away, a letter dropped on the floor"),
  ("c00",8,0,"heroic portrait of Joan age 17 (as in the sheet) in armour holding her white banner on a hill, wind in her short hair, pale sky, an army behind her"),
  # c01 — the garden
@@ -24,7 +24,7 @@ S = [
  ("c01",3,0,"medieval battle in the Hundred Years War, English longbowmen shooting volleys across a field at French knights, smoke, pale sky"),
  ("c01",4,0,"an old parchment map of France with the north and Paris coloured red for England, Burgundy coloured red-orange, the south blue for the French"),
  ("c01",5,0,"medieval nobles signing a treaty on parchment at a long table in a cathedral hall in 1420, red wax seals, a small crown on a cushion"),
- ("c01",5,.6,"a young sad prince in blue velvet staring out of a castle window, a crown on a table behind him out of reach"),
+ ("c01",5,.6,"King Charles (as in the sheet) as the young uncrowned Dauphin, sad, staring out of a castle window, a crown on a table behind him out of reach"),
  ("c01",6,0,"Burgundian soldiers on horseback with red diagonal cross (saltire) banners raiding a medieval village, peasants running with bundles and cattle, smoke rising from barns far away, no fleurs-de-lis"),
  ("c01",6,.6,"a peasant family with a cart and cows fleeing along a road at dusk, a girl looking back over her shoulder"),
  ("c01",7,0,"Joan age 13 (as in the sheet) standing in her father's vegetable garden at noon, looking up in awe at a bright soft light in the sky beside the church"),
