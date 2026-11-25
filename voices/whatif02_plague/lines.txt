@@ -1,0 +1,52 @@
+C01|NARRATOR|Florence, June, thirteen forty-eight. It's a gorgeous summer morning. You're twenty-four, you've got a peach in one hand, and absolutely nothing to worry about.
+C02|NARRATOR|Something tiny lands on your ankle. You don't feel it. It bites.
+C03|PLAGUE|Hello, Florence. Did you miss me?
+C04|NARRATOR|Within a week, there's about a fifty-fifty chance you'll be dead. This is what happens if you catch the Black Death. Day by day.
+H01|NARRATOR|Let's start with the flea. It's a rat flea, and it's having a terrible week. Its gut is blocked by a plug of bacteria, so nothing it drinks can go down.
+H02|NARRATOR|So it's starving. It bites, and bites again, and every time it tries to swallow, it spits a little of that plug back into you.
+H03|NARRATOR|The bacteria are called Yer-sin-ee-ah pestis. Under a microscope, they look like tiny safety pins.
+H04|PLAGUE|Small. Patient. Very, very good at my job.
+H05|NARRATOR|Here's your body right now. Temperature: normal. Pulse: normal. Mood: peach.
+H06|NARRATOR|For the next two days, nothing happens. You go to work, you eat, you sleep. You feel fine.
+H07|NARRATOR|Inside you, it's a different story. The bacteria travel from the bite to the nearest lymph node, the little filter your body uses to catch invaders. For a bite on the ankle, that's in your groin.
+H08|NARRATOR|Normally, your immune cells swallow germs and destroy them. These bacteria let themselves be swallowed, and then they move in. Your own defenders become their taxi.
+H09|PLAGUE|Thank you for the ride.
+H10|NARRATOR|Day three. You wake up shivering, in the middle of a hot Italian summer.
+H11|NARRATOR|Then the headache arrives, the kind that makes light hurt. Then the fever. By the evening, it's thirty-nine and a half degrees.
+H12|NARRATOR|Your muscles ache, you feel sick, and you're so tired that climbing the stairs feels like climbing the Alps.
+H13|NARRATOR|Status check. Fever: high. Pulse: racing. Energy: twenty percent. Mood: very much not great.
+H14|NARRATOR|Day four. You notice a lump in your groin. It's hard, it's hot, and it's so painful you can't stand anything touching it. Not even your clothes.
+H15|NARRATOR|This is a byooboh. That's where the word byoo-bonnic comes from. It's your lymph node, swollen with billions of bacteria and the immune cells fighting them.
+H16|NARRATOR|The writer Giovanni Bo-katch-oh lived through this summer in Florence. He wrote that the swellings grew to the size of an egg, and some to the size of an apple.
+H17|PLAGUE|I like to think of them as souvenirs.
+H18|NARRATOR|Day five. Your family calls a doctor. Good news: he's one of the best educated men in Florence. Bad news: it's thirteen forty-eight.
+H19|NARRATOR|First, he examines your urine. He holds it up to the light, checks the colour, maybe gives it a sniff. This was the most advanced test of the age.
+H20|NARRATOR|His diagnosis: bad air. The top medical experts in Paris have officially explained the whole epidemic. Three planets lined up in the sign of Aquarius, and poisoned the air.
+H21|PLAGUE|I've never even been to Aquarius.
+H22|NARRATOR|So here's your treatment plan. Step one: bloodletting. He opens a vein and drains some of your blood, to rebalance your humours. You were already weak. Now you're weaker.
+H23|NARRATOR|Step two: theer-ee-ack. An expensive medicine made from dozens of ingredients, including opium, honey, and roasted viper. The opium, at least, helps with the pain.
+H24|NARRATOR|Step three: do not take a bath. Hot water opens your pores and lets the bad air in.
+H25|NARRATOR|Step four: sit between two large fires, to purify the air around you. This is not a joke. It's what the Pope's own doctor recommended, for the Pope himself, in Ah-veen-yon.
+H26|NARRATOR|And step five: keep flowers, herbs or a sponge soaked in vinegar under your nose. If you can't smell the bad air, it can't hurt you.
+H27|NARRATOR|To be fair to your doctor, none of this was stupid by the standards of the time. It just didn't work. One of Italy's most famous plague experts, Jen-tee-lay da Fo-leen-yo, wrote advice very much like this. He died of the plague that same June.
+H28|PLAGUE|Nothing personal, doctor.
+H29|NARRATOR|Day six. From here, your story can go three ways.
+H30|NARRATOR|Path one: the bacteria break out and flood your blood. Your blood pressure crashes, and tiny clots block the vessels in your fingers, toes and nose, so they turn black. Without antibiotics, this path is almost always fatal.
+H31|NARRATOR|Path two: they reach your lungs. Now you cough, and every cough sprays bacteria at everyone around you. This is new-monnic plague, the kind that spreads from person to person. Untreated, it kills nearly everyone who gets it.
+H32|NARRATOR|Path three: your immune system holds the line, and the fight stays in that one swollen node.
+H33|PLAGUE|Let's find out which one you get.
+H34|NARRATOR|Status check. Fever: forty degrees. The byooboh: an apple. You're confused, you can barely talk, and you haven't eaten in two days.
+H35|NARRATOR|Day eight. You're lucky. Path three.
+H36|NARRATOR|The fever breaks. Your body has finally caught up with the bacteria. The byooboh softens, and eventually it bursts and drains. It's disgusting, and it's the best news you've had all week.
+H37|NARRATOR|Even with no real treatment, roughly half of the people with byoo-bonnic plague survived. You're one of them.
+H38|PLAGUE|You got lucky. Your neighbours didn't.
+H39|NARRATOR|It takes you weeks to walk normally again. When you finally get outside, Florence is quiet. About half the city is gone. Across Europe, between a third and a half of all people died in just a few years.
+H40|NARRATOR|Fun fact: nobody at the time called it the Black Death. They called it the great mortality. The name we use today only caught on centuries later.
+T01|NARRATOR|Now let's run it again. Same flea, same bite. But it's today.
+T02|NARRATOR|Yes, plague still exists. There are cases every year, mostly in Madagascar and the Democratic Republic of the Congo. Even the United States sees about seven cases a year, mostly in the rural southwest, from fleas on prairie dogs and squirrels.
+T03|NARRATOR|On day three, you get the fever and the lump. You go to a doctor, and this time, she doesn't look at your urine. She takes a tiny sample from the lump and finds the bacteria.
+T04|NARRATOR|Then she gives you antibiotics for ten to fourteen days. A box of pills, against the disease that killed tens of millions.
+T05|NARRATOR|With quick treatment, most people survive. The fires, the vinegar and the roasted vipers are optional.
+T06|PLAGUE|They took my best years. But I'm still here. Waiting.
+E01|NARRATOR|So, would you have survived Florence in thirteen forty-eight? Tell me in the comments: which path did you get?
+E02|NARRATOR|Next time: what happens if you're bitten by a rabid dog?
