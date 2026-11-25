@@ -69,8 +69,13 @@ oks.append(f"storyboard: {len(S)} shots linted")
 # ---------- B. frames ----------
 if a.stage in ("frames", "video"):
     FR = os.path.join(EP, "frames"); missing = []
+    def fpath(k):   # episodes with a separate ep/ folder keep shots 12+ there; REUSE shots point to frames/fNNN
+        d = S[k - 1][3]
+        if d.startswith("REUSE"): return os.path.join(FR, d.split()[1] + ".png")
+        e = os.path.join(EP, "ep", f"f{k:03d}.png")
+        return e if os.path.exists(e) else os.path.join(FR, f"f{k:03d}.png")
     for k in range(1, len(S) + 1):
-        f = os.path.join(FR, f"f{k:03d}.png")
+        f = fpath(k)
         if not os.path.exists(f): missing.append(k); continue
         w, h = Image.open(f).size
         if abs(w / h - 16 / 9) > .05: fails.append(f"frame {k}: aspect {w}x{h} is not 16:9")
@@ -79,7 +84,7 @@ if a.stage in ("frames", "video"):
     for s in range(1, len(S) + 1, 4):
         c = Image.new("RGB", (1920, 1080), "white")
         for j, k in enumerate(range(s, min(s + 4, len(S) + 1))):
-            f = os.path.join(FR, f"f{k:03d}.png")
+            f = fpath(k)
             if not os.path.exists(f): continue
             im = Image.open(f).convert("RGB").resize((960, 540)); d = ImageDraw.Draw(im)
             d.text((8, 6), str(k), font=FONT, fill="red", stroke_width=4, stroke_fill="white")
