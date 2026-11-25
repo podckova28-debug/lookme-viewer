@@ -1,0 +1,55 @@
+# The ENTIRE Life of Joan of Arc — script v1
+
+Format: as Rasputin and Musashi (../FORMAT.md): present tense, third person, no jokes, exact dates, chapters titled by an object,
+a hook at the end of every chapter, one subscribe CTA (end of c04, ~3:30), callback ending (the wooden cross; heretic -> saint).
+Voice: Kokoro am_echo via Chatterbox, exaggeration 0.4, cfg 0.5; final narration sped up (SPEED 1.1).
+Legend is marked in the narration ("according to the story", "legend says"). No fire, blood or wounds in the frames.
+TTS text with phonetic names: vo/cNN.txt (one sentence per line).
+
+=== c00 | COLD OPEN ===
+Rouen, Normandy. The thirtieth of May, fourteen thirty one. A crowd fills the old market square. In the middle stands a high scaffold, and on it, a nineteen-year-old girl in a long dress and a paper cap with four words written on it: heretic, relapsed, apostate, idolater. She asks for a cross. An English soldier takes two pieces of wood and ties them together for her. Two years earlier, this girl led the army of France, broke a siege that had lasted seven months, and put a crown on the head of a king. Today, that king does nothing at all. This is the entire life of Joan of Arc, the peasant girl who turned a war around in a single year, and the people who could not forgive her for it.
+
+=== c01 | The Garden ===
+She is born around fourteen twelve in Domrémy, a small village on the river Meuse, on the eastern edge of France. Her father, Jacques, is a farmer. Her mother, Isabelle, teaches her to pray and to spin wool, but not to read. France is losing a war that has already lasted more than seventy years. The English king holds Paris and the north, together with his allies, the Burgundians. In fourteen twenty, a treaty even disinherits the French heir, the Dauphin Charles, and promises his crown to England. Soldiers raid the villages along the Meuse, and once, Joan's family has to flee their own home. Then, at about thirteen, in her father's garden at midday, Joan sees a light and hears a voice. Later she will say it was the archangel Michael, and after him Saint Catherine and Saint Margaret. For years she tells no one. Because the voices are giving her an order no peasant girl could obey: go into France, and save it.
+
+=== c02 | The Captain ===
+In May fourteen twenty eight, at sixteen, she walks to the fortress town of Vaucouleurs and asks its captain, Robert de Baudricourt, for an escort to the Dauphin. He laughs, and tells her cousin to take her home to her father and box her ears. She comes back in January. By now the town has heard an old prophecy: France will be lost by a woman, and saved by a maiden. People start to follow Joan in the street. In February, news arrives of another French defeat, and Baudricourt finally gives in. Joan cuts her hair short, puts on men's clothes, and rides out with six men. For eleven days they travel, mostly at night, through land held by the enemy, nearly three hundred and fifty miles. At the end of the road is a castle on the river Loire, and a king who has never been crowned.
+
+=== c03 | The Crowd ===
+Chinon, March fourteen twenty nine. Charles is twenty six, poor, hesitant, and not even sure that he is the true son of the old king. According to the story, he hides among his courtiers to test her, while another man stands in his place. Joan walks past the impostor, goes straight to Charles, and kneels. In private, she tells him something that no one else hears. Whatever it is, he believes her. But he is careful. For three weeks, at Poitiers, churchmen question her about her voices. Ladies of the court examine her to confirm that she is a virgin. Their verdict: they find nothing evil in her, and she should be put to the test. And the test they choose is the most dangerous place in France.
+
+=== c04 | The Banner ===
+The city of Orléans, on the Loire, has been under English siege since October fourteen twenty eight. If it falls, the road to the south is open. Joan is given a suit of armour, horses and a small household. She has a banner made, white, with Christ holding the world, and the names Jesus and Maria. Legend says that the sword she asks for is found buried behind the altar of a church at Fierbois, marked with five crosses. Then she sends a letter to the English commanders. She cannot write, so she dictates it. Go home to England, it says, or I will make you go. On the twenty ninth of April, fourteen twenty nine, she rides into Orléans at night, and the whole city comes out with torches to see her. The English laugh at her letter.
+
+This channel tells whole lives in a few minutes. If you want the next one, subscribe. Because in nine days, a girl who has never seen a battle is going to end a siege that has lasted seven months.
+
+=== c05 | The Arrow ===
+Joan has no rank and no command. The captains hold their councils without her. So she simply rides out, banner in hand, wherever the fighting is, and the soldiers follow her. On the fourth of May, the French take a fortress east of the city. On the sixth, another one. On the seventh, they attack the Tourelles, the stone towers that guard the bridge. Around midday, an arrow strikes Joan between her neck and her shoulder. She is carried away from the walls, and the arrow is pulled out. In the evening, she comes back with her banner. The soldiers see it, and charge again. The Tourelles fall. The next morning, the eighth of May, the English army lines up outside the city, then turns around and marches away. A siege of seven months has been broken in nine days. Joan is seventeen. From now on, they call her the Maid of Orléans. And she has only one word in mind: Reims.
+
+=== c06 | The Crown ===
+French kings are crowned in the cathedral of Reims, but Reims is deep in enemy land. The generals want to go slowly. Joan wants to go now. In June, the French retake the towns along the Loire, one after another. On the eighteenth of June, at Patay, they catch the English army in the open and destroy it. The great English commander, John Talbot, is taken prisoner. Then the army marches north, and town after town opens its gates without a fight. On the seventeenth of July, fourteen twenty nine, in Reims cathedral, the Dauphin is crowned King Charles the Seventh. Joan stands near the altar with her banner. Asked later why her banner was there, she answers: it had shared the hardship, so it was right that it should share the honour. In less than three months, a peasant girl has turned the war around. Now she wants Paris.
+
+=== c07 | The Wall ===
+But the new king prefers talking to fighting. He signs truces with Burgundy, and the army waits for weeks. On the eighth of September, Joan finally attacks Paris, at the gate of Saint Honoré. She is standing at the edge of the moat, testing the water with her lance, when a crossbow bolt hits her in the thigh. She refuses to leave until dark. The next day, the king orders a retreat, and soon the army is sent home. In December, Charles makes Joan and her whole family nobles, as a reward, and perhaps as a way to keep her quiet. She spends a restless winter at court. And in the spring, her voices tell her something new. Before midsummer, she will be captured.
+
+=== c08 | The Tower ===
+On the twenty third of May, fourteen thirty, she leads a small attack out of the town of Compiègne, which the Burgundians are besieging. The attack fails. As the French fall back, the gate of the town is closed, and Joan is left outside. An archer grabs her by her cloak and pulls her off her horse. She is now a prisoner of the Burgundians. King Charles, who owes her his crown, never pays a ransom. She is held in the castle of Beaurevoir, and one night, she jumps from the top of the tower, about twenty metres down. She survives, badly hurt. In November, the Burgundians sell her to the English for ten thousand pounds. The English do not simply want her dead. They want a church court to prove that her voices came from the devil, and so did the crown of the king she made.
+
+=== c09 | The Question ===
+The trial opens in Rouen, the English capital in France, in January fourteen thirty one. The judge is Pierre Cauchon, a French bishop who works for the English. Facing her are dozens of theologians and lawyers. She has no lawyer at all. She is kept in a castle tower, in chains, guarded day and night by English soldiers. Day after day, they try to trap her. One question is designed so that any answer will condemn her. Is she in the grace of God? If she says yes, it is pride. If she says no, she admits her guilt. Joan answers: if I am not, may God put me there. If I am, may God keep me there. The judges cannot break her with questions. So they try something else. Fear.
+
+=== c10 | The Dress ===
+On the twenty fourth of May, in the cemetery of Saint Ouen, Joan is placed on a platform in front of a crowd. A preacher denounces her. The executioner waits with his cart. Terrified, she agrees to sign a short paper, admitting that she was wrong, and promising to wear a woman's dress. She makes her mark at the bottom. Her sentence becomes prison for life. But four days later, she is found in her cell in men's clothes again. Why is still debated. Some say her guards took her dress away. Some say she wore men's clothes to protect herself from them. Joan herself says that her voices were sad that she had given in to save her life. For the court, it is enough. She is now a relapsed heretic. And for a relapsed heretic, there is only one sentence.
+
+=== c11 | The River ===
+On the morning of the thirtieth of May, fourteen thirty one, she is taken to the old market square. A priest brings a crucifix from a nearby church and holds it up in front of her, so that she can see it until the end. Her last word is the name of Jesus. Afterwards, her ashes are thrown into the river Seine, so that nothing of her will remain. According to one witness, an English official walks away saying: we are lost, we have burned a holy person. Twenty two years later, the English are driven out of almost all of France. In fourteen fifty six, a new church court, ordered by the Pope, declares her trial null and void. In nineteen twenty, the Catholic Church makes her a saint. The girl who asked for two pieces of wood tied into a cross was burned as a heretic at nineteen. Four hundred and eighty nine years later, the same Church called her a saint.
+
+---
+## Sources
+- Trial of condemnation (1431), Latin record and French minute; Trial of nullification (1455–1456), testimony of witnesses
+  (Jean Pasquerel, Jean d'Aulon, Isambart de la Pierre, Martin Ladvenu, Jean Tressart's remark reported by witnesses).
+- Régine Pernoud & Marie-Véronique Clin, Joan of Arc: Her Story (1999).
+- Helen Castor, Joan of Arc: A History (2014).
+- Kelly DeVries, Joan of Arc: A Military Leader (1999).
+- Uncertain or legendary points marked in the narration: the recognition at Chinon, the Fierbois sword, the English official's remark.
+- The arrow at the Tourelles: who pulled it out differs between accounts, so the script uses the passive voice.
