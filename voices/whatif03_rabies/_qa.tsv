@@ -1,0 +1,38 @@
+id	score	sec	heard
+C01	0.91	11.8	A village in the Jura Mountains, France.  November 1885.  You're walking home with a loaf of bread  and the neighbor's dog is acting strange.  It's drooling and snapping at the air.
+C02	1.00	1.9	then it bites you, twice.
+C03	1.00	2.5	Hello there, don't worry, I'm a slow starter.
+C04	1.00	6.8	If you catch rabies, you have one choice to make and not much time to make it.  This is what happens if you get rabies.
+H01	1.00	7.9	Rabies is a virus shaped like a tiny bullet, it lives in the dog's saliva and the bite  just pushed it into the muscle of your arm.
+H02	0.92	9.0	It doesn't go into your blood.  It does something sneakier.  It climbs into your nerves and starts crawling towards your brain a few centimetres a day.
+H03	1.00	1.8	I'm in no hurry.  You'll come to me.
+H04	0.94	8.1	Your village knows exactly what to do.  The priest heats an iron key, blessed in honor of Saint Hubert, and burns the bite with it.
+H05	1.00	5.6	To be fair, burning the wound is the one part that might actually help if it's done fast enough.
+H06	0.96	7.1	Then someone suggests the oldest remedy of all, put a hair of the doll that bit you on  the wound.  Yes, that's where the phrase comes from.
+H07	1.00	1.8	The hair of the dog.  I love that one.
+H08	1.00	10.7	Then, nothing. Weeks go by. The bite heals into two little scars. You feel completely fine.  For most people, this quiet part lasts one to three months.
+H09	1.00	4.2	But under the scars, the virus keeps crawling up your arm into your spine.
+H10	1.00	7.5	and here's the terrible rule of rabies.  Once you feel the first symptom,  it's already in your brain  and it's almost always too late.
+H11	0.94	8.2	but you're lucky. The newspapers say a chemist in Paris, Louis Pasteur, has just saved a  nine-year-old boy bitten by a rabid dog.
+H12	0.86	7.5	Joseph Meister had been bitten 14 times, passed her, injected him every day for 10 days and  the boy never got sick.
+H13	1.00	7.2	So, do you take the train to Paris and let a chemist inject you with dried rabbit spinal cord?  Or do you stay home?
+H14	1.00	2.5	Rabbit spinal cord, very scientific, stay home.
+H15	1.00	8.8	Let's see what happens if you stay home.  About six weeks later,  the old bite starts to tingle and itch,  then fever, headache, and you just feel off.
+H16	1.00	5.5	Two days later, you're restless and scared.  You can't sleep, every noise makes you jump.
+H17	1.00	10.0	then the strangest symptom. You're desperately thirsty, but when you lift a cup of water,  your throat locks in a painful spasm. Soon even the sight of water sets it off.
+H18	1.00	4.9	Doctors called it hydrophobia, fear of water.  Even a breath of air on your face can do it.
+H19	1.00	1.1	my signature move.
+H20	1.00	6.0	you drool because you can't swallow.  And the virus is in that saliva,  ready for its next ride.
+H21	1.00	8.0	then confusion, then paralysis. Within about a week of the first symptom, it's over.  Back then, nobody survived.
+H22	1.00	2.9	So let's not do that. You take the train to Paris.
+H23	0.93	9.7	At past tours lab, every day for 10 days, you get a shot in the belly.  Each dose is made from rabbit spinal cord dried for fewer days and so it's stronger  than the last.
+H24	1.00	7.8	The idea, train your immune system to destroy the virus  before it reaches your brain.  You're racing it up your own nerves.
+H25	0.71	6.1	it works. Of the first 350 people past her treated, only one died.
+H26	1.00	1.9	A chemist beaten by a chemist.
+H27	0.93	8.3	You go home.  The scars never itch again.  And Joseph Meister grew up to work as a caretaker  at the Pasteur Institute.
+T01	1.00	1.7	Now the same bite today.
+T02	0.98	9.0	You wash the wound with soap and water for 15 minutes and go straight to a doctor.  You get a few vaccine shots, plus antibodies injected around the bite.
+T03	1.00	2.9	started in time. It works almost every time.
+T04	0.93	9.1	And still, rabies kills about 59,000 people every year, mostly children bitten by dogs  in Asia and Africa, far from a clinic.
+T05	1.00	2.9	I'm still here, waiting for someone to skip the doctor.
+E01	0.90	5.0	So, would you have got on that train in 1885?  Tell me in the comments.

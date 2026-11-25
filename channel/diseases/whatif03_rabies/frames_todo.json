@@ -1,0 +1,508 @@
+[
+ {
+  "id": "c01b",
+  "line": "C01",
+  "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. Closer view of the same lane: the hero (same stickman as in the reference: flat dark-grey cloth cap, loose faded blue work smock, brown trousers) stops and looks warily at the dog behind the gate, holding his bread tight.",
+  "refs": [
+   "499e9dc8-cee6-4e93-a559-9fb7c886c373"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "c01c",
+  "line": "C01",
+  "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. Close-up of the dog behind the same wooden gate: drooling, wild yellow eyes, snapping at the air. No people.",
+  "refs": [
+   "499e9dc8-cee6-4e93-a559-9fb7c886c373"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "c02a",
+  "line": "C02",
+  "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. The dog has jumped over the gate and bites the hero (same stickman as in the reference: flat dark-grey cloth cap, loose faded blue work smock, brown trousers) on the forearm through his blue sleeve; the bread flies into the air; motion lines. Not gory, no blood.",
+  "refs": [
+   "499e9dc8-cee6-4e93-a559-9fb7c886c373"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "c02b",
+  "line": "C02",
+  "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. Close-up of the hero's forearm with the blue sleeve pushed up: two small red bite marks on a black stick arm. No blood.",
+  "refs": [
+   "499e9dc8-cee6-4e93-a559-9fb7c886c373"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "c04a",
+  "line": "C04",
+  "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. the hero (same stickman as in the reference: flat dark-grey cloth cap, loose faded blue work smock, brown trousers) stands alone in the lane clutching his forearm, looking worried; the dog runs off in the distance; the bread lies on the ground.",
+  "refs": [
+   "499e9dc8-cee6-4e93-a559-9fb7c886c373"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "c04b",
+  "line": "C04",
+  "prompt": "Same drawing style and the same character as the references. Rabies exactly as in the first reference (wolf-dog head, yellow eyes, a little froth, broken collar with chain, ragged dark frock coat), cartoon-theatrical, exactly one Rabies, two arms. No text. No street lamps. Close-up at the same wooden farm gate: Rabies grins at the viewer and holds up one clawed finger.",
+  "refs": [
+   "b9ff30e0-3f5c-452b-84d9-79d546fb2b9e",
+   "952b15fd-22dd-4d51-a743-d9c04adb1b46"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "h01b",
+  "line": "H01",
+  "prompt": "Same diagram style as the reference (ink and muted watercolour on aged paper, drawn arrows, no words, no letters, no numbers, plain stickman outlines). One large magnified bullet-shaped virus particle covered in tiny spikes, next to a drop of saliva drawn as a big droplet full of the same tiny bullets.",
+  "refs": [
+   "32fe4905-e9f3-4262-9dc4-e885d339919c"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "h02a",
+  "line": "H02",
+  "prompt": "Same diagram style as the reference (ink and muted watercolour on aged paper, drawn arrows, no words, no letters, no numbers, plain stickman outlines). Close-up of a nerve drawn as a long cable running up an arm: tiny bullet-shaped viruses crawl along inside it in a line, with arrows pointing up toward the shoulder.",
+  "refs": [
+   "32fe4905-e9f3-4262-9dc4-e885d339919c"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "h03a",
+  "line": "H03",
+  "prompt": "Same drawing style and the same character as the references. Rabies exactly as in the first reference (wolf-dog head, yellow eyes, a little froth, broken collar with chain, ragged dark frock coat), cartoon-theatrical, exactly one Rabies, two arms. No text. No street lamps. Rabies strolls slowly along the same village lane at dusk with his hands behind his back, relaxed and smug.",
+  "refs": [
+   "b9ff30e0-3f5c-452b-84d9-79d546fb2b9e",
+   "952b15fd-22dd-4d51-a743-d9c04adb1b46"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "h03b",
+  "line": "H03",
+  "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. the hero (same bald stickman as in the reference, long off-white nightshirt) sits on the edge of the bed with a white bandage around his forearm, looking annoyed, arms crossed.",
+  "refs": [
+   "a2273ac4-c44e-440c-82a5-e60dc1e39d31"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "h04a",
+  "line": "H04",
+  "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. the village priest, a stickman in a long black cassock and a round black wide-brimmed hat stands by the table holding an iron key with tongs over a small iron pan of glowing coals; the key glows red; the hero (same bald stickman as in the reference, long off-white nightshirt) sits on the bed, worried.",
+  "refs": [
+   "a2273ac4-c44e-440c-82a5-e60dc1e39d31"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "h04b",
+  "line": "H04",
+  "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. the village priest, a stickman in a long black cassock and a round black wide-brimmed hat presses the glowing key to the hero's forearm; a small puff of smoke; the hero (same bald stickman as in the reference, long off-white nightshirt) squeezes his eyes shut and grits his teeth. Not gory.",
+  "refs": [
+   "a2273ac4-c44e-440c-82a5-e60dc1e39d31"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "h05a",
+  "line": "H05",
+  "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. the hero (same bald stickman as in the reference, long off-white nightshirt) blows on his forearm with a pained face; the village priest, a stickman in a long black cassock and a round black wide-brimmed hat gives a small apologetic shrug.",
+  "refs": [
+   "a2273ac4-c44e-440c-82a5-e60dc1e39d31"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "h06a",
+  "line": "H06",
+  "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. his mother, a stickman in a plain black dress and a white linen bonnet carefully places a small tuft of brown dog hair on the hero's forearm with great seriousness; the hero (same bald stickman as in the reference, long off-white nightshirt) looks at it, very doubtful.",
+  "refs": [
+   "a2273ac4-c44e-440c-82a5-e60dc1e39d31"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "h06b",
+  "line": "H06",
+  "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. Close-up of the hero's forearm resting on the brown blanket: a little tuft of brown dog hair lies on two small bite marks.",
+  "refs": [
+   "a2273ac4-c44e-440c-82a5-e60dc1e39d31"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "h07a",
+  "line": "H07",
+  "prompt": "Same drawing style and the same character as the references. Rabies exactly as in the first reference (wolf-dog head, yellow eyes, a little froth, broken collar with chain, ragged dark frock coat), cartoon-theatrical, exactly one Rabies, two arms. No text. No street lamps. Rabies laughs so hard he slaps his knee, leaning on the same wooden gate.",
+  "refs": [
+   "b9ff30e0-3f5c-452b-84d9-79d546fb2b9e",
+   "952b15fd-22dd-4d51-a743-d9c04adb1b46"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "h08a",
+  "line": "H08",
+  "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. Late autumn: the hero (same stickman as in the reference: flat dark-grey cloth cap, loose faded blue work smock, brown trousers) splits firewood with an axe in the lane next to a woodpile, cheerful.",
+  "refs": [
+   "499e9dc8-cee6-4e93-a559-9fb7c886c373"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "h08b",
+  "line": "H08",
+  "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. the hero (same bald stickman as in the reference, long off-white nightshirt) sits at the table eating soup from a bowl, happy.",
+  "refs": [
+   "a2273ac4-c44e-440c-82a5-e60dc1e39d31"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "h08c",
+  "line": "H08",
+  "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. Night, dark blue window: the hero (same bald stickman as in the reference, long off-white nightshirt) sleeps peacefully in the bed, smiling.",
+  "refs": [
+   "a2273ac4-c44e-440c-82a5-e60dc1e39d31"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "h09a",
+  "line": "H09",
+  "prompt": "Same diagram style as the reference (ink and muted watercolour on aged paper, drawn arrows, no words, no letters, no numbers, plain stickman outlines). The same stickman outline as the reference: now the tiny bullet-shaped viruses have crawled up the nerve past the elbow and into the shoulder; the bite on the forearm has healed into two small scars.",
+  "refs": [
+   "32fe4905-e9f3-4262-9dc4-e885d339919c"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "h10a",
+  "line": "H10",
+  "prompt": "Same diagram style as the reference (ink and muted watercolour on aged paper, drawn arrows, no words, no letters, no numbers, plain stickman outlines). The same stickman outline as the reference: the tiny viruses have reached the spinal cord and swarm into the brain, which glows red.",
+  "refs": [
+   "32fe4905-e9f3-4262-9dc4-e885d339919c"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "h11a",
+  "line": "H11",
+  "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. the hero (same bald stickman as in the reference, long off-white nightshirt) stands by the window reading a folded newspaper, eyes wide with hope.",
+  "refs": [
+   "a2273ac4-c44e-440c-82a5-e60dc1e39d31"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "h12a",
+  "line": "H12",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Same drawing style and palette as the reference (ink, fine cross-hatching, muted sepia). Humans are simple stickmen: smooth white round heads with no hair, dot eyes, black stick limbs, small black mitten hands; exactly two arms each. Not gory. No street lamps. A 1885 Paris laboratory: wooden benches with glass flasks and a microscope, rabbit cages stacked by the wall, tall windows. Louis Pasteur as a simple stickman (no beard) in a black frock coat and a small black skullcap gently gives an injection with a glass syringe into the side of the belly of a small boy stickman (Joseph Meister, nine years old, in a sailor shirt) who sits on a stool; the boy's mother stands beside him.",
+  "refs": [
+   "557f5d94-d7bb-494f-bfa1-5a92bfffb8b5"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "h12b",
+  "line": "H12",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Same drawing style and palette as the reference (ink, fine cross-hatching, muted sepia). Humans are simple stickmen: smooth white round heads with no hair, dot eyes, black stick limbs, small black mitten hands; exactly two arms each. Not gory. No street lamps. Close-up of stacked wooden rabbit cages with white rabbits in a 1885 laboratory, glass flasks on a bench. No people.",
+  "refs": [
+   "557f5d94-d7bb-494f-bfa1-5a92bfffb8b5"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "h13a",
+  "line": "H13",
+  "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. the hero (same bald stickman as in the reference, long off-white nightshirt) sits on the edge of the bed holding a train ticket in one hand and the newspaper in the other, thinking hard.",
+  "refs": [
+   "a2273ac4-c44e-440c-82a5-e60dc1e39d31"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "h14a",
+  "line": "H14",
+  "prompt": "Same drawing style and the same character as the references. Rabies exactly as in the first reference (wolf-dog head, yellow eyes, a little froth, broken collar with chain, ragged dark frock coat), cartoon-theatrical, exactly one Rabies, two arms. No text. No street lamps. Rabies holds a white rabbit up by the scruff with one hand and raises an eyebrow at it, mocking; at the same farm gate.",
+  "refs": [
+   "b9ff30e0-3f5c-452b-84d9-79d546fb2b9e",
+   "952b15fd-22dd-4d51-a743-d9c04adb1b46"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "h15a",
+  "line": "H15",
+  "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. Day: the hero (same bald stickman as in the reference, long off-white nightshirt) sits on the bed and scratches the two old scars on his forearm, uneasy.",
+  "refs": [
+   "a2273ac4-c44e-440c-82a5-e60dc1e39d31"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "h15b",
+  "line": "H15",
+  "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. Day: the hero (same bald stickman as in the reference, long off-white nightshirt) lies in bed under the brown blanket, sweaty and flushed, with a headache, a wet cloth on his forehead.",
+  "refs": [
+   "a2273ac4-c44e-440c-82a5-e60dc1e39d31"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "h16a",
+  "line": "H16",
+  "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. Night, dark window, candle: the hero (same bald stickman as in the reference, long off-white nightshirt) sits bolt upright in bed, eyes huge, startled by the creaking door, shock lines.",
+  "refs": [
+   "a2273ac4-c44e-440c-82a5-e60dc1e39d31"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "h16b",
+  "line": "H16",
+  "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. Night: the hero (same bald stickman as in the reference, long off-white nightshirt) paces the floor nervously, hands clasped, unable to sleep.",
+  "refs": [
+   "a2273ac4-c44e-440c-82a5-e60dc1e39d31"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "h17a",
+  "line": "H17",
+  "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. Day: the hero (same bald stickman as in the reference, long off-white nightshirt) stands at the table lifting the tin cup of water toward his mouth, but recoils, one hand at his throat, cramp lines around his neck.",
+  "refs": [
+   "a2273ac4-c44e-440c-82a5-e60dc1e39d31"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "h17b",
+  "line": "H17",
+  "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. Day: the hero (same bald stickman as in the reference, long off-white nightshirt) turns his face away from the tin cup and jug on the table, frightened of it, hands raised.",
+  "refs": [
+   "a2273ac4-c44e-440c-82a5-e60dc1e39d31"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "h18a",
+  "line": "H18",
+  "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. Day: his mother, a stickman in a plain black dress and a white linen bonnet opens the small window; a breeze blows in (drawn as wind lines); the hero (same bald stickman as in the reference, long off-white nightshirt) on the bed flinches and covers his face.",
+  "refs": [
+   "a2273ac4-c44e-440c-82a5-e60dc1e39d31"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "h18b",
+  "line": "H18",
+  "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. Day: status portrait: the hero (same bald stickman as in the reference, long off-white nightshirt) sits on the edge of the bed facing the viewer, pale, sweaty, wide frightened eyes.",
+  "refs": [
+   "a2273ac4-c44e-440c-82a5-e60dc1e39d31"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "h19a",
+  "line": "H19",
+  "prompt": "Same drawing style and the same character as the references. Rabies exactly as in the first reference (wolf-dog head, yellow eyes, a little froth, broken collar with chain, ragged dark frock coat), cartoon-theatrical, exactly one Rabies, two arms. No text. No street lamps. Rabies takes an elegant theatrical bow, one hand on his chest, at the same wooden gate.",
+  "refs": [
+   "b9ff30e0-3f5c-452b-84d9-79d546fb2b9e",
+   "952b15fd-22dd-4d51-a743-d9c04adb1b46"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "h20a",
+  "line": "H20",
+  "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. Day: the hero (same bald stickman as in the reference, long off-white nightshirt) lies weakly in bed, a small drop of drool at the corner of his mouth, eyes half closed. Not gross.",
+  "refs": [
+   "a2273ac4-c44e-440c-82a5-e60dc1e39d31"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "h21a",
+  "line": "H21",
+  "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. Night: the same room in darkness, the candle just blown out with a thin wisp of smoke, the bed empty and neatly made, the blanket folded. No people. Quiet and sad.",
+  "refs": [
+   "a2273ac4-c44e-440c-82a5-e60dc1e39d31"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "h22a",
+  "line": "H22",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Same drawing style and palette as the reference (ink, fine cross-hatching, muted sepia). Humans are simple stickmen: smooth white round heads with no hair, dot eyes, black stick limbs, small black mitten hands; exactly two arms each. Not gory. No street lamps. Inside an 1885 third-class railway carriage with wooden benches: the hero (same stickman as in the reference: flat dark-grey cloth cap, loose faded blue work smock, brown trousers) sits by the window with a bandaged forearm, looking out at passing snowy countryside, determined.",
+  "refs": [
+   "557f5d94-d7bb-494f-bfa1-5a92bfffb8b5"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "h22b",
+  "line": "H22",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Same drawing style and palette as the reference (ink, fine cross-hatching, muted sepia). Humans are simple stickmen: smooth white round heads with no hair, dot eyes, black stick limbs, small black mitten hands; exactly two arms each. Not gory. No street lamps. An 1885 steam train arriving under the iron-and-glass roof of a Paris railway station, steam clouds, passengers with luggage.",
+  "refs": [
+   "557f5d94-d7bb-494f-bfa1-5a92bfffb8b5"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "h23a",
+  "line": "H23",
+  "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. A wooden bench along the lab wall: a row of bitten people waiting (a shepherd boy, a woman, an old man), each with a bandage on an arm or leg; the hero (same stickman as in the reference: flat dark-grey cloth cap, loose faded blue work smock, brown trousers) sits at the end of the bench.",
+  "refs": [
+   "a46d4de2-97e1-4b83-bb73-d7326ed35bd5",
+   "557f5d94-d7bb-494f-bfa1-5a92bfffb8b5"
+  ],
+  "stage": 2
+ },
+ {
+  "id": "h23b",
+  "line": "H23",
+  "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. Louis Pasteur as a simple stickman (no beard) in a black frock coat and a small black skullcap's assistant, a stickman in a white apron, gives the hero (same stickman as in the reference: flat dark-grey cloth cap, loose faded blue work smock, brown trousers) an injection with a glass syringe into the side of his belly; the hero lifts his smock and winces.",
+  "refs": [
+   "a46d4de2-97e1-4b83-bb73-d7326ed35bd5",
+   "557f5d94-d7bb-494f-bfa1-5a92bfffb8b5"
+  ],
+  "stage": 2
+ },
+ {
+  "id": "h23c",
+  "line": "H23",
+  "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. Close-up of a lab bench: a row of tall glass jars, each with a thin dried strip hanging inside on a thread; the strips get paler from left to right. No people.",
+  "refs": [
+   "a46d4de2-97e1-4b83-bb73-d7326ed35bd5",
+   "557f5d94-d7bb-494f-bfa1-5a92bfffb8b5"
+  ],
+  "stage": 2
+ },
+ {
+  "id": "h24a",
+  "line": "H24",
+  "prompt": "Same diagram style as the reference (ink and muted watercolour on aged paper, drawn arrows, no words, no letters, no numbers, plain stickman outlines). The same stickman outline as the reference: little round shield-carrying defender cells race up the nerve and catch the tiny bullet-shaped viruses before they reach the shoulder.",
+  "refs": [
+   "32fe4905-e9f3-4262-9dc4-e885d339919c"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "h25a",
+  "line": "H25",
+  "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. Outside view through the lab windows: a happy crowd of recovered patients with bandages leaving, waving; Louis Pasteur as a simple stickman (no beard) in a black frock coat and a small black skullcap watches with his hands behind his back.",
+  "refs": [
+   "a46d4de2-97e1-4b83-bb73-d7326ed35bd5",
+   "557f5d94-d7bb-494f-bfa1-5a92bfffb8b5"
+  ],
+  "stage": 2
+ },
+ {
+  "id": "h26a",
+  "line": "H26",
+  "prompt": "Same drawing style and the same character as the references. Rabies exactly as in the first reference (wolf-dog head, yellow eyes, a little froth, broken collar with chain, ragged dark frock coat), cartoon-theatrical, exactly one Rabies, two arms. No text. No street lamps. Rabies sulks with his arms crossed and his ears flat, kicking a pebble in the same village lane.",
+  "refs": [
+   "b9ff30e0-3f5c-452b-84d9-79d546fb2b9e",
+   "952b15fd-22dd-4d51-a743-d9c04adb1b46"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "h27a",
+  "line": "H27",
+  "prompt": "Edit the FIRST reference image. Keep EXACTLY the same drawing style, palette, camera angle and setting as the FIRST reference image; do not move or redraw the furniture or buildings. Humans are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small solid black mitten hands. Each figure has exactly two arms and two hands. No text, no letters. Not gory. Day: the hero (same bald stickman as in the reference, long off-white nightshirt) sits on the bed healthy and smiling, showing two small faded scars on his forearm; his mother, a stickman in a plain black dress and a white linen bonnet beside him, relieved.",
+  "refs": [
+   "a2273ac4-c44e-440c-82a5-e60dc1e39d31"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "h27b",
+  "line": "H27",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Same drawing style and palette as the reference (ink, fine cross-hatching, muted sepia). Humans are simple stickmen: smooth white round heads with no hair, dot eyes, black stick limbs, small black mitten hands; exactly two arms each. Not gory. No street lamps. The gate of the Pasteur Institute in Paris in the 1890s: a grown-up stickman caretaker in a dark uniform and cap holds a ring of keys and smiles.",
+  "refs": [
+   "557f5d94-d7bb-494f-bfa1-5a92bfffb8b5"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "t01a",
+  "line": "T01",
+  "prompt": "2D animated explainer frame, 16:9, no text. Same ink-and-cross-hatching drawing style and muted palette as the reference, but the setting is the present day (2020s). Humans are simple stickmen: smooth white round heads with no hair, dot eyes, black stick limbs, small black mitten hands. Exactly two arms each. Not gory. A modern village street: a stray dog bites the hero today (white round head, dark-grey baseball cap, blue jacket, jeans) on the forearm through his jacket sleeve; motion lines. Not gory.",
+  "refs": [
+   "557f5d94-d7bb-494f-bfa1-5a92bfffb8b5"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "t02a",
+  "line": "T02",
+  "prompt": "2D animated explainer frame, 16:9, no text. Same ink-and-cross-hatching drawing style and muted palette as the reference, but the setting is the present day (2020s). Humans are simple stickmen: smooth white round heads with no hair, dot eyes, black stick limbs, small black mitten hands. Exactly two arms each. Not gory. A modern bathroom sink: the hero today (white round head, dark-grey baseball cap, blue jacket, jeans) washes his forearm with soap under running water, looking at a clock on the wall.",
+  "refs": [
+   "557f5d94-d7bb-494f-bfa1-5a92bfffb8b5"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "t02b",
+  "line": "T02",
+  "prompt": "2D animated explainer frame, 16:9, no text. Same ink-and-cross-hatching drawing style and muted palette as the reference, but the setting is the present day (2020s). Humans are simple stickmen: smooth white round heads with no hair, dot eyes, black stick limbs, small black mitten hands. Exactly two arms each. Not gory. A modern clinic: a stickman nurse in blue scrubs gives the hero today (white round head, dark-grey baseball cap, blue jacket, jeans) a vaccine injection in the upper arm.",
+  "refs": [
+   "557f5d94-d7bb-494f-bfa1-5a92bfffb8b5"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "t03a",
+  "line": "T03",
+  "prompt": "2D animated explainer frame, 16:9, no text. Same ink-and-cross-hatching drawing style and muted palette as the reference, but the setting is the present day (2020s). Humans are simple stickmen: smooth white round heads with no hair, dot eyes, black stick limbs, small black mitten hands. Exactly two arms each. Not gory. the hero today (white round head, dark-grey baseball cap, blue jacket, jeans) walks out of the clinic, relieved, giving a thumbs-up.",
+  "refs": [
+   "557f5d94-d7bb-494f-bfa1-5a92bfffb8b5"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "t04a",
+  "line": "T04",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Same drawing style and palette as the reference (ink, fine cross-hatching, muted sepia). Humans are simple stickmen: smooth white round heads with no hair, dot eyes, black stick limbs, small black mitten hands; exactly two arms each. Not gory. No street lamps. Hand-drawn world map in ink and muted watercolour on aged paper, with many small red dots clustered over South and Southeast Asia and Africa. No words, no letters, no numbers.",
+  "refs": [
+   "32fe4905-e9f3-4262-9dc4-e885d339919c"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "t04b",
+  "line": "T04",
+  "prompt": "2D animated explainer frame, 16:9, no text. Same ink-and-cross-hatching drawing style and muted palette as the reference, but the setting is the present day (2020s). Humans are simple stickmen: smooth white round heads with no hair, dot eyes, black stick limbs, small black mitten hands. Exactly two arms each. Not gory. A dusty rural village road far from any town, a small stickman child walking with a stray dog, a long empty road to the horizon.",
+  "refs": [
+   "557f5d94-d7bb-494f-bfa1-5a92bfffb8b5"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "t05a",
+  "line": "T05",
+  "prompt": "2D animated explainer frame, 16:9, no text. Same ink-and-cross-hatching drawing style and muted palette as the reference, but the setting is the present day (2020s). Humans are simple stickmen: smooth white round heads with no hair, dot eyes, black stick limbs, small black mitten hands. Exactly two arms each. Not gory. Rabies, the wolf-dog-headed gentleman from the reference sheet, lurks in the shadow of a modern alley next to a rubbish bin, grinning at the viewer.",
+  "refs": [
+   "952b15fd-22dd-4d51-a743-d9c04adb1b46",
+   "557f5d94-d7bb-494f-bfa1-5a92bfffb8b5"
+  ],
+  "stage": 1
+ },
+ {
+  "id": "e01a",
+  "line": "E01",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Same drawing style and palette as the reference (ink, fine cross-hatching, muted sepia). Humans are simple stickmen: smooth white round heads with no hair, dot eyes, black stick limbs, small black mitten hands; exactly two arms each. Not gory. No street lamps. An 1885 village railway platform in the Jura: the hero (same stickman as in the reference: flat dark-grey cloth cap, loose faded blue work smock, brown trousers) holds a train ticket, looks straight at the viewer with one eyebrow raised; a steam train waits.",
+  "refs": [
+   "499e9dc8-cee6-4e93-a559-9fb7c886c373"
+  ],
+  "stage": 1
+ }
+]
