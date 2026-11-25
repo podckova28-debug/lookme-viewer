@@ -16,7 +16,7 @@ T = layer("JOAN OF ARC", 300, 12, .78)
 T = T.resize((int(W * .55), int(T.height * W * .55 / T.width)), Image.LANCZOS)
 Y = layer("1412 – 1431", 200, 10, .80)
 Y = Y.resize((int(Y.width * T.height * .62 / Y.height), int(T.height * .62)), Image.LANCZOS)
-x1 = int(W * .86); ty = int(H * .085)
+x1 = int(W * .885); ty = int(H * .085)
 im.paste(T, (x1 - T.width, ty), T)
 im.paste(Y, (x1 - Y.width - int(W * .02), ty + T.height + int(H * .015)), Y)
 r = int(T.height * .40); cx = x1 + int(W * .012) + r + 10; cy = ty + T.height // 2
