@@ -1,6 +1,6 @@
 # What If #3: What Happens If You Get Rabies in 1885? Пакет для загрузки
 
-- Видео: `whatif03_rabies.mp4` (1920×1080, 3:46, 79,2 МБ).
+- Видео: `whatif03_rabies.mp4` (1920×1080, 3:54, 78 МБ).
 - Обложки 1280×720 для «Тест и сравнение»: главная `thumb_1_trainordie.jpg`; для теста ещё `thumb_2_afraidofwater.jpg`, `thumb_3_savedbyarabbit.jpg` (шрифт как у холеры).
 - Раскрытие ИИ (Altered or synthetic content) = ДА.
 
