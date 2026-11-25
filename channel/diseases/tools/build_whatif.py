@@ -213,7 +213,8 @@ class Frame:
 def render_shot(sh, t):
     """camera = rectangle (cx, cy, zoom) interpolated from 'from' to 'to'; coords are 0..1 of the image"""
     im = Frame.get(sh['img']); ih, iw = im.shape[:2]
-    u = ease((t - sh['t0']) / (sh['t1'] - sh['t0'])) if sh.get('ease', True) else (t - sh['t0']) / (sh['t1'] - sh['t0'])
+    if sh.get('settle'): u = ease((t - sh['t0']) / sh['settle'])   # quick snap after the cut, then still
+    else: u = ease((t - sh['t0']) / (sh['t1'] - sh['t0'])) if sh.get('ease', True) else (t - sh['t0']) / (sh['t1'] - sh['t0'])
     a, b = sh.get('from', [.5, .5, 1.0]), sh.get('to', [.5, .5, 1.06])
     cx, cy, z = [a[i] + (b[i] - a[i]) * u for i in range(3)]
     cw, ch = iw / z, iw / z * H / W
