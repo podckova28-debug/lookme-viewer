@@ -50,9 +50,12 @@ FONT = H + "/fonts/BebasNeue-Regular.ttf"
 def overlay(k, base):
     L = Image.new("RGBA", (W, Hh), (0, 0, 0, 0))
     if not isinstance(k, int): return L
-    if k in CAP:
-        cx, cy, sz = best_spot(base, CAP[k]); draw_text(L, CAP[k], sz, cy, maxw=.9, cx=cx)
     yr, age = held(YEAR, k), held(AGE, k)
+    if k in CAP:
+        cx, cy, sz = best_spot(base, CAP[k])
+        if cy > Hh / 2 and (yr and cx > W * .45 or k in INSET and cx < W * .55):   # never on the year plate / portrait
+            cx, cy = W / 2, Hh * .12
+        draw_text(L, CAP[k], sz, cy, maxw=.9, cx=cx)
     if yr:
         d = ImageDraw.Draw(L); f1 = ImageFont.truetype(FONT, 96); f2 = ImageFont.truetype(FONT, 58)
         w = max(d.textlength(yr, font=f1), d.textlength(age, font=f2) if age else 0) + 56
@@ -95,7 +98,7 @@ def segment(i, k, dur):
     subprocess.run(cmd + ["-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-r", str(FPS), out], check=True)
 
 rng = None
-if ONLY: a, b = ONLY.split("-"); rng = range(int(a), int(b) + 1)
+if ONLY: rng = set(int(x) for x in ONLY.split(",")) if "," in ONLY or "-" not in ONLY else set(range(int(ONLY.split("-")[0]), int(ONLY.split("-")[1]) + 1))
 acc = 0; frames_at = []
 for i, (st, k) in enumerate(cuts):
     n = round(starts[i + 1] * FPS) - acc; acc += n; frames_at.append(n)

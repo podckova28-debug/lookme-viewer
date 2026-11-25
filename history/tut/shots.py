@@ -255,6 +255,7 @@ FIX = {
 132:"the golden death mask of Tutankhamun with blue lapis stripes on the nemes headdress, cobra and vulture on the brow, on black velvet, dramatic light, no people",
 138:f"close-up of {CARN} without a hat, a mosquito landing on his cheek, warm evening light on a hotel terrace in Egypt",
 139:f"{CARN} without a hat, in a white shirt with rolled sleeves, shaving with a straight razor in front of a mirror in a 1923 hotel room, a tiny nick on his cheek",
+74:"Egyptian courtiers with short black wigs and generals in armour arguing loudly around the empty golden throne, NOBODY wears a royal striped headdress or a crown, nobody sits on the throne",
 141:"1920s journalists in hats crowding outside the entrance of a colonial-era hotel in Cairo with notebooks and box cameras, palm trees, no skyscrapers, no modern buildings",
 }
 for _k, _d in FIX.items(): S[_k - 1] = S[_k - 1][:3] + (_d,) + S[_k - 1][4:]
