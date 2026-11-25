@@ -107,7 +107,7 @@ S = [
  ("c07",9,0,f"close-up portrait of {T44} as Genghis Khan, calm and serious"),
  ("c07",10,0,f"{T44} as Genghis Khan on a hill looking south toward a distant line of walls and mountains"),
  # c08 the wall
- ("c08",0,0,"Jebe, a young enemy archer in Taichiud armour, aiming a bow from behind a rock on a battlefield, the arrow in flight toward a rider's horse, no blood"),
+ ("c08",0,0,"Jebe, a young enemy archer in Taichiud armour, with a lean face, short beard and a red headband, aiming a bow from behind a rock on a battlefield, his face clearly visible in profile, the arrow in flight toward a rider's horse, no blood"),
  ("c08",1,0,f"Jebe the captured archer kneeling but looking up boldly at {T44} as Genghis Khan"),
  ("c08",2,0,f"{T44} as Genghis Khan handing a bow to Jebe the archer, who stands up surprised"),
  ("c08",3,0,"Mongol officers of different tribes eating together in one big tent"),
@@ -121,7 +121,7 @@ S = [
  ("c08",11,0,f"{T44} as Genghis Khan looking west at sunset toward distant mountains"),
  # c09 the caravan
  ("c09",0,0,"a rich Central Asian city of Khwarazm with blue domes and minarets, merchants in turbans, 13th century"),
- ("c09",0,.6,"Shah Muhammad of Khwarazm, a proud ruler with a black beard, white turban and jewels, on a throne"),
+ ("c09",0,.6,"Shah Muhammad of Khwarazm, a proud ruler with a black beard, white turban and jewels, on a throne, his Persian guards in turbans and mail behind him, no Mongols"),
  ("c09",1,0,"a long camel caravan loaded with silver, furs and silk crossing the desert, Mongol merchants walking beside"),
  ("c09",2,0,"the governor of Otrar in a turban pointing accusingly at the caravan merchants, his guards drawing swords, seen before any violence"),
  ("c09",2,.6,"abandoned camels and scattered bales of silk outside the gates of Otrar, empty, dusk"),
@@ -165,7 +165,7 @@ S = [
 STYLE_REFS = ["5d5f0d40-6d72-4644-b3e1-0f824c81becb", "8e1e1260-e11b-4083-a4d6-5f15a0a4008c"]
 REFS = {"T": "c633ee8a-96bb-40cc-81a3-0e8a9214defa", "K": "4adc513c-cd7a-44d3-98fd-7c7b29dcf1f9"}
 # minor recurring people without a sheet: their FIRST frame is generated alone, then used as the face reference (job id filled in)
-ANCHOR = {"Yesugei": None, "Jebe": None, "Shah Muhammad": None, "Changchun": None}
+ANCHOR = {"Yesugei": "1a8245e8-67db-4fb9-9422-bbfed600141d", "Jebe": "547440df-92f1-496f-bc71-cf155834c57c", "Shah Muhammad": None, "Changchun": "6a984ba8-3196-4056-a22a-6c10e8c3520e"}
 NOT_PEOPLE = ["China", "Caspian Sea", "Genghis Khan", "Onon River", "Merkit", "Tatar", "Tayichiud", "Kereit", "Khwarazm", "Otrar", "Western Xia"]  # Genghis Khan = Temujin (sheet)
 WHO = {"T": ["Temujin"], "K": ["Hoelun", "Borte", "Jamukha", "Toghrul"]}
 SHEET = {"T": "the Temujin age sheet (left to right: age 9, 16, 44, 64)",
