@@ -1,6 +1,5 @@
 """What If #3 (rabies, 1885): cholera look, ~3.3 s per frame, still frames with a quick settle after each cut.
 python3 timeline.py -> timeline.json ; python3 ../tools/qc.py timeline.json qc_groups.json ; python3 ../tools/build_whatif.py timeline.json out.mp4
-Frame names 'x@y' are a second crop of frame x (CROP['x@y']).
 """
 import json, os, wave
 HERE = os.path.dirname(os.path.abspath(__file__)); REPO = os.path.dirname(os.path.dirname(os.path.dirname(HERE)))
@@ -16,8 +15,8 @@ PLAN = [
  ('C03', ['m_rabies'], {'notes': {'m_rabies': [N('Rabies', 330, 430, 780, 300), N('(yes, the disease itself)', 330, 500, size=46)]}}),
  ('C04', ['c02b', 'c04a', 'c04b'], {'big': '1 choice', 'title': 'What happens if you get rabies in 1885',
          'notes': {'c02b': [N('2 bites', 1480, 260, 950, 520)]}}),
- ('H01', ['h01b', 'm_diag@arm'], {'day': 'Day 0'}),
- ('H02', ['h02a', 'm_diag@c'], {'cap': 'A few centimetres a day'}),
+ ('H01', ['h01b', 'h01c'], {'day': 'Day 0'}),
+ ('H02', ['h02a', 'm_diag'], {'cap': 'A few centimetres a day'}),
  ('H03', ['h03a'], {'after': ('h03b', 3.8, 'd0')}),
  ('H04', ['h04a', 'h04b'], {'cap': 'Step 1: a red-hot key', 'notes': {'h04a': [N("St Hubert's key", 300, 800, 325, 480)]}}),
  ('H05', ['h05a'], {'cap': '(this one might actually help)'}),
@@ -25,10 +24,10 @@ PLAN = [
  ('H07', ['h07a'], {}),
  ('H08', ['h08a', 'h08b', 'h08c'], {'day': 'Weeks 1-6'}),
  ('H09', ['h09a'], {}),
- ('H10', ['h10a', 'h10a@c'], {'big': 'Too late'}),
- ('H11', ['h11a', 'h11a@c'], {}),
+ ('H10', ['h10a', 'h10b'], {'big': 'Too late'}),
+ ('H11', ['h11a', 'h11b'], {}),
  ('H12', ['h12a', 'h12b'], {'cap': '14 bites. 10 days of shots.', 'notes': {'h12a': [N('Louis Pasteur', 420, 110, 760, 230), N('(a chemist, not a doctor)', 420, 180, size=46), N('Joseph Meister, 9', 1150, 120, 1165, 380)]}}),
- ('H13', ['h13a', 'h13a@c'], {'cap': 'Paris or home?'}),
+ ('H13', ['h13a', 'h13b'], {'cap': 'Paris or home?'}),
  ('H14', ['h14a'], {}),
  ('H15', ['h15a', 'h15b'], {'day': 'Week 6', 'card': 'w6', 'notes': {'h15a': [N('It itches', 640, 880, 1225, 655)]}}),
  ('H16', ['h16a', 'h16b'], {'day': 'Symptoms: day 2'}),
@@ -36,10 +35,10 @@ PLAN = [
  ('H18', ['h18a'], {'day': 'Symptoms: day 3', 'cap': 'Hydrophobia: fear of water', 'after': ('h18b', 3.8, 's3')}),
  ('H19', ['h19a'], {}),
  ('H20', ['h20a'], {'notes': {'h20a': [N('The virus', 1660, 170, 1305, 395), N('(ready for a ride)', 1660, 240, size=46)]}}),
- ('H21', ['h20a@c', 'h21a'], {}),
+ ('H21', ['h21z', 'h21a'], {}),
  ('H22', ['h22a'], {'day': 'The other path: Paris'}),
  ('H23', ['h23a', 'h23b', 'h23c'], {'cap': 'Every day, for 10 days', 'notes': {'h23c': [N('Dried 14 days', 360, 120, 270, 310), N('Dried 1 day', 1560, 120, 1650, 310)]}}),
- ('H24', ['h24a', 'h24a@c'], {'notes': {'h24a': [N('Your immune system', 1450, 980, 1378, 600)]}}),
+ ('H24', ['h24a', 'h24b'], {'notes': {'h24a': [N('Your immune system', 1450, 980, 1378, 600)]}}),
  ('H25', ['h25a'], {'cap': '350 treated. 1 died.'}),
  ('H26', ['h26a'], {}),
  ('H27', ['h27a', 'h27b'], {'cardat': ('h27a', 'saved'), 'notes': {'h27b': [N('Joseph Meister', 1080, 130, 700, 255), N('(all grown up)', 1080, 200, size=46)]}}),
@@ -58,15 +57,15 @@ CARDS = {
  's3':    ([('THIRST', 'HUGE', .95, BL), ('SWALLOWING', 'NO', .05, GR), ('FEAR', 'MAX', 1, RD), ('VIRUS', 'EVERYWHERE', 1, PU)], 'TERRIFIED'),
  'saved': ([('BITE', '2 SCARS', .1, RD), ('FEVER', 'NONE', 0, OR), ('VIRUS', 'GONE', 0, PU)], 'ALIVE. THANKS, CHEMIST'),
 }
-CROP = {'m_diag@arm': [.2, .62, 1.7], 'm_diag@c': [.77, .4, 1.8], 'h10a@c': [.78, .4, 1.9], 'h11a@c': [.7, .35, 1.8],
-        'h13a@c': [.62, .4, 1.8], 'h20a@c': [.72, .32, 2.0], 'h24a@c': [.78, .4, 1.9], 't04a': [.56, .45, 1.6]}
+CROP = {'t04a': [.56, .45, 1.6]}   # static crop on the first and only use: hides two stray stickmen at the map edges
+CROP_OK = {'t04a'}   # NO zoomed re-use of a frame: the user hates jump zooms (qc.py fails on them)
 SECTION = {'H01', 'H04', 'H08', 'H11', 'H15', 'H22', 'T01', 'E01'}
 CARD_MIN, CARD_X = 3.6, 60   # cards on the left: the hero is on the right in the room
 
 shots, texts, vo, sfx, marks = [], [], [], [], {}
 def shot(f, a, b):
     c = CROP.get(f, [.5, .5, 1.0])
-    shots.append({'img': f.split('@')[0], 'from': [c[0], c[1], c[2] + .025], 'to': c, 'settle': .3, 't0': round(a, 3), 't1': round(b, 3)})
+    shots.append({'img': f, 'from': [c[0], c[1], c[2] + .025], 'to': c, 'settle': .3, 't0': round(a, 3), 't1': round(b, 3), **({'crop_ok': True} if f in CROP_OK else {})})
 def card(name, a, b):
     rows, mood = CARDS[name]
     texts.append({'style': 'card', 'x': CARD_X, 'y': 190, 'rows': [list(r[:3]) + [list(r[3])] for r in rows], 'mood': mood, 't0': a + .1, 't1': b, 'pop': True})

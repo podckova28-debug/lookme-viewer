@@ -54,6 +54,11 @@ sh_ = spec['shots']
 if sh_[0]['t0'] > .01: fails.append(f'GAP: nothing on screen 0-{sh_[0]["t0"]:.2f}s at the start')
 for a, b in zip(sh_, sh_[1:]):
     if b['t0'] - a['t1'] > .01: fails.append(f'GAP: nothing on screen {a["t1"]:.2f}-{b["t0"]:.2f}s (between {a["img"]} and {b["img"]})')
+# jump zooms: the same picture twice in a row, or a zoomed crop (the user hates both)
+for a, b in zip(sh_, sh_[1:]):
+    if a['img'] == b['img'] and a.get('to') != b.get('to'): fails.append(f'ZOOM: {a["img"]} cuts to a zoomed copy of itself at {b["t0"]:.2f}s')
+for s_ in sh_:
+    if s_.get('to', [.5, .5, 1])[2] > 1.1 and not s_.get('crop_ok'): fails.append(f'ZOOM: {s_["img"]} at {s_["t0"]:.2f}s is a zoomed crop ({s_["to"][2]}x); use another frame (or crop_ok for a static crop that hides a defect)')
 CENTER = [x for x in spec.get('texts', []) if x['style'] in ('big', 'cap', 'strike')]
 for i, a in enumerate(CENTER):
     for b in CENTER[i + 1:]:
