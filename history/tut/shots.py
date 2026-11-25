@@ -169,9 +169,9 @@ STYLE = ("Use reference images 1 and 2 ONLY for drawing style: clean editorial c
          "oil lamps in open clay dishes; NO camels, NO iron, NO coins, NO turbans, NO glass lanterns, NO candles in ancient scenes. "
          "1920s scenes: 1920s clothes and objects only. ")
 # single-person reference images (job ids), filled after chars/ are generated and checked
-PREF = {"Tutankhaten age 9": None, "Tutankhamun age 18": None, "Ankhesenamun age 13": None, "Ankhesenamun age 20": None, "Akhenaten": None, "Ay": None, "Horemheb": None,
+PREF = {"Tutankhaten age 9": "90700f16-d3cf-4596-94bd-56b4ca137ee8", "Tutankhamun age 18": "484419f6-a6de-4d02-8f13-dea2366247f3", "Ankhesenamun age 13": "362e890b-9c27-48a5-82c2-171a37d682f7", "Ankhesenamun age 20": "fd42eb4f-fb5c-4845-9391-b16b849ea2e0", "Akhenaten": "bde1d7e6-45a6-4bf5-9b0b-1647a9012ab1", "Ay": "dde33e9a-8fa7-4e3c-9b5f-eda3e286fcc5", "Horemheb": "a7d9ff14-d3ff-40a6-9191-64e7b7ab4591",
         "Howard Carter": "89a31d03-eac4-4dfd-ae1d-c66e98fcce88", "Lord Carnarvon": "5846c93b-ec5c-4baf-851c-5bdc6e10a004"}
-LOOK = {"Tutankhaten age 9": "slim boy of 9, shaved head with a single braided sidelock of youth on the right side, white pleated linen kilt, gold-and-turquoise broad collar, bare chest, sandals",
+LOOK = {"Tutankhaten age 9": "boy of 9, shaved head with a single braided sidelock of youth on the right side, long white pleated linen tunic with short sleeves and a white sash, gold-and-turquoise broad collar, sandals",
         "Tutankhamun age 18": "slim young king of 18, slight build, gentle face, blue-and-gold striped nemes headdress with a gold cobra on the brow, gold-and-turquoise broad collar, white pleated linen kilt and short cape",
         "Ankhesenamun age 13": "girl of 13, slim, long black braided wig to the shoulders with a thin gold circlet, white pleated linen dress, small turquoise collar",
         "Ankhesenamun age 20": "young queen of 20, long black braided wig to the shoulders with a thin gold circlet and a small cobra, white pleated linen dress, turquoise-and-gold broad collar, gold armbands",
@@ -194,10 +194,25 @@ LOCATIONS = {
  "TOMB_DOOR": ("rock-cut corridor ending in a doorway of white plaster covered with rows of oval clay seal impressions", "7fdb6ba1-2ea7-4da5-bc31-8159ae75c175"),
  "TOMB_ANTECHAMBER": ("small rock-cut antechamber crammed with gilded animal beds, black-and-gold guardian statues, chests, chariot parts", "0f3c62a8-65b6-49c6-9379-41305e23467e"),
  "VALLEY_1922": ("the dry rocky Valley of the Kings with steep pale cliffs, rubble piles, workmen in white", "5e0a489e-d8bf-4b09-b62d-a43b45d567d4"),
+ "TOMB_ANTECHAMBER_ANCIENT": ("the same small rock-cut antechamber as in 1922, crammed with gilded beds, statues, chests", "0f3c62a8-65b6-49c6-9379-41305e23467e"),
+ "VALLEY_ANCIENT": ("the same Valley of the Kings cliffs, but ancient: no modern tents, no donkeys with baskets", "5e0a489e-d8bf-4b09-b62d-a43b45d567d4"),
  "KARNAK": ("sandstone temple walls with painted hieroglyphs and cartouches, giant columns, bright sun", "64be825d-4601-46f8-8763-c0a1a757ab1a"),
 }
 # minor recurring people: the first approved frame of the person becomes the anchor
 ANCHOR = {"Suppiluliuma": None}
+# locations that get an anchor = their first drawn frame (others like MAP, LAB, CTA, MUSEUM, NEWSROOM, DESERT stay free)
+ANCHORED = ["AMARNA_CITY", "AMARNA_PALACE", "THEBES_TEMPLE", "AMARNA_TEMPLE", "THRONE_HALL", "COUNCIL_ROOM", "PALACE_GARDEN", "PALACE_BEDROOM",
+            "HITTITE_HALL", "TOMB_BURIAL_CHAMBER", "HIGHCLERE", "CAIRO_HOTEL", "WORKSHOP", "NILE"]
+def waves():
+    """wave 1 = first shot of every anchored location without an anchor yet + first Suppiluliuma; wave 2 = everything else"""
+    w1, seen = [], set()
+    for k, x in enumerate(S, 1):
+        if x[3].startswith("REUSE"): continue
+        if x[4] in ANCHORED and x[4] not in seen and not LOCATIONS.get(x[4]): seen.add(x[4]); w1.append(k)
+    k = first("Suppiluliuma")
+    if k not in w1: w1.append(k)
+    w2 = [k for k, x in enumerate(S, 1) if not x[3].startswith("REUSE") and k not in w1]
+    return w1, w2
 def first(n): return next(k for k, x in enumerate(S, 1) if n in x[3])
 def request(i, loc_anchor=None):
     p, l, frac, desc, loc = S[i - 1]
@@ -221,3 +236,34 @@ def request(i, loc_anchor=None):
                                    "prompt": STYLE + char + "No gore, no blood, no dead bodies, no unwrapped mummy. Anatomically correct hands with five fingers, objects held with a natural grip. SCENE (16:9): " + desc + ". " + suffix}}
 if __name__ == "__main__":
     print(len(S), "shots;", sum(1 for x in S if x[3].startswith("REUSE")), "reused")
+# frame-QC redraws (wave 3): replace descriptions of rejected frames
+FIX = {
+55:"a magnified microscope view of tiny ring-shaped malaria parasites inside round red blood cells, filling the whole picture, a small mosquito silhouette in one corner, no people",
+56:"dozens of ancient Egyptian walking sticks laid out in rows on a museum table under glass: straight sticks of gold, ebony, ivory and carved wood, some with forked or knobbed tops, no curved cane handles, no people",
+59:"two tiny gilded wooden mummy-shaped coffins side by side in a dark ancient tomb corner, lit by a single oil lamp in a clay dish, no people",
+69:"a computer screen in a modern lab showing a 3D reconstruction of a broken left thigh bone near the knee with a red circle around the break, no people",
+101:f"{HOR} as an older general in armour standing on a rocky hill looking down at the empty ancient Valley of the Kings, hard face, no tents, no donkeys, no turbans, no modern people",
+109:"the flat floor of the Valley of the Kings covered with rubble and stone chips, ruins of small ancient stone workmen's huts on top, no tomb entrance visible, no people",
+110:"close-up of a royal cartouche on a sandstone temple wall hacked away with a chisel, the hieroglyphs inside destroyed, dust in the sunlight, an ancient Egyptian hand with a copper chisel and wooden mallet, no modern people",
+112:"the rubble-covered floor of the Valley of the Kings at dusk under a dramatic sky, sand drifting over ruined huts, no tomb entrance visible, no people",
+120:f"{CAR} kneeling at the top of a rock-cut staircase, Egyptian workmen in white galabiyas and turbans digging out more stone steps going down, 1922, daylight",
+121:"a steep rock-cut staircase of sixteen steps leading down to a sealed plastered doorway with oval seals at the bottom, daylight from above, no people",
+123:f"{CARN} arriving on a donkey in the Valley of the Kings, wearing his cream linen suit and panama hat, Egyptian workmen in white galabiyas and turbans in the background, 1922",
+128:"four huge golden shrines nested one inside the other, shown opened like Russian dolls, in a small painted burial chamber, lit by 1920s electric lamps on stands, no people",
+129:"a large yellow quartzite stone sarcophagus with carved goddesses spreading their wings at the corners, in a painted burial chamber lit by 1920s electric lamps, no people",
+130:"three nested mummy-shaped coffins of gold and blue lying side by side from large to small on wooden trestles in a 1920s workshop in a tomb, electric lamps, no people",
+132:"the golden death mask of Tutankhamun with blue lapis stripes on the nemes headdress, cobra and vulture on the brow, on black velvet, dramatic light, no people",
+138:f"close-up of {CARN} without a hat, a mosquito landing on his cheek, warm evening light on a hotel terrace in Egypt",
+139:f"{CARN} without a hat, in a white shirt with rolled sleeves, shaving with a straight razor in front of a mirror in a 1923 hotel room, a tiny nick on his cheek",
+141:"1920s journalists in hats crowding outside the entrance of a colonial-era hotel in Cairo with notebooks and box cameras, palm trees, no skyscrapers, no modern buildings",
+}
+for _k, _d in FIX.items(): S[_k - 1] = S[_k - 1][:3] + (_d,) + S[_k - 1][4:]
+# anchors of locations drawn in wave 1 (approved)
+for _n, _j in {"AMARNA_CITY": "83f1c44e-9c6e-4578-a149-bdd662b0327a", "AMARNA_PALACE": "520aa24e-066f-4e3b-9b29-69fe8749e85d", "THEBES_TEMPLE": "e314b28e-b065-4536-af5c-15dc65e9b558",
+  "AMARNA_TEMPLE": "012963e6-0b15-4cc8-912b-c2ceecaf86b5", "THRONE_HALL": "ebedbe2f-0da2-421c-825a-20030aa9bb4d", "COUNCIL_ROOM": "a4d470bc-d102-4d08-8aa3-bf0ccbe8cf2a",
+  "WORKSHOP": "c30fe711-9321-46ef-9d02-aea26f6e7539", "NILE": "36420679-f0bb-49cf-9840-09a9ee5d04a6", "PALACE_GARDEN": "af952a47-97f2-4124-a9bb-859299271691",
+  "PALACE_BEDROOM": "17d71bec-c4bd-417f-a503-02210599d389", "HITTITE_HALL": "95f032df-217c-4570-a698-0e55cd5a665b", "TOMB_BURIAL_CHAMBER": "9dc767fb-a83e-4c39-a6aa-8e6835bbaa58",
+  "HIGHCLERE": "c51776d5-fec7-46b8-83dd-9ea87c8e3f7a", "CAIRO_HOTEL": "6d311907-f4ed-400a-9922-a379d2f00074"}.items(): LOCATIONS[_n] = ("", _j)
+ANCHOR["Suppiluliuma"] = "95f032df-217c-4570-a698-0e55cd5a665b"
+# VALLEY_ANCIENT must not inherit 1922 tents/donkeys: use the approved ancient valley frame instead
+LOCATIONS["VALLEY_ANCIENT"] = ("", "13b1c9e7-494b-4cc2-ad93-cf4280cc8ac3")   # frame 91, ancient funeral in the valley
