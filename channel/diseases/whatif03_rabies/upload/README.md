@@ -1,6 +1,6 @@
 # What If #3: What Happens If You Get Rabies in 1885? Пакет для загрузки
 
-- Видео: `whatif03_rabies.mp4` (1920×1080, 5:04).
+- Видео: `whatif03_rabies.mp4` (1920×1080, 5:18).
 - Обложки 1280×720 для «Тест и сравнение»: главная `thumb_1_trainordie.jpg`; для теста ещё `thumb_2_afraidofwater.jpg`, `thumb_3_savedbyarabbit.jpg` (шрифт как у холеры).
 - Раскрытие ИИ (Altered or synthetic content) = ДА.
 
@@ -29,8 +29,8 @@ CHAPTERS
 1:21 The quiet weeks
 1:43 The choice
 2:07 If you stay home
-3:58 If you take the train
-4:33 The same bite, today
+4:10 If you take the train
+4:46 The same bite, today
 
 Sources are listed in the pinned comment. This video is history, not medical advice. If an animal bites you, wash the wound and see a doctor.
 
