@@ -82,25 +82,31 @@ def draw_item(it, k):
             L = Image.alpha_composite(S.filter(ImageFilter.GaussianBlur(3)), L); d = ImageDraw.Draw(L)
             d.text((x, y), txt, font=f, anchor='mm', fill=(255, 255, 255, 255), stroke_width=max(2, size // 30), stroke_fill=(15, 10, 8, 255)); return L
         tx, ty = it['tx'], it['ty']
-        bb = d.textbbox((x, y), txt, font=f, anchor='mm')
-        # arrow starts at the label edge nearest the target, bends a little, ends just short of the target
-        sx = bb[2] + 14 if tx > bb[2] else (bb[0] - 14 if tx < bb[0] else x); sy = y if bb[0] - 14 <= sx <= bb[2] + 14 and (sx == bb[2] + 14 or sx == bb[0] - 14) else (bb[3] + 12 if ty > y else bb[1] - 12)
-        if sx == x: sy = bb[3] + 12 if ty > y else bb[1] - 12
-        mx, my = (sx + tx) / 2 + it.get('bend', 0.18) * (ty - sy), (sy + ty) / 2 - it.get('bend', 0.18) * (tx - sx)
-        n = 40; p_ = min(1, k if it.get('anim', True) else 1); m = max(2, int(n * p_))
-        rr = np.random.default_rng(abs(hash(txt)) % 2 ** 32)
-        pts = [((1 - u) ** 2 * sx + 2 * (1 - u) * u * mx + u * u * tx + rr.uniform(-1.2, 1.2), (1 - u) ** 2 * sy + 2 * (1 - u) * u * my + u * u * ty + rr.uniform(-1.2, 1.2)) for u in [i / n * .94 for i in range(m + 1)]]
-        col = (255, 255, 255, 255)
-        S = Image.new('RGBA', (W, H), (0, 0, 0, 0)); sd = ImageDraw.Draw(S)
-        sd.line(pts, fill=(0, 0, 0, 220), width=15, joint='curve'); sd.text((x + 3, y + 4), txt, font=f, anchor='mm', fill=(0, 0, 0, 220), stroke_width=max(6, size // 9), stroke_fill=(0, 0, 0, 220))
-        if p_ >= 1:
-            ex, ey = pts[-1]; px, py = pts[-4]; ang = math.atan2(ey - py, ex - px)
-            head = [(ex + 30 * math.cos(ang), ey + 30 * math.sin(ang)), (ex + 26 * math.cos(ang + 2.5), ey + 26 * math.sin(ang + 2.5)), (ex + 26 * math.cos(ang - 2.5), ey + 26 * math.sin(ang - 2.5))]
-            sd.polygon(head, fill=(0, 0, 0, 220), outline=(0, 0, 0, 220), width=8)
-        L = Image.alpha_composite(S.filter(ImageFilter.GaussianBlur(3)), L); d = ImageDraw.Draw(L)
-        d.line(pts, fill=col, width=8, joint='curve')
-        if p_ >= 1: d.polygon(head, fill=col)
-        d.text((x, y), txt, font=f, anchor='mm', fill=col, stroke_width=max(2, size // 30), stroke_fill=(15, 10, 8, 255))
+        bb = d.textbbox((x, y), txt, font=f, anchor='mm'); pad = 16
+        # start where the straight line from the label centre to the target leaves the (padded) label box
+        dx, dy = tx - x, ty - y; hw, hh = (bb[2] - bb[0]) / 2 + pad, (bb[3] - bb[1]) / 2 + pad
+        sc = min(hw / abs(dx) if dx else 1e9, hh / abs(dy) if dy else 1e9); sx, sy = x + dx * sc, y + dy * sc
+        # stop a little short of the target so the tip does not cover the detail
+        ln = math.hypot(tx - sx, ty - sy) or 1; ex, ey = tx - (tx - sx) / ln * 14, ty - (ty - sy) / ln * 14
+        bend = it.get('bend', 0.12)   # gentle bow; sign flips the side
+        mx, my = (sx + ex) / 2 - bend * (ey - sy), (sy + ey) / 2 + bend * (ex - sx)
+        n = 40; p_ = min(1, k); m = max(2, int(n * p_))
+        pts = [((1 - u) ** 2 * sx + 2 * (1 - u) * u * mx + u * u * ex, (1 - u) ** 2 * sy + 2 * (1 - u) * u * my + u * u * ey) for u in [i / n for i in range(m + 1)]]
+        ang = math.atan2(ey - my, ex - mx)   # tangent at the end of the curve
+        hx, hy = ex + 8 * math.cos(ang), ey + 8 * math.sin(ang)
+        head = [(hx, hy), (hx - 34 * math.cos(ang - .42), hy - 34 * math.sin(ang - .42)), (hx - 34 * math.cos(ang + .42), hy - 34 * math.sin(ang + .42))]
+        ink, white = (12, 9, 7, 255), (255, 255, 255, 255)
+        S = Image.new('RGBA', (W, H), (0, 0, 0, 0)); sd = ImageDraw.Draw(S)   # soft drop shadow
+        sd.line([(px + 3, py + 4) for px, py in pts], fill=(0, 0, 0, 150), width=18, joint='curve')
+        sd.text((x + 3, y + 4), txt, font=f, anchor='mm', fill=(0, 0, 0, 150), stroke_width=max(6, size // 9), stroke_fill=(0, 0, 0, 150))
+        L = Image.alpha_composite(S.filter(ImageFilter.GaussianBlur(4)), L); d = ImageDraw.Draw(L)
+        d.line(pts, fill=ink, width=17, joint='curve')                     # dark outline
+        for px, py in (pts[0],): d.ellipse((px - 8, py - 8, px + 8, py + 8), fill=ink)
+        if p_ >= 1: d.polygon(head, fill=ink, outline=ink, width=9)
+        d.line(pts, fill=white, width=8, joint='curve')                    # white core
+        for px, py in (pts[0],): d.ellipse((px - 4, py - 4, px + 4, py + 4), fill=white)
+        if p_ >= 1: d.polygon(head, fill=white)
+        d.text((x, y), txt, font=f, anchor='mm', fill=white, stroke_width=max(3, size // 22), stroke_fill=ink)
         return L
     if st == 'strike':   # hand-drawn red marker line crossing out a caption; k = drawing progress 0..1
         txt = it['text'].upper(); size = it.get('size', 92); f = font(size)
