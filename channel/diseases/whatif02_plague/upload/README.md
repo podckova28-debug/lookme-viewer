@@ -20,7 +20,7 @@ Catching the Plague in 1348, Day by Day
 ```
 Florence, June 1348. A gorgeous summer morning, a peach in your hand, and a flea on your ankle. Within a week, it's a coin toss whether you live.
 
-Day by day: what the plague bacteria do inside you, the fever, the bubo the size of an egg (then an apple), and what a 1348 doctor would have done about it: urine tasting, bloodletting, roasted vipers and sitting between two fires, just like the Pope. Then the three paths the disease can take, how you survive, and what happens if the same flea bites you today.
+Day by day: what the plague bacteria do inside you, the fever, the bubo the size of an egg (then an apple), and what a 1348 doctor would have done about it: urine sniffing, bloodletting, roasted vipers and sitting between two fires, just like the Pope. Then the three paths the disease can take, how you survive, and what happens if the same flea bites you today.
 
 CHAPTERS
 0:00 A peach and a flea
