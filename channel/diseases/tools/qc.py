@@ -26,6 +26,8 @@ if video in args: args.remove(video)
 tl_path, groups_path = args[0], args[1]
 out = args[2] if len(args) > 2 else os.path.join(os.path.dirname(os.path.abspath(tl_path)), 'qc')
 os.makedirs(out, exist_ok=True)
+for f_ in os.listdir(out):
+    if f_.endswith('.jpg'): os.remove(os.path.join(out, f_))   # no stale sheets from older runs
 spec = json.load(open(tl_path)); groups = json.load(open(groups_path))
 base = os.path.join(REPO, spec['base'])
 fails, notes = [], []
@@ -63,6 +65,9 @@ for a, b in zip(sh_, sh_[1:]):
     if a['img'] == b['img'] and a.get('to') != b.get('to'): fails.append(f'ZOOM: {a["img"]} cuts to a zoomed copy of itself at {b["t0"]:.2f}s')
 for s_ in sh_:
     if s_.get('to', [.5, .5, 1])[2] > 1.1 and not s_.get('crop_ok'): fails.append(f'ZOOM: {s_["img"]} at {s_["t0"]:.2f}s is a zoomed crop ({s_["to"][2]}x); use another frame (or crop_ok for a static crop that hides a defect)')
+DAYL = sorted([x for x in spec.get('texts', []) if x['style'] == 'day'], key=lambda x: x['t0'])
+for a, b in zip(DAYL, DAYL[1:]):
+    if a['t1'] > b['t0'] + .01: fails.append(f'TEXT: day labels "{a["text"]}" and "{b["text"]}" overlap at {b["t0"]:.2f}s')
 CENTER = [x for x in spec.get('texts', []) if x['style'] in ('big', 'cap', 'strike')]
 for i, a in enumerate(CENTER):
     for b in CENTER[i + 1:]:

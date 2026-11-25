@@ -14,13 +14,13 @@ PLAN = [
  ('C02', ['c02a'], {}),
  ('C03', ['m_rabies'], {'notes': {'m_rabies': [N('Rabies', 330, 430, 780, 300), N('(yes, the disease itself)', 330, 500, size=46)]}}),
  ('C04', ['c02b', 'c04a', 'c04b'], {'big': '1 choice', 'title': 'What happens if you get rabies in 1885',
-         'notes': {'c02b': [N('2 bites', 1480, 260, 950, 520)]}}),
+         'notes': {'c02b': [N('2 bites', 560, 760, 1072, 592)]}}),
  ('H01', ['h01b', 'h01c'], {'day': 'Day 0'}),
  ('H02', ['h02a', 'm_diag'], {'cap': 'A few centimetres a day'}),
  ('H03', ['h03a'], {'after': ('h03b', 'K03', 'd0')}),
  ('H04', ['h04a', 'h04b'], {'cap': 'Step 1: a red-hot key', 'notes': {'h04a': [N("St Hubert's key", 300, 800, 325, 480)]}}),
  ('H05', ['h05a'], {'cap': '(this one might actually help)'}),
- ('H06', ['h06a', 'h06b'], {'cap': 'Step 2: hair of the dog', 'strike': True, 'notes': {'h06b': [N('Actual dog hair', 430, 620, 1100, 800)]}}),
+ ('H06', ['h06a', 'h06b'], {'cap': 'Step 2: hair of the dog', 'strike': True, 'notes': {'h06b': [N('Actual dog hair', 1650, 640, 1150, 480)]}}),
  ('H07', ['h07a'], {}),
  ('H08', ['h08a', 'h08b', 'h08c'], {'day': 'Weeks 1-6'}),
  ('H09', ['h09a'], {}),
@@ -106,6 +106,8 @@ for i, frames, tx in PLAN:
     if 'day' in tx: texts.append({'style': 'day', 'text': tx['day'], 't0': t0, 't1': t + (2.0 if i != 'T01' else 0), 'pop': True})
     if i == 'C04': t += 1.6; shots[-1]['t1'] = round(t, 3)   # hold the title on the last cold-open frame
 shots[0]['t0'] = 0.0
+DAYS = sorted([x for x in texts if x['style'] == 'day'], key=lambda x: x['t0'])
+for a, b in zip(DAYS, DAYS[1:]): a['t1'] = min(a['t1'], b['t0'] - .1)   # one day label at a time
 for a, b in zip(shots, shots[1:]): a['t1'] = b['t0']   # no holes: the previous frame covers section pauses
 shots[-1]['t1'] = round(t + 1.2, 3); shots[-1]['fade_out'] = 1.0; TOTAL = round(t + 1.2, 3)
 mt = lambda i: round(marks[i], 2)
