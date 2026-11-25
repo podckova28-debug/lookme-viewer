@@ -11,9 +11,11 @@ W, H = 1080, 1920
 PH, MAXPAN, YC = 1080, 2.3, 0.62     # picture height, max picture width (x canvas width), picture centre (x canvas height)
 FPS, GAP = 30, 0.12
 # shots: (list of line indexes, frame or [top, bottom] frames)
-SHOTS = [([0], 54), ([1, 2], 51), ([3], 49), ([4, 5], 51), ([6], 54), ([7, 8], 52), ([9], 6),
+SHOTS = [([0], 54), ([1, 2], 51), ([3], "f49_no_note.jpg"), ([4, 5], 51), ([6], 54), ([7, 8], 52), ([9], 6),
          ([10, 11], 53), ([12], 55), ([13], "thumb")]
 LINES = [l.strip() for l in open(os.path.join(HERE, "vo.txt")) if l.strip()]
+# shorter on-screen text where the spoken line is too long for 3 caption rows
+CAPS = {3: "The building is on fire. Inside: a million litres of alcohol."}
 PICK = {}
 if os.path.exists(os.path.join(HERE, "picks.txt")):
     for l in open(os.path.join(HERE, "picks.txt")):
@@ -28,8 +30,12 @@ def picture(frame):
     # the whole drawing (white margins trimmed), scaled to a tall strip; the camera pans across it, so every part is shown
     if frame == "thumb":
         im = Image.open(os.path.join(HERE, "..", "upload", "thumbnail_1280x720.jpg")).convert("RGB")
+    elif isinstance(frame, str):          # a locally edited frame (e.g. a note removed) kept next to this script
+        im = trimmed(os.path.join(HERE, frame))
     else:
         im = trimmed(os.path.join(FR, f"f{frame:02d}.jpg"))
+    if frame == "thumb":                  # the end card is shown whole and still
+        pw = int(W * 0.94); return im.resize((pw, int(im.height * pw / im.width)), Image.LANCZOS)
     ph = PH; pw = int(im.width * ph / im.height)
     if pw > MAXPAN * W: pw = int(MAXPAN * W); ph = int(im.height * pw / im.width)
     if pw < W * 0.94: pw = int(W * 0.94); ph = int(im.height * pw / im.width)
@@ -38,24 +44,27 @@ def picture(frame):
 def caption(text, seed):
     random.seed(seed)
     ov = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(ov)
-    f = ImageFont.truetype(FONT, 118)
-    words, rows, cur = text.upper().replace(",", "").split(), [], ""
-    for w in words:
-        t = (cur + " " + w).strip()
-        if d.textlength(t, font=f) > W * 0.84 and cur: rows.append(cur); cur = w
-        else: cur = t
-    rows.append(cur)
-    y = 300 if len(rows) <= 2 else 240
+    for size in (118, 104, 92):          # shrink until the caption fits in 3 rows above the picture
+        f = ImageFont.truetype(FONT, size)
+        words, rows, cur = text.upper().replace(",", "").split(), [], ""
+        for w in words:
+            t = (cur + " " + w).strip()
+            if d.textlength(t, font=f) > W * 0.86 and cur: rows.append(cur); cur = w
+            else: cur = t
+        rows.append(cur)
+        if len(rows) <= 3: break
+    LH = int(size * 1.07)
+    y = 300 if len(rows) <= 2 else 220
     for r in rows:
         tw = d.textlength(r, font=f); x0 = (W - tw) / 2
         # uneven red brush stripe behind the letters
-        top, bot = y + 2, y + 118
+        top, bot = y + 2, y + size
         pts = [(x0 - 22 + random.uniform(-6, 6), top + random.uniform(-6, 6))]
         for i in range(1, 9): pts.append((x0 - 22 + (tw + 44) * i / 8, top + random.uniform(-7, 5)))
         for i in range(8, -1, -1): pts.append((x0 - 22 + (tw + 44) * i / 8 + random.uniform(-4, 4), bot + random.uniform(-5, 7)))
         d.polygon(pts, fill=(200, 30, 36, 255))
         d.text((x0, y), r, font=f, fill=(255, 255, 255, 255))
-        y += 126
+        y += LH
     return ov
 
 # narration
@@ -80,7 +89,7 @@ for k, (lines, frame) in enumerate(SHOTS):
         if k % 2: p0, p1 = 1 - p0, 1 - p1
         x0 = (W - pw) / 2 if span == 0 else -span * p0
         x1 = (W - pw) / 2 if span == 0 else -span * p1
-        cap = f"{WORK}/cap_{li}.png"; caption(LINES[li], li).save(cap)
+        cap = f"{WORK}/cap_{li}.png"; caption(CAPS.get(li, LINES[li]), li).save(cap)
         out = f"{WORK}/seg_{li:02d}.mp4"; d = n / FPS
         fc = (f"color=white:s={W}x{H}:r={FPS}:d={d:.3f}[bg];[0:v]format=rgba[p];"
               f"[bg][p]overlay=x='{x0:.1f}+({x1 - x0:.1f})*t/{d:.3f}':y={y}:eval=frame[v];"
