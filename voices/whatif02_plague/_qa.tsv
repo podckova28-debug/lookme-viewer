@@ -1,0 +1,53 @@
+id	score	sec	heard
+C01	0.89	9.2	Florence, June 1348. It's a gorgeous summer morning. You're 24, you've got a peach in one hand  and absolutely nothing to worry about.
+C02	1.00	3.9	Something tiny lands on your ankle.  You don't feel it.  It bites.
+C03	1.00	2.0	Hello Florence, did you miss me?
+C04	0.96	7.3	Within a week, there's about a 50-50 chance you'll be dead.  This is what happens if you catch the Black Death, day by day.
+H01	0.97	8.8	Let's start with the flea.  It's a rat flea and it's having a terrible week.  Its gut is blocked by a plug of bacteria  so nothing at drinks can go down.
+H02	1.00	7.2	so it's starving. It bites and bites again, and every time it tries to swallow, it spits  a little of that plug back into you.
+H03	0.80	7.0	The bacteria are called yersin-e-r-pestis.  Under a microscope, they look like tiny safety pins.
+H04	1.00	5.0	small, patient, very, very good at my job.
+H05	1.00	5.4	Here's your body right now.  Temperature, normal.  Pulse, normal.  Mood, peach.
+H06	1.00	5.6	For the next two days, nothing happens.  You go to work, you eat, you sleep, you feel fine.
+H07	1.00	12.0	Inside you, it's a different story.  The bacteria travel from the bite to the nearest lymph node, the little filter your  body uses to catch invaders.  For a bite on the ankle, that's in your groin.
+H08	1.00	9.6	Normally your immune cells swallow germs and destroy them.  These bacteria let themselves be swallowed  and then they move in.  Your own defenders become their taxi.
+H09	1.00	0.9	Thank you for the ride.
+H10	1.00	4.1	Day three, you wake up shivering in the middle of a hot Italian summer.
+H11	0.95	7.8	Then the headache arrives, the kind that makes light hurt, then the fever.  By the evening it's 39 and a half degrees.
+H12	1.00	6.0	Your muscles ache, you feel sick,  and you're so tired that climbing the stairs  feels like climbing the Alps.
+H13	0.92	7.1	Status check, fever high, pulse racing, energy 20%, mood very much not great.
+H14	1.00	8.7	day four. You notice a lump in your groin. It's hard, it's hot, and it's so painful  you can't stand anything touching it, not even your clothes.
+H15	0.87	11.0	This is a bi-ubo.  That's where the word bi-ubonic comes from.  It's your lymph node,  swollen with billions of bacteria  and the immune cells fighting them.
+H16	0.94	9.3	The writer Giovanni Boccacci lived through this summer in Florence.  He wrote that the swellings grew to the size of an egg and some to the size of an apple.
+H17	1.00	2.1	I like to think of them as souvenirs.
+H18	0.91	8.6	Day 5. Your family calls a doctor. Good news, he's one of the best educated men in Florence.  Bad news, it's 1348.
+H19	0.97	8.5	First, he examines your urine. He holds it up to the light, checks the color, maybe gives  it a sniff. This was the most advanced test of the age.
+H20	1.00	11.1	his diagnosis, bad air.  The top medical experts in Paris  have officially explained the whole epidemic.  Three planets lined up in the sign of Aquarius  and poisoned the air.
+H21	1.00	1.7	I've never even been to Aquarius.
+H22	0.97	10.1	So here's your treatment plan.  Step one, bloodletting.  It opens a vein and drains some of your blood  to rebalance your humours.  You were already weak, now you're weaker.
+H23	0.93	10.8	Step two, Thea E. Ack.  An expensive medicine made from dozens of ingredients,  including opium, honey, and roasted viper.  The opium at least helps with the pain.
+H24	1.00	5.6	Step three, do not take a bath.  Hot water opens your pores and lets the bad air in.
+H25	0.92	11.3	Step 4. Sit between two large fires to purify the air around you. This is not a joke,  it's what the Pope's own doctor recommended for the Pope himself in Arvignon.
+H26	1.00	8.1	And step five, keep flowers, herbs, or a sponge soaked in vinegar under your nose.  If you can't smell the bad air, it can't hurt you.
+H27	0.91	14.1	To be fair to your doctor, none of this was stupid by the standards of the time, it just  didn't work.  One of Italy's most famous plague experts, Gentile da Foligno, wrote advice very much  like this.  He died of the plague that same June.
+H28	1.00	1.4	Nothing personal, doctor.
+H29	0.95	3.3	Day 6.  From here your story can go three ways.
+H30	0.99	14.3	Path 1. The bacteria break out and flood your blood, your blood pressure crashes, and tiny  clots block the vessels in your fingers, toes and nose so they turn black. Without antibiotics,  this path is almost always fatal.
+H31	0.95	13.6	Path 2. They reach your lungs. Now you cough, and every cough sprays bacteria at everyone  around you. This is Pneumonic Plague, the kind that spreads from person to person. Untreated,  it kills nearly everyone who gets it.
+H32	0.97	5.7	Path 3, your immune system holds the line, and the fight stays in that one swollen node.
+H33	1.00	1.5	Let's find out which one you get.
+H34	0.88	8.0	Status check. Fever 40 degrees. The bioboe and apple. You're confused. You can barely talk and you haven't eaten in two days
+H35	0.60	2.4	Day 8.  You're lucky.  Part 3.
+H36	0.97	11.4	The fever breaks, your body has finally caught up with the bacteria, the biubo softens and  eventually it bursts and drains.  It's disgusting and it's the best news you've had all week.
+H37	0.92	6.5	Even with no real treatment, roughly half of the people with biobonic plague survived.  You're one of them.
+H38	0.83	2.3	You got lucky. Your neighbors didn't.
+H39	1.00	12.5	It takes you weeks to walk normally again.  When you finally get outside, Florence is quiet.  About half the city is gone.  Across Europe, between a third and a half of all people  died in just a few years.
+H40	1.00	9.2	Fun fact, nobody at the time called it the Black Death.  They called it the Great Mortality.  The name we use today only caught on centuries later.
+T01	0.92	4.1	Now let's run it again.  Same flee, same bite, but it's today.
+T02	1.00	16.0	Yes, plague still exists.  There are cases every year mostly in Madagascar  and the Democratic Republic of the Congo.  Even the United States sees about seven cases a year,  mostly in the rural Southwest,  from fleas on prairie dogs and squirrels.
+T03	1.00	9.4	On day three, you get the fever and the lump.  You go to a doctor and this time,  she doesn't look at your urine.  She takes a tiny sample from the lump  and finds the bacteria.
+T04	0.95	7.6	Then she gives you antibiotics for 10 to 14 days,  a box of pills against the disease  that killed tens of millions.
+T05	1.00	5.8	With quick treatment, most people survive.  The fires, the vinegar, and the roasted vipers are optional.
+T06	1.00	3.7	They took my best years, but I'm still here, waiting.
+E01	0.92	6.2	So, would you have survived Florence in 1348?  Tell me in the comments, which path did you get.
+E02	1.00	3.1	Next time, what happens if you're bitten by a rabid dog?
