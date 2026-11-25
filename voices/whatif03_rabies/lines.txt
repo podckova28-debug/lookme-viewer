@@ -50,3 +50,4 @@ S11|NARRATOR|Here's the cruellest part. Between the attacks, you're completely c
 S12|NARRATOR|Day five. The fear fades, because the paralysis begins. It starts in the bitten arm, and spreads. Your legs stop working. Then your face.
 S13|NARRATOR|Then a coma, and then your breathing stops. About a week from the first symptom, it's over. In eighteen eighty-five, nobody survived.
 S06B|NARRATOR|Why? The virus has reached the part of your brain stem that runs swallowing, and it's damaged it. Now the swallowing reflex is on a hair trigger. Every attempt to swallow fires a violent cramp through your throat and chest. And your brain learns fast: water means pain.
+S12B|NARRATOR|Why paralysis? Your nerves are the strings that move your body, and the virus is cutting them. It started in the nerves of the bitten arm, so that arm goes first. Then the legs. Then the muscles you breathe with.
