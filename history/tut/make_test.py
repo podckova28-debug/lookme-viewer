@@ -51,8 +51,8 @@ def overlay(k, cap):
     yr = YEAR.get(k)
     if yr:
         # year plate: big, top-left, solid dark plate + red bar (brand), readable on any background and on a phone
-        f = ImageFont.truetype(FONT, 104); d = ImageDraw.Draw(L)
-        tw = d.textlength(yr, font=f); x0, y0 = 48, 44
+        f = ImageFont.truetype(FONT, 96); d = ImageDraw.Draw(L)
+        tw = d.textlength(yr, font=f); x0, y0 = W - 48 - (tw + 56), Hh - 44 - 124   # bottom-right, away from the title
         d.rounded_rectangle([x0, y0, x0 + tw + 56, y0 + 124], 14, fill=(12, 12, 12, 215))
         d.rectangle([x0, y0 + 112, x0 + tw + 56, y0 + 124], fill=(200, 30, 30, 255))
         d.text((x0 + 28, y0 + 58), yr, font=f, fill="white", anchor="lm")
