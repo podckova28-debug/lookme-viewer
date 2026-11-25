@@ -41,7 +41,7 @@ S = [
  ("c02",5,0,"a messenger on a tired horse arriving at a castle gate with a sealed letter, Robert de Baudricourt (as in the sheet) reading it, frowning"),
  ("c02",6,0,"close-up of scissors cutting long dark brown hair, the braid falling to the floor"),
  ("c02",6,.5,"Joan age 17 (as in the sheet, short dark bob hair) in a man's dark tunic, hose and riding boots, mounting a horse, six armed men on horseback beside her at the town gate at dusk"),
- ("c02",7,0,"seven riders crossing a river ford at night under the moon, dark forest around them"),
+ ("c02",7,0,"exactly seven riders in plain travelling clothes crossing a river ford at night under the moon, dark forest around them, at the front Joan age 17 (as in the sheet, short dark bob hair, plain dark man's tunic and riding boots, no armour), no royal robes, no fleurs-de-lis"),
  ("c02",7,.6,"an old parchment map of France with a red dotted route from Vaucouleurs west to Chinon on the Loire"),
  ("c02",8,0,"the castle of Chinon on a hill above the river Loire at sunset, long walls and towers"),
  # c03 — the crowd
@@ -49,9 +49,9 @@ S = [
  ("c03",1,0,"King Charles (as in the sheet) as the young Dauphin sitting nervously, counting a few coins from a small purse, worried face"),
  ("c03",2,0,"King Charles (as in the sheet) standing hidden among courtiers in plain clothes, while another richly dressed man sits on the throne"),
  ("c03",3,0,"Joan age 17 (as in the sheet, short dark hair) in a man's dark tunic kneeling before King Charles (as in the sheet) dressed in plain clothes, in the middle of a crowd of astonished French courtiers, no bishop, no knights in red"),
- ("c03",4,0,"Joan age 17 (as in the sheet) whispering to King Charles (as in the sheet) in a window alcove, the courtiers far away"),
+ ("c03",4,0,"Joan age 17 (as in the sheet, short dark bob hair, plain dark man's tunic, no armour) whispering to King Charles (as in the sheet) in a window alcove of a French castle hall, a few French courtiers in blue and green far away, no bishop, no English soldiers, no red surcoats"),
  ("c03",5,0,"close-up of King Charles (as in the sheet), eyes wide, slowly nodding"),
- ("c03",7,0,"the town of Poitiers in 1429, a hall where a group of churchmen in black and white robes sit at a long table questioning a girl in a dark tunic"),
+ ("c03",7,0,"a hall in Poitiers in 1429 where a group of churchmen in black and white robes sit at a long table questioning Joan age 17 (as in the sheet, same face, short dark bob hair, plain dark man's tunic) who sits calmly on a chair"),
  ("c03",7,.6,"close-up of an old theologian with a quill, frowning over a big open book"),
  ("c03",8,0,"two noble ladies in tall headdresses walking toward a closed chamber door, a candle in hand"),
  ("c03",9,0,"a parchment document with a red wax seal on a table, a hand putting down a quill"),
@@ -148,7 +148,7 @@ S = [
  ("c10",1,0,"a preacher in a black and white habit shouting and pointing from the other platform"),
  ("c10",2,0,"a hooded executioner standing beside a horse-drawn wooden cart at the edge of the crowd, waiting"),
  ("c10",3,0,"Joan age 19 (as in the sheet) on the platform, frightened, a clerk holding up a short parchment and a quill to her"),
- ("c10",4,0,"close-up of a girl's hand drawing a small mark at the bottom of a parchment"),
+ ("c10",4,0,"Joan age 19 (as in the sheet, same face, short dark bob hair, long grey dress) frightened, drawing a small cross with a quill at the bottom of a parchment held on a wooden board by a clerk, outdoors on a platform"),
  ("c10",5,0,"Pierre Cauchon (as in the sheet) reading a sentence from a scroll"),
  ("c10",5,.6,"a heavy iron door of a prison cell closing"),
  ("c10",6,0,"Joan age 19 (as in the sheet) in her cell, wearing the dark grey man's tunic and hose again, guards in the doorway staring"),
@@ -161,7 +161,7 @@ S = [
  ("c10",13,0,"an empty market square at dawn, a tall wooden post in the middle, seen from far away, grey sky"),
  # c11 — the river
  ("c11",0,0,"English soldiers leading Joan age 19 (as in the sheet) in a long grey dress through a huge silent crowd in the old market square of Rouen"),
- ("c11",1,0,"a priest in a white surplice holding up a large processional crucifix high above a silent crowd in a market square, looking ahead, grey sky, no gallows, no rope"),
+ ("c11",1,0,"a 15th-century Dominican friar with a monastic tonsure, in a white habit and black hooded cape, no clerical collar, holding up a tall wooden processional cross high above a silent crowd in a medieval market square, looking ahead with tears in his eyes, grey sky, no gallows, no rope"),
  ("c11",2,0,"the crowd in the square seen from behind, many people with heads bowed and hands to their faces, grey smoke rising far away above the rooftops"),
  ("c11",3,0,"a small boat on the river Seine at Rouen at dusk, a man emptying an urn into the water from a bridge, seen from far away"),
  ("c11",4,0,"an English official in dark clothes walking away from the square, head down, shaken"),
@@ -191,7 +191,7 @@ def request(i):
             char += f"{', '.join(hit)} must look exactly like the matching figure in {SHEET[k]}. "
             if k == "K": char += f"Only {', '.join(hit)} from that lineup sheet may appear; do not add the other men of the sheet. "
     suffix = "Any words or numbers written in the scene must be exactly as given." if re.search(r"'[A-Z0-9][^']*'", desc) else "No text, no captions, no title."
-    return {"index": i, "params": {"model": "gpt_image_2_6", "aspect_ratio": "16:9", "use_unlim": False, "medias": medias,
+    return {"index": i, "params": {"model": "gpt_image_2_5", "variant": "flare", "quality": "low", "aspect_ratio": "16:9", "use_unlim": False, "medias": medias,
                                    "prompt": STYLE + char + "No gore, no blood, no fire. SCENE (16:9): " + desc + ". " + suffix}}
 if __name__ == "__main__":
     import json, sys
