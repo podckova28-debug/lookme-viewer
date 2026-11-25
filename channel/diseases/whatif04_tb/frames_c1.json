@@ -1,0 +1,388 @@
+{
+ "a": [
+  {
+   "index": 0,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every piece of furniture, window and wall; do not redraw them. All people are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small black mitten hands. Medium-wide shot, every person fully visible from head to feet. Anatomy check: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs. No text, no readable writing. Not gory. Evening party in this drawing room, candles lit: four fashionable 1850s stickmen guests, all very pale and very thin, with pink cheeks: two ladies in wide crinoline dresses with tiny waists and lace shawls, two gentlemen in tailcoats; they pose elegantly, one lady fans herself, one gentleman leans on the mantelpiece looking tragic. Nobody touches anybody.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "edbfa039-2c63-4f77-bcfd-29bcb9e30d2c",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 1,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every piece of furniture, window and wall; do not redraw them. All people are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small black mitten hands. Medium-wide shot, every person fully visible from head to feet. Anatomy check: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs. No text, no readable writing. Not gory. One fashionable pale 1850s stickman lady in a wide pale-blue crinoline dress with a tiny corseted waist stands in front of the gilt mirror and dabs white powder on her round face with a powder puff, admiring her pale reflection; a small pot of rouge on the mantelpiece. Nobody else.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "edbfa039-2c63-4f77-bcfd-29bcb9e30d2c",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 2,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every piece of furniture, window and wall; do not redraw them. All people are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small black mitten hands. Medium-wide shot, every person fully visible from head to feet. Anatomy check: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs. No text, no readable writing. Not gory. Lord Byron as a stickman (plain white round head with no hair, open white shirt collar, a dark velvet jacket and a black cape over one shoulder) stands by the tall window in a dramatic romantic pose, one hand on his chest, gazing into the distance with a melancholy face; two stickman ladies in crinolines on the sofa watch him with admiration, hands clasped.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "edbfa039-2c63-4f77-bcfd-29bcb9e30d2c",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 3,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every piece of furniture, window and wall; do not redraw them. All people are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small black mitten hands. Medium-wide shot, every person fully visible from head to feet. Anatomy check: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs. No text, no readable writing. Not gory. Add one figure: Tuberculosis as 'the White Lady' exactly as on the SECOND reference sheet (gaunt ghostly woman, waxy grey-white skin, red feverish blotches on her cheeks, dark-ringed eyes, long dark hair, tattered off-white nightgown, grey knitted shawl), standing by the fireplace, holding a lit candle in a brass holder, with a charming, knowing smile at the viewer. No other people. Exactly one figure, two arms, two hands.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "edbfa039-2c63-4f77-bcfd-29bcb9e30d2c",
+      "role": "image_references"
+     },
+     {
+      "value": "1de80806-b140-40d9-8e0b-9a3a526ecee8",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 4,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "2D animated history explainer frame, 16:9, no text, no numbers. Same ink-and-cross-hatching drawing style and muted sepia palette as the reference. A long dark corridor seen straight on, with five closed doors in a row along the back wall, evenly spaced, each a different era: a Georgian panelled door with a brass knocker, a plain wooden New England farmhouse door with a snowy wreath, a white sanatorium door with a small frosted window, a 1940s green hospital door with a round porthole window, a modern glass clinic door. In front of the doors, centred, the young poet from the SECOND reference image (same stickman, brown tailcoat, cravat, buff trousers) stands with his back half-turned, looking at the doors, scratching his head. Exactly one person, two arms, two hands.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "557f5d94-d7bb-494f-bfa1-5a92bfffb8b5",
+      "role": "image_references"
+     },
+     {
+      "value": "657428ad-7543-423d-8117-c4ac81fa7df5",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 5,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Hand-drawn explainer diagram in ink and muted watercolour on aged paper, 16:9, same style as the reference, no words, no letters, no numbers. Tuberculosis bacteria are always drawn as small thin pink rods. Stickmen in diagrams are plain outlines with round heads and no hair. Two stickman outlines facing each other a few steps apart: the left one coughs, and a cloud of tiny droplets drifts across the gap, each droplet holding a few tiny pink rods; the right one breathes in the cloud through his mouth, with an arrow showing the air going into his chest.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "4d8fdebc-3248-4c33-bd9a-c680b5aba53c",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 6,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Hand-drawn explainer diagram in ink and muted watercolour on aged paper, 16:9, same style as the reference, no words, no letters, no numbers. Tuberculosis bacteria are always drawn as small thin pink rods. Stickmen in diagrams are plain outlines with round heads and no hair. Inside the same pink lungs as the reference, a close-up circle: a big round blob-shaped immune cell has swallowed several pink rods, which are still alive inside it; around it, little grey cells stack up like bricks forming a round stone prison wall.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "4d8fdebc-3248-4c33-bd9a-c680b5aba53c",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 7,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Hand-drawn explainer diagram in ink and muted watercolour on aged paper, 16:9, same style as the reference, no words, no letters, no numbers. Tuberculosis bacteria are always drawn as small thin pink rods. Stickmen in diagrams are plain outlines with round heads and no hair. A crowd of twelve simple stickman outlines standing in three rows; in the chest of every fourth one (three of them) a tiny round grey stone prison with pink rods inside is drawn and lightly highlighted.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "4d8fdebc-3248-4c33-bd9a-c680b5aba53c",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 8,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Tuberculosis as 'the White Lady' exactly as on the reference sheet (gaunt ghostly woman, waxy grey-white skin, red feverish blotches, dark-ringed eyes, long dark hair, tattered off-white nightgown, grey knitted shawl) sits patiently in a rocking chair in a dim candle-lit room, both hands resting in her lap, watching a large hourglass on a small table beside her, a faint patient smile. Ink-and-cross-hatching style, muted palette. Exactly one figure, two arms, two hands. No text.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "1de80806-b140-40d9-8e0b-9a3a526ecee8",
+      "role": "image_references"
+     },
+     {
+      "value": "557f5d94-d7bb-494f-bfa1-5a92bfffb8b5",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 9,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Hand-drawn explainer diagram in ink and muted watercolour on aged paper, 16:9, same style as the reference, no words, no letters, no numbers. Tuberculosis bacteria are always drawn as small thin pink rods. Stickmen in diagrams are plain outlines with round heads and no hair. The same pink lungs as the reference: in the upper part of the right lung, the round grey stone prison has cracked open, pink rods pour out of it, and they have eaten a ragged dark hole in the lung tissue; small arrows show the rods moving up the windpipe toward the mouth.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "4d8fdebc-3248-4c33-bd9a-c680b5aba53c",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 10,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every piece of furniture, window and wall; do not redraw them. All people are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small black mitten hands. Medium-wide shot, every person fully visible from head to feet. Anatomy check: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs. No text, no readable writing. Not gory. the young poet from the SECOND reference image (same stickman: brown tailcoat, white shirt with a loose white cravat, buff trousers, black shoes) sits at the writing desk with a quill in one hand, and coughs into the other fist, bent forward, cough lines by his mouth; the candle burns on the desk.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "c4a9c5fd-a760-421c-9517-f309094f9909",
+      "role": "image_references"
+     },
+     {
+      "value": "657428ad-7543-423d-8117-c4ac81fa7df5",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 11,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every piece of furniture, window and wall; do not redraw them. All people are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small black mitten hands. Medium-wide shot, every person fully visible from head to feet. Anatomy check: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs. No text, no readable writing. Not gory. the young poet from the SECOND reference image (same stickman: brown tailcoat, white shirt with a loose white cravat, buff trousers, black shoes) stands in the middle of the room holding an open small white handkerchief in front of him with both hands, staring at it in shock; one small bright red spot in the middle of the handkerchief.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "c4a9c5fd-a760-421c-9517-f309094f9909",
+      "role": "image_references"
+     },
+     {
+      "value": "657428ad-7543-423d-8117-c4ac81fa7df5",
+      "role": "image_references"
+     }
+    ]
+   }
+  }
+ ],
+ "b": [
+  {
+   "index": 12,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every piece of furniture, window and wall; do not redraw them. All people are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small black mitten hands. Medium-wide shot, every person fully visible from head to feet. Anatomy check: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs. No text, no readable writing. Not gory. a doctor of 1820, a stickman in a black tailcoat, a tall black top hat and a white high collar stands next to the bed, listening to the chest of the young poet from the SECOND reference image (same stickman: brown tailcoat, white shirt with a loose white cravat, buff trousers, black shoes) through a short wooden tube (an early stethoscope), and nods confidently; the poet sits on the edge of the bed.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "c4a9c5fd-a760-421c-9517-f309094f9909",
+      "role": "image_references"
+     },
+     {
+      "value": "657428ad-7543-423d-8117-c4ac81fa7df5",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 13,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Hand-drawn explainer diagram in ink and muted watercolour on aged paper, 16:9, same style as the reference, no words, no letters, no numbers. Tuberculosis bacteria are always drawn as small thin pink rods. Stickmen in diagrams are plain outlines with round heads and no hair. A simple family tree drawn as a bare tree with three levels of round portrait frames on its branches; in every frame a simple stickman head with a small handkerchief at its mouth, coughing.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "4d8fdebc-3248-4c33-bd9a-c680b5aba53c",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 14,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every piece of furniture, window and wall; do not redraw them. All people are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small black mitten hands. Medium-wide shot, every person fully visible from head to feet. Anatomy check: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs. No text, no readable writing. Not gory. a doctor of 1820, a stickman in a black tailcoat, a tall black top hat and a white high collar stands by the bed holding a small white bowl under the forearm of the young poet from the SECOND reference image (same stickman: brown tailcoat, white shirt with a loose white cravat, buff trousers, black shoes), who sits on the bed, his sleeve rolled up, looking pale and woozy; a small lancet in the doctor's other hand. A few drops in the bowl, not gory.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "c4a9c5fd-a760-421c-9517-f309094f9909",
+      "role": "image_references"
+     },
+     {
+      "value": "657428ad-7543-423d-8117-c4ac81fa7df5",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 15,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every piece of furniture, window and wall; do not redraw them. All people are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small black mitten hands. Medium-wide shot, every person fully visible from head to feet. Anatomy check: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs. No text, no readable writing. Not gory. the young poet from the SECOND reference image (same stickman: brown tailcoat, white shirt with a loose white cravat, buff trousers, black shoes) sits at the writing desk and stares sadly at a single plate in front of him: on the plate there is only one tiny anchovy and one small slice of bread. Nothing else on the desk except the candle.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "c4a9c5fd-a760-421c-9517-f309094f9909",
+      "role": "image_references"
+     },
+     {
+      "value": "657428ad-7543-423d-8117-c4ac81fa7df5",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 16,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "2D animated history explainer frame, 16:9, no text. Same ink-and-cross-hatching drawing style and muted sepia palette as the reference. An 1820 two-masted sailing ship on a calm blue Mediterranean sea under a warm sun, the coast of Italy with hills and a small town in the distance. On the deck a tiny figure of a stickman in a brown tailcoat stands at the rail looking toward the coast. No other details.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "557f5d94-d7bb-494f-bfa1-5a92bfffb8b5",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 17,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every piece of furniture, window and wall; do not redraw them. All people are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small black mitten hands. Medium-wide shot, every person fully visible from head to feet. Anatomy check: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs. No text, no readable writing. Not gory. the young poet from the SECOND reference image (same stickman: brown tailcoat, white shirt with a loose white cravat, buff trousers, black shoes) has just arrived: he stands in the middle of the room holding a small leather travel bag, thin and pale, looking hopefully toward the sunny window.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "c42487e3-1a95-4c54-9c3b-ceadc3cfdde8",
+      "role": "image_references"
+     },
+     {
+      "value": "657428ad-7543-423d-8117-c4ac81fa7df5",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 18,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every piece of furniture, window and wall; do not redraw them. All people are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small black mitten hands. Medium-wide shot, every person fully visible from head to feet. Anatomy check: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs. No text, no readable writing. Not gory. Late evening: the room is empty, nobody in it. The plain wooden chair stands by the open window, a folded brown tailcoat lies on the chair, a candle on the small table has just gone out with a thin wisp of smoke. Quiet and sad.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "c42487e3-1a95-4c54-9c3b-ceadc3cfdde8",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 19,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every piece of furniture, window and wall; do not redraw them. All people are simple stickmen: plain smooth white round head with NO hair, two dot eyes, simple mouth and eyebrows, no nose, thin black stick arms and legs, small black mitten hands. Medium-wide shot, every person fully visible from head to feet. Anatomy check: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs. No text, no readable writing. Not gory. Add one figure: Tuberculosis as 'the White Lady' exactly as on the SECOND reference sheet (gaunt ghostly woman, waxy grey-white skin, red feverish blotches, dark-ringed eyes, long dark hair, tattered off-white nightgown, grey knitted shawl), standing by the small table, holding up a quill pen between two fingers and examining it with a satisfied, amused smile. No other people. Exactly one figure, two arms, two hands.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "c42487e3-1a95-4c54-9c3b-ceadc3cfdde8",
+      "role": "image_references"
+     },
+     {
+      "value": "1de80806-b140-40d9-8e0b-9a3a526ecee8",
+      "role": "image_references"
+     }
+    ]
+   }
+  }
+ ],
+ "ids": [
+  "c01a",
+  "c01b",
+  "c02a",
+  "c03a",
+  "c04a",
+  "p01a",
+  "p02a",
+  "p03a",
+  "p04a",
+  "p05a",
+  "e1a1",
+  "e1a2",
+  "e1b1",
+  "e1b2",
+  "e1c1",
+  "e1c2",
+  "e1d1",
+  "e1d2",
+  "e1e1",
+  "e1f1"
+ ]
+}
