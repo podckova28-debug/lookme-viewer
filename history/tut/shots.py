@@ -166,8 +166,9 @@ STYLE_REFS = ["5d5f0d40-6d72-4644-b3e1-0f824c81becb", "8e1e1260-e11b-4083-a4d6-5
 STYLE = ("Use reference images 1 and 2 ONLY for drawing style: clean editorial comic illustration, even medium-weight black outlines, "
          "flat muted colours, minimal cel shading, calm simple backgrounds. Do not copy any person or scene from them. "
          "Ancient scenes are period-accurate Egypt of the 1330s BC (18th dynasty): white pleated linen, broad collars, wigs, bronze and wood tools, "
-         "oil lamps in open clay dishes; NO camels, NO iron, NO coins, NO turbans, NO glass lanterns, NO candles in ancient scenes. "
-         "1920s scenes: 1920s clothes and objects only. ")
+         "light only from oil lamps in open clay dishes; NO camels, NO iron, NO coins, NO turbans, NO glass lanterns, NO candles, NO hourglasses in ancient scenes. "
+         "Scenes from 1900-1939: electric lamps and light bulbs only, ABSOLUTELY NO clay oil lamps, no ancient lamps on tables. "
+         "Every person has exactly two arms and two hands, every animal has its head facing the same way as its body. ")
 # single-person reference images (job ids), filled after chars/ are generated and checked
 PREF = {"Tutankhaten age 9": "90700f16-d3cf-4596-94bd-56b4ca137ee8", "Tutankhamun age 18": "484419f6-a6de-4d02-8f13-dea2366247f3", "Ankhesenamun age 13": "362e890b-9c27-48a5-82c2-171a37d682f7", "Ankhesenamun age 20": "fd42eb4f-fb5c-4845-9391-b16b849ea2e0", "Akhenaten": "bde1d7e6-45a6-4bf5-9b0b-1647a9012ab1", "Ay": "dde33e9a-8fa7-4e3c-9b5f-eda3e286fcc5", "Horemheb": "a7d9ff14-d3ff-40a6-9191-64e7b7ab4591",
         "Howard Carter": "89a31d03-eac4-4dfd-ae1d-c66e98fcce88", "Lord Carnarvon": "5846c93b-ec5c-4baf-851c-5bdc6e10a004"}
@@ -268,3 +269,47 @@ for _n, _j in {"AMARNA_CITY": "83f1c44e-9c6e-4578-a149-bdd662b0327a", "AMARNA_PA
 ANCHOR["Suppiluliuma"] = "95f032df-217c-4570-a698-0e55cd5a665b"
 # VALLEY_ANCIENT must not inherit 1922 tents/donkeys: use the approved ancient valley frame instead
 LOCATIONS["VALLEY_ANCIENT"] = ("", "13b1c9e7-494b-4cc2-ad93-cf4280cc8ac3")   # frame 91, ancient funeral in the valley
+# ---- frame-QC wave 4 (user review: mutations) ----
+PREF["Akhenaten"] = "d1aaf440-064b-4899-a3e2-b1f2d1282192"          # smooth long chin (old ref had a notched chin)
+LOOK["Akhenaten"] = "pharaoh with a long narrow face and a long SMOOTH chin with one clean jaw line, full lips, heavy-lidded eyes, tall blue khepresh crown, gold-and-turquoise collar"
+PREF["Tutankhaten age 9"] = "9f58e26b-e6b5-422f-bf36-ac1c8884b594"   # boy king in the blue crown: no hair visible, nothing to drift
+LOOK["Tutankhaten age 9"] = "boy king of 9, tall BLUE khepresh crown with a gold cobra fully covering his head, NO hair, NO braid, NO sidelock visible, gold-and-turquoise collar, white pleated linen tunic"
+PREF["Prince Tutankhaten"] = "90700f16-d3cf-4596-94bd-56b4ca137ee8"
+LOOK["Prince Tutankhaten"] = "small boy prince, shaved head with exactly ONE thick braided sidelock hanging in front of his RIGHT ear, long white linen tunic"
+LOCATIONS["CAIRO_HOTEL"] = ("", None)            # old anchor carried a clay oil lamp into 1923
+FIX2 = {
+ 20: "Prince Tutankhaten (as in the sheet) aged 5, playing with a wooden toy horse in a sunlit palace courtyard with papyrus columns, painted floor of reeds and ducks",
+ 24: "Prince Tutankhaten (as in the sheet) aged 6, standing alone in a large empty sunlit throne hall, looking up at an empty gold throne",
+ 34: "Ay (as in the sheet) and Horemheb (as in the sheet) whispering together over a papyrus map on a table, lit by an oil lamp in a clay dish; Horemheb has exactly ONE curved khopesh sword in a scabbard at his belt",
+ 48: "four priests in white robes carrying on their shoulders a gilded boat-shaped shrine on two poles out of the temple gate, a cheering crowd behind a rope; every person has exactly two arms",
+ 51: "a painted wooden chest panel showing Tutankhamun age 18 (as in the sheet) in a chariot shooting arrows at two lions running away to the right, both lions' heads face forward in the running direction, idealised Egyptian painting style",
+ 64: "close-up of Tutankhamun age 18 (as in the sheet) in shadow sitting at a table, beside him a single oil lamp in a clay dish with a small dying flame",
+ 83: "Suppiluliuma (as in the anchor) laughing in disbelief in the grey stone hall with carved lions, two Hittite advisers in long fringed woollen robes, tall pointed caps and long dark hair and beards (NOT Egyptian clothes, no collars, no wigs), each with exactly two hands",
+ 92: "three male workers in white kilts painting a half-finished wall painting of gods in a tomb by oil lamps in clay dishes; the painted figures on the wall have normal anatomy with two arms each; every worker has exactly two arms",
+ 102: "Ay (as in the sheet) as a very old pharaoh sitting slumped on the golden throne wearing the blue war crown, both hands resting on the armrests, tired face",
+ 115: "Howard Carter (as in the sheet) sitting at a camp table in a canvas tent, holding up in his RIGHT hand a small blue faience cup with a royal cartouche, looking at it closely, an electric torch and notebooks on the table, no oil lamps",
+ 117: "Howard Carter (as in the sheet) standing with hands on hips watching a line of Egyptian workmen in galabiyas and turbans carrying baskets of rubble on their heads with both hands, every person has exactly two arms, heat haze",
+ 118: "Lord Carnarvon (as in the sheet) WITHOUT a hat, in a library at Highclere Castle, shaking his head at Howard Carter (as in the sheet), holding a cheque book, serious, electric table lamp",
+ 122: "Howard Carter (as in the sheet) at a small telegraph office in Luxor in 1922 handing a telegram form to a clerk in a red fez, a telegraph key on the counter, an electric light bulb hanging from the ceiling, no oil lamps",
+ 127: "Howard Carter (as in the sheet) at a wooden table in the tomb writing on numbered record cards, a photographer with a 1920s box camera on a tripod, the room lit by 1920s electric lamps on stands with cables, NO oil lamps, NO candles",
+ 130: "three nested mummy-shaped coffins of gold and blue lying side by side from large to small on wooden trestles, lit only by 1920s electric lamps on stands, NO oil lamps, no people",
+ 131: "Howard Carter (as in the sheet) kneeling beside the open stone sarcophagus with both hands resting on its rim, looking in awe at the solid gold mummy-shaped coffin inside, whose arms are crossed on the chest holding crook and flail, lit by 1920s electric lamps",
+ 132: "the golden death mask of Tutankhamun front view, blue lapis stripes on the nemes headdress, on the brow exactly ONE vulture head and ONE cobra side by side, a braided false beard, on black velvet, dramatic spotlight, no lamps, no people",
+ 137: "Lord Carnarvon (as in the sheet) in his cream linen suit and panama hat sitting in a wicker chair on a 1923 hotel terrace by the Nile, pale and tired, holding his cheek; a small round table with a book, NO lamps",
+ 138: "close-up of Lord Carnarvon (as in the sheet) without a hat, a mosquito landing on his cheek, warm evening light on a 1923 hotel terrace by the Nile, NO lamps",
+ 139: "Lord Carnarvon (as in the sheet) without a hat, in a white shirt with braces, seen from behind at a mirror in a 1923 hotel room, his RIGHT hand holds a straight razor at his cheek, his LEFT hand rests on the washstand; in the mirror the same two hands only; a tiny nick on his cheek; an electric wall lamp",
+ 140: "Lord Carnarvon (as in the sheet) lying in a 1923 hotel bed in Cairo at night, pale with fever, a nurse in a white apron and a doctor with a stethoscope beside him, an electric bedside lamp with a fabric shade, NO oil lamps",
+ 145: "a wall of 1920s newspaper clippings pinned up and connected with red string, ghostly pharaoh drawings, a man in a 1920s suit looking at them, an electric desk lamp, NO oil lamps, no readable words",
+ 146: "Howard Carter (as in the sheet) as an older man of 64 with grey hair and moustache, in a dark suit, sitting in a leather armchair in a London flat in 1939 with Egyptian objects on the shelves, an electric standard lamp, NO oil lamps",
+}
+for _k, _d in FIX2.items(): S[_k - 1] = S[_k - 1][:3] + (_d,) + S[_k - 1][4:]
+# frames with the boy king get redrawn with the new crown reference too
+REDRAW_TUT9 = [25, 27, 29, 30, 31, 37, 38, 44, 47]
+REDRAW_AKH = [15, 16]
+LOCATIONS["TOMB_BURIAL_CHAMBER"] = ("", "7985a2ed-74fb-4f22-a269-91ff21f2bd9a")   # approved 1922 frame 128 (electric lamps)
+S[91] = S[91][:4] + (None,)    # 92 is ancient: no 1922 anchor
+# ---- wave 5: Ay's ear poked through the wig; prince braid looked like a mutation ----
+PREF["Ay"] = "7e84afbb-571f-4a60-803b-e86f4f5e2089"
+LOOK["Ay"] = "old courtier of 60, wrinkled clever face, thick shoulder-length GREY wig that COMPLETELY COVERS BOTH EARS (no ear visible), long white linen robe, gold collar of honour of gold discs"
+LOOK["Prince Tutankhaten"] = "small boy prince, smooth shaved head with NO braid and NO sidelock, long white linen tunic, small turquoise collar"
+WAVE5 = [20, 24, 31, 32, 34, 47, 82, 89, 90]

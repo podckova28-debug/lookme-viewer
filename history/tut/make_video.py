@@ -47,19 +47,21 @@ starts = [c[0] for c in cuts] + [total]
 
 # 3) overlays
 FONT = H + "/fonts/BebasNeue-Regular.ttf"
+# YouTube subtitles cover the bottom ~22% of the frame: keep every overlay above that line
+SAFE_BOTTOM = int(Hh * .76); SAFE_LOW = .68
 def overlay(k, base):
     L = Image.new("RGBA", (W, Hh), (0, 0, 0, 0))
     if not isinstance(k, int): return L
     yr, age = held(YEAR, k), held(AGE, k)
     if k in CAP:
-        cx, cy, sz = best_spot(base, CAP[k])
+        cx, cy, sz = best_spot(base, CAP[k], low=SAFE_LOW)
         if cy > Hh / 2 and (yr and cx > W * .45 or k in INSET and cx < W * .55):   # never on the year plate / portrait
             cx, cy = W / 2, Hh * .12
         draw_text(L, CAP[k], sz, cy, maxw=.9, cx=cx)
     if yr:
         d = ImageDraw.Draw(L); f1 = ImageFont.truetype(FONT, 96); f2 = ImageFont.truetype(FONT, 58)
         w = max(d.textlength(yr, font=f1), d.textlength(age, font=f2) if age else 0) + 56
-        h = 124 + (64 if age else 0); x0, y0 = W - 48 - w, Hh - 44 - h
+        h = 124 + (64 if age else 0); x0, y0 = W - 48 - w, SAFE_BOTTOM - h
         d.rounded_rectangle([x0, y0, x0 + w, y0 + h], 14, fill=(12, 12, 12, 215))
         d.rectangle([x0, y0 + h - 12, x0 + w, y0 + h], fill=(200, 30, 30, 255))
         d.text((x0 + 28, y0 + 58), yr, font=f1, fill="white", anchor="lm")
@@ -69,8 +71,8 @@ def overlay(k, base):
         p = Image.open(f"{T}/chars/inset_{who}.png").convert("RGB").resize((300, 300))
         m = Image.new("L", (300, 300), 0); ImageDraw.Draw(m).ellipse([0, 0, 299, 299], fill=255)
         ring = Image.new("RGBA", (316, 316), (0, 0, 0, 0)); ImageDraw.Draw(ring).ellipse([0, 0, 315, 315], fill=(255, 255, 255, 255))
-        L.alpha_composite(ring, (60, Hh - 420)); L.paste(p, (68, Hh - 412), m)
-        draw_text(L, name, 64, Hh - 70, cx=218, maxw=.3)
+        L.alpha_composite(ring, (60, SAFE_BOTTOM - 410)); L.paste(p, (68, SAFE_BOTTOM - 402), m)
+        draw_text(L, name, 64, SAFE_BOTTOM - 50, cx=218, maxw=.3)
     return L
 
 MOT = ["in", "r", "out", "l"]
