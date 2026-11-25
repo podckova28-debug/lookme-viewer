@@ -8,7 +8,7 @@ S = [
  # c00 cold open
  ("c00",0,0,"the endless Mongolian steppe at night under a full moon, a winding river, distant felt tents"),
  ("c00",1,0,f"{T16} lying on his back in a dark freezing river among reeds, only his face above the water, moonlight, seen from above"),
- ("c00",2,0,f"close-up of {T16} in the river, a heavy square wooden cangue board locked around his neck and wrists, his eyes wide open"),
+ ("c00",2,0,f"night, moonlight, dark blue tones: close-up of {T16} in the dark river, a heavy square wooden cangue board locked around his neck and wrists, his eyes wide open"),
  ("c00",3,0,"silhouettes of Mongol riders on horseback searching the river bank in the moonlight, one pointing at the reeds"),
  ("c00",4,0,f"{T16} alone on an empty steppe at dawn, ragged clothes, no horse, looking at the horizon"),
  ("c00",5,0,"an old parchment map of Eurasia with a huge area from China to the Caspian Sea painted in red, and the Roman Empire outlined small for comparison"),
@@ -23,7 +23,7 @@ S = [
  ("c01",4,0,f"Yesugei on horseback leading away the horse of a young bride, {HO}, who looks back, a cart behind them on the steppe"),
  ("c01",5,0,"a Merkit warrior in a dark deel standing alone on a hill, watching riders disappear, his fists clenched"),
  ("c01",6,0,f"Yesugei and {T9} riding side by side across the steppe"),
- ("c01",7,0,f"{T9} meeting {BO} as a little girl of ten, both shy, in front of a felt tent, her father smiling"),
+ ("c01",7,0,f"{T9} meeting Borte as a little girl of ten (round face, cream headscarf, red deel), both shy, in front of a felt tent, her father smiling"),
  ("c01",8,0,"Yesugei sitting down at a campfire with Tatar men in white felt hats who offer him a bowl, their faces friendly but eyes cold"),
  ("c01",9,0,"an empty saddle on a riderless horse standing outside a felt tent at dusk"),
  ("c01",10,0,"close-up of an overturned wooden bowl on the grass beside a campfire, dark liquid spilled"),
@@ -56,7 +56,7 @@ S = [
  ("c03",9,0,f"{T16} looking at the horizon where a distant camp with smoke rises, thinking"),
  # c04 the sable coat
  ("c04",0,0,f"{T16} riding into a camp of the Onggirat people, {BO} as a young woman of 17 stepping out of a tent"),
- ("c04",1,0,f"{BO} and her mother presenting a magnificent black sable fur coat to {T16}"),
+ ("c04",1,0,f"{BO} and her mother (a grey-haired woman in a brown deel, NOT Hoelun) presenting a magnificent black sable fur coat to {T16}"),
  ("c04",2,0,f"close-up of {T16} folding the black sable coat over his saddle"),
  ("c04",3,0,f"{T16} kneeling and offering the black sable coat to {TO} seated in a large decorated tent"),
  ("c04",4,0,f"{TO} placing his hand on the shoulder of {T16}, smiling"),
@@ -64,13 +64,13 @@ S = [
  ("c04",6,0,"three hundred Merkit riders galloping over a hill toward a small camp at dawn, dust, bows raised"),
  ("c04",7,0,f"split image: on the left Yesugei taking {HO} away years ago, on the right Merkit riders galloping now"),
  ("c04",8,0,f"Merkit riders carrying {BO} away on horseback, she reaches back, the camp in chaos"),
- ("c04",9,0,"a Mongol storyteller-style scene: a felt tent at night with a single lamp glowing, peaceful steppe"),
+ ("c04",9,0,"a felt tent at night with warm firelight glowing from the smoke hole, peaceful steppe under stars, no people"),
  ("c04",11,0,f"{T16} standing in the ruined empty camp, clenching his fist, looking toward the horizon"),
  # c05 the knucklebone
  ("c05",0,0,f"{T16} speaking to a group of warriors around a fire"),
  ("c05",1,0,f"{TO} pointing to a column of his Kereit horsemen"),
  ("c05",2,0,f"{JA} riding up with his own warriors, smiling at {T16}"),
- ("c05",3,0,f"two Mongol boys of eleven, young {JA} and young Temujin, exchanging small knucklebones on the frozen Onon River, snow"),
+ ("c05",3,0,f"two Mongol boys of eleven, bareheaded, one with long black braids (young Jamukha), one with reddish-brown hair (young Temujin), exchanging small knucklebones on the frozen Onon River, snow"),
  ("c05",4,0,"a night attack: Mongol horsemen charging into a Merkit camp, tents and fleeing people in the dark, seen from far away, no blood"),
  ("c05",5,0,f"{T16} on horseback in the dark among fleeing people calling out, {BO} running toward his horse with outstretched arms"),
  ("c05",6,0,f"{BO} holding a newborn baby boy in a felt tent, {T16} beside her"),
@@ -101,7 +101,7 @@ S = [
  ("c07",3,0,f"{T44} pointing sternly at the traitors kneeling before his guards, his face hard"),
  ("c07",4,0,f"{T44} and {JA} sitting face to face in a tent, a single lamp between them"),
  ("c07",5,0,f"{JA} shaking his head calmly, looking down"),
- ("c07",6,0,"two small knucklebones lying on a felt carpet in the lamplight"),
+ ("c07",6,0,"close-up of two small real sheep ankle bones (knucklebones, shagai, smooth bone-white, roughly cube-shaped) lying on a felt carpet in the firelight"),
  ("c07",7,0,f"the great assembly of 1206 by the Onon River: thousands of Mongols around a white banner with nine horse-tail tassels, {T44} standing in front"),
  ("c07",8,0,f"{T44} raised on a white felt carpet by chiefs, as Genghis Khan"),
  ("c07",9,0,f"close-up portrait of {T44} as Genghis Khan, calm and serious"),
@@ -132,9 +132,9 @@ S = [
  ("c09",7,0,"an old parchment map of Central Asia with Bukhara, Samarkand, Urgench and Merv each crossed out in red"),
  ("c09",8,0,"the ruins of a great desert city, broken domes and empty streets, smoke on the horizon, no people"),
  ("c09",9,0,"an empty ruined city gate in the desert half-covered by sand, a lone stray dog"),
- ("c09",10,0,"Shah Muhammad alone in a plain robe sitting on a rock on a small barren island in the Caspian Sea, grey waves"),
+ ("c09",10,0,"Shah Muhammad (Persian, black beard, white turban) alone in a plain white robe sitting on a rock on a small barren island in the Caspian Sea, grey waves"),
  ("c09",11,0,f"{T64} as an older Genghis Khan with grey in his beard, seated in his tent"),
- ("c09",12,0,"two adult Mongol princes in rich deels arguing furiously in front of an older khan's seat, one pointing at the other"),
+ ("c09",12,0,f"two adult Mongol princes in rich deels arguing furiously, one pointing at the other, and behind them {T64} seated, watching in silence"),
  ("c09",13,0,f"{T64} as Genghis Khan alone at night outside his tent, looking up at the stars"),
  # c10 the elixir
  ("c10",0,0,"Changchun, an old Chinese Taoist monk with a long white beard, blue robe and topknot, sitting in meditation in a mountain temple"),
@@ -142,7 +142,7 @@ S = [
  ("c10",2,0,f"{T64} as Genghis Khan receiving Changchun the old monk in a large tent in the mountains, both seated"),
  ("c10",3,0,f"close-up of {T64} as Genghis Khan leaning forward, eyes hopeful"),
  ("c10",4,0,"close-up of Changchun the old monk speaking calmly, hands folded"),
- ("c10",5,0,"a small empty porcelain medicine bottle on a low table between them, lamplight"),
+ ("c10",5,0,"close-up of a small empty clay medicine flask lying on its side on a low wooden table, firelight, no people"),
  ("c10",6,0,f"{T64} as Genghis Khan handing a golden tablet to Changchun the old monk, who bows"),
  ("c10",7,0,f"{T64} as Genghis Khan mounting his horse in front of his army"),
  ("c10",8,0,"an old parchment map of northwest China with the Western Xia kingdom circled in red"),
@@ -156,7 +156,7 @@ S = [
  ("c11",5,0,"a funeral procession of riders and a covered cart crossing the steppe toward a forested sacred mountain"),
  ("c11",6,0,"a herd of horses trampling a grassy slope at the foot of a forested mountain, no grave visible, dusk"),
  ("c11",7,0,"modern scientists with a ground radar and a laptop on a grassy Mongolian mountainside, a satellite image on the screen"),
- ("c11",8,0,"an empty grassy mountain slope under a big sky, nothing to see"),
+ ("c11",8,0,"an empty grassy mountain slope under a big sky, no people, no horses, nothing to see"),
  ("c11",9,0,"a modern crowd of hundreds of men of many nations in a city street, seen from above"),
  ("c11",10,0,f"{T16} in the dark river with the wooden cangue, only his face above water, moonlight"),
  ("c11",11,0,f"{T64} as Genghis Khan riding away into the misty mountains, seen from behind"),
@@ -173,23 +173,35 @@ SHEET = {"T": "the Temujin age sheet (left to right: age 9, 16, 44, 64)",
 STYLE = ("Use reference images 1 and 2 ONLY for drawing style: clean editorial comic illustration, even medium-weight black outlines, "
          "flat muted colours, minimal cel shading, calm simple backgrounds, period-accurate 12th-13th-century Mongolia and Asia. "
          "Do not copy any person or scene from them. Mongols wear deel robes, felt boots and fur hats; no Japanese or Chinese clothing on Mongols. ")
+# single-person reference images (cropped from the sheets) — one image per person/age, so the model cannot swap faces
+PREF = {"Temujin age 9": "b14934d3-72de-4d17-9925-a67190354179", "Temujin age 16": "b2272d01-5676-4de0-b612-94e0a5f33ef3",
+        "Temujin age 44": "8c6a4fc3-b00d-4105-96b4-302b9b9e1bc7", "Temujin age 64": "2107c04a-f0b4-4d87-b169-dd990e273330",
+        "Hoelun": "315aa6c7-78d0-42ed-97e8-966d9750b211", "Borte": "6680bb1e-ed85-40ac-8d58-614e7ac7f36e",
+        "Jamukha": "8b042c97-2e0a-4dcd-bd8e-2b5d962e9812", "Toghrul": "3d59e1a5-0188-473a-bd54-f65acba9daec"}
+LOOK = {"Temujin age 9": "boy of 9, brown felt deel, hair in two small side loops",
+        "Temujin age 16": "lean youth of 16, reddish-brown shoulder-length loose hair, NO hat, plain worn blue-grey deel with a white cloth sash, bow on his back",
+        "Temujin age 44": "man of 44, short beard and moustache, white fur hat with dark blue top, dark blue silk deel with gold trim",
+        "Temujin age 64": "old man of 64, grey beard and grey braids, white fur hat, deep red deel with fur collar",
+        "Hoelun": "tough woman of 35, long black double braids, NO headscarf, plain dark GREEN deel",
+        "Borte": "young woman, round face, cream headscarf, RED deel with a blue sash",
+        "Jamukha": "young chief, narrow face, thin moustache, long black braids, NO hat, PURPLE-brown deel, bow",
+        "Toghrul": "heavy old khan, grey beard, brown fur hat, OCHRE-YELLOW robe with a small cross on a chain"}
 def first(n): return next(k for k, x in enumerate(S, 1) if n in x[3])
 def request(i):
     p, l, frac, desc = S[i - 1]
     medias = [{"role": "image_references", "value": v} for v in STYLE_REFS]
     char = ""
-    for k, names in WHO.items():
-        hit = [n for n in names if re.search(r"\b" + n + r"\b", desc) and "sheet" in desc]
-        if hit and REFS[k]:
-            medias.append({"role": "image_references", "value": REFS[k]})
-            char += f"{', '.join(hit)} must look exactly like the matching figure in {SHEET[k]}. "
-            if k == "K": char += f"Only {', '.join(hit)} from that lineup sheet may appear; do not add the other people of the sheet. "
+    for n, mid in PREF.items():
+        if re.search(r"\b" + n + r"\b", desc) and "sheet" in desc:
+            medias.append({"role": "image_references", "value": mid})
+            char += f"Reference image {len(medias)} shows {n.split(' age')[0]} ({LOOK[n]}): draw him/her with exactly that face, hair and clothes. "
     for n, job in ANCHOR.items():
         if n in desc and job and first(n) != i:
             medias.append({"role": "image_references", "value": job})
-            char += f"{n} must look exactly like the man in the last reference image (same face, hair and clothes). "
+            char += f"{n} must look exactly like the man in reference image {len(medias)} (same face, hair and clothes). "
+    if char: char += "Each named person appears ONCE; nobody else in the scene may wear their clothes or look like them. "
     suffix = "Any words or numbers written in the scene must be exactly as given." if re.search(r"'[A-Z0-9][^']*'", desc) else "No text, no captions, no title, no letters anywhere."
     return {"index": i, "params": {"model": "gpt_image_2_5", "variant": "flare", "quality": "low", "aspect_ratio": "16:9", "use_unlim": False, "medias": medias,
-                                   "prompt": STYLE + char + "No gore, no blood, no dead bodies. SCENE (16:9): " + desc + ". " + suffix}}
+                                   "prompt": STYLE + char + "No gore, no blood, no dead bodies, no lanterns with glass, no candles in glass. SCENE (16:9): " + desc + ". " + suffix}}
 if __name__ == "__main__":
     print(len(S))

@@ -1,7 +1,8 @@
-# QC genghis — stage plan
+# QC genghis — stage frames
 
 ## Автоматические проверки
 - ✅ storyboard: 144 shots linted
+- ✅ frames: review sheets written to /home/user/lookme-viewer/history/genghis/qc/frames_*.jpg
 
 ## Ручной просмотр (обязательно, каждый лист, крупно)
 Открыть каждый `frames_*.jpg` и `cuts_*.jpg` и отметить номера кадров с проблемой:
