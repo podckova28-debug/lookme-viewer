@@ -34,6 +34,16 @@ for k, (p, l, f, d) in enumerate(S, 1):
     for n in names:
         if re.search(r"\b" + n + r"\b(?!'s)", d) and not has_sheet and not re.search(r"(statue|portrait|tapestry|painting) of " + n, d, re.I):
             fails.append(f"shot {k}: '{n}' appears without '(as in the sheet)' — face will drift")
+# named people that recur in 2+ shots must be on a sheet (WHO) or have an anchor frame (ANCHOR)
+known = set(names) | set(getattr(sh, "ANCHOR", {}).keys()) | set(getattr(sh, "NOT_PEOPLE", []))  # NOT_PEOPLE: places, peoples, titles listed in shots.py
+cnt = {}
+for k, (p, l, f, d) in enumerate(S, 1):
+    for n in set(re.findall(r"\b[A-Z][a-z]+(?: [A-Z][a-z]+)?\b", d)):
+        cnt.setdefault(n, []).append(k)
+STOP = {"Use", "SCENE", "No", "The", "Mongol", "Mongols", "Mongolian", "Chinese", "English", "French", "Persian", "Central Asian"}
+for n, ks in cnt.items():
+    if len(ks) >= 2 and n not in known and not any(n in kk or kk in n for kk in known) and n.split()[0] not in STOP:
+        warns.append(f"'{n}' appears in shots {ks[:8]} but has no sheet/anchor — if it is a person, add it to WHO or ANCHOR")
 # every narration line has a shot
 vo = {os.path.basename(f)[:-4]: [x for x in open(f) if x.strip()] for f in glob.glob(os.path.join(EP, "vo", "c*.txt"))}
 covered = {(p, l) for p, l, f, d in S}
