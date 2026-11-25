@@ -7,7 +7,7 @@ HO, BO, JA, TO = ("%s (as in the sheet)" % n for n in ("Hoelun", "Borte", "Jamuk
 S = [
  # c00 cold open
  ("c00",0,0,"the endless Mongolian steppe at night under a full moon, a winding river, distant felt tents"),
- ("c00",1,0,f"{T16} lying on his back in a dark freezing river among reeds, only his face above the water, moonlight, seen from above"),
+ ("c00",1,0,f"{T16} in a dark freezing river among reeds at night, only his head above the water, a heavy flat square wooden cangue board locked around his neck floating on the water around his head exactly like in the last reference image, his hands are NOT visible, moonlight"),
  ("c00",2,0,f"night, moonlight, dark blue tones: close-up of {T16} in the dark river, a heavy square wooden cangue board locked around his neck and wrists, his eyes wide open"),
  ("c00",3,0,"silhouettes of Mongol riders on horseback searching the river bank in the moonlight, one pointing at the reeds"),
  ("c00",4,0,f"{T16} alone on an empty steppe at dawn, ragged clothes, no horse, looking at the horizon"),
@@ -48,7 +48,7 @@ S = [
  ("c03",3,0,"a summer feast in a Tayichiud camp at night, men drinking from bowls around big fires, music"),
  ("c03",3,.6,f"{T16} in the cangue running away into the dark grassland, a young guard sitting dazed on the ground behind him"),
  ("c03",4,0,f"{T16} lying in the river among reeds, only his face and the edge of the wooden cangue above the water, moonlight"),
- ("c03",5,0,f"Sorkan Shira, a kind old Mongol herdsman with a short grey beard, bald head with a simple felt cap, plain worn GREY-GREEN sheepskin coat (NOT red, no fur collar, no braids), standing on the river bank looking down at {T16} in the water, finger on his lips, moonlight"),
+ ("c03",5,0,f"Sorkan Shira, a kind old Mongol herdsman with a short grey beard, bald head with a simple felt cap, plain worn GREY-GREEN sheepskin coat (NOT red, no fur collar, no braids), standing on the river bank, finger on his lips, looking down at {T16} who is in the water up to his chin with the heavy flat square wooden cangue board locked around his neck floating on the water exactly like in the last reference image, his hands NOT visible, no bow, moonlight"),
  ("c03",6,0,"a broken wooden cangue burning in a small fire inside a tent"),
  ("c03",6,.5,"a cart piled high with raw sheep wool outside a tent, searchers pushing spears into the wool, one boy's boot hidden deep inside"),
  ("c03",7,0,f"{T16} bareheaded with loose reddish-brown hair, NO hat, riding a horse alone across the steppe at dawn, looking back over his shoulder"),
@@ -166,6 +166,13 @@ STYLE_REFS = ["5d5f0d40-6d72-4644-b3e1-0f824c81becb", "8e1e1260-e11b-4083-a4d6-5
 REFS = {"T": "c633ee8a-96bb-40cc-81a3-0e8a9214defa", "K": "4adc513c-cd7a-44d3-98fd-7c7b29dcf1f9"}
 # minor recurring people without a sheet: their FIRST frame is generated alone, then used as the face reference (job id filled in)
 ANCHOR = {"Yesugei": "1a8245e8-67db-4fb9-9422-bbfed600141d", "Jebe": "547440df-92f1-496f-bc71-cf155834c57c", "Shah Muhammad": None, "Changchun": "6a984ba8-3196-4056-a22a-6c10e8c3520e"}
+# CONTINUITY: what must be true in a range of shots (state of people and props), checked by qc before any drawing.
+# (first shot, last shot, words that must appear in every description of that range that shows the person)
+CONTINUITY = [
+ (1, 3, "Temujin", ["cangue"]),          # cold open: the boy in the river is in the collar
+ (35, 40, "Temujin", ["cangue"]),        # captivity, escape, river, Sorkan Shira: still in the collar
+ (142, 142, "Temujin", ["cangue"]),      # final callback
+]
 NOT_PEOPLE = ["China", "Caspian Sea", "Genghis Khan", "Onon River", "Merkit", "Tatar", "Tayichiud", "Kereit", "Khwarazm", "Otrar", "Western Xia"]  # Genghis Khan = Temujin (sheet)
 WHO = {"T": ["Temujin"], "K": ["Hoelun", "Borte", "Jamukha", "Toghrul"]}
 SHEET = {"T": "the Temujin age sheet (left to right: age 9, 16, 44, 64)",
@@ -199,6 +206,8 @@ def request(i):
         if n in desc and job and first(n) != i:
             medias.append({"role": "image_references", "value": job})
             char += f"{n} must look exactly like the man in reference image {len(medias)} (same face, hair and clothes). "
+    if "cangue" in desc and i not in (41,):   # continuity: the same cangue in every river/captivity shot
+        medias.append({"role": "image_references", "value": "e9698e3e-4a66-4493-82a7-f6a9fc978c87"})
     if char: char += "Each named person appears ONCE; nobody else in the scene may wear their clothes or look like them. "
     suffix = "Any words or numbers written in the scene must be exactly as given." if re.search(r"'[A-Z0-9][^']*'", desc) else "No text, no captions, no title, no letters anywhere."
     return {"index": i, "params": {"model": "gpt_image_2_5", "variant": "flare", "quality": "low", "aspect_ratio": "16:9", "use_unlim": False, "medias": medias,

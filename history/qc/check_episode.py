@@ -44,6 +44,15 @@ STOP = {"Use", "SCENE", "No", "The", "Mongol", "Mongols", "Mongolian", "Chinese"
 for n, ks in cnt.items():
     if len(ks) >= 2 and n not in known and not any(n in kk or kk in n for kk in known) and n.split()[0] not in STOP:
         warns.append(f"'{n}' appears in shots {ks[:8]} but has no sheet/anchor — if it is a person, add it to WHO or ANCHOR")
+# continuity plan: in each range, every shot that shows the person must name the required props/state
+cont = getattr(sh, "CONTINUITY", None)
+if cont is None: warns.append("shots.py has no CONTINUITY plan (props/state per scene) — write it before drawing")
+for a0, b0, who, need in (cont or []):
+    for k in range(a0, b0 + 1):
+        d = S[k - 1][3]
+        if who in d:
+            miss = [w for w in need if w.lower() not in d.lower()]
+            if miss: fails.append(f"shot {k}: {who} must have {miss} here (continuity plan {a0}-{b0})")
 # every narration line has a shot
 vo = {os.path.basename(f)[:-4]: [x for x in open(f) if x.strip()] for f in glob.glob(os.path.join(EP, "vo", "c*.txt"))}
 covered = {(p, l) for p, l, f, d in S}
