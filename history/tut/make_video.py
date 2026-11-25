@@ -81,9 +81,10 @@ def segment(i, k, dur):
         img = f"{WORK}/seg/b{k:03d}.png"; base = _cover(frame(k), W, Hh); base.convert("RGB").save(img); mot = MOT[k % 4]
     ov = f"{WORK}/seg/ov{i:03d}.png"; overlay(k, base).save(ov)
     if isinstance(k, int) and k in CLIP:
-        src = f"{T}/frames/{CLIP[k]}"
+        src, _, lim = CLIP[k].partition(":"); src = f"{T}/frames/{src}"
         cd = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", src], capture_output=True, text=True).stdout)
-        vf = f"setpts={max(1.0, dur / cd):.4f}*PTS,scale={W}:{Hh}:force_original_aspect_ratio=increase,crop={W}:{Hh},fps={FPS}"
+        if lim: cd = min(cd, float(lim))
+        vf = f"trim=0:{cd:.3f},setpts=PTS-STARTPTS,setpts={max(1.0, dur / cd):.4f}*PTS,scale={W}:{Hh}:force_original_aspect_ratio=increase,crop={W}:{Hh},fps={FPS}"
         cmd = ["ffmpeg", "-v", "error", "-y", "-i", src, "-i", ov, "-filter_complex",
                f"[0:v]{vf}[v];[v][1:v]overlay=0:0,format=yuv420p,tpad=stop_mode=clone:stop_duration=30", "-frames:v", str(n)]
     else:

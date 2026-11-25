@@ -32,7 +32,9 @@ AGE = {12: "NEWBORN", 20: "AGE 5", 22: None, 23: "AGE 5", 24: "AGE 6", 25: "AGE 
 INSET = {4: ("carter", "HOWARD CARTER"), 25: ("tut9", "TUTANKHATEN"), 32: ("ay", "AY"), 33: ("horemheb", "HOREMHEB"), 58: ("ankh20", "ANKHESENAMUN"),
          114: ("carter", "HOWARD CARTER"), 116: ("carnarvon", "LORD CARNARVON")}
 # animated clips (kling, checked frame-by-frame); shot -> file in frames/
-CLIP = {5: "clip005.mp4", 8: "clip008.mp4", 124: "clip005.mp4", 125: "clip008.mp4"}
+CLIP = {5: "clip005.mp4", 8: "clip008.mp4", 124: "clip005.mp4", 125: "clip008.mp4",
+        18: "clip018.mp4:2.0", 41: "clip041.mp4", 70: "clip070.mp4", 86: "clip086.mp4:2.0", 112: "clip112.mp4", 136: "clip136.mp4", 143: "clip143.mp4"}
+# ":2.0" = use only the first 2 s (the rest drifts: priest face in 18, chariot shape in 86)
 
 def held(d, k):
     v, last = None, None
