@@ -13,7 +13,7 @@ S = [
  ("c00",5,0,"an English soldier in a red surcoat kneeling and tying two small sticks together into a rough little wooden cross with a strip of cloth"),
  ("c00",5,.6,"Joan age 19 (as in the sheet, short dark hair, long grey dress) holding a small rough wooden cross made of two sticks against her chest with both hands, grey sky, from the chest up"),
  ("c00",6,0,"Joan age 17 (as in the sheet) in armour on a white horse with a white banner leading charging French soldiers toward a fortress, pale sky"),
- ("c00",6,.6,"a cathedral interior, a young king kneeling as a gold crown is placed on his head, a girl in armour with a white banner beside the altar"),
+ ("c00",6,.6,"a cathedral interior, a young king kneeling as a gold crown is placed on his head, Joan age 17 (as in the sheet, short dark bob hair) in armour with a white banner beside the altar"),
  ("c00",7,0,"King Charles (as in the sheet) sitting alone on a throne in an empty hall, looking away, a letter dropped on the floor"),
  ("c00",8,0,"heroic portrait of Joan age 17 (as in the sheet) in armour holding her white banner on a hill, wind in her short hair, pale sky, an army behind her"),
  # c01 — the garden
@@ -58,7 +58,7 @@ S = [
  ("c03",10,0,"an old parchment map of France with a red pin on Orleans on the Loire, surrounded by small drawn English forts"),
  # c04 — the banner
  ("c04",0,0,"the medieval city of Orleans on the river Loire under siege in 1429, English wooden forts and siege camps around the walls, a long stone bridge"),
- ("c04",0,.6,"English soldiers with longbows in a wooden fort watching the walls of Orleans, cannons beside them"),
+ ("c04",0,.6,"English archers with longbows in a wooden fort watching the walls of Orleans, a short fat 15th-century bombard cannon on a wooden sled beside them, no telescope"),
  ("c04",1,0,"an old parchment map: an arrow from Orleans pointing south across France"),
  ("c04",2,0,"an armourer fitting a polished steel breastplate on Joan age 17 (as in the sheet) in a workshop"),
  ("c04",3,0,"a white banner being sewn by women, painted with Christ holding the globe between two angels, with the words exactly 'JHESUS MARIA'"),
@@ -171,7 +171,7 @@ S = [
  ("c11",6,.6,"close-up of an old trial document being torn in half"),
  ("c11",7,0,"Saint Peter's Basilica in Rome in 1920, a huge crowd in the square, a tapestry of a girl in armour hanging from the balcony"),
  ("c11",8,0,"close-up of a small rough wooden cross made of two sticks lying on a stone, a single ray of light on it"),
- ("c11",9,0,"a statue of Joan of Arc in armour on horseback with her banner in a city square at sunset, pigeons, pale sky"),
+ ("c11",9,0,"a gilded statue of Joan of Arc in armour on horseback with her banner on a stone pedestal in an old French town square with gothic church and half-timbered houses at sunset, pigeons, pale sky, no modern buildings"),
 ]
 STYLE_REFS = ["5d5f0d40-6d72-4644-b3e1-0f824c81becb", "8e1e1260-e11b-4083-a4d6-5f15a0a4008c"]
 REFS = {"J": "ac9f7bd4-bea4-4bd2-ab0f-1a3e7eb0e885", "K": "eeb244aa-692a-488f-a79e-351e6c74413a"}

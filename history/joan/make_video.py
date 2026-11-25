@@ -34,6 +34,10 @@ SFX = {1: ("clock", 0.0, .12), 2: ("stamp", 0.2, .16), 7: ("footsteps", 0.0, .12
        128: ("knock", 0.0, .2), 135: ("quill", 0.0, .14), 137: ("knock", 0.0, .22), 144: ("stamp", 0.2, .2),
        149: ("waves", 0.0, .14), 151: ("swords", 0.0, .18), 154: ("papers", 0.0, .16)}
 
+SFX = {} if os.environ.get("NOSFX", "1") == "1" else SFX   # sound effects off by default (user: they sound odd)
+CARD_WHOOSH = os.environ.get("NOSFX", "1") != "1"
+TAIL = 2.5   # seconds of hold after the last line
+
 def load_sfx(name, peak):
     raw = subprocess.run(["ffmpeg", "-v", "quiet", "-i", (f"{H}/sfx/{name}.mp3" if os.path.exists(f"{H}/sfx/{name}.mp3") else f"{H}/../mythology/sfx/{name}.mp3"), "-ac", "1", "-ar", str(SR), "-f", "f32le", "-"],
                          capture_output=True, check=True).stdout
@@ -53,6 +57,7 @@ for p in PARTS:
         audio.append(w); t += len(w) / SR
         g = GAP_LINE if i < len(fs) - 1 else GAP_PART
         audio.append(np.zeros(int(g * SR), np.float32)); t += g
+audio.append(np.zeros(int(TAIL * SR), np.float32)); t += TAIL
 narr = np.concatenate(audio); narr *= 0.7 / np.abs(narr).max()
 total = len(narr) / SR
 
@@ -76,7 +81,7 @@ def put(name, at, peak):
 for c in cuts:
     if isinstance(c[2], int) and c[2] in SFX:
         nm, off, pk = SFX[c[2]]; put(nm, c[0] + off, pk)
-    elif isinstance(c[2], str):
+    elif isinstance(c[2], str) and CARD_WHOOSH:
         put("whoosh", max(0, c[0] - 0.15), .2)
 mix = narr + fx
 sf.write(f"{WORK}/narration_raw.wav", mix, SR)
