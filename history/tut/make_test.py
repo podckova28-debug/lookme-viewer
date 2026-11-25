@@ -19,7 +19,7 @@ SHOTS = [
  (1, 0, 0,  "in",  "VALLEY OF THE KINGS, EGYPT", None),
  (2, 1, 0,  "out", None, None),
  (3, 2, 0,  "r",   None, None),
- (4, 2, .55, None, None, "clip004.mp4"),
+ (4, 2, .55, "in", None, None),
  (5, 3, 0,  None,  None, "clip005.mp4"),
  (6, 4, 0,  "l",   "LORD CARNARVON", None),
  (7, 5, 0,  "in",  None, None),
@@ -50,9 +50,12 @@ def overlay(k, cap):
     if cap: draw_text(L, cap, 92, 120)
     yr = YEAR.get(k)
     if yr:
-        f = ImageFont.truetype(FONT, 64); d = ImageDraw.Draw(L)
-        tw = d.textlength(yr, font=f); d.rounded_rectangle([W - 80 - tw, Hh - 120, W - 40, Hh - 40], 12, fill=(0, 0, 0, 150))
-        d.text((W - 60 - tw / 2, Hh - 80), yr, font=f, fill="white", anchor="mm")
+        # year plate: big, top-left, solid dark plate + red bar (brand), readable on any background and on a phone
+        f = ImageFont.truetype(FONT, 104); d = ImageDraw.Draw(L)
+        tw = d.textlength(yr, font=f); x0, y0 = 48, 44
+        d.rounded_rectangle([x0, y0, x0 + tw + 56, y0 + 124], 14, fill=(12, 12, 12, 215))
+        d.rectangle([x0, y0 + 112, x0 + tw + 56, y0 + 124], fill=(200, 30, 30, 255))
+        d.text((x0 + 28, y0 + 58), yr, font=f, fill="white", anchor="lm")
     if k in INSET:
         who, name = INSET[k]
         p = Image.open(f"{T}/chars/{who}.png").convert("RGB"); cw = int(p.width * .34); x0 = int(p.width * .5 - cw * .55); y0 = int(p.height * .02); p = p.crop((x0, y0, x0 + cw, y0 + cw))
