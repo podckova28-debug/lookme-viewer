@@ -71,6 +71,7 @@ CARDS = {  # label, value, fill, colour
  'd8':  ([('FEVER', '38°C', .45, (230, 120, 40)), ('PULSE', '95', .5, (230, 60, 60)), ('BUBO', 'DRAINING', .4, (170, 90, 160)), ('ENERGY', '25%', .25, (90, 190, 90))], 'ALIVE?!'),
  'd30': ([('FEVER', '36.8°C', .1, (230, 120, 40)), ('PULSE', '72', .35, (230, 60, 60)), ('BUBO', 'GONE', 0, (170, 90, 160)), ('ENERGY', '80%', .8, (90, 190, 90))], 'NEVER AGAIN'),
 }
+FIXCAM = {'h07a': ([.67, .5, 1.5], [.64, .5, 1.56])}   # keep the non-stickman figure on the left out of frame
 SECTION_GAP = {'H01', 'H06', 'H10', 'H14', 'H18', 'H29', 'H35', 'T01', 'E01'}
 MOVES = [([.5, .5, 1.0], [.5, .5, 1.08]), ([.45, .5, 1.1], [.55, .5, 1.1]), ([.5, .48, 1.12], [.5, .5, 1.0]), ([.55, .45, 1.06], [.45, .52, 1.12]),
          ([.5, .5, 1.15], [.5, .5, 1.03]), ([.4, .55, 1.1], [.5, .45, 1.16])]
@@ -90,6 +91,7 @@ for i, frames, tx in PLAN:
     ut = seg / len(units); prev = None
     for k, f in enumerate(units):
         a, b = MOVES[mv % len(MOVES)]; mv += 1
+        if f in FIXCAM: a, b = FIXCAM[f]
         if tx.get('card') and k == len(units) - 1 and f in ('h05a', 'h17b', 'h34a', 'h37a', 'h40b', 't03'):
             a, b = [.5, .5, 1.0], [.5, .5, 1.02]   # card frames stay still
         shots.append({'img': f, 'from': a, 'to': b, 't0': round(t0 + k * ut, 3), 't1': round(t0 + (k + 1) * ut, 3)})
