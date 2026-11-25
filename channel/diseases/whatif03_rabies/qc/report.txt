@@ -1,5 +1,5 @@
 QC timeline.json
-shots 76, unique frames 76, lines 45, 286.6s
+shots 80, unique frames 80, lines 46, 302.4s
 all automatic checks passed
 
 Now look at the sheets in /home/user/lookme-viewer/channel/diseases/whatif03_rabies/qc at full size:
