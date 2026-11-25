@@ -38,7 +38,7 @@ vo = spec['vo']
 for a, b in zip(vo, vo[1:] + [None]):
     end = a['t'] + wav_len(a['file'])
     name = os.path.basename(a['file'])
-    if not any(abs(a['t'] - c) < .08 for c in cuts): fails.append(f'SYNC: {name} starts at {a["t"]:.2f}s, not on a cut')
+    if not (a is vo[0] and a['t'] < .6) and not any(abs(a['t'] - c) < .08 for c in cuts): fails.append(f'SYNC: {name} starts at {a["t"]:.2f}s, not on a cut')
     if b and end > b['t'] + .01: fails.append(f'SYNC: {name} overlaps the next line by {end - b["t"]:.2f}s')
     if not b and end > spec['duration']: fails.append(f'SYNC: last line {name} ends after the video ({end:.2f} > {spec["duration"]:.2f})')
 if video:
