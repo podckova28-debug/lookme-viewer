@@ -1,0 +1,95 @@
+a01|NARRATOR|It's seventeen fifty, London, and you wake up with a fever.
+a02|NARRATOR|Your back hurts like someone kicked it.
+a03|NARRATOR|Three days later, the spots come.
+a04|NARRATOR|Everyone in the street knows exactly what this is.
+a05|SMALLPOX|Good morning.
+a06|NARRATOR|Smallpox. In the twentieth century alone, it killed about three hundred million people.
+a07|NARRATOR|More than all the wars of that century put together.
+a08|NARRATOR|And yet, it's the only human disease we've ever wiped off the planet.
+a09|NARRATOR|Here's the score so far.
+a10|NARRATOR|So how did we beat it? With a cow. Eventually.
+b01|NARRATOR|First, what it is.
+b02|NARRATOR|Smallpox is a virus, a tiny brick-shaped box packed with instructions.
+b03|NARRATOR|Someone sick coughs near you, and you breathe it in.
+b04|NARRATOR|For about twelve days, nothing happens. You feel fine.
+b05|NARRATOR|Meanwhile the virus is quietly copying itself in your blood.
+b06|NARRATOR|Then the fever hits, and the virus settles into your skin.
+b07|NARRATOR|The spots turn into hard bumps, like dried peas under the skin.
+b08|NARRATOR|They fill with pus, mostly on your face, hands and feet.
+b09|NARRATOR|About three in ten people die.
+b10|NARRATOR|The rest live, but the bumps leave deep scars for life. Some go blind.
+b11|SMALLPOX|I always leave a little souvenir.
+c01|NARRATOR|Smallpox is old. Very old.
+c02|NARRATOR|This is Pharaoh Ramses the Fifth. He died more than three thousand years ago.
+c03|NARRATOR|His mummy's face is covered in small bumps that look a lot like smallpox.
+c04|SMALLPOX|Lovely man. Terrible skin.
+c05|NARRATOR|It travelled the way everything travelled: with traders and armies.
+c06|NARRATOR|Every new city was a new buffet.
+c07|NARRATOR|And by the fifteen hundreds, it was everywhere in Europe, Asia and Africa. Except one place.
+d01|NARRATOR|Fifteen twenty. A Spanish ship lands in Mexico.
+d02|NARRATOR|On board is one man with smallpox.
+d03|NARRATOR|The people of the Americas had never met this virus. Their bodies had no defence at all.
+d04|NARRATOR|In the Aztec capital, Tenochtitlan, it spread through the whole city.
+d05|NARRATOR|It killed the emperor himself, Cuitlahuac.
+d06|NARRATOR|Across the Americas, millions died, sometimes before a single Spanish soldier even arrived.
+d07|NARRATOR|Historians still argue about the numbers. But they don't argue about this: smallpox did more damage than any sword.
+d08|NARRATOR|Scoreboard.
+e01|NARRATOR|Back in Europe, the seventeen hundreds were smallpox's golden age.
+e02|NARRATOR|It killed about four hundred thousand Europeans a year.
+e03|NARRATOR|And it did not care who you were.
+e04|NARRATOR|It killed a queen of England, a young emperor of Russia, and a king of France.
+e05|SMALLPOX|I collect crowns.
+e06|NARRATOR|Survivors had faces full of scars. So fashion stepped in.
+e07|NARRATOR|Little black patches of silk, glued onto the face. Stars, moons, hearts.
+e08|NARRATOR|One patch to hide a scar. Five patches to hide the rest.
+e09|NARRATOR|Very fashionable. Not very effective.
+f01|NARRATOR|But people had noticed one thing.
+f02|NARRATOR|If you survived smallpox once, you never got it again.
+f03|NARRATOR|So in China, doctors ground up dried smallpox scabs and blew the powder up your nose.
+f04|NARRATOR|In India and Africa, they scratched a little pus from a mild case into the skin.
+f05|NARRATOR|You got a small case on purpose, so you'd never get the big one.
+f06|NARRATOR|It was called variolation. And it worked, mostly.
+f07|NARRATOR|Seventeen seventeen. Lady Mary Wortley Montagu, wife of the British ambassador in Constantinople, sees it done.
+f08|NARRATOR|She'd had smallpox herself. It killed her brother and took her eyelashes.
+f09|NARRATOR|So she had her own son done.
+f10|NARRATOR|Back in London, doctors were not impressed.
+f11|NARRATOR|So in seventeen twenty one, they tested it on six prisoners, who were promised freedom if they lived.
+f12|NARRATOR|All six lived. All six walked free.
+f13|NARRATOR|That same year, Boston tried it too. The preacher Cotton Mather had learned it from an enslaved African man named Onesimus.
+f14|NARRATOR|The catch: you could still die from it, about one or two in a hundred. And you were contagious.
+f15|SMALLPOX|Still. Not bad. I'm rather proud of you.
+g01|NARRATOR|Now, the cow.
+g02|NARRATOR|In the English countryside, there was an old rumour about milkmaids.
+g03|NARRATOR|They caught cowpox from the cows, a mild disease with a few blisters on the hands.
+g04|NARRATOR|And then, somehow, they never caught smallpox.
+g05|NARRATOR|Seventeen ninety six. A country doctor called Edward Jenner decides to test the rumour.
+g06|NARRATOR|A milkmaid, Sarah Nelmes, has cowpox, which she caught from a cow named Blossom.
+g07|NARRATOR|Jenner takes a little fluid from her blister and scratches it into the arm of an eight year old boy, James Phipps.
+g08|NARRATOR|James gets a mild cowpox. Then Jenner does something nobody would allow today.
+g09|NARRATOR|He scratches real smallpox into the boy's arm.
+g10|NARRATOR|And nothing happens.
+g11|SMALLPOX|I beg your pardon?
+g12|NARRATOR|Jenner called it vaccination, from vacca, the Latin word for cow.
+g13|NARRATOR|Some people were terrified it would turn them into cows.
+g14|NARRATOR|It did not.
+g15|NARRATOR|Scoreboard.
+h01|NARRATOR|But a vaccine only works if it reaches people.
+h02|NARRATOR|By the nineteen fifties, rich countries were free of smallpox. Much of the world was not.
+h03|NARRATOR|So in nineteen sixty seven, the World Health Organization tried something no one had ever done.
+h04|NARRATOR|Wipe out a disease. Everywhere.
+h05|NARRATOR|Their secret weapon was a needle with two prongs. Cheap, simple, and it needed far less vaccine.
+h06|NARRATOR|And instead of vaccinating everyone, they hunted.
+h07|NARRATOR|Find one case, then vaccinate everyone around it, in a ring.
+h08|NARRATOR|No one to jump to, nowhere to go.
+h09|NARRATOR|Nineteen seventy seven, Somalia. A hospital cook named Ali Maow Maalin catches smallpox.
+h10|NARRATOR|He survives. He's the last person ever to catch it naturally.
+h11|NARRATOR|He spent the rest of his life vaccinating children against polio.
+h12|NARRATOR|On the eighth of May, nineteen eighty, the world declared smallpox gone.
+h13|SMALLPOX|This is outrageous.
+h14|NARRATOR|Final score.
+i01|NARRATOR|Well, almost gone.
+i02|NARRATOR|Two freezers still hold the virus: one in the United States, one in Russia.
+i03|NARRATOR|Scientists have argued for decades about whether to destroy them.
+i04|SMALLPOX|I'll wait.
+i05|NARRATOR|So next time someone asks if vaccines ever really work, tell them about the cow.
+i06|NARRATOR|Would you have let Jenner scratch your arm in seventeen ninety six? Tell me in the comments.
