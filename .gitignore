@@ -10,3 +10,5 @@ preview_chikatilo_long/
 preview_mikh_long/
 *.pyc
 channel/diseases/*/review/
+channel/diseases/*/upload/*.mp4.a.wav
+channel/diseases/*/upload/*.mp4.v.mp4

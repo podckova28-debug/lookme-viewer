@@ -21,17 +21,17 @@ PLAN = [
  ('M1A', ['mc1'], {'day': 'Month 1', 'notes': {'mc1': [N('just tired', 1500, 300, 1080, 420)]}}),
  ('M1B', ['m_hanky'], {'cap': 'Still clean'}),
  ('M1C', ['at1'], {'notes': {'at1': [N('breaking out', 420, 250, 790, 380)]}}),
- ('M1D', ['m1d'], {'cap': 'Cod liver oil', 'notes': {'m1d': [N('(it has vitamin D)', 1450, 300)]}, 'card': 'm1'}),
+ ('M1D', ['m1d'], {'cap': 'Cod liver oil', 'notes': {'m1d': [N('(it has vitamin D)', 1450, 300)]}, 'card': 'm1', 'card_x': 1200}),
  ('M6A', ['mc2'], {'day': 'Month 6', 'notes': {'mc2': [N('the hectic flush', 1500, 330, 1080, 470)]}}),
  ('M6B', ['m6b'], {'notes': {'m6b': [N('soaked', 1050, 560, 640, 640)]}}),
- ('M6C', ['hk2'], {'notes': {'hk2': [N('a pink speck', 1100, 420, 735, 670)]}, 'card': 'm6'}),
+ ('M6C', ['hk2'], {'notes': {'hk2': [N('a pink speck', 1100, 420, 735, 670)]}}),
  ('M6D', ['m6d'], {'cap': 'Leeches', 'strike': True}),
- ('M6E', ['m6e'], {}),
+ ('M6E', ['m6e'], {'card': 'm6', 'card_x': 1200}),   # the card sits beside the Lady, not over the pink speck
  ('Y1A', ['y1a', 'hk3'], {'day': 'Year 1'}),
  ('Y1B', ['at2'], {'notes': {'at2': [N('a hole', 420, 250, 760, 380), N('a broken vessel', 420, 650, 770, 470)]}}),
  ('Y1C', ['y1c'], {'notes': {'y1c': [N('next', 1450, 250, 1040, 500)]}}),
  ('Y1D', ['y1d'], {'cap': 'Spes phthisica: the hope of the consumptive'}),
- ('Y1E', ['y1e'], {'cap': 'Go south. On a clerk\'s wages.', 'card': 'y1'}),
+ ('Y1E', ['y1e'], {'cap': 'Go south. On a clerk\'s wages.', 'card': 'y1', 'card_x': 1150}),
  ('Y2A', ['mc4'], {'day': 'Year 2', 'notes': {'mc4': [N('the look. fashionable.', 1480, 300, 1090, 420)]}}),
  ('Y2B', ['y2b'], {}),
  ('Y2C', ['at3'], {}),
@@ -58,9 +58,9 @@ shots, texts, vo, sfx, marks = [], [], [], [], {}
 used = set()
 def shot(f, a, b):
     shots.append({'img': f, 'from': [.5, .5, 1.025], 'to': [.5, .5, 1.0], 'settle': .3, 't0': round(a, 3), 't1': round(b, 3)})
-def card(name, a, b):
+def card(name, a, b, x=440):
     rows, mood = CARDS[name]; ch = 130 + 100 * len(rows) + 90
-    texts.append({'style': 'card', 'x': 440, 'y': (1080 - ch) // 2, 'dim': True, 'rows': [list(r[:3]) + [list(r[3])] for r in rows], 'mood': mood, 't0': a + .1, 't1': b, 'pop': True})
+    texts.append({'style': 'card', 'x': x, 'y': (1080 - ch) // 2, 'dim': True, 'rows': [list(r[:3]) + [list(r[3])] for r in rows], 'mood': mood, 't0': a + .1, 't1': b, 'pop': True})
     sfx.append({'kind': 'shutter', 't': round(a + .1, 3), 'gain': .3})
 t = 0.3
 for i, frames, tx in PLAN:
@@ -88,7 +88,7 @@ for i, frames, tx in PLAN:
         a, b = starts[f]
         for nn in notes: texts.append({'style': 'note', 't0': a + .25, 't1': b, **nn})
     if 'card' in tx:
-        a, b = starts[frames[-1]]; card(tx['card'], max(a, b - CARD_MIN), b)   # the scene shows first, the card only at the end
+        a, b = starts[frames[-1]]; card(tx['card'], max(a, b - CARD_MIN), b, tx.get('card_x', 440))   # the scene shows first, the card only at the end
     if tx.get('strike'):
         st0 = t0 + max(1.0, d * .55)
         texts.append({'style': 'strike', 'text': tx['cap'], 'maxw': 1500, 't0': st0, 't1': t1 - .05})
