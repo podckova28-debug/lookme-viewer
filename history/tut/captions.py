@@ -43,6 +43,6 @@ def held(d, k):
     return v
 
 # manual overrides found in the per-cut review (fractions of width/height)
-CAPPOS = {15: (.78, .50), 27: (.28, .12), 39: (.72, .12), 44: (.72, .12), 118: (.30, .12), 131: (.75, .12), 135: (.70, .12)}
+CAPPOS = {15: (.81, .535), 27: (.28, .12), 39: (.72, .12), 44: (.72, .12), 118: (.30, .12), 131: (.75, .12), 135: (.70, .12)}
 PLATE_LEFT = {38, 43, 51, 65, 74, 95, 98, 108, 131, 136}
 PLATE_TOP = {23, 91, 120, 141}   # top-right corner (bottom corners cover faces/props)
