@@ -13,13 +13,13 @@ def layer(text, size, stroke, squeeze):
     ImageDraw.Draw(L).text((2 - b[0], 2 - b[1]), text, font=f, fill="black", stroke_width=stroke, stroke_fill="white")
     return L.resize((int(L.width * squeeze), L.height), Image.LANCZOS)
 T = layer("GENGHIS KHAN", 300, 12, .78)
-T = T.resize((int(W * .55), int(T.height * W * .55 / T.width)), Image.LANCZOS)
+T = T.resize((int(W * .685), int(T.height * W * .685 / T.width)), Image.LANCZOS)
 Y = layer("1162 – 1227", 200, 10, .80)
-Y = Y.resize((int(Y.width * T.height * .62 / Y.height), int(T.height * .62)), Image.LANCZOS)
-x1 = int(W * .885); ty = int(H * .085)
+Y = Y.resize((int(Y.width * T.height * .68 / Y.height), int(T.height * .68)), Image.LANCZOS)
+x1 = int(W * .985); ty = int(H * .07)
 im.paste(T, (x1 - T.width, ty), T)
-im.paste(Y, (x1 - Y.width - int(W * .02), ty + T.height + int(H * .015)), Y)
-r = int(T.height * .40); cx = x1 + int(W * .012) + r + 10; cy = ty + T.height // 2
+yy = ty + T.height + int(H * .02); im.paste(Y, (x1 - Y.width, yy), Y)
+r = int(Y.height * .52); cx = x1 - Y.width - int(W * .02) - r - 10; cy = yy + Y.height // 2
 S = 4
 def mask(fn):
     m = Image.new("L", (W * S, H * S), 0); fn(ImageDraw.Draw(m)); return m.resize((W, H), Image.LANCZOS)

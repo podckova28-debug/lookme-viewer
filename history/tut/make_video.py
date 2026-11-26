@@ -94,10 +94,20 @@ def segment(i, k, dur):
         cmd = ["ffmpeg", "-v", "error", "-y", "-i", src, "-i", ov, "-filter_complex",
                f"[0:v]{vf}[v];[v][1:v]overlay=0:0,format=yuv420p,tpad=stop_mode=clone:stop_duration=30", "-frames:v", str(n)]
     else:
-        z = {"in": "1+0.08*on/{n}", "out": "1.08-0.08*on/{n}", "l": "1.08", "r": "1.08"}[mot].format(n=n)
-        x = {"in": "iw/2-(iw/zoom/2)", "out": "iw/2-(iw/zoom/2)", "l": "(iw-iw/zoom)*(1-on/{n})", "r": "(iw-iw/zoom)*on/{n}"}[mot].format(n=n)
-        vf = f"scale=3840:2160,zoompan=z='{z}':x='{x}':y='ih/2-(ih/zoom/2)':d={n}:s={W}x{Hh}:fps={FPS}"
-        cmd = ["ffmpeg", "-v", "error", "-y", "-loop", "1", "-i", img, "-i", ov, "-filter_complex", f"[0:v]{vf}[v];[v][1:v]overlay=0:0,format=yuv420p", "-frames:v", str(n)]
+        # smooth camera move: sub-pixel crop box per frame (zoompan rounds to whole pixels -> visible shake)
+        src = (Image.open(img).convert("RGB").resize((2 * W, 2 * Hh), Image.LANCZOS) if isinstance(k, str) else _cover(frame(k), 2 * W, 2 * Hh).convert("RGB"))
+        cmd0 = ["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{Hh}", "-r", str(FPS), "-i", "-",
+                "-i", ov, "-filter_complex", "[0:v][1:v]overlay=0:0,format=yuv420p", "-frames:v", str(n),
+                "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-r", str(FPS), out]
+        pr = subprocess.Popen(cmd0, stdin=subprocess.PIPE)
+        for f in range(n):
+            t = f / max(1, n - 1); t = t * t * (3 - 2 * t) * 0.35 + t * 0.65   # gentle ease at the ends
+            z = {"in": 1 + .08 * t, "out": 1.08 - .08 * t, "l": 1.08, "r": 1.08}[mot]
+            cw, ch = W / z, Hh / z
+            x0 = {"in": (W - cw) / 2, "out": (W - cw) / 2, "l": (W - cw) * (1 - t), "r": (W - cw) * t}[mot]; y0 = (Hh - ch) / 2
+            pr.stdin.write(src.resize((W, Hh), Image.BICUBIC, box=(2 * x0, 2 * y0, 2 * (x0 + cw), 2 * (y0 + ch))).tobytes())
+        pr.stdin.close(); pr.wait(); assert pr.returncode == 0, out
+        return
     subprocess.run(cmd + ["-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-r", str(FPS), out], check=True)
 
 rng = None
