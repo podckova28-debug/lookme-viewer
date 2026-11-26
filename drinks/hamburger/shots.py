@@ -115,7 +115,7 @@ SHOTS = [
  (5,14,SHOW(6),"contestant 6"),
  (5,15,"an old map of California with a little road leading to a sunny town and a small arrow, no people","California"),
  # p6 — McDonald's
- (6,0,"two brothers in 1940 short-sleeved shirts standing proudly in front of a small octagonal drive-in restaurant with a barbecue sign, palm trees","San Bernardino, 1940"),
+ (6,0,"two adult brothers in their thirties, both grown men of the same height, in 1940 short-sleeved shirts, standing proudly in front of a small octagonal drive-in restaurant with a barbecue sign, palm trees","San Bernardino, 1940"),
  (6,1,"a 1940s waitress in a uniform carrying a tray of food to a customer sitting in a 1940 car",""),
  (6,2,"a long 1940s menu board with twenty five barbecue dishes listed, the text too small to read, no people","25 kinds of BBQ"),
  (6,3,"a pile of broken white plates and a few missing forks drawn as dotted outlines, no people","broken plates"),
@@ -154,7 +154,7 @@ SHOTS = [
  (8,3,"two food tasters in a modern studio chewing politely with slightly unconvinced faces, glasses of water ready","a little dry"),
  (8,4,SHOW(6),"so who?"),
  (8,5,"five old sepia portraits in oval frames hanging on a wall side by side, each a different 19th-century man shown head and shoulders only, a question mark above each","Charlie? Menches? Dave? Oscar? Louis?"),
- (8,6,"a big hand-drawn 'ALL OF THEM' stamp in red ink, no people",""),
+ (8,6,"a big hand-drawn 'ALL OF THEM' rubber stamp imprint in red ink on plain paper, nothing else, no people, no animals",""),
  (8,7,"a big hand-drawn 'NONE OF THEM' stamp in red ink, no people",""),
  (8,8,"a timeline ribbon from left to right with simple objects only: a German frying pan, a fair ticket, a book titled 'THE JUNGLE', a small white castle and a stopwatch, no people","Hamburg → fair → Jungle → castle → speed"),
  (8,9,"an official-looking birth certificate with a lab burger drawn on it and a red wax seal, no people","birth certificate"),
