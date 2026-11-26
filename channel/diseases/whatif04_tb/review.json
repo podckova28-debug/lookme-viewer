@@ -174,6 +174,27 @@
    "who": "hero",
    "where": "mirror",
    "note": "x2: two arms in coat sleeves, two black hands at the tie, white cuffs; one mirror; neck white collar ok"
+  },
+  "mc2": {
+   "verdict": "ok",
+   "sha": "5bcdc120f08994dc",
+   "who": "hero",
+   "where": "mirror",
+   "note": "x2 hands at tie ok; pink spots"
+  },
+  "mc3": {
+   "verdict": "ok",
+   "sha": "c503dbef71803c66",
+   "who": "hero",
+   "where": "mirror",
+   "note": "x2 hands hang in sleeves; thinner, red spots"
+  },
+  "mc4": {
+   "verdict": "ok",
+   "sha": "3d924b5ab6c6cc83",
+   "who": "hero",
+   "where": "mirror",
+   "note": "x2 hands ok; grey face, very thin neck, coat loose"
   }
  },
  "video": {}
