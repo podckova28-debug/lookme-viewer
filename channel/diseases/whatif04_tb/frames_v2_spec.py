@@ -8,7 +8,7 @@ SN=("All people are simple cartoon stickmen: big plain smooth white round head w
     "thin BLACK stick arms and legs (never skin-coloured), small black mitten hands. Medium-wide shot, every person fully visible from head to feet. "
     "Anatomy: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs; each hand holds at most one thing. No text, no readable writing, no numbers. Not gory. ")
 KEEP="Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every piece of furniture, window and wall; do not add or remove furniture. "
-HERO="the young clerk from the SECOND reference image (same stickman: dark brown frock coat, cream waistcoat, white shirt, black neck-tie)"
+HERO="the young clerk from the SECOND reference image (same bald stickman with a round white head: dark brown frock coat, cream waistcoat, white shirt, black neck-tie)"
 DOC="a doctor of 1850: a stickman in a black frock coat, a tall black top hat, a white high collar"
 NEW=("2D animated history explainer frame, 16:9, no text. Same ink-and-fine-cross-hatching drawing style and muted sepia palette as the reference. London 1850, no electric light, no clock tower. ")
 DIAG=("Hand-drawn explainer diagram in ink and muted watercolour on aged paper, 16:9, same style as the reference, no words, no letters, no numbers. ")

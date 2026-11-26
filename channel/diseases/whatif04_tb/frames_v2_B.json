@@ -1,0 +1,635 @@
+{
+ "a": [
+  {
+   "index": 0,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every piece of furniture, window and wall; do not add or remove furniture. All people are simple cartoon stickmen: big plain smooth white round head with a black outline and NO hair, two dot eyes, simple mouth and eyebrows, no nose; thin BLACK stick arms and legs (never skin-coloured), small black mitten hands. Medium-wide shot, every person fully visible from head to feet. Anatomy: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs; each hand holds at most one thing. No text, no readable writing, no numbers. Not gory. the young clerk from the SECOND reference image (same bald stickman with a round white head: dark brown frock coat, cream waistcoat, white shirt, black neck-tie) walks out of a door on the left onto the foggy pavement, coughing into his fist, tired.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "6573bc08-5e56-4ee8-9356-93592a6b56b5",
+      "role": "image_references"
+     },
+     {
+      "value": "6e960e6c-4c0d-410e-833f-ce2535c6251e",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 1,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every piece of furniture, window and wall; do not add or remove furniture. All people are simple cartoon stickmen: big plain smooth white round head with a black outline and NO hair, two dot eyes, simple mouth and eyebrows, no nose; thin BLACK stick arms and legs (never skin-coloured), small black mitten hands. Medium-wide shot, every person fully visible from head to feet. Anatomy: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs; each hand holds at most one thing. No text, no readable writing, no numbers. Not gory. Four clerks (stickmen in dark frock coats) stand at the tall desks writing in ledgers; the one in the middle coughs into the air, a faint cloud drifting toward the others. Nobody touches anybody.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "02403e99-572e-4861-86c5-64651ce7367e",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 2,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every piece of furniture, window and wall; do not add or remove furniture. All people are simple cartoon stickmen: big plain smooth white round head with a black outline and NO hair, two dot eyes, simple mouth and eyebrows, no nose; thin BLACK stick arms and legs (never skin-coloured), small black mitten hands. Medium-wide shot, every person fully visible from head to feet. Anatomy: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs; each hand holds at most one thing. No text, no readable writing, no numbers. Not gory. A crowd of six 1850 Londoners (stickmen in dark coats, top hats and bonnets) walk along the foggy pavement in both directions; in the chest of four of them a tiny round grey stone lump glows faintly through the clothes, like an X-ray.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "6573bc08-5e56-4ee8-9356-93592a6b56b5",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 3,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every piece of furniture, window and wall; do not add or remove furniture. All people are simple cartoon stickmen: big plain smooth white round head with a black outline and NO hair, two dot eyes, simple mouth and eyebrows, no nose; thin BLACK stick arms and legs (never skin-coloured), small black mitten hands. Medium-wide shot, every person fully visible from head to feet. Anatomy: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs; each hand holds at most one thing. No text, no readable writing, no numbers. Not gory. Night, cold blue light, one candle: the young clerk from the SECOND reference image (same bald stickman with a round white head: dark brown frock coat, cream waistcoat, white shirt, black neck-tie) sits on the chair at the small table in the middle of the room doing accounts in a ledger by the candle, a thin blanket round his shoulders, a small puff of breath vapour from his mouth.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "9c809db2-3560-4517-ae6a-dc3bdbf33ffb",
+      "role": "image_references"
+     },
+     {
+      "value": "6e960e6c-4c0d-410e-833f-ce2535c6251e",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 4,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every piece of furniture, window and wall; do not add or remove furniture. All people are simple cartoon stickmen: big plain smooth white round head with a black outline and NO hair, two dot eyes, simple mouth and eyebrows, no nose; thin BLACK stick arms and legs (never skin-coloured), small black mitten hands. Medium-wide shot, every person fully visible from head to feet. Anatomy: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs; each hand holds at most one thing. No text, no readable writing, no numbers. Not gory. Day: a doctor of 1850: a stickman in a black frock coat, a tall black top hat, a white high collar stands by the bed holding a big spoon of yellow oil toward the young clerk from the SECOND reference image (same bald stickman with a round white head: dark brown frock coat, cream waistcoat, white shirt, black neck-tie), who sits on the bed and leans away, grimacing in disgust; a brown bottle in the doctor's other hand.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "9c809db2-3560-4517-ae6a-dc3bdbf33ffb",
+      "role": "image_references"
+     },
+     {
+      "value": "6e960e6c-4c0d-410e-833f-ce2535c6251e",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 5,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every piece of furniture, window and wall; do not add or remove furniture. All people are simple cartoon stickmen: big plain smooth white round head with a black outline and NO hair, two dot eyes, simple mouth and eyebrows, no nose; thin BLACK stick arms and legs (never skin-coloured), small black mitten hands. Medium-wide shot, every person fully visible from head to feet. Anatomy: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs; each hand holds at most one thing. No text, no readable writing, no numbers. Not gory. Night, blue light: the young clerk from the SECOND reference image (same bald stickman with a round white head: dark brown frock coat, cream waistcoat, white shirt, black neck-tie), now in a long off-white nightshirt, sits up in the bed, the grey sheets around him dark and soaked with sweat, sweat drops on his round head, exhausted.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "9c809db2-3560-4517-ae6a-dc3bdbf33ffb",
+      "role": "image_references"
+     },
+     {
+      "value": "6e960e6c-4c0d-410e-833f-ce2535c6251e",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 6,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every piece of furniture, window and wall; do not add or remove furniture. All people are simple cartoon stickmen: big plain smooth white round head with a black outline and NO hair, two dot eyes, simple mouth and eyebrows, no nose; thin BLACK stick arms and legs (never skin-coloured), small black mitten hands. Medium-wide shot, every person fully visible from head to feet. Anatomy: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs; each hand holds at most one thing. No text, no readable writing, no numbers. Not gory. Day: the young clerk from the SECOND reference image (same bald stickman with a round white head: dark brown frock coat, cream waistcoat, white shirt, black neck-tie) lies on the bed in his white shirt; a doctor of 1850: a stickman in a black frock coat, a tall black top hat, a white high collar stands beside the bed holding a small glass jar with three small dark leeches inside, about to put one on the hero's chest; the hero looks at the jar, worried. Not gory.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "9c809db2-3560-4517-ae6a-dc3bdbf33ffb",
+      "role": "image_references"
+     },
+     {
+      "value": "6e960e6c-4c0d-410e-833f-ce2535c6251e",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 7,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every piece of furniture, window and wall; do not add or remove furniture. All people are simple cartoon stickmen: big plain smooth white round head with a black outline and NO hair, two dot eyes, simple mouth and eyebrows, no nose; thin BLACK stick arms and legs (never skin-coloured), small black mitten hands. Medium-wide shot, every person fully visible from head to feet. Anatomy: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs; each hand holds at most one thing. No text, no readable writing, no numbers. Not gory. No people except one figure: Tuberculosis as 'the White Lady' exactly as on the THIRD reference sheet (gaunt woman, waxy grey-white skin, red cheek blotches, dark-ringed eyes, long dark hair, tattered off-white nightgown, grey knitted shawl), standing by the bed, holding a small glass jar with dark leeches up to the light and smiling at it with ironic delight. Exactly one figure, two arms, two hands. STYLE FOR HER: drawn as a storybook cartoon character, NOT horror and NOT realistic: smooth pale grey-white face drawn with clean ink lines, two small round rosy fever spots on the cheeks (no rash, no blotches anywhere else), soft dark rings under the eyes, a small gentle ironic smile with closed lips, slim but not skeletal, long dark hair neatly loose. Charming and a little sad, like a Victorian ghost in a children's history book.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "9c809db2-3560-4517-ae6a-dc3bdbf33ffb",
+      "role": "image_references"
+     },
+     {
+      "value": "6e960e6c-4c0d-410e-833f-ce2535c6251e",
+      "role": "image_references"
+     },
+     {
+      "value": "1de80806-b140-40d9-8e0b-9a3a526ecee8",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 8,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every piece of furniture, window and wall; do not add or remove furniture. All people are simple cartoon stickmen: big plain smooth white round head with a black outline and NO hair, two dot eyes, simple mouth and eyebrows, no nose; thin BLACK stick arms and legs (never skin-coloured), small black mitten hands. Medium-wide shot, every person fully visible from head to feet. Anatomy: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs; each hand holds at most one thing. No text, no readable writing, no numbers. Not gory. Day: the young clerk from the SECOND reference image (same bald stickman with a round white head: dark brown frock coat, cream waistcoat, white shirt, black neck-tie) stands in the middle of the room staring in horror at an open white handkerchief in his hands with a bright red stain on it; shock lines around his head. Not gory.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "9c809db2-3560-4517-ae6a-dc3bdbf33ffb",
+      "role": "image_references"
+     },
+     {
+      "value": "6e960e6c-4c0d-410e-833f-ce2535c6251e",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 9,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every piece of furniture, window and wall; do not add or remove furniture. All people are simple cartoon stickmen: big plain smooth white round head with a black outline and NO hair, two dot eyes, simple mouth and eyebrows, no nose; thin BLACK stick arms and legs (never skin-coloured), small black mitten hands. Medium-wide shot, every person fully visible from head to feet. Anatomy: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs; each hand holds at most one thing. No text, no readable writing, no numbers. Not gory. On the stairs a small boy (a stickman boy in a brown jacket, short trousers and a flat cap) sits on a step and coughs into his fist; his mother (a stickman woman in a grey dress, white apron and white cap) stands two steps below and looks at him, worried.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "bc86309c-ab95-4ed7-beb7-6fab57b6bc1e",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 10,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every piece of furniture, window and wall; do not add or remove furniture. All people are simple cartoon stickmen: big plain smooth white round head with a black outline and NO hair, two dot eyes, simple mouth and eyebrows, no nose; thin BLACK stick arms and legs (never skin-coloured), small black mitten hands. Medium-wide shot, every person fully visible from head to feet. Anatomy: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs; each hand holds at most one thing. No text, no readable writing, no numbers. Not gory. Day: the young clerk from the SECOND reference image (same bald stickman with a round white head: dark brown frock coat, cream waistcoat, white shirt, black neck-tie), visibly thinner, stands at the window looking out with a dreamy, hopeful smile, one hand on his chest, a few small sparkles of optimism around his head.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "9c809db2-3560-4517-ae6a-dc3bdbf33ffb",
+      "role": "image_references"
+     },
+     {
+      "value": "6e960e6c-4c0d-410e-833f-ce2535c6251e",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 11,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every piece of furniture, window and wall; do not add or remove furniture. All people are simple cartoon stickmen: big plain smooth white round head with a black outline and NO hair, two dot eyes, simple mouth and eyebrows, no nose; thin BLACK stick arms and legs (never skin-coloured), small black mitten hands. Medium-wide shot, every person fully visible from head to feet. Anatomy: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs; each hand holds at most one thing. No text, no readable writing, no numbers. Not gory. Evening, candle: the young clerk from the SECOND reference image (same bald stickman with a round white head: dark brown frock coat, cream waistcoat, white shirt, black neck-tie), thinner, sits on the chair at the small table counting a few small coins in his hand with a sad face; above his head a thought bubble shows a steamship and palm trees on a sunny island.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "9c809db2-3560-4517-ae6a-dc3bdbf33ffb",
+      "role": "image_references"
+     },
+     {
+      "value": "6e960e6c-4c0d-410e-833f-ce2535c6251e",
+      "role": "image_references"
+     }
+    ]
+   }
+  }
+ ],
+ "b": [
+  {
+   "index": 12,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every piece of furniture, window and wall; do not add or remove furniture. All people are simple cartoon stickmen: big plain smooth white round head with a black outline and NO hair, two dot eyes, simple mouth and eyebrows, no nose; thin BLACK stick arms and legs (never skin-coloured), small black mitten hands. Medium-wide shot, every person fully visible from head to feet. Anatomy: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs; each hand holds at most one thing. No text, no readable writing, no numbers. Not gory. the young clerk from the SECOND reference image (same bald stickman with a round white head: dark brown frock coat, cream waistcoat, white shirt, black neck-tie), very thin, his frock coat hanging loose, stops halfway up the stairs, clinging to the banister with both hands, out of breath, head down.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "bc86309c-ab95-4ed7-beb7-6fab57b6bc1e",
+      "role": "image_references"
+     },
+     {
+      "value": "7a2e21aa-126d-4712-b734-b34a19bc7f33",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 13,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every piece of furniture, window and wall; do not add or remove furniture. All people are simple cartoon stickmen: big plain smooth white round head with a black outline and NO hair, two dot eyes, simple mouth and eyebrows, no nose; thin BLACK stick arms and legs (never skin-coloured), small black mitten hands. Medium-wide shot, every person fully visible from head to feet. Anatomy: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs; each hand holds at most one thing. No text, no readable writing, no numbers. Not gory. Night: the room is empty and dark, nobody in it; the bed is neatly made, the brown frock coat hangs on the chair, the candle on the table has just gone out with a thin wisp of smoke. Quiet and sad.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "9c809db2-3560-4517-ae6a-dc3bdbf33ffb",
+      "role": "image_references"
+     },
+     {
+      "value": "6e960e6c-4c0d-410e-833f-ce2535c6251e",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 14,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every piece of furniture, window and wall; do not add or remove furniture. All people are simple cartoon stickmen: big plain smooth white round head with a black outline and NO hair, two dot eyes, simple mouth and eyebrows, no nose; thin BLACK stick arms and legs (never skin-coloured), small black mitten hands. Medium-wide shot, every person fully visible from head to feet. Anatomy: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs; each hand holds at most one thing. No text, no readable writing, no numbers. Not gory. Day: the young clerk from the SECOND reference image (same bald stickman with a round white head: dark brown frock coat, cream waistcoat, white shirt, black neck-tie), very thin and grey, lies in the bed in a nightshirt, coughing; at the door the landlady (stickman woman in grey dress, white apron, white cap) and her small son (brown jacket, flat cap) stand and both cough into their fists too.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "9c809db2-3560-4517-ae6a-dc3bdbf33ffb",
+      "role": "image_references"
+     },
+     {
+      "value": "6e960e6c-4c0d-410e-833f-ce2535c6251e",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 15,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every piece of furniture, window and wall; do not add or remove furniture. All people are simple cartoon stickmen: big plain smooth white round head with a black outline and NO hair, two dot eyes, simple mouth and eyebrows, no nose; thin BLACK stick arms and legs (never skin-coloured), small black mitten hands. Medium-wide shot, every person fully visible from head to feet. Anatomy: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs; each hand holds at most one thing. No text, no readable writing, no numbers. Not gory. the young clerk from the SECOND reference image (same bald stickman with a round white head: dark brown frock coat, cream waistcoat, white shirt, black neck-tie), thin and pale but smiling, walks slowly along the gravel path with a walking stick, enjoying the pale sun.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "a71e42b2-8417-44d1-a2c1-ddf97fa91151",
+      "role": "image_references"
+     },
+     {
+      "value": "9526571f-6cf7-48f3-b2e2-352802f62886",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 16,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every piece of furniture, window and wall; do not add or remove furniture. All people are simple cartoon stickmen: big plain smooth white round head with a black outline and NO hair, two dot eyes, simple mouth and eyebrows, no nose; thin BLACK stick arms and legs (never skin-coloured), small black mitten hands. Medium-wide shot, every person fully visible from head to feet. Anatomy: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs; each hand holds at most one thing. No text, no readable writing, no numbers. Not gory. One figure only: Tuberculosis as 'the White Lady' exactly as on the THIRD reference sheet (gaunt woman, waxy grey-white skin, red cheek blotches, dark-ringed eyes, long dark hair, tattered off-white nightgown, grey knitted shawl) sits on the chair by the bed with her lit candle, holding up three fingers with a calm, ironic smile at the viewer. Exactly one figure, two arms, two hands. STYLE FOR HER: drawn as a storybook cartoon character, NOT horror and NOT realistic: smooth pale grey-white face drawn with clean ink lines, two small round rosy fever spots on the cheeks (no rash, no blotches anywhere else), soft dark rings under the eyes, a small gentle ironic smile with closed lips, slim but not skeletal, long dark hair neatly loose. Charming and a little sad, like a Victorian ghost in a children's history book.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "9c809db2-3560-4517-ae6a-dc3bdbf33ffb",
+      "role": "image_references"
+     },
+     {
+      "value": "6e960e6c-4c0d-410e-833f-ce2535c6251e",
+      "role": "image_references"
+     },
+     {
+      "value": "1de80806-b140-40d9-8e0b-9a3a526ecee8",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 17,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every piece of furniture, window and wall; do not add or remove furniture. All people are simple cartoon stickmen: big plain smooth white round head with a black outline and NO hair, two dot eyes, simple mouth and eyebrows, no nose; thin BLACK stick arms and legs (never skin-coloured), small black mitten hands. Medium-wide shot, every person fully visible from head to feet. Anatomy: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs; each hand holds at most one thing. No text, no readable writing, no numbers. Not gory. the young clerk from the SECOND reference image (same bald stickman with a round white head: dark brown frock coat, cream waistcoat, white shirt, black neck-tie) (healthy, as in Month 1) stands on the foggy pavement facing the viewer, one eyebrow raised, hands in his coat pockets, as if asking the viewer a question.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "6573bc08-5e56-4ee8-9356-93592a6b56b5",
+      "role": "image_references"
+     },
+     {
+      "value": "6e960e6c-4c0d-410e-833f-ce2535c6251e",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 18,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the reference image. Keep EXACTLY the same handkerchief, table, candle, framing and style. Change ONLY: one small pink speck of blood in the middle of the handkerchief. No text.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "0be0d9c8-b928-418a-b8b1-7e3e565977cb",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 19,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the reference image. Keep EXACTLY the same handkerchief, table, candle, framing and style. Change ONLY: the handkerchief is now unfolded and crumpled, with a bright red blood stain the size of a coin in the middle. Not gory. No text.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "0be0d9c8-b928-418a-b8b1-7e3e565977cb",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 20,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the reference engraving page. Keep EXACTLY the same page, paper, border, drawing style and the same lungs. NO words, NO letters, NO numbers. Change ONLY this: in the upper part of the lung on the LEFT side of the picture, a small round greyish-yellow walled-off nodule the size of a pea, with a darker blotchy patch starting to spread around it.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "89440100-3626-481d-b4d4-8c3c9663237f",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 21,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the reference engraving page. Keep EXACTLY the same page, paper, border, drawing style and the same lungs. NO words, NO letters, NO numbers. Change ONLY this: in the upper part of the lung on the LEFT side of the picture, a ragged dark hollow cavity the size of a walnut with a crumbling yellowish rim, a thin red trickle where a small blood vessel at its edge is broken; small grey nodules around it. Not gory.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "89440100-3626-481d-b4d4-8c3c9663237f",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 22,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the reference engraving page. Keep EXACTLY the same page, paper, border, drawing style and the same lungs. NO words, NO letters, NO numbers. Change ONLY this: BOTH lungs now have several ragged dark hollow cavities with crumbling yellowish rims in their upper halves (the biggest one in the upper part of the lung on the LEFT side of the picture), and many small grey nodules; the lung tissue is darker and blotchy. Not gory.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "89440100-3626-481d-b4d4-8c3c9663237f",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 23,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the reference engraving page. Keep EXACTLY the same page, paper, border, drawing style and the same lungs. NO words, NO letters, NO numbers. Change ONLY this: in the upper part of the lung on the LEFT side of the picture, a closed-up, healed scar: a small puckered whitish-grey star-shaped scar with a thin chalky rim where a cavity used to be; the rest of the lungs is pink.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "89440100-3626-481d-b4d4-8c3c9663237f",
+      "role": "image_references"
+     }
+    ]
+   }
+  }
+ ],
+ "c": [],
+ "ids": [
+  "c04n",
+  "p01o",
+  "p03s",
+  "p05r",
+  "m1d",
+  "m6b",
+  "m6d",
+  "m6e",
+  "y1a",
+  "y1c",
+  "y1d",
+  "y1e",
+  "y2b",
+  "y2e",
+  "y2f",
+  "y2g",
+  "y2h",
+  "e01",
+  "hk2",
+  "hk3",
+  "at1",
+  "at2",
+  "at3",
+  "at4",
+  "c01a",
+  "c02a",
+  "c01b",
+  "c03a",
+  "p04a",
+  "t04",
+  "t01",
+  "y2d"
+ ],
+ "f": [
+  {
+   "index": 200,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the reference image. Keep EVERYTHING the same (room, the four guests, their poses, clothes, style) and change ONLY the view through the window. In the tall window, replace the clock tower and the big Gothic parliament buildings with plain grey London rooftops, chimney pots and a little chimney smoke; no tower, no clock, no bridge.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "a2445c15-7569-4f94-be66-710d021b595c",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 201,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the reference image. Keep EVERYTHING the same (room, the three people, their poses, clothes, style) and change ONLY the view through the window. In the tall window, replace the clock tower and the big Gothic parliament buildings with plain grey London rooftops, chimney pots and a little chimney smoke; no tower, no clock, no bridge.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "07a81cb3-29b1-4fc2-b61a-8cddc1e17b15",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 202,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the reference image. Keep EXACTLY the same drawing room, furniture and style. In the tall window, replace the clock tower and the big Gothic parliament buildings with plain grey London rooftops, chimney pots and a little chimney smoke; no tower, no clock, no bridge. Remove all four guests. Add ONE fashionable pale stickman lady in a wide pale-blue crinoline dress standing in profile at the small round tea table in the middle of the room, dabbing white powder on her round white face with a big powder puff held in one mitten hand; her other hand holds a small round powder box. All people are simple cartoon stickmen: big plain smooth white round head with a black outline and NO hair, two dot eyes, simple mouth and eyebrows, no nose; thin BLACK stick arms and legs, small black mitten hands. Every person fully visible. Anatomy: exactly one head, two arms, two mitten hands, two legs each. No text, no numbers. ",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "a2445c15-7569-4f94-be66-710d021b595c",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 203,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the reference image. Keep EXACTLY the same drawing room, furniture and style. In the tall window, replace the clock tower and the big Gothic parliament buildings with plain grey London rooftops, chimney pots and a little chimney smoke; no tower, no clock, no bridge. Remove all four guests. Add one figure standing by the fireplace: Tuberculosis as 'the White Lady' as on the SECOND reference sheet (pale woman, long dark hair, tattered off-white nightgown, grey knitted shawl), holding a lit candle in a brass holder in one hand, the other hand resting on the mantelpiece, looking at the viewer. Exactly one figure, two arms, two hands. No text. STYLE FOR HER: drawn as a storybook cartoon character, NOT horror and NOT realistic: smooth pale grey-white face drawn with clean ink lines, two small round rosy fever spots on the cheeks (no rash, no blotches anywhere else), soft dark rings under the eyes, a small gentle ironic smile with closed lips, slim but not skeletal, long dark hair neatly loose. Charming and a little sad, like a Victorian ghost in a children's history book.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "a2445c15-7569-4f94-be66-710d021b595c",
+      "role": "image_references"
+     },
+     {
+      "value": "1de80806-b140-40d9-8e0b-9a3a526ecee8",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 204,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Tuberculosis as 'the White Lady' as on the reference sheet (pale woman, long dark hair, tattered off-white nightgown, grey knitted shawl) sits patiently in a wooden rocking chair in a dim candle-lit Victorian room, both hands resting in her lap, watching a large hourglass on a small table beside her. Ink-and-cross-hatching style, muted palette. Exactly one figure, two arms, two hands. No text. STYLE FOR HER: drawn as a storybook cartoon character, NOT horror and NOT realistic: smooth pale grey-white face drawn with clean ink lines, two small round rosy fever spots on the cheeks (no rash, no blotches anywhere else), soft dark rings under the eyes, a small gentle ironic smile with closed lips, slim but not skeletal, long dark hair neatly loose. Charming and a little sad, like a Victorian ghost in a children's history book.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "1de80806-b140-40d9-8e0b-9a3a526ecee8",
+      "role": "image_references"
+     },
+     {
+      "value": "557f5d94-d7bb-494f-bfa1-5a92bfffb8b5",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 205,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Tuberculosis as 'the White Lady' as on the reference sheet (pale woman, long dark hair, tattered off-white nightgown, grey knitted shawl, a lit candle in a brass holder in one hand) stands on a modern 2020s city pavement at dusk among glass office buildings and parked cars, raising her other hand in a small wave to the viewer. Ink-and-cross-hatching style, muted palette. Exactly one figure, two arms, two hands. No text, no signs. STYLE FOR HER: drawn as a storybook cartoon character, NOT horror and NOT realistic: smooth pale grey-white face drawn with clean ink lines, two small round rosy fever spots on the cheeks (no rash, no blotches anywhere else), soft dark rings under the eyes, a small gentle ironic smile with closed lips, slim but not skeletal, long dark hair neatly loose. Charming and a little sad, like a Victorian ghost in a children's history book.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "1de80806-b140-40d9-8e0b-9a3a526ecee8",
+      "role": "image_references"
+     },
+     {
+      "value": "557f5d94-d7bb-494f-bfa1-5a92bfffb8b5",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 206,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Edit the FIRST reference image. Keep EXACTLY the same clinic room, furniture and style. All people are simple cartoon stickmen: big plain smooth white round head with a black outline and NO hair, two dot eyes, simple mouth and eyebrows, no nose; thin BLACK stick arms and legs, small black mitten hands. Every person fully visible. Anatomy: exactly one head, two arms, two mitten hands, two legs each. No text, no numbers. The patient (a stickman in a dark grey hoodie and jeans) sits on the chair by the desk with BOTH mitten hands resting on his knees, one hand on each knee, looking worried. A doctor (a stickman in blue scrubs and a blue scrub cap) stands at the lit X-ray viewing box on the wall with a SERIOUS face and points with one hand at a clear bright white cloudy patch in the upper part of the left lung on the X-ray; the other arm hangs by his side.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "7298fb19-0ec5-4ebe-8245-6b926b539383",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 207,
+   "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Hand-drawn explainer diagram in ink and muted watercolour on aged paper, 16:9, no words, no letters, no numbers. A country road seen from behind: the stickman clerk from the reference image (bald round white head, dark brown frock coat, black stick legs) stands small in the middle of the road at a fork, seen from behind, where the road splits into three paths into the distance: the left path goes down into dark fog, the middle path goes on flat and grey, the right path goes up toward a faint pale sunrise. Exactly one person.",
+    "quality": "low",
+    "resolution": "1k",
+    "aspect_ratio": "16:9",
+    "medias": [
+     {
+      "value": "6e960e6c-4c0d-410e-833f-ce2535c6251e",
+      "role": "image_references"
+     }
+    ]
+   }
+  }
+ ]
+}

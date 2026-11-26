@@ -71,25 +71,25 @@
    "note": ""
   },
   "y2d": {
-   "verdict": "fix",
-   "sha": "b36b5c6396ca0a44",
-   "who": null,
-   "where": null,
-   "note": "the figure is a boy in a newsboy cap and short trousers, not our clerk; must be the hero (frock coat, no cap) or a neutral outline"
+   "verdict": "ok",
+   "sha": "b92de69ba1653307",
+   "who": "hero",
+   "where": "diagram",
+   "note": ""
   },
   "t01": {
-   "verdict": "fix",
-   "sha": "a6c56ade3dd6d073",
-   "who": null,
-   "where": null,
-   "note": "hero's right hand: two black blobs on the thighs (two hands on one arm); doctor smiling while showing a TB spot; X-ray shows no bright patch"
+   "verdict": "ok",
+   "sha": "26c45396f208e21e",
+   "who": "modern",
+   "where": "clinic",
+   "note": "two hands on knees, serious doctor; spot on X-ray faint - covered by arrow note"
   },
   "t04": {
-   "verdict": "fix",
-   "sha": "0a1356435eede5b9",
-   "who": null,
-   "where": null,
-   "note": "Lady realistic-horror style with grim grin, not ironic; zero stickman style (ok for her) but face too creepy; check hands at x2 before reuse"
+   "verdict": "ok",
+   "sha": "69a4560ec482576a",
+   "who": "lady",
+   "where": "modern_street",
+   "note": "minor far-window details"
   },
   "t03": {
    "verdict": "ok",
@@ -106,32 +106,32 @@
    "note": ""
   },
   "c01a": {
-   "verdict": "fix",
-   "sha": "f7d74571e204f3e5",
-   "who": null,
-   "where": null,
-   "note": "Big Ben clock tower in the window (finished 1859, banned for 1850)"
+   "verdict": "ok",
+   "sha": "289cf1384c74ac58",
+   "who": "guests",
+   "where": "salon",
+   "note": "window: distant gothic tower half hidden by guests - minor, accepted"
   },
   "c01b": {
-   "verdict": "fix",
-   "sha": "49cf94a0b52359e9",
-   "who": null,
-   "where": null,
-   "note": "Big Ben in the window; reflection doesn't match (back view: hand near face, reflection: other hand)"
+   "verdict": "ok",
+   "sha": "9ead5f066294b426",
+   "who": "guests",
+   "where": "salon",
+   "note": "window patched to fog; faint brick traces - fine"
   },
   "c02a": {
-   "verdict": "fix",
-   "sha": "c44a42366851e760",
-   "who": null,
-   "where": null,
-   "note": "Big Ben in the window"
+   "verdict": "ok",
+   "sha": "20cb7076e0b773b8",
+   "who": "byron,guests",
+   "where": "salon",
+   "note": "window: hazy rooftops, no clear clock tower"
   },
   "c03a": {
-   "verdict": "fix",
-   "sha": "aeeffb3fc0aaef71",
-   "who": null,
-   "where": null,
-   "note": "Big Ben in the window; Lady drawn as stickman-ish doll, not her sheet; candle holder floats from a black blob"
+   "verdict": "ok",
+   "sha": "434078c1b98fe0dc",
+   "who": "lady",
+   "where": "salon",
+   "note": "window patched to fog"
   },
   "p01a": {
    "verdict": "ok",
@@ -162,11 +162,11 @@
    "note": "windpipe drawn going into the mouth from behind the nose - acceptable diagram stylisation"
   },
   "p04a": {
-   "verdict": "fix",
-   "sha": "d01ab4ebaed2d9fc",
-   "who": null,
-   "where": null,
-   "note": "Lady: realistic horror style with blotchy rash on face and chest, too creepy; needs her sheet look, ironic"
+   "verdict": "ok",
+   "sha": "10401603d5d5baa1",
+   "who": "lady",
+   "where": "room",
+   "note": ""
   },
   "mc1": {
    "verdict": "ok",
@@ -195,6 +195,174 @@
    "who": "hero",
    "where": "mirror",
    "note": "x2 hands ok; grey face, very thin neck, coat loose"
+  },
+  "c04n": {
+   "verdict": "ok",
+   "sha": "1f011feded5f08ad",
+   "who": "hero",
+   "where": "street",
+   "note": ""
+  },
+  "p01o": {
+   "verdict": "ok",
+   "sha": "052955e5e00222e0",
+   "who": "clerks",
+   "where": "office",
+   "note": "minor: stools empty in front of desks"
+  },
+  "p03s": {
+   "verdict": "ok",
+   "sha": "cb543eb454a21aab",
+   "who": "extras",
+   "where": "street",
+   "note": ""
+  },
+  "p05r": {
+   "verdict": "ok",
+   "sha": "aa8e390750a30b6f",
+   "who": "hero",
+   "where": "room",
+   "note": ""
+  },
+  "m1d": {
+   "verdict": "ok",
+   "sha": "da4e7170671222cf",
+   "who": "hero,doctor",
+   "where": "room",
+   "note": ""
+  },
+  "m6b": {
+   "verdict": "ok",
+   "sha": "3b34e55fc52106d0",
+   "who": "hero",
+   "where": "room",
+   "note": ""
+  },
+  "m6e": {
+   "verdict": "ok",
+   "sha": "ce12f0b580de0458",
+   "who": "lady",
+   "where": "room",
+   "note": "new storybook style for the Lady - use as her reference from now on"
+  },
+  "m6d": {
+   "verdict": "ok",
+   "sha": "8f468b914e418cdc",
+   "who": "hero,doctor",
+   "where": "room",
+   "note": "bald now; hero's shirt has no frock coat (in bed) - fine"
+  },
+  "y1a": {
+   "verdict": "ok",
+   "sha": "0362184a4476e578",
+   "who": "hero",
+   "where": "room",
+   "note": ""
+  },
+  "y1c": {
+   "verdict": "ok",
+   "sha": "5e2046ff550934b9",
+   "who": "landlady,boy",
+   "where": "stairs",
+   "note": ""
+  },
+  "y1d": {
+   "verdict": "ok",
+   "sha": "87dbd7fddc242475",
+   "who": "hero",
+   "where": "room",
+   "note": ""
+  },
+  "y1e": {
+   "verdict": "ok",
+   "sha": "7f8d266c1e6b4b3f",
+   "who": "hero",
+   "where": "room",
+   "note": "minor: liner in the dream bubble looks later than 1850"
+  },
+  "y2b": {
+   "verdict": "ok",
+   "sha": "d577edc191facebd",
+   "who": "hero",
+   "where": "stairs",
+   "note": ""
+  },
+  "y2e": {
+   "verdict": "ok",
+   "sha": "44e118fa67293576",
+   "who": "none",
+   "where": "room",
+   "note": ""
+  },
+  "y2f": {
+   "verdict": "ok",
+   "sha": "ea4e3d4c5af4689d",
+   "who": "hero,landlady,boy",
+   "where": "room",
+   "note": "landlady has an extra floating mitten at her waist - minor, barely visible; keep"
+  },
+  "y2g": {
+   "verdict": "ok",
+   "sha": "be9528a91c5b414c",
+   "who": "hero",
+   "where": "street",
+   "note": ""
+  },
+  "y2h": {
+   "verdict": "ok",
+   "sha": "129ad7fc6d5d05b3",
+   "who": "lady",
+   "where": "room",
+   "note": "holds candle, not three fingers - fine, line still works"
+  },
+  "e01": {
+   "verdict": "ok",
+   "sha": "5556627d22473e73",
+   "who": "hero",
+   "where": "street",
+   "note": ""
+  },
+  "hk2": {
+   "verdict": "ok",
+   "sha": "e62f2a54a31ebfe4",
+   "who": "none",
+   "where": "room",
+   "note": ""
+  },
+  "hk3": {
+   "verdict": "ok",
+   "sha": "df11a755db9b90d3",
+   "who": "none",
+   "where": "room",
+   "note": ""
+  },
+  "at1": {
+   "verdict": "ok",
+   "sha": "b4ab5f603f35780b",
+   "who": "none",
+   "where": "atlas",
+   "note": ""
+  },
+  "at2": {
+   "verdict": "ok",
+   "sha": "2ba0f021e451e400",
+   "who": "none",
+   "where": "atlas",
+   "note": ""
+  },
+  "at3": {
+   "verdict": "ok",
+   "sha": "45ea88b089f6cbf2",
+   "who": "none",
+   "where": "atlas",
+   "note": ""
+  },
+  "at4": {
+   "verdict": "ok",
+   "sha": "cc5ad73cdd808fea",
+   "who": "none",
+   "where": "atlas",
+   "note": "healed white scar visible"
   }
  },
  "video": {}

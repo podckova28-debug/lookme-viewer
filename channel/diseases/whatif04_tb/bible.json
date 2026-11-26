@@ -22,10 +22,26 @@
   "stairs": "lodging house staircase",
   "clinic": "2020s clinic",
   "map": "world map",
-  "diagram": "explainer diagram on aged paper"
+  "diagram": "explainer diagram on aged paper",
+  "modern_street": "2020s city street at dusk (glass buildings, parked cars)"
  },
  "banned": {
-  "1850": ["electric light", "light bulbs", "phones", "cars", "Big Ben clock tower (finished 1859)", "Tower Bridge", "modern clothes", "hair on stickmen", "readable text", "second mirror", "bare skin-coloured arms (stickmen have black stick arms)"],
-  "2020s": ["readable text", "hair on stickmen"]
+  "1850": [
+   "electric light",
+   "light bulbs",
+   "phones",
+   "cars",
+   "Big Ben clock tower (finished 1859)",
+   "Tower Bridge",
+   "modern clothes",
+   "hair on stickmen",
+   "readable text",
+   "second mirror",
+   "bare skin-coloured arms (stickmen have black stick arms)"
+  ],
+  "2020s": [
+   "readable text",
+   "hair on stickmen"
+  ]
  }
 }
