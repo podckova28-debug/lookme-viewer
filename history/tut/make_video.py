@@ -8,7 +8,7 @@ H = "/home/user/lookme-viewer/history"; T = H + "/tut"
 sys.path.insert(0, H); sys.path.insert(0, T)
 from shots import S
 from chapter_card import _cover, draw_text, best_spot, card
-from captions import CAP, YEAR, AGE, INSET, CLIP, held
+from captions import CAP, YEAR, AGE, INSET, CLIP, held, CAPPOS, PLATE_LEFT
 SR, FPS, W, Hh = 24000, 30, 1920, 1080
 SPEED = float(os.environ.get("SPEED", "1.1"))
 WORK = os.environ.get("WORK", "health_out/tut_video"); os.makedirs(WORK + "/seg", exist_ok=True)
@@ -57,11 +57,12 @@ def overlay(k, base):
         cx, cy, sz = best_spot(base, CAP[k], low=SAFE_LOW)
         if cy > Hh / 2 and (yr and cx > W * .45 or k in INSET and cx < W * .55):   # never on the year plate / portrait
             cx, cy = W / 2, Hh * .12
-        draw_text(L, CAP[k], sz, cy, maxw=.9, cx=cx)
+        if k in CAPPOS: cx, cy = W * CAPPOS[k][0], Hh * CAPPOS[k][1]
+        draw_text(L, CAP[k], sz, cy, maxw=.9 if k not in CAPPOS else .5, cx=cx)
     if yr:
         d = ImageDraw.Draw(L); f1 = ImageFont.truetype(FONT, 96); f2 = ImageFont.truetype(FONT, 58)
         w = max(d.textlength(yr, font=f1), d.textlength(age, font=f2) if age else 0) + 56
-        h = 124 + (64 if age else 0); x0, y0 = W - 48 - w, SAFE_BOTTOM - h
+        h = 124 + (64 if age else 0); x0, y0 = (48 if k in PLATE_LEFT else W - 48 - w), SAFE_BOTTOM - h
         d.rounded_rectangle([x0, y0, x0 + w, y0 + h], 14, fill=(12, 12, 12, 215))
         d.rectangle([x0, y0 + h - 12, x0 + w, y0 + h], fill=(200, 30, 30, 255))
         d.text((x0 + 28, y0 + 58), yr, font=f1, fill="white", anchor="lm")

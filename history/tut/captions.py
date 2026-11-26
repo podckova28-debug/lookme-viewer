@@ -10,7 +10,7 @@ CAP = {
  35: "EGYPT IS ANGRY", 38: "A NEW NAME", 39: "ATEN OUT, AMUN IN", 40: "ANKHESENAMUN", 41: "AMARNA ABANDONED",
  43: "KARNAK", 44: "THE RESTORATION STELA", 51: "THE PERFECT YOUNG GOD", 53: "A DAMAGED LEFT FOOT",
  55: "MALARIA", 56: "130 WALKING STICKS", 59: "TWO DAUGHTERS",
- 67: "X-RAY, 1968", 68: "CT SCAN, 2005", 69: "A BROKEN LEFT LEG", 70: "A CHARIOT ACCIDENT?",
+ 67: "THE X-RAY", 68: "CT SCAN", 69: "A BROKEN LEFT LEG", 70: "A CHARIOT ACCIDENT?",
  73: "NO PHARAOH, NO HEIR", 76: "THE HITTITES", 77: "KING SUPPILULIUMA", 78: "\"I HAVE NO SON\"",
  85: "PRINCE ZANNANZA", 86: "KILLED ON THE WAY", 90: "PHARAOH AY",
  93: "ONLY FOUR ROOMS", 94: "AY AS PRIEST", 96: "THOUSANDS OF OBJECTS", 99: "ROBBED TWICE",
@@ -24,7 +24,7 @@ CAP = {
 YEAR = {1: "1922", 9: None, 10: "TODAY", 11: "1341-1323 BC",
         12: "1341 BC", 22: "TODAY", 23: "1336 BC", 25: "1332 BC", 38: "1331 BC", 51: "1324 BC",
         54: "TODAY", 57: "1324 BC", 62: None, 64: "1324 BC", 65: "1323 BC", 67: "1968", 68: "2005", 70: "1323 BC",
-        72: "TODAY", 73: "1323 BC", 102: "1319 BC", 108: "1150 BC", 113: "1910", 114: "1915", 116: "1914",
+        72: "TODAY", 73: "1323 BC", 102: "1319 BC", 108: "1150 BC", 110: None, 111: "1150 BC", 113: "1910", 114: "1914", 116: "1914",
         117: "1917", 118: "1922", 119: "4 NOV 1922", 122: "1922", 123: "26 NOV 1922", 126: "1923",
         146: "1939", 147: "TODAY", 148: None, 149: "TODAY", 150: None}
 AGE = {12: "NEWBORN", 20: "AGE 5", 22: None, 23: "AGE 5", 24: "AGE 6", 25: "AGE 9", 38: "AGE 10", 51: "AGE 18",
@@ -41,3 +41,7 @@ def held(d, k):
     for kk in sorted(d):
         if kk <= k: v = d[kk]
     return v
+
+# manual overrides found in the per-cut review (fractions of width/height)
+CAPPOS = {27: (.28, .12), 39: (.72, .12), 44: (.72, .12), 118: (.30, .12), 131: (.75, .12), 135: (.70, .12)}
+PLATE_LEFT = {38, 43, 51, 65, 74, 98, 108, 120, 136}

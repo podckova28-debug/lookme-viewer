@@ -313,3 +313,32 @@ PREF["Ay"] = "7e84afbb-571f-4a60-803b-e86f4f5e2089"
 LOOK["Ay"] = "old courtier of 60, wrinkled clever face, thick shoulder-length GREY wig that COMPLETELY COVERS BOTH EARS (no ear visible), long white linen robe, gold collar of honour of gold discs"
 LOOK["Prince Tutankhaten"] = "small boy prince, smooth shaved head with NO braid and NO sidelock, long white linen tunic, small turquoise collar"
 WAVE5 = [20, 24, 31, 32, 34, 47, 82, 89, 90]
+# ---- wave 6: per-cut review of the full video (one image per cut) ----
+FIX3 = {
+ 19: "the great doors of an old temple at Thebes being shut and barred by two workers, three priests with shaved heads in white robes walking away, each priest holds a bundle of scrolls with exactly two hands, every person has exactly two arms, sad faces",
+ 22: "a modern laboratory with fluorescent ceiling lights: a scientist in a white coat looking at DNA bands on a computer screen beside an old mummy x-ray, Egyptian souvenirs on a shelf, NO oil lamps, NO candles, NO flames, no body shown",
+ 23: "a royal funeral procession at Amarna leaving the white city toward the desert cliffs: mourning women in white with both arms raised in normal human proportions (each arm attached to its own shoulder), a gilded coffin on a sledge pulled by oxen, priests",
+ 48: "four priests in white robes carrying a gilded boat-shaped shrine on two long poles resting on their shoulders, each priest holds the pole with both hands above his shoulder, arms clearly separate from the chest, opaque white robes, cheering crowd behind a rope, temple gate",
+ 49: "incense smoke rising in front of a restored standing statue of the god Amun: blue skin, tall double plumed crown, short kilt, holding a was-sceptre and an ankh (NOT a mummy, NOT Osiris, NOT black), oil lamps in clay dishes, priests and crowd kneeling",
+ 56: "dozens of ancient Egyptian walking sticks of gold, ebony and ivory laid out in rows on a museum table under glass, modern museum with spotlights in the ceiling, NO oil lamps, NO candles, NO flames, no people",
+ 59: "two TINY gilded mummy-shaped coffins, each only as long as a forearm (small enough to hold in two hands), side by side on a low stone bench in a dark ancient tomb corner beside full-size jars and a chest for scale, lit by a single oil lamp in a clay dish, no people",
+ 63: "a big plain red rounded button with a white bell icon and a hand pressing it, sparkles around, comic style, dark background, no logos, no play-triangle, no brand",
+ 68: "a modern mobile CT scanner inside a big white tent in the Valley of the Kings at night in 2005, two scientists looking at 3D scans of a skeleton on laptops, lit by modern electric work lights on tripods, NO oil lamps, NO flames, no body visible",
+ 71: "Tutankhamun age 18 (as in the sheet) lying in bed WITHOUT any headdress and WITHOUT crown or collar, shaved head, simple white linen shirt, a bandaged left leg, sweating with fever, a physician with a shaved head mixing medicine in a bowl",
+ 76: "a simple illustrated old map of the ancient Near East: Egypt and the Nile in the south, Anatolia in the north, a dotted red route between two red dots, sea in blue, land in ochre, NO people, NO portraits, NO circles with figures, no labels",
+ 93: "a simple cross-section diagram of a small tomb drawn like an architect's sketch on papyrus: a staircase down, a corridor, then EXACTLY FOUR small rooms (count: one, two, three, four), no lamps, no labels",
+ 95: "four workers carrying gilded beds shaped like animals and chests down a narrow rock staircase into a tomb, each worker has exactly two arms and holds the carrying pole with both hands above his shoulder, no third arm",
+ 111: "ancient tomb robbers with sacks and torches walking at night across the flat rubble-covered floor of the valley, the ground in front of them is only rubble and stone chips with NO visible doorway, NO staircase, NO tent, they do not notice anything",
+ 114: "Howard Carter (as in the sheet) with a sun hat standing in the Valley of the Kings in 1915, arms crossed, looking at huge heaps of rubble and stone chips, NO tomb entrance, NO staircase, NO doorway visible anywhere, no lamps",
+ 117: "Howard Carter (as in the sheet) standing with hands on hips watching a line of Egyptian workmen in galabiyas and turbans carrying baskets of rubble on their heads with both hands, heat haze, only rubble heaps and bare rock, NO tomb entrance, NO staircase, NO doorway",
+ 119: "an Egyptian boy water-carrier in a galabiya kneeling in rubble and brushing sand off the flat top of ONE single stone step just appearing in the ground, everything else is rubble heaps, NO open staircase, NO doorway, morning",
+ 144: "a small terrier dog lying asleep on a rug in a dark English country house room at night, a mantel clock showing two o'clock, an electric table lamp switched off, NO oil lamps, NO candles",
+}
+for _k, _d in FIX3.items(): S[_k - 1] = S[_k - 1][:3] + (_d,) + S[_k - 1][4:]
+for _k in (114, 117, 119, 111, 95, 76, 93, 63): S[_k - 1] = S[_k - 1][:4] + (None,)   # drop anchors that carry tomb doors / wrong props
+# frame-QC redraws (wave 7): 48 floating hand behind the pole; 119 boy drawn as an ancient Egyptian
+FIX4 = {
+48: "strict side view of a temple procession: four priests in opaque white robes walking in a single line, two in front and two behind, carrying a gilded boat-shaped shrine on two long wooden poles that rest on their shoulders; each priest holds the pole on his own shoulder with both of his own hands, every hand clearly attached to that priest's arm, no other hands anywhere, nothing behind the poles; cheering crowd behind a rope in the background, sandstone temple gate",
+119: "the year 1922, NOT ancient Egypt: a modern Egyptian village boy of about 12 with short cropped hair and a white knitted skullcap, wearing a striped cotton galabiya, a clay water jar standing beside him, kneeling in the dry rubble of the Valley of the Kings and sweeping sand with his bare hands off the flat top of ONE single stone step just appearing in the ground; dry limestone cliffs all around, no river, no palms, no brush, NO open staircase, NO doorway, morning",
+}
+for _k, _d in FIX4.items(): S[_k - 1] = S[_k - 1][:3] + (_d,) + S[_k - 1][4:]
