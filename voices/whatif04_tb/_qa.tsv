@@ -35,3 +35,9 @@ T02	1.00	8.4	The treatment is four drugs every day for six months.  You feel bet
 T03	1.00	7.2	And yet, tuberculosis still kills more than a million people every year, mostly where the  medicine is too far away.
 T04	1.00	3.2	Still here darling, still in fashion.
 E01	0.93	4.3	So, which path would you have got in 1850? Tell me in the comments.
+P02B	1.00	13.9	And this bacterium is a strange one.  It wears a thick waxy coat,  so your immune cells can't break it open.  And it's slow.  It splits in two only about once a day.  That's why this disease takes years, not days.
+M1E	1.00	6.0	That's the cough.  Your airways fill with mucus and dead cells, and your lungs keep trying to push them out.
+M6F	1.00	17.1	Here's why.  Your immune cells are at war and they flood your blood with alarm signals.  Those signals turn up the thermostat in your brain.  Your temperature peaks in the late afternoon anyway, so that's when the fever hits.  The blood vessels in your face open wide and your cheeks burn pink.
+M6G	1.00	15.2	at night, the fever breaks. Your body has to dump all that heat at once so it opens  every sweat gland it has, and the same alarm signals tell your body to burn its own fat  and muscle. That's why they called it consumption. It eats you from the inside.
+Y1F	0.96	9.5	Here is how.  The center of the prison dies and goes soft, like cheese.  Then it melts, you cough it up, and an empty hole is left behind.
+Y2I	1.00	7.4	With so much lung gone, every breath brings in less air,  and the bacteria you cough up have reached your voice box.

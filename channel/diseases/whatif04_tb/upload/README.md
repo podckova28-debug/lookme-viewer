@@ -1,6 +1,6 @@
 # What If #4: What Happens If You Get Consumption in 1850? Пакет для загрузки
 
-- Видео: `whatif04_tb.mp4` (1920×1080, 3:31).
+- Видео: `whatif04_tb.mp4` (1920×1080, 4:35).
 - Обложки 1280×720 для «Тест и сравнение»: главная `thumb_1_todiefor.jpg`, вторая `thumb_2_3yearsleft.jpg`.
 - Раскрытие ИИ (Altered or synthetic content) = ДА.
 
@@ -20,17 +20,17 @@ You Caught Tuberculosis in 1850. Here Are Your Next 3 Years
 ```
 London, 1850. The deadliest disease in the world is also the most fashionable: pale skin, a thin waist, bright eyes and pink cheeks. Lord Byron said he'd like to die of it. You're a twenty-year-old clerk, and you've just caught it.
 
-Month by month, what consumption (tuberculosis) does to you: the cough that won't go away, the hectic flush, the night sweats, the first pink speck on your handkerchief, and the day your lung breaks open. What your 1850 doctor would have given you (cod liver oil, leeches, and a trip to Madeira you can't afford), the strange hope doctors called spes phthisica, and the three ways it could end. Then: the same cough, today.
+Month by month, what consumption (tuberculosis) does to you, and why: the waxy, slow bacterium, the cough that won't go away, why the fever turns your cheeks pink every afternoon, why you wake up in soaked sheets, why it was called consumption, the first pink speck on your handkerchief, and the day your lung breaks open. What your 1850 doctor would have given you (cod liver oil, leeches, and a trip to Madeira you can't afford), the strange hope doctors called spes phthisica, and the three ways it could end. Then: the same cough, today.
 
 CHAPTERS
 0:00 The most fashionable disease
 0:26 How you caught it
-0:55 Month 1
-1:19 Month 6
-1:44 Year 1
-2:18 Year 2
-2:59 The same cough, today
-3:24 Which path would you get?
+1:08 Month 1
+1:38 Month 6: the hectic flush and night sweats
+2:33 Year 1
+3:16 Year 2
+4:04 The same cough, today
+4:29 Which path would you get?
 
 Sources are listed in the pinned comment. This video is history, not medical advice. A cough that lasts more than three weeks is a reason to see a doctor.
 

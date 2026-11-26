@@ -15,7 +15,7 @@ PLAN = [
  ('C04', ['c04n'], {'big': '3 years', 'title': 'What happens if you get consumption in 1850'}),
  ('P01', ['p01o', 'p01a'], {'day': 'How you caught it'}),
  ('P02', ['p02a', 'atlas0'], {'notes': {'p02a': [N('the prison', 1500, 220, 1150, 470)]}}),
- ('P02B', ['p02b'], {'notes': {'p02b': [N('a waxy coat', 420, 990, 560, 760), N('one split a day', 1300, 990, 1330, 780)]}}),
+ ('P02B', ['p02b'], {'notes': {'p02b': [N('a waxy coat', 420, 990, 560, 760), N('one split a day', 1300, 990, 1330, 780, at=.5)]}}),
  ('P03', ['p03s'], {'cap': 'Most adults in London'}),
  ('P04', ['p04a'], {}),
  ('P05', ['p05r', 'p05a'], {'notes': {'p05a': [N('breaking out', 1450, 200, 1090, 420)]}}),
@@ -25,15 +25,15 @@ PLAN = [
  ('M1E', ['m1e'], {'notes': {'m1e': [N('mucus', 1050, 980, 1250, 700)]}}),
  ('M1D', ['m1d'], {'cap': 'Cod liver oil', 'notes': {'m1d': [N('(it has vitamin D)', 1450, 300)]}, 'card': 'm1', 'card_x': 1200}),
  ('M6A', ['mc2'], {'day': 'Month 6', 'notes': {'mc2': [N('the hectic flush', 1500, 330, 1080, 470)]}}),
- ('M6F', ['m6f1', 'm6f2'], {'notes': {'m6f1': [N('the thermostat', 1450, 160, 1080, 300)], 'm6f2': [N('wide open', 1150, 990, 1330, 780)]}}),
+ ('M6F', ['m6f1', 'm6f2'], {'notes': {'m6f1': [N('the thermostat', 1450, 160, 1080, 300, at=.25)], 'm6f2': [N('wide open', 1150, 990, 1330, 780, at=.35)]}}),
  ('M6B', ['m6b'], {'notes': {'m6b': [N('soaked', 1050, 560, 640, 640)]}}),
- ('M6G', ['m6g1', 'm6g2'], {'notes': {'m6g2': [N('burning its own fuel', 1560, 900, 1360, 480)]}}),
+ ('M6G', ['m6g1', 'm6g2'], {'notes': {'m6g2': [N('burning its own fuel', 1580, 820, 1355, 380, at=.3)]}}),
  ('M6C', ['hk2'], {'notes': {'hk2': [N('a pink speck', 1100, 420, 735, 670)]}}),
  ('M6D', ['m6d'], {'cap': 'Leeches', 'strike': True}),
  ('M6E', ['m6e'], {'card': 'm6', 'card_x': 1200}),   # the card sits beside the Lady, not over the pink speck
  ('Y1A', ['y1a', 'hk3'], {'day': 'Year 1'}),
  ('Y1B', ['at2'], {'notes': {'at2': [N('a hole', 420, 250, 760, 380), N('a broken vessel', 420, 650, 770, 470)]}}),
- ('Y1F', ['y1f'], {'notes': {'y1f': [N('like cheese', 960, 1000, 960, 820)]}}),
+ ('Y1F', ['y1f'], {'notes': {'y1f': [N('like cheese', 960, 1000, 935, 640, at=.3)]}}),
  ('Y1C', ['y1c'], {'notes': {'y1c': [N('next', 1450, 250, 1040, 500)]}}),
  ('Y1D', ['y1d'], {'cap': 'Spes phthisica: the hope of the consumptive'}),
  ('Y1E', ['y1e'], {'cap': 'Go south. On a clerk\'s wages.', 'card': 'y1', 'card_x': 1150}),
@@ -92,7 +92,9 @@ for i, frames, tx in PLAN:
     for f, notes in tx.get('notes', {}).items():
         if f not in starts: continue
         a, b = starts[f]
-        for nn in notes: texts.append({'style': 'note', 't0': a + .25, 't1': b, **nn})
+        for nn in notes:
+            nn = dict(nn); at = nn.pop('at', 0)   # 'at': when the note appears, as a fraction of the shot
+            texts.append({'style': 'note', 't0': a + .25 + at * (b - a), 't1': b, **nn})
     if 'card' in tx:
         a, b = starts[frames[-1]]; card(tx['card'], max(a, b - CARD_MIN), b, tx.get('card_x', 440))   # the scene shows first, the card only at the end
     if tx.get('strike'):
