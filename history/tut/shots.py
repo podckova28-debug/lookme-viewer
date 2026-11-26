@@ -342,3 +342,11 @@ FIX4 = {
 119: "the year 1922, NOT ancient Egypt: a modern Egyptian village boy of about 12 with short cropped hair and a white knitted skullcap, wearing a striped cotton galabiya, a clay water jar standing beside him, kneeling in the dry rubble of the Valley of the Kings and sweeping sand with his bare hands off the flat top of ONE single stone step just appearing in the ground; dry limestone cliffs all around, no river, no palms, no brush, NO open staircase, NO doorway, morning",
 }
 for _k, _d in FIX4.items(): S[_k - 1] = S[_k - 1][:3] + (_d,) + S[_k - 1][4:]
+# per-cut review of the v7 build: metal-looking tools in ancient scenes; letter must be a clay tablet (Amarna diplomacy, the Hittite king reads a tablet)
+FIX5 = {
+50: "close-up of a stone relief of the pharaoh Akhenaten's face on a sandstone wall being hacked out: an ancient Egyptian workman's two hands hold a reddish-orange COPPER chisel and a round-headed WOODEN mallet, no metal hammer, no iron, dust flying, the rest of the wall untouched",
+148: "close-up of a hacked-out royal name, an empty chiselled oval cartouche, on an ancient sandstone temple wall in sunlight; on the sand below lie a reddish-orange COPPER chisel and a round-headed WOODEN mallet; no people, no metal hammer",
+75: "Ankhesenamun age 20 (as in the sheet) as a young widow in white, alone at night, writing a letter by pressing a reed stylus into a small soft rectangular CLAY TABLET covered with tiny wedge-shaped cuneiform marks, no papyrus, no paper, an oil lamp in a clay dish, determined face",
+78: "close-up of Ankhesenamun age 20 (as in the sheet) in white, tears in her eyes, rolling a small stone cylinder seal across the soft surface of a small rectangular clay tablet covered with wedge-shaped cuneiform marks, no papyrus, no paper, no stamp",
+}
+for _k, _d in FIX5.items(): S[_k - 1] = S[_k - 1][:3] + (_d,) + S[_k - 1][4:]
