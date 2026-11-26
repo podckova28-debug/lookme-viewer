@@ -12,3 +12,7 @@ preview_mikh_long/
 channel/diseases/*/review/
 channel/diseases/*/upload/*.mp4.a.wav
 channel/diseases/*/upload/*.mp4.v.mp4
+channel/diseases/smallpox_ketchup/raw/
+channel/diseases/smallpox_ketchup/raw_old/
+voices/smallpox_ketchup/*.wav
+voices/smallpox_ketchup/*.log
