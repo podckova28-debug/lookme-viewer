@@ -1,0 +1,9 @@
+QC timeline.json
+shots 42, unique frames 42, lines 36, 210.0s
+all automatic checks passed
+
+Now look at the sheets in /home/user/lookme-viewer/channel/diseases/whatif04_tb/qc at full size:
+ place_*.jpg  - same furniture/window/camera as MASTER; red tiles first
+ order_*.jpg  - in story order: who is in the frame and is it logical at that moment (hero in bed on sick days, clothes, day/night)
+ text_*.jpg   - every caption/arrow: points at the right thing, covers no face, no typos
+ everywhere   - extra arms/hands/legs, anachronisms (domes, lamps, chimneys), readable fake text

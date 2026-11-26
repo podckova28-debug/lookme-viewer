@@ -1,0 +1,4 @@
+{"room": {"master": "m_room", "zones": {"bed": [140, 220, 370, 500], "window": [490, 60, 660, 280], "washstand": [730, 90, 920, 520]},
+  "frames": ["p05r","m1d","m6b","m6d","m6e","y1a","y1d","y1e","y2e","y2f","y2h"], "approved": ["y2e"]},
+ "mirror": {"master": "mc1", "frames": ["mc2","mc3","mc4"]},
+ "atlas": {"master": "atlas0", "frames": ["at1","at2","at3","at4"]}}
