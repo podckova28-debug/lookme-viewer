@@ -23,7 +23,7 @@ PLAN = [
  ('M1B', ['m_hanky'], {'cap': 'Still clean'}),
  ('M1C', ['at1'], {'notes': {'at1': [N('breaking out', 420, 250, 790, 380)]}}),
  ('M1E', ['m1e'], {'notes': {'m1e': [N('mucus', 1050, 980, 1250, 700)]}}),
- ('M1D', ['m1d'], {'cap': 'Cod liver oil', 'notes': {'m1d': [N('(it has vitamin D)', 1400, 690, 950, 430)]}, 'card': 'm1', 'card_x': 1200}),
+ ('M1D', ['m1d'], {'cap': 'Cod liver oil', 'notes': {'m1d': [N('(it has vitamin D)', 1400, 690, 940, 520)]}, 'card': 'm1', 'card_x': 1200}),
  ('M6A', ['mc2'], {'day': 'Month 6', 'notes': {'mc2': [N('the hectic flush', 1500, 330, 1080, 470)]}}),
  ('M6F', ['m6f1', 'm6f2'], {'notes': {'m6f1': [N('the thermostat', 1450, 160, 1080, 300, at=.25)], 'm6f2': [N('wide open', 1150, 990, 1330, 780, at=.35)]}}),
  ('M6B', ['m6b'], {'notes': {'m6b': [N('soaked', 1050, 560, 640, 640)]}}),
