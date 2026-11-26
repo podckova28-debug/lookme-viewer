@@ -20,6 +20,160 @@
    "who": null,
    "where": null,
    "note": "from behind only ONE hand at the collar (other arm hidden), but the reflection uses both hands at the tie - reflection does not match; otherwise clean"
+  },
+  "m_room": {
+   "verdict": "ok",
+   "sha": "749ad8d775a7cb3a",
+   "who": "none",
+   "where": "room",
+   "note": "background, no people; single mirror"
+  },
+  "m_office": {
+   "verdict": "ok",
+   "sha": "0c39767c714f5e3a",
+   "who": "none",
+   "where": "office",
+   "note": ""
+  },
+  "m_street": {
+   "verdict": "ok",
+   "sha": "588b3d1159a20d76",
+   "who": "none",
+   "where": "street",
+   "note": "gas street lamps are correct for 1850 London"
+  },
+  "m_stairs": {
+   "verdict": "ok",
+   "sha": "e7da25c11a074b46",
+   "who": "none",
+   "where": "stairs",
+   "note": ""
+  },
+  "m_hanky": {
+   "verdict": "ok",
+   "sha": "b3742e40cfb2f9bc",
+   "who": "none",
+   "where": "room",
+   "note": ""
+  },
+  "m_park": {
+   "verdict": "ok",
+   "sha": "41fb26d262de8f00",
+   "who": "none",
+   "where": "street",
+   "note": "park; gas lamp ok for 1850"
+  },
+  "t02": {
+   "verdict": "ok",
+   "sha": "34ffdb22c5b4c25b",
+   "who": "none",
+   "where": "clinic",
+   "note": ""
+  },
+  "y2d": {
+   "verdict": "fix",
+   "sha": "b36b5c6396ca0a44",
+   "who": null,
+   "where": null,
+   "note": "the figure is a boy in a newsboy cap and short trousers, not our clerk; must be the hero (frock coat, no cap) or a neutral outline"
+  },
+  "t01": {
+   "verdict": "fix",
+   "sha": "a6c56ade3dd6d073",
+   "who": null,
+   "where": null,
+   "note": "hero's right hand: two black blobs on the thighs (two hands on one arm); doctor smiling while showing a TB spot; X-ray shows no bright patch"
+  },
+  "t04": {
+   "verdict": "fix",
+   "sha": "0a1356435eede5b9",
+   "who": null,
+   "where": null,
+   "note": "Lady realistic-horror style with grim grin, not ironic; zero stickman style (ok for her) but face too creepy; check hands at x2 before reuse"
+  },
+  "t03": {
+   "verdict": "ok",
+   "sha": "ea7718186503797c",
+   "who": "none",
+   "where": "map",
+   "note": ""
+  },
+  "atlas0": {
+   "verdict": "ok",
+   "sha": "e91749e6330689be",
+   "who": "none",
+   "where": "atlas",
+   "note": ""
+  },
+  "c01a": {
+   "verdict": "fix",
+   "sha": "f7d74571e204f3e5",
+   "who": null,
+   "where": null,
+   "note": "Big Ben clock tower in the window (finished 1859, banned for 1850)"
+  },
+  "c01b": {
+   "verdict": "fix",
+   "sha": "49cf94a0b52359e9",
+   "who": null,
+   "where": null,
+   "note": "Big Ben in the window; reflection doesn't match (back view: hand near face, reflection: other hand)"
+  },
+  "c02a": {
+   "verdict": "fix",
+   "sha": "c44a42366851e760",
+   "who": null,
+   "where": null,
+   "note": "Big Ben in the window"
+  },
+  "c03a": {
+   "verdict": "fix",
+   "sha": "aeeffb3fc0aaef71",
+   "who": null,
+   "where": null,
+   "note": "Big Ben in the window; Lady drawn as stickman-ish doll, not her sheet; candle holder floats from a black blob"
+  },
+  "p01a": {
+   "verdict": "ok",
+   "sha": "e8058c5cb8afeb7c",
+   "who": "none",
+   "where": "diagram",
+   "note": "outline figures, no hands needed"
+  },
+  "p02a": {
+   "verdict": "ok",
+   "sha": "458454b609762ed8",
+   "who": "none",
+   "where": "diagram",
+   "note": ""
+  },
+  "p03a": {
+   "verdict": "ok",
+   "sha": "fa22c02d0d34feca",
+   "who": "none",
+   "where": "diagram",
+   "note": "4 of 12 = 1 in 3; fine for 'most adults' line only if re-captioned; ok as illustration"
+  },
+  "p05a": {
+   "verdict": "ok",
+   "sha": "e8f2aee9ea638de4",
+   "who": "none",
+   "where": "diagram",
+   "note": "windpipe drawn going into the mouth from behind the nose - acceptable diagram stylisation"
+  },
+  "p04a": {
+   "verdict": "fix",
+   "sha": "d01ab4ebaed2d9fc",
+   "who": null,
+   "where": null,
+   "note": "Lady: realistic horror style with blotchy rash on face and chest, too creepy; needs her sheet look, ironic"
+  },
+  "mc1": {
+   "verdict": "ok",
+   "sha": "eaa18c99175c5023",
+   "who": "hero",
+   "where": "mirror",
+   "note": "x2: two arms in coat sleeves, two black hands at the tie, white cuffs; one mirror; neck white collar ok"
   }
  },
  "video": {}
