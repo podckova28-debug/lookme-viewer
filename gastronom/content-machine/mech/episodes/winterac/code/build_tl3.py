@@ -20,21 +20,23 @@ def outro(voice, title, shots):
 
 beats = [
  hook('vo/F01.wav', 'Кондиционер\nот\nзапотевания?', [C('c1_hook'), C('n1_puzzled')]),
- dict(voice='vo/F02.wav', pad=PAD, shots=[C('n2_rain'), C('c2_button'), C('n3_dryair')]),
+ dict(voice='vo/F02.wav', pad=PAD, shots=[C('n2_rain'), C('n3_dryair')]),   # v3b: c2 (кнопка) убран — мелькал 0,96 с; кнопку уже показывает n1
  dict(voice='vo/F03.wav', pad=PAD, shots=[C('c3_evap', to=1.3), C('n4_drops'), C('n5_drip')],
-      sfx=[dict(file='sfx/drip.mp3', at=3.6, gain=0.3)]),
+      sfx=[dict(file='sfx/drip.mp3', at=3.3, gain=0.3)]),
  dict(voice='vo/F04.wav', pad=PAD, shots=[C('c4_clear', fixed=True)]),
- dict(voice='vo/F05.wav', pad=PAD, shots=[C('n6_frostnight'), C('c5_btnfrost'), C('c6_comp', to=1.8)],
+ dict(voice='vo/F05.wav', pad=PAD, shots=[C('c5_btnfrost'), C('c6_comp', to=1.8)],   # v3b: n6 (ночь) убран — мелькал 0,77 с
       sfx=[dict(file='sfx/brr.mp3', at=0.2, gain=0.3)]),
  dict(voice='vo/F06.wav', pad=PAD, shots=[C('n7_ecu', to=2.0), C('n8_thermo'), C('c6_comp', ss=1.8)]),   # n7: после 2,0 с перчатка отрывается от рычага
- dict(voice='vo/F07.wav', pad=PAD, shots=[C('c7_heater', to=2.8), C('n9_heatknob', to=0.9), C('n10_glass')]),   # n9: после 0,9 с шкала плывёт, рука сползает
+ dict(voice='vo/F07.wav', pad=PAD, shots=[C('c7_heater', to=2.8), C('n10_glass')]),   # v3b: n9 (ручка) убран — годных лишь 0,9 с, мелькал
  dict(voice='vo/F08.wav', pad=PAD, shots=[C('n11_modeknob', to=1.3), C('c8b_recirc')]),   # n11: дальше пальцы слипаются; c8b — c8 без кадров с горящей лампой (0,97–1,70 с)
  dict(voice='vo/F09.wav', pad=PAD, shots=[C('c12_fogback', ss=2.3), C('c9_breath')]),     # туман возвращается → дыхание
  outro('vo/F10.wav', 'А ты\nвключаешь\nзимой?', [C('n13_point'), C('n14_drive')]),
 ]
 # реплика → слова, на которых начинается следующий план
-CUTS = {0: ['кондиционер'], 1: ['кондиционер', 'сушит'], 2: ['радиатор', 'прямо'], 4: ['лампочка', 'компрессор'],
-        5: ['большинства', 'некоторых'], 6: ['горячий', 'забирает'], 7: ['обязательно'], 8: ['от'], 9: ['пиши']}
+# v3b: «некоторые кадры чересчур быстрые» — каждый план ≥ 1,5 с (проверка MIN_SHOT ниже)
+CUTS = {0: ['чтобы'], 1: ['кондиционер'], 2: ['радиатор', 'трубочке'], 4: ['компрессор'],
+        5: ['большинства', 'некоторых'], 6: ['горячий'], 7: ['обязательно'], 8: ['влажный'], 9: ['пиши']}
+MIN_SHOT = 1.45
 
 def extras(x):
     for i, words in CUTS.items():
@@ -42,8 +44,12 @@ def extras(x):
         if None in ts: print('нет слова', i, words); continue
         b = [0.0] + [t - 0.05 for t in ts] + [T]
         for s, (a, e) in zip(beats[i]['shots'], zip(b, b[1:])): s['w'] = round(e - a, 2)
+    for i, bt in enumerate(beats):
+        T = x['blen'](i); ws = [s.get('w', 1) for s in bt['shots']]
+        for s, w in zip(bt['shots'], ws):
+            if T * w / sum(ws) < MIN_SHOT: print(f'⚠ короткий план {T * w / sum(ws):.2f} с: реплика {i}, {s.get("clip")}')
     x['sticker'](1, 'Плюс на улице: да', 'кондиционер сушит воздух', GREEN, 0.2)
-    x['tag'](2, 'испаритель', 'холодный', [330, 470], [560, 760], angle=-5, until=round(x['at'](2, 'прямо') - 0.08, 2))   # не тянуть на план под машиной
+    x['tag'](2, 'испаритель', 'через', [330, 470], [560, 760], angle=-5, until=round(x['at'](2, 'трубочке') - 0.08, 2))   # не тянуть на план под машиной
     x['sticker'](5, 'Около 0 °C', 'у некоторых машин уже при +5 °C', BLUE, 0.4)
     x['tag'](7, 'рециркуляция', 'рециркул', [640, 250], [500, 460], angle=-5)
 
