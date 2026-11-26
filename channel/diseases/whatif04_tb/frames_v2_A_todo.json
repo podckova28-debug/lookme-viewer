@@ -1,0 +1,83 @@
+[
+ {
+  "id": "m_office",
+  "line": "P01",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Same ink-and-fine-cross-hatching drawing style and muted sepia palette as the reference. London 1850, no electric light, no clock tower. Background, NO PEOPLE: an 1850 London counting house: a row of tall slanted wooden clerks' desks with high stools, ledgers and inkpots, tall dusty windows with grey daylight, a wooden floor. Straight-on camera.",
+  "refs": [
+   "557f5d94-d7bb-494f-bfa1-5a92bfffb8b5"
+  ]
+ },
+ {
+  "id": "m_street",
+  "line": "C04",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Same ink-and-fine-cross-hatching drawing style and muted sepia palette as the reference. London 1850, no electric light, no clock tower. Background, NO PEOPLE: a foggy London street in 1850: brick terraced houses, a narrow pavement, a horse-drawn cab waiting in the fog, chimney smoke, grey sky. Straight-on camera at eye level, open pavement in the middle.",
+  "refs": [
+   "557f5d94-d7bb-494f-bfa1-5a92bfffb8b5"
+  ]
+ },
+ {
+  "id": "m_stairs",
+  "line": "Y1C",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Same ink-and-fine-cross-hatching drawing style and muted sepia palette as the reference. London 1850, no electric light, no clock tower. Background, NO PEOPLE: the narrow wooden staircase of an 1850 London lodging house, worn wooden steps going up to the right, a simple wooden banister, peeling wallpaper, a small window with grey light at the top. Medium-wide shot.",
+  "refs": [
+   "557f5d94-d7bb-494f-bfa1-5a92bfffb8b5"
+  ]
+ },
+ {
+  "id": "m_hanky",
+  "line": "M1B",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Same ink-and-fine-cross-hatching drawing style and muted sepia palette as the reference. London 1850, no electric light, no clock tower. Close-up still life, NO PEOPLE: a clean folded white linen handkerchief with a thin plain hem lying on a dark wooden table top next to a candle in a brass holder. Nothing else.",
+  "refs": [
+   "557f5d94-d7bb-494f-bfa1-5a92bfffb8b5"
+  ]
+ },
+ {
+  "id": "m_park",
+  "line": "Y2G",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Same ink-and-fine-cross-hatching drawing style and muted sepia palette as the reference. London 1850, no electric light, no clock tower. Background, NO PEOPLE: a London park in early spring 1850: a gravel path, bare trees with first green buds, a wooden bench, a pale sun in the mist. Straight-on camera.",
+  "refs": [
+   "557f5d94-d7bb-494f-bfa1-5a92bfffb8b5"
+  ]
+ },
+ {
+  "id": "y2d",
+  "line": "Y2D",
+  "prompt": "Hand-drawn explainer diagram in ink and muted watercolour on aged paper, 16:9, same style as the reference, no words, no letters, no numbers. A simple country road seen from behind a small stickman outline standing at a fork, where the road splits into three paths going into the distance: the left path goes down into dark fog, the middle path goes on flat and grey, the right path goes up toward a faint sunrise.",
+  "refs": [
+   "557f5d94-d7bb-494f-bfa1-5a92bfffb8b5"
+  ]
+ },
+ {
+  "id": "t02",
+  "line": "T02",
+  "prompt": "2D animated history explainer frame, 16:9, no text. Same ink-and-fine-cross-hatching drawing style and muted sepia palette as the reference. Present day. Close-up still life, NO PEOPLE: a modern plastic weekly pill organizer with coloured pills in its compartments, next to a printed wall calendar page with many small square day boxes, most of them crossed out with a pen. No readable text, no numbers.",
+  "refs": [
+   "557f5d94-d7bb-494f-bfa1-5a92bfffb8b5"
+  ]
+ },
+ {
+  "id": "t03",
+  "line": "T03",
+  "prompt": "Hand-drawn explainer diagram in ink and muted watercolour on aged paper, 16:9, same style as the reference, no words, no letters, no numbers. A world map in ink and muted watercolour with many small red dots clustered over South and South-East Asia and Africa, fewer elsewhere.",
+  "refs": [
+   "557f5d94-d7bb-494f-bfa1-5a92bfffb8b5"
+  ]
+ },
+ {
+  "id": "t04",
+  "line": "T04",
+  "prompt": "Tuberculosis as 'the White Lady' exactly as on the reference sheet (gaunt woman, waxy grey-white skin, red cheek blotches, dark-ringed eyes, long dark hair, tattered off-white nightgown, grey knitted shawl, lit candle in a brass holder) stands in a modern 2020s city street at dusk among glass buildings, smiling ironically at the viewer, one hand raised in a little wave. Ink-and-cross-hatching style, muted palette, not horror. Exactly one figure, two arms, two hands. No text, no signs.",
+  "refs": [
+   "1de80806-b140-40d9-8e0b-9a3a526ecee8",
+   "557f5d94-d7bb-494f-bfa1-5a92bfffb8b5"
+  ]
+ },
+ {
+  "id": "t01",
+  "line": "T01",
+  "prompt": "Edit the FIRST reference image. Keep EXACTLY the same place, drawing style, palette, camera angle and every piece of furniture, window and wall; do not add or remove furniture. All people are simple cartoon stickmen: big plain smooth white round head with a black outline and NO hair, two dot eyes, simple mouth and eyebrows, no nose; thin BLACK stick arms and legs (never skin-coloured), small black mitten hands. Medium-wide shot, every person fully visible from head to feet. Anatomy: every person has exactly one head, two arms from the shoulders, two mitten hands, two legs; each hand holds at most one thing. No text, no readable writing, no numbers. Not gory. The hero in modern clothes (a stickman in a dark grey hoodie and jeans) sits by the desk; a stickman doctor in blue scrubs and a blue scrub cap stands at the lit X-ray box on the wall and points at a bright white patch in the upper part of the lung picture.",
+  "refs": [
+   "7298fb19-0ec5-4ebe-8245-6b926b539383"
+  ]
+ }
+]

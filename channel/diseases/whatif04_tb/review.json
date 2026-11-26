@@ -1,0 +1,26 @@
+{
+ "frames": {
+  "mir2": {
+   "verdict": "fix",
+   "sha": "15b12b7dd21bc887",
+   "who": null,
+   "where": null,
+   "note": "reflection does not match: in the mirror his left hand hangs down, but from behind the same hand rests on the basin; extra white strip (second handkerchief?) under his left arm at the hip (quarter 3)"
+  },
+  "mir3": {
+   "verdict": "fix",
+   "sha": "aeda59800cdfffb1",
+   "who": null,
+   "where": null,
+   "note": "q1: neck from behind is a skin-coloured stalk, not a black stick; q4: reflection's hand is a black blob stuck on the mirror frame; body from behind is not thinner than Month 1 (story needs visible thinning)"
+  },
+  "mir1": {
+   "verdict": "fix",
+   "sha": "c5aa42d080df5808",
+   "who": null,
+   "where": null,
+   "note": "from behind only ONE hand at the collar (other arm hidden), but the reflection uses both hands at the tie - reflection does not match; otherwise clean"
+  }
+ },
+ "video": {}
+}

@@ -1,0 +1,31 @@
+{
+ "era": "London 1850 (all story frames); salon 1850 (cold open); present day 2020s (T01-T04)",
+ "characters": {
+  "hero": "bald stickman clerk, 20: dark brown frock coat, cream waistcoat, white shirt, black neck-tie, black shoes; at night a long off-white nightshirt. Gets thinner each stage: Month 1 normal, Month 6 pink cheek spots, Year 1 thinner + shining eyes, Year 2 grey face, hollow cheeks, coat hanging loose",
+  "doctor": "stickman doctor 1850: black frock coat, black top hat, white high collar, small black bag",
+  "landlady": "stickman woman: grey dress, white apron, white cap covering the head",
+  "boy": "landlady's small son: stickman boy, brown jacket, short trousers, flat cap",
+  "clerks": "office clerks: stickmen in dark frock coats at tall desks",
+  "guests": "1850 salon guests: pale thin stickmen, ladies in crinolines, gentlemen in tailcoats",
+  "byron": "Lord Byron as a stickman: open white shirt collar, dark velvet jacket, black cape",
+  "lady": "White Lady (tuberculosis): as on sheet 1de80806 - gaunt woman, waxy grey-white skin, red cheek blotches, dark-ringed eyes, long dark hair, tattered off-white nightgown, grey knitted shawl, candle; ironic not horror",
+  "modern": "2020s: hero in a dark grey hoodie and jeans; doctor/nurse in blue scrubs and scrub cap",
+  "extras": "London street crowd 1850: stickmen in period coats, top hats, bonnets"
+ },
+ "locations": {
+  "salon": "1850 drawing room: tall curtained window, fireplace with gilt mirror, velvet sofa",
+  "room": "hero's rented room: iron bed with grey blanket left, small window with London chimneys back, washstand with jug and basin, wooden chair with coat",
+  "mirror": "close shot at the washstand: one tall oval mirror, jug and basin; ONLY ONE mirror",
+  "atlas": "1850s anatomy atlas page: same lungs engraving; disease always in the hero's RIGHT lung first (viewer's left), then both",
+  "office": "1850 counting house: tall wooden desks in a row, high windows, gas-less (candles/daylight)",
+  "street": "foggy London street 1850: brick houses, horse cabs",
+  "stairs": "lodging house staircase",
+  "clinic": "2020s clinic",
+  "map": "world map",
+  "diagram": "explainer diagram on aged paper"
+ },
+ "banned": {
+  "1850": ["electric light", "light bulbs", "phones", "cars", "Big Ben clock tower (finished 1859)", "Tower Bridge", "modern clothes", "hair on stickmen", "readable text", "second mirror", "bare skin-coloured arms (stickmen have black stick arms)"],
+  "2020s": ["readable text", "hair on stickmen"]
+ }
+}

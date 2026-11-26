@@ -2,40 +2,36 @@ id	score	sec	heard
 C01	0.97	10.8	In 1850, the deadliest disease in the world  was also the most fashionable.  Pale skin, a thin waist, bright eyes, and pink cheeks.  People called it the look of consumption.
 C02	1.00	5.5	Lord Byron said he'd like to die of it, so the ladies would say how interesting he looks  in dying.
 C03	1.00	2.9	Darling, everyone who's anyone has me.
-C04	1.00	7.3	Today we're giving you tuberculosis five times in five different centuries.  Let's see where you survive.
-P01	1.00	10.6	First, how you catch it. Someone with tuberculosis in their lungs coughs.  Tiny droplets float in the air for hours. You breathe in just a few bacteria, and that's enough.
-P02	1.00	6.4	Your immune cells swallow them, but they can't kill them.  So your body does the next best thing, it builds a prison.
-P03	1.00	7.4	For most people, the prisoner never gets out.  About a quarter of everyone alive today  has tuberculosis locked up inside them right now.
+C04	0.92	6.8	Today, you're a 20-year-old clerk in London, 1850.  You've just caught it.  Let's see the next three years.
+P01	1.00	8.6	Here's how you caught it.  Someone in your crowded office coughs.  Tiny droplets hang in the air for hours.  You breathe in a few bacteria, and that's enough.
+P02	1.00	7.4	Your immune cells swallow them, but they can't kill them,  so your body builds a prison around them,  a small hard lump in your lung.
+P03	0.95	5.9	In 1850 London, most adults have one of these prisons.  For most of them, the prisoner never gets out.
 P04	1.00	1.2	I'm very patient.
-P05	1.00	15.8	But if your body gets weak from hunger, cold, overwork, or another illness, the prisoner  breaks out.  It eats a hole in your lung and you start to cough it up and pass it on.  That's when the old name makes sense.  Consumption.  It consumes you.
-E1A	0.96	9.3	century one London 1820 you're a young poet you've had a cough for months and this morning  there's a bright red spot on your handkerchief
-E1B	1.00	10.0	Your doctor has no idea it's contagious.  In England, everyone believes consumption runs in families  and in weak, sensitive souls, like poets.
-E1C	1.00	9.0	so he bleeds you to calm the fever. Then he puts you on a diet to take the strain off your lungs,  one anchovy and one piece of bread a day.
-E1D	1.00	7.5	This really happened.  It's what a doctor prescribed to the poet John Keats.  Then he was sent south to the warm air of Rome.
-E1E	0.94	6.7	You're starving a disease that feeds on weakness.  Keats died in Rome the next winter.  He was 25.
-E1F	1.00	2.3	poets, they always taste of ink.
-E2A	0.93	12.2	Century 2. A farm in Rhode Island, 1892. Your mother died of consumption.  Then your older sister. Then this winter your sister, Mercy. And now you're coughing.
-E2B	0.95	6.1	The neighbours have a theory, one of the dead isn't resting, she's coming back at night  and feeding on you.
-E2C	1.00	3.5	So your father and half the village go to the cemetery and dig them up.
-E2D	1.00	10.0	Mercy has been dead for two months, but it's winter and her body looks fresh.  There's still blood in her heart.  That settles it.  She's the vampire.
-E2E	0.95	5.4	They burn her heart on a rock, mix the ashes into a drink and give it to you, to kill you.
-E2F	0.96	8.8	Ten years earlier, a German doctor named Robert Koch had already found the real culprit under  a microscope. The news just hadn't reached your village.
-E2G	0.89	4.3	I've been called many things.  Vampire is my favourite.
-E3A	0.93	11.0	century 3 1905 now everyone knows it's a germ and that it spreads so if you're sick you're  sent away to a sanatorium high in the mountains
-E3B	1.00	10.3	The cure is rest, fresh air and food, a lot of food, six meals a day and glasses of milk  in between.  They weigh you every week.  Gaining weight is good news.
-E3C	0.97	7.7	and the fresh air is not optional.  You sleep outside, on the porch, all winter,  even when it's 20 below.
-E3D	1.00	6.8	If that doesn't work, the surgeon collapses your lung on purpose by pumping air into your  chest so the lung can rest.
-E3E	1.00	6.3	Some people do get better, many go home feel fine for a while and then the prisoner breaks  out again.
-E3F	1.00	2.4	I'll wait. I'm very good at waiting.
-E4A	0.67	7.7	Century 4, 1947, Britain.  Finally, there's a drug that kills the bacteria.  Strepto mysyn.
-E4B	1.00	5.2	but there isn't enough of it for everyone.  So the doctors do something new.  They run a lottery.
-E4C	1.00	10.0	Each patient gets a sealed envelope, half get the drug, half get the old treatment, bed  rest.  It's the first trial in history where chance alone decides who gets the medicine.
-E4D	0.84	7.7	and it works. After 6 months, 7% of the drug group have died. In the bed rest group, 27%.
-E4E	1.00	7.2	But in some patients, the bacteria come back, now immune to the drug.  One drug isn't enough.  You need several at once.
-E4F	1.00	0.6	I learn.
-E5A	0.98	10.0	Century 5. Today. Your cough has lasted three weeks. You've lost weight and you sweat through  your sheets at night. A doctor sends you for a chest x-ray.
-E5B	1.00	10.8	The treatment is four drugs every day for six months.  Some newer courses take four.  You feel better in a few weeks,  but you have to finish it  or the bacteria learn to resist.
-E5C	1.00	2.8	Finish it and you're cured.  Most people are.
-E5D	1.00	10.5	And yet, tuberculosis still kills more than a million people a year, more than any other  single infection, mostly where the medicine or the clinic is too far away.
-E5E	1.00	3.2	Still here darling, still in fashion.
-E01	1.00	5.0	So, which century would you survive, and would you drink the heart? Tell me in the comments.
+P05	1.00	5.9	but you're overworked, underfed,  and you sleep in a cold, damp room.  The prisoner breaks out.
+M1A	1.00	7.2	Month one. A cough that won't go away. You're tired all the time and a little thinner.  In the mirror you look fine, just tired.
+M1B	1.00	1.5	Your handkerchief is still clean.
+M1C	1.00	5.1	Inside, the bacteria are multiplying, eating into the soft tissue around the prison.
+M1D	1.00	10.4	Your doctor's prescription is new and very modern.  Cod liver oil, a spoonful three times a day.  It tastes terrible.  And to be fair, it might actually help a little.
+M6A	0.98	8.5	Month 6 Every afternoon a fever comes, two bright pink  spots burn on your cheeks, doctors called it the hectic flush.
+M6B	1.00	6.2	At night, you sweat so much you wake up in soaked sheets.  You've lost your appetite and your collar is getting loose.
+M6C	1.00	2.9	And one morning, there's a pink speck on your handkerchief.
+M6D	1.00	4.1	Your doctor says your blood is too rich,  so he puts leeches on your chest.
+M6E	1.00	3.4	Leeches. Lovely. Take more blood. I'll wait.
+Y1A	1.00	4.0	Year one, you cough and your mouth fills with bright red blood.
+Y1B	1.00	6.0	Here's why, the bacteria have eaten a hole right through your lung and broken a blood  vessel on the way.
+Y1C	1.00	7.5	And now, every time you cough, you spray bacteria into the room.  Your landlady's little boy has started coughing too.
+Y1D	0.96	9.7	The strangest symptom is in your head.  You feel hopeful, full of plans.  Doctors called it spes tisica, the hope of the consumptive.  Nobody knows why.
+Y1E	0.92	8.7	Your doctor's advice goes south to the warm air of Madeira or Italy.  On a Clark's wages, that's like being told to go to the moon.
+Y2A	0.96	8.9	Year two, in the mirror, a stranger.  Gray skin, hollow cheeks, huge shining eyes.  Your coat hangs on you like on a coat hook.
+Y2B	1.00	3.6	You're short of breath on the stairs.  Your voice has turned to a whisper.
+Y2C	1.00	2.7	Inside, both lungs are full of holes.
+Y2D	1.00	2.2	Now there are three ways this can go.
+Y2E	1.00	7.8	Path one, galloping consumption.  It speeds up and it's over in weeks.  About half of untreated people were dead within a few years.
+Y2F	0.97	5.9	Path 2. You drag on for years, half alive, coughing the disease into everyone around you.
+Y2G	0.98	8.9	Path 3. Your body builds new walls around the holes and the disease goes quiet. Some people  really did recover, with scars in their lungs for life.
+Y2H	1.00	1.6	I'll take any of the three.
+T01	1.00	7.1	Today, the same cough, three weeks long.  A doctor sends you for a chest x-ray  and a test of what you cough up.
+T02	1.00	8.4	The treatment is four drugs every day for six months.  You feel better in weeks, but you have to finish it  or the bacteria learn to resist.
+T03	1.00	7.2	And yet, tuberculosis still kills more than a million people every year, mostly where the  medicine is too far away.
+T04	1.00	3.2	Still here darling, still in fashion.
+E01	0.93	4.3	So, which path would you have got in 1850? Tell me in the comments.

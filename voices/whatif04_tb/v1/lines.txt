@@ -1,0 +1,40 @@
+C01|NARRATOR|In eighteen fifty, the deadliest disease in the world was also the most fashionable. Pale skin, a thin waist, bright eyes and pink cheeks. People called it the look of consumption.
+C02|NARRATOR|Lord Byron said he'd like to die of it, so the ladies would say, how interesting he looks in dying.
+C03|LADY|Darling. Everyone who's anyone has me.
+C04|NARRATOR|Today we're giving you tuberculosis. Five times. In five different centuries. Let's see where you survive.
+P01|NARRATOR|First, how you catch it. Someone with tuberculosis in their lungs coughs. Tiny droplets float in the air for hours. You breathe in just a few bacteria, and that's enough.
+P02|NARRATOR|Your immune cells swallow them, but they can't kill them. So your body does the next best thing. It builds a prison.
+P03|NARRATOR|For most people, the prisoner never gets out. About a quarter of everyone alive today has tuberculosis locked up inside them right now.
+P04|LADY|I'm very patient.
+P05|NARRATOR|But if your body gets weak, from hunger, cold, overwork or another illness, the prisoner breaks out. It eats a hole in your lung, and you start to cough it up, and pass it on. That's when the old name makes sense. Consumption. It consumes you.
+E1A|NARRATOR|Century one. London, eighteen twenty. You're a young poet. You've had a cough for months, and this morning, there's a bright red spot on your handkerchief.
+E1B|NARRATOR|Your doctor has no idea it's contagious. In England, everyone believes consumption runs in families, and in weak, sensitive souls. Like poets.
+E1C|NARRATOR|So he bleeds you, to calm the fever. Then he puts you on a diet, to take the strain off your lungs. One anchovy and one piece of bread a day.
+E1D|NARRATOR|This really happened. It's what a doctor prescribed to the poet John Keats. Then he was sent south, to the warm air of Rome.
+E1E|NARRATOR|You're starving a disease that feeds on weakness. Keats died in Rome the next winter. He was twenty five.
+E1F|LADY|Poets. They always taste of ink.
+E2A|NARRATOR|Century two. A farm in Rhode Island, eighteen ninety two. Your mother died of consumption. Then your older sister. Then, this winter, your sister Mercy. And now you're coughing.
+E2B|NARRATOR|The neighbors have a theory. One of the dead isn't resting. She's coming back at night, and feeding on you.
+E2C|NARRATOR|So your father, and half the village, go to the cemetery, and dig them up.
+E2D|NARRATOR|Mercy has been dead for two months, but it's winter, and her body looks fresh. There's still blood in her heart. That settles it. She's the vampire.
+E2E|NARRATOR|They burn her heart on a rock, mix the ashes into a drink, and give it to you. To cure you.
+E2F|NARRATOR|Ten years earlier, a German doctor named Robert Coke had already found the real culprit under a microscope. The news just hadn't reached your village.
+E2G|LADY|I've been called many things. Vampire is my favorite.
+E3A|NARRATOR|Century three. Nineteen oh five. Now everyone knows it's a germ, and that it spreads. So if you're sick, you're sent away. To a sanatorium, high in the mountains.
+E3B|NARRATOR|The cure is rest, fresh air, and food. A lot of food. Six meals a day, and glasses of milk in between. They weigh you every week. Gaining weight is good news.
+E3C|NARRATOR|And the fresh air is not optional. You sleep outside, on the porch, all winter. Even when it's twenty below.
+E3D|NARRATOR|If that doesn't work, the surgeon collapses your lung on purpose, by pumping air into your chest, so the lung can rest.
+E3E|NARRATOR|Some people do get better. Many go home, feel fine for a while, and then the prisoner breaks out again.
+E3F|LADY|I'll wait. I'm very good at waiting.
+E4A|NARRATOR|Century four. Nineteen forty seven, Britain. Finally, there's a drug that kills the bacteria. Strep-toe-my-sin.
+E4B|NARRATOR|But there isn't enough of it for everyone. So the doctors do something new. They run a lottery.
+E4C|NARRATOR|Each patient gets a sealed envelope. Half get the drug. Half get the old treatment, bed rest. It's the first trial in history where chance alone decides who gets the medicine.
+E4D|NARRATOR|And it works. After six months, seven percent of the drug group have died. In the bed rest group, twenty seven percent.
+E4E|NARRATOR|But in some patients, the bacteria come back, now immune to the drug. One drug isn't enough. You need several at once.
+E4F|LADY|I learn.
+E5A|NARRATOR|Century five. Today. Your cough has lasted three weeks. You've lost weight, and you sweat through your sheets at night. A doctor sends you for a chest X-ray.
+E5B|NARRATOR|The treatment is four drugs, every day, for six months. Some newer courses take four. You feel better in a few weeks, but you have to finish it, or the bacteria learn to resist.
+E5C|NARRATOR|Finish it, and you're cured. Most people are.
+E5D|NARRATOR|And yet, tuberculosis still kills more than a million people a year. More than any other single infection. Mostly where the medicine, or the clinic, is too far away.
+E5E|LADY|Still here, darling. Still in fashion.
+E01|NARRATOR|So, which century would you survive? And would you drink the heart? Tell me in the comments.
