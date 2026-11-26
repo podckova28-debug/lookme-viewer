@@ -6,9 +6,9 @@
   "landlady": "stickman woman: grey dress, white apron, white cap covering the head",
   "boy": "landlady's small son: stickman boy, brown jacket, short trousers, flat cap",
   "clerks": "office clerks: stickmen in dark frock coats at tall desks",
-  "guests": "1850 salon guests: pale thin stickmen, ladies in crinolines, gentlemen in tailcoats",
+  "guests": "1850 salon guests: pale thin stickmen; gentlemen bald in tailcoats; LADIES in crinolines WITH 1850 hair (dark, middle parting, low bun, side ringlets)",
   "byron": "Lord Byron as a stickman: open white shirt collar, dark velvet jacket, black cape",
-  "lady": "White Lady (tuberculosis): as on sheet 1de80806 - gaunt woman, waxy grey-white skin, red cheek blotches, dark-ringed eyes, long dark hair, tattered off-white nightgown, grey knitted shawl, candle; ironic not horror",
+  "lady": "White Lady (tuberculosis) as on sheet 1de80806 and in old ep07: life-size adult, ghostly gaunt emaciated Victorian woman, waxy grey-white skin, hollow cheeks with red feverish blotches, sunken dark-ringed eyes, pale bluish lips, long unkempt dark hair, tattered white high-collared nightgown, grey knitted shawl; one prop at a time; ironic, not cute, never doll-sized",
   "modern": "2020s: hero in a dark grey hoodie and jeans; doctor/nurse in blue scrubs and scrub cap",
   "extras": "London street crowd 1850: stickmen in period coats, top hats, bonnets"
  },
@@ -34,10 +34,11 @@
    "Big Ben clock tower (finished 1859)",
    "Tower Bridge",
    "modern clothes",
-   "hair on stickmen",
    "readable text",
    "second mirror",
-   "bare skin-coloured arms (stickmen have black stick arms)"
+   "bare skin-coloured arms (stickmen have black stick arms)",
+   "hair on male stickmen",
+   "bald women"
   ],
   "2020s": [
    "readable text",

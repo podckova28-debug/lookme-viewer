@@ -34,3 +34,9 @@ T02|NARRATOR|The treatment is four drugs, every day, for six months. You feel be
 T03|NARRATOR|And yet, tuberculosis still kills more than a million people every year. Mostly where the medicine is too far away.
 T04|LADY|Still here, darling. Still in fashion.
 E01|NARRATOR|So, which path would you have got in eighteen fifty? Tell me in the comments.
+P02B|NARRATOR|And this bacterium is a strange one. It wears a thick, waxy coat, so your immune cells can't break it open. And it's slow. It splits in two only about once a day. That's why this disease takes years, not days.
+M1E|NARRATOR|That's the cough. Your airways fill with mucus and dead cells, and your lungs keep trying to push them out.
+M6F|NARRATOR|Here's why. Your immune cells are at war, and they flood your blood with alarm signals. Those signals turn up the thermostat in your brain. Your temperature peaks in the late afternoon anyway, so that's when the fever hits. The blood vessels in your face open wide, and your cheeks burn pink.
+M6G|NARRATOR|At night, the fever breaks. Your body has to dump all that heat at once, so it opens every sweat gland it has. And the same alarm signals tell your body to burn its own fat and muscle. That's why they called it consumption. It eats you from the inside.
+Y1F|NARRATOR|Here is how. The centre of the prison dies and goes soft, like cheese. Then it melts, you cough it up, and an empty hole is left behind.
+Y2I|NARRATOR|With so much lung gone, every breath brings in less air. And the bacteria you cough up have reached your voice box.
