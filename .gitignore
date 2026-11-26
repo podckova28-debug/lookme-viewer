@@ -16,3 +16,5 @@ channel/diseases/smallpox_ketchup/raw/
 channel/diseases/smallpox_ketchup/raw_old/
 voices/smallpox_ketchup/*.wav
 voices/smallpox_ketchup/*.log
+voices/smallpox_ketchup/fast/
+channel/diseases/smallpox_ketchup/preview/smallpox_draft.mp4*
