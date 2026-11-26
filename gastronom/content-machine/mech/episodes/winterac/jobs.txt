@@ -28,3 +28,36 @@ k8v2b 531117f3-c014-4fcd-8ec6-f674ecb4d70d
 c1v2_hook e04bb48c-3ee7-4cde-af42-a0703d9172a4 (5 с)
 c2v2_button 4a620934-78c8-4ec1-8b6e-40237abcb883 (3 с)
 c8v2_recirc 274006f4-cd46-45ea-ab35-102d1fbfcb0d (3 с)
+# v3: новые кадры (kf2_prompts.py; индекс → ключ по kf2_req.json)
+0 n1_puzzleda 1d1c25bb-8987-4142-9bc9-39d18459053a
+1 n1_puzzledb 4a7e8628-39f1-4f8d-8e21-736e4d9b199c
+2 n2_raina 3c1443e4-d2a7-491f-8c39-50a76a1e276f
+3 n2_rainb 0993b8fc-5d02-4471-bec7-f51ff609f885
+4 n3_dryair 549a1e31-0977-4d1e-a568-4eee058fe1ec
+5 n4_drops d7d456de-5816-4823-b2f1-d6095a11f8f4
+6 n5_drip 5ff0f529-e32b-45f7-9d4f-d4f7b03481d3
+7 n6_frostnight f59c3104-b7d2-480e-b744-522b050e7092
+8 n7_ecu 9e63717d-8d75-449c-acfc-0feccfab3f90
+9 n8_thermo 84763516-2d33-4d9b-9a98-27fb01f57077
+10 n9_heatknob 0f79e676-a9e7-4c39-ab93-1f77b07a9608
+11 n10_glass e95341ae-41a9-4892-9a46-109321b322c5
+12 n11_modeknob 83a7b4f9-be62-4565-8d8b-f4afeb85a753
+13 n13_pointa 91aa8c88-9c0b-47ab-8e91-ccf77f7a0904
+14 n13_pointb c848d4a2-b28d-4e23-9b6b-7941f7e1d606
+15 n14_drive c13a720d-36f3-4330-be0d-58c7bf9782b5
+# v3 выбор: n1=a, n2=a, n13=b (13 кадров проверены вблизи: пальцы, один карандаш)
+# v3 клипы wan3_0 480p 3 с (n*_raw.mp4)
+n1_puzzled 23a5d190-0739-4633-b81c-99391d1d9e1d
+n2_rain defc2bec-b73b-43ce-823b-88865be3e455
+n3_dryair 08869dea-cc50-4c9f-91d3-184f48360d68
+n4_drops 3bfd0ae9-47cc-43d3-a70e-70a3ced7e74f
+n5_drip 98112814-4aee-482f-b090-71bde8f9b3fd
+n6_frostnight c6def3dc-f5ce-4667-a920-2142f58fc204
+n7_ecu e7ff65f2-8c53-463e-b768-8ea452a0b0ed
+n8_thermo 73cbbac8-f6b8-4147-bfbb-c64b916a6ea7
+n9_heatknob 2f74fbb4-6afd-463b-bd72-9978e4115587
+n10_glass a668455d-fcff-4630-9d42-775274b1fc5e
+n11_modeknob b6407516-c39a-4dce-9217-c6dc3c4a7047
+n13_point ee525718-67bf-424d-b78d-0556f7c993be
+n14_drive f94bb3b4-f308-40d6-9f0e-4dc2f4f7cb25
+c5_btnfrost 857fff5a-7c04-4f67-a6d5-a9363321adec
