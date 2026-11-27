@@ -86,7 +86,7 @@ Two days later, he leaves to command the French army in Italy.
 It's a hungry, ragged army with no boots and no pay.
 Within a year, it beats the Austrians again and again.
 Lodi.
-Arcole.
+The bridge at Arcole.
 Rivoli.
 He sends home gold, paintings and statues.
 And he sends Joséphine love letters, sometimes several a day.
