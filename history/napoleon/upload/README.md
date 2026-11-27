@@ -1,6 +1,6 @@
 # The Entire Life of NAPOLEON — пакет для загрузки на YouTube
 
-- Видео: `The_Entire_Life_of_Napoleon_1080p.mp4` — 1080p, 9:57, 97 МБ, −15 LUFS. Формат «Еды и напитков» (как кетчуп): белый фон, тушь + акварель, человечек-«ты», рукописные пометки, юмор, смена кадра каждые ~3 с, без зума. Мужской голос (Chatterbox, синтетический референс), тихая музыка.
+- Видео: `The_Entire_Life_of_Napoleon_1080p.mp4` — 1080p, 9:59, 97 МБ, −15 LUFS. Формат «Еды и напитков» (как кетчуп): белый фон, тушь + акварель, человечек-«ты», рукописные пометки, юмор, смена кадра каждые ~3 с, без зума. Мужской голос (Chatterbox, синтетический референс), тихая музыка.
 - Обложка: `thumbnail_1280x720.jpg` («Napoleon WASN'T SHORT»). Другие варианты в `../thumbs/` (Little Boney, his EMPIRE had RATS, 42nd of 58 → EMPEROR).
 
 ## Название
@@ -14,13 +14,13 @@ And the one thing everyone "knows" about him is wrong: Napoleon wasn't short. So
 
 0:00 The rock in the Atlantic
 1:01 Corsica and a lonely schoolboy
-2:17 Revolution, Toulon and grapeshot
-3:25 Josephine and Italy
-4:22 Egypt and the coup
-5:33 Emperor
-6:33 Russia
-7:32 Elba and Waterloo
-8:39 Saint Helena and the height
+2:18 Revolution, Toulon and grapeshot
+3:26 Josephine and Italy
+4:24 Egypt and the coup
+5:34 Emperor
+6:35 Russia
+7:33 Elba and Waterloo
+8:40 Saint Helena and the height
 
 Sources: Andrew Roberts, Napoleon the Great (2014); Philip Dwyer, Napoleon: The Path to Power (2007) and Citizen Emperor (2013); Adam Zamoyski, Napoleon: A Life (2018); Emmanuel de Las Cases, Memorial of Saint Helena (1823); F. Antommarchi, autopsy report (1821); Richard Godfrey, James Gillray: The Art of Caricature (2001).
 Disputed details (the arsenic theory, the exact army sizes) are marked as uncertain in the video.
