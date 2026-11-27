@@ -1,0 +1,15 @@
+# Per-frame review, pilot (p0+p1)
+- f003: Napoleon in blue uniform + cockade pointing at map — fine as gag but it is a NAPOLEON frame without reference; OK (map prompt asked no people → extra person). Redraw objects-only for consistency.
+- f004: random woman+man laughing over the map — extra people, not asked. Redraw objects-only.
+- f006: Napoleon in blue marshal uniform (ok-ish, 1810), map fine. Keep? Extra person not asked → redraw objects-only.
+- f012: ruler numbered 1,1,2,3,4,5 — garbled numbers. Redraw.
+- f014: ruler numbers garbled (150 twice, 130, 160 at bottom). Redraw with a ruler showing only 160/169/180.
+- f018: extra people (couple whispering) instead of objects-only stamp. Fine as a gag, but not asked; OK to keep? -> redraw objects-only for discipline.
+- f019: cannon has royal fleur-de-lis (Bourbon, not Napoleon) and the "quill" is a modern steel fountain pen nib. Redraw: plain bronze cannon, feather quill.
+- f029: 13 children drawn while the note says 8 survive -> redraw with exactly 8 children.
+- f030: French tricolour on the ship in 1779 (anachronism, tricolour from 1790s) -> no flags.
+- f035: Colosseum in the Julius Caesar book (built 120 years after Caesar) -> Roman Forum/no buildings.
+- f040: unrequested people; hand at top of scroll not clearly attached to anyone (floating hand) -> objects-only.
+- f041: unrequested sad man -> objects only.
+- f043: "DYNAMITE" stick (invented 1867) + garbled scale bar -> black powder keg with lit fuse, no scale bar.
+- f040 v2: circled name was 'Delorme' -> v3 with Buonaparte line.
