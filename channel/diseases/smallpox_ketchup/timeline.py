@@ -9,9 +9,9 @@ ids = [l.split('|')[0] for l in open(os.path.join(REPO, 'voices/smallpox_ketchup
 shots, vo, marks = [], [], {}
 t = 0.3
 for k, i in enumerate(ids):
-    if k and i[0] != ids[k - 1][0]: t += .45            # small breath between chapters
+    if k and i[0] != ids[k - 1][0]: t += .28            # chapter break: 0.5 s total, as in the food channel
     if i[0] not in marks: marks[i[0]] = t
-    d = dur(i); seg = max(1.9, d + .2)
+    d = dur(i); seg = d + .22   # audio-driven, like ketchup: 0.22 s between lines, no minimum
     vo.append({'file': f'{VO}/{i}.wav', 't': round(t + .03, 3)})
     shots.append({'img': i, 'from': [.5, .5, 1.02], 'to': [.5, .5, 1.0], 'settle': .25, 't0': round(t, 3), 't1': round(t + seg, 3)})
     t += seg
