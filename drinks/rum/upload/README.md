@@ -1,6 +1,6 @@
 # The ENTIRE History of Rum — пакет для загрузки на YouTube
 
-- Видео: `The_ENTIRE_History_of_Rum_1080p.mp4` — 1080p, 7:27, мужской голос, фоновая музыка.
+- Видео: `The_ENTIRE_History_of_Rum_1080p.mp4` — 1080p, ~7:29, мужской голос, фоновая музыка. Концовка (27.11) заменена: затравка теперь на кетчуп, с кадрами из ролика про кетчуп; исправлена обрезка последнего слова.
 - Обложка: `thumbnail_1280x720.jpg` (бутылка рома, «made from TRASH»), исходник `thumbnail.png`. Другие варианты — в `../thumbs/`.
 
 ## Название
@@ -22,8 +22,8 @@ In this video:
 5:07 Revolution, the molasses flood and Rum Row
 6:26 Havana, tiki and Black Tot Day
 
-Previous episode: Mead — the drink older than history.
-Next episode: Absinthe — the green drink that people said drove artists mad.
+Also on the channel: Gin — the drink that nearly destroyed London. Absinthe — the drink that drove Paris mad? Coffee — the drink kings tried to ban.
+Next episode: Ketchup — it was fish first.
 
 Sources: Richard Ligon, A True and Exact History of the Island of Barbadoes (1657); Admiral Vernon's order (1740); R. L. Stevenson, Treasure Island (1883); John Adams to William Tudor (1818); Frederick County poll records (1758); Stephen Puleo, Dark Tide: The Great Boston Molasses Flood of 1919; Wayne Curtis, And a Bottle of Rum (2006).
 
@@ -37,4 +37,5 @@ rum, history of rum, rum history, navy rum, grog, black tot day, pirates, captai
 - Язык видео: английский. Аудитория: не для детей (речь об алкоголе).
 - Раскрытие ИИ (Altered or synthetic content): ДА — голос и картинки созданы ИИ.
 - Возрастное ограничение не нужно: история напитка, без пропаганды; тема рабства подана прямо и без шуток.
-- Конечная заставка (последние 5–20 с): подписка + видео про медовуху; позже — про абсент.
+- Конечная заставка (последние 5–20 с): подписка + ролик про кетчуп (на него ведёт концовка).
+- Закреплённый комментарий: «Would you have drunk your navy ration? Next: the sauce sailors brought home from Asia, and it smelled like fish. Ketchup.»
