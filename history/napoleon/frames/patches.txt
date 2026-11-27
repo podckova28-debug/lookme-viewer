@@ -1,0 +1,3 @@
+# frame  x0 y0 x1 y1  (white box over a handwritten note that belongs to another line; coords in the 1344x752 png)
+131 80 20 620 160
+137 1010 10 1344 150

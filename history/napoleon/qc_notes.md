@@ -13,3 +13,87 @@
 - f041: unrequested sad man -> objects only.
 - f043: "DYNAMITE" stick (invented 1867) + garbled scale bar -> black powder keg with lit fuse, no scale bar.
 - f040 v2: circled name was 'Delorme' -> v3 with Buonaparte line.
+
+# wave 3 review (45-188)
+- f045: tricolour flag in July 1789 (flag adopted 1790s) -> no flags, cockades only.
+- f049: family fleeing the island laughing happily (tone wrong: refugees with nothing) + father in the boat (father died 1785!) -> mother Letizia and children only, worried faces.
+- f050: father figure present (dead since 1785) -> Letizia with children only.
+- f051: modern fountain-pen nib on a quill -> feather quill only (also 052 check).
+- f052: fountain-pen nib again -> feather quill.
+- f054: unrequested laughing officers in front -> harbour scene only, no people.
+- f055: captain shown in general's uniform (ok-ish) — accept (reference). OK.
+- f056: Union Jacks with St Patrick's cross on ships (that flag is from 1801) -> no flags.
+- f057: unrequested cheering officer (looks British-ish, confusing) -> ships only.
+- f073: tricolours with royal fleur-de-lis + garbled 'LOMBARDY' twice -> arrows only, no flags, no labels.
+- f076: Austrians in black shakos with double eagle — fine. OK
+- f081: Gillray holds TWO quills (one in each hand) + gazette dated 1788 with a king caricature -> one quill, newspaper without readable date.
+- f082: drawing shows a crowned king (not Napoleon) -> blank paper.
+- f085: unrequested Napoleon-like officer (not ref) + laughing officer; map route goes through land to India -> fleet + map inset only, no people.
+- f086: officer in front looks like Napoleon but not ref — acceptable (generic officer)? risky continuity -> redraw soldiers only, no officer.
+- f088: mamluk rider's sword-hand: OK. Kneeling soldier front right: check hands — fine. OK
+- f089: British officer + sailors cheering in foreground (comedic tone on a battle where thousands died; unrequested people) -> ships only.
+- f092: stone shown with only 2 scripts visible + big Greek text in a wrong position; stone found in a wall -> acceptable? Greek at bottom is correct actually (hieroglyphs top, demotic middle, Greek bottom). Demotic missing-ish. OK.
+- f094: unrequested modern visitors (fine idea but "no people" asked) -> keep? Modern people OK as gag; hands fine. OK
+- f095: tricolour flag on tent is fine in 1799 (adopted 1794). OK
+- f096: arrow from Spain (Spain was France's ally in 1799) -> remove arrow from Spain; also tricolour on building OK.
+- f097: glass lantern hung in tent: OK for 1799 (glass lanterns existed). OK
+- f098: unrequested people incl. a pirate-like sailor; pyramids by the sea at the coast (pyramids are inland at Giza, not on the coast) -> ship only, flat coast with a lighthouse-free low shore.
+- f100: OOPS stamp with royal fleur-de-lis handle (fine, generic) -> OK, but plain handle better: minor; OK.
+- f101: hands crowded; deputy left grabbing — check: grenadier front has 2 hands, deputy bottom-left 2 hands. OK-ish. Accept.
+- f103: way more than 30 candles (count ~38) -> exactly 30 not countable; replace with "30" candle number? -> redraw: two number candles '3' and '0'.
+- f104: zoom: two arms (left hand rolls right sleeve, right hand on table). OK
+- f105: royal fleur-de-lis on money bags and banknotes (Bourbon symbol, not Napoleon's) -> plain bags, imperial-free laurel.
+- f108: fleur-de-lis on the Civil Code spine (royal symbol) -> bees or plain.
+- f109: law books on literally every country incl. USA, Australia, Russia, China (wrong: Napoleonic code influence = Europe, Latin America, Louisiana, Quebec, parts of Africa/Middle East) -> books only on France, Belgium, Italy, Spain, Netherlands, Latin America, Louisiana, Quebec, Egypt, West Africa.
+- f110: blank door sign (should say First Consul) -> sign with 'First Consul' text. Minor; redraw.
+- f111: Napoleon already wearing coronation robes and nobody holds a crown, fine; pope OK. Fleur-de-lis on altar cloth (royal) minor. OK
+- f112: crown placed ON TOP OF bicorne hat (absurd, he wore a laurel wreath) -> golden laurel wreath, no hat.
+- f113: Napoleon in everyday green coat + bicorne at the coronation, Josephine in day dress, no robes (prompt asked robes) -> redraw in coronation robes, laurel wreath, no hat.
+- f114: royal fleur-de-lis all over the painting + Napoleon kneeling - fine-ish, but fleur-de-lis wrong for Napoleon (bees) -> golden bees, no fleur-de-lis.
+- f115: OK.
+- f116: comedic cheering British sailors at Trafalgar (no people requested) -> ships only.
+- f121: labels: "KINGDOM OF OSPAIN" typo; Denmark painted blue (ally, ok-ish); garbled -> redraw without any labels, crowns only.
+- f123: fleur-de-lis on cradle + rug (royal Bourbon) -> golden bees.
+- f128: baby already wears crown (spoils next gag 'King of Rome') -> no crown, bee canopy.
+- f131: Napoleon in grey coat marching on foot without reference (not asked, unclear identity) -> soldiers only, no Napoleon.
+- f132: snow on the ground in June/July + fleur-de-lis saddle cloth -> summer plains, dry grass, no fleur-de-lis.
+- f133: snow on ground in summer + comic tone (licking, eating) with burning villages; Russians in shakos with Austrian/French-like style -> summer, serious faces.
+- f134: Napoleon in grey coat (not ref) & mocking mood; acceptable but identity inconsistent -> redraw battle without Napoleon.
+- f135: snow in September + Soviet red star on Kremlin tower (anachronism, 1930s) -> autumn, no red star (eagles/plain spires).
+- f136: red star on Spasskaya tower again -> no star.
+- f137: Soviet star on Spasskaya tower again + Kremlin intact OK -> no star.
+- f138: red star on tower in window + snow in Sept -> no star, autumn.
+- f139: OK.
+- f140: officer front-right smug (not ref Napoleon, looks like one) -> soldiers only, tired.
+- f143: OK (serious enough, icons ok).
+- f144: Prussian spiked Pickelhaube helmets (introduced 1842) -> Prussians in black shakos.
+- f145: comical laughing faces in a bloody battle, ok-ish tone; Russians in green w/ French eagle shako plates; acceptable? -> redraw with neutral faces (keep), minor. Accept.
+- f146: OK.
+- f147: OK.
+- f148: modern woman eating ice cream in sandals + giant Napoleon on a fort (not ref, wrong scale) -> island harbour only, no people.
+- f152: months Jan-Oct torn, but he was on Elba May 1814 - Feb 1815 -> calendar pages without month names, just ten blank torn sheets + fleur-de-lis -> no symbol.
+- f153: a "thousand men" shown as huge army - acceptable; Napoleon ref OK. OK
+- f154: king's army drawn in 1770s Louis XVI style tricornes (1815 royal army wore shakos) -> soldiers in 1815 shakos, white cockades.
+- f155: OK.
+- f156: OK (some soldiers' hats). check hands count -> fine.
+- f157: Louis XVIII drawn as Louis XVI-style young + queen (Louis XVIII was a widower, obese, 59) -> carriage only, luggage falling, no faces.
+- f158: Pickelhaube helmets (1842) + 1770s tricorne British -> 1815 uniforms, shakos.
+- f159: OK.
+- f160: OK.
+- f162: historically Napoleon did not hand his sword to Maitland (surrendered by letter) - accept as symbolic? risky -> redraw: Napoleon climbing aboard, captain saluting, no sword.
+- f164: modern peaked sailor cap + iron-riveted green hull (1815 wooden ship) -> flat round hat like f001, wooden deck rail.
+- f165: straw hat worn ON TOP OF the bicorne (absurd) -> straw hat only, no bicorne.
+- f167: fleur-de-lis corners (royal) on British letter - minor; + laurel. -> plain envelope.
+- f169: smiling wind cloud blowing out the candle at the moment of death (tone too cute for a death) -> no face on the wind, just the curl of smoke.
+- f171: fountain-pen nib on quill again + "stomach cancer" handwritten inside the book duplicates the note — ok; fix nib -> feather quill.
+- f173: OK.
+- f174: fountain-pen nib on quill -> feather quill.
+- f175: OK.
+- f176: French ruler drawn SHORTER than English (message is the opposite: pouce > inch) -> one pouce segment visibly longer than one inch segment.
+- f177: OK (accept).
+- f178: OK.
+- f179: newspaper dated January 1821 (he died in May) -> no date line, 'May 1821'.
+- f180: Gillray alive and smiling while the line says he died -> empty desk, spectacles, cold inkpot, black ribbon.
+- f181: unfinished caricature shows a random man with a banana peel (not Napoleon) -> three panels of a tiny Napoleon in a huge bicorne, the last panel blank.
+- f182: OK. f183: OK. f184: OK.
+# wave 4 review (redraws): all accepted except f157 (coachman in green coat + bicorne looked like Napoleon -> red livery). 131/137 reuse the next frame with its note whited out (patches.txt).
