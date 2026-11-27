@@ -1,0 +1,48 @@
+a02 | ow | Your back hurts like someone kicked it.
+a03 | day 3 | Three days later, the spots come.
+a05 | Smallpox (yes, the disease) | Good morning.
+a06 | 300,000,000 | Smallpox. In the twentieth century alone, it killed about three hundred million people.
+a10 | our hero | So how did we beat it? With a cow. Eventually.
+b02 | variola | Smallpox is a virus, a tiny brick-shaped box packed with instructions.
+b04 | days 1-12 | For about twelve days, nothing happens. You feel fine.
+b06 | your skin | Then the fever hits, and the virus settles into your skin.
+b07 | like peas | The spots turn into hard bumps, like dried peas under the skin.
+b08 | face, hands, feet | They fill with pus, mostly on your face, hands and feet.
+b09 | 3 in 10 | About three in ten people die.
+b10 | survived | The rest live, but the bumps leave deep scars for life. Some go blind.
+c02 | Ramses V | This is Pharaoh Ramses the Fifth. He died more than three thousand years ago.
+c03 | hmm | His mummy's face is covered in small bumps that look a lot like smallpox.
+d02 | one man | On board is one man with smallpox.
+d03 | never met it | The people of the Americas had never met this virus. Their bodies had no defence at all.
+e01 | golden age | Back in Europe, the seventeen hundreds were smallpox's golden age.
+e02 | 400,000 a year | It killed about four hundred thousand Europeans a year.
+e03 | no VIP list | And it did not care who you were.
+e04 | 'Mary II', 'Peter II', 'Louis XV', one above each throne with a short arrow down | It killed a queen of England, a young emperor of Russia, and a king of France.
+e07 | beauty patches | Little black patches of silk, glued onto the face. Stars, moons, hearts.
+e08 | nailed it | One patch to hide a scar. Five patches to hide the rest.
+f02 | immune | If you survived smallpox once, you never got it again.
+f05 | small > big | You got a small case on purpose, so you'd never get the big one.
+f06 | variolation | It was called variolation. And it worked, mostly.
+f07 | Lady Mary | Seventeen seventeen. Lady Mary Wortley Montagu, wife of the British ambassador in Constantinople, sees it done
+f10 | hmph | Back in London, doctors were not impressed.
+f11 | Newgate, 1721 | So in seventeen twenty one, they tested it on six prisoners, who were promised freedom if they lived.
+f12 | free | All six lived. All six walked free.
+f13 | Onesimus | That same year, Boston tried it too. The preacher Cotton Mather had learned it from an enslaved African man na
+f14 | 1-2 in 100 | The catch: you could still die from it, about one or two in a hundred. And you were contagious.
+g01 | remember me? | Now, the cow.
+g02 | Gloucestershire, 1790s | In the English countryside, there was an old rumour about milkmaids.
+g03 | cowpox | They caught cowpox from the cows, a mild disease with a few blisters on the hands.
+g04 | no smallpox. ever. | And then, somehow, they never caught smallpox.
+g05 | Edward Jenner | Seventeen ninety six. A country doctor called Edward Jenner decides to test the rumour.
+g06 | Blossom | A milkmaid, Sarah Nelmes, has cowpox, which she caught from a cow named Blossom.
+g07 | James, age 8 | Jenner takes a little fluid from her blister and scratches it into the arm of an eight year old boy, James Phi
+g09 | yikes | He scratches real smallpox into the boy's arm.
+g10 | nothing | And nothing happens.
+g12 | vacca = cow | Jenner called it vaccination, from vacca, the Latin word for cow.
+g13 | moo? | Some people were terrified it would turn them into cows.
+h03 | WHO, 1967 | So in nineteen sixty seven, the World Health Organization tried something no one had ever done.
+h05 | two prongs | Their secret weapon was a needle with two prongs. Cheap, simple, and it needed far less vaccine.
+h07 | ring | Find one case, then vaccinate everyone around it, in a ring.
+h09 | Ali Maow Maalin | Nineteen seventy seven, Somalia. A hospital cook named Ali Maow Maalin catches smallpox.
+h10 | the last one | He survives. He's the last person ever to catch it naturally.
+h12 | 8 May 1980 | On the eighth of May, nineteen eighty, the world declared smallpox gone.
