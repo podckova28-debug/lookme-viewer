@@ -7,7 +7,8 @@ D = "/home/user/lookme-viewer/history/napoleon"; sys.path.insert(0, D)
 from shots import SHOTS
 SR, FPS, W, H = 24000, 30, 1920, 1080
 WORK = "health_out/nap_video"; os.makedirs(WORK + "/seg", exist_ok=True)
-GAP_LINE, GAP_PART, TAIL, ZOOM = 0.22, 0.5, 1.5, 0.06
+GAP_LINE, GAP_PART, TAIL = 0.22, 0.5, 1.5
+ZOOM = float(os.environ.get("ZOOM", "0"))   # user: no zoom, it crops the drawings
 SPEED = float(os.environ.get("SPEED", "1.05"))
 PARTS = sorted({p for p, *_ in SHOTS})
 CUE = {(p, l): k for k, (p, l, *_) in enumerate(SHOTS, 1)}

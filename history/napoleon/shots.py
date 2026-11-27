@@ -300,3 +300,13 @@ FIX6 = {
 181: "an unfinished caricature on a drawing desk: three small panels each showing a tiny Napoleon in a huge bicorne hat stamping his feet, and the fourth panel left completely blank" + OBJ0,
 }
 for _k, _d in FIX6.items(): SHOTS[_k - 1] = SHOTS[_k - 1][:2] + (_d,) + SHOTS[_k - 1][3:]
+# Kremlin in 1812: walls and towers WHITEWASHED (white), golden double-headed eagles on the tower spires, no Grand Kremlin Palace (built 1838-49)
+KREM = ("the Moscow Kremlin as it looked in 1812: WHITE whitewashed walls and white towers with green tent roofs topped by small golden double-headed eagles, "
+        "golden domes of the cathedrals inside; NO red brick, NO stars, NO large yellow-and-white palace")
+FIX7 = {
+135: f"{EMP} riding a white horse through an open gate of {KREM}, the street around him empty, early autumn",
+136: f"empty Moscow streets in early autumn with wooden houses and onion-domed churches, not a single person, a cat on a fence, in the background {KREM}",
+137: f"Moscow burning at night: huge orange flames and smoke over wooden houses and onion domes, in the middle {KREM}" + OBJ0,
+140: f"a long column of French soldiers in blue coats and wagons leaving Moscow on a muddy autumn road, brown leaves, no snow; in the far background smoke rising over {KREM}",
+}
+for _k, _d in FIX7.items(): SHOTS[_k - 1] = SHOTS[_k - 1][:2] + (_d,) + SHOTS[_k - 1][3:]
