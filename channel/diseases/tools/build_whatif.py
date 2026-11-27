@@ -290,7 +290,7 @@ def finish(img, t):
     global vig
     if vig is None:
         yy, xx = np.mgrid[0:H, 0:W]; r = np.sqrt(((xx - W / 2) / (W / 2)) ** 2 + ((yy - H / 2) / (H / 2)) ** 2)
-        vig = (1 - .32 * np.clip(r - .55, 0, 1) ** 1.4)[..., None].astype(np.float32)
+        vig = (1 - spec.get('vignette', .32) * np.clip(r - .55, 0, 1) ** 1.4)[..., None].astype(np.float32)   # 'vignette': 0 for white-page episodes
     f = img.astype(np.float32) * vig
     g = rng.normal(0, 2.2, (H // 2, W // 2, 1)).astype(np.float32); f += cv2.resize(g, (W, H))[..., None]
     return np.clip(f, 0, 255).astype(np.uint8)

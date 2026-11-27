@@ -20,7 +20,7 @@ for a, b in zip(shots, shots[1:]): a['t1'] = b['t0']
 TOTAL = round(t + 1.5, 3); shots[-1]['t1'] = TOTAL; shots[-1]['fade_out'] = 1.0
 G = .4
 music = [{'file': 'channel/diseases/music/tavern_bed_90s.mp3', 't0': 0, 't1': 'ALL', 'gain': G, 'fade_in': 1.0, 'fade_out': 3}]   # same bed as the food-and-drinks channel
-spec = {'base': 'channel/diseases/smallpox_ketchup/f', 'fade_in': .3, 'music': music, 'shots': shots, 'texts': [], 'vo': vo, 'sfx': [], 'duration': TOTAL}
+spec = {'base': 'channel/diseases/smallpox_ketchup/f', 'fade_in': .3, 'music': music, 'shots': shots, 'texts': [], 'vo': vo, 'sfx': [], 'duration': TOTAL, 'vignette': 0}
 json.dump(spec, open(os.path.join(HERE, 'timeline.json'), 'w'), indent=1)
 print(len(shots), 'shots', f'{TOTAL:.1f} s')
 for c, s in marks.items(): print(c, f'{int(s // 60)}:{int(s % 60):02d}')
