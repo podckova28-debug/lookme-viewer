@@ -1,4 +1,5 @@
 """Re-aim the hand-drawn arrows baked into frames: erase the old arrow, draw a new ink arrow from the note to the target.
+# USER: only f13 (Onesimus) is re-aimed; all other frames keep their original arrows. Run: python3 -c "import arrows; im,_=arrows.fix('f13',*arrows.ARROWS['f13']); im.save('f/f13.jpg',quality=93)"
 ARROWS = id: (old_tip_x, old_tip_y, target_x, target_y). python3 arrows.py -> f/<id>.jpg rewritten from raw/<id>.png, review/arrows_*.jpg"""
 import numpy as np, math, random
 from PIL import Image, ImageDraw
@@ -71,7 +72,7 @@ def fix(i, ox, oy, tx, ty, mode='edge', start=None, label=None):
         else: run = 0
     L = math.hypot(ex - sx, ey - sy)
     if L < 25: return im, 'too short'
-    ux, uy = (ex - sx) / L, (ey - sy) / L; ex, ey = ex + ux * 2, ey + uy * 2
+    ux, uy = (ex - sx) / L, (ey - sy) / L; ex, ey = ex - ux * 22, ey - uy * 22   # stop a little short of the subject, like a hand-drawn note
     # hand-drawn curve
     random.seed(i); bend = 0 if i in ('f06',) else random.choice([-1, 1]) * min(60, L * .15)
     px, py = -uy, ux; pts = []
@@ -84,8 +85,8 @@ def fix(i, ox, oy, tx, ty, mode='edge', start=None, label=None):
     for sgn in (1, -1):
         c, sn = math.cos(2.55), sgn * math.sin(2.55)
         dx, dy = vx * c - vy * sn, vx * sn + vy * c
-        heads.append((hx, hy, hx + dx * 34, hy + dy * 34))
-    for col, w in (((255, 255, 255), 12), (INK, 5)):   # white halo first so the arrow reads over the drawing
+        heads.append((hx, hy, hx + dx * 22, hy + dy * 22))
+    for col, w in ((INK, 3),):   # thin pen line like the baked-in notes, no halo
         for (x0, y0), (x1, y1) in zip(pts, pts[1:]): dr.line((x0, y0, x1, y1), fill=col, width=w)
         for h in heads: dr.line(h, fill=col, width=w)
         for (x, y) in pts: dr.ellipse((x - w / 2 + .5, y - w / 2 + .5, x + w / 2 - .5, y + w / 2 - .5), fill=col)
