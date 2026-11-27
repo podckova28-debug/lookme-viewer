@@ -18,12 +18,8 @@ for k, i in enumerate(ids):
 shots[0]['t0'] = 0.0
 for a, b in zip(shots, shots[1:]): a['t1'] = b['t0']
 TOTAL = round(t + 1.5, 3); shots[-1]['t1'] = TOTAL; shots[-1]['fade_out'] = 1.0
-G = .5
-music = [
- {'file': 'channel/diseases/music/sneaky_theme.mp3', 't0': 0, 't1': round(marks['e'] + 1, 2), 'gain': G, 'fade_in': 1.0, 'fade_out': 3},
- {'file': 'channel/diseases/music/main_theme.mp3', 't0': round(marks['e'] - 1, 2), 't1': round(marks['h'] + 1, 2), 'gain': G, 'fade_in': 3, 'fade_out': 3},
- {'file': 'channel/diseases/music/today_theme.mp3', 't0': round(marks['h'] - 1, 2), 't1': 'ALL', 'gain': G, 'fade_in': 3, 'fade_out': 3},
-]
+G = .4
+music = [{'file': 'channel/diseases/music/tavern_bed_90s.mp3', 't0': 0, 't1': 'ALL', 'gain': G, 'fade_in': 1.0, 'fade_out': 3}]   # same bed as the food-and-drinks channel
 spec = {'base': 'channel/diseases/smallpox_ketchup/f', 'fade_in': .3, 'music': music, 'shots': shots, 'texts': [], 'vo': vo, 'sfx': [], 'duration': TOTAL}
 json.dump(spec, open(os.path.join(HERE, 'timeline.json'), 'w'), indent=1)
 print(len(shots), 'shots', f'{TOTAL:.1f} s')
