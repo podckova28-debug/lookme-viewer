@@ -2,16 +2,21 @@
 placed on white; handwritten notes copied from the earlier approved frames (solid black pixels only, no glow)."""
 import numpy as np
 from PIL import Image
+def harden(im):                                    # drop the remover's soft dark fringe: hard alpha, pulled in by 2 px
+    import cv2
+    a = np.asarray(im.getchannel('A')).astype(np.float32)
+    a = np.clip((a - 150) / 60, 0, 1); a = cv2.erode(a, np.ones((5, 5), np.uint8)); a = cv2.GaussianBlur(a, (0, 0), .8)
+    im.putalpha(Image.fromarray((a * 255).astype(np.uint8))); return im
 def cut(i, dx=0, dy=0, scale=1.0):
-    im = Image.open(f'raw_rb/{i}.png').convert('RGBA').resize((1920, 1080), Image.LANCZOS)
+    im = harden(Image.open(f'raw_rb/{i}.png').convert('RGBA').resize((1920, 1080), Image.LANCZOS))
     if scale != 1.0:
         w, h = int(1920 * scale), int(1080 * scale); im = im.resize((w, h), Image.LANCZOS)
     W = Image.new('RGBA', (1920, 1080), (255, 255, 255, 255)); W.alpha_composite(im, (int((1920 - im.width) / 2 + dx), int((1080 - im.height) / 2 + dy)))
     return W
-def center(i):
+def center(i, tx=960):
     im = Image.open(f'raw_rb/{i}.png').convert('RGBA').resize((1920, 1080), Image.LANCZOS)
     x0, y0, x1, y1 = im.getchannel('A').point(lambda a: 255 if a > 20 else 0).getbbox()
-    return cut(i, 960 - (x0 + x1) / 2, 540 - (y0 + y1) / 2)
+    return cut(i, tx - (x0 + x1) / 2, 540 - (y0 + y1) / 2)
 def note(W, src, boxes, dx, dy, thr, s=1.0):
     g = np.asarray(Image.open(f'old_f/{src}' + ('' if '.' in src else '.jpg')).convert('L').resize((1920, 1080))).astype(np.float32)
     a = np.clip((thr + 40 - g) / 40, 0, 1)          # solid black ink only
@@ -34,6 +39,6 @@ def place(W, src, box):                            # a clean caption on white, s
     x0, y0, x1, y1 = box; s = min((x1 - x0) / L.width, (y1 - y0) / L.height); L = L.resize((int(L.width * s), int(L.height * s)), Image.LANCZOS)
     ink = Image.new('RGBA', L.size, (20, 20, 20, 255)); ink.putalpha(L); W.alpha_composite(ink, (int((x0 + x1 - L.width) / 2), int(y1 - L.height))); return W
 out['c05'] = place(cut('c05'), 'old_f/vasco1.png', (1290, 50, 1790, 320))   # caption generated separately on white
-out['f02'] = note(cut('f02'), 'f02', [(40, 40, 520, 320)], 0, 0, 60)
-out['i07'] = note(cut('i07', dx=-170), 'i07', [(960, 30, 1860, 240)], 0, 0, 60)
+out['f02'] = note(cut('f02'), 'f02', [(40, 40, 520, 320)], 0, 0, 0)    # solid ink core only, no halo
+out['i07'] = note(center('i07', 700), 'i07', [(960, 30, 1860, 240)], 0, 0, 60)
 for i, W in out.items(): W.convert('RGB').save(f'f/{i}.jpg', quality=93)
