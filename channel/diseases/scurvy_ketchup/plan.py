@@ -64,7 +64,7 @@ L = [
  ('c09',N,"The lemon was not impressed.", LEMON+"with arms crossed and an unimpressed flat face, one eyebrow raised", '', ''),
  ('c10',N,"In fifteen nineteen, Magellan's fleet crossed the Pacific. More than three months with no fresh food.", "a small 16th-century ship alone in the middle of a huge empty calm Pacific Ocean, a tiny sun above it", 'Magellan, 1520', 'the ship'),
  ('c11',N,"The men ate rats. Sawdust. The leather wrapped around the ship's ropes, soaked in seawater and grilled.", "a sad tin plate with a grilled strip of old leather, a small pile of sawdust and a fork; objects only", "chef's special", 'the plate'),
- ('c12',N,"Out of about two hundred and seventy men, only eighteen made it home.", "a small group of eighteen tiny simple black stick figures on the left, and a much larger crowd of faded light-grey stick figure outlines on the right; simple stick figures only", '18', 'the small group'),
+ ('c12',N,"Out of about two hundred and seventy men, only eighteen made it home.", "a small neat pile of eighteen soft red knitted wool caps on the left, and a much bigger heap of faded pale grey knitted caps on the right; objects only", '18', 'the small group'),
 
  # ---- d: Cartier ----
  ('d01',N,"But a cure had already been found. In Canada.", "a snowy pine forest by a frozen river, a small wooden fort; no people", '', ''),
@@ -94,7 +94,7 @@ L = [
  ('f03',N,"He split them into six pairs, and gave each pair a different cure.", "six numbered wooden bowls in a row on a table, each with a different thing: cider, vinegar, seawater, a small bottle with a skull, a garlic paste, and oranges and a lemon; objects only, numbers 1 to 6 on the bowls", '6 pairs', 'the bowls'),
  ('f04',N,"Cider. Vinegar. Seawater. Sulphuric acid. A paste of garlic and mustard. And two oranges and a lemon a day.", "a close-up of the last bowl holding two oranges and one lemon, glowing slightly; objects only", 'pair 6', 'the bowl'),
  ('f05',N,"It was one of the first controlled trials in the history of medicine.", "an old leather notebook lying open on a wooden table, showing a neat hand-drawn grid with tick marks, a quill pen in an inkpot beside it; objects only, no readable words", '', ''),
- ('f06',N,"Within a week, one of the citrus pair was back at work. The other was nursing the rest.", "one healthy smiling sailor (striped linen shirt, red knitted wool cap) climbing a rope ladder, and another such sailor carrying a bowl of soup", '', ''),
+ ('f06',N,"Within a week, one of the citrus pair was back at work. The other was nursing the rest.", "one healthy smiling 18th-century sailor in a loose striped linen shirt, baggy knee-length canvas breeches, bare feet and a red knitted wool cap climbing a rope ladder, and another such sailor carrying a wooden bowl of soup", '', ''),
  ('f07',N,"The lemon. Finally.", LEMON+"standing on a small wooden podium with both arms raised in triumph, little sparkles around it", '', ''),
  ('f08',N,"So Lind told the Navy to give everyone citrus, and scurvy was gone. Right?", YOU+"standing alone, smiling hopefully, giving a thumbs up with one hand, nothing else in the picture", '', ''),
  ('f09',N,"No.", LEMON+"face-palming with one hand, deeply disappointed", '', ''),
@@ -107,7 +107,7 @@ L = [
  ('g01',N,"Captain James Cook did better. On his voyages in the seventeen seventies, almost nobody died of scurvy.", "an 18th-century British sea captain in a blue naval coat and white wig, standing confidently by a globe", 'Captain Cook', 'the captain'),
  ('g02',N,"His secret? He stopped for fresh food wherever he could. And he made the crew eat sauerkraut.", "a big wooden barrel overflowing with pale sauerkraut, a fork stuck in it; objects only", 'sauerkraut', 'the barrel'),
  ('g03',N,"The sailors refused. So Cook had it served only at the officers' table.", "two 18th-century naval officers in blue coats at a small fancy table, eating sauerkraut from silver plates with great pleasure", '', ''),
- ('g04',N,"Within a week, the crew were demanding sauerkraut too.", "two eager 18th-century sailors in loose striped linen shirts and soft red knitted wool caps holding out empty wooden bowls, begging, puppy eyes", 'we want some', 'the sailors'),
+ ('g04',N,"Within a week, the crew were demanding sauerkraut too.", "two eager 18th-century sailors in loose striped linen shirts and soft red knitted wool caps holding out empty wooden bowls, begging, puppy eyes", '', ''),
  ('g05',N,"Sauerkraut has only a little vitamin C. The fresh food probably did most of the work. But Cook got the credit.", "a small gold trophy cup with a forkful of sauerkraut on top; objects only", '', ''),
  ('g06',N,"Finally, in seventeen ninety five, the Royal Navy ordered lemon juice for every sailor, every day. Mixed into their rum.", "a sailor's tin mug with half a squeezed lemon lying beside it and juice drops falling into the mug, a small plain rum barrel behind it; objects only", '1795', 'the mug'),
  ('g07',N,"If you watched our rum video, you already know this drink. Grog.", "a cheerful wooden barrel labelled with a painted lemon, a tin ladle and two tin mugs; objects only, no letters", 'grog', 'the barrel'),
