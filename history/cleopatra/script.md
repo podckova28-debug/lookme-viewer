@@ -152,7 +152,7 @@ You are in that army, by the way. Nobody told you anything. Again.
 Nobody knows exactly why she left.
 A planned escape, panic, or a wind change.
 Octavian's writers know exactly why.
-Cowardice.
+A coward, they say.
 Underlined three times.
 A year later, Octavian arrives at Alexandria.
 Antony hears a false report that Cleopatra is dead.
