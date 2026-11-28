@@ -1,0 +1,117 @@
+a01|NARRATOR|It's seventeen forty one. You're a sailor on a British warship, sailing around the bottom of South America.
+a02|NARRATOR|You've been at sea for six months. And something is wrong with your mouth.
+a03|NARRATOR|Your gums are swollen, purple, and bleeding.
+a04|NARRATOR|You touch a tooth with your tongue. It wobbles.
+a05|NARRATOR|Then something really strange happens. A scar from a fight ten years ago opens up again.
+a06|NARRATOR|As if ten years of healing never happened.
+a07|SCURVY|Ahoy, sailor. Long way from home, aren't we?
+a08|NARRATOR|Scurvy. Between fifteen hundred and eighteen hundred, by one estimate, it killed about two million sailors.
+a09|NARRATOR|More than storms, shipwrecks and enemy cannons put together.
+a10|NARRATOR|And the cure was sitting in every port market on Earth.
+a11|NARRATOR|This lemon.
+a12|NARRATOR|Keep an eye on the lemon. People are going to ignore it for about three hundred years.
+b01|NARRATOR|So what is scurvy? It's not a germ. Nobody gives it to you.
+b02|NARRATOR|It's what happens when your body runs out of one thing. Vitamin C.
+b03|NARRATOR|Most animals make their own vitamin C. Dogs, cats, rats, goats. They don't need oranges.
+b04|NARRATOR|Humans can't. Somewhere in our distant past, the gene that makes it broke.
+b05|NARRATOR|Same for guinea pigs, fruit bats and some monkeys. Remember the guinea pig. It's coming back.
+b06|NARRATOR|Now, why does missing one vitamin make your body fall apart?
+b07|NARRATOR|Because your body is held together by a protein called collagen. It's in your skin, gums, blood vessels and bones.
+b08|NARRATOR|Think of collagen as a rope. And to tie that rope tightly, your body needs vitamin C.
+b09|NARRATOR|Without it, the new rope comes out loose and weak.
+b10|NARRATOR|And your body replaces collagen all the time. Old rope wears out, and new, weak rope goes in.
+b11|NARRATOR|So after a month or two without vitamin C, you start coming apart at the seams.
+b12|NARRATOR|First, you're tired. Your legs ache.
+b13|NARRATOR|Then tiny blood vessels start to leak. Bruises appear out of nowhere.
+b14|NARRATOR|Your gums swell and bleed, and your teeth come loose.
+b15|NARRATOR|And old wounds, even old broken bones, can come apart, because the scar was made of collagen too.
+b16|NARRATOR|Without vitamin C, you die. Usually from bleeding, heart failure, or an infection your body can't fight off.
+b17|SCURVY|I'm in no hurry. I take you apart, one rope at a time.
+b18|NARRATOR|And here's the cruel part. The cure works in days. A few lemons, and you start to recover almost at once.
+c01|NARRATOR|For most of history, scurvy was rare. People ate fresh food. A few cases in a long winter or a siege.
+c02|NARRATOR|Then, in the fourteen nineties, Europeans started sailing across whole oceans.
+c03|NARRATOR|Months at sea with no fresh food. Just salted meat, and hard biscuits full of weevils.
+c04|NARRATOR|Ship's biscuit was so hard, you could break a tooth on it. If scurvy hadn't loosened your teeth first.
+c05|NARRATOR|In fourteen ninety seven, Vasco da Gama sailed from Portugal, around Africa, to India.
+c06|NARRATOR|More than half his men never came home. Most of them were killed by scurvy.
+c07|NARRATOR|On the way, his crew noticed something. On the coast of East Africa, they ate oranges, and the sick men got better.
+c08|NARRATOR|They wrote it down. And then forgot about it.
+c09|NARRATOR|The lemon was not impressed.
+c10|NARRATOR|In fifteen nineteen, Magellan's fleet crossed the Pacific. More than three months with no fresh food.
+c11|NARRATOR|The men ate rats. Sawdust. The leather wrapped around the ship's ropes, soaked in seawater and grilled.
+c12|NARRATOR|Out of about two hundred and seventy men, only eighteen made it home.
+d01|NARRATOR|But a cure had already been found. In Canada.
+d02|NARRATOR|Fifteen thirty five. The French explorer Zhahk Kartyay spends the winter with his ships frozen in the ice of the Saint Lawrence river.
+d03|NARRATOR|Twenty five of his men die of scurvy. Almost all the others are sick.
+d04|NARRATOR|Then Kartyay notices something. A local man named Domagaya had been very sick, and now he's walking around, healthy.
+d05|NARRATOR|Domagaya's people, the Saint Lawrence Irokwoyans, showed the French a tree. They boiled its bark and needles into a tea.
+d06|NARRATOR|Within days, the sick men recovered. Kartyay called it a miracle.
+d07|NARRATOR|The tree was probably a white cedar, packed with vitamin C.
+d08|NARRATOR|And Europe? Forgot that too.
+d09|NARRATOR|Lemon, meet tree. Join the club.
+e01|NARRATOR|Back to you, on that ship in seventeen forty one. You're sailing with Commodore George Anson, around the world.
+e02|NARRATOR|He left England with about nineteen hundred men.
+e03|NARRATOR|More than thirteen hundred of them died.
+e04|NARRATOR|Only four were killed by the enemy. Almost all the rest were killed by scurvy.
+e05|NARRATOR|Navies were losing more men to a missing vitamin than to war.
+e06|SCURVY|Best crew I ever had.
+e07|NARRATOR|And doctors had theories. Lots of theories.
+e08|NARRATOR|Bad air. Damp. Laziness. Sadness. Too much salt. Not enough exercise.
+e09|NARRATOR|The cures were just as creative. Vinegar. Seawater. Sulphuric acid. Being buried up to your neck in the earth.
+f01|NARRATOR|Then, in seventeen forty seven, a Scottish naval surgeon named James Lind tried something new.
+f02|NARRATOR|On board H M S Salisbury, he took twelve sailors with scurvy, all about equally sick.
+f03|NARRATOR|He split them into six pairs, and gave each pair a different cure.
+f04|NARRATOR|Cider. Vinegar. Seawater. Sulphuric acid. A paste of garlic and mustard. And two oranges and a lemon a day.
+f05|NARRATOR|It was one of the first controlled trials in the history of medicine.
+f06|NARRATOR|Within a week, one of the citrus pair was back at work. The other was nursing the rest.
+f07|NARRATOR|The lemon. Finally.
+f08|NARRATOR|So Lind told the Navy to give everyone citrus, and scurvy was gone. Right?
+f09|NARRATOR|No.
+f10|NARRATOR|Lind himself didn't fully trust his own result. He thought scurvy had lots of causes.
+f11|NARRATOR|And to make lemon juice keep on long voyages, he boiled it down into a thick syrup.
+f12|NARRATOR|But heat destroys vitamin C. His syrup barely worked.
+f13|NARRATOR|The lemon was ignored. Again.
+g01|NARRATOR|Captain James Cook did better. On his voyages in the seventeen seventies, almost nobody died of scurvy.
+g02|NARRATOR|His secret? He stopped for fresh food wherever he could. And he made the crew eat sauerkraut.
+g03|NARRATOR|The sailors refused. So Cook had it served only at the officers' table.
+g04|NARRATOR|Within a week, the crew were demanding sauerkraut too.
+g05|NARRATOR|Sauerkraut has only a little vitamin C. The fresh food probably did most of the work. But Cook got the credit.
+g06|NARRATOR|Finally, in seventeen ninety five, the Royal Navy ordered lemon juice for every sailor, every day. Mixed into their rum.
+g07|NARRATOR|If you watched our rum video, you already know this drink. Grog.
+g08|NARRATOR|Scurvy almost vanished from the British Navy.
+g09|NARRATOR|Some historians think it helped Britain in the long wars against Napoleon. Its ships could stay at sea for months.
+g10|SCURVY|That was not fair at all.
+h01|NARRATOR|Then the Navy made a mistake.
+h02|NARRATOR|In the mid eighteen hundreds, it switched from Mediterranean lemons to cheaper limes from British colonies in the Caribbean.
+h03|NARRATOR|Limes have much less vitamin C. And the way the juice was made and stored destroyed even more.
+h04|NARRATOR|That's where the nickname came from. Limeys.
+h05|NARRATOR|The juice was now almost useless. But on ships that stopped in ports, nobody noticed.
+h06|NARRATOR|Until the polar expeditions. Months in the ice. No fresh food.
+h07|NARRATOR|In eighteen seventy five, a British Arctic expedition came back with scurvy, even though every man drank his lime juice.
+h08|NARRATOR|Doctors were baffled. Citrus didn't work? Maybe it was never about fruit.
+h09|NARRATOR|New theory: scurvy came from spoiled tinned meat.
+h10|NARRATOR|Antarctic explorers were still getting scurvy in the nineteen hundreds.
+h11|NARRATOR|The lemon had been right since fourteen ninety eight. And now even the Navy didn't believe it.
+h12|NARRATOR|Poor lemon.
+i01|NARRATOR|The answer came from a guinea pig. Told you it would come back.
+i02|NARRATOR|In nineteen oh seven, two Norwegian scientists, Axel Holst and Tayodor Frolik, were studying a disease of sailors.
+i03|NARRATOR|They fed guinea pigs nothing but grain. And the guinea pigs got scurvy.
+i04|NARRATOR|Then they added fresh cabbage, or lemon juice. And the guinea pigs got better.
+i05|NARRATOR|If they had picked rats, which make their own vitamin C, they would have found nothing.
+i06|NARRATOR|Pure luck.
+i07|NARRATOR|Then, in nineteen twenty eight, a Hungarian scientist, Albert Sent Jurjee, found a strange acid in cabbages and in adrenal glands.
+i08|NARRATOR|He needed kilos of it. So he looked around his city, Seged, famous for one crop. Paprika.
+i09|NARRATOR|Paprika turned out to be packed with it.
+i10|NARRATOR|He called it ascorbic acid. Literally, the anti scurvy acid. Vitamin C.
+i11|NARRATOR|He won the Nobel Prize in nineteen thirty seven.
+i12|NARRATOR|And the lemon was finally, officially, right.
+j01|NARRATOR|So, scurvy is gone today. Right?
+j02|NARRATOR|Not quite. Doctors still see it.
+j03|NARRATOR|In people who eat almost nothing but toast, instant noodles or fast food for months.
+j04|NARRATOR|In elderly people living alone, in people with alcohol problems, and after some stomach surgeries.
+j05|NARRATOR|The cure hasn't changed since Lind. Vitamin C. Most people start feeling better within days.
+j06|NARRATOR|And you need very little. One orange a day is plenty. So is a pepper, a kiwi, or a handful of strawberries.
+j07|SCURVY|One orange. That's all it ever took to get rid of me. Embarrassing, really.
+j08|NARRATOR|So, back to you, on that ship in seventeen forty one, with the old scar opening up.
+j09|NARRATOR|The cure was a lemon. It cost almost nothing in any port. And it took the world three hundred years to listen to it.
+j10|NARRATOR|Would you have trusted the lemon? Tell me in the comments.

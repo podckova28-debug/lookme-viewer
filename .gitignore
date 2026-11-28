@@ -22,3 +22,9 @@ voices/smallpox_ketchup/fast_orig/
 channel/diseases/smallpox_ketchup/preview/smallpox_v2_720p.mp4
 channel/diseases/smallpox_ketchup/upload/*.mp4
 channel/diseases/smallpox_ketchup/thumbs/*.png
+channel/diseases/scurvy_ketchup/raw/
+channel/diseases/scurvy_ketchup/upload/*.mp4
+voices/scurvy_ketchup/*.wav
+voices/scurvy_ketchup/*.log
+voices/scurvy_ketchup/fast/
+voices/scurvy_ketchup/fast_orig/
