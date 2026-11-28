@@ -1,7 +1,8 @@
 # Ketchup reel — "Ketchup was invented without tomatoes"
 
 File: `ketchup_reel_not_tomato.mp4` — 1080x1920, 26.5 s, −15 LUFS, 18 MB.
-Hook stamp "NOT TOMATO" in the first second, a cut every ~2 s, handwritten word captions, SFX, ends on the
+Cover: `cover_reel.jpg` (1080x1920, text inside the 3:4 profile-grid crop).
+Hook stamp "NOT TOMATO" in the first second, a cut every ~2 s, handwritten word captions, music bed (no SFX), ends on the
 ketchup family line where the tomato runs in last (loops back to the "not tomato" bottle).
 
 ## YouTube Shorts

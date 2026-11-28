@@ -82,9 +82,7 @@ def sfx(name, at, gain):
     if w.ndim > 1: w = w.mean(1)
     w = np.interp(np.arange(0, len(w), r / SR), np.arange(len(w)), w) * gain
     i = max(0, int(at * SR)); j = min(len(nar), i + len(w)); nar[i:j] += w[:j - i]
-sfx("stamp", 0.0, 0.6)
-for li in range(1, len(LINES)): sfx("whoosh", starts[li] - 0.12, 0.25)
-for li in (5, 6, 7, 10): sfx("pop", starts[li], 0.35)
+# SFX removed at the user's request (sounded odd): narration + the usual music bed only
 nar /= max(1.0, np.abs(nar).max() / 0.95)
 sf.write(f"{WORK}/narration.wav", nar, SR)
 ends = starts[1:] + [total]
