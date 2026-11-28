@@ -1,7 +1,7 @@
 # The Entire History of SCURVY — пакет для загрузки
 
 - Видео: `scurvy_1080p.mp4` (1920×1080, 8:29, 93 МБ). Длиннее 8 минут — можно ставить рекламу в середине.
-- Обложка: `thumbnail_1280x720.jpg` («ignored for 300 YEARS»). Для «Тест и сравнение»: `../thumbs/thumb_3_1280x720.jpg` («beaten by a LEMON»).
+- Обложка: `thumbnail_1280x720.jpg` («beaten by a LEMON», злодей-цинга закрывается от лимона). Для «Тест и сравнение»: `../thumbs/new_4_1280x720.jpg` («its only WEAKNESS»), `../thumbs/new_2_1280x720.jpg` («your TEETH fall OUT»).
 - Раскрытие ИИ (Altered or synthetic content) = ДА.
 
 ## Название
