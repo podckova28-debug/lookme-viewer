@@ -206,3 +206,19 @@ def request(i):
     return {"index": i, "params": q}
 if __name__ == "__main__":
     print(len(SHOTS))
+# second pass (rum/ketchup density): extra gag lines inserted into the script; frames appended as new numbers (157+)
+INS = [
+ (2,14,f"{YOU} carrying a covered silver platter at arm's length with a disgusted face, holding his nose with the other hand","you"),
+ (3,4,f"{CAES} carefully poking a rolled patterned carpet with the tip of his sword before sitting down","just in case"),
+ (5,13,f"{YOU} standing alone outside a banquet door holding a tall stack of Roman shields, sober and sad, light and laughter from inside","not invited"),
+ (6,13,f"{POET} counting a pile of silver coins next to a very long unrolled scroll, grinning","paid by the word"),
+ (7,8,"a papyrus scroll with the word 'COWARD' underlined three times in red ink" + OBJ,"x3"),
+ (8,20,f"{YOU} with a small shovel carefully unrolling an old dusty carpet in a sandy dig and peeking inside","check the carpets"),
+ (1,8,f"{YOU} scratching his helmet in front of a huge papyrus family tree where every name tag reads either 'Ptolemy' or 'Cleopatra'","confusing"),
+ (3,14,f"{C21} sitting alone at a small table, bored, yawning, stamping a papyrus labelled PAPERWORK with a royal seal, a reed pen beside it","romantic"),
+ (4,7,f"{YOU} standing guard next to a golden statue of a queen in a Roman temple, shrugging","you again"),
+ (7,4,f"{YOU} on a beach among Roman soldiers who are laying down their shields, holding his own shield and looking around confused","you again"),
+]
+for _p, _i, _d, _n in INS:
+    SHOTS[:] = [(p, l + 1 if (p == _p and l >= _i) else l, d, n) for p, l, d, n in SHOTS]
+    SHOTS.append((_p, _i, _d, _n))

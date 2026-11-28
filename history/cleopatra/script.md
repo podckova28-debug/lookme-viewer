@@ -33,6 +33,7 @@ They are Greek.
 When Alexander the Great died, one of his generals, Ptolemy, grabbed Egypt for himself.
 Every king after him is called Ptolemy.
 Every queen is called Cleopatra, Berenice or Arsinoe.
+Family reunions were very confusing.
 She is Cleopatra the seventh.
 The family has a tradition.
 Brothers marry sisters, to keep the throne in the family.
@@ -59,6 +60,7 @@ Julius Caesar.
 He's chasing his rival, Pompey.
 The boy king's advisers want to impress him.
 So they cut off Pompey's head and hand it to Caesar.
+Guess who had to carry the platter. You.
 Caesar is not impressed.
 And Cleopatra realises something.
 Whoever gets to Caesar first wins Egypt.
@@ -70,6 +72,7 @@ So she gets smuggled in.
 The story says she was rolled up in a carpet, or a bedding sack, and carried into the palace by a single servant.
 The servant unrolls it in front of Caesar.
 And out comes the queen of Egypt.
+From now on, Caesar checks every carpet in Egypt before he sits down.
 Caesar is fifty two.
 She is twenty one.
 By the next morning, they are allies.
@@ -79,6 +82,7 @@ During the fighting, part of the famous Library of Alexandria burns.
 The brother drowns in the Nile, trying to escape in heavy armour.
 Cleopatra is queen again.
 She marries her other brother, who is twelve, just for the paperwork.
+Romantic.
 And a few months later, she has a son.
 She calls him Caesarion.
 Little Caesar.
@@ -92,6 +96,7 @@ The Romans are horrified.
 A foreign queen.
 In Rome.
 With a gold statue.
+Guess who has to guard the statue. You. Nobody tells you why.
 Then, on the Ides of March, forty four BC, Caesar is stabbed to death in the Senate.
 Twenty three wounds.
 His will names his heir.
@@ -117,6 +122,7 @@ It takes a very long time, and very strong vinegar.
 But it makes a great story.
 Antony follows her back to Alexandria.
 They form a drinking club called the Inimitable Livers.
+You are not invited. Somebody has to stay sober and hold the shields.
 And in forty BC, she has twins.
 A boy and a girl, the Sun and the Moon.
 In Rome, Octavian's writer sharpens his pen.
@@ -135,16 +141,19 @@ A foreign queen is a much easier enemy than a Roman general.
 His poets get to work.
 They call her a harlot queen, a drunk, a monster from the Nile.
 None of them ever met her.
+But they were paid by the word.
 
 === p7 ===
 On the second of September, thirty one BC, the two fleets meet at Actium, off the coast of Greece.
 In the middle of the battle, Cleopatra's sixty ships suddenly break through and sail away.
 Antony leaves the fight and follows her.
 His army, abandoned, surrenders.
+You are in that army, by the way. Nobody told you anything. Again.
 Nobody knows exactly why she left.
 A planned escape, panic, or a wind change.
 Octavian's writers know exactly why.
 Cowardice.
+Underlined three times.
 A year later, Octavian arrives at Alexandria.
 Antony hears a false report that Cleopatra is dead.
 He falls on his sword.
@@ -173,6 +182,7 @@ The woman who ruined Rome's best men.
 She wasn't Egyptian.
 She was a Greek queen who spoke nine languages, ran the richest country in the world for twenty one years, and outplayed Rome for two decades.
 Her tomb has never been found.
+Maybe someone should check the carpets.
 If you liked this story, subscribe, there's a new life every week.
 So, genius or villain?
 Tell me in the comments.
