@@ -5,12 +5,11 @@ Callbacks: the reopening scar (a05 -> j08), the guinea pig (b05 -> i01), rum/gro
 Frame = (prompt, note, note_target). python3 plan.py -> voices/scurvy_ketchup/lines.txt + frames.json
 """
 import json, os
-ST = ("Plain pure white background everywhere: no vignette, no dark background, no grey corners, no scenery filling the frame edges. "
-      "Bold ink-line illustration with rich warm watercolour (sea blue, ship-wood brown, one lemon-yellow accent), playful humorous cartoon tone, like the illustrations of a funny history book; "
-      "the whole subject is fully visible, nothing cut off by the frame edges, like a big sticker on white paper. "
-      "At most three people. Every person has exactly one head, two arms attached at the shoulders, two hands with five fingers, two legs; each hand holds at most one thing; hands simple and clearly drawn. ")
+ST = ("White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, "
+      "playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. ")
+PEOPLE = "Anatomy: every person has exactly one head, two arms attached at the shoulders, two hands with five fingers each, two legs; hands simple and clearly drawn. "
 YOU = ("one simple hand-drawn stick figure: thin black ink line body, arms and legs, a round white head with dot eyes and an expressive mouth, "
-       "simple white mitten hands, exactly two arms and two legs, wearing a small red-and-white striped sailor's knitted cap, ")
+       "simple white mitten hands, exactly two arms and two legs, wearing a small red-and-white striped knitted beanie, ")
 LEMON = ("the lemon: one bright yellow lemon character with small dot eyes and a little mouth, thin black stick arms and legs and white mitten hands, ")
 SC = ("Scurvy as a villain: a gaunt grinning ghostly old sea dog with pale grey-green skin and purple bruise spots, swollen purple gums with gaps where teeth fell out, "
       "a battered black tricorn, a tattered navy-blue 18th-century captain's coat with tarnished brass buttons, ")
@@ -30,7 +29,7 @@ L = [
  ('a08',N,"Scurvy. Between fifteen hundred and eighteen hundred, by one estimate, it killed about two million sailors.", "a long row of many tiny identical sailor caps lying on the white ground, stretching into the distance; objects only", '2,000,000', 'the row of caps'),
  ('a09',N,"More than storms, shipwrecks and enemy cannons put together.", "a brass balance scale: on one pan a small storm cloud, a tiny shipwreck and a cannon; on the other pan one single lemon-yellow sailor's cap, and that pan is much heavier and lower; objects only", '', ''),
  ('a10',N,"And the cure was sitting in every port market on Earth.", "a small cheerful harbour market stall with a striped awning, baskets piled with lemons, oranges and green vegetables; no people", 'the cure', 'the basket of lemons'),
- ('a11',N,"This lemon.", LEMON+"standing alone on the white background, waving hello with one hand, proud smile", '', ''),
+ ('a11',N,"This lemon.", LEMON+"standing alone, waving hello with one hand, proud smile", '', ''),
  ('a12',N,"Keep an eye on the lemon. People are going to ignore it for about three hundred years.", LEMON+"sitting alone on a small wooden bench, waiting, twiddling its thumbs, a little cobweb on the bench", '', ''),
 
  # ---- b: what it is ----
@@ -40,10 +39,10 @@ L = [
  ('b04',N,"Humans can't. Somewhere in our distant past, the gene that makes it broke.", "a single cartoon DNA strand with one small broken link, a tiny repair spanner lying next to it; objects only", 'broken', 'the broken link'),
  ('b05',N,"Same for guinea pigs, fruit bats and some monkeys. Remember the guinea pig. It's coming back.", "a cute ginger-and-white guinea pig sitting front and centre, a fruit bat hanging and a small monkey beside it", 'remember me', 'the guinea pig'),
  ('b06',N,"Now, why does missing one vitamin make your body fall apart?", YOU+"scratching his head, a big question mark above him", '', ''),
- ('b07',N,"Because your body is held together by a protein called collagen. It's in your skin, gums, blood vessels and bones.", "a simple body outline with a network of golden ropes drawn inside it, running through skin, gums, blood vessels and bones like scaffolding; objects only", 'collagen', 'the golden ropes'),
- ('b08',N,"Think of collagen as a rope. And to tie that rope tightly, your body needs vitamin C.", "a thick golden rope being twisted tight by a small orange slice with tiny mitten hands, like a sailor twisting rope", '', ''),
+ ('b07',N,"Because your body is held together by a protein called collagen. It's in your skin, gums, blood vessels and bones.", "a plain empty white human body silhouette outline (no face, no skeleton) with a network of golden ropes drawn inside it, running through skin, gums, blood vessels and bones like scaffolding; objects only", 'collagen', 'the golden ropes'),
+ ('b08',N,"Think of collagen as a rope. And to tie that rope tightly, your body needs vitamin C.", "a thick golden rope being twisted tight by a small orange-slice character with tiny mitten hands and no feet; objects only", '', ''),
  ('b09',N,"Without it, the new rope comes out loose and weak.", "the same golden rope, now loose, frayed and floppy, a sad face drawn on the knot; objects only", 'weak', 'the frayed rope'),
- ('b10',N,"And your body replaces collagen all the time. Old rope wears out, and new, weak rope goes in.", "a cartoon conveyor belt: strong old golden ropes going out on one side, floppy frayed ropes coming in on the other; objects only", '', ''),
+ ('b10',N,"And your body replaces collagen all the time. Old rope wears out, and new, weak rope goes in.", "a cartoon conveyor belt moving from left to right: on the left strong golden ropes go in, on the right only floppy frayed ropes come out; objects only", '', ''),
  ('b11',N,"So after a month or two without vitamin C, you start coming apart at the seams.", YOU+"standing with his body drawn like a rag doll with stitched seams, a few stitches coming undone, worried face", '', ''),
  ('b12',N,"First, you're tired. Your legs ache.", YOU+"slumped against a barrel, exhausted, heavy eyelids, small ache lines on his legs", 'tired', 'his legs'),
  ('b13',N,"Then tiny blood vessels start to leak. Bruises appear out of nowhere.", "a cartoon close-up of a forearm with several purple bruises and many tiny red dots; not gory", 'bruises', 'the purple bruises'),
@@ -56,7 +55,7 @@ L = [
  # ---- c: the great voyages ----
  ('c01',N,"For most of history, scurvy was rare. People ate fresh food. A few cases in a long winter or a siege.", "a cosy medieval farm table with bread, apples, cabbage and onions; objects only", '', ''),
  ('c02',N,"Then, in the fourteen nineties, Europeans started sailing across whole oceans.", "a 15th-century caravel with big square sails crossing a wide blue ocean towards the horizon", '', ''),
- ('c03',N,"Months at sea with no fresh food. Just salted meat, and hard biscuits full of weevils.", "an old wooden ship's barrel of salted meat and a stack of hard square ship's biscuits with a few tiny cartoon weevils peeking out; objects only", 'lunch', 'the biscuits'),
+ ('c03',N,"Months at sea with no fresh food. Just salted meat, and hard biscuits full of weevils.", "an old wooden barrel of grey-brown salted pork chunks in brine and a stack of hard square ship's biscuits with a few tiny cartoon weevils peeking out; objects only", 'lunch', 'the biscuits'),
  ('c04',N,"Ship's biscuit was so hard, you could break a tooth on it. If scurvy hadn't loosened your teeth first.", YOU+"biting a hard square biscuit, his teeth bending, eyes watering", '', ''),
  ('c05',N,"In fourteen ninety seven, Vasco da Gama sailed from Portugal, around Africa, to India.", "a hand-drawn sepia map of Africa and the Indian Ocean with a dotted route line from Portugal around the southern tip of Africa to India and a tiny ship on it; no text on the map", 'Vasco da Gama', 'the tiny ship'),
  ('c06',N,"More than half his men never came home. Most of them were killed by scurvy.", "a row of sailors' caps hung on wooden pegs, more than half of the pegs empty; objects only", '', ''),
@@ -134,9 +133,9 @@ L = [
  ('i01',N,"The answer came from a guinea pig. Told you it would come back.", "the cute ginger-and-white guinea pig sitting proudly on a small lab bench, wearing a tiny lab coat", 'told you', 'the guinea pig'),
  ('i02',N,"In nineteen oh seven, two Norwegian scientists, Axel Holst and Tayodor Frolik, were studying a disease of sailors.", "two early-1900s scientists with moustaches in white lab coats at a wooden lab bench with glass flasks", 'Holst & Frølich', 'the two scientists'),
  ('i03',N,"They fed guinea pigs nothing but grain. And the guinea pigs got scurvy.", "a sad guinea pig in a small cage with a bowl of grain, a few small bruise spots on it, droopy eyes", '', ''),
- ('i04',N,"Then they added fresh cabbage, or lemon juice. And the guinea pigs got better.", "the same guinea pig happily munching a cabbage leaf next to a lemon slice, sparkles around it", '', ''),
+ ('i04',N,"Then they added fresh cabbage, or lemon juice. And the guinea pigs got better.", "the same guinea pig in its small lab cage happily munching a cabbage leaf, a lemon slice beside it, sparkles around it", '', ''),
  ('i05',N,"If they had picked rats, which make their own vitamin C, they would have found nothing.", "a smug rat with a tiny factory chimney on its back puffing orange smoke, shrugging", 'useless', 'the rat'),
- ('i06',N,"Pure luck.", "a single four-leaf clover on the white background; objects only", '', ''),
+ ('i06',N,"Pure luck.", "a single four-leaf clover; objects only", '', ''),
  ('i07',N,"Then, in nineteen twenty eight, a Hungarian scientist, Albert Sent Jurjee, found a strange acid in cabbages and in adrenal glands.", "a 1930s Hungarian scientist with dark hair and a lab coat holding up a test tube with a cabbage on the bench", 'Szent-Györgyi', 'the scientist'),
  ('i08',N,"He needed kilos of it. So he looked around his city, Seged, famous for one crop. Paprika.", "a big heap of bright red paprika peppers spilling out of a wicker basket; objects only", 'Szeged', 'the paprika'),
  ('i09',N,"Paprika turned out to be packed with it.", "one red paprika pepper glowing like treasure with golden sparkles; objects only", '', ''),
@@ -152,7 +151,7 @@ L = [
  ('j05',N,"The cure hasn't changed since Lind. Vitamin C. Most people start feeling better within days.", "a modern pharmacy bottle of vitamin C tablets next to a glass of orange juice; objects only, no letters", '', ''),
  ('j06',N,"And you need very little. One orange a day is plenty. So is a pepper, a kiwi, or a handful of strawberries.", "one orange, one red pepper, one kiwi cut in half and a few strawberries arranged neatly; objects only", 'that\'s it', 'the orange'),
  ('j07',S,"One orange. That's all it ever took to get rid of me. Embarrassing, really.", SC+"holding an orange at arm's length with two fingers like something disgusting, making a face", '', ''),
- ('j08',N,"So, back to you, on that ship in seventeen forty one, with the old scar opening up.", YOU+"standing on a ship's deck in a striped sailor's cap, looking at a lemon in his hand, the old scar on his arm", '', ''),
+ ('j08',N,"So, back to you, on that ship in seventeen forty one, with the old scar opening up.", YOU+"standing on a ship's deck in a striped sailor's cap, holding a lemon in one thin stick hand and looking at it, a small scar line on the other thin stick arm", '', ''),
  ('j09',N,"The cure was a lemon. It cost almost nothing in any port. And it took the world three hundred years to listen to it.", LEMON+"standing on the white background, arms crossed, a small satisfied smile, a tiny crown on its head", '', ''),
  ('j10',N,"Would you have trusted the lemon? Tell me in the comments.", YOU+"holding a lemon up to the viewer, one eyebrow raised", '', ''),
 ]
@@ -162,7 +161,8 @@ if __name__ == '__main__':
     voices = os.path.join(here, '../../../voices/scurvy_ketchup'); os.makedirs(voices, exist_ok=True)
     with open(os.path.join(voices, 'lines.txt'), 'w') as f:
         for i, r, t, *_ in L: f.write(f"{i}|{'NARRATOR' if r == N else 'SCURVY'}|{t}\n")
-    frames = [{'id': i, 'line': t, 'prompt': ST + p + '.' + NOTE(n, tg)} for i, r, t, p, n, tg in L]
+    def has_people(p): return not ('objects only' in p or 'no people' in p.lower() or p.startswith(LEMON))
+    frames = [{'id': i, 'line': t, 'prompt': ST + (PEOPLE if has_people(p) else '') + p + '.' + NOTE(n, tg)} for i, r, t, p, n, tg in L]
     json.dump(frames, open(os.path.join(here, 'frames.json'), 'w'), indent=1)
     words = sum(len(t.split()) for _, _, t, *_ in L)
     assert len({x[0] for x in L}) == len(L)
