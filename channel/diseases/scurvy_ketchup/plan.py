@@ -28,7 +28,7 @@ L = [
  ('a07',S,"Ahoy, sailor. Long way from home, aren't we?", SC+"leaning on a ship's rail, waving one hand at the viewer with a creepy friendly grin", 'Scurvy (yes, the disease)', 'him'),
  ('a08',N,"Scurvy. Between fifteen hundred and eighteen hundred, by one estimate, it killed about two million sailors.", "a long row of many identical soft red knitted wool caps lying on the white ground, stretching into the distance; objects only", '2,000,000', 'the row of caps'),
  ('a09',N,"More than storms, shipwrecks and enemy cannons put together.", "a brass balance scale: on one pan a small storm cloud, a tiny shipwreck and a cannon; on the other pan one single lemon-yellow sailor's cap, and that pan is much heavier and lower; objects only", '', ''),
- ('a10',N,"And the cure was sitting in every port market on Earth.", "a small cheerful harbour market stall with a striped awning, baskets piled with lemons, oranges and green vegetables; no people", 'the cure', 'the basket of lemons'),
+ ('a10',N,"And the cure was sitting in every port market on Earth.", "a small cheerful harbour market stall with a striped awning, baskets piled with lemons, oranges and green vegetables, 18th-century style wooden stall; no people, no boats", 'the cure', 'the basket of lemons'),
  ('a11',N,"This lemon.", LEMON+"standing alone, waving hello with one hand, proud smile", '', ''),
  ('a12',N,"Keep an eye on the lemon. People are going to ignore it for about three hundred years.", LEMON+"sitting alone on a small wooden bench, waiting, twiddling its thumbs, a little cobweb on the bench", '', ''),
 
@@ -62,7 +62,7 @@ L = [
  ('c07',N,"On the way, his crew noticed something. On the coast of East Africa, they ate oranges, and the sick men got better.", "two 15th-century Portuguese sailors in simple tunics sitting cross-legged on the sand under a palm tree, eating oranges and smiling, a pile of oranges between them", '', ''),
  ('c08',N,"They wrote it down. And then forgot about it.", "an old leather logbook lying closed under a thick layer of dust and a cobweb; objects only", 'forgotten', 'the dusty logbook'),
  ('c09',N,"The lemon was not impressed.", LEMON+"with arms crossed and an unimpressed flat face, one eyebrow raised", '', ''),
- ('c10',N,"In fifteen nineteen, Magellan's fleet crossed the Pacific. More than three months with no fresh food.", "a small 16th-century ship alone in the middle of a huge empty calm Pacific Ocean, a tiny sun above it", 'Magellan, 1520', 'the ship'),
+ ('c10',N,"In fifteen nineteen, Magellan's fleet crossed the Pacific. More than three months with no fresh food.", "a small 16th-century ship alone in the middle of a huge empty calm Pacific Ocean, a tiny sun above it", 'Magellan', 'the ship'),
  ('c11',N,"The men ate rats. Sawdust. The leather wrapped around the ship's ropes, soaked in seawater and grilled.", "a sad tin plate with a grilled strip of old leather, a small pile of sawdust and a fork; objects only", "chef's special", 'the plate'),
  ('c12',N,"Out of about two hundred and seventy men, only eighteen made it home.", "a small neat pile of eighteen soft red knitted wool caps on the left, and a much bigger heap of faded pale grey knitted caps on the right; objects only", '18', 'the small group'),
 
@@ -75,7 +75,7 @@ L = [
  ('d06',N,"Within days, the sick men recovered. Kartyay called it a miracle.", "a bearded 16th-century French sailor in a wool cap sitting up in a bunk, drinking from a clay bowl, colour back in his cheeks, surprised and happy", 'a miracle', 'the sailor'),
  ('d07',N,"The tree was probably a white cedar, packed with vitamin C.", "a single white cedar tree with flat scaly evergreen sprays, drawn like a botanical illustration, a small orange slice icon next to it; objects only", 'white cedar', 'the tree'),
  ('d08',N,"And Europe? Forgot that too.", "a small parchment map of Europe lying on a pillow under a little blanket, wearing a nightcap, with a snore bubble; objects only, no arms, no legs, no text", '', ''),
- ('d09',N,"Lemon, meet tree. Join the club.", LEMON+"sitting on a wooden bench next to a small cedar sapling character with a face, both bored, waiting", '', ''),
+ ('d09',N,"Lemon, meet tree. Join the club.", LEMON+"sitting on a wooden bench next to a small cedar sapling character with a face, both bored, waiting; each character has exactly two thin arms coming out of the sides of its body and two separate thin legs below it", '', ''),
 
  # ---- e: Anson and the theories ----
  ('e01',N,"Back to you, on that ship in seventeen forty one. You're sailing with Commodore George Anson, around the world.", "an 18th-century British naval commander in a blue coat with gold buttons and a tricorn, standing proudly on a ship's deck with a telescope under his arm", 'Anson', 'the commander'),
@@ -85,12 +85,12 @@ L = [
  ('e05',N,"Navies were losing more men to a missing vitamin than to war.", "a cartoon cannonball and a tiny orange slice on a boxing ring, the orange slice standing as the winner with a belt; objects only", '', ''),
  ('e06',S,"Best crew I ever had.", SC+"standing at a ship's wheel, steering happily, a ragged flag behind him", '', ''),
  ('e07',N,"And doctors had theories. Lots of theories.", "an 18th-century ship's surgeon in a powdered wig and dark coat holding a big quill, thinking hard, many small thought bubbles above him", '', ''),
- ('e08',N,"Bad air. Damp. Laziness. Sadness. Too much salt. Not enough exercise.", "a messy wooden blackboard covered with chalk doodles: a cloud, rain drops, a sleeping face, a sad face, a salt shaker and a running shoe, all crossed with question marks; objects only, no words", '', ''),
- ('e09',N,"The cures were just as creative. Vinegar. Seawater. Sulphuric acid. Being buried up to your neck in the earth.", YOU+"buried up to his neck in a pile of soil on a beach, only his head and cap showing, unhappy face", 'a cure?', 'his head'),
+ ('e08',N,"Bad air. Damp. Laziness. Sadness. Too much salt. Not enough exercise.", "a messy wooden blackboard covered with chalk doodles: a cloud, rain drops, a sleeping face, a sad face, a salt shaker and a tiny stick figure doing push-ups, all crossed with question marks; objects only, no words", '', ''),
+ ('e09',N,"The cures were just as creative. Vinegar. Seawater. Sulphuric acid. Being buried up to your neck in the earth.", YOU+"buried up to his neck in a mound of dark brown garden earth in a grassy field, only his head and cap showing, unhappy face, an old wooden shovel stuck in the earth beside him", 'a cure?', 'his head'),
 
  # ---- f: Lind ----
  ('f01',N,"Then, in seventeen forty seven, a Scottish naval surgeon named James Lind tried something new.", "a young 18th-century Scottish naval surgeon with his own tied-back hair, a plain blue coat and a white cravat, holding a notebook, determined look", 'James Lind', 'the surgeon'),
- ('f02',N,"On board H M S Salisbury, he took twelve sailors with scurvy, all about equally sick.", "twelve small simple sick sailor stick figures in striped caps lying in two neat rows of hammocks; simple, same size", '12', 'the hammocks'),
+ ('f02',N,"On board H M S Salisbury, he took twelve sailors with scurvy, all about equally sick.", "twelve small simple sick sailor stick figures in striped caps with sick faces and closed mouths, lying in two neat rows of plain canvas hammocks hanging from simple wooden beams; simple, same size", '12', 'the hammocks'),
  ('f03',N,"He split them into six pairs, and gave each pair a different cure.", "six numbered wooden bowls in a row on a table, each with a different thing: cider, vinegar, seawater, a small bottle with a skull, a garlic paste, and oranges and a lemon; objects only, numbers 1 to 6 on the bowls", '6 pairs', 'the bowls'),
  ('f04',N,"Cider. Vinegar. Seawater. Sulphuric acid. A paste of garlic and mustard. And two oranges and a lemon a day.", "a close-up of the last bowl holding two oranges and one lemon, glowing slightly; objects only", 'pair 6', 'the bowl'),
  ('f05',N,"It was one of the first controlled trials in the history of medicine.", "an old leather notebook lying open on a wooden table, showing a neat hand-drawn grid with tick marks, a quill pen in an inkpot beside it; objects only, no readable words", '', ''),
@@ -100,7 +100,7 @@ L = [
  ('f09',N,"No.", LEMON+"face-palming with one hand, deeply disappointed", '', ''),
  ('f10',N,"Lind himself didn't fully trust his own result. He thought scurvy had lots of causes.", "a young 18th-century Scottish naval surgeon with tied-back hair, a long plain blue wool coat, a waistcoat, breeches and buckled shoes, shrugging with both palms up, unsure face", '', ''),
  ('f11',N,"And to make lemon juice keep on long voyages, he boiled it down into a thick syrup.", "a big copper pot of lemon juice bubbling over an open wood fire on an old iron tripod, steam rising, a few lemons beside it; objects only", '', ''),
- ('f12',N,"But heat destroys vitamin C. His syrup barely worked.", "a small glass bottle of dark brown syrup with a sad face drawn on the label, a crossed-out orange slice icon above it; objects only", 'useless', 'the bottle'),
+ ('f12',N,"But heat destroys vitamin C. His syrup barely worked.", "a small 18th-century hand-blown glass apothecary bottle with a cork stopper, filled with dark brown syrup, a paper label with a sad face drawn on it, a few wilted orange peels beside it; objects only", 'useless', 'the bottle'),
  ('f13',N,"The lemon was ignored. Again.", LEMON+"sitting alone on the bench again, now with a longer cobweb, a small rain cloud above its head", '', ''),
 
  # ---- g: Cook and 1795 ----
@@ -136,7 +136,7 @@ L = [
  ('i04',N,"Then they added fresh cabbage, or lemon juice. And the guinea pigs got better.", "the same guinea pig in an old wooden-framed wire cage happily munching a cabbage leaf, a lemon slice beside it, sparkles around it", '', ''),
  ('i05',N,"If they had picked rats, which make their own vitamin C, they would have found nothing.", "a smug rat with a tiny factory chimney on its back puffing orange smoke, shrugging", 'useless', 'the rat'),
  ('i06',N,"Pure luck.", "a single four-leaf clover; objects only", '', ''),
- ('i07',N,"Then, in nineteen twenty eight, a Hungarian scientist, Albert Sent Jurjee, found a strange acid in cabbages and in adrenal glands.", "a 1930s Hungarian scientist with dark hair and a lab coat holding up a test tube with a cabbage on the bench", 'Szent-Györgyi', 'the scientist'),
+ ('i07',N,"Then, in nineteen twenty eight, a Hungarian scientist, Albert Sent Jurjee, found a strange acid in cabbages and in adrenal glands.", "a 1930s Hungarian scientist with dark hair and a lab coat holding up a test tube, a cabbage on a sturdy wooden lab bench with four legs", 'Szent-Györgyi', 'the scientist'),
  ('i08',N,"He needed kilos of it. So he looked around his city, Seged, famous for one crop. Paprika.", "a big heap of bright red paprika peppers spilling out of a wicker basket; objects only", 'Szeged', 'the paprika'),
  ('i09',N,"Paprika turned out to be packed with it.", "one red paprika pepper glowing like treasure with golden sparkles; objects only", '', ''),
  ('i10',N,"He called it ascorbic acid. Literally, the anti scurvy acid. Vitamin C.", "a small glass jar of white crystal powder with a big orange slice icon on its label; objects only, no letters", 'vitamin C', 'the jar'),
