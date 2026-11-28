@@ -7,13 +7,24 @@ def dur(i):
     w = wave.open(os.path.join(REPO, VO, i + '.wav')); return w.getnframes() / w.getframerate()
 ids = [l.split('|')[0] for l in open(os.path.join(REPO, 'voices/scurvy_ketchup/lines.txt')) if l.strip()]
 shots, vo, marks = [], [], {}
+ROLE = {l.split('|')[0]: l.split('|')[1] for l in open(os.path.join(REPO, 'voices/scurvy_ketchup/lines.txt')) if l.strip()}
+ANIM = {   # a few moments that get their own motion
+ 'a03': {'jolt': [[.35, 9]]},                 # ouch
+ 'a04': {'wiggle': 2.2, 'float': 0},          # the wobbling tooth
+ 'a05': {'jolt': [[4.2, 10]]},                # "...opens up again"
+ 'g10': {'jolt': [[.4, 8]]},                  # kicks the lemon away
+}
 t = 0.3
 for k, i in enumerate(ids):
     if k and i[0] != ids[k - 1][0]: t += .28            # chapter break: 0.5 s total, as in the food channel
     if i[0] not in marks: marks[i[0]] = t
     d = dur(i); seg = d + .22   # audio-driven, like ketchup: 0.22 s between lines, no minimum
     vo.append({'file': f'{VO}/{i}.wav', 't': round(t + .03, 3)})
-    shots.append({'img': i, 'from': [.5, .5, 1.02], 'to': [.5, .5, 1.0], 'settle': .25, 't0': round(t, 3), 't1': round(t + seg, 3)})
+    sh = {'img': i, 'from': [.5, .5, 1.0], 'to': [.5, .5, 1.0], 'settle': .25, 't0': round(t, 3), 't1': round(t + seg, 3),
+          'pop': .38, 'float': 4.0, 'phase': k * 1.7}          # sticker motion: springy pop-in, then a gentle bob
+    if ROLE.get(i) == 'SCURVY': sh['float'] = 7.0     # the villain sways a bit more
+    sh.update(ANIM.get(i, {}))
+    shots.append(sh)
     t += seg
 shots[0]['t0'] = 0.0
 for a, b in zip(shots, shots[1:]): a['t1'] = b['t0']

@@ -283,7 +283,31 @@ def render_shot(sh, t):
     shake = sh.get('shake', 0)
     if shake: x0 += math.sin(t * 37) * shake; y0 += math.cos(t * 29) * shake
     M = np.float32([[W / cw, 0, -x0 * W / cw], [0, H / ch, -y0 * H / ch]])
+    anim = sticker_anim(sh, t)
+    if anim is not None:   # sticker motion on white pages: pop-in, gentle float, wiggle / jolt (around the frame centre)
+        M = (anim @ np.vstack([M, [0, 0, 1]]))[:2].astype(np.float32)
+        return cv2.warpAffine(im, M, (W, H), flags=cv2.INTER_AREA if cw > W else cv2.INTER_LINEAR, borderMode=cv2.BORDER_CONSTANT, borderValue=(255, 255, 255))
     return cv2.warpAffine(im, M, (W, H), flags=cv2.INTER_AREA if cw > W else cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)
+
+def sticker_anim(sh, t):
+    """optional per-shot keys: 'pop' (s, pop-in with a springy overshoot), 'float' (px, slow bob + tilt),
+    'wiggle' (deg, fast rocking, e.g. a wobbly tooth), 'jolt' ([[t, px], ...] short shakes at local times), 'drift' (zoom gain over the shot)"""
+    if not any(k in sh for k in ('pop', 'float', 'wiggle', 'jolt', 'drift')): return None
+    lt = t - sh['t0']; ph = sh.get('phase', 0.0); s, rot, dx, dy = 1.0, 0.0, 0.0, 0.0
+    p = sh.get('pop')
+    if p:
+        u = min(max(lt / p, 0), 1); c1 = 1.9; c3 = c1 + 1
+        s *= .94 + .06 * (1 + c3 * (u - 1) ** 3 + c1 * (u - 1) ** 2)                   # ease-out-back
+    if sh.get('drift'): s *= 1 + sh['drift'] * min(lt / max(sh['t1'] - sh['t0'], .1), 1)
+    f = sh.get('float', 0)
+    if f: dy += f * math.sin(2 * math.pi * lt / 3.1 + ph); rot += f * .07 * math.sin(2 * math.pi * lt / 4.3 + ph + 1)
+    wg = sh.get('wiggle', 0)
+    if wg: rot += wg * math.sin(lt * 13) * min(1, lt / .4)
+    for jt, a in sh.get('jolt', []):
+        k = lt - jt
+        if 0 <= k <= .45: e = math.exp(-k / .12); dx += a * math.sin(k * 70) * e; dy += a * .6 * math.cos(k * 55) * e
+    r = math.radians(rot); c, sn = math.cos(r) * s, math.sin(r) * s; cx, cy = W / 2, H / 2
+    return np.array([[c, -sn, cx - c * cx + sn * cy + dx], [sn, c, cy - sn * cx - c * cy + dy], [0, 0, 1]], np.float64)
 
 vig = None
 def finish(img, t):
