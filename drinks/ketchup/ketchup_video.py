@@ -12,7 +12,7 @@ os.makedirs(WORK, exist_ok=True)
 GAP_SENT = 0.22
 GAP_PART = 0.5
 SPEED = float(os.environ.get("SPEED", "1.0"))
-ZOOM = 0.06
+ZOOM = 0.06  # content at 92% of the canvas; max zoom shows 94%, so nothing is cropped
 
 CUES = {p: {} for p in range(9)}
 for k, (p, l, d, n) in enumerate(SHOTS, 1):
@@ -58,7 +58,7 @@ for k, (start, frame) in enumerate(timeline):
     out = f"{WORK}/seg_{k:03d}.mp4"
     fd = min(0.12, dur / 4)
     z = f"1+{ZOOM}*on/{n}" if k % 2 == 0 else f"1+{ZOOM}-{ZOOM}*on/{n}"
-    vf = (f"scale=3840:2160:force_original_aspect_ratio=decrease,pad=3840:2160:(ow-iw)/2:(oh-ih)/2:white,"
+    vf = (f"scale=3532:1987:force_original_aspect_ratio=decrease,pad=3840:2160:(ow-iw)/2:(oh-ih)/2:white,"
           f"zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={n}:s=1920x1080:fps={FPS},"
           f"fade=t=in:st=0:d={fd:.2f}:color=white,format=yuv420p")
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", src, "-vf", vf,
@@ -71,7 +71,7 @@ with open(f"{WORK}/segs.txt", "w") as fh:
         fh.write(f"file '{os.path.abspath(s)}'\n")
 
 # 3) concat video + narration (loudness-normalised)
-final = OUT + "/ketchup_v1_1080p.mp4"
+final = WORK + "/ketchup_v1_1080p.mp4"
 subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", f"{WORK}/segs.txt",
                 "-i", f"{WORK}/narration.wav",
                 "-af", "loudnorm=I=-16:TP=-1.5:LRA=11,aresample=48000",

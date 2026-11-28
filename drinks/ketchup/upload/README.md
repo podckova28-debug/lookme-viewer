@@ -22,6 +22,7 @@ In this video:
 4:08 The bottle (and the vegetable)
 4:41 Ketchup today
 
+Previous episode: Rum — from trash to the drink of pirates and navies.
 Also on the channel: Coffee — the drink kings tried to ban. Gin — the drink that nearly destroyed London.
 Next food episode: The hamburger.
 
@@ -35,5 +36,5 @@ ketchup, history of ketchup, ketchup history, tomato ketchup, heinz, heinz 57, o
 ## Настройки
 - Категория: Education (Образование). Язык видео: английский. Аудитория: не для детей не обязательно (алкоголя нет) — можно «для всех», но канал в целом про алкоголь, поэтому ставим «Нет, не для детей» для единообразия.
 - Раскрытие ИИ (Altered or synthetic content): ДА — голос и картинки созданы ИИ.
-- Конечная заставка: подписка + ролик про кофе.
+- Конечная заставка: подписка + ролик про гамбургер (на него ведёт концовка; если ещё не вышел — ролик про ром).
 - Закреплённый комментарий: «Would you have tried the tomato pills? Next food episode: the hamburger.»
