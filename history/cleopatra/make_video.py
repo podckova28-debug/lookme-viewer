@@ -29,7 +29,15 @@ total = t / SPEED; cuts = [(a / SPEED, k) for a, k in cuts]
 json.dump({"total": total, "cuts": cuts}, open(f"{WORK}/timeline.json", "w"))
 
 def segment(i, k, n):
-    im = Image.open(f"{D}/frames/f{k:03d}.png").convert("RGB")
+    anim = f"{D}/frames/anim/f{k:03d}.mp4"   # animated version of this still (image-to-video), played once, last frame held
+    if os.path.exists(anim):
+        fl = min(4, n // 4)
+        vf = (f"scale={W}:{H}:force_original_aspect_ratio=decrease:flags=lanczos,pad={W}:{H}:(ow-iw)/2:(oh-ih)/2:white,fps={FPS},"
+              f"tpad=stop_mode=clone:stop_duration=60,fade=t=in:st=0:d={fl / FPS:.3f}:color=white,format=yuv420p")
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", anim, "-vf", vf, "-an", "-frames:v", str(n),
+                        "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", f"{WORK}/seg/s{i:03d}.mp4"], check=True)
+        return
+    im =Image.open(f"{D}/frames/f{k:03d}.png").convert("RGB")
     sc = min(2 * W / im.width, 2 * H / im.height); im = im.resize((round(im.width * sc), round(im.height * sc)), Image.LANCZOS)
     src = Image.new("RGB", (2 * W, 2 * H), "white"); src.paste(im, ((2 * W - im.width) // 2, (2 * H - im.height) // 2))
     out = f"{WORK}/seg/s{i:03d}.mp4"
