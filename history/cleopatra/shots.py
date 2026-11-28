@@ -222,3 +222,24 @@ INS = [
 for _p, _i, _d, _n in INS:
     SHOTS[:] = [(p, l + 1 if (p == _p and l >= _i) else l, d, n) for p, l, d, n in SHOTS]
     SHOTS.append((_p, _i, _d, _n))
+# audit pass 1: frames redrawn (same line, new description). Objects-only shots are phrased as still lifes, the model kept adding people.
+STILL = " Still life on white, no human figures at all, no faces, no hands, no animals"
+FIX = {
+ 9: "a small wooden sign on a post with a papyrus showing a pyramid and a sphinx" + STILL,
+ 20: "an old papyrus map of the eastern Mediterranean with a red dotted line from Macedonia (labelled MACEDONIA) to Egypt (labelled EGYPT)" + STILL,
+ 21: "the ancient harbour city of Alexandria with white marble palaces, the tall Pharos lighthouse and many trading ships, seen from the sea; tiny distant figures only, no flags",
+ 27: "three small papyrus name tags tied with string, reading exactly 'Cleopatra', 'Berenice', 'Arsinoe'" + STILL,
+ 35: "a Greek kithara (lyre) with many strings and a few musical notes floating from it, next to a small rolled papyrus scroll" + STILL,
+ 40: "a papyrus will with a red royal wax seal and two small gold Greek diadem crowns drawn on it, one big and one small" + STILL,
+ 110: "a simple parchment-style map of the eastern Mediterranean coast with five gift-wrapped regions tied with ribbons, labelled exactly 'ARMENIA', 'PARTHIA', 'SYRIA', 'CILICIA', 'CYRENE', and Egypt labelled 'EGYPT'" + STILL,
+ 115: "a small framed portrait of " + C39.replace("(as in reference image)", "(as in reference image, head and shoulders)") + ", with a big red painted target circle around the frame",
+ 118: "a wooden shelf full of papyrus scrolls, three hanging labels reading exactly 'HARLOT QUEEN', 'DRUNK', 'MONSTER OF THE NILE'" + STILL,
+ 119: POET.split(", writing")[0] + ", shrugging with both palms up next to two other skinny Roman poets in laurel wreaths who also shrug, a small empty gold portrait frame on the floor in front of them",
+ 120: "two fleets of ancient oared warships facing each other off a rocky Greek coast, seen from far away, tiny distant rowers only",
+ 125: "three small icons drawn on one papyrus sheet: a map with an escape arrow, a frightened face emoji-like doodle, and a puffing wind cloud" + ", objects only, no real people",
+ 134: OCT + " sitting at a table drawing on a long papyrus a plan of a triumph parade: a tiny drawn procession with a tiny drawn queen in chains on a cart",
+ 138: "a single snuffed clay oil lamp with a curl of grey smoke" + STILL,
+ 155: "two wooden signs on poles: one with a green laurel wreath and the word 'genius', one with a coiled snake and the word 'villain'" + STILL,
+}
+for _k, _d in FIX.items():
+    _p, _l, _o, _n = SHOTS[_k - 1]; SHOTS[_k - 1] = (_p, _l, _d, _n)
