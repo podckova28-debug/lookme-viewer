@@ -38,12 +38,12 @@ def picture(frame):
 
 def chunks(text, dur):
     """Split a spoken line into 1-3 word captions timed by character length (speech fills the clip)."""
-    words = text.replace(",", "").split()
+    words = text.split()
     groups, cur = [], []
     for w in words:
-        cur.append(w)
+        cur.append(w.rstrip(","))
         n = len(" ".join(cur))
-        if len(cur) == 3 or n >= 13 or w.endswith((".", "?", "!")):
+        if len(cur) == 3 or n >= 13 or w.endswith((".", "?", "!", ",")):
             groups.append(" ".join(cur)); cur = []
     if cur: groups.append(" ".join(cur))
     total = sum(len(g) + 2 for g in groups); t, out = 0.0, []
