@@ -1,0 +1,118 @@
+id	score	sec	heard
+a01	0.91	6.4	It's 1741. You're a sailor on a British warship sailing around the bottom of South America.
+a02	1.00	4.1	You've been at sea for six months and something is wrong with your mouth.
+a03	1.00	2.8	your gums are swollen, purple, and bleeding.
+a04	1.00	2.3	you touch a tooth with your tongue.  It wobbles.
+a05	0.97	5.9	Then something really strange happens.  A scar from a fight 10 years ago opens up again.
+a06	1.00	2.5	as if ten years of healing never happened.
+a07	1.00	3.5	Ahoy, sailor! Long way from home, aren't we?
+a08	0.81	6.6	scurvy. Between 1500 and 1800 by one estimate, it killed about 2 million sailors.
+a09	1.00	3.8	more than storms, shipwrecks and enemy cannons put together.
+a10	1.00	3.0	and the cure was sitting in every port market on earth.
+a11	1.00	0.9	this lemon.
+a12	0.94	4.3	Keep an eye on the lemon.  People are going to ignore it for about 300 years.
+b01	1.00	3.7	So what is scurvy?  It's not a germ, nobody gives it to you.
+b02	1.00	4.6	It's what happens when your body runs out of one thing, Vitamin C.
+b03	1.00	6.0	Most animals make their own vitamin C. Dogs, cats, rats, goats, they don't need oranges.
+b04	1.00	4.8	Humans can't. Somewhere in our distant past, the gene that makes it broke.
+b05	1.00	5.4	Same for guinea pigs, fruit bats and some monkeys.  Remember the guinea pig, it's coming back.
+b06	1.00	3.7	Now, why does missing one vitamin make your body fall apart?
+b07	1.00	6.6	because your body is held together by a protein called collagen.  It's in your skin, gums, blood vessels and bones.
+b08	1.00	5.7	Think of collagen as a rope, and to tie that rope tightly, your body needs vitamin C.
+b09	1.00	3.2	Without it, the new rope comes out loose and weak.
+b10	1.00	6.3	and your body replaces collagen all the time.  Old rope wears out and new weak rope goes in.
+b11	1.00	4.3	So after a month or two without vitamin C, you start coming apart at the seams.
+b12	1.00	2.2	First, you're tired.  Your legs ache.
+b13	1.00	4.5	Then tiny blood vessels start to leak, bruises appear out of nowhere.
+b14	1.00	3.0	Your gums swell and bleed and your teeth come loose.
+b15	1.00	6.7	and old wounds, even old broken bones can come apart, because the scar was made of collagen  too.
+b16	1.00	6.4	Without vitamin C, you die, usually from bleeding, heart failure, or an infection your body can't fight off.
+b17	1.00	5.0	I'm in no hurry. I take you apart, one rope at a time.
+b18	1.00	7.3	And here's the cruel part.  The cure works in days.  A few lemons and you start to recover almost at once.
+c01	1.00	7.2	For most of history, scurvy was rare.  People ate fresh food.  A few cases in a long winter or a siege.
+c02	0.86	5.2	Then in the 1490s, Europeans started sailing across whole oceans.
+c03	1.00	5.4	Months at sea with no fresh food, just salted meat and hard biscuits full of weevils.
+c04	1.00	5.8	Ship's biscuit was so hard, you could break a tooth on it, if Scurvy hadn't loosened your teeth first.
+c05	0.88	5.7	In 1497, Vasco da Gama sailed from Portugal, around Africa, to India.
+c06	1.00	4.5	More than half his men never came home.  Most of them were killed by scurvy.
+c07	1.00	6.9	on the way his crew noticed something.  On the coast of East Africa, they ate oranges  and the sick men got better.
+c08	1.00	2.7	They wrote it down and then forgot about it.
+c09	1.00	1.6	The lemon was not impressed.
+c10	0.93	5.8	In 1519, Magellan's fleet crossed the Pacific,  more than three months with no fresh food.
+c11	1.00	7.1	The men ate rats, sawdust.  The leather wrapped around the ship's ropes  soaked in seawater and grilled.
+c12	0.76	4.0	Out of about 270 men, only 18 made it home.
+d01	1.00	3.0	but a cure had already been found in Canada.
+d02	0.79	8.2	1535. The French explorer Jacques Cartier spends the winter with his ships frozen in  the ice of the St. Lawrence River.
+d03	0.92	4.5	25 of his men die of scurvy.  Almost all the others are sick.
+d04	0.95	7.5	Then Katiai notices something.  A local man named Domagaya had been very sick  and now he's walking around healthy.
+d05	0.85	7.6	Domagai's people, the St. Lawrence Iroquoens, showed the French a tree. They boiled its  bark and needles into a tea.
+d06	0.91	4.0	Within days, the sick men recovered.  Katiai called it a miracle.
+d07	1.00	3.5	The tree was probably a white cedar, packed with vitamin C.
+d08	1.00	1.8	And Europe forgot that too.
+d09	1.00	2.2	Lemon. Meet Tree. Join the club.
+e01	0.91	6.3	Back to you on that ship in 1741, you're sailing with Commodore George Anson around the world.
+e02	0.86	2.5	He left England with about 1900 men.
+e03	0.83	2.0	More than 1,300 of them died.
+e04	1.00	4.6	Only four were killed by the enemy, almost all the rest were killed by scurvy.
+e05	1.00	3.3	Navies were losing more men to a missing vitamin than to war.
+e06	1.00	2.3	best crew I ever had.
+e07	1.00	2.6	and doctors had theories, lots of theories.
+e08	1.00	6.0	Bad air, damp, laziness, sadness, too much salt, not enough exercise.
+e09	0.95	7.4	The cures were just as creative.  Vinegar, seawater, sulfuric acid,  being buried up to your neck in the earth.
+f01	0.89	6.0	Then, in 1747, a Scottish naval surgeon named James Lind tried something new.
+f02	0.83	5.5	On board HMS Salisbury, he took 12 sailors with scurvy, all about equally sick.
+f03	1.00	4.1	He split them into six pairs and gave each pair a different cure.
+f04	0.95	8.4	cider, vinegar, seawater, sulfuric acid, a paste of garlic and mustard, and two oranges and a lemon a day.
+f05	1.00	3.8	it was one of the first controlled trials  in the history of medicine.
+f06	0.94	4.7	Within a week, one of the citrus pear was back at work.  The other was nursing the rest.
+f07	1.00	1.4	The lemon, finally.
+f08	0.93	5.0	So Lin told the Navy to give everyone citrus and scurvy was gone, right?
+f09	0.00	0.4	NUR
+f10	1.00	5.6	Lind himself didn't fully trust his own result.  He thought Scurvy had lots of causes.
+f11	1.00	4.7	and to make lemon juice keep on long voyages, he boiled it down into a thick syrup.
+f12	1.00	3.7	But heat destroys Vitamin C. His syrup barely worked.
+f13	1.00	2.3	The lemon was ignored again.
+g01	0.91	6.8	Captain James Cook did better.  On his voyages in the 1770s,  almost nobody died of scurvy.
+g02	1.00	5.3	His secret? He stopped for fresh food wherever he could, and he made the crew eat sauerkraut.
+g03	1.00	4.1	the sailors refused, so Cook had it served only at the officer's table.
+g04	1.00	3.0	Within a week, the crew were demanding sauerkraut too.
+g05	1.00	6.8	Sauerkraut has only a little vitamin C. The fresh food probably did most of the work,  but Cook got the credit.
+g06	0.92	7.6	Finally, in 1795, the Royal Navy ordered lemon juice for every sailor every day, mixed into their rum.
+g07	1.00	3.9	If you watched our rum video, you already know this drink.  Grog.
+g08	1.00	2.6	Scurvy almost vanished from the British navy.
+g09	1.00	6.1	Some historians think it helped Britain in the long wars against Napoleon.  Its ships could stay at sea for months.
+g10	1.00	2.7	That was not fair at all.
+h01	1.00	1.8	Then the Navy made a mistake.
+h02	0.92	6.5	In the mid-1800s, it switched from Mediterranean lemons to cheaper limes from British colonies  in the Caribbean.
+h03	1.00	6.4	Limes have much less vitamin C, and the way the juice was made and stored destroyed even more.
+h04	1.00	2.5	That's where the nickname came from.  Limeys.
+h05	1.00	5.3	The juice was now almost useless, but on ships that stopped in ports, nobody noticed.
+h06	1.00	4.6	until the polar expeditions, months in the ice, no fresh food.
+h07	0.92	6.5	In 1875, a British Arctic expedition came back with scurvy,  even though every man drank his lime juice.
+h08	1.00	4.6	doctors were baffled. Citrus didn't work, maybe it was never about fruit.
+h09	1.00	3.9	New theory, Scurvy came from spoiled, tinned meat.
+h10	0.84	3.4	Antarctic explorers were still getting scurvy in the 1900s.
+h11	0.90	4.7	The lemon had been right since 1498, and now even the Navy didn't believe it.
+h12	0.50	0.8	Paul Lemon.
+i01	1.00	3.5	The answer came from a guinea pig.  Told you it would come back.
+i02	0.79	7.2	In 1907, two Norwegian scientists, Axel Holst and Tyodor Frohlich, were studying a disease of sailors.
+i03	1.00	4.2	They fed guinea pigs nothing but grain, and the guinea pigs got scurvy.
+i04	1.00	4.3	Then they added fresh cabbage or lemon juice and the guinea pigs got better.
+i05	1.00	4.3	If they had picked rats, which make their own vitamin C, they would have found nothing.
+i06	1.00	0.8	pure luck.
+i07	0.82	8.7	Then, in 1928, a Hungarian scientist, Albert St. Georgie, found a strange acid in cabbages  and in adrenal glands.
+i08	1.00	6.5	He needed kilos of it, so he looked around his city, Seged, famous for one crop, Paprika.
+i09	1.00	2.0	Paprika turned out to be packed with it.
+i10	1.00	5.8	He called it ascorbic acid, literally the anti-scurvy acid, vitamin C.
+i11	0.80	2.6	He won the Nobel Prize in 1937.
+i12	1.00	3.0	and the lemon was finally officially right.
+j01	1.00	2.3	So, scurvy is gone today, right?
+j02	1.00	2.1	Not quite.  Doctors still see it.
+j03	1.00	5.4	In people who eat almost nothing but toast, instant noodles or fast food for months.
+j04	1.00	5.5	in elderly people living alone, in people with alcohol problems, and after some stomach surgeries.
+j05	0.93	5.8	The cure hasn't changed since Lynde.  Vitamin C. Most people start feeling better within days.
+j06	1.00	6.5	and you need very little.  One orange a day is plenty.  So is a pepper, a kiwi, or a handful of strawberries.
+j07	1.00	5.6	One orange. That's all it ever took to get rid of me. Embarrassing, really.
+j08	0.90	5.2	So, back to you, on that ship in 1741 with the old scar opening up.
+j09	0.96	6.7	The cure was a lemon.  It cost almost nothing in any port, and it took the world 300 years to listen to it.
+j10	1.00	3.0	Would you have trusted the lemon?  Tell me in the comments.

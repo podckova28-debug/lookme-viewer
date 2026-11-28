@@ -12,7 +12,7 @@
  {
   "id": "a03",
   "line": "Your gums are swollen, purple, and bleeding.",
-  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. Anatomy: every person has exactly one head, two arms attached at the shoulders, two hands with five fingers each, two legs; hands simple and clearly drawn. a cartoon close-up of an open mouth with swollen purple gums and a few drops of blood, teeth still in place; not gory. Big bold black brush-pen handwritten note on the white space: 'ouch', with a thick hand-drawn arrow from the note to the purple gums. No other text."
+  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. a big cartoon mouth only, no face and no body: lips wide open, swollen purple gums with a few small drops of blood, teeth still in place; objects only, not gory. Big bold black brush-pen handwritten note on the white space: 'ouch', with a thick hand-drawn arrow from the note to the purple gums. No other text."
  },
  {
   "id": "a04",
@@ -37,7 +37,7 @@
  {
   "id": "a08",
   "line": "Scurvy. Between fifteen hundred and eighteen hundred, by one estimate, it killed about two million sailors.",
-  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. a long row of many tiny identical sailor caps lying on the white ground, stretching into the distance; objects only. Big bold black brush-pen handwritten note on the white space: '2,000,000', with a thick hand-drawn arrow from the note to the row of caps. No other text."
+  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. a long row of many identical soft red knitted wool caps lying on the white ground, stretching into the distance; objects only. Big bold black brush-pen handwritten note on the white space: '2,000,000', with a thick hand-drawn arrow from the note to the row of caps. No other text."
  },
  {
   "id": "a09",
@@ -67,12 +67,12 @@
  {
   "id": "b02",
   "line": "It's what happens when your body runs out of one thing. Vitamin C.",
-  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. a cartoon fuel gauge on a body-shaped outline, the needle at EMPTY, a small orange slice icon on the gauge; objects only. Big bold black brush-pen handwritten note on the white space: 'vitamin C', with a thick hand-drawn arrow from the note to the needle. No other text."
+  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. a round old brass fuel gauge with the needle pointing at empty, a small orange slice drawn on its dial; objects only. Big bold black brush-pen handwritten note on the white space: 'vitamin C', with a thick hand-drawn arrow from the note to the needle. No other text."
  },
  {
   "id": "b03",
   "line": "Most animals make their own vitamin C. Dogs, cats, rats, goats. They don't need oranges.",
-  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. Anatomy: every person has exactly one head, two arms attached at the shoulders, two hands with five fingers each, two legs; hands simple and clearly drawn. a smug dog, a cat, a rat and a goat standing in a row, each with a tiny factory chimney puffing orange smoke on its back. No text anywhere."
+  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. Anatomy: every person has exactly one head, two arms attached at the shoulders, two hands with five fingers each, two legs; hands simple and clearly drawn. a smug dog, a cat, a rat and a goat standing in a row on four normal animal legs with paws and hooves, each with a tiny factory chimney puffing orange smoke on its back. No text anywhere."
  },
  {
   "id": "b04",
@@ -87,7 +87,7 @@
  {
   "id": "b06",
   "line": "Now, why does missing one vitamin make your body fall apart?",
-  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. Anatomy: every person has exactly one head, two arms attached at the shoulders, two hands with five fingers each, two legs; hands simple and clearly drawn. one simple hand-drawn stick figure: thin black ink line body, arms and legs, a round white head with dot eyes and an expressive mouth, simple white mitten hands, exactly two arms and two legs, wearing a small red-and-white striped knitted beanie, scratching his head, a big question mark above him. No text anywhere."
+  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. Anatomy: every person has exactly one head, two arms attached at the shoulders, two hands with five fingers each, two legs; hands simple and clearly drawn. one simple hand-drawn stick figure: thin black ink line body, arms and legs, a round white head with dot eyes and an expressive mouth, simple white mitten hands, exactly two arms and two legs, wearing a small red-and-white striped knitted beanie, standing alone and scratching his head with one hand, a big question mark above him, nothing else in the picture. No text anywhere."
  },
  {
   "id": "b07",
@@ -117,7 +117,7 @@
  {
   "id": "b12",
   "line": "First, you're tired. Your legs ache.",
-  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. Anatomy: every person has exactly one head, two arms attached at the shoulders, two hands with five fingers each, two legs; hands simple and clearly drawn. one simple hand-drawn stick figure: thin black ink line body, arms and legs, a round white head with dot eyes and an expressive mouth, simple white mitten hands, exactly two arms and two legs, wearing a small red-and-white striped knitted beanie, slumped against a barrel, exhausted, heavy eyelids, small ache lines on his legs. Big bold black brush-pen handwritten note on the white space: 'tired', with a thick hand-drawn arrow from the note to his legs. No other text."
+  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. Anatomy: every person has exactly one head, two arms attached at the shoulders, two hands with five fingers each, two legs; hands simple and clearly drawn. one simple hand-drawn stick figure: thin black ink line body, arms and legs, a round white head with dot eyes and an expressive mouth, simple white mitten hands, exactly two arms and two legs, wearing a small red-and-white striped knitted beanie, sitting on the floor with his back against a barrel, both legs stretched out in front of him from the hips, both arms hanging from the shoulders, exhausted, heavy eyelids, small ache lines on his legs. Big bold black brush-pen handwritten note on the white space: 'tired', with a thick hand-drawn arrow from the note to his legs. No other text."
  },
  {
   "id": "b13",
@@ -177,12 +177,12 @@
  {
   "id": "c06",
   "line": "More than half his men never came home. Most of them were killed by scurvy.",
-  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. a row of sailors' caps hung on wooden pegs, more than half of the pegs empty; objects only. No text anywhere."
+  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. a row of ten wooden wall pegs, only three of them with a soft red knitted wool cap, the other seven empty; objects only. No text anywhere."
  },
  {
   "id": "c07",
   "line": "On the way, his crew noticed something. On the coast of East Africa, they ate oranges, and the sick men got better.",
-  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. Anatomy: every person has exactly one head, two arms attached at the shoulders, two hands with five fingers each, two legs; hands simple and clearly drawn. two 15th-century Portuguese sailors in simple tunics sitting on a beach under a palm tree, eating oranges and smiling, a pile of oranges between them. No text anywhere."
+  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. Anatomy: every person has exactly one head, two arms attached at the shoulders, two hands with five fingers each, two legs; hands simple and clearly drawn. two 15th-century Portuguese sailors in simple tunics sitting cross-legged on the sand under a palm tree, eating oranges and smiling, a pile of oranges between them. No text anywhere."
  },
  {
   "id": "c08",
@@ -207,7 +207,7 @@
  {
   "id": "c12",
   "line": "Out of about two hundred and seventy men, only eighteen made it home.",
-  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. Anatomy: every person has exactly one head, two arms attached at the shoulders, two hands with five fingers each, two legs; hands simple and clearly drawn. eighteen tiny sailor stick figures standing in a small group on one side, and a much larger faded grey crowd of outlines on the other side. Big bold black brush-pen handwritten note on the white space: '18', with a thick hand-drawn arrow from the note to the small group. No other text."
+  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. Anatomy: every person has exactly one head, two arms attached at the shoulders, two hands with five fingers each, two legs; hands simple and clearly drawn. a small group of eighteen tiny simple black stick figures on the left, and a much larger crowd of faded light-grey stick figure outlines on the right; simple stick figures only. Big bold black brush-pen handwritten note on the white space: '18', with a thick hand-drawn arrow from the note to the small group. No other text."
  },
  {
   "id": "d01",
@@ -247,7 +247,7 @@
  {
   "id": "d08",
   "line": "And Europe? Forgot that too.",
-  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. Anatomy: every person has exactly one head, two arms attached at the shoulders, two hands with five fingers each, two legs; hands simple and clearly drawn. a small cartoon map of Europe sleeping with a nightcap and a snore bubble; no text. No text anywhere."
+  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. a small parchment map of Europe lying on a pillow under a little blanket, wearing a nightcap, with a snore bubble; objects only, no arms, no legs, no text. No text anywhere."
  },
  {
   "id": "d09",
@@ -322,12 +322,12 @@
  {
   "id": "f05",
   "line": "It was one of the first controlled trials in the history of medicine.",
-  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. Anatomy: every person has exactly one head, two arms attached at the shoulders, two hands with five fingers each, two legs; hands simple and clearly drawn. an old leather notebook open on a table with a neat hand-drawn table of six rows and two columns of tick marks, a quill beside it; no readable words. No text anywhere."
+  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. an old leather notebook lying open on a wooden table, showing a neat hand-drawn grid with tick marks, a quill pen in an inkpot beside it; objects only, no readable words. No text anywhere."
  },
  {
   "id": "f06",
   "line": "Within a week, one of the citrus pair was back at work. The other was nursing the rest.",
-  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. Anatomy: every person has exactly one head, two arms attached at the shoulders, two hands with five fingers each, two legs; hands simple and clearly drawn. one healthy smiling sailor in a striped cap climbing the ship's rigging, and another one carrying a bowl of soup to a hammock. No text anywhere."
+  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. Anatomy: every person has exactly one head, two arms attached at the shoulders, two hands with five fingers each, two legs; hands simple and clearly drawn. one healthy smiling sailor (striped linen shirt, red knitted wool cap) climbing a rope ladder, and another such sailor carrying a bowl of soup. No text anywhere."
  },
  {
   "id": "f07",
@@ -337,7 +337,7 @@
  {
   "id": "f08",
   "line": "So Lind told the Navy to give everyone citrus, and scurvy was gone. Right?",
-  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. Anatomy: every person has exactly one head, two arms attached at the shoulders, two hands with five fingers each, two legs; hands simple and clearly drawn. one simple hand-drawn stick figure: thin black ink line body, arms and legs, a round white head with dot eyes and an expressive mouth, simple white mitten hands, exactly two arms and two legs, wearing a small red-and-white striped knitted beanie, smiling hopefully, giving a thumbs up. No text anywhere."
+  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. Anatomy: every person has exactly one head, two arms attached at the shoulders, two hands with five fingers each, two legs; hands simple and clearly drawn. one simple hand-drawn stick figure: thin black ink line body, arms and legs, a round white head with dot eyes and an expressive mouth, simple white mitten hands, exactly two arms and two legs, wearing a small red-and-white striped knitted beanie, standing alone, smiling hopefully, giving a thumbs up with one hand, nothing else in the picture. No text anywhere."
  },
  {
   "id": "f09",
@@ -347,12 +347,12 @@
  {
   "id": "f10",
   "line": "Lind himself didn't fully trust his own result. He thought scurvy had lots of causes.",
-  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. Anatomy: every person has exactly one head, two arms attached at the shoulders, two hands with five fingers each, two legs; hands simple and clearly drawn. the same young Scottish surgeon in a plain blue coat shrugging with both palms up, unsure face. No text anywhere."
+  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. Anatomy: every person has exactly one head, two arms attached at the shoulders, two hands with five fingers each, two legs; hands simple and clearly drawn. a young 18th-century Scottish naval surgeon with tied-back hair, a long plain blue wool coat, a waistcoat, breeches and buckled shoes, shrugging with both palms up, unsure face. No text anywhere."
  },
  {
   "id": "f11",
   "line": "And to make lemon juice keep on long voyages, he boiled it down into a thick syrup.",
-  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. a big copper pot of lemon juice bubbling on a stove, steam rising, a few lemons beside it; objects only. No text anywhere."
+  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. a big copper pot of lemon juice bubbling over an open wood fire on an old iron tripod, steam rising, a few lemons beside it; objects only. No text anywhere."
  },
  {
   "id": "f12",
@@ -382,7 +382,7 @@
  {
   "id": "g04",
   "line": "Within a week, the crew were demanding sauerkraut too.",
-  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. Anatomy: every person has exactly one head, two arms attached at the shoulders, two hands with five fingers each, two legs; hands simple and clearly drawn. two eager sailors in striped shirts holding out empty bowls, begging, puppy eyes. Big bold black brush-pen handwritten note on the white space: 'we want some', with a thick hand-drawn arrow from the note to the sailors. No other text."
+  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. Anatomy: every person has exactly one head, two arms attached at the shoulders, two hands with five fingers each, two legs; hands simple and clearly drawn. two eager 18th-century sailors in loose striped linen shirts and soft red knitted wool caps holding out empty wooden bowls, begging, puppy eyes. Big bold black brush-pen handwritten note on the white space: 'we want some', with a thick hand-drawn arrow from the note to the sailors. No other text."
  },
  {
   "id": "g05",
@@ -392,7 +392,7 @@
  {
   "id": "g06",
   "line": "Finally, in seventeen ninety five, the Royal Navy ordered lemon juice for every sailor, every day. Mixed into their rum.",
-  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. a sailor's tin mug with a lemon being squeezed into it, juice dripping, a small rum barrel behind it; objects only. Big bold black brush-pen handwritten note on the white space: '1795', with a thick hand-drawn arrow from the note to the mug. No other text."
+  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. a sailor's tin mug with half a squeezed lemon lying beside it and juice drops falling into the mug, a small plain rum barrel behind it; objects only. Big bold black brush-pen handwritten note on the white space: '1795', with a thick hand-drawn arrow from the note to the mug. No other text."
  },
  {
   "id": "g07",
@@ -402,7 +402,7 @@
  {
   "id": "g08",
   "line": "Scurvy almost vanished from the British Navy.",
-  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. Anatomy: every person has exactly one head, two arms attached at the shoulders, two hands with five fingers each, two legs; hands simple and clearly drawn. a smiling healthy sailor in a striped shirt flexing his arm on a ship's deck, a lemon in his other hand. No text anywhere."
+  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. Anatomy: every person has exactly one head, two arms attached at the shoulders, two hands with five fingers each, two legs; hands simple and clearly drawn. a smiling healthy 18th-century sailor in a loose striped linen shirt, canvas trousers and a soft red knitted wool cap, barefoot, flexing one arm, holding a lemon in his other hand. No text anywhere."
  },
  {
   "id": "g09",
@@ -447,17 +447,17 @@
  {
   "id": "h07",
   "line": "In eighteen seventy five, a British Arctic expedition came back with scurvy, even though every man drank his lime juice.",
-  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. Anatomy: every person has exactly one head, two arms attached at the shoulders, two hands with five fingers each, two legs; hands simple and clearly drawn. two 19th-century Arctic explorers in heavy fur coats, pale and tired, each holding a small bottle of lime juice, looking confused. No text anywhere."
+  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. Anatomy: every person has exactly one head, two arms attached at the shoulders, two hands with five fingers each, two legs; hands simple and clearly drawn. two 19th-century Arctic explorers in heavy fur coats and thick mittens, pale and tired, each holding a small glass bottle of lime juice in one mittened hand, looking confused. No text anywhere."
  },
  {
   "id": "h08",
   "line": "Doctors were baffled. Citrus didn't work? Maybe it was never about fruit.",
-  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. Anatomy: every person has exactly one head, two arms attached at the shoulders, two hands with five fingers each, two legs; hands simple and clearly drawn. a Victorian doctor with side whiskers and a frock coat scratching his head, looking at a lime through a magnifying glass. No text anywhere."
+  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. Anatomy: every person has exactly one head, two arms attached at the shoulders, two hands with five fingers each, two legs; hands simple and clearly drawn. a Victorian doctor with side whiskers and a frock coat holding a magnifying glass in his right hand and a lime in his left hand, peering at the lime, puzzled. No text anywhere."
  },
  {
   "id": "h09",
   "line": "New theory: scurvy came from spoiled tinned meat.",
-  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. an old dented tin can of meat with a green stink cloud rising from it; objects only. Big bold black brush-pen handwritten note on the white space: 'new theory', with a thick hand-drawn arrow from the note to the tin. No other text."
+  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. an old 19th-century hand-soldered tin can of meat with a plain lid, dented, a green stink cloud rising from it; objects only, no letters. Big bold black brush-pen handwritten note on the white space: 'new theory', with a thick hand-drawn arrow from the note to the tin. No other text."
  },
  {
   "id": "h10",
@@ -482,17 +482,17 @@
  {
   "id": "i02",
   "line": "In nineteen oh seven, two Norwegian scientists, Axel Holst and Tayodor Frolik, were studying a disease of sailors.",
-  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. Anatomy: every person has exactly one head, two arms attached at the shoulders, two hands with five fingers each, two legs; hands simple and clearly drawn. two early-1900s scientists with moustaches in white lab coats at a wooden lab bench with glass flasks. Big bold black brush-pen handwritten note on the white space: 'Holst & Fr\u00f8lich', with a thick hand-drawn arrow from the note to the two scientists. No other text."
+  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. Anatomy: every person has exactly one head, two arms attached at the shoulders, two hands with five fingers each, two legs; hands simple and clearly drawn. two early-1900s scientists with moustaches in white lab coats standing side by side at a wooden lab bench, each holding one glass flask. Big bold black brush-pen handwritten note on the white space: 'Holst & Fr\u00f8lich', with a thick hand-drawn arrow from the note to the two scientists. No other text."
  },
  {
   "id": "i03",
   "line": "They fed guinea pigs nothing but grain. And the guinea pigs got scurvy.",
-  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. Anatomy: every person has exactly one head, two arms attached at the shoulders, two hands with five fingers each, two legs; hands simple and clearly drawn. a sad guinea pig in a small cage with a bowl of grain, a few small bruise spots on it, droopy eyes. No text anywhere."
+  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. Anatomy: every person has exactly one head, two arms attached at the shoulders, two hands with five fingers each, two legs; hands simple and clearly drawn. a sad guinea pig in an old wooden-framed wire cage with a small clay bowl of grain, droopy eyes. No text anywhere."
  },
  {
   "id": "i04",
   "line": "Then they added fresh cabbage, or lemon juice. And the guinea pigs got better.",
-  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. Anatomy: every person has exactly one head, two arms attached at the shoulders, two hands with five fingers each, two legs; hands simple and clearly drawn. the same guinea pig in its small lab cage happily munching a cabbage leaf, a lemon slice beside it, sparkles around it. No text anywhere."
+  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. Anatomy: every person has exactly one head, two arms attached at the shoulders, two hands with five fingers each, two legs; hands simple and clearly drawn. the same guinea pig in an old wooden-framed wire cage happily munching a cabbage leaf, a lemon slice beside it, sparkles around it. No text anywhere."
  },
  {
   "id": "i05",
@@ -572,7 +572,7 @@
  {
   "id": "j08",
   "line": "So, back to you, on that ship in seventeen forty one, with the old scar opening up.",
-  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. Anatomy: every person has exactly one head, two arms attached at the shoulders, two hands with five fingers each, two legs; hands simple and clearly drawn. one simple hand-drawn stick figure: thin black ink line body, arms and legs, a round white head with dot eyes and an expressive mouth, simple white mitten hands, exactly two arms and two legs, wearing a small red-and-white striped knitted beanie, standing on a ship's deck in a striped sailor's cap, holding a lemon in one thin stick hand and looking at it, a small scar line on the other thin stick arm. No text anywhere."
+  "prompt": "White background; detailed ink-line illustration, fine cross-hatching, soft muted watercolour, lemon-yellow and pewter grey accents, playful humorous cartoon tone; the whole subject is fully visible, cut out on white with white space around it, like a sticker. Anatomy: every person has exactly one head, two arms attached at the shoulders, two hands with five fingers each, two legs; hands simple and clearly drawn. one simple hand-drawn stick figure: thin black ink line body, arms and legs, a round white head with dot eyes and an expressive mouth, simple white mitten hands, exactly two arms and two legs, wearing a small red-and-white striped knitted beanie, standing alone, holding a lemon in one thin stick hand and looking at it, a small scar line on the other thin stick arm. No text anywhere."
  },
  {
   "id": "j09",
