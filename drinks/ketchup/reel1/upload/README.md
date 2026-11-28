@@ -22,3 +22,6 @@ Which ketchup would you try? 👇
 Settings: "AI info" label = ON.
 
 Pinned comment: Which one would you try: mushroom, walnut or beer ketchup?
+
+## Tags (YouTube Studio → Tags)
+ketchup, history of ketchup, ketchup history, ketchup origin, fish sauce, mushroom ketchup, walnut ketchup, tomato pills, food history, food facts, fun facts, history facts, did you know, weird history, tomato ketchup, shorts
