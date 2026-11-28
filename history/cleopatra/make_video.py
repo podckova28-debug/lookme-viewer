@@ -29,13 +29,37 @@ total = t / SPEED; cuts = [(a / SPEED, k) for a, k in cuts]
 json.dump({"total": total, "cuts": cuts}, open(f"{WORK}/timeline.json", "w"))
 
 def segment(i, k, n):
-    anim = f"{D}/frames/anim/f{k:03d}.mp4"   # animated version of this still (image-to-video), played once, last frame held
-    if os.path.exists(anim):
+    # animated version of this still (image-to-video, upscaled): prefer anim_up/, fall back to anim/
+    anim = next((f for f in (f"{D}/frames/anim_up/f{k:03d}.mp4", f"{D}/frames/anim/f{k:03d}.mp4") if os.path.exists(f)), None)
+    if anim:
         fl = min(4, n // 4)
-        vf = (f"scale={W}:{H}:force_original_aspect_ratio=decrease:flags=lanczos,pad={W}:{H}:(ow-iw)/2:(oh-ih)/2:white,fps={FPS},"
-              f"tpad=stop_mode=clone:stop_duration=60,fade=t=in:st=0:d={fl / FPS:.3f}:color=white,format=yuv420p")
-        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", anim, "-vf", vf, "-an", "-frames:v", str(n),
-                        "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", f"{WORK}/seg/s{i:03d}.mp4"], check=True)
+        # the clip must cover the whole shot (no frozen tail): a shorter clip is slowed down to fit, a longer one is cut
+        dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", anim],
+                                   capture_output=True, text=True).stdout)
+        slow = max(1.0, n / FPS / (dur - 0.05))
+        vf = (f"setpts={slow:.4f}*PTS,scale={W}:{H}:force_original_aspect_ratio=decrease:flags=lanczos,"
+              f"pad={W}:{H}:(ow-iw)/2:(oh-ih)/2:white,fps={FPS},tpad=stop_mode=clone:stop_duration=1")
+        dec = subprocess.Popen(["ffmpeg", "-v", "error", "-i", anim, "-vf", vf, "-an", "-frames:v", str(n),
+                                "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], stdout=subprocess.PIPE)
+        # match colour/contrast to the still: per-channel mean and spread of the first frame -> the still's
+        st = Image.open(f"{D}/frames/f{k:03d}.png").convert("RGB"); sc = min(W / st.width, H / st.height)
+        st = st.resize((round(st.width * sc), round(st.height * sc)), Image.LANCZOS)
+        ref = Image.new("RGB", (W, H), "white"); ref.paste(st, ((W - st.width) // 2, (H - st.height) // 2))
+        ref = np.asarray(ref, np.float32).reshape(-1, 3)
+        out = f"{WORK}/seg/s{i:03d}.mp4"
+        pr = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
+                               "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", out], stdin=subprocess.PIPE)
+        g = o = x = None
+        for j in range(n):
+            b = dec.stdout.read(W * H * 3)
+            if len(b) == W * H * 3: x = np.frombuffer(b, np.uint8).reshape(H, W, 3).astype(np.float32)
+            if g is None:
+                f0 = x.reshape(-1, 3); g = ref.std(0) / np.maximum(f0.std(0), 1); o = ref.mean(0) - f0.mean(0) * g
+            y = np.clip(x * g + o, 0, 255)
+            if j < fl: y = 255 + (y - 255) * (j + 1) / (fl + 1)
+            pr.stdin.write(y.astype(np.uint8).tobytes())
+        dec.stdout.close(); dec.wait()
+        pr.stdin.close(); pr.wait(); assert pr.returncode == 0
         return
     im =Image.open(f"{D}/frames/f{k:03d}.png").convert("RGB")
     sc = min(2 * W / im.width, 2 * H / im.height); im = im.resize((round(im.width * sc), round(im.height * sc)), Image.LANCZOS)
